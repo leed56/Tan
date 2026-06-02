@@ -22,6 +22,11 @@ import { AnalyticsScreen } from '../screens/analytics/AnalyticsScreen';
 import { ProfileScreen } from '../screens/profile/ProfileScreen';
 import { SettingsScreen } from '../screens/settings/SettingsScreen';
 import { FormSelectorModal } from '../screens/curriculum/FormSelectorModal';
+import { QuizIntroScreen } from '../screens/quiz/QuizIntroScreen';
+import { MCQScreen } from '../screens/quiz/MCQScreen';
+import { FIBScreen } from '../screens/quiz/FIBScreen';
+import { TFScreen } from '../screens/quiz/TFScreen';
+import { QuizResultScreen } from '../screens/quiz/QuizResultScreen';
 
 const RootStack = createStackNavigator<AppRootStackParamList>();
 const Tab = createBottomTabNavigator<AppTabParamList>();
@@ -36,6 +41,11 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="Topics" component={TopicsScreen} />
       <HomeStack.Screen name="LearningPackDetail" component={LearningPackDetailScreen} />
       <HomeStack.Screen name="PackCompletion" component={PackCompletionScreen} />
+      <HomeStack.Screen name="QuizIntro" component={QuizIntroScreen} />
+      <HomeStack.Screen name="MCQQuiz"   component={MCQScreen} />
+      <HomeStack.Screen name="FIBQuiz"   component={FIBScreen} />
+      <HomeStack.Screen name="TFQuiz"    component={TFScreen} />
+      <HomeStack.Screen name="QuizResult" component={QuizResultScreen} />
     </HomeStack.Navigator>
   );
 }
@@ -47,6 +57,11 @@ function SubjectsStackNavigator() {
       <SubjectsStack.Screen name="Topics" component={TopicsScreen} />
       <SubjectsStack.Screen name="LearningPackDetail" component={LearningPackDetailScreen} />
       <SubjectsStack.Screen name="PackCompletion" component={PackCompletionScreen} />
+      <SubjectsStack.Screen name="QuizIntro" component={QuizIntroScreen} />
+      <SubjectsStack.Screen name="MCQQuiz"   component={MCQScreen} />
+      <SubjectsStack.Screen name="FIBQuiz"   component={FIBScreen} />
+      <SubjectsStack.Screen name="TFQuiz"    component={TFScreen} />
+      <SubjectsStack.Screen name="QuizResult" component={QuizResultScreen} />
     </SubjectsStack.Navigator>
   );
 }

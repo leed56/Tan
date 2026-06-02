@@ -161,7 +161,15 @@ export type AuthStackParamList = {
   SubjectSelection: undefined;
 };
 
-export type HomeStackParamList = {
+export type QuizStackSharedParams = {
+  QuizIntro: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' };
+  MCQQuiz: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
+  FIBQuiz: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
+  TFQuiz:  { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
+  QuizResult: { xpEarned: number; scorePercent: number; correctCount: number; wrongCount: number; totalQuestions: number; packTitle: string; packId: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' };
+};
+
+export type HomeStackParamList = QuizStackSharedParams & {
   Home: undefined;
   // formId is optional for backward compat — falls back to curriculumStore.selectedFormId
   Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
@@ -169,7 +177,7 @@ export type HomeStackParamList = {
   PackCompletion: { xpEarned: number; packTitle: string; streakDays: number };
 };
 
-export type SubjectsStackParamList = {
+export type SubjectsStackParamList = QuizStackSharedParams & {
   Subjects: undefined;
   Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
   LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId?: string; subjectId?: string };

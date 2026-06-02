@@ -68,17 +68,32 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
     [freePacks, getPackProgress],
   );
 
-  const handlePackPress = useCallback(async (pack: CurriculumLearningPack) => {
+  const handlePackPress = useCallback((pack: CurriculumLearningPack) => {
     if (pack.isPremium) return;
+    // MCQ / FIB / TF → launch quiz engine
+    if (pack.type === 'mcq' || pack.type === 'fib' || pack.type === 'tf') {
+      navigation.navigate('QuizIntro', {
+        packId: pack.id,
+        packTitle: pack.title,
+        topicId: pack.topicId,
+        subjectColor,
+        formId,
+        subjectId,
+        quizType: pack.type,
+      });
+      return;
+    }
+    // Summary / HOQ (non-premium path) — placeholder flow
     setLaunching(true);
-    await new Promise((r) => setTimeout(r, 600));
-    setLaunching(false);
-    navigation.navigate('PackCompletion', {
-      xpEarned: pack.completionXP,
-      packTitle: pack.title,
-      streakDays: 6,
-    });
-  }, [navigation]);
+    setTimeout(() => {
+      setLaunching(false);
+      navigation.navigate('PackCompletion', {
+        xpEarned: pack.completionXP,
+        packTitle: pack.title,
+        streakDays: 6,
+      });
+    }, 600);
+  }, [navigation, subjectColor, formId, subjectId]);
 
   if (error) {
     return (

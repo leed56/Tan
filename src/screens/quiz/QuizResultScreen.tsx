@@ -1,0 +1,216 @@
+import React from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
+import type { StackScreenProps } from '@react-navigation/stack';
+import type { HomeStackParamList } from '../../types';
+import { ScreenContainer } from '../../components/ui/ScreenContainer';
+import { AppButton } from '../../components/ui/AppButton';
+import { ResultSummaryCard } from '../../components/ui/quiz/ResultSummaryCard';
+import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
+
+type Props = StackScreenProps<HomeStackParamList, 'QuizResult'>;
+
+const TYPE_LABEL: Record<string, string> = {
+  mcq: 'Multiple Choice',
+  fib: 'Fill in the Blanks',
+  tf: 'True / False',
+};
+
+export function QuizResultScreen({ navigation, route }: Props) {
+  const {
+    xpEarned,
+    scorePercent,
+    correctCount,
+    wrongCount,
+    totalQuestions,
+    packTitle,
+    packId,
+    topicId,
+    subjectColor,
+    formId,
+    subjectId,
+    quizType,
+  } = route.params;
+
+  const handleRetry = () => {
+    navigation.replace('QuizIntro', {
+      packId,
+      packTitle,
+      topicId,
+      subjectColor,
+      formId,
+      subjectId,
+      quizType,
+    });
+  };
+
+  const handleBackToPacks = () => {
+    navigation.navigate('LearningPackDetail', {
+      packId,
+      packTitle,
+      topicId,
+      subjectColor,
+      formId,
+      subjectId,
+    });
+  };
+
+  return (
+    <ScreenContainer padded={false}>
+      {/* Header gradient */}
+      <LinearGradient
+        colors={[`${subjectColor}28`, COLORS.bgDark]}
+        style={styles.header}
+      >
+        <View style={styles.headerRow}>
+          <View style={styles.headerLeft}>
+            <Text style={styles.headerLabel}>Quiz Complete</Text>
+            <Text style={styles.headerTitle} numberOfLines={2}>{packTitle}</Text>
+            <View style={styles.typeChip}>
+              <Text style={styles.typeChipText}>{TYPE_LABEL[quizType] ?? quizType}</Text>
+            </View>
+          </View>
+          {xpEarned > 0 && (
+            <LinearGradient colors={GRADIENTS.gold} style={styles.xpBadge}>
+              <Ionicons name="flash" size={18} color="#1A1A1A" />
+              <Text style={styles.xpBadgeText}>+{xpEarned} XP</Text>
+            </LinearGradient>
+          )}
+        </View>
+      </LinearGradient>
+
+      <ScrollView
+        contentContainerStyle={styles.body}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Score summary */}
+        <ResultSummaryCard
+          scorePercent={scorePercent}
+          correctCount={correctCount}
+          wrongCount={wrongCount}
+          totalQuestions={totalQuestions}
+          xpEarned={xpEarned}
+        />
+
+        {/* Accuracy tip */}
+        {scorePercent < 70 && (
+          <View style={styles.tipCard}>
+            <Ionicons name="bulb-outline" size={18} color={COLORS.gold} />
+            <Text style={styles.tipText}>
+              Review the explanations for missed questions before retrying. Understanding mistakes is key to NECTA success.
+            </Text>
+          </View>
+        )}
+
+        {/* Action buttons */}
+        <View style={styles.actions}>
+          <AppButton
+            title="Retry Quiz"
+            onPress={handleRetry}
+            variant="secondary"
+            icon="refresh"
+          />
+          <AppButton
+            title="Back to Packs"
+            onPress={handleBackToPacks}
+            variant="primary"
+            icon="arrow-back"
+          />
+        </View>
+
+        {/* Streak encouragement */}
+        <View style={styles.streakRow}>
+          <Ionicons name="flame" size={16} color={COLORS.warning} />
+          <Text style={styles.streakText}>Keep your daily streak going — study again tomorrow!</Text>
+        </View>
+      </ScrollView>
+    </ScreenContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  header: {
+    paddingTop: SPACING['2xl'],
+    paddingHorizontal: SPACING.screenPadding,
+    paddingBottom: SPACING.xl,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    gap: SPACING.md,
+  },
+  headerLeft: { flex: 1, gap: SPACING.sm },
+  headerLabel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
+  headerTitle: {
+    color: COLORS.textPrimary,
+    fontSize: TYPOGRAPHY.sizes['2xl'],
+    fontWeight: TYPOGRAPHY.weights.extrabold,
+    lineHeight: TYPOGRAPHY.sizes['2xl'] * 1.2,
+  },
+  typeChip: {
+    alignSelf: 'flex-start',
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 3,
+    borderWidth: 1,
+    borderColor: COLORS.glassBorder,
+  },
+  typeChipText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
+  xpBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.md,
+    paddingVertical: 6,
+    flexShrink: 0,
+  },
+  xpBadgeText: {
+    color: '#1A1A1A',
+    fontSize: TYPOGRAPHY.sizes.base,
+    fontWeight: TYPOGRAPHY.weights.extrabold,
+  },
+  body: {
+    paddingHorizontal: SPACING.screenPadding,
+    paddingTop: SPACING.xl,
+    paddingBottom: SPACING['3xl'],
+    gap: SPACING.xl,
+  },
+  tipCard: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: SPACING.sm,
+    backgroundColor: 'rgba(247,197,46,0.08)',
+    borderRadius: RADIUS.lg,
+    padding: SPACING.base,
+    borderWidth: 1,
+    borderColor: 'rgba(247,197,46,0.2)',
+  },
+  tipText: {
+    flex: 1,
+    color: COLORS.textSecondary,
+    fontSize: TYPOGRAPHY.sizes.sm,
+    lineHeight: TYPOGRAPHY.sizes.sm * 1.6,
+  },
+  actions: { gap: SPACING.sm },
+  streakRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: SPACING.sm,
+  },
+  streakText: {
+    color: COLORS.textMuted,
+    fontSize: TYPOGRAPHY.sizes.sm,
+    textAlign: 'center',
+  },
+});

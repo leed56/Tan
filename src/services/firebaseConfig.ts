@@ -50,4 +50,9 @@ export const COLLECTIONS = {
   topics: 'topics',
   learningPacks: 'learning_packs',
   studentProgress: 'student_progress',
+  // Phase 3 — quiz engine
+  questions: 'questions',
+  quizAttempts: 'quiz_attempts',
+  quizAnswers: 'quiz_answers',
+  dailyUsage: 'daily_usage',
 } as const;
