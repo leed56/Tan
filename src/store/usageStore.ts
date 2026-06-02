@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import type { DailyUsage, QuizType } from '../types/quiz';
 import { FREE_DAILY_LIMITS } from '../types/quiz';
 import { getTodayUsage, incrementUsage, checkDailyLimit } from '../services/usageService';
+import { useSubscriptionStore } from './subscriptionStore';
 
 interface UsageStore {
   usage: DailyUsage | null;
@@ -45,6 +46,8 @@ export const useUsageStore = create<UsageStore>((set, get) => ({
   },
 
   isWithinLimit: (type) => {
+    // Premium users have unlimited access
+    if (useSubscriptionStore.getState().isPremium()) return true;
     const usage = get().usage ?? emptyUsage();
     return checkDailyLimit(usage, type);
   },

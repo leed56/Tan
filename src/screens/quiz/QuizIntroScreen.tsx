@@ -41,6 +41,7 @@ export function QuizIntroScreen({ navigation, route }: Props) {
 
   const handleStart = async () => {
     if (!isWithinLimit(quizType)) {
+      // Show modal first; modal has an "Upgrade" CTA that navigates to SubscriptionScreen
       setShowLimitModal(true);
       return;
     }
@@ -132,6 +133,7 @@ export function QuizIntroScreen({ navigation, route }: Props) {
         visible={showLimitModal}
         quizType={quizType}
         onClose={() => setShowLimitModal(false)}
+        onUpgrade={() => navigation.navigate('SubscriptionScreen')}
       />
     </ScreenContainer>
   );

@@ -18,6 +18,7 @@ import { useAuthStore } from '../../store/authStore';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { AVATARS, DEMO_BADGES } from '../../constants';
 import { formatXp } from '../../utils';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Profile'>;
 
@@ -25,13 +26,13 @@ export function ProfileScreen({ navigation }: Props) {
   const profile = useProfileStore((s) => s.profile);
   const user = useAuthStore((s) => s.user);
   const { xp, level, streak, coins } = useGamificationStore();
+  const { isPremium } = useSubscriptionStore();
 
   const avatar = AVATARS.find((a) => a.id === (profile?.avatarId ?? 'avatar_1'));
   const earnedBadges = DEMO_BADGES.filter((b) => b.isEarned);
   const totalBadges = DEMO_BADGES.length;
 
-  // TODO: Phase 2 — fetch real subscription status
-  const subscriptionTier = 'free';
+  const subscriptionTier = isPremium() ? 'premium' : 'free';
 
   return (
     <ScrollView
@@ -184,8 +185,10 @@ export function ProfileScreen({ navigation }: Props) {
               All 13 subjects · AI explanations · HOQ · Priority support
             </Text>
           </View>
-          <TouchableOpacity style={styles.premiumCtaBtn}>
-            {/* TODO: Phase 2 — navigate to subscription screen */}
+          <TouchableOpacity
+            style={styles.premiumCtaBtn}
+            onPress={() => navigation.navigate('SubscriptionStatus')}
+          >
             <LinearGradient colors={GRADIENTS.gold} style={styles.premiumCtaBtnGrad}>
               <Text style={styles.premiumCtaBtnText}>Upgrade</Text>
             </LinearGradient>

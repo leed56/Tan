@@ -27,6 +27,12 @@ import { MCQScreen } from '../screens/quiz/MCQScreen';
 import { FIBScreen } from '../screens/quiz/FIBScreen';
 import { TFScreen } from '../screens/quiz/TFScreen';
 import { QuizResultScreen } from '../screens/quiz/QuizResultScreen';
+// Phase 4 — subscription screens
+import { SubscriptionScreen } from '../screens/subscription/SubscriptionScreen';
+import { PaymentMethodScreen } from '../screens/subscription/PaymentMethodScreen';
+import { LockedFeaturePreviewScreen } from '../screens/subscription/LockedFeaturePreviewScreen';
+import { SubscriptionStatusScreen } from '../screens/subscription/SubscriptionStatusScreen';
+import { FamilyProfilesScreen } from '../screens/subscription/FamilyProfilesScreen';
 
 const RootStack = createStackNavigator<AppRootStackParamList>();
 const Tab = createBottomTabNavigator<AppTabParamList>();
@@ -46,6 +52,9 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="FIBQuiz"   component={FIBScreen} />
       <HomeStack.Screen name="TFQuiz"    component={TFScreen} />
       <HomeStack.Screen name="QuizResult" component={QuizResultScreen} />
+      <HomeStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
+      <HomeStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
+      <HomeStack.Screen name="LockedFeaturePreview" component={LockedFeaturePreviewScreen} />
     </HomeStack.Navigator>
   );
 }
@@ -62,6 +71,9 @@ function SubjectsStackNavigator() {
       <SubjectsStack.Screen name="FIBQuiz"   component={FIBScreen} />
       <SubjectsStack.Screen name="TFQuiz"    component={TFScreen} />
       <SubjectsStack.Screen name="QuizResult" component={QuizResultScreen} />
+      <SubjectsStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
+      <SubjectsStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
+      <SubjectsStack.Screen name="LockedFeaturePreview" component={LockedFeaturePreviewScreen} />
     </SubjectsStack.Navigator>
   );
 }
@@ -71,6 +83,8 @@ function ProfileStackNavigator() {
     <ProfileStack.Navigator screenOptions={{ headerShown: false }}>
       <ProfileStack.Screen name="Profile" component={ProfileScreen} />
       <ProfileStack.Screen name="Settings" component={SettingsScreen} />
+      <ProfileStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />
+      <ProfileStack.Screen name="FamilyProfiles" component={FamilyProfilesScreen} />
     </ProfileStack.Navigator>
   );
 }

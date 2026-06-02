@@ -20,7 +20,10 @@ import { EmptyCurriculumState } from '../../components/ui/curriculum/EmptyCurric
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useCurriculumStore } from '../../store/curriculumStore';
 import { useProgressStore } from '../../store/progressStore';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
+import { FEATURE_META } from '../../utils/seedPlans';
 import type { CurriculumLearningPack } from '../../types/curriculum';
+import type { FeatureKey } from '../../types/subscription';
 
 type Props = StackScreenProps<HomeStackParamList, 'LearningPackDetail'>;
 
@@ -45,6 +48,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
   } = useCurriculumStore();
 
   const { getPackProgress } = useProgressStore();
+  const { isPremium } = useSubscriptionStore();
 
   const formId = routeFormId ?? selectedFormId;
   const subjectId = routeSubjectId ?? '';
@@ -69,8 +73,27 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
   );
 
   const handlePackPress = useCallback((pack: CurriculumLearningPack) => {
-    if (pack.isPremium) return;
-    // MCQ / FIB / TF → launch quiz engine
+    // Premium pack — check subscription
+    if (pack.isPremium) {
+      if (!isPremium()) {
+        const featureKey: FeatureKey = pack.type === 'summary' ? 'summary' : 'hoq';
+        const meta = FEATURE_META[featureKey];
+        navigation.navigate('LockedFeaturePreview', {
+          featureKey,
+          featureTitle: meta?.title ?? pack.title,
+          featureDescription: meta?.description ?? 'Upgrade to access this content.',
+        });
+        return;
+      }
+      // Premium user — placeholder (real content screens TBD)
+      navigation.navigate('PackCompletion', {
+        xpEarned: pack.completionXP,
+        packTitle: pack.title,
+        streakDays: 6,
+      });
+      return;
+    }
+    // Free pack — MCQ / FIB / TF → quiz engine
     if (pack.type === 'mcq' || pack.type === 'fib' || pack.type === 'tf') {
       navigation.navigate('QuizIntro', {
         packId: pack.id,
@@ -83,7 +106,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
       });
       return;
     }
-    // Summary / HOQ (non-premium path) — placeholder flow
+    // Fallback placeholder
     setLaunching(true);
     setTimeout(() => {
       setLaunching(false);
@@ -93,7 +116,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
         streakDays: 6,
       });
     }, 600);
-  }, [navigation, subjectColor, formId, subjectId]);
+  }, [navigation, subjectColor, formId, subjectId, isPremium]);
 
   if (error) {
     return (

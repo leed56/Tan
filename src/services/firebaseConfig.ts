@@ -55,4 +55,9 @@ export const COLLECTIONS = {
   quizAttempts: 'quiz_attempts',
   quizAnswers: 'quiz_answers',
   dailyUsage: 'daily_usage',
+  // Phase 4 — subscription & payments
+  subscriptionPlans: 'subscription_plans',
+  paymentRequests: 'payment_requests',
+  familyProfiles: 'family_profiles',
+  premiumUnlockEvents: 'premium_unlock_events',
 } as const;

@@ -167,6 +167,10 @@ export type QuizStackSharedParams = {
   FIBQuiz: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
   TFQuiz:  { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
   QuizResult: { xpEarned: number; scorePercent: number; correctCount: number; wrongCount: number; totalQuestions: number; packTitle: string; packId: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' };
+  // Phase 4 — subscription screens accessible from any content stack
+  SubscriptionScreen: undefined;
+  PaymentMethodScreen: { planId: string; planTitle: string; priceMonthly: number };
+  LockedFeaturePreview: { featureKey: string; featureTitle: string; featureDescription: string };
 };
 
 export type HomeStackParamList = QuizStackSharedParams & {
@@ -187,6 +191,8 @@ export type SubjectsStackParamList = QuizStackSharedParams & {
 export type ProfileStackParamList = {
   Profile: undefined;
   Settings: undefined;
+  SubscriptionStatus: undefined;
+  FamilyProfiles: undefined;
 };
 
 export type AppTabParamList = {

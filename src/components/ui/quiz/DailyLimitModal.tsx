@@ -16,6 +16,7 @@ interface DailyLimitModalProps {
   visible: boolean;
   quizType: QuizType;
   onClose: () => void;
+  onUpgrade?: () => void;
 }
 
 const TYPE_LABEL: Record<QuizType, string> = {
@@ -24,7 +25,7 @@ const TYPE_LABEL: Record<QuizType, string> = {
   tf: 'True / False',
 };
 
-export function DailyLimitModal({ visible, quizType, onClose }: DailyLimitModalProps) {
+export function DailyLimitModal({ visible, quizType, onClose, onUpgrade }: DailyLimitModalProps) {
   return (
     <Modal visible={visible} transparent animationType="fade" statusBarTranslucent>
       <View style={styles.backdrop}>
@@ -45,7 +46,7 @@ export function DailyLimitModal({ visible, quizType, onClose }: DailyLimitModalP
 
           {/* Premium CTA */}
           <LinearGradient colors={GRADIENTS.gold} style={styles.upgradeBtn}>
-            <TouchableOpacity onPress={onClose} activeOpacity={0.85} style={styles.upgradeBtnInner}>
+            <TouchableOpacity onPress={() => { onClose(); onUpgrade?.(); }} activeOpacity={0.85} style={styles.upgradeBtnInner}>
               <Ionicons name="star" size={16} color="#1A1A1A" />
               <Text style={styles.upgradeBtnText}>Upgrade to Premium</Text>
             </TouchableOpacity>
