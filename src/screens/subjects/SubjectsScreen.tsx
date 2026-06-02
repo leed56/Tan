@@ -1,13 +1,28 @@
-import React, { useState, useMemo } from 'react';
-import { View, Text, StyleSheet, FlatList, TextInput } from 'react-native';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { SubjectsStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { SubjectCard } from '../../components/ui/SubjectCard';
-import { EmptyState } from '../../components/ui/EmptyState';
+import { ErrorState } from '../../components/ui/ErrorState';
+import { EmptyCurriculumState } from '../../components/ui/curriculum/EmptyCurriculumState';
+import { FormSelector } from '../../components/ui/curriculum/FormSelector';
+import { CurriculumProgressCard } from '../../components/ui/curriculum/CurriculumProgressCard';
+import { SkeletonList } from '../../components/ui/curriculum/SkeletonCard';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
-import { SUBJECTS } from '../../constants';
+import { useCurriculumStore } from '../../store/curriculumStore';
+import { useProgressStore } from '../../store/progressStore';
+import { useAuthStore } from '../../store/authStore';
+import { toSubject } from '../../utils/curriculumAdapters';
+import { getTopicCountForSubject } from '../../services/curriculumService';
 import type { Subject } from '../../types';
 
 type Props = StackScreenProps<SubjectsStackParamList, 'Subjects'>;
@@ -18,8 +33,44 @@ export function SubjectsScreen({ navigation }: Props) {
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
 
+  const {
+    forms,
+    selectedFormId,
+    subjectsByForm,
+    loadingSubjects,
+    error,
+    fetchSubjects,
+    setSelectedForm,
+    clearError,
+  } = useCurriculumStore();
+
+  const { getSubjectProgress } = useProgressStore();
+  const user = useAuthStore((s) => s.user);
+
+  const subjects = subjectsByForm[selectedFormId] ?? [];
+  const selectedForm = forms.find((f) => f.id === selectedFormId);
+
+  // Fetch subjects on mount and when form changes
+  useEffect(() => {
+    fetchSubjects(selectedFormId);
+  }, [selectedFormId, fetchSubjects]);
+
+  const handleRefresh = useCallback(() => {
+    // Force re-fetch by clearing cache entry
+    fetchSubjects(selectedFormId);
+  }, [selectedFormId, fetchSubjects]);
+
+  // Convert to Phase 1 Subject type with live progress
+  const enrichedSubjects: Subject[] = useMemo(() =>
+    subjects.map((cs) => {
+      const topicCount = getTopicCountForSubject(selectedFormId, cs.id);
+      const progress = getSubjectProgress(cs.id);
+      return toSubject(cs, topicCount, progress.totalPacks > 0 ? progress : undefined);
+    }),
+  [subjects, selectedFormId, getSubjectProgress]);
+
   const filtered = useMemo(() => {
-    let result = SUBJECTS;
+    let result = enrichedSubjects;
     if (filter === 'free') result = result.filter((s) => !s.isPremium);
     if (filter === 'premium') result = result.filter((s) => s.isPremium);
     if (search.trim()) {
@@ -27,31 +78,83 @@ export function SubjectsScreen({ navigation }: Props) {
       result = result.filter((s) => s.name.toLowerCase().includes(q));
     }
     return result;
-  }, [search, filter]);
+  }, [enrichedSubjects, search, filter]);
 
   const handlePress = (subject: Subject) => {
     navigation.navigate('Topics', {
       subjectId: subject.id,
       subjectName: subject.name,
       color: subject.color,
+      formId: selectedFormId,
     });
   };
 
+  const progressSummaries = useMemo(
+    () => subjects.map((cs) => getSubjectProgress(cs.id)),
+    [subjects, getSubjectProgress],
+  );
+
+  const totalTopics = useMemo(
+    () => subjects.reduce((sum, cs) => sum + getTopicCountForSubject(selectedFormId, cs.id), 0),
+    [subjects, selectedFormId],
+  );
+
   const filters: { label: string; value: Filter }[] = [
-    { label: 'All (13)', value: 'all' },
+    { label: `All (${enrichedSubjects.length})`, value: 'all' },
     { label: 'Free', value: 'free' },
     { label: 'Premium', value: 'premium' },
   ];
+
+  if (error) {
+    return (
+      <ScreenContainer>
+        <ErrorState message={error} onRetry={() => { clearError(); fetchSubjects(selectedFormId); }} />
+      </ScreenContainer>
+    );
+  }
 
   return (
     <ScreenContainer padded={false}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.title}>All Subjects</Text>
-        <Text style={styles.subtitle}>O-Level curriculum · Form 1–4</Text>
+        <View style={styles.headerLeft}>
+          <Text style={styles.title}>Subjects</Text>
+          <Text style={styles.subtitle}>
+            {selectedForm?.name ?? ''} · O-Level curriculum
+          </Text>
+        </View>
+        <TouchableOpacity
+          onPress={() => navigation.getParent()?.navigate('FormSelectorModal')}
+          style={styles.formBtn}
+        >
+          <Text style={styles.formBtnText}>{selectedForm?.name ?? 'Form'}</Text>
+          <Ionicons name="chevron-down" size={14} color={COLORS.primary} />
+        </TouchableOpacity>
       </View>
 
-      {/* Search bar */}
+      {/* Form chips */}
+      <View style={styles.formChips}>
+        <FormSelector
+          forms={forms}
+          selectedFormId={selectedFormId}
+          onSelect={(f) => setSelectedForm(f.id)}
+          mode="chips"
+        />
+      </View>
+
+      {/* Progress card (only when data + progress exist) */}
+      {progressSummaries.some((p) => p.completedPacks > 0) && (
+        <View style={styles.progressCard}>
+          <CurriculumProgressCard
+            formName={selectedForm?.name ?? ''}
+            subjectCount={subjects.length}
+            totalTopics={totalTopics}
+            summaries={progressSummaries}
+          />
+        </View>
+      )}
+
+      {/* Search + filter */}
       <View style={styles.searchWrapper}>
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={COLORS.textMuted} />
@@ -64,76 +167,98 @@ export function SubjectsScreen({ navigation }: Props) {
             returnKeyType="search"
           />
           {search.length > 0 && (
-            <Ionicons
-              name="close-circle"
-              size={18}
-              color={COLORS.textMuted}
-              onPress={() => setSearch('')}
-            />
+            <TouchableOpacity onPress={() => setSearch('')}>
+              <Ionicons name="close-circle" size={18} color={COLORS.textMuted} />
+            </TouchableOpacity>
           )}
         </View>
 
-        {/* Filter pills */}
         <View style={styles.filterRow}>
           {filters.map((f) => (
-            <View
+            <TouchableOpacity
               key={f.value}
-              style={[
-                styles.filterPill,
-                filter === f.value && styles.filterPillActive,
-              ]}
+              onPress={() => setFilter(f.value)}
+              style={[styles.filterPill, filter === f.value && styles.filterPillActive]}
             >
-              <Text
-                style={[
-                  styles.filterText,
-                  filter === f.value && styles.filterTextActive,
-                ]}
-                onPress={() => setFilter(f.value)}
-              >
+              <Text style={[styles.filterText, filter === f.value && styles.filterTextActive]}>
                 {f.label}
               </Text>
-            </View>
+            </TouchableOpacity>
           ))}
         </View>
       </View>
 
-      <FlatList
-        data={filtered}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.list}
-        ItemSeparatorComponent={() => <View style={{ height: SPACING.sm }} />}
-        ListEmptyComponent={
-          <EmptyState
-            icon="search-outline"
-            title="No subjects found"
-            description={`No subjects match "${search}". Try a different search.`}
-            actionLabel="Clear search"
-            onAction={() => setSearch('')}
-          />
-        }
-        renderItem={({ item }) => (
-          <SubjectCard subject={item} onPress={handlePress} />
-        )}
-      />
+      {/* List */}
+      {loadingSubjects ? (
+        <View style={styles.list}>
+          <SkeletonList count={6} />
+        </View>
+      ) : (
+        <FlatList
+          data={filtered}
+          keyExtractor={(item) => item.id}
+          contentContainerStyle={styles.list}
+          ItemSeparatorComponent={() => <View style={{ height: SPACING.sm }} />}
+          ListEmptyComponent={
+            search.trim() ? (
+              <EmptyCurriculumState
+                variant="subjects"
+                formName={selectedForm?.name}
+                onAction={() => setSearch('')}
+              />
+            ) : (
+              <EmptyCurriculumState
+                variant="subjects"
+                formName={selectedForm?.name}
+                onAction={handleRefresh}
+              />
+            )
+          }
+          renderItem={({ item }) => (
+            <SubjectCard subject={item} onPress={handlePress} />
+          )}
+        />
+      )}
     </ScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
   header: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
     paddingHorizontal: SPACING.screenPadding,
     paddingTop: SPACING.base,
-    paddingBottom: SPACING.base,
-    gap: 4,
+    paddingBottom: SPACING.sm,
   },
+  headerLeft: { gap: 3 },
   title: {
     color: COLORS.textPrimary,
     fontSize: TYPOGRAPHY.sizes['2xl'],
     fontWeight: TYPOGRAPHY.weights.extrabold,
   },
-  subtitle: {
-    color: COLORS.textMuted,
+  subtitle: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
+  formBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: 'rgba(123,111,242,0.12)',
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.primary,
+    paddingHorizontal: SPACING.md,
+    paddingVertical: 6,
+  },
+  formBtnText: {
+    color: COLORS.primary,
     fontSize: TYPOGRAPHY.sizes.sm,
+    fontWeight: TYPOGRAPHY.weights.bold,
+  },
+  formChips: { paddingBottom: SPACING.sm },
+  progressCard: {
+    paddingHorizontal: SPACING.screenPadding,
+    marginBottom: SPACING.base,
   },
   searchWrapper: {
     paddingHorizontal: SPACING.screenPadding,
@@ -151,15 +276,8 @@ const styles = StyleSheet.create({
     height: 48,
     gap: SPACING.sm,
   },
-  searchInput: {
-    flex: 1,
-    color: COLORS.textPrimary,
-    fontSize: TYPOGRAPHY.sizes.base,
-  },
-  filterRow: {
-    flexDirection: 'row',
-    gap: SPACING.sm,
-  },
+  searchInput: { flex: 1, color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.base },
+  filterRow: { flexDirection: 'row', gap: SPACING.sm },
   filterPill: {
     paddingHorizontal: SPACING.base,
     paddingVertical: SPACING.sm,
@@ -169,7 +287,7 @@ const styles = StyleSheet.create({
     borderColor: COLORS.glassBorder,
   },
   filterPillActive: {
-    backgroundColor: 'rgba(123, 111, 242, 0.2)',
+    backgroundColor: 'rgba(123,111,242,0.2)',
     borderColor: COLORS.primary,
   },
   filterText: {
@@ -177,10 +295,7 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.sizes.sm,
     fontWeight: TYPOGRAPHY.weights.medium,
   },
-  filterTextActive: {
-    color: COLORS.primary,
-    fontWeight: TYPOGRAPHY.weights.bold,
-  },
+  filterTextActive: { color: COLORS.primary, fontWeight: TYPOGRAPHY.weights.bold },
   list: {
     paddingHorizontal: SPACING.screenPadding,
     paddingBottom: SPACING['2xl'],

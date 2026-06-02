@@ -4,7 +4,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, TYPOGRAPHY } from '../theme';
-import type { AppTabParamList, HomeStackParamList, SubjectsStackParamList, ProfileStackParamList } from '../types';
+import type {
+  AppTabParamList,
+  HomeStackParamList,
+  SubjectsStackParamList,
+  ProfileStackParamList,
+  AppRootStackParamList,
+} from '../types';
 
 import { HomeScreen } from '../screens/home/HomeScreen';
 import { SubjectsScreen } from '../screens/subjects/SubjectsScreen';
@@ -15,7 +21,9 @@ import { LeaderboardScreen } from '../screens/leaderboard/LeaderboardScreen';
 import { AnalyticsScreen } from '../screens/analytics/AnalyticsScreen';
 import { ProfileScreen } from '../screens/profile/ProfileScreen';
 import { SettingsScreen } from '../screens/settings/SettingsScreen';
+import { FormSelectorModal } from '../screens/curriculum/FormSelectorModal';
 
+const RootStack = createStackNavigator<AppRootStackParamList>();
 const Tab = createBottomTabNavigator<AppTabParamList>();
 const HomeStack = createStackNavigator<HomeStackParamList>();
 const SubjectsStack = createStackNavigator<SubjectsStackParamList>();
@@ -65,7 +73,7 @@ const TAB_CONFIG: Record<
   ProfileTab: { label: 'Profile', icon: 'person-outline', iconFocused: 'person' },
 };
 
-export function AppNavigator() {
+function MainTabsNavigator() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => {
@@ -95,6 +103,19 @@ export function AppNavigator() {
       <Tab.Screen name="AnalyticsTab" component={AnalyticsScreen} />
       <Tab.Screen name="ProfileTab" component={ProfileStackNavigator} />
     </Tab.Navigator>
+  );
+}
+
+export function AppNavigator() {
+  return (
+    <RootStack.Navigator screenOptions={{ headerShown: false }}>
+      <RootStack.Screen name="MainTabs" component={MainTabsNavigator} />
+      <RootStack.Screen
+        name="FormSelectorModal"
+        component={FormSelectorModal}
+        options={{ presentation: 'transparentModal', cardOverlayEnabled: false }}
+      />
+    </RootStack.Navigator>
   );
 }
 

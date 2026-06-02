@@ -163,15 +163,16 @@ export type AuthStackParamList = {
 
 export type HomeStackParamList = {
   Home: undefined;
-  Topics: { subjectId: string; subjectName: string; color: string };
-  LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string };
+  // formId is optional for backward compat — falls back to curriculumStore.selectedFormId
+  Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
+  LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId?: string; subjectId?: string };
   PackCompletion: { xpEarned: number; packTitle: string; streakDays: number };
 };
 
 export type SubjectsStackParamList = {
   Subjects: undefined;
-  Topics: { subjectId: string; subjectName: string; color: string };
-  LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string };
+  Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
+  LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId?: string; subjectId?: string };
   PackCompletion: { xpEarned: number; packTitle: string; streakDays: number };
 };
 
@@ -186,4 +187,10 @@ export type AppTabParamList = {
   LeaderboardTab: undefined;
   AnalyticsTab: undefined;
   ProfileTab: undefined;
+};
+
+// Phase 2 — root modal stack wrapping the Tab navigator
+export type AppRootStackParamList = {
+  MainTabs: undefined;
+  FormSelectorModal: undefined;
 };

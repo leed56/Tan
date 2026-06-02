@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
@@ -9,111 +9,87 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
-import type { HomeStackParamList, LearningPack } from '../../types';
+import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
-import { LearningPackCard } from '../../components/ui/LearningPackCard';
 import { PremiumLockCard } from '../../components/ui/PremiumLockCard';
 import { AppButton } from '../../components/ui/AppButton';
-import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
+import { ErrorState } from '../../components/ui/ErrorState';
+import { LearningPackListItem } from '../../components/ui/curriculum/LearningPackList';
+import { SkeletonList } from '../../components/ui/curriculum/SkeletonCard';
+import { EmptyCurriculumState } from '../../components/ui/curriculum/EmptyCurriculumState';
+import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
+import { useCurriculumStore } from '../../store/curriculumStore';
+import { useProgressStore } from '../../store/progressStore';
+import type { CurriculumLearningPack } from '../../types/curriculum';
 
 type Props = StackScreenProps<HomeStackParamList, 'LearningPackDetail'>;
 
-function buildDemoPacks(topicId: string, subjectColor: string): LearningPack[] {
-  return [
-    {
-      id: `${topicId}_summary`,
-      topicId,
-      subjectId: 'demo',
-      title: 'AI Topic Summary',
-      description: 'A concise AI-generated overview of all key concepts in this topic.',
-      type: 'summary',
-      questionCount: 0,
-      xpReward: 20,
-      isPremium: true,
-      isCompleted: false,
-      completionPercent: 0,
-      estimatedMinutes: 5,
-    },
-    {
-      id: `${topicId}_mcq`,
-      topicId,
-      subjectId: 'demo',
-      title: 'Multiple Choice Quiz',
-      description: 'Test your understanding with 10 carefully crafted MCQ questions.',
-      type: 'mcq',
-      questionCount: 10,
-      xpReward: 50,
-      isPremium: false,
-      isCompleted: true,
-      completionPercent: 100,
-      estimatedMinutes: 15,
-    },
-    {
-      id: `${topicId}_fib`,
-      topicId,
-      subjectId: 'demo',
-      title: 'Fill in the Blanks',
-      description: 'Complete the sentences by filling in the correct terms from this topic.',
-      type: 'fib',
-      questionCount: 8,
-      xpReward: 40,
-      isPremium: false,
-      isCompleted: false,
-      completionPercent: 37,
-      estimatedMinutes: 12,
-    },
-    {
-      id: `${topicId}_tf`,
-      topicId,
-      subjectId: 'demo',
-      title: 'True or False Challenge',
-      description: 'Quickly identify correct statements about this topic.',
-      type: 'tf',
-      questionCount: 12,
-      xpReward: 35,
-      isPremium: false,
-      isCompleted: false,
-      completionPercent: 0,
-      estimatedMinutes: 10,
-    },
-    {
-      id: `${topicId}_hoq`,
-      topicId,
-      subjectId: 'demo',
-      title: 'Higher Order Questions',
-      description: 'NECTA-style essay and structured questions requiring deep analysis.',
-      type: 'hoq',
-      questionCount: 5,
-      xpReward: 100,
-      isPremium: true,
-      isCompleted: false,
-      completionPercent: 0,
-      estimatedMinutes: 30,
-    },
-  ];
-}
-
 export function LearningPackDetailScreen({ navigation, route }: Props) {
-  const { packId: _packId, packTitle, topicId, subjectColor } = route.params;
+  const {
+    topicId,
+    packTitle,
+    subjectColor,
+    formId: routeFormId,
+    subjectId: routeSubjectId,
+  } = route.params;
+
   const [launching, setLaunching] = useState(false);
 
-  const packs = buildDemoPacks(topicId, subjectColor);
-  const freePacks = packs.filter((p) => !p.isPremium);
-  const premiumPacks = packs.filter((p) => p.isPremium);
-  const completedCount = packs.filter((p) => p.isCompleted).length;
+  const {
+    selectedFormId,
+    packsByTopic,
+    loadingPacks,
+    error,
+    fetchLearningPacks,
+    clearError,
+  } = useCurriculumStore();
 
-  const handlePackPress = async (pack: LearningPack) => {
-    if (pack.isPremium) return; // PremiumLockCard handles upgrade CTA
-    // TODO: Phase 2 — launch actual quiz session via quizEngineService
+  const { getPackProgress } = useProgressStore();
+
+  const formId = routeFormId ?? selectedFormId;
+  const subjectId = routeSubjectId ?? '';
+
+  useEffect(() => {
+    if (subjectId) {
+      fetchLearningPacks(formId, subjectId, topicId);
+    }
+  }, [formId, subjectId, topicId, fetchLearningPacks]);
+
+  const packs = packsByTopic[topicId] ?? [];
+  const freePacks = useMemo(() => packs.filter((p) => !p.isPremium), [packs]);
+  const premiumPacks = useMemo(() => packs.filter((p) => p.isPremium), [packs]);
+  const completedCount = useMemo(
+    () => packs.filter((p) => getPackProgress(p.id).isCompleted).length,
+    [packs, getPackProgress],
+  );
+
+  const nextFreePack = useMemo(
+    () => freePacks.find((p) => !getPackProgress(p.id).isCompleted),
+    [freePacks, getPackProgress],
+  );
+
+  const handlePackPress = useCallback(async (pack: CurriculumLearningPack) => {
+    if (pack.isPremium) return;
     setLaunching(true);
     await new Promise((r) => setTimeout(r, 600));
     setLaunching(false);
     navigation.navigate('PackCompletion', {
-      xpEarned: pack.xpReward,
+      xpEarned: pack.completionXP,
       packTitle: pack.title,
       streakDays: 6,
     });
-  };
+  }, [navigation]);
+
+  if (error) {
+    return (
+      <ScreenContainer>
+        <ErrorState
+          message={error}
+          onRetry={() => { clearError(); fetchLearningPacks(formId, subjectId, topicId); }}
+        />
+      </ScreenContainer>
+    );
+  }
 
   return (
     <ScreenContainer padded={false}>
@@ -141,54 +117,85 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
         </View>
       </LinearGradient>
 
-      <ScrollView
-        contentContainerStyle={styles.body}
-        showsVerticalScrollIndicator={false}
-      >
-        {/* Free packs */}
-        <Text style={styles.sectionLabel}>Free Content</Text>
-        {freePacks.map((pack) => (
-          <LearningPackCard
-            key={pack.id}
-            pack={pack}
-            subjectColor={subjectColor}
-            onPress={handlePackPress}
-          />
-        ))}
-
-        {/* Premium packs */}
-        <Text style={styles.sectionLabel}>Premium Content</Text>
-        <PremiumLockCard
-          title="Premium Pack Locked"
-          description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
-        />
-        {premiumPacks.map((pack) => (
-          <View key={pack.id} style={styles.lockedCard}>
-            <LearningPackCard
-              pack={pack}
-              subjectColor={subjectColor}
-              onPress={() => {}}
-            />
-            <View style={styles.lockedOverlay}>
-              <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
-            </View>
-          </View>
-        ))}
-
-        {/* Start next free pack CTA */}
-        <View style={styles.ctaSection}>
-          <AppButton
-            title={launching ? 'Preparing quiz...' : 'Start Next Pack'}
-            onPress={() => handlePackPress(freePacks[1])}
-            loading={launching}
-            variant="primary"
-          />
-          <Text style={styles.ctaHint}>
-            {/* TODO: Phase 2 — show actual next uncompleted pack */}
-            Continuing: Fill in the Blanks
-          </Text>
+      {/* Body */}
+      {loadingPacks ? (
+        <View style={styles.body}>
+          <SkeletonList count={5} />
         </View>
-      </ScrollView>
+      ) : packs.length === 0 ? (
+        <ScrollView contentContainerStyle={styles.emptyBody}>
+          <EmptyCurriculumState
+            variant="packs"
+            onAction={() => navigation.goBack()}
+          />
+        </ScrollView>
+      ) : (
+        <ScrollView
+          contentContainerStyle={styles.body}
+          showsVerticalScrollIndicator={false}
+        >
+          {/* Free packs */}
+          {freePacks.length > 0 && (
+            <>
+              <Text style={styles.sectionLabel}>Free Content</Text>
+              {freePacks.map((pack) => {
+                const { progressPercent, isCompleted } = getPackProgress(pack.id);
+                return (
+                  <LearningPackListItem
+                    key={pack.id}
+                    pack={pack}
+                    subjectColor={subjectColor}
+                    progressPercent={progressPercent}
+                    isCompleted={isCompleted}
+                    onPress={handlePackPress}
+                  />
+                );
+              })}
+            </>
+          )}
+
+          {/* Premium packs */}
+          {premiumPacks.length > 0 && (
+            <>
+              <Text style={styles.sectionLabel}>Premium Content</Text>
+              <PremiumLockCard
+                title="Premium Packs Locked"
+                description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
+              />
+              {premiumPacks.map((pack) => {
+                const { progressPercent, isCompleted } = getPackProgress(pack.id);
+                return (
+                  <View key={pack.id} style={styles.lockedCard}>
+                    <LearningPackListItem
+                      pack={pack}
+                      subjectColor={subjectColor}
+                      progressPercent={progressPercent}
+                      isCompleted={isCompleted}
+                      onPress={() => {}}
+                    />
+                    <View style={styles.lockedOverlay}>
+                      <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
+                    </View>
+                  </View>
+                );
+              })}
+            </>
+          )}
+
+          {/* Start next pack CTA */}
+          {nextFreePack && (
+            <View style={styles.ctaSection}>
+              <AppButton
+                title={launching ? 'Preparing quiz...' : 'Start Next Pack'}
+                onPress={() => handlePackPress(nextFreePack)}
+                loading={launching}
+                variant="primary"
+              />
+              <Text style={styles.ctaHint}>Continuing: {nextFreePack.title}</Text>
+            </View>
+          )}
+        </ScrollView>
+      )}
     </ScreenContainer>
   );
 }
@@ -201,7 +208,11 @@ const styles = StyleSheet.create({
     gap: SPACING.sm,
   },
   back: { alignSelf: 'flex-start', padding: SPACING.xs, marginBottom: SPACING.sm },
-  topicLabel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.medium },
+  topicLabel: {
+    color: COLORS.textMuted,
+    fontSize: TYPOGRAPHY.sizes.sm,
+    fontWeight: TYPOGRAPHY.weights.medium,
+  },
   topicTitle: {
     color: COLORS.textPrimary,
     fontSize: TYPOGRAPHY.sizes['2xl'],
@@ -210,9 +221,15 @@ const styles = StyleSheet.create({
   },
   metaRow: { flexDirection: 'row', gap: SPACING.md, marginTop: SPACING.sm },
   metaChip: {
-    flexDirection: 'row', alignItems: 'center', gap: 4,
-    backgroundColor: COLORS.bgCard, paddingHorizontal: SPACING.sm, paddingVertical: 4,
-    borderRadius: RADIUS.full, borderWidth: 1, borderColor: COLORS.glassBorder,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: COLORS.bgCard,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 4,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.glassBorder,
   },
   metaText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
   body: {
@@ -220,6 +237,10 @@ const styles = StyleSheet.create({
     paddingTop: SPACING.base,
     gap: SPACING.sm,
     paddingBottom: SPACING['3xl'],
+  },
+  emptyBody: {
+    flex: 1,
+    paddingHorizontal: SPACING.screenPadding,
   },
   sectionLabel: {
     color: COLORS.textSecondary,
@@ -231,10 +252,15 @@ const styles = StyleSheet.create({
   },
   lockedCard: { position: 'relative' },
   lockedOverlay: {
-    position: 'absolute', top: 0, right: 0, bottom: 0, left: 0,
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
     backgroundColor: 'rgba(10,14,39,0.5)',
     borderRadius: RADIUS.lg,
-    justifyContent: 'center', alignItems: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   ctaSection: {
     gap: SPACING.sm,

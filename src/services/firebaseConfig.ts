@@ -34,8 +34,8 @@ storage = getStorage(app);
 export { app, auth, firestore, storage };
 
 // ─── Firestore Collection Keys ─────────────────────────────────────────────
-// TODO: Phase 2 — wire all CRUD operations to these collections
 export const COLLECTIONS = {
+  // Phase 1
   users: 'users',
   profiles: 'profiles',
   roles: 'roles',
@@ -43,6 +43,11 @@ export const COLLECTIONS = {
   subscriptions: 'subscriptions',
   settings: 'settings',
   leaderboard: 'leaderboard',
-  progress: 'progress',
   gamification: 'gamification',
+  // Phase 2 — curriculum data
+  forms: 'forms',
+  subjects: 'subjects',
+  topics: 'topics',
+  learningPacks: 'learning_packs',
+  studentProgress: 'student_progress',
 } as const;
