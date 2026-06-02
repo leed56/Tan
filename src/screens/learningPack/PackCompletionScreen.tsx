@@ -9,12 +9,15 @@ import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { getXpProgressPercent, getRandomMotivation } from '../../utils';
 import { MOTIVATIONAL_MESSAGES } from '../../constants';
+import { ConfettiOverlay } from '../../components/ui/gamification/ConfettiOverlay';
+import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
+import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
 
 type Props = StackScreenProps<HomeStackParamList, 'PackCompletion'>;
 
 export function PackCompletionScreen({ navigation, route }: Props) {
   const { xpEarned, packTitle, streakDays } = route.params;
-  const { xp, level, streak, addXp } = useGamificationStore();
+  const { xp, level, streak, addXp, addCoins, pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge } = useGamificationStore();
 
   const scaleAnim = useRef(new Animated.Value(0)).current;
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -24,8 +27,8 @@ export function PackCompletionScreen({ navigation, route }: Props) {
   const levelProgress = getXpProgressPercent(xp + xpEarned);
 
   useEffect(() => {
-    // Award XP on mount
     addXp(xpEarned);
+    addCoins(20);
 
     Animated.sequence([
       Animated.spring(scaleAnim, {
@@ -37,10 +40,11 @@ export function PackCompletionScreen({ navigation, route }: Props) {
       Animated.timing(fadeAnim, { toValue: 1, duration: 400, useNativeDriver: true }),
       Animated.timing(confettiAnim, { toValue: 1, duration: 300, useNativeDriver: true }),
     ]).start();
-  }, [addXp, xpEarned, scaleAnim, fadeAnim, confettiAnim]);
+  }, [addXp, addCoins, xpEarned, scaleAnim, fadeAnim, confettiAnim]);
 
   return (
     <LinearGradient colors={GRADIENTS.background} style={styles.root}>
+      <ConfettiOverlay visible />
       {/* Close button */}
       <TouchableOpacity
         onPress={() => navigation.popToTop()}
@@ -141,6 +145,17 @@ export function PackCompletionScreen({ navigation, route }: Props) {
           />
         </Animated.View>
       </View>
+
+      <LevelUpModal
+        visible={pendingLevelUp !== null}
+        newLevel={pendingLevelUp ?? 1}
+        onDismiss={dismissLevelUp}
+      />
+      <BadgeUnlockModal
+        visible={pendingBadges.length > 0}
+        badge={pendingBadges[0] ?? null}
+        onDismiss={dismissBadge}
+      />
     </LinearGradient>
   );
 }

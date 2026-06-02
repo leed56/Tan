@@ -28,7 +28,7 @@ export function MCQScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
 
   const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults } = useQuizStore();
-  const { addXp } = useGamificationStore();
+  const { addXp, addCoins } = useGamificationStore();
 
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
@@ -78,8 +78,10 @@ export function MCQScreen({ navigation, route }: Props) {
     setSelectedOption(optionId);
     submitAnswer(question.id, optionId, isCorrect, timeTaken);
 
-    // TODO: Phase 5 — full XP / streak gamification
-    if (isCorrect) addXp(question.xpReward);
+    if (isCorrect) {
+      addXp(question.xpReward);
+      addCoins(1);
+    }
 
     setShowFeedback(true);
   }, [selectedOption, question, submitAnswer, addXp]);

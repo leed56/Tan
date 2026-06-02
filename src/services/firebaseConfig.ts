@@ -60,4 +60,15 @@ export const COLLECTIONS = {
   paymentRequests: 'payment_requests',
   familyProfiles: 'family_profiles',
   premiumUnlockEvents: 'premium_unlock_events',
+  // Phase 5 — gamification
+  gamificationProfiles: 'gamification_profiles',
+  xpLogs: 'xp_logs',
+  coinLogs: 'coin_logs',
+  streaks: 'streaks',
+  badges: 'badges',
+  userBadges: 'user_badges',
+  dailyMissions: 'daily_missions',
+  userDailyMissions: 'user_daily_missions',
+  leaderboardScores: 'leaderboard_scores',
+  rewardBoxes: 'reward_boxes',
 } as const;

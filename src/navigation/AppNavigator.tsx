@@ -33,6 +33,14 @@ import { PaymentMethodScreen } from '../screens/subscription/PaymentMethodScreen
 import { LockedFeaturePreviewScreen } from '../screens/subscription/LockedFeaturePreviewScreen';
 import { SubscriptionStatusScreen } from '../screens/subscription/SubscriptionStatusScreen';
 import { FamilyProfilesScreen } from '../screens/subscription/FamilyProfilesScreen';
+// Phase 5 — gamification screens
+import { GamificationProfileScreen } from '../screens/gamification/GamificationProfileScreen';
+import { DailyMissionsScreen } from '../screens/gamification/DailyMissionsScreen';
+import { RewardsScreen } from '../screens/gamification/RewardsScreen';
+import { BadgesScreen } from '../screens/gamification/BadgesScreen';
+import { AchievementsScreen } from '../screens/gamification/AchievementsScreen';
+import { WeeklyLeaderboardScreen } from '../screens/gamification/WeeklyLeaderboardScreen';
+import { MonthlyLeaderboardScreen } from '../screens/gamification/MonthlyLeaderboardScreen';
 
 const RootStack = createStackNavigator<AppRootStackParamList>();
 const Tab = createBottomTabNavigator<AppTabParamList>();
@@ -55,6 +63,13 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
       <HomeStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
       <HomeStack.Screen name="LockedFeaturePreview" component={LockedFeaturePreviewScreen} />
+      <HomeStack.Screen name="GamificationProfile" component={GamificationProfileScreen} />
+      <HomeStack.Screen name="DailyMissions" component={DailyMissionsScreen} />
+      <HomeStack.Screen name="Rewards" component={RewardsScreen} />
+      <HomeStack.Screen name="Badges" component={BadgesScreen} />
+      <HomeStack.Screen name="Achievements" component={AchievementsScreen} />
+      <HomeStack.Screen name="WeeklyLeaderboard" component={WeeklyLeaderboardScreen} />
+      <HomeStack.Screen name="MonthlyLeaderboard" component={MonthlyLeaderboardScreen} />
     </HomeStack.Navigator>
   );
 }
@@ -74,6 +89,13 @@ function SubjectsStackNavigator() {
       <SubjectsStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
       <SubjectsStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
       <SubjectsStack.Screen name="LockedFeaturePreview" component={LockedFeaturePreviewScreen} />
+      <SubjectsStack.Screen name="GamificationProfile" component={GamificationProfileScreen} />
+      <SubjectsStack.Screen name="DailyMissions" component={DailyMissionsScreen} />
+      <SubjectsStack.Screen name="Rewards" component={RewardsScreen} />
+      <SubjectsStack.Screen name="Badges" component={BadgesScreen} />
+      <SubjectsStack.Screen name="Achievements" component={AchievementsScreen} />
+      <SubjectsStack.Screen name="WeeklyLeaderboard" component={WeeklyLeaderboardScreen} />
+      <SubjectsStack.Screen name="MonthlyLeaderboard" component={MonthlyLeaderboardScreen} />
     </SubjectsStack.Navigator>
   );
 }

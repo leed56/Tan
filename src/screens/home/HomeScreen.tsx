@@ -13,15 +13,15 @@ import Svg, { Circle } from 'react-native-svg';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
-import { StreakCard } from '../../components/ui/StreakCard';
 import { SubjectCard } from '../../components/ui/SubjectCard';
+import { StreakFireCard } from '../../components/ui/gamification/StreakFireCard';
+import { CoinBalanceChip } from '../../components/ui/gamification/CoinBalanceChip';
 import { PremiumLockCard } from '../../components/ui/PremiumLockCard';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
 import { SUBJECTS, DEMO_LEADERBOARD, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
-import { XP_PER_LEVEL } from '../../constants';
 
 const { width } = Dimensions.get('window');
 const RING_SIZE = 120;
@@ -33,7 +33,7 @@ type Props = StackScreenProps<HomeStackParamList, 'Home'>;
 
 export function HomeScreen({ navigation }: Props) {
   const [refreshing, setRefreshing] = useState(false);
-  const { xp, level, streak } = useGamificationStore();
+  const { xp, level, streak, coins } = useGamificationStore();
   const profile = useProfileStore((s) => s.profile);
 
   const progressPercent = getXpProgressPercent(xp);
@@ -68,16 +68,20 @@ export function HomeScreen({ navigation }: Props) {
               <Ionicons name="notifications-outline" size={22} color={COLORS.textSecondary} />
               <View style={styles.notifDot} />
             </TouchableOpacity>
-            <View style={styles.coinsBadge}>
-              <Text style={styles.coinsEmoji}>🪙</Text>
-              <Text style={styles.coinsText}>120</Text>
-            </View>
+            <CoinBalanceChip
+              coins={coins}
+              onPress={() => navigation.navigate('GamificationProfile')}
+            />
           </View>
         </View>
       </LinearGradient>
 
       <View style={styles.body}>
         {/* Hero card — XP ring + streak */}
+        <TouchableOpacity
+          activeOpacity={0.85}
+          onPress={() => navigation.navigate('GamificationProfile')}
+        >
         <LinearGradient
           colors={['#2A1F6B', '#1C2347']}
           style={styles.heroCard}
@@ -128,9 +132,10 @@ export function HomeScreen({ navigation }: Props) {
             </View>
           </View>
         </LinearGradient>
+        </TouchableOpacity>
 
         {/* Streak card */}
-        <StreakCard streak={streak} />
+        <StreakFireCard streak={streak} />
 
         {/* Continue Learning */}
         <View style={styles.section}>
@@ -287,14 +292,6 @@ const styles = StyleSheet.create({
     width: 8, height: 8, borderRadius: 4,
     backgroundColor: COLORS.error, borderWidth: 1.5, borderColor: COLORS.bgMid,
   },
-  coinsBadge: {
-    flexDirection: 'row', alignItems: 'center', gap: 4,
-    backgroundColor: 'rgba(247,197,46,0.15)',
-    paddingHorizontal: SPACING.sm, paddingVertical: 4,
-    borderRadius: RADIUS.full,
-  },
-  coinsEmoji: { fontSize: 14 },
-  coinsText: { color: COLORS.gold, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.bold },
   body: { paddingHorizontal: SPACING.screenPadding, paddingTop: SPACING.base, gap: SPACING.sectionGap, paddingBottom: SPACING['2xl'] },
   heroCard: {
     borderRadius: RADIUS.xl,

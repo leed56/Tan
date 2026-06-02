@@ -25,7 +25,7 @@ export function TFScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
 
   const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults } = useQuizStore();
-  const { addXp } = useGamificationStore();
+  const { addXp, addCoins } = useGamificationStore();
 
   const [selected, setSelected] = useState<'true' | 'false' | null>(null);
   const [revealed, setRevealed] = useState(false);
@@ -52,12 +52,13 @@ export function TFScreen({ navigation, route }: Props) {
     setRevealed(true);
     submitAnswer(question.id, answer, isCorrect, 0);
 
-    // TODO: Phase 5 — full XP / streak gamification
-    if (isCorrect) addXp(question.xpReward);
+    if (isCorrect) {
+      addXp(question.xpReward);
+      addCoins(1);
+    }
 
-    // Brief visual pause, then show feedback
     setTimeout(() => setShowFeedback(true), 350);
-  }, [revealed, question, submitAnswer, addXp]);
+  }, [revealed, question, submitAnswer, addXp, addCoins]);
 
   const handleContinue = useCallback(() => {
     setShowFeedback(false);

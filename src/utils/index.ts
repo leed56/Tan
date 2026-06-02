@@ -1,16 +1,14 @@
-import { XP_PER_LEVEL } from '../constants';
 import type { FormLevel } from '../types';
-
-export function getLevelFromXp(xp: number): number {
-  return Math.floor(xp / XP_PER_LEVEL) + 1;
-}
+import { getLevelProgress as _getLevelProgress } from './xpUtils';
+// Phase 5 — re-export new level functions
+export { getLevelFromXp, getLevelProgress } from './xpUtils';
 
 export function getXpProgressInLevel(xp: number): number {
-  return xp % XP_PER_LEVEL;
+  return _getLevelProgress(xp).current;
 }
 
 export function getXpProgressPercent(xp: number): number {
-  return Math.round((getXpProgressInLevel(xp) / XP_PER_LEVEL) * 100);
+  return _getLevelProgress(xp).percent;
 }
 
 export function formatXp(xp: number): string {

@@ -31,7 +31,7 @@ export function FIBScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
 
   const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults } = useQuizStore();
-  const { addXp } = useGamificationStore();
+  const { addXp, addCoins } = useGamificationStore();
 
   const [inputValue, setInputValue] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -63,11 +63,13 @@ export function FIBScreen({ navigation, route }: Props) {
     setSubmitted(true);
     submitAnswer(question.id, inputValue.trim(), correct, timeTaken);
 
-    // TODO: Phase 5 — full XP / streak gamification
-    if (correct) addXp(question.xpReward);
+    if (correct) {
+      addXp(question.xpReward);
+      addCoins(1);
+    }
 
     setShowFeedback(true);
-  }, [question, submitted, inputValue, submitAnswer, addXp]);
+  }, [question, submitted, inputValue, submitAnswer, addXp, addCoins]);
 
   const handleContinue = useCallback(() => {
     setShowFeedback(false);

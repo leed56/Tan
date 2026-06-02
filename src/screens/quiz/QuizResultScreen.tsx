@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -14,6 +14,10 @@ import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { AppButton } from '../../components/ui/AppButton';
 import { ResultSummaryCard } from '../../components/ui/quiz/ResultSummaryCard';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
+import { useGamificationStore } from '../../store/gamificationStore';
+import { XPAnimationOverlay } from '../../components/ui/gamification/XPAnimationOverlay';
+import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
+import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
 
 type Props = StackScreenProps<HomeStackParamList, 'QuizResult'>;
 
@@ -38,6 +42,9 @@ export function QuizResultScreen({ navigation, route }: Props) {
     subjectId,
     quizType,
   } = route.params;
+
+  const { pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge } = useGamificationStore();
+  const [showXpAnim, setShowXpAnim] = useState(xpEarned > 0);
 
   const handleRetry = () => {
     navigation.replace('QuizIntro', {
@@ -131,6 +138,24 @@ export function QuizResultScreen({ navigation, route }: Props) {
           <Text style={styles.streakText}>Keep your daily streak going — study again tomorrow!</Text>
         </View>
       </ScrollView>
+
+      {xpEarned > 0 && (
+        <XPAnimationOverlay
+          amount={xpEarned}
+          visible={showXpAnim}
+          onDone={() => setShowXpAnim(false)}
+        />
+      )}
+      <LevelUpModal
+        visible={pendingLevelUp !== null}
+        newLevel={pendingLevelUp ?? 1}
+        onDismiss={dismissLevelUp}
+      />
+      <BadgeUnlockModal
+        visible={pendingBadges.length > 0}
+        badge={pendingBadges[0] ?? null}
+        onDismiss={dismissBadge}
+      />
     </ScreenContainer>
   );
 }
