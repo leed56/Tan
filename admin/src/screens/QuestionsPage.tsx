@@ -157,76 +157,116 @@ export function QuestionsPage() {
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader><DialogTitle>{editItem ? 'Edit Question' : 'Add Question'}</DialogTitle></DialogHeader>
-          <form onSubmit={handleSubmit((v) => mutation.mutate(v))} className="space-y-4">
-            <div className="grid grid-cols-3 gap-3">
-              <div className="space-y-2">
-                <Label>Type</Label>
-                <Controller control={control} name="type" render={({ field }) => (
-                  <Select value={field.value} onValueChange={field.onChange}>
-                    <SelectTrigger><SelectValue /></SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="mcq">MCQ</SelectItem>
-                      <SelectItem value="fib">Fill in Blank</SelectItem>
-                      <SelectItem value="tf">True/False</SelectItem>
-                      <SelectItem value="hoq">HOQ</SelectItem>
-                    </SelectContent>
-                  </Select>
-                )} />
+        <DialogContent className="max-w-2xl w-full max-h-[90vh] flex flex-col p-0">
+          <DialogHeader className="px-6 pt-6 pb-4 border-b border-border shrink-0">
+            <DialogTitle>{editItem ? 'Edit Question' : 'Add Question'}</DialogTitle>
+          </DialogHeader>
+          <form onSubmit={handleSubmit((v) => mutation.mutate(v))} className="flex flex-col flex-1 overflow-hidden">
+            <div className="overflow-y-auto flex-1 px-6 py-4 space-y-4">
+
+              {/* Row 1: Type / Difficulty / XP */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="space-y-2">
+                  <Label>Type</Label>
+                  <Controller control={control} name="type" render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger className="w-full"><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="mcq">MCQ</SelectItem>
+                        <SelectItem value="fib">Fill in Blank</SelectItem>
+                        <SelectItem value="tf">True / False</SelectItem>
+                        <SelectItem value="hoq">HOQ</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  )} />
+                </div>
+                <div className="space-y-2">
+                  <Label>Difficulty</Label>
+                  <Controller control={control} name="difficulty" render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger className="w-full"><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="easy">Easy</SelectItem>
+                        <SelectItem value="medium">Medium</SelectItem>
+                        <SelectItem value="hard">Hard</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  )} />
+                </div>
+                <div className="space-y-2">
+                  <Label>XP Reward</Label>
+                  <Input type="number" className="w-full" {...register('xpReward', { valueAsNumber: true })} />
+                </div>
               </div>
+
+              {/* Question text */}
               <div className="space-y-2">
-                <Label>Difficulty</Label>
-                <Controller control={control} name="difficulty" render={({ field }) => (
-                  <Select value={field.value} onValueChange={field.onChange}>
-                    <SelectTrigger><SelectValue /></SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="easy">Easy</SelectItem>
-                      <SelectItem value="medium">Medium</SelectItem>
-                      <SelectItem value="hard">Hard</SelectItem>
-                    </SelectContent>
-                  </Select>
-                )} />
+                <Label>Question Text</Label>
+                <Textarea {...register('questionText')} placeholder="Enter question..." rows={3} className="w-full resize-none" />
+                {errors.questionText && <p className="text-xs text-destructive">{errors.questionText.message}</p>}
               </div>
-              <div className="space-y-2"><Label>XP Reward</Label><Input type="number" {...register('xpReward', { valueAsNumber: true })} /></div>
-            </div>
-            <div className="space-y-2">
-              <Label>Question Text</Label>
-              <Textarea {...register('questionText')} placeholder="Enter question..." rows={3} />
-              {errors.questionText && <p className="text-xs text-destructive">{errors.questionText.message}</p>}
-            </div>
-            {questionType === 'tf' ? (
+
+              {/* Correct Answer */}
+              {questionType === 'tf' ? (
+                <div className="space-y-2">
+                  <Label>Correct Answer</Label>
+                  <Controller control={control} name="correctAnswer" render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger className="w-full"><SelectValue placeholder="Select answer" /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="true">True</SelectItem>
+                        <SelectItem value="false">False</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  )} />
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  <Label>Correct Answer {questionType === 'mcq' ? '(a / b / c / d)' : ''}</Label>
+                  <Input className="w-full" {...register('correctAnswer')} placeholder={questionType === 'mcq' ? 'a' : 'Expected answer'} />
+                  {errors.correctAnswer && <p className="text-xs text-destructive">{errors.correctAnswer.message}</p>}
+                </div>
+              )}
+
+              {/* Explanation */}
               <div className="space-y-2">
-                <Label>Correct Answer</Label>
-                <Controller control={control} name="correctAnswer" render={({ field }) => (
-                  <Select value={field.value} onValueChange={field.onChange}>
-                    <SelectTrigger><SelectValue placeholder="Select answer" /></SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="true">True</SelectItem>
-                      <SelectItem value="false">False</SelectItem>
-                    </SelectContent>
-                  </Select>
-                )} />
+                <Label>Explanation</Label>
+                <Textarea {...register('explanation')} placeholder="Explain the correct answer..." rows={2} className="w-full resize-none" />
+                {errors.explanation && <p className="text-xs text-destructive">{errors.explanation.message}</p>}
               </div>
-            ) : (
-              <div className="space-y-2">
-                <Label>Correct Answer {questionType === 'mcq' ? '(option ID: a/b/c/d)' : ''}</Label>
-                <Input {...register('correctAnswer')} placeholder={questionType === 'mcq' ? 'a' : 'Expected answer'} />
+
+              {/* IDs grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="space-y-2">
+                  <Label>Subject ID</Label>
+                  <Input className="w-full" {...register('subjectId')} placeholder="e.g. math" />
+                  {errors.subjectId && <p className="text-xs text-destructive">{errors.subjectId.message}</p>}
+                </div>
+                <div className="space-y-2">
+                  <Label>Form ID</Label>
+                  <Input className="w-full" {...register('formId')} placeholder="e.g. form_1" />
+                  {errors.formId && <p className="text-xs text-destructive">{errors.formId.message}</p>}
+                </div>
+                <div className="space-y-2">
+                  <Label>Topic ID</Label>
+                  <Input className="w-full" {...register('topicId')} placeholder="e.g. algebra" />
+                  {errors.topicId && <p className="text-xs text-destructive">{errors.topicId.message}</p>}
+                </div>
+                <div className="space-y-2">
+                  <Label>Pack ID</Label>
+                  <Input className="w-full" {...register('packId')} placeholder="e.g. pack_01" />
+                  {errors.packId && <p className="text-xs text-destructive">{errors.packId.message}</p>}
+                </div>
               </div>
-            )}
-            <div className="space-y-2">
-              <Label>Explanation</Label>
-              <Textarea {...register('explanation')} placeholder="Explain the correct answer..." rows={2} />
+
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="space-y-2"><Label>Subject ID</Label><Input {...register('subjectId')} placeholder="math_f1" /></div>
-              <div className="space-y-2"><Label>Form ID</Label><Input {...register('formId')} placeholder="form_1" /></div>
-              <div className="space-y-2"><Label>Topic ID</Label><Input {...register('topicId')} /></div>
-              <div className="space-y-2"><Label>Pack ID</Label><Input {...register('packId')} /></div>
-            </div>
-            <DialogFooter>
+
+            {/* Footer always visible */}
+            <DialogFooter className="px-6 py-4 border-t border-border shrink-0">
               <Button type="button" variant="outline" onClick={() => setOpen(false)}>Cancel</Button>
-              <Button type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Saving...' : 'Save'}</Button>
+              <Button type="submit" disabled={mutation.isPending}>
+                {mutation.isPending ? 'Saving...' : editItem ? 'Update' : 'Add Question'}
+              </Button>
             </DialogFooter>
           </form>
         </DialogContent>
