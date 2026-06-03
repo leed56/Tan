@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useFocusEffect } from '@react-navigation/native';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
@@ -109,6 +110,32 @@ export function MCQScreen({ navigation, route }: Props) {
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
 
+  const handleViewExplanation = useCallback(() => {
+    if (!question) return;
+    setShowFeedback(false);
+    navigation.navigate('ExplanationScreen', {
+      questionId: question.id,
+      questionText: question.questionText,
+      quizType: 'mcq',
+      subjectId,
+      formId,
+      correctAnswer: question.correctAnswer,
+      options: question.options.map((o) => ({ id: o.id, text: o.text })),
+      packTitle,
+      subjectColor,
+      fallbackExplanation: question.explanation,
+    });
+  }, [question, navigation, subjectId, formId, packTitle, subjectColor]);
+
+  // Restore feedback modal when returning from ExplanationScreen
+  useFocusEffect(
+    useCallback(() => {
+      if (selectedOption !== null && !showFeedback) {
+        setShowFeedback(true);
+      }
+    }, [selectedOption]),
+  );
+
   if (!session || !question) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
   }
@@ -176,6 +203,7 @@ export function MCQScreen({ navigation, route }: Props) {
         explanation={question.explanation}
         correctAnswerLabel={!isCorrect && correctOption ? correctOption.text : undefined}
         onContinue={handleContinue}
+        onViewExplanation={handleViewExplanation}
       />
     </ScreenContainer>
   );

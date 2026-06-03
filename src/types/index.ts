@@ -179,6 +179,40 @@ export type QuizStackSharedParams = {
   Achievements: undefined;
   WeeklyLeaderboard: undefined;
   MonthlyLeaderboard: undefined;
+  // Phase 6 — AI explanation screens
+  ExplanationScreen: {
+    questionId: string;
+    questionText: string;
+    quizType: 'mcq' | 'fib' | 'tf';
+    subjectId: string;
+    formId: string;
+    correctAnswer: string;
+    options: Array<{ id: string; text: string }>;
+    packTitle: string;
+    subjectColor: string;
+    fallbackExplanation: string;
+  };
+  LearningPackReview: {
+    packId: string;
+    packTitle: string;
+    subjectId: string;
+    formId: string;
+    topicId: string;
+    subjectColor: string;
+  };
+  WrongAnswerReview: {
+    packId: string;
+    packTitle: string;
+    subjectId: string;
+    formId: string;
+    topicId: string;
+    subjectColor: string;
+  };
+  ExplanationFeedback: {
+    questionId: string;
+    explanationId: string;
+    packTitle: string;
+  };
 };
 
 export type HomeStackParamList = QuizStackSharedParams & {

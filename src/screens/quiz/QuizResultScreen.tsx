@@ -118,6 +118,21 @@ export function QuizResultScreen({ navigation, route }: Props) {
 
         {/* Action buttons */}
         <View style={styles.actions}>
+          {wrongCount > 0 && (
+            <AppButton
+              title="Review Mistakes"
+              onPress={() => navigation.navigate('WrongAnswerReview', {
+                packId,
+                packTitle,
+                topicId,
+                subjectColor,
+                formId,
+                subjectId,
+              })}
+              variant="secondary"
+              icon="bulb-outline"
+            />
+          )}
           <AppButton
             title="Retry Quiz"
             onPress={handleRetry}

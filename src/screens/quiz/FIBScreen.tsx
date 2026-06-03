@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
 import {
   View,
   Text,
@@ -97,6 +98,31 @@ export function FIBScreen({ navigation, route }: Props) {
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
 
+  const handleViewExplanation = useCallback(() => {
+    if (!question) return;
+    setShowFeedback(false);
+    navigation.navigate('ExplanationScreen', {
+      questionId: question.id,
+      questionText: question.questionText,
+      quizType: 'fib',
+      subjectId,
+      formId,
+      correctAnswer: question.correctAnswer,
+      options: [],
+      packTitle,
+      subjectColor,
+      fallbackExplanation: question.explanation,
+    });
+  }, [question, navigation, subjectId, formId, packTitle, subjectColor]);
+
+  useFocusEffect(
+    useCallback(() => {
+      if (submitted && !showFeedback) {
+        setShowFeedback(true);
+      }
+    }, [submitted]),
+  );
+
   if (!session || !question) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
   }
@@ -159,6 +185,7 @@ export function FIBScreen({ navigation, route }: Props) {
         explanation={question.explanation}
         correctAnswerLabel={isCorrect === false ? question.correctAnswer : undefined}
         onContinue={handleContinue}
+        onViewExplanation={handleViewExplanation}
       />
     </ScreenContainer>
   );

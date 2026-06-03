@@ -41,6 +41,11 @@ import { BadgesScreen } from '../screens/gamification/BadgesScreen';
 import { AchievementsScreen } from '../screens/gamification/AchievementsScreen';
 import { WeeklyLeaderboardScreen } from '../screens/gamification/WeeklyLeaderboardScreen';
 import { MonthlyLeaderboardScreen } from '../screens/gamification/MonthlyLeaderboardScreen';
+// Phase 6 — AI explanation screens
+import { ExplanationScreen } from '../screens/explanation/ExplanationScreen';
+import { LearningPackReviewScreen } from '../screens/explanation/LearningPackReviewScreen';
+import { WrongAnswerReviewScreen } from '../screens/explanation/WrongAnswerReviewScreen';
+import { ExplanationFeedbackScreen } from '../screens/explanation/ExplanationFeedbackScreen';
 
 const RootStack = createStackNavigator<AppRootStackParamList>();
 const Tab = createBottomTabNavigator<AppTabParamList>();
@@ -70,6 +75,10 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="Achievements" component={AchievementsScreen} />
       <HomeStack.Screen name="WeeklyLeaderboard" component={WeeklyLeaderboardScreen} />
       <HomeStack.Screen name="MonthlyLeaderboard" component={MonthlyLeaderboardScreen} />
+      <HomeStack.Screen name="ExplanationScreen" component={ExplanationScreen} />
+      <HomeStack.Screen name="LearningPackReview" component={LearningPackReviewScreen} />
+      <HomeStack.Screen name="WrongAnswerReview" component={WrongAnswerReviewScreen} />
+      <HomeStack.Screen name="ExplanationFeedback" component={ExplanationFeedbackScreen} options={{ presentation: 'transparentModal', cardOverlayEnabled: true }} />
     </HomeStack.Navigator>
   );
 }
@@ -96,6 +105,10 @@ function SubjectsStackNavigator() {
       <SubjectsStack.Screen name="Achievements" component={AchievementsScreen} />
       <SubjectsStack.Screen name="WeeklyLeaderboard" component={WeeklyLeaderboardScreen} />
       <SubjectsStack.Screen name="MonthlyLeaderboard" component={MonthlyLeaderboardScreen} />
+      <SubjectsStack.Screen name="ExplanationScreen" component={ExplanationScreen} />
+      <SubjectsStack.Screen name="LearningPackReview" component={LearningPackReviewScreen} />
+      <SubjectsStack.Screen name="WrongAnswerReview" component={WrongAnswerReviewScreen} />
+      <SubjectsStack.Screen name="ExplanationFeedback" component={ExplanationFeedbackScreen} options={{ presentation: 'transparentModal', cardOverlayEnabled: true }} />
     </SubjectsStack.Navigator>
   );
 }

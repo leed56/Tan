@@ -1,7 +1,8 @@
 export type XPSource =
   | 'mcq_correct' | 'fib_correct' | 'tf_correct'
   | 'quiz_complete' | 'pack_complete'
-  | 'daily_mission' | 'streak_bonus' | 'streak_milestone';
+  | 'daily_mission' | 'streak_bonus' | 'streak_milestone'
+  | 'review_explanation';
 
 export type CoinSource =
   | 'correct_answer' | 'quiz_complete' | 'pack_complete'
@@ -118,6 +119,7 @@ export const XP_REWARDS: Record<XPSource, number> = {
   daily_mission: 50,
   streak_bonus: 20,
   streak_milestone: 20,
+  review_explanation: 5,
 };
 
 export const COIN_REWARDS: Record<CoinSource, number> = {

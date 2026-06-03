@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
 import {
   View,
   Text,
@@ -85,6 +86,31 @@ export function TFScreen({ navigation, route }: Props) {
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
 
+  const handleViewExplanation = useCallback(() => {
+    if (!question) return;
+    setShowFeedback(false);
+    navigation.navigate('ExplanationScreen', {
+      questionId: question.id,
+      questionText: question.questionText,
+      quizType: 'tf',
+      subjectId,
+      formId,
+      correctAnswer: question.correctAnswer,
+      options: [{ id: 'true', text: 'True' }, { id: 'false', text: 'False' }],
+      packTitle,
+      subjectColor,
+      fallbackExplanation: question.explanation,
+    });
+  }, [question, navigation, subjectId, formId, packTitle, subjectColor]);
+
+  useFocusEffect(
+    useCallback(() => {
+      if (revealed && !showFeedback) {
+        setShowFeedback(true);
+      }
+    }, [revealed]),
+  );
+
   if (!session || !question) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
   }
@@ -134,6 +160,7 @@ export function TFScreen({ navigation, route }: Props) {
         explanation={question.explanation}
         correctAnswerLabel={!isCorrect ? (correctAnswer === 'true' ? 'True' : 'False') : undefined}
         onContinue={handleContinue}
+        onViewExplanation={handleViewExplanation}
       />
     </ScreenContainer>
   );

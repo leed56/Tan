@@ -71,4 +71,9 @@ export const COLLECTIONS = {
   userDailyMissions: 'user_daily_missions',
   leaderboardScores: 'leaderboard_scores',
   rewardBoxes: 'reward_boxes',
+  // Phase 6 — AI explanations
+  aiExplanations: 'ai_explanations',
+  aiPromptTemplates: 'ai_prompt_templates',
+  aiQualityLogs: 'ai_quality_logs',
+  explanationFeedback: 'explanation_feedback',
 } as const;

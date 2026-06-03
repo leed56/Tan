@@ -19,6 +19,7 @@ interface FeedbackModalProps {
   explanation: string;
   correctAnswerLabel?: string;
   onContinue: () => void;
+  onViewExplanation?: () => void;
 }
 
 export function FeedbackModal({
@@ -28,6 +29,7 @@ export function FeedbackModal({
   explanation,
   correctAnswerLabel,
   onContinue,
+  onViewExplanation,
 }: FeedbackModalProps) {
   const translateY = useRef(new Animated.Value(300)).current;
 
@@ -89,6 +91,19 @@ export function FeedbackModal({
               explanation={explanation}
               correctLabel={!isCorrect && correctAnswerLabel ? `Correct answer: ${correctAnswerLabel}` : undefined}
             />
+
+            {/* View Full Explanation */}
+            {onViewExplanation && (
+              <TouchableOpacity
+                onPress={onViewExplanation}
+                activeOpacity={0.8}
+                style={styles.explainBtn}
+              >
+                <Ionicons name="bulb-outline" size={16} color={COLORS.primary} />
+                <Text style={styles.explainBtnText}>View Full Explanation</Text>
+                <Ionicons name="arrow-forward" size={14} color={COLORS.primary} />
+              </TouchableOpacity>
+            )}
 
             {/* Continue button */}
             <TouchableOpacity
@@ -175,5 +190,21 @@ const styles = StyleSheet.create({
   continueBtnText: {
     fontSize: TYPOGRAPHY.sizes.base,
     fontWeight: TYPOGRAPHY.weights.bold,
+  },
+  explainBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: SPACING.sm,
+    paddingVertical: SPACING.sm,
+    borderRadius: RADIUS.lg,
+    borderWidth: 1,
+    borderColor: `${COLORS.primary}50`,
+    backgroundColor: `${COLORS.primary}10`,
+  },
+  explainBtnText: {
+    color: COLORS.primary,
+    fontSize: TYPOGRAPHY.sizes.sm,
+    fontWeight: TYPOGRAPHY.weights.semibold,
   },
 });
