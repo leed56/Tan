@@ -1,10 +1,15 @@
 import { initializeApp, getApps, FirebaseApp } from 'firebase/app';
 import { getAuth, Auth } from 'firebase/auth';
-import { getFirestore, Firestore } from 'firebase/firestore';
+import {
+  initializeFirestore,
+  getFirestore,
+  Firestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
+  CACHE_SIZE_UNLIMITED,
+} from 'firebase/firestore';
 import { getStorage, FirebaseStorage } from 'firebase/storage';
 
-// TODO: Phase 1 — populate from EXPO_PUBLIC_FIREBASE_* env vars
-// TODO: Phase 2 — enable phone auth, app check
 const firebaseConfig = {
   apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY ?? '',
   authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN ?? '',
@@ -20,15 +25,21 @@ let auth: Auth;
 let firestore: Firestore;
 let storage: FirebaseStorage;
 
-// Guard against double-init in hot reload
 if (getApps().length === 0) {
   app = initializeApp(firebaseConfig);
+  // Enable offline persistence with unlimited cache size
+  firestore = initializeFirestore(app, {
+    localCache: persistentLocalCache({
+      tabManager: persistentMultipleTabManager(),
+      cacheSizeBytes: CACHE_SIZE_UNLIMITED,
+    }),
+  });
 } else {
   app = getApps()[0];
+  firestore = getFirestore(app);
 }
 
 auth = getAuth(app);
-firestore = getFirestore(app);
 storage = getStorage(app);
 
 export { app, auth, firestore, storage };

@@ -2,6 +2,8 @@ node_modules/
 .expo/
 dist/
 web-build/
+functions/lib/
+functions/node_modules/
 *.jks
 *.p8
 *.p12
@@ -9,5 +11,11 @@ web-build/
 *.mobileprovision
 *.orig.*
 .env
+.env.development
+.env.staging
+.env.production
 google-services.json
 GoogleService-Info.plist
+google-play-service-account.json
+*.keystore
+.sentry-native/

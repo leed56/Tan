@@ -10,12 +10,16 @@ export type PlanId = 'single' | 'family';
 
 export type PaymentProvider =
   | 'google_play'
+  | 'apple_iap'
   | 'airtel'
   | 'mpesa'
   | 'tigo'
   | 'halopesa'
   | 'ttcl'
-  | 'whatsapp';
+  | 'whatsapp'
+  | 'selcom'
+  | 'azampay'
+  | 'bank_transfer';
 
 export type PaymentStatus = 'pending' | 'processing' | 'completed' | 'failed' | 'cancelled';
 

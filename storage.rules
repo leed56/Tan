@@ -1,0 +1,56 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // ── helpers ──────────────────────────────────────────────────────────────
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    function maxSize(mb) {
+      return request.resource.size <= mb * 1024 * 1024;
+    }
+
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+
+    function isPdf() {
+      return request.resource.contentType == 'application/pdf';
+    }
+
+    // ── profile photos ────────────────────────────────────────────────────────
+    match /profile_photos/{userId}/{allPaths=**} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId) && isImage() && maxSize(5);
+      allow delete: if isOwner(userId) || isAdmin();
+    }
+
+    // ── past papers (admin upload only) ──────────────────────────────────────
+    match /past_papers/{allPaths=**} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin() && isPdf() && maxSize(50);
+      allow delete: if isAdmin();
+    }
+
+    // ── summaries / content ───────────────────────────────────────────────────
+    match /content/{allPaths=**} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin() && maxSize(20);
+      allow delete: if isAdmin();
+    }
+
+    // ── deny everything else ──────────────────────────────────────────────────
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -3,8 +3,58 @@ import type { GeminiExplanationResponse } from '../types/explanation';
 const GEMINI_API_URL =
   'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
+const FUNCTIONS_BASE_URL = process.env.EXPO_PUBLIC_FUNCTIONS_BASE_URL ?? '';
+
 export function isGeminiConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_GEMINI_API_KEY ?? '').length > 0;
+  // Cloud Function proxy takes priority; fall back to direct API key
+  return FUNCTIONS_BASE_URL.length > 0 || (process.env.EXPO_PUBLIC_GEMINI_API_KEY ?? '').length > 0;
+}
+
+// ─── Cloud Function proxy call (production path) ──────────────────────────────
+
+export interface ExplanationCallParams {
+  questionId: string;
+  questionText: string;
+  questionType: 'MCQ' | 'FIB' | 'TF' | 'HOQ';
+  correctAnswer: string;
+  userAnswer: string;
+  subject: string;
+  topic: string;
+  form: string;
+  options?: string[];
+}
+
+export async function callExplanationFunction(
+  params: ExplanationCallParams,
+  idToken: string
+): Promise<GeminiExplanationResponse> {
+  const url = `${FUNCTIONS_BASE_URL}/generateExplanation`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${idToken}`,
+    },
+    body: JSON.stringify({ data: params }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Cloud Function error ${response.status}`);
+  }
+
+  const body = await response.json();
+  const explanation = body?.result?.explanation ?? body?.explanation ?? {};
+
+  return {
+    simpleExplanation: explanation.simpleExplanation ?? '',
+    whyCorrect: explanation.whyCorrect ?? '',
+    whyWrong: explanation.whyWrong ?? '',
+    examTip: explanation.examTip ?? '',
+    memoryTrick: explanation.memoryTip ?? '',
+    stepByStep: [],
+    finalSummary: explanation.keyConcept ?? '',
+    latexBlocks: [],
+  };
 }
 
 function stripMarkdownFences(text: string): string {

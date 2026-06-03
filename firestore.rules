@@ -1,0 +1,236 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── helpers ──────────────────────────────────────────────────────────────
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return isSignedIn() &&
+        exists(/databases/$(database)/documents/admin_users/$(request.auth.uid));
+    }
+
+    function adminRole() {
+      return get(/databases/$(database)/documents/admin_users/$(request.auth.uid)).data.role;
+    }
+
+    function isSuperAdmin() {
+      return isAdmin() && adminRole() == 'super_admin';
+    }
+
+    function isContentEditor() {
+      return isAdmin() && (adminRole() == 'super_admin' || adminRole() == 'content_editor');
+    }
+
+    function isPremium() {
+      return isSignedIn() &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.subscriptionStatus == 'active';
+    }
+
+    function validString(field, minLen, maxLen) {
+      return field is string && field.size() >= minLen && field.size() <= maxLen;
+    }
+
+    function notUpdating(fields) {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny(fields);
+    }
+
+    // ── users ─────────────────────────────────────────────────────────────────
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId)
+        && request.resource.data.keys().hasAll(['phoneNumber', 'displayName', 'createdAt'])
+        && validString(request.resource.data.displayName, 1, 100)
+        && request.resource.data.subscriptionStatus == 'free'
+        && request.resource.data.role == 'student';
+      allow update: if isOwner(userId)
+        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'createdAt', 'phoneNumber'])
+        || isAdmin();
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── quiz_progress ─────────────────────────────────────────────────────────
+    match /quiz_progress/{userId} {
+      allow read, write: if isOwner(userId);
+      allow read: if isAdmin();
+    }
+
+    match /quiz_progress/{userId}/sessions/{sessionId} {
+      allow read, write: if isOwner(userId);
+      allow read: if isAdmin();
+    }
+
+    // ── gamification ─────────────────────────────────────────────────────────
+    match /gamification/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow write: if isOwner(userId);
+    }
+
+    match /gamification/{userId}/badges/{badgeId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow write: if isOwner(userId);
+    }
+
+    // ── leaderboard — public read, owner write ────────────────────────────────
+    match /leaderboard/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId);
+    }
+
+    // ── subjects ─────────────────────────────────────────────────────────────
+    match /subjects/{subjectId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor()
+        && validString(request.resource.data.name, 1, 100);
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── topics ────────────────────────────────────────────────────────────────
+    match /topics/{topicId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor()
+        && validString(request.resource.data.title, 1, 200);
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── learning_packs ────────────────────────────────────────────────────────
+    match /learning_packs/{packId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor();
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── questions ─────────────────────────────────────────────────────────────
+    match /questions/{questionId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor()
+        && validString(request.resource.data.questionText, 5, 2000)
+        && request.resource.data.type in ['MCQ', 'FIB', 'TF', 'HOQ'];
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── ai_explanations — premium-only read ───────────────────────────────────
+    match /ai_explanations/{explanationId} {
+      allow read: if isOwner(resource.data.userId) && isPremium() || isAdmin();
+      allow create: if isSignedIn() && isPremium()
+        && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // ── ai_feedback ───────────────────────────────────────────────────────────
+    match /ai_feedback/{feedbackId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.rating in [1, 2, 3, 4, 5];
+      allow update, delete: if false;
+    }
+
+    // ── payment_requests ──────────────────────────────────────────────────────
+    match /payment_requests/{requestId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.amount in [5000, 8000]
+        && request.resource.data.provider in [
+             'mpesa', 'tigopesa', 'airtelmoney', 'halopesa',
+             'azampay', 'selcom', 'bank_transfer'
+           ];
+      allow update: if isAdmin()
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['status', 'verifiedAt', 'verifiedBy', 'rejectionReason']);
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── subscriptions ─────────────────────────────────────────────────────────
+    match /subscriptions/{subId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create, update: if isAdmin();
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── notifications ─────────────────────────────────────────────────────────
+    match /notifications/{notifId} {
+      allow read: if isOwner(resource.data.targetUserId)
+        || resource.data.targetUserId == 'all'
+        || resource.data.targetUserId == 'premium'
+        || resource.data.targetUserId == 'free'
+        || isAdmin();
+      allow create: if isAdmin();
+      allow update: if isOwner(resource.data.targetUserId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['readAt']);
+      allow delete: if isAdmin();
+    }
+
+    // ── past_papers ───────────────────────────────────────────────────────────
+    match /past_papers/{paperId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor();
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── summaries ─────────────────────────────────────────────────────────────
+    match /summaries/{summaryId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor();
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── app_settings ──────────────────────────────────────────────────────────
+    match /app_settings/{docId} {
+      allow read: if isSignedIn();
+      allow write: if isSuperAdmin();
+    }
+
+    // ── admin_users ───────────────────────────────────────────────────────────
+    match /admin_users/{adminId} {
+      allow read: if isAdmin();
+      allow create, update, delete: if isSuperAdmin();
+    }
+
+    // ── admin_audit_logs — append-only via admin ──────────────────────────────
+    match /admin_audit_logs/{logId} {
+      allow read: if isAdmin();
+      allow create: if isAdmin();
+      allow update, delete: if false;
+    }
+
+    // ── forms (curriculum) ────────────────────────────────────────────────────
+    match /forms/{formId} {
+      allow read: if isSignedIn();
+      allow create, update: if isContentEditor();
+      allow delete: if isSuperAdmin();
+    }
+
+    // ── daily_missions ────────────────────────────────────────────────────────
+    match /daily_missions/{missionId} {
+      allow read: if isSignedIn();
+      allow write: if isSuperAdmin();
+    }
+
+    match /daily_missions/{missionId}/progress/{userId} {
+      allow read, write: if isOwner(userId);
+      allow read: if isAdmin();
+    }
+
+    // ── crash_reports (Crashlytics custom data) ───────────────────────────────
+    match /crash_reports/{reportId} {
+      allow read: if isAdmin();
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // ── deny everything else ──────────────────────────────────────────────────
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
