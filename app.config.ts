@@ -42,14 +42,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ios: {
     supportsTablet: false,
     bundleIdentifier: env.bundleId,
-    googleServicesFile: './GoogleService-Info.plist',
     infoPlist: {
       NSCameraUsageDescription: 'Used for profile photo upload.',
       NSPhotoLibraryUsageDescription: 'Used for profile photo selection.',
-    },
-    entitlements: {
-      'com.apple.developer.applesignin': ['Default'],
-      'com.apple.developer.devicecheck.appattest-environment': APP_ENV === 'production' ? 'production' : 'development',
     },
   },
   android: {
@@ -58,13 +53,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       backgroundColor: '#0A0E27',
     },
     package: env.bundleId,
-    googleServicesFile: './google-services.json',
     permissions: [
       'android.permission.INTERNET',
-      'android.permission.RECEIVE_BOOT_COMPLETED',
       'android.permission.VIBRATE',
-      'android.permission.USE_BIOMETRIC',
-      'android.permission.USE_FINGERPRINT',
     ],
     versionCode: 1,
   },
@@ -80,23 +71,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         resizeMode: 'contain',
       },
     ],
-    '@react-native-firebase/app',
-    '@react-native-firebase/crashlytics',
-    [
-      'expo-build-properties',
-      {
-        android: {
-          compileSdkVersion: 34,
-          targetSdkVersion: 34,
-          buildToolsVersion: '34.0.0',
-          extraMavenRepos: [],
-        },
-        ios: {
-          deploymentTarget: '15.1',
-          useFrameworks: 'static',
-        },
-      },
-    ],
+    // Note: @react-native-firebase/app, crashlytics, expo-build-properties
+    // are added here only for production EAS builds (not needed for Expo Go).
   ],
   extra: {
     appEnv: APP_ENV,
