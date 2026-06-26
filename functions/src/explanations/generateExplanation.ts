@@ -85,20 +85,27 @@ export const generateExplanation = functions
     }
     const payload = parseResult.data;
 
-    // Rate limit: max 20 explanations per day per user
+    // Rate limit: max 20 explanations per day per user (atomic check + reserve)
     const today = new Date().toISOString().split('T')[0];
     const rateLimitRef = admin.firestore()
       .collection('rate_limits')
       .doc(`${uid}_explanations_${today}`);
 
-    const rateLimitDoc = await rateLimitRef.get();
-    const count = rateLimitDoc.exists ? (rateLimitDoc.data()!.count as number) : 0;
-    if (count >= 20) {
-      throw new functions.https.HttpsError(
-        'resource-exhausted',
-        'Daily explanation limit reached. Try again tomorrow.'
+    await admin.firestore().runTransaction(async (tx) => {
+      const doc = await tx.get(rateLimitRef);
+      const count = doc.exists ? (doc.data()!.count as number) : 0;
+      if (count >= 20) {
+        throw new functions.https.HttpsError(
+          'resource-exhausted',
+          'Daily explanation limit reached. Try again tomorrow.'
+        );
+      }
+      tx.set(
+        rateLimitRef,
+        { count: admin.firestore.FieldValue.increment(1), updatedAt: admin.firestore.FieldValue.serverTimestamp() },
+        { merge: true }
       );
-    }
+    });
 
     // Check cache — same question + same answer within 24h
     const cacheKey = `${payload.questionId}_${Buffer.from(payload.userAnswer).toString('base64').slice(0, 16)}`;
@@ -176,12 +183,6 @@ export const generateExplanation = functions
     };
 
     const savedRef = await admin.firestore().collection('ai_explanations').add(explanationDoc);
-
-    // Increment rate limit counter
-    await rateLimitRef.set(
-      { count: admin.firestore.FieldValue.increment(1), updatedAt: admin.firestore.FieldValue.serverTimestamp() },
-      { merge: true }
-    );
 
     functions.logger.info('Explanation generated', { uid, questionId: payload.questionId, docId: savedRef.id });
 

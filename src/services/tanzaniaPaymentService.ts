@@ -8,7 +8,8 @@ import {
   getDocs,
   serverTimestamp,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import { app, firestore, COLLECTIONS } from './firebaseConfig';
 import type { PaymentProvider } from '../types/subscription';
 
 function isFirebaseConfigured(): boolean {
@@ -115,38 +116,6 @@ export async function initiateSelcomPayment(params: {
 
 // ─── Azampay ──────────────────────────────────────────────────────────────────
 
-interface AzampayTokenResponse {
-  data: { accessToken: string };
-  success: boolean;
-}
-
-interface AzampayCheckoutResponse {
-  transactionId: string;
-  message: string;
-  success: boolean;
-  redirectUrl?: string;
-}
-
-async function getAzampayToken(): Promise<string> {
-  const appName = process.env.EXPO_PUBLIC_AZAMPAY_APP_NAME ?? '';
-  const clientId = process.env.EXPO_PUBLIC_AZAMPAY_CLIENT_ID ?? '';
-  const clientSecret = process.env.EXPO_PUBLIC_AZAMPAY_CLIENT_SECRET ?? '';
-
-  const response = await fetch(
-    'https://authenticator.azampay.co.tz/AppRegistration/GenerateToken',
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ appName, clientId, clientSecret }),
-    }
-  );
-
-  if (!response.ok) throw new Error(`Azampay auth error: ${response.status}`);
-  const data: AzampayTokenResponse = await response.json();
-  if (!data.success) throw new Error('Azampay authentication failed');
-  return data.data.accessToken;
-}
-
 export type AzampayOperator = 'Airtel' | 'Tigo' | 'Halopesa' | 'Azampesa';
 
 export async function initiateAzampayMnoPayment(params: {
@@ -156,61 +125,11 @@ export async function initiateAzampayMnoPayment(params: {
   msisdn: string;
   operator: AzampayOperator;
 }): Promise<InitiatedPayment> {
-  const token = await getAzampayToken();
-  const reference = `SOMA${Date.now()}`;
-
-  const response = await fetch(
-    'https://checkout.azampay.co.tz/azampay/mno/checkout',
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({
-        accountNumber: params.msisdn,
-        additionalProperties: {
-          userId: params.userId,
-          planId: params.planId,
-        },
-        amount: String(params.amount),
-        currency: 'TZS',
-        externalId: reference,
-        provider: params.operator,
-      }),
-    }
-  );
-
-  if (!response.ok) {
-    throw new Error(`Azampay MNO error: ${response.status}`);
-  }
-
-  const data: AzampayCheckoutResponse = await response.json();
-  if (!data.success) throw new Error(`Azampay: ${data.message}`);
-
-  if (isFirebaseConfigured()) {
-    await addDoc(collection(firestore, COLLECTIONS.paymentRequests), {
-      userId: params.userId,
-      planId: params.planId,
-      planType: params.planId,
-      provider: 'azampay' as PaymentProvider,
-      amount: params.amount,
-      phoneNumber: params.msisdn,
-      status: 'pending',
-      orderId: reference,
-      referenceCode: data.transactionId,
-      operator: params.operator,
-      createdAt: serverTimestamp(),
-      updatedAt: serverTimestamp(),
-    });
-  }
-
-  return {
-    orderId: reference,
-    reference: data.transactionId,
-    paymentUrl: data.redirectUrl ?? '',
-    provider: 'azampay',
-  };
+  // Token exchange uses the server-side secret via Cloud Function — never expose it client-side
+  const functions = getFunctions(app);
+  const callFn = httpsCallable<typeof params, InitiatedPayment>(functions, 'initiateAzampayPayment');
+  const result = await callFn(params);
+  return result.data;
 }
 
 // ─── Mark as awaiting manual verification ─────────────────────────────────────

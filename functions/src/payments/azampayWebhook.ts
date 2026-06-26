@@ -24,7 +24,10 @@ function verifyAzampaySignature(
     .createHmac('sha256', secret)
     .update(message)
     .digest('hex');
-  return crypto.timingSafeEqual(Buffer.from(expected), Buffer.from(signature));
+  const a = Buffer.from(expected);
+  const b = Buffer.from(signature);
+  // timingSafeEqual throws if lengths differ; guard here avoids crash on malformed headers
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 
 export const azampayWebhook = functions

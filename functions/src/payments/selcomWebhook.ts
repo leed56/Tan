@@ -22,7 +22,10 @@ function verifySelcomSignature(payload: string, signature: string, secret: strin
     .createHmac('sha256', secret)
     .update(payload)
     .digest('base64');
-  return crypto.timingSafeEqual(Buffer.from(expected), Buffer.from(signature));
+  const a = Buffer.from(expected);
+  const b = Buffer.from(signature);
+  // timingSafeEqual throws if lengths differ; guard here avoids crash on malformed headers
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 
 export const selcomWebhook = functions

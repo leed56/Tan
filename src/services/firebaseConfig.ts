@@ -5,7 +5,6 @@ import {
   getFirestore,
   Firestore,
   persistentLocalCache,
-  persistentMultipleTabManager,
   CACHE_SIZE_UNLIMITED,
 } from 'firebase/firestore';
 import { getStorage, FirebaseStorage } from 'firebase/storage';
@@ -29,10 +28,7 @@ if (getApps().length === 0) {
   app = initializeApp(firebaseConfig);
   // Enable offline persistence with unlimited cache size
   firestore = initializeFirestore(app, {
-    localCache: persistentLocalCache({
-      tabManager: persistentMultipleTabManager(),
-      cacheSizeBytes: CACHE_SIZE_UNLIMITED,
-    }),
+    localCache: persistentLocalCache({ cacheSizeBytes: CACHE_SIZE_UNLIMITED }),
   });
 } else {
   app = getApps()[0];

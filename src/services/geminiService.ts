@@ -48,7 +48,7 @@ export async function callExplanationFunction(
   return {
     simpleExplanation: explanation.simpleExplanation ?? '',
     whyCorrect: explanation.whyCorrect ?? '',
-    whyWrong: explanation.whyWrong ?? '',
+    whyWrong: (typeof explanation.whyWrong === 'object' && explanation.whyWrong !== null ? explanation.whyWrong : {}) as Record<string, string>,
     examTip: explanation.examTip ?? '',
     memoryTrick: explanation.memoryTip ?? '',
     stepByStep: [],

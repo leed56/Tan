@@ -38,25 +38,32 @@ interface SentryModule {
   addBreadcrumb(breadcrumb: SentryBreadcrumb): void;
 }
 
-// ─── lazy loaders ─────────────────────────────────────────────────────────────
+// ─── lazy module cache (loaded once at init time) ─────────────────────────────
+
+let _crashlytics: CrashlyticsInstance | null | undefined;
+let _sentry: SentryModule | null | undefined;
 
 function getCrashlytics(): CrashlyticsInstance | null {
+  if (_crashlytics !== undefined) return _crashlytics;
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const m = require('@react-native-firebase/crashlytics');
-    return (m.default ?? m)();
+    _crashlytics = (m.default ?? m)();
   } catch {
-    return null;
+    _crashlytics = null;
   }
+  return _crashlytics;
 }
 
 function getSentry(): SentryModule | null {
+  if (_sentry !== undefined) return _sentry;
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    return require('@sentry/react-native') as SentryModule;
+    _sentry = require('@sentry/react-native') as SentryModule;
   } catch {
-    return null;
+    _sentry = null;
   }
+  return _sentry;
 }
 
 // ─── init ────────────────────────────────────────────────────────────────────

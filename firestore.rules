@@ -49,8 +49,8 @@ service cloud.firestore {
         && validString(request.resource.data.displayName, 1, 100)
         && request.resource.data.subscriptionStatus == 'free'
         && request.resource.data.role == 'student';
-      allow update: if isOwner(userId)
-        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'createdAt', 'phoneNumber'])
+      allow update: if (isOwner(userId)
+        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'createdAt', 'phoneNumber']))
         || isAdmin();
       allow delete: if isSuperAdmin();
     }
