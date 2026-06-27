@@ -1,0 +1,444 @@
+{
+  "topicId": "form_2_chemistry_topic_5",
+  "topicName": "Chemical Formulae and Equations",
+  "order": 5,
+  "description": "This topic covers symbols of common elements, valency, writing chemical formulae of compounds, and writing and balancing chemical equations with state symbols.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the correct chemical symbol for the element sodium?",
+        "options": [
+          {"id": "a", "text": "So", "isCorrect": false},
+          {"id": "b", "text": "Na", "isCorrect": true},
+          {"id": "c", "text": "Sd", "isCorrect": false},
+          {"id": "d", "text": "S", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The symbol for sodium is Na, taken from its Latin name 'natrium'. The symbol S stands for sulphur.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the chemical formula of water?",
+        "options": [
+          {"id": "a", "text": "HO", "isCorrect": false},
+          {"id": "b", "text": "H2O2", "isCorrect": false},
+          {"id": "c", "text": "H2O", "isCorrect": true},
+          {"id": "d", "text": "HO2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Water contains two hydrogen atoms (valency 1) combined with one oxygen atom (valency 2), giving the formula H2O.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the valency of oxygen in most of its common compounds?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": true},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Oxygen normally has a valency of 2, which is why it combines with two hydrogen atoms to form water.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which symbol correctly represents the element iron?",
+        "options": [
+          {"id": "a", "text": "Ir", "isCorrect": false},
+          {"id": "b", "text": "In", "isCorrect": false},
+          {"id": "c", "text": "Fe", "isCorrect": true},
+          {"id": "d", "text": "I", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Iron has the symbol Fe, from its Latin name 'ferrum'. Ir is iridium and I is iodine.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the chemical formula of calcium chloride, given calcium has valency 2 and chlorine has valency 1?",
+        "options": [
+          {"id": "a", "text": "CaCl", "isCorrect": false},
+          {"id": "b", "text": "CaCl2", "isCorrect": true},
+          {"id": "c", "text": "Ca2Cl", "isCorrect": false},
+          {"id": "d", "text": "Ca2Cl2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Calcium (valency 2) combines with chlorine (valency 1), so two chlorine atoms balance one calcium, giving CaCl2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is the correctly balanced equation for the formation of water?",
+        "options": [
+          {"id": "a", "text": "H2 + O2 -> H2O", "isCorrect": false},
+          {"id": "b", "text": "2H2 + O2 -> 2H2O", "isCorrect": true},
+          {"id": "c", "text": "H2 + O -> H2O", "isCorrect": false},
+          {"id": "d", "text": "2H + O2 -> H2O2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In 2H2 + O2 -> 2H2O there are 4 hydrogen atoms and 2 oxygen atoms on both sides, so the equation is balanced.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What does the state symbol (aq) mean in a chemical equation?",
+        "options": [
+          {"id": "a", "text": "Solid", "isCorrect": false},
+          {"id": "b", "text": "Liquid", "isCorrect": false},
+          {"id": "c", "text": "Gas", "isCorrect": false},
+          {"id": "d", "text": "Dissolved in water (aqueous)", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "The symbol (aq) means aqueous, that is, a substance dissolved in water. Solid is (s), liquid (l) and gas (g).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the chemical formula of carbon dioxide?",
+        "options": [
+          {"id": "a", "text": "CO", "isCorrect": false},
+          {"id": "b", "text": "C2O", "isCorrect": false},
+          {"id": "c", "text": "CO2", "isCorrect": true},
+          {"id": "d", "text": "CO3", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Carbon dioxide has one carbon atom joined to two oxygen atoms, giving the formula CO2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the valency of the sulphate ion (SO4)?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": true},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The sulphate radical SO4 has a valency of 2, which is why it forms compounds such as Na2SO4 with sodium.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which formula correctly represents aluminium oxide, given aluminium has valency 3 and oxygen valency 2?",
+        "options": [
+          {"id": "a", "text": "AlO", "isCorrect": false},
+          {"id": "b", "text": "Al2O3", "isCorrect": true},
+          {"id": "c", "text": "Al3O2", "isCorrect": false},
+          {"id": "d", "text": "AlO2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cross-multiplying the valencies (Al = 3, O = 2) gives two aluminium atoms to three oxygen atoms, hence Al2O3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The word equation 'magnesium + oxygen -> magnesium oxide' is written in symbols and balanced as which of the following?",
+        "options": [
+          {"id": "a", "text": "Mg + O2 -> MgO", "isCorrect": false},
+          {"id": "b", "text": "2Mg + O2 -> 2MgO", "isCorrect": true},
+          {"id": "c", "text": "Mg + O -> MgO", "isCorrect": false},
+          {"id": "d", "text": "Mg2 + O2 -> 2MgO", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "2Mg + O2 -> 2MgO has 2 magnesium and 2 oxygen atoms on each side, so it is correctly balanced.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the chemical symbol for potassium?",
+        "options": [
+          {"id": "a", "text": "P", "isCorrect": false},
+          {"id": "b", "text": "Po", "isCorrect": false},
+          {"id": "c", "text": "K", "isCorrect": true},
+          {"id": "d", "text": "Pt", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Potassium has the symbol K, from its Latin name 'kalium'. The symbol P stands for phosphorus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following correctly shows the number of atoms in the formula Ca(OH)2?",
+        "options": [
+          {"id": "a", "text": "1 calcium, 1 oxygen, 1 hydrogen", "isCorrect": false},
+          {"id": "b", "text": "1 calcium, 2 oxygen, 2 hydrogen", "isCorrect": true},
+          {"id": "c", "text": "2 calcium, 2 oxygen, 2 hydrogen", "isCorrect": false},
+          {"id": "d", "text": "1 calcium, 1 oxygen, 2 hydrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The subscript 2 outside the bracket multiplies both O and H inside, giving 1 Ca, 2 O and 2 H atoms.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a balanced chemical equation, the total mass of reactants is always:",
+        "options": [
+          {"id": "a", "text": "Greater than the mass of products", "isCorrect": false},
+          {"id": "b", "text": "Less than the mass of products", "isCorrect": false},
+          {"id": "c", "text": "Equal to the mass of products", "isCorrect": true},
+          {"id": "d", "text": "Zero", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The law of conservation of mass states that mass is neither created nor destroyed, so reactant mass equals product mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which formula represents ammonium nitrate, formed from the ammonium ion (NH4, valency 1) and the nitrate ion (NO3, valency 1)?",
+        "options": [
+          {"id": "a", "text": "NH4NO3", "isCorrect": true},
+          {"id": "b", "text": "(NH4)2NO3", "isCorrect": false},
+          {"id": "c", "text": "NH4(NO3)2", "isCorrect": false},
+          {"id": "d", "text": "NH3NO4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since both ions have valency 1, they combine in a 1:1 ratio, giving the formula NH4NO3.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The chemical symbol for the element carbon is _____.",
+        "options": [],
+        "correctAnswer": "C",
+        "explanation": "Carbon is represented by the single capital letter C.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The chemical formula of common salt (sodium chloride) is _____.",
+        "options": [],
+        "correctAnswer": "NaCl",
+        "explanation": "Sodium (valency 1) combines with chlorine (valency 1) in a 1:1 ratio to form NaCl.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the formula H2SO4, the total number of hydrogen atoms present is _____.",
+        "options": [],
+        "correctAnswer": "2",
+        "explanation": "The subscript 2 after H shows that there are two hydrogen atoms in sulphuric acid.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When balancing 'N2 + 3H2 -> 2NH3', the number that must be placed in front of NH3 is _____.",
+        "options": [],
+        "correctAnswer": "2",
+        "explanation": "Placing 2 before NH3 gives 2 nitrogen and 6 hydrogen atoms on the right, balancing N2 and 3H2 on the left.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The state symbol used to show that a substance is a gas is _____.",
+        "options": [],
+        "correctAnswer": "(g)",
+        "explanation": "The symbol (g) is written after a formula to indicate the gaseous state.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The valency of hydrogen in its compounds is _____.",
+        "options": [],
+        "correctAnswer": "1",
+        "explanation": "Hydrogen has a valency of 1, so it combines with one atom of a monovalent element such as chlorine.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The chemical formula of the compound formed between iron with valency 3 and oxygen is _____.",
+        "options": [],
+        "correctAnswer": "Fe2O3",
+        "explanation": "Cross-multiplying valencies (Fe = 3, O = 2) gives Fe2O3, known as iron(III) oxide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Balance the equation: C + O2 -> _____.",
+        "options": [],
+        "correctAnswer": "CO2",
+        "explanation": "One carbon atom reacts with one oxygen molecule to form carbon dioxide, CO2, which is already balanced.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The chemical formula of magnesium chloride is _____.",
+        "options": [],
+        "correctAnswer": "MgCl2",
+        "explanation": "Magnesium (valency 2) needs two chlorine atoms (valency 1 each), giving MgCl2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the equation Zn + H2SO4 -> ZnSO4 + H2, the gas given off is _____.",
+        "options": [],
+        "correctAnswer": "H2",
+        "explanation": "Zinc reacts with dilute sulphuric acid to displace hydrogen, releasing hydrogen gas, H2.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The chemical symbol for gold is Au.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Gold's symbol Au comes from its Latin name 'aurum'.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The valency of an element is the number of hydrogen atoms (or their equivalent) that combine with one atom of the element.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Valency is defined as the combining power of an atom, measured by the number of hydrogen atoms it combines with or replaces.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The formula CO2 means there is one molecule of carbon and two molecules of oxygen.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "CO2 means one molecule contains one carbon atom and two oxygen atoms, not separate molecules of each element.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The equation H2 + Cl2 -> 2HCl is correctly balanced.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "There are 2 hydrogen and 2 chlorine atoms on both sides, so the equation is balanced.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The state symbol (l) is used to represent a substance dissolved in water.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The symbol (l) represents a pure liquid; a substance dissolved in water is shown by (aq).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When balancing a chemical equation, you may change the subscripts within a formula to make atoms balance.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Subscripts must never be changed; only coefficients (the numbers in front of formulae) are adjusted when balancing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The chemical symbol Cu represents copper.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Copper has the symbol Cu, derived from its Latin name 'cuprum'.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The formula of sodium oxide is NaO.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Sodium has valency 1 and oxygen valency 2, so two sodium atoms are needed, giving Na2O.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A word equation uses the names of the reactants and products rather than their chemical symbols.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A word equation describes a reaction using substance names, while a symbol equation uses chemical formulae.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a balanced equation, the number of atoms of each element must be the same on both sides.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Balancing ensures the number of atoms of every element is equal on both sides, satisfying conservation of mass.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "What is a chemical symbol?",
+        "options": [],
+        "correctAnswer": "A short letter representation of an element.",
+        "explanation": "Each element has a one- or two-letter symbol, for example O for oxygen and Na for sodium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define valency.",
+        "options": [],
+        "correctAnswer": "The combining power of an element.",
+        "explanation": "Valency is the number of hydrogen atoms an atom can combine with or replace.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How is a chemical formula written using valencies?",
+        "options": [],
+        "correctAnswer": "Cross-multiply the valencies of the combining elements.",
+        "explanation": "The valency of one element becomes the subscript of the other, for example Al2O3 from Al(3) and O(2).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is a word equation?",
+        "options": [],
+        "correctAnswer": "An equation using the names of reactants and products.",
+        "explanation": "For example: carbon + oxygen -> carbon dioxide.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why must chemical equations be balanced?",
+        "options": [],
+        "correctAnswer": "To obey the law of conservation of mass.",
+        "explanation": "Atoms are neither created nor destroyed, so each element must have equal atoms on both sides.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What are the four common state symbols?",
+        "options": [],
+        "correctAnswer": "(s) solid, (l) liquid, (g) gas, (aq) aqueous.",
+        "explanation": "State symbols show the physical state of each substance in a reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does a subscript number in a formula tell us?",
+        "options": [],
+        "correctAnswer": "The number of atoms of the element before it.",
+        "explanation": "In H2O the subscript 2 shows two hydrogen atoms per molecule.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is a coefficient in a chemical equation?",
+        "options": [],
+        "correctAnswer": "The number written in front of a formula.",
+        "explanation": "Coefficients show how many molecules of each substance take part, and are adjusted to balance equations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the formula of water and what does it show?",
+        "options": [],
+        "correctAnswer": "H2O, two hydrogen atoms and one oxygen atom.",
+        "explanation": "Water forms because hydrogen (valency 1) combines with oxygen (valency 2).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the difference between a subscript and a coefficient?",
+        "options": [],
+        "correctAnswer": "A subscript counts atoms in a formula; a coefficient counts molecules.",
+        "explanation": "Subscripts are part of the formula and are fixed; coefficients are placed in front and changed when balancing.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "When the equation 'Al + O2 -> Al2O3' is correctly balanced, what are the coefficients of Al, O2 and Al2O3 respectively?",
+        "options": [
+          {"id": "a", "text": "2, 3, 1", "isCorrect": false},
+          {"id": "b", "text": "4, 3, 2", "isCorrect": true},
+          {"id": "c", "text": "2, 3, 2", "isCorrect": false},
+          {"id": "d", "text": "4, 6, 2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "4Al + 3O2 -> 2Al2O3 gives 4 aluminium atoms and 6 oxygen atoms on both sides, so it is balanced.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Iron(III) chloride reacts with sodium hydroxide. Which is the correctly balanced equation including state symbols?",
+        "options": [
+          {"id": "a", "text": "FeCl3(aq) + NaOH(aq) -> Fe(OH)3(s) + NaCl(aq)", "isCorrect": false},
+          {"id": "b", "text": "FeCl3(aq) + 3NaOH(aq) -> Fe(OH)3(s) + 3NaCl(aq)", "isCorrect": true},
+          {"id": "c", "text": "FeCl3(aq) + 2NaOH(aq) -> Fe(OH)2(s) + 2NaCl(aq)", "isCorrect": false},
+          {"id": "d", "text": "2FeCl3(aq) + 3NaOH(aq) -> 2Fe(OH)3(s) + 3NaCl(aq)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "FeCl3 + 3NaOH -> Fe(OH)3 + 3NaCl balances 1 Fe, 3 Cl, 3 Na, 3 O and 3 H on each side, with the hydroxide as an insoluble solid.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "When calcium carbonate is heated it decomposes. Which is the correctly balanced equation with state symbols?",
+        "options": [
+          {"id": "a", "text": "CaCO3(s) -> CaO(s) + CO2(g)", "isCorrect": true},
+          {"id": "b", "text": "CaCO3(s) -> Ca(s) + CO3(g)", "isCorrect": false},
+          {"id": "c", "text": "2CaCO3(s) -> 2CaO(s) + CO2(g)", "isCorrect": false},
+          {"id": "d", "text": "CaCO3(s) -> CaO2(s) + CO(g)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "CaCO3 -> CaO + CO2 already balances 1 Ca, 1 C and 3 O on each side, with carbon dioxide released as a gas.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
