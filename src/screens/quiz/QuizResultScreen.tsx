@@ -16,6 +16,9 @@ import { ResultSummaryCard } from '../../components/ui/quiz/ResultSummaryCard';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useAuthStore } from '../../store/authStore';
+import { useProfileStore } from '../../store/profileStore';
+import { useMissionStore } from '../../store/missionStore';
+import { updateLeaderboardScore } from '../../services/leaderboardService';
 import { XPAnimationOverlay } from '../../components/ui/gamification/XPAnimationOverlay';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
 import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
@@ -46,15 +49,30 @@ export function QuizResultScreen({ navigation, route }: Props) {
 
   const { pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge, checkStreak, checkBadges, persistProfile } = useGamificationStore();
   const uid = useAuthStore((s) => s.user?.uid);
+  const profile = useProfileStore((s) => s.profile);
+  const updateMissionProgress = useMissionStore((s) => s.updateProgress);
   const [showXpAnim, setShowXpAnim] = useState(xpEarned > 0);
 
-  // On quiz completion: advance the daily streak, evaluate badge unlocks, and
-  // persist the gamification profile (per-answer XP/coins already persisted).
+  // On quiz completion: advance the daily streak, evaluate badge unlocks, persist
+  // the gamification profile, update the leaderboard, and advance daily missions.
   useEffect(() => {
     checkBadges({ quizScorePercent: scorePercent, subjectKey: subjectId });
     if (uid) {
       checkStreak(uid).catch(() => {});
       persistProfile(uid).catch(() => {});
+      if (xpEarned > 0 && profile) {
+        updateLeaderboardScore(
+          uid,
+          profile.name,
+          profile.avatarId,
+          profile.form,
+          profile.school ?? '',
+          xpEarned,
+        ).catch(() => {});
+      }
+      updateMissionProgress(uid, 'quizzes_completed', 1).catch(() => {});
+      updateMissionProgress(uid, 'questions_answered', totalQuestions).catch(() => {});
+      if (xpEarned > 0) updateMissionProgress(uid, 'xp_earned_today', xpEarned).catch(() => {});
     }
     // Run once per result screen mount.
     // eslint-disable-next-line react-hooks/exhaustive-deps

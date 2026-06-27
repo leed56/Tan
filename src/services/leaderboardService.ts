@@ -7,10 +7,17 @@ import {
   doc,
   setDoc,
   where,
+  runTransaction,
 } from 'firebase/firestore';
 import { firestore, COLLECTIONS } from './firebaseConfig';
 import type { LeaderboardScore } from '../types/gamification';
 import { DEMO_LEADERBOARD, AVATARS } from '../constants';
+import { weekKey, monthKey } from '../utils/date';
+
+/** Stable school id derived from the free-text school name (no schools table yet). */
+function schoolSlug(school: string): string {
+  return school.trim().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+}
 
 function isFirebaseConfigured(): boolean {
   return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
@@ -74,23 +81,37 @@ export async function updateLeaderboardScore(
   school: string,
   xpDelta: number,
 ): Promise<void> {
-  if (!isFirebaseConfigured()) return;
+  if (!isFirebaseConfigured() || xpDelta <= 0) return;
+  const ref = doc(firestore, COLLECTIONS.leaderboardScores, userId);
+  const wk = weekKey();
+  const mk = monthKey();
   try {
-    const ref = doc(firestore, COLLECTIONS.leaderboardScores, userId);
-    await setDoc(
-      ref,
-      {
-        userId,
-        name,
-        avatarId,
-        form,
-        school,
-        totalXp: xpDelta,  // server-side increment would be better; this is simplified
-        weeklyXp: xpDelta,
-        monthlyXp: xpDelta,
-        updatedAt: Date.now(),
-      },
-      { merge: true },
-    );
+    // Transaction so totalXp accumulates and weekly/monthly buckets reset when
+    // the week/month rolls over (no scheduled Cloud Function needed).
+    await runTransaction(firestore, async (tx) => {
+      const snap = await tx.get(ref);
+      const d = snap.exists() ? snap.data() : {};
+      const totalXp = ((d.totalXp as number) ?? 0) + xpDelta;
+      const weeklyXp = (d.weekKey === wk ? ((d.weeklyXp as number) ?? 0) : 0) + xpDelta;
+      const monthlyXp = (d.monthKey === mk ? ((d.monthlyXp as number) ?? 0) : 0) + xpDelta;
+      tx.set(
+        ref,
+        {
+          userId,
+          name,
+          avatarId,
+          form,
+          school,
+          schoolId: schoolSlug(school),
+          totalXp,
+          weeklyXp,
+          monthlyXp,
+          weekKey: wk,
+          monthKey: mk,
+          updatedAt: Date.now(),
+        },
+        { merge: true },
+      );
+    });
   } catch {}
 }
