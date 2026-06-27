@@ -43,12 +43,62 @@ function parseIds(topicId) {
   return { formId: m[1], subjectId: `${m[1]}_${m[2]}` };
 }
 
-const files = readdirSync(DIR).filter((f) => f.endsWith('.json') && f.includes(FILTER));
-console.log(`Seeding ${files.length} topic file(s) → ${PROJECT}\n`);
+// Required item count per pack — a file is rejected unless it matches exactly.
+const EXPECTED = { mcq: 15, fib: 10, tf: 10, summary: 10, hoq: 3 };
 
+// Validate counts + structure and self-heal option.isCorrect flags from
+// correctAnswer. Returns an array of fatal error strings (empty = ok to seed).
+function validateAndHeal(file, t) {
+  const errs = [];
+  if (!t.topicId || !t.packs) { errs.push(`${file}: missing topicId/packs`); return errs; }
+  for (const [key, want] of Object.entries(EXPECTED)) {
+    const arr = t.packs[key];
+    if (!Array.isArray(arr)) { errs.push(`${file}: pack '${key}' missing`); continue; }
+    if (arr.length !== want) errs.push(`${file}: pack '${key}' has ${arr.length}, expected ${want}`);
+  }
+  for (const key of ['mcq', 'hoq']) {
+    (t.packs[key] || []).forEach((q, i) => {
+      if (!Array.isArray(q.options) || q.options.length !== 4) {
+        errs.push(`${file}: ${key}[${i}] must have 4 options`);
+        return;
+      }
+      // self-heal: derive isCorrect from correctAnswer
+      q.options.forEach((o) => { o.isCorrect = o.id === q.correctAnswer; });
+      if (q.options.filter((o) => o.isCorrect).length !== 1) {
+        errs.push(`${file}: ${key}[${i}] correctAnswer '${q.correctAnswer}' matches no option id`);
+      }
+    });
+  }
+  (t.packs.tf || []).forEach((q, i) => {
+    const v = String(q.correctAnswer).toLowerCase();
+    if (v !== 'true' && v !== 'false') errs.push(`${file}: tf[${i}] correctAnswer must be true/false`);
+  });
+  return errs;
+}
+
+const files = readdirSync(DIR).filter((f) => f.endsWith('.json') && f.includes(FILTER)).sort();
+
+// ── Pass 1: load + validate + self-heal ALL files before seeding anything ──
+const loaded = [];
+const allErrs = [];
+for (const file of files) {
+  let t;
+  try { t = JSON.parse(readFileSync(`${DIR}/${file}`, 'utf8')); }
+  catch (e) { allErrs.push(`${file}: invalid JSON — ${e.message}`); continue; }
+  allErrs.push(...validateAndHeal(file, t));
+  loaded.push({ file, t });
+}
+if (allErrs.length) {
+  console.error(`✗ Refusing to seed — ${allErrs.length} validation error(s):`);
+  allErrs.forEach((e) => console.error('  - ' + e));
+  process.exit(1);
+}
+console.log(`✓ Validated ${loaded.length} file(s): all packs 15/10/10/10/3, options healed.`);
+console.log(`Seeding → ${PROJECT}\n`);
+
+// ── Pass 2: seed ──
 let topicsN = 0, packsN = 0, qN = 0;
-for (const file of files.sort()) {
-  const t = JSON.parse(readFileSync(`${DIR}/${file}`, 'utf8'));
+for (const { file, t } of loaded) {
   const { formId, subjectId } = parseIds(t.topicId);
   const batch = db.batch();
 
