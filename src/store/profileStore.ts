@@ -1,4 +1,6 @@
 import { create } from 'zustand';
+import { persist, createJSONStorage } from 'zustand/middleware';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { UserProfile, FormLevel, AvatarId } from '../types';
 
 interface ProfileStore {
@@ -17,7 +19,9 @@ interface ProfileStore {
   clearProfile: () => void;
 }
 
-export const useProfileStore = create<ProfileStore>((set) => ({
+export const useProfileStore = create<ProfileStore>()(
+  persist(
+    (set) => ({
   profile: null,
   loading: false,
   error: null,
@@ -64,4 +68,11 @@ export const useProfileStore = create<ProfileStore>((set) => ({
   setError: (error) => set({ error, loading: false }),
 
   clearProfile: () => set({ profile: null, loading: false, error: null }),
-}));
+    }),
+    {
+      name: 'soma-profile',
+      storage: createJSONStorage(() => AsyncStorage),
+      partialize: (s) => ({ profile: s.profile }),
+    },
+  ),
+);

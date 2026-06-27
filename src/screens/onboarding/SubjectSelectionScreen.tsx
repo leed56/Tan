@@ -10,11 +10,18 @@ import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { SUBJECTS } from '../../constants';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
+import { updateSelectedSubjects as persistSelectedSubjects } from '../../services/userService';
 import type { Subject } from '../../types';
 
 type Props = StackScreenProps<AuthStackParamList, 'SubjectSelection'>;
 
 const MIN_SELECTION = 2;
+
+// SUBJECTS use bare ids (e.g. "mathematics"); the DB uses form-scoped ids
+// (e.g. "form_1_mathematics"). Convert between the two so the UI stays simple
+// while persisted ids match the curriculum collections.
+const toBareId = (id: string) => id.replace(/^form_\d+_/, '');
+const toScopedId = (form: number, id: string) => `form_${form}_${toBareId(id)}`;
 
 export function SubjectSelectionScreen({ navigation }: Props) {
   const profile = useProfileStore((s) => s.profile);
@@ -23,7 +30,7 @@ export function SubjectSelectionScreen({ navigation }: Props) {
   const user = useAuthStore((s) => s.user);
 
   const [selected, setSelected] = useState<Set<string>>(
-    new Set(profile?.selectedSubjectIds ?? []),
+    new Set((profile?.selectedSubjectIds ?? []).map(toBareId)),
   );
   const [saving, setSaving] = useState(false);
 
@@ -38,9 +45,11 @@ export function SubjectSelectionScreen({ navigation }: Props) {
 
   const handleStart = async () => {
     setSaving(true);
-    // TODO: Phase 2 — persist to Firestore
-    await new Promise((r) => setTimeout(r, 800));
-    updateSelectedSubjects(Array.from(selected));
+    // Store DB-compatible form-scoped ids based on the student's form.
+    const form = profile?.form ?? 1;
+    const scopedIds = Array.from(selected).map((id) => toScopedId(form, id));
+    updateSelectedSubjects(scopedIds);
+    if (user) await persistSelectedSubjects(user.uid, scopedIds);
     // Authenticate user into the app
     if (user) setUser(user);
     setSaving(false);

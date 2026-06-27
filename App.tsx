@@ -9,14 +9,16 @@ import * as SplashScreen from 'expo-splash-screen';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { initCrashReporting } from './src/services/crashReportingService';
 import { initOfflineSupport } from './src/services/offlineService';
+import { useAuthStore } from './src/store/authStore';
 
-// Keep the native splash visible until fonts/data are ready
+// Keep the native splash visible until persisted state is rehydrated
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
+  const hasHydrated = useAuthStore((s) => s.hasHydrated);
+
   const onReady = useCallback(async () => {
-    // TODO: Phase 2 — load fonts (expo-font), restore auth state, prefetch user data
-    await SplashScreen.hideAsync();
+    await SplashScreen.hideAsync().catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -27,6 +29,14 @@ export default function App() {
     // TODO: Phase 2 — initialize Firebase Analytics, FCM token registration
     // TODO: Phase 2 — check for app updates (expo-updates)
   }, []);
+
+  useEffect(() => {
+    // Hide the native splash once the persisted session has rehydrated; a
+    // timeout fallback guarantees we never get stuck on the native splash.
+    if (hasHydrated) SplashScreen.hideAsync().catch(() => {});
+    const t = setTimeout(() => SplashScreen.hideAsync().catch(() => {}), 3000);
+    return () => clearTimeout(t);
+  }, [hasHydrated]);
 
   return (
     <GestureHandlerRootView style={styles.root}>

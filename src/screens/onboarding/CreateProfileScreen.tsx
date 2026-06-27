@@ -16,6 +16,7 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
+import { createUserProfile } from '../../services/userService';
 import { AVATARS } from '../../constants';
 
 type Props = StackScreenProps<AuthStackParamList, 'CreateProfile'>;
@@ -37,9 +38,7 @@ export function CreateProfileScreen({ navigation }: Props) {
   const handleContinue = async () => {
     if (!canContinue || !user) return;
     setLoading(true);
-    // TODO: Phase 2 — persist to Firestore /profiles/{uid}
-    await new Promise((r) => setTimeout(r, 800));
-    setProfile({
+    const profile = {
       uid: user.uid,
       name: name.trim(),
       form: form!,
@@ -48,7 +47,10 @@ export function CreateProfileScreen({ navigation }: Props) {
       selectedSubjectIds: [],
       createdAt: Date.now(),
       updatedAt: Date.now(),
-    });
+    };
+    // Persist locally (survives restart) and to Firestore users/{uid}.
+    setProfile(profile);
+    await createUserProfile(user, profile);
     setLoading(false);
     navigation.navigate('SubjectSelection');
   };
