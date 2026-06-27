@@ -1,0 +1,444 @@
+{
+  "topicId": "form_1_biology_topic_1",
+  "topicName": "Introduction to Biology",
+  "order": 1,
+  "description": "An introduction to biology covering its meaning, branches, importance, the characteristics of living things, biology as a science, the scientific method, and basic laboratory apparatus.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Biology is best defined as the scientific study of which of the following?",
+        "options": [
+          {"id": "a", "text": "Rocks and minerals", "isCorrect": false},
+          {"id": "b", "text": "Living things and life processes", "isCorrect": true},
+          {"id": "c", "text": "Stars and planets", "isCorrect": false},
+          {"id": "d", "text": "Chemical reactions only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The word biology comes from 'bios' (life) and 'logos' (study), so it is the study of living things and their life processes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which branch of biology deals with the study of animals?",
+        "options": [
+          {"id": "a", "text": "Botany", "isCorrect": false},
+          {"id": "b", "text": "Ecology", "isCorrect": false},
+          {"id": "c", "text": "Zoology", "isCorrect": true},
+          {"id": "d", "text": "Genetics", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Zoology is the branch of biology that studies animals, while botany studies plants.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of biology that studies plants is called:",
+        "options": [
+          {"id": "a", "text": "Botany", "isCorrect": true},
+          {"id": "b", "text": "Microbiology", "isCorrect": false},
+          {"id": "c", "text": "Physiology", "isCorrect": false},
+          {"id": "d", "text": "Entomology", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Botany is the study of plants, including their structure, growth and uses.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is NOT a characteristic of all living things?",
+        "options": [
+          {"id": "a", "text": "Respiration", "isCorrect": false},
+          {"id": "b", "text": "Growth", "isCorrect": false},
+          {"id": "c", "text": "Reproduction", "isCorrect": false},
+          {"id": "d", "text": "Rusting", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "Rusting is a chemical change in metals, not a life process. Living things respire, grow and reproduce.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The removal of metabolic waste products from the body of an organism is known as:",
+        "options": [
+          {"id": "a", "text": "Nutrition", "isCorrect": false},
+          {"id": "b", "text": "Excretion", "isCorrect": true},
+          {"id": "c", "text": "Irritability", "isCorrect": false},
+          {"id": "d", "text": "Movement", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Excretion is the process of getting rid of waste products of metabolism, such as carbon dioxide and urea.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The ability of living things to respond to changes in their surroundings is called:",
+        "options": [
+          {"id": "a", "text": "Sensitivity (irritability)", "isCorrect": true},
+          {"id": "b", "text": "Reproduction", "isCorrect": false},
+          {"id": "c", "text": "Excretion", "isCorrect": false},
+          {"id": "d", "text": "Growth", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sensitivity, also called irritability, is the ability to detect and respond to stimuli in the environment.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which branch of biology would a scientist studying malaria-causing parasites such as Plasmodium mostly use?",
+        "options": [
+          {"id": "a", "text": "Botany", "isCorrect": false},
+          {"id": "b", "text": "Microbiology", "isCorrect": true},
+          {"id": "c", "text": "Genetics", "isCorrect": false},
+          {"id": "d", "text": "Ecology", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Microbiology is the study of microscopic organisms such as bacteria, viruses and protozoa like Plasmodium.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is the correct first step of the scientific method?",
+        "options": [
+          {"id": "a", "text": "Drawing a conclusion", "isCorrect": false},
+          {"id": "b", "text": "Carrying out an experiment", "isCorrect": false},
+          {"id": "c", "text": "Observation and identifying a problem", "isCorrect": true},
+          {"id": "d", "text": "Publishing results", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The scientific method begins with observation and identifying a problem, followed by forming a hypothesis and experimenting.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An intelligent guess or proposed explanation that can be tested by experiment is called a:",
+        "options": [
+          {"id": "a", "text": "Conclusion", "isCorrect": false},
+          {"id": "b", "text": "Hypothesis", "isCorrect": true},
+          {"id": "c", "text": "Theory", "isCorrect": false},
+          {"id": "d", "text": "Law", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A hypothesis is a testable, tentative explanation that a scientist forms before carrying out an experiment.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which laboratory apparatus is used to view very small objects such as cells that cannot be seen with the naked eye?",
+        "options": [
+          {"id": "a", "text": "Beaker", "isCorrect": false},
+          {"id": "b", "text": "Microscope", "isCorrect": true},
+          {"id": "c", "text": "Test tube", "isCorrect": false},
+          {"id": "d", "text": "Thermometer", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A microscope magnifies tiny objects such as cells and microorganisms so they can be studied.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a biology laboratory, which apparatus is most suitable for measuring an accurate volume of a liquid?",
+        "options": [
+          {"id": "a", "text": "Measuring cylinder", "isCorrect": true},
+          {"id": "b", "text": "Petri dish", "isCorrect": false},
+          {"id": "c", "text": "Bunsen burner", "isCorrect": false},
+          {"id": "d", "text": "Hand lens", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A measuring cylinder has graduations that allow accurate measurement of liquid volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The importance of biology in agriculture is mainly seen in:",
+        "options": [
+          {"id": "a", "text": "Building roads and bridges", "isCorrect": false},
+          {"id": "b", "text": "Improving crop and animal production", "isCorrect": true},
+          {"id": "c", "text": "Designing computers", "isCorrect": false},
+          {"id": "d", "text": "Predicting weather", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Biology helps farmers improve crop varieties, control pests and diseases, and increase animal production.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which branch of biology studies the relationship between living organisms and their environment?",
+        "options": [
+          {"id": "a", "text": "Genetics", "isCorrect": false},
+          {"id": "b", "text": "Anatomy", "isCorrect": false},
+          {"id": "c", "text": "Ecology", "isCorrect": true},
+          {"id": "d", "text": "Taxonomy", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ecology studies how organisms interact with one another and with their physical environment.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A student notices that a sunflower plant turns to face the sun during the day. Which characteristic of living things does this best demonstrate?",
+        "options": [
+          {"id": "a", "text": "Excretion", "isCorrect": false},
+          {"id": "b", "text": "Sensitivity", "isCorrect": true},
+          {"id": "c", "text": "Nutrition", "isCorrect": false},
+          {"id": "d", "text": "Reproduction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Turning towards light is a response to a stimulus, which shows sensitivity (irritability).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Why is the study of biology important for human health in a country like Tanzania?",
+        "options": [
+          {"id": "a", "text": "It helps in understanding and controlling diseases such as malaria and cholera", "isCorrect": true},
+          {"id": "b", "text": "It is used to manufacture mobile phones", "isCorrect": false},
+          {"id": "c", "text": "It is only useful for passing examinations", "isCorrect": false},
+          {"id": "d", "text": "It replaces the need for clean water", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Knowledge of biology helps in preventing, diagnosing and treating diseases that affect the community.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The word biology is derived from the Greek words 'bios' meaning life and 'logos' meaning _____.",
+        "options": [],
+        "correctAnswer": "study",
+        "explanation": "Biology literally means the study of life.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of biology that deals with the study of plants is called _____.",
+        "options": [],
+        "correctAnswer": "botany",
+        "explanation": "Botany focuses on plants, including their structure, function and uses.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of biology that deals with the study of animals is called _____.",
+        "options": [],
+        "correctAnswer": "zoology",
+        "explanation": "Zoology is concerned with the study of animals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process by which living things produce offspring of their own kind is called _____.",
+        "options": [],
+        "correctAnswer": "reproduction",
+        "explanation": "Reproduction ensures the continuity of a species from one generation to the next.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process by which organisms obtain and use food for energy and growth is called _____.",
+        "options": [],
+        "correctAnswer": "nutrition",
+        "explanation": "Nutrition provides the materials and energy needed for life processes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The release of energy from food within living cells is known as _____.",
+        "options": [],
+        "correctAnswer": "respiration",
+        "explanation": "Respiration breaks down food substances to release energy used by the body.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A testable, tentative explanation suggested before an experiment is called a _____.",
+        "options": [],
+        "correctAnswer": "hypothesis",
+        "explanation": "A hypothesis is tested through experiments to see whether it is supported or rejected.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The laboratory instrument used to magnify and view very small objects such as cells is the _____.",
+        "options": [],
+        "correctAnswer": "microscope",
+        "explanation": "The microscope makes tiny structures visible by magnifying them many times.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of biology that studies microscopic organisms such as bacteria and viruses is called _____.",
+        "options": [],
+        "correctAnswer": "microbiology",
+        "explanation": "Microbiology deals with organisms too small to be seen with the naked eye.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An increase in the size and number of cells leading to a permanent increase in the size of an organism is called _____.",
+        "options": [],
+        "correctAnswer": "growth",
+        "explanation": "Growth is a characteristic of living things resulting in a permanent increase in size.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Biology is the scientific study of non-living things.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Biology is the study of living things and their life processes, not non-living things.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Botany is the branch of biology that deals with the study of plants.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Botany is correctly defined as the study of plants.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "All living things are able to grow, reproduce and respond to their environment.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Growth, reproduction and sensitivity are among the basic characteristics shared by all living things.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Excretion means taking in food into the body of an organism.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Excretion is the removal of metabolic waste, not the intake of food (that is nutrition).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A hypothesis is the final, proven conclusion of a scientific investigation.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A hypothesis is a testable guess made before experimenting; it is not yet proven.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Knowledge of biology helps in controlling diseases such as malaria and cholera.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Biology helps people understand how diseases spread and how to prevent and treat them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A thermometer is used to measure the volume of liquids in the laboratory.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A thermometer measures temperature; a measuring cylinder is used to measure liquid volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ecology is the study of the relationship between organisms and their environment.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Ecology examines how living things interact with each other and their surroundings.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The scientific method usually begins with drawing a conclusion before making any observations.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The scientific method begins with observation and identifying a problem; a conclusion comes near the end.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Genetics is the branch of biology concerned with inheritance and variation in living things.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Genetics studies how characteristics are passed from parents to offspring and how variation arises.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Meaning of biology",
+        "options": [],
+        "correctAnswer": "Biology is the scientific study of living things and their life processes.",
+        "explanation": "The term comes from 'bios' (life) and 'logos' (study).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Botany",
+        "options": [],
+        "correctAnswer": "The branch of biology that studies plants.",
+        "explanation": "It covers plant structure, growth, function and uses.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Zoology",
+        "options": [],
+        "correctAnswer": "The branch of biology that studies animals.",
+        "explanation": "It deals with animal structure, behaviour and life processes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Characteristics of living things",
+        "options": [],
+        "correctAnswer": "Nutrition, respiration, excretion, growth, movement, reproduction, sensitivity (irritability).",
+        "explanation": "These life processes are shared by all living organisms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Excretion",
+        "options": [],
+        "correctAnswer": "The removal of metabolic waste products from the body of an organism.",
+        "explanation": "Examples of waste include carbon dioxide and urea.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Sensitivity (irritability)",
+        "options": [],
+        "correctAnswer": "The ability of living things to detect and respond to changes (stimuli) in their environment.",
+        "explanation": "For example, plants growing towards light.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Importance of biology",
+        "options": [],
+        "correctAnswer": "It helps in agriculture, medicine and health, conservation of the environment, and food production.",
+        "explanation": "Biology is applied in everyday life to improve human welfare.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Steps of the scientific method",
+        "options": [],
+        "correctAnswer": "Observation, identifying a problem, forming a hypothesis, experimenting, recording results, drawing a conclusion.",
+        "explanation": "This is the orderly way scientists investigate problems.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Hypothesis",
+        "options": [],
+        "correctAnswer": "A testable, tentative explanation made before carrying out an experiment.",
+        "explanation": "It is later supported or rejected based on results.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Common laboratory apparatus",
+        "options": [],
+        "correctAnswer": "Microscope, hand lens, measuring cylinder, beaker, test tube, Bunsen burner and thermometer.",
+        "explanation": "Each tool has a specific use in biological investigations.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A farmer in Morogoro wants to find out whether a new type of fertilizer increases maize yield. Using the scientific method, which of the following is the BEST way to test this?",
+        "options": [
+          {"id": "a", "text": "Apply the fertilizer to all plots and assume it works", "isCorrect": false},
+          {"id": "b", "text": "Grow maize in two similar plots, applying fertilizer to one (experimental) and none to the other (control), then compare yields", "isCorrect": true},
+          {"id": "c", "text": "Ask neighbours whether they like the fertilizer", "isCorrect": false},
+          {"id": "d", "text": "Read the fertilizer label and write a conclusion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A fair experiment needs a control to compare against the experimental group so the effect of the fertilizer can be measured.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A virus is sometimes described as being on the borderline between living and non-living things because outside a host cell it cannot carry out life processes on its own. Which characteristic of living things does a virus fail to perform independently outside a host?",
+        "options": [
+          {"id": "a", "text": "Reproduction", "isCorrect": true},
+          {"id": "b", "text": "Being made of atoms", "isCorrect": false},
+          {"id": "c", "text": "Having a fixed shape", "isCorrect": false},
+          {"id": "d", "text": "Reflecting light", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Viruses cannot reproduce on their own; they need to invade a living host cell to multiply, which is why their status as living things is debated.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student observes that mealworms in a tray move away from a bright light and gather in the dark corner. Which conclusion is best supported by this observation?",
+        "options": [
+          {"id": "a", "text": "Mealworms are non-living because they avoid light", "isCorrect": false},
+          {"id": "b", "text": "Mealworms show sensitivity by responding to light as a stimulus", "isCorrect": true},
+          {"id": "c", "text": "Mealworms are growing faster in the dark", "isCorrect": false},
+          {"id": "d", "text": "Mealworms are excreting waste in the dark corner", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moving away from light is a response to a stimulus, which demonstrates the characteristic of sensitivity in living things.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
