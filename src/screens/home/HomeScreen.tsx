@@ -149,7 +149,7 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Continue Learning</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: 'mathematics', subjectName: 'Mathematics', color: COLORS.subjects.mathematics })}>
+            <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: `form_${profile?.form ?? 1}_mathematics`, subjectName: 'Mathematics', color: COLORS.subjects.mathematics, formId: `form_${profile?.form ?? 1}` })}>
               <Text style={styles.seeAll}>See all</Text>
             </TouchableOpacity>
           </View>
@@ -157,11 +157,13 @@ export function HomeScreen({ navigation }: Props) {
           <TouchableOpacity
             style={styles.continueCard}
             onPress={() =>
-              navigation.navigate('LearningPackDetail', {
-                packId: 'pack_001',
-                packTitle: 'Quadratic Equations',
-                topicId: 'topic_001',
-                subjectColor: COLORS.subjects.mathematics,
+              // Route to the real (form-scoped) Mathematics topics; resuming a
+              // specific pack needs last-activity tracking (not yet wired).
+              navigation.navigate('Topics', {
+                subjectId: `form_${profile?.form ?? 1}_mathematics`,
+                subjectName: 'Mathematics',
+                color: COLORS.subjects.mathematics,
+                formId: `form_${profile?.form ?? 1}`,
               })
             }
             activeOpacity={0.8}

@@ -73,7 +73,7 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
       Alert.alert(
         'Payment submitted!',
         'Your subscription is now active. Enjoy premium access!',
-        [{ text: 'Continue', onPress: () => navigation.navigate('SubscriptionStatus' as any) }],
+        [{ text: 'Continue', onPress: () => navigation.navigate('SubscriptionStatus') }],
       );
     } catch {
       Alert.alert('Payment failed', 'Please try again or contact support.');

@@ -95,7 +95,7 @@ service cloud.firestore {
     match /topics/{topicId} {
       allow read: if isSignedIn();
       allow create, update: if isContentEditor()
-        && validString(request.resource.data.title, 1, 200);
+        && validString(request.resource.data.name, 1, 200);
       allow delete: if isSuperAdmin();
     }
 

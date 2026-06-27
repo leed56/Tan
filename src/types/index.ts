@@ -169,6 +169,7 @@ export type QuizStackSharedParams = {
   QuizResult: { xpEarned: number; scorePercent: number; correctCount: number; wrongCount: number; totalQuestions: number; packTitle: string; packId: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' };
   // Phase 4 — subscription screens
   SubscriptionScreen: undefined;
+  SubscriptionStatus: undefined;
   PaymentMethodScreen: { planId: string; planTitle: string; priceMonthly: number };
   LockedFeaturePreview: { featureKey: string; featureTitle: string; featureDescription: string };
   // Phase 5 — gamification screens

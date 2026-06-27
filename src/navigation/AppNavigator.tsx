@@ -66,6 +66,7 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="TFQuiz"    component={TFScreen} />
       <HomeStack.Screen name="QuizResult" component={QuizResultScreen} />
       <HomeStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
+      <HomeStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />
       <HomeStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
       <HomeStack.Screen name="LockedFeaturePreview" component={LockedFeaturePreviewScreen} />
       <HomeStack.Screen name="GamificationProfile" component={GamificationProfileScreen} />
@@ -96,6 +97,7 @@ function SubjectsStackNavigator() {
       <SubjectsStack.Screen name="TFQuiz"    component={TFScreen} />
       <SubjectsStack.Screen name="QuizResult" component={QuizResultScreen} />
       <SubjectsStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
+      <SubjectsStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />
       <SubjectsStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
       <SubjectsStack.Screen name="LockedFeaturePreview" component={LockedFeaturePreviewScreen} />
       <SubjectsStack.Screen name="GamificationProfile" component={GamificationProfileScreen} />

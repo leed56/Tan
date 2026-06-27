@@ -26,7 +26,14 @@ import { useGamificationStore } from '../../store/gamificationStore';
 type Props = StackScreenProps<HomeStackParamList, 'FIBQuiz'>;
 
 function normalise(s: string): string {
-  return s.trim().toLowerCase().replace(/[^a-z0-9]/g, '');
+  // Lowercase, collapse whitespace, and keep letters/digits/decimal points so
+  // numeric answers ("3.14") and multi-word answers ("carbon dioxide") survive.
+  return s
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .replace(/[^a-z0-9 .]/g, '')
+    .trim();
 }
 
 export function FIBScreen({ navigation, route }: Props) {
