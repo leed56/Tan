@@ -60,7 +60,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 - [x] 21. Civics — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
 - [x] 22. Commerce — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
 - [x] 23. Agriculture — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
-- [ ] 24–25. Computer Studies, Islamic Knowledge — Form 2
+- [x] 24. Computer Studies — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
+- [ ] 25. Islamic Knowledge — Form 2
 
 ### Form 3
 - [ ] 26–38. All 13 subjects — Form 3

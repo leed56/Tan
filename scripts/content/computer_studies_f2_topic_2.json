@@ -1,0 +1,444 @@
+{
+  "topicId": "form_2_computer_studies_topic_2",
+  "topicName": "Spreadsheets",
+  "order": 2,
+  "description": "An introduction to spreadsheet software, including cells and references, entering data and formulas, common functions, charts, and everyday uses.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the main purpose of spreadsheet software?",
+        "options": [
+          {"id": "a", "text": "To organise data in rows and columns and perform calculations", "isCorrect": true},
+          {"id": "b", "text": "To create and edit photographs", "isCorrect": false},
+          {"id": "c", "text": "To browse websites on the internet", "isCorrect": false},
+          {"id": "d", "text": "To compose and play music files", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Spreadsheets store data in a grid of rows and columns and are designed for calculations and data analysis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an example of spreadsheet software?",
+        "options": [
+          {"id": "a", "text": "Adobe Photoshop", "isCorrect": false},
+          {"id": "b", "text": "Microsoft Excel", "isCorrect": true},
+          {"id": "c", "text": "Google Chrome", "isCorrect": false},
+          {"id": "d", "text": "Windows Media Player", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Microsoft Excel is a popular spreadsheet program, like LibreOffice Calc.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The box formed where a row and a column meet is called a:",
+        "options": [
+          {"id": "a", "text": "Sheet", "isCorrect": false},
+          {"id": "b", "text": "Cell", "isCorrect": true},
+          {"id": "c", "text": "Field", "isCorrect": false},
+          {"id": "d", "text": "Border", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A cell is the intersection of a row and a column where data is entered.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How are columns usually labelled in a spreadsheet?",
+        "options": [
+          {"id": "a", "text": "With numbers (1, 2, 3)", "isCorrect": false},
+          {"id": "b", "text": "With letters (A, B, C)", "isCorrect": true},
+          {"id": "c", "text": "With Roman numerals (I, II, III)", "isCorrect": false},
+          {"id": "d", "text": "With symbols (#, @, %)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Columns are identified by letters while rows are identified by numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the cell reference of the cell in column C and row 5?",
+        "options": [
+          {"id": "a", "text": "5C", "isCorrect": false},
+          {"id": "b", "text": "C5", "isCorrect": true},
+          {"id": "c", "text": "CC5", "isCorrect": false},
+          {"id": "d", "text": "R5C3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A cell reference is written as the column letter followed by the row number, for example C5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Every formula in a spreadsheet cell normally begins with which symbol?",
+        "options": [
+          {"id": "a", "text": "The plus sign (+)", "isCorrect": false},
+          {"id": "b", "text": "The equals sign (=)", "isCorrect": true},
+          {"id": "c", "text": "The hash sign (#)", "isCorrect": false},
+          {"id": "d", "text": "The asterisk (*)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Typing the equals sign first tells the spreadsheet that what follows is a formula to calculate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which function adds together a range of numbers?",
+        "options": [
+          {"id": "a", "text": "AVERAGE", "isCorrect": false},
+          {"id": "b", "text": "COUNT", "isCorrect": false},
+          {"id": "c", "text": "SUM", "isCorrect": true},
+          {"id": "d", "text": "MAX", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The SUM function totals the values in the cells you select.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which function returns the largest value in a range of cells?",
+        "options": [
+          {"id": "a", "text": "MIN", "isCorrect": false},
+          {"id": "b", "text": "MAX", "isCorrect": true},
+          {"id": "c", "text": "SUM", "isCorrect": false},
+          {"id": "d", "text": "COUNT", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "MAX finds the highest number, while MIN finds the lowest.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What will the formula =AVERAGE(2, 4, 6) give as a result?",
+        "options": [
+          {"id": "a", "text": "12", "isCorrect": false},
+          {"id": "b", "text": "6", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The average is the sum (12) divided by the count of numbers (3), which equals 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What does the COUNT function do?",
+        "options": [
+          {"id": "a", "text": "Counts how many cells contain numbers", "isCorrect": true},
+          {"id": "b", "text": "Adds up all the values in a range", "isCorrect": false},
+          {"id": "c", "text": "Finds the smallest number in a range", "isCorrect": false},
+          {"id": "d", "text": "Sorts the cells from low to high", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "COUNT tells you how many cells in a range hold numeric values.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A single file in a spreadsheet program can contain several pages of cells. Each such page is called a:",
+        "options": [
+          {"id": "a", "text": "Document", "isCorrect": false},
+          {"id": "b", "text": "Worksheet", "isCorrect": true},
+          {"id": "c", "text": "Folder", "isCorrect": false},
+          {"id": "d", "text": "Toolbar", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A worksheet is one page of the grid; a file (workbook) may hold many worksheets.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of chart is best for showing the parts of a whole as percentages?",
+        "options": [
+          {"id": "a", "text": "Line chart", "isCorrect": false},
+          {"id": "b", "text": "Pie chart", "isCorrect": true},
+          {"id": "c", "text": "Bar chart", "isCorrect": false},
+          {"id": "d", "text": "Scatter chart", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A pie chart divides a circle into slices that show each item's share of the total.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What does the IF function allow a spreadsheet to do?",
+        "options": [
+          {"id": "a", "text": "Give different results depending on whether a condition is true or false", "isCorrect": true},
+          {"id": "b", "text": "Always add two cells together", "isCorrect": false},
+          {"id": "c", "text": "Change the colour of a cell automatically", "isCorrect": false},
+          {"id": "d", "text": "Count the number of empty cells", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "IF tests a condition and returns one value if it is true and another if it is false.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the formula =B2*$C$1, what does the $ sign in $C$1 indicate?",
+        "options": [
+          {"id": "a", "text": "The cell contains money values", "isCorrect": false},
+          {"id": "b", "text": "It is an absolute reference that does not change when copied", "isCorrect": true},
+          {"id": "c", "text": "The cell is empty", "isCorrect": false},
+          {"id": "d", "text": "The formula contains an error", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The dollar signs lock the column and row so the reference stays fixed when the formula is copied.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The formula =SUM(A1:A4) is in cell A5. If it is copied down to cell B5, what will the copied formula become?",
+        "options": [
+          {"id": "a", "text": "=SUM(A1:A4)", "isCorrect": false},
+          {"id": "b", "text": "=SUM(B1:B4)", "isCorrect": true},
+          {"id": "c", "text": "=SUM(B2:B5)", "isCorrect": false},
+          {"id": "d", "text": "=SUM(A1:B4)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Relative references adjust to the new column when copied, so column A becomes column B.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The intersection of a row and a column in a spreadsheet is called a _____.",
+        "options": [],
+        "correctAnswer": "cell",
+        "explanation": "A cell is the basic unit where data and formulas are entered.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a spreadsheet, rows are identified by _____.",
+        "options": [],
+        "correctAnswer": "numbers",
+        "explanation": "Rows are labelled with numbers such as 1, 2, 3, while columns use letters.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Every formula in a cell must start with the _____ sign.",
+        "options": [],
+        "correctAnswer": "equals",
+        "explanation": "The equals sign (=) tells the program the entry is a formula to be calculated.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The _____ function is used to find the total of a range of numbers.",
+        "options": [],
+        "correctAnswer": "SUM",
+        "explanation": "SUM adds all the selected values together.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To find the lowest value in a range of cells, you use the _____ function.",
+        "options": [],
+        "correctAnswer": "MIN",
+        "explanation": "MIN returns the smallest number in the selected range.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A reference like $A$1 that stays fixed when copied is called an _____ reference.",
+        "options": [],
+        "correctAnswer": "absolute",
+        "explanation": "The dollar signs make the reference absolute so it does not change when copied.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A reference such as A1 that changes when a formula is copied to another cell is called a _____ reference.",
+        "options": [],
+        "correctAnswer": "relative",
+        "explanation": "Relative references adjust automatically based on the new position.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A single page of cells within a spreadsheet file is called a _____.",
+        "options": [],
+        "correctAnswer": "worksheet",
+        "explanation": "A workbook can contain several worksheets.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A graphical picture of spreadsheet data, such as a bar or pie graph, is called a _____.",
+        "options": [],
+        "correctAnswer": "chart",
+        "explanation": "Charts help present numerical data visually so trends are easier to see.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The free spreadsheet program that is part of the LibreOffice suite is called LibreOffice _____.",
+        "options": [],
+        "correctAnswer": "Calc",
+        "explanation": "LibreOffice Calc is a free alternative to Microsoft Excel.",
+        "difficulty": "hard"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Spreadsheet software is mainly used for editing videos.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Spreadsheets are used for storing data and performing calculations, not video editing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Microsoft Excel and LibreOffice Calc are both examples of spreadsheet programs.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Both are widely used spreadsheet applications.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a spreadsheet, columns are labelled with letters and rows with numbers.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "For example, the first column is A and the first row is 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A formula in a spreadsheet can begin with any letter of the alphabet.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A formula must begin with the equals sign (=).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The AVERAGE function calculates the mean of a set of numbers.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "AVERAGE adds the numbers and divides by how many there are.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The cell reference B7 means column 7 and row B.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "B7 means column B and row 7; the letter is the column and the number is the row.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a relative reference is copied to another cell, it adjusts automatically.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Relative references change to match the new row or column position.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The MAX function returns the smallest value in a range.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "MAX returns the largest value; MIN returns the smallest.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A pie chart is suitable for showing how a total is divided into parts.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Each slice of a pie chart represents a portion of the whole.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The IF function can give one answer when a condition is true and a different answer when it is false.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "IF tests a condition and returns different results based on the outcome.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Purpose of spreadsheet software",
+        "options": [],
+        "correctAnswer": "Organising data and performing calculations",
+        "explanation": "Spreadsheets arrange data in a grid and automatically calculate using formulas.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is a cell",
+        "options": [],
+        "correctAnswer": "The intersection of a row and a column",
+        "explanation": "Each cell holds one piece of data, text, or a formula.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How rows and columns are labelled",
+        "options": [],
+        "correctAnswer": "Columns by letters, rows by numbers",
+        "explanation": "This labelling gives every cell a unique reference like A1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What a cell reference is",
+        "options": [],
+        "correctAnswer": "Column letter followed by row number, e.g. B3",
+        "explanation": "A cell reference identifies the exact location of a cell.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Starting a formula",
+        "options": [],
+        "correctAnswer": "Begin with the equals sign (=)",
+        "explanation": "The equals sign signals that the cell contains a calculation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Common spreadsheet functions",
+        "options": [],
+        "correctAnswer": "SUM, AVERAGE, MAX, MIN, COUNT, IF",
+        "explanation": "These built-in functions perform common calculations quickly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Difference between relative and absolute references",
+        "options": [],
+        "correctAnswer": "Relative changes when copied; absolute stays fixed",
+        "explanation": "Absolute references use $ signs to lock the cell address.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Purpose of charts",
+        "options": [],
+        "correctAnswer": "Show data visually so trends are easy to see",
+        "explanation": "Charts such as bar, line, and pie present numbers as pictures.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Examples of spreadsheet programs",
+        "options": [],
+        "correctAnswer": "Microsoft Excel and LibreOffice Calc",
+        "explanation": "These are common applications used to create spreadsheets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Uses of spreadsheets",
+        "options": [],
+        "correctAnswer": "Budgets, school marks, accounts, and data analysis",
+        "explanation": "Spreadsheets are used wherever numbers need organising and calculating.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A teacher records 30 students' marks in cells B2 to B31. To automatically show \"Pass\" for marks of 40 and above and \"Fail\" for marks below 40 in cell C2, which formula should be entered in C2 and copied down?",
+        "options": [
+          {"id": "a", "text": "=IF(B2>=40,\"Pass\",\"Fail\")", "isCorrect": true},
+          {"id": "b", "text": "=SUM(B2>=40,\"Pass\",\"Fail\")", "isCorrect": false},
+          {"id": "c", "text": "=IF(B2,\"Pass\",40,\"Fail\")", "isCorrect": false},
+          {"id": "d", "text": "=AVERAGE(B2>=40)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "IF tests whether B2 is at least 40 and returns Pass if true, otherwise Fail; the relative reference adjusts for each row when copied.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Cell D1 holds a fixed VAT rate. To multiply each price in column A by this rate and copy the formula down without the rate reference shifting, the formula in B2 should be:",
+        "options": [
+          {"id": "a", "text": "=A2*D1", "isCorrect": false},
+          {"id": "b", "text": "=A2*$D$1", "isCorrect": true},
+          {"id": "c", "text": "=$A$2*D1", "isCorrect": false},
+          {"id": "d", "text": "=A$2*D2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Using $D$1 keeps the VAT rate cell fixed (absolute) while A2 stays relative so it follows each price down the column.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A shopkeeper wants to know how many of the days in a week recorded sales above 50,000 shillings, with daily totals in cells A1 to A7. Of the following single functions, which one alone cannot directly give that count?",
+        "options": [
+          {"id": "a", "text": "SUM", "isCorrect": true},
+          {"id": "b", "text": "COUNTIF", "isCorrect": false},
+          {"id": "c", "text": "An IF combined with COUNT", "isCorrect": false},
+          {"id": "d", "text": "COUNTIFS", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "SUM only adds values and cannot count cells meeting a condition; COUNTIF (or COUNTIFS, or IF with COUNT) is needed to count cells above 50,000.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

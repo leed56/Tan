@@ -1,0 +1,732 @@
+{
+  "topicId": "form_2_computer_studies_topic_3",
+  "topicName": "Databases",
+  "order": 3,
+  "description": "An introduction to databases and database management systems, covering data organisation, primary keys, data types, queries, forms, reports and the benefits of databases over manual filing.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is a database?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A single document containing one page of text",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "An organised collection of related data stored together",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A program used to draw pictures on a computer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A device used to print documents",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A database is an organised collection of related data that is stored so it can be easily accessed, managed and updated.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does the abbreviation DBMS stand for?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Data Backup Management Service",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Digital Base Memory System",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Database Management System",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Document Based Mail System",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "DBMS stands for Database Management System, the software used to create and manage databases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a database table, a single column that holds one category of information, such as 'Surname', is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Record",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Field",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Query",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Report",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A field is a single column that stores one specific category of data about each item.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A complete set of information about one item, such as all details of a single student, is known as a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Field",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Cell",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Record",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Form",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A record is a complete group of related fields describing one item, usually stored as one row in a table.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an example of database software?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Microsoft Access",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Microsoft PowerPoint",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Adobe Photoshop",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Windows Media Player",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Microsoft Access is a popular DBMS, while the others are presentation, image-editing and media programs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the main purpose of a primary key in a database table?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To make the text in a field appear bold",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To uniquely identify each record in the table",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To delete records automatically",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To change the colour of the table",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A primary key uniquely identifies each record so that no two records share the same key value.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which data type would be most suitable for storing a person's date of birth?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Text",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Currency",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Date/Time",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Yes/No",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The Date/Time data type is designed to store dates and times correctly so they can be sorted and calculated.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A database object used to search for and display only the records that meet certain conditions is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Form",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Report",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Query",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Macro",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A query is used to ask the database questions and return only the records matching the chosen conditions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which database object is mainly used to enter and view data one record at a time in a user-friendly layout?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Form",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Query",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Report",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Primary key",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A form provides an easy on-screen layout for entering and viewing one record at a time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A report in a database is mainly designed to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Connect the computer to the internet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Present data in a neat, printable format",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Protect the database with a password",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Convert the database into a video",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A report organises and formats data so it can be printed or presented in a clear, professional way.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which data type is best suited for a field that should store only the values True or False?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Number",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Text",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Yes/No (Boolean)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Currency",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The Yes/No (Boolean) data type stores logical values such as Yes/No or True/False.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is an advantage of using a computerised database over a manual paper filing system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It always requires more storage space",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It makes searching for information much faster",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It can never be backed up",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It makes data harder to update",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A computerised database allows fast searching, sorting and updating compared with slow manual paper filing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a database table, the rows and columns together are organised into a structure called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Table",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Slide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Folder",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Chart",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A table stores data in rows (records) and columns (fields) and is the basic building block of a database.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why should a phone number usually be stored using the Text data type rather than the Number data type?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because phone numbers are used in calculations",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Because leading zeros must be kept and no arithmetic is needed",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Because Text fields cannot store letters",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because Number fields can store more characters",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Phone numbers are not used in calculations and may begin with a zero, which a Number field would remove, so Text is preferred.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Which statement best describes the relationship between data, a field and a record?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A record is made of fields, and each field holds an item of data",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A field is made of records, and each record holds a table",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Data is made of records, and each record holds a query",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A field and a record mean exactly the same thing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Individual items of data fill fields, and a group of related fields together forms one record.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "An organised collection of related data stored in a computer is called a _____.",
+        "options": [],
+        "correctAnswer": "database",
+        "explanation": "A database stores related data in an organised way for easy access and management.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The software used to create, manage and control a database is known as a _____.",
+        "options": [],
+        "correctAnswer": "DBMS",
+        "explanation": "A Database Management System (DBMS) is the program that handles the creation and control of databases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A single column in a table that holds one category of information is called a _____.",
+        "options": [],
+        "correctAnswer": "field",
+        "explanation": "A field stores one specific type of data, such as 'Name' or 'Age', for every record.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A complete set of related fields about one item, shown as one row, is called a _____.",
+        "options": [],
+        "correctAnswer": "record",
+        "explanation": "A record holds all the field values for a single item, usually as one row in the table.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A field that uniquely identifies each record in a table is known as the _____.",
+        "options": [],
+        "correctAnswer": "primary key",
+        "explanation": "The primary key ensures that every record can be told apart because its value is unique.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A database object used to search for records that meet certain conditions is called a _____.",
+        "options": [],
+        "correctAnswer": "query",
+        "explanation": "A query retrieves only the records that match the conditions you set.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A database object that gives a friendly screen layout for entering data one record at a time is called a _____.",
+        "options": [],
+        "correctAnswer": "form",
+        "explanation": "A form makes data entry and viewing easier by showing one record in a clear layout.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A database object used to present data in a neat, printable format is called a _____.",
+        "options": [],
+        "correctAnswer": "report",
+        "explanation": "A report formats data so it can be printed or presented professionally.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The data type used to store monetary amounts such as prices is called _____.",
+        "options": [],
+        "correctAnswer": "currency",
+        "explanation": "The Currency data type formats numbers as money, often including a currency symbol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A popular Microsoft DBMS used to create databases on desktop computers is Microsoft _____.",
+        "options": [],
+        "correctAnswer": "Access",
+        "explanation": "Microsoft Access is a widely used desktop database management system.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A database is simply an organised collection of related data.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By definition, a database stores related data in an organised structure.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a database table, a record is the same thing as a single column.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A record is a row of related fields; a column is a field, not a record.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A primary key can have the same value in two different records of the same table.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A primary key must be unique, so no two records can share the same primary key value.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A query can be used to display only the records that satisfy a chosen condition.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Queries filter the data and return only matching records.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Microsoft PowerPoint is an example of database management software.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "PowerPoint is presentation software; Microsoft Access is the database program.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Forms are mainly used to make entering and viewing data easier for the user.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Forms provide a clear, user-friendly layout for data entry and viewing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Searching for information in a computerised database is generally slower than in a manual paper file.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Computerised databases allow much faster searching than manual paper filing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Choosing the correct data type for a field helps the database store and validate data properly.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Correct data types ensure data is stored, sorted and validated correctly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A report is mainly used to present and print data in a neat format.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Reports format data for clear presentation and printing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Storing a telephone number using the Number data type always keeps any leading zeros.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The Number data type removes leading zeros, so phone numbers are better stored as Text.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of a database",
+        "options": [],
+        "correctAnswer": "An organised collection of related data stored together",
+        "explanation": "Data is kept in a structured way for easy access and management.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Purpose of a DBMS",
+        "options": [],
+        "correctAnswer": "Software used to create, manage and control databases",
+        "explanation": "Examples include Microsoft Access and similar programs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Meaning of a field",
+        "options": [],
+        "correctAnswer": "A column holding one category of data",
+        "explanation": "Each field stores one specific type of information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Meaning of a record",
+        "options": [],
+        "correctAnswer": "A row of related fields about one item",
+        "explanation": "All the fields for one item make up a single record.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Meaning of a table",
+        "options": [],
+        "correctAnswer": "A structure of rows and columns that stores data",
+        "explanation": "Tables are the basic building blocks of a database.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Role of a primary key",
+        "options": [],
+        "correctAnswer": "Uniquely identifies each record",
+        "explanation": "Its value cannot be repeated in the table.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What a query does",
+        "options": [],
+        "correctAnswer": "Searches for records that meet a condition",
+        "explanation": "It returns only the matching records.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What a form is used for",
+        "options": [],
+        "correctAnswer": "Easy entry and viewing of data one record at a time",
+        "explanation": "Forms give a user-friendly screen layout.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What a report is used for",
+        "options": [],
+        "correctAnswer": "Presenting data in a neat, printable format",
+        "explanation": "Reports format data for printing and presentation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Advantage of databases over manual filing",
+        "options": [],
+        "correctAnswer": "Faster searching, sorting and updating of data",
+        "explanation": "They also save space and reduce errors compared with paper files.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A school keeps a 'Students' table where each student has a unique admission number, plus a 'Marks' table that records the marks of each student. Which design choice best lets the school link a student to their marks correctly?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Use the student's first name to match the two tables",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Use the admission number as a primary key and reference it in the Marks table",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Store all marks inside the Students table as one Text field",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Avoid using any key field so the tables stay simple",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A unique admission number used as a primary key can be referenced in the Marks table, reliably linking each student to their marks even if names repeat.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A librarian wants to print a list of only the books that are currently borrowed and not yet returned, arranged neatly for display on a notice board. Which combination of database objects is most appropriate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A form to view all books, then a primary key to print them",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A query to select borrowed books, then a report to format and print them",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A report to select the books, then a field to print them",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A table only, with no query or report",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A query filters out only the borrowed books, and a report formats those results neatly for printing.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A shop owner stores product prices in a field and wants to be able to total the prices and show them with a money symbol, while also storing product codes that may begin with a zero. Which data type choice is most suitable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Prices as Text and product codes as Number",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Prices as Currency and product codes as Text",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Both prices and product codes as Number",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Both prices and product codes as Yes/No",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Currency allows totalling prices with a money symbol, while Text preserves leading zeros in product codes that a Number field would remove.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
