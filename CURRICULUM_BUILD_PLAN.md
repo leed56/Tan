@@ -34,7 +34,7 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 
 ### Form 1
 - [x] 1. Biology — Form 1 ✅ (6 topics, 30 packs, 228 questions + summaries — seeded to tanza-9b182)   ← **template unit complete**
-- [ ] 2. Chemistry — Form 1
+- [x] 2. Chemistry — Form 1 ✅ (7 topics, 35 packs, 266 questions — seeded to tanza-9b182)
 - [ ] 3. Physics — Form 1
 - [ ] 4. English — Form 1
 - [ ] 5. Kiswahili — Form 1
