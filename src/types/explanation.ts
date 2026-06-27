@@ -3,6 +3,7 @@ export type AIProvider = 'gemini' | 'fallback';
 
 export interface AIExplanation {
   id: string;
+  userId?: string;           // owner who generated it — required by the create rule
   questionId: string;
   quizType: 'mcq' | 'fib' | 'tf';
   subjectId: string;

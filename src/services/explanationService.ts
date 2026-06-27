@@ -102,13 +102,14 @@ function buildFallbackExplanation(
 
 function responseToExplanation(
   response: GeminiExplanationResponse,
-  params: ExplanationGenerationParams,
+  params: ExplanationGenerationParams & { userId?: string },
   qualityScore: number,
   id: string,
 ): AIExplanation {
   const now = Date.now();
   return {
     id,
+    userId: params.userId,
     questionId: params.questionId,
     quizType: params.quizType,
     subjectId: params.subjectId,
@@ -180,8 +181,12 @@ export async function getOrGenerateExplanation(
       if (score >= 4) {
         const id = `ai_${params.questionId}_${Date.now()}`;
         const explanation = responseToExplanation(response, params, score, id);
-        // Save to Firestore (fire-and-forget)
-        saveExplanation(explanation).catch(() => {});
+        // Cache to Firestore only when we have an owner id (the ai_explanations
+        // create rule requires userId == auth.uid). NOTE: the rule also requires
+        // isPremium() which keys off users.subscriptionStatus — until that is set
+        // server-side (admin Cloud Function, see #22), this write is rejected and
+        // the explanation simply regenerates next time.
+        if (params.userId) saveExplanation(explanation).catch(() => {});
         return explanation;
       }
       // Score too low — retry on next iteration
