@@ -1,0 +1,732 @@
+{
+  "topicId": "form_1_computer_studies_topic_1",
+  "topicName": "Introduction to Computers",
+  "order": 1,
+  "description": "An introduction to the meaning, characteristics, history and everyday uses of computers, including how raw data is turned into useful information.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which definition best describes a computer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A machine that only stores pictures and music",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "An electronic device that accepts data, processes it and produces information",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A box that connects only to the internet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A tool used purely for playing games",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A computer is an electronic device that takes in data, processes it according to instructions, and outputs meaningful information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The characteristic of a computer that means it can work for long hours without getting tired or bored is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Speed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Accuracy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Diligence",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Storage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Diligence means the computer can repeat the same task many times without fatigue or loss of concentration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Raw, unprocessed facts and figures that a computer receives are known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Information",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Data",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Output",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Reports",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Data refers to raw facts and figures before they are processed into meaningful information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the correct order of the information processing cycle?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Output, Process, Input, Storage",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Process, Input, Storage, Output",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Input, Process, Output, Storage",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Storage, Output, Input, Process",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The information processing cycle follows Input, Process, Output, and then Storage.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which characteristic allows a computer to give correct results provided the input and instructions are correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accuracy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Diligence",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Versatility",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Speed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Accuracy means a computer produces error-free results as long as the data and instructions supplied are correct.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A school uses a computer to calculate students' average marks and print report cards. In this example, the printed report cards are the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Input",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Process",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Output",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Data",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The printed report cards are the result produced by the computer, which is the output of the process.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is an advantage of using computers?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They can think and make decisions on their own",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "They can store large amounts of data in a small space",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "They never need electricity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "They can repair themselves when damaged",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A major advantage of computers is their ability to store huge amounts of data in a very small physical space.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a limitation of a computer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It can process data very quickly",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It cannot work without instructions from a human",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It can store data for a long time",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It can perform repetitive tasks accurately",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A computer has no intelligence of its own and cannot function without instructions given by a human user.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Computers used in hospitals to monitor patients and store medical records are an example of computer use in:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Banking",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Health",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Agriculture",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Transport",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Using computers to monitor patients and keep medical records is an application of computers in the health sector.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The first generation of computers mainly used which component for processing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Transistors",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Integrated circuits",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Vacuum tubes",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Microprocessors",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "First generation computers used vacuum tubes, which were large, produced a lot of heat and consumed much power.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Which generation of computers introduced the use of transistors in place of vacuum tubes?",
+        "options": [
+          {
+            "id": "a",
+            "text": "First generation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Second generation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Third generation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Fourth generation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Second generation computers replaced bulky vacuum tubes with smaller and more reliable transistors.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "When a teacher enters marks into a computer using a keyboard, this stage is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Output",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Storage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Processing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Input",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Entering data into the computer through a device such as a keyboard is the input stage.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which statement correctly distinguishes data from information?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Information is raw facts while data is processed and meaningful",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Data is raw facts while information is processed and meaningful",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Data and information mean exactly the same thing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Information is only numbers while data is only text",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Data is unprocessed raw facts, while information is data that has been processed to become meaningful and useful.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A computer's ability to perform very many calculations in a very short time describes its:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Speed",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Storage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Accuracy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Diligence",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Speed is the characteristic that allows a computer to carry out millions of operations within seconds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Modern computers (fourth generation onwards) became small and powerful mainly because of the development of the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vacuum tube",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Punched card",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Microprocessor",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Magnetic drum",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The invention of the microprocessor placed thousands of circuits on a single chip, making computers smaller, cheaper and more powerful.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A computer is an electronic device that processes _____ to produce information.",
+        "options": [],
+        "correctAnswer": "data",
+        "explanation": "A computer takes in data and processes it into useful information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The characteristic that allows a computer to work for many hours without getting tired is called _____.",
+        "options": [],
+        "correctAnswer": "diligence",
+        "explanation": "Diligence means the computer can repeat tasks without fatigue or boredom.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Processed data that is meaningful and useful to the user is called _____.",
+        "options": [],
+        "correctAnswer": "information",
+        "explanation": "Information is the meaningful result obtained after processing data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The first stage of the information processing cycle, where data is fed into the computer, is called _____.",
+        "options": [],
+        "correctAnswer": "input",
+        "explanation": "Input is the stage where data enters the computer through devices like a keyboard or mouse.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The characteristic of a computer that means it produces error-free results when given correct data is _____.",
+        "options": [],
+        "correctAnswer": "accuracy",
+        "explanation": "Accuracy ensures correct results provided the input and instructions are correct.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "First generation computers used _____ as their main electronic component.",
+        "options": [],
+        "correctAnswer": "vacuum tubes",
+        "explanation": "Vacuum tubes were used in first generation computers but were large and produced much heat.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Keeping data and information for future use in a computer is known as _____.",
+        "options": [],
+        "correctAnswer": "storage",
+        "explanation": "Storage allows data and information to be saved and retrieved later.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Because a computer cannot work on its own and needs human instructions, we say it has no _____ of its own.",
+        "options": [],
+        "correctAnswer": "intelligence",
+        "explanation": "A computer lacks natural intelligence and depends entirely on human instructions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A single chip that contains thousands of circuits and acts as the brain of modern computers is called a _____.",
+        "options": [],
+        "correctAnswer": "microprocessor",
+        "explanation": "The microprocessor made computers smaller and more powerful from the fourth generation onwards.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The use of computers in banks to manage accounts and process transactions is an application of computers in the _____ sector.",
+        "options": [],
+        "correctAnswer": "banking",
+        "explanation": "Banks rely on computers to handle accounts, transactions and customer records.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A computer can produce correct results even when the data entered is wrong.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "If wrong data is entered, the computer will produce wrong results; this is known as garbage in, garbage out.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Data and information mean exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Data is raw facts, while information is processed and meaningful data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A computer can work for long hours without getting tired.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This ability is called diligence; computers do not suffer from fatigue.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Storage is one of the stages of the information processing cycle.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The information processing cycle includes input, process, output and storage.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A computer can make its own decisions without any human instructions.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A computer has no intelligence of its own and must follow instructions given by humans.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "First generation computers were small and used very little electricity.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "First generation computers were very large, produced much heat and consumed a lot of electricity.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Computers can be used in agriculture to monitor weather and manage farm records.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Computers help farmers analyse weather data, manage records and improve productivity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Speed is the ability of a computer to store large amounts of data.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Speed refers to how fast a computer processes data; storing large data describes storage capacity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A keyboard and a mouse are examples of input devices.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Input devices such as the keyboard and mouse are used to enter data into the computer.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Computers can store very large amounts of data in a small physical space.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Large storage capacity in a small space is one of the main advantages of computers.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of a computer",
+        "options": [],
+        "correctAnswer": "An electronic device that accepts data, processes it and produces information.",
+        "explanation": "It works under a set of instructions to turn data into useful output.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Main characteristics of a computer",
+        "options": [],
+        "correctAnswer": "Speed, accuracy, storage and diligence.",
+        "explanation": "These qualities make computers useful for processing tasks.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Difference between data and information",
+        "options": [],
+        "correctAnswer": "Data is raw facts; information is processed, meaningful data.",
+        "explanation": "Processing transforms data into information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Stages of the information processing cycle",
+        "options": [],
+        "correctAnswer": "Input, Process, Output and Storage.",
+        "explanation": "Data is entered, processed, results produced and then saved.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Meaning of diligence in computers",
+        "options": [],
+        "correctAnswer": "The ability to perform tasks repeatedly without getting tired or bored.",
+        "explanation": "Computers maintain the same accuracy throughout long tasks.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An advantage of using computers",
+        "options": [],
+        "correctAnswer": "They process data quickly and store large amounts of data in a small space.",
+        "explanation": "This improves efficiency in many fields.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A limitation of computers",
+        "options": [],
+        "correctAnswer": "They cannot work or make decisions without human instructions.",
+        "explanation": "Computers lack intelligence and depend on users.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Uses of computers in society",
+        "options": [],
+        "correctAnswer": "Used in education, health, banking, agriculture, transport and communication.",
+        "explanation": "Computers support work in almost every sector.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Components used across computer generations",
+        "options": [],
+        "correctAnswer": "Vacuum tubes, then transistors, then integrated circuits, then microprocessors.",
+        "explanation": "Each generation made computers smaller and more powerful.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Meaning of accuracy in computers",
+        "options": [],
+        "correctAnswer": "Producing error-free results when correct data and instructions are given.",
+        "explanation": "Wrong input leads to wrong output (garbage in, garbage out).",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A shopkeeper enters daily sales figures into a computer, which then calculates the total profit and displays it on the screen. Which stage of the information processing cycle is MISSING if the shopkeeper turns off the computer without saving the result?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Input",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Process",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Output",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Storage",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Input, process and output all occurred, but because the result was not saved for future use, the storage stage is missing.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student enters the marks 50 and 30 but mistakenly tells the computer to add instead of finding the average, so it shows 80. Why did the computer give an unhelpful answer even though it is accurate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The computer is faulty and cannot calculate",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The computer followed the wrong instructions given by the user",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The computer was too slow to find the average",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The computer ran out of storage space",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The computer accurately did what it was told; the wrong result came from incorrect human instructions, showing computers depend on correct input and commands.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Compared with first generation computers, why are modern computers far more suitable for use in an ordinary Tanzanian classroom?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Modern computers use vacuum tubes that are easy to replace",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Modern computers are smaller, cheaper, faster and use less power due to microprocessors",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Modern computers do not need any electricity to operate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Modern computers can think and teach without a teacher",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Advances such as the microprocessor made computers small, affordable, fast and energy efficient, unlike the huge and costly first generation machines.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

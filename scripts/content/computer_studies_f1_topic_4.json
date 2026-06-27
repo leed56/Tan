@@ -1,0 +1,444 @@
+{
+  "topicId": "form_1_computer_studies_topic_4",
+  "topicName": "Computer Storage",
+  "order": 4,
+  "description": "This topic introduces the meaning of computer storage, the difference between primary and secondary storage, common storage devices, units of storage and their relationships, volatile and non-volatile memory, and how to choose and care for storage media.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What does the term 'storage' mean in a computer system?",
+        "options": [
+          {"id": "a", "text": "The process of holding data and instructions for later use", "isCorrect": true},
+          {"id": "b", "text": "The process of typing text into a keyboard", "isCorrect": false},
+          {"id": "c", "text": "The process of printing documents on paper", "isCorrect": false},
+          {"id": "d", "text": "The process of switching the computer on and off", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Storage refers to keeping data and instructions in the computer so they can be retrieved and used when needed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an example of primary storage?",
+        "options": [
+          {"id": "a", "text": "Hard disk", "isCorrect": false},
+          {"id": "b", "text": "RAM", "isCorrect": true},
+          {"id": "c", "text": "Flash disk", "isCorrect": false},
+          {"id": "d", "text": "DVD", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "RAM (Random Access Memory) is primary storage that the CPU uses directly while a program is running.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many bits make up one byte?",
+        "options": [
+          {"id": "a", "text": "4 bits", "isCorrect": false},
+          {"id": "b", "text": "8 bits", "isCorrect": true},
+          {"id": "c", "text": "16 bits", "isCorrect": false},
+          {"id": "d", "text": "1024 bits", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "One byte is made up of 8 bits, and a byte usually represents a single character.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of memory loses its contents when the computer is switched off?",
+        "options": [
+          {"id": "a", "text": "ROM", "isCorrect": false},
+          {"id": "b", "text": "Hard disk", "isCorrect": false},
+          {"id": "c", "text": "Volatile memory", "isCorrect": true},
+          {"id": "d", "text": "Flash disk", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Volatile memory, such as RAM, loses all stored data once the power is turned off.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which storage device uses laser light to read and write data?",
+        "options": [
+          {"id": "a", "text": "Flash disk", "isCorrect": false},
+          {"id": "b", "text": "CD/DVD", "isCorrect": true},
+          {"id": "c", "text": "Hard disk", "isCorrect": false},
+          {"id": "d", "text": "Memory card", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Optical discs such as CDs and DVDs are read and written using a laser beam.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which storage option keeps your files on remote internet servers so you can access them from anywhere?",
+        "options": [
+          {"id": "a", "text": "Cloud storage", "isCorrect": true},
+          {"id": "b", "text": "Hard disk", "isCorrect": false},
+          {"id": "c", "text": "Memory card", "isCorrect": false},
+          {"id": "d", "text": "RAM", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Cloud storage saves data on servers reached over the internet, allowing access from any connected device.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which unit of storage is the largest among those listed below?",
+        "options": [
+          {"id": "a", "text": "Kilobyte (KB)", "isCorrect": false},
+          {"id": "b", "text": "Megabyte (MB)", "isCorrect": false},
+          {"id": "c", "text": "Gigabyte (GB)", "isCorrect": false},
+          {"id": "d", "text": "Terabyte (TB)", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "Among KB, MB, GB and TB, the terabyte is the largest unit of storage.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Approximately how many kilobytes are there in one megabyte?",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": false},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "1024", "isCorrect": true},
+          {"id": "d", "text": "1000000", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "One megabyte equals 1024 kilobytes, since each higher unit is 1024 times the previous one.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a small, portable storage device that plugs into a USB port?",
+        "options": [
+          {"id": "a", "text": "Hard disk", "isCorrect": false},
+          {"id": "b", "text": "Flash disk", "isCorrect": true},
+          {"id": "c", "text": "CD", "isCorrect": false},
+          {"id": "d", "text": "RAM", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A flash disk (USB flash drive) is a small portable device that connects through a USB port to store data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of storage is commonly used inside cameras and mobile phones?",
+        "options": [
+          {"id": "a", "text": "Memory card", "isCorrect": true},
+          {"id": "b", "text": "DVD", "isCorrect": false},
+          {"id": "c", "text": "ROM", "isCorrect": false},
+          {"id": "d", "text": "Cloud", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Memory cards are small flash storage devices widely used in cameras and mobile phones.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why is secondary storage needed in addition to primary storage?",
+        "options": [
+          {"id": "a", "text": "Because secondary storage works faster than the CPU", "isCorrect": false},
+          {"id": "b", "text": "Because it keeps data permanently even when the power is off", "isCorrect": true},
+          {"id": "c", "text": "Because it replaces the need for a processor", "isCorrect": false},
+          {"id": "d", "text": "Because it cannot store any files", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Secondary storage is non-volatile, so it keeps data permanently for later use, unlike volatile primary memory.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following best describes ROM?",
+        "options": [
+          {"id": "a", "text": "Memory that the user can easily change all the time", "isCorrect": false},
+          {"id": "b", "text": "Non-volatile memory that mainly stores start-up instructions", "isCorrect": true},
+          {"id": "c", "text": "A removable storage device for photos", "isCorrect": false},
+          {"id": "d", "text": "An optical disc read by a laser", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "ROM (Read Only Memory) is non-volatile and usually holds the instructions a computer needs to start up.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A student needs to store a 50 GB collection of videos for many years. Which storage is most appropriate?",
+        "options": [
+          {"id": "a", "text": "RAM", "isCorrect": false},
+          {"id": "b", "text": "An external hard disk", "isCorrect": true},
+          {"id": "c", "text": "A single CD", "isCorrect": false},
+          {"id": "d", "text": "ROM", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An external hard disk offers large capacity and permanent storage, suitable for keeping many gigabytes of videos.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a good practice for caring for storage media?",
+        "options": [
+          {"id": "a", "text": "Removing a flash disk while files are still being copied", "isCorrect": false},
+          {"id": "b", "text": "Keeping CDs in direct sunlight for a long time", "isCorrect": false},
+          {"id": "c", "text": "Safely ejecting a flash disk before removing it", "isCorrect": true},
+          {"id": "d", "text": "Touching the shiny data surface of a CD with dirty fingers", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Safely ejecting a device before removal prevents data loss and damage to the files and the device.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement correctly compares primary and secondary storage?",
+        "options": [
+          {"id": "a", "text": "Primary storage is usually faster but smaller than secondary storage", "isCorrect": true},
+          {"id": "b", "text": "Secondary storage is always faster than primary storage", "isCorrect": false},
+          {"id": "c", "text": "Primary storage keeps data permanently after power off", "isCorrect": false},
+          {"id": "d", "text": "Secondary storage is used directly by the CPU during processing", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Primary storage like RAM is faster and used directly by the CPU but has smaller capacity than secondary storage.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The smallest unit of data storage in a computer is called a _____.",
+        "options": [],
+        "correctAnswer": "bit",
+        "explanation": "A bit is the smallest unit of storage and holds either a 0 or a 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One byte is made up of eight _____.",
+        "options": [],
+        "correctAnswer": "bits",
+        "explanation": "Eight bits combine to form one byte, which usually represents one character.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Memory that loses its contents when power is turned off is described as _____ memory.",
+        "options": [],
+        "correctAnswer": "volatile",
+        "explanation": "Volatile memory such as RAM needs constant power to keep its data.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The type of storage that holds data permanently even without power is called _____ storage.",
+        "options": [],
+        "correctAnswer": "secondary",
+        "explanation": "Secondary storage, such as a hard disk, keeps data permanently for later use.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A storage service that keeps files on remote internet servers is known as _____ storage.",
+        "options": [],
+        "correctAnswer": "cloud",
+        "explanation": "Cloud storage saves data on internet-based servers accessible from any connected device.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The main internal device for storing large amounts of data permanently in a desktop computer is the _____.",
+        "options": [],
+        "correctAnswer": "hard disk",
+        "explanation": "The hard disk is the main internal secondary storage device with large capacity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "1024 megabytes are approximately equal to one _____.",
+        "options": [],
+        "correctAnswer": "gigabyte",
+        "explanation": "One gigabyte equals 1024 megabytes in the binary system of measurement.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "CDs and DVDs are examples of _____ storage media because they use laser light.",
+        "options": [],
+        "correctAnswer": "optical",
+        "explanation": "Optical storage media are read and written using a laser beam.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The memory inside a computer that the CPU uses directly while running programs is called _____.",
+        "options": [],
+        "correctAnswer": "RAM",
+        "explanation": "RAM (Random Access Memory) temporarily holds data and programs the CPU is currently using.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Choosing storage according to how much data it can hold means considering its storage _____.",
+        "options": [],
+        "correctAnswer": "capacity",
+        "explanation": "Storage capacity tells how much data a device can hold and helps in choosing suitable storage.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "RAM is an example of volatile memory.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "RAM loses its contents when the power is switched off, so it is volatile.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A hard disk loses all its data as soon as the computer is switched off.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A hard disk is non-volatile and keeps data permanently even without power.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One kilobyte is larger than one megabyte.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A megabyte is larger than a kilobyte; 1 MB equals 1024 KB.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cloud storage allows users to access their files over the internet from different devices.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Cloud storage keeps files on internet servers that can be reached from any connected device.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bit can hold only the value 0 or the value 1.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A bit is the smallest unit of storage and represents either 0 or 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Memory cards are commonly used in cameras and mobile phones.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Memory cards are small flash storage devices widely used in cameras and phones.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Primary storage usually has a larger capacity than secondary storage.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Secondary storage normally has much larger capacity than primary storage such as RAM.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "It is safe to pull out a flash disk while files are still being copied to it.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Removing a flash disk during copying can corrupt files and damage data; it should be safely ejected first.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "ROM is a type of non-volatile memory.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "ROM keeps its contents even when the power is off, so it is non-volatile.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A terabyte is smaller than a gigabyte.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A terabyte is larger than a gigabyte; 1 TB equals 1024 GB.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Meaning of computer storage",
+        "options": [],
+        "correctAnswer": "Holding data and instructions for later use",
+        "explanation": "Storage keeps data and instructions so they can be retrieved when needed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Primary storage",
+        "options": [],
+        "correctAnswer": "Fast memory used directly by the CPU, such as RAM and ROM",
+        "explanation": "Primary storage works closely with the CPU during processing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Secondary storage",
+        "options": [],
+        "correctAnswer": "Non-volatile storage that keeps data permanently, such as hard disks",
+        "explanation": "Secondary storage holds data even when the computer is off.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Volatile memory",
+        "options": [],
+        "correctAnswer": "Memory that loses its data when power is off, like RAM",
+        "explanation": "Volatile memory needs constant power to keep its contents.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Non-volatile memory",
+        "options": [],
+        "correctAnswer": "Memory that keeps data without power, like ROM and hard disks",
+        "explanation": "Non-volatile memory retains data even after switching off.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Smallest unit of storage",
+        "options": [],
+        "correctAnswer": "The bit, which holds a 0 or a 1",
+        "explanation": "All data is built from bits, the smallest storage unit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Relationship between units",
+        "options": [],
+        "correctAnswer": "8 bits = 1 byte, and each unit up is 1024 times the previous",
+        "explanation": "KB, MB, GB and TB each increase by a factor of 1024.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cloud storage",
+        "options": [],
+        "correctAnswer": "Storing files on internet servers accessible from anywhere",
+        "explanation": "Cloud storage lets users reach files from any connected device.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Choosing appropriate storage",
+        "options": [],
+        "correctAnswer": "Consider capacity, portability, cost and speed",
+        "explanation": "The right storage depends on the amount of data and how it will be used.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Care of storage media",
+        "options": [],
+        "correctAnswer": "Eject safely, avoid heat and dust, and handle gently",
+        "explanation": "Proper care prevents data loss and damage to storage devices.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A photographer is taking pictures in a remote village with no internet for a whole week and must keep thousands of large photos until returning to town. Which storage choice is most suitable during the trip?",
+        "options": [
+          {"id": "a", "text": "Cloud storage, because it can be accessed anywhere", "isCorrect": false},
+          {"id": "b", "text": "High-capacity memory cards and a portable hard disk", "isCorrect": true},
+          {"id": "c", "text": "The camera's RAM, because it is very fast", "isCorrect": false},
+          {"id": "d", "text": "A single CD, because it is cheap", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Without internet, cloud storage is not usable; large-capacity memory cards plus a portable hard disk give enough permanent offline storage.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A computer has 4 GB of RAM and a 500 GB hard disk. When a program is closed and the computer is shut down, why do unsaved changes disappear while saved files remain?",
+        "options": [
+          {"id": "a", "text": "Because the hard disk is volatile and RAM is non-volatile", "isCorrect": false},
+          {"id": "b", "text": "Because RAM is volatile while the hard disk is non-volatile", "isCorrect": true},
+          {"id": "c", "text": "Because both RAM and the hard disk lose data at shutdown", "isCorrect": false},
+          {"id": "d", "text": "Because the program deletes all files when it closes", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Unsaved work sits in volatile RAM and is lost at shutdown, while saved files are written to the non-volatile hard disk and remain.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A school must back up 2 TB of student records every day, keep the data for years, and allow staff in different branches to view it. Which combination best meets all these needs?",
+        "options": [
+          {"id": "a", "text": "Several flash disks shared by hand between branches", "isCorrect": false},
+          {"id": "b", "text": "Only the RAM of the main school computer", "isCorrect": false},
+          {"id": "c", "text": "Large hard disks for local backup together with cloud storage for sharing", "isCorrect": true},
+          {"id": "d", "text": "A collection of CDs stored in one office", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Large hard disks give reliable high-capacity local backups while cloud storage allows long-term keeping and access from different branches.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

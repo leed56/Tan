@@ -1,0 +1,732 @@
+{
+  "topicId": "form_1_computer_studies_topic_6",
+  "topicName": "Operating Systems",
+  "order": 6,
+  "description": "This topic introduces the meaning and functions of an operating system, common examples, the desktop environment, file management, user interfaces, booting, and how the operating system manages hardware and resources.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the main purpose of an operating system on a computer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To type letters and documents",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To manage the hardware and software resources of the computer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To browse websites on the internet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To draw pictures and graphics",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An operating system is the system software that controls and coordinates the computer's hardware and software resources so that other programs can run.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an example of an operating system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Microsoft Word",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mozilla Firefox",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Windows",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Adobe Photoshop",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Windows is an operating system, while Word, Firefox and Photoshop are application programs that run on top of an operating system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which operating system is most commonly used on smartphones and tablets?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Android",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "macOS",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "MS-DOS",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Windows 95",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Android is a mobile operating system designed mainly for touch-screen devices such as smartphones and tablets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On a computer screen, what is the small picture used to represent a program, file or folder called?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A taskbar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A window",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "An icon",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "A cursor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "An icon is a small picture or symbol on the desktop that represents a program, file, folder or device, and is usually opened by double-clicking it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The main screen that appears after the computer finishes starting up, where icons are displayed, is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "desktop",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "keyboard",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "folder",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "printer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The desktop is the main working area shown on the screen after booting, and it usually holds icons, shortcuts and the taskbar.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the name of the bar, usually at the bottom of the Windows screen, that shows open programs and the clock?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Title bar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Taskbar",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Scroll bar",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Menu bar",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The taskbar is the strip, normally at the bottom of the screen, that shows running programs, pinned shortcuts, the clock and other status information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of user interface allows a user to interact with the computer by using icons, menus and a mouse?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Command line interface",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Graphical user interface",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Menu of switches",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Punch card interface",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A graphical user interface (GUI) lets the user work with pictures, icons, windows and menus, usually controlled with a mouse, instead of typing commands.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a command line interface, how does the user give instructions to the computer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "By clicking icons with a mouse",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "By typing text commands",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "By touching the screen",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "By speaking into a microphone",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A command line interface (CLI) requires the user to type text commands, which the computer then carries out.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The process of starting a computer and loading the operating system into memory is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "formatting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "booting",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "scanning",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "printing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Booting is the process that takes place when a computer is switched on, during which the operating system is loaded into memory ready for use.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A named container used to organise and store related files together is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "file",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "folder",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "window",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cursor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A folder (also called a directory) is used to group and organise related files so they are easy to find and manage.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which action changes the name of a file without changing its contents?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Delete",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Copy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Rename",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Print",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Renaming gives a file a new name while leaving the information inside the file unchanged.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the difference between copying a file and moving a file?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Copying deletes the file, while moving keeps it",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Copying makes a duplicate, while moving transfers the file to a new location",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Copying and moving are exactly the same thing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Copying renames the file, while moving prints it",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Copying leaves the original in place and creates a duplicate elsewhere, while moving removes the file from its original location and places it in a new one.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of these operating systems is developed by Apple for its Mac computers?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Linux",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Android",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "macOS",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Windows",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "macOS is the operating system created by Apple and used on its Macintosh (Mac) desktop and laptop computers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement about Linux is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It is an operating system that is often free and open source",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "It is a word processing program",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It can only run on mobile phones",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It is a brand of computer hardware",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Linux is an operating system that is frequently free of charge and open source, meaning its program code can be viewed and modified by anyone.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When you delete a file in Windows, where is it usually sent first before being permanently removed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The taskbar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The Recycle Bin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The Start menu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The clipboard",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In Windows, a deleted file is normally moved to the Recycle Bin, from where it can be restored or permanently removed later.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The system software that controls the whole computer and allows other programs to run is called the _____.",
+        "options": [],
+        "correctAnswer": "operating system",
+        "explanation": "The operating system is the most important system software because all other programs depend on it to run.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process of starting a computer and loading the operating system is known as _____.",
+        "options": [],
+        "correctAnswer": "booting",
+        "explanation": "Booting happens automatically when the computer is switched on.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A small picture on the desktop that represents a program or file is called an _____.",
+        "options": [],
+        "correctAnswer": "icon",
+        "explanation": "Icons make it easy to find and open programs and files by clicking on them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The main screen shown after the computer starts, where icons and the taskbar appear, is called the _____.",
+        "options": [],
+        "correctAnswer": "desktop",
+        "explanation": "The desktop is the user's main working area on the screen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A named container that is used to store and organise related files is called a _____.",
+        "options": [],
+        "correctAnswer": "folder",
+        "explanation": "Folders, also known as directories, help keep files neat and easy to locate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An interface that uses icons, windows and a mouse is called a graphical user interface, often shortened to _____.",
+        "options": [],
+        "correctAnswer": "GUI",
+        "explanation": "GUI stands for Graphical User Interface and makes computers easier for beginners to use.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An interface where the user must type text commands to control the computer is called a _____ interface.",
+        "options": [],
+        "correctAnswer": "command line",
+        "explanation": "A command line interface requires the user to know and type the correct commands.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mobile operating system developed by Google and used on many smartphones is called _____.",
+        "options": [],
+        "correctAnswer": "Android",
+        "explanation": "Android is one of the most widely used operating systems for touch-screen mobile devices.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To make an exact duplicate of a file in another location while keeping the original is called to _____ the file.",
+        "options": [],
+        "correctAnswer": "copy",
+        "explanation": "Copying produces a second version of the file and leaves the original unchanged.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Giving a file a new name without changing its contents is called to _____ the file.",
+        "options": [],
+        "correctAnswer": "rename",
+        "explanation": "Renaming only changes the file's name, not the information stored inside it.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "An operating system is a type of system software.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The operating system is the main system software that manages the computer and supports application programs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Microsoft Word is an example of an operating system.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Microsoft Word is an application program for word processing, not an operating system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Windows, Linux and macOS are all examples of operating systems.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Windows, Linux and macOS are all well-known operating systems used on computers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A graphical user interface allows users to interact with the computer using icons and a mouse.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A GUI uses pictures, icons, windows and menus that are usually controlled with a mouse.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a command line interface, the user controls the computer by clicking icons rather than typing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "In a command line interface the user must type text commands; clicking icons is a feature of a GUI.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Booting is the process of switching on a computer and loading the operating system into memory.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "When a computer boots, it loads the operating system so that the machine is ready to use.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Moving a file leaves the original copy in its old location.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Moving removes the file from its original location and places it in the new one; only copying leaves the original.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A folder can be used to store and organise many related files.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Folders group related files together to make them easier to find and manage.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One of the functions of an operating system is to manage hardware such as the keyboard, printer and storage devices.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Managing and controlling hardware devices is one of the key functions of an operating system.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Deleting a file always removes it from the computer permanently and immediately with no chance of recovery.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "In Windows a deleted file is usually moved to the Recycle Bin first, from where it can often be restored.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Meaning of an operating system",
+        "options": [],
+        "correctAnswer": "System software that controls the computer and manages its resources.",
+        "explanation": "All other programs depend on the operating system in order to run.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Examples of operating systems",
+        "options": [],
+        "correctAnswer": "Windows, Linux, macOS and Android.",
+        "explanation": "Different operating systems are used on desktops, laptops and mobile devices.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The desktop",
+        "options": [],
+        "correctAnswer": "The main screen shown after booting that holds icons and the taskbar.",
+        "explanation": "It is the user's main working area on the computer screen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What an icon is",
+        "options": [],
+        "correctAnswer": "A small picture that represents a program, file or folder.",
+        "explanation": "Icons are usually opened by double-clicking them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The taskbar",
+        "options": [],
+        "correctAnswer": "A bar showing open programs, shortcuts and the clock.",
+        "explanation": "In Windows it is usually found at the bottom of the screen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Files and folders",
+        "options": [],
+        "correctAnswer": "A file stores data, while a folder organises related files.",
+        "explanation": "Folders keep files neat and easy to locate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "File management actions",
+        "options": [],
+        "correctAnswer": "Copy, move, rename and delete files and folders.",
+        "explanation": "These actions help users organise and control their files.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "GUI versus command line interface",
+        "options": [],
+        "correctAnswer": "A GUI uses icons and a mouse, while a command line uses typed commands.",
+        "explanation": "A GUI is easier for beginners; a command line can be faster for experts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Booting",
+        "options": [],
+        "correctAnswer": "Starting the computer and loading the operating system into memory.",
+        "explanation": "Booting happens when the computer is switched on.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Managing hardware and resources",
+        "options": [],
+        "correctAnswer": "The operating system controls devices, memory and processing time.",
+        "explanation": "This ensures that hardware and programs work together smoothly.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A school computer laboratory uses computers with a command line interface, and new Form 1 students find it very difficult to operate them. Which change would most improve ease of use for beginners?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Switching to an operating system with a graphical user interface",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Removing the keyboard from each computer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Teaching students more typed commands to memorise",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Turning off the computers when not needed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A graphical user interface uses icons, menus and a mouse, which is much easier for beginners than memorising typed commands in a command line interface.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student copies a file from a folder named 'Homework' into a folder named 'Backup', and then deletes the file from the 'Homework' folder. What is the final result?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The file is lost completely from the computer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The file remains only in the 'Backup' folder",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The file remains in both folders",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The file is automatically renamed in both folders",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Copying first placed a duplicate in 'Backup', so deleting the original in 'Homework' leaves the file only in the 'Backup' folder.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "When several programs are open at the same time on one computer, the operating system shares the processor's time and memory among them. Which function of the operating system does this best describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Renaming files",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Drawing icons on the desktop",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Managing resources",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Printing documents",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Sharing the processor and memory fairly among running programs is part of the operating system's role of managing the computer's resources.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
