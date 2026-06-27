@@ -1,0 +1,732 @@
+{
+  "topicId": "form_1_physics_topic_2",
+  "topicName": "Measurement",
+  "order": 2,
+  "description": "An introduction to physical quantities, SI units, measuring instruments, prefixes and density for Form 1 students.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following is a fundamental (basic) physical quantity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Volume",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Length",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Density",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Speed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Length is a fundamental quantity, while volume, density and speed are derived from fundamental quantities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the SI unit of mass?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gram",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Newton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kilogram",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Litre",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The SI unit of mass is the kilogram (kg); the gram is a smaller, non-SI base unit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which instrument is most suitable for measuring the thickness of a single sheet of paper accurately?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Metre rule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tape measure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Micrometer screw gauge",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Beam balance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A micrometer screw gauge measures very small thicknesses to 0.01 mm, far more accurately than a ruler.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The SI unit of time is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Minute",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hour",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Second",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Day",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The second (s) is the SI base unit of time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of these is a derived quantity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Time",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mass",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Volume",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Volume is derived from length (length x length x length), so it is a derived quantity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The prefix 'kilo' represents a multiplying factor of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.001",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1000000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The prefix kilo (k) means 1000, so 1 kilometre = 1000 metres.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which instrument is best used to measure the internal diameter of a small tube?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Metre rule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Vernier caliper",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Stopwatch",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Spring balance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A vernier caliper has inside jaws designed to measure internal diameters to 0.1 mm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The volume of a liquid is most accurately measured using a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beaker",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Measuring cylinder",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Test tube",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ruler",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A measuring cylinder has fine graduations that allow the volume of a liquid to be read accurately.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An object has a mass of 200 g and a volume of 50 cm3. What is its density?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4 g/cm3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "0.25 g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "250 g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10000 g/cm3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Density = mass / volume = 200 / 50 = 4 g/cm3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which unit is the SI unit of volume?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Litre",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Cubic centimetre",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Cubic metre",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Millilitre",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The SI unit of volume is the cubic metre (m3) because volume is derived from the metre.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The volume of an irregular solid (such as a stone) is best found by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Measuring its length with a ruler",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Weighing it on a balance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Water displacement using a measuring cylinder",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Timing how fast it falls",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The displacement method measures the rise in water level when the solid is submerged, giving its volume.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the SI unit of density?",
+        "options": [
+          {
+            "id": "a",
+            "text": "g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kg/m3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kg/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "g/m3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since density = mass/volume, its SI unit is kilogram per cubic metre (kg/m3).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The prefix 'milli' means:",
+        "options": [
+          {
+            "id": "a",
+            "text": "One thousand",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "One hundredth",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "One thousandth",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "One million",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Milli (m) means one thousandth (0.001), so 1 millimetre = 0.001 metre.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which instrument is used to measure the time taken for a short event such as a runner's lap?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Stopwatch",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Vernier caliper",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Thermometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Beam balance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A stopwatch is designed to measure short intervals of time precisely.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why does a piece of cork float on water?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cork is heavier than water",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Cork has a lower density than water",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Cork has a larger volume than water",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cork has no mass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An object floats when its density is less than that of the liquid; cork is less dense than water.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The branch of physics concerned with finding the size of physical quantities is called _____.",
+        "options": [],
+        "correctAnswer": "measurement",
+        "explanation": "Measurement involves comparing an unknown quantity with a known standard.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of length is the _____.",
+        "options": [],
+        "correctAnswer": "metre",
+        "explanation": "The metre (m) is the SI base unit of length.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Density is calculated by dividing mass by _____.",
+        "options": [],
+        "correctAnswer": "volume",
+        "explanation": "Density = mass / volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A quantity that is obtained by combining fundamental quantities is called a _____ quantity.",
+        "options": [],
+        "correctAnswer": "derived",
+        "explanation": "Examples of derived quantities include area, volume and density.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The instrument used to measure lengths to an accuracy of 0.01 mm is the _____ screw gauge.",
+        "options": [],
+        "correctAnswer": "micrometer",
+        "explanation": "The micrometer screw gauge can measure very small thicknesses and diameters.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A mass of 2000 g is equal to _____ kg.",
+        "options": [],
+        "correctAnswer": "2",
+        "explanation": "Since 1 kg = 1000 g, 2000 g divided by 1000 equals 2 kg.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The prefix that represents one millionth is _____.",
+        "options": [],
+        "correctAnswer": "micro",
+        "explanation": "Micro is symbolised by the Greek letter mu and means 0.000001.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The method of finding the volume of an irregular solid by submerging it in water is called the _____ method.",
+        "options": [],
+        "correctAnswer": "displacement",
+        "explanation": "The volume of water pushed aside equals the volume of the submerged solid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object with a mass of 60 g and a volume of 20 cm3 has a density of _____ g/cm3.",
+        "options": [],
+        "correctAnswer": "3",
+        "explanation": "Density = 60 / 20 = 3 g/cm3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The instrument used to measure the mass of objects in the laboratory is the beam _____.",
+        "options": [],
+        "correctAnswer": "balance",
+        "explanation": "A beam balance compares the mass of an object with known standard masses.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Mass and weight are exactly the same physical quantity.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Mass is the amount of matter in an object, while weight is the pull of gravity on that mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The kilogram is the SI unit of mass.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The kilogram (kg) is the SI base unit of mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Volume is a fundamental quantity.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Volume is a derived quantity because it comes from length cubed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A vernier caliper is more accurate than a metre rule.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A vernier caliper reads to 0.1 mm while a metre rule typically reads to 1 mm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "1 litre is equal to 1000 cubic centimetres.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "1 litre = 1000 cm3 = 1000 ml.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object will sink in a liquid if its density is less than that of the liquid.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An object sinks when its density is greater than the liquid's density, and floats when it is less.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The prefix 'centi' means one hundredth.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Centi (c) means 0.01, so 1 centimetre = 0.01 metre.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A stopwatch is used to measure temperature.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A stopwatch measures time; temperature is measured with a thermometer.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The density of pure water is approximately 1000 kg/m3.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Pure water has a density of about 1000 kg/m3 or 1 g/cm3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Taking several readings and finding their average improves the accuracy of a measurement.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Averaging repeated readings reduces the effect of random errors.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Fundamental quantities",
+        "options": [],
+        "correctAnswer": "Length, mass and time are basic quantities that cannot be derived from others.",
+        "explanation": "All other quantities are built from these fundamental quantities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Derived quantities",
+        "options": [],
+        "correctAnswer": "Quantities such as area, volume and density obtained by combining fundamental quantities.",
+        "explanation": "For example, area = length x width.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "SI base units",
+        "options": [],
+        "correctAnswer": "Metre for length, kilogram for mass and second for time.",
+        "explanation": "These are the internationally agreed standard units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Formula for density",
+        "options": [],
+        "correctAnswer": "Density = mass / volume.",
+        "explanation": "Its SI unit is kg/m3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Measuring small thicknesses",
+        "options": [],
+        "correctAnswer": "Use a micrometer screw gauge (reads to 0.01 mm).",
+        "explanation": "Ideal for wire diameters and thin sheets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Measuring volume of irregular solids",
+        "options": [],
+        "correctAnswer": "Use the displacement method with a measuring cylinder of water.",
+        "explanation": "The rise in water level equals the volume of the solid.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Common SI prefixes",
+        "options": [],
+        "correctAnswer": "kilo = 1000, centi = 0.01, milli = 0.001, micro = 0.000001.",
+        "explanation": "Prefixes scale units up or down.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Floating and sinking",
+        "options": [],
+        "correctAnswer": "An object floats if it is less dense than the liquid and sinks if it is denser.",
+        "explanation": "This compares the object's density with the liquid's density.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Improving accuracy",
+        "options": [],
+        "correctAnswer": "Repeat readings and take the average to reduce random error.",
+        "explanation": "Also avoid parallax error by reading at eye level.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Measuring instruments and their quantities",
+        "options": [],
+        "correctAnswer": "Ruler/caliper measure length, balance measures mass, stopwatch measures time.",
+        "explanation": "Each quantity has appropriate instruments.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A metal block measures 5 cm by 4 cm by 2 cm and has a mass of 320 g. What is its density?",
+        "options": [
+          {
+            "id": "a",
+            "text": "8 g/cm3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "0.125 g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "40 g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "320 g/cm3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Volume = 5 x 4 x 2 = 40 cm3, so density = 320 / 40 = 8 g/cm3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A stone is lowered into a measuring cylinder. The water level rises from 30 cm3 to 75 cm3. If the stone's mass is 135 g, what is its density?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1.8 g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3 g/cm3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4.5 g/cm3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.33 g/cm3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Volume of stone = 75 - 30 = 45 cm3, so density = 135 / 45 = 3 g/cm3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A liquid has a density of 0.8 g/cm3. What is the mass of 250 cm3 of this liquid?",
+        "options": [
+          {
+            "id": "a",
+            "text": "200 g",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "312.5 g",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.0032 g",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "320 g",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Mass = density x volume = 0.8 x 250 = 200 g.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

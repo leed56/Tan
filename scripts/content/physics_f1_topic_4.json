@@ -1,0 +1,732 @@
+{
+  "topicId": "form_1_physics_topic_4",
+  "topicName": "Archimedes' Principle and Law of Flotation",
+  "order": 4,
+  "description": "This topic explains upthrust, Archimedes' principle, the law of flotation, relative density, and their applications to floating and sinking objects.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the name given to the upward force exerted by a fluid on an object placed in it?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Friction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Upthrust",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Tension",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Gravity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The upward force a fluid exerts on a submerged or floating object is called upthrust or buoyant force.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Archimedes' principle states that the upthrust on an object equals the weight of the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "object in air",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fluid displaced by the object",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "container holding the fluid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "object when fully dry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Archimedes' principle: upthrust on a body equals the weight of the fluid it displaces.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An object floats in a liquid when its weight is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "greater than the upthrust",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equal to the upthrust",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "zero",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "less than the weight of the object",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The law of flotation requires the weight of a floating body to equal the upthrust (weight of fluid displaced).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An object weighs 50 N in air and 30 N when fully immersed in water. What is the upthrust on the object?",
+        "options": [
+          {
+            "id": "a",
+            "text": "80 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "30 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "50 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Upthrust = weight in air - apparent weight in water = 50 N - 30 N = 20 N.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Relative density of a substance is defined as the ratio of the density of the substance to the density of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "air",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "water",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mercury",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "oil",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Relative density compares a substance's density with that of water; it has no units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why does a ship made of steel float even though steel is denser than water?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Steel becomes lighter in water",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Its hollow shape displaces a large weight of water",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Water has no weight",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The ship is pushed by wind",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The hollow hull displaces a large volume of water whose weight equals the ship's weight, so it floats.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A device used to measure the relative density of liquids is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "barometer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "thermometer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hydrometer",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "manometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A hydrometer floats in a liquid and measures its relative density using the law of flotation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A submarine dives by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "filling its ballast tanks with water to increase weight",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "removing all water from its tanks",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "increasing the upthrust",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "becoming less dense than water",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Letting water into the ballast tanks increases the submarine's weight beyond the upthrust, so it sinks.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A solid of volume 0.002 m³ is fully immersed in water of density 1000 kg/m³. Taking g = 10 N/kg, the upthrust on it is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "2 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "200 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.2 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Upthrust = ρVg = 1000 × 0.002 × 10 = 20 N.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object sinks in a fluid when its density is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "less than the density of the fluid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equal to the density of the fluid",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "greater than the density of the fluid",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "always zero",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "If an object is denser than the fluid, its weight exceeds the maximum upthrust and it sinks.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A hot-air balloon rises because:",
+        "options": [
+          {
+            "id": "a",
+            "text": "hot air inside is denser than the surrounding air",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "the upthrust from the surrounding air exceeds its weight",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "there is no gravity at high altitude",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "the balloon has no weight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Hot air is less dense, so the balloon's weight becomes less than the upthrust of the surrounding air and it rises.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The relative density of a metal is 8. If the density of water is 1000 kg/m³, the density of the metal is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "800 kg/m³",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8000 kg/m³",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "125 kg/m³",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "80 kg/m³",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Density of metal = relative density × density of water = 8 × 1000 = 8000 kg/m³.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a floating object is in equilibrium, the volume of fluid displaced has a weight that is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "greater than the object's weight",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equal to the object's weight",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "less than the object's weight",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "always zero",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "By the law of flotation, a floating body displaces its own weight of fluid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An egg sinks in fresh water but floats when enough salt is added. This happens because adding salt:",
+        "options": [
+          {
+            "id": "a",
+            "text": "decreases the density of the water",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "increases the density of the water so upthrust increases",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "reduces the weight of the egg",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "removes upthrust completely",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Salt water is denser, so it provides greater upthrust which can now support the egg's weight.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement about a body that just floats fully submerged (neither rising nor sinking) is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Its density is much greater than the fluid's density",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Its density equals the fluid's density",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Its weight is zero",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "There is no upthrust acting on it",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A body fully submerged in equilibrium has a density equal to that of the surrounding fluid.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The upward force exerted by a fluid on an immersed object is called _____.",
+        "options": [],
+        "correctAnswer": "upthrust",
+        "explanation": "Upthrust, also called buoyant force, acts vertically upward on objects in a fluid.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Archimedes' principle states that the upthrust equals the weight of the fluid _____.",
+        "options": [],
+        "correctAnswer": "displaced",
+        "explanation": "The volume of fluid pushed aside by the object determines the upthrust.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The law of _____ states that a floating body displaces its own weight of the fluid in which it floats.",
+        "options": [],
+        "correctAnswer": "flotation",
+        "explanation": "This law explains why ships and other floating bodies stay afloat.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An instrument that uses the law of flotation to measure the relative density of a liquid is called a _____.",
+        "options": [],
+        "correctAnswer": "hydrometer",
+        "explanation": "A hydrometer floats deeper in less dense liquids and higher in denser liquids.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Relative density has no units because it is a _____ of two densities.",
+        "options": [],
+        "correctAnswer": "ratio",
+        "explanation": "Dividing two quantities with the same units gives a pure number with no units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If an object weighs 12 N in air and 9 N in water, the upthrust on it is _____ N.",
+        "options": [],
+        "correctAnswer": "3",
+        "explanation": "Upthrust = 12 N - 9 N = 3 N.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An object will float if its density is _____ than the density of the fluid.",
+        "options": [],
+        "correctAnswer": "less",
+        "explanation": "A less dense object weighs less than the fluid it can displace, so it floats.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The upthrust on a fully immersed object can be calculated using the formula upthrust = ρVg, where ρ is the _____ of the fluid.",
+        "options": [],
+        "correctAnswer": "density",
+        "explanation": "Here V is the volume of fluid displaced and g is the gravitational field strength.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A submarine controls its depth by changing the amount of water in its _____ tanks.",
+        "options": [],
+        "correctAnswer": "ballast",
+        "explanation": "Adding water increases weight to dive; removing water reduces weight to rise.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The relative density of water is exactly _____.",
+        "options": [],
+        "correctAnswer": "1",
+        "explanation": "Since relative density compares a substance to water, water's relative density is 1.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Upthrust always acts in the upward direction on an object in a fluid.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The buoyant force is always directed vertically upward, opposing the weight.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to Archimedes' principle, the upthrust equals the weight of the object in air.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Upthrust equals the weight of the fluid displaced, not the weight of the object in air.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body floats when its weight is equal to the upthrust acting on it.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This balance of forces is the condition for flotation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An object always feels heavier when weighed in water than in air.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An object feels lighter in water because upthrust reduces its apparent weight.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Relative density is measured in kilograms per cubic metre (kg/m³).",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Relative density is a pure number and has no units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A steel ship floats because its hollow shape displaces a large weight of water.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The displaced water's weight equals the ship's weight, satisfying the law of flotation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Salt water provides greater upthrust than fresh water for the same volume displaced.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Salt water is denser, so the displaced water weighs more, giving greater upthrust.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A hot-air balloon rises because the hot air inside it is denser than the surrounding air.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Hot air is less dense, so the balloon's weight becomes less than the upthrust and it rises.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object whose density equals the fluid's density will remain floating fully submerged in equilibrium.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "When densities are equal, weight equals upthrust at full submersion, so it neither rises nor sinks.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Upthrust depends on the volume of fluid displaced and the density of the fluid.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Upthrust = ρVg, so both fluid density and displaced volume affect it.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of upthrust",
+        "options": [],
+        "correctAnswer": "The upward force a fluid exerts on an immersed or floating object.",
+        "explanation": "Also known as buoyant force, it opposes the object's weight.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Archimedes' principle",
+        "options": [],
+        "correctAnswer": "Upthrust on a body equals the weight of the fluid it displaces.",
+        "explanation": "It applies to both fully and partly immersed objects.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Law of flotation",
+        "options": [],
+        "correctAnswer": "A floating body displaces its own weight of fluid.",
+        "explanation": "Weight of the body equals the upthrust when it floats.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Formula for upthrust on a submerged object",
+        "options": [],
+        "correctAnswer": "Upthrust = ρVg (fluid density × displaced volume × g).",
+        "explanation": "This gives the weight of the displaced fluid directly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Finding upthrust by weighing",
+        "options": [],
+        "correctAnswer": "Upthrust = weight in air - apparent weight in fluid.",
+        "explanation": "The loss in weight equals the upthrust on the object.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Definition of relative density",
+        "options": [],
+        "correctAnswer": "The ratio of a substance's density to the density of water.",
+        "explanation": "It is a pure number with no units; water's value is 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Condition for floating and sinking",
+        "options": [],
+        "correctAnswer": "Floats if less dense than fluid; sinks if denser.",
+        "explanation": "Density comparison decides whether weight or upthrust dominates.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How a hydrometer works",
+        "options": [],
+        "correctAnswer": "It floats in a liquid to measure its relative density.",
+        "explanation": "It sinks deeper in less dense liquids and floats higher in denser ones.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How a submarine dives and rises",
+        "options": [],
+        "correctAnswer": "It changes weight by filling or emptying ballast tanks.",
+        "explanation": "More water sinks it; less water lets it rise.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why a steel ship floats",
+        "options": [],
+        "correctAnswer": "Its hollow shape displaces a weight of water equal to its own.",
+        "explanation": "The large displaced volume gives enough upthrust despite steel being dense.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A metal block weighs 60 N in air and 45 N when fully immersed in water of density 1000 kg/m³. Taking g = 10 N/kg, what is the volume of the block?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.0015 m³",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "0.015 m³",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.15 m³",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.006 m³",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Upthrust = 60 - 45 = 15 N; V = upthrust/(ρg) = 15/(1000×10) = 0.0015 m³.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A wooden block of volume 0.01 m³ floats in water (density 1000 kg/m³) with 60% of its volume submerged. Taking g = 10 N/kg, what is the weight of the block?",
+        "options": [
+          {
+            "id": "a",
+            "text": "100 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "60 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "600 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Submerged volume = 0.6 × 0.01 = 0.006 m³; weight = upthrust = ρVg = 1000 × 0.006 × 10 = 60 N.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A solid of mass 0.8 kg and volume 0.0004 m³ is placed in a liquid of density 1500 kg/m³. Taking g = 10 N/kg, will it float or sink and why?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sink, because its weight 8 N exceeds the maximum upthrust 6 N",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Float, because its weight is less than the upthrust",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Float, because the liquid is denser than the solid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sink, because liquids cannot exert upthrust",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Weight = 0.8 × 10 = 8 N; max upthrust = 1500 × 0.0004 × 10 = 6 N. Since 8 N > 6 N, it sinks.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
