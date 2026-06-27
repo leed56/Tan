@@ -57,7 +57,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 - [x] 18. Kiswahili — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
 - [x] 19. Geography — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
 - [x] 20. History — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
-- [ ] 21–25. Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 2
+- [x] 21. Civics — Form 2 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
+- [ ] 22–25. Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 2
 
 ### Form 3
 - [ ] 26–38. All 13 subjects — Form 3
