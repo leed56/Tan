@@ -1,0 +1,732 @@
+{
+  "topicId": "form_2_physics_topic_7",
+  "topicName": "Refraction of Light and Lenses",
+  "order": 7,
+  "description": "This topic explores how light bends when it passes between different media, the refractive index, total internal reflection, and how convex and concave lenses form images.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is refraction of light?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The bouncing of light off a shiny surface",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The bending of light as it passes from one medium to another",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The splitting of white light into colours",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The complete blocking of light by an object",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Refraction is the change in direction (bending) of light as it travels from one transparent medium into another of different optical density.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Refraction of light is mainly caused by a change in which property of light as it crosses a boundary?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Its colour",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Its brightness",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Its speed",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Its frequency",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Light changes speed when it enters a medium of different optical density, and this change in speed causes the ray to bend.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a ray of light passes from air into glass, it bends towards the normal because glass is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Less dense optically than air",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Denser optically than air",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The same optical density as air",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Completely opaque",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Light travels slower in the optically denser glass, so it bends towards the normal as it enters.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When light passes from water into air along the normal (perpendicular to the surface), what happens?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It bends towards the normal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It bends away from the normal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It passes straight through without bending",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "It is totally reflected",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A ray travelling along the normal hits the surface at 90 degrees, so it does not bend even though its speed changes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The refractive index of a medium is defined as the ratio of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The speed of light in the medium to the speed of light in a vacuum",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The speed of light in a vacuum to the speed of light in the medium",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The angle of reflection to the angle of incidence",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The frequency of light to its wavelength",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Refractive index n = speed of light in vacuum (or air) divided by speed of light in the medium.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The first law of refraction states that the incident ray, the refracted ray and the normal at the point of incidence all lie in:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Different planes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The same plane",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A curved surface",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Parallel lines",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The first law of refraction states all three lie in the same plane at the point of incidence.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The law that states the ratio of the sine of the angle of incidence to the sine of the angle of refraction is constant is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ohm's law",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hooke's law",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Snell's law",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Newton's law",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Snell's law (the second law of refraction) states that sin i / sin r is a constant for a given pair of media.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Total internal reflection can ONLY occur when light travels from:",
+        "options": [
+          {
+            "id": "a",
+            "text": "A less dense medium to a denser medium",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A denser medium to a less dense medium",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Air into glass",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A vacuum into water",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Total internal reflection requires light to move from an optically denser to a less dense medium and the angle of incidence to exceed the critical angle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The critical angle is the angle of incidence in the denser medium for which the angle of refraction is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "0 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "45 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "90 degrees",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "180 degrees",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "At the critical angle, the refracted ray travels along the surface, making the angle of refraction equal to 90 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A lens that is thicker in the middle than at its edges is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Concave lens",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Convex lens",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Plane lens",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Diverging lens",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A convex (converging) lens is thicker at its centre and brings parallel rays to a focus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A concave lens is also correctly described as a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Converging lens",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Diverging lens",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Magnifying lens",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Focusing lens",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A concave lens spreads parallel rays apart, so it is called a diverging lens.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When parallel rays of light pass through a convex lens, they meet at a point called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Optical centre",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Centre of curvature",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Principal focus",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Pole",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Rays parallel to the principal axis converge at the principal focus (focal point) of a convex lens.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of image is always formed by a concave (diverging) lens for a real object?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Real, inverted and magnified",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Virtual, upright and diminished",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Real, upright and the same size",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Virtual, inverted and magnified",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A concave lens always produces a virtual, upright and smaller (diminished) image, no matter where the object is placed.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Which device uses a convex lens to correct the eye defect known as long-sightedness (hypermetropia)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Spectacles with concave lenses",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Spectacles with convex lenses",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A plane mirror",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A prism",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Long-sightedness is corrected using convex (converging) lenses, while short-sightedness uses concave lenses.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A simple magnifying glass produces an enlarged upright image when the object is placed:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beyond twice the focal length",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Exactly at the principal focus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Between the lens and its principal focus",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "At the centre of curvature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "When the object is inside the focal length of a convex lens, the image is virtual, upright and magnified, as in a magnifying glass.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The bending of light as it travels from one transparent medium to another is called _____.",
+        "options": [],
+        "correctAnswer": "refraction",
+        "explanation": "Refraction occurs because light changes speed when entering a new medium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The imaginary line drawn perpendicular to the surface at the point where light strikes is called the _____.",
+        "options": [],
+        "correctAnswer": "normal",
+        "explanation": "Angles of incidence and refraction are always measured from the normal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When light moves from a less dense to a denser medium, it bends _____ the normal.",
+        "options": [],
+        "correctAnswer": "towards",
+        "explanation": "Light slows down in the denser medium, causing it to bend towards the normal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The constant ratio sin i / sin r for a given pair of media is known as the _____ of the second medium.",
+        "options": [],
+        "correctAnswer": "refractive index",
+        "explanation": "This relationship is expressed by Snell's law.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The law stating that sin i / sin r is constant is named after the scientist _____.",
+        "options": [],
+        "correctAnswer": "Snell",
+        "explanation": "Snell's law is the second law of refraction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The smallest angle of incidence in a denser medium for which total internal reflection just begins is called the _____ angle.",
+        "options": [],
+        "correctAnswer": "critical",
+        "explanation": "At the critical angle the refracted ray grazes the surface at 90 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Optical fibres carry light signals over long distances using the principle of total internal _____.",
+        "options": [],
+        "correctAnswer": "reflection",
+        "explanation": "Light bounces repeatedly inside the fibre by total internal reflection without escaping.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A convex lens is also called a _____ lens because it brings parallel rays together.",
+        "options": [],
+        "correctAnswer": "converging",
+        "explanation": "Convex lenses cause rays to converge to the principal focus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The distance from the optical centre of a lens to its principal focus is called the _____ length.",
+        "options": [],
+        "correctAnswer": "focal",
+        "explanation": "A shorter focal length means the lens is more powerful at bending light.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An image that cannot be formed on a screen because the rays only appear to come from it is described as a _____ image.",
+        "options": [],
+        "correctAnswer": "virtual",
+        "explanation": "Virtual images, such as those from a magnifying glass, are seen by the eye but cannot be projected.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Refraction occurs because light changes speed when it passes from one medium to another.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The change in speed at the boundary causes the light ray to bend.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A ray of light that strikes a surface along the normal is bent away from the normal.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A ray travelling along the normal passes straight through without bending.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When light passes from glass into air, it bends away from the normal.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Moving into the less dense medium, light speeds up and bends away from the normal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The refractive index of a vacuum is exactly 1.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Since refractive index compares the speed of light in vacuum to itself, it equals 1.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Total internal reflection can occur when light travels from air into water.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Total internal reflection only happens when light goes from a denser to a less dense medium.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "At the critical angle, the angle of refraction is 90 degrees.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The refracted ray travels along the boundary at exactly the critical angle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A concave lens is thicker at its centre than at its edges.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A concave lens is thinner in the middle; it is the convex lens that is thicker in the middle.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A convex lens can form both real and virtual images depending on the object's position.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Beyond the focus it forms real images; within the focal length it forms a virtual magnified image.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A concave lens always forms a virtual, upright and diminished image of a real object.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "No matter where the object is, a diverging lens forms a smaller upright virtual image.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Convex lenses are used in cameras to focus light and form an image on the film or sensor.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The camera lens is a converging lens that produces a real, inverted, diminished image on the sensor.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of refraction",
+        "options": [],
+        "correctAnswer": "The bending of light as it passes between media of different optical density.",
+        "explanation": "It happens because light changes speed at the boundary.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cause of refraction",
+        "options": [],
+        "correctAnswer": "A change in the speed of light when entering a new medium.",
+        "explanation": "Slower light bends towards the normal; faster light bends away.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Refractive index",
+        "options": [],
+        "correctAnswer": "The ratio of the speed of light in a vacuum to its speed in the medium.",
+        "explanation": "A higher refractive index means the medium is optically denser.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "First law of refraction",
+        "options": [],
+        "correctAnswer": "The incident ray, refracted ray and normal all lie in the same plane.",
+        "explanation": "This is one of the two laws of refraction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Snell's law (second law)",
+        "options": [],
+        "correctAnswer": "The ratio sin i / sin r is constant for two given media.",
+        "explanation": "This constant equals the refractive index.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Total internal reflection",
+        "options": [],
+        "correctAnswer": "Light is completely reflected inside a denser medium when the angle of incidence exceeds the critical angle.",
+        "explanation": "It requires travel from a denser to a less dense medium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Critical angle",
+        "options": [],
+        "correctAnswer": "The angle of incidence in the denser medium that gives an angle of refraction of 90 degrees.",
+        "explanation": "Above this angle, total internal reflection occurs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Convex lens",
+        "options": [],
+        "correctAnswer": "A converging lens, thicker in the middle, that brings parallel rays to a focus.",
+        "explanation": "Used in magnifying glasses, cameras and to correct long-sight.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Concave lens",
+        "options": [],
+        "correctAnswer": "A diverging lens, thinner in the middle, that spreads parallel rays apart.",
+        "explanation": "It always forms a virtual, upright, diminished image.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Uses of lenses",
+        "options": [],
+        "correctAnswer": "Lenses are used in cameras, spectacles, microscopes, telescopes and magnifying glasses.",
+        "explanation": "The type and focal length chosen depend on the required image.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A ray of light travels from air into a glass block at an angle of incidence of 60 degrees. If the refractive index of the glass is about 1.5, what can be said about the angle of refraction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It is greater than 60 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It is equal to 60 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It is less than 60 degrees",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "It is exactly 90 degrees",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Light entering the denser glass bends towards the normal, so the angle of refraction is smaller than the angle of incidence.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A medium has a critical angle of 42 degrees with air. If light inside this medium strikes the surface at an angle of incidence of 50 degrees, what happens?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The light refracts and passes out into the air",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The light undergoes total internal reflection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The light travels along the surface at 90 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The light is absorbed by the medium",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since 50 degrees is greater than the critical angle of 42 degrees, the light is totally internally reflected back into the medium.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An object is placed at a distance equal to twice the focal length (2F) in front of a convex lens. Which best describes the image formed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Virtual, upright and magnified",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Real, inverted and the same size as the object",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Real, upright and diminished",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "No image is formed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "When an object is at 2F of a convex lens, the image forms at 2F on the other side and is real, inverted and the same size as the object.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

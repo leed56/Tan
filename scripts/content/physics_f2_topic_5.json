@@ -1,0 +1,444 @@
+{
+  "topicId": "form_2_physics_topic_5",
+  "topicName": "Simple Machines",
+  "order": 5,
+  "description": "A study of simple machines covering effort, load, mechanical advantage, velocity ratio and efficiency, with the main machine types and related numeric problems.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "A machine is best described as a device that makes work easier by allowing a force to be applied at a more convenient point or in a more convenient direction. What name is given to the force we apply to a machine?",
+        "options": [
+          {"id": "a", "text": "Load", "isCorrect": false},
+          {"id": "b", "text": "Effort", "isCorrect": true},
+          {"id": "c", "text": "Weight", "isCorrect": false},
+          {"id": "d", "text": "Tension", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The effort is the force applied to a machine, while the load is the resistance or weight the machine overcomes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the correct formula for mechanical advantage (MA) of a machine?",
+        "options": [
+          {"id": "a", "text": "MA = effort / load", "isCorrect": false},
+          {"id": "b", "text": "MA = load / effort", "isCorrect": true},
+          {"id": "c", "text": "MA = load x effort", "isCorrect": false},
+          {"id": "d", "text": "MA = effort distance / load distance", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Mechanical advantage is the ratio of the load to the effort, MA = load / effort, and it has no units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A simple machine lifts a load of 600 N using an effort of 150 N. What is the mechanical advantage of the machine?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "0.25", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "MA = load / effort = 600 / 150 = 4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Velocity ratio (VR) of a machine is defined as the ratio of the distance moved by the effort to the distance moved by the:",
+        "options": [
+          {"id": "a", "text": "Load", "isCorrect": true},
+          {"id": "b", "text": "Fulcrum", "isCorrect": false},
+          {"id": "c", "text": "Effort itself", "isCorrect": false},
+          {"id": "d", "text": "Pivot", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "VR = distance moved by effort / distance moved by load, in the same time interval.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a crowbar used to lift a stone, the fulcrum lies between the effort and the load. To which class of lever does this belong?",
+        "options": [
+          {"id": "a", "text": "First class lever", "isCorrect": true},
+          {"id": "b", "text": "Second class lever", "isCorrect": false},
+          {"id": "c", "text": "Third class lever", "isCorrect": false},
+          {"id": "d", "text": "Fourth class lever", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In a first class lever the fulcrum is positioned between the effort and the load, as in a crowbar, scissors or a seesaw.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A wheelbarrow is an example of a second class lever. In a second class lever, what lies between the fulcrum and the effort?",
+        "options": [
+          {"id": "a", "text": "The effort", "isCorrect": false},
+          {"id": "b", "text": "The load", "isCorrect": true},
+          {"id": "c", "text": "Another fulcrum", "isCorrect": false},
+          {"id": "d", "text": "Nothing", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In a second class lever the load lies between the fulcrum and the effort, giving an MA greater than 1.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A machine has a velocity ratio of 5 and a mechanical advantage of 4. What is its efficiency?",
+        "options": [
+          {"id": "a", "text": "20%", "isCorrect": false},
+          {"id": "b", "text": "80%", "isCorrect": true},
+          {"id": "c", "text": "100%", "isCorrect": false},
+          {"id": "d", "text": "125%", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Efficiency = (MA / VR) x 100% = (4 / 5) x 100% = 80%.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For a single fixed pulley used to lift a load, the main advantage is that it:",
+        "options": [
+          {"id": "a", "text": "Multiplies the effort applied", "isCorrect": false},
+          {"id": "b", "text": "Changes the direction of the effort", "isCorrect": true},
+          {"id": "c", "text": "Has a velocity ratio of 2", "isCorrect": false},
+          {"id": "d", "text": "Always has an efficiency of 100%", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A single fixed pulley has a velocity ratio of 1 and does not multiply force; its benefit is changing the direction of the applied force.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A block and tackle pulley system has 4 sections of rope supporting the movable block. What is its velocity ratio?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "8", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "For a block and tackle, the velocity ratio equals the number of rope sections supporting the movable load, here 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An inclined plane is 10 m long and rises to a vertical height of 2 m. What is the velocity ratio of the inclined plane?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "20", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "VR of an inclined plane = length of slope / vertical height = 10 / 2 = 5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is the efficiency of a real machine always less than 100%?",
+        "options": [
+          {"id": "a", "text": "Because the load is always greater than the effort", "isCorrect": false},
+          {"id": "b", "text": "Because some work done is lost overcoming friction and lifting moving parts", "isCorrect": true},
+          {"id": "c", "text": "Because the velocity ratio is always less than the mechanical advantage", "isCorrect": false},
+          {"id": "d", "text": "Because energy is created inside the machine", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Output work is always less than input work because energy is wasted overcoming friction and moving the parts of the machine.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A wheel and axle has a wheel of radius 40 cm and an axle of radius 8 cm. What is its velocity ratio?",
+        "options": [
+          {"id": "a", "text": "0.2", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "32", "isCorrect": false},
+          {"id": "d", "text": "48", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "VR of a wheel and axle = radius of wheel / radius of axle = 40 / 8 = 5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A screw jack has a pitch of 5 mm and a turning handle of length 35 cm. Taking pi as 22/7, what is its velocity ratio?",
+        "options": [
+          {"id": "a", "text": "44", "isCorrect": false},
+          {"id": "b", "text": "220", "isCorrect": false},
+          {"id": "c", "text": "440", "isCorrect": true},
+          {"id": "d", "text": "70", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "VR of a screw = circumference of handle / pitch = (2 x 22/7 x 350 mm) / 5 mm = 2200 / 5 = 440.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A pair of gears has a driver gear with 12 teeth meshed with a driven gear of 36 teeth. What is the velocity ratio (driven to driver) of this gear system?",
+        "options": [
+          {"id": "a", "text": "1/3", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "24", "isCorrect": false},
+          {"id": "d", "text": "48", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "For gears, VR = number of teeth on driven gear / number of teeth on driver gear = 36 / 12 = 3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A machine with a velocity ratio of 6 is used to raise a load of 900 N using an effort of 200 N. What is the efficiency of the machine?",
+        "options": [
+          {"id": "a", "text": "65%", "isCorrect": false},
+          {"id": "b", "text": "75%", "isCorrect": true},
+          {"id": "c", "text": "80%", "isCorrect": false},
+          {"id": "d", "text": "90%", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "MA = 900 / 200 = 4.5; efficiency = (MA / VR) x 100% = (4.5 / 6) x 100% = 75%.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The force that a machine works against, usually a weight to be lifted or moved, is called the _____.",
+        "options": [],
+        "correctAnswer": "load",
+        "explanation": "The load is the resistance overcome by the machine, while the applied force is the effort.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mechanical advantage is calculated by dividing the load by the _____.",
+        "options": [],
+        "correctAnswer": "effort",
+        "explanation": "MA = load / effort, so the load is divided by the effort applied.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The fixed point about which a lever turns is called the _____.",
+        "options": [],
+        "correctAnswer": "fulcrum",
+        "explanation": "The fulcrum (or pivot) is the fixed point around which a lever rotates.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A machine that has a load of 800 N lifted by an effort of 250 N has a mechanical advantage of _____.",
+        "options": [],
+        "correctAnswer": "3.2",
+        "explanation": "MA = load / effort = 800 / 250 = 3.2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the efficiency of a machine is expressed as a percentage, it is found by dividing the mechanical advantage by the velocity ratio and multiplying by _____.",
+        "options": [],
+        "correctAnswer": "100",
+        "explanation": "Efficiency = (MA / VR) x 100%, so the ratio is multiplied by 100 to give a percentage.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pair of scissors and a seesaw are both examples of a _____ class lever.",
+        "options": [],
+        "correctAnswer": "first",
+        "explanation": "In a first class lever the fulcrum lies between the effort and the load.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The velocity ratio of an inclined plane of length 12 m and height 3 m is _____.",
+        "options": [],
+        "correctAnswer": "4",
+        "explanation": "VR = length of slope / vertical height = 12 / 3 = 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The distance advanced by a screw in one complete turn is called its _____.",
+        "options": [],
+        "correctAnswer": "pitch",
+        "explanation": "The pitch is the distance the screw moves forward per complete revolution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A machine has a velocity ratio of 8 and an efficiency of 50%. Its mechanical advantage is _____.",
+        "options": [],
+        "correctAnswer": "4",
+        "explanation": "From efficiency = (MA / VR) x 100%, MA = (efficiency x VR) / 100 = (50 x 8) / 100 = 4.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In a block and tackle pulley system, the velocity ratio is equal to the number of _____ sections supporting the movable load.",
+        "options": [],
+        "correctAnswer": "rope",
+        "explanation": "The velocity ratio of a block and tackle equals the number of rope strands supporting the movable block.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Mechanical advantage has no units because it is a ratio of two forces.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "MA = load / effort, a ratio of two forces, so the units cancel and MA is dimensionless.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A single fixed pulley has a velocity ratio of 2.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A single fixed pulley has a velocity ratio of 1; it only changes the direction of the effort.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The efficiency of a perfect machine with no friction would be 100%.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "An ideal frictionless machine wastes no energy, so output work equals input work and efficiency is 100%.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a wheelbarrow, the load lies between the fulcrum and the effort, making it a second class lever.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A wheelbarrow is a second class lever because the load sits between the fulcrum (wheel) and the effort (handles).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A long inclined plane with a gentle slope has a smaller velocity ratio than a short, steep one of the same height.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A longer slope for the same height gives a larger length, so VR = length / height is greater, not smaller.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The velocity ratio of a machine depends only on its dimensions, not on friction.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "VR is fixed by the geometry of the machine, whereas MA and efficiency are reduced by friction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For a real machine, the mechanical advantage is always greater than the velocity ratio.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Because of friction, MA is always less than VR for a real machine, which is why efficiency is below 100%.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A third class lever, such as a pair of tongs or the human forearm, has the effort between the fulcrum and the load.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "In a third class lever the effort is applied between the fulcrum and the load, giving an MA less than 1.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A screw is essentially an inclined plane wrapped around a cylinder.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The thread of a screw is a continuous inclined plane winding around a central cylinder.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Using a machine can give an output of useful work that is greater than the energy input.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A machine cannot create energy; output work is always equal to or less than input work, by conservation of energy.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of a simple machine",
+        "options": [],
+        "correctAnswer": "A device that makes work easier by changing the size or direction of an applied force.",
+        "explanation": "Simple machines include levers, pulleys, the inclined plane, the wheel and axle, the screw and gears.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Effort and load",
+        "options": [],
+        "correctAnswer": "Effort is the force applied to the machine; load is the resistance or weight it overcomes.",
+        "explanation": "Both are forces measured in newtons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mechanical advantage formula",
+        "options": [],
+        "correctAnswer": "MA = load / effort.",
+        "explanation": "It tells how many times the machine multiplies the effort and has no units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Velocity ratio formula",
+        "options": [],
+        "correctAnswer": "VR = distance moved by effort / distance moved by load.",
+        "explanation": "It is fixed by the geometry of the machine and is dimensionless.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Efficiency formula",
+        "options": [],
+        "correctAnswer": "Efficiency = (MA / VR) x 100%.",
+        "explanation": "It compares useful output work with total input work, always below 100% for real machines.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The three classes of levers",
+        "options": [],
+        "correctAnswer": "First class: fulcrum in the middle; second class: load in the middle; third class: effort in the middle.",
+        "explanation": "Examples are crowbar (first), wheelbarrow (second) and tongs (third).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Velocity ratio of an inclined plane",
+        "options": [],
+        "correctAnswer": "VR = length of slope / vertical height.",
+        "explanation": "A longer, gentler slope gives a larger VR and needs a smaller effort.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Velocity ratio of a wheel and axle",
+        "options": [],
+        "correctAnswer": "VR = radius of wheel / radius of axle.",
+        "explanation": "A large wheel turning a small axle gives a high velocity ratio.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Velocity ratio of a screw",
+        "options": [],
+        "correctAnswer": "VR = circumference of the turning handle / pitch of the screw.",
+        "explanation": "Because the pitch is small, the screw has a very large velocity ratio.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why efficiency is less than 100%",
+        "options": [],
+        "correctAnswer": "Some input energy is wasted overcoming friction and moving the parts of the machine.",
+        "explanation": "This makes the useful output work less than the input work.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A block and tackle with a velocity ratio of 5 is used to raise a load of 1000 N. If the efficiency of the system is 80%, what effort must be applied?",
+        "options": [
+          {"id": "a", "text": "160 N", "isCorrect": false},
+          {"id": "b", "text": "200 N", "isCorrect": false},
+          {"id": "c", "text": "250 N", "isCorrect": true},
+          {"id": "d", "text": "320 N", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Efficiency = (MA / VR) x 100%, so MA = (80/100) x 5 = 4; effort = load / MA = 1000 / 4 = 250 N.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An inclined plane 8 m long is used to push a 500 N drum onto a platform 2 m high using an effort of 150 N along the slope. What is the efficiency of the inclined plane?",
+        "options": [
+          {"id": "a", "text": "75%", "isCorrect": false},
+          {"id": "b", "text": "83.3%", "isCorrect": true},
+          {"id": "c", "text": "60%", "isCorrect": false},
+          {"id": "d", "text": "90%", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "MA = 500/150 = 3.33; VR = 8/2 = 4; efficiency = (3.33/4) x 100% = 83.3%.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A screw jack has a pitch of 4 mm and a handle of length 28 cm (use pi = 22/7). If its efficiency is 25%, what effort is needed to lift a car of weight 8800 N?",
+        "options": [
+          {"id": "a", "text": "20 N", "isCorrect": true},
+          {"id": "b", "text": "40 N", "isCorrect": false},
+          {"id": "c", "text": "80 N", "isCorrect": false},
+          {"id": "d", "text": "8 N", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "VR = (2 x 22/7 x 280)/4 = 1760/4 = 440; MA = (25/100) x 440 = 110; effort = 8800/110 = 20 N.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

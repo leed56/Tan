@@ -1,0 +1,732 @@
+{
+  "topicId": "form_2_physics_topic_4",
+  "topicName": "Moments and Equilibrium",
+  "order": 4,
+  "description": "This topic explains the turning effect of a force (moment), the principle of moments, levers, centre of gravity, stability and the conditions required for a body to be in equilibrium.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "The moment of a force is defined as the product of the force and the ______ from the pivot to the line of action of the force.",
+        "options": [
+          {
+            "id": "a",
+            "text": "total distance travelled",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "perpendicular distance",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "horizontal speed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "vertical height",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moment = force x perpendicular distance from the pivot to the line of action of the force.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the SI unit of the moment of a force?",
+        "options": [
+          {
+            "id": "a",
+            "text": "newton (N)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "joule (J)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "newton metre (N m)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "watt (W)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since moment = force (N) x distance (m), its unit is the newton metre (N m).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A force of 20 N acts at a perpendicular distance of 0.5 m from a pivot. What is the moment of the force about the pivot?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10 N m",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "40 N m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20.5 N m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.025 N m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moment = 20 N x 0.5 m = 10 N m.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following best states the principle of moments for a body in equilibrium?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The total clockwise moment equals the total anticlockwise moment about the same point",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The sum of all forces is always zero",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The clockwise moment is always greater than the anticlockwise moment",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "All moments must act in the same direction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "For a body in equilibrium, the sum of clockwise moments about a point equals the sum of anticlockwise moments about that same point.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A uniform metre rule is pivoted at its centre. A 4 N weight hangs 0.3 m to the left of the pivot. How far to the right must a 6 N weight hang to balance the rule?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.45 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.20 m",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.50 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.10 m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Anticlockwise moment = 4 x 0.3 = 1.2 N m. For balance, 6 x d = 1.2, so d = 1.2 / 6 = 0.2 m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The point through which the whole weight of a body appears to act is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "pivot",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fulcrum",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "centre of gravity",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "line of action",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The centre of gravity is the single point at which the entire weight of a body can be taken to act.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of equilibrium describes a ball resting at the bottom of a curved bowl, which returns to its original position when slightly displaced?",
+        "options": [
+          {
+            "id": "a",
+            "text": "unstable equilibrium",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "neutral equilibrium",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "stable equilibrium",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "dynamic equilibrium",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "In stable equilibrium the body returns to its original position after a small displacement because its centre of gravity rises and then falls back.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a wheelbarrow used as a lever, where is the load usually placed relative to the pivot (wheel) and the effort (hands)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Between the pivot and the effort",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "At the same point as the effort",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Beyond the effort",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "At the pivot itself",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A wheelbarrow is a second-class lever in which the load lies between the pivot (wheel) and the effort (hands).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two forces of 5 N each act on a body in opposite directions along parallel lines 0.4 m apart, forming a couple. What is the moment (torque) of the couple?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5 N m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 N m",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10 N m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0 N m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The moment of a couple = one force x perpendicular distance between the forces = 5 x 0.4 = 2 N m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following will make an object MORE stable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Raising its centre of gravity and narrowing its base",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Lowering its centre of gravity and widening its base",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Raising its centre of gravity and widening its base",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Lowering its centre of gravity and narrowing its base",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Stability increases when the centre of gravity is low and the base of support is wide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For a body acted on by several forces to be in complete equilibrium, two conditions must hold. The first is that the resultant force is zero. What is the second condition?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The total moment about any point is zero",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "All forces must be equal in size",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The body must be moving at constant speed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The weight must act through the pivot",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The two conditions for equilibrium are: the resultant force is zero, and the resultant (net) moment about any point is zero.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A see-saw is balanced. A boy of weight 300 N sits 1.0 m from the pivot. A girl sits 1.5 m from the pivot on the other side. What is the girl's weight?",
+        "options": [
+          {
+            "id": "a",
+            "text": "450 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "200 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "300 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Clockwise = anticlockwise: 300 x 1.0 = W x 1.5, so W = 300 / 1.5 = 200 N.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A door handle is placed far from the hinges rather than close to them. This is because a larger perpendicular distance gives a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "smaller moment for the same force",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "larger moment for the same force",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "smaller force for the same moment, but a smaller moment overall",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "no change in the turning effect",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moment = force x distance, so increasing the distance increases the turning effect for the same applied force, making the door easier to open.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A uniform beam of weight 40 N and length 2.0 m rests on a single pivot. For the beam alone to balance, where must the pivot be placed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "At one end of the beam",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.5 m from one end",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "At the centre, 1.0 m from each end",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "It cannot balance on a single pivot",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The weight of a uniform beam acts at its centre of gravity (the middle), so the pivot must be at the centre, 1.0 m from each end, for it to balance.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object is in neutral equilibrium when, after a small displacement, it:",
+        "options": [
+          {
+            "id": "a",
+            "text": "returns to its original position",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "moves further away and topples",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "stays in its new position",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "vibrates about its original position",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "In neutral equilibrium the centre of gravity stays at the same height when displaced, so the body remains in its new position (e.g. a ball rolling on a flat surface).",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The turning effect of a force about a point is called the _____ of the force.",
+        "options": [],
+        "correctAnswer": "moment",
+        "explanation": "The moment of a force measures its turning effect about a pivot.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The formula for the moment of a force is moment = force x _____ distance.",
+        "options": [],
+        "correctAnswer": "perpendicular",
+        "explanation": "The distance used is the perpendicular distance from the pivot to the line of action of the force.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A force of 15 N acts at a perpendicular distance of 2 m from a pivot. The moment produced is _____ N m.",
+        "options": [],
+        "correctAnswer": "30",
+        "explanation": "Moment = 15 N x 2 m = 30 N m.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The fixed point about which a lever turns is called the _____ (or pivot).",
+        "options": [],
+        "correctAnswer": "fulcrum",
+        "explanation": "A lever rotates about its fulcrum, also known as the pivot.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to the principle of moments, for a balanced body the total clockwise moment equals the total _____ moment.",
+        "options": [],
+        "correctAnswer": "anticlockwise",
+        "explanation": "Balance requires clockwise moments to equal anticlockwise moments about the same point.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A 10 N weight is placed 0.6 m from a pivot. To balance it, a 12 N weight must be placed _____ m from the pivot on the other side.",
+        "options": [],
+        "correctAnswer": "0.5",
+        "explanation": "10 x 0.6 = 6 N m; 12 x d = 6, so d = 6 / 12 = 0.5 m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For a uniform body, the centre of gravity is located at the _____ of the body.",
+        "options": [],
+        "correctAnswer": "centre",
+        "explanation": "In a uniform (regularly shaped) body the centre of gravity lies at its geometric centre.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of equilibrium in which a body topples further away when slightly displaced is called _____ equilibrium.",
+        "options": [],
+        "correctAnswer": "unstable",
+        "explanation": "In unstable equilibrium the centre of gravity falls when displaced, so the body topples over.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two equal and opposite parallel forces that do not share the same line of action form a _____.",
+        "options": [],
+        "correctAnswer": "couple",
+        "explanation": "A couple consists of two equal, opposite, parallel forces that produce only a turning effect.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A couple consists of two 8 N forces acting 0.25 m apart. The moment of this couple is _____ N m.",
+        "options": [],
+        "correctAnswer": "2",
+        "explanation": "Moment of a couple = force x distance between forces = 8 x 0.25 = 2 N m.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The moment of a force depends on both the size of the force and its perpendicular distance from the pivot.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Moment = force x perpendicular distance, so it depends on both quantities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of moment of a force is the joule.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The unit of moment is the newton metre (N m); the joule is the unit of energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a body is balanced, the sum of clockwise moments equals the sum of anticlockwise moments about the same point.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the principle of moments, the condition for rotational balance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Lowering the centre of gravity of an object makes it less stable.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A lower centre of gravity increases stability, not decreases it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A wide base of support helps to make an object more stable.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A wider base allows the centre of gravity to stay above the base over a larger range of tilt, improving stability.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For a body in complete equilibrium, only the resultant force needs to be zero.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Both the resultant force AND the resultant moment must be zero for complete equilibrium.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A couple produces a turning effect but no resultant (net) force on a body.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Because the two forces of a couple are equal and opposite, their resultant force is zero, leaving only a turning effect.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Increasing the perpendicular distance of a force from the pivot decreases its moment.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Increasing the distance increases the moment, since moment = force x distance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In neutral equilibrium, the height of the centre of gravity does not change when the body is displaced.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A body in neutral equilibrium, such as a rolling ball on a flat surface, keeps its centre of gravity at the same height.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The centre of gravity of an object must always lie inside the solid material of the object.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "For shapes such as a ring or an L-shaped object, the centre of gravity can lie outside the material of the body.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of the moment of a force",
+        "options": [],
+        "correctAnswer": "Moment = force x perpendicular distance from the pivot",
+        "explanation": "It measures the turning effect of a force about a point.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "SI unit of moment",
+        "options": [],
+        "correctAnswer": "Newton metre (N m)",
+        "explanation": "From force (N) multiplied by distance (m).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The principle of moments",
+        "options": [],
+        "correctAnswer": "For balance, total clockwise moment = total anticlockwise moment about the same point",
+        "explanation": "This is the condition for rotational equilibrium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Centre of gravity",
+        "options": [],
+        "correctAnswer": "The point at which the whole weight of a body appears to act",
+        "explanation": "For uniform bodies it is at the geometric centre.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Conditions for equilibrium",
+        "options": [],
+        "correctAnswer": "Resultant force is zero AND resultant moment is zero",
+        "explanation": "Both translational and rotational balance are required.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Stable equilibrium",
+        "options": [],
+        "correctAnswer": "Body returns to its original position after a small displacement",
+        "explanation": "Its centre of gravity rises when displaced and then falls back.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Unstable equilibrium",
+        "options": [],
+        "correctAnswer": "Body topples further away after a small displacement",
+        "explanation": "Its centre of gravity falls when displaced.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Neutral equilibrium",
+        "options": [],
+        "correctAnswer": "Body stays in its new position after displacement",
+        "explanation": "The height of its centre of gravity does not change.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How to make an object more stable",
+        "options": [],
+        "correctAnswer": "Lower the centre of gravity and widen the base of support",
+        "explanation": "These two factors together increase stability.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Moment of a couple",
+        "options": [],
+        "correctAnswer": "Moment of a couple = one force x perpendicular distance between the two forces",
+        "explanation": "A couple gives a turning effect but no resultant force.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A uniform beam of weight 60 N and length 4.0 m is pivoted at its centre. A 90 N load hangs 1.2 m to the left of the pivot, and a 40 N load hangs 0.8 m to the right of the pivot. To balance the beam, a force F is applied downward 2.0 m to the right of the pivot. What is F?",
+        "options": [
+          {
+            "id": "a",
+            "text": "30 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "38 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "54 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "70 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The beam's weight acts at the pivot (no moment). Anticlockwise = 90 x 1.2 = 108 N m. Clockwise from 40 N load = 40 x 0.8 = 32 N m, plus F x 2.0. For balance: 108 = 32 + 2F, so 2F = 76, F = 38 N.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A non-uniform plank 3.0 m long weighs 50 N and balances on a pivot placed 1.2 m from its left end when nothing is added. Where is the plank's centre of gravity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1.5 m from the left end",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "At the pivot, 1.2 m from the left end",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1.8 m from the left end",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "At the right end",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "If a plank balances on a single pivot with no other loads, its entire weight must act through that pivot. So the centre of gravity is at the pivot, 1.2 m from the left end.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A uniform metre rule of weight 1.0 N is pivoted at the 30 cm mark. A 2.0 N weight is hung at the 10 cm mark. What single weight hung at the 80 cm mark will balance the rule?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.4 N",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "0.6 N",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.8 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.0 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The rule's 1.0 N weight acts at the 50 cm mark, which is 0.20 m to the right of the pivot. Anticlockwise = 2.0 x 0.20 = 0.40 N m. Clockwise = (1.0 x 0.20) + (W x 0.50) = 0.20 + 0.50W. Setting equal: 0.40 = 0.20 + 0.50W, so 0.50W = 0.20, W = 0.4 N.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
