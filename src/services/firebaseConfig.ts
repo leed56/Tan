@@ -1,5 +1,5 @@
 import { initializeApp, getApps, FirebaseApp } from 'firebase/app';
-import { getAuth, Auth } from 'firebase/auth';
+import { getAuth, Auth, onAuthStateChanged, signInAnonymously } from 'firebase/auth';
 import {
   initializeFirestore,
   getFirestore,
@@ -37,6 +37,16 @@ if (getApps().length === 0) {
 
 auth = getAuth(app);
 storage = getStorage(app);
+
+// Ensure a real Firebase Auth session exists so Firestore reads satisfy the
+// `isSignedIn()` security rules. The phone/OTP flow is still demo-only, so until
+// real auth is wired we sign in anonymously; otherwise every curriculum read is
+// permission-denied and the app silently falls back to local seed data.
+if (firebaseConfig.projectId) {
+  onAuthStateChanged(auth, (user) => {
+    if (!user) signInAnonymously(auth).catch(() => {});
+  });
+}
 
 export { app, auth, firestore, storage };
 
