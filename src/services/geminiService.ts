@@ -5,9 +5,16 @@ const GEMINI_API_URL =
 
 const FUNCTIONS_BASE_URL = process.env.EXPO_PUBLIC_FUNCTIONS_BASE_URL ?? '';
 
+// The direct Gemini API key is a secret and must never ship in a production
+// bundle. Production always proxies through the Cloud Function; the direct key
+// path is only honoured in development for local testing.
+function directKeyAllowed(): boolean {
+  return __DEV__ && (process.env.EXPO_PUBLIC_GEMINI_API_KEY ?? '').length > 0;
+}
+
 export function isGeminiConfigured(): boolean {
-  // Cloud Function proxy takes priority; fall back to direct API key
-  return FUNCTIONS_BASE_URL.length > 0 || (process.env.EXPO_PUBLIC_GEMINI_API_KEY ?? '').length > 0;
+  // Cloud Function proxy takes priority; fall back to direct API key in dev only
+  return FUNCTIONS_BASE_URL.length > 0 || directKeyAllowed();
 }
 
 // ─── Cloud Function proxy call (production path) ──────────────────────────────
@@ -67,10 +74,10 @@ function stripMarkdownFences(text: string): string {
 }
 
 export async function callGemini(prompt: string): Promise<GeminiExplanationResponse> {
-  const apiKey = process.env.EXPO_PUBLIC_GEMINI_API_KEY ?? '';
-  if (!apiKey) {
-    throw new Error('GEMINI_API_KEY not configured');
+  if (!directKeyAllowed()) {
+    throw new Error('Direct Gemini calls are disabled outside development; use the Cloud Function proxy.');
   }
+  const apiKey = process.env.EXPO_PUBLIC_GEMINI_API_KEY ?? '';
 
   const requestBody = {
     contents: [
