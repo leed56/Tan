@@ -14,6 +14,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { LoadingState } from '../../components/ui/LoadingState';
+import { ErrorState } from '../../components/ui/ErrorState';
 import { QuizProgressBar } from '../../components/ui/quiz/QuizProgressBar';
 import { QuestionRenderer } from '../../components/ui/quiz/QuestionRenderer';
 import { FIBInput } from '../../components/ui/quiz/FIBInput';
@@ -31,7 +32,7 @@ function normalise(s: string): string {
 export function FIBScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
 
-  const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults } = useQuizStore();
+  const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults, loadingQuestions } = useQuizStore();
   const { addXp, addCoins } = useGamificationStore();
 
   const [inputValue, setInputValue] = useState('');
@@ -123,8 +124,19 @@ export function FIBScreen({ navigation, route }: Props) {
     }, [submitted]),
   );
 
-  if (!session || !question) {
+  if (loadingQuestions) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
+  }
+  if (!session || !question) {
+    return (
+      <ScreenContainer>
+        <ErrorState
+          message="No questions are available for this pack yet. Please try another pack."
+          onRetry={() => navigation.goBack()}
+          fullScreen
+        />
+      </ScreenContainer>
+    );
   }
 
   const current = session.currentIndex + 1;

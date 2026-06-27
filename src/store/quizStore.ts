@@ -58,6 +58,12 @@ export const useQuizStore = create<QuizStore>((set, get) => ({
     set({ loadingQuestions: true, error: null, currentSession: null });
     try {
       const questions = await getQuestionsByLearningPack(packId, formId, subjectId, topicId);
+      if (questions.length === 0) {
+        // No DB questions and no seed match — surface an empty state instead of
+        // creating a 0-question session that leaves the quiz screen spinning.
+        set({ loadingQuestions: false, error: 'no_questions', currentSession: null });
+        return;
+      }
       const attemptId = `attempt_${Date.now()}_${packId}`;
       const session: QuizSession = {
         attemptId,

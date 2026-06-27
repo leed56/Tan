@@ -12,6 +12,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { LoadingState } from '../../components/ui/LoadingState';
+import { ErrorState } from '../../components/ui/ErrorState';
 import { QuizProgressBar } from '../../components/ui/quiz/QuizProgressBar';
 import { QuestionRenderer } from '../../components/ui/quiz/QuestionRenderer';
 import { TFButtons } from '../../components/ui/quiz/TFButtons';
@@ -22,10 +23,17 @@ import { useGamificationStore } from '../../store/gamificationStore';
 
 type Props = StackScreenProps<HomeStackParamList, 'TFQuiz'>;
 
+// TF correctAnswer may be stored as 'True', 'T', '1', 'Kweli', etc. Normalize to
+// canonical 'true'|'false' so scoring isn't case/locale sensitive.
+const TF_TRUE = new Set(['true', 't', '1', 'yes', 'kweli', 'ndiyo', 'ndio']);
+function normalizeTF(value: string | undefined): 'true' | 'false' {
+  return TF_TRUE.has((value ?? '').trim().toLowerCase()) ? 'true' : 'false';
+}
+
 export function TFScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
 
-  const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults } = useQuizStore();
+  const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults, loadingQuestions } = useQuizStore();
   const { addXp, addCoins } = useGamificationStore();
 
   const [selected, setSelected] = useState<'true' | 'false' | null>(null);
@@ -48,7 +56,7 @@ export function TFScreen({ navigation, route }: Props) {
 
   const handleSelect = useCallback((answer: 'true' | 'false') => {
     if (revealed || !question) return;
-    const isCorrect = answer === question.correctAnswer;
+    const isCorrect = answer === normalizeTF(question.correctAnswer);
     setSelected(answer);
     setRevealed(true);
     submitAnswer(question.id, answer, isCorrect, 0);
@@ -111,14 +119,25 @@ export function TFScreen({ navigation, route }: Props) {
     }, [revealed]),
   );
 
-  if (!session || !question) {
+  if (loadingQuestions) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
+  }
+  if (!session || !question) {
+    return (
+      <ScreenContainer>
+        <ErrorState
+          message="No questions are available for this pack yet. Please try another pack."
+          onRetry={() => navigation.goBack()}
+          fullScreen
+        />
+      </ScreenContainer>
+    );
   }
 
   const current = session.currentIndex + 1;
   const total = session.questions.length;
-  const isCorrect = selected !== null && selected === question.correctAnswer;
-  const correctAnswer = question.correctAnswer as 'true' | 'false';
+  const correctAnswer = normalizeTF(question.correctAnswer);
+  const isCorrect = selected !== null && selected === correctAnswer;
 
   return (
     <ScreenContainer padded={false}>

@@ -155,7 +155,12 @@ export async function getLearningPacksByTopic(
         )
         .sort((a, b) => a.order - b.order);
     }
-    return snap.docs.map((d) => d.data() as CurriculumLearningPack);
+    return snap.docs.map((d) => {
+      // DB pack docs store `xpReward`; the app reads `completionXP`. Backfill so
+      // pack/completion screens don't show undefined XP.
+      const data = d.data() as CurriculumLearningPack & { xpReward?: number };
+      return { ...data, completionXP: data.completionXP ?? data.xpReward ?? 0 };
+    });
   } catch {
     return getSeedLearningPacks()
       .filter(
