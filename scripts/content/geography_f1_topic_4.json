@@ -1,0 +1,444 @@
+{
+  "topicId": "form_1_geography_topic_4",
+  "topicName": "Weather and Climate",
+  "order": 4,
+  "description": "This topic explains the difference between weather and climate, the elements of weather and the instruments used to measure them, the layout of a weather station, how weather data is recorded and interpreted, and the factors that influence the climate of a place.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which statement best describes the difference between weather and climate?",
+        "options": [
+          {"id": "a", "text": "Weather is the average condition of the atmosphere over many years, while climate is the day-to-day condition", "isCorrect": false},
+          {"id": "b", "text": "Weather is the condition of the atmosphere at a particular place and time, while climate is the average weather over a long period", "isCorrect": true},
+          {"id": "c", "text": "Weather and climate mean exactly the same thing", "isCorrect": false},
+          {"id": "d", "text": "Weather only refers to rainfall, while climate only refers to temperature", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Weather is the short-term, day-to-day state of the atmosphere, whereas climate is the average weather condition of a place observed over a long period, usually 30 years or more.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which instrument is used to measure atmospheric pressure?",
+        "options": [
+          {"id": "a", "text": "Barometer", "isCorrect": true},
+          {"id": "b", "text": "Thermometer", "isCorrect": false},
+          {"id": "c", "text": "Hygrometer", "isCorrect": false},
+          {"id": "d", "text": "Rain gauge", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A barometer measures atmospheric pressure, while the thermometer measures temperature, the hygrometer measures humidity and the rain gauge measures rainfall.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which element of weather is measured using a rain gauge?",
+        "options": [
+          {"id": "a", "text": "Wind speed", "isCorrect": false},
+          {"id": "b", "text": "Temperature", "isCorrect": false},
+          {"id": "c", "text": "Rainfall", "isCorrect": true},
+          {"id": "d", "text": "Sunshine duration", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A rain gauge collects and measures the amount of rainfall received at a place, usually recorded in millimetres.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure the direction of the wind is the:",
+        "options": [
+          {"id": "a", "text": "Anemometer", "isCorrect": false},
+          {"id": "b", "text": "Wind vane", "isCorrect": true},
+          {"id": "c", "text": "Barometer", "isCorrect": false},
+          {"id": "d", "text": "Sunshine recorder", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A wind vane shows the direction from which the wind is blowing, while the anemometer measures wind speed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is NOT an element of weather?",
+        "options": [
+          {"id": "a", "text": "Temperature", "isCorrect": false},
+          {"id": "b", "text": "Humidity", "isCorrect": false},
+          {"id": "c", "text": "Soil type", "isCorrect": true},
+          {"id": "d", "text": "Cloud cover", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Soil type is a characteristic of the land surface, not an atmospheric condition. Temperature, humidity and cloud cover are all elements of weather.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why is a weather station usually located in an open area away from buildings and tall trees?",
+        "options": [
+          {"id": "a", "text": "To make it easy to take photographs", "isCorrect": false},
+          {"id": "b", "text": "To allow the instruments to record true conditions of the free atmosphere without obstruction", "isCorrect": true},
+          {"id": "c", "text": "Because instruments cannot work near buildings", "isCorrect": false},
+          {"id": "d", "text": "To keep the instruments hidden from people", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Buildings and trees can block wind, give shade and affect temperature and rainfall readings, so an open site ensures the instruments record the true state of the atmosphere.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The Stevenson screen is used in a weather station mainly to:",
+        "options": [
+          {"id": "a", "text": "Hold and protect thermometers and the hygrometer from direct sunlight and rain", "isCorrect": true},
+          {"id": "b", "text": "Measure the speed of the wind", "isCorrect": false},
+          {"id": "c", "text": "Collect rainwater for measurement", "isCorrect": false},
+          {"id": "d", "text": "Record the number of sunshine hours", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Stevenson screen is a white louvred box that shelters temperature and humidity instruments from direct sunlight and rain while allowing free air circulation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is a Stevenson screen painted white and built with louvred (slatted) sides?",
+        "options": [
+          {"id": "a", "text": "White paint absorbs heat and the slats keep out air", "isCorrect": false},
+          {"id": "b", "text": "White reflects sunlight to avoid heating, and the louvres allow free movement of air around the instruments", "isCorrect": true},
+          {"id": "c", "text": "To make it attractive and easy to clean", "isCorrect": false},
+          {"id": "d", "text": "To trap heat so the thermometer reads higher", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The white colour reflects sunlight to prevent the box from heating up, and the louvred sides let air flow freely so the thermometers measure the true air temperature.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Which pair of instruments together can be used to find the relative humidity of the air?",
+        "options": [
+          {"id": "a", "text": "Maximum and minimum thermometers", "isCorrect": false},
+          {"id": "b", "text": "Wet-bulb and dry-bulb thermometers", "isCorrect": true},
+          {"id": "c", "text": "Barometer and anemometer", "isCorrect": false},
+          {"id": "d", "text": "Rain gauge and wind vane", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A hygrometer uses a wet-bulb and a dry-bulb thermometer; the difference in their readings is used to determine the relative humidity of the air.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The maximum and minimum temperatures of a day are recorded using a:",
+        "options": [
+          {"id": "a", "text": "Six's thermometer (maximum-minimum thermometer)", "isCorrect": true},
+          {"id": "b", "text": "Barometer", "isCorrect": false},
+          {"id": "c", "text": "Anemometer", "isCorrect": false},
+          {"id": "d", "text": "Wind vane", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A Six's thermometer, also called the maximum-minimum thermometer, records both the highest and lowest temperatures reached during a period.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which factor explains why areas near the Equator are generally hot throughout the year?",
+        "options": [
+          {"id": "a", "text": "They are far from the sea", "isCorrect": false},
+          {"id": "b", "text": "The sun's rays strike the Equator almost vertically, giving intense heating", "isCorrect": true},
+          {"id": "c", "text": "They are at very high altitude", "isCorrect": false},
+          {"id": "d", "text": "They receive only cold ocean currents", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Near the Equator the sun is almost overhead, so its rays strike the ground vertically and concentrate heat over a small area, producing high temperatures all year.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "As one climbs up a high mountain, the temperature usually:",
+        "options": [
+          {"id": "a", "text": "Increases steadily", "isCorrect": false},
+          {"id": "b", "text": "Decreases with increasing altitude", "isCorrect": true},
+          {"id": "c", "text": "Remains exactly the same", "isCorrect": false},
+          {"id": "d", "text": "Becomes equal to sea-level temperature", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Temperature falls with altitude because the air becomes thinner and holds less heat, which is why mountain tops such as Kilimanjaro are cold and snow-capped.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How do warm ocean currents influence the climate of nearby coastal areas?",
+        "options": [
+          {"id": "a", "text": "They make the coast colder and drier", "isCorrect": false},
+          {"id": "b", "text": "They warm the air above them, raising temperatures and often bringing rainfall to the coast", "isCorrect": true},
+          {"id": "c", "text": "They have no effect on climate at all", "isCorrect": false},
+          {"id": "d", "text": "They only change the colour of the sea", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Warm currents heat the air above the sea, raising coastal temperatures and increasing evaporation, which can bring more rainfall to the nearby land.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Cloud cover in a weather station is usually measured or estimated in units called:",
+        "options": [
+          {"id": "a", "text": "Millimetres", "isCorrect": false},
+          {"id": "b", "text": "Degrees Celsius", "isCorrect": false},
+          {"id": "c", "text": "Oktas (eighths of the sky)", "isCorrect": true},
+          {"id": "d", "text": "Knots", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Cloud cover is estimated in oktas, where the sky is divided into eight parts and the observer notes how many eighths are covered by cloud.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "On a weather record, the average temperature of a day is best found by:",
+        "options": [
+          {"id": "a", "text": "Adding the maximum and minimum temperatures and dividing by two", "isCorrect": true},
+          {"id": "b", "text": "Taking only the maximum temperature", "isCorrect": false},
+          {"id": "c", "text": "Subtracting the minimum from the maximum temperature", "isCorrect": false},
+          {"id": "d", "text": "Multiplying the maximum by the minimum temperature", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The mean daily temperature is calculated by adding the day's maximum and minimum temperatures and dividing the sum by two.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The condition of the atmosphere of a place at a particular time is called _____.",
+        "options": [],
+        "correctAnswer": "weather",
+        "explanation": "Weather refers to the short-term, day-to-day state of the atmosphere of a place.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The average weather condition of a place recorded over a long period of time is called _____.",
+        "options": [],
+        "correctAnswer": "climate",
+        "explanation": "Climate is the average of weather conditions taken over a long period, usually about 30 years or more.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure air temperature is the _____.",
+        "options": [],
+        "correctAnswer": "thermometer",
+        "explanation": "A thermometer measures temperature, commonly in degrees Celsius.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The amount of water vapour present in the atmosphere is known as _____.",
+        "options": [],
+        "correctAnswer": "humidity",
+        "explanation": "Humidity is the measure of water vapour in the air and is recorded using a hygrometer.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The speed of the wind is measured using an instrument called an _____.",
+        "options": [],
+        "correctAnswer": "anemometer",
+        "explanation": "An anemometer measures wind speed, often shown by spinning cups that turn faster in stronger wind.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The white louvred box that houses thermometers in a weather station is called a _____.",
+        "options": [],
+        "correctAnswer": "Stevenson screen",
+        "explanation": "The Stevenson screen protects temperature and humidity instruments from direct sunlight and rain while allowing free air flow.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The number of hours of bright sunshine received in a day is recorded using a _____ recorder.",
+        "options": [],
+        "correctAnswer": "sunshine",
+        "explanation": "A sunshine recorder (such as the Campbell-Stokes type) burns a trace on a card to show the hours of bright sunshine.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The height of a place above sea level, which affects its temperature, is called _____.",
+        "options": [],
+        "correctAnswer": "altitude",
+        "explanation": "Altitude influences climate because temperature decreases as height above sea level increases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The distance of a place north or south of the Equator, which strongly affects its climate, is called its _____.",
+        "options": [],
+        "correctAnswer": "latitude",
+        "explanation": "Latitude affects the angle at which the sun's rays strike the surface, so places near the Equator are hotter than those near the poles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Rainfall amounts collected by a rain gauge are usually measured in _____.",
+        "options": [],
+        "correctAnswer": "millimetres",
+        "explanation": "The depth of rainfall caught in a rain gauge is measured in millimetres (mm).",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Weather can change from hour to hour, but climate stays the same for a very long time.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Weather is short-term and changeable, while climate describes the long-term average and changes only very slowly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A barometer is used to measure the amount of rainfall received at a place.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A barometer measures atmospheric pressure; rainfall is measured using a rain gauge.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Temperature generally decreases as altitude increases.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "As one goes higher above sea level the air becomes thinner and colder, so temperature falls with altitude.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A wind vane is used to measure the speed of the wind.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A wind vane shows wind direction; wind speed is measured by an anemometer.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Areas near the Equator generally experience higher temperatures than areas near the poles.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Near the Equator the sun's rays strike almost vertically, giving more concentrated heating than at the poles where rays are slanting.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The Stevenson screen should be painted black so that it absorbs heat for accurate readings.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The Stevenson screen is painted white so it reflects sunlight and does not heat up, allowing thermometers to record the true air temperature.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Relative humidity can be found by comparing the readings of a wet-bulb and a dry-bulb thermometer.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The difference between the wet-bulb and dry-bulb thermometer readings is used to determine the relative humidity of the air.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Cloud cover is measured by collecting clouds in a container and weighing them.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Cloud cover cannot be collected; it is estimated by observation in oktas, the eighths of the sky that are covered by cloud.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distance from the sea is one of the factors that influence the climate of a place.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Places near the sea have a moderate climate, while inland places tend to have hotter summers and colder winters due to continentality.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mean daily temperature is found by adding the maximum and minimum temperatures and dividing by two.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Adding the day's highest and lowest temperatures and dividing by two gives the average (mean) temperature for that day.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of weather",
+        "options": [],
+        "correctAnswer": "The atmospheric condition of a place at a particular time",
+        "explanation": "Weather is short-term and can change quickly from hour to hour or day to day.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Definition of climate",
+        "options": [],
+        "correctAnswer": "The average weather of a place over a long period (about 30 years)",
+        "explanation": "Climate describes the usual long-term atmospheric conditions of a place.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Main elements of weather",
+        "options": [],
+        "correctAnswer": "Temperature, rainfall, humidity, pressure, wind, sunshine and cloud cover",
+        "explanation": "These atmospheric conditions are observed and measured at a weather station.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Instrument for measuring atmospheric pressure",
+        "options": [],
+        "correctAnswer": "Barometer",
+        "explanation": "The barometer measures the weight of the air pressing on the Earth's surface.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Instrument for measuring rainfall",
+        "options": [],
+        "correctAnswer": "Rain gauge",
+        "explanation": "It collects rainwater and the amount is read off in millimetres.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Purpose of the Stevenson screen",
+        "options": [],
+        "correctAnswer": "To shelter thermometers and the hygrometer from direct sunlight and rain",
+        "explanation": "Its white colour and louvred sides allow free air flow and prevent overheating for accurate readings.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Instruments that measure wind",
+        "options": [],
+        "correctAnswer": "Anemometer for speed and wind vane for direction",
+        "explanation": "Together they describe how strong the wind is and where it is coming from.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How latitude affects climate",
+        "options": [],
+        "correctAnswer": "Places near the Equator are hotter than places near the poles",
+        "explanation": "The angle of the sun's rays is more vertical near the Equator, giving stronger heating.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How altitude affects climate",
+        "options": [],
+        "correctAnswer": "Temperature decreases as height above sea level increases",
+        "explanation": "Higher places like mountain tops are colder than lowlands.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Factors influencing climate",
+        "options": [],
+        "correctAnswer": "Latitude, altitude, distance from the sea, ocean currents, winds and relief",
+        "explanation": "These factors together determine the temperature and rainfall pattern of a place.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A town located on the coast and another town far inland are at the same latitude. Which statement best explains the likely difference in their climates?",
+        "options": [
+          {"id": "a", "text": "Both towns will have exactly the same temperature range because they share a latitude", "isCorrect": false},
+          {"id": "b", "text": "The coastal town will have a smaller temperature range and more moisture, while the inland town will have hotter days, colder nights and a larger range", "isCorrect": true},
+          {"id": "c", "text": "The inland town will always be cooler and wetter than the coastal town", "isCorrect": false},
+          {"id": "d", "text": "The coastal town will be much drier than the inland town", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The sea heats and cools slowly, so it moderates coastal temperatures and adds moisture, while inland areas experience greater extremes due to continentality.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A weather observer records a maximum temperature of 30 degrees Celsius and a minimum of 18 degrees Celsius for a day. What are the daily temperature range and the mean daily temperature?",
+        "options": [
+          {"id": "a", "text": "Range 12 degrees and mean 24 degrees Celsius", "isCorrect": true},
+          {"id": "b", "text": "Range 48 degrees and mean 12 degrees Celsius", "isCorrect": false},
+          {"id": "c", "text": "Range 24 degrees and mean 12 degrees Celsius", "isCorrect": false},
+          {"id": "d", "text": "Range 12 degrees and mean 48 degrees Celsius", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The range is the maximum minus the minimum (30 - 18 = 12), and the mean is the sum divided by two ((30 + 18) / 2 = 24).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two stations at the same latitude record very different temperatures: Station X is cool while Station Y is hot. Station X is on a high plateau. What most likely explains this difference?",
+        "options": [
+          {"id": "a", "text": "Station X receives more sunshine hours", "isCorrect": false},
+          {"id": "b", "text": "Station X is at a higher altitude, so its temperature is lower than the lowland Station Y", "isCorrect": true},
+          {"id": "c", "text": "Station Y is closer to the poles", "isCorrect": false},
+          {"id": "d", "text": "Station X has fewer clouds than Station Y", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since both stations share the same latitude, the difference is best explained by altitude, because temperature decreases as height above sea level increases.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
