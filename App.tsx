@@ -7,6 +7,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { RootNavigator } from './src/navigation/RootNavigator';
+import { initCrashReporting } from './src/services/crashReportingService';
+import { initOfflineSupport } from './src/services/offlineService';
 
 // Keep the native splash visible until fonts/data are ready
 SplashScreen.preventAutoHideAsync();
@@ -18,6 +20,10 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    // Initialize crash reporting and offline support (both no-op gracefully when
+    // their native modules are unavailable, e.g. in Expo Go).
+    initCrashReporting().catch(() => {});
+    initOfflineSupport().catch(() => {});
     // TODO: Phase 2 — initialize Firebase Analytics, FCM token registration
     // TODO: Phase 2 — check for app updates (expo-updates)
   }, []);

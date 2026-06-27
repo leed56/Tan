@@ -19,6 +19,7 @@ export interface AIExplanation {
   aiProvider: AIProvider;
   createdAt: number;
   updatedAt: number;
+  notice?: string;           // optional user-facing notice (e.g. rate-limit reached)
 }
 
 export interface AIPromptTemplate {

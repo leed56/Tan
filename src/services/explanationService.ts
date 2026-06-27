@@ -10,6 +10,7 @@ import {
 import { firestore, COLLECTIONS } from './firebaseConfig';
 import type { AIExplanation, ExplanationFeedback, GeminiExplanationResponse } from '../types/explanation';
 import { isAIAvailable, generateExplanation } from './aiProviderService';
+import { RateLimitError } from './geminiService';
 import type { ExplanationGenerationParams } from './promptTemplateService';
 
 function isFirebaseConfigured(): boolean {
@@ -74,6 +75,7 @@ function validateExplanation(
 
 function buildFallbackExplanation(
   params: ExplanationGenerationParams & { userId?: string },
+  notice?: string,
 ): AIExplanation {
   const now = Date.now();
   return {
@@ -94,6 +96,7 @@ function buildFallbackExplanation(
     aiProvider: 'fallback',
     createdAt: now,
     updatedAt: now,
+    notice,
   };
 }
 
@@ -168,6 +171,7 @@ export async function getOrGenerateExplanation(
   }
 
   // 3. Try generating from Gemini (up to 2 attempts)
+  let rateLimited = false;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
       const response = await generateExplanation(params);
@@ -181,13 +185,21 @@ export async function getOrGenerateExplanation(
         return explanation;
       }
       // Score too low — retry on next iteration
-    } catch {
-      // Generation failed — retry on next iteration
+    } catch (e) {
+      // Rate-limited: stop retrying and surface a notice on the fallback.
+      if (e instanceof RateLimitError) {
+        rateLimited = true;
+        break;
+      }
+      // Other failures — retry on next iteration
     }
   }
 
   // All retries exhausted
-  return buildFallbackExplanation(params);
+  return buildFallbackExplanation(
+    params,
+    rateLimited ? new RateLimitError().message : undefined,
+  );
 }
 
 // Qualitative rating → numeric score (1–5) required by the ai_feedback rule.

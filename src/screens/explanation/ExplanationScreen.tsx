@@ -98,6 +98,13 @@ export function ExplanationScreen({ navigation, route }: Props) {
 
         {!loading && explanation && (
           <>
+            {explanation.notice ? (
+              <View style={styles.noticeBanner}>
+                <Ionicons name="time-outline" size={16} color={COLORS.warning} />
+                <Text style={styles.noticeText}>{explanation.notice}</Text>
+              </View>
+            ) : null}
+
             <GoldExplanationCard title="Simple Explanation" icon="bulb-outline" defaultExpanded>
               <Text style={styles.bodyText}>{explanation.explanationText}</Text>
             </GoldExplanationCard>
@@ -220,6 +227,22 @@ const styles = StyleSheet.create({
     color: COLORS.textSecondary,
     fontSize: TYPOGRAPHY.sizes.sm,
     lineHeight: TYPOGRAPHY.sizes.sm * 1.7,
+  },
+  noticeBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACING.sm,
+    backgroundColor: `${COLORS.warning}18`,
+    borderColor: `${COLORS.warning}40`,
+    borderWidth: 1,
+    borderRadius: RADIUS.md,
+    padding: SPACING.sm,
+  },
+  noticeText: {
+    flex: 1,
+    color: COLORS.warning,
+    fontSize: TYPOGRAPHY.sizes.xs,
+    lineHeight: TYPOGRAPHY.sizes.xs * 1.5,
   },
   wrongRow: { flexDirection: 'row', gap: SPACING.sm, alignItems: 'flex-start' },
   wrongKey: {

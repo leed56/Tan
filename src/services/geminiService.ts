@@ -5,6 +5,15 @@ const GEMINI_API_URL =
 
 const FUNCTIONS_BASE_URL = process.env.EXPO_PUBLIC_FUNCTIONS_BASE_URL ?? '';
 
+// Thrown when the AI provider returns 429 / resource-exhausted so callers can
+// surface a "daily limit reached" message instead of a generic failure.
+export class RateLimitError extends Error {
+  constructor(message = "You've reached today's explanation limit. Please try again tomorrow.") {
+    super(message);
+    this.name = 'RateLimitError';
+  }
+}
+
 // The direct Gemini API key is a secret and must never ship in a production
 // bundle. Production always proxies through the Cloud Function; the direct key
 // path is only honoured in development for local testing.
@@ -46,6 +55,7 @@ export async function callExplanationFunction(
   });
 
   if (!response.ok) {
+    if (response.status === 429) throw new RateLimitError();
     throw new Error(`Cloud Function error ${response.status}`);
   }
 
@@ -102,6 +112,7 @@ export async function callGemini(prompt: string): Promise<GeminiExplanationRespo
 
   if (!response.ok) {
     const errorText = await response.text().catch(() => 'Unknown error');
+    if (response.status === 429) throw new RateLimitError();
     throw new Error(`Gemini API error ${response.status}: ${errorText}`);
   }
 

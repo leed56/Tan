@@ -52,7 +52,7 @@ function getCrashlytics(): CrashlyticsInstance | null {
   } catch {
     _crashlytics = null;
   }
-  return _crashlytics;
+  return _crashlytics ?? null;
 }
 
 function getSentry(): SentryModule | null {
@@ -63,7 +63,7 @@ function getSentry(): SentryModule | null {
   } catch {
     _sentry = null;
   }
-  return _sentry;
+  return _sentry ?? null;
 }
 
 // ─── init ────────────────────────────────────────────────────────────────────
