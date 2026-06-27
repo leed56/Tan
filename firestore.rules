@@ -140,8 +140,8 @@ service cloud.firestore {
         && request.resource.data.status == 'pending'
         && request.resource.data.amount in [5000, 8000]
         && request.resource.data.provider in [
-             'mpesa', 'tigopesa', 'airtelmoney', 'halopesa',
-             'azampay', 'selcom', 'bank_transfer'
+             'mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl',
+             'google_play', 'apple_iap', 'azampay', 'selcom', 'bank_transfer'
            ];
       allow update: if isAdmin()
         && request.resource.data.diff(resource.data).affectedKeys()
