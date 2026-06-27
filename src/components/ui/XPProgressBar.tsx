@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
-import { XP_PER_LEVEL } from '../../constants';
-import { getXpProgressInLevel, formatXp } from '../../utils';
+import { getLevelProgress, formatXp } from '../../utils';
 
 interface XPProgressBarProps {
   xp: number;
@@ -14,8 +13,10 @@ interface XPProgressBarProps {
 }
 
 export function XPProgressBar({ xp, level, showLabel = true, height = 8, compact = false }: XPProgressBarProps) {
-  const xpInLevel = getXpProgressInLevel(xp);
-  const percent = xpInLevel / XP_PER_LEVEL;
+  // Use the threshold-based level curve (single source of truth) rather than a
+  // flat per-level constant so progress matches the rest of the gamification UI.
+  const { current: xpInLevel, total: xpTotal, percent: percentInt } = getLevelProgress(xp);
+  const percent = percentInt / 100;
   const animatedWidth = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -33,7 +34,7 @@ export function XPProgressBar({ xp, level, showLabel = true, height = 8, compact
         <View style={styles.labelRow}>
           <Text style={styles.levelLabel}>Level {level}</Text>
           <Text style={styles.xpLabel}>
-            {formatXp(xpInLevel)} / {formatXp(XP_PER_LEVEL)} XP
+            {formatXp(xpInLevel)} / {formatXp(xpTotal)} XP
           </Text>
         </View>
       )}

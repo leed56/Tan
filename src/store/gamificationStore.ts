@@ -12,6 +12,7 @@ import {
 } from '../services/gamificationService';
 import { SEED_BADGES } from '../utils/seedBadges';
 import type { BadgeDefinition } from '../types/gamification';
+import { useAuthStore } from './authStore';
 
 interface GamificationStore {
   // Core state — kept compatible with Phase 1–4 callers
@@ -47,6 +48,7 @@ interface GamificationStore {
   dismissLevelUp: () => void;
   dismissBadge: () => void;
   persistProfile: (uid: string) => Promise<void>;
+  persistIfSignedIn: () => void;
 }
 
 function buildLocal(xp: number, streak: number, coins: number): GamificationProfile {
@@ -61,36 +63,55 @@ function buildLocal(xp: number, streak: number, coins: number): GamificationProf
 }
 
 export const useGamificationStore = create<GamificationStore>((set, get) => ({
-  xp: 1240,
-  level: getLevelFromXp(1240),
-  streak: 5,
-  coins: 120,
+  xp: 0,
+  level: getLevelFromXp(0),
+  streak: 0,
+  coins: 0,
   badges: SEED_BADGES,
-  earnedBadgeIds: ['first_quiz', 'streak_3'] as BadgeId[],
+  earnedBadgeIds: [] as BadgeId[],
   pendingLevelUp: null,
   pendingBadges: [],
   loading: false,
   profile: null,
 
   // ─── Phase 1-compatible ────────────────────────────────────────────────────
-  addXp: (amount) =>
+  addXp: (amount) => {
     set((s) => {
       const newXp = s.xp + amount;
       const newLevel = getLevelFromXp(newXp);
       const leveledUp = newLevel > s.level;
+      const uid = useAuthStore.getState().user?.uid;
+      const profile: GamificationProfile = {
+        ...(s.profile ?? buildLocal(s.xp, s.streak, s.coins)),
+        uid: uid ?? s.profile?.uid ?? 'local',
+        xp: newXp,
+        level: newLevel,
+        updatedAt: Date.now(),
+      };
       return {
         xp: newXp,
         level: newLevel,
         pendingLevelUp: leveledUp ? newLevel : s.pendingLevelUp,
-        profile: s.profile ? { ...s.profile, xp: newXp, level: newLevel } : null,
+        profile,
       };
-    }),
+    });
+    get().persistIfSignedIn();
+  },
 
-  addCoins: (amount) =>
-    set((s) => ({
-      coins: s.coins + amount,
-      profile: s.profile ? { ...s.profile, coins: s.coins + amount } : null,
-    })),
+  addCoins: (amount) => {
+    set((s) => {
+      const newCoins = s.coins + amount;
+      const uid = useAuthStore.getState().user?.uid;
+      const profile: GamificationProfile = {
+        ...(s.profile ?? buildLocal(s.xp, s.streak, s.coins)),
+        uid: uid ?? s.profile?.uid ?? 'local',
+        coins: newCoins,
+        updatedAt: Date.now(),
+      };
+      return { coins: newCoins, profile };
+    });
+    get().persistIfSignedIn();
+  },
 
   completePackXp: () => {
     get().addXp(100);
@@ -163,5 +184,14 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
     const s = get();
     if (!s.profile) return;
     await saveGamificationProfile({ ...s.profile, uid }).catch(() => {});
+  },
+
+  // Persist the current profile to Firestore when a real user is signed in.
+  // Fire-and-forget so XP/coin awards in the quiz screens survive restart.
+  persistIfSignedIn: () => {
+    const uid = useAuthStore.getState().user?.uid;
+    const s = get();
+    if (!uid || !s.profile) return;
+    saveGamificationProfile({ ...s.profile, uid }).catch(() => {});
   },
 }));

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -20,6 +20,7 @@ import { PremiumLockCard } from '../../components/ui/PremiumLockCard';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
+import { useAuthStore } from '../../store/authStore';
 import { SUBJECTS, DEMO_LEADERBOARD, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
 
@@ -34,7 +35,14 @@ type Props = StackScreenProps<HomeStackParamList, 'Home'>;
 export function HomeScreen({ navigation }: Props) {
   const [refreshing, setRefreshing] = useState(false);
   const { xp, level, streak, coins } = useGamificationStore();
+  const fetchProfile = useGamificationStore((s) => s.fetchProfile);
   const profile = useProfileStore((s) => s.profile);
+  const uid = useAuthStore((s) => s.user?.uid);
+
+  // Load the persisted gamification profile so XP/coins/streak reflect Firestore.
+  useEffect(() => {
+    if (uid) fetchProfile(uid);
+  }, [uid, fetchProfile]);
 
   const progressPercent = getXpProgressPercent(xp);
   const strokeDash = RING_CIRCUMFERENCE * (1 - progressPercent / 100);

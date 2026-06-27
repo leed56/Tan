@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -15,6 +15,7 @@ import { AppButton } from '../../components/ui/AppButton';
 import { ResultSummaryCard } from '../../components/ui/quiz/ResultSummaryCard';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
+import { useAuthStore } from '../../store/authStore';
 import { XPAnimationOverlay } from '../../components/ui/gamification/XPAnimationOverlay';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
 import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
@@ -43,8 +44,21 @@ export function QuizResultScreen({ navigation, route }: Props) {
     quizType,
   } = route.params;
 
-  const { pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge } = useGamificationStore();
+  const { pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge, checkStreak, checkBadges, persistProfile } = useGamificationStore();
+  const uid = useAuthStore((s) => s.user?.uid);
   const [showXpAnim, setShowXpAnim] = useState(xpEarned > 0);
+
+  // On quiz completion: advance the daily streak, evaluate badge unlocks, and
+  // persist the gamification profile (per-answer XP/coins already persisted).
+  useEffect(() => {
+    checkBadges({ quizScorePercent: scorePercent, subjectKey: subjectId });
+    if (uid) {
+      checkStreak(uid).catch(() => {});
+      persistProfile(uid).catch(() => {});
+    }
+    // Run once per result screen mount.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleRetry = () => {
     navigation.replace('QuizIntro', {
