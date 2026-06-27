@@ -81,6 +81,6 @@ export async function incrementUsage(userId: string, type: QuizType): Promise<vo
 // ─── Check limit ──────────────────────────────────────────────────────────────
 
 export function checkDailyLimit(usage: DailyUsage, type: QuizType): boolean {
-  const used = usage[`${type}Used` as 'mcqUsed' | 'fibUsed' | 'tfUsed'];
-  return used < LIMITS[type];
+  const used = (usage[`${type}Used` as keyof DailyUsage] as number | undefined) ?? 0;
+  return used < (LIMITS[type] ?? 0);
 }

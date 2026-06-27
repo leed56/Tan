@@ -54,18 +54,21 @@ export const useUsageStore = create<UsageStore>((set, get) => ({
 
   remainingUses: (type) => {
     const usage = get().usage ?? emptyUsage();
-    const field = `${type}Used` as 'mcqUsed' | 'fibUsed' | 'tfUsed';
-    const used = usage[field];
-    return Math.max(0, FREE_DAILY_LIMITS[type] - used);
+    const field = `${type}Used` as keyof DailyUsage;
+    // Coalesce: a Firestore usage doc may predate a counter field → avoid NaN.
+    const used = (usage[field] as number | undefined) ?? 0;
+    const limit = FREE_DAILY_LIMITS[type] ?? 0;
+    return Math.max(0, limit - used);
   },
 
   increment: async (userId, type) => {
     // Optimistic local update
     set((s) => {
       const current = s.usage ?? emptyUsage();
-      const field = `${type}Used` as 'mcqUsed' | 'fibUsed' | 'tfUsed';
+      const field = `${type}Used` as keyof DailyUsage;
+      const used = (current[field] as number | undefined) ?? 0;
       return {
-        usage: { ...current, userId, [field]: current[field] + 1 },
+        usage: { ...current, userId, [field]: used + 1 },
       };
     });
     // Persist to Firestore
