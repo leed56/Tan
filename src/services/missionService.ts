@@ -28,7 +28,7 @@ export async function getTodayMissions(userId: string): Promise<UserDailyMission
   if (!isFirebaseConfigured()) return buildMissions(userId, today);
   try {
     const q = query(
-      collection(firestore, COLLECTIONS.dailyMissions),
+      collection(firestore, COLLECTIONS.userDailyMissions),
       where('userId', '==', userId),
       where('date', '==', today),
     );
@@ -36,7 +36,7 @@ export async function getTodayMissions(userId: string): Promise<UserDailyMission
     if (snap.empty) {
       const missions = buildMissions(userId, today);
       for (const m of missions) {
-        await setDoc(doc(firestore, COLLECTIONS.dailyMissions, m.id), m).catch(() => {});
+        await setDoc(doc(firestore, COLLECTIONS.userDailyMissions, m.id), m).catch(() => {});
       }
       return missions;
     }
@@ -55,7 +55,7 @@ export async function updateMissionProgress(
   if (!isFirebaseConfigured()) return buildMissions(userId, today);
   try {
     const q = query(
-      collection(firestore, COLLECTIONS.dailyMissions),
+      collection(firestore, COLLECTIONS.userDailyMissions),
       where('userId', '==', userId),
       where('date', '==', today),
     );
@@ -73,7 +73,7 @@ export async function updateMissionProgress(
         progress: newProgress,
         isCompleted,
       };
-      await setDoc(doc(firestore, COLLECTIONS.dailyMissions, mission.id), updated).catch(() => {});
+      await setDoc(doc(firestore, COLLECTIONS.userDailyMissions, mission.id), updated).catch(() => {});
     }
 
     return getTodayMissions(userId);
@@ -88,7 +88,7 @@ export async function claimMission(userId: string, missionId: string): Promise<v
   if (!isFirebaseConfigured()) return;
   try {
     await setDoc(
-      doc(firestore, COLLECTIONS.dailyMissions, docId),
+      doc(firestore, COLLECTIONS.userDailyMissions, docId),
       { claimedAt: Date.now() },
       { merge: true },
     );

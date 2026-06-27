@@ -228,6 +228,66 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
+    // ── student_progress — owner-scoped (id = `${uid}_${packId}`) ─────────────
+    match /student_progress/{docId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create, update: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow delete: if isAdmin();
+    }
+
+    // ── quiz_attempts — owner-scoped ──────────────────────────────────────────
+    match /quiz_attempts/{attemptId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create, update: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow delete: if isAdmin();
+    }
+
+    // ── quiz_answers — owner-scoped (immutable once written) ──────────────────
+    match /quiz_answers/{answerId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isAdmin();
+    }
+
+    // ── daily_usage — owner-scoped (id = `${uid}_${date}`) ────────────────────
+    match /daily_usage/{docId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create, update: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+    }
+
+    // ── user_daily_missions — owner-scoped per-user mission progress ──────────
+    match /user_daily_missions/{docId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create, update: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+    }
+
+    // ── user_badges — owner-scoped, append-only ───────────────────────────────
+    match /user_badges/{docId} {
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // ── leaderboard_scores — public read, owner write (id = uid) ──────────────
+    match /leaderboard_scores/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId);
+    }
+
+    // ── family_profiles — owner-scoped (premium feature) ──────────────────────
+    match /family_profiles/{profileId} {
+      allow read: if isOwner(resource.data.familyOwnerId) || isAdmin();
+      allow create, update: if isSignedIn()
+        && request.resource.data.familyOwnerId == request.auth.uid;
+      allow delete: if isOwner(resource.data.familyOwnerId) || isAdmin();
+    }
+
     // ── deny everything else ──────────────────────────────────────────────────
     match /{document=**} {
       allow read, write: if false;
