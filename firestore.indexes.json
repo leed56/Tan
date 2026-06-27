@@ -66,19 +66,27 @@
       ]
     },
     {
-      "collectionGroup": "leaderboard",
+      "collectionGroup": "leaderboard_scores",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "period", "order": "ASCENDING" },
-        { "fieldPath": "xp", "order": "DESCENDING" }
+        { "fieldPath": "schoolId", "order": "ASCENDING" },
+        { "fieldPath": "totalXp", "order": "DESCENDING" }
       ]
     },
     {
-      "collectionGroup": "leaderboard",
+      "collectionGroup": "student_progress",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "period", "order": "ASCENDING" },
-        { "fieldPath": "coins", "order": "DESCENDING" }
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "subjectId", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "user_daily_missions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "ASCENDING" }
       ]
     },
     {
