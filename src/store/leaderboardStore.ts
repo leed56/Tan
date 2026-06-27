@@ -22,7 +22,7 @@ export const useLeaderboardStore = create<LeaderboardStore>((set, get) => ({
   activeTab: 'national',
 
   fetchLeaderboard: async (tab, schoolId) => {
-    if (get().data[tab].length > 0) return; // cached
+    if ((get().data[tab]?.length ?? 0) > 0) return; // cached
     set({ loading: true });
     try {
       const scores = await getLeaderboard(tab, schoolId);
