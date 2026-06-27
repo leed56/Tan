@@ -82,5 +82,5 @@ export const COLLECTIONS = {
   aiExplanations: 'ai_explanations',
   aiPromptTemplates: 'ai_prompt_templates',
   aiQualityLogs: 'ai_quality_logs',
-  explanationFeedback: 'explanation_feedback',
+  explanationFeedback: 'ai_feedback',
 } as const;

@@ -190,14 +190,27 @@ export async function getOrGenerateExplanation(
   return buildFallbackExplanation(params);
 }
 
+// Qualitative rating → numeric score (1–5) required by the ai_feedback rule.
+const FEEDBACK_RATING_SCORE: Record<ExplanationFeedback['rating'], number> = {
+  helpful: 5,
+  confusing: 3,
+  wrong: 1,
+};
+
 export async function saveExplanationFeedback(
   feedback: Omit<ExplanationFeedback, 'id' | 'createdAt'>,
 ): Promise<void> {
   if (!isFirebaseConfigured()) return;
   try {
-    const docData: ExplanationFeedback = {
-      ...feedback,
-      id: `feedback_${feedback.questionId}_${Date.now()}`,
+    // The ai_feedback rule requires a numeric `rating` in [1..5]; keep the
+    // qualitative label as `sentiment` for analytics.
+    const docData = {
+      userId: feedback.userId,
+      questionId: feedback.questionId,
+      explanationId: feedback.explanationId,
+      rating: FEEDBACK_RATING_SCORE[feedback.rating],
+      sentiment: feedback.rating,
+      comment: feedback.comment,
       createdAt: Date.now(),
     };
     await addDoc(collection(firestore, COLLECTIONS.explanationFeedback), docData);
