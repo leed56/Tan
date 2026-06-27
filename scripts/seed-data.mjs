@@ -9,10 +9,10 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCkEZ7yeTf9Rmd6642yedBfFsPgEjumtVc',
-  authDomain: 'tanzania-81c27.firebaseapp.com',
-  projectId: 'tanzania-81c27',
-  storageBucket: 'tanzania-81c27.appspot.com',
+  apiKey: 'AIzaSyA9NxggtzrTbs24_5gwwbqKwxFHPa9EV4k',
+  authDomain: 'tanza-9b182.firebaseapp.com',
+  projectId: 'tanza-9b182',
+  storageBucket: 'tanza-9b182.appspot.com',
   messagingSenderId: '970279243429',
   appId: '1:970279243429:web:c1f7a6e6c7b4e5b8f1a2c3',
 };

@@ -26,9 +26,9 @@ import {
 } from '../src/utils/seedData.ts';
 
 const app = initializeApp({
-  apiKey: 'AIzaSyCkEZ7yeTf9Rmd6642yedBfFsPgEjumtVc',
-  authDomain: 'tanzania-81c27.firebaseapp.com',
-  projectId: 'tanzania-81c27',
+  apiKey: 'AIzaSyA9NxggtzrTbs24_5gwwbqKwxFHPa9EV4k',
+  authDomain: 'tanza-9b182.firebaseapp.com',
+  projectId: 'tanza-9b182',
 });
 const db = getFirestore(app);
 
