@@ -1,0 +1,444 @@
+{
+  "topicId": "form_2_mathematics_topic_3",
+  "topicName": "Quadratic Equations",
+  "order": 3,
+  "description": "Solving quadratic equations by factorization, completing the square and the quadratic formula, determining the nature of roots, forming quadratic equations and applying them to word problems.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Solve by factorization: x^2 + 5x + 6 = 0.",
+        "options": [
+          {"id": "a", "text": "x = -2 or x = -3", "isCorrect": true},
+          {"id": "b", "text": "x = 2 or x = 3", "isCorrect": false},
+          {"id": "c", "text": "x = -1 or x = -6", "isCorrect": false},
+          {"id": "d", "text": "x = 1 or x = 6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "x^2 + 5x + 6 = (x + 2)(x + 3) = 0, so x = -2 or x = -3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Solve by factorization: x^2 - 7x + 12 = 0.",
+        "options": [
+          {"id": "a", "text": "x = -3 or x = -4", "isCorrect": false},
+          {"id": "b", "text": "x = 3 or x = 4", "isCorrect": true},
+          {"id": "c", "text": "x = 2 or x = 6", "isCorrect": false},
+          {"id": "d", "text": "x = -2 or x = -6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "x^2 - 7x + 12 = (x - 3)(x - 4) = 0, so x = 3 or x = 4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Solve: x^2 - 9 = 0.",
+        "options": [
+          {"id": "a", "text": "x = 3 only", "isCorrect": false},
+          {"id": "b", "text": "x = -3 only", "isCorrect": false},
+          {"id": "c", "text": "x = 3 or x = -3", "isCorrect": true},
+          {"id": "d", "text": "x = 9 or x = -9", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "x^2 - 9 = (x - 3)(x + 3) = 0, a difference of two squares, giving x = 3 or x = -3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What are the roots of x^2 - 4x = 0?",
+        "options": [
+          {"id": "a", "text": "x = 0 or x = 4", "isCorrect": true},
+          {"id": "b", "text": "x = 0 or x = -4", "isCorrect": false},
+          {"id": "c", "text": "x = 4 only", "isCorrect": false},
+          {"id": "d", "text": "x = 2 or x = -2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Factor out x: x(x - 4) = 0, so x = 0 or x = 4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the quadratic formula x = (-b ± √(b^2 - 4ac)) / 2a, the expression b^2 - 4ac is called the:",
+        "options": [
+          {"id": "a", "text": "coefficient", "isCorrect": false},
+          {"id": "b", "text": "discriminant", "isCorrect": true},
+          {"id": "c", "text": "constant term", "isCorrect": false},
+          {"id": "d", "text": "root", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "b^2 - 4ac is the discriminant; its sign determines the nature of the roots.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Solve by the quadratic formula: x^2 - 5x + 6 = 0.",
+        "options": [
+          {"id": "a", "text": "x = 2 or x = 3", "isCorrect": true},
+          {"id": "b", "text": "x = -2 or x = -3", "isCorrect": false},
+          {"id": "c", "text": "x = 1 or x = 6", "isCorrect": false},
+          {"id": "d", "text": "x = 5 or x = 6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Here a=1, b=-5, c=6, so x = (5 ± √(25-24))/2 = (5 ± 1)/2 = 3 or 2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Solve: 2x^2 - 3x - 2 = 0.",
+        "options": [
+          {"id": "a", "text": "x = 2 or x = -1/2", "isCorrect": true},
+          {"id": "b", "text": "x = -2 or x = 1/2", "isCorrect": false},
+          {"id": "c", "text": "x = 1 or x = -2", "isCorrect": false},
+          {"id": "d", "text": "x = 2 or x = 1/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "2x^2 - 3x - 2 = (2x + 1)(x - 2) = 0, so x = -1/2 or x = 2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For the equation x^2 + 6x + 9 = 0, the roots are:",
+        "options": [
+          {"id": "a", "text": "real and distinct", "isCorrect": false},
+          {"id": "b", "text": "real and equal", "isCorrect": true},
+          {"id": "c", "text": "not real", "isCorrect": false},
+          {"id": "d", "text": "one zero and one positive", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The discriminant is 6^2 - 4(1)(9) = 36 - 36 = 0, so the roots are real and equal (x = -3).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which value completes the square for x^2 + 8x + ___ to form a perfect square?",
+        "options": [
+          {"id": "a", "text": "4", "isCorrect": false},
+          {"id": "b", "text": "8", "isCorrect": false},
+          {"id": "c", "text": "16", "isCorrect": true},
+          {"id": "d", "text": "64", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Take half of 8 (which is 4) and square it: 4^2 = 16, giving (x + 4)^2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A quadratic equation whose roots are 4 and -1 is:",
+        "options": [
+          {"id": "a", "text": "x^2 - 3x - 4 = 0", "isCorrect": true},
+          {"id": "b", "text": "x^2 + 3x - 4 = 0", "isCorrect": false},
+          {"id": "c", "text": "x^2 - 3x + 4 = 0", "isCorrect": false},
+          {"id": "d", "text": "x^2 + 5x + 4 = 0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sum = 4 + (-1) = 3, product = 4 × (-1) = -4, so x^2 - (sum)x + product = x^2 - 3x - 4 = 0.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The sum and product of the roots of x^2 - 7x + 10 = 0 are respectively:",
+        "options": [
+          {"id": "a", "text": "7 and 10", "isCorrect": true},
+          {"id": "b", "text": "-7 and 10", "isCorrect": false},
+          {"id": "c", "text": "7 and -10", "isCorrect": false},
+          {"id": "d", "text": "10 and 7", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "For ax^2 + bx + c = 0, sum of roots = -b/a = 7 and product = c/a = 10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Solve: 3x^2 - 12 = 0.",
+        "options": [
+          {"id": "a", "text": "x = ±4", "isCorrect": false},
+          {"id": "b", "text": "x = ±2", "isCorrect": true},
+          {"id": "c", "text": "x = ±√12", "isCorrect": false},
+          {"id": "d", "text": "x = 0 or x = 4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "3x^2 = 12, so x^2 = 4, giving x = ±2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many real roots does x^2 + x + 1 = 0 have?",
+        "options": [
+          {"id": "a", "text": "Two distinct real roots", "isCorrect": false},
+          {"id": "b", "text": "One repeated real root", "isCorrect": false},
+          {"id": "c", "text": "No real roots", "isCorrect": true},
+          {"id": "d", "text": "Three real roots", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The discriminant is 1^2 - 4(1)(1) = 1 - 4 = -3 < 0, so there are no real roots.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The product of two consecutive positive integers is 56. The smaller integer is:",
+        "options": [
+          {"id": "a", "text": "6", "isCorrect": false},
+          {"id": "b", "text": "7", "isCorrect": true},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Let the integers be n and n+1: n(n+1) = 56 gives n^2 + n - 56 = 0 = (n+8)(n-7), so n = 7.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Solve: (x - 2)(x + 5) = 0.",
+        "options": [
+          {"id": "a", "text": "x = 2 or x = 5", "isCorrect": false},
+          {"id": "b", "text": "x = -2 or x = -5", "isCorrect": false},
+          {"id": "c", "text": "x = 2 or x = -5", "isCorrect": true},
+          {"id": "d", "text": "x = -2 or x = 5", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "By the zero-product property, x - 2 = 0 or x + 5 = 0, so x = 2 or x = -5.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A polynomial equation of degree 2 is called a _____ equation.",
+        "options": [],
+        "correctAnswer": "quadratic",
+        "explanation": "The highest power of the variable in a quadratic equation is 2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the general quadratic equation ax^2 + bx + c = 0, the coefficient a must not be equal to _____.",
+        "options": [],
+        "correctAnswer": "0",
+        "explanation": "If a = 0 the equation becomes linear, not quadratic.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The two solutions of a quadratic equation are also called its _____.",
+        "options": [],
+        "correctAnswer": "roots",
+        "explanation": "The values of x that satisfy the equation are called roots (or solutions).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The roots of the equation x^2 - 16 = 0 are x = _____ (give both values).",
+        "options": [],
+        "correctAnswer": "4 and -4",
+        "explanation": "x^2 = 16 so x = ±4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To complete the square for x^2 - 10x, the number that must be added is _____.",
+        "options": [],
+        "correctAnswer": "25",
+        "explanation": "Half of -10 is -5 and (-5)^2 = 25, giving (x - 5)^2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For ax^2 + bx + c = 0, the sum of the roots equals _____ (in terms of a and b).",
+        "options": [],
+        "correctAnswer": "-b/a",
+        "explanation": "The sum of the roots of a quadratic equation is -b/a.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For ax^2 + bx + c = 0, the product of the roots equals _____ (in terms of a and c).",
+        "options": [],
+        "correctAnswer": "c/a",
+        "explanation": "The product of the roots of a quadratic equation is c/a.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the discriminant b^2 - 4ac is greater than 0, the equation has _____ real roots.",
+        "options": [],
+        "correctAnswer": "two distinct",
+        "explanation": "A positive discriminant gives two different real roots.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The smaller root of x^2 + 2x - 15 = 0 is x = _____.",
+        "options": [],
+        "correctAnswer": "-5",
+        "explanation": "x^2 + 2x - 15 = (x + 5)(x - 3) = 0, so x = -5 or x = 3; the smaller is -5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A quadratic equation with roots 0 and 6 is x^2 - 6x = _____.",
+        "options": [],
+        "correctAnswer": "0",
+        "explanation": "Sum = 6, product = 0, so x^2 - 6x + 0 = 0, i.e. x^2 - 6x = 0.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Every quadratic equation has at most two roots.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A degree-2 polynomial equation can have at most two solutions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The equation 3x + 7 = 0 is a quadratic equation.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "It is linear because the highest power of x is 1, not 2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If the discriminant b^2 - 4ac is equal to 0, the quadratic equation has two equal real roots.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A zero discriminant gives one repeated (equal) real root.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A quadratic equation with a negative discriminant has two distinct real roots.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A negative discriminant means the equation has no real roots.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The expression x^2 + 4x + 4 is a perfect square.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "x^2 + 4x + 4 = (x + 2)^2, which is a perfect square trinomial.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The roots of x^2 - 5x + 6 = 0 are 2 and 3.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "x^2 - 5x + 6 = (x - 2)(x - 3) = 0, so the roots are 2 and 3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The quadratic formula can be used to solve any quadratic equation.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The quadratic formula works for all quadratic equations, whether or not they factorize easily.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the equation 2x^2 - 8 = 0, the constant term c is -8.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Comparing with ax^2 + bx + c = 0, a = 2, b = 0 and c = -8.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a quadratic equation has roots 5 and -2, then the equation is x^2 - 3x - 10 = 0.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Sum = 3, product = -10, so x^2 - 3x - 10 = 0.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Completing the square turns ax^2 + bx + c into the form a(x + h)^2 + k.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Completing the square rewrites a quadratic expression as a perfect square plus a constant.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Standard form of a quadratic equation",
+        "options": [],
+        "correctAnswer": "ax^2 + bx + c = 0, where a ≠ 0",
+        "explanation": "This is the general form, with a, b and c constants and a not zero.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The quadratic formula",
+        "options": [],
+        "correctAnswer": "x = (-b ± √(b^2 - 4ac)) / 2a",
+        "explanation": "It gives the roots of any quadratic equation ax^2 + bx + c = 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Zero-product property used in factorization",
+        "options": [],
+        "correctAnswer": "If PQ = 0 then P = 0 or Q = 0",
+        "explanation": "This lets us set each factor to zero to find the roots.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Meaning of the discriminant",
+        "options": [],
+        "correctAnswer": "b^2 - 4ac, which determines the nature of the roots",
+        "explanation": "Positive gives two real roots, zero gives equal roots, negative gives no real roots.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Sum of the roots of a quadratic equation",
+        "options": [],
+        "correctAnswer": "-b/a",
+        "explanation": "The roots of ax^2 + bx + c = 0 add up to -b/a.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Product of the roots of a quadratic equation",
+        "options": [],
+        "correctAnswer": "c/a",
+        "explanation": "The roots of ax^2 + bx + c = 0 multiply to c/a.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Forming a quadratic equation from its roots",
+        "options": [],
+        "correctAnswer": "x^2 - (sum of roots)x + (product of roots) = 0",
+        "explanation": "Given the roots, substitute their sum and product into this formula.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Steps to complete the square for x^2 + bx",
+        "options": [],
+        "correctAnswer": "Add (b/2)^2 to make (x + b/2)^2",
+        "explanation": "Half the coefficient of x, square it, and add to form a perfect square.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Three methods of solving quadratic equations",
+        "options": [],
+        "correctAnswer": "Factorization, completing the square, and the quadratic formula",
+        "explanation": "These are the standard Form-2 methods for solving quadratics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Condition for a quadratic equation to have real and equal roots",
+        "options": [],
+        "correctAnswer": "Discriminant b^2 - 4ac = 0",
+        "explanation": "When the discriminant is zero the two roots coincide into one value.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "The length of a rectangle is 3 cm more than its width. If the area is 40 cm^2, what is the width?",
+        "options": [
+          {"id": "a", "text": "5 cm", "isCorrect": true},
+          {"id": "b", "text": "8 cm", "isCorrect": false},
+          {"id": "c", "text": "4 cm", "isCorrect": false},
+          {"id": "d", "text": "10 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Let width = w; then w(w + 3) = 40, so w^2 + 3w - 40 = (w + 8)(w - 5) = 0, giving w = 5 cm (positive value).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "For what value of k does the equation x^2 - 6x + k = 0 have two equal roots?",
+        "options": [
+          {"id": "a", "text": "k = 6", "isCorrect": false},
+          {"id": "b", "text": "k = 9", "isCorrect": true},
+          {"id": "c", "text": "k = -9", "isCorrect": false},
+          {"id": "d", "text": "k = 3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Equal roots require discriminant = 0: (-6)^2 - 4(1)k = 36 - 4k = 0, so k = 9.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A positive number added to its square gives 72. What is the number?",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": false},
+          {"id": "b", "text": "6", "isCorrect": false},
+          {"id": "c", "text": "8", "isCorrect": true},
+          {"id": "d", "text": "12", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Let the number be n: n + n^2 = 72, so n^2 + n - 72 = (n + 9)(n - 8) = 0, giving the positive value n = 8.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
