@@ -1,0 +1,444 @@
+{
+  "topicId": "form_3_mathematics_topic_7",
+  "topicName": "The Earth as a Sphere",
+  "order": 7,
+  "description": "This topic covers latitudes and longitudes, great and small circles, distances along great circles and parallels of latitude in nautical miles, and the difference in time between places due to longitude.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "The imaginary great circle that divides the Earth into the Northern and Southern Hemispheres is called the:",
+        "options": [
+          {"id": "a", "text": "Greenwich meridian", "isCorrect": false},
+          {"id": "b", "text": "Equator", "isCorrect": true},
+          {"id": "c", "text": "Tropic of Cancer", "isCorrect": false},
+          {"id": "d", "text": "Prime parallel", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The equator is the great circle of latitude 0 degrees that separates the Northern and Southern Hemispheres.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Lines of longitude are measured east or west of the:",
+        "options": [
+          {"id": "a", "text": "Equator", "isCorrect": false},
+          {"id": "b", "text": "North Pole", "isCorrect": false},
+          {"id": "c", "text": "Greenwich (Prime) meridian", "isCorrect": true},
+          {"id": "d", "text": "Tropic of Capricorn", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Longitude is measured from 0 degrees at the Greenwich meridian, up to 180 degrees east and 180 degrees west.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is NOT a great circle?",
+        "options": [
+          {"id": "a", "text": "The equator", "isCorrect": false},
+          {"id": "b", "text": "A circle of longitude (meridian)", "isCorrect": false},
+          {"id": "c", "text": "The parallel of latitude 45 degrees North", "isCorrect": true},
+          {"id": "d", "text": "Any circle whose centre is the centre of the Earth", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Only the equator and the meridians are great circles; all other parallels of latitude are small circles because their centres do not coincide with the Earth's centre.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "One minute of arc along a great circle corresponds to a distance of:",
+        "options": [
+          {"id": "a", "text": "1 kilometre", "isCorrect": false},
+          {"id": "b", "text": "1 nautical mile", "isCorrect": true},
+          {"id": "c", "text": "60 nautical miles", "isCorrect": false},
+          {"id": "d", "text": "1 degree", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "By definition, 1 minute of arc along a great circle equals 1 nautical mile, so 1 degree equals 60 nautical miles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two towns P and Q lie on the same meridian. P is at latitude 20 degrees N and Q is at latitude 35 degrees S. The distance PQ along the meridian, in nautical miles, is:",
+        "options": [
+          {"id": "a", "text": "900 nm", "isCorrect": false},
+          {"id": "b", "text": "1800 nm", "isCorrect": false},
+          {"id": "c", "text": "3300 nm", "isCorrect": true},
+          {"id": "d", "text": "2100 nm", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since the points are in opposite hemispheres, the angular difference is 20 + 35 = 55 degrees, so distance = 55 x 60 = 3300 nm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two places A and B both lie on latitude 30 degrees N. A is at longitude 10 degrees E and B is at longitude 40 degrees E. The difference in longitude is:",
+        "options": [
+          {"id": "a", "text": "30 degrees", "isCorrect": true},
+          {"id": "b", "text": "50 degrees", "isCorrect": false},
+          {"id": "c", "text": "10 degrees", "isCorrect": false},
+          {"id": "d", "text": "70 degrees", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Both are east of Greenwich, so the difference in longitude is 40 - 10 = 30 degrees.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The Earth rotates 360 degrees of longitude in 24 hours. Therefore the time difference for every 1 degree of longitude is:",
+        "options": [
+          {"id": "a", "text": "1 hour", "isCorrect": false},
+          {"id": "b", "text": "15 minutes", "isCorrect": false},
+          {"id": "c", "text": "4 minutes", "isCorrect": true},
+          {"id": "d", "text": "1 minute", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since 360 degrees take 24 x 60 = 1440 minutes, each degree corresponds to 1440 / 360 = 4 minutes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Through how many degrees of longitude does the Earth turn in one hour?",
+        "options": [
+          {"id": "a", "text": "4 degrees", "isCorrect": false},
+          {"id": "b", "text": "15 degrees", "isCorrect": true},
+          {"id": "c", "text": "24 degrees", "isCorrect": false},
+          {"id": "d", "text": "60 degrees", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "360 degrees in 24 hours gives 360 / 24 = 15 degrees per hour.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A town X is at longitude 45 degrees E and town Y is at longitude 15 degrees W. The longitude difference between X and Y is:",
+        "options": [
+          {"id": "a", "text": "30 degrees", "isCorrect": false},
+          {"id": "b", "text": "60 degrees", "isCorrect": true},
+          {"id": "c", "text": "45 degrees", "isCorrect": false},
+          {"id": "d", "text": "15 degrees", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because the longitudes are on opposite sides of Greenwich, the difference is 45 + 15 = 60 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the local time at Greenwich (0 degrees) is 12:00 noon, what is the local time at a place on longitude 30 degrees E?",
+        "options": [
+          {"id": "a", "text": "10:00 a.m.", "isCorrect": false},
+          {"id": "b", "text": "2:00 p.m.", "isCorrect": true},
+          {"id": "c", "text": "11:00 a.m.", "isCorrect": false},
+          {"id": "d", "text": "1:00 p.m.", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Places east of Greenwich are ahead in time; 30 x 4 = 120 minutes = 2 hours, so 12:00 + 2:00 = 2:00 p.m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The radius of a parallel of latitude at angle theta is given by r = R cos(theta), where R is the radius of the Earth. At the equator (theta = 0), the radius of the parallel is:",
+        "options": [
+          {"id": "a", "text": "Zero", "isCorrect": false},
+          {"id": "b", "text": "Equal to R", "isCorrect": true},
+          {"id": "c", "text": "Half of R", "isCorrect": false},
+          {"id": "d", "text": "Twice R", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "At the equator theta = 0 and cos(0) = 1, so r = R; the equator is a great circle with radius equal to the Earth's radius.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The distance between two points on the same parallel of latitude depends on the difference in longitude AND on the:",
+        "options": [
+          {"id": "a", "text": "Cosine of the latitude", "isCorrect": true},
+          {"id": "b", "text": "Sine of the latitude", "isCorrect": false},
+          {"id": "c", "text": "Tangent of the longitude", "isCorrect": false},
+          {"id": "d", "text": "Difference in latitude", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Distance along a parallel = (difference in longitude in minutes) x cos(latitude), so it depends on the cosine of the latitude.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two ports lie on the equator at longitudes 25 degrees W and 35 degrees E. The distance between them along the equator, in nautical miles, is:",
+        "options": [
+          {"id": "a", "text": "600 nm", "isCorrect": false},
+          {"id": "b", "text": "3600 nm", "isCorrect": true},
+          {"id": "c", "text": "1800 nm", "isCorrect": false},
+          {"id": "d", "text": "2400 nm", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "On the equator cos 0 = 1, longitude difference = 25 + 35 = 60 degrees = 3600 minutes, so distance = 3600 x 1 = 3600 nm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A point lies at latitude 90 degrees N. This point is the:",
+        "options": [
+          {"id": "a", "text": "South Pole", "isCorrect": false},
+          {"id": "b", "text": "North Pole", "isCorrect": true},
+          {"id": "c", "text": "Equator", "isCorrect": false},
+          {"id": "d", "text": "Greenwich meridian", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Latitude 90 degrees North is the most northerly point of the Earth, which is the North Pole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When you travel WESTWARD across the Earth, local time becomes:",
+        "options": [
+          {"id": "a", "text": "Earlier (you subtract time)", "isCorrect": true},
+          {"id": "b", "text": "Later (you add time)", "isCorrect": false},
+          {"id": "c", "text": "Unchanged", "isCorrect": false},
+          {"id": "d", "text": "Exactly 12 hours different", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Sun rises in the east, so places to the west are behind; moving west you subtract time, while moving east you add time.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A great circle is any circle on the Earth's surface whose centre coincides with the _____ of the Earth.",
+        "options": [],
+        "correctAnswer": "centre",
+        "explanation": "Great circles, such as the equator and meridians, share the same centre as the Earth.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One degree of arc along a great circle is equal to _____ nautical miles.",
+        "options": [],
+        "correctAnswer": "60",
+        "explanation": "Since 1 minute equals 1 nautical mile and 1 degree = 60 minutes, 1 degree = 60 nautical miles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The Earth turns through 15 degrees of longitude every _____ hour(s).",
+        "options": [],
+        "correctAnswer": "1",
+        "explanation": "360 degrees divided by 24 hours gives 15 degrees per hour.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two towns on the same meridian are at latitudes 12 degrees N and 48 degrees N. Their distance apart along the meridian is _____ nautical miles.",
+        "options": [],
+        "correctAnswer": "2160",
+        "explanation": "Latitude difference = 48 - 12 = 36 degrees, so distance = 36 x 60 = 2160 nm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two places lie on the equator at longitudes 10 degrees E and 50 degrees E. The distance between them along the equator is _____ nautical miles.",
+        "options": [],
+        "correctAnswer": "2400",
+        "explanation": "Longitude difference = 50 - 10 = 40 degrees = 2400 minutes; on the equator distance = 2400 x cos 0 = 2400 nm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the local time at longitude 0 degrees is 09:00, then the local time at longitude 60 degrees W is _____.",
+        "options": [],
+        "correctAnswer": "05:00",
+        "explanation": "60 x 4 = 240 minutes = 4 hours; west of Greenwich is behind, so 09:00 - 4:00 = 05:00.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The distance along a parallel of latitude is found using the formula: distance = (longitude difference in minutes) x cos _____.",
+        "options": [],
+        "correctAnswer": "(latitude)",
+        "explanation": "On a parallel of latitude theta, the radius is reduced by a factor of cos(theta), so distance = difference in minutes x cos(latitude).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two points on latitude 60 degrees N differ in longitude by 30 degrees. The distance between them along the parallel is _____ nautical miles.",
+        "options": [],
+        "correctAnswer": "900",
+        "explanation": "Distance = 30 x 60 x cos 60 = 1800 x 0.5 = 900 nm.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "All meridians of longitude meet at the two _____ of the Earth.",
+        "options": [],
+        "correctAnswer": "poles",
+        "explanation": "Every line of longitude runs from the North Pole to the South Pole, so they all meet at the poles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When the difference in longitude between two places is 45 degrees, the difference in their local times is _____ minutes.",
+        "options": [],
+        "correctAnswer": "180",
+        "explanation": "45 x 4 = 180 minutes (which is 3 hours).",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The equator is the only parallel of latitude that is also a great circle.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "All other parallels are small circles because their radii are smaller than the Earth's radius.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Lines of latitude run from the North Pole to the South Pole.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Lines of latitude run east-west and are parallel to the equator; it is the lines of longitude that run from pole to pole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One nautical mile is equal to one minute of arc measured along a great circle.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the standard definition of a nautical mile.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Places located east of the Greenwich meridian have local times that are behind Greenwich time.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Places east of Greenwich are ahead in time, not behind, because the Sun reaches them first.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The distance between two points on the same meridian is calculated as the latitude difference in minutes multiplied by 1 nautical mile.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A meridian is a great circle, so 1 minute of latitude difference equals 1 nautical mile.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The radius of a parallel of latitude increases as the latitude moves away from the equator towards the poles.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The radius r = R cos(theta) decreases as theta increases, becoming zero at the poles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A time difference of 4 minutes corresponds to a longitude difference of 1 degree.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "1440 minutes divided by 360 degrees gives 4 minutes per degree.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Along any parallel of latitude, a longitude difference of 60 degrees always represents 3600 nautical miles, regardless of the latitude.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Distance along a parallel depends on cos(latitude), so 3600 nm only holds at the equator where cos 0 = 1.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Longitude is measured from 0 degrees to a maximum of 180 degrees east and 180 degrees west.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The Greenwich meridian is 0 degrees and the longitudes extend to 180 degrees on each side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two points lying on the same parallel of latitude are at the same distance from the equator.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "All points on a given parallel share the same latitude, so they are equidistant from the equator.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Definition of latitude",
+        "options": [],
+        "correctAnswer": "Angular distance of a place north or south of the equator, from 0 to 90 degrees.",
+        "explanation": "Latitude lines (parallels) measure how far north or south a place is.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Definition of longitude",
+        "options": [],
+        "correctAnswer": "Angular distance of a place east or west of the Greenwich meridian, from 0 to 180 degrees.",
+        "explanation": "Longitude lines (meridians) measure how far east or west a place is.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Great circle vs small circle",
+        "options": [],
+        "correctAnswer": "A great circle has its centre at the Earth's centre; a small circle does not.",
+        "explanation": "The equator and meridians are great circles; other parallels are small circles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Value of a nautical mile",
+        "options": [],
+        "correctAnswer": "1 nautical mile = 1 minute of arc along a great circle; 1 degree = 60 nautical miles.",
+        "explanation": "This is the unit used for measuring distances on the Earth's surface.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distance along a meridian (great circle)",
+        "options": [],
+        "correctAnswer": "Distance = difference in latitude (in minutes) x 1 nm = degrees x 60 nm.",
+        "explanation": "Add the latitudes if the points are in opposite hemispheres, subtract if in the same hemisphere.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distance along a parallel of latitude",
+        "options": [],
+        "correctAnswer": "Distance = (longitude difference in minutes) x cos(latitude) nm.",
+        "explanation": "The cosine factor accounts for the smaller radius of the parallel away from the equator.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Earth's rotation and time",
+        "options": [],
+        "correctAnswer": "The Earth turns 360 degrees in 24 hours: 15 degrees per hour and 1 degree every 4 minutes.",
+        "explanation": "This relationship links longitude difference to time difference.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Direction rule for local time",
+        "options": [],
+        "correctAnswer": "East of a place add time (ahead); west of a place subtract time (behind).",
+        "explanation": "Because the Sun rises in the east, eastern places experience time earlier.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Combining longitudes across Greenwich",
+        "options": [],
+        "correctAnswer": "Add the two longitudes if they are on opposite sides of Greenwich, subtract if on the same side.",
+        "explanation": "This gives the correct angular difference in longitude.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Position of the poles",
+        "options": [],
+        "correctAnswer": "The North Pole is at latitude 90 degrees N and the South Pole at 90 degrees S, where all meridians meet.",
+        "explanation": "The poles are the ends of the Earth's axis of rotation.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "An aeroplane flies from town A (60 degrees N, 20 degrees E) due west to town B (60 degrees N, 50 degrees W) along the parallel of latitude. Taking cos 60 = 0.5, what is the distance AB?",
+        "options": [
+          {"id": "a", "text": "2100 nm", "isCorrect": true},
+          {"id": "b", "text": "4200 nm", "isCorrect": false},
+          {"id": "c", "text": "1800 nm", "isCorrect": false},
+          {"id": "d", "text": "900 nm", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Longitude difference = 20 + 50 = 70 degrees = 4200 minutes; distance = 4200 x cos 60 = 4200 x 0.5 = 2100 nm.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "When it is 14:00 (2:00 p.m.) at town P on longitude 25 degrees E, what is the local time at town Q on longitude 50 degrees W?",
+        "options": [
+          {"id": "a", "text": "09:00", "isCorrect": true},
+          {"id": "b", "text": "19:00", "isCorrect": false},
+          {"id": "c", "text": "11:00", "isCorrect": false},
+          {"id": "d", "text": "10:00", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Longitude difference = 25 + 50 = 75 degrees; time difference = 75 x 4 = 300 minutes = 5 hours; Q is west of P so subtract: 14:00 - 5:00 = 09:00.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two towns M (35 degrees N, 18 degrees E) and N (35 degrees N, 18 degrees E) lie on the same meridian as town K (10 degrees S, 18 degrees E). What is the distance, along the meridian, from M to K?",
+        "options": [
+          {"id": "a", "text": "2700 nm", "isCorrect": true},
+          {"id": "b", "text": "1500 nm", "isCorrect": false},
+          {"id": "c", "text": "2100 nm", "isCorrect": false},
+          {"id": "d", "text": "3000 nm", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "M and K are in opposite hemispheres, so latitude difference = 35 + 10 = 45 degrees; distance = 45 x 60 = 2700 nm.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

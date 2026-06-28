@@ -65,7 +65,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 - ✅ **FORM 2 COMPLETE — all 13 subjects seeded**
 
 ### Form 3
-- [ ] 26–38. All 13 subjects — Form 3
+- [x] 26. Mathematics — Form 3 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
+- [ ] 27–38. Biology, Chemistry, Physics, English, Kiswahili, Geography, History, Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 3
 
 ### Form 4
 - [ ] 39–51. All 13 subjects — Form 4
