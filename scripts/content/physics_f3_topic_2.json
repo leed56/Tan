@@ -1,0 +1,444 @@
+{
+  "topicId": "form_3_physics_topic_2",
+  "topicName": "Friction",
+  "order": 2,
+  "description": "Friction is the force that opposes relative motion between surfaces in contact, covering its causes, types, laws, the coefficient of friction (mu = F/R), and ways to increase or reduce it in everyday and engineering applications.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is friction?",
+        "options": [
+          {"id": "a", "text": "A force that helps objects move faster", "isCorrect": false},
+          {"id": "b", "text": "A force that opposes relative motion between two surfaces in contact", "isCorrect": true},
+          {"id": "c", "text": "A force that pulls objects towards the Earth", "isCorrect": false},
+          {"id": "d", "text": "A force that acts only on moving cars", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Friction is the force that resists or opposes the relative motion (or tendency of motion) between two surfaces in contact.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a main cause of friction between two solid surfaces?",
+        "options": [
+          {"id": "a", "text": "The colour of the surfaces", "isCorrect": false},
+          {"id": "b", "text": "The temperature of the air only", "isCorrect": false},
+          {"id": "c", "text": "Roughness and interlocking of tiny bumps on the surfaces", "isCorrect": true},
+          {"id": "d", "text": "The weight of the air above the object", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Even surfaces that look smooth have tiny bumps and hollows; these interlock and resist sliding, causing friction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The friction that acts on an object that is moving (sliding) over a surface is called:",
+        "options": [
+          {"id": "a", "text": "Static friction", "isCorrect": false},
+          {"id": "b", "text": "Limiting friction", "isCorrect": false},
+          {"id": "c", "text": "Kinetic (sliding) friction", "isCorrect": true},
+          {"id": "d", "text": "Rolling friction", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Kinetic, or sliding, friction acts between surfaces that are already moving relative to each other.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The maximum value of static friction, reached just before an object starts to move, is called:",
+        "options": [
+          {"id": "a", "text": "Limiting friction", "isCorrect": true},
+          {"id": "b", "text": "Rolling friction", "isCorrect": false},
+          {"id": "c", "text": "Kinetic friction", "isCorrect": false},
+          {"id": "d", "text": "Fluid friction", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Limiting friction is the greatest static friction that acts on a body just at the point of starting to slide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The coefficient of friction is defined by the relationship:",
+        "options": [
+          {"id": "a", "text": "mu = R / F", "isCorrect": false},
+          {"id": "b", "text": "mu = F / R", "isCorrect": true},
+          {"id": "c", "text": "mu = F x R", "isCorrect": false},
+          {"id": "d", "text": "mu = F + R", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The coefficient of friction mu equals the friction force F divided by the normal reaction R, so mu = F/R.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The normal reaction (R) acting on a block resting on a flat horizontal table is:",
+        "options": [
+          {"id": "a", "text": "Equal to the friction force", "isCorrect": false},
+          {"id": "b", "text": "Equal and opposite to the weight of the block", "isCorrect": true},
+          {"id": "c", "text": "Always zero", "isCorrect": false},
+          {"id": "d", "text": "Directed horizontally", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "On a horizontal surface the normal reaction balances the weight, so R = mg, acting perpendicular to the surface.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of these is an ADVANTAGE of friction?",
+        "options": [
+          {"id": "a", "text": "It causes wear and tear of machine parts", "isCorrect": false},
+          {"id": "b", "text": "It wastes energy as heat", "isCorrect": false},
+          {"id": "c", "text": "It allows us to walk without slipping", "isCorrect": true},
+          {"id": "d", "text": "It reduces the efficiency of engines", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Friction between our feet and the ground gives the grip needed to walk; without it we would slip.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which method is used to REDUCE friction in machines?",
+        "options": [
+          {"id": "a", "text": "Adding treads to the surface", "isCorrect": false},
+          {"id": "b", "text": "Using ball or roller bearings and lubricants", "isCorrect": true},
+          {"id": "c", "text": "Pressing the surfaces harder together", "isCorrect": false},
+          {"id": "d", "text": "Making the surfaces rougher", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ball/roller bearings replace sliding with rolling, and lubricants form a film that keeps surfaces apart, both reducing friction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A block weighing 50 N rests on a horizontal floor. The friction force needed to just start it moving is 20 N. What is the coefficient of friction between the block and the floor?",
+        "options": [
+          {"id": "a", "text": "0.2", "isCorrect": false},
+          {"id": "b", "text": "0.4", "isCorrect": true},
+          {"id": "c", "text": "2.5", "isCorrect": false},
+          {"id": "d", "text": "1000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "On a horizontal floor R = weight = 50 N. So mu = F/R = 20/50 = 0.4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A box rests on a table where R = 80 N and the coefficient of friction is 0.3. The friction force is:",
+        "options": [
+          {"id": "a", "text": "24 N", "isCorrect": true},
+          {"id": "b", "text": "0.00375 N", "isCorrect": false},
+          {"id": "c", "text": "266.7 N", "isCorrect": false},
+          {"id": "d", "text": "80.3 N", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "F = mu x R = 0.3 x 80 = 24 N.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Streamlining the shape of cars and aeroplanes is mainly done to:",
+        "options": [
+          {"id": "a", "text": "Increase friction with the road", "isCorrect": false},
+          {"id": "b", "text": "Reduce friction (air resistance) as they move through air", "isCorrect": true},
+          {"id": "c", "text": "Make the vehicle heavier", "isCorrect": false},
+          {"id": "d", "text": "Increase the normal reaction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A streamlined shape lets air flow smoothly around the body, reducing fluid friction (drag) and saving fuel.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why are tyres and the soles of shoes made with treads (grooves)?",
+        "options": [
+          {"id": "a", "text": "To reduce friction with the ground", "isCorrect": false},
+          {"id": "b", "text": "To make them lighter", "isCorrect": false},
+          {"id": "c", "text": "To increase friction and improve grip", "isCorrect": true},
+          {"id": "d", "text": "To make them look attractive only", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Treads increase grip by raising friction, especially on wet or slippery ground, helping to prevent skidding.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Compared with sliding friction, rolling friction is generally:",
+        "options": [
+          {"id": "a", "text": "Much larger", "isCorrect": false},
+          {"id": "b", "text": "Much smaller", "isCorrect": true},
+          {"id": "c", "text": "Exactly equal", "isCorrect": false},
+          {"id": "d", "text": "Always zero", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rolling friction is much smaller than sliding friction, which is why wheels and bearings make movement easier.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "According to the laws of friction, the friction force between two surfaces depends mainly on:",
+        "options": [
+          {"id": "a", "text": "The area of contact between the surfaces", "isCorrect": false},
+          {"id": "b", "text": "The normal reaction and the nature of the surfaces", "isCorrect": true},
+          {"id": "c", "text": "The colour of the surfaces", "isCorrect": false},
+          {"id": "d", "text": "The speed of sliding only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Friction is proportional to the normal reaction and depends on the nature of the surfaces, but is largely independent of the contact area.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a DISADVANTAGE of friction?",
+        "options": [
+          {"id": "a", "text": "It enables vehicles to brake", "isCorrect": false},
+          {"id": "b", "text": "It helps a nail to stay in wood", "isCorrect": false},
+          {"id": "c", "text": "It causes machine parts to wear out and waste energy as heat", "isCorrect": true},
+          {"id": "d", "text": "It allows us to hold objects", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Friction wears out moving parts and converts useful energy into heat, lowering the efficiency of machines.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The force that opposes the relative motion between two surfaces in contact is called _____.",
+        "options": [],
+        "correctAnswer": "friction",
+        "explanation": "Friction always acts to oppose motion or the tendency of motion between contacting surfaces.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The force acting perpendicular to a surface and supporting an object resting on it is called the _____ reaction.",
+        "options": [],
+        "correctAnswer": "normal",
+        "explanation": "The normal reaction (R) acts at right angles to the surface in contact.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The coefficient of friction is calculated using the formula mu = _____ / R.",
+        "options": [],
+        "correctAnswer": "F",
+        "explanation": "The coefficient of friction equals the friction force F divided by the normal reaction R.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The friction that acts on a stationary object that is not yet moving is called _____ friction.",
+        "options": [],
+        "correctAnswer": "static",
+        "explanation": "Static friction acts on a body at rest and can vary up to the limiting value.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The greatest value of static friction reached just before an object begins to slide is called _____ friction.",
+        "options": [],
+        "correctAnswer": "limiting",
+        "explanation": "Limiting friction is the maximum static friction at the point of slipping.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Applying oil or grease between moving parts to reduce friction is called _____.",
+        "options": [],
+        "correctAnswer": "lubrication",
+        "explanation": "Lubrication forms a thin film between surfaces, keeping them apart and reducing friction and wear.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The coefficient of friction mu has no _____ because it is a ratio of two forces.",
+        "options": [],
+        "correctAnswer": "units",
+        "explanation": "Since mu = F/R divides one force by another, the units cancel and mu is just a number.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Replacing sliding contact with rolling contact in machines is done using ball or roller _____.",
+        "options": [],
+        "correctAnswer": "bearings",
+        "explanation": "Bearings use rolling balls or rollers to greatly reduce friction in rotating parts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A block of weight 60 N rests on a horizontal floor with mu = 0.5. The friction force needed to move it is _____ N.",
+        "options": [],
+        "correctAnswer": "30",
+        "explanation": "On a horizontal floor R = 60 N, so F = mu x R = 0.5 x 60 = 30 N.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Friction between machine parts often produces unwanted _____, which is a waste of energy.",
+        "options": [],
+        "correctAnswer": "heat",
+        "explanation": "Work done against friction is converted into heat, raising the temperature of the parts and wasting energy.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Friction always acts in the same direction as the motion of an object.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Friction acts opposite to the direction of motion or the tendency of motion, not the same direction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The coefficient of friction has no units.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Because mu = F/R is a ratio of two forces, the units cancel, leaving a pure number.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Rolling friction is usually larger than sliding friction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Rolling friction is much smaller than sliding friction, which is why wheels make moving easier.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Without friction it would be impossible to walk normally on the ground.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Friction between our feet and the floor provides the grip needed to walk; without it we would slip.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Lubricating oil increases the friction between moving parts of a machine.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Lubricants reduce friction by forming a film that keeps the surfaces apart.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The friction force between two surfaces is proportional to the normal reaction.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "One of the laws of friction states that F is proportional to R, giving F = mu x R.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Friction is always harmful and has no useful purposes.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Friction is also very useful: it helps us walk, grip objects, brake vehicles and light a matchstick.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On a horizontal surface, the normal reaction on a resting block equals its weight.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "On a level surface the normal reaction balances the weight, so R = mg.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Making the treads on a tyre deeper is a way of reducing friction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Treads are designed to increase friction and grip, not reduce it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Friction is caused mainly by the interlocking of tiny rough projections on the surfaces in contact.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Microscopic bumps on surfaces interlock and resist sliding, which produces friction.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define friction in one sentence.",
+        "options": [],
+        "correctAnswer": "Friction is the force that opposes the relative motion (or tendency of motion) between two surfaces in contact.",
+        "explanation": "This is the standard definition emphasising opposition to motion between contacting surfaces.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the main cause of friction between two solid surfaces.",
+        "options": [],
+        "correctAnswer": "The roughness and interlocking of tiny projections (bumps) on the surfaces in contact.",
+        "explanation": "Even smooth-looking surfaces have microscopic irregularities that interlock and resist sliding.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List the main types of friction.",
+        "options": [],
+        "correctAnswer": "Static friction, limiting friction, kinetic (sliding) friction, and rolling friction.",
+        "explanation": "These are the common types: static and limiting for bodies at rest, kinetic for sliding, and rolling for rolling objects.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write the formula for the coefficient of friction and define each symbol.",
+        "options": [],
+        "correctAnswer": "mu = F / R, where mu is the coefficient of friction, F is the friction force and R is the normal reaction.",
+        "explanation": "This relationship links friction force to the normal reaction through the coefficient mu.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two laws of friction.",
+        "options": [],
+        "correctAnswer": "Friction is proportional to the normal reaction (F = mu x R), and friction is independent of the area of contact.",
+        "explanation": "These are two of the basic experimental laws of friction taught at O-Level.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two advantages of friction.",
+        "options": [],
+        "correctAnswer": "It enables us to walk without slipping and allows vehicles to brake and move (grip the road).",
+        "explanation": "Friction provides grip for walking, gripping objects, braking and starting motion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Give two disadvantages of friction.",
+        "options": [],
+        "correctAnswer": "It causes wear and tear of moving parts and wastes useful energy as heat.",
+        "explanation": "Friction reduces efficiency by wearing parts and converting energy to heat.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State three methods of reducing friction.",
+        "options": [],
+        "correctAnswer": "Lubrication (oil/grease), using ball or roller bearings, streamlining, and polishing surfaces.",
+        "explanation": "These methods either separate the surfaces, replace sliding with rolling, or smooth the surfaces.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State two methods of increasing friction.",
+        "options": [],
+        "correctAnswer": "Making surfaces rough by adding treads/grooves, and using brake pads or non-slip materials.",
+        "explanation": "Increasing roughness or using high-friction materials raises the friction force where grip is needed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the normal reaction, and in which direction does it act?",
+        "options": [],
+        "correctAnswer": "The normal reaction is the supporting force from a surface acting perpendicular (at right angles) to that surface.",
+        "explanation": "The normal reaction R always acts perpendicular to the surface in contact and supports the object.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A wooden crate of mass 20 kg rests on a horizontal floor. A horizontal force just makes it begin to slide when it reaches 60 N. Taking g = 10 m/s^2, what is the coefficient of friction between the crate and the floor?",
+        "options": [
+          {"id": "a", "text": "0.3", "isCorrect": true},
+          {"id": "b", "text": "3.0", "isCorrect": false},
+          {"id": "c", "text": "0.03", "isCorrect": false},
+          {"id": "d", "text": "1200", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Weight = mg = 20 x 10 = 200 N, so on a horizontal floor R = 200 N. mu = F/R = 60/200 = 0.3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A box of mass 15 kg rests on a horizontal table. The coefficient of friction between the box and the table is 0.4. Taking g = 10 m/s^2, what is the minimum horizontal force needed to just start the box moving?",
+        "options": [
+          {"id": "a", "text": "6 N", "isCorrect": false},
+          {"id": "b", "text": "60 N", "isCorrect": true},
+          {"id": "c", "text": "150 N", "isCorrect": false},
+          {"id": "d", "text": "375 N", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "R = mg = 15 x 10 = 150 N. Limiting friction F = mu x R = 0.4 x 150 = 60 N, so a force of 60 N is needed to start it moving.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A block of mass 5 kg is placed on a rough horizontal surface. A horizontal pull of 25 N keeps it moving at a steady (constant) speed. Taking g = 10 m/s^2, what is the coefficient of kinetic friction?",
+        "options": [
+          {"id": "a", "text": "0.05", "isCorrect": false},
+          {"id": "b", "text": "0.2", "isCorrect": false},
+          {"id": "c", "text": "0.5", "isCorrect": true},
+          {"id": "d", "text": "5.0", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "At steady speed the pull equals the kinetic friction, so F = 25 N. R = mg = 5 x 10 = 50 N. mu = F/R = 25/50 = 0.5.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
