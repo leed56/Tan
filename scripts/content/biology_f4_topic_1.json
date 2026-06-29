@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_biology_topic_1",
+  "topicName": "Genetics (Heredity and Variation)",
+  "order": 1,
+  "description": "This topic introduces the principles of genetics, covering heredity, variation, chromosomes, genes, DNA, Mendelian inheritance, monohybrid crosses, sex determination, mutations and the importance of genetics.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the branch of biology that studies heredity and variation in living organisms?",
+        "options": [
+          {"id": "a", "text": "Ecology", "isCorrect": false},
+          {"id": "b", "text": "Genetics", "isCorrect": true},
+          {"id": "c", "text": "Taxonomy", "isCorrect": false},
+          {"id": "d", "text": "Physiology", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Genetics is the branch of biology that deals with heredity (the passing of traits from parents to offspring) and variation among organisms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The transmission of characteristics from parents to their offspring is called:",
+        "options": [
+          {"id": "a", "text": "Variation", "isCorrect": false},
+          {"id": "b", "text": "Mutation", "isCorrect": false},
+          {"id": "c", "text": "Heredity", "isCorrect": true},
+          {"id": "d", "text": "Adaptation", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Heredity is the passing of genetic characteristics from one generation to the next through genes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which structures in the cell nucleus carry the genes responsible for inheritance?",
+        "options": [
+          {"id": "a", "text": "Ribosomes", "isCorrect": false},
+          {"id": "b", "text": "Chromosomes", "isCorrect": true},
+          {"id": "c", "text": "Mitochondria", "isCorrect": false},
+          {"id": "d", "text": "Vacuoles", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Chromosomes are thread-like structures found in the nucleus that carry genes, which are made of DNA.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the chemical substance that genes are made of?",
+        "options": [
+          {"id": "a", "text": "Protein", "isCorrect": false},
+          {"id": "b", "text": "Lipid", "isCorrect": false},
+          {"id": "c", "text": "DNA (deoxyribonucleic acid)", "isCorrect": true},
+          {"id": "d", "text": "Carbohydrate", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Genes are made of DNA (deoxyribonucleic acid), which carries the coded instructions for inherited characteristics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Different forms of the same gene that control the same characteristic are called:",
+        "options": [
+          {"id": "a", "text": "Alleles", "isCorrect": true},
+          {"id": "b", "text": "Chromatids", "isCorrect": false},
+          {"id": "c", "text": "Nucleotides", "isCorrect": false},
+          {"id": "d", "text": "Gametes", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Alleles are alternative forms of the same gene that occupy the same position (locus) on a chromosome and control the same trait.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An allele whose effect is masked when a dominant allele is present is described as:",
+        "options": [
+          {"id": "a", "text": "Dominant", "isCorrect": false},
+          {"id": "b", "text": "Recessive", "isCorrect": true},
+          {"id": "c", "text": "Codominant", "isCorrect": false},
+          {"id": "d", "text": "Mutant", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A recessive allele only expresses its effect when present in the homozygous state; otherwise it is masked by a dominant allele.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The genetic make-up of an organism for a particular trait is called its:",
+        "options": [
+          {"id": "a", "text": "Phenotype", "isCorrect": false},
+          {"id": "b", "text": "Genotype", "isCorrect": true},
+          {"id": "c", "text": "Karyotype", "isCorrect": false},
+          {"id": "d", "text": "Ecotype", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The genotype is the genetic constitution of an organism (the alleles it carries), while the phenotype is its observable appearance.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An organism that has two identical alleles for a trait, such as TT or tt, is said to be:",
+        "options": [
+          {"id": "a", "text": "Heterozygous", "isCorrect": false},
+          {"id": "b", "text": "Hemizygous", "isCorrect": false},
+          {"id": "c", "text": "Homozygous", "isCorrect": true},
+          {"id": "d", "text": "Polyploid", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Homozygous means having two identical alleles (TT or tt) for a particular gene; heterozygous (Tt) means having two different alleles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Who is regarded as the father of modern genetics for his experiments on pea plants?",
+        "options": [
+          {"id": "a", "text": "Charles Darwin", "isCorrect": false},
+          {"id": "b", "text": "Gregor Mendel", "isCorrect": true},
+          {"id": "c", "text": "Louis Pasteur", "isCorrect": false},
+          {"id": "d", "text": "Robert Hooke", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gregor Mendel, an Austrian monk, carried out breeding experiments on garden pea plants and established the basic laws of inheritance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mendel's law of segregation states that during gamete formation, the two alleles of a gene:",
+        "options": [
+          {"id": "a", "text": "Stay together in the same gamete", "isCorrect": false},
+          {"id": "b", "text": "Separate so that each gamete carries only one allele", "isCorrect": true},
+          {"id": "c", "text": "Combine to form a new allele", "isCorrect": false},
+          {"id": "d", "text": "Are both lost during cell division", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The law of segregation states that the two alleles of a gene separate during meiosis so that each gamete receives only one allele.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A cross involving the inheritance of a single pair of contrasting characters is called a:",
+        "options": [
+          {"id": "a", "text": "Dihybrid cross", "isCorrect": false},
+          {"id": "b", "text": "Test cross", "isCorrect": false},
+          {"id": "c", "text": "Monohybrid cross", "isCorrect": true},
+          {"id": "d", "text": "Back cross", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A monohybrid cross studies the inheritance of one pair of contrasting characteristics controlled by a single gene.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In pea plants, tall (T) is dominant over short (t). When two heterozygous tall plants (Tt x Tt) are crossed, what is the expected phenotypic ratio of tall to short in the offspring?",
+        "options": [
+          {"id": "a", "text": "1:1", "isCorrect": false},
+          {"id": "b", "text": "3:1", "isCorrect": true},
+          {"id": "c", "text": "2:1", "isCorrect": false},
+          {"id": "d", "text": "9:3:3:1", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Tt x Tt gives genotypes 1 TT : 2 Tt : 1 tt. Since T is dominant, 3 are tall (TT, Tt, Tt) and 1 is short (tt), a 3:1 ratio.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A cross between an organism showing a dominant trait and a homozygous recessive organism, used to find an unknown genotype, is called a:",
+        "options": [
+          {"id": "a", "text": "Test cross", "isCorrect": true},
+          {"id": "b", "text": "Reciprocal cross", "isCorrect": false},
+          {"id": "c", "text": "Self-pollination", "isCorrect": false},
+          {"id": "d", "text": "Dihybrid cross", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A test cross mates an individual of unknown genotype with a homozygous recessive individual to determine whether it is homozygous or heterozygous.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the sex chromosome combination of a normal human female?",
+        "options": [
+          {"id": "a", "text": "XY", "isCorrect": false},
+          {"id": "b", "text": "XX", "isCorrect": true},
+          {"id": "c", "text": "YY", "isCorrect": false},
+          {"id": "d", "text": "XO", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Human females have two X chromosomes (XX), while males have one X and one Y chromosome (XY).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Variation in which characteristics show a continuous range of values, such as human height and body mass, is called:",
+        "options": [
+          {"id": "a", "text": "Discontinuous variation", "isCorrect": false},
+          {"id": "b", "text": "Continuous variation", "isCorrect": true},
+          {"id": "c", "text": "Genetic mutation", "isCorrect": false},
+          {"id": "d", "text": "Phenotypic dominance", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Continuous variation shows a smooth range of values between two extremes (e.g. height, mass) and is usually controlled by many genes plus the environment.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The passing of characteristics from parents to offspring is called _____.",
+        "options": [],
+        "correctAnswer": "heredity",
+        "explanation": "Heredity is the transmission of genetic traits from one generation to the next.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A _____ is a unit of inheritance made of DNA that controls a particular characteristic.",
+        "options": [],
+        "correctAnswer": "gene",
+        "explanation": "A gene is a segment of DNA that carries the code for a specific trait and is the basic unit of heredity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Different forms of the same gene are known as _____.",
+        "options": [],
+        "correctAnswer": "alleles",
+        "explanation": "Alleles are alternative versions of a gene that occupy the same locus on homologous chromosomes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The observable physical characteristics of an organism make up its _____.",
+        "options": [],
+        "correctAnswer": "phenotype",
+        "explanation": "The phenotype is the visible expression of the genotype interacting with the environment.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An organism with two different alleles for a trait, such as Tt, is described as _____.",
+        "options": [],
+        "correctAnswer": "heterozygous",
+        "explanation": "Heterozygous means carrying two different alleles for the same gene.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The scientist who carried out breeding experiments on pea plants and discovered the laws of inheritance was Gregor _____.",
+        "options": [],
+        "correctAnswer": "Mendel",
+        "explanation": "Gregor Mendel is known as the father of genetics for his work on garden pea plants.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A diagram used to predict the possible genotypes of offspring from a genetic cross is called a _____ square.",
+        "options": [],
+        "correctAnswer": "Punnett",
+        "explanation": "The Punnett square is a grid used to show all possible combinations of alleles from the parents' gametes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In humans, the sex chromosomes of a male are represented as _____.",
+        "options": [],
+        "correctAnswer": "XY",
+        "explanation": "Males have one X and one Y chromosome (XY), while females have two X chromosomes (XX).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A sudden change in the genetic material of an organism is called a _____.",
+        "options": [],
+        "correctAnswer": "mutation",
+        "explanation": "A mutation is a change in the structure or amount of DNA, which may cause new variations or genetic disorders.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The genetic disorder in which a child is born with three copies of chromosome number 21 is called _____ syndrome.",
+        "options": [],
+        "correctAnswer": "Down",
+        "explanation": "Down syndrome is a chromosomal mutation caused by an extra copy of chromosome 21 (trisomy 21).",
+        "difficulty": "hard"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Genetics is the study of heredity and variation in living organisms.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Genetics deals with how traits are inherited and why organisms differ from one another.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Genes are made of protein molecules.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Genes are made of DNA (deoxyribonucleic acid), not protein.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A recessive allele is only expressed when present in the homozygous condition.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A recessive allele shows its effect only when both alleles are recessive (e.g. tt), because a dominant allele would mask it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The genotype TT and the genotype Tt always produce different phenotypes when T is completely dominant.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "When T is completely dominant, both TT and Tt produce the same dominant phenotype; only tt shows the recessive phenotype.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Mendel's law of segregation states that paired alleles separate during the formation of gametes.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The law of segregation states that the two alleles of a gene separate so each gamete carries only one allele.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A cross between two heterozygous individuals (Aa x Aa) gives an expected phenotypic ratio of 1:1.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Aa x Aa gives a 3:1 phenotypic ratio (3 dominant : 1 recessive). A 1:1 ratio comes from a cross such as Aa x aa.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In humans, the sex of a child is determined by the chromosome carried by the sperm from the father.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The mother always provides an X; the father provides either an X (giving a girl) or a Y (giving a boy), so the father determines sex.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Colour blindness is an example of a sex-linked characteristic.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Red-green colour blindness is controlled by a recessive allele carried on the X chromosome, making it a sex-linked trait.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Continuous variation, such as human height, is usually controlled by a single pair of alleles only.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Continuous variation is controlled by many genes (polygenic) together with environmental influence, not a single pair of alleles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Sickle-cell anaemia is caused by a gene mutation affecting the haemoglobin of red blood cells.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Sickle-cell anaemia results from a gene mutation that produces abnormal haemoglobin, causing red blood cells to become sickle-shaped.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Distinguish between heredity and variation.",
+        "options": [],
+        "correctAnswer": "Heredity is the transmission of characteristics from parents to offspring through genes, while variation refers to the differences that exist among individuals of the same species.",
+        "explanation": "Heredity explains similarities between generations, whereas variation explains the differences observed even between closely related organisms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between genotype and phenotype.",
+        "options": [],
+        "correctAnswer": "The genotype is the genetic make-up of an organism (the alleles it carries), while the phenotype is the observable physical characteristics resulting from the genotype and the environment.",
+        "explanation": "For example, the genotype Tt and TT can both give the tall phenotype when T is dominant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Differentiate between homozygous and heterozygous organisms.",
+        "options": [],
+        "correctAnswer": "A homozygous organism has two identical alleles for a trait (for example TT or tt), while a heterozygous organism has two different alleles (for example Tt).",
+        "explanation": "Homozygous individuals breed true for the trait, while heterozygous individuals carry both a dominant and a recessive allele.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State Mendel's law of segregation.",
+        "options": [],
+        "correctAnswer": "The law of segregation states that the two alleles controlling a characteristic separate during gamete formation, so that each gamete carries only one allele of the pair.",
+        "explanation": "When fertilisation occurs, the offspring again receives one allele from each parent, restoring the paired condition.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how the sex of a human child is determined.",
+        "options": [],
+        "correctAnswer": "Females have the sex chromosomes XX and males have XY. The egg always carries an X chromosome, while sperm may carry either X or Y. If an X-bearing sperm fertilises the egg, a girl (XX) is produced; if a Y-bearing sperm fertilises the egg, a boy (XY) is produced.",
+        "explanation": "Because the father can pass on either X or Y, it is the father's sperm that determines the sex of the child.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain what a test cross is and why it is used.",
+        "options": [],
+        "correctAnswer": "A test cross is a cross between an organism showing a dominant trait but of unknown genotype and a homozygous recessive organism. It is used to find out whether the dominant individual is homozygous or heterozygous.",
+        "explanation": "If any recessive offspring appear, the parent must be heterozygous; if all offspring show the dominant trait, the parent is likely homozygous dominant.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Differentiate between continuous and discontinuous variation, giving one example of each.",
+        "options": [],
+        "correctAnswer": "Continuous variation shows a range of values between two extremes and is controlled by many genes, for example human height. Discontinuous variation falls into distinct separate groups with no intermediates, for example ABO blood groups.",
+        "explanation": "Continuous variation is strongly influenced by the environment, while discontinuous variation is mainly controlled by genes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State three causes of variation among organisms.",
+        "options": [],
+        "correctAnswer": "Variation may be caused by mutation, sexual reproduction (random fusion of gametes and crossing over during meiosis), and environmental factors such as diet and climate.",
+        "explanation": "Genetic causes produce inheritable variation, while environmental causes usually produce non-inheritable variation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain what a mutation is and distinguish between gene and chromosomal mutations.",
+        "options": [],
+        "correctAnswer": "A mutation is a sudden change in the genetic material of an organism. A gene mutation involves a change in a single gene or its bases (for example sickle-cell anaemia and albinism), while a chromosomal mutation involves a change in the number or structure of whole chromosomes (for example Down syndrome).",
+        "explanation": "Mutations are a source of new variation and may be harmful, neutral or rarely beneficial.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "State four importances of the study of genetics.",
+        "options": [],
+        "correctAnswer": "Genetics helps in selective breeding of improved crops and livestock, in understanding and treating inherited diseases, in genetic counselling, and in forensic science such as DNA fingerprinting for identification.",
+        "explanation": "Knowledge of genetics is applied in agriculture, medicine, biotechnology and law to improve human welfare.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "In cattle, the allele for black coat (B) is dominant over the allele for red coat (b). A heterozygous black bull (Bb) is crossed with a red cow (bb). Using a Punnett square, what is the expected phenotypic ratio of black to red calves?",
+        "options": [
+          {"id": "a", "text": "3:1 black to red", "isCorrect": false},
+          {"id": "b", "text": "1:1 black to red", "isCorrect": true},
+          {"id": "c", "text": "All black", "isCorrect": false},
+          {"id": "d", "text": "1:3 black to red", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Bb x bb gives gametes B and b from the bull and only b from the cow, producing 1 Bb (black) : 1 bb (red), a 1:1 ratio.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A man with normal colour vision marries a woman who is a carrier of the recessive colour-blindness allele (X^c). The allele is carried on the X chromosome. From their sons (XY), what proportion is expected to be colour blind?",
+        "options": [
+          {"id": "a", "text": "None of the sons", "isCorrect": false},
+          {"id": "b", "text": "All of the sons", "isCorrect": false},
+          {"id": "c", "text": "Half of the sons", "isCorrect": true},
+          {"id": "d", "text": "One quarter of the sons", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The carrier mother (X^N X^c) passes either X^N or X^c to sons, who receive Y from the father. So half the sons are X^c Y (colour blind) and half are X^N Y (normal).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two pea plants were crossed and the offspring showed a phenotypic ratio of approximately 3 tall : 1 short, where tall (T) is dominant over short (t). What were the genotypes of the two parent plants?",
+        "options": [
+          {"id": "a", "text": "TT x tt", "isCorrect": false},
+          {"id": "b", "text": "Tt x tt", "isCorrect": false},
+          {"id": "c", "text": "Tt x Tt", "isCorrect": true},
+          {"id": "d", "text": "TT x TT", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A 3:1 phenotypic ratio is produced only when two heterozygous plants (Tt x Tt) are crossed, giving 1 TT : 2 Tt : 1 tt, that is 3 tall : 1 short.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
