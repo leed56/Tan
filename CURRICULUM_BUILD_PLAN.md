@@ -91,7 +91,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 - [x] 46. History — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs history_f4` once credentials are available)
 - [x] 47. Civics — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs civics_f4` once credentials are available)
 - [x] 48. Commerce — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs commerce_f4` once credentials are available)
-- [ ] 49–51. Agriculture, Computer Studies, Islamic Knowledge — Form 4
+- [x] 49. Agriculture — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs agriculture_f4` once credentials are available)
+- [ ] 50–51. Computer Studies, Islamic Knowledge — Form 4
 
 ## Content integrity
 - Questions are **authored original**, aligned to the public syllabus topic
