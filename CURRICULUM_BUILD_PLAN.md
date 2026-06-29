@@ -77,7 +77,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 - [x] 35. Commerce — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs commerce_f3` once credentials are available)
 - [x] 36. Agriculture — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs agriculture_f3` once credentials are available)
 - [x] 37. Computer Studies — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs computer_studies_f3` once credentials are available)
-- [ ] 38. Islamic Knowledge — Form 3
+- [x] 38. Islamic Knowledge — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs islamic_knowledge_f3` once credentials are available)
+- ✅ **FORM 3 COMPLETE — all 13 subjects authored** (104 topic files, ~4,992 items; content authored, seed to tanza-9b182 with `seed-content.mjs _f3` once credentials are available)
 
 ### Form 4
 - [ ] 39–51. All 13 subjects — Form 4
