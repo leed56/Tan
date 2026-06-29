@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_mathematics_topic_6",
+  "topicName": "Vectors",
+  "order": 6,
+  "description": "This topic introduces vectors in two dimensions, covering their representation, magnitude, addition, subtraction, scalar multiplication, position vectors, midpoints, parallel vectors and simple geometric proofs.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following is a vector quantity?",
+        "options": [
+          {"id": "a", "text": "Mass", "isCorrect": false},
+          {"id": "b", "text": "Temperature", "isCorrect": false},
+          {"id": "c", "text": "Displacement", "isCorrect": true},
+          {"id": "d", "text": "Speed", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A vector has both magnitude and direction. Displacement has both, while mass, temperature and speed are scalars (magnitude only).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A quantity that has magnitude only and no direction is called a:",
+        "options": [
+          {"id": "a", "text": "Scalar", "isCorrect": true},
+          {"id": "b", "text": "Vector", "isCorrect": false},
+          {"id": "c", "text": "Tensor", "isCorrect": false},
+          {"id": "d", "text": "Matrix", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A scalar is a quantity that is fully described by its magnitude only, such as mass or temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Given the vector a = (3, 4), what is its magnitude |a|?",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "7", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "25", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "|a| = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a = (2, 5) and b = (4, 1), what is a + b?",
+        "options": [
+          {"id": "a", "text": "(6, 6)", "isCorrect": true},
+          {"id": "b", "text": "(2, 4)", "isCorrect": false},
+          {"id": "c", "text": "(8, 5)", "isCorrect": false},
+          {"id": "d", "text": "(6, 4)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Add corresponding components: (2+4, 5+1) = (6, 6).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a = (7, 3) and b = (2, 8), what is a - b?",
+        "options": [
+          {"id": "a", "text": "(5, -5)", "isCorrect": true},
+          {"id": "b", "text": "(9, 11)", "isCorrect": false},
+          {"id": "c", "text": "(-5, 5)", "isCorrect": false},
+          {"id": "d", "text": "(5, 5)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Subtract corresponding components: (7-2, 3-8) = (5, -5).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If v = (3, -2), what is the vector 4v?",
+        "options": [
+          {"id": "a", "text": "(12, -8)", "isCorrect": true},
+          {"id": "b", "text": "(7, 2)", "isCorrect": false},
+          {"id": "c", "text": "(12, 8)", "isCorrect": false},
+          {"id": "d", "text": "(7, -8)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply each component by the scalar 4: (4x3, 4x-2) = (12, -8).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The position vector of point P is OP = (6, 8). What is the distance of P from the origin O?",
+        "options": [
+          {"id": "a", "text": "10", "isCorrect": true},
+          {"id": "b", "text": "14", "isCorrect": false},
+          {"id": "c", "text": "48", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "|OP| = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Points A and B have position vectors a = (1, 2) and b = (5, 6). What is the vector AB?",
+        "options": [
+          {"id": "a", "text": "(4, 4)", "isCorrect": true},
+          {"id": "b", "text": "(6, 8)", "isCorrect": false},
+          {"id": "c", "text": "(-4, -4)", "isCorrect": false},
+          {"id": "d", "text": "(4, 8)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "AB = b - a = (5-1, 6-2) = (4, 4).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The midpoint M of the line segment joining A(2, 4) and B(8, 10) has position vector:",
+        "options": [
+          {"id": "a", "text": "(5, 7)", "isCorrect": true},
+          {"id": "b", "text": "(10, 14)", "isCorrect": false},
+          {"id": "c", "text": "(6, 6)", "isCorrect": false},
+          {"id": "d", "text": "(3, 3)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Midpoint = ((2+8)/2, (4+10)/2) = (5, 7).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which vector is parallel to a = (2, 3)?",
+        "options": [
+          {"id": "a", "text": "(4, 6)", "isCorrect": true},
+          {"id": "b", "text": "(3, 2)", "isCorrect": false},
+          {"id": "c", "text": "(2, -3)", "isCorrect": false},
+          {"id": "d", "text": "(6, 8)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Parallel vectors are scalar multiples. (4, 6) = 2(2, 3), so it is parallel to a.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If a = (1, 2) and b = (3, 1), what is 2a + b?",
+        "options": [
+          {"id": "a", "text": "(5, 5)", "isCorrect": true},
+          {"id": "b", "text": "(4, 3)", "isCorrect": false},
+          {"id": "c", "text": "(5, 4)", "isCorrect": false},
+          {"id": "d", "text": "(8, 6)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "2a = (2, 4); 2a + b = (2+3, 4+1) = (5, 5).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the magnitude of the vector v = (-5, 12)?",
+        "options": [
+          {"id": "a", "text": "13", "isCorrect": true},
+          {"id": "b", "text": "7", "isCorrect": false},
+          {"id": "c", "text": "17", "isCorrect": false},
+          {"id": "d", "text": "169", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "|v| = sqrt((-5)^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The vector -a, where a = (3, -7), is equal to:",
+        "options": [
+          {"id": "a", "text": "(-3, 7)", "isCorrect": true},
+          {"id": "b", "text": "(3, 7)", "isCorrect": false},
+          {"id": "c", "text": "(-3, -7)", "isCorrect": false},
+          {"id": "d", "text": "(7, -3)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Negating a vector reverses the sign of each component: -(3, -7) = (-3, 7).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Given a = (4, 0) and b = (0, 3), what is the magnitude of a + b?",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "7", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "a + b = (4, 3); |a + b| = sqrt(4^2 + 3^2) = sqrt(25) = 5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A unit vector is a vector whose magnitude is:",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "Equal to its direction", "isCorrect": false},
+          {"id": "d", "text": "Greater than 1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A unit vector has a magnitude (length) of exactly 1 unit.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A quantity having both magnitude and direction is called a _____.",
+        "options": [],
+        "correctAnswer": "vector",
+        "explanation": "Vectors possess both magnitude and direction, unlike scalars which have magnitude only.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnitude of the vector (8, 6) is _____.",
+        "options": [],
+        "correctAnswer": "10",
+        "explanation": "sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a = (3, 7) and b = (5, 2), then a + b = _____.",
+        "options": [],
+        "correctAnswer": "(8, 9)",
+        "explanation": "Add components: (3+5, 7+2) = (8, 9).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a = (9, 4) and b = (2, 6), then a - b = _____.",
+        "options": [],
+        "correctAnswer": "(7, -2)",
+        "explanation": "Subtract components: (9-2, 4-6) = (7, -2).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The result of multiplying the vector (2, -5) by the scalar 3 is _____.",
+        "options": [],
+        "correctAnswer": "(6, -15)",
+        "explanation": "Multiply each component by 3: (3x2, 3x-5) = (6, -15).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The position vector of the midpoint of A(2, 6) and B(10, 2) is _____.",
+        "options": [],
+        "correctAnswer": "(6, 4)",
+        "explanation": "Midpoint = ((2+10)/2, (6+2)/2) = (6, 4).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the position vectors of A and B are a = (1, 1) and b = (4, 5), then the vector AB = _____.",
+        "options": [],
+        "correctAnswer": "(3, 4)",
+        "explanation": "AB = b - a = (4-1, 5-1) = (3, 4).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two vectors are said to be _____ if one is a scalar multiple of the other.",
+        "options": [],
+        "correctAnswer": "parallel",
+        "explanation": "Parallel vectors have the same or opposite direction, so one is a scalar multiple of the other.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The magnitude of the vector AB, where A = (1, 2) and B = (4, 6), is _____.",
+        "options": [],
+        "correctAnswer": "5",
+        "explanation": "AB = (3, 4); |AB| = sqrt(3^2 + 4^2) = sqrt(25) = 5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A vector with magnitude zero and no specific direction is called the _____ vector.",
+        "options": [],
+        "correctAnswer": "zero",
+        "explanation": "The zero (null) vector has magnitude 0 and no defined direction, written as (0, 0).",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Speed is a vector quantity.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Speed is a scalar (magnitude only). Velocity, which includes direction, is the vector quantity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnitude of the vector (3, 4) is 5.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "sqrt(3^2 + 4^2) = sqrt(25) = 5, so the statement is true.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Adding vectors (1, 2) and (3, 4) gives (4, 6).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "(1+3, 2+4) = (4, 6), so the statement is correct.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The vector (2, 4) is parallel to the vector (1, 2).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "(2, 4) = 2(1, 2), so they are scalar multiples and therefore parallel.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For any vector a, the vectors a and -a have the same magnitude.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Negating a vector only reverses its direction; the magnitude stays the same.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The vector AB is equal to the vector BA.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "AB and BA have the same magnitude but opposite directions; in fact BA = -AB.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Multiplying the vector (2, 3) by the scalar 0 gives the zero vector.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "0 x (2, 3) = (0, 0), which is the zero vector.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If A = (0, 0) and B = (6, 8), the midpoint of AB is (3, 4).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Midpoint = ((0+6)/2, (0+8)/2) = (3, 4), so the statement is true.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The vectors (1, 2) and (2, 1) are parallel.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "There is no single scalar k with (2, 1) = k(1, 2) because k would have to be both 2 and 0.5. They are not parallel.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A position vector describes the position of a point relative to a fixed origin.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A position vector OP gives the location of point P measured from the origin O.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Explain the difference between a scalar and a vector.",
+        "options": [],
+        "correctAnswer": "A scalar has magnitude only, while a vector has both magnitude and direction.",
+        "explanation": "Examples of scalars are mass and temperature; examples of vectors are displacement and velocity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State how a vector can be represented in component (column) form.",
+        "options": [],
+        "correctAnswer": "A vector is written using its horizontal and vertical components, for example (x, y), giving movement x along the x-axis and y along the y-axis.",
+        "explanation": "Component form makes calculations such as addition, subtraction and finding magnitude straightforward.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Describe how to find the magnitude of a vector (x, y).",
+        "options": [],
+        "correctAnswer": "The magnitude is sqrt(x^2 + y^2), found by applying Pythagoras' theorem to the components.",
+        "explanation": "The magnitude represents the length of the directed line segment that the vector describes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how to add two vectors given in component form.",
+        "options": [],
+        "correctAnswer": "Add the corresponding components: (a, b) + (c, d) = (a+c, b+d).",
+        "explanation": "Vector addition combines two displacements; geometrically it follows the triangle or parallelogram rule.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain what happens to a vector when it is multiplied by a scalar.",
+        "options": [],
+        "correctAnswer": "Each component is multiplied by the scalar, changing the magnitude; a negative scalar also reverses the direction.",
+        "explanation": "For example, 2(3, 4) = (6, 8) doubles the length while keeping the same direction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define a position vector.",
+        "options": [],
+        "correctAnswer": "A position vector is a vector that gives the position of a point relative to a fixed origin O, written as OP.",
+        "explanation": "If P has coordinates (x, y), then its position vector is OP = (x, y).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain how to find the vector AB from the position vectors of A and B.",
+        "options": [],
+        "correctAnswer": "Subtract the position vector of A from that of B: AB = b - a.",
+        "explanation": "This gives the displacement from point A to point B.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how to find the midpoint of a line segment AB using vectors.",
+        "options": [],
+        "correctAnswer": "The position vector of the midpoint is the average of the position vectors: M = (a + b)/2.",
+        "explanation": "In coordinates this is ((x1+x2)/2, (y1+y2)/2).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the condition for two vectors to be parallel.",
+        "options": [],
+        "correctAnswer": "Two vectors are parallel if one is a scalar multiple of the other, that is a = k b for some scalar k.",
+        "explanation": "Parallel vectors point in the same or exactly opposite directions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how vectors can be used to prove that two line segments are parallel.",
+        "options": [],
+        "correctAnswer": "Express both segments as vectors and show that one is a scalar multiple of the other; if so, the segments are parallel.",
+        "explanation": "This is a common method for proving geometric results, such as showing a midpoint line is parallel to a side of a triangle.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "Points A, B and C have position vectors a = (1, 2), b = (5, 4) and c = (3, 8). M is the midpoint of AB and N is the midpoint of AC. What is the vector MN?",
+        "options": [
+          {"id": "a", "text": "(-1, 2)", "isCorrect": true},
+          {"id": "b", "text": "(1, 2)", "isCorrect": false},
+          {"id": "c", "text": "(2, 4)", "isCorrect": false},
+          {"id": "d", "text": "(-1, -2)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "M = (a+b)/2 = ((1+5)/2, (2+4)/2) = (3, 3). N = (a+c)/2 = ((1+3)/2, (2+8)/2) = (2, 5). MN = N - M = (2-3, 5-3) = (-1, 2).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Given a = (1, 2) and b = (2, 1), find the value of the scalar t such that the vector a + t b is parallel to the vector (1, 1).",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "a + t b = (1 + 2t, 2 + t). To be parallel to (1, 1) the two components must be equal: 1 + 2t = 2 + t, so t = 1. Check: a + 1b = (3, 3) = 3(1, 1), which is indeed parallel to (1, 1).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "OACB is a parallelogram with O at the origin. The position vectors are OA = a = (4, 1) and OB = b = (2, 5). What is the position vector of C?",
+        "options": [
+          {"id": "a", "text": "(6, 6)", "isCorrect": true},
+          {"id": "b", "text": "(2, 4)", "isCorrect": false},
+          {"id": "c", "text": "(8, 5)", "isCorrect": false},
+          {"id": "d", "text": "(3, 3)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In parallelogram OACB, OC is the diagonal equal to OA + OB = a + b = (4+2, 1+5) = (6, 6).",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
