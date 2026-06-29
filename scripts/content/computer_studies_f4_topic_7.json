@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_computer_studies_topic_7",
+  "topicName": "Software Development Project",
+  "order": 7,
+  "description": "This topic guides learners through applying the system and software development life cycle to plan, design, build, test, document and evaluate a practical computer studies project.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the FIRST stage when carrying out a software development project?",
+        "options": [
+          { "id": "a", "text": "Coding the program", "isCorrect": false },
+          { "id": "b", "text": "Identifying and defining the problem", "isCorrect": true },
+          { "id": "c", "text": "Testing the system", "isCorrect": false },
+          { "id": "d", "text": "Writing user documentation", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Every project begins by identifying and clearly defining the problem to be solved before any design or coding is done.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which document states clearly what a project will and will not cover?",
+        "options": [
+          { "id": "a", "text": "The project scope", "isCorrect": true },
+          { "id": "b", "text": "The test plan", "isCorrect": false },
+          { "id": "c", "text": "The user manual", "isCorrect": false },
+          { "id": "d", "text": "The source code", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The scope defines the boundaries of a project, stating what is included and what is excluded to keep the work manageable.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A study done to check whether a proposed system is worth building in terms of cost, time and technology is called a:",
+        "options": [
+          { "id": "a", "text": "Maintenance review", "isCorrect": false },
+          { "id": "b", "text": "Feasibility study", "isCorrect": true },
+          { "id": "c", "text": "System changeover", "isCorrect": false },
+          { "id": "d", "text": "Unit test", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A feasibility study assesses whether a project is practical and worthwhile in terms of cost, time, technology and operations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which fact-finding method involves asking respondents to fill in a printed set of written questions?",
+        "options": [
+          { "id": "a", "text": "Interview", "isCorrect": false },
+          { "id": "b", "text": "Observation", "isCorrect": false },
+          { "id": "c", "text": "Questionnaire", "isCorrect": true },
+          { "id": "d", "text": "Document analysis", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A questionnaire is a set of written questions distributed to respondents who fill in their answers, useful for collecting data from many people.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which fact-finding method allows the analyst to watch how a task is actually performed at the workplace?",
+        "options": [
+          { "id": "a", "text": "Observation", "isCorrect": true },
+          { "id": "b", "text": "Questionnaire", "isCorrect": false },
+          { "id": "c", "text": "Brainstorming", "isCorrect": false },
+          { "id": "d", "text": "Prototyping", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Observation means watching users carry out their tasks, which reveals what really happens rather than what people say happens.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "During system design, deciding how data will be captured on screen forms is part of designing the:",
+        "options": [
+          { "id": "a", "text": "Output", "isCorrect": false },
+          { "id": "b", "text": "Input", "isCorrect": true },
+          { "id": "c", "text": "Maintenance plan", "isCorrect": false },
+          { "id": "d", "text": "Feasibility report", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Input design specifies how data enters the system, including the layout of data-entry screens and forms.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of test data is deliberately wrong or outside the accepted format to check whether the system rejects it?",
+        "options": [
+          { "id": "a", "text": "Normal data", "isCorrect": false },
+          { "id": "b", "text": "Boundary data", "isCorrect": false },
+          { "id": "c", "text": "Abnormal (invalid) data", "isCorrect": true },
+          { "id": "d", "text": "Live data", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Abnormal or invalid data is incorrect data used to confirm the program detects and rejects errors instead of accepting them.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If a field accepts marks from 0 to 100, testing with the values 0 and 100 is an example of using:",
+        "options": [
+          { "id": "a", "text": "Boundary (extreme) data", "isCorrect": true },
+          { "id": "b", "text": "Abnormal data", "isCorrect": false },
+          { "id": "c", "text": "Random data", "isCorrect": false },
+          { "id": "d", "text": "Default data", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Boundary or extreme data lies at the edges of the acceptable range, such as 0 and 100, to check the limits are handled correctly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Testing a single module or program on its own before combining it with others is called:",
+        "options": [
+          { "id": "a", "text": "System testing", "isCorrect": false },
+          { "id": "b", "text": "Unit testing", "isCorrect": true },
+          { "id": "c", "text": "User acceptance testing", "isCorrect": false },
+          { "id": "d", "text": "Parallel running", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Unit testing checks each individual module or component separately, while system testing checks the complete integrated system.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which changeover method switches off the old system completely and starts the new one immediately?",
+        "options": [
+          { "id": "a", "text": "Parallel changeover", "isCorrect": false },
+          { "id": "b", "text": "Phased changeover", "isCorrect": false },
+          { "id": "c", "text": "Pilot changeover", "isCorrect": false },
+          { "id": "d", "text": "Direct changeover", "isCorrect": true }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Direct (immediate) changeover stops the old system at once and replaces it with the new system, which is cheap but risky.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Running the old and new systems together at the same time for a period to compare results is called:",
+        "options": [
+          { "id": "a", "text": "Parallel changeover", "isCorrect": true },
+          { "id": "b", "text": "Direct changeover", "isCorrect": false },
+          { "id": "c", "text": "Pilot changeover", "isCorrect": false },
+          { "id": "d", "text": "Phased changeover", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "In parallel changeover both systems operate together so results can be compared, giving safety but at a higher cost.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Introducing a new system in only one branch or department first before spreading it elsewhere is called:",
+        "options": [
+          { "id": "a", "text": "Direct changeover", "isCorrect": false },
+          { "id": "b", "text": "Pilot changeover", "isCorrect": true },
+          { "id": "c", "text": "Parallel changeover", "isCorrect": false },
+          { "id": "d", "text": "Big-bang changeover", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Pilot changeover installs the new system in one part of the organisation first; if successful it is then rolled out to the rest.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A step-by-step guide written to help ordinary end users operate the new system is known as:",
+        "options": [
+          { "id": "a", "text": "Technical documentation", "isCorrect": false },
+          { "id": "b", "text": "User documentation", "isCorrect": true },
+          { "id": "c", "text": "A feasibility report", "isCorrect": false },
+          { "id": "d", "text": "A test log", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "User documentation (the user manual) explains in simple terms how to use the system, while technical documentation targets programmers and maintainers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Correcting errors and improving a system after it has been put into use is part of which stage?",
+        "options": [
+          { "id": "a", "text": "Requirements gathering", "isCorrect": false },
+          { "id": "b", "text": "Design", "isCorrect": false },
+          { "id": "c", "text": "Maintenance", "isCorrect": true },
+          { "id": "d", "text": "Coding", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Maintenance is the ongoing activity of fixing faults and improving the system after implementation to keep it useful.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A chart that shows project tasks against time so that scheduling and progress can be tracked is called a:",
+        "options": [
+          { "id": "a", "text": "Flowchart", "isCorrect": false },
+          { "id": "b", "text": "Pie chart", "isCorrect": false },
+          { "id": "c", "text": "Gantt chart", "isCorrect": true },
+          { "id": "d", "text": "Organisation chart", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A Gantt chart is a bar chart that lists tasks against a timeline, helping teams plan, schedule and monitor a project.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The overall process of planning, building and maintaining a system through defined stages is called the system development _____ cycle.",
+        "options": [],
+        "correctAnswer": "life",
+        "explanation": "The System Development Life Cycle (SDLC) is the framework of stages followed when developing a system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A clear statement of what a project intends to achieve is known as its _____.",
+        "options": [],
+        "correctAnswer": "objectives",
+        "explanation": "Objectives state exactly what the project should accomplish and act as criteria for judging its success.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A face-to-face conversation in which an analyst asks a user spoken questions to gather facts is called an _____.",
+        "options": [],
+        "correctAnswer": "interview",
+        "explanation": "An interview is a direct question-and-answer session that allows detailed information and follow-up questions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Designing how processed results will be presented to users, for example as reports or screens, is called _____ design.",
+        "options": [],
+        "correctAnswer": "output",
+        "explanation": "Output design determines how the results produced by the system are displayed or printed for the user.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The stage in which the actual program statements are written using a programming language is called _____.",
+        "options": [],
+        "correctAnswer": "coding",
+        "explanation": "Coding (programming) is where the design is turned into working program instructions written in a chosen language.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Test data that is correct and within the expected range used to check normal operation is called _____ data.",
+        "options": [],
+        "correctAnswer": "normal",
+        "explanation": "Normal (valid) data is acceptable data within the expected range, used to confirm the system works under typical conditions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Testing the whole finished system to confirm all parts work together is called _____ testing.",
+        "options": [],
+        "correctAnswer": "system",
+        "explanation": "System testing checks the complete integrated system to ensure all modules function correctly together.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Introducing a new system one part or module at a time is known as _____ changeover.",
+        "options": [],
+        "correctAnswer": "phased",
+        "explanation": "In phased changeover the new system is introduced gradually, one stage or section at a time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Documentation written for programmers, showing code, flowcharts and file structures, is called _____ documentation.",
+        "options": [],
+        "correctAnswer": "technical",
+        "explanation": "Technical documentation describes the internal workings of the system to help programmers maintain and modify it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Sharing tasks among members and cooperating to complete a project on time is an example of _____.",
+        "options": [],
+        "correctAnswer": "teamwork",
+        "explanation": "Teamwork involves members cooperating and sharing responsibilities so the project is completed efficiently.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A feasibility study is carried out to decide whether a proposed project is worth doing before resources are committed.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The feasibility study determines if the project is practical and worthwhile before full development begins.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The problem definition stage should be done only after the program has been fully coded.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The problem must be identified and defined at the very start, long before any coding takes place.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Interviews, questionnaires, observation and document study are all valid fact-finding methods.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "These four are the common fact-finding techniques used to gather requirements about an existing situation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Boundary (extreme) test data is used to check how the system behaves at the edges of the acceptable range.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Boundary data tests the limits of the valid range to ensure values at the edges are handled correctly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Direct changeover is the safest method because the old system continues running as a backup.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Direct changeover is the riskiest method because the old system is switched off immediately with no backup; parallel running is the safest.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Unit testing checks individual modules, while system testing checks the complete integrated system.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Unit testing focuses on single components and system testing verifies the whole system working together.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "User documentation is intended mainly for programmers who will modify the source code.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "User documentation is for end users; technical documentation is the one intended for programmers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Maintenance of a system stops completely once the system has been implemented.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Maintenance continues after implementation to correct errors and improve the system over its lifetime.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A Gantt chart can be used to schedule project tasks and monitor progress over time.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A Gantt chart maps tasks against a timeline, making it useful for scheduling and tracking project progress.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Defining the scope of a project helps to prevent the work from growing beyond what was planned.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A clearly defined scope sets boundaries and helps avoid uncontrolled expansion of the project work.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Name any one stage of the system development life cycle.",
+        "options": [],
+        "correctAnswer": "Problem identification (or feasibility study, requirements gathering, design, coding, testing, implementation, maintenance)",
+        "explanation": "The SDLC stages include problem identification, feasibility, requirements gathering, design, coding, testing, implementation and maintenance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State one purpose of a feasibility study in a software project.",
+        "options": [],
+        "correctAnswer": "To determine whether the project is worth doing in terms of cost, time and technology",
+        "explanation": "The feasibility study checks if the project is practical and worthwhile before full commitment of resources.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List the four common fact-finding methods used in requirements gathering.",
+        "options": [],
+        "correctAnswer": "Interviews, questionnaires, observation and document analysis",
+        "explanation": "These four techniques are used to collect information about the existing system and user needs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the five main areas considered during system design.",
+        "options": [],
+        "correctAnswer": "Input, processing, output, files/database and user interface",
+        "explanation": "System design covers how data is entered, processed, output, stored, and how users interact with the system.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Identify the three categories of test data used when testing a program.",
+        "options": [],
+        "correctAnswer": "Normal data, boundary (extreme) data and abnormal (invalid) data",
+        "explanation": "Programs are tested with normal, boundary and abnormal data to confirm correct handling of all cases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the four methods of system changeover.",
+        "options": [],
+        "correctAnswer": "Direct, parallel, phased and pilot changeover",
+        "explanation": "These are the four ways of switching from an old system to a new one during implementation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Differentiate between user documentation and technical documentation.",
+        "options": [],
+        "correctAnswer": "User documentation guides end users on how to operate the system, while technical documentation helps programmers understand and maintain the code",
+        "explanation": "User documentation targets operators; technical documentation targets developers and maintainers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State one reason why maintenance is important after a system is implemented.",
+        "options": [],
+        "correctAnswer": "To correct errors and improve the system so it continues to meet user needs",
+        "explanation": "Maintenance keeps the system reliable and up to date by fixing faults and making improvements.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mention one tool used for planning and scheduling project tasks.",
+        "options": [],
+        "correctAnswer": "Gantt chart",
+        "explanation": "A Gantt chart shows tasks against time and helps schedule and monitor a project.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State one benefit of teamwork when carrying out a software development project.",
+        "options": [],
+        "correctAnswer": "Tasks are shared so the project is completed faster and more efficiently",
+        "explanation": "Teamwork allows division of labour and cooperation, leading to quicker and better results.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A school wants to record students' termly marks. The data-entry field for a subject mark accepts whole numbers from 0 to 100. Which set of test data BEST checks the boundary (extreme) cases of this field?",
+        "options": [
+          { "id": "a", "text": "45 and 60", "isCorrect": false },
+          { "id": "b", "text": "0 and 100", "isCorrect": true },
+          { "id": "c", "text": "-5 and 150", "isCorrect": false },
+          { "id": "d", "text": "\"pass\" and \"fail\"", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Boundary data uses the values at the edges of the valid range. For 0 to 100, the boundary values are 0 and 100, while -5/150 are abnormal and 45/60 are normal.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A hospital is replacing its patient records system. The data is critical and any loss could endanger lives, but the budget is large. Which changeover method is MOST suitable?",
+        "options": [
+          { "id": "a", "text": "Direct changeover", "isCorrect": false },
+          { "id": "b", "text": "Parallel changeover", "isCorrect": true },
+          { "id": "c", "text": "Big-bang changeover", "isCorrect": false },
+          { "id": "d", "text": "Switching off all records temporarily", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Parallel changeover runs both systems together so results can be compared and no data is lost, making it safest for critical data when budget allows.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student team finished coding a library system but skipped writing any documentation. Six months later a new member cannot understand how the code works. Which stage was poorly done and what is the consequence?",
+        "options": [
+          { "id": "a", "text": "Feasibility study; the project became too expensive", "isCorrect": false },
+          { "id": "b", "text": "Requirements gathering; the wrong system was built", "isCorrect": false },
+          { "id": "c", "text": "Documentation; maintenance becomes difficult because the code is hard to understand", "isCorrect": true },
+          { "id": "d", "text": "Testing; the system has no errors at all", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Without technical documentation, future programmers struggle to understand the code, making maintenance slow and error-prone.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

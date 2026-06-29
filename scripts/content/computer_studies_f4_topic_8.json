@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_computer_studies_topic_8",
+  "topicName": "Cyber Security and Computer Law",
+  "order": 8,
+  "description": "An in-depth study of cyber security principles, threats and protective measures, cybercrime, and the computer laws and ethics that govern responsible use of digital technology.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Computer security is best described as the practice of protecting computer systems and data from which of the following?",
+        "options": [
+          { "id": "a", "text": "Unauthorised access, theft, damage and disruption", "isCorrect": true },
+          { "id": "b", "text": "Power surges only", "isCorrect": false },
+          { "id": "c", "text": "Slow internet connections", "isCorrect": false },
+          { "id": "d", "text": "Outdated software designs", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Computer security protects hardware, software and data from unauthorised access, theft, damage, alteration and disruption of services.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The three core principles of information security, known as the CIA triad, are:",
+        "options": [
+          { "id": "a", "text": "Control, Identity and Authority", "isCorrect": false },
+          { "id": "b", "text": "Confidentiality, Integrity and Availability", "isCorrect": true },
+          { "id": "c", "text": "Cost, Internet and Access", "isCorrect": false },
+          { "id": "d", "text": "Copyright, Information and Authentication", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The CIA triad stands for Confidentiality (secrecy), Integrity (accuracy) and Availability (accessibility) of information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the CIA triad, ensuring that data is not altered by unauthorised persons and remains accurate refers to:",
+        "options": [
+          { "id": "a", "text": "Confidentiality", "isCorrect": false },
+          { "id": "b", "text": "Availability", "isCorrect": false },
+          { "id": "c", "text": "Integrity", "isCorrect": true },
+          { "id": "d", "text": "Authentication", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Integrity guarantees that information is accurate, complete and has not been tampered with by unauthorised parties.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of malware disguises itself as useful or legitimate software but performs harmful actions when run?",
+        "options": [
+          { "id": "a", "text": "Worm", "isCorrect": false },
+          { "id": "b", "text": "Trojan horse", "isCorrect": true },
+          { "id": "c", "text": "Firewall", "isCorrect": false },
+          { "id": "d", "text": "Cookie", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A Trojan horse appears to be a genuine program but secretly carries out malicious actions once executed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Malware that encrypts a victim's files and demands payment to unlock them is called:",
+        "options": [
+          { "id": "a", "text": "Spyware", "isCorrect": false },
+          { "id": "b", "text": "Adware", "isCorrect": false },
+          { "id": "c", "text": "Ransomware", "isCorrect": true },
+          { "id": "d", "text": "Rootkit cleaner", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ransomware locks or encrypts data and demands a ransom payment before the attacker (supposedly) restores access.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A self-replicating program that spreads across networks without needing to attach to another file is a:",
+        "options": [
+          { "id": "a", "text": "Worm", "isCorrect": true },
+          { "id": "b", "text": "Trojan", "isCorrect": false },
+          { "id": "c", "text": "Macro", "isCorrect": false },
+          { "id": "d", "text": "Patch", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A worm copies itself and spreads automatically over networks, unlike a virus which must attach to a host file.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Sending fake emails that appear to come from a trusted organisation in order to steal passwords or bank details is known as:",
+        "options": [
+          { "id": "a", "text": "Phishing", "isCorrect": true },
+          { "id": "b", "text": "Patching", "isCorrect": false },
+          { "id": "c", "text": "Encryption", "isCorrect": false },
+          { "id": "d", "text": "Defragmenting", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Phishing tricks users with fraudulent messages that imitate legitimate sources to capture sensitive information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Manipulating people psychologically into revealing confidential information or breaking security rules is called:",
+        "options": [
+          { "id": "a", "text": "Social engineering", "isCorrect": true },
+          { "id": "b", "text": "Hardware engineering", "isCorrect": false },
+          { "id": "c", "text": "Network topology", "isCorrect": false },
+          { "id": "d", "text": "Data mining", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Social engineering exploits human trust and behaviour rather than technical weaknesses to gain unauthorised access.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A security method that requires a password plus a one-time code sent to a phone is an example of:",
+        "options": [
+          { "id": "a", "text": "Single-factor authentication", "isCorrect": false },
+          { "id": "b", "text": "Two-factor authentication (2FA)", "isCorrect": true },
+          { "id": "c", "text": "Encryption", "isCorrect": false },
+          { "id": "d", "text": "Defragmentation", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Two-factor authentication combines two different proofs of identity, such as something you know and something you have.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is an example of biometric authentication?",
+        "options": [
+          { "id": "a", "text": "Typing a PIN", "isCorrect": false },
+          { "id": "b", "text": "Entering a username", "isCorrect": false },
+          { "id": "c", "text": "Fingerprint scanning", "isCorrect": true },
+          { "id": "d", "text": "Clicking a hyperlink", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Biometric authentication uses unique physical traits such as fingerprints, the face or the iris to verify identity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The main purpose of a firewall in a computer network is to:",
+        "options": [
+          { "id": "a", "text": "Cool down the processor", "isCorrect": false },
+          { "id": "b", "text": "Monitor and control incoming and outgoing network traffic", "isCorrect": true },
+          { "id": "c", "text": "Increase the screen resolution", "isCorrect": false },
+          { "id": "d", "text": "Store backup copies of files", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A firewall filters network traffic according to security rules, blocking unauthorised or harmful connections.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Converting readable data into an unreadable form so that only authorised users can decode it is called:",
+        "options": [
+          { "id": "a", "text": "Compression", "isCorrect": false },
+          { "id": "b", "text": "Encryption", "isCorrect": true },
+          { "id": "c", "text": "Formatting", "isCorrect": false },
+          { "id": "d", "text": "Backup", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Encryption scrambles data using a key so that it cannot be understood without the correct decryption key.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An attack that floods a server with so much traffic that legitimate users cannot access the service is a:",
+        "options": [
+          { "id": "a", "text": "Denial of Service (DoS) attack", "isCorrect": true },
+          { "id": "b", "text": "Backup failure", "isCorrect": false },
+          { "id": "c", "text": "Software update", "isCorrect": false },
+          { "id": "d", "text": "Disk cleanup", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A Denial of Service attack overwhelms a system with requests, making it unavailable to genuine users.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which law in Tanzania was enacted in 2015 specifically to address offences committed using computers and the internet?",
+        "options": [
+          { "id": "a", "text": "The Cybercrimes Act", "isCorrect": true },
+          { "id": "b", "text": "The Traffic Act", "isCorrect": false },
+          { "id": "c", "text": "The Land Act", "isCorrect": false },
+          { "id": "d", "text": "The Education Act", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Tanzania's Cybercrimes Act of 2015 criminalises offences such as illegal data access, cyber harassment and online fraud.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Making and selling unauthorised copies of copyrighted software is known as:",
+        "options": [
+          { "id": "a", "text": "Software piracy", "isCorrect": true },
+          { "id": "b", "text": "Open source licensing", "isCorrect": false },
+          { "id": "c", "text": "Beta testing", "isCorrect": false },
+          { "id": "d", "text": "Firmware updating", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Software piracy is the illegal copying, distribution or use of software in violation of its copyright and licence.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The protection of information from unauthorised access, use and disclosure is called information _____.",
+        "options": [],
+        "correctAnswer": "security",
+        "explanation": "Information security focuses on keeping data confidential, accurate and available to authorised users.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the CIA triad, the letter A stands for _____, meaning that data is accessible to authorised users when needed.",
+        "options": [],
+        "correctAnswer": "availability",
+        "explanation": "Availability ensures that systems and information can be reached and used whenever they are required.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A general term for any malicious software such as viruses, worms and trojans is _____.",
+        "options": [],
+        "correctAnswer": "malware",
+        "explanation": "Malware (malicious software) is any program designed to harm, exploit or gain unauthorised access to a system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Software that secretly collects information about a user's activities is called _____.",
+        "options": [],
+        "correctAnswer": "spyware",
+        "explanation": "Spyware monitors and gathers user data, such as browsing habits or keystrokes, without consent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Gaining unauthorised access to a computer system or network is commonly known as _____.",
+        "options": [],
+        "correctAnswer": "hacking",
+        "explanation": "Hacking is the act of breaking into computer systems, often to steal, alter or destroy data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Using someone else's personal details, such as their name or ID, to commit fraud is called identity _____.",
+        "options": [],
+        "correctAnswer": "theft",
+        "explanation": "Identity theft involves stealing personal information to impersonate a victim for financial or other gain.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Software that detects, prevents and removes malicious programs is known as _____ software.",
+        "options": [],
+        "correctAnswer": "antivirus",
+        "explanation": "Antivirus software scans for and eliminates viruses and other malware to protect a computer.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Making spare copies of data so it can be restored after loss or damage is called creating a _____.",
+        "options": [],
+        "correctAnswer": "backup",
+        "explanation": "Backups protect against data loss from hardware failure, attacks or accidental deletion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The exclusive legal right that protects original works such as software and music is called _____.",
+        "options": [],
+        "correctAnswer": "copyright",
+        "explanation": "Copyright grants creators control over the reproduction and distribution of their original work.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Behaving responsibly, safely and ethically when using digital technology is known as digital _____.",
+        "options": [],
+        "correctAnswer": "citizenship",
+        "explanation": "Digital citizenship refers to the responsible and respectful use of technology and the internet.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Confidentiality in the CIA triad means keeping information secret from unauthorised people.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Confidentiality ensures that only authorised individuals can access sensitive information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A computer virus can spread by attaching itself to other files and programs.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A virus needs a host file or program to attach to and is spread when that file is shared or run.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Using the password '12345' is a strong and secure choice for protecting an account.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Short, simple passwords like '12345' are weak and easily guessed; strong passwords mix letters, numbers and symbols.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Firewalls are used to control network traffic, while antivirus software targets malicious programs.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Firewalls filter traffic between networks, whereas antivirus software detects and removes malware on a device.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Encryption makes data unreadable to anyone who does not have the correct key.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Encrypted data can only be returned to readable form using the proper decryption key.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "It is safe to click links and open attachments from unknown senders in your email.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Unknown links and attachments may contain malware or phishing traps and should not be opened.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cybercrime refers to criminal activities carried out using computers or the internet.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Cybercrime includes offences such as hacking, online fraud, cyber harassment and spreading malware.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Copying and using licensed software without permission is legal as long as you do not sell it.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Using copyrighted software without a valid licence is piracy and is illegal, whether or not it is sold.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Regularly updating software helps protect a computer by fixing known security weaknesses.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Updates and patches close security holes that attackers could otherwise exploit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Locking server rooms and restricting entry are examples of physical security measures.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Physical security protects hardware and data by controlling who can physically reach the equipment.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Name the three components of the CIA triad in information security.",
+        "options": [],
+        "correctAnswer": "Confidentiality, Integrity and Availability",
+        "explanation": "These three principles form the foundation of protecting information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List any three common types of malware.",
+        "options": [],
+        "correctAnswer": "Viruses, worms, trojans, spyware and ransomware (any three)",
+        "explanation": "These are all forms of malicious software that can harm or compromise computer systems.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two characteristics of a strong password.",
+        "options": [],
+        "correctAnswer": "It is long and combines uppercase and lowercase letters, numbers and symbols, and avoids common words",
+        "explanation": "Length and complexity make passwords much harder to guess or crack.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define two-factor authentication (2FA).",
+        "options": [],
+        "correctAnswer": "A security method that requires two different forms of identity verification before granting access",
+        "explanation": "2FA adds a second layer of protection beyond a single password.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the main difference between a computer virus and a worm?",
+        "options": [],
+        "correctAnswer": "A virus must attach to a host file to spread, while a worm spreads by itself across networks",
+        "explanation": "Worms self-replicate without a host, making them spread faster than viruses.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two measures that help ensure safe internet and email use.",
+        "options": [],
+        "correctAnswer": "Avoid clicking suspicious links or attachments and never share personal or financial details with untrusted sites",
+        "explanation": "These habits reduce the risk of phishing, malware infection and data theft.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the purpose of computer or cyber laws.",
+        "options": [],
+        "correctAnswer": "To define computer-related offences, protect users and data, and punish those who misuse technology",
+        "explanation": "Laws such as Tanzania's Cybercrimes Act deter cybercrime and promote responsible technology use.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is software piracy?",
+        "options": [],
+        "correctAnswer": "The illegal copying, distribution or use of software in violation of its copyright and licence",
+        "explanation": "Piracy denies creators their rights and earnings and is a form of intellectual property theft.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State why backups are important for computer security.",
+        "options": [],
+        "correctAnswer": "They allow data to be recovered after loss, damage, deletion or attacks such as ransomware",
+        "explanation": "Backups ensure data availability and continuity even when the original data is lost.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mention two ways of using computers ethically.",
+        "options": [],
+        "correctAnswer": "Respecting others' privacy and intellectual property, and not using computers to harm or deceive others",
+        "explanation": "Ethical use means acting honestly, legally and respectfully when using technology.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A hospital stores patient records electronically. A worker copies and sells these records to outsiders. Which principle of the CIA triad has been violated MOST directly?",
+        "options": [
+          { "id": "a", "text": "Availability", "isCorrect": false },
+          { "id": "b", "text": "Confidentiality", "isCorrect": true },
+          { "id": "c", "text": "Integrity", "isCorrect": false },
+          { "id": "d", "text": "Redundancy", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Disclosing private patient data to unauthorised outsiders breaks confidentiality, the principle of keeping information secret.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student receives an email claiming to be from the bank, asking them to confirm their PIN through a link. What is the SAFEST action to take?",
+        "options": [
+          { "id": "a", "text": "Click the link quickly before the account is closed", "isCorrect": false },
+          { "id": "b", "text": "Reply with the PIN to keep the account active", "isCorrect": false },
+          { "id": "c", "text": "Ignore and delete the email, then contact the bank through official channels", "isCorrect": true },
+          { "id": "d", "text": "Forward the email to friends to warn them and enter the PIN", "isCorrect": false }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Banks never ask for PINs by email; this is phishing. The safe response is to ignore it and verify through official contacts.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A company's website suddenly becomes unreachable because it is being flooded with millions of fake requests. To reduce the impact of such Denial of Service attacks, the company should MOST appropriately use:",
+        "options": [
+          { "id": "a", "text": "A firewall with traffic filtering and rate limiting", "isCorrect": true },
+          { "id": "b", "text": "A faster word processor", "isCorrect": false },
+          { "id": "c", "text": "A brighter monitor", "isCorrect": false },
+          { "id": "d", "text": "More desktop wallpapers", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A firewall that filters and limits incoming traffic helps block the flood of malicious requests in a Denial of Service attack.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

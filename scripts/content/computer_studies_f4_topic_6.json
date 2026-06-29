@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_computer_studies_topic_6",
+  "topicName": "Advanced Spreadsheet Applications",
+  "order": 6,
+  "description": "An in-depth study of spreadsheet cell referencing, formulas, functions, data analysis, charts, formatting and error handling for practical tasks such as budgets and mark sheets.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "A single file created by a spreadsheet program, which can contain several worksheets, is called a:",
+        "options": [
+          { "id": "a", "text": "Workbook", "isCorrect": true },
+          { "id": "b", "text": "Cell", "isCorrect": false },
+          { "id": "c", "text": "Range", "isCorrect": false },
+          { "id": "d", "text": "Formula", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A workbook is the whole spreadsheet file; it is made up of one or more worksheets, each containing rows, columns and cells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a worksheet, the intersection of a row and a column is known as a:",
+        "options": [
+          { "id": "a", "text": "Range", "isCorrect": false },
+          { "id": "b", "text": "Cell", "isCorrect": true },
+          { "id": "c", "text": "Sheet tab", "isCorrect": false },
+          { "id": "d", "text": "Label", "isCorrect": false }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A cell is the basic unit of a worksheet formed where a column (letter) meets a row (number), for example B5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which cell reference is an ABSOLUTE reference that will not change when the formula is copied to another cell?",
+        "options": [
+          { "id": "a", "text": "A1", "isCorrect": false },
+          { "id": "b", "text": "$A1", "isCorrect": false },
+          { "id": "c", "text": "A$1", "isCorrect": false },
+          { "id": "d", "text": "$A$1", "isCorrect": true }
+        ],
+        "correctAnswer": "d",
+        "explanation": "$A$1 locks both the column and the row using dollar signs, so it stays fixed when copied. $A1 and A$1 are mixed references and A1 is relative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cell A1 contains 10, A2 contains 20 and A3 contains 30. What is the result of the formula =SUM(A1:A3)/COUNT(A1:A3)?",
+        "options": [
+          { "id": "a", "text": "20", "isCorrect": true },
+          { "id": "b", "text": "60", "isCorrect": false },
+          { "id": "c", "text": "30", "isCorrect": false },
+          { "id": "d", "text": "3", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "SUM(A1:A3)=60 and COUNT(A1:A3)=3, so 60/3 = 20. This is the same as AVERAGE(A1:A3).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Given the formula =2+3*4-6/2, applying the correct order of operations, the result is:",
+        "options": [
+          { "id": "a", "text": "11", "isCorrect": true },
+          { "id": "b", "text": "8", "isCorrect": false },
+          { "id": "c", "text": "14", "isCorrect": false },
+          { "id": "d", "text": "13", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiplication and division come first: 3*4=12 and 6/2=3. Then 2+12-3 = 11.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Cells B1 to B5 contain the values 5, 8, 2, 9 and 4. What does =MAX(B1:B5)-MIN(B1:B5) return?",
+        "options": [
+          { "id": "a", "text": "7", "isCorrect": true },
+          { "id": "b", "text": "11", "isCorrect": false },
+          { "id": "c", "text": "9", "isCorrect": false },
+          { "id": "d", "text": "2", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "MAX is 9 and MIN is 2, so 9 - 2 = 7.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A column has the entries: \"Pass\", 45, (blank), \"Fail\", 70. What does =COUNT(of that range) return for the numeric cells only?",
+        "options": [
+          { "id": "a", "text": "2", "isCorrect": true },
+          { "id": "b", "text": "4", "isCorrect": false },
+          { "id": "c", "text": "5", "isCorrect": false },
+          { "id": "d", "text": "3", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "COUNT counts only cells that contain numbers. Only 45 and 70 are numbers, so the result is 2. COUNTA (which counts non-empty cells) would give 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If cell C2 contains the score 50, what does the formula =IF(C2>=40,\"Pass\",\"Fail\") display?",
+        "options": [
+          { "id": "a", "text": "Pass", "isCorrect": true },
+          { "id": "b", "text": "Fail", "isCorrect": false },
+          { "id": "c", "text": "50", "isCorrect": false },
+          { "id": "d", "text": "TRUE", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The condition C2>=40 is TRUE (50 is at least 40), so the IF function returns the first value, \"Pass\".",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A range D2:D6 contains 100, 200, 100, 300, 100. What does =COUNTIF(D2:D6,100) return?",
+        "options": [
+          { "id": "a", "text": "3", "isCorrect": true },
+          { "id": "b", "text": "100", "isCorrect": false },
+          { "id": "c", "text": "300", "isCorrect": false },
+          { "id": "d", "text": "5", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "COUNTIF counts how many cells in the range equal the criterion. The value 100 appears 3 times, so the result is 3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Cells E2:E5 contain 200, 500, 200 and 800. What is the result of =SUMIF(E2:E5,200)?",
+        "options": [
+          { "id": "a", "text": "400", "isCorrect": true },
+          { "id": "b", "text": "1700", "isCorrect": false },
+          { "id": "c", "text": "200", "isCorrect": false },
+          { "id": "d", "text": "2", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "SUMIF adds only the cells that meet the criterion. Two cells contain 200, so 200 + 200 = 400.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "What does the formula =ROUND(3.14159, 2) return?",
+        "options": [
+          { "id": "a", "text": "3.14", "isCorrect": true },
+          { "id": "b", "text": "3.142", "isCorrect": false },
+          { "id": "c", "text": "3.1", "isCorrect": false },
+          { "id": "d", "text": "3", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "ROUND(number, 2) rounds to 2 decimal places. 3.14159 rounded to 2 decimals is 3.14.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which error value appears in a cell when a formula tries to divide a number by zero or by an empty cell?",
+        "options": [
+          { "id": "a", "text": "#DIV/0!", "isCorrect": true },
+          { "id": "b", "text": "#NAME?", "isCorrect": false },
+          { "id": "c", "text": "#REF!", "isCorrect": false },
+          { "id": "d", "text": "#VALUE!", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "#DIV/0! is shown when a value is divided by zero or by an empty cell that is treated as zero.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A formula referred to cell G5, but the user later deleted column G. The cell now shows:",
+        "options": [
+          { "id": "a", "text": "#REF!", "isCorrect": true },
+          { "id": "b", "text": "#DIV/0!", "isCorrect": false },
+          { "id": "c", "text": "#NAME?", "isCorrect": false },
+          { "id": "d", "text": "#VALUE!", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "#REF! means an invalid cell reference, usually because the referenced cell, row or column has been deleted.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of chart is the BEST choice for showing the proportion of a school budget spent on each item as parts of a whole?",
+        "options": [
+          { "id": "a", "text": "Pie chart", "isCorrect": true },
+          { "id": "b", "text": "Line chart", "isCorrect": false },
+          { "id": "c", "text": "Scatter chart", "isCorrect": false },
+          { "id": "d", "text": "Area chart", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A pie chart shows how a total is divided into parts (percentages of a whole), making it ideal for proportions such as budget shares.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The feature that automatically changes the appearance of cells (for example colouring cells whose marks are below 40) based on rules is called:",
+        "options": [
+          { "id": "a", "text": "Conditional formatting", "isCorrect": true },
+          { "id": "b", "text": "Sorting", "isCorrect": false },
+          { "id": "c", "text": "Filtering", "isCorrect": false },
+          { "id": "d", "text": "Merging cells", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Conditional formatting applies formatting (colours, fonts, icons) only to cells that meet a stated condition, helping to highlight data automatically.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A reference such as A1 that automatically adjusts when a formula is copied to other cells is called a _____ reference.",
+        "options": [],
+        "correctAnswer": "relative",
+        "explanation": "Relative references change in relation to the position where the formula is copied.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the cell reference A$1, only the _____ is locked while the column is allowed to change when copied.",
+        "options": [],
+        "correctAnswer": "row",
+        "explanation": "The dollar sign before the 1 fixes the row; this is a mixed reference because only one part is locked.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If cells A1, A2 and A3 contain 4, 6 and 10, the formula =AVERAGE(A1:A3) returns _____.",
+        "options": [],
+        "correctAnswer": "6.67",
+        "explanation": "The sum is 4+6+10 = 20 and there are 3 numbers, so 20/3 = 6.666..., which rounds to 6.67.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The function that counts how many cells in a range are NOT empty, including text and numbers, is _____.",
+        "options": [],
+        "correctAnswer": "COUNTA",
+        "explanation": "COUNTA counts all non-empty cells, whereas COUNT counts only numeric cells.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A group of selected cells such as B2:B10 that is treated as one block is called a cell _____.",
+        "options": [],
+        "correctAnswer": "range",
+        "explanation": "A range is written as the top-left cell, a colon, then the bottom-right cell, for example B2:B10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cells C1:C4 contain 70, 80, 50 and 90. The formula =MAX(C1:C4) returns _____.",
+        "options": [],
+        "correctAnswer": "90",
+        "explanation": "MAX returns the largest value in the range, which is 90.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Arranging data in a column from the smallest value to the largest value is called sorting in _____ order.",
+        "options": [],
+        "correctAnswer": "ascending",
+        "explanation": "Ascending order goes from smallest to largest (or A to Z); descending order is the reverse.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The spreadsheet feature that temporarily hides rows so that only records meeting a chosen condition are displayed is called _____.",
+        "options": [],
+        "correctAnswer": "filtering",
+        "explanation": "Filtering shows only the rows that match a criterion while hiding the rest; the hidden data is not deleted.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a formula contains a misspelled function name such as =SUMM(A1:A2), the cell displays the error value _____.",
+        "options": [],
+        "correctAnswer": "#NAME?",
+        "explanation": "#NAME? appears when the spreadsheet does not recognise text in a formula, such as a wrong function name or undefined range name.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If C2 contains 75, then =IF(C2>=80,\"A\",IF(C2>=60,\"B\",\"C\")) displays the grade _____.",
+        "options": [],
+        "correctAnswer": "B",
+        "explanation": "75 is not >=80, so the first IF is false; 75 is >=60, so the nested IF returns \"B\".",
+        "difficulty": "hard"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A worksheet is made up of rows identified by numbers and columns identified by letters.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Rows are numbered (1, 2, 3...) and columns are lettered (A, B, C...); their intersection forms a cell.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An absolute reference $A$1 changes automatically when the formula is copied to a new cell.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An absolute reference is fixed; it does NOT change when copied. Relative references are the ones that adjust.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a spreadsheet formula, multiplication is carried out before addition.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Following the order of operations, multiplication and division are performed before addition and subtraction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The COUNT function counts both numbers and text entries in a range.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "COUNT counts only numeric cells. To count text and numbers (any non-empty cell) you use COUNTA.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "SUMIF adds only the cells in a range that satisfy a given condition.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "SUMIF adds the values that meet the stated criterion, ignoring the rest.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A pie chart is the most suitable chart for showing a trend over many years.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A line chart is best for showing trends over time; a pie chart is for showing parts of a whole at one point.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The error #VALUE! can appear when a formula tries to perform arithmetic on text instead of numbers.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "#VALUE! occurs when the wrong type of data is used in a calculation, for example adding text to a number.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Conditional formatting permanently changes the values stored in the cells.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Conditional formatting only changes how cells look (colours, fonts); the underlying values stay the same.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Filtering data deletes the rows that do not match the chosen condition.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Filtering only hides non-matching rows temporarily; the data remains and reappears when the filter is removed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A spreadsheet can be used to prepare a budget and automatically recalculate totals when figures are changed.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Because formulas reference cells, changing an input value updates all dependent totals automatically, which is ideal for budgets and mark sheets.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State what a workbook is in a spreadsheet program.",
+        "options": [],
+        "correctAnswer": "A workbook is a single spreadsheet file that contains one or more worksheets.",
+        "explanation": "Each worksheet within the workbook holds its own grid of rows, columns and cells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between a relative and an absolute cell reference.",
+        "options": [],
+        "correctAnswer": "A relative reference (e.g. A1) changes when the formula is copied, while an absolute reference (e.g. $A$1) stays fixed when copied.",
+        "explanation": "Dollar signs lock the column and/or row to make a reference absolute or mixed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the purpose of the IF function in a spreadsheet.",
+        "options": [],
+        "correctAnswer": "The IF function tests a condition and returns one value if the condition is true and another value if it is false.",
+        "explanation": "It is used for decisions such as Pass/Fail or grading in a mark sheet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Differentiate between the COUNT and COUNTA functions.",
+        "options": [],
+        "correctAnswer": "COUNT counts only cells containing numbers, while COUNTA counts all non-empty cells including text and numbers.",
+        "explanation": "Both ignore truly empty cells, but COUNTA also includes text entries.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain what the SUMIF function does.",
+        "options": [],
+        "correctAnswer": "SUMIF adds the values of cells in a range that meet a specified condition or criterion.",
+        "explanation": "For example, summing only sales above a certain amount or for a particular item.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State two uses of a spreadsheet in a school setting.",
+        "options": [],
+        "correctAnswer": "Preparing student mark sheets and calculating averages, and preparing and managing the school budget.",
+        "explanation": "Other valid uses include keeping records, creating charts and performing simple data analysis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between sorting and filtering data.",
+        "options": [],
+        "correctAnswer": "Sorting arranges records in a chosen order (ascending or descending), while filtering hides rows so only records meeting a condition are shown.",
+        "explanation": "Sorting reorders all data; filtering temporarily displays a subset without deleting the rest.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give the cause of the #DIV/0! error.",
+        "options": [],
+        "correctAnswer": "#DIV/0! occurs when a number is divided by zero or by an empty cell that is treated as zero.",
+        "explanation": "It can be avoided by checking the divisor, for example with an IF function before dividing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State what conditional formatting is used for.",
+        "options": [],
+        "correctAnswer": "Conditional formatting automatically changes the appearance of cells, such as their colour, when they meet a stated condition.",
+        "explanation": "It helps highlight important values, for example marking failing scores in red.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain why a line chart is more suitable than a pie chart for showing a country's population over several years.",
+        "options": [],
+        "correctAnswer": "A line chart clearly shows trends and changes over time, while a pie chart only shows parts of a whole at one moment.",
+        "explanation": "Choosing the correct chart type makes the data easier to interpret.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A teacher enters student marks in cells B2:B6 and wants to display \"Pass\" for marks of 40 and above and \"Fail\" otherwise in column C, then count how many students passed. Which combination of formulas BEST achieves this?",
+        "options": [
+          { "id": "a", "text": "In C2: =IF(B2>=40,\"Pass\",\"Fail\") copied down, then =COUNTIF(C2:C6,\"Pass\")", "isCorrect": true },
+          { "id": "b", "text": "In C2: =SUM(B2>=40), then =COUNT(C2:C6)", "isCorrect": false },
+          { "id": "c", "text": "In C2: =AVERAGE(B2:B6), then =MAX(C2:C6)", "isCorrect": false },
+          { "id": "d", "text": "In C2: =IF(B2,\"Pass\",\"Fail\"), then =SUMIF(C2:C6,\"Pass\")", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "IF tests each mark and writes Pass or Fail, and COUNTIF then counts the cells equal to \"Pass\". The other options use functions incorrectly for this task.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A shopkeeper writes =B2*$C$1 in cell D2 to multiply a quantity in B2 by a fixed price in C1, then copies the formula down to D3. What will the formula in D3 become?",
+        "options": [
+          { "id": "a", "text": "=B3*$C$1", "isCorrect": true },
+          { "id": "b", "text": "=B3*$C$2", "isCorrect": false },
+          { "id": "c", "text": "=B2*$C$1", "isCorrect": false },
+          { "id": "d", "text": "=B3*C2", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The relative reference B2 adjusts to B3 when copied down, but the absolute reference $C$1 stays fixed, giving =B3*$C$1.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student creates a formula =A1/A2 where A1 contains 100 and A2 is currently empty, and the cell shows #DIV/0!. What is the BEST way to handle this so the cell shows 0 when A2 is empty?",
+        "options": [
+          { "id": "a", "text": "Use =IF(A2=0,0,A1/A2) so division only happens when A2 is not zero", "isCorrect": true },
+          { "id": "b", "text": "Use =ROUND(A1/A2,0) to round away the error", "isCorrect": false },
+          { "id": "c", "text": "Use =SUM(A1/A2) to ignore the empty cell", "isCorrect": false },
+          { "id": "d", "text": "Delete column A so the reference is removed", "isCorrect": false }
+        ],
+        "correctAnswer": "a",
+        "explanation": "An IF function checks the divisor first and returns 0 when A2 is zero/empty, preventing division by zero. ROUND and SUM do not stop the error, and deleting column A would cause a #REF! error.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
