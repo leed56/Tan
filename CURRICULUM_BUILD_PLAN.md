@@ -72,7 +72,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 - [x] 30. English — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs english_f3` once credentials are available)
 - [x] 31. Kiswahili — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs kiswahili_f3` once credentials are available)
 - [x] 32. Geography — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs geography_f3` once credentials are available)
-- [ ] 33–38. History, Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 3
+- [x] 33. History — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs history_f3` once credentials are available)
+- [ ] 34–38. Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 3
 
 ### Form 4
 - [ ] 39–51. All 13 subjects — Form 4
