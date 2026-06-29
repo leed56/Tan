@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_chemistry_topic_4",
+  "topicName": "Organic Chemistry I: Hydrocarbons",
+  "order": 4,
+  "description": "This topic introduces organic chemistry and hydrocarbons, covering the homologous series of alkanes, alkenes and alkynes, their naming, isomerism, properties, reactions, sources and uses.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Organic chemistry is best defined as the study of which type of compounds?",
+        "options": [
+          {"id": "a", "text": "Compounds of all metals", "isCorrect": false},
+          {"id": "b", "text": "Compounds of carbon (except a few like carbonates and oxides)", "isCorrect": true},
+          {"id": "c", "text": "Compounds found only in living things", "isCorrect": false},
+          {"id": "d", "text": "Compounds of hydrogen only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Organic chemistry is the study of carbon compounds, with a few exceptions such as carbon dioxide, carbonates and hydrogencarbonates which are treated as inorganic.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The ability of carbon atoms to join with one another to form long chains and rings is called:",
+        "options": [
+          {"id": "a", "text": "Catenation", "isCorrect": true},
+          {"id": "b", "text": "Isomerism", "isCorrect": false},
+          {"id": "c", "text": "Combustion", "isCorrect": false},
+          {"id": "d", "text": "Saturation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Catenation is the self-linking of carbon atoms through strong covalent C-C bonds, which allows carbon to form a very large number of compounds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many covalent bonds does a carbon atom normally form in its compounds?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Carbon has four electrons in its outer shell, so it is tetravalent and forms four covalent bonds to attain a stable octet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A hydrocarbon is a compound made up of which elements only?",
+        "options": [
+          {"id": "a", "text": "Carbon and oxygen", "isCorrect": false},
+          {"id": "b", "text": "Carbon and hydrogen", "isCorrect": true},
+          {"id": "c", "text": "Hydrogen and oxygen", "isCorrect": false},
+          {"id": "d", "text": "Carbon, hydrogen and nitrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Hydrocarbons contain only the two elements carbon and hydrogen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the general formula of the alkanes?",
+        "options": [
+          {"id": "a", "text": "CnH2n", "isCorrect": false},
+          {"id": "b", "text": "CnH2n-2", "isCorrect": false},
+          {"id": "c", "text": "CnH2n+2", "isCorrect": true},
+          {"id": "d", "text": "CnHn", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Alkanes are saturated hydrocarbons with the general formula CnH2n+2, for example methane CH4 (n=1) and ethane C2H6 (n=2).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the molecular formula of propane?",
+        "options": [
+          {"id": "a", "text": "C2H6", "isCorrect": false},
+          {"id": "b", "text": "C3H8", "isCorrect": true},
+          {"id": "c", "text": "C3H6", "isCorrect": false},
+          {"id": "d", "text": "C4H10", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Propane has n=3 carbon atoms. Using CnH2n+2 gives C3H(2x3+2) = C3H8.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A series of organic compounds with the same general formula and similar chemical properties, in which each member differs from the next by a CH2 group, is called a:",
+        "options": [
+          {"id": "a", "text": "Homologous series", "isCorrect": true},
+          {"id": "b", "text": "Periodic group", "isCorrect": false},
+          {"id": "c", "text": "Reactivity series", "isCorrect": false},
+          {"id": "d", "text": "Allotropic series", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A homologous series is a family of compounds with the same general formula, similar chemical properties and a gradation in physical properties, with consecutive members differing by CH2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which functional feature distinguishes alkenes from alkanes?",
+        "options": [
+          {"id": "a", "text": "A carbon-carbon triple bond", "isCorrect": false},
+          {"id": "b", "text": "A carbon-oxygen double bond", "isCorrect": false},
+          {"id": "c", "text": "A carbon-carbon double bond", "isCorrect": true},
+          {"id": "d", "text": "Only single bonds", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond (C=C), while alkanes have only single bonds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The simplest alkene, ethene, has the formula:",
+        "options": [
+          {"id": "a", "text": "C2H6", "isCorrect": false},
+          {"id": "b", "text": "C2H4", "isCorrect": true},
+          {"id": "c", "text": "C2H2", "isCorrect": false},
+          {"id": "d", "text": "CH4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ethene is the first member of the alkenes with two carbon atoms, formula C2H4 (CnH2n with n=2).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ethyne (acetylene) belongs to which homologous series and has what formula?",
+        "options": [
+          {"id": "a", "text": "Alkanes, C2H6", "isCorrect": false},
+          {"id": "b", "text": "Alkenes, C2H4", "isCorrect": false},
+          {"id": "c", "text": "Alkynes, C2H2", "isCorrect": true},
+          {"id": "d", "text": "Alkynes, C2H4", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ethyne is the first alkyne, containing a carbon-carbon triple bond, with formula C2H2 (CnH2n-2 with n=2).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which reagent is used as a test for unsaturation in hydrocarbons?",
+        "options": [
+          {"id": "a", "text": "Limewater", "isCorrect": false},
+          {"id": "b", "text": "Bromine water", "isCorrect": true},
+          {"id": "c", "text": "Dilute hydrochloric acid", "isCorrect": false},
+          {"id": "d", "text": "Sodium chloride solution", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Bromine water (orange/brown) is decolourised by unsaturated hydrocarbons (alkenes and alkynes) through an addition reaction, but not by saturated alkanes under normal conditions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The characteristic reaction of alkanes with chlorine in the presence of sunlight is:",
+        "options": [
+          {"id": "a", "text": "Addition", "isCorrect": false},
+          {"id": "b", "text": "Substitution", "isCorrect": true},
+          {"id": "c", "text": "Neutralisation", "isCorrect": false},
+          {"id": "d", "text": "Polymerisation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because alkanes are saturated, they react by substitution, where hydrogen atoms are replaced by chlorine atoms in sunlight, for example CH4 + Cl2 to give CH3Cl + HCl.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When ethene is bubbled through bromine water, what is observed?",
+        "options": [
+          {"id": "a", "text": "The orange colour remains unchanged", "isCorrect": false},
+          {"id": "b", "text": "A white precipitate forms", "isCorrect": false},
+          {"id": "c", "text": "The orange colour is decolourised", "isCorrect": true},
+          {"id": "d", "text": "A blue colour appears", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ethene is unsaturated, so it adds across the C=C bond and decolourises bromine water, forming 1,2-dibromoethane.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The main natural source of alkanes used as fuels (petrol, diesel, kerosene) is:",
+        "options": [
+          {"id": "a", "text": "Limestone", "isCorrect": false},
+          {"id": "b", "text": "Petroleum (crude oil) and natural gas", "isCorrect": true},
+          {"id": "c", "text": "Common salt deposits", "isCorrect": false},
+          {"id": "d", "text": "Iron ore", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Petroleum (crude oil) and natural gas are the main sources of hydrocarbons; crude oil is separated by fractional distillation into useful fuels.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Complete combustion of a hydrocarbon in plenty of air produces:",
+        "options": [
+          {"id": "a", "text": "Carbon monoxide and water", "isCorrect": false},
+          {"id": "b", "text": "Carbon (soot) and hydrogen", "isCorrect": false},
+          {"id": "c", "text": "Carbon dioxide and water", "isCorrect": true},
+          {"id": "d", "text": "Carbon dioxide and hydrogen gas", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Complete combustion of any hydrocarbon in sufficient oxygen gives carbon dioxide and water, releasing heat energy.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A hydrocarbon that contains only single carbon-carbon bonds is described as _____.",
+        "options": [],
+        "correctAnswer": "saturated",
+        "explanation": "Saturated hydrocarbons (the alkanes) contain only single bonds, so no more atoms can be added to them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The general formula of the alkenes is _____.",
+        "options": [],
+        "correctAnswer": "CnH2n",
+        "explanation": "Alkenes have one C=C double bond and follow the general formula CnH2n, for example ethene C2H4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The first member of the alkane series, with formula CH4, is named _____.",
+        "options": [],
+        "correctAnswer": "methane",
+        "explanation": "Methane (CH4) is the simplest alkane and the main component of natural gas.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The self-linking of carbon atoms to form long chains is known as _____.",
+        "options": [],
+        "correctAnswer": "catenation",
+        "explanation": "Catenation, together with carbon's tetravalency, explains why carbon forms such a large number of compounds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The alkyne with formula C2H2, also called acetylene, has the IUPAC name _____.",
+        "options": [],
+        "correctAnswer": "ethyne",
+        "explanation": "Ethyne (C2H2) is the simplest alkyne and contains a carbon-carbon triple bond.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Compounds that have the same molecular formula but different structural arrangements of atoms are called _____.",
+        "options": [],
+        "correctAnswer": "isomers",
+        "explanation": "Isomers share a molecular formula but differ in structure, for example butane and 2-methylpropane both have C4H10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Alkenes are unsaturated and characteristically react by _____ reactions across the double bond.",
+        "options": [],
+        "correctAnswer": "addition",
+        "explanation": "Because of the reactive C=C double bond, alkenes undergo addition reactions, for example with bromine, hydrogen or water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The molecular formula of butane, the fourth member of the alkanes, is _____.",
+        "options": [],
+        "correctAnswer": "C4H10",
+        "explanation": "Butane has n=4 carbon atoms; using CnH2n+2 gives C4H(2x4+2) = C4H10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Crude oil is separated into useful fractions such as petrol and kerosene by the process of _____.",
+        "options": [],
+        "correctAnswer": "fractional distillation",
+        "explanation": "Fractional distillation separates the hydrocarbons in crude oil according to their different boiling points.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When an alkene such as ethene is passed through bromine water, the orange colour is _____.",
+        "options": [],
+        "correctAnswer": "decolourised",
+        "explanation": "The bromine adds across the C=C double bond, so the orange/brown bromine water is decolourised, indicating unsaturation.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Carbon is tetravalent, meaning it forms four covalent bonds in its compounds.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Carbon has four outer-shell electrons and forms four covalent bonds to achieve a stable electron arrangement.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Alkanes are unsaturated hydrocarbons that contain carbon-carbon double bonds.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Alkanes are saturated and contain only single carbon-carbon bonds; it is the alkenes that have C=C double bonds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a homologous series, consecutive members differ from one another by a CH2 group.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Each successive member of a homologous series differs by CH2, giving a steady gradation in physical properties.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ethene has the molecular formula C2H6.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Ethene is an alkene with formula C2H4. C2H6 is ethane, an alkane.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Alkenes and alkynes decolourise bromine water, but alkanes do not under normal conditions.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The unsaturated alkenes and alkynes undergo addition with bromine and decolourise it, while saturated alkanes do not react readily with bromine water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The characteristic reaction of saturated alkanes with halogens in sunlight is addition.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Alkanes react by substitution, not addition, because they have no double or triple bonds for atoms to add to.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Incomplete combustion of a hydrocarbon in a limited supply of air can produce carbon monoxide and soot.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "When oxygen is insufficient, combustion is incomplete and can produce poisonous carbon monoxide, carbon (soot) and water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Ethyne contains a carbon-carbon triple bond and has the general formula of the alkynes, CnH2n-2.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Ethyne (C2H2) is the first alkyne; alkynes have a triple bond and follow the general formula CnH2n-2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Petroleum and natural gas are important natural sources of hydrocarbons.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Crude oil (petroleum) and natural gas are the main natural sources of hydrocarbons used as fuels and raw materials.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Butane and 2-methylpropane are isomers because they have different molecular formulae.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "They are isomers because they have the same molecular formula (C4H10) but different structures, not different formulae.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Why is carbon able to form a very large number of compounds?",
+        "options": [],
+        "correctAnswer": "Carbon forms many compounds because it is tetravalent (forms four strong covalent bonds) and shows catenation (its atoms link to one another forming chains, branches and rings).",
+        "explanation": "Tetravalency plus catenation allow carbon atoms to combine in countless arrangements, producing millions of organic compounds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is a homologous series? State two of its characteristics.",
+        "options": [],
+        "correctAnswer": "A homologous series is a family of organic compounds with the same general formula. Its members have similar chemical properties and show a gradual change in physical properties, with consecutive members differing by a CH2 group.",
+        "explanation": "This captures the same general formula, similar chemical properties, gradation in physical properties and the CH2 difference.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the general formulae of the alkanes, alkenes and alkynes.",
+        "options": [],
+        "correctAnswer": "Alkanes have the general formula CnH2n+2, alkenes have CnH2n, and alkynes have CnH2n-2.",
+        "explanation": "These three general formulae allow the formula of any straight-chain member to be worked out from the number of carbon atoms n.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distinguish between saturated and unsaturated hydrocarbons.",
+        "options": [],
+        "correctAnswer": "Saturated hydrocarbons (alkanes) contain only single carbon-carbon bonds, while unsaturated hydrocarbons (alkenes and alkynes) contain carbon-carbon double or triple bonds.",
+        "explanation": "Saturation refers to whether the molecule contains multiple bonds; unsaturated compounds can take part in addition reactions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write the names and molecular formulae of the first four alkanes.",
+        "options": [],
+        "correctAnswer": "Methane CH4, ethane C2H6, propane C3H8 and butane C4H10.",
+        "explanation": "These are obtained from CnH2n+2 for n = 1, 2, 3 and 4 respectively.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how bromine water is used to test for unsaturation.",
+        "options": [],
+        "correctAnswer": "The hydrocarbon is shaken with orange bromine water. If it is unsaturated (an alkene or alkyne), it adds across the multiple bond and decolourises the bromine water; a saturated alkane leaves the colour unchanged.",
+        "explanation": "Decolourisation of bromine water indicates the presence of a double or triple bond.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Compare the typical reactions of alkanes and alkenes.",
+        "options": [],
+        "correctAnswer": "Alkanes are saturated and react mainly by substitution (for example with halogens in sunlight), whereas alkenes are unsaturated and react mainly by addition across the C=C double bond.",
+        "explanation": "The presence or absence of a multiple bond determines whether substitution or addition is the characteristic reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is meant by isomerism? Give one example.",
+        "options": [],
+        "correctAnswer": "Isomerism is the existence of two or more compounds with the same molecular formula but different structural arrangements of atoms. For example, butane and 2-methylpropane both have the formula C4H10.",
+        "explanation": "Isomers share a molecular formula but differ in structure, leading to different physical properties.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "State the products of complete and incomplete combustion of a hydrocarbon.",
+        "options": [],
+        "correctAnswer": "Complete combustion (plenty of air) gives carbon dioxide and water, while incomplete combustion (limited air) gives carbon monoxide and/or carbon (soot) together with water.",
+        "explanation": "The amount of oxygen available determines whether combustion is complete or incomplete.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two uses of hydrocarbons obtained from petroleum and natural gas.",
+        "options": [],
+        "correctAnswer": "Hydrocarbons are used as fuels (such as petrol, diesel, kerosene and cooking gas) and as raw materials for making plastics, solvents and other chemicals.",
+        "explanation": "The main uses are as sources of energy and as feedstock for the chemical and petrochemical industries.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A gaseous hydrocarbon X contains 6 carbon atoms per molecule and is a saturated, straight-chain compound. Using the correct general formula, what is its molecular formula?",
+        "options": [
+          {"id": "a", "text": "C6H12", "isCorrect": false},
+          {"id": "b", "text": "C6H14", "isCorrect": true},
+          {"id": "c", "text": "C6H10", "isCorrect": false},
+          {"id": "d", "text": "C6H6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A saturated hydrocarbon is an alkane, general formula CnH2n+2. With n=6, hydrogen = 2x6+2 = 14, giving C6H14.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two gas jars contain colourless gases: one holds ethane and the other ethene. A student shakes each with bromine water. Which observation correctly identifies the gases?",
+        "options": [
+          {"id": "a", "text": "Both decolourise bromine water, so they cannot be told apart", "isCorrect": false},
+          {"id": "b", "text": "The jar that decolourises bromine water contains ethene; the one that does not contains ethane", "isCorrect": true},
+          {"id": "c", "text": "The jar that decolourises bromine water contains ethane; the other contains ethene", "isCorrect": false},
+          {"id": "d", "text": "Neither gas reacts with bromine water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ethene is unsaturated (C=C) and decolourises bromine water by addition, while saturated ethane does not, so the decolourising jar is ethene.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "When 1 mole of ethyne (C2H2) undergoes complete combustion, which equation is correctly balanced?",
+        "options": [
+          {"id": "a", "text": "C2H2 + O2 -> 2CO2 + H2O", "isCorrect": false},
+          {"id": "b", "text": "2C2H2 + 5O2 -> 4CO2 + 2H2O", "isCorrect": true},
+          {"id": "c", "text": "C2H2 + 2O2 -> 2CO + H2O", "isCorrect": false},
+          {"id": "d", "text": "C2H2 + 3O2 -> 2CO2 + 2H2O", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Balancing complete combustion of ethyne gives 2C2H2 + 5O2 -> 4CO2 + 2H2O, where carbon, hydrogen and oxygen atoms are all balanced.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

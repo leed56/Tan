@@ -83,7 +83,8 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 ### Form 4
 - [x] 39. Mathematics — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs mathematics_f4` once credentials are available)
 - [x] 40. Biology — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs biology_f4` once credentials are available)
-- [ ] 41–51. Chemistry, Physics, English, Kiswahili, Geography, History, Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 4
+- [x] 41. Chemistry — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs chemistry_f4` once credentials are available)
+- [ ] 42–51. Physics, English, Kiswahili, Geography, History, Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 4
 
 ## Content integrity
 - Questions are **authored original**, aligned to the public syllabus topic

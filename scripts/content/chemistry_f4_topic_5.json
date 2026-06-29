@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_chemistry_topic_5",
+  "topicName": "Organic Chemistry II: Alcohols and Organic Acids",
+  "order": 5,
+  "description": "This topic introduces the alkanols (alcohols) and alkanoic (carboxylic) acids, including their functional groups, naming, preparation, properties, uses, esterification, soaps and detergents, and the role of fermentation.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which functional group is present in all alkanols (alcohols)?",
+        "options": [
+          {"id": "a", "text": "-COOH", "isCorrect": false},
+          {"id": "b", "text": "-OH", "isCorrect": true},
+          {"id": "c", "text": "-CHO", "isCorrect": false},
+          {"id": "d", "text": "-COO-", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Alkanols all contain the hydroxyl group, -OH, attached to a carbon atom. The -COOH group belongs to carboxylic acids and -COO- to esters.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the general formula of the alkanols?",
+        "options": [
+          {"id": "a", "text": "CnH2n", "isCorrect": false},
+          {"id": "b", "text": "CnH2n+2", "isCorrect": false},
+          {"id": "c", "text": "CnH2n+1OH", "isCorrect": true},
+          {"id": "d", "text": "CnH2nO2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Alkanols have the general formula CnH2n+1OH, formed by replacing one hydrogen of an alkane with the -OH group. CnH2n is the alkene formula and CnH2n+2 is the alkane formula.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the IUPAC name of the alcohol with the formula CH3OH?",
+        "options": [
+          {"id": "a", "text": "Methanol", "isCorrect": true},
+          {"id": "b", "text": "Ethanol", "isCorrect": false},
+          {"id": "c", "text": "Propanol", "isCorrect": false},
+          {"id": "d", "text": "Methanoic acid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "CH3OH has one carbon atom and the -OH group, so it is named methanol. Ethanol is C2H5OH and propanol is C3H7OH.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which process uses yeast to convert sugars into ethanol and carbon dioxide?",
+        "options": [
+          {"id": "a", "text": "Cracking", "isCorrect": false},
+          {"id": "b", "text": "Hydration", "isCorrect": false},
+          {"id": "c", "text": "Fermentation", "isCorrect": true},
+          {"id": "d", "text": "Esterification", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Fermentation is the breakdown of sugars by enzymes in yeast to form ethanol and carbon dioxide. Hydration of ethene is the other main industrial method.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the fermentation of glucose, C6H12O6 -> 2C2H5OH + 2CO2, which gas is released?",
+        "options": [
+          {"id": "a", "text": "Oxygen", "isCorrect": false},
+          {"id": "b", "text": "Carbon dioxide", "isCorrect": true},
+          {"id": "c", "text": "Hydrogen", "isCorrect": false},
+          {"id": "d", "text": "Nitrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The equation C6H12O6 -> 2C2H5OH + 2CO2 shows that fermentation of glucose produces ethanol and carbon dioxide gas.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ethanol can be manufactured industrially by the hydration of which alkene?",
+        "options": [
+          {"id": "a", "text": "Ethene", "isCorrect": true},
+          {"id": "b", "text": "Methane", "isCorrect": false},
+          {"id": "c", "text": "Propane", "isCorrect": false},
+          {"id": "d", "text": "Butene", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Ethene (C2H4) reacts with steam in the presence of a catalyst to form ethanol: C2H4 + H2O -> C2H5OH. Methane and propane are alkanes, not the correct starting material.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is methanol dangerous if consumed by humans?",
+        "options": [
+          {"id": "a", "text": "It is a strong acid that burns the stomach", "isCorrect": false},
+          {"id": "b", "text": "It is toxic and can cause blindness or death", "isCorrect": true},
+          {"id": "c", "text": "It is radioactive", "isCorrect": false},
+          {"id": "d", "text": "It explodes inside the body", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Methanol is highly poisonous; the body converts it into toxic products that damage the optic nerve, causing blindness, and can lead to death. Ethanol is the alcohol used in drinks, though still harmful in excess.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which functional group is present in alkanoic (carboxylic) acids?",
+        "options": [
+          {"id": "a", "text": "-OH only", "isCorrect": false},
+          {"id": "b", "text": "-COOH (carboxyl)", "isCorrect": true},
+          {"id": "c", "text": "-NH2", "isCorrect": false},
+          {"id": "d", "text": "-C=C-", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Carboxylic (alkanoic) acids contain the carboxyl functional group -COOH. The -NH2 group is an amine and -C=C- is a carbon-carbon double bond.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the common name of ethanoic acid, the main acid in vinegar?",
+        "options": [
+          {"id": "a", "text": "Formic acid", "isCorrect": false},
+          {"id": "b", "text": "Citric acid", "isCorrect": false},
+          {"id": "c", "text": "Acetic acid", "isCorrect": true},
+          {"id": "d", "text": "Lactic acid", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ethanoic acid (CH3COOH) is commonly called acetic acid and is the acid that gives vinegar its sour taste. Formic acid is the common name for methanoic acid.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Carboxylic acids such as ethanoic acid are described as weak acids because they:",
+        "options": [
+          {"id": "a", "text": "Do not contain hydrogen", "isCorrect": false},
+          {"id": "b", "text": "Ionise only partially in water", "isCorrect": true},
+          {"id": "c", "text": "Cannot react with metals", "isCorrect": false},
+          {"id": "d", "text": "Are insoluble in water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Weak acids ionise only partly in water, releasing relatively few hydrogen ions. This is why ethanoic acid is a weak acid compared with strong acids such as hydrochloric acid which ionise completely.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When ethanoic acid reacts with sodium carbonate, which gas is produced?",
+        "options": [
+          {"id": "a", "text": "Hydrogen", "isCorrect": false},
+          {"id": "b", "text": "Oxygen", "isCorrect": false},
+          {"id": "c", "text": "Carbon dioxide", "isCorrect": true},
+          {"id": "d", "text": "Ammonia", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Like other acids, ethanoic acid reacts with carbonates to give a salt, water and carbon dioxide gas, which turns limewater milky.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An ester is formed when a carboxylic acid reacts with an alcohol. What else is produced?",
+        "options": [
+          {"id": "a", "text": "Hydrogen gas", "isCorrect": false},
+          {"id": "b", "text": "Water", "isCorrect": true},
+          {"id": "c", "text": "Carbon dioxide", "isCorrect": false},
+          {"id": "d", "text": "Ammonia", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Esterification follows: carboxylic acid + alcohol -> ester + water. The -OH of the acid and an H from the alcohol combine to form water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Esters are widely used in industry mainly because of their:",
+        "options": [
+          {"id": "a", "text": "Strong acidity", "isCorrect": false},
+          {"id": "b", "text": "Pleasant fruity smells and flavours", "isCorrect": true},
+          {"id": "c", "text": "Ability to conduct electricity", "isCorrect": false},
+          {"id": "d", "text": "High toxicity", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Many esters have sweet, fruity scents and flavours, so they are used in perfumes, flavourings and as solvents.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Soap is made by reacting a fat or oil with a hot alkali. What is the special name of this reaction?",
+        "options": [
+          {"id": "a", "text": "Saponification", "isCorrect": true},
+          {"id": "b", "text": "Neutralisation", "isCorrect": false},
+          {"id": "c", "text": "Fermentation", "isCorrect": false},
+          {"id": "d", "text": "Polymerisation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Saponification is the reaction of a fat or oil with a hot alkali such as sodium hydroxide to produce soap and glycerol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which alcohol is present in alcoholic drinks and is used as a fuel and solvent?",
+        "options": [
+          {"id": "a", "text": "Methanol", "isCorrect": false},
+          {"id": "b", "text": "Ethanol", "isCorrect": true},
+          {"id": "c", "text": "Propanol", "isCorrect": false},
+          {"id": "d", "text": "Glycerol", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ethanol (C2H5OH) is the alcohol found in alcoholic drinks and is also used as a fuel, a solvent and an antiseptic. Methanol is toxic and not used in drinks.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The functional group present in all alcohols is the hydroxyl group, written as _____.",
+        "options": [],
+        "correctAnswer": "-OH",
+        "explanation": "The hydroxyl group -OH attached to a carbon atom is the functional group that characterises the alcohols (alkanols).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The general formula of the alkanols is _____.",
+        "options": [],
+        "correctAnswer": "CnH2n+1OH",
+        "explanation": "Alkanols have the general formula CnH2n+1OH, where n is the number of carbon atoms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The alcohol with the molecular formula C2H5OH is named _____.",
+        "options": [],
+        "correctAnswer": "ethanol",
+        "explanation": "C2H5OH contains two carbon atoms and the -OH group, so its IUPAC name is ethanol.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process in which yeast converts sugars into ethanol and carbon dioxide is called _____.",
+        "options": [],
+        "correctAnswer": "fermentation",
+        "explanation": "Fermentation uses enzymes in yeast to break down sugars into ethanol and carbon dioxide.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Industrially, ethanol can be made by the hydration of ethene using steam and a _____.",
+        "options": [],
+        "correctAnswer": "catalyst",
+        "explanation": "In the reaction C2H4 + H2O -> C2H5OH, steam reacts with ethene in the presence of a catalyst (phosphoric acid) under high pressure.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The functional group of the alkanoic (carboxylic) acids is the carboxyl group, written as _____.",
+        "options": [],
+        "correctAnswer": "-COOH",
+        "explanation": "All carboxylic acids contain the carboxyl group -COOH.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The chemical formula of ethanoic (acetic) acid is _____.",
+        "options": [],
+        "correctAnswer": "CH3COOH",
+        "explanation": "Ethanoic acid, the acid in vinegar, has the formula CH3COOH.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When an alcohol reacts with a carboxylic acid, the organic product formed is called an _____.",
+        "options": [],
+        "correctAnswer": "ester",
+        "explanation": "Esterification: carboxylic acid + alcohol -> ester + water. Esters often have pleasant smells.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The reaction of a fat or oil with a hot alkali to produce soap is called _____.",
+        "options": [],
+        "correctAnswer": "saponification",
+        "explanation": "Saponification is the alkaline hydrolysis of fats or oils, producing soap and glycerol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The alcohol that is highly toxic and can cause blindness if drunk is _____.",
+        "options": [],
+        "correctAnswer": "methanol",
+        "explanation": "Methanol is poisonous; the body converts it to toxic substances that can damage the optic nerve and cause blindness or death.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "All alcohols contain the -OH functional group.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By definition, an alcohol (alkanol) contains the hydroxyl group -OH bonded to a carbon atom.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Methanol is safe to drink in the same way as ethanol.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Methanol is highly toxic and can cause blindness or death; only ethanol is found in alcoholic drinks, and even that is harmful in excess.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Fermentation of glucose produces ethanol and carbon dioxide.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The reaction is C6H12O6 -> 2C2H5OH + 2CO2, giving ethanol and carbon dioxide.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ethanoic acid is a strong acid that ionises completely in water.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Ethanoic acid is a weak acid; it ionises only partially in water, releasing relatively few hydrogen ions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Carboxylic acids react with carbonates to release carbon dioxide gas.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Acids, including carboxylic acids, react with carbonates to give a salt, water and carbon dioxide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Esterification produces an ester and hydrogen gas.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Esterification produces an ester and water, not hydrogen: carboxylic acid + alcohol -> ester + water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Esters are commonly used as flavourings and in perfumes because of their pleasant smells.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Many esters have sweet, fruity scents, making them useful in flavourings, perfumes and as solvents.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Soap can be made by boiling a fat or oil with a hot alkali such as sodium hydroxide.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This reaction, called saponification, converts fats or oils into soap and glycerol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Vinegar is a dilute solution of ethanoic acid.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Vinegar is mainly a dilute aqueous solution of ethanoic (acetic) acid, which gives it a sour taste.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ethanol reacts with sodium metal to release oxygen gas.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Ethanol reacts with sodium to release hydrogen gas, not oxygen, forming sodium ethoxide.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State the functional group of alcohols and give the general formula of the alkanols.",
+        "options": [],
+        "correctAnswer": "Alcohols (alkanols) have the hydroxyl functional group, -OH, attached to a carbon atom, and the general formula CnH2n+1OH.",
+        "explanation": "The -OH group defines the alcohol family, and the general formula CnH2n+1OH allows the formula of any member to be worked out from the number of carbons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the first three members of the alkanols and give their formulae.",
+        "options": [],
+        "correctAnswer": "Methanol (CH3OH), ethanol (C2H5OH) and propanol (C3H7OH).",
+        "explanation": "These are the first three alkanols, named by adding -ol to the alkane stem according to the number of carbon atoms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Describe how ethanol is produced by fermentation.",
+        "options": [],
+        "correctAnswer": "In fermentation, sugars (such as glucose) are broken down by enzymes in yeast, in the absence of air and at warm temperatures, to form ethanol and carbon dioxide: C6H12O6 -> 2C2H5OH + 2CO2.",
+        "explanation": "Yeast provides enzymes (zymase) that convert sugar into ethanol and carbon dioxide; this is used in making alcoholic drinks and bread.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how ethanol is manufactured by the hydration of ethene.",
+        "options": [],
+        "correctAnswer": "Ethene is reacted with steam at high temperature and pressure in the presence of a catalyst (phosphoric acid) to form ethanol: C2H4 + H2O -> C2H5OH.",
+        "explanation": "This industrial method adds water across the double bond of ethene to give ethanol, and is faster and gives purer ethanol than fermentation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List four uses of ethanol.",
+        "options": [],
+        "correctAnswer": "Ethanol is used as a solvent, as a fuel, as an antiseptic/disinfectant, and in making alcoholic drinks.",
+        "explanation": "Ethanol's properties as a clean-burning, volatile liquid that dissolves many substances make it useful as a fuel, solvent, antiseptic and in beverages.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain why methanol is dangerous to humans.",
+        "options": [],
+        "correctAnswer": "Methanol is highly toxic; when drunk, it is converted in the body into harmful products that damage the optic nerve, causing blindness, and can lead to death.",
+        "explanation": "Although methanol looks and smells similar to ethanol, it is poisonous and must never be consumed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe three chemical reactions of ethanoic acid that show it behaves as an acid.",
+        "options": [],
+        "correctAnswer": "Ethanoic acid reacts with reactive metals to give a salt and hydrogen gas; with carbonates to give a salt, water and carbon dioxide; and with bases/alkalis to give a salt and water.",
+        "explanation": "These reactions are typical of acids and confirm that ethanoic acid is acidic, although it is a weak acid because it ionises only partly in water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State what esterification is and write its general word equation.",
+        "options": [],
+        "correctAnswer": "Esterification is the reaction between a carboxylic acid and an alcohol to form an ester and water: carboxylic acid + alcohol -> ester + water.",
+        "explanation": "An acid catalyst is usually used, and the ester formed often has a pleasant fruity smell.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the basic idea of how soap is made and what saponification means.",
+        "options": [],
+        "correctAnswer": "Soap is made by boiling a fat or oil with a hot alkali such as sodium hydroxide; this reaction, called saponification, produces soap and glycerol.",
+        "explanation": "Saponification is the alkaline hydrolysis of the ester links in fats and oils, producing the salts of fatty acids (soap) and glycerol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two applications of fermentation in everyday life.",
+        "options": [],
+        "correctAnswer": "Fermentation is used in making alcoholic drinks (such as beer and wine) and in baking bread, where the carbon dioxide produced makes the dough rise.",
+        "explanation": "Fermentation by yeast is important in brewing, wine-making and baking, and is also used to produce ethanol for fuel.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A student ferments 180 g of glucose (C6H12O6, molar mass 180 g/mol) completely. Using C6H12O6 -> 2C2H5OH + 2CO2, what mass of ethanol (C2H5OH, molar mass 46 g/mol) is formed?",
+        "options": [
+          {"id": "a", "text": "46 g", "isCorrect": false},
+          {"id": "b", "text": "92 g", "isCorrect": true},
+          {"id": "c", "text": "180 g", "isCorrect": false},
+          {"id": "d", "text": "23 g", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "180 g of glucose is 1 mole. From the equation, 1 mole of glucose gives 2 moles of ethanol. 2 x 46 g = 92 g of ethanol.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Both ethanol and ethanoic acid contain an -OH group. Why does ethanoic acid turn blue litmus red while ethanol does not?",
+        "options": [
+          {"id": "a", "text": "Ethanol contains more oxygen than ethanoic acid", "isCorrect": false},
+          {"id": "b", "text": "In ethanoic acid the -OH is part of the -COOH group, which releases H+ ions in water; in ethanol the -OH does not", "isCorrect": true},
+          {"id": "c", "text": "Ethanol is a gas while ethanoic acid is a liquid", "isCorrect": false},
+          {"id": "d", "text": "Ethanol has more carbon atoms than ethanoic acid", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The acidity comes from the carboxyl group -COOH, whose O-H bond ionises to release H+ ions, making the solution acidic. The -OH in ethanol does not ionise this way, so ethanol is neutral.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An ester with a fruity pineapple smell is made from ethanol and ethanoic acid. Which combination correctly identifies the products of this esterification?",
+        "options": [
+          {"id": "a", "text": "An ester and hydrogen gas", "isCorrect": false},
+          {"id": "b", "text": "An ester and carbon dioxide", "isCorrect": false},
+          {"id": "c", "text": "An ester (ethyl ethanoate) and water", "isCorrect": true},
+          {"id": "d", "text": "A soap and glycerol", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ethanol + ethanoic acid -> ethyl ethanoate + water. Esterification always produces an ester and water; hydrogen and carbon dioxide are not formed, and soap and glycerol come from saponification of fats.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
