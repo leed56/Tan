@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_physics_topic_3",
+  "topicName": "Waves",
+  "order": 3,
+  "description": "This topic explains the nature of waves, the types and properties of mechanical and electromagnetic waves, and how to use the wave equation v = f times lambda and f = 1/T in calculations.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is a wave?",
+        "options": [
+          {"id": "a", "text": "A transfer of matter from one point to another", "isCorrect": false},
+          {"id": "b", "text": "A disturbance that transfers energy from one point to another without transferring matter", "isCorrect": true},
+          {"id": "c", "text": "A flow of electric charge through a conductor", "isCorrect": false},
+          {"id": "d", "text": "A force that pushes particles in one direction only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A wave is a disturbance that travels through a medium or space carrying energy from one place to another without the bulk movement of matter.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a mechanical wave?",
+        "options": [
+          {"id": "a", "text": "Light wave", "isCorrect": false},
+          {"id": "b", "text": "Radio wave", "isCorrect": false},
+          {"id": "c", "text": "Sound wave", "isCorrect": true},
+          {"id": "d", "text": "X-ray", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Sound is a mechanical wave because it requires a material medium to travel. Light, radio waves and X-rays are electromagnetic waves that can travel through a vacuum.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a transverse wave, the vibration of particles is:",
+        "options": [
+          {"id": "a", "text": "Parallel to the direction of wave travel", "isCorrect": false},
+          {"id": "b", "text": "Perpendicular to the direction of wave travel", "isCorrect": true},
+          {"id": "c", "text": "In a circular path around the source", "isCorrect": false},
+          {"id": "d", "text": "Always at rest", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In a transverse wave the particles vibrate at right angles (perpendicular) to the direction in which the wave moves.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A longitudinal wave consists of regions called:",
+        "options": [
+          {"id": "a", "text": "Crests and troughs", "isCorrect": false},
+          {"id": "b", "text": "Compressions and rarefactions", "isCorrect": true},
+          {"id": "c", "text": "Nodes and antinodes only", "isCorrect": false},
+          {"id": "d", "text": "Peaks and valleys", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Longitudinal waves are made up of compressions (particles close together) and rarefactions (particles spread apart). Crests and troughs belong to transverse waves.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The distance between two successive crests of a transverse wave is called the:",
+        "options": [
+          {"id": "a", "text": "Amplitude", "isCorrect": false},
+          {"id": "b", "text": "Frequency", "isCorrect": false},
+          {"id": "c", "text": "Wavelength", "isCorrect": true},
+          {"id": "d", "text": "Period", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The wavelength is the distance between two successive points that are in phase, for example two consecutive crests or two consecutive troughs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The maximum displacement of a particle from its rest position is the:",
+        "options": [
+          {"id": "a", "text": "Wavelength", "isCorrect": false},
+          {"id": "b", "text": "Amplitude", "isCorrect": true},
+          {"id": "c", "text": "Period", "isCorrect": false},
+          {"id": "d", "text": "Frequency", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Amplitude is the maximum displacement of a vibrating particle from its mean (rest) position. It is related to the energy carried by the wave.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A wave has a frequency of 50 Hz and a wavelength of 4 m. What is its speed?",
+        "options": [
+          {"id": "a", "text": "12.5 m/s", "isCorrect": false},
+          {"id": "b", "text": "54 m/s", "isCorrect": false},
+          {"id": "c", "text": "200 m/s", "isCorrect": true},
+          {"id": "d", "text": "0.08 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using v = f times lambda = 50 Hz times 4 m = 200 m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The time taken for one complete oscillation of a wave is called the:",
+        "options": [
+          {"id": "a", "text": "Frequency", "isCorrect": false},
+          {"id": "b", "text": "Period", "isCorrect": true},
+          {"id": "c", "text": "Wavelength", "isCorrect": false},
+          {"id": "d", "text": "Speed", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The period (T) is the time taken to complete one full cycle of vibration. It is related to frequency by f = 1/T.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If the period of a wave is 0.02 s, what is its frequency?",
+        "options": [
+          {"id": "a", "text": "0.02 Hz", "isCorrect": false},
+          {"id": "b", "text": "2 Hz", "isCorrect": false},
+          {"id": "c", "text": "50 Hz", "isCorrect": true},
+          {"id": "d", "text": "500 Hz", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using f = 1/T = 1/0.02 = 50 Hz.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following correctly lists the electromagnetic spectrum in order of increasing frequency?",
+        "options": [
+          {"id": "a", "text": "Gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, radio waves", "isCorrect": false},
+          {"id": "b", "text": "Radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays", "isCorrect": true},
+          {"id": "c", "text": "Visible light, infrared, radio waves, microwaves, X-rays, gamma rays, ultraviolet", "isCorrect": false},
+          {"id": "d", "text": "Microwaves, radio waves, infrared, ultraviolet, visible light, gamma rays, X-rays", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In order of increasing frequency (and decreasing wavelength) the spectrum is: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which member of the electromagnetic spectrum is used in mobile phone and satellite communication?",
+        "options": [
+          {"id": "a", "text": "Gamma rays", "isCorrect": false},
+          {"id": "b", "text": "Microwaves", "isCorrect": true},
+          {"id": "c", "text": "X-rays", "isCorrect": false},
+          {"id": "d", "text": "Visible light", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Microwaves are used in mobile phone, satellite communication and radar, as well as in microwave ovens for heating food.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The bending of a wave as it passes from one medium into another is called:",
+        "options": [
+          {"id": "a", "text": "Reflection", "isCorrect": false},
+          {"id": "b", "text": "Diffraction", "isCorrect": false},
+          {"id": "c", "text": "Refraction", "isCorrect": true},
+          {"id": "d", "text": "Interference", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Refraction is the change in direction (bending) of a wave when it travels from one medium to another because its speed changes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The spreading of waves as they pass through a narrow gap or around an obstacle is called:",
+        "options": [
+          {"id": "a", "text": "Refraction", "isCorrect": false},
+          {"id": "b", "text": "Diffraction", "isCorrect": true},
+          {"id": "c", "text": "Reflection", "isCorrect": false},
+          {"id": "d", "text": "Absorption", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Diffraction is the spreading out of waves when they pass through a small opening or around the edges of an obstacle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of electromagnetic wave is used to take photographs of bones inside the body?",
+        "options": [
+          {"id": "a", "text": "Radio waves", "isCorrect": false},
+          {"id": "b", "text": "Infrared", "isCorrect": false},
+          {"id": "c", "text": "X-rays", "isCorrect": true},
+          {"id": "d", "text": "Microwaves", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "X-rays can pass through soft tissue but are absorbed by bones, so they are used in medicine to produce images of bones and to detect fractures.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "All electromagnetic waves travel through a vacuum at a speed of approximately:",
+        "options": [
+          {"id": "a", "text": "340 m/s", "isCorrect": false},
+          {"id": "b", "text": "1500 m/s", "isCorrect": false},
+          {"id": "c", "text": "3 x 10^8 m/s", "isCorrect": true},
+          {"id": "d", "text": "3 x 10^6 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "All electromagnetic waves travel through a vacuum at the speed of light, which is about 3 x 10^8 m/s (300,000,000 m/s).",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A wave transfers _____ from one point to another without transferring matter.",
+        "options": [],
+        "correctAnswer": "energy",
+        "explanation": "The key property of any wave is that it carries energy from one place to another while the medium itself does not move along with the wave.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Waves that require a material medium to travel are called _____ waves.",
+        "options": [],
+        "correctAnswer": "mechanical",
+        "explanation": "Mechanical waves, such as sound and water waves, cannot travel through a vacuum because they need particles of a medium to pass on the disturbance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a transverse wave the particles vibrate _____ to the direction of wave travel.",
+        "options": [],
+        "correctAnswer": "perpendicular",
+        "explanation": "Transverse waves have particle vibrations at right angles (perpendicular) to the direction in which the wave moves.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number of complete waves passing a point per second is called the _____.",
+        "options": [],
+        "correctAnswer": "frequency",
+        "explanation": "Frequency is the number of complete oscillations or waves per second, measured in hertz (Hz).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The wave equation relating speed, frequency and wavelength is v = _____.",
+        "options": [],
+        "correctAnswer": "f times lambda",
+        "explanation": "The wave equation states that the speed of a wave equals its frequency multiplied by its wavelength, v = f times lambda.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A wave of frequency 25 Hz and wavelength 8 m has a speed of _____ m/s.",
+        "options": [],
+        "correctAnswer": "200",
+        "explanation": "v = f times lambda = 25 Hz times 8 m = 200 m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A wave has a speed of 320 m/s and a wavelength of 4 m, so its frequency is _____ Hz.",
+        "options": [],
+        "correctAnswer": "80",
+        "explanation": "Rearranging v = f times lambda gives f = v/lambda = 320/4 = 80 Hz.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the frequency of a wave is 200 Hz, its period is _____ s.",
+        "options": [],
+        "correctAnswer": "0.005",
+        "explanation": "Using T = 1/f = 1/200 = 0.005 s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The region in a longitudinal wave where particles are spread far apart is called a _____.",
+        "options": [],
+        "correctAnswer": "rarefaction",
+        "explanation": "A rarefaction is a region of low particle density in a longitudinal wave, while a compression is a region of high density.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The member of the electromagnetic spectrum that we can see with our eyes is called _____ light.",
+        "options": [],
+        "correctAnswer": "visible",
+        "explanation": "Visible light is the only part of the electromagnetic spectrum that the human eye can detect, ranging from red to violet.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A wave transfers matter from one point to another.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A wave transfers energy, not matter. The particles of the medium vibrate about their fixed positions but do not travel with the wave.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Sound waves can travel through a vacuum.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Sound is a mechanical wave and needs a material medium to travel. It cannot pass through a vacuum because there are no particles to vibrate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Electromagnetic waves can travel through a vacuum.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Electromagnetic waves, such as light and radio waves, do not need a medium and can travel through a vacuum at the speed of light.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a longitudinal wave the particles vibrate parallel to the direction of wave travel.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "In longitudinal waves the vibration of particles is along the same direction as the wave moves, producing compressions and rarefactions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Frequency and period are related by the equation f = 1/T.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Frequency is the reciprocal of the period, so f = 1/T and equally T = 1/f.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The wavelength of a wave is the maximum displacement of a particle from its rest position.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "That description defines amplitude. Wavelength is the distance between two successive points in phase, such as two crests.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gamma rays have a higher frequency than radio waves.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Gamma rays are at the high-frequency, short-wavelength end of the electromagnetic spectrum, while radio waves have the lowest frequency.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Refraction is the bouncing back of a wave when it hits a barrier.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Bouncing back of a wave from a barrier is reflection. Refraction is the bending of a wave as it moves from one medium to another.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Ultraviolet radiation from the Sun can cause sunburn and damage to the skin.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Ultraviolet (UV) rays carry more energy than visible light and can cause sunburn, eye damage and skin cancer with excessive exposure.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Diffraction is the spreading of waves as they pass through a narrow gap or around an obstacle.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Diffraction describes how waves bend and spread out when they pass through small openings or around the edges of obstacles.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define a wave and state what it transfers.",
+        "options": [],
+        "correctAnswer": "A wave is a disturbance that travels through a medium or space, transferring energy from one point to another without transferring matter.",
+        "explanation": "The essential idea of a wave is the transfer of energy without the bulk transfer of the material it passes through.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distinguish between mechanical waves and electromagnetic waves.",
+        "options": [],
+        "correctAnswer": "Mechanical waves require a material medium to travel (for example sound and water waves), while electromagnetic waves can travel through a vacuum (for example light, radio waves and X-rays).",
+        "explanation": "The key difference is the need for a medium: mechanical waves need one, electromagnetic waves do not.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distinguish between transverse and longitudinal waves, giving one example of each.",
+        "options": [],
+        "correctAnswer": "In transverse waves the particles vibrate perpendicular to the direction of travel (for example light or water waves), while in longitudinal waves the particles vibrate parallel to the direction of travel (for example sound waves).",
+        "explanation": "Transverse waves have crests and troughs; longitudinal waves have compressions and rarefactions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define wavelength, frequency, period and amplitude.",
+        "options": [],
+        "correctAnswer": "Wavelength is the distance between two successive points in phase; frequency is the number of complete waves passing a point per second; period is the time for one complete oscillation; amplitude is the maximum displacement of a particle from its rest position.",
+        "explanation": "These four terms describe the basic measurable features of any wave.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the wave equation and the relationship between frequency and period.",
+        "options": [],
+        "correctAnswer": "The wave equation is v = f times lambda, where v is speed, f is frequency and lambda is wavelength. Frequency and period are related by f = 1/T.",
+        "explanation": "These two equations are used in most wave calculations at this level.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the four main properties or behaviours of waves.",
+        "options": [],
+        "correctAnswer": "The four main behaviours of waves are reflection, refraction, diffraction and interference.",
+        "explanation": "All waves can be reflected, refracted, diffracted and can interfere with one another.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the electromagnetic spectrum in order of increasing frequency.",
+        "options": [],
+        "correctAnswer": "Radio waves, microwaves, infrared, visible light, ultraviolet, X-rays and gamma rays.",
+        "explanation": "As frequency increases the wavelength decreases, from radio waves at one end to gamma rays at the other.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State three uses of electromagnetic waves.",
+        "options": [],
+        "correctAnswer": "Radio waves are used for radio and television broadcasting, microwaves for mobile and satellite communication, and X-rays for medical imaging of bones.",
+        "explanation": "Each part of the electromagnetic spectrum has practical uses based on its energy and how it interacts with matter.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State three properties common to all electromagnetic waves.",
+        "options": [],
+        "correctAnswer": "They travel through a vacuum at the speed of light (3 x 10^8 m/s), they are transverse waves, and they can be reflected, refracted and diffracted.",
+        "explanation": "All electromagnetic waves share these properties because they are oscillating electric and magnetic fields.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain why the speed of an electromagnetic wave can be found from v = f times lambda and what value v takes in a vacuum.",
+        "options": [],
+        "correctAnswer": "For an electromagnetic wave, multiplying its frequency by its wavelength gives its speed, and in a vacuum this speed is always about 3 x 10^8 m/s for every member of the spectrum.",
+        "explanation": "Since the speed is fixed in a vacuum, a higher frequency must correspond to a shorter wavelength and vice versa.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A radio station broadcasts at a frequency of 100 MHz (1 x 10^8 Hz). Given that radio waves travel at 3 x 10^8 m/s, what is the wavelength of the signal?",
+        "options": [
+          {"id": "a", "text": "0.33 m", "isCorrect": false},
+          {"id": "b", "text": "3 m", "isCorrect": true},
+          {"id": "c", "text": "30 m", "isCorrect": false},
+          {"id": "d", "text": "300 m", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rearranging v = f times lambda gives lambda = v/f = (3 x 10^8)/(1 x 10^8) = 3 m.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A wave makes 600 complete oscillations in 2 minutes. If its wavelength is 0.5 m, what is the speed of the wave?",
+        "options": [
+          {"id": "a", "text": "2.5 m/s", "isCorrect": true},
+          {"id": "b", "text": "5 m/s", "isCorrect": false},
+          {"id": "c", "text": "150 m/s", "isCorrect": false},
+          {"id": "d", "text": "300 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "First find frequency: f = number of oscillations / time = 600 / 120 s = 5 Hz. Then v = f times lambda = 5 Hz times 0.5 m = 2.5 m/s.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The period of a water wave is 0.25 s and the distance between two successive crests is 1.2 m. What is the speed of the wave?",
+        "options": [
+          {"id": "a", "text": "0.3 m/s", "isCorrect": false},
+          {"id": "b", "text": "1.45 m/s", "isCorrect": false},
+          {"id": "c", "text": "4.8 m/s", "isCorrect": true},
+          {"id": "d", "text": "3.0 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Frequency f = 1/T = 1/0.25 = 4 Hz. Wavelength = 1.2 m. Speed v = f times lambda = 4 Hz times 1.2 m = 4.8 m/s.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "topicId": "form_4_physics_topic_7",
+  "topicName": "Radioactivity and Nuclear Physics",
+  "order": 7,
+  "description": "This topic explores the structure of the atomic nucleus, the spontaneous decay of unstable nuclei into alpha, beta and gamma radiation, nuclear decay equations, half-life calculations, the detection, uses, dangers and safety of radiation, and the basic ideas of nuclear fission and fusion.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which particles together make up the nucleus of an atom?",
+        "options": [
+          {"id": "a", "text": "Protons and electrons", "isCorrect": false},
+          {"id": "b", "text": "Protons and neutrons", "isCorrect": true},
+          {"id": "c", "text": "Electrons and neutrons", "isCorrect": false},
+          {"id": "d", "text": "Electrons only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The nucleus contains protons (positively charged) and neutrons (no charge). Together these are called nucleons. Electrons orbit outside the nucleus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The atomic number of an element is equal to the number of:",
+        "options": [
+          {"id": "a", "text": "Neutrons in the nucleus", "isCorrect": false},
+          {"id": "b", "text": "Nucleons in the nucleus", "isCorrect": false},
+          {"id": "c", "text": "Protons in the nucleus", "isCorrect": true},
+          {"id": "d", "text": "Electrons plus neutrons", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The atomic number (Z) is the number of protons in the nucleus. In a neutral atom it also equals the number of electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What name is given to the total number of protons and neutrons in a nucleus?",
+        "options": [
+          {"id": "a", "text": "Atomic number", "isCorrect": false},
+          {"id": "b", "text": "Mass number", "isCorrect": true},
+          {"id": "c", "text": "Proton number", "isCorrect": false},
+          {"id": "d", "text": "Neutron number", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The mass number (A) is the total number of nucleons, that is the protons plus the neutrons in the nucleus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Isotopes of the same element have the same number of protons but different numbers of:",
+        "options": [
+          {"id": "a", "text": "Electrons", "isCorrect": false},
+          {"id": "b", "text": "Protons", "isCorrect": false},
+          {"id": "c", "text": "Neutrons", "isCorrect": true},
+          {"id": "d", "text": "Nucleons that are protons", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Isotopes have the same atomic number (same protons) but different mass numbers because they have different numbers of neutrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Radioactivity is best described as the:",
+        "options": [
+          {"id": "a", "text": "Burning of a substance in air", "isCorrect": false},
+          {"id": "b", "text": "Spontaneous decay of unstable nuclei with emission of radiation", "isCorrect": true},
+          {"id": "c", "text": "Movement of electrons around the nucleus", "isCorrect": false},
+          {"id": "d", "text": "Joining of two light nuclei", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Radioactivity is the spontaneous (random) disintegration of unstable nuclei, accompanied by the emission of alpha, beta or gamma radiation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An alpha particle is identical to the nucleus of which atom?",
+        "options": [
+          {"id": "a", "text": "Hydrogen", "isCorrect": false},
+          {"id": "b", "text": "Helium", "isCorrect": true},
+          {"id": "c", "text": "Carbon", "isCorrect": false},
+          {"id": "d", "text": "Lithium", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An alpha particle consists of 2 protons and 2 neutrons, which is the same as a helium nucleus. It carries a charge of +2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of nuclear radiation has the greatest penetrating power?",
+        "options": [
+          {"id": "a", "text": "Alpha", "isCorrect": false},
+          {"id": "b", "text": "Beta", "isCorrect": false},
+          {"id": "c", "text": "Gamma", "isCorrect": true},
+          {"id": "d", "text": "All penetrate equally", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Gamma rays are the most penetrating; they need thick lead or concrete to be stopped. Alpha is the least penetrating (stopped by paper) and beta is intermediate (stopped by a few mm of aluminium).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of radiation is the most strongly ionising?",
+        "options": [
+          {"id": "a", "text": "Alpha", "isCorrect": true},
+          {"id": "b", "text": "Beta", "isCorrect": false},
+          {"id": "c", "text": "Gamma", "isCorrect": false},
+          {"id": "d", "text": "X-rays", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Alpha particles are the most strongly ionising because they are large, slow and carry a +2 charge, so they interact strongly with atoms. Gamma is the least ionising.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A beta particle is a fast-moving:",
+        "options": [
+          {"id": "a", "text": "Proton", "isCorrect": false},
+          {"id": "b", "text": "Electron", "isCorrect": true},
+          {"id": "c", "text": "Neutron", "isCorrect": false},
+          {"id": "d", "text": "Helium nucleus", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A beta particle is a high-speed electron emitted from the nucleus when a neutron changes into a proton. It carries a charge of -1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gamma radiation is best described as:",
+        "options": [
+          {"id": "a", "text": "A stream of electrons", "isCorrect": false},
+          {"id": "b", "text": "A stream of helium nuclei", "isCorrect": false},
+          {"id": "c", "text": "A high-energy electromagnetic wave", "isCorrect": true},
+          {"id": "d", "text": "A stream of neutrons", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Gamma radiation is electromagnetic radiation of very short wavelength and high energy. It has no charge and no mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The half-life of a radioactive substance is the time taken for:",
+        "options": [
+          {"id": "a", "text": "All the nuclei to decay", "isCorrect": false},
+          {"id": "b", "text": "Half of the unstable nuclei present to decay", "isCorrect": true},
+          {"id": "c", "text": "The substance to double its mass", "isCorrect": false},
+          {"id": "d", "text": "The radiation to travel half a metre", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The half-life is the time taken for half of the radioactive (unstable) nuclei in a sample to decay, or for the activity to fall to half its value.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which instrument is commonly used to detect and count nuclear radiation?",
+        "options": [
+          {"id": "a", "text": "Geiger-Muller (GM) tube", "isCorrect": true},
+          {"id": "b", "text": "Voltmeter", "isCorrect": false},
+          {"id": "c", "text": "Barometer", "isCorrect": false},
+          {"id": "d", "text": "Thermometer", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A Geiger-Muller tube connected to a counter detects ionising radiation; each particle entering the tube produces a pulse that is registered as a count.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Carbon-14 dating is used mainly to estimate the age of:",
+        "options": [
+          {"id": "a", "text": "Rocks billions of years old", "isCorrect": false},
+          {"id": "b", "text": "Once-living things such as wood, bone and cloth", "isCorrect": true},
+          {"id": "c", "text": "Stars and galaxies", "isCorrect": false},
+          {"id": "d", "text": "Plastic objects", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Carbon-14 is taken in by living organisms. After death no new carbon-14 is absorbed, so by measuring the remaining carbon-14 the age of once-living material can be estimated.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In nuclear fission, a heavy nucleus such as uranium-235:",
+        "options": [
+          {"id": "a", "text": "Joins with another heavy nucleus", "isCorrect": false},
+          {"id": "b", "text": "Splits into smaller nuclei, releasing energy", "isCorrect": true},
+          {"id": "c", "text": "Loses only an electron", "isCorrect": false},
+          {"id": "d", "text": "Gains protons to become heavier", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Nuclear fission is the splitting of a heavy nucleus into two smaller nuclei (plus neutrons), releasing a large amount of energy. This is the process used in nuclear power stations.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a safety precaution when handling radioactive sources?",
+        "options": [
+          {"id": "a", "text": "Hold the source directly with bare hands", "isCorrect": false},
+          {"id": "b", "text": "Use long tongs and store sources in lead-lined containers", "isCorrect": true},
+          {"id": "c", "text": "Keep the source close to the body for a long time", "isCorrect": false},
+          {"id": "d", "text": "Point the source towards people", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Safe handling means keeping a distance using tongs, limiting exposure time, using lead shielding and lead-lined storage, and never pointing sources at people or touching them with bare hands.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The positively charged particle found in the nucleus is called the _____.",
+        "options": [],
+        "correctAnswer": "proton",
+        "explanation": "Protons carry a positive charge and, together with neutrons, make up the nucleus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Protons and neutrons in a nucleus are together called _____.",
+        "options": [],
+        "correctAnswer": "nucleons",
+        "explanation": "The collective name for the particles in the nucleus (protons and neutrons) is nucleons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Atoms with the same number of protons but different numbers of neutrons are called _____.",
+        "options": [],
+        "correctAnswer": "isotopes",
+        "explanation": "Isotopes share the same atomic number but have different mass numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When an alpha particle is emitted, the mass number of the nucleus decreases by _____.",
+        "options": [],
+        "correctAnswer": "4",
+        "explanation": "An alpha particle has a mass number of 4 (2 protons + 2 neutrons), so emitting it reduces the parent mass number by 4 and the atomic number by 2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a beta particle is emitted, the atomic number of the nucleus increases by _____.",
+        "options": [],
+        "correctAnswer": "1",
+        "explanation": "In beta decay a neutron changes into a proton plus an electron, so the atomic number increases by 1 while the mass number stays the same.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The least penetrating type of nuclear radiation is _____ radiation, which can be stopped by a sheet of paper.",
+        "options": [],
+        "correctAnswer": "alpha",
+        "explanation": "Alpha particles are large and highly charged, so they are easily absorbed and can be stopped by paper or a few centimetres of air.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument widely used to detect ionising radiation is the _____ tube.",
+        "options": [],
+        "correctAnswer": "Geiger-Muller",
+        "explanation": "The Geiger-Muller (GM) tube produces an electrical pulse each time radiation ionises the gas inside it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process in which two light nuclei join to form a heavier nucleus with the release of energy is called nuclear _____.",
+        "options": [],
+        "correctAnswer": "fusion",
+        "explanation": "Nuclear fusion combines light nuclei (such as hydrogen) into a heavier nucleus, releasing energy; it is the process that powers the Sun.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A radioactive sample has an activity of 800 counts per second. After two half-lives the activity will be _____ counts per second.",
+        "options": [],
+        "correctAnswer": "200",
+        "explanation": "After one half-life 800 becomes 400; after a second half-life 400 becomes 200 counts per second.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The radiation that has no charge and no mass and is part of the electromagnetic spectrum is _____ radiation.",
+        "options": [],
+        "correctAnswer": "gamma",
+        "explanation": "Gamma radiation is an electromagnetic wave; it carries no charge and effectively no mass, which is why it is the most penetrating.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Neutrons have no electric charge.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Neutrons are electrically neutral, while protons are positive and electrons are negative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Isotopes of an element have identical chemical properties because they have the same number of electrons.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Chemical behaviour depends on the electron arrangement, which is the same for isotopes since they have the same atomic number.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Radioactive decay can be sped up or slowed down by heating or cooling the sample.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Radioactive decay is spontaneous and random; it is not affected by temperature, pressure or chemical state.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Alpha particles are more penetrating than gamma rays.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Alpha particles are the least penetrating (stopped by paper), while gamma rays are the most penetrating.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A beta particle carries a negative charge.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A beta particle is a fast-moving electron, so it carries a charge of -1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "During alpha emission the atomic number of the nucleus decreases by 2.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "An alpha particle removes 2 protons, so the atomic number falls by 2 and the mass number falls by 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The activity of a radioactive sample increases steadily with time.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Activity decreases with time as nuclei decay; it falls by half during each half-life.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Radioactive isotopes can be used in medicine to treat cancer and to trace the flow of substances in the body.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Gamma sources are used to kill cancer cells, and tracers are used to follow blood flow or organ function, both important medical uses.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Nuclear reactions involve only the electrons of an atom and not the nucleus.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Nuclear reactions involve changes inside the nucleus, while chemical reactions involve only the outer electrons. This is a key difference between them.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Exposure to high doses of ionising radiation can damage living cells and cause cancer.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Ionising radiation can damage or kill cells and alter DNA, leading to burns, radiation sickness or cancer, which is why safety precautions are needed.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Describe the structure of an atom in terms of its nucleus and electrons.",
+        "options": [],
+        "correctAnswer": "An atom has a small, dense, positively charged nucleus at its centre containing protons and neutrons, with negatively charged electrons orbiting the nucleus in shells.",
+        "explanation": "This summarises the basic nuclear model: protons and neutrons in the nucleus and electrons in orbit around it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between atomic number and mass number.",
+        "options": [],
+        "correctAnswer": "The atomic number is the number of protons in the nucleus, while the mass number is the total number of nucleons, that is the protons plus the neutrons.",
+        "explanation": "Atomic number (Z) identifies the element; mass number (A) gives the total nucleons. The number of neutrons equals A minus Z.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is meant by radioactivity?",
+        "options": [],
+        "correctAnswer": "Radioactivity is the spontaneous and random decay of unstable nuclei, during which they emit alpha, beta or gamma radiation to become more stable.",
+        "explanation": "The decay is spontaneous (not affected by external conditions) and random (we cannot predict which nucleus decays next).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Compare alpha, beta and gamma radiation in terms of their nature and charge.",
+        "options": [],
+        "correctAnswer": "Alpha is a helium nucleus with charge +2, beta is a fast electron with charge -1, and gamma is a high-energy electromagnetic wave with no charge.",
+        "explanation": "These three differ in mass and charge, which leads to differences in their ionising and penetrating abilities.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Compare the penetrating powers of alpha, beta and gamma radiation.",
+        "options": [],
+        "correctAnswer": "Alpha is stopped by a sheet of paper, beta is stopped by a few millimetres of aluminium, and gamma can only be greatly reduced by thick lead or concrete.",
+        "explanation": "Penetrating power increases from alpha (least) to gamma (most), in the reverse order of their ionising ability.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the changes in mass number and atomic number during alpha decay and during beta decay.",
+        "options": [],
+        "correctAnswer": "In alpha decay the mass number decreases by 4 and the atomic number decreases by 2; in beta decay the mass number stays the same and the atomic number increases by 1.",
+        "explanation": "Alpha emission removes 2 protons and 2 neutrons; beta emission converts a neutron into a proton plus the emitted electron.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define half-life and explain how it relates to the activity of a sample.",
+        "options": [],
+        "correctAnswer": "Half-life is the time taken for half of the unstable nuclei in a sample to decay, and during each half-life the activity of the sample falls to half its previous value.",
+        "explanation": "Both the number of undecayed nuclei and the measured activity halve over each half-life.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how a Geiger-Muller tube detects radiation.",
+        "options": [],
+        "correctAnswer": "When ionising radiation enters the Geiger-Muller tube it ionises the gas inside, producing a brief pulse of current that is registered as a count by the connected counter.",
+        "explanation": "Each detected particle gives one electrical pulse, allowing the rate of radiation (count rate) to be measured.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List four useful applications of radioactivity.",
+        "options": [],
+        "correctAnswer": "Radioactivity is used in medicine for treating cancer and as tracers, in archaeology for carbon dating, in industry for thickness gauging and detecting leaks, and in power stations for generating electricity.",
+        "explanation": "Other uses include sterilising medical equipment and inducing mutations or controlling pests in agriculture.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the main difference between a nuclear reaction and a chemical reaction.",
+        "options": [],
+        "correctAnswer": "A nuclear reaction involves changes in the nucleus and releases very large amounts of energy, while a chemical reaction involves only the outer electrons and releases much less energy.",
+        "explanation": "Nuclear reactions can change one element into another and release millions of times more energy than chemical reactions.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A radioactive source has a half-life of 5 days. If the initial activity is 1600 counts per minute, what will the activity be after 15 days?",
+        "options": [
+          {"id": "a", "text": "800 counts per minute", "isCorrect": false},
+          {"id": "b", "text": "400 counts per minute", "isCorrect": false},
+          {"id": "c", "text": "200 counts per minute", "isCorrect": true},
+          {"id": "d", "text": "100 counts per minute", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "15 days is 3 half-lives (15/5 = 3). The activity halves three times: 1600 to 800 to 400 to 200 counts per minute.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A nucleus is represented as 226 over 88 Ra (radium). After it emits one alpha particle, what is the mass number and atomic number of the new nucleus?",
+        "options": [
+          {"id": "a", "text": "Mass number 222, atomic number 86", "isCorrect": true},
+          {"id": "b", "text": "Mass number 224, atomic number 87", "isCorrect": false},
+          {"id": "c", "text": "Mass number 226, atomic number 89", "isCorrect": false},
+          {"id": "d", "text": "Mass number 222, atomic number 90", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Alpha emission reduces the mass number by 4 (226 - 4 = 222) and the atomic number by 2 (88 - 2 = 86), giving a new nucleus with mass number 222 and atomic number 86.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A sample of a radioactive isotope decays from 6.4 grams to 0.8 grams in 24 days. What is the half-life of the isotope?",
+        "options": [
+          {"id": "a", "text": "4 days", "isCorrect": false},
+          {"id": "b", "text": "6 days", "isCorrect": false},
+          {"id": "c", "text": "8 days", "isCorrect": true},
+          {"id": "d", "text": "12 days", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Halving 6.4 g gives 3.2, 1.6, then 0.8 g, which is 3 half-lives. So 3 half-lives = 24 days, meaning one half-life = 24/3 = 8 days.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

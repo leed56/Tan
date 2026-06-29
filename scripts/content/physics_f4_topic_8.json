@@ -1,0 +1,732 @@
+{
+  "topicId": "form_4_physics_topic_8",
+  "topicName": "Elementary Astronomy and Geophysics",
+  "order": 8,
+  "description": "This topic introduces the solar system, the Earth-Sun-Moon system, gravitation and satellites, and the basic structure and physical features of the Earth including its atmosphere, earthquakes, volcanoes and magnetic field.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "How many planets are there in our solar system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Six",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Seven",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Eight",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Nine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since Pluto was reclassified as a dwarf planet in 2006, the solar system is recognised as having eight planets orbiting the Sun.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which is the correct order of the first four planets starting from the Sun?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mercury, Venus, Earth, Mars",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Venus, Mercury, Mars, Earth",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Earth, Mars, Venus, Mercury",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mars, Earth, Venus, Mercury",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moving outward from the Sun, the first four (rocky) planets are Mercury, Venus, Earth and then Mars.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which planet is the largest in the solar system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Saturn",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Earth",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Jupiter",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Neptune",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Jupiter is the largest planet, a giant gas planet with a diameter many times that of the Earth.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Day and night on Earth are caused mainly by the Earth's:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Revolution around the Sun",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Rotation about its own axis",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Tilt of its axis",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Magnetic field",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The Earth rotates on its axis once in about 24 hours, so each part faces the Sun (day) and then turns away (night).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The seasons of the year are caused by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Earth getting closer to and farther from the Sun",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The rotation of the Earth on its axis",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The tilt of the Earth's axis as it revolves around the Sun",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Changes in the brightness of the Sun",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The Earth's axis is tilted at about 23.5 degrees, so as it orbits the Sun different hemispheres receive more direct sunlight, producing the seasons.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A solar eclipse occurs when:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Earth lies between the Sun and the Moon",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The Moon lies between the Sun and the Earth",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The Sun lies between the Earth and the Moon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The Earth's shadow falls on the Sun",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In a solar eclipse the Moon passes between the Sun and the Earth, casting its shadow on part of the Earth and blocking sunlight.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A lunar eclipse occurs when:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Moon passes between the Sun and the Earth",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The Earth passes between the Sun and the Moon",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The Sun passes between the Earth and the Moon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The Moon stops rotating",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A lunar eclipse happens when the Earth comes between the Sun and the Moon, so the Earth's shadow falls on the Moon.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The force that keeps the planets in their orbits around the Sun is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Magnetic force",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Frictional force",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Gravitational force",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Electric force",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The Sun's gravitational pull provides the centripetal force that keeps each planet moving in its orbit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a use of artificial satellites?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Producing the seasons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Communication and weather forecasting",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Causing day and night",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Generating the Earth's magnetic field",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Artificial satellites are used for telecommunication, weather observation, navigation (GPS) and remote sensing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The outermost solid layer of the Earth on which we live is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mantle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Outer core",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Inner core",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Crust",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "The crust is the thin, solid outermost layer of the Earth; below it lie the mantle and the core.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The layer of the Earth that is believed to be in a liquid state is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Crust",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Outer core",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Inner core",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Atmosphere",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The outer core is made mainly of molten (liquid) iron and nickel, while the inner core is solid because of the very high pressure.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An instrument used to observe distant objects in the sky such as planets and stars is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Microscope",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Periscope",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Telescope",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Barometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A telescope collects and magnifies light from distant objects, making it the main instrument used in astronomy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Small pieces of rock that burn up as bright streaks when they enter the Earth's atmosphere are called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Comets",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Meteors",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Asteroids",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Planets",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Meteors (shooting stars) are small rocky particles that glow as they burn up due to friction with the air.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A natural satellite of the Earth is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sun",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Moon",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mars",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "GPS satellite",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The Moon is the Earth's only natural satellite, orbiting the Earth under the pull of gravity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to record the vibrations of the ground during an earthquake is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Seismograph",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Thermometer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Hygrometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Galvanometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A seismograph (seismometer) detects and records the seismic waves produced by earthquakes.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The star at the centre of our solar system is the _____.",
+        "options": [],
+        "correctAnswer": "Sun",
+        "explanation": "The Sun is the star at the centre of the solar system and provides light and heat to the planets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The planet on which we live is called the _____.",
+        "options": [],
+        "correctAnswer": "Earth",
+        "explanation": "The Earth is the third planet from the Sun and the only one known to support life.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The spinning of the Earth about its own axis is called _____.",
+        "options": [],
+        "correctAnswer": "rotation",
+        "explanation": "Rotation is the turning of the Earth about its axis once in about 24 hours, causing day and night.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The movement of the Earth around the Sun is called _____.",
+        "options": [],
+        "correctAnswer": "revolution",
+        "explanation": "Revolution is the orbiting of the Earth around the Sun once in about 365.25 days.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The different shapes of the lit part of the Moon seen from Earth are called the _____ of the Moon.",
+        "options": [],
+        "correctAnswer": "phases",
+        "explanation": "The phases of the Moon (new, crescent, half, full, etc.) result from how much of its sunlit side faces the Earth.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The hot, semi-solid layer of the Earth lying between the crust and the core is the _____.",
+        "options": [],
+        "correctAnswer": "mantle",
+        "explanation": "The mantle is the thick layer of hot, partly molten rock between the crust and the core.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The layer of gases surrounding the Earth is called the _____.",
+        "options": [],
+        "correctAnswer": "atmosphere",
+        "explanation": "The atmosphere is the envelope of gases held around the Earth by gravity and is divided into layers such as the troposphere and stratosphere.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A sudden shaking of the ground caused by movement of rocks beneath the surface is called an _____.",
+        "options": [],
+        "correctAnswer": "earthquake",
+        "explanation": "An earthquake is the shaking of the ground caused by the sudden release of energy when rocks move along faults.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A mountain or opening through which molten rock and gases erupt from inside the Earth is called a _____.",
+        "options": [],
+        "correctAnswer": "volcano",
+        "explanation": "A volcano is an opening in the Earth's crust through which magma, ash and gases reach the surface.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The system that uses artificial satellites to find the exact position of a place on Earth is known by the abbreviation _____.",
+        "options": [],
+        "correctAnswer": "GPS",
+        "explanation": "GPS (Global Positioning System) uses signals from satellites to determine location and is used for navigation.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The Sun is a star, not a planet.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The Sun is a star at the centre of the solar system; planets orbit around it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The planets produce their own light just like the Sun.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Planets do not produce their own light; they are seen because they reflect sunlight.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Comets are mainly made of ice and dust and develop a tail when near the Sun.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A comet is a body of ice, dust and rock; near the Sun the ice vaporises, forming a glowing tail pointing away from the Sun.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Day and night are caused by the revolution of the Earth around the Sun.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Day and night are caused by the Earth's rotation on its axis, not by its revolution around the Sun.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A full moon is seen when the whole sunlit side of the Moon faces the Earth.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "At full moon the Earth is between the Sun and Moon (without an eclipse), so we see the entire lit face of the Moon.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During a total solar eclipse the Moon's shadow falls on the Earth.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "In a solar eclipse the Moon comes between the Sun and Earth, casting its shadow on the Earth's surface.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The inner core of the Earth is liquid while the outer core is solid.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "It is the other way round: the outer core is liquid and the inner core is solid because of the very high pressure.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Gravitational force provides the centripetal force needed to keep satellites in orbit.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Gravity pulls a satellite toward the Earth, supplying the centripetal force that keeps it moving in a circular orbit.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The Earth behaves like a giant magnet with a magnetic field around it.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The Earth produces a magnetic field, mainly from motion in its liquid outer core, which makes a compass needle point north-south.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Earthquakes and volcanoes are most common far away from the boundaries of the Earth's crustal plates.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Earthquakes and volcanoes occur most often along plate boundaries, where crustal plates meet and move against each other.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State the difference between rotation and revolution of the Earth.",
+        "options": [],
+        "correctAnswer": "Rotation is the spinning of the Earth about its own axis, taking about 24 hours and causing day and night. Revolution is the movement of the Earth around the Sun, taking about one year and, together with the axial tilt, causing the seasons.",
+        "explanation": "Rotation concerns the daily spin on the axis; revolution concerns the yearly orbit around the Sun.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain why the seasons of the year occur.",
+        "options": [],
+        "correctAnswer": "Seasons occur because the Earth's axis is tilted at about 23.5 degrees as the Earth revolves around the Sun. This tilt means different parts of the Earth receive more or less direct sunlight at different times of the year, giving warmer and cooler seasons.",
+        "explanation": "The axial tilt, not the distance from the Sun, is the main cause of the changing seasons.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distinguish between a solar eclipse and a lunar eclipse.",
+        "options": [],
+        "correctAnswer": "A solar eclipse occurs when the Moon comes between the Sun and the Earth, blocking sunlight and casting the Moon's shadow on the Earth. A lunar eclipse occurs when the Earth comes between the Sun and the Moon, so the Earth's shadow falls on the Moon.",
+        "explanation": "The two differ by which body lies in the middle and on which body the shadow falls.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the four main layers of the Earth from the outside to the centre.",
+        "options": [],
+        "correctAnswer": "From the outside to the centre the layers are: the crust, the mantle, the outer core and the inner core.",
+        "explanation": "The crust is the thin solid surface, the mantle is hot semi-solid rock, the outer core is liquid and the inner core is solid.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mention three uses of artificial satellites.",
+        "options": [],
+        "correctAnswer": "Artificial satellites are used for communication (telephone, television and internet signals), weather forecasting and observation, and navigation through systems such as GPS. They are also used for remote sensing and scientific research.",
+        "explanation": "Satellites serve communication, weather monitoring, navigation and observation purposes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain how gravitation keeps a planet in orbit around the Sun.",
+        "options": [],
+        "correctAnswer": "The Sun exerts a gravitational pull on each planet, directed toward the Sun. This pull acts as the centripetal force that continuously changes the planet's direction of motion, keeping it moving in a nearly circular (elliptical) orbit instead of moving off in a straight line.",
+        "explanation": "Gravity supplies the inward (centripetal) force needed for orbital motion.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Describe briefly what causes an earthquake.",
+        "options": [],
+        "correctAnswer": "An earthquake is caused by the sudden release of energy stored in rocks when they move along faults or at plate boundaries beneath the Earth's surface. This energy travels outward as seismic waves that make the ground shake.",
+        "explanation": "Movement of rocks along faults releases energy as seismic waves that cause shaking.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State two effects of volcanic eruptions.",
+        "options": [],
+        "correctAnswer": "Volcanic eruptions can destroy life and property by lava flows, ash and gases, and can pollute the air. On the positive side, they form fertile soils and new land, and may produce useful minerals and geothermal energy sources.",
+        "explanation": "Volcanoes have both harmful effects (destruction, pollution) and useful effects (fertile soil, minerals).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the bodies found in the solar system besides the Sun and the eight planets.",
+        "options": [],
+        "correctAnswer": "Besides the Sun and the eight planets, the solar system contains moons (natural satellites), asteroids, comets, meteors and dwarf planets.",
+        "explanation": "Other members of the solar system include moons, asteroids, comets, meteors and dwarf planets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain why the Moon shows different phases during a month.",
+        "options": [],
+        "correctAnswer": "The Moon does not give out its own light but reflects sunlight. As the Moon revolves around the Earth, the amount of its sunlit half that faces the Earth changes, so we see different shapes (phases) such as new moon, crescent, half moon and full moon.",
+        "explanation": "Phases arise from the changing portion of the Moon's lit side visible from Earth as it orbits.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A communication satellite is placed in an orbit so that it appears to stay above the same point on the Earth's equator at all times. For this to happen, the satellite must:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Have an orbital period equal to the Earth's rotation period of 24 hours",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Travel much faster than the Earth's rotation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Orbit over the North and South Poles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Be completely free of any gravitational force",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A geostationary satellite orbits above the equator with a period of 24 hours, matching the Earth's rotation, so it appears fixed over one point.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An observer notices that a total solar eclipse can only happen during a particular phase of the Moon. That phase is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Full moon",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "New moon",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "First quarter (half moon)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Waning crescent that is always visible at midnight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A solar eclipse needs the Moon between the Sun and Earth; this alignment, with the dark side facing Earth, occurs at new moon.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "During an earthquake, scientists detect that one type of seismic wave passes through the liquid outer core while another type fails to pass through it. The best explanation for this observation is that:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The outer core blocks all kinds of waves equally",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Transverse (shear) waves cannot travel through a liquid, but longitudinal waves can",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "All seismic waves travel faster in liquids than in solids",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The waves are stopped by the Earth's magnetic field",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Transverse (S) waves cannot pass through liquids, so they are stopped by the liquid outer core, while longitudinal (P) waves can travel through it; this is how the liquid core was discovered.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
