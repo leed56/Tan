@@ -1,0 +1,444 @@
+{
+  "topicId": "form_3_chemistry_topic_2",
+  "topicName": "The Mole Concept",
+  "order": 2,
+  "description": "This topic explains the mole as the unit of amount of substance and shows how to relate mass, moles, number of particles, gas volumes, solution concentrations and chemical formulae through calculations.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the value of Avogadro's number (constant)?",
+        "options": [
+          {"id": "a", "text": "6.02 x 10^23", "isCorrect": true},
+          {"id": "b", "text": "6.02 x 10^-23", "isCorrect": false},
+          {"id": "c", "text": "3.01 x 10^23", "isCorrect": false},
+          {"id": "d", "text": "1.20 x 10^24", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "One mole of any substance contains 6.02 x 10^23 particles, a value known as Avogadro's number or the Avogadro constant.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mole is the SI unit used to measure which quantity?",
+        "options": [
+          {"id": "a", "text": "Mass of a substance", "isCorrect": false},
+          {"id": "b", "text": "Amount of substance", "isCorrect": true},
+          {"id": "c", "text": "Volume of a substance", "isCorrect": false},
+          {"id": "d", "text": "Temperature of a substance", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The mole is the SI base unit for the amount of substance, counting the number of particles present.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the molar mass of water, H2O? (H = 1, O = 16)",
+        "options": [
+          {"id": "a", "text": "16 g/mol", "isCorrect": false},
+          {"id": "b", "text": "17 g/mol", "isCorrect": false},
+          {"id": "c", "text": "18 g/mol", "isCorrect": true},
+          {"id": "d", "text": "20 g/mol", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Molar mass of H2O = (2 x 1) + 16 = 18 g/mol.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many moles are present in 88 g of carbon dioxide, CO2? (C = 12, O = 16)",
+        "options": [
+          {"id": "a", "text": "1 mol", "isCorrect": false},
+          {"id": "b", "text": "2 mol", "isCorrect": true},
+          {"id": "c", "text": "3 mol", "isCorrect": false},
+          {"id": "d", "text": "4 mol", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Molar mass of CO2 = 12 + (2 x 16) = 44 g/mol. Moles = 88 / 44 = 2 mol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the volume occupied by 1 mole of any gas at s.t.p.?",
+        "options": [
+          {"id": "a", "text": "1 dm^3", "isCorrect": false},
+          {"id": "b", "text": "22.4 dm^3", "isCorrect": true},
+          {"id": "c", "text": "24 dm^3", "isCorrect": false},
+          {"id": "d", "text": "44.8 dm^3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The molar volume of any gas at standard temperature and pressure (s.t.p.) is 22.4 dm^3 per mole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many molecules are there in 2 moles of oxygen gas?",
+        "options": [
+          {"id": "a", "text": "6.02 x 10^23", "isCorrect": false},
+          {"id": "b", "text": "1.204 x 10^24", "isCorrect": true},
+          {"id": "c", "text": "3.01 x 10^23", "isCorrect": false},
+          {"id": "d", "text": "12.04 x 10^24", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Number of molecules = moles x Avogadro's number = 2 x 6.02 x 10^23 = 1.204 x 10^24.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the mass of 0.5 mol of sodium chloride, NaCl? (Na = 23, Cl = 35.5)",
+        "options": [
+          {"id": "a", "text": "29.25 g", "isCorrect": true},
+          {"id": "b", "text": "58.5 g", "isCorrect": false},
+          {"id": "c", "text": "117 g", "isCorrect": false},
+          {"id": "d", "text": "14.5 g", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Molar mass of NaCl = 23 + 35.5 = 58.5 g/mol. Mass = moles x molar mass = 0.5 x 58.5 = 29.25 g.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The relative formula mass is the term used mainly for which type of compound?",
+        "options": [
+          {"id": "a", "text": "Simple covalent molecules", "isCorrect": false},
+          {"id": "b", "text": "Ionic compounds", "isCorrect": true},
+          {"id": "c", "text": "Pure metals", "isCorrect": false},
+          {"id": "d", "text": "Noble gases", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ionic compounds do not exist as molecules, so we use relative formula mass based on their formula units instead of relative molecular mass.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A solution contains 0.5 mol of solute in 2 dm^3 of solution. What is its concentration?",
+        "options": [
+          {"id": "a", "text": "0.25 mol/dm^3", "isCorrect": true},
+          {"id": "b", "text": "1.0 mol/dm^3", "isCorrect": false},
+          {"id": "c", "text": "2.0 mol/dm^3", "isCorrect": false},
+          {"id": "d", "text": "4.0 mol/dm^3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Concentration = moles / volume = 0.5 / 2 = 0.25 mol/dm^3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What volume does 0.25 mol of nitrogen gas occupy at s.t.p.?",
+        "options": [
+          {"id": "a", "text": "5.6 dm^3", "isCorrect": true},
+          {"id": "b", "text": "11.2 dm^3", "isCorrect": false},
+          {"id": "c", "text": "22.4 dm^3", "isCorrect": false},
+          {"id": "d", "text": "2.24 dm^3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Volume = moles x 22.4 = 0.25 x 22.4 = 5.6 dm^3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the relative molecular mass of methane, CH4? (C = 12, H = 1)",
+        "options": [
+          {"id": "a", "text": "13", "isCorrect": false},
+          {"id": "b", "text": "15", "isCorrect": false},
+          {"id": "c", "text": "16", "isCorrect": true},
+          {"id": "d", "text": "17", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Relative molecular mass of CH4 = 12 + (4 x 1) = 16.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The empirical formula of a compound shows the:",
+        "options": [
+          {"id": "a", "text": "Actual number of atoms in one molecule", "isCorrect": false},
+          {"id": "b", "text": "Simplest whole-number ratio of atoms", "isCorrect": true},
+          {"id": "c", "text": "Total mass of all atoms present", "isCorrect": false},
+          {"id": "d", "text": "Number of moles in 1 gram", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The empirical formula gives the simplest whole-number ratio of the atoms of each element in a compound.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many atoms are present in 0.5 mol of pure carbon?",
+        "options": [
+          {"id": "a", "text": "3.01 x 10^23", "isCorrect": true},
+          {"id": "b", "text": "6.02 x 10^23", "isCorrect": false},
+          {"id": "c", "text": "1.204 x 10^24", "isCorrect": false},
+          {"id": "d", "text": "12.04 x 10^23", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Number of atoms = 0.5 x 6.02 x 10^23 = 3.01 x 10^23.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the percentage by mass of oxygen in water, H2O? (H = 1, O = 16)",
+        "options": [
+          {"id": "a", "text": "11.1%", "isCorrect": false},
+          {"id": "b", "text": "50%", "isCorrect": false},
+          {"id": "c", "text": "88.9%", "isCorrect": true},
+          {"id": "d", "text": "16%", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Molar mass of H2O = 18. Percentage of O = (16 / 18) x 100 = 88.9%.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which expression correctly gives the number of moles from a given mass?",
+        "options": [
+          {"id": "a", "text": "moles = mass x molar mass", "isCorrect": false},
+          {"id": "b", "text": "moles = mass / molar mass", "isCorrect": true},
+          {"id": "c", "text": "moles = molar mass / mass", "isCorrect": false},
+          {"id": "d", "text": "moles = mass + molar mass", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Number of moles = mass (g) / molar mass (g/mol).",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "One mole of any substance contains _____ particles.",
+        "options": [],
+        "correctAnswer": "6.02 x 10^23",
+        "explanation": "This number of particles per mole is Avogadro's number.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The molar volume of any gas at s.t.p. is _____ dm^3.",
+        "options": [],
+        "correctAnswer": "22.4",
+        "explanation": "At standard temperature and pressure, one mole of gas occupies 22.4 dm^3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mass of one mole of a substance in grams is called its _____.",
+        "options": [],
+        "correctAnswer": "molar mass",
+        "explanation": "Molar mass is the mass in grams of one mole and is numerically equal to the relative molecular or formula mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number of moles in 36 g of water (H2O, molar mass 18) is _____ mol.",
+        "options": [],
+        "correctAnswer": "2",
+        "explanation": "Moles = mass / molar mass = 36 / 18 = 2 mol.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Concentration in mol/dm^3 is found by dividing the number of moles of solute by the _____ of solution in dm^3.",
+        "options": [],
+        "correctAnswer": "volume",
+        "explanation": "Concentration (mol/dm^3) = moles / volume (dm^3).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The simplest whole-number ratio of atoms in a compound is shown by its _____ formula.",
+        "options": [],
+        "correctAnswer": "empirical",
+        "explanation": "The empirical formula gives the simplest atom ratio, while the molecular formula gives the actual numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The volume occupied by 0.5 mol of carbon dioxide gas at s.t.p. is _____ dm^3.",
+        "options": [],
+        "correctAnswer": "11.2",
+        "explanation": "Volume = moles x 22.4 = 0.5 x 22.4 = 11.2 dm^3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "To convert concentration from mol/dm^3 to g/dm^3, you multiply by the _____ of the solute.",
+        "options": [],
+        "correctAnswer": "molar mass",
+        "explanation": "Concentration (g/dm^3) = concentration (mol/dm^3) x molar mass (g/mol).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The relative atomic mass compares the mass of an atom to one twelfth the mass of one atom of _____.",
+        "options": [],
+        "correctAnswer": "carbon-12",
+        "explanation": "Relative atomic mass is measured relative to one twelfth the mass of a carbon-12 atom.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mass of 3 mol of sodium atoms (Na = 23) is _____ g.",
+        "options": [],
+        "correctAnswer": "69",
+        "explanation": "Mass = moles x molar mass = 3 x 23 = 69 g.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "One mole of any substance always contains the same number of particles.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "One mole always contains 6.02 x 10^23 particles regardless of the substance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The molar mass of a substance is numerically equal to its relative molecular or formula mass.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "For example, water has a relative molecular mass of 18 and a molar mass of 18 g/mol.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "At s.t.p. one mole of carbon dioxide occupies a larger volume than one mole of hydrogen gas.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "At s.t.p. one mole of any gas occupies 22.4 dm^3, regardless of the type of gas.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Number of particles is found by multiplying the number of moles by Avogadro's number.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Number of particles = moles x 6.02 x 10^23.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The empirical and molecular formula of a compound are always identical.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "They are equal only sometimes; for example glucose has empirical formula CH2O but molecular formula C6H12O6.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Concentration measured in g/dm^3 can be converted to mol/dm^3 by dividing by the molar mass.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Concentration (mol/dm^3) = concentration (g/dm^3) / molar mass.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Relative atomic mass has units of grams.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Relative atomic mass is a ratio and therefore has no units.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mass of 1 mole of oxygen molecules (O2) is 32 g.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Molar mass of O2 = 2 x 16 = 32 g/mol.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Increasing the volume of a solution while keeping moles of solute constant decreases its concentration.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Since concentration = moles / volume, a larger volume gives a smaller concentration.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Percentage composition by mass adds up to more than 100% for a pure compound.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The percentages of all elements in a pure compound add up to exactly 100%.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define the mole.",
+        "options": [],
+        "correctAnswer": "The mole is the amount of substance that contains 6.02 x 10^23 particles.",
+        "explanation": "The mole counts particles such as atoms, molecules or ions, with 6.02 x 10^23 particles per mole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the formula used to find the number of moles from mass.",
+        "options": [],
+        "correctAnswer": "moles = mass / molar mass",
+        "explanation": "Dividing the mass in grams by the molar mass in g/mol gives the number of moles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How do you calculate the number of particles from the number of moles?",
+        "options": [],
+        "correctAnswer": "Multiply the number of moles by Avogadro's number (6.02 x 10^23).",
+        "explanation": "Particles = moles x 6.02 x 10^23.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the formula linking gas volume and moles at s.t.p.",
+        "options": [],
+        "correctAnswer": "volume (dm^3) = moles x 22.4",
+        "explanation": "Each mole of gas occupies 22.4 dm^3 at s.t.p.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How is concentration in mol/dm^3 calculated?",
+        "options": [],
+        "correctAnswer": "Concentration = moles of solute / volume of solution in dm^3.",
+        "explanation": "This gives molar concentration in mol/dm^3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain how to convert concentration from mol/dm^3 to g/dm^3.",
+        "options": [],
+        "correctAnswer": "Multiply the concentration in mol/dm^3 by the molar mass of the solute.",
+        "explanation": "g/dm^3 = mol/dm^3 x molar mass (g/mol).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distinguish between empirical and molecular formula.",
+        "options": [],
+        "correctAnswer": "Empirical formula shows the simplest ratio of atoms; molecular formula shows the actual number of atoms in a molecule.",
+        "explanation": "For example, the empirical formula of glucose is CH2O while its molecular formula is C6H12O6.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Outline the steps to find the empirical formula from percentage composition.",
+        "options": [],
+        "correctAnswer": "Divide each element's percentage by its relative atomic mass, then divide the results by the smallest value to get the simplest whole-number ratio.",
+        "explanation": "The mole ratio obtained gives the empirical formula.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "How is percentage composition by mass of an element in a compound calculated?",
+        "options": [],
+        "correctAnswer": "Percentage = (mass of element in one mole / molar mass of compound) x 100.",
+        "explanation": "This shows the fraction of the compound's mass contributed by that element.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define molar mass and give its units.",
+        "options": [],
+        "correctAnswer": "Molar mass is the mass of one mole of a substance, measured in grams per mole (g/mol).",
+        "explanation": "It is numerically equal to the relative molecular or formula mass.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A sample of calcium carbonate (CaCO3) has a mass of 50 g. How many moles are present? (Ca = 40, C = 12, O = 16)",
+        "options": [
+          {"id": "a", "text": "0.5 mol", "isCorrect": true},
+          {"id": "b", "text": "1.0 mol", "isCorrect": false},
+          {"id": "c", "text": "2.0 mol", "isCorrect": false},
+          {"id": "d", "text": "5.0 mol", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Molar mass of CaCO3 = 40 + 12 + (3 x 16) = 100 g/mol. Moles = 50 / 100 = 0.5 mol.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A compound contains 40% carbon, 6.7% hydrogen and 53.3% oxygen by mass. What is its empirical formula? (C = 12, H = 1, O = 16)",
+        "options": [
+          {"id": "a", "text": "CHO", "isCorrect": false},
+          {"id": "b", "text": "CH2O", "isCorrect": true},
+          {"id": "c", "text": "C2H4O2", "isCorrect": false},
+          {"id": "d", "text": "CH4O", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moles: C = 40/12 = 3.33, H = 6.7/1 = 6.7, O = 53.3/16 = 3.33. Dividing by 3.33 gives C:H:O = 1:2:1, so the empirical formula is CH2O.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "What mass of sodium hydroxide (NaOH) is needed to prepare 500 cm^3 of a 2 mol/dm^3 solution? (Na = 23, O = 16, H = 1)",
+        "options": [
+          {"id": "a", "text": "20 g", "isCorrect": false},
+          {"id": "b", "text": "40 g", "isCorrect": true},
+          {"id": "c", "text": "80 g", "isCorrect": false},
+          {"id": "d", "text": "100 g", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Volume = 500 cm^3 = 0.5 dm^3. Moles = concentration x volume = 2 x 0.5 = 1 mol. Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol. Mass = 1 x 40 = 40 g.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

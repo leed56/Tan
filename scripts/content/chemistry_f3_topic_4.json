@@ -1,0 +1,444 @@
+{
+  "topicId": "form_3_chemistry_topic_4",
+  "topicName": "Volumetric Analysis",
+  "order": 4,
+  "description": "Volumetric analysis uses titration with measured volumes of solutions of known and unknown concentration to determine the concentration or amount of a substance, applying apparatus, indicators, standard solutions and mole calculations.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the main purpose of volumetric analysis?",
+        "options": [
+          {"id": "a", "text": "To measure the mass of a solid directly", "isCorrect": false},
+          {"id": "b", "text": "To determine the concentration of a solution by measuring volumes that react", "isCorrect": true},
+          {"id": "c", "text": "To separate a mixture by distillation", "isCorrect": false},
+          {"id": "d", "text": "To measure the temperature of a reaction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Volumetric analysis (titration) finds an unknown concentration by accurately measuring the volumes of solutions that react completely with each other.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which apparatus is used to deliver a variable, accurately measured volume of solution during a titration?",
+        "options": [
+          {"id": "a", "text": "Pipette", "isCorrect": false},
+          {"id": "b", "text": "Conical flask", "isCorrect": false},
+          {"id": "c", "text": "Burette", "isCorrect": true},
+          {"id": "d", "text": "Measuring cylinder", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A burette is graduated and fitted with a tap so it can deliver and measure variable volumes accurately, usually to the nearest 0.05 cm3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pipette is used to measure which kind of volume?",
+        "options": [
+          {"id": "a", "text": "A fixed (single) accurate volume", "isCorrect": true},
+          {"id": "b", "text": "Any volume the user chooses, with a tap", "isCorrect": false},
+          {"id": "c", "text": "An approximate volume only", "isCorrect": false},
+          {"id": "d", "text": "The volume of a gas", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A pipette delivers one fixed accurate volume (for example 25.0 cm3) of the solution being titrated into the conical flask.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which apparatus is used to prepare a standard solution of an exact volume?",
+        "options": [
+          {"id": "a", "text": "Beaker", "isCorrect": false},
+          {"id": "b", "text": "Volumetric (graduated) flask", "isCorrect": true},
+          {"id": "c", "text": "Conical flask", "isCorrect": false},
+          {"id": "d", "text": "Burette", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A volumetric flask has a single calibration mark giving one exact volume, so it is used to make up standard solutions to a precise total volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is a standard solution?",
+        "options": [
+          {"id": "a", "text": "A solution whose concentration is not known", "isCorrect": false},
+          {"id": "b", "text": "A solution of accurately known concentration", "isCorrect": true},
+          {"id": "c", "text": "Any solution containing an acid", "isCorrect": false},
+          {"id": "d", "text": "A solution that always turns red", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A standard solution is one whose concentration is known accurately, prepared from a primary standard or by careful standardisation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a good primary standard?",
+        "options": [
+          {"id": "a", "text": "Sodium hydroxide", "isCorrect": false},
+          {"id": "b", "text": "Anhydrous sodium carbonate", "isCorrect": true},
+          {"id": "c", "text": "Concentrated hydrochloric acid", "isCorrect": false},
+          {"id": "d", "text": "Concentrated nitric acid", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Anhydrous sodium carbonate is pure, stable, non-hygroscopic and has a known formula mass, so it makes a reliable primary standard. Sodium hydroxide absorbs water and carbon dioxide and is not a primary standard.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In an acid-base titration, which indicator is suitable for a strong acid added to a weak base?",
+        "options": [
+          {"id": "a", "text": "Phenolphthalein", "isCorrect": false},
+          {"id": "b", "text": "Methyl orange", "isCorrect": true},
+          {"id": "c", "text": "Universal indicator", "isCorrect": false},
+          {"id": "d", "text": "No indicator is needed", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Methyl orange changes colour in the acidic range and is suitable when titrating a strong acid against a weak base, where the end point is on the acidic side.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What colour is phenolphthalein in an alkaline solution?",
+        "options": [
+          {"id": "a", "text": "Colourless", "isCorrect": false},
+          {"id": "b", "text": "Yellow", "isCorrect": false},
+          {"id": "c", "text": "Pink", "isCorrect": true},
+          {"id": "d", "text": "Blue", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Phenolphthalein is colourless in acid and turns pink in alkaline (basic) solution.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is meant by the end point of a titration?",
+        "options": [
+          {"id": "a", "text": "The point where the burette is empty", "isCorrect": false},
+          {"id": "b", "text": "The point at which the indicator changes colour", "isCorrect": true},
+          {"id": "c", "text": "The point where the solution boils", "isCorrect": false},
+          {"id": "d", "text": "The point where no acid remains in the bottle", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The end point is the moment the indicator changes colour, signalling that the reaction is complete; it is chosen to be as close as possible to the equivalence point.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "25.0 cm3 of sodium hydroxide solution requires 20.0 cm3 of 0.10 mol/dm3 hydrochloric acid to neutralise it. What is the concentration of the sodium hydroxide? (NaOH + HCl reacts 1:1)",
+        "options": [
+          {"id": "a", "text": "0.080 mol/dm3", "isCorrect": true},
+          {"id": "b", "text": "0.125 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.10 mol/dm3", "isCorrect": false},
+          {"id": "d", "text": "0.050 mol/dm3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles HCl = 0.10 x 20.0/1000 = 0.0020 mol. Ratio 1:1 so moles NaOH = 0.0020 mol. Concentration = 0.0020 / (25.0/1000) = 0.080 mol/dm3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement about reading a burette is correct?",
+        "options": [
+          {"id": "a", "text": "Read from the top of the liquid surface", "isCorrect": false},
+          {"id": "b", "text": "Read the bottom of the meniscus at eye level", "isCorrect": true},
+          {"id": "c", "text": "Read at any convenient angle", "isCorrect": false},
+          {"id": "d", "text": "Always start from exactly 1.00 cm3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "To avoid parallax error, the bottom of the meniscus should be read with the eye level with the liquid surface.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why is a conical flask preferred over a beaker for the solution being titrated?",
+        "options": [
+          {"id": "a", "text": "It holds more liquid", "isCorrect": false},
+          {"id": "b", "text": "Its shape allows swirling without splashing out", "isCorrect": true},
+          {"id": "c", "text": "It measures volume more accurately", "isCorrect": false},
+          {"id": "d", "text": "It changes colour at the end point", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The narrow neck of a conical flask lets the contents be swirled to mix the reactants without spilling, helping detect the end point cleanly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which term describes how close repeated titration results are to one another?",
+        "options": [
+          {"id": "a", "text": "Accuracy", "isCorrect": false},
+          {"id": "b", "text": "Precision", "isCorrect": true},
+          {"id": "c", "text": "Concentration", "isCorrect": false},
+          {"id": "d", "text": "Molarity", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Precision is the closeness of repeated measurements to each other, while accuracy is closeness to the true value. Good titrations aim for concordant (close) titres.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Before filling, with which liquid should a burette be rinsed?",
+        "options": [
+          {"id": "a", "text": "Distilled water only", "isCorrect": false},
+          {"id": "b", "text": "The solution that will be put in it", "isCorrect": true},
+          {"id": "c", "text": "The solution in the conical flask", "isCorrect": false},
+          {"id": "d", "text": "Any acid available", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rinsing the burette with the same solution it will hold prevents dilution by leftover water, which would change the concentration and cause errors.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the concentration in mol/dm3 of a solution containing 4.0 g of NaOH in 1.0 dm3 of solution? (Molar mass of NaOH = 40 g/mol)",
+        "options": [
+          {"id": "a", "text": "0.10 mol/dm3", "isCorrect": true},
+          {"id": "b", "text": "1.0 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.40 mol/dm3", "isCorrect": false},
+          {"id": "d", "text": "4.0 mol/dm3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles = mass / molar mass = 4.0 / 40 = 0.10 mol. In 1.0 dm3 the concentration is 0.10 mol/dm3.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The process of finding the concentration of a solution by measuring reacting volumes is called _____.",
+        "options": [],
+        "correctAnswer": "titration",
+        "explanation": "Titration is the practical method used in volumetric analysis to determine an unknown concentration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A solution of accurately known concentration is called a _____ solution.",
+        "options": [],
+        "correctAnswer": "standard",
+        "explanation": "A standard solution has a precisely known concentration and is used as the reference in titrations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The apparatus used to deliver a single fixed accurate volume into the conical flask is the _____.",
+        "options": [],
+        "correctAnswer": "pipette",
+        "explanation": "A pipette delivers one fixed volume, such as 25.0 cm3, accurately.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A substance that is pure, stable and used to prepare a solution of exactly known concentration is called a _____ standard.",
+        "options": [],
+        "correctAnswer": "primary",
+        "explanation": "A primary standard such as anhydrous sodium carbonate is pure and stable, allowing a standard solution to be made directly by weighing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The point in a titration at which the indicator changes colour is called the _____.",
+        "options": [],
+        "correctAnswer": "end point",
+        "explanation": "The end point is where the indicator changes colour, marking the completion of the reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In acid, phenolphthalein is _____ in colour.",
+        "options": [],
+        "correctAnswer": "colourless",
+        "explanation": "Phenolphthalein is colourless in acidic solution and pink in alkaline solution.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Methyl orange is red in acid and _____ in alkali.",
+        "options": [],
+        "correctAnswer": "yellow",
+        "explanation": "Methyl orange changes from red in acid to yellow in alkaline solution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The number of moles of solute dissolved in one cubic decimetre of solution is called the _____ of the solution.",
+        "options": [],
+        "correctAnswer": "molarity",
+        "explanation": "Molarity (concentration in mol/dm3) is moles of solute per cubic decimetre of solution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "To avoid _____ error, the burette must be read with the eye level with the meniscus.",
+        "options": [],
+        "correctAnswer": "parallax",
+        "explanation": "Parallax error occurs when the scale is read from an angle; reading at eye level avoids it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If 25.0 cm3 of acid needs 25.0 cm3 of 0.20 mol/dm3 base reacting in a 1:1 ratio, the concentration of the acid is _____ mol/dm3.",
+        "options": [],
+        "correctAnswer": "0.20",
+        "explanation": "Equal volumes reacting 1:1 means equal moles, so the acid concentration equals the base concentration, 0.20 mol/dm3.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A burette can deliver variable, accurately measured volumes of solution.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A burette is graduated and has a tap, allowing delivery of variable accurate volumes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pipette is used to measure several different volumes during a single titration.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A pipette delivers only one fixed accurate volume; the burette delivers variable volumes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Sodium hydroxide is an excellent primary standard.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Sodium hydroxide absorbs moisture and carbon dioxide from the air, so it is not pure enough to be a primary standard.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Phenolphthalein turns pink in alkaline solution.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Phenolphthalein is colourless in acid and pink in alkali.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The equivalence point is the point where the amounts of acid and base are chemically equal according to the equation.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "At the equivalence point the reactants are present in the exact mole ratio shown by the balanced equation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A volumetric flask should be used to deliver the acid from the burette.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A volumetric flask is used to prepare a standard solution to an exact volume, not to deliver acid; the burette delivers acid.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Rinsing the burette with distilled water just before filling it with acid has no effect on accuracy.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Leftover water dilutes the acid, changing its concentration; the burette should be rinsed with the acid it will hold.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Concordant titres are readings that agree closely with one another.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Concordant titres differ by only a small amount (usually within 0.10 cm3) and show good precision.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Accuracy means how close a measurement is to the true value.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Accuracy is closeness to the true value, while precision is closeness of repeated readings to each other.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Universal indicator is the best choice for finding a sharp end point in a titration.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Universal indicator shows a gradual range of colours and does not give a sharp single colour change, so single indicators like methyl orange or phenolphthalein are preferred.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define volumetric analysis.",
+        "options": [],
+        "correctAnswer": "It is the determination of the concentration or amount of a substance by measuring the volumes of solutions that react completely in a titration.",
+        "explanation": "Volumetric analysis relies on accurate volume measurement and a known concentration to find an unknown.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the four main pieces of apparatus used in titration.",
+        "options": [],
+        "correctAnswer": "Burette, pipette, conical flask and volumetric flask.",
+        "explanation": "The burette delivers variable volume, the pipette a fixed volume, the conical flask holds the titrated solution, and the volumetric flask prepares standard solutions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two properties of a good primary standard.",
+        "options": [],
+        "correctAnswer": "It is very pure and chemically stable (does not absorb water or react with air) and has a known formula mass.",
+        "explanation": "These properties let a standard solution of exact concentration be made directly by weighing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Outline the basic steps of an acid-base titration.",
+        "options": [],
+        "correctAnswer": "Pipette a fixed volume of one solution into a conical flask, add an indicator, run the other solution from the burette while swirling until the indicator just changes colour, and record the titre.",
+        "explanation": "Repeating to get concordant titres improves reliability before calculating the result.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give the colour change of methyl orange from acid to alkali.",
+        "options": [],
+        "correctAnswer": "From red in acid to yellow in alkali (orange at the end point).",
+        "explanation": "Methyl orange is suited to titrations whose end point lies on the acidic side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distinguish between the end point and the equivalence point.",
+        "options": [],
+        "correctAnswer": "The equivalence point is where reactants are present in the exact mole ratio of the equation; the end point is where the indicator changes colour, ideally very close to it.",
+        "explanation": "A suitable indicator is chosen so the end point matches the equivalence point as closely as possible.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write the relationship used to compare two reacting solutions in titration calculations.",
+        "options": [],
+        "correctAnswer": "C1V1/n1 = C2V2/n2, where C is concentration, V is volume and n is the mole ratio coefficient.",
+        "explanation": "This relates the concentrations and volumes of the two solutions through their stoichiometric ratio.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How is the concentration of a solution in mol/dm3 calculated?",
+        "options": [],
+        "correctAnswer": "Concentration = number of moles of solute divided by the volume of solution in cubic decimetres.",
+        "explanation": "Moles can be found from concentration x volume or from mass / molar mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two sources of error in titration.",
+        "options": [],
+        "correctAnswer": "Parallax error when reading the burette and overshooting the end point (adding too much titrant); also not rinsing apparatus correctly.",
+        "explanation": "Careful technique and concordant titres reduce these errors.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is a standard solution important in volumetric analysis?",
+        "options": [],
+        "correctAnswer": "Because its concentration is known accurately, it acts as the reference for finding the unknown concentration of the other solution.",
+        "explanation": "Without a known concentration on one side, the unknown cannot be calculated.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "In a titration, 25.0 cm3 of sodium hydroxide solution is exactly neutralised by 22.5 cm3 of 0.100 mol/dm3 sulphuric acid. The equation is 2NaOH + H2SO4 -> Na2SO4 + 2H2O. What is the concentration of the sodium hydroxide?",
+        "options": [
+          {"id": "a", "text": "0.180 mol/dm3", "isCorrect": true},
+          {"id": "b", "text": "0.090 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.225 mol/dm3", "isCorrect": false},
+          {"id": "d", "text": "0.045 mol/dm3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles H2SO4 = 0.100 x 22.5/1000 = 0.00225 mol. Ratio NaOH:H2SO4 = 2:1, so moles NaOH = 2 x 0.00225 = 0.00450 mol. Concentration = 0.00450 / (25.0/1000) = 0.180 mol/dm3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student dissolves 5.3 g of anhydrous sodium carbonate (Na2CO3, molar mass 106 g/mol) and makes the solution up to 250 cm3 in a volumetric flask. What is the concentration of this standard solution?",
+        "options": [
+          {"id": "a", "text": "0.20 mol/dm3", "isCorrect": true},
+          {"id": "b", "text": "0.050 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.10 mol/dm3", "isCorrect": false},
+          {"id": "d", "text": "0.50 mol/dm3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles = 5.3 / 106 = 0.050 mol. Volume = 250 cm3 = 0.250 dm3. Concentration = 0.050 / 0.250 = 0.20 mol/dm3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "20.0 cm3 of 0.150 mol/dm3 sodium carbonate solution is titrated with hydrochloric acid using methyl orange. The equation is Na2CO3 + 2HCl -> 2NaCl + H2O + CO2. If 30.0 cm3 of acid is used, what is the concentration of the hydrochloric acid?",
+        "options": [
+          {"id": "a", "text": "0.200 mol/dm3", "isCorrect": true},
+          {"id": "b", "text": "0.100 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.050 mol/dm3", "isCorrect": false},
+          {"id": "d", "text": "0.300 mol/dm3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles Na2CO3 = 0.150 x 20.0/1000 = 0.00300 mol. Ratio HCl:Na2CO3 = 2:1, so moles HCl = 2 x 0.00300 = 0.00600 mol. Concentration = 0.00600 / (30.0/1000) = 0.200 mol/dm3.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

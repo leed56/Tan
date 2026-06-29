@@ -1,0 +1,444 @@
+{
+  "topicId": "form_3_chemistry_topic_6",
+  "topicName": "Electrochemistry",
+  "order": 6,
+  "description": "Electrochemistry studies redox reactions in terms of electron transfer and oxidation numbers, the reactivity series, electrochemical and electrolytic cells, corrosion, and everyday applications such as cells and batteries.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "In terms of electron transfer, oxidation is best defined as the:",
+        "options": [
+          {"id": "a", "text": "gain of electrons", "isCorrect": false},
+          {"id": "b", "text": "loss of electrons", "isCorrect": true},
+          {"id": "c", "text": "gain of protons", "isCorrect": false},
+          {"id": "d", "text": "loss of neutrons", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Oxidation is the loss of electrons by an atom, ion or molecule. The mnemonic OIL means Oxidation Is Loss of electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Reduction in terms of oxidation number is shown by a:",
+        "options": [
+          {"id": "a", "text": "decrease in oxidation number", "isCorrect": true},
+          {"id": "b", "text": "increase in oxidation number", "isCorrect": false},
+          {"id": "c", "text": "loss of electrons", "isCorrect": false},
+          {"id": "d", "text": "gain of oxygen", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Reduction is gain of electrons, which lowers (decreases) the oxidation number of the species being reduced.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the oxidation number of sulphur in sulphuric acid, H2SO4?",
+        "options": [
+          {"id": "a", "text": "+2", "isCorrect": false},
+          {"id": "b", "text": "+4", "isCorrect": false},
+          {"id": "c", "text": "+6", "isCorrect": true},
+          {"id": "d", "text": "-2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "H is +1 (total +2) and O is -2 (total -8). For a neutral molecule the sum is zero: 2 + S + (-8) = 0, so S = +6.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An oxidising agent is a substance that:",
+        "options": [
+          {"id": "a", "text": "gains electrons and is itself reduced", "isCorrect": true},
+          {"id": "b", "text": "loses electrons and is itself oxidised", "isCorrect": false},
+          {"id": "c", "text": "neither gains nor loses electrons", "isCorrect": false},
+          {"id": "d", "text": "always contains hydrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An oxidising agent oxidises another substance by taking its electrons; in doing so it gains electrons and is itself reduced.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the reaction Zn + CuSO4 -> ZnSO4 + Cu, the reducing agent is:",
+        "options": [
+          {"id": "a", "text": "CuSO4", "isCorrect": false},
+          {"id": "b", "text": "Zn", "isCorrect": true},
+          {"id": "c", "text": "ZnSO4", "isCorrect": false},
+          {"id": "d", "text": "SO4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Zinc loses electrons (is oxidised) and gives them to copper ions, so zinc is the reducing agent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which arrangement lists the metals from most reactive to least reactive?",
+        "options": [
+          {"id": "a", "text": "Copper, Iron, Zinc, Potassium", "isCorrect": false},
+          {"id": "b", "text": "Potassium, Zinc, Iron, Copper", "isCorrect": true},
+          {"id": "c", "text": "Iron, Copper, Potassium, Zinc", "isCorrect": false},
+          {"id": "d", "text": "Zinc, Copper, Iron, Potassium", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In the reactivity series potassium is very reactive and copper is unreactive, so the order is potassium, zinc, iron, copper.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A more reactive metal can displace a less reactive metal from a solution of its salt. Which reaction will take place?",
+        "options": [
+          {"id": "a", "text": "Cu + ZnSO4 -> CuSO4 + Zn", "isCorrect": false},
+          {"id": "b", "text": "Ag + CuSO4 -> Ag2SO4 + Cu", "isCorrect": false},
+          {"id": "c", "text": "Fe + CuSO4 -> FeSO4 + Cu", "isCorrect": true},
+          {"id": "d", "text": "Cu + FeSO4 -> CuSO4 + Fe", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Iron is more reactive than copper, so iron displaces copper from copper(II) sulphate solution. The other reactions do not occur because the added metal is less reactive.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a simple electrochemical (galvanic) cell, chemical energy is converted into:",
+        "options": [
+          {"id": "a", "text": "heat energy only", "isCorrect": false},
+          {"id": "b", "text": "electrical energy", "isCorrect": true},
+          {"id": "c", "text": "light energy", "isCorrect": false},
+          {"id": "d", "text": "sound energy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A galvanic or voltaic cell uses a spontaneous redox reaction to convert chemical energy into electrical energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a Daniell cell, which metals are used as the two electrodes?",
+        "options": [
+          {"id": "a", "text": "Zinc and copper", "isCorrect": true},
+          {"id": "b", "text": "Iron and lead", "isCorrect": false},
+          {"id": "c", "text": "Silver and gold", "isCorrect": false},
+          {"id": "d", "text": "Aluminium and tin", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Daniell cell uses a zinc electrode in zinc sulphate and a copper electrode in copper sulphate, joined by a salt bridge.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a galvanic cell, oxidation always takes place at the:",
+        "options": [
+          {"id": "a", "text": "cathode", "isCorrect": false},
+          {"id": "b", "text": "anode", "isCorrect": true},
+          {"id": "c", "text": "salt bridge", "isCorrect": false},
+          {"id": "d", "text": "electrolyte", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "By definition, oxidation occurs at the anode and reduction occurs at the cathode in any electrochemical cell.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement correctly distinguishes an electrolytic cell from a galvanic cell?",
+        "options": [
+          {"id": "a", "text": "An electrolytic cell produces electricity from a reaction", "isCorrect": false},
+          {"id": "b", "text": "An electrolytic cell uses electricity to drive a non-spontaneous reaction", "isCorrect": true},
+          {"id": "c", "text": "A galvanic cell needs an external power supply to work", "isCorrect": false},
+          {"id": "d", "text": "Both cells need an external battery to operate", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An electrolytic cell uses an external electric current to force a non-spontaneous reaction, while a galvanic cell produces electricity from a spontaneous reaction.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The slow eating away (corrosion) of iron in the presence of air and water is called:",
+        "options": [
+          {"id": "a", "text": "rusting", "isCorrect": true},
+          {"id": "b", "text": "tarnishing", "isCorrect": false},
+          {"id": "c", "text": "galvanising", "isCorrect": false},
+          {"id": "d", "text": "electrolysis", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rusting is the corrosion of iron, forming hydrated iron(III) oxide when iron is exposed to both oxygen and water.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The two substances necessary for iron to rust are:",
+        "options": [
+          {"id": "a", "text": "oxygen and water", "isCorrect": true},
+          {"id": "b", "text": "nitrogen and oil", "isCorrect": false},
+          {"id": "c", "text": "carbon dioxide and water", "isCorrect": false},
+          {"id": "d", "text": "oxygen and nitrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rusting requires both oxygen (from air) and water (moisture). Removing either one prevents rusting.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Coating iron with a layer of zinc to protect it from rusting is known as:",
+        "options": [
+          {"id": "a", "text": "painting", "isCorrect": false},
+          {"id": "b", "text": "oiling", "isCorrect": false},
+          {"id": "c", "text": "galvanising", "isCorrect": true},
+          {"id": "d", "text": "alloying", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Galvanising is coating iron or steel with zinc. The zinc also gives sacrificial protection because it is more reactive than iron.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A common everyday application of a simple electrochemical cell is the:",
+        "options": [
+          {"id": "a", "text": "electric heater", "isCorrect": false},
+          {"id": "b", "text": "dry cell used in torches", "isCorrect": true},
+          {"id": "c", "text": "electric bulb filament", "isCorrect": false},
+          {"id": "d", "text": "transformer", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The dry cell (battery) used in torches and radios is a portable electrochemical cell that converts chemical energy into electrical energy.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The loss of electrons during a redox reaction is called _____.",
+        "options": [],
+        "correctAnswer": "oxidation",
+        "explanation": "Oxidation is loss of electrons (OIL), which also corresponds to an increase in oxidation number.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The substance that gives electrons to another substance and is itself oxidised is called a _____ agent.",
+        "options": [],
+        "correctAnswer": "reducing",
+        "explanation": "A reducing agent donates electrons, causing another species to be reduced while it is itself oxidised.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The oxidation number of an element in its free (uncombined) state is always _____.",
+        "options": [],
+        "correctAnswer": "zero",
+        "explanation": "Uncombined elements such as Zn, O2 or Cu have an oxidation number of zero.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A list of metals arranged in order of their chemical reactivity is called the _____ series.",
+        "options": [],
+        "correctAnswer": "reactivity",
+        "explanation": "The reactivity series (also called the activity or electrochemical series) ranks metals from most to least reactive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A reaction in which a more reactive metal removes a less reactive metal from its salt solution is called a _____ reaction.",
+        "options": [],
+        "correctAnswer": "displacement",
+        "explanation": "In a displacement reaction the more reactive metal takes the place of the less reactive metal in the compound.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a galvanic cell, the electrode at which reduction occurs is called the _____.",
+        "options": [],
+        "correctAnswer": "cathode",
+        "explanation": "Reduction occurs at the cathode; oxidation occurs at the anode in every electrochemical cell.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The liquid that conducts electricity and allows ions to move between the electrodes in a cell is called the _____.",
+        "options": [],
+        "correctAnswer": "electrolyte",
+        "explanation": "The electrolyte is the conducting solution (or molten substance) through which ions move to complete the circuit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The corrosion of iron, which forms hydrated iron(III) oxide, is commonly known as _____.",
+        "options": [],
+        "correctAnswer": "rusting",
+        "explanation": "Rusting is the corrosion of iron in the presence of air and water, producing the reddish-brown hydrated iron(III) oxide.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Protecting iron by attaching a more reactive metal such as zinc or magnesium, which corrodes first, is called _____ protection.",
+        "options": [],
+        "correctAnswer": "sacrificial",
+        "explanation": "In sacrificial protection a more reactive metal corrodes preferentially, saving the iron from rusting.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A type of cell that uses an external supply of electricity to bring about a chemical reaction is called an _____ cell.",
+        "options": [],
+        "correctAnswer": "electrolytic",
+        "explanation": "An electrolytic cell uses electrical energy to drive a non-spontaneous chemical reaction, the reverse of a galvanic cell.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Oxidation and reduction always occur together in a redox reaction.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Electrons lost by one species must be gained by another, so oxidation and reduction always happen at the same time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An oxidising agent is itself oxidised during the reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An oxidising agent gains electrons and is itself reduced, while it causes the other substance to be oxidised.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The oxidation number of oxygen in most compounds is -2.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Oxygen normally has an oxidation number of -2, except in peroxides (-1) and when combined with fluorine.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Copper is more reactive than potassium in the reactivity series.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Potassium is one of the most reactive metals, while copper is near the bottom of the series, so potassium is far more reactive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Zinc can displace copper from copper(II) sulphate solution.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Zinc is more reactive than copper, so it displaces copper from the solution, forming zinc sulphate and copper metal.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a galvanic cell, the more reactive metal acts as the negative electrode (anode).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The more reactive metal loses electrons more easily, becoming the negative electrode (anode) where oxidation occurs.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A salt bridge in a simple cell completes the circuit and keeps the solutions electrically neutral.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The salt bridge allows ions to flow between the half-cells, completing the circuit and balancing the charge.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An electrolytic cell produces electricity from a spontaneous chemical reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An electrolytic cell consumes electricity to drive a non-spontaneous reaction. It is the galvanic cell that produces electricity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Painting iron surfaces helps to prevent rusting by keeping out air and moisture.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A coat of paint forms a barrier that stops oxygen and water from reaching the iron, so rusting is prevented.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A dry cell is an example of an electrolytic cell.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A dry cell is an electrochemical (galvanic) cell that produces electricity from a chemical reaction, not an electrolytic cell.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State what is meant by a redox reaction.",
+        "options": [],
+        "correctAnswer": "A reaction in which oxidation (loss of electrons) and reduction (gain of electrons) take place at the same time.",
+        "explanation": "Redox combines reduction and oxidation; electrons are transferred from the reducing agent to the oxidising agent.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between an oxidising agent and a reducing agent.",
+        "options": [],
+        "correctAnswer": "An oxidising agent gains electrons and is reduced; a reducing agent loses electrons and is oxidised.",
+        "explanation": "Each agent is named for what it does to the other substance, while undergoing the opposite change itself.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How is oxidation described using oxidation numbers?",
+        "options": [],
+        "correctAnswer": "Oxidation is an increase in oxidation number, while reduction is a decrease in oxidation number.",
+        "explanation": "Tracking changes in oxidation number is a reliable way to identify which species is oxidised and which is reduced.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two uses of the reactivity series of metals.",
+        "options": [],
+        "correctAnswer": "It predicts which metal will displace another from solution and helps choose the right method of extracting or protecting metals.",
+        "explanation": "The series also predicts how vigorously metals react with water, acids and oxygen.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe a displacement reaction with an example.",
+        "options": [],
+        "correctAnswer": "A more reactive metal removes a less reactive metal from its salt, for example Fe + CuSO4 -> FeSO4 + Cu.",
+        "explanation": "Iron, being more reactive than copper, takes the place of copper, depositing copper metal.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how a simple galvanic cell converts chemical energy into electrical energy.",
+        "options": [],
+        "correctAnswer": "A spontaneous redox reaction makes electrons flow from the anode through an external wire to the cathode, producing an electric current.",
+        "explanation": "Oxidation at the anode releases electrons that travel through the circuit, while reduction at the cathode consumes them.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Name the main parts of a simple electrochemical cell.",
+        "options": [],
+        "correctAnswer": "Two electrodes (anode and cathode), an electrolyte, and a connecting wire or salt bridge.",
+        "explanation": "These parts together allow electron flow in the external circuit and ion flow in the electrolyte.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two differences between an electrolytic cell and an electrochemical (galvanic) cell.",
+        "options": [],
+        "correctAnswer": "A galvanic cell produces electricity from a spontaneous reaction; an electrolytic cell uses electricity to force a non-spontaneous reaction.",
+        "explanation": "In a galvanic cell the anode is negative, while in an electrolytic cell the anode is positive due to the external supply.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "List four methods used to prevent the rusting of iron.",
+        "options": [],
+        "correctAnswer": "Painting, galvanising (zinc coating), oiling or greasing, and sacrificial protection.",
+        "explanation": "These methods either block air and water or use a more reactive metal to protect the iron.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two everyday applications of electrochemical cells.",
+        "options": [],
+        "correctAnswer": "Dry cells in torches and radios, and rechargeable batteries used in phones, cars and other devices.",
+        "explanation": "These portable cells supply electrical energy from chemical reactions for daily use.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A student sets up a simple cell using a magnesium strip and a copper strip dipped in dilute sulphuric acid, connected by a wire and a voltmeter. Which electrode will be the negative terminal and why?",
+        "options": [
+          {"id": "a", "text": "Copper, because it is less reactive and releases electrons", "isCorrect": false},
+          {"id": "b", "text": "Magnesium, because it is more reactive and loses electrons", "isCorrect": true},
+          {"id": "c", "text": "Copper, because it is more reactive than magnesium", "isCorrect": false},
+          {"id": "d", "text": "Both electrodes equally, because the acid is the same", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Magnesium is more reactive than copper, so it loses electrons more easily and becomes the negative electrode (anode), while copper becomes the positive electrode.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An iron water tank on a ship is protected by bolting blocks of zinc onto it. After some months the zinc blocks have corroded but the iron tank is still in good condition. Which method of protection is this and why does it work?",
+        "options": [
+          {"id": "a", "text": "Painting, because zinc forms a paint layer", "isCorrect": false},
+          {"id": "b", "text": "Oiling, because zinc keeps the iron dry", "isCorrect": false},
+          {"id": "c", "text": "Sacrificial protection, because zinc is more reactive and corrodes instead of iron", "isCorrect": true},
+          {"id": "d", "text": "Electrolysis, because zinc supplies electric current", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This is sacrificial protection. Zinc is more reactive than iron, so it corrodes preferentially (is oxidised first), protecting the iron tank.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A factory wants to electroplate spoons with a thin layer of silver. They connect the spoons and a silver bar to a battery and dip them in a silver salt solution. Why is this an electrolytic cell rather than a galvanic cell?",
+        "options": [
+          {"id": "a", "text": "Because it uses an external battery to drive a non-spontaneous reaction", "isCorrect": true},
+          {"id": "b", "text": "Because it produces electricity from a spontaneous reaction", "isCorrect": false},
+          {"id": "c", "text": "Because it does not use any electrolyte", "isCorrect": false},
+          {"id": "d", "text": "Because it has only one electrode", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Electroplating uses an external battery to force a non-spontaneous reaction (depositing silver onto the spoons), which is the defining feature of an electrolytic cell.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
