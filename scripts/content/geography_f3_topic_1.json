@@ -1,0 +1,444 @@
+{
+  "topicId": "form_3_geography_topic_1",
+  "topicName": "Statistics and Data Interpretation",
+  "order": 1,
+  "description": "This topic explains the meaning and importance of statistics in geography, types and methods of collecting data, simple measures such as mean, median, mode and range, and how to present and interpret data using graphs, diagrams and statistical maps.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the meaning of the term 'statistics' as used in geography?",
+        "options": [
+          {"id": "a", "text": "The study of physical landforms only", "isCorrect": false},
+          {"id": "b", "text": "The collection, presentation, analysis and interpretation of numerical data", "isCorrect": true},
+          {"id": "c", "text": "The drawing of maps using a scale", "isCorrect": false},
+          {"id": "d", "text": "The naming of rivers and mountains", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Statistics deals with collecting, presenting, analysing and interpreting numerical data so that it can be understood and used in geography.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an example of primary data?",
+        "options": [
+          {"id": "a", "text": "Rainfall figures copied from a textbook", "isCorrect": false},
+          {"id": "b", "text": "Population data taken from a government report", "isCorrect": false},
+          {"id": "c", "text": "Temperatures you measure yourself using a thermometer in the field", "isCorrect": true},
+          {"id": "d", "text": "A map downloaded from the internet", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Primary data is collected directly by the researcher from the field, such as measuring temperature yourself. Data taken from books or reports is secondary data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Quantitative data is best described as data that is:",
+        "options": [
+          {"id": "a", "text": "Expressed in words and descriptions", "isCorrect": false},
+          {"id": "b", "text": "Expressed in numbers and can be measured", "isCorrect": true},
+          {"id": "c", "text": "Based on personal opinions only", "isCorrect": false},
+          {"id": "d", "text": "Shown only on photographs", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Quantitative data is numerical and can be counted or measured, for example rainfall in millimetres or population numbers. Qualitative data describes qualities in words.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which method of data collection involves asking people questions using a written form?",
+        "options": [
+          {"id": "a", "text": "Observation", "isCorrect": false},
+          {"id": "b", "text": "Questionnaire", "isCorrect": true},
+          {"id": "c", "text": "Measurement", "isCorrect": false},
+          {"id": "d", "text": "Photographing", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A questionnaire is a set of written questions given to people so that they can provide answers, making it a common method of collecting data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mean of the numbers 4, 6, 8 and 10 is:",
+        "options": [
+          {"id": "a", "text": "6", "isCorrect": false},
+          {"id": "b", "text": "7", "isCorrect": true},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "28", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The mean = sum of values divided by number of values = (4+6+8+10) / 4 = 28 / 4 = 7.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the data set 3, 5, 5, 7, 9, which value is the mode?",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The mode is the value that appears most often. The number 5 appears twice, more than any other value, so it is the mode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which graph is the most suitable for showing the change of temperature over the twelve months of a year?",
+        "options": [
+          {"id": "a", "text": "Pie chart", "isCorrect": false},
+          {"id": "b", "text": "Line graph", "isCorrect": true},
+          {"id": "c", "text": "Dot map", "isCorrect": false},
+          {"id": "d", "text": "Wind rose", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A line graph is best for showing continuous change over time, such as how temperature rises and falls through the months of the year.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pie chart is divided into parts measured in:",
+        "options": [
+          {"id": "a", "text": "Millimetres", "isCorrect": false},
+          {"id": "b", "text": "Kilometres", "isCorrect": false},
+          {"id": "c", "text": "Degrees of a circle", "isCorrect": true},
+          {"id": "d", "text": "Hours", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A pie chart is a circle of 360 degrees, and each part (sector) is drawn as a number of degrees that represents its share of the total.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which method of data presentation uses small symbols or pictures to represent quantities?",
+        "options": [
+          {"id": "a", "text": "Histogram", "isCorrect": false},
+          {"id": "b", "text": "Pictogram", "isCorrect": true},
+          {"id": "c", "text": "Isoline map", "isCorrect": false},
+          {"id": "d", "text": "Line graph", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A pictogram (picture graph) uses small symbols or pictures, where each symbol stands for a stated quantity, to present data in a simple and attractive way.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A choropleth (shading) map shows differences in density or value by using:",
+        "options": [
+          {"id": "a", "text": "Arrows of different thickness", "isCorrect": false},
+          {"id": "b", "text": "Different shades or colours over areas", "isCorrect": true},
+          {"id": "c", "text": "Dots of equal value", "isCorrect": false},
+          {"id": "d", "text": "Lines joining points of equal value", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A choropleth or shading map uses different shades or colours (darker for higher values, lighter for lower values) to show how a value such as population density varies between areas.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of statistical map uses lines to join all places that have the same value, such as equal rainfall?",
+        "options": [
+          {"id": "a", "text": "Dot map", "isCorrect": false},
+          {"id": "b", "text": "Flow-line map", "isCorrect": false},
+          {"id": "c", "text": "Isoline map", "isCorrect": true},
+          {"id": "d", "text": "Choropleth map", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "An isoline map joins points of equal value with lines, for example isohyets join places of equal rainfall and contours join places of equal height.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A flow-line map is most suitable for showing:",
+        "options": [
+          {"id": "a", "text": "The height of land above sea level", "isCorrect": false},
+          {"id": "b", "text": "The movement of goods or people between places", "isCorrect": true},
+          {"id": "c", "text": "The percentage of crops grown on a farm", "isCorrect": false},
+          {"id": "d", "text": "The number of months in a season", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A flow-line map uses arrows or bands whose thickness shows the amount of movement, making it ideal for showing the flow of goods, people or traffic between places.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which graph is the best choice for comparing the total exports of three countries while also showing the share of each crop within each country's exports?",
+        "options": [
+          {"id": "a", "text": "Simple bar graph", "isCorrect": false},
+          {"id": "b", "text": "Compound (divided) bar graph", "isCorrect": true},
+          {"id": "c", "text": "Single line graph", "isCorrect": false},
+          {"id": "d", "text": "Wind rose", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A compound or divided bar graph splits each bar into parts, so it shows both the total for each country and the share of each component within that total.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "One main limitation of a pie chart is that it:",
+        "options": [
+          {"id": "a", "text": "Cannot show proportions of a whole", "isCorrect": false},
+          {"id": "b", "text": "Becomes hard to read when there are many small parts", "isCorrect": true},
+          {"id": "c", "text": "Cannot be coloured or shaded", "isCorrect": false},
+          {"id": "d", "text": "Always shows change over time", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "When a pie chart has too many sectors, especially small ones, it becomes crowded and difficult to read and compare, which is one of its main weaknesses.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A wind rose diagram is mainly used to show:",
+        "options": [
+          {"id": "a", "text": "The amount of rainfall received each month", "isCorrect": false},
+          {"id": "b", "text": "The direction and frequency of winds at a place", "isCorrect": true},
+          {"id": "c", "text": "The population of a town", "isCorrect": false},
+          {"id": "d", "text": "The depth of soil layers", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A wind rose shows the direction from which winds blow and how often they blow from each direction, using arms drawn from a central point.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "Data that is collected directly from the field by the researcher is called _____ data.",
+        "options": [],
+        "correctAnswer": "primary",
+        "explanation": "Primary data is original data gathered first-hand from the field, for example through measurement, observation or interviews.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Data obtained from already published sources such as books and reports is called _____ data.",
+        "options": [],
+        "correctAnswer": "secondary",
+        "explanation": "Secondary data is data that has already been collected and recorded by other people in sources such as books, reports and websites.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The value that appears most frequently in a set of data is called the _____.",
+        "options": [],
+        "correctAnswer": "mode",
+        "explanation": "The mode is the most common value, that is, the value that occurs the greatest number of times in a data set.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The middle value of a set of data arranged in order of size is called the _____.",
+        "options": [],
+        "correctAnswer": "median",
+        "explanation": "The median is found by arranging the values in order and choosing the value in the middle position.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The difference between the highest and the lowest value in a data set is called the _____.",
+        "options": [],
+        "correctAnswer": "range",
+        "explanation": "The range is calculated as highest value minus lowest value, and it shows how spread out the data is.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A circle divided into sectors to show parts of a whole is called a _____ chart.",
+        "options": [],
+        "correctAnswer": "pie",
+        "explanation": "A pie chart is a circle whose sectors represent the proportions of the different parts of a total.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A statistical map that uses dots of equal value to show distribution, such as population, is called a _____ map.",
+        "options": [],
+        "correctAnswer": "dot",
+        "explanation": "On a dot map each dot represents a fixed number of items, and the dots are placed where the items actually occur to show distribution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a pie chart, the whole circle represents _____ degrees.",
+        "options": [],
+        "correctAnswer": "360",
+        "explanation": "A full circle has 360 degrees, so this total is shared among the sectors according to their proportions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A graph that uses joined bars of different heights to show grouped (class) data, such as frequency distribution, is called a _____.",
+        "options": [],
+        "correctAnswer": "histogram",
+        "explanation": "A histogram uses bars that touch each other to display grouped continuous data, with the bar height showing the frequency of each class.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If a crop forms 25 percent of the total, it should be drawn on a pie chart as a sector of _____ degrees.",
+        "options": [],
+        "correctAnswer": "90",
+        "explanation": "To convert a percentage to degrees, multiply by 360 and divide by 100: 25 percent x 360 / 100 = 90 degrees.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Qualitative data is data that is expressed in words or descriptions rather than in numbers.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Qualitative data describes qualities or characteristics in words, such as soil colour or type of vegetation, while quantitative data is numerical.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mean is found by adding all the values together and dividing by the number of values.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the correct definition of the arithmetic mean (average).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A line graph is the best method for showing the proportion of different parts of a single total.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Proportions of a single total are best shown by a pie chart or divided bar. A line graph is best for showing change over time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Secondary data is always more accurate than primary data.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Secondary data is not always more accurate; it may be out of date or contain errors. Primary data is fresh and collected for the specific purpose, but accuracy depends on the method used.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a choropleth map, darker shading usually represents higher values such as higher population density.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By convention, darker shades show higher values and lighter shades show lower values on a choropleth (shading) map.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a pictogram, every symbol must always represent exactly one item.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "In a pictogram one symbol can represent any stated quantity, for example one symbol may stand for 1000 people, and part of a symbol can show a smaller amount.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An isoline map can be used to show places of equal rainfall by joining them with lines called isohyets.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Isohyets are isolines that join places receiving equal amounts of rainfall, so this statement is correct.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A simple bar graph is suitable for comparing single quantities for different items, such as the population of different towns.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A simple bar graph uses separate bars of different heights to compare single values among items, making it ideal for comparing town populations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The range of the data set 12, 18, 25, 30 is 30.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The range is highest minus lowest = 30 - 12 = 18, not 30.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Proportional circles are circles drawn with sizes that represent the quantities they stand for.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "In proportional circle diagrams, the area of each circle is drawn in proportion to the quantity it represents, so larger circles mean larger values.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State two importance of statistics in geography.",
+        "options": [],
+        "correctAnswer": "Statistics help to summarise large amounts of data into a simple form, and they make it easier to compare, analyse and interpret geographical information for decision making.",
+        "explanation": "Statistics turn raw figures into understandable form, allow comparison between places or times, and support planning and decision making.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Differentiate between primary data and secondary data.",
+        "options": [],
+        "correctAnswer": "Primary data is original data collected directly from the field by the researcher, while secondary data is data obtained from existing sources such as books, reports and websites.",
+        "explanation": "The key difference is the source: primary is first-hand from the field, secondary is from already recorded sources.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mention three methods of collecting data in geography.",
+        "options": [],
+        "correctAnswer": "Observation, interviews, questionnaires, measurement and reading from documents are methods of collecting data.",
+        "explanation": "Data can be collected through direct observation, interviewing people, distributing questionnaires, taking measurements, and consulting documents.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between the mean, the median and the mode.",
+        "options": [],
+        "correctAnswer": "The mean is the average found by adding values and dividing by their number, the median is the middle value when data is arranged in order, and the mode is the value that occurs most often.",
+        "explanation": "These are the three common measures of central tendency, each describing the 'typical' value in a different way.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two advantages of using a pie chart to present data.",
+        "options": [],
+        "correctAnswer": "A pie chart clearly shows the proportion of each part to the whole, and it is simple and attractive to look at and easy to understand at a glance.",
+        "explanation": "Pie charts are good for showing shares of a total and are visually clear when there are only a few parts.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how a dot map is used to show distribution.",
+        "options": [],
+        "correctAnswer": "On a dot map each dot represents a fixed number of items, and dots are placed on the map where the items actually occur, so areas with many dots have high concentration and areas with few dots have low concentration.",
+        "explanation": "Dot maps show distribution and density by the closeness of dots, each dot having an agreed value.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State two factors to consider when choosing the best method to present a given set of data.",
+        "options": [],
+        "correctAnswer": "Consider the type and nature of the data, the purpose of presentation (such as showing change over time or proportions), and the audience who will read it.",
+        "explanation": "The best method depends on what the data is, what message you want to show, and who will use the presentation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Outline two limitations of a line graph.",
+        "options": [],
+        "correctAnswer": "A line graph cannot easily show proportions of a whole, and when too many lines are drawn together it becomes confusing and hard to read.",
+        "explanation": "Line graphs are good for trends over time but poor for showing shares, and they become cluttered with many data sets.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the difference between an isoline map and a flow-line map.",
+        "options": [],
+        "correctAnswer": "An isoline map joins points of equal value with lines, such as equal rainfall or height, while a flow-line map uses arrows whose thickness shows the amount of movement of goods or people between places.",
+        "explanation": "Isolines show equal values across an area; flow lines show direction and volume of movement.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Give two advantages of using a compound (divided) bar graph.",
+        "options": [],
+        "correctAnswer": "A compound bar graph shows both the total of each item and the share of each component within that total, and it allows easy comparison between several items at the same time.",
+        "explanation": "Divided bars combine totals and components in one diagram, which makes comparison between items convenient.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A farmer harvested the following bags of crops: maize 40, beans 20, rice 30 and cassava 10, giving a total of 100 bags. To draw a pie chart, how many degrees should represent the maize?",
+        "options": [
+          {"id": "a", "text": "40 degrees", "isCorrect": false},
+          {"id": "b", "text": "72 degrees", "isCorrect": false},
+          {"id": "c", "text": "144 degrees", "isCorrect": true},
+          {"id": "d", "text": "100 degrees", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Degrees for maize = (value / total) x 360 = (40 / 100) x 360 = 144 degrees.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A weather station recorded these daily temperatures in degrees Celsius over five days: 22, 25, 25, 28 and 30. What is the mean temperature, and which measure equals 25?",
+        "options": [
+          {"id": "a", "text": "Mean is 26 degrees; both the median and the mode equal 25", "isCorrect": true},
+          {"id": "b", "text": "Mean is 25 degrees; only the mode equals 25", "isCorrect": false},
+          {"id": "c", "text": "Mean is 28 degrees; only the median equals 25", "isCorrect": false},
+          {"id": "d", "text": "Mean is 30 degrees; neither the median nor the mode equals 25", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Mean = (22+25+25+28+30) / 5 = 130 / 5 = 26. Arranged in order the middle value (median) is 25, and 25 occurs twice so it is also the mode.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A district has 5000 people living over an area of 20 square kilometres. A geographer wants to show how population density differs between several districts on a map. Which method is most suitable and what is this district's density?",
+        "options": [
+          {"id": "a", "text": "A wind rose; density is 100 people per square kilometre", "isCorrect": false},
+          {"id": "b", "text": "A choropleth (shading) map; density is 250 people per square kilometre", "isCorrect": true},
+          {"id": "c", "text": "A line graph; density is 25 people per square kilometre", "isCorrect": false},
+          {"id": "d", "text": "A flow-line map; density is 500 people per square kilometre", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Population density = people / area = 5000 / 20 = 250 people per square kilometre. A choropleth (shading) map is most suitable for comparing density between districts using shades.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
