@@ -882,7 +882,7 @@
         "difficulty": "hard"
       },
       {
-        "questionText": "A woman dies leaving a net estate of 60,000 shillings. She is survived by her husband only, with no children and no other heirs. The husband takes one-half as a fixed share. How much does the husband receive in total (assuming he then also takes the remainder as the only heir)?",
+        "questionText": "A woman dies leaving a net estate of 60,000 shillings. She is survived by her husband and a son. The husband's fixed share when there are children is one-quarter. How much does the husband receive?",
         "options": [
           {
             "id": "a",
@@ -892,12 +892,12 @@
           {
             "id": "b",
             "text": "15,000 shillings",
-            "isCorrect": false
+            "isCorrect": true
           },
           {
             "id": "c",
             "text": "60,000 shillings",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": "d",
@@ -905,8 +905,8 @@
             "isCorrect": false
           }
         ],
-        "correctAnswer": "c",
-        "explanation": "With no children, the husband's fixed share is one-half (30,000). As the only surviving heir, the remaining one-half returns to him by radd/residue, so he effectively receives the whole 60,000 shillings.",
+        "correctAnswer": "b",
+        "explanation": "When the deceased leaves children, the husband's Qur'anic share is one-quarter: 60,000 / 4 = 15,000 shillings. The son takes the remainder as a residuary (asabah).",
         "difficulty": "hard"
       },
       {
