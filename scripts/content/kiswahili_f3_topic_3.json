@@ -8,10 +8,26 @@
       {
         "questionText": "Fasihi andishi ni fasihi ambayo huwasilishwa kwa njia gani?",
         "options": [
-          { "id": "a", "text": "Kwa njia ya mdomo na masimulizi", "isCorrect": false },
-          { "id": "b", "text": "Kwa njia ya maandishi", "isCorrect": true },
-          { "id": "c", "text": "Kwa njia ya ngoma na nyimbo", "isCorrect": false },
-          { "id": "d", "text": "Kwa njia ya michezo ya kuigiza pekee", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Kwa njia ya mdomo na masimulizi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kwa njia ya maandishi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kwa njia ya ngoma na nyimbo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kwa njia ya michezo ya kuigiza pekee",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Fasihi andishi (written literature) is literature conveyed and preserved through writing, unlike fasihi simulizi which is transmitted orally.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Ipi kati ya zifuatazo ni tanzu kuu za fasihi andishi?",
         "options": [
-          { "id": "a", "text": "Riwaya, tamthiliya na ushairi", "isCorrect": true },
-          { "id": "b", "text": "Ngano, methali na vitendawili", "isCorrect": false },
-          { "id": "c", "text": "Nyimbo, ngoma na maghani", "isCorrect": false },
-          { "id": "d", "text": "Hadithi za mdomo na tarihi", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Riwaya, tamthiliya na ushairi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ngano, methali na vitendawili",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Nyimbo, ngoma na maghani",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hadithi za mdomo na tarihi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The main genres of written literature are riwaya (novel/prose), tamthiliya (drama) and ushairi (poetry). The other options largely belong to oral literature.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Riwaya ni nini?",
         "options": [
-          { "id": "a", "text": "Hadithi fupi ya kurasa chache", "isCorrect": false },
-          { "id": "b", "text": "Kazi ya kinathari yenye urefu na wahusika wengi inayoshughulikia maisha kwa upana", "isCorrect": true },
-          { "id": "c", "text": "Shairi refu lenye vina na mizani", "isCorrect": false },
-          { "id": "d", "text": "Mchezo wa kuigiza jukwaani", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Hadithi fupi ya kurasa chache",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kazi ya kinathari yenye urefu na wahusika wengi inayoshughulikia maisha kwa upana",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Shairi refu lenye vina na mizani",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mchezo wa kuigiza jukwaani",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A riwaya (novel) is a long prose work with a developed plot and many characters that explores life broadly, distinguishing it from the short story, poem or play.",
@@ -44,22 +92,54 @@
       {
         "questionText": "Tofauti kuu kati ya riwaya na hadithi fupi ni ipi?",
         "options": [
-          { "id": "a", "text": "Riwaya huandikwa kwa nathari, hadithi fupi kwa ushairi", "isCorrect": false },
-          { "id": "b", "text": "Riwaya ni ndefu na ina wahusika na matukio mengi, hadithi fupi ni fupi yenye tukio au dhamira moja kuu", "isCorrect": true },
-          { "id": "c", "text": "Hadithi fupi haina dhamira, riwaya ina dhamira", "isCorrect": false },
-          { "id": "d", "text": "Riwaya haina wahusika, hadithi fupi ina wahusika", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Riwaya huandikwa kwa nathari, hadithi fupi kwa ushairi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Riwaya ni ndefu na ina wahusika na matukio mengi, hadithi fupi ni fupi yenye tukio au dhamira moja kuu",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Hadithi fupi haina dhamira, riwaya ina dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Riwaya haina wahusika, hadithi fupi ina wahusika",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Both are prose, but a novel is long with many characters and events, while a short story is brief and usually centres on one main event or theme.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Kipengele kinachohusu jumla ya mawazo au ujumbe mkuu unaojadiliwa katika kazi ya fasihi huitwaje?",
+        "questionText": "Kipengele kinachohusu jumla ya mawazo makuu yanayojadiliwa katika kazi ya fasihi huitwaje?",
         "options": [
-          { "id": "a", "text": "Mandhari", "isCorrect": false },
-          { "id": "b", "text": "Wahusika", "isCorrect": false },
-          { "id": "c", "text": "Dhamira au maudhui", "isCorrect": true },
-          { "id": "d", "text": "Ploti", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Wahusika",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Dhamira au maudhui",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ploti",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Dhamira/maudhui refers to the central ideas or themes addressed in a literary work, such as love, corruption, or unity.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Mpangilio wa matukio katika kazi ya kinathari kuanzia mwanzo hadi mwisho huitwaje?",
         "options": [
-          { "id": "a", "text": "Ploti au muundo", "isCorrect": true },
-          { "id": "b", "text": "Mtindo", "isCorrect": false },
-          { "id": "c", "text": "Falsafa", "isCorrect": false },
-          { "id": "d", "text": "Taswira", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Ploti au muundo",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mtindo",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Falsafa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Taswira",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Ploti/muundo (plot/structure) is the arrangement of events from beginning to end in a prose work.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Mahali na wakati ambapo matukio ya hadithi hutokea huitwaje?",
         "options": [
-          { "id": "a", "text": "Wahusika", "isCorrect": false },
-          { "id": "b", "text": "Mandhari", "isCorrect": true },
-          { "id": "c", "text": "Ujumbe", "isCorrect": false },
-          { "id": "d", "text": "Dhamira", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Wahusika",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mandhari",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Ujumbe",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Dhamira",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Mandhari (setting) is the place and time in which the events of a story take place.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Watu, wanyama au viumbe vinavyotenda matukio katika kazi ya fasihi huitwaje?",
         "options": [
-          { "id": "a", "text": "Wasomaji", "isCorrect": false },
-          { "id": "b", "text": "Wahusika", "isCorrect": true },
-          { "id": "c", "text": "Watunzi", "isCorrect": false },
-          { "id": "d", "text": "Wahakiki", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Wasomaji",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Wahusika",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Watunzi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Wahakiki",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Wahusika (characters) are the people, animals or beings who carry out the events in a literary work.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Mhusika ambaye hubeba dhamira kuu na huonekana mara kwa mara katika hadithi nzima huitwaje?",
         "options": [
-          { "id": "a", "text": "Mhusika mkuu", "isCorrect": true },
-          { "id": "b", "text": "Mhusika msaidizi", "isCorrect": false },
-          { "id": "c", "text": "Mhusika bapa", "isCorrect": false },
-          { "id": "d", "text": "Mhusika mzungumzaji", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Mhusika mkuu",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mhusika msaidizi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mhusika bapa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mhusika mzungumzaji",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The mhusika mkuu (main/protagonist character) carries the central theme and appears throughout the story.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Mhusika ambaye tabia yake hubadilika kadiri hadithi inavyoendelea huitwaje?",
         "options": [
-          { "id": "a", "text": "Mhusika bapa", "isCorrect": false },
-          { "id": "b", "text": "Mhusika duara au mviringo", "isCorrect": true },
-          { "id": "c", "text": "Mhusika foili", "isCorrect": false },
-          { "id": "d", "text": "Mhusika mkuu pekee", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Mhusika bapa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mhusika duara au mviringo",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mhusika foili",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mhusika mkuu pekee",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A mhusika duara (round/dynamic character) develops and changes as the story progresses, unlike a mhusika bapa (flat character) who remains the same.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Namna ya pekee ambayo mwandishi hutumia lugha na kupanga kazi yake huitwaje?",
         "options": [
-          { "id": "a", "text": "Mtindo", "isCorrect": true },
-          { "id": "b", "text": "Mandhari", "isCorrect": false },
-          { "id": "c", "text": "Ploti", "isCorrect": false },
-          { "id": "d", "text": "Wahusika", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Mtindo",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ploti",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Wahusika",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Mtindo (style) is the author's distinctive manner of using language and structuring the work.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Mbinu ya kifani inayotumia maneno kuchora picha akilini mwa msomaji huitwaje?",
         "options": [
-          { "id": "a", "text": "Methali", "isCorrect": false },
-          { "id": "b", "text": "Taswira", "isCorrect": true },
-          { "id": "c", "text": "Ploti", "isCorrect": false },
-          { "id": "d", "text": "Tashihisi", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Methali",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Taswira",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Ploti",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Tashihisi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Taswira (imagery) is an artistic technique that uses words to create vivid mental pictures in the reader's mind.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Mbinu ya kifani ya kueleza jambo kwa kulinganisha bila kutumia maneno 'kama' au 'mithili' huitwaje?",
         "options": [
-          { "id": "a", "text": "Tashbiha", "isCorrect": false },
-          { "id": "b", "text": "Jazanda au sitiari", "isCorrect": true },
-          { "id": "c", "text": "Takriri", "isCorrect": false },
-          { "id": "d", "text": "Tabaini", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Tashbiha",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Jazanda au sitiari",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Tabaini",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Jazanda/sitiari (metaphor) compares two things directly without using comparison words like 'kama' (like), unlike tashbiha (simile).",
@@ -164,10 +372,26 @@
       {
         "questionText": "Ipi kati ya zifuatazo ni dhima ya fasihi andishi katika jamii?",
         "options": [
-          { "id": "a", "text": "Kuelimisha, kuonya na kukuza maadili", "isCorrect": true },
-          { "id": "b", "text": "Kuharibu lugha na utamaduni", "isCorrect": false },
-          { "id": "c", "text": "Kufuta historia ya jamii", "isCorrect": false },
-          { "id": "d", "text": "Kuondoa burudani kwa wasomaji", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Kuelimisha, kuonya na kukuza maadili",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Kuharibu lugha na utamaduni",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kufuta historia ya jamii",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kuondoa burudani kwa wasomaji",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Written literature educates, warns, entertains, preserves culture and builds moral values within society.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Sifa ipi inaitofautisha fasihi andishi na fasihi simulizi?",
         "options": [
-          { "id": "a", "text": "Fasihi andishi huhifadhiwa kwa maandishi na haibadiliki kwa urahisi", "isCorrect": true },
-          { "id": "b", "text": "Fasihi andishi haina mtunzi", "isCorrect": false },
-          { "id": "c", "text": "Fasihi andishi hutegemea kumbukumbu ya msimulizi", "isCorrect": false },
-          { "id": "d", "text": "Fasihi andishi hubadilika kila inaposimuliwa", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Fasihi andishi huhifadhiwa kwa maandishi na haibadiliki kwa urahisi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Fasihi andishi haina mtunzi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fasihi andishi hutegemea kumbukumbu ya msimulizi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Fasihi andishi hubadilika kila inaposimuliwa",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Written literature is preserved in writing and remains fixed, whereas oral literature depends on the narrator's memory and may change with each telling.",
@@ -406,10 +646,26 @@
       {
         "questionText": "Mwandishi anaonyesha mhusika wake akianza akiwa mwenye choyo lakini mwishoni anakuwa mkarimu baada ya kupatwa na changamoto. Aina hii ya mhusika na umuhimu wake ni upi?",
         "options": [
-          { "id": "a", "text": "Mhusika bapa; huonyesha kuwa tabia za watu hazibadiliki", "isCorrect": false },
-          { "id": "b", "text": "Mhusika duara; huonyesha mabadiliko ya tabia na kuipa hadithi uhalisia na funzo", "isCorrect": true },
-          { "id": "c", "text": "Mhusika foili; hutumika kupinga mhusika mkuu pekee", "isCorrect": false },
-          { "id": "d", "text": "Mhusika kielelezo; hauna mabadiliko yoyote", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Mhusika bapa; huonyesha kuwa tabia za watu hazibadiliki",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mhusika duara; huonyesha mabadiliko ya tabia na kuipa hadithi uhalisia na funzo",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mhusika foili; hutumika kupinga mhusika mkuu pekee",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mhusika kielelezo; hauna mabadiliko yoyote",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A character who transforms is a mhusika duara (round/dynamic character); such change adds realism and conveys a moral lesson about growth.",
@@ -418,10 +674,26 @@
       {
         "questionText": "Katika riwaya, mwandishi anatumia maelezo ya jua kali, ardhi kavu na watu wenye njaa kueleza hali ya ukame na umaskini. Mbinu hii ya kifani na dhima yake ni ipi?",
         "options": [
-          { "id": "a", "text": "Ploti; hupanga matukio kwa mfuatano", "isCorrect": false },
-          { "id": "b", "text": "Taswira; huchora picha akilini na kusisitiza dhamira ya umaskini", "isCorrect": true },
-          { "id": "c", "text": "Mtindo wa nafsi ya tatu; huficha hisia za wahusika", "isCorrect": false },
-          { "id": "d", "text": "Methali; hutoa busara fupi", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Ploti; hupanga matukio kwa mfuatano",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Taswira; huchora picha akilini na kusisitiza dhamira ya umaskini",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mtindo wa nafsi ya tatu; huficha hisia za wahusika",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Methali; hutoa busara fupi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Vivid descriptive language that creates mental pictures is taswira (imagery); here it reinforces the theme of drought and poverty.",
@@ -430,10 +702,26 @@
       {
         "questionText": "Hadithi fupi inayoeleza tukio moja la siku moja kwa wahusika wachache, ikilenga funzo moja kuu, inaonyesha sifa zipi za utanzu wa hadithi fupi?",
         "options": [
-          { "id": "a", "text": "Urefu mkubwa, wahusika wengi na dhamira nyingi", "isCorrect": false },
-          { "id": "b", "text": "Ufupi, wahusika wachache na kujikita katika dhamira au tukio kuu moja", "isCorrect": true },
-          { "id": "c", "text": "Matumizi ya vina na mizani kama ushairi", "isCorrect": false },
-          { "id": "d", "text": "Kuwasilishwa kwa mdomo bila maandishi", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Urefu mkubwa, wahusika wengi na dhamira nyingi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ufupi, wahusika wachache na kujikita katika dhamira au tukio kuu moja",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Matumizi ya vina na mizani kama ushairi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kuwasilishwa kwa mdomo bila maandishi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Defining features of the short story are brevity, few characters, and concentration on a single main event or theme.",

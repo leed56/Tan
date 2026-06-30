@@ -8,10 +8,26 @@
       {
         "questionText": "Sehemu ya neno inayobaki baada ya kuondoa viambishi vyote huitwaje?",
         "options": [
-          {"id": "a", "text": "Kiambishi awali", "isCorrect": false},
-          {"id": "b", "text": "Mzizi", "isCorrect": true},
-          {"id": "c", "text": "Kiambishi tamati", "isCorrect": false},
-          {"id": "d", "text": "Silabi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kiambishi awali",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mzizi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kiambishi tamati",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Silabi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The 'mzizi' (root) is the core part of a word that remains after all prefixes and suffixes are removed, carrying the basic meaning.",
@@ -20,34 +36,82 @@
       {
         "questionText": "Katika neno 'anasoma', kiambishi 'a-' cha mwanzo huonyesha nini?",
         "options": [
-          {"id": "a", "text": "Nafsi (mtenda)", "isCorrect": true},
-          {"id": "b", "text": "Wakati uliopita", "isCorrect": false},
-          {"id": "c", "text": "Mzizi wa kitenzi", "isCorrect": false},
-          {"id": "d", "text": "Kauli ya kutendwa", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Nafsi (mtenda)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Wakati uliopita",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mzizi wa kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kauli ya kutendwa",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In 'anasoma', the initial 'a-' is a subject prefix (kiambishi cha nafsi) marking the doer, third person singular.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Neno 'mwalimu' limeundwa kutokana na kitenzi gani?",
+        "questionText": "Neno 'mwandishi' limeundwa kutokana na kitenzi gani?",
         "options": [
-          {"id": "a", "text": "kualika", "isCorrect": false},
-          {"id": "b", "text": "kuelimu", "isCorrect": false},
-          {"id": "c", "text": "kufunza", "isCorrect": false},
-          {"id": "d", "text": "kufundisha", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "kusoma",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kuandika",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kuchora",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kuhesabu",
+            "isCorrect": false
+          }
         ],
-        "correctAnswer": "d",
-        "explanation": "Although derived through 'fundisha', the word 'mwalimu' (one who teaches) is a noun formed from the verb meaning 'to teach'; it names the agent of teaching.",
+        "correctAnswer": "b",
+        "explanation": "The noun 'mwandishi' (writer) is formed from the verb 'kuandika' (to write); it names the agent who performs the action of writing.",
         "difficulty": "medium"
       },
       {
         "questionText": "Kauli ya kutendwa ya kitenzi 'kupika' ni ipi?",
         "options": [
-          {"id": "a", "text": "kupikia", "isCorrect": false},
-          {"id": "b", "text": "kupikwa", "isCorrect": true},
-          {"id": "c", "text": "kupikana", "isCorrect": false},
-          {"id": "d", "text": "kupikika", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "kupikia",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kupikwa",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kupikana",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kupikika",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The passive (kauli ya kutendwa) of 'pika' is 'pikwa', formed by adding the suffix '-w-' before the final vowel.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Neno 'soksi' limeingia katika Kiswahili kwa njia gani?",
         "options": [
-          {"id": "a", "text": "Mwambatano", "isCorrect": false},
-          {"id": "b", "text": "Takriri", "isCorrect": false},
-          {"id": "c", "text": "Ukopaji (mkopo)", "isCorrect": true},
-          {"id": "d", "text": "Unyambulishaji", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mwambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ukopaji (mkopo)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Unyambulishaji",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "'Soksi' is a loanword (ukopaji) borrowed from English 'socks' and adapted to Kiswahili phonology.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Neno 'mwananchi' limeundwa kwa njia ya:",
         "options": [
-          {"id": "a", "text": "Mwambatano wa maneno", "isCorrect": true},
-          {"id": "b", "text": "Ukopaji", "isCorrect": false},
-          {"id": "c", "text": "Takriri", "isCorrect": false},
-          {"id": "d", "text": "Ufupishaji", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mwambatano wa maneno",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ukopaji",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ufupishaji",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "'Mwananchi' is a compound (mwambatano) formed from 'mwana' + 'nchi', joining two words into one.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Maneno kama 'harakaharaka' na 'polepole' yameundwa kwa njia ya:",
         "options": [
-          {"id": "a", "text": "Ukopaji", "isCorrect": false},
-          {"id": "b", "text": "Takriri (urudufishaji)", "isCorrect": true},
-          {"id": "c", "text": "Unyambulishaji", "isCorrect": false},
-          {"id": "d", "text": "Akronimu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ukopaji",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Takriri (urudufishaji)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Unyambulishaji",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Akronimu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Reduplication (takriri/urudufishaji) repeats a word or part of it to form a new word, as in 'polepole'.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Kauli ya kutendeana ya kitenzi 'kupiga' ni ipi?",
         "options": [
-          {"id": "a", "text": "kupigwa", "isCorrect": false},
-          {"id": "b", "text": "kupigia", "isCorrect": false},
-          {"id": "c", "text": "kupigana", "isCorrect": true},
-          {"id": "d", "text": "kupigika", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "kupigwa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kupigia",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kupigana",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kupigika",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The reciprocal form (kauli ya kutendeana) uses '-an-', giving 'pigana' (to hit one another).",
@@ -104,10 +232,26 @@
       {
         "questionText": "Kifupisho 'TUKI' kinasimama badala ya nini?",
         "options": [
-          {"id": "a", "text": "Taasisi ya Uchunguzi wa Kiswahili", "isCorrect": true},
-          {"id": "b", "text": "Tume ya Utamaduni wa Kiswahili", "isCorrect": false},
-          {"id": "c", "text": "Taasisi ya Ukuzaji wa Kilimo", "isCorrect": false},
-          {"id": "d", "text": "Tume ya Ukaguzi wa Kiswahili", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Taasisi ya Uchunguzi wa Kiswahili",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Tume ya Utamaduni wa Kiswahili",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Taasisi ya Ukuzaji wa Kilimo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Tume ya Ukaguzi wa Kiswahili",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "'TUKI' is an acronym (akronimu) standing for Taasisi ya Uchunguzi wa Kiswahili, formed from initial letters.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Nomino 'mchezaji' imeundwa kutokana na kitenzi 'kucheza' kwa kuongeza kiambishi tamati gani?",
         "options": [
-          {"id": "a", "text": "-o", "isCorrect": false},
-          {"id": "b", "text": "-ji", "isCorrect": true},
-          {"id": "c", "text": "-wa", "isCorrect": false},
-          {"id": "d", "text": "-ni", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "-o",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-ji",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-wa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-ni",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The agentive suffix '-ji' is added to the verb to name the doer: cheza + ji gives 'mchezaji' (player).",
@@ -128,10 +288,26 @@
       {
         "questionText": "Ipi kati ya zifuatazo ni kauli ya kutendeka ya 'kuvunja'?",
         "options": [
-          {"id": "a", "text": "kuvunjwa", "isCorrect": false},
-          {"id": "b", "text": "kuvunjia", "isCorrect": false},
-          {"id": "c", "text": "kuvunjika", "isCorrect": true},
-          {"id": "d", "text": "kuvunjana", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "kuvunjwa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kuvunjia",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kuvunjika",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kuvunjana",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The stative/potential (kauli ya kutendeka) uses '-ik-/-ek-', giving 'vunjika' (to be breakable/get broken).",
@@ -140,10 +316,26 @@
       {
         "questionText": "Neno 'kompyuta' ni mfano wa neno la aina gani kwa asili?",
         "options": [
-          {"id": "a", "text": "Neno la mkopo", "isCorrect": true},
-          {"id": "b", "text": "Neno ambatani", "isCorrect": false},
-          {"id": "c", "text": "Takriri", "isCorrect": false},
-          {"id": "d", "text": "Akronimu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Neno la mkopo",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Neno ambatani",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Akronimu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "'Kompyuta' is a loanword (neno la mkopo) borrowed from English 'computer'.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Kauli ya kutendea ya kitenzi 'kuandika' ni ipi?",
         "options": [
-          {"id": "a", "text": "kuandikwa", "isCorrect": false},
-          {"id": "b", "text": "kuandikia", "isCorrect": true},
-          {"id": "c", "text": "kuandikika", "isCorrect": false},
-          {"id": "d", "text": "kuandikana", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "kuandikwa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kuandikia",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kuandikika",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kuandikana",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The applicative (kauli ya kutendea) uses '-i-/-e-', giving 'andikia' (to write for/to someone).",
@@ -164,10 +372,26 @@
       {
         "questionText": "Neno 'askarikanzu' limeundwa kwa kuunganisha maneno gani?",
         "options": [
-          {"id": "a", "text": "askari + jeshi", "isCorrect": false},
-          {"id": "b", "text": "askari + kanzu", "isCorrect": true},
-          {"id": "c", "text": "askari + kazi", "isCorrect": false},
-          {"id": "d", "text": "askari + ngazi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "askari + jeshi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "askari + kanzu",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "askari + kazi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "askari + ngazi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "'Askarikanzu' is a compound of 'askari' + 'kanzu', a plain-clothes (gowned) policeman.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Ni kipi kati ya vifuatavyo ni kiambishi tamati katika neno 'wapendao'?",
         "options": [
-          {"id": "a", "text": "wa-", "isCorrect": false},
-          {"id": "b", "text": "-pend-", "isCorrect": false},
-          {"id": "c", "text": "-o", "isCorrect": true},
-          {"id": "d", "text": "-a", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "wa-",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-pend-",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-o",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "-a",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "In 'wapendao', the final '-o' is the relative suffix (kiambishi tamati cha urejeshi) marking 'those who love'.",
@@ -348,7 +588,7 @@
       {
         "questionText": "Taja kauli nne za kunyambua kitenzi.",
         "options": [],
-        "correctAnswer": "Kutendwa, kutendea, kutendeka, na kutendana.",
+        "correctAnswer": "Kutendwa, kutendea, kutendeka, na kutendeana.",
         "explanation": "Common derived forms include passive (kutendwa), applicative (kutendea), stative (kutendeka) and reciprocal (kutendana/kutendeana).",
         "difficulty": "medium"
       },
@@ -406,10 +646,26 @@
       {
         "questionText": "Katika sentensi 'Watoto walipigiana simu jana usiku', neno 'walipigiana' lina kauli zipi za unyambulishaji?",
         "options": [
-          {"id": "a", "text": "Kutendea pekee", "isCorrect": false},
-          {"id": "b", "text": "Kutendwa pekee", "isCorrect": false},
-          {"id": "c", "text": "Kutendea na kutendeana kwa pamoja", "isCorrect": true},
-          {"id": "d", "text": "Kutendeka pekee", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kutendea pekee",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kutendwa pekee",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kutendea na kutendeana kwa pamoja",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kutendeka pekee",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "'Pigiana' combines the applicative '-i-' (pigia) and the reciprocal '-an-' (pigiana), so it carries both kutendea and kutendeana.",
@@ -418,10 +674,26 @@
       {
         "questionText": "Ni neno lipi kati ya yafuatayo lililoundwa kwa njia tofauti na mengine?",
         "options": [
-          {"id": "a", "text": "mwananchi", "isCorrect": false},
-          {"id": "b", "text": "askarikanzu", "isCorrect": false},
-          {"id": "c", "text": "mwanahewa", "isCorrect": false},
-          {"id": "d", "text": "kitanda", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "mwananchi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "askarikanzu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mwanahewa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kitanda",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "'Mwananchi', 'askarikanzu' and 'mwanahewa' are compounds (mwambatano), while 'kitanda' is a single root with a noun-class prefix, not a compound.",
@@ -430,10 +702,26 @@
       {
         "questionText": "Ukinyambua kitenzi 'kula' katika kauli ya kutendwa, utapata neno lipi sahihi?",
         "options": [
-          {"id": "a", "text": "kuliwa", "isCorrect": true},
-          {"id": "b", "text": "kulwa", "isCorrect": false},
-          {"id": "c", "text": "kulika", "isCorrect": false},
-          {"id": "d", "text": "kulana", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "kuliwa",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "kulwa",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kulika",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kulana",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The monosyllabic verb 'la' takes the passive as 'liwa' (kuliwa, to be eaten), since '-w-' attaches via the linking vowel.",

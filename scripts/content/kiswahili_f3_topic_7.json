@@ -8,10 +8,26 @@
       {
         "questionText": "Ufupishaji ni nini?",
         "options": [
-          {"id": "a", "text": "Kuandika upya habari kwa urefu zaidi", "isCorrect": false},
-          {"id": "b", "text": "Kutoa hoja kuu za habari kwa maneno machache bila kupoteza maana", "isCorrect": true},
-          {"id": "c", "text": "Kunakili habari neno kwa neno", "isCorrect": false},
-          {"id": "d", "text": "Kutafsiri habari kutoka lugha moja kwenda nyingine", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kuandika upya habari kwa urefu zaidi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kutoa hoja kuu za habari kwa maneno machache bila kupoteza maana",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kunakili habari neno kwa neno",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kutafsiri habari kutoka lugha moja kwenda nyingine",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Ufupishaji (summary writing) means condensing a passage by extracting only the main points using few words, while preserving the original meaning.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Ipi kati ya zifuatazo ni kanuni muhimu ya kufupisha habari?",
         "options": [
-          {"id": "a", "text": "Kunakili sentensi za mwandishi neno kwa neno", "isCorrect": false},
-          {"id": "b", "text": "Kuongeza mifano mingi mipya", "isCorrect": false},
-          {"id": "c", "text": "Kutumia maneno yako mwenyewe na kutoa hoja kuu pekee", "isCorrect": true},
-          {"id": "d", "text": "Kuandika muhtasari mrefu kuliko habari yenyewe", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kunakili sentensi za mwandishi neno kwa neno",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kuongeza mifano mingi mipya",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kutumia maneno yako mwenyewe na kutoa hoja kuu pekee",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kuandika muhtasari mrefu kuliko habari yenyewe",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A key rule of summarising is to use your own words and include only the main ideas, leaving out examples and repetition.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Katika ufupishaji, mwanafunzi anapaswa kufanya nini na mifano, marudio na maelezo ya ziada?",
         "options": [
-          {"id": "a", "text": "Kuyaongeza zaidi", "isCorrect": false},
-          {"id": "b", "text": "Kuyaacha kwa sababu si hoja kuu", "isCorrect": true},
-          {"id": "c", "text": "Kuyanakili yote kama yalivyo", "isCorrect": false},
-          {"id": "d", "text": "Kuyabadilisha kuwa methali", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kuyaongeza zaidi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kuyaacha kwa sababu si hoja kuu",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kuyanakili yote kama yalivyo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kuyabadilisha kuwa methali",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Examples, repetitions, and extra details are not main points, so they should be left out when writing a summary.",
@@ -44,22 +92,54 @@
       {
         "questionText": "Kwa nini idadi ya maneno ni muhimu katika ufupishaji?",
         "options": [
-          {"id": "a", "text": "Kwa sababu hakuna umuhimu wowote", "isCorrect": false},
-          {"id": "b", "text": "Kwa sababu muhtasari lazima uwe mrefu zaidi", "isCorrect": false},
-          {"id": "c", "text": "Kwa sababu muhtasari unapaswa kuwa mfupi na kuzingatia kikomo cha maneno kilichotolewa", "isCorrect": true},
-          {"id": "d", "text": "Kwa sababu maneno mengi huongeza alama", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kwa sababu hakuna umuhimu wowote",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kwa sababu muhtasari lazima uwe mrefu zaidi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kwa sababu muhtasari unapaswa kuwa mfupi na kuzingatia kikomo cha maneno kilichotolewa",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kwa sababu maneno mengi huongeza alama",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A summary must be concise and respect the given word limit; exceeding it defeats the purpose of summarising.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Soma kifungu kifuatacho kisha uchague hoja kuu: 'Maji ni uhai. Bila maji, binadamu, wanyama na mimea havivezi kuishi. Maji husaidia kupika, kunywa, kunawa na kumwagilia mashamba.' Hoja kuu ni ipi?",
+        "questionText": "Soma kifungu kifuatacho kisha uchague hoja kuu: 'Maji ni uhai. Bila maji, binadamu, wanyama na mimea haviwezi kuishi. Maji husaidia kupika, kunywa, kunawa na kumwagilia mashamba.' Hoja kuu ni ipi?",
         "options": [
-          {"id": "a", "text": "Maji hutumika kunawa tu", "isCorrect": false},
-          {"id": "b", "text": "Maji ni muhimu kwa uhai wa viumbe na shughuli mbalimbali", "isCorrect": true},
-          {"id": "c", "text": "Binadamu pekee ndio wanaohitaji maji", "isCorrect": false},
-          {"id": "d", "text": "Maji hutumika kupika chakula tu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Maji hutumika kunawa tu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Maji ni muhimu kwa uhai wa viumbe na shughuli mbalimbali",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Binadamu pekee ndio wanaohitaji maji",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Maji hutumika kupika chakula tu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The main idea of the passage is that water is essential for life and for various daily activities; the rest are examples.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Tafsiri ni nini?",
         "options": [
-          {"id": "a", "text": "Kueleza maana ya neno kwa mdomo papo hapo", "isCorrect": false},
-          {"id": "b", "text": "Kuhamisha ujumbe kutoka lugha moja (chanzo) kwenda lugha nyingine (lengwa) kwa maandishi", "isCorrect": true},
-          {"id": "c", "text": "Kufupisha habari ndefu", "isCorrect": false},
-          {"id": "d", "text": "Kusoma habari kwa sauti", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kueleza maana ya neno kwa mdomo papo hapo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kuhamisha ujumbe kutoka lugha moja (chanzo) kwenda lugha nyingine (lengwa) kwa maandishi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kufupisha habari ndefu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kusoma habari kwa sauti",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Translation (tafsiri) is conveying a written message from a source language into a target language while preserving its meaning.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Ukalimani hutofautiana vipi na tafsiri?",
         "options": [
-          {"id": "a", "text": "Ukalimani hufanyika kwa maandishi, tafsiri kwa mdomo", "isCorrect": false},
-          {"id": "b", "text": "Ukalimani hufanyika kwa mdomo papo hapo, tafsiri hufanyika kwa maandishi", "isCorrect": true},
-          {"id": "c", "text": "Hakuna tofauti yoyote kati yao", "isCorrect": false},
-          {"id": "d", "text": "Ukalimani ni kufupisha, tafsiri ni kunakili", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ukalimani hufanyika kwa maandishi, tafsiri kwa mdomo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ukalimani hufanyika kwa mdomo papo hapo, tafsiri hufanyika kwa maandishi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Hakuna tofauti yoyote kati yao",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ukalimani ni kufupisha, tafsiri ni kunakili",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Interpretation (ukalimani) is done orally and instantly, while translation (tafsiri) is done in writing.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Sifa ya tafsiri bora ni ipi kati ya zifuatazo?",
         "options": [
-          {"id": "a", "text": "Kutafsiri neno kwa neno bila kujali muktadha", "isCorrect": false},
-          {"id": "b", "text": "Kupoteza maana ya asili", "isCorrect": false},
-          {"id": "c", "text": "Kuhifadhi maana ya asili na kuzingatia muktadha", "isCorrect": true},
-          {"id": "d", "text": "Kuongeza mawazo mapya yasiyokuwepo", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kutafsiri neno kwa neno bila kujali muktadha",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kupoteza maana ya asili",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kuhifadhi maana ya asili na kuzingatia muktadha",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kuongeza mawazo mapya yasiyokuwepo",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Good translation preserves the original meaning and considers context, rather than translating word for word.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Tafsiri sahihi ya sentensi 'I am reading a book' kwa Kiswahili ni ipi?",
         "options": [
-          {"id": "a", "text": "Ninasoma kitabu", "isCorrect": true},
-          {"id": "b", "text": "Ninaandika kitabu", "isCorrect": false},
-          {"id": "c", "text": "Nilisoma kitabu", "isCorrect": false},
-          {"id": "d", "text": "Atasoma kitabu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ninasoma kitabu",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ninaandika kitabu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Nilisoma kitabu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Atasoma kitabu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "'I am reading a book' is present continuous: 'Ninasoma kitabu.' Option c is past tense and d is future tense.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Tafsiri sahihi ya 'The teacher is teaching students' kwa Kiswahili ni ipi?",
         "options": [
-          {"id": "a", "text": "Mwalimu anawafundisha wanafunzi", "isCorrect": true},
-          {"id": "b", "text": "Mwanafunzi anamfundisha mwalimu", "isCorrect": false},
-          {"id": "c", "text": "Mwalimu aliwafundisha wanafunzi", "isCorrect": false},
-          {"id": "d", "text": "Walimu wanasoma vitabu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mwalimu anawafundisha wanafunzi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mwanafunzi anamfundisha mwalimu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mwalimu aliwafundisha wanafunzi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Walimu wanasoma vitabu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "'The teacher is teaching students' translates to 'Mwalimu anawafundisha wanafunzi' in the present continuous tense.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Changamoto kubwa katika kutafsiri nahau na methali ni ipi?",
         "options": [
-          {"id": "a", "text": "Ni rahisi kuzitafsiri neno kwa neno", "isCorrect": false},
-          {"id": "b", "text": "Hazina maana yoyote", "isCorrect": false},
-          {"id": "c", "text": "Maana yake ya ndani hupotea zinapotafsiriwa neno kwa neno", "isCorrect": true},
-          {"id": "d", "text": "Hazitumiki katika lugha yoyote", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ni rahisi kuzitafsiri neno kwa neno",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hazina maana yoyote",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Maana yake ya ndani hupotea zinapotafsiriwa neno kwa neno",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Hazitumiki katika lugha yoyote",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Idioms and proverbs carry figurative meaning that is lost when translated literally word for word, which is a major translation challenge.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Methali ya Kiingereza 'Where there is a will, there is a way' inalingana vyema na methali gani ya Kiswahili?",
         "options": [
-          {"id": "a", "text": "Penye nia pana njia", "isCorrect": true},
-          {"id": "b", "text": "Haraka haraka haina baraka", "isCorrect": false},
-          {"id": "c", "text": "Mtaka cha mvunguni sharti ainame", "isCorrect": false},
-          {"id": "d", "text": "Asiyesikia la mkuu huvunjika guu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Penye nia pana njia",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Haraka haraka haina baraka",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mtaka cha mvunguni sharti ainame",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Asiyesikia la mkuu huvunjika guu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Proverbs are best translated by their equivalent meaning; 'Where there is a will, there is a way' equals 'Penye nia pana njia.'",
@@ -152,10 +344,26 @@
       {
         "questionText": "Ni hatua ipi inayopaswa kuwa ya kwanza katika kufupisha habari?",
         "options": [
-          {"id": "a", "text": "Kuhesabu maneno", "isCorrect": false},
-          {"id": "b", "text": "Kusoma habari kwa makini ili kuelewa maudhui yake", "isCorrect": true},
-          {"id": "c", "text": "Kuandika muhtasari moja kwa moja", "isCorrect": false},
-          {"id": "d", "text": "Kutafsiri habari kwa Kiingereza", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kuhesabu maneno",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kusoma habari kwa makini ili kuelewa maudhui yake",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kuandika muhtasari moja kwa moja",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kutafsiri habari kwa Kiingereza",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The first step in summarising is to read the passage carefully to fully understand its content before identifying main points.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Mtu anayefanya kazi ya kutafsiri maandishi huitwaje?",
         "options": [
-          {"id": "a", "text": "Mkalimani", "isCorrect": false},
-          {"id": "b", "text": "Mfasiri (mtafsiri)", "isCorrect": true},
-          {"id": "c", "text": "Mhariri", "isCorrect": false},
-          {"id": "d", "text": "Mtangazaji", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mkalimani",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mfasiri (mtafsiri)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mhariri",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mtangazaji",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A person who translates written texts is called a mfasiri or mtafsiri (translator), while one who interprets orally is a mkalimani.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Umuhimu mmojawapo wa ufupishaji ni upi?",
         "options": [
-          {"id": "a", "text": "Husaidia kupata hoja kuu kwa muda mfupi", "isCorrect": true},
-          {"id": "b", "text": "Huongeza urefu wa habari", "isCorrect": false},
-          {"id": "c", "text": "Hupoteza maana ya habari", "isCorrect": false},
-          {"id": "d", "text": "Huzuia mawasiliano", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Husaidia kupata hoja kuu kwa muda mfupi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Huongeza urefu wa habari",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Hupoteza maana ya habari",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Huzuia mawasiliano",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "One benefit of summarising is that it helps the reader grasp the main points quickly and saves time.",
@@ -406,10 +646,26 @@
       {
         "questionText": "Soma kifungu: 'Mvua zimekuwa nyingi mwaka huu. Mito imefurika, mashamba mengi yameharibika, na watu wengi wamepoteza makazi yao. Serikali imewasaidia waathirika kwa kuwapa chakula na malazi.' Ni muhtasari upi unaozingatia hoja kuu pekee?",
         "options": [
-          {"id": "a", "text": "Mvua nyingi mwaka huu zimesababisha mafuriko na uharibifu, na serikali imewasaidia waathirika.", "isCorrect": true},
-          {"id": "b", "text": "Mito imefurika tu mwaka huu.", "isCorrect": false},
-          {"id": "c", "text": "Serikali imewapa watu chakula kingi sana na malazi mazuri.", "isCorrect": false},
-          {"id": "d", "text": "Mashamba yameharibika kwa sababu ya jua kali.", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mvua nyingi mwaka huu zimesababisha mafuriko na uharibifu, na serikali imewasaidia waathirika.",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mito imefurika tu mwaka huu.",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Serikali imewapa watu chakula kingi sana na malazi mazuri.",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mashamba yameharibika kwa sababu ya jua kali.",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The best summary captures both main ideas: heavy rains caused flooding and damage, and the government helped victims. Other options are incomplete or inaccurate.",
@@ -418,10 +674,26 @@
       {
         "questionText": "Ni ipi tafsiri bora zaidi ya nahau ya Kiingereza 'to kick the bucket' kwa Kiswahili?",
         "options": [
-          {"id": "a", "text": "Kupiga teke ndoo", "isCorrect": false},
-          {"id": "b", "text": "Kufariki (kufa)", "isCorrect": true},
-          {"id": "c", "text": "Kubeba ndoo", "isCorrect": false},
-          {"id": "d", "text": "Kuosha ndoo", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kupiga teke ndoo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kufariki (kufa)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kubeba ndoo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kuosha ndoo",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "'To kick the bucket' is an idiom meaning 'to die,' so the correct translation is 'kufariki/kufa,' not the literal 'kupiga teke ndoo.'",
@@ -430,10 +702,26 @@
       {
         "questionText": "Tafsiri sentensi ya Kiingereza 'It is raining cats and dogs' inahitaji mbinu ipi ili tafsiri iwe sahihi?",
         "options": [
-          {"id": "a", "text": "Kutafsiri neno kwa neno: 'Inanyesha paka na mbwa'", "isCorrect": false},
-          {"id": "b", "text": "Kuhamisha maana halisi: 'Mvua inanyesha kwa wingi sana'", "isCorrect": true},
-          {"id": "c", "text": "Kuacha sentensi bila kutafsiri", "isCorrect": false},
-          {"id": "d", "text": "Kuongeza maelezo ya paka na mbwa", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kutafsiri neno kwa neno: 'Inanyesha paka na mbwa'",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kuhamisha maana halisi: 'Mvua inanyesha kwa wingi sana'",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kuacha sentensi bila kutafsiri",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kuongeza maelezo ya paka na mbwa",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Idioms must be translated by meaning, not literally; 'raining cats and dogs' means it is raining very heavily ('Mvua inanyesha kwa wingi sana').",
