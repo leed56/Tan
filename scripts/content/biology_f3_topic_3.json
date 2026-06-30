@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Fungi are eukaryotic organisms that lack the green pigment called _____.",
-        "options": [],
-        "correctAnswer": "chlorophyll",
+        "options": [
+          {
+            "id": "a",
+            "text": "chlorophyll",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "cellulose",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "haemoglobin",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "carotene",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Fungi have no chlorophyll, so they cannot make their own food by photosynthesis.",
         "difficulty": "easy"
       },
       {
         "questionText": "The cell wall of fungi is made of a tough substance called _____.",
-        "options": [],
-        "correctAnswer": "chitin",
+        "options": [
+          {
+            "id": "a",
+            "text": "cellulose",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chitin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "lignin",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "pectin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Chitin gives fungal cell walls their strength, unlike plant cell walls which contain cellulose.",
         "difficulty": "easy"
       },
       {
         "questionText": "The fine thread-like filaments that form the body of a mould are called _____.",
-        "options": [],
-        "correctAnswer": "hyphae",
+        "options": [
+          {
+            "id": "a",
+            "text": "rhizoids",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "spores",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hyphae",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "sporangia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Hyphae are the basic structural units of most fungi, and together they form a mycelium.",
         "difficulty": "easy"
       },
       {
         "questionText": "A single-celled fungus used in baking and brewing is _____.",
-        "options": [],
-        "correctAnswer": "yeast",
+        "options": [
+          {
+            "id": "a",
+            "text": "mushroom",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mould",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "lichen",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "yeast",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Yeast is a unicellular fungus widely used to make bread rise and to ferment alcohol.",
         "difficulty": "easy"
       },
       {
         "questionText": "The common bread mould fungus is named _____.",
-        "options": [],
-        "correctAnswer": "Rhizopus",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rhizopus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mucor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Penicillium",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Agaricus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Rhizopus is the fungus that often grows on moist stale bread.",
         "difficulty": "easy"
       },
       {
         "questionText": "Fungi that feed on dead and decaying organic matter are described as _____.",
-        "options": [],
-        "correctAnswer": "saprophytic",
+        "options": [
+          {
+            "id": "a",
+            "text": "parasitic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "saprophytic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "autotrophic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "holozoic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Saprophytic fungi break down dead organic matter and play an important role in decomposition.",
         "difficulty": "medium"
       },
       {
         "questionText": "Yeast reproduces asexually by a process called _____.",
-        "options": [],
-        "correctAnswer": "budding",
+        "options": [
+          {
+            "id": "a",
+            "text": "binary fission",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fragmentation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "budding",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "sporulation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "In budding, a small outgrowth forms on the parent yeast cell and separates to form a new cell.",
         "difficulty": "medium"
       },
       {
         "questionText": "The antibiotic penicillin is produced by the fungus _____.",
-        "options": [],
-        "correctAnswer": "Penicillium",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rhizopus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mucor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Aspergillus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Penicillium",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Penicillium produces penicillin, an antibiotic used to treat bacterial infections.",
         "difficulty": "medium"
       },
       {
         "questionText": "A symbiotic association between a fungus and an alga is known as a _____.",
-        "options": [],
-        "correctAnswer": "lichen",
+        "options": [
+          {
+            "id": "a",
+            "text": "lichen",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mycorrhiza",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hypha",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "thallus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A lichen is formed when a fungus and an alga live together to the benefit of both organisms.",
         "difficulty": "medium"
       },
       {
         "questionText": "The skin disease athlete's foot is caused by a type of organism known as a _____.",
-        "options": [],
-        "correctAnswer": "fungus",
+        "options": [
+          {
+            "id": "a",
+            "text": "bacterium",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fungus",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "protozoan",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "virus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Athlete's foot is a fungal infection of the skin, especially between the toes.",
         "difficulty": "medium"
       }

@@ -8,10 +8,26 @@
       {
         "questionText": "What is the mode of the data set: 4, 7, 7, 2, 9, 7, 4?",
         "options": [
-          {"id": "a", "text": "4", "isCorrect": false},
-          {"id": "b", "text": "7", "isCorrect": true},
-          {"id": "c", "text": "9", "isCorrect": false},
-          {"id": "d", "text": "2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The mode is the value that appears most often. The value 7 appears three times, more than any other.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Find the range of the data: 12, 5, 18, 9, 21, 7.",
         "options": [
-          {"id": "a", "text": "16", "isCorrect": true},
-          {"id": "b", "text": "21", "isCorrect": false},
-          {"id": "c", "text": "14", "isCorrect": false},
-          {"id": "d", "text": "9", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "16",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "21",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "9",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Range = highest value - lowest value = 21 - 5 = 16.",
@@ -32,10 +64,26 @@
       {
         "questionText": "What is the mean of the numbers 6, 10, 14, 8, 12?",
         "options": [
-          {"id": "a", "text": "12", "isCorrect": false},
-          {"id": "b", "text": "9", "isCorrect": false},
-          {"id": "c", "text": "10", "isCorrect": true},
-          {"id": "d", "text": "11", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "11",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Mean = (6 + 10 + 14 + 8 + 12) / 5 = 50 / 5 = 10.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Find the median of the data set: 3, 8, 1, 6, 9.",
         "options": [
-          {"id": "a", "text": "8", "isCorrect": false},
-          {"id": "b", "text": "1", "isCorrect": false},
-          {"id": "c", "text": "9", "isCorrect": false},
-          {"id": "d", "text": "6", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Arranged in order: 1, 3, 6, 8, 9. The middle value (3rd of 5) is 6.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Find the median of the data set: 4, 11, 7, 2, 9, 5.",
         "options": [
-          {"id": "a", "text": "6", "isCorrect": true},
-          {"id": "b", "text": "7", "isCorrect": false},
-          {"id": "c", "text": "5", "isCorrect": false},
-          {"id": "d", "text": "8", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Ordered: 2, 4, 5, 7, 9, 11. With 6 values the median is the mean of the 3rd and 4th: (5 + 7) / 2 = 6.",
@@ -68,10 +148,26 @@
       {
         "questionText": "In a frequency distribution table, what does the frequency of a value represent?",
         "options": [
-          {"id": "a", "text": "The sum of all the values", "isCorrect": false},
-          {"id": "b", "text": "The number of times that value occurs", "isCorrect": true},
-          {"id": "c", "text": "The largest value in the data", "isCorrect": false},
-          {"id": "d", "text": "The average of the values", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The sum of all the values",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The number of times that value occurs",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The largest value in the data",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The average of the values",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Frequency is a count of how many times a particular value or class occurs in the data.",
@@ -80,10 +176,26 @@
       {
         "questionText": "The scores 5, 6, 7, 8 have frequencies 2, 3, 4, 1 respectively. What is the mean score?",
         "options": [
-          {"id": "a", "text": "6.6", "isCorrect": false},
-          {"id": "b", "text": "6.0", "isCorrect": false},
-          {"id": "c", "text": "6.4", "isCorrect": true},
-          {"id": "d", "text": "6.5", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6.6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6.0",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "6.4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6.5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Sum = 5(2)+6(3)+7(4)+8(1) = 10+18+28+8 = 64; total frequency = 2+3+4+1 = 10; mean = 64/10 = 6.4.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Which graph is used to display the cumulative frequency of grouped data?",
         "options": [
-          {"id": "a", "text": "Histogram", "isCorrect": false},
-          {"id": "b", "text": "Frequency polygon", "isCorrect": false},
-          {"id": "c", "text": "Ogive", "isCorrect": true},
-          {"id": "d", "text": "Pie chart", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Histogram",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Frequency polygon",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ogive",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Pie chart",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The cumulative frequency curve is called an ogive; it plots cumulative frequency against the upper class boundaries.",
@@ -104,10 +232,26 @@
       {
         "questionText": "For the class interval 20 - 29, what is the class mark (mid-value)?",
         "options": [
-          {"id": "a", "text": "24.5", "isCorrect": true},
-          {"id": "b", "text": "25", "isCorrect": false},
-          {"id": "c", "text": "24", "isCorrect": false},
-          {"id": "d", "text": "29", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "24.5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "24",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "29",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Class mark = (lower limit + upper limit) / 2 = (20 + 29) / 2 = 49 / 2 = 24.5.",
@@ -116,10 +260,26 @@
       {
         "questionText": "For the class interval 10 - 19, what is the class size (width) using class boundaries?",
         "options": [
-          {"id": "a", "text": "9", "isCorrect": false},
-          {"id": "b", "text": "10", "isCorrect": true},
-          {"id": "c", "text": "19", "isCorrect": false},
-          {"id": "d", "text": "11", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "19",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "11",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Boundaries are 9.5 and 19.5, so the class size = 19.5 - 9.5 = 10.",
@@ -128,10 +288,26 @@
       {
         "questionText": "In a histogram of grouped data with equal class widths, what is plotted on the vertical axis?",
         "options": [
-          {"id": "a", "text": "Cumulative frequency", "isCorrect": false},
-          {"id": "b", "text": "Class boundaries", "isCorrect": false},
-          {"id": "c", "text": "Frequency", "isCorrect": true},
-          {"id": "d", "text": "Class marks", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Cumulative frequency",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Class boundaries",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Frequency",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Class marks",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "For equal class widths the heights of the bars represent the frequency of each class.",
@@ -140,10 +316,26 @@
       {
         "questionText": "The mean of 5 numbers is 14. If a sixth number 26 is added, what is the new mean?",
         "options": [
-          {"id": "a", "text": "16", "isCorrect": true},
-          {"id": "b", "text": "20", "isCorrect": false},
-          {"id": "c", "text": "15", "isCorrect": false},
-          {"id": "d", "text": "18", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "16",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "15",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Original sum = 5 x 14 = 70; new sum = 70 + 26 = 96; new mean = 96 / 6 = 16.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Which measure of central tendency is most affected by an extreme (very large) value?",
         "options": [
-          {"id": "a", "text": "Mode", "isCorrect": false},
-          {"id": "b", "text": "Median", "isCorrect": false},
-          {"id": "c", "text": "Mean", "isCorrect": true},
-          {"id": "d", "text": "Range", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mode",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Median",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mean",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Range",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The mean uses every value in its calculation, so an extreme value (outlier) pulls it strongly; the median and mode are resistant to outliers.",
@@ -164,10 +372,26 @@
       {
         "questionText": "From a cumulative frequency table, the cumulative frequency up to 'less than 40' is 18 and up to 'less than 50' is 27. How many values lie in the class 40 - 49?",
         "options": [
-          {"id": "a", "text": "27", "isCorrect": false},
-          {"id": "b", "text": "9", "isCorrect": true},
-          {"id": "c", "text": "45", "isCorrect": false},
-          {"id": "d", "text": "18", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "27",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "45",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The class frequency = difference of cumulative frequencies = 27 - 18 = 9.",
@@ -176,10 +400,26 @@
       {
         "questionText": "The total frequency of a distribution is 50. Using an ogive, the median corresponds to which cumulative frequency value?",
         "options": [
-          {"id": "a", "text": "50", "isCorrect": false},
-          {"id": "b", "text": "12.5", "isCorrect": false},
-          {"id": "c", "text": "25", "isCorrect": true},
-          {"id": "d", "text": "37.5", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "50",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "12.5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "25",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "37.5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "On an ogive the median is read at a cumulative frequency of N/2 = 50/2 = 25.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The value that occurs most frequently in a set of data is called the _____.",
-        "options": [],
-        "correctAnswer": "mode",
+        "options": [
+          {
+            "id": "a",
+            "text": "mode",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mean",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "median",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "range",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The mode is the most frequently occurring value in a data set.",
         "difficulty": "easy"
       },
       {
         "questionText": "The difference between the highest and lowest values in a data set is called the _____.",
-        "options": [],
-        "correctAnswer": "range",
+        "options": [
+          {
+            "id": "a",
+            "text": "mean",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "range",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mode",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "median",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Range = highest value - lowest value, a simple measure of spread.",
         "difficulty": "easy"
       },
       {
         "questionText": "The mean of the numbers 3, 7, 11, 15, 19 is _____.",
-        "options": [],
-        "correctAnswer": "11",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "13",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "11",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "55",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Sum = 3 + 7 + 11 + 15 + 19 = 55; mean = 55 / 5 = 11.",
         "difficulty": "easy"
       },
       {
         "questionText": "When data values are arranged in order, the middle value is called the _____.",
-        "options": [],
-        "correctAnswer": "median",
+        "options": [
+          {
+            "id": "a",
+            "text": "mode",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mean",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "range",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "median",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The median is the central value of an ordered data set.",
         "difficulty": "easy"
       },
       {
         "questionText": "For the class interval 30 - 39, the class mark (mid-value) is _____.",
-        "options": [],
-        "correctAnswer": "34.5",
+        "options": [
+          {
+            "id": "a",
+            "text": "34.5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "35",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "34",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "39.5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Class mark = (30 + 39) / 2 = 69 / 2 = 34.5.",
         "difficulty": "medium"
       },
       {
         "questionText": "The graph formed by joining the mid-points of the tops of histogram bars with straight lines is called a frequency _____.",
-        "options": [],
-        "correctAnswer": "polygon",
+        "options": [
+          {
+            "id": "a",
+            "text": "histogram",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "polygon",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "curve",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ogive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A frequency polygon joins the class marks (or tops of bars) with straight line segments.",
         "difficulty": "easy"
       },
       {
         "questionText": "The cumulative frequency curve is also known as an _____.",
-        "options": [],
-        "correctAnswer": "ogive",
+        "options": [
+          {
+            "id": "a",
+            "text": "histogram",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "polygon",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ogive",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "parabola",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The ogive plots cumulative frequency against the upper class boundaries.",
         "difficulty": "easy"
       },
       {
         "questionText": "If the mean of 8 numbers is 12, then the sum of the 8 numbers is _____.",
-        "options": [],
-        "correctAnswer": "96",
+        "options": [
+          {
+            "id": "a",
+            "text": "24",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "104",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "96",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Sum = mean x number of values = 12 x 8 = 96.",
         "difficulty": "medium"
       },
       {
         "questionText": "The median of the data set 14, 9, 21, 6, 18, 11 is _____.",
-        "options": [],
-        "correctAnswer": "12.5",
+        "options": [
+          {
+            "id": "a",
+            "text": "12.5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "11",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "14.5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Ordered: 6, 9, 11, 14, 18, 21. Median = (11 + 14) / 2 = 25 / 2 = 12.5.",
         "difficulty": "medium"
       },
       {
         "questionText": "For the class interval 50 - 59, the lower class boundary is _____.",
-        "options": [],
-        "correctAnswer": "49.5",
+        "options": [
+          {
+            "id": "a",
+            "text": "50.5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "49.5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "59.5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "54.5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The lower class boundary is found by subtracting 0.5 from the lower limit: 50 - 0.5 = 49.5.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "The marks of 40 students are grouped as follows: 0-9 (4), 10-19 (10), 20-29 (14), 30-39 (8), 40-49 (4). Using class marks, estimate the mean mark.",
         "options": [
-          {"id": "a", "text": "23.0", "isCorrect": false},
-          {"id": "b", "text": "24.0", "isCorrect": true},
-          {"id": "c", "text": "24.5", "isCorrect": false},
-          {"id": "d", "text": "22.0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "23.0",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "24.0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "24.5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "22.0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Class marks: 4.5, 14.5, 24.5, 34.5, 44.5. Sum of fx = 4(4.5)+10(14.5)+14(24.5)+8(34.5)+4(44.5) = 18+145+343+276+178 = 960; estimated mean = 960/40 = 24.0.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A data set of 7 numbers has a mean of 10. Six of the numbers are 8, 12, 9, 11, 7 and 13. What is the seventh number?",
         "options": [
-          {"id": "a", "text": "10", "isCorrect": true},
-          {"id": "b", "text": "12", "isCorrect": false},
-          {"id": "c", "text": "8", "isCorrect": false},
-          {"id": "d", "text": "14", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "14",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Total required = 7 x 10 = 70; sum of six given = 8+12+9+11+7+13 = 60; seventh number = 70 - 60 = 10.",
@@ -430,10 +912,26 @@
       {
         "questionText": "The cumulative frequencies for classes with upper boundaries 9.5, 19.5, 29.5, 39.5 are 5, 17, 33, 40 respectively. Using N/2, which class contains the median?",
         "options": [
-          {"id": "a", "text": "0 - 9", "isCorrect": false},
-          {"id": "b", "text": "10 - 19", "isCorrect": false},
-          {"id": "c", "text": "20 - 29", "isCorrect": true},
-          {"id": "d", "text": "30 - 39", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0 - 9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10 - 19",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20 - 29",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "30 - 39",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "N = 40 so N/2 = 20. The cumulative frequency first reaches or passes 20 in the class 20 - 29 (cumulative 33, since the previous class only reached 17).",

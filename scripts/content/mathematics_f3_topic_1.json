@@ -8,10 +8,26 @@
       {
         "questionText": "A relation from set A to set B is best described as a rule that connects elements of A to elements of B. Which of the following is the correct mathematical meaning of a relation?",
         "options": [
-          {"id": "a", "text": "A set of ordered pairs", "isCorrect": true},
-          {"id": "b", "text": "A single number", "isCorrect": false},
-          {"id": "c", "text": "A straight line only", "isCorrect": false},
-          {"id": "d", "text": "A list with no order", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A set of ordered pairs",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A single number",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A straight line only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A list with no order",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A relation is a set of ordered pairs (x, y) that links elements of one set to elements of another according to a rule.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Given the relation R = {(1, 3), (2, 5), (4, 7)}, what is the domain of R?",
         "options": [
-          {"id": "a", "text": "{3, 5, 7}", "isCorrect": false},
-          {"id": "b", "text": "{1, 2, 4}", "isCorrect": true},
-          {"id": "c", "text": "{1, 2, 3, 4, 5, 7}", "isCorrect": false},
-          {"id": "d", "text": "{1, 3}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{3, 5, 7}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{1, 2, 4}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{1, 2, 3, 4, 5, 7}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{1, 3}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The domain is the set of all first elements (x-values) of the ordered pairs: 1, 2 and 4.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Given the relation R = {(1, 3), (2, 5), (4, 7)}, what is the range of R?",
         "options": [
-          {"id": "a", "text": "{1, 2, 4}", "isCorrect": false},
-          {"id": "b", "text": "{3, 5}", "isCorrect": false},
-          {"id": "c", "text": "{3, 5, 7}", "isCorrect": true},
-          {"id": "d", "text": "{1, 3, 5, 7}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{1, 2, 4}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{3, 5}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{3, 5, 7}",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "{1, 3, 5, 7}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The range is the set of all second elements (y-values) of the ordered pairs: 3, 5 and 7.",
@@ -44,10 +92,26 @@
       {
         "questionText": "In a relation from set A to set B, the set B in which the second elements are chosen is called the:",
         "options": [
-          {"id": "a", "text": "Domain", "isCorrect": false},
-          {"id": "b", "text": "Range", "isCorrect": false},
-          {"id": "c", "text": "Codomain", "isCorrect": true},
-          {"id": "d", "text": "Image", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Domain",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Range",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Codomain",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Image",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The codomain is the whole set B from which the second elements are taken; the range is the subset of B that is actually used.",
@@ -56,10 +120,26 @@
       {
         "questionText": "The relation 'is the double of' connects A = {2, 4, 6} to B = {1, 2, 3}. Which set of ordered pairs represents this relation?",
         "options": [
-          {"id": "a", "text": "{(2, 1), (4, 2), (6, 3)}", "isCorrect": true},
-          {"id": "b", "text": "{(1, 2), (2, 4), (3, 6)}", "isCorrect": false},
-          {"id": "c", "text": "{(2, 2), (4, 4), (6, 6)}", "isCorrect": false},
-          {"id": "d", "text": "{(2, 4), (4, 8), (6, 12)}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{(2, 1), (4, 2), (6, 3)}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "{(1, 2), (2, 4), (3, 6)}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{(2, 2), (4, 4), (6, 6)}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{(2, 4), (4, 8), (6, 12)}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Each element of A is the double of its partner in B, so 2 pairs with 1, 4 with 2, and 6 with 3, giving (2,1), (4,2), (6,3).",
@@ -68,10 +148,26 @@
       {
         "questionText": "A relation R is defined by R = {(x, y): y = x + 2, x is in {0, 1, 2, 3}}. Which ordered pair belongs to R?",
         "options": [
-          {"id": "a", "text": "(2, 2)", "isCorrect": false},
-          {"id": "b", "text": "(3, 5)", "isCorrect": true},
-          {"id": "c", "text": "(1, 1)", "isCorrect": false},
-          {"id": "d", "text": "(4, 6)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(2, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(3, 5)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(1, 1)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(4, 6)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Using y = x + 2 with x = 3 gives y = 5, so (3, 5) is in R; x = 4 is not allowed.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Which of the following is a way of representing a relation?",
         "options": [
-          {"id": "a", "text": "Arrow diagram", "isCorrect": true},
-          {"id": "b", "text": "A protractor", "isCorrect": false},
-          {"id": "c", "text": "A bar of soap", "isCorrect": false},
-          {"id": "d", "text": "A clock face", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Arrow diagram",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A protractor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A bar of soap",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A clock face",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Relations can be represented by ordered pairs, arrow diagrams and graphs; the arrow diagram shows arrows linking domain elements to range elements.",
@@ -92,10 +204,26 @@
       {
         "questionText": "A relation in which every element of the domain is paired with exactly one element of the range is also called a:",
         "options": [
-          {"id": "a", "text": "Region", "isCorrect": false},
-          {"id": "b", "text": "Function", "isCorrect": true},
-          {"id": "c", "text": "Sequence", "isCorrect": false},
-          {"id": "d", "text": "Vector", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Region",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Function",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Vector",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A function is a special relation in which each domain element has exactly one image in the range.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which of the following relations is NOT a function?",
         "options": [
-          {"id": "a", "text": "{(1, 2), (2, 4), (3, 6)}", "isCorrect": false},
-          {"id": "b", "text": "{(1, 2), (1, 5), (3, 6)}", "isCorrect": true},
-          {"id": "c", "text": "{(0, 0), (1, 1), (2, 2)}", "isCorrect": false},
-          {"id": "d", "text": "{(5, 1), (6, 1), (7, 1)}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{(1, 2), (2, 4), (3, 6)}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{(1, 2), (1, 5), (3, 6)}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{(0, 0), (1, 1), (2, 2)}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{(5, 1), (6, 1), (7, 1)}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The domain element 1 is paired with both 2 and 5, so it has two images, which violates the function rule.",
@@ -116,10 +260,26 @@
       {
         "questionText": "The relation 'is greater than' on the set {1, 2, 3} produces the pair (3, 1). Which other pair also belongs to this relation?",
         "options": [
-          {"id": "a", "text": "(1, 3)", "isCorrect": false},
-          {"id": "b", "text": "(2, 2)", "isCorrect": false},
-          {"id": "c", "text": "(2, 1)", "isCorrect": true},
-          {"id": "d", "text": "(1, 2)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(1, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(2, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2, 1)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(1, 2)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "For 'is greater than', the first element must be larger than the second; 2 > 1 so (2, 1) belongs to the relation.",
@@ -128,10 +288,26 @@
       {
         "questionText": "A relation R on a set is said to be reflexive if, for every element a in the set, the pair (a, a) belongs to R. Which relation on {1, 2} is reflexive?",
         "options": [
-          {"id": "a", "text": "{(1, 2)}", "isCorrect": false},
-          {"id": "b", "text": "{(1, 1), (2, 2)}", "isCorrect": true},
-          {"id": "c", "text": "{(2, 1)}", "isCorrect": false},
-          {"id": "d", "text": "{(1, 2), (2, 1)}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{(1, 2)}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{(1, 1), (2, 2)}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{(2, 1)}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{(1, 2), (2, 1)}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A reflexive relation must contain (1, 1) and (2, 2); only option b contains both pairs.",
@@ -140,10 +316,26 @@
       {
         "questionText": "A relation R is symmetric if whenever (a, b) is in R then (b, a) is also in R. Which of these relations on {1, 2, 3} is symmetric?",
         "options": [
-          {"id": "a", "text": "{(1, 2), (2, 1), (3, 3)}", "isCorrect": true},
-          {"id": "b", "text": "{(1, 2), (2, 3)}", "isCorrect": false},
-          {"id": "c", "text": "{(1, 2), (3, 1)}", "isCorrect": false},
-          {"id": "d", "text": "{(1, 3), (2, 3)}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{(1, 2), (2, 1), (3, 3)}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "{(1, 2), (2, 3)}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{(1, 2), (3, 1)}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{(1, 3), (2, 3)}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In option a, (1, 2) has its reverse (2, 1), and (3, 3) is its own reverse, so the relation is symmetric.",
@@ -152,10 +344,26 @@
       {
         "questionText": "The region described by the inequality y >= x includes which of the following points?",
         "options": [
-          {"id": "a", "text": "(1, 0)", "isCorrect": false},
-          {"id": "b", "text": "(2, 5)", "isCorrect": true},
-          {"id": "c", "text": "(4, 1)", "isCorrect": false},
-          {"id": "d", "text": "(3, 0)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(1, 0)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(2, 5)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(4, 1)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(3, 0)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "For y >= x, the point (2, 5) gives 5 >= 2 which is true; the other points have y less than x.",
@@ -164,10 +372,26 @@
       {
         "questionText": "When graphing the region of the inequality y > 2x + 1, the boundary line y = 2x + 1 is drawn as a:",
         "options": [
-          {"id": "a", "text": "Solid line", "isCorrect": false},
-          {"id": "b", "text": "Dotted (broken) line", "isCorrect": true},
-          {"id": "c", "text": "Curve", "isCorrect": false},
-          {"id": "d", "text": "Circle", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Solid line",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Dotted (broken) line",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Curve",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Circle",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A strict inequality (> or <) excludes the boundary, so the line is drawn dotted (broken); only >= or <= use a solid line.",
@@ -176,10 +400,26 @@
       {
         "questionText": "A relation R = {(x, y): y = 2x, x is in {1, 2, 3}} is represented by which arrow diagram description?",
         "options": [
-          {"id": "a", "text": "1 to 2, 2 to 4, 3 to 6", "isCorrect": true},
-          {"id": "b", "text": "1 to 1, 2 to 2, 3 to 3", "isCorrect": false},
-          {"id": "c", "text": "1 to 3, 2 to 6, 3 to 9", "isCorrect": false},
-          {"id": "d", "text": "1 to 0, 2 to 1, 3 to 2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1 to 2, 2 to 4, 3 to 6",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1 to 1, 2 to 2, 3 to 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1 to 3, 2 to 6, 3 to 9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1 to 0, 2 to 1, 3 to 2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Using y = 2x, the arrows go 1 to 2, 2 to 4 and 3 to 6, mapping each domain element to its double.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A relation is a set of _____ pairs that connects elements of one set to elements of another.",
-        "options": [],
-        "correctAnswer": "ordered",
+        "options": [
+          {
+            "id": "a",
+            "text": "ordered",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "unordered",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "random",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "equal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A relation is formally defined as a set of ordered pairs (x, y).",
         "difficulty": "easy"
       },
       {
         "questionText": "For the relation {(2, 4), (3, 9), (5, 25)}, the domain is _____.",
-        "options": [],
-        "correctAnswer": "{2, 3, 5}",
+        "options": [
+          {
+            "id": "a",
+            "text": "{4, 9, 25}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{2, 3, 5}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{2, 4, 5}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{2, 3, 9}",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The domain is the set of first elements of the ordered pairs.",
         "difficulty": "easy"
       },
       {
         "questionText": "For the relation {(2, 4), (3, 9), (5, 25)}, the range is _____.",
-        "options": [],
-        "correctAnswer": "{4, 9, 25}",
+        "options": [
+          {
+            "id": "a",
+            "text": "{2, 3, 5}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{4, 9, 24}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{4, 9, 25}",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "{2, 4, 25}",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The range is the set of second elements of the ordered pairs.",
         "difficulty": "easy"
       },
       {
         "questionText": "The complete set from which the second elements of a relation are chosen is called the _____.",
-        "options": [],
-        "correctAnswer": "codomain",
+        "options": [
+          {
+            "id": "a",
+            "text": "domain",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "range",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "image",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "codomain",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The codomain is the whole target set; the range is the part of it that is actually used.",
         "difficulty": "medium"
       },
       {
         "questionText": "A relation in which each element of the domain has exactly one image is called a _____.",
-        "options": [],
-        "correctAnswer": "function",
+        "options": [
+          {
+            "id": "a",
+            "text": "function",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "relation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mapping rule",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A function is a special type of relation with exactly one output per input.",
         "difficulty": "medium"
       },
       {
         "questionText": "If the relation is given by y = x + 3 and x = 4, then the value of y is _____.",
-        "options": [],
-        "correctAnswer": "7",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Substituting x = 4 into y = x + 3 gives y = 4 + 3 = 7.",
         "difficulty": "easy"
       },
       {
         "questionText": "A relation that satisfies (a, a) for every element a of the set is said to be _____.",
-        "options": [],
-        "correctAnswer": "reflexive",
+        "options": [
+          {
+            "id": "a",
+            "text": "symmetric",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "transitive",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reflexive",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "antisymmetric",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A reflexive relation contains every pair of the form (a, a).",
         "difficulty": "hard"
       },
       {
         "questionText": "When drawing the region for y <= 3, the boundary line y = 3 is drawn as a _____ line because the inequality includes equality.",
-        "options": [],
-        "correctAnswer": "solid",
+        "options": [
+          {
+            "id": "a",
+            "text": "dotted",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "broken",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "curved",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solid",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Inequalities with <= or >= include the boundary, so it is drawn as a solid line.",
         "difficulty": "medium"
       },
       {
         "questionText": "The relation 'is a factor of' connecting 2 to 6 gives the ordered pair _____.",
-        "options": [],
-        "correctAnswer": "(2, 6)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(2, 6)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(6, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(3, 6)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Since 2 is a factor of 6, the ordered pair (2, 6) belongs to the relation.",
         "difficulty": "medium"
       },
       {
         "questionText": "A relation is symmetric if whenever (a, b) is in it then _____ is also in it.",
-        "options": [],
-        "correctAnswer": "(b, a)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(a, b)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(b, a)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(a, a)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(b, b)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Symmetry requires the reverse pair (b, a) to be present for each pair (a, b).",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A relation R is defined on the set {1, 2, 3, 4} by R = {(x, y): y = x + 1}. How many ordered pairs does R contain, and what is its range?",
         "options": [
-          {"id": "a", "text": "3 pairs, range {2, 3, 4}", "isCorrect": true},
-          {"id": "b", "text": "4 pairs, range {2, 3, 4, 5}", "isCorrect": false},
-          {"id": "c", "text": "3 pairs, range {1, 2, 3}", "isCorrect": false},
-          {"id": "d", "text": "4 pairs, range {1, 2, 3, 4}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3 pairs, range {2, 3, 4}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "4 pairs, range {2, 3, 4, 5}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3 pairs, range {1, 2, 3}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4 pairs, range {1, 2, 3, 4}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Both x and y must be in the set, so x can be 1, 2, 3 giving (1,2), (2,3), (3,4); x = 4 needs y = 5 which is not in the set, so there are 3 pairs with range {2, 3, 4}.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Which single point lies in the region satisfying BOTH y >= x and y <= 4 at the same time?",
         "options": [
-          {"id": "a", "text": "(5, 6)", "isCorrect": false},
-          {"id": "b", "text": "(1, 3)", "isCorrect": true},
-          {"id": "c", "text": "(3, 1)", "isCorrect": false},
-          {"id": "d", "text": "(2, 5)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(5, 6)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(1, 3)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(3, 1)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(2, 5)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "At (1, 3): 3 >= 1 is true and 3 <= 4 is true, so both conditions hold; the others fail at least one inequality.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A relation R on {1, 2, 3} is R = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)}. Which statement is true about R?",
         "options": [
-          {"id": "a", "text": "It is reflexive and symmetric", "isCorrect": true},
-          {"id": "b", "text": "It is reflexive but not symmetric", "isCorrect": false},
-          {"id": "c", "text": "It is symmetric but not reflexive", "isCorrect": false},
-          {"id": "d", "text": "It is neither reflexive nor symmetric", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It is reflexive and symmetric",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "It is reflexive but not symmetric",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It is symmetric but not reflexive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It is neither reflexive nor symmetric",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "R contains (1,1), (2,2) and (3,3) so it is reflexive, and (1,2) has its reverse (2,1) so it is symmetric.",

@@ -8,10 +8,26 @@
       {
         "questionText": "A trader buys a radio for TZS 40,000 and sells it for TZS 50,000. What is the percentage profit?",
         "options": [
-          {"id": "a", "text": "20%", "isCorrect": false},
-          {"id": "b", "text": "25%", "isCorrect": true},
-          {"id": "c", "text": "10%", "isCorrect": false},
-          {"id": "d", "text": "12.5%", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "20%",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "25%",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10%",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12.5%",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Profit = 50,000 - 40,000 = 10,000. Percentage profit = (10,000 / 40,000) x 100 = 25%.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Find the simple interest on TZS 200,000 invested for 3 years at a rate of 5% per annum.",
         "options": [
-          {"id": "a", "text": "TZS 30,000", "isCorrect": true},
-          {"id": "b", "text": "TZS 10,000", "isCorrect": false},
-          {"id": "c", "text": "TZS 60,000", "isCorrect": false},
-          {"id": "d", "text": "TZS 15,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 30,000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "TZS 10,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 60,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TZS 15,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Simple interest = (P x R x T) / 100 = (200,000 x 5 x 3) / 100 = 30,000.",
@@ -32,10 +64,26 @@
       {
         "questionText": "An item marked at TZS 80,000 is sold at a discount of 15%. How much does a customer pay?",
         "options": [
-          {"id": "a", "text": "TZS 12,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 65,000", "isCorrect": false},
-          {"id": "c", "text": "TZS 68,000", "isCorrect": true},
-          {"id": "d", "text": "TZS 72,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 12,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 65,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 68,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "TZS 72,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Discount = 15% of 80,000 = 12,000. Amount paid = 80,000 - 12,000 = 68,000.",
@@ -44,10 +92,26 @@
       {
         "questionText": "A salesperson earns a commission of 8% on goods sold worth TZS 1,500,000. What is the commission?",
         "options": [
-          {"id": "a", "text": "TZS 100,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 150,000", "isCorrect": false},
-          {"id": "c", "text": "TZS 12,000", "isCorrect": false},
-          {"id": "d", "text": "TZS 120,000", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "TZS 100,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 150,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 12,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TZS 120,000",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Commission = 8% of 1,500,000 = (8/100) x 1,500,000 = 120,000.",
@@ -56,10 +120,26 @@
       {
         "questionText": "A shopkeeper sells a bag for TZS 36,000, making a loss of 10%. What was the cost price?",
         "options": [
-          {"id": "a", "text": "TZS 40,000", "isCorrect": true},
-          {"id": "b", "text": "TZS 39,600", "isCorrect": false},
-          {"id": "c", "text": "TZS 32,400", "isCorrect": false},
-          {"id": "d", "text": "TZS 33,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 40,000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "TZS 39,600",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 32,400",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TZS 33,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Selling price = 90% of cost. Cost = 36,000 / 0.90 = 40,000.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Calculate the compound interest on TZS 100,000 for 2 years at 10% per annum, compounded annually.",
         "options": [
-          {"id": "a", "text": "TZS 20,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 21,000", "isCorrect": true},
-          {"id": "c", "text": "TZS 121,000", "isCorrect": false},
-          {"id": "d", "text": "TZS 22,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 20,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 21,000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "TZS 121,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TZS 22,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Amount = 100,000 x (1.10)^2 = 121,000. Compound interest = 121,000 - 100,000 = 21,000.",
@@ -80,10 +176,26 @@
       {
         "questionText": "A laptop costing TZS 800,000 depreciates at 25% per annum. What is its value after 1 year?",
         "options": [
-          {"id": "a", "text": "TZS 200,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 575,000", "isCorrect": false},
-          {"id": "c", "text": "TZS 600,000", "isCorrect": true},
-          {"id": "d", "text": "TZS 700,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 200,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 575,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 600,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "TZS 700,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Depreciation = 25% of 800,000 = 200,000. Value = 800,000 - 200,000 = 600,000.",
@@ -92,10 +204,26 @@
       {
         "questionText": "A bicycle is bought on hire purchase by paying a deposit of TZS 50,000 plus 12 monthly instalments of TZS 15,000. What is the total hire purchase price?",
         "options": [
-          {"id": "a", "text": "TZS 180,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 200,000", "isCorrect": false},
-          {"id": "c", "text": "TZS 230,000", "isCorrect": true},
-          {"id": "d", "text": "TZS 65,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 180,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 200,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 230,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "TZS 65,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Total = deposit + (12 x 15,000) = 50,000 + 180,000 = 230,000.",
@@ -104,10 +232,26 @@
       {
         "questionText": "At what rate per annum will TZS 250,000 earn simple interest of TZS 60,000 in 4 years?",
         "options": [
-          {"id": "a", "text": "6%", "isCorrect": true},
-          {"id": "b", "text": "5%", "isCorrect": false},
-          {"id": "c", "text": "8%", "isCorrect": false},
-          {"id": "d", "text": "4%", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6%",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5%",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "8%",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4%",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "R = (I x 100) / (P x T) = (60,000 x 100) / (250,000 x 4) = 6,000,000 / 1,000,000 = 6%.",
@@ -116,10 +260,26 @@
       {
         "questionText": "A trader marks goods 40% above cost and then allows a discount of 10% on the marked price. If the cost is TZS 50,000, what is the selling price?",
         "options": [
-          {"id": "a", "text": "TZS 70,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 63,000", "isCorrect": true},
-          {"id": "c", "text": "TZS 65,000", "isCorrect": false},
-          {"id": "d", "text": "TZS 60,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 70,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 63,000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "TZS 65,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TZS 60,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Marked price = 50,000 x 1.40 = 70,000. After 10% discount: 70,000 x 0.90 = 63,000.",
@@ -128,10 +288,26 @@
       {
         "questionText": "In a trial balance, which of the following normally appears on the credit side?",
         "options": [
-          {"id": "a", "text": "Purchases", "isCorrect": false},
-          {"id": "b", "text": "Capital", "isCorrect": true},
-          {"id": "c", "text": "Cash in hand", "isCorrect": false},
-          {"id": "d", "text": "Rent expense", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Purchases",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Capital",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Cash in hand",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Rent expense",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Capital is a liability of the business to the owner, so it carries a credit balance in the trial balance.",
@@ -140,10 +316,26 @@
       {
         "questionText": "A man invests TZS 400,000 at 5% per annum simple interest. After how many years will the total amount become TZS 500,000?",
         "options": [
-          {"id": "a", "text": "4 years", "isCorrect": false},
-          {"id": "b", "text": "6 years", "isCorrect": false},
-          {"id": "c", "text": "5 years", "isCorrect": true},
-          {"id": "d", "text": "10 years", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4 years",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6 years",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5 years",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "10 years",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Interest needed = 500,000 - 400,000 = 100,000. T = (I x 100) / (P x R) = (100,000 x 100) / (400,000 x 5) = 5 years.",
@@ -152,10 +344,26 @@
       {
         "questionText": "An article is sold for TZS 575,000 at a profit of 15%. What was the cost price?",
         "options": [
-          {"id": "a", "text": "TZS 500,000", "isCorrect": true},
-          {"id": "b", "text": "TZS 488,750", "isCorrect": false},
-          {"id": "c", "text": "TZS 525,000", "isCorrect": false},
-          {"id": "d", "text": "TZS 460,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 500,000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "TZS 488,750",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 525,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TZS 460,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Selling price = 115% of cost. Cost = 575,000 / 1.15 = 500,000.",
@@ -164,10 +372,26 @@
       {
         "questionText": "The cash price of a sofa is TZS 600,000. On hire purchase it costs TZS 720,000. What is the percentage increase paid by buying on hire purchase?",
         "options": [
-          {"id": "a", "text": "15%", "isCorrect": false},
-          {"id": "b", "text": "20%", "isCorrect": true},
-          {"id": "c", "text": "25%", "isCorrect": false},
-          {"id": "d", "text": "12%", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "15%",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20%",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "25%",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12%",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Extra cost = 720,000 - 600,000 = 120,000. Percentage = (120,000 / 600,000) x 100 = 20%.",
@@ -176,10 +400,26 @@
       {
         "questionText": "A machine valued at TZS 1,000,000 depreciates at 20% per annum on the reducing balance. What is its value after 2 years?",
         "options": [
-          {"id": "a", "text": "TZS 600,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 660,000", "isCorrect": false},
-          {"id": "c", "text": "TZS 640,000", "isCorrect": true},
-          {"id": "d", "text": "TZS 800,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 600,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 660,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 640,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "TZS 800,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Value = 1,000,000 x (0.80)^2 = 1,000,000 x 0.64 = 640,000.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "If a cost price is TZS 30,000 and the selling price is TZS 36,000, the profit made is TZS _____.",
-        "options": [],
-        "correctAnswer": "6,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "6,000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6,600",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "36,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Profit = Selling price - Cost price = 36,000 - 30,000 = 6,000.",
         "difficulty": "easy"
       },
       {
         "questionText": "The simple interest formula is I = (P x R x T) / _____.",
-        "options": [],
-        "correctAnswer": "100",
+        "options": [
+          {
+            "id": "a",
+            "text": "1000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "100",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "360",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Since the rate R is a percentage, we divide the product P x R x T by 100.",
         "difficulty": "easy"
       },
       {
         "questionText": "The simple interest on TZS 150,000 for 2 years at 4% per annum is TZS _____.",
-        "options": [],
-        "correctAnswer": "12,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "6,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "120,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "18,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "I = (150,000 x 4 x 2) / 100 = 1,200,000 / 100 = 12,000.",
         "difficulty": "easy"
       },
       {
         "questionText": "A book marked at TZS 20,000 is given a 25% discount. The discount amount is TZS _____.",
-        "options": [],
-        "correctAnswer": "5,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "4,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "15,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "25,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5,000",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Discount = 25% of 20,000 = (25/100) x 20,000 = 5,000.",
         "difficulty": "easy"
       },
       {
         "questionText": "If goods worth TZS 500,000 are sold and the agent earns 6% commission, the commission is TZS _____.",
-        "options": [],
-        "correctAnswer": "30,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "30,000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "60,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Commission = 6% of 500,000 = (6/100) x 500,000 = 30,000.",
         "difficulty": "easy"
       },
       {
         "questionText": "The amount obtained when TZS 50,000 is invested for 1 year at 12% per annum simple interest is TZS _____.",
-        "options": [],
-        "correctAnswer": "56,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "6,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "56,000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "62,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "50,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Interest = (50,000 x 12 x 1)/100 = 6,000. Amount = 50,000 + 6,000 = 56,000.",
         "difficulty": "medium"
       },
       {
         "questionText": "An item bought for TZS 25,000 and sold for TZS 20,000 gives a percentage loss of _____%.",
-        "options": [],
-        "correctAnswer": "20",
+        "options": [
+          {
+            "id": "a",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "80",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Loss = 25,000 - 20,000 = 5,000. Percentage loss = (5,000 / 25,000) x 100 = 20%.",
         "difficulty": "medium"
       },
       {
         "questionText": "The two sides of a trial balance are the debit side and the _____ side.",
-        "options": [],
-        "correctAnswer": "credit",
+        "options": [
+          {
+            "id": "a",
+            "text": "debit",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "balance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cash",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "credit",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A trial balance lists balances under debit and credit columns, which should be equal.",
         "difficulty": "easy"
       },
       {
         "questionText": "TZS 200,000 invested at 10% per annum compound interest for 2 years grows to an amount of TZS _____.",
-        "options": [],
-        "correctAnswer": "242,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "242,000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "240,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "220,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "244,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Amount = 200,000 x (1.10)^2 = 200,000 x 1.21 = 242,000.",
         "difficulty": "medium"
       },
       {
         "questionText": "A car worth TZS 5,000,000 depreciating at 10% per annum will have a value of TZS _____ after one year.",
-        "options": [],
-        "correctAnswer": "4,500,000",
+        "options": [
+          {
+            "id": "a",
+            "text": "5,500,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4,500,000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4,000,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "450,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Depreciation = 10% of 5,000,000 = 500,000. Value = 5,000,000 - 500,000 = 4,500,000.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A trader sold two articles for TZS 48,000 each. On the first he made a 20% profit and on the second a 20% loss. What was his overall result on the two transactions?",
         "options": [
-          {"id": "a", "text": "No profit, no loss", "isCorrect": false},
-          {"id": "b", "text": "A loss of TZS 4,000", "isCorrect": true},
-          {"id": "c", "text": "A profit of TZS 4,000", "isCorrect": false},
-          {"id": "d", "text": "A loss of TZS 2,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "No profit, no loss",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A loss of TZS 4,000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A profit of TZS 4,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A loss of TZS 2,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Cost 1 = 48,000/1.20 = 40,000; Cost 2 = 48,000/0.80 = 60,000. Total cost = 100,000, total sales = 96,000, so a loss of 4,000.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A sum of money invested at compound interest doubles in 2 years. If the rate of interest is the same each year, which equation gives the annual rate r (as a fraction)?",
         "options": [
-          {"id": "a", "text": "(1 + r)^2 = 2", "isCorrect": true},
-          {"id": "b", "text": "1 + 2r = 2", "isCorrect": false},
-          {"id": "c", "text": "(1 + r)^2 = 1", "isCorrect": false},
-          {"id": "d", "text": "2(1 + r) = 2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(1 + r)^2 = 2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1 + 2r = 2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(1 + r)^2 = 1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2(1 + r) = 2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Amount = P(1 + r)^2 and it equals 2P, so dividing by P gives (1 + r)^2 = 2.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A shopkeeper allows a 4% cash discount on the marked price and still makes a 20% profit on cost. If the cost price is TZS 100,000, what is the marked price?",
         "options": [
-          {"id": "a", "text": "TZS 120,000", "isCorrect": false},
-          {"id": "b", "text": "TZS 124,800", "isCorrect": false},
-          {"id": "c", "text": "TZS 125,000", "isCorrect": true},
-          {"id": "d", "text": "TZS 130,000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "TZS 120,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TZS 124,800",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TZS 125,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "TZS 130,000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Selling price = 120,000 (20% profit). Since this is 96% of the marked price, marked price = 120,000 / 0.96 = 125,000.",

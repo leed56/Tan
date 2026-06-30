@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Mtu anayefanya kazi ya ukalimani kwa mdomo huitwa _____.",
-        "options": [],
-        "correctAnswer": "mkalimani",
+        "options": [
+          {
+            "id": "a",
+            "text": "mkalimani",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mtafsiri",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mwandishi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "msomaji",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A person who interprets spoken language on the spot is called a mkalimani (interpreter).",
         "difficulty": "easy"
       },
       {
         "questionText": "Lugha ambayo habari hutafsiriwa kutoka kwayo huitwa lugha _____.",
-        "options": [],
-        "correctAnswer": "chanzo",
+        "options": [
+          {
+            "id": "a",
+            "text": "lengwa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chanzo",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "pokezi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fasaha",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The language a text is translated FROM is called the source language (lugha chanzo).",
         "difficulty": "medium"
       },
       {
         "questionText": "Lugha ambayo habari hutafsiriwa kwenda kwayo huitwa lugha _____.",
-        "options": [],
-        "correctAnswer": "lengwa",
+        "options": [
+          {
+            "id": "a",
+            "text": "chanzo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "asili",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "lengwa",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "fasaha",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The language a text is translated INTO is called the target language (lugha lengwa).",
         "difficulty": "medium"
       },
       {
         "questionText": "Katika ufupishaji, ni lazima kuzingatia idadi ya _____ uliyopewa.",
-        "options": [],
-        "correctAnswer": "maneno",
+        "options": [
+          {
+            "id": "a",
+            "text": "herufi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sentensi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "aya",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "maneno",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A summary must respect the given word count (idadi ya maneno).",
         "difficulty": "easy"
       },
       {
         "questionText": "Tafsiri ya neno la Kiingereza 'water' kwa Kiswahili ni _____.",
-        "options": [],
-        "correctAnswer": "maji",
+        "options": [
+          {
+            "id": "a",
+            "text": "maji",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "moto",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hewa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chakula",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The English word 'water' translates to 'maji' in Kiswahili.",
         "difficulty": "easy"
       },
       {
         "questionText": "Tafsiri ya sentensi 'She is cooking food' kwa Kiswahili ni 'Anapika _____.'",
-        "options": [],
-        "correctAnswer": "chakula",
+        "options": [
+          {
+            "id": "a",
+            "text": "chai",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chakula",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ndizi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "samaki",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "'She is cooking food' translates to 'Anapika chakula'; 'food' is 'chakula.'",
         "difficulty": "easy"
       },
       {
         "questionText": "Katika ufupishaji tunatakiwa kuandika kwa maneno yetu _____ badala ya kunakili.",
-        "options": [],
-        "correctAnswer": "wenyewe",
+        "options": [
+          {
+            "id": "a",
+            "text": "rasmi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "wengine",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "wenyewe",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "mengi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A summary should be written in your own words (maneno yako mwenyewe), not copied from the original.",
         "difficulty": "easy"
       },
       {
         "questionText": "Methali ya Kiswahili inayolingana na 'Haste makes waste' ni 'Haraka haraka haina _____.'",
-        "options": [],
-        "correctAnswer": "baraka",
+        "options": [
+          {
+            "id": "a",
+            "text": "faida",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mafanikio",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "thamani",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "baraka",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Kiswahili equivalent of 'Haste makes waste' is the proverb 'Haraka haraka haina baraka.'",
         "difficulty": "hard"
       },
       {
         "questionText": "Tafsiri ya 'Good morning' kwa Kiswahili sanifu ni '_____ za asubuhi.'",
-        "options": [],
-        "correctAnswer": "Habari",
+        "options": [
+          {
+            "id": "a",
+            "text": "Habari",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Salamu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Shikamoo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hujambo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Good morning' is commonly rendered as 'Habari za asubuhi' in standard Kiswahili.",
         "difficulty": "medium"
       },
       {
         "questionText": "Tafsiri inayofanyika kwa _____ inaitwa ukalimani.",
-        "options": [],
-        "correctAnswer": "mdomo",
+        "options": [
+          {
+            "id": "a",
+            "text": "maandishi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mdomo",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ishara",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "picha",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Interpretation (ukalimani) is translation done orally (kwa mdomo), as opposed to written translation.",
         "difficulty": "medium"
       }

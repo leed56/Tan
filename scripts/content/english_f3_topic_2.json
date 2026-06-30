@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The woman _____ won the election is a teacher. (relative pronoun for a person as subject)",
-        "options": [],
-        "correctAnswer": "who",
+        "options": [
+          {
+            "id": "a",
+            "text": "who",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "which",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "whose",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "where",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Who' is used for a person who is the subject of the relative clause.",
         "difficulty": "easy"
       },
       {
         "questionText": "The car _____ I drive is very old. (relative pronoun for a thing)",
-        "options": [],
-        "correctAnswer": "which",
+        "options": [
+          {
+            "id": "a",
+            "text": "who",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "which",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "whose",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "whom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "'Which' (or 'that') refers to things such as a car.",
         "difficulty": "easy"
       },
       {
         "questionText": "That is the boy _____ bicycle was stolen. (possessive relative pronoun)",
-        "options": [],
-        "correctAnswer": "whose",
+        "options": [
+          {
+            "id": "a",
+            "text": "who",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "which",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "whose",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "whom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "'Whose' shows possession; the bicycle belongs to the boy.",
         "difficulty": "easy"
       },
       {
         "questionText": "This is the school _____ I studied as a child. (relative adverb for place)",
-        "options": [],
-        "correctAnswer": "where",
+        "options": [
+          {
+            "id": "a",
+            "text": "which",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "when",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "why",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "where",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "'Where' is the relative adverb used for a place.",
         "difficulty": "easy"
       },
       {
         "questionText": "Sunday is the day _____ I rest. (relative adverb for time)",
-        "options": [],
-        "correctAnswer": "when",
+        "options": [
+          {
+            "id": "a",
+            "text": "when",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "where",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "why",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "which",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'When' is the relative adverb used for a time.",
         "difficulty": "easy"
       },
       {
         "questionText": "Tell me the reason _____ you were late. (relative adverb for reason)",
-        "options": [],
-        "correctAnswer": "why",
+        "options": [
+          {
+            "id": "a",
+            "text": "when",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "why",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "where",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "which",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "'Why' is the relative adverb used after 'reason' to give an explanation.",
         "difficulty": "medium"
       },
       {
         "questionText": "The candidate _____ the voters trusted won easily. (formal relative pronoun for a person used as the object — begins with 'wh')",
-        "options": [],
-        "correctAnswer": "whom",
+        "options": [
+          {
+            "id": "a",
+            "text": "whose",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "which",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "whom",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "where",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "'Whom' is used for a person who is the object of the verb; here the candidate is the object of 'trusted'.",
         "difficulty": "medium"
       },
       {
         "questionText": "A non-defining relative clause must be separated from the rest of the sentence by _____. (punctuation mark)",
-        "options": [],
-        "correctAnswer": "commas",
+        "options": [
+          {
+            "id": "a",
+            "text": "full stops",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "brackets",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dashes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "commas",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Non-defining clauses give extra information and are enclosed by commas.",
         "difficulty": "medium"
       },
       {
         "questionText": "The relative pronoun '_____' cannot be used in a non-defining clause after a comma. (one word)",
-        "options": [],
-        "correctAnswer": "that",
+        "options": [
+          {
+            "id": "a",
+            "text": "that",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "which",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "whom",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "whose",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'That' is used only in defining clauses; it cannot follow a comma in a non-defining clause.",
         "difficulty": "hard"
       },
       {
         "questionText": "Combine using a relative pronoun: 'I know a man. The man speaks five languages.' Answer: I know a man _____ speaks five languages.",
-        "options": [],
-        "correctAnswer": "who",
+        "options": [
+          {
+            "id": "a",
+            "text": "which",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "who",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "whom",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "whose",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The man is a person and the subject of 'speaks', so 'who' joins the sentences.",
         "difficulty": "medium"
       }

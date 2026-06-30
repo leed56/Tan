@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Zero conditional: 'If you mix blue and yellow, you _____ green.' (get)",
-        "options": [],
-        "correctAnswer": "get",
+        "options": [
+          {
+            "id": "a",
+            "text": "get",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "gets",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "getting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "got",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The zero conditional uses present simple in both clauses for general truths.",
         "difficulty": "easy"
       },
       {
         "questionText": "First conditional: 'If we leave now, we _____ catch the bus.' (use will)",
-        "options": [],
-        "correctAnswer": "will",
+        "options": [
+          {
+            "id": "a",
+            "text": "shall",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "will",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "would",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "are",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The main clause of a first conditional uses 'will + base verb' for a real future result.",
         "difficulty": "easy"
       },
       {
         "questionText": "Second conditional: 'If I _____ rich, I would help the poor.' (be)",
-        "options": [],
-        "correctAnswer": "were",
+        "options": [
+          {
+            "id": "a",
+            "text": "am",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "are",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "were",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "be",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "In second conditionals 'were' is used for all subjects after 'if' to show an unreal situation.",
         "difficulty": "medium"
       },
       {
         "questionText": "Third conditional: 'If they had left earlier, they _____ have arrived on time.' (use would)",
-        "options": [],
-        "correctAnswer": "would",
+        "options": [
+          {
+            "id": "a",
+            "text": "will",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "should",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "can",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "would",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The third conditional main clause uses 'would have + past participle'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Rewrite using 'unless': 'You will be late if you do not hurry.' = 'You will be late _____ you hurry.'",
-        "options": [],
-        "correctAnswer": "unless",
+        "options": [
+          {
+            "id": "a",
+            "text": "unless",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "because",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "although",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "whether",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Unless' means 'if not', so it replaces 'if you do not'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Punctuation: 'If the weather is good_____ we will play football.' Fill the blank with the correct punctuation mark.",
-        "options": [],
-        "correctAnswer": ",",
+        "options": [
+          {
+            "id": "a",
+            "text": ".",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": ",",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": ";",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": ":",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "When the if-clause comes first, it is separated from the main clause by a comma.",
         "difficulty": "easy"
       },
       {
         "questionText": "Condition word: 'I will lend you the book _____ that you give it back tomorrow.' (means 'on condition')",
-        "options": [],
-        "correctAnswer": "provided",
+        "options": [
+          {
+            "id": "a",
+            "text": "because",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "although",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "provided",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "unless",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "'Provided that' introduces a necessary condition, meaning 'only if'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Choose 'when' or 'if': '_____ the bell rings, the lesson ends. (a regular, certain event)'",
-        "options": [],
-        "correctAnswer": "When",
+        "options": [
+          {
+            "id": "a",
+            "text": "If",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Although",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Because",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "When",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "'When' is used for certain, regular events; 'if' is used for uncertain ones.",
         "difficulty": "medium"
       },
       {
         "questionText": "Second conditional: 'If she knew the answer, she _____ tell us.' (use would)",
-        "options": [],
-        "correctAnswer": "would",
+        "options": [
+          {
+            "id": "a",
+            "text": "would",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "will",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "could",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "must",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The second conditional uses past simple in the if-clause and 'would + base verb' in the main clause.",
         "difficulty": "medium"
       },
       {
         "questionText": "Third conditional: 'If I _____ known you were sick, I would have visited you.' (use the past perfect of 'know')",
-        "options": [],
-        "correctAnswer": "had",
+        "options": [
+          {
+            "id": "a",
+            "text": "have",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "had",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "has",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "did",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The if-clause of a third conditional uses the past perfect: 'had known'.",
         "difficulty": "hard"
       }

@@ -8,10 +8,26 @@
       {
         "questionText": "Which of the following is a vector quantity?",
         "options": [
-          {"id": "a", "text": "Mass", "isCorrect": false},
-          {"id": "b", "text": "Temperature", "isCorrect": false},
-          {"id": "c", "text": "Velocity", "isCorrect": true},
-          {"id": "d", "text": "Time", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mass",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Velocity",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Time",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Velocity has both magnitude and direction, so it is a vector. Mass, temperature and time have only magnitude, so they are scalars.",
@@ -20,10 +36,26 @@
       {
         "questionText": "A scalar quantity is one that has:",
         "options": [
-          {"id": "a", "text": "Magnitude only", "isCorrect": true},
-          {"id": "b", "text": "Direction only", "isCorrect": false},
-          {"id": "c", "text": "Both magnitude and direction", "isCorrect": false},
-          {"id": "d", "text": "Neither magnitude nor direction", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Magnitude only",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Direction only",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Both magnitude and direction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Neither magnitude nor direction",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A scalar quantity is fully described by its magnitude (size) alone, with no direction needed. Examples include mass, time and energy.",
@@ -32,10 +64,26 @@
       {
         "questionText": "When a vector is drawn as an arrow, the length of the arrow represents the:",
         "options": [
-          {"id": "a", "text": "Direction of the vector", "isCorrect": false},
-          {"id": "b", "text": "Magnitude of the vector", "isCorrect": true},
-          {"id": "c", "text": "Point of application", "isCorrect": false},
-          {"id": "d", "text": "Type of the vector", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Direction of the vector",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Magnitude of the vector",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Point of application",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Type of the vector",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "In a scale drawing, the length of the arrow (drawn to scale) shows the magnitude, while the arrowhead shows the direction of the vector.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Two forces of 3 N and 4 N act at right angles to each other on a point. What is the magnitude of their resultant?",
         "options": [
-          {"id": "a", "text": "1 N", "isCorrect": false},
-          {"id": "b", "text": "5 N", "isCorrect": true},
-          {"id": "c", "text": "7 N", "isCorrect": false},
-          {"id": "d", "text": "12 N", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "7 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12 N",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "For perpendicular vectors, R = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5 N.",
@@ -56,10 +120,26 @@
       {
         "questionText": "The law used to add two vectors that act along the two sides of a parallelogram drawn from a common point is the:",
         "options": [
-          {"id": "a", "text": "Triangle law", "isCorrect": false},
-          {"id": "b", "text": "Parallelogram law", "isCorrect": true},
-          {"id": "c", "text": "Polygon law", "isCorrect": false},
-          {"id": "d", "text": "Inverse square law", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Triangle law",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Parallelogram law",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Polygon law",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Inverse square law",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The parallelogram law of vectors states that if two vectors are represented by the adjacent sides of a parallelogram, their resultant is the diagonal drawn from the common point.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which of the following is NOT a vector quantity?",
         "options": [
-          {"id": "a", "text": "Displacement", "isCorrect": false},
-          {"id": "b", "text": "Acceleration", "isCorrect": false},
-          {"id": "c", "text": "Speed", "isCorrect": true},
-          {"id": "d", "text": "Force", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Displacement",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Acceleration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Speed",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Force",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Speed has magnitude only, so it is a scalar. Displacement, acceleration and force all have direction as well, so they are vectors.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Two forces of 6 N and 6 N act in the same direction on a body. The magnitude of their resultant is:",
         "options": [
-          {"id": "a", "text": "0 N", "isCorrect": false},
-          {"id": "b", "text": "6 N", "isCorrect": false},
-          {"id": "c", "text": "12 N", "isCorrect": true},
-          {"id": "d", "text": "36 N", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6 N",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12 N",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "36 N",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "When vectors act in the same direction, the resultant is the simple sum of their magnitudes: 6 N + 6 N = 12 N.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Two forces of 10 N and 4 N act in opposite directions on the same point. The resultant force is:",
         "options": [
-          {"id": "a", "text": "14 N", "isCorrect": false},
-          {"id": "b", "text": "6 N", "isCorrect": true},
-          {"id": "c", "text": "40 N", "isCorrect": false},
-          {"id": "d", "text": "2.5 N", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "14 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2.5 N",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "For vectors in opposite directions, subtract: 10 N - 4 N = 6 N, acting in the direction of the larger force.",
@@ -104,10 +232,26 @@
       {
         "questionText": "A force F acts at an angle to the horizontal. Its horizontal component is given by:",
         "options": [
-          {"id": "a", "text": "F sin(theta)", "isCorrect": false},
-          {"id": "b", "text": "F cos(theta)", "isCorrect": true},
-          {"id": "c", "text": "F tan(theta)", "isCorrect": false},
-          {"id": "d", "text": "F / cos(theta)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "F sin(theta)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "F cos(theta)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "F tan(theta)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "F / cos(theta)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "When a vector F makes angle theta with the horizontal, the horizontal component is F cos(theta) and the vertical component is F sin(theta).",
@@ -116,10 +260,26 @@
       {
         "questionText": "A force of 20 N acts at 60 degrees to the horizontal. What is its vertical component? (sin 60 = 0.866)",
         "options": [
-          {"id": "a", "text": "10 N", "isCorrect": false},
-          {"id": "b", "text": "17.3 N", "isCorrect": true},
-          {"id": "c", "text": "20 N", "isCorrect": false},
-          {"id": "d", "text": "34.6 N", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "17.3 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "20 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "34.6 N",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The vertical component is F sin(theta) = 20 x sin 60 = 20 x 0.866 = 17.3 N.",
@@ -128,10 +288,26 @@
       {
         "questionText": "A boat that can travel at 5 m/s in still water heads straight across a river flowing at 5 m/s. The resultant speed of the boat is about:",
         "options": [
-          {"id": "a", "text": "5 m/s", "isCorrect": false},
-          {"id": "b", "text": "7.1 m/s", "isCorrect": true},
-          {"id": "c", "text": "10 m/s", "isCorrect": false},
-          {"id": "d", "text": "0 m/s", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7.1 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0 m/s",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The boat velocity (5 m/s across) and river velocity (5 m/s along) are perpendicular, so resultant = sqrt(5^2 + 5^2) = sqrt(50) = 7.1 m/s.",
@@ -140,10 +316,26 @@
       {
         "questionText": "The single vector that has the same effect as two or more vectors acting together is called the:",
         "options": [
-          {"id": "a", "text": "Component", "isCorrect": false},
-          {"id": "b", "text": "Resultant", "isCorrect": true},
-          {"id": "c", "text": "Equilibrant", "isCorrect": false},
-          {"id": "d", "text": "Scalar", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Component",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Resultant",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Equilibrant",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Scalar",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The resultant is the single vector that produces the same effect as the combination of all the individual vectors acting on a body.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Splitting a single vector into two perpendicular parts is called:",
         "options": [
-          {"id": "a", "text": "Addition of vectors", "isCorrect": false},
-          {"id": "b", "text": "Resolution of a vector", "isCorrect": true},
-          {"id": "c", "text": "Subtraction of vectors", "isCorrect": false},
-          {"id": "d", "text": "Multiplication of vectors", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Addition of vectors",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Resolution of a vector",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Subtraction of vectors",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Multiplication of vectors",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Resolution of a vector is the process of replacing one vector with two perpendicular components, usually horizontal and vertical.",
@@ -164,10 +372,26 @@
       {
         "questionText": "A man walks 30 m east and then 40 m north. The magnitude of his displacement from the start is:",
         "options": [
-          {"id": "a", "text": "70 m", "isCorrect": false},
-          {"id": "b", "text": "50 m", "isCorrect": true},
-          {"id": "c", "text": "10 m", "isCorrect": false},
-          {"id": "d", "text": "35 m", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "70 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "50 m",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "35 m",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The two displacements are perpendicular, so the resultant displacement = sqrt(30^2 + 40^2) = sqrt(900 + 1600) = sqrt(2500) = 50 m.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Two equal forces act on a point with an angle of 180 degrees between them. Their resultant is:",
         "options": [
-          {"id": "a", "text": "Equal to one force", "isCorrect": false},
-          {"id": "b", "text": "Twice one force", "isCorrect": false},
-          {"id": "c", "text": "Zero", "isCorrect": true},
-          {"id": "d", "text": "Half one force", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Equal to one force",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Twice one force",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Zero",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Half one force",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Two equal forces at 180 degrees act in exactly opposite directions, so they cancel out completely, giving a resultant of zero.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A quantity that has both magnitude and direction is called a _____ quantity.",
-        "options": [],
-        "correctAnswer": "vector",
+        "options": [
+          {
+            "id": "a",
+            "text": "vector",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "scalar",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tensor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "magnitude",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A vector quantity has both magnitude and direction, for example velocity, force and displacement.",
         "difficulty": "easy"
       },
       {
         "questionText": "A quantity that has magnitude only is called a _____ quantity.",
-        "options": [],
-        "correctAnswer": "scalar",
+        "options": [
+          {
+            "id": "a",
+            "text": "vector",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "scalar",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "magnitude",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "directional",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A scalar quantity is described by magnitude alone, for example mass, time and temperature.",
         "difficulty": "easy"
       },
       {
         "questionText": "On an arrow representing a vector, the _____ of the arrow shows the direction of the vector.",
-        "options": [],
-        "correctAnswer": "arrowhead",
+        "options": [
+          {
+            "id": "a",
+            "text": "tail",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "length",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "arrowhead",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "midpoint",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The arrowhead points in the direction of the vector, while the length of the line shows the magnitude.",
         "difficulty": "easy"
       },
       {
         "questionText": "The single vector that replaces two or more vectors is called the _____.",
-        "options": [],
-        "correctAnswer": "resultant",
+        "options": [
+          {
+            "id": "a",
+            "text": "component",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equilibrant",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "magnitude",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "resultant",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The resultant has the same effect as all the original vectors combined.",
         "difficulty": "easy"
       },
       {
         "questionText": "Two forces of 8 N and 6 N act at right angles. Their resultant has a magnitude of _____ N.",
-        "options": [],
-        "correctAnswer": "10",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "48",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "R = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10 N.",
         "difficulty": "medium"
       },
       {
         "questionText": "The horizontal component of a force F that makes an angle theta with the horizontal is F _____ theta.",
-        "options": [],
-        "correctAnswer": "cos",
+        "options": [
+          {
+            "id": "a",
+            "text": "sin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cos",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tan",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sec",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The horizontal component is F cos(theta), while the vertical component is F sin(theta).",
         "difficulty": "medium"
       },
       {
         "questionText": "The process of breaking a vector into two perpendicular parts is called _____ of a vector.",
-        "options": [],
-        "correctAnswer": "resolution",
+        "options": [
+          {
+            "id": "a",
+            "text": "addition",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "combination",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "resolution",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "projection",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Resolution splits one vector into horizontal and vertical components that together have the same effect.",
         "difficulty": "easy"
       },
       {
         "questionText": "The velocity of one body as seen from another moving body is called _____ velocity.",
-        "options": [],
-        "correctAnswer": "relative",
+        "options": [
+          {
+            "id": "a",
+            "text": "absolute",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "average",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "terminal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "relative",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Relative velocity is the velocity of one object measured with respect to another object.",
         "difficulty": "easy"
       },
       {
         "questionText": "When two vectors act in the same straight line and in the same direction, the resultant is found by _____ their magnitudes.",
-        "options": [],
-        "correctAnswer": "adding",
+        "options": [
+          {
+            "id": "a",
+            "text": "adding",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "subtracting",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "multiplying",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dividing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Vectors in the same direction are simply added; vectors in opposite directions are subtracted.",
         "difficulty": "easy"
       },
       {
         "questionText": "A car moving at 20 m/s east passes a car moving at 12 m/s east. The relative velocity of the first car with respect to the second is _____ m/s east.",
-        "options": [],
-        "correctAnswer": "8",
+        "options": [
+          {
+            "id": "a",
+            "text": "32",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.7",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "For motion in the same direction, relative velocity = 20 - 12 = 8 m/s east.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A plane flies due north at 200 km/h. A wind blows from west to east at 50 km/h. Find the magnitude of the plane's resultant velocity. (Take sqrt(42500) = 206.2)",
         "options": [
-          {"id": "a", "text": "150 km/h", "isCorrect": false},
-          {"id": "b", "text": "206.2 km/h", "isCorrect": true},
-          {"id": "c", "text": "250 km/h", "isCorrect": false},
-          {"id": "d", "text": "10000 km/h", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "150 km/h",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "206.2 km/h",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "250 km/h",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10000 km/h",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The plane's velocity (200 km/h north) and wind (50 km/h east) are perpendicular, so R = sqrt(200^2 + 50^2) = sqrt(40000 + 2500) = sqrt(42500) = 206.2 km/h.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A box is pulled by a rope with a force of 50 N at 30 degrees above the horizontal. What is the horizontal component of the force that moves the box along the ground? (cos 30 = 0.866)",
         "options": [
-          {"id": "a", "text": "25 N", "isCorrect": false},
-          {"id": "b", "text": "43.3 N", "isCorrect": true},
-          {"id": "c", "text": "50 N", "isCorrect": false},
-          {"id": "d", "text": "57.7 N", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "25 N",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "43.3 N",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "50 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "57.7 N",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The horizontal component = F cos(theta) = 50 x cos 30 = 50 x 0.866 = 43.3 N. This is the part of the force that drags the box forward.",
@@ -430,10 +912,26 @@
       {
         "questionText": "Two cars approach each other head-on. Car A moves east at 25 m/s and car B moves west at 15 m/s. What is the velocity of car A relative to car B?",
         "options": [
-          {"id": "a", "text": "10 m/s east", "isCorrect": false},
-          {"id": "b", "text": "40 m/s east", "isCorrect": true},
-          {"id": "c", "text": "40 m/s west", "isCorrect": false},
-          {"id": "d", "text": "10 m/s west", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10 m/s east",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "40 m/s east",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40 m/s west",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10 m/s west",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "When two objects move in opposite directions, the relative velocity is the sum of their speeds: 25 + 15 = 40 m/s, directed east (the direction of car A's motion).",

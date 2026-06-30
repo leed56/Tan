@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Plants make their own food by the process of _____.",
-        "options": [],
-        "correctAnswer": "photosynthesis",
+        "options": [
+          {
+            "id": "a",
+            "text": "photosynthesis",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "respiration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transpiration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "germination",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Plants are autotrophic and use chlorophyll to make food from carbon dioxide and water through photosynthesis.",
         "difficulty": "easy"
       },
       {
         "questionText": "The green pigment in plants that traps light energy is called _____.",
-        "options": [],
-        "correctAnswer": "chlorophyll",
+        "options": [
+          {
+            "id": "a",
+            "text": "carotene",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chlorophyll",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "haemoglobin",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "melanin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Chlorophyll is the green pigment found in chloroplasts that absorbs light energy for photosynthesis.",
         "difficulty": "easy"
       },
       {
         "questionText": "The plant cell wall is made mainly of a carbohydrate called _____.",
-        "options": [],
-        "correctAnswer": "cellulose",
+        "options": [
+          {
+            "id": "a",
+            "text": "chitin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "lignin",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cellulose",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "starch",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Cellulose forms the rigid cell wall that gives plant cells support and a fixed shape.",
         "difficulty": "easy"
       },
       {
         "questionText": "Mosses and liverworts belong to the plant division called _____.",
-        "options": [],
-        "correctAnswer": "Bryophyta",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pteridophyta",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Spermatophyta",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Thallophyta",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Bryophyta",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Bryophyta are simple land plants such as mosses and liverworts that lack true roots and vascular tissue.",
         "difficulty": "easy"
       },
       {
         "questionText": "Ferns reproduce by means of _____ rather than seeds.",
-        "options": [],
-        "correctAnswer": "spores",
+        "options": [
+          {
+            "id": "a",
+            "text": "spores",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "seeds",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "flowers",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fruits",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Pteridophytes such as ferns reproduce by spores, which are usually produced on the underside of the fronds.",
         "difficulty": "medium"
       },
       {
         "questionText": "Seed plants are placed in the division called _____.",
-        "options": [],
-        "correctAnswer": "Spermatophyta",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bryophyta",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Spermatophyta",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Pteridophyta",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Thallophyta",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Spermatophyta means seed plants and includes both gymnosperms and angiosperms.",
         "difficulty": "medium"
       },
       {
         "questionText": "Plants that produce naked seeds on cones, such as pines, are called _____.",
-        "options": [],
-        "correctAnswer": "gymnosperms",
+        "options": [
+          {
+            "id": "a",
+            "text": "angiosperms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bryophytes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gymnosperms",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "pteridophytes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Gymnosperms produce naked seeds that are not enclosed in a fruit, for example pines and cycads.",
         "difficulty": "medium"
       },
       {
         "questionText": "Flowering plants whose seeds are enclosed in fruits are known as _____.",
-        "options": [],
-        "correctAnswer": "angiosperms",
+        "options": [
+          {
+            "id": "a",
+            "text": "gymnosperms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bryophytes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pteridophytes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "angiosperms",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Angiosperms are flowering plants in which seeds develop inside a fruit formed from the ovary.",
         "difficulty": "easy"
       },
       {
         "questionText": "Angiosperms with only one cotyledon in the seed are called _____.",
-        "options": [],
-        "correctAnswer": "monocotyledons",
+        "options": [
+          {
+            "id": "a",
+            "text": "monocotyledons",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "dicotyledons",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gymnosperms",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bryophytes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Monocotyledons have a single seed leaf, parallel leaf veins and a fibrous root system, for example maize.",
         "difficulty": "medium"
       },
       {
         "questionText": "The transport tissue made up of xylem and phloem is called _____ tissue.",
-        "options": [],
-        "correctAnswer": "vascular",
+        "options": [
+          {
+            "id": "a",
+            "text": "epidermal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vascular",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "meristematic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "parenchyma",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Vascular tissue, made of xylem and phloem, transports water and food in pteridophytes and spermatophytes.",
         "difficulty": "medium"
       }

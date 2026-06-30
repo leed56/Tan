@@ -8,10 +8,26 @@
       {
         "questionText": "What is the SI unit of electric current?",
         "options": [
-          {"id": "a", "text": "Volt", "isCorrect": false},
-          {"id": "b", "text": "Ampere", "isCorrect": true},
-          {"id": "c", "text": "Ohm", "isCorrect": false},
-          {"id": "d", "text": "Watt", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Volt",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ampere",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Ohm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Watt",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Electric current is measured in amperes (A), which is the SI unit named after Andre-Marie Ampere.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which instrument is used to measure potential difference across a component?",
         "options": [
-          {"id": "a", "text": "Ammeter", "isCorrect": false},
-          {"id": "b", "text": "Galvanometer", "isCorrect": false},
-          {"id": "c", "text": "Voltmeter", "isCorrect": true},
-          {"id": "d", "text": "Rheostat", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ammeter",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Galvanometer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Voltmeter",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Rheostat",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A voltmeter measures potential difference (voltage) and is connected in parallel with the component.",
@@ -32,10 +64,26 @@
       {
         "questionText": "According to Ohm's law, the current through a conductor is directly proportional to the potential difference across it, provided that which quantity is constant?",
         "options": [
-          {"id": "a", "text": "Temperature", "isCorrect": true},
-          {"id": "b", "text": "Length only", "isCorrect": false},
-          {"id": "c", "text": "Power", "isCorrect": false},
-          {"id": "d", "text": "Charge", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Temperature",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Length only",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Power",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Charge",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Ohm's law holds when physical conditions, especially temperature, remain constant.",
@@ -44,10 +92,26 @@
       {
         "questionText": "A potential difference of 12 V is applied across a resistor and a current of 3 A flows. What is the resistance?",
         "options": [
-          {"id": "a", "text": "36 ohms", "isCorrect": false},
-          {"id": "b", "text": "9 ohms", "isCorrect": false},
-          {"id": "c", "text": "4 ohms", "isCorrect": true},
-          {"id": "d", "text": "0.25 ohms", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "36 ohms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9 ohms",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4 ohms",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "0.25 ohms",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Using R = V/I = 12/3 = 4 ohms.",
@@ -56,10 +120,26 @@
       {
         "questionText": "How should an ammeter be connected in a circuit?",
         "options": [
-          {"id": "a", "text": "In parallel with the component", "isCorrect": false},
-          {"id": "b", "text": "In series with the component", "isCorrect": true},
-          {"id": "c", "text": "Across the battery only", "isCorrect": false},
-          {"id": "d", "text": "Anywhere outside the circuit", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "In parallel with the component",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "In series with the component",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Across the battery only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Anywhere outside the circuit",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An ammeter is connected in series so the whole current to be measured flows through it.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which factor does NOT affect the resistance of a wire?",
         "options": [
-          {"id": "a", "text": "Length of the wire", "isCorrect": false},
-          {"id": "b", "text": "Cross-sectional area", "isCorrect": false},
-          {"id": "c", "text": "The colour of the wire", "isCorrect": true},
-          {"id": "d", "text": "Type of material", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Length of the wire",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Cross-sectional area",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The colour of the wire",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Type of material",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Resistance depends on length, cross-sectional area, material (resistivity) and temperature, but not on colour.",
@@ -80,10 +176,26 @@
       {
         "questionText": "How does the resistance of a wire change if its length is doubled (area unchanged)?",
         "options": [
-          {"id": "a", "text": "It is halved", "isCorrect": false},
-          {"id": "b", "text": "It stays the same", "isCorrect": false},
-          {"id": "c", "text": "It doubles", "isCorrect": true},
-          {"id": "d", "text": "It becomes four times", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It is halved",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It stays the same",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It doubles",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "It becomes four times",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Resistance is directly proportional to length, so doubling the length doubles the resistance.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Two resistors of 4 ohms and 6 ohms are connected in series. What is the total resistance?",
         "options": [
-          {"id": "a", "text": "10 ohms", "isCorrect": true},
-          {"id": "b", "text": "2.4 ohms", "isCorrect": false},
-          {"id": "c", "text": "24 ohms", "isCorrect": false},
-          {"id": "d", "text": "5 ohms", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10 ohms",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2.4 ohms",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "24 ohms",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5 ohms",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In series, resistances add: R = 4 + 6 = 10 ohms.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Two resistors of 6 ohms and 3 ohms are connected in parallel. What is the combined resistance?",
         "options": [
-          {"id": "a", "text": "9 ohms", "isCorrect": false},
-          {"id": "b", "text": "2 ohms", "isCorrect": true},
-          {"id": "c", "text": "18 ohms", "isCorrect": false},
-          {"id": "d", "text": "4.5 ohms", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "9 ohms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 ohms",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "18 ohms",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4.5 ohms",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "1/R = 1/6 + 1/3 = 1/6 + 2/6 = 3/6, so R = 6/3 = 2 ohms.",
@@ -116,10 +260,26 @@
       {
         "questionText": "The electrical power dissipated in a resistor can be calculated using which formula?",
         "options": [
-          {"id": "a", "text": "P = V/I", "isCorrect": false},
-          {"id": "b", "text": "P = I/V", "isCorrect": false},
-          {"id": "c", "text": "P = VI", "isCorrect": true},
-          {"id": "d", "text": "P = V + I", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "P = V/I",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "P = I/V",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "P = VI",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "P = V + I",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Electrical power P = VI, which can also be written as I^2R or V^2/R.",
@@ -128,10 +288,26 @@
       {
         "questionText": "A 60 W lamp operates on a 240 V supply. What current does it draw?",
         "options": [
-          {"id": "a", "text": "0.25 A", "isCorrect": true},
-          {"id": "b", "text": "4 A", "isCorrect": false},
-          {"id": "c", "text": "14400 A", "isCorrect": false},
-          {"id": "d", "text": "0.5 A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.25 A",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "4 A",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "14400 A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.5 A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "I = P/V = 60/240 = 0.25 A.",
@@ -140,10 +316,26 @@
       {
         "questionText": "One kilowatt-hour (kWh) is equal to how many joules?",
         "options": [
-          {"id": "a", "text": "1000 J", "isCorrect": false},
-          {"id": "b", "text": "3600 J", "isCorrect": false},
-          {"id": "c", "text": "3 600 000 J", "isCorrect": true},
-          {"id": "d", "text": "60 000 J", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1000 J",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3600 J",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3 600 000 J",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "60 000 J",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "1 kWh = 1000 W x 3600 s = 3 600 000 J (3.6 MJ).",
@@ -152,10 +344,26 @@
       {
         "questionText": "What is meant by the electromotive force (emf) of a cell?",
         "options": [
-          {"id": "a", "text": "The current it produces", "isCorrect": false},
-          {"id": "b", "text": "The total energy given to each unit charge by the cell", "isCorrect": true},
-          {"id": "c", "text": "Its internal resistance", "isCorrect": false},
-          {"id": "d", "text": "The voltage across the external resistor only", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The current it produces",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The total energy given to each unit charge by the cell",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Its internal resistance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The voltage across the external resistor only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Emf is the energy supplied by the source per unit charge, measured in volts.",
@@ -164,10 +372,26 @@
       {
         "questionText": "When current flows from a real cell, the terminal voltage is usually:",
         "options": [
-          {"id": "a", "text": "Greater than the emf", "isCorrect": false},
-          {"id": "b", "text": "Equal to the emf", "isCorrect": false},
-          {"id": "c", "text": "Less than the emf", "isCorrect": true},
-          {"id": "d", "text": "Always zero", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Greater than the emf",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Equal to the emf",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Less than the emf",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Always zero",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Some voltage is lost across the internal resistance, so terminal voltage = emf minus Ir, which is less than the emf.",
@@ -176,10 +400,26 @@
       {
         "questionText": "A current of 2 A flows through a 5 ohm resistor. What power is dissipated?",
         "options": [
-          {"id": "a", "text": "10 W", "isCorrect": false},
-          {"id": "b", "text": "20 W", "isCorrect": true},
-          {"id": "c", "text": "2.5 W", "isCorrect": false},
-          {"id": "d", "text": "50 W", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10 W",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20 W",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2.5 W",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "50 W",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "P = I^2R = 2^2 x 5 = 4 x 5 = 20 W.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The rate of flow of electric charge is called electric _____.",
-        "options": [],
-        "correctAnswer": "current",
+        "options": [
+          {
+            "id": "a",
+            "text": "current",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "voltage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "resistance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "power",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Electric current is the rate of flow of charge, measured in amperes.",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of resistance is the _____.",
-        "options": [],
-        "correctAnswer": "ohm",
+        "options": [
+          {
+            "id": "a",
+            "text": "volt",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ohm",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ampere",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "watt",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Resistance is measured in ohms, symbol the Greek letter omega.",
         "difficulty": "easy"
       },
       {
         "questionText": "Ohm's law is expressed by the equation V = I multiplied by _____.",
-        "options": [],
-        "correctAnswer": "R",
+        "options": [
+          {
+            "id": "a",
+            "text": "V",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "I",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "R",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "P",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "V = IR, where R is the resistance of the conductor.",
         "difficulty": "easy"
       },
       {
         "questionText": "A voltmeter is always connected in _____ with the component being measured.",
-        "options": [],
-        "correctAnswer": "parallel",
+        "options": [
+          {
+            "id": "a",
+            "text": "series",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "the cell",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "the battery",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "parallel",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A voltmeter is connected in parallel so it measures the potential difference across the component.",
         "difficulty": "easy"
       },
       {
         "questionText": "The resistance of a wire is directly proportional to its _____.",
-        "options": [],
-        "correctAnswer": "length",
+        "options": [
+          {
+            "id": "a",
+            "text": "length",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "diameter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "resistivity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A longer wire has more resistance because charges meet more opposition.",
         "difficulty": "medium"
       },
       {
         "questionText": "A 10 ohm and a 20 ohm resistor in series give a total resistance of _____ ohms.",
-        "options": [],
-        "correctAnswer": "30",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "30",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "200",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "15",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "In series, resistances add: 10 + 20 = 30 ohms.",
         "difficulty": "easy"
       },
       {
         "questionText": "Two equal resistors of 8 ohms in parallel give a combined resistance of _____ ohms.",
-        "options": [],
-        "correctAnswer": "4",
+        "options": [
+          {
+            "id": "a",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "For two equal resistors in parallel, R = 8/2 = 4 ohms.",
         "difficulty": "medium"
       },
       {
         "questionText": "Electrical power can be calculated using P = V^2 divided by _____.",
-        "options": [],
-        "correctAnswer": "R",
+        "options": [
+          {
+            "id": "a",
+            "text": "I",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "V",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "P",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "R",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "P = V^2/R is one of the three power formulas, along with VI and I^2R.",
         "difficulty": "medium"
       },
       {
         "questionText": "The energy used by a 2 kW heater running for 3 hours is _____ kWh.",
-        "options": [],
-        "correctAnswer": "6",
+        "options": [
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Energy = power x time = 2 kW x 3 h = 6 kWh.",
         "difficulty": "medium"
       },
       {
         "questionText": "The voltage measured across the terminals of a cell while current flows is called the _____ voltage.",
-        "options": [],
-        "correctAnswer": "terminal",
+        "options": [
+          {
+            "id": "a",
+            "text": "internal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "terminal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "applied",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "induced",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Terminal voltage equals the emf minus the voltage lost across the internal resistance.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A 4 ohm and a 12 ohm resistor are connected in parallel, and this combination is connected in series with a 1 ohm resistor across a 10 V battery. What is the total current drawn from the battery?",
         "options": [
-          {"id": "a", "text": "2.5 A", "isCorrect": true},
-          {"id": "b", "text": "10 A", "isCorrect": false},
-          {"id": "c", "text": "0.625 A", "isCorrect": false},
-          {"id": "d", "text": "1.25 A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2.5 A",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "10 A",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.625 A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.25 A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Parallel part: 1/R = 1/4 + 1/12 = 3/12 + 1/12 = 4/12, so R = 3 ohms. Total R = 3 + 1 = 4 ohms. Current I = V/R = 10/4 = 2.5 A.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A cell of emf 6 V and internal resistance 0.5 ohms is connected to an external resistor of 2.5 ohms. What is the terminal voltage?",
         "options": [
-          {"id": "a", "text": "6 V", "isCorrect": false},
-          {"id": "b", "text": "5 V", "isCorrect": true},
-          {"id": "c", "text": "2 A", "isCorrect": false},
-          {"id": "d", "text": "1 V", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6 V",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5 V",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2 A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1 V",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Total resistance = 2.5 + 0.5 = 3 ohms. Current I = 6/3 = 2 A. Terminal voltage = I x external R = 2 x 2.5 = 5 V (or emf minus Ir = 6 - 2x0.5 = 5 V).",
@@ -430,10 +912,26 @@
       {
         "questionText": "An electric iron rated 1500 W is used for 2 hours each day. If electricity costs 100 shillings per kWh, what is the cost of using it for 30 days?",
         "options": [
-          {"id": "a", "text": "3000 shillings", "isCorrect": false},
-          {"id": "b", "text": "4500 shillings", "isCorrect": false},
-          {"id": "c", "text": "9000 shillings", "isCorrect": true},
-          {"id": "d", "text": "900 shillings", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3000 shillings",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4500 shillings",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9000 shillings",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "900 shillings",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Daily energy = 1.5 kW x 2 h = 3 kWh. For 30 days = 90 kWh. Cost = 90 x 100 = 9000 shillings.",

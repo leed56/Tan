@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A formal letter that opens with 'Dear Madam,' should close with 'Yours _____,'.",
-        "options": [],
-        "correctAnswer": "faithfully",
+        "options": [
+          {
+            "id": "a",
+            "text": "faithfully",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sincerely",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "truly",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "respectfully",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "When the recipient's name is not used, the correct closing is 'Yours faithfully'.",
         "difficulty": "medium"
       },
       {
         "questionText": "The written record of what is discussed and decided at a meeting is called the _____.",
-        "options": [],
-        "correctAnswer": "minutes",
+        "options": [
+          {
+            "id": "a",
+            "text": "agenda",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "minutes",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "report",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "notice",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Minutes record the proceedings and decisions of a meeting.",
         "difficulty": "easy"
       },
       {
         "questionText": "The list of items to be discussed at a meeting, circulated before it begins, is the _____.",
-        "options": [],
-        "correctAnswer": "agenda",
+        "options": [
+          {
+            "id": "a",
+            "text": "minutes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "memo",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "agenda",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "report",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "An agenda sets out, in order, the matters to be dealt with during a meeting.",
         "difficulty": "easy"
       },
       {
         "questionText": "A short internal message sent within an organisation, using the headings To, From, Date and Subject, is called a _____.",
-        "options": [],
-        "correctAnswer": "memo",
+        "options": [
+          {
+            "id": "a",
+            "text": "notice",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "report",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "letter",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "memo",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A memo (memorandum) is used for internal communication within an organisation.",
         "difficulty": "easy"
       },
       {
         "questionText": "A document summarising a person's education, experience and skills for a job application is called a _____. (give the full two-word term, not the abbreviation)",
-        "options": [],
-        "correctAnswer": "curriculum vitae",
+        "options": [
+          {
+            "id": "a",
+            "text": "curriculum vitae",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "cover letter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "job application",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "personal statement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A curriculum vitae (CV) gives a summary of an applicant's background for employment purposes.",
         "difficulty": "medium"
       },
       {
         "questionText": "A report usually ends with a section giving suggestions for action, called the _____.",
-        "options": [],
-        "correctAnswer": "recommendations",
+        "options": [
+          {
+            "id": "a",
+            "text": "conclusions",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "recommendations",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "findings",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "introduction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The recommendations section of a report advises what should be done based on the findings.",
         "difficulty": "medium"
       },
       {
         "questionText": "A short public message displayed on a board to inform many people is called a _____.",
-        "options": [],
-        "correctAnswer": "notice",
+        "options": [
+          {
+            "id": "a",
+            "text": "memo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "report",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "notice",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "agenda",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A notice gives brief, clear information to the public or to a group of people.",
         "difficulty": "easy"
       },
       {
         "questionText": "The first heading or part of a report, which states its name or purpose, is the _____.",
-        "options": [],
-        "correctAnswer": "title",
+        "options": [
+          {
+            "id": "a",
+            "text": "heading",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "subject",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "summary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "title",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A report begins with a title that tells the reader what the report is about.",
         "difficulty": "easy"
       },
       {
         "questionText": "The level of formality of language used for a particular purpose and audience is known as the _____.",
-        "options": [],
-        "correctAnswer": "register",
+        "options": [
+          {
+            "id": "a",
+            "text": "register",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "tone",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "style",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dialect",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Register refers to choosing language that is formal or informal to suit the purpose and audience.",
         "difficulty": "hard"
       },
       {
         "questionText": "A card sent to ask someone to attend an event such as a wedding or graduation is called an _____.",
-        "options": [],
-        "correctAnswer": "invitation",
+        "options": [
+          {
+            "id": "a",
+            "text": "announcement",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "invitation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "advertisement",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "notice",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "An invitation requests the presence of a guest at a particular event, stating the date, time and place.",
         "difficulty": "easy"
       }

@@ -8,10 +8,26 @@
       {
         "questionText": "Which of the following relations is a function?",
         "options": [
-          {"id": "a", "text": "{(1, 2), (1, 3), (2, 4)}", "isCorrect": false},
-          {"id": "b", "text": "{(1, 2), (2, 2), (3, 5)}", "isCorrect": true},
-          {"id": "c", "text": "{(0, 1), (0, 2), (0, 3)}", "isCorrect": false},
-          {"id": "d", "text": "{(2, 1), (2, 4), (3, 6)}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{(1, 2), (1, 3), (2, 4)}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{(1, 2), (2, 2), (3, 5)}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{(0, 1), (0, 2), (0, 3)}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{(2, 1), (2, 4), (3, 6)}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A function assigns exactly one output to each input. Only option b has no repeated input with different outputs.",
@@ -20,10 +36,26 @@
       {
         "questionText": "If f(x) = 3x - 5, what is f(4)?",
         "options": [
-          {"id": "a", "text": "7", "isCorrect": true},
-          {"id": "b", "text": "12", "isCorrect": false},
-          {"id": "c", "text": "-2", "isCorrect": false},
-          {"id": "d", "text": "17", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "17",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "f(4) = 3(4) - 5 = 12 - 5 = 7.",
@@ -32,10 +64,26 @@
       {
         "questionText": "What is the domain of the function f(x) = 1/(x - 2)?",
         "options": [
-          {"id": "a", "text": "All real numbers", "isCorrect": false},
-          {"id": "b", "text": "All real numbers except x = 0", "isCorrect": false},
-          {"id": "c", "text": "All real numbers except x = 2", "isCorrect": true},
-          {"id": "d", "text": "All real numbers except x = -2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "All real numbers",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "All real numbers except x = 0",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "All real numbers except x = 2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "All real numbers except x = -2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The denominator cannot be zero, so x - 2 ≠ 0, meaning x ≠ 2.",
@@ -44,10 +92,26 @@
       {
         "questionText": "If f(x) = x² + 1, what is f(-3)?",
         "options": [
-          {"id": "a", "text": "-8", "isCorrect": false},
-          {"id": "b", "text": "10", "isCorrect": true},
-          {"id": "c", "text": "-10", "isCorrect": false},
-          {"id": "d", "text": "7", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "-8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "f(-3) = (-3)² + 1 = 9 + 1 = 10.",
@@ -56,10 +120,26 @@
       {
         "questionText": "The value of |x| when x = -7 is:",
         "options": [
-          {"id": "a", "text": "-7", "isCorrect": false},
-          {"id": "b", "text": "0", "isCorrect": false},
-          {"id": "c", "text": "7", "isCorrect": true},
-          {"id": "d", "text": "49", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "-7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "49",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The absolute value of a number is its distance from zero, which is always non-negative, so |-7| = 7.",
@@ -68,10 +148,26 @@
       {
         "questionText": "If f(x) = 2x + 7, find the inverse function f⁻¹(x).",
         "options": [
-          {"id": "a", "text": "f⁻¹(x) = (x - 7)/2", "isCorrect": true},
-          {"id": "b", "text": "f⁻¹(x) = (x + 7)/2", "isCorrect": false},
-          {"id": "c", "text": "f⁻¹(x) = 2x - 7", "isCorrect": false},
-          {"id": "d", "text": "f⁻¹(x) = (x - 7)/2 + 7", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "f⁻¹(x) = (x - 7)/2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "f⁻¹(x) = (x + 7)/2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "f⁻¹(x) = 2x - 7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "f⁻¹(x) = (x - 7)/2 + 7",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Let y = 2x + 7. Swap variables: x = 2y + 7, then solve for y: y = (x - 7)/2.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Given f(x) = x + 3 and g(x) = 2x, what is (f∘g)(x)?",
         "options": [
-          {"id": "a", "text": "2x + 6", "isCorrect": false},
-          {"id": "b", "text": "2x + 3", "isCorrect": true},
-          {"id": "c", "text": "2x²", "isCorrect": false},
-          {"id": "d", "text": "x + 6", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2x + 6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2x + 3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2x²",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x + 6",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "(f∘g)(x) = f(g(x)) = f(2x) = 2x + 3.",
@@ -92,10 +204,26 @@
       {
         "questionText": "The range of the function f(x) = x² for all real x is:",
         "options": [
-          {"id": "a", "text": "All real numbers", "isCorrect": false},
-          {"id": "b", "text": "y ≥ 0", "isCorrect": true},
-          {"id": "c", "text": "y > 0", "isCorrect": false},
-          {"id": "d", "text": "y ≤ 0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "All real numbers",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "y ≥ 0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "y > 0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "y ≤ 0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Squaring any real number gives a result that is zero or positive, so the range is y ≥ 0.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which type of function is represented by f(x) = -4x + 1?",
         "options": [
-          {"id": "a", "text": "Quadratic", "isCorrect": false},
-          {"id": "b", "text": "Absolute value", "isCorrect": false},
-          {"id": "c", "text": "Linear", "isCorrect": true},
-          {"id": "d", "text": "Constant", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Quadratic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Absolute value",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Linear",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Constant",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A function of the form f(x) = mx + c with a non-zero coefficient of x is a linear function.",
@@ -116,10 +260,26 @@
       {
         "questionText": "If f(x) = 5x, for what value of x is f(x) = 35?",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": false},
-          {"id": "b", "text": "6", "isCorrect": false},
-          {"id": "c", "text": "7", "isCorrect": true},
-          {"id": "d", "text": "8", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Set 5x = 35, so x = 35/5 = 7.",
@@ -128,10 +288,26 @@
       {
         "questionText": "The graph of a linear function f(x) = mx + c is always a:",
         "options": [
-          {"id": "a", "text": "Parabola", "isCorrect": false},
-          {"id": "b", "text": "Straight line", "isCorrect": true},
-          {"id": "c", "text": "V-shape", "isCorrect": false},
-          {"id": "d", "text": "Circle", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Parabola",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Straight line",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "V-shape",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Circle",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A linear function produces a straight-line graph with gradient m and y-intercept c.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Given f(x) = x² - 4x, what is f(5)?",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": true},
-          {"id": "b", "text": "9", "isCorrect": false},
-          {"id": "c", "text": "-5", "isCorrect": false},
-          {"id": "d", "text": "45", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "45",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "f(5) = 5² - 4(5) = 25 - 20 = 5.",
@@ -152,10 +344,26 @@
       {
         "questionText": "A function uses a vertical line test on its graph. What does it mean if a vertical line cuts the graph at two points?",
         "options": [
-          {"id": "a", "text": "The graph is a function", "isCorrect": false},
-          {"id": "b", "text": "The graph is not a function", "isCorrect": true},
-          {"id": "c", "text": "The graph has no domain", "isCorrect": false},
-          {"id": "d", "text": "The graph is linear", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The graph is a function",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The graph is not a function",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The graph has no domain",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The graph is linear",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "If a vertical line meets the graph more than once, one input gives more than one output, so it is not a function.",
@@ -164,10 +372,26 @@
       {
         "questionText": "If g(x) = |x - 3|, what is g(1)?",
         "options": [
-          {"id": "a", "text": "-2", "isCorrect": false},
-          {"id": "b", "text": "2", "isCorrect": true},
-          {"id": "c", "text": "4", "isCorrect": false},
-          {"id": "d", "text": "1", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "g(1) = |1 - 3| = |-2| = 2.",
@@ -176,10 +400,26 @@
       {
         "questionText": "If f(x) = (x + 6)/3, then f⁻¹(x) equals:",
         "options": [
-          {"id": "a", "text": "3x - 6", "isCorrect": true},
-          {"id": "b", "text": "3x + 6", "isCorrect": false},
-          {"id": "c", "text": "(x - 6)/3", "isCorrect": false},
-          {"id": "d", "text": "3x - 18", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3x - 6",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3x + 6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(x - 6)/3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3x - 18",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Let y = (x + 6)/3, swap to get x = (y + 6)/3, then 3x = y + 6, so y = 3x - 6.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A relation in which each input has exactly one output is called a _____.",
-        "options": [],
-        "correctAnswer": "function",
+        "options": [
+          {
+            "id": "a",
+            "text": "function",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "relation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mapping",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "By definition, a function maps every element of the domain to exactly one element of the range.",
         "difficulty": "easy"
       },
       {
         "questionText": "The set of all possible input values of a function is called its _____.",
-        "options": [],
-        "correctAnswer": "domain",
+        "options": [
+          {
+            "id": "a",
+            "text": "range",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "domain",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "codomain",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "image",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The domain is the complete set of allowed input (x) values.",
         "difficulty": "easy"
       },
       {
         "questionText": "If f(x) = 4x - 9, then f(3) = _____.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "21",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "f(3) = 4(3) - 9 = 12 - 9 = 3.",
         "difficulty": "easy"
       },
       {
         "questionText": "The set of all output values of a function is called its _____.",
-        "options": [],
-        "correctAnswer": "range",
+        "options": [
+          {
+            "id": "a",
+            "text": "domain",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "codomain",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "image",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "range",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The range is the complete set of resulting output (y) values.",
         "difficulty": "easy"
       },
       {
         "questionText": "The value of |−12| is _____.",
-        "options": [],
-        "correctAnswer": "12",
+        "options": [
+          {
+            "id": "a",
+            "text": "12",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "-12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "24",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Absolute value gives the non-negative distance from zero, so |−12| = 12.",
         "difficulty": "easy"
       },
       {
         "questionText": "If f(x) = x² + 2x, then f(-2) = _____.",
-        "options": [],
-        "correctAnswer": "0",
+        "options": [
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "f(-2) = (-2)² + 2(-2) = 4 - 4 = 0.",
         "difficulty": "medium"
       },
       {
         "questionText": "If f(x) = 6x, then f⁻¹(x) = _____.",
-        "options": [],
-        "correctAnswer": "x/6",
+        "options": [
+          {
+            "id": "a",
+            "text": "6x",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/(6x)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x/6",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6/x",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Let y = 6x, swap to x = 6y, so y = x/6.",
         "difficulty": "medium"
       },
       {
         "questionText": "If f(x) = x + 4 and g(x) = 3x, then (g∘f)(2) = _____.",
-        "options": [],
-        "correctAnswer": "18",
+        "options": [
+          {
+            "id": "a",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "(g∘f)(2) = g(f(2)) = g(6) = 3(6) = 18.",
         "difficulty": "medium"
       },
       {
         "questionText": "The graph of f(x) = |x| has the shape of the letter _____.",
-        "options": [],
-        "correctAnswer": "V",
+        "options": [
+          {
+            "id": "a",
+            "text": "V",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "U",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "W",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "S",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The absolute value function forms a V-shaped graph with its vertex at the origin.",
         "difficulty": "medium"
       },
       {
         "questionText": "For the function f(x) = √x, the smallest value x can take is _____.",
-        "options": [],
-        "correctAnswer": "0",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The square root of a negative number is not real, so the domain requires x ≥ 0, with the smallest value being 0.",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Given f(x) = 2x - 1 and g(x) = x², find the value of (f∘g)(3) - (g∘f)(1).",
         "options": [
-          {"id": "a", "text": "16", "isCorrect": true},
-          {"id": "b", "text": "17", "isCorrect": false},
-          {"id": "c", "text": "14", "isCorrect": false},
-          {"id": "d", "text": "18", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "16",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "17",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "(f∘g)(3) = f(9) = 2(9) - 1 = 17; (g∘f)(1) = g(1) = (2(1)-1)² = 1; so 17 - 1 = 16.",
@@ -418,10 +884,26 @@
       {
         "questionText": "The function f(x) = (2x - 5)/(x + 1) is defined for all real x except one value. Then f⁻¹(x) equals:",
         "options": [
-          {"id": "a", "text": "(x + 5)/(2 - x)", "isCorrect": true},
-          {"id": "b", "text": "(x - 5)/(2 + x)", "isCorrect": false},
-          {"id": "c", "text": "(2 - x)/(x + 5)", "isCorrect": false},
-          {"id": "d", "text": "(5 + x)/(x - 2)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(x + 5)/(2 - x)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(x - 5)/(2 + x)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2 - x)/(x + 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(5 + x)/(x - 2)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Let y = (2x-5)/(x+1); then y(x+1) = 2x-5, so xy + y = 2x - 5, giving x(y-2) = -5 - y, so x = (-5-y)/(y-2) = (y+5)/(2-y). Swapping gives f⁻¹(x) = (x+5)/(2-x).",
@@ -430,10 +912,26 @@
       {
         "questionText": "A function is defined by f(x) = |x - 2| + 3. What is the minimum value of f(x) and the value of x at which it occurs?",
         "options": [
-          {"id": "a", "text": "Minimum 3 at x = 2", "isCorrect": true},
-          {"id": "b", "text": "Minimum 0 at x = 2", "isCorrect": false},
-          {"id": "c", "text": "Minimum 3 at x = -2", "isCorrect": false},
-          {"id": "d", "text": "Minimum 2 at x = 3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Minimum 3 at x = 2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Minimum 0 at x = 2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Minimum 3 at x = -2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Minimum 2 at x = 3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The smallest value of |x - 2| is 0, occurring when x = 2, giving f(x) = 0 + 3 = 3 as the minimum.",

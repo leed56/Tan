@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Mazungumzo ya moja kwa moja baina ya wahusika wawili au zaidi katika tamthilia, kinyume cha monolojia, huitwa _____.",
-        "options": [],
-        "correctAnswer": "dialojia",
+        "options": [
+          {
+            "id": "a",
+            "text": "dialojia",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "monolojia",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "taharuki",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mandhari",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Dialojia is direct dialogue between two or more characters, as opposed to monolojia (a single speaker's monologue).",
         "difficulty": "easy"
       },
       {
         "questionText": "Maneno anayojisemea mhusika akiwa peke yake jukwaani huitwa _____.",
-        "options": [],
-        "correctAnswer": "monolojia",
+        "options": [
+          {
+            "id": "a",
+            "text": "dialojia",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "monolojia",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "taharuki",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kilele",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Monolojia is a monologue spoken by a lone character.",
         "difficulty": "easy"
       },
       {
         "questionText": "Hatua ambapo mgogoro hufikia upeo wa juu kabisa katika tamthilia huitwa _____.",
-        "options": [],
-        "correctAnswer": "kilele",
+        "options": [
+          {
+            "id": "a",
+            "text": "mwanzo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mwisho",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kilele",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "utangulizi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Kilele is the climax, the peak of the conflict.",
         "difficulty": "medium"
       },
       {
         "questionText": "Mvutano wa nguvu pinzani unaoendesha matukio ya tamthilia huitwa _____.",
-        "options": [],
-        "correctAnswer": "mgogoro",
+        "options": [
+          {
+            "id": "a",
+            "text": "kilele",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mgogoro",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Mgogoro is the conflict driving the play.",
         "difficulty": "easy"
       },
       {
         "questionText": "Mahali na wakati ambapo matukio ya tamthilia hutendeka huitwa _____.",
-        "options": [],
-        "correctAnswer": "mandhari",
+        "options": [
+          {
+            "id": "a",
+            "text": "mandhari",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mgogoro",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "wahusika",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Mandhari is the setting of the play.",
         "difficulty": "easy"
       },
       {
         "questionText": "Maagizo yanayoongoza waigizaji kuhusu vitendo na hisia jukwaani huitwa _____ ya jukwaa.",
-        "options": [],
-        "correctAnswer": "maelekezo",
+        "options": [
+          {
+            "id": "a",
+            "text": "mazungumzo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "maelekezo",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "matukio",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "majibizano",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Maelekezo ya jukwaa are stage directions.",
         "difficulty": "medium"
       },
       {
         "questionText": "Sehemu ndogo zinazounda sehemu kubwa (matendo) ya tamthilia huitwa _____.",
-        "options": [],
-        "correctAnswer": "maonyesho",
+        "options": [
+          {
+            "id": "a",
+            "text": "matendo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sura",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "maonyesho",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "beti",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Maonyesho (scenes) make up the larger acts of a play.",
         "difficulty": "medium"
       },
       {
         "questionText": "Wazo kuu linalojadiliwa katika tamthilia nzima huitwa _____ kuu.",
-        "options": [],
-        "correctAnswer": "dhamira",
+        "options": [
+          {
+            "id": "a",
+            "text": "mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ploti",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mtindo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dhamira",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Dhamira kuu is the main theme.",
         "difficulty": "easy"
       },
       {
         "questionText": "Watu wanaobeba na kuendeleza matukio ya tamthilia huitwa _____.",
-        "options": [],
-        "correctAnswer": "wahusika",
+        "options": [
+          {
+            "id": "a",
+            "text": "wahusika",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "matukio",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "maonyesho",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "maelekezo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Wahusika are the characters who carry the action.",
         "difficulty": "easy"
       },
       {
         "questionText": "Tamthilia ni utanzu wa fasihi _____ kwa sababu huandikwa.",
-        "options": [],
-        "correctAnswer": "andishi",
+        "options": [
+          {
+            "id": "a",
+            "text": "simulizi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "andishi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "masimulizi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sanifu",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Drama belongs to fasihi andishi (written literature).",
         "difficulty": "medium"
       }

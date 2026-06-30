@@ -8,10 +8,26 @@
       {
         "questionText": "What is the smallest unit of data that a computer can store?",
         "options": [
-          {"id": "a", "text": "Byte", "isCorrect": false},
-          {"id": "b", "text": "Bit", "isCorrect": true},
-          {"id": "c", "text": "Nibble", "isCorrect": false},
-          {"id": "d", "text": "Word", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Byte",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Bit",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Nibble",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Word",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A bit (binary digit) is the smallest unit of data and can hold only 0 or 1.",
@@ -20,10 +36,26 @@
       {
         "questionText": "How many bits make up one byte?",
         "options": [
-          {"id": "a", "text": "4 bits", "isCorrect": false},
-          {"id": "b", "text": "8 bits", "isCorrect": true},
-          {"id": "c", "text": "16 bits", "isCorrect": false},
-          {"id": "d", "text": "32 bits", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4 bits",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8 bits",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "16 bits",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "32 bits",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "One byte is made up of 8 bits.",
@@ -32,10 +64,26 @@
       {
         "questionText": "A group of 4 bits is called a:",
         "options": [
-          {"id": "a", "text": "Word", "isCorrect": false},
-          {"id": "b", "text": "Byte", "isCorrect": false},
-          {"id": "c", "text": "Nibble", "isCorrect": true},
-          {"id": "d", "text": "Bit", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Word",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Byte",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Nibble",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Bit",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A nibble is half a byte, which is 4 bits.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which number system uses only the digits 0 and 1?",
         "options": [
-          {"id": "a", "text": "Decimal", "isCorrect": false},
-          {"id": "b", "text": "Octal", "isCorrect": false},
-          {"id": "c", "text": "Hexadecimal", "isCorrect": false},
-          {"id": "d", "text": "Binary", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Decimal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Octal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Hexadecimal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Binary",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "The binary system is base 2 and uses only the digits 0 and 1.",
@@ -56,10 +120,26 @@
       {
         "questionText": "What is the base (radix) of the hexadecimal number system?",
         "options": [
-          {"id": "a", "text": "2", "isCorrect": false},
-          {"id": "b", "text": "8", "isCorrect": false},
-          {"id": "c", "text": "10", "isCorrect": false},
-          {"id": "d", "text": "16", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Hexadecimal is base 16 and uses digits 0 to 9 and letters A to F.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Convert the binary number 1010 to decimal.",
         "options": [
-          {"id": "a", "text": "8", "isCorrect": false},
-          {"id": "b", "text": "10", "isCorrect": true},
-          {"id": "c", "text": "12", "isCorrect": false},
-          {"id": "d", "text": "5", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "1010 = (1x8) + (0x4) + (1x2) + (0x1) = 8 + 0 + 2 + 0 = 10.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Convert the decimal number 13 to binary.",
         "options": [
-          {"id": "a", "text": "1101", "isCorrect": true},
-          {"id": "b", "text": "1011", "isCorrect": false},
-          {"id": "c", "text": "1110", "isCorrect": false},
-          {"id": "d", "text": "1001", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1101",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1011",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1110",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1001",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "13 = 8 + 4 + 0 + 1 = (1x8)+(1x4)+(0x2)+(1x1) = 1101.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Which coding scheme is most commonly used to represent English characters using 7 or 8 bits?",
         "options": [
-          {"id": "a", "text": "Unicode", "isCorrect": false},
-          {"id": "b", "text": "BCD", "isCorrect": false},
-          {"id": "c", "text": "ASCII", "isCorrect": true},
-          {"id": "d", "text": "Binary", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Unicode",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "BCD",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ASCII",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Binary",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "ASCII (American Standard Code for Information Interchange) represents characters using 7 or 8 bits.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which coding scheme was designed to represent characters from almost all the world's languages?",
         "options": [
-          {"id": "a", "text": "ASCII", "isCorrect": false},
-          {"id": "b", "text": "Unicode", "isCorrect": true},
-          {"id": "c", "text": "BCD", "isCorrect": false},
-          {"id": "d", "text": "Octal", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "ASCII",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Unicode",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "BCD",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Octal",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Unicode uses more bits than ASCII and can represent characters from many languages worldwide.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Convert the decimal number 26 to hexadecimal.",
         "options": [
-          {"id": "a", "text": "1A", "isCorrect": true},
-          {"id": "b", "text": "26", "isCorrect": false},
-          {"id": "c", "text": "B1", "isCorrect": false},
-          {"id": "d", "text": "1B", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1A",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "26",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "B1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1B",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "26 / 16 = 1 remainder 10. The remainder 10 is A in hex, so 26 = 1A.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Which type of data uses continuous signals that vary smoothly over time?",
         "options": [
-          {"id": "a", "text": "Digital data", "isCorrect": false},
-          {"id": "b", "text": "Binary data", "isCorrect": false},
-          {"id": "c", "text": "Analog data", "isCorrect": true},
-          {"id": "d", "text": "Hexadecimal data", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Digital data",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Binary data",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Analog data",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Hexadecimal data",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Analog data is continuous and changes smoothly, unlike digital data which uses discrete values 0 and 1.",
@@ -140,10 +316,26 @@
       {
         "questionText": "How many bytes are there in 1 kilobyte (using the common 1 KB = 1024 bytes)?",
         "options": [
-          {"id": "a", "text": "100 bytes", "isCorrect": false},
-          {"id": "b", "text": "1000 bytes", "isCorrect": false},
-          {"id": "c", "text": "1024 bytes", "isCorrect": true},
-          {"id": "d", "text": "512 bytes", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "100 bytes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1000 bytes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1024 bytes",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "512 bytes",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "In computing, 1 KB is usually taken as 1024 bytes (2 to the power 10).",
@@ -152,10 +344,26 @@
       {
         "questionText": "An image on a computer screen is made up of tiny dots. Each dot is called a:",
         "options": [
-          {"id": "a", "text": "Bit", "isCorrect": false},
-          {"id": "b", "text": "Pixel", "isCorrect": true},
-          {"id": "c", "text": "Byte", "isCorrect": false},
-          {"id": "d", "text": "Sample", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Bit",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Pixel",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Byte",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sample",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A pixel is the smallest dot of a digital image, and its colour is stored as binary numbers.",
@@ -164,10 +372,26 @@
       {
         "questionText": "What is the result of the binary addition 1 + 1?",
         "options": [
-          {"id": "a", "text": "1", "isCorrect": false},
-          {"id": "b", "text": "10", "isCorrect": true},
-          {"id": "c", "text": "11", "isCorrect": false},
-          {"id": "d", "text": "2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "11",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "In binary, 1 + 1 = 0 with a carry of 1, which is written as 10 (decimal 2).",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which of the following correctly orders storage units from smallest to largest?",
         "options": [
-          {"id": "a", "text": "Byte, Bit, KB, MB", "isCorrect": false},
-          {"id": "b", "text": "Bit, Byte, KB, MB", "isCorrect": true},
-          {"id": "c", "text": "KB, MB, Byte, Bit", "isCorrect": false},
-          {"id": "d", "text": "Bit, KB, Byte, MB", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Byte, Bit, KB, MB",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Bit, Byte, KB, MB",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "KB, MB, Byte, Bit",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Bit, KB, Byte, MB",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The correct order is Bit (smallest), Byte, Kilobyte (KB), then Megabyte (MB).",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The binary number system has a base of _____.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Binary is base 2 because it uses only two digits, 0 and 1.",
         "difficulty": "easy"
       },
       {
         "questionText": "A group of 8 bits is called a _____.",
-        "options": [],
-        "correctAnswer": "byte",
+        "options": [
+          {
+            "id": "a",
+            "text": "bit",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "byte",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "nibble",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "word",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Eight bits together form one byte.",
         "difficulty": "easy"
       },
       {
         "questionText": "The decimal number 8 is written as _____ in binary.",
-        "options": [],
-        "correctAnswer": "1000",
+        "options": [
+          {
+            "id": "a",
+            "text": "1100",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1010",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "0100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "8 = (1x8)+(0x4)+(0x2)+(0x1) = 1000.",
         "difficulty": "medium"
       },
       {
         "questionText": "The octal number system has a base of _____.",
-        "options": [],
-        "correctAnswer": "8",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Octal is base 8 and uses digits 0 to 7.",
         "difficulty": "easy"
       },
       {
         "questionText": "In hexadecimal, the decimal value 15 is represented by the letter _____.",
-        "options": [],
-        "correctAnswer": "F",
+        "options": [
+          {
+            "id": "a",
+            "text": "F",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "E",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "D",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Hex digits go 0-9 then A=10, B=11, C=12, D=13, E=14, F=15.",
         "difficulty": "medium"
       },
       {
         "questionText": "The binary number 111 is equal to the decimal number _____.",
-        "options": [],
-        "correctAnswer": "7",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "111 = (1x4)+(1x2)+(1x1) = 4+2+1 = 7.",
         "difficulty": "medium"
       },
       {
         "questionText": "Data that has only two states, on and off (0 and 1), is called _____ data.",
-        "options": [],
-        "correctAnswer": "digital",
+        "options": [
+          {
+            "id": "a",
+            "text": "analog",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "binary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "digital",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "optical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Digital data is discrete and uses the two states 0 and 1.",
         "difficulty": "easy"
       },
       {
         "questionText": "The coding scheme that uses many bits to represent characters of almost all world languages is called _____.",
-        "options": [],
-        "correctAnswer": "Unicode",
+        "options": [
+          {
+            "id": "a",
+            "text": "ASCII",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "EBCDIC",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "BCD",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Unicode",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Unicode supports a very large set of characters from languages around the world.",
         "difficulty": "medium"
       },
       {
         "questionText": "The binary number 1111 is equal to the decimal number _____.",
-        "options": [],
-        "correctAnswer": "15",
+        "options": [
+          {
+            "id": "a",
+            "text": "15",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "13",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "1111 = 8+4+2+1 = 15.",
         "difficulty": "medium"
       },
       {
         "questionText": "1024 kilobytes (KB) is equal to one _____.",
-        "options": [],
-        "correctAnswer": "megabyte",
+        "options": [
+          {
+            "id": "a",
+            "text": "gigabyte",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "megabyte",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kilobyte",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "terabyte",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "1024 KB make 1 MB (megabyte).",
         "difficulty": "easy"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Add the two binary numbers 1011 and 0110 and choose the correct binary result.",
         "options": [
-          {"id": "a", "text": "10001", "isCorrect": true},
-          {"id": "b", "text": "1111", "isCorrect": false},
-          {"id": "c", "text": "11101", "isCorrect": false},
-          {"id": "d", "text": "10101", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10001",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1111",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "11101",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10101",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "1011 is 11 and 0110 is 6 in decimal. 11 + 6 = 17, and 17 in binary is 10001.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Convert the binary number 11010110 to hexadecimal by grouping into nibbles.",
         "options": [
-          {"id": "a", "text": "D6", "isCorrect": true},
-          {"id": "b", "text": "C6", "isCorrect": false},
-          {"id": "c", "text": "D5", "isCorrect": false},
-          {"id": "d", "text": "B6", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "D6",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "C6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "D5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "B6",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Group as 1101 0110. 1101 = 13 = D and 0110 = 6, so the answer is D6.",
@@ -430,10 +912,26 @@
       {
         "questionText": "Convert the binary number 110101 to octal by grouping the bits into threes from the right.",
         "options": [
-          {"id": "a", "text": "65", "isCorrect": true},
-          {"id": "b", "text": "55", "isCorrect": false},
-          {"id": "c", "text": "63", "isCorrect": false},
-          {"id": "d", "text": "75", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "65",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "55",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "63",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "75",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Group as 110 101. 110 = 6 and 101 = 5, so the octal value is 65.",

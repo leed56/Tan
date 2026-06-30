@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Neno linaloonyesha uhusiano kati ya nomino na maneno mengine huitwa _____.",
-        "options": [],
-        "correctAnswer": "kihusishi",
+        "options": [
+          {
+            "id": "a",
+            "text": "kihusishi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "kielezi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kiunganishi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kihisishi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A word that shows the relationship between a noun and other words is a kihusishi (preposition).",
         "difficulty": "easy"
       },
       {
         "questionText": "Neno linalounganisha maneno au sentensi huitwa _____.",
-        "options": [],
-        "correctAnswer": "kiunganishi",
+        "options": [
+          {
+            "id": "a",
+            "text": "kihusishi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kiunganishi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kielezi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kihisishi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A word that joins words or sentences is a kiunganishi (conjunction).",
         "difficulty": "easy"
       },
       {
         "questionText": "Neno linaloeleza zaidi kuhusu kitendo, kama vile namna, mahali au wakati, huitwa _____.",
-        "options": [],
-        "correctAnswer": "kielezi",
+        "options": [
+          {
+            "id": "a",
+            "text": "kihusishi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kiunganishi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kielezi",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kivumishi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A word that gives more detail about a verb (manner, place, time) is a kielezi (adverb).",
         "difficulty": "easy"
       },
       {
         "questionText": "Katika sentensi 'Aliingia _____ chumba', jaza kihusishi kinachofaa cha mahali.",
-        "options": [],
-        "correctAnswer": "katika",
+        "options": [
+          {
+            "id": "a",
+            "text": "juu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chini",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mbele",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "katika",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "'Katika' (in/into) is a preposition of place suitable here: 'Aliingia katika chumbani'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Kiunganishi kinachoonyesha sababu ni '_____'.",
-        "options": [],
-        "correctAnswer": "kwa sababu",
+        "options": [
+          {
+            "id": "a",
+            "text": "kwa sababu",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "lakini",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ingawa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kwa hiyo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Kwa sababu' (because) is the conjunction that introduces a reason.",
         "difficulty": "medium"
       },
       {
         "questionText": "Katika 'Tulisubiri _____ saa nne', jaza kihusishi cha wakati kinachofaa.",
-        "options": [],
-        "correctAnswer": "hadi",
+        "options": [
+          {
+            "id": "a",
+            "text": "toka",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hadi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tangu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "baada",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "'Hadi' (until) is a kihusishi cha wakati showing the time up to which the action continued: 'Tulisubiri hadi saa nne'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Kielezi 'haraka' ni cha aina ya _____.",
-        "options": [],
-        "correctAnswer": "namna",
+        "options": [
+          {
+            "id": "a",
+            "text": "mahali",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "wakati",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "namna",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kiasi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "'Haraka' (quickly) tells how an action is done, so it is a kielezi cha namna/jinsi.",
         "difficulty": "medium"
       },
       {
         "questionText": "Katika 'Nilisafiri _____ Dodoma hadi Mwanza', jaza kihusishi cha chanzo.",
-        "options": [],
-        "correctAnswer": "kutoka",
+        "options": [
+          {
+            "id": "a",
+            "text": "hadi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kwenye",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mpaka",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kutoka",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "'Kutoka' (from) marks the starting point: 'kutoka Dodoma hadi Mwanza'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Kiunganishi kinachoonyesha lengo au madhumuni ni '_____'.",
-        "options": [],
-        "correctAnswer": "ili",
+        "options": [
+          {
+            "id": "a",
+            "text": "ili",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "kwa sababu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ingawa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "lakini",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Ili' (so that / in order to) is the conjunction expressing purpose.",
         "difficulty": "medium"
       },
       {
         "questionText": "Katika 'Alikaa _____ ya wazazi wake', jaza kihusishi kinachoonyesha kuwa kati ya watu wawili.",
-        "options": [],
-        "correctAnswer": "kati",
+        "options": [
+          {
+            "id": "a",
+            "text": "juu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kati",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ndani",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mbele",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "'Kati ya' (between) shows position between two parties: 'kati ya wazazi wake'.",
         "difficulty": "hard"
       }

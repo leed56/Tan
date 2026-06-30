@@ -8,10 +8,26 @@
       {
         "questionText": "In computing, what is the best meaning of a 'problem'?",
         "options": [
-          {"id": "a", "text": "A hardware fault that stops a computer from booting", "isCorrect": false},
-          {"id": "b", "text": "A task or situation that needs a solution or a way to reach a desired result", "isCorrect": true},
-          {"id": "c", "text": "An error message displayed by software", "isCorrect": false},
-          {"id": "d", "text": "A virus that infects programs", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A hardware fault that stops a computer from booting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A task or situation that needs a solution or a way to reach a desired result",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "An error message displayed by software",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A virus that infects programs",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A problem is any task or situation that requires finding a solution so that a desired goal or result can be achieved.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which of these is the FIRST stage in the problem-solving process?",
         "options": [
-          {"id": "a", "text": "Implementation (writing the code)", "isCorrect": false},
-          {"id": "b", "text": "Testing", "isCorrect": false},
-          {"id": "c", "text": "Problem definition (understanding the problem)", "isCorrect": true},
-          {"id": "d", "text": "Maintenance", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Implementation (writing the code)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Testing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Problem definition (understanding the problem)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Maintenance",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Problem solving begins with clearly defining and understanding the problem before any solution can be designed or coded.",
@@ -32,10 +64,26 @@
       {
         "questionText": "What is an algorithm?",
         "options": [
-          {"id": "a", "text": "A programming language used to write software", "isCorrect": false},
-          {"id": "b", "text": "A step-by-step set of instructions for solving a problem", "isCorrect": true},
-          {"id": "c", "text": "A diagram that shows computer hardware", "isCorrect": false},
-          {"id": "d", "text": "A device that stores data permanently", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A programming language used to write software",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A step-by-step set of instructions for solving a problem",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A diagram that shows computer hardware",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A device that stores data permanently",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An algorithm is a finite, ordered set of clear steps that solves a particular problem.",
@@ -44,10 +92,26 @@
       {
         "questionText": "The property of an algorithm which means it must end after a limited number of steps is called:",
         "options": [
-          {"id": "a", "text": "Definiteness", "isCorrect": false},
-          {"id": "b", "text": "Effectiveness", "isCorrect": false},
-          {"id": "c", "text": "Finiteness", "isCorrect": true},
-          {"id": "d", "text": "Input", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Definiteness",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Effectiveness",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Finiteness",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Input",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Finiteness means an algorithm must terminate after a finite (limited) number of steps; it cannot run forever.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Which property requires that every step of an algorithm be clear and unambiguous, with only one meaning?",
         "options": [
-          {"id": "a", "text": "Definiteness", "isCorrect": true},
-          {"id": "b", "text": "Finiteness", "isCorrect": false},
-          {"id": "c", "text": "Output", "isCorrect": false},
-          {"id": "d", "text": "Input", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Definiteness",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Finiteness",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Output",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Input",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Definiteness means each instruction must be precise and clearly defined so it can be understood and carried out in only one way.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which of the following is a way of representing an algorithm?",
         "options": [
-          {"id": "a", "text": "Spreadsheet", "isCorrect": false},
-          {"id": "b", "text": "Flowchart", "isCorrect": true},
-          {"id": "c", "text": "Database table", "isCorrect": false},
-          {"id": "d", "text": "Operating system", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Spreadsheet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Flowchart",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Database table",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Operating system",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Algorithms are commonly represented using pseudocode or flowcharts; a flowchart is a diagram that shows the steps using symbols.",
@@ -80,10 +176,26 @@
       {
         "questionText": "What is pseudocode?",
         "options": [
-          {"id": "a", "text": "A secret code used to protect data", "isCorrect": false},
-          {"id": "b", "text": "A program written in machine language", "isCorrect": false},
-          {"id": "c", "text": "An informal way of describing an algorithm using plain language mixed with programming-like words", "isCorrect": true},
-          {"id": "d", "text": "A fake program that does nothing", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A secret code used to protect data",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A program written in machine language",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "An informal way of describing an algorithm using plain language mixed with programming-like words",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "A fake program that does nothing",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Pseudocode describes the logic of an algorithm in plain, structured language that resembles code but is not written in any specific programming language.",
@@ -92,10 +204,26 @@
       {
         "questionText": "In a flowchart, which symbol is used for the START and STOP of the program?",
         "options": [
-          {"id": "a", "text": "A rectangle", "isCorrect": false},
-          {"id": "b", "text": "A diamond", "isCorrect": false},
-          {"id": "c", "text": "An oval (rounded terminal symbol)", "isCorrect": true},
-          {"id": "d", "text": "A parallelogram", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A rectangle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A diamond",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "An oval (rounded terminal symbol)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "A parallelogram",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The oval (terminal) symbol marks the beginning (START) and end (STOP) of a flowchart.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which flowchart symbol represents a decision or a question with a Yes/No answer?",
         "options": [
-          {"id": "a", "text": "Rectangle", "isCorrect": false},
-          {"id": "b", "text": "Diamond (rhombus)", "isCorrect": true},
-          {"id": "c", "text": "Oval", "isCorrect": false},
-          {"id": "d", "text": "Parallelogram", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Rectangle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Diamond (rhombus)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Oval",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Parallelogram",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The diamond (rhombus) symbol is used for decisions, where the flow branches depending on a Yes/No or True/False condition.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Which flowchart symbol is used to show an input or output operation, such as reading a number or displaying a result?",
         "options": [
-          {"id": "a", "text": "Parallelogram", "isCorrect": true},
-          {"id": "b", "text": "Diamond", "isCorrect": false},
-          {"id": "c", "text": "Oval", "isCorrect": false},
-          {"id": "d", "text": "Rectangle", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Parallelogram",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Diamond",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Oval",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Rectangle",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The parallelogram represents input/output operations, such as reading data or printing results.",
@@ -128,10 +288,26 @@
       {
         "questionText": "A rectangle in a flowchart is used to represent:",
         "options": [
-          {"id": "a", "text": "The start of the program", "isCorrect": false},
-          {"id": "b", "text": "A decision", "isCorrect": false},
-          {"id": "c", "text": "A process or calculation, such as adding two numbers", "isCorrect": true},
-          {"id": "d", "text": "An input operation", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The start of the program",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A decision",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A process or calculation, such as adding two numbers",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "An input operation",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The rectangle symbol stands for a process or processing step, such as performing a calculation or assigning a value.",
@@ -140,10 +316,26 @@
       {
         "questionText": "What is the purpose of arrows (flow lines) in a flowchart?",
         "options": [
-          {"id": "a", "text": "To show the direction and order of flow between steps", "isCorrect": true},
-          {"id": "b", "text": "To represent calculations", "isCorrect": false},
-          {"id": "c", "text": "To store data", "isCorrect": false},
-          {"id": "d", "text": "To mark the end of the program only", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "To show the direction and order of flow between steps",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "To represent calculations",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "To store data",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To mark the end of the program only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Flow lines (arrows) connect the symbols and show the direction and sequence in which the steps are carried out.",
@@ -152,10 +344,26 @@
       {
         "questionText": "A connector symbol (a small circle) in a flowchart is mainly used to:",
         "options": [
-          {"id": "a", "text": "Show a decision point", "isCorrect": false},
-          {"id": "b", "text": "Join parts of a flowchart, especially when it continues elsewhere", "isCorrect": true},
-          {"id": "c", "text": "Display the final output", "isCorrect": false},
-          {"id": "d", "text": "Read input from the user", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Show a decision point",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Join parts of a flowchart, especially when it continues elsewhere",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Display the final output",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Read input from the user",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The connector (small circle) is used to join different parts of a flowchart or continue it on another page, avoiding long crossing flow lines.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Which control structure is shown when a flowchart uses a diamond to choose between two different paths?",
         "options": [
-          {"id": "a", "text": "Sequence", "isCorrect": false},
-          {"id": "b", "text": "Selection", "isCorrect": true},
-          {"id": "c", "text": "Iteration", "isCorrect": false},
-          {"id": "d", "text": "Termination", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Selection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Iteration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Termination",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Selection (decision) lets the program choose between alternative paths based on a condition, shown by the diamond symbol.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Repeating a set of steps several times in an algorithm is known as:",
         "options": [
-          {"id": "a", "text": "Sequence", "isCorrect": false},
-          {"id": "b", "text": "Selection", "isCorrect": false},
-          {"id": "c", "text": "Iteration (looping)", "isCorrect": true},
-          {"id": "d", "text": "Documentation", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Selection",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Iteration (looping)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Documentation",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Iteration, also called looping, is the control structure that repeats one or more steps until a condition is met.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A step-by-step set of instructions used to solve a problem is called an _____.",
-        "options": [],
-        "correctAnswer": "algorithm",
+        "options": [
+          {
+            "id": "a",
+            "text": "algorithm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "operation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "argument",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "instruction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "An algorithm is an ordered, finite list of clear steps that solves a particular problem.",
         "difficulty": "easy"
       },
       {
         "questionText": "A diagram that uses symbols to represent the steps of an algorithm is called a _____.",
-        "options": [],
-        "correctAnswer": "flowchart",
+        "options": [
+          {
+            "id": "a",
+            "text": "histogram",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "flowchart",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "blueprint",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "schematic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A flowchart shows the logic of an algorithm using standard symbols connected by flow lines.",
         "difficulty": "easy"
       },
       {
         "questionText": "The flowchart symbol shaped like a diamond is used to show a _____.",
-        "options": [],
-        "correctAnswer": "decision",
+        "options": [
+          {
+            "id": "a",
+            "text": "process",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "connector",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "decision",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "loop",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The diamond symbol represents a decision, where the flow branches based on a condition.",
         "difficulty": "easy"
       },
       {
         "questionText": "The property of an algorithm stating that it must stop after a limited number of steps is called _____.",
-        "options": [],
-        "correctAnswer": "finiteness",
+        "options": [
+          {
+            "id": "a",
+            "text": "definiteness",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "feasibility",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "effectiveness",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "finiteness",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Finiteness ensures an algorithm terminates rather than running forever.",
         "difficulty": "medium"
       },
       {
         "questionText": "Describing an algorithm using plain language mixed with programming-like words is called _____.",
-        "options": [],
-        "correctAnswer": "pseudocode",
+        "options": [
+          {
+            "id": "a",
+            "text": "pseudocode",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "flowchart",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "source code",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "machine code",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Pseudocode expresses an algorithm informally without following any specific programming language syntax.",
         "difficulty": "easy"
       },
       {
         "questionText": "In a flowchart, the oval-shaped symbol used to mark the start and the stop is called the _____ symbol.",
-        "options": [],
-        "correctAnswer": "terminal",
+        "options": [
+          {
+            "id": "a",
+            "text": "process",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "terminal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "decision",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "connector",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The terminal symbol (an oval) shows where a flowchart begins (START) and ends (STOP).",
         "difficulty": "medium"
       },
       {
         "questionText": "The control structure in which steps are carried out one after another in order is called _____.",
-        "options": [],
-        "correctAnswer": "sequence",
+        "options": [
+          {
+            "id": "a",
+            "text": "selection",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "iteration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sequence",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "recursion",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "In sequence, instructions are executed in the order they appear, one after the other.",
         "difficulty": "medium"
       },
       {
         "questionText": "Repeating a group of steps until a condition is satisfied is known as iteration or _____.",
-        "options": [],
-        "correctAnswer": "looping",
+        "options": [
+          {
+            "id": "a",
+            "text": "branching",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "swapping",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nesting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "looping",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Looping (iteration) repeats one or more steps while or until a condition holds.",
         "difficulty": "medium"
       },
       {
         "questionText": "The process of checking an algorithm by going through it step by step using sample values is called _____.",
-        "options": [],
-        "correctAnswer": "dry running",
+        "options": [
+          {
+            "id": "a",
+            "text": "dry running",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "debugging",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "compiling",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tracing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Dry running (tracing) follows the algorithm by hand with test values to verify it works correctly.",
         "difficulty": "medium"
       },
       {
         "questionText": "In a flowchart, the parallelogram symbol is used for _____ operations.",
-        "options": [],
-        "correctAnswer": "input/output",
+        "options": [
+          {
+            "id": "a",
+            "text": "process",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "input/output",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "decision",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "storage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The parallelogram represents input and output, such as reading data or displaying results.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Consider this algorithm: Start; SUM = 0; COUNT = 1; repeat while COUNT <= 3: read a number N, SUM = SUM + N, COUNT = COUNT + 1; AVERAGE = SUM / 3; display AVERAGE; stop. If the three numbers entered are 10, 20, and 30, what value is displayed?",
         "options": [
-          {"id": "a", "text": "60", "isCorrect": false},
-          {"id": "b", "text": "20", "isCorrect": true},
-          {"id": "c", "text": "30", "isCorrect": false},
-          {"id": "d", "text": "10", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "60",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The loop adds 10 + 20 + 30 = 60 into SUM, then AVERAGE = 60 / 3 = 20 is displayed. This uses iteration to compute an average.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A flowchart reads a number X, then checks the decision 'Is X > 0?'. If Yes it displays 'Positive'; if No it goes to a second decision 'Is X = 0?'. If Yes it displays 'Zero', otherwise it displays 'Negative'. If the value entered is -5, what will the flowchart display?",
         "options": [
-          {"id": "a", "text": "Positive", "isCorrect": false},
-          {"id": "b", "text": "Zero", "isCorrect": false},
-          {"id": "c", "text": "Negative", "isCorrect": true},
-          {"id": "d", "text": "Nothing is displayed", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Positive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Zero",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Negative",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Nothing is displayed",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "For X = -5: 'Is X > 0?' is No, then 'Is X = 0?' is No, so the else branch runs and 'Negative' is displayed. This shows nested selection.",
@@ -430,10 +912,26 @@
       {
         "questionText": "An algorithm to find the largest of three numbers A, B, C works as: Start; read A, B, C; MAX = A; if B > MAX then MAX = B; if C > MAX then MAX = C; display MAX; stop. If A = 7, B = 12, C = 9, trace the algorithm to find the displayed value.",
         "options": [
-          {"id": "a", "text": "7", "isCorrect": false},
-          {"id": "b", "text": "9", "isCorrect": false},
-          {"id": "c", "text": "12", "isCorrect": true},
-          {"id": "d", "text": "28", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "28",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "MAX starts at 7. Since B (12) > 7, MAX becomes 12. Since C (9) is not > 12, MAX stays 12, so 12 is displayed.",

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Fasihi inayowasilishwa na kuhifadhiwa kwa maandishi huitwa fasihi _____.",
-        "options": [],
-        "correctAnswer": "andishi",
+        "options": [
+          {
+            "id": "a",
+            "text": "andishi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "simulizi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sanifu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "masimulizi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Literature preserved through writing is called fasihi andishi (written literature).",
         "difficulty": "easy"
       },
       {
         "questionText": "Kazi ya kinathari ndefu yenye wahusika na matukio mengi huitwa _____.",
-        "options": [],
-        "correctAnswer": "riwaya",
+        "options": [
+          {
+            "id": "a",
+            "text": "hadithi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "riwaya",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tamthilia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shairi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A long prose work with many characters and events is a riwaya (novel).",
         "difficulty": "easy"
       },
       {
         "questionText": "Hadithi fupi huwa na dhamira au tukio kuu _____ tu.",
-        "options": [],
-        "correctAnswer": "moja",
+        "options": [
+          {
+            "id": "a",
+            "text": "mbili",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tatu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "moja",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "nyingi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A short story typically focuses on a single (moja) main theme or event.",
         "difficulty": "medium"
       },
       {
         "questionText": "Mpangilio wa matukio katika hadithi kuanzia mwanzo hadi mwisho huitwa _____.",
-        "options": [],
-        "correctAnswer": "ploti",
+        "options": [
+          {
+            "id": "a",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mtindo",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ploti",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The arrangement of events from start to finish is the ploti (plot), also called muundo.",
         "difficulty": "easy"
       },
       {
         "questionText": "Mahali na wakati ambapo matukio ya hadithi hutokea huitwa _____.",
-        "options": [],
-        "correctAnswer": "mandhari",
+        "options": [
+          {
+            "id": "a",
+            "text": "mandhari",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ploti",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "wahusika",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The place and time of the events is the mandhari (setting).",
         "difficulty": "easy"
       },
       {
         "questionText": "Mhusika ambaye tabia yake haibadiliki katika hadithi nzima huitwa mhusika _____.",
-        "options": [],
-        "correctAnswer": "bapa",
+        "options": [
+          {
+            "id": "a",
+            "text": "mviringo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bapa",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mkuu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mdogo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A character whose traits do not change is a mhusika bapa (flat character).",
         "difficulty": "medium"
       },
       {
         "questionText": "Namna ya pekee ya mwandishi kutumia lugha na kupanga kazi yake huitwa _____.",
-        "options": [],
-        "correctAnswer": "mtindo",
+        "options": [
+          {
+            "id": "a",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mtindo",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ploti",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The author's distinctive use of language and structure is the mtindo (style).",
         "difficulty": "medium"
       },
       {
         "questionText": "Mbinu ya kifani inayochora picha akilini mwa msomaji huitwa _____.",
-        "options": [],
-        "correctAnswer": "taswira",
+        "options": [
+          {
+            "id": "a",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ploti",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "taswira",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The technique that paints mental pictures is taswira (imagery).",
         "difficulty": "medium"
       },
       {
         "questionText": "Mafunzo au funzo ambalo mwandishi anataka msomaji ayapate huitwa _____.",
-        "options": [],
-        "correctAnswer": "ujumbe",
+        "options": [
+          {
+            "id": "a",
+            "text": "ujumbe",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mtindo",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mandhari",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "taswira",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The lesson the author wishes to pass on to the reader is the ujumbe (message).",
         "difficulty": "easy"
       },
       {
         "questionText": "Mawazo ya jumla kuhusu maisha yanayojitokeza katika kazi ya fasihi huitwa _____ ya mwandishi.",
-        "options": [],
-        "correctAnswer": "falsafa",
+        "options": [
+          {
+            "id": "a",
+            "text": "dhamira",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "falsafa",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mtindo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "taswira",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The author's general outlook on life expressed in the work is the falsafa (philosophy).",
         "difficulty": "hard"
       }

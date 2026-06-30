@@ -8,10 +8,26 @@
       {
         "questionText": "What is a website?",
         "options": [
-          {"id": "a", "text": "A single picture stored on a computer", "isCorrect": false},
-          {"id": "b", "text": "A collection of related web pages accessed through the Internet", "isCorrect": true},
-          {"id": "c", "text": "A program used to print documents", "isCorrect": false},
-          {"id": "d", "text": "A cable that connects two computers", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A single picture stored on a computer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A collection of related web pages accessed through the Internet",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A program used to print documents",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A cable that connects two computers",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A website is a collection of related web pages, usually identified by a common domain name and accessed over the Internet.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which software is used to view web pages on the Internet?",
         "options": [
-          {"id": "a", "text": "A web browser", "isCorrect": true},
-          {"id": "b", "text": "A spreadsheet program", "isCorrect": false},
-          {"id": "c", "text": "An antivirus program", "isCorrect": false},
-          {"id": "d", "text": "A printer driver", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A web browser",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A spreadsheet program",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "An antivirus program",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A printer driver",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A web browser, such as Google Chrome or Mozilla Firefox, is the software used to request and display web pages.",
@@ -32,10 +64,26 @@
       {
         "questionText": "What does HTML stand for?",
         "options": [
-          {"id": "a", "text": "High Text Machine Language", "isCorrect": false},
-          {"id": "b", "text": "Hyperlink Text Management Language", "isCorrect": false},
-          {"id": "c", "text": "HyperText Markup Language", "isCorrect": true},
-          {"id": "d", "text": "Home Tool Markup Language", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "High Text Machine Language",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hyperlink Text Management Language",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "HyperText Markup Language",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Home Tool Markup Language",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "HTML stands for HyperText Markup Language, the standard language used to create the structure of web pages.",
@@ -44,10 +92,26 @@
       {
         "questionText": "A computer that stores web pages and sends them to browsers when requested is called a:",
         "options": [
-          {"id": "a", "text": "Web server", "isCorrect": true},
-          {"id": "b", "text": "Web browser", "isCorrect": false},
-          {"id": "c", "text": "Web page", "isCorrect": false},
-          {"id": "d", "text": "Web designer", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Web server",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Web browser",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Web page",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Web designer",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A web server is a computer that stores website files and delivers them to browsers that request them.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Which tag is used to create the largest heading in HTML?",
         "options": [
-          {"id": "a", "text": "<h6>", "isCorrect": false},
-          {"id": "b", "text": "<head>", "isCorrect": false},
-          {"id": "c", "text": "<h1>", "isCorrect": true},
-          {"id": "d", "text": "<heading>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "<h6>",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<head>",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "<h1>",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "<heading>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The <h1> tag creates the largest (most important) heading, while <h6> creates the smallest.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which HTML tag is used to create a paragraph?",
         "options": [
-          {"id": "a", "text": "<para>", "isCorrect": false},
-          {"id": "b", "text": "<p>", "isCorrect": true},
-          {"id": "c", "text": "<pg>", "isCorrect": false},
-          {"id": "d", "text": "<text>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "<para>",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<p>",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "<pg>",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "<text>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The <p> tag defines a paragraph of text in an HTML document.",
@@ -80,10 +176,26 @@
       {
         "questionText": "What is the difference between a static and a dynamic web page?",
         "options": [
-          {"id": "a", "text": "A static page changes for each user, while a dynamic page never changes", "isCorrect": false},
-          {"id": "b", "text": "A static page shows the same fixed content to every user, while a dynamic page can change its content", "isCorrect": true},
-          {"id": "c", "text": "A static page needs the Internet, while a dynamic page does not", "isCorrect": false},
-          {"id": "d", "text": "There is no difference between them", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A static page changes for each user, while a dynamic page never changes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A static page shows the same fixed content to every user, while a dynamic page can change its content",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A static page needs the Internet, while a dynamic page does not",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "There is no difference between them",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A static web page displays the same fixed content to all visitors, while a dynamic web page can generate different content depending on the user or situation.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Which element contains the visible content of a web page that appears in the browser window?",
         "options": [
-          {"id": "a", "text": "<head>", "isCorrect": false},
-          {"id": "b", "text": "<title>", "isCorrect": false},
-          {"id": "c", "text": "<body>", "isCorrect": true},
-          {"id": "d", "text": "<meta>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "<head>",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<title>",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "<body>",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "<meta>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The <body> element holds all the visible content, such as text, images and links, that is shown in the browser window.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which attribute of the <a> tag specifies the web address the link points to?",
         "options": [
-          {"id": "a", "text": "src", "isCorrect": false},
-          {"id": "b", "text": "href", "isCorrect": true},
-          {"id": "c", "text": "link", "isCorrect": false},
-          {"id": "d", "text": "url", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "src",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "href",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "link",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "url",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The href attribute of the <a> tag specifies the destination URL of a hyperlink.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Which tag is used to insert an image into a web page?",
         "options": [
-          {"id": "a", "text": "<image>", "isCorrect": false},
-          {"id": "b", "text": "<pic>", "isCorrect": false},
-          {"id": "c", "text": "<img>", "isCorrect": true},
-          {"id": "d", "text": "<photo>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "<image>",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<pic>",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "<img>",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "<photo>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The <img> tag inserts an image, and its src attribute gives the file name or location of the image.",
@@ -128,10 +288,26 @@
       {
         "questionText": "What does a closing tag look like in HTML?",
         "options": [
-          {"id": "a", "text": "It starts with a forward slash after the opening angle bracket, for example </p>", "isCorrect": true},
-          {"id": "b", "text": "It uses square brackets, for example [p]", "isCorrect": false},
-          {"id": "c", "text": "It has two opening brackets, for example <<p>", "isCorrect": false},
-          {"id": "d", "text": "It is written in capital letters only, for example <P>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It starts with a forward slash after the opening angle bracket, for example </p>",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "It uses square brackets, for example [p]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It has two opening brackets, for example <<p>",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It is written in capital letters only, for example <P>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A closing tag is written with a forward slash before the tag name, such as </p>, to mark where an element ends.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Which pair of tags creates an ordered (numbered) list with its list items?",
         "options": [
-          {"id": "a", "text": "<ul> and <li>", "isCorrect": false},
-          {"id": "b", "text": "<ol> and <li>", "isCorrect": true},
-          {"id": "c", "text": "<list> and <item>", "isCorrect": false},
-          {"id": "d", "text": "<ol> and <ul>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "<ul> and <li>",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<ol> and <li>",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "<list> and <item>",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "<ol> and <ul>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An ordered list uses the <ol> tag, and each item inside it is written with the <li> tag.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Which of the following is a good web design principle?",
         "options": [
-          {"id": "a", "text": "Using many different fonts and colours on every page", "isCorrect": false},
-          {"id": "b", "text": "Keeping the design consistent and easy to navigate", "isCorrect": true},
-          {"id": "c", "text": "Hiding the menu so users cannot find it", "isCorrect": false},
-          {"id": "d", "text": "Filling pages with as much text as possible", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Using many different fonts and colours on every page",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Keeping the design consistent and easy to navigate",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Hiding the menu so users cannot find it",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Filling pages with as much text as possible",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Good web design favours consistency, simple layouts and easy navigation so users can find information quickly.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Which tag is used to make text bold, giving it strong importance?",
         "options": [
-          {"id": "a", "text": "<i>", "isCorrect": false},
-          {"id": "b", "text": "<u>", "isCorrect": false},
-          {"id": "c", "text": "<strong>", "isCorrect": true},
-          {"id": "d", "text": "<big>", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "<i>",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<u>",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "<strong>",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "<big>",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The <strong> tag (like <b>) makes text bold; <strong> also tells the browser the text has strong importance.",
@@ -176,10 +400,26 @@
       {
         "questionText": "What is the main purpose of HTML in building a web page?",
         "options": [
-          {"id": "a", "text": "To protect the computer from viruses", "isCorrect": false},
-          {"id": "b", "text": "To define the structure and content of the page", "isCorrect": true},
-          {"id": "c", "text": "To connect the computer to electricity", "isCorrect": false},
-          {"id": "d", "text": "To store data permanently in a database", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "To protect the computer from viruses",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To define the structure and content of the page",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To connect the computer to electricity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To store data permanently in a database",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "HTML uses tags to define the structure and content of a web page, such as headings, paragraphs, images and links.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A single document on a website that you view in a browser is called a web _____.",
-        "options": [],
-        "correctAnswer": "page",
+        "options": [
+          {
+            "id": "a",
+            "text": "page",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "site",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "server",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "link",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A web page is a single document of a website; many related web pages together form a website.",
         "difficulty": "easy"
       },
       {
         "questionText": "The software used to open and display web pages is called a web _____.",
-        "options": [],
-        "correctAnswer": "browser",
+        "options": [
+          {
+            "id": "a",
+            "text": "server",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "browser",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "editor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "client",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A web browser, such as Chrome or Firefox, requests web pages and displays them to the user.",
         "difficulty": "easy"
       },
       {
         "questionText": "In the tag <a href=\"home.html\">, the word href is an example of an HTML _____.",
-        "options": [],
-        "correctAnswer": "attribute",
+        "options": [
+          {
+            "id": "a",
+            "text": "element",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tag",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "attribute",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "value",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "An attribute provides extra information about an element; href gives the link destination for the <a> tag.",
         "difficulty": "medium"
       },
       {
         "questionText": "The tag used to insert a single line break in HTML is <_____>.",
-        "options": [],
-        "correctAnswer": "br",
+        "options": [
+          {
+            "id": "a",
+            "text": "hr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "p",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "div",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "br",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The <br> tag inserts a line break, moving the following text to a new line.",
         "difficulty": "easy"
       },
       {
         "questionText": "The element that holds the title shown on the browser tab and other page information that is not displayed in the page body is the <_____> element.",
-        "options": [],
-        "correctAnswer": "head",
+        "options": [
+          {
+            "id": "a",
+            "text": "head",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "body",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "title",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "footer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The <head> element contains information about the page, such as the <title>, which is not shown in the main page area.",
         "difficulty": "medium"
       },
       {
         "questionText": "In the image tag <img src=\"logo.png\">, the attribute that gives the image file name is _____.",
-        "options": [],
-        "correctAnswer": "src",
+        "options": [
+          {
+            "id": "a",
+            "text": "alt",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "src",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "href",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "width",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The src attribute of the <img> tag specifies the source file or location of the image to display.",
         "difficulty": "medium"
       },
       {
         "questionText": "A web page whose content stays the same for every visitor is called a _____ web page.",
-        "options": [],
-        "correctAnswer": "static",
+        "options": [
+          {
+            "id": "a",
+            "text": "dynamic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "active",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "static",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "linked",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A static web page shows fixed content that does not change from one user to another.",
         "difficulty": "medium"
       },
       {
         "questionText": "In HTML, each item inside a list is written using the <_____> tag.",
-        "options": [],
-        "correctAnswer": "li",
+        "options": [
+          {
+            "id": "a",
+            "text": "ul",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ol",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dl",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "li",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The <li> tag defines a list item inside an ordered (<ol>) or unordered (<ul>) list.",
         "difficulty": "easy"
       },
       {
         "questionText": "The very first tag that should enclose a whole HTML document is the <_____> tag.",
-        "options": [],
-        "correctAnswer": "html",
+        "options": [
+          {
+            "id": "a",
+            "text": "html",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "body",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "head",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "title",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The <html> element is the root element that contains all other parts of the HTML document.",
         "difficulty": "easy"
       },
       {
         "questionText": "Making a website available on the Internet by placing its files on a web server is called _____ the website.",
-        "options": [],
-        "correctAnswer": "publishing",
+        "options": [
+          {
+            "id": "a",
+            "text": "hosting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "publishing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "uploading",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "browsing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Publishing (or hosting) a website means uploading its files to a web server so people can access it online.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Study the HTML code below:\n<ul>\n  <li>Maths</li>\n  <li>Physics</li>\n  <li>Biology</li>\n</ul>\nWhen this code is opened in a browser, how will the three subjects appear?",
         "options": [
-          {"id": "a", "text": "As a numbered list: 1. Maths 2. Physics 3. Biology", "isCorrect": false},
-          {"id": "b", "text": "As a bulleted (unordered) list of the three subjects", "isCorrect": true},
-          {"id": "c", "text": "As a table with three columns", "isCorrect": false},
-          {"id": "d", "text": "As one paragraph with the words joined together", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "As a numbered list: 1. Maths 2. Physics 3. Biology",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "As a bulleted (unordered) list of the three subjects",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "As a table with three columns",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "As one paragraph with the words joined together",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The <ul> tag creates an unordered list, so the three <li> items appear as bullet points, not numbers.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Look at this HTML code:\n<a href=\"contact.html\">Contact Us</a>\nWhat will a user see and what happens when it is clicked?",
         "options": [
-          {"id": "a", "text": "The user sees the text contact.html and clicking shows Contact Us", "isCorrect": false},
-          {"id": "b", "text": "The user sees an image named contact and clicking does nothing", "isCorrect": false},
-          {"id": "c", "text": "The user sees the clickable text Contact Us and clicking opens the page contact.html", "isCorrect": true},
-          {"id": "d", "text": "The user sees a table called Contact Us", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The user sees the text contact.html and clicking shows Contact Us",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The user sees an image named contact and clicking does nothing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The user sees the clickable text Contact Us and clicking opens the page contact.html",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The user sees a table called Contact Us",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The visible text is Contact Us, and the href attribute makes the link open contact.html when clicked.",
@@ -430,10 +912,26 @@
       {
         "questionText": "Consider the HTML below:\n<table>\n  <tr>\n    <td>Name</td>\n    <td>Age</td>\n  </tr>\n</table>\nWhat does the <tr> tag represent in this table?",
         "options": [
-          {"id": "a", "text": "A single row of the table", "isCorrect": true},
-          {"id": "b", "text": "A single column of the table", "isCorrect": false},
-          {"id": "c", "text": "The title of the table", "isCorrect": false},
-          {"id": "d", "text": "An image inside the table", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A single row of the table",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A single column of the table",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The title of the table",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "An image inside the table",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The <tr> tag defines a table row, and the <td> tags inside it define the data cells in that row.",

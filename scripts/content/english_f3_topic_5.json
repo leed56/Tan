@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A comparison of two unlike things using 'like' or 'as' is called a _____.",
-        "options": [],
-        "correctAnswer": "simile",
+        "options": [
+          {
+            "id": "a",
+            "text": "simile",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "metaphor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "analogy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "allegory",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A simile compares using 'like' or 'as', for example 'as cold as ice'.",
         "difficulty": "easy"
       },
       {
         "questionText": "Giving human qualities to animals, objects or ideas is called _____.",
-        "options": [],
-        "correctAnswer": "personification",
+        "options": [
+          {
+            "id": "a",
+            "text": "alliteration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "personification",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "exaggeration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "comparison",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Personification makes non-human things act like people, as in 'the flowers danced in the breeze'.",
         "difficulty": "easy"
       },
       {
         "questionText": "A deliberate exaggeration used for effect, such as 'I am dying of hunger', is called _____.",
-        "options": [],
-        "correctAnswer": "hyperbole",
+        "options": [
+          {
+            "id": "a",
+            "text": "understatement",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "metaphor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hyperbole",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "irony",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Hyperbole exaggerates greatly for emphasis and is not meant to be taken literally.",
         "difficulty": "medium"
       },
       {
         "questionText": "The word 'sizzle' imitates the sound of frying food, so it is an example of _____.",
-        "options": [],
-        "correctAnswer": "onomatopoeia",
+        "options": [
+          {
+            "id": "a",
+            "text": "alliteration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "assonance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "repetition",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "onomatopoeia",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Onomatopoeia uses words whose sound suggests their meaning, such as 'sizzle', 'buzz' and 'crash'.",
         "difficulty": "medium"
       },
       {
         "questionText": "A short well-known saying that gives advice or general truth, such as 'Look before you leap', is called a _____.",
-        "options": [],
-        "correctAnswer": "proverb",
+        "options": [
+          {
+            "id": "a",
+            "text": "proverb",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "riddle",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "slogan",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fable",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A proverb is a traditional saying that expresses wisdom or advice in a few words.",
         "difficulty": "medium"
       },
       {
         "questionText": "When a person says the opposite of what they mean in a sharp, mocking way, intending to hurt or ridicule someone, it is called _____.",
-        "options": [],
-        "correctAnswer": "sarcasm",
+        "options": [
+          {
+            "id": "a",
+            "text": "humour",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sarcasm",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "flattery",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "criticism",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Sarcasm is a sharp, mocking form of irony intended to criticise or ridicule someone.",
         "difficulty": "medium"
       },
       {
         "questionText": "An expression like 'bittersweet' that joins two opposite ideas is called an _____.",
-        "options": [],
-        "correctAnswer": "oxymoron",
+        "options": [
+          {
+            "id": "a",
+            "text": "antonym",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "paradox",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "oxymoron",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "euphemism",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "An oxymoron combines contradictory terms, such as 'bittersweet' or 'open secret'.",
         "difficulty": "medium"
       },
       {
         "questionText": "The actual, dictionary meaning of a word is called its _____ meaning, as opposed to its figurative meaning.",
-        "options": [],
-        "correctAnswer": "literal",
+        "options": [
+          {
+            "id": "a",
+            "text": "figurative",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "symbolic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "connotative",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "literal",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Literal meaning is the plain, exact meaning of words, while figurative meaning is the imaginative or implied meaning.",
         "difficulty": "easy"
       },
       {
         "questionText": "The expression 'to let the cat out of the bag', which means to reveal a secret, is an example of an _____.",
-        "options": [],
-        "correctAnswer": "idiom",
+        "options": [
+          {
+            "id": "a",
+            "text": "idiom",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "analogy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "allegory",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "epigram",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "An idiom has a meaning that cannot be understood from the individual words; it means to reveal a secret.",
         "difficulty": "medium"
       },
       {
         "questionText": "The repetition of the same opening consonant sound, as in 'big brown bear', is called _____.",
-        "options": [],
-        "correctAnswer": "alliteration",
+        "options": [
+          {
+            "id": "a",
+            "text": "assonance",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "alliteration",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "rhyme",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "consonance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Alliteration repeats the same initial consonant sound in closely placed words.",
         "difficulty": "easy"
       }

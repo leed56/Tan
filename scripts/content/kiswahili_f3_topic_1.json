@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Sehemu kuu ya neno isiyobadilika na inayobeba maana ya msingi huitwa _____.",
-        "options": [],
-        "correctAnswer": "mzizi",
+        "options": [
+          {
+            "id": "a",
+            "text": "mzizi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "kiambishi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "silabi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shina",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The 'mzizi' (root) carries the core meaning and remains after removing affixes.",
         "difficulty": "easy"
       },
       {
         "questionText": "Viambishi vinavyowekwa mwanzoni mwa mzizi huitwa viambishi _____.",
-        "options": [],
-        "correctAnswer": "awali",
+        "options": [
+          {
+            "id": "a",
+            "text": "tamati",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "awali",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kati",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ngeli",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Prefixes are 'viambishi awali', placed before the root.",
         "difficulty": "easy"
       },
       {
         "questionText": "Kauli ya kutendwa ya kitenzi 'kusoma' ni _____.",
-        "options": [],
-        "correctAnswer": "kusomwa",
+        "options": [
+          {
+            "id": "a",
+            "text": "kusomea",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kusomeka",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kusomwa",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kusomana",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The passive of 'soma' adds '-w-': 'somwa' (kusomwa).",
         "difficulty": "easy"
       },
       {
         "questionText": "Mchakato wa kuunganisha maneno mawili au zaidi kuwa neno moja huitwa _____.",
-        "options": [],
-        "correctAnswer": "mwambatano",
+        "options": [
+          {
+            "id": "a",
+            "text": "ukopaji",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ufupishaji",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mwambatano",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Compounding is 'mwambatano wa maneno', joining words into one, e.g. 'mwananchi'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Neno 'redio' limeingia katika Kiswahili kwa njia ya _____.",
-        "options": [],
-        "correctAnswer": "ukopaji",
+        "options": [
+          {
+            "id": "a",
+            "text": "ukopaji",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mwambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "unyambulishaji",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Redio' is a loanword obtained through borrowing (ukopaji) from English 'radio'.",
         "difficulty": "easy"
       },
       {
         "questionText": "Kauli ya kutendeana ya kitenzi 'kusaidia' ni _____.",
-        "options": [],
-        "correctAnswer": "kusaidiana",
+        "options": [
+          {
+            "id": "a",
+            "text": "kusaidiwa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kusaidiana",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kusaidia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kusaidika",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The reciprocal uses '-an-', giving 'saidiana' (to help one another).",
         "difficulty": "medium"
       },
       {
         "questionText": "Nomino inayotaja mtenda ikiundwa kutoka kitenzi 'kuwinda' ni _____.",
-        "options": [],
-        "correctAnswer": "mwindaji",
+        "options": [
+          {
+            "id": "a",
+            "text": "mwindwa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "uwindaji",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mwindaji",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kuwindwa",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Adding the agentive '-ji' to 'winda' gives 'mwindaji' (hunter).",
         "difficulty": "medium"
       },
       {
         "questionText": "Mbinu ya kurudia neno au sehemu yake ili kuunda neno jipya huitwa _____.",
-        "options": [],
-        "correctAnswer": "takriri",
+        "options": [
+          {
+            "id": "a",
+            "text": "ukopaji",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "akronimu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mwambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "takriri",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Reduplication is 'takriri' (also 'urudufishaji'), e.g. 'polepole'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Kauli ya kutendeka ya kitenzi 'kufungua' ni _____.",
-        "options": [],
-        "correctAnswer": "kufunguka",
+        "options": [
+          {
+            "id": "a",
+            "text": "kufunguka",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "kufunguliwa",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kufungulia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kufunguana",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The stative '-uk-/-ik-' applied to 'fungua' gives 'funguka' (to be opened/become open).",
         "difficulty": "hard"
       },
       {
         "questionText": "Kifupisho kinachoundwa kwa herufi za mwanzo za maneno kadhaa, kama 'UKIMWI', huitwa _____.",
-        "options": [],
-        "correctAnswer": "akronimu",
+        "options": [
+          {
+            "id": "a",
+            "text": "takriri",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "akronimu",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mwambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ukopaji",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "An acronym (akronimu) is built from the initial letters of several words, e.g. UKIMWI.",
         "difficulty": "medium"
       }

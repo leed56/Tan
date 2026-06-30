@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The branch of biology that deals with the classification and naming of organisms is called _____.",
-        "options": [],
-        "correctAnswer": "taxonomy",
+        "options": [
+          {
+            "id": "a",
+            "text": "taxonomy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ecology",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "genetics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "physiology",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Taxonomy is the science of identifying, naming and classifying living things.",
         "difficulty": "easy"
       },
       {
         "questionText": "The smallest unit in the taxonomic hierarchy is the _____.",
-        "options": [],
-        "correctAnswer": "species",
+        "options": [
+          {
+            "id": "a",
+            "text": "genus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "species",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "family",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "order",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Species is the most specific group; its members can interbreed to produce fertile offspring.",
         "difficulty": "easy"
       },
       {
         "questionText": "The largest unit in the taxonomic hierarchy is the _____.",
-        "options": [],
-        "correctAnswer": "kingdom",
+        "options": [
+          {
+            "id": "a",
+            "text": "phylum",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "class",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kingdom",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "genus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Kingdom is the broadest level of classification, containing many phyla.",
         "difficulty": "easy"
       },
       {
         "questionText": "The two-name system of naming organisms is called _____.",
-        "options": [],
-        "correctAnswer": "binomial nomenclature",
+        "options": [
+          {
+            "id": "a",
+            "text": "common naming",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vernacular naming",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dichotomous naming",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "binomial nomenclature",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Binomial nomenclature gives each organism a scientific name made up of the genus and the species.",
         "difficulty": "easy"
       },
       {
         "questionText": "In a scientific name, the first word (genus) must always begin with a _____ letter.",
-        "options": [],
-        "correctAnswer": "capital",
+        "options": [
+          {
+            "id": "a",
+            "text": "capital",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "small",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "italic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bold",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The genus name always starts with a capital letter, while the species name starts with a small letter.",
         "difficulty": "easy"
       },
       {
         "questionText": "Organisms whose cells have no true membrane-bound nucleus, such as bacteria, belong to the kingdom _____.",
-        "options": [],
-        "correctAnswer": "monera",
+        "options": [
+          {
+            "id": "a",
+            "text": "fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "monera",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "plantae",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "animalia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Kingdom Monera contains prokaryotic organisms like bacteria and blue-green algae.",
         "difficulty": "medium"
       },
       {
         "questionText": "A key that uses pairs of contrasting statements to identify organisms is called a _____ key.",
-        "options": [],
-        "correctAnswer": "dichotomous",
+        "options": [
+          {
+            "id": "a",
+            "text": "numbered",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "branching",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dichotomous",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "taxonomic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A dichotomous key splits a group into two at each step until the organism is identified.",
         "difficulty": "medium"
       },
       {
         "questionText": "Classification that groups organisms based on a few convenient features rather than evolutionary relationships is called _____ classification.",
-        "options": [],
-        "correctAnswer": "artificial",
+        "options": [
+          {
+            "id": "a",
+            "text": "natural",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "random",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alphabetical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "artificial",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Artificial classification uses one or a few obvious characteristics, while natural classification uses many shared features.",
         "difficulty": "medium"
       },
       {
         "questionText": "The scientist who developed the modern system of naming organisms was Carolus _____.",
-        "options": [],
-        "correctAnswer": "linnaeus",
+        "options": [
+          {
+            "id": "a",
+            "text": "linnaeus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Darwin",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mendel",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hooke",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Carolus Linnaeus introduced binomial nomenclature and is the father of modern taxonomy.",
         "difficulty": "easy"
       },
       {
         "questionText": "Multicellular organisms that make their own food by photosynthesis belong to the kingdom _____.",
-        "options": [],
-        "correctAnswer": "plantae",
+        "options": [
+          {
+            "id": "a",
+            "text": "fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "plantae",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "monera",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "protoctista",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Kingdom Plantae contains multicellular plants with cellulose cell walls that carry out photosynthesis.",
         "difficulty": "medium"
       }

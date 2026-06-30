@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "An industry that extracts raw materials directly from nature, such as mining and fishing, is called a _____ industry.",
-        "options": [],
-        "correctAnswer": "primary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tertiary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "quaternary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Primary industries collect or extract natural raw materials before any processing takes place.",
         "difficulty": "easy"
       },
       {
         "questionText": "Industries that change raw materials into manufactured goods are known as _____ industries.",
-        "options": [],
-        "correctAnswer": "secondary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "secondary",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tertiary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "quaternary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Secondary industries process raw materials into finished or semi-finished products.",
         "difficulty": "easy"
       },
       {
         "questionText": "Industries that provide services rather than goods, such as banking and tourism, are called _____ industries.",
-        "options": [],
-        "correctAnswer": "tertiary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tertiary",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "quaternary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Tertiary industries offer services like transport, trade, education and health.",
         "difficulty": "easy"
       },
       {
         "questionText": "The main raw material used to make cement is _____.",
-        "options": [],
-        "correctAnswer": "limestone",
+        "options": [
+          {
+            "id": "a",
+            "text": "sandstone",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "granite",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gypsum",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "limestone",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Cement factories such as Wazo Hill are located near limestone deposits because limestone is the chief raw material.",
         "difficulty": "easy"
       },
       {
         "questionText": "A small industry carried out at home using simple tools, such as basket weaving, is called a _____ industry.",
-        "options": [],
-        "correctAnswer": "cottage",
+        "options": [
+          {
+            "id": "a",
+            "text": "cottage",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "heavy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "light",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "assembly",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Cottage industries are small-scale and use simple equipment, often within the home.",
         "difficulty": "easy"
       },
       {
         "questionText": "The Kilombero factory in Tanzania is mainly known for processing _____ into sugar.",
-        "options": [],
-        "correctAnswer": "sugarcane",
+        "options": [
+          {
+            "id": "a",
+            "text": "sisal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sugarcane",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tobacco",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cotton",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Kilombero Sugar Company processes sugarcane grown nearby because the crop is bulky and perishable.",
         "difficulty": "medium"
       },
       {
         "questionText": "Industries that use bulky raw materials and produce heavy products, like iron and steel, are called _____ industries.",
-        "options": [],
-        "correctAnswer": "heavy",
+        "options": [
+          {
+            "id": "a",
+            "text": "light",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cottage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "heavy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "consumer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Heavy industries handle large, bulky materials and require large machines and capital.",
         "difficulty": "medium"
       },
       {
         "questionText": "Money invested to start and run an industry, including buildings and machines, is called _____.",
-        "options": [],
-        "correctAnswer": "capital",
+        "options": [
+          {
+            "id": "a",
+            "text": "labour",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "revenue",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "profit",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "capital",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Capital is needed to buy machinery, land and raw materials; shortage of capital limits industries in developing countries.",
         "difficulty": "medium"
       },
       {
         "questionText": "Industries that process farm products such as cotton, coffee and cashew nuts are called _____ industries.",
-        "options": [],
-        "correctAnswer": "agro-processing",
+        "options": [
+          {
+            "id": "a",
+            "text": "agro-processing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "heavy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "extractive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mineral-processing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Agro-processing or agro-based industries depend on agricultural produce as their raw materials.",
         "difficulty": "medium"
       },
       {
         "questionText": "Government rules and incentives that encourage industries to set up in certain areas are known as government _____.",
-        "options": [],
-        "correctAnswer": "policy",
+        "options": [
+          {
+            "id": "a",
+            "text": "subsidy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "policy",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tariff",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "quota",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Government policy, through taxes, subsidies and special zones, influences where industries are located.",
         "difficulty": "hard"
       }

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The discovery that a current produces a magnetic field was made by the scientist named _____.",
-        "options": [],
-        "correctAnswer": "Oersted",
+        "options": [
+          {
+            "id": "a",
+            "text": "Oersted",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Faraday",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ampere",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Maxwell",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Hans Christian Oersted observed a compass needle deflecting near a current-carrying wire.",
         "difficulty": "easy"
       },
       {
         "questionText": "The magnetic field lines around a straight current-carrying wire form _____ circles around the wire.",
-        "options": [],
-        "correctAnswer": "concentric",
+        "options": [
+          {
+            "id": "a",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "concentric",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "radial",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "straight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The field lines are concentric circles centred on the wire and perpendicular to it.",
         "difficulty": "easy"
       },
       {
         "questionText": "The rule in which the thumb points along the current and the fingers curl in the direction of the field is the right-hand _____ rule.",
-        "options": [],
-        "correctAnswer": "grip",
+        "options": [
+          {
+            "id": "a",
+            "text": "slap",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "thumb",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "grip",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "screw",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The right-hand grip rule gives the direction of the magnetic field around a straight wire.",
         "difficulty": "easy"
       },
       {
         "questionText": "A long cylindrical coil that behaves like a bar magnet when carrying current is called a _____.",
-        "options": [],
-        "correctAnswer": "solenoid",
+        "options": [
+          {
+            "id": "a",
+            "text": "coil",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "toroid",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "armature",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solenoid",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A solenoid produces a strong, almost uniform field inside it, like a bar magnet.",
         "difficulty": "easy"
       },
       {
         "questionText": "The core used in an electromagnet is made of _____ iron because it is easily magnetised and demagnetised.",
-        "options": [],
-        "correctAnswer": "soft",
+        "options": [
+          {
+            "id": "a",
+            "text": "soft",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hard",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cast",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "stainless",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Soft iron gains and loses magnetism easily, making it ideal for an electromagnet core.",
         "difficulty": "easy"
       },
       {
         "questionText": "The strength of an electromagnet increases when the number of _____ in the coil is increased.",
-        "options": [],
-        "correctAnswer": "turns",
+        "options": [
+          {
+            "id": "a",
+            "text": "coils",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "turns",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "magnets",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cores",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "More turns of wire produce a stronger magnetic field for the same current.",
         "difficulty": "medium"
       },
       {
         "questionText": "The force experienced by a current-carrying conductor placed in a magnetic field is known as the _____ effect.",
-        "options": [],
-        "correctAnswer": "motor",
+        "options": [
+          {
+            "id": "a",
+            "text": "dynamo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "generator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "motor",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "induction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "This force is the basis of how electric motors work.",
         "difficulty": "easy"
       },
       {
         "questionText": "The direction of the force on a current-carrying conductor in a magnetic field is found using Fleming's _____-hand rule.",
-        "options": [],
-        "correctAnswer": "left",
+        "options": [
+          {
+            "id": "a",
+            "text": "right",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "first",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "second",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "left",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Fleming's left-hand rule relates field, current and force directions.",
         "difficulty": "medium"
       },
       {
         "questionText": "In a simple d.c. motor, the _____ commutator reverses the current in the coil every half turn.",
-        "options": [],
-        "correctAnswer": "split-ring",
+        "options": [
+          {
+            "id": "a",
+            "text": "split-ring",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "slip-ring",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "carbon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "field",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The split-ring commutator keeps the coil rotating in one direction.",
         "difficulty": "medium"
       },
       {
         "questionText": "An electric motor changes electrical energy into _____ energy.",
-        "options": [],
-        "correctAnswer": "mechanical",
+        "options": [
+          {
+            "id": "a",
+            "text": "heat",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mechanical",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sound",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A motor converts electrical energy into mechanical (rotational) energy.",
         "difficulty": "easy"
       }

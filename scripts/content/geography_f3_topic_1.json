@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Data that is collected directly from the field by the researcher is called _____ data.",
-        "options": [],
-        "correctAnswer": "primary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tertiary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "qualitative",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Primary data is original data gathered first-hand from the field, for example through measurement, observation or interviews.",
         "difficulty": "easy"
       },
       {
         "questionText": "Data obtained from already published sources such as books and reports is called _____ data.",
-        "options": [],
-        "correctAnswer": "secondary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "secondary",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tertiary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "quantitative",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Secondary data is data that has already been collected and recorded by other people in sources such as books, reports and websites.",
         "difficulty": "easy"
       },
       {
         "questionText": "The value that appears most frequently in a set of data is called the _____.",
-        "options": [],
-        "correctAnswer": "mode",
+        "options": [
+          {
+            "id": "a",
+            "text": "median",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mean",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mode",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "range",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The mode is the most common value, that is, the value that occurs the greatest number of times in a data set.",
         "difficulty": "easy"
       },
       {
         "questionText": "The middle value of a set of data arranged in order of size is called the _____.",
-        "options": [],
-        "correctAnswer": "median",
+        "options": [
+          {
+            "id": "a",
+            "text": "mode",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mean",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "range",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "median",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The median is found by arranging the values in order and choosing the value in the middle position.",
         "difficulty": "easy"
       },
       {
         "questionText": "The difference between the highest and the lowest value in a data set is called the _____.",
-        "options": [],
-        "correctAnswer": "range",
+        "options": [
+          {
+            "id": "a",
+            "text": "range",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mode",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "median",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mean",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The range is calculated as highest value minus lowest value, and it shows how spread out the data is.",
         "difficulty": "easy"
       },
       {
         "questionText": "A circle divided into sectors to show parts of a whole is called a _____ chart.",
-        "options": [],
-        "correctAnswer": "pie",
+        "options": [
+          {
+            "id": "a",
+            "text": "bar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pie",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "line",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "flow",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A pie chart is a circle whose sectors represent the proportions of the different parts of a total.",
         "difficulty": "easy"
       },
       {
         "questionText": "A statistical map that uses dots of equal value to show distribution, such as population, is called a _____ map.",
-        "options": [],
-        "correctAnswer": "dot",
+        "options": [
+          {
+            "id": "a",
+            "text": "flow",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bar",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dot",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "isoline",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "On a dot map each dot represents a fixed number of items, and the dots are placed where the items actually occur to show distribution.",
         "difficulty": "medium"
       },
       {
         "questionText": "In a pie chart, the whole circle represents _____ degrees.",
-        "options": [],
-        "correctAnswer": "360",
+        "options": [
+          {
+            "id": "a",
+            "text": "180",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "270",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "360",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A full circle has 360 degrees, so this total is shared among the sectors according to their proportions.",
         "difficulty": "easy"
       },
       {
         "questionText": "A graph that uses joined bars of different heights to show grouped (class) data, such as frequency distribution, is called a _____.",
-        "options": [],
-        "correctAnswer": "histogram",
+        "options": [
+          {
+            "id": "a",
+            "text": "histogram",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pictogram",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pyramid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "scatter graph",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A histogram uses bars that touch each other to display grouped continuous data, with the bar height showing the frequency of each class.",
         "difficulty": "medium"
       },
       {
         "questionText": "If a crop forms 25 percent of the total, it should be drawn on a pie chart as a sector of _____ degrees.",
-        "options": [],
-        "correctAnswer": "90",
+        "options": [
+          {
+            "id": "a",
+            "text": "45",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "90",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "120",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "180",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "To convert a percentage to degrees, multiply by 360 and divide by 100: 25 percent x 360 / 100 = 90 degrees.",
         "difficulty": "medium"
       }
