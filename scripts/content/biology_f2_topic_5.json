@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The maintenance of a constant internal environment in the body is called _____.",
-        "options": [],
-        "correctAnswer": "homeostasis",
+        "options": [
+          {
+            "id": "a",
+            "text": "homeostasis",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "metabolism",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "osmoregulation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "coordination",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Homeostasis keeps conditions such as temperature, water and sugar steady inside the body.",
         "difficulty": "easy"
       },
       {
         "questionText": "The regulation of body temperature is known as _____.",
-        "options": [],
-        "correctAnswer": "thermoregulation",
+        "options": [
+          {
+            "id": "a",
+            "text": "osmoregulation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "thermoregulation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "respiration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "circulation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Thermoregulation is the part of homeostasis dealing with body temperature.",
         "difficulty": "easy"
       },
       {
         "questionText": "Animals whose body temperature varies with the environment are called _____.",
-        "options": [],
-        "correctAnswer": "ectotherms",
+        "options": [
+          {
+            "id": "a",
+            "text": "endotherms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "homeotherms",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ectotherms",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "mammals",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Ectotherms (poikilothermic animals) include fish, amphibians and reptiles.",
         "difficulty": "medium"
       },
       {
         "questionText": "Warm-blooded animals that keep a constant body temperature are called _____.",
-        "options": [],
-        "correctAnswer": "endotherms",
+        "options": [
+          {
+            "id": "a",
+            "text": "ectotherms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "poikilotherms",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reptiles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "endotherms",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Endotherms (homeothermic animals) include birds and mammals.",
         "difficulty": "medium"
       },
       {
         "questionText": "The main body organ responsible for temperature regulation is the _____.",
-        "options": [],
-        "correctAnswer": "skin",
+        "options": [
+          {
+            "id": "a",
+            "text": "skin",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "liver",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kidney",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "lungs",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The skin uses sweat glands, blood vessels and hair to control body temperature.",
         "difficulty": "easy"
       },
       {
         "questionText": "When the body is too hot, the skin blood vessels widen in a process called _____.",
-        "options": [],
-        "correctAnswer": "vasodilation",
+        "options": [
+          {
+            "id": "a",
+            "text": "vasoconstriction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vasodilation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "shivering",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "evaporation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Vasodilation brings more blood to the skin surface so more heat is lost.",
         "difficulty": "medium"
       },
       {
         "questionText": "When the body is too cold, the skin blood vessels narrow in a process called _____.",
-        "options": [],
-        "correctAnswer": "vasoconstriction",
+        "options": [
+          {
+            "id": "a",
+            "text": "vasodilation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sweating",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "vasoconstriction",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "evaporation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Vasoconstriction reduces blood flow to the skin surface so less heat is lost.",
         "difficulty": "medium"
       },
       {
         "questionText": "The cooling of the body when sweat changes from liquid to gas is due to _____.",
-        "options": [],
-        "correctAnswer": "evaporation",
+        "options": [
+          {
+            "id": "a",
+            "text": "condensation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "radiation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "conduction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "evaporation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Evaporation of sweat removes heat from the skin and cools the body.",
         "difficulty": "medium"
       },
       {
         "questionText": "Rapid contraction of muscles that produces heat in cold conditions is called _____.",
-        "options": [],
-        "correctAnswer": "shivering",
+        "options": [
+          {
+            "id": "a",
+            "text": "shivering",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sweating",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "panting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "vasodilation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Shivering generates extra heat to warm the body when it is cold.",
         "difficulty": "easy"
       },
       {
         "questionText": "The normal body temperature of a healthy human is about _____ degrees Celsius.",
-        "options": [],
-        "correctAnswer": "37",
+        "options": [
+          {
+            "id": "a",
+            "text": "35",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "37",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "42",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Human body temperature is kept at around 37 degrees Celsius.",
         "difficulty": "easy"
       }

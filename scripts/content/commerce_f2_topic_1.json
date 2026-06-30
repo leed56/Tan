@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "The activity of storing goods safely from the time they are produced until they are needed is called _____.",
-        "options": [],
-        "correctAnswer": "warehousing",
+        "options": [
+          {"id": "a", "text": "warehousing", "isCorrect": true},
+          {"id": "b", "text": "branding", "isCorrect": false},
+          {"id": "c", "text": "advertising", "isCorrect": false},
+          {"id": "d", "text": "manufacturing", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Warehousing bridges the time gap between production and consumption.",
         "difficulty": "easy"
       },
       {
         "questionText": "A warehouse owned and used by one firm to store only its own goods is known as a _____ warehouse.",
-        "options": [],
-        "correctAnswer": "private",
+        "options": [
+          {"id": "a", "text": "public", "isCorrect": false},
+          {"id": "b", "text": "private", "isCorrect": true},
+          {"id": "c", "text": "bonded", "isCorrect": false},
+          {"id": "d", "text": "central", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "A private warehouse serves a single business and is not rented out to others.",
         "difficulty": "easy"
       },
       {
         "questionText": "A warehouse that hires out storage space to any trader for a rent is called a _____ warehouse.",
-        "options": [],
-        "correctAnswer": "public",
+        "options": [
+          {"id": "a", "text": "private", "isCorrect": false},
+          {"id": "b", "text": "bonded", "isCorrect": false},
+          {"id": "c", "text": "public", "isCorrect": true},
+          {"id": "d", "text": "regional", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "A public warehouse charges rent to traders who need storage space.",
         "difficulty": "easy"
       },
       {
         "questionText": "Imported goods on which duty has not yet been paid are stored under customs control in a _____ warehouse.",
-        "options": [],
-        "correctAnswer": "bonded",
+        "options": [
+          {"id": "a", "text": "private", "isCorrect": false},
+          {"id": "b", "text": "central", "isCorrect": false},
+          {"id": "c", "text": "regional", "isCorrect": false},
+          {"id": "d", "text": "bonded", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Goods stay in a bonded warehouse until the import duty is paid.",
         "difficulty": "easy"
       },
       {
         "questionText": "Warehousing helps to bridge the _____ gap between production and consumption.",
-        "options": [],
-        "correctAnswer": "time",
+        "options": [
+          {"id": "a", "text": "time", "isCorrect": true},
+          {"id": "b", "text": "place", "isCorrect": false},
+          {"id": "c", "text": "form", "isCorrect": false},
+          {"id": "d", "text": "risk", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Goods produced now can be stored and supplied later when they are needed.",
         "difficulty": "medium"
       },
       {
         "questionText": "Perishable goods such as meat and milk are best kept in a _____ storage warehouse.",
-        "options": [],
-        "correctAnswer": "cold",
+        "options": [
+          {"id": "a", "text": "dry", "isCorrect": false},
+          {"id": "b", "text": "cold", "isCorrect": true},
+          {"id": "c", "text": "open", "isCorrect": false},
+          {"id": "d", "text": "bulk", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Cold storage uses refrigeration to keep perishable goods fresh.",
         "difficulty": "medium"
       },
       {
         "questionText": "The tax charged on imported goods before they are released from a bonded warehouse is called customs _____.",
-        "options": [],
-        "correctAnswer": "duty",
+        "options": [
+          {"id": "a", "text": "levy", "isCorrect": false},
+          {"id": "b", "text": "rebate", "isCorrect": false},
+          {"id": "c", "text": "duty", "isCorrect": true},
+          {"id": "d", "text": "tariff", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Customs duty must be paid before dutiable imports leave the bonded warehouse.",
         "difficulty": "medium"
       },
       {
         "questionText": "By holding surplus stock and releasing it slowly, warehousing helps to _____ prices in the market.",
-        "options": [],
-        "correctAnswer": "stabilise",
+        "options": [
+          {"id": "a", "text": "inflate", "isCorrect": false},
+          {"id": "b", "text": "abolish", "isCorrect": false},
+          {"id": "c", "text": "double", "isCorrect": false},
+          {"id": "d", "text": "stabilise", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Steady supply prevents both shortages and gluts, keeping prices steady.",
         "difficulty": "medium"
       },
       {
         "questionText": "Nearness to good roads, railways and ports is an important transport _____ to consider when siting a warehouse.",
-        "options": [],
-        "correctAnswer": "factor",
+        "options": [
+          {"id": "a", "text": "factor", "isCorrect": true},
+          {"id": "b", "text": "barrier", "isCorrect": false},
+          {"id": "c", "text": "channel", "isCorrect": false},
+          {"id": "d", "text": "utility", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Good transport links reduce the cost of moving goods in and out of the warehouse.",
         "difficulty": "medium"
       },
       {
         "questionText": "Storing reserve stocks of raw materials ensures that factories enjoy _____ production without interruption.",
-        "options": [],
-        "correctAnswer": "continuous",
+        "options": [
+          {"id": "a", "text": "seasonal", "isCorrect": false},
+          {"id": "b", "text": "continuous", "isCorrect": true},
+          {"id": "c", "text": "irregular", "isCorrect": false},
+          {"id": "d", "text": "manual", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "A reserve of materials keeps factories running even when fresh supplies are delayed.",
         "difficulty": "hard"
       }

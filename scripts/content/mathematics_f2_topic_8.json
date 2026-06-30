@@ -8,10 +8,26 @@
       {
         "questionText": "In a right-angled triangle, the longest side, which is always opposite the right angle, is called the:",
         "options": [
-          {"id": "a", "text": "Adjacent side", "isCorrect": false},
-          {"id": "b", "text": "Hypotenuse", "isCorrect": true},
-          {"id": "c", "text": "Base", "isCorrect": false},
-          {"id": "d", "text": "Perpendicular", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Adjacent side",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hypotenuse",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Base",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Perpendicular",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The hypotenuse is the side opposite the right angle and is always the longest side of a right-angled triangle.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Pythagoras' theorem states that for a right-angled triangle with hypotenuse c and other two sides a and b:",
         "options": [
-          {"id": "a", "text": "a + b = c", "isCorrect": false},
-          {"id": "b", "text": "a² + b² = c²", "isCorrect": true},
-          {"id": "c", "text": "a² - b² = c²", "isCorrect": false},
-          {"id": "d", "text": "a² + c² = b²", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "a + b = c",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "a² + b² = c²",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "a² - b² = c²",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "a² + c² = b²",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Pythagoras' theorem states the square of the hypotenuse equals the sum of the squares of the other two sides: a² + b² = c².",
@@ -32,10 +64,26 @@
       {
         "questionText": "A right-angled triangle has two shorter sides of length 6 cm and 8 cm. What is the length of the hypotenuse?",
         "options": [
-          {"id": "a", "text": "10 cm", "isCorrect": true},
-          {"id": "b", "text": "14 cm", "isCorrect": false},
-          {"id": "c", "text": "12 cm", "isCorrect": false},
-          {"id": "d", "text": "48 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "14 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "48 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "c² = 6² + 8² = 36 + 64 = 100, so c = √100 = 10 cm.",
@@ -44,10 +92,26 @@
       {
         "questionText": "The hypotenuse of a right-angled triangle is 13 cm and one of the shorter sides is 5 cm. Find the length of the other side.",
         "options": [
-          {"id": "a", "text": "8 cm", "isCorrect": false},
-          {"id": "b", "text": "18 cm", "isCorrect": false},
-          {"id": "c", "text": "12 cm", "isCorrect": true},
-          {"id": "d", "text": "14 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "8 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "18 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "14 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "b² = 13² - 5² = 169 - 25 = 144, so b = √144 = 12 cm.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Which of the following sets of numbers forms a Pythagorean triple?",
         "options": [
-          {"id": "a", "text": "2, 3, 4", "isCorrect": false},
-          {"id": "b", "text": "5, 12, 13", "isCorrect": true},
-          {"id": "c", "text": "4, 5, 6", "isCorrect": false},
-          {"id": "d", "text": "6, 7, 8", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2, 3, 4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5, 12, 13",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4, 5, 6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6, 7, 8",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "5² + 12² = 25 + 144 = 169 = 13², so 5, 12, 13 is a Pythagorean triple.",
@@ -68,10 +148,26 @@
       {
         "questionText": "A ladder 5 m long leans against a wall with its foot 3 m from the base of the wall. How high up the wall does the ladder reach?",
         "options": [
-          {"id": "a", "text": "2 m", "isCorrect": false},
-          {"id": "b", "text": "4 m", "isCorrect": true},
-          {"id": "c", "text": "8 m", "isCorrect": false},
-          {"id": "d", "text": "6 m", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4 m",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "8 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6 m",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Height² = 5² - 3² = 25 - 9 = 16, so height = √16 = 4 m.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Find the length of the diagonal of a rectangle that is 9 cm long and 12 cm wide.",
         "options": [
-          {"id": "a", "text": "21 cm", "isCorrect": false},
-          {"id": "b", "text": "15 cm", "isCorrect": true},
-          {"id": "c", "text": "20 cm", "isCorrect": false},
-          {"id": "d", "text": "225 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "21 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "15 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "20 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "225 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Diagonal² = 9² + 12² = 81 + 144 = 225, so diagonal = √225 = 15 cm.",
@@ -92,10 +204,26 @@
       {
         "questionText": "The two shorter sides of a right-angled triangle are 7 cm and 24 cm. The length of the hypotenuse is:",
         "options": [
-          {"id": "a", "text": "25 cm", "isCorrect": true},
-          {"id": "b", "text": "31 cm", "isCorrect": false},
-          {"id": "c", "text": "23 cm", "isCorrect": false},
-          {"id": "d", "text": "17 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "25 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "31 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "23 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "17 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "c² = 7² + 24² = 49 + 576 = 625, so c = √625 = 25 cm.",
@@ -104,10 +232,26 @@
       {
         "questionText": "If the three sides of a triangle are 9 cm, 40 cm and 41 cm, the triangle is:",
         "options": [
-          {"id": "a", "text": "An acute-angled triangle", "isCorrect": false},
-          {"id": "b", "text": "An obtuse-angled triangle", "isCorrect": false},
-          {"id": "c", "text": "A right-angled triangle", "isCorrect": true},
-          {"id": "d", "text": "An equilateral triangle", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "An acute-angled triangle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "An obtuse-angled triangle",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A right-angled triangle",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "An equilateral triangle",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Since 9² + 40² = 81 + 1600 = 1681 = 41², the converse of Pythagoras' theorem shows it is right-angled.",
@@ -116,10 +260,26 @@
       {
         "questionText": "A square has a diagonal of length 10√2 cm. What is the length of each side of the square?",
         "options": [
-          {"id": "a", "text": "20 cm", "isCorrect": false},
-          {"id": "b", "text": "5 cm", "isCorrect": false},
-          {"id": "c", "text": "10 cm", "isCorrect": true},
-          {"id": "d", "text": "14 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "20 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "14 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "For a square of side s, the diagonal is s√2. So s√2 = 10√2 gives s = 10 cm.",
@@ -128,10 +288,26 @@
       {
         "questionText": "A right-angled triangle has shorter sides 1 cm and 2 cm. What is the length of the hypotenuse?",
         "options": [
-          {"id": "a", "text": "3 cm", "isCorrect": false},
-          {"id": "b", "text": "√3 cm", "isCorrect": false},
-          {"id": "c", "text": "√5 cm", "isCorrect": true},
-          {"id": "d", "text": "5 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "√3 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "√5 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "5 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "c² = 1² + 2² = 1 + 4 = 5, so c = √5 cm.",
@@ -140,10 +316,26 @@
       {
         "questionText": "A person walks 12 km due east, then turns and walks 5 km due north. How far is the person from the starting point in a straight line?",
         "options": [
-          {"id": "a", "text": "17 km", "isCorrect": false},
-          {"id": "b", "text": "13 km", "isCorrect": true},
-          {"id": "c", "text": "7 km", "isCorrect": false},
-          {"id": "d", "text": "169 km", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "17 km",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "13 km",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "7 km",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "169 km",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The straight-line distance² = 12² + 5² = 144 + 25 = 169, so the distance = √169 = 13 km.",
@@ -152,10 +344,26 @@
       {
         "questionText": "An isosceles triangle has two equal sides of 13 cm and a base of 10 cm. What is its perpendicular height from the base to the apex?",
         "options": [
-          {"id": "a", "text": "11 cm", "isCorrect": false},
-          {"id": "b", "text": "12 cm", "isCorrect": true},
-          {"id": "c", "text": "8 cm", "isCorrect": false},
-          {"id": "d", "text": "9 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "11 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "12 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "8 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "9 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The height splits the base into 5 cm halves; height² = 13² - 5² = 169 - 25 = 144, so height = 12 cm.",
@@ -164,10 +372,26 @@
       {
         "questionText": "The shorter sides of a right-angled triangle are (x) cm and (x + 7) cm, and the hypotenuse is 17 cm. What is the value of x?",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": false},
-          {"id": "b", "text": "8", "isCorrect": true},
-          {"id": "c", "text": "10", "isCorrect": false},
-          {"id": "d", "text": "12", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "x² + (x+7)² = 17² gives 2x² + 14x + 49 = 289, so 2x² + 14x - 240 = 0, x² + 7x - 120 = 0, (x+15)(x-8) = 0; taking the positive value, x = 8.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which of the following is NOT a Pythagorean triple?",
         "options": [
-          {"id": "a", "text": "8, 15, 17", "isCorrect": false},
-          {"id": "b", "text": "9, 12, 15", "isCorrect": false},
-          {"id": "c", "text": "10, 24, 26", "isCorrect": false},
-          {"id": "d", "text": "6, 8, 12", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "8, 15, 17",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9, 12, 15",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10, 24, 26",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6, 8, 12",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "For 6, 8, 12: 6² + 8² = 36 + 64 = 100 ≠ 144 = 12², so it is not a Pythagorean triple, while the others satisfy a² + b² = c².",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "In a right-angled triangle, the side opposite the right angle is called the _____.",
-        "options": [],
-        "correctAnswer": "hypotenuse",
+        "options": [
+          {
+            "id": "a",
+            "text": "hypotenuse",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "adjacent",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "opposite",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "base",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The hypotenuse is opposite the right angle and is the longest side.",
         "difficulty": "easy"
       },
       {
         "questionText": "If the two shorter sides of a right-angled triangle are 3 cm and 4 cm, the hypotenuse is _____ cm.",
-        "options": [],
-        "correctAnswer": "5",
+        "options": [
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "25",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "c² = 3² + 4² = 9 + 16 = 25, so c = √25 = 5 cm.",
         "difficulty": "easy"
       },
       {
         "questionText": "Pythagoras' theorem can only be applied to a _____-angled triangle.",
-        "options": [],
-        "correctAnswer": "right",
+        "options": [
+          {
+            "id": "a",
+            "text": "acute",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "obtuse",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "right",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "isosceles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The theorem holds only for triangles containing a 90° (right) angle.",
         "difficulty": "easy"
       },
       {
         "questionText": "For the right-angled triangle with hypotenuse 10 cm and one side 6 cm, the other side is _____ cm.",
-        "options": [],
-        "correctAnswer": "8",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "b² = 10² - 6² = 100 - 36 = 64, so b = √64 = 8 cm.",
         "difficulty": "easy"
       },
       {
         "questionText": "The set of whole numbers 8, 15 and _____ forms a Pythagorean triple.",
-        "options": [],
-        "correctAnswer": "17",
+        "options": [
+          {
+            "id": "a",
+            "text": "17",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "23",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "13",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "8² + 15² = 64 + 225 = 289 = 17², so the missing number is 17.",
         "difficulty": "medium"
       },
       {
         "questionText": "A rectangle measures 8 cm by 6 cm. The length of its diagonal is _____ cm.",
-        "options": [],
-        "correctAnswer": "10",
+        "options": [
+          {
+            "id": "a",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Diagonal² = 8² + 6² = 64 + 36 = 100, so the diagonal = √100 = 10 cm.",
         "difficulty": "medium"
       },
       {
         "questionText": "If the two shorter sides of a right-angled triangle are each 5 cm, the hypotenuse is 5√_____ cm.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "c² = 5² + 5² = 25 + 25 = 50, so c = √50 = 5√2 cm.",
         "difficulty": "medium"
       },
       {
         "questionText": "A flagpole casts a horizontal shadow of 12 m, and the distance from the top of the pole to the tip of the shadow is 13 m. The height of the pole is _____ m.",
-        "options": [],
-        "correctAnswer": "5",
+        "options": [
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Height² = 13² - 12² = 169 - 144 = 25, so height = √25 = 5 m.",
         "difficulty": "medium"
       },
       {
         "questionText": "A cube has edges of length 2 cm. The length of its space (longest) diagonal is 2√_____ cm.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The space diagonal of a cube of edge a is a√3, so for a = 2 it is 2√3 cm.",
         "difficulty": "hard"
       },
       {
         "questionText": "The statement 'if a² + b² = c² then the triangle is right-angled' is known as the _____ of Pythagoras' theorem.",
-        "options": [],
-        "correctAnswer": "converse",
+        "options": [
+          {
+            "id": "a",
+            "text": "inverse",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "converse",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "contrapositive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "corollary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The converse of Pythagoras' theorem is used to test whether a triangle is right-angled.",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A rectangular room is 12 m long, 9 m wide and 8 m high. A spider sits at one bottom corner and a fly at the opposite top corner. What is the straight-line (through the air) distance between them?",
         "options": [
-          {"id": "a", "text": "17 m", "isCorrect": true},
-          {"id": "b", "text": "15 m", "isCorrect": false},
-          {"id": "c", "text": "29 m", "isCorrect": false},
-          {"id": "d", "text": "20 m", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "17 m",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "15 m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "29 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20 m",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The space diagonal d = √(12² + 9² + 8²) = √(144 + 81 + 64) = √289 = 17 m.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Two vertical poles of heights 9 m and 4 m stand on level ground 12 m apart. A straight wire connects their tops. What is the length of the wire?",
         "options": [
-          {"id": "a", "text": "12 m", "isCorrect": false},
-          {"id": "b", "text": "13 m", "isCorrect": true},
-          {"id": "c", "text": "15 m", "isCorrect": false},
-          {"id": "d", "text": "17 m", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "12 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "13 m",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "15 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "17 m",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The vertical difference is 9 - 4 = 5 m and the horizontal distance is 12 m, so the wire = √(12² + 5²) = √(144 + 25) = √169 = 13 m.",
@@ -430,10 +912,26 @@
       {
         "questionText": "In an equilateral triangle of side 8 cm, what is the perpendicular height from one vertex to the opposite side?",
         "options": [
-          {"id": "a", "text": "4 cm", "isCorrect": false},
-          {"id": "b", "text": "8√3 cm", "isCorrect": false},
-          {"id": "c", "text": "4√3 cm", "isCorrect": true},
-          {"id": "d", "text": "6 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8√3 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4√3 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The height splits the base into 4 cm halves; height² = 8² - 4² = 64 - 16 = 48, so height = √48 = 4√3 cm.",

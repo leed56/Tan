@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A living organism that damages crops and causes economic loss is called a _____.",
-        "options": [],
-        "correctAnswer": "pest",
+        "options": [
+          {
+            "id": "a",
+            "text": "pest",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "weed",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "disease",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "predator",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A pest is any organism harmful to crops or stored produce.",
         "difficulty": "easy"
       },
       {
         "questionText": "Pests that attack harvested produce kept in stores are known as _____ pests.",
-        "options": [],
-        "correctAnswer": "storage",
+        "options": [
+          {
+            "id": "a",
+            "text": "field",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "storage",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "soil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "foliage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Storage pests, such as weevils, attack grains and other produce after harvest.",
         "difficulty": "easy"
       },
       {
         "questionText": "Microscopic roundworms that attack plant roots are called _____.",
-        "options": [],
-        "correctAnswer": "nematodes",
+        "options": [
+          {
+            "id": "a",
+            "text": "aphids",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "weevils",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nematodes",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "mites",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Nematodes are tiny worms in the soil that cause galls and poor root growth.",
         "difficulty": "medium"
       },
       {
         "questionText": "The method of pest control that uses natural enemies of pests is called _____ control.",
-        "options": [],
-        "correctAnswer": "biological",
+        "options": [
+          {
+            "id": "a",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cultural",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "physical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "biological",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Biological control relies on predators, parasites and pathogens to reduce pest numbers.",
         "difficulty": "medium"
       },
       {
         "questionText": "Chemicals used to kill pests are generally called _____.",
-        "options": [],
-        "correctAnswer": "pesticides",
+        "options": [
+          {
+            "id": "a",
+            "text": "pesticides",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "herbicides",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fungicides",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fertilizers",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Pesticides include insecticides, rodenticides and other chemicals used against pests.",
         "difficulty": "easy"
       },
       {
         "questionText": "Growing different crops on the same land in different seasons to break pest life cycles is called crop _____.",
-        "options": [],
-        "correctAnswer": "rotation",
+        "options": [
+          {
+            "id": "a",
+            "text": "spacing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "rotation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "thinning",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mulching",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Crop rotation denies host-specific pests a continuous food supply.",
         "difficulty": "medium"
       },
       {
         "questionText": "The approach that combines several pest control methods is abbreviated as _____.",
-        "options": [],
-        "correctAnswer": "IPM",
+        "options": [
+          {
+            "id": "a",
+            "text": "GMO",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "FAO",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "IPM",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "GAP",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "IPM stands for Integrated Pest Management.",
         "difficulty": "medium"
       },
       {
         "questionText": "A common storage insect pest that bores into stored maize and beans is the _____.",
-        "options": [],
-        "correctAnswer": "weevil",
+        "options": [
+          {
+            "id": "a",
+            "text": "aphid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "locust",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "termite",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weevil",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Weevils destroy stored grains by boring into and feeding on them.",
         "difficulty": "easy"
       },
       {
         "questionText": "When spraying pesticides, one should always spray in the same direction as the _____ to avoid inhaling chemicals.",
-        "options": [],
-        "correctAnswer": "wind",
+        "options": [
+          {
+            "id": "a",
+            "text": "wind",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sun",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rain",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "soil",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Spraying with the wind keeps the chemical drift away from the operator.",
         "difficulty": "medium"
       },
       {
         "questionText": "Birds that move in large flocks and destroy cereal grains in East Africa are commonly called _____ birds.",
-        "options": [],
-        "correctAnswer": "quelea",
+        "options": [
+          {
+            "id": "a",
+            "text": "weaver",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "quelea",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sparrow",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "starling",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Quelea birds feed in huge flocks and cause severe losses to cereals such as rice and sorghum.",
         "difficulty": "hard"
       }

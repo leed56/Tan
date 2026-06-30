@@ -429,71 +429,121 @@
     "fib": [
       {
         "questionText": "Advertising is a _____ form of communication, meaning the advertiser must pay for it.",
-        "options": [],
-        "correctAnswer": "paid",
+        "options": [
+          {"id": "a", "text": "paid", "isCorrect": true},
+          {"id": "b", "text": "free", "isCorrect": false},
+          {"id": "c", "text": "personal", "isCorrect": false},
+          {"id": "d", "text": "verbal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Unlike publicity, advertising is paid for by the advertiser.",
         "difficulty": "easy"
       },
       {
         "questionText": "The type of advertising that simply provides facts about a product is called _____ advertising.",
-        "options": [],
-        "correctAnswer": "informative",
+        "options": [
+          {"id": "a", "text": "competitive", "isCorrect": false},
+          {"id": "b", "text": "informative", "isCorrect": true},
+          {"id": "c", "text": "persuasive", "isCorrect": false},
+          {"id": "d", "text": "comparative", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Informative advertising gives information such as price and features.",
         "difficulty": "easy"
       },
       {
         "questionText": "The type of advertising that compares a product with rivals to gain more customers is called _____ advertising.",
-        "options": [],
-        "correctAnswer": "competitive",
+        "options": [
+          {"id": "a", "text": "informative", "isCorrect": false},
+          {"id": "b", "text": "corporate", "isCorrect": false},
+          {"id": "c", "text": "competitive", "isCorrect": true},
+          {"id": "d", "text": "generic", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Competitive advertising is used to outdo competing products.",
         "difficulty": "medium"
       },
       {
         "questionText": "A reduction in the price of goods given to encourage buying is called a _____.",
-        "options": [],
-        "correctAnswer": "discount",
+        "options": [
+          {"id": "a", "text": "rebate", "isCorrect": false},
+          {"id": "b", "text": "premium", "isCorrect": false},
+          {"id": "c", "text": "allowance", "isCorrect": false},
+          {"id": "d", "text": "discount", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Discounts are a common sales promotion tool.",
         "difficulty": "easy"
       },
       {
         "questionText": "A small free portion of a product given to customers to try is called a free _____.",
-        "options": [],
-        "correctAnswer": "sample",
+        "options": [
+          {"id": "a", "text": "sample", "isCorrect": true},
+          {"id": "b", "text": "coupon", "isCorrect": false},
+          {"id": "c", "text": "voucher", "isCorrect": false},
+          {"id": "d", "text": "token", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Free samples encourage customers to test and then buy a product.",
         "difficulty": "easy"
       },
       {
         "questionText": "A printed voucher that gives a customer a price reduction is known as a _____.",
-        "options": [],
-        "correctAnswer": "coupon",
+        "options": [
+          {"id": "a", "text": "sample", "isCorrect": false},
+          {"id": "b", "text": "coupon", "isCorrect": true},
+          {"id": "c", "text": "rebate", "isCorrect": false},
+          {"id": "d", "text": "token", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Coupons attract buyers by offering them a discount on a product.",
         "difficulty": "medium"
       },
       {
         "questionText": "Repairs and servicing offered to a buyer after a purchase are known as _____ service.",
-        "options": [],
-        "correctAnswer": "after-sales",
+        "options": [
+          {"id": "a", "text": "pre-sales", "isCorrect": false},
+          {"id": "b", "text": "point-of-sale", "isCorrect": false},
+          {"id": "c", "text": "after-sales", "isCorrect": true},
+          {"id": "d", "text": "self-service", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "After-sales service keeps customers satisfied and loyal.",
         "difficulty": "medium"
       },
       {
         "questionText": "Advertising that gives false or exaggerated claims about a product is described as _____ advertising.",
-        "options": [],
-        "correctAnswer": "misleading",
+        "options": [
+          {"id": "a", "text": "informative", "isCorrect": false},
+          {"id": "b", "text": "competitive", "isCorrect": false},
+          {"id": "c", "text": "corporate", "isCorrect": false},
+          {"id": "d", "text": "misleading", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Misleading advertising deceives buyers and is considered unethical.",
         "difficulty": "easy"
       },
       {
         "questionText": "A general term for activities other than advertising used to boost sales, such as discounts and free gifts, is sales _____.",
-        "options": [],
-        "correctAnswer": "promotion",
+        "options": [
+          {"id": "a", "text": "promotion", "isCorrect": true},
+          {"id": "b", "text": "advertising", "isCorrect": false},
+          {"id": "c", "text": "publicity", "isCorrect": false},
+          {"id": "d", "text": "marketing", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Sales promotion includes short-term incentives to encourage buying.",
         "difficulty": "medium"
       },
       {
         "questionText": "The channel through which an advertising message reaches the audience, such as radio or television, is called the advertising _____.",
-        "options": [],
-        "correctAnswer": "medium",
+        "options": [
+          {"id": "a", "text": "message", "isCorrect": false},
+          {"id": "b", "text": "medium", "isCorrect": true},
+          {"id": "c", "text": "agency", "isCorrect": false},
+          {"id": "d", "text": "campaign", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "An advertising medium carries the message from the advertiser to the audience.",
         "difficulty": "hard"
       }

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A plant growing where it is not wanted is called a _____.",
-        "options": [],
-        "correctAnswer": "weed",
+        "options": [
+          {
+            "id": "a",
+            "text": "weed",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "crop",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "shrub",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "seedling",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A weed is any plant that grows where the farmer does not want it.",
         "difficulty": "easy"
       },
       {
         "questionText": "Chemicals that are used to kill weeds are known as _____.",
-        "options": [],
-        "correctAnswer": "herbicides",
+        "options": [
+          {
+            "id": "a",
+            "text": "pesticides",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "herbicides",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "fungicides",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fertilizers",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Herbicides are chemical substances applied to control or kill weeds.",
         "difficulty": "easy"
       },
       {
         "questionText": "A weed that completes its life cycle in one season is called an _____ weed.",
-        "options": [],
-        "correctAnswer": "annual",
+        "options": [
+          {
+            "id": "a",
+            "text": "perennial",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biennial",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "annual",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ephemeral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Annual weeds grow, flower, seed and die within a single season.",
         "difficulty": "easy"
       },
       {
         "questionText": "Weeds compete with crops for water, light, space and _____.",
-        "options": [],
-        "correctAnswer": "nutrients",
+        "options": [
+          {
+            "id": "a",
+            "text": "minerals",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "oxygen",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "shade",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nutrients",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Competition for nutrients reduces the amount available to crops, lowering yield.",
         "difficulty": "easy"
       },
       {
         "questionText": "Grasses with long, thin leaves and parallel veins are classified as _____ weeds.",
-        "options": [],
-        "correctAnswer": "narrow-leaved",
+        "options": [
+          {
+            "id": "a",
+            "text": "narrow-leaved",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "broad-leaved",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "creeping",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "climbing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Narrow-leaved weeds are mostly grasses with parallel-veined leaves.",
         "difficulty": "medium"
       },
       {
         "questionText": "The control of weeds using living organisms such as insects is called _____ control.",
-        "options": [],
-        "correctAnswer": "biological",
+        "options": [
+          {
+            "id": "a",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biological",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cultural",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mechanical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Biological control uses natural enemies such as insects or animals to reduce weeds.",
         "difficulty": "medium"
       },
       {
         "questionText": "A weed that takes two seasons to complete its life cycle is called a _____ weed.",
-        "options": [],
-        "correctAnswer": "biennial",
+        "options": [
+          {
+            "id": "a",
+            "text": "annual",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "perennial",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "biennial",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ephemeral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Biennial weeds grow vegetatively in the first season and flower and seed in the second.",
         "difficulty": "medium"
       },
       {
         "questionText": "Hoeing, slashing and hand pulling are examples of _____ methods of weed control.",
-        "options": [],
-        "correctAnswer": "mechanical",
+        "options": [
+          {
+            "id": "a",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biological",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cultural",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mechanical",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Mechanical methods physically remove or destroy weeds using tools or hands.",
         "difficulty": "medium"
       },
       {
         "questionText": "A herbicide that kills only certain weeds without harming the crop is described as _____.",
-        "options": [],
-        "correctAnswer": "selective",
+        "options": [
+          {
+            "id": "a",
+            "text": "selective",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "contact",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "systemic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "residual",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Selective herbicides target specific weeds while leaving the crop unharmed.",
         "difficulty": "hard"
       },
       {
         "questionText": "Perennial weeds survive for many seasons through underground structures such as rhizomes and _____.",
-        "options": [],
-        "correctAnswer": "tubers",
+        "options": [
+          {
+            "id": "a",
+            "text": "seeds",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tubers",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "leaves",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "flowers",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Underground tubers, rhizomes and roots allow perennial weeds to regrow each season.",
         "difficulty": "hard"
       }

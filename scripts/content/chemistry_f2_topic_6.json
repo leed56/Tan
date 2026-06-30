@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A substance that changes colour to show whether a solution is acidic or basic is called an _____.",
-        "options": [],
-        "correctAnswer": "indicator",
+        "options": [
+          {
+            "id": "a",
+            "text": "indicator",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "acid",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "base",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "catalyst",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Indicators such as litmus and phenolphthalein reveal the acidity or alkalinity of a solution.",
         "difficulty": "easy"
       },
       {
         "questionText": "Acids turn blue litmus paper _____ in colour.",
-        "options": [],
-        "correctAnswer": "red",
+        "options": [
+          {
+            "id": "a",
+            "text": "blue",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "red",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "green",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "yellow",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Acids change blue litmus to red, a basic test for acidity.",
         "difficulty": "easy"
       },
       {
         "questionText": "On the pH scale, a value of 7 represents a _____ solution.",
-        "options": [],
-        "correctAnswer": "neutral",
+        "options": [
+          {
+            "id": "a",
+            "text": "acidic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "basic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "neutral",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "alkaline",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Pure water has a pH of 7 and is neither acidic nor basic.",
         "difficulty": "easy"
       },
       {
         "questionText": "A base that dissolves in water is called an _____.",
-        "options": [],
-        "correctAnswer": "alkali",
+        "options": [
+          {
+            "id": "a",
+            "text": "acid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "salt",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "indicator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "alkali",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Soluble bases like sodium hydroxide are known as alkalis.",
         "difficulty": "medium"
       },
       {
         "questionText": "When an acid reacts with a base, the products are a salt and _____.",
-        "options": [],
-        "correctAnswer": "water",
+        "options": [
+          {
+            "id": "a",
+            "text": "water",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hydrogen",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "carbon dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "oxygen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Neutralisation always produces a salt and water.",
         "difficulty": "easy"
       },
       {
         "questionText": "The gas given off when a dilute acid reacts with a reactive metal is _____.",
-        "options": [],
-        "correctAnswer": "hydrogen",
+        "options": [
+          {
+            "id": "a",
+            "text": "oxygen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hydrogen",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "carbon dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chlorine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Hydrogen gas is released and produces a 'pop' with a burning splint.",
         "difficulty": "medium"
       },
       {
         "questionText": "An acid that ionises completely in water is described as a _____ acid.",
-        "options": [],
-        "correctAnswer": "strong",
+        "options": [
+          {
+            "id": "a",
+            "text": "weak",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "dilute",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "strong",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "concentrated",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Strong acids such as hydrochloric acid release all their hydrogen ions in water.",
         "difficulty": "medium"
       },
       {
         "questionText": "The gas produced when an acid reacts with a carbonate is carbon _____.",
-        "options": [],
-        "correctAnswer": "dioxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "monoxide",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "trioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "disulphide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dioxide",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Carbon dioxide is released and turns limewater milky.",
         "difficulty": "medium"
       },
       {
         "questionText": "Phenolphthalein indicator turns _____ when added to an alkaline solution.",
-        "options": [],
-        "correctAnswer": "pink",
+        "options": [
+          {
+            "id": "a",
+            "text": "pink",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "colourless",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "red",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "blue",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Phenolphthalein is colourless in acid but pink in alkali.",
         "difficulty": "medium"
       },
       {
         "questionText": "The acid present in the stomach that helps in digestion is hydrochloric _____.",
-        "options": [],
-        "correctAnswer": "acid",
+        "options": [
+          {
+            "id": "a",
+            "text": "base",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "acid",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "salt",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "alkali",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The stomach produces hydrochloric acid to help digest food and kill germs.",
         "difficulty": "easy"
       }

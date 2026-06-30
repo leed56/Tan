@@ -8,10 +8,26 @@
       {
         "questionText": "Which of the following is the logarithmic form of the index statement 2^5 = 32?",
         "options": [
-          {"id": "a", "text": "log_2 5 = 32", "isCorrect": false},
-          {"id": "b", "text": "log_2 32 = 5", "isCorrect": true},
-          {"id": "c", "text": "log_5 32 = 2", "isCorrect": false},
-          {"id": "d", "text": "log_32 2 = 5", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "log_2 5 = 32",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "log_2 32 = 5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "log_5 32 = 2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "log_32 2 = 5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "If a^x = n then log_a n = x, so 2^5 = 32 becomes log_2 32 = 5.",
@@ -20,10 +36,26 @@
       {
         "questionText": "What is the value of log_10 1000?",
         "options": [
-          {"id": "a", "text": "2", "isCorrect": false},
-          {"id": "b", "text": "3", "isCorrect": true},
-          {"id": "c", "text": "10", "isCorrect": false},
-          {"id": "d", "text": "100", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Since 10^3 = 1000, log_10 1000 = 3.",
@@ -32,10 +64,26 @@
       {
         "questionText": "The value of log_5 1 is:",
         "options": [
-          {"id": "a", "text": "0", "isCorrect": true},
-          {"id": "b", "text": "1", "isCorrect": false},
-          {"id": "c", "text": "5", "isCorrect": false},
-          {"id": "d", "text": "undefined", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "undefined",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "For any base a, a^0 = 1, therefore log_a 1 = 0, so log_5 1 = 0.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Using the laws of logarithms, log 4 + log 25 is equal to:",
         "options": [
-          {"id": "a", "text": "log 29", "isCorrect": false},
-          {"id": "b", "text": "log 100", "isCorrect": true},
-          {"id": "c", "text": "log 21", "isCorrect": false},
-          {"id": "d", "text": "log 625", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "log 29",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "log 100",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "log 21",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "log 625",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "log a + log b = log(ab), so log 4 + log 25 = log(4 x 25) = log 100.",
@@ -56,10 +120,26 @@
       {
         "questionText": "The expression log 60 - log 6 simplifies to:",
         "options": [
-          {"id": "a", "text": "log 10", "isCorrect": true},
-          {"id": "b", "text": "log 54", "isCorrect": false},
-          {"id": "c", "text": "log 66", "isCorrect": false},
-          {"id": "d", "text": "log 360", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "log 10",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "log 54",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "log 66",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "log 360",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "log a - log b = log(a/b), so log 60 - log 6 = log(60/6) = log 10.",
@@ -68,10 +148,26 @@
       {
         "questionText": "What is the value of log_2 16?",
         "options": [
-          {"id": "a", "text": "3", "isCorrect": false},
-          {"id": "b", "text": "4", "isCorrect": true},
-          {"id": "c", "text": "8", "isCorrect": false},
-          {"id": "d", "text": "2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Since 2^4 = 16, we have log_2 16 = 4.",
@@ -80,10 +176,26 @@
       {
         "questionText": "The characteristic of log 357 is:",
         "options": [
-          {"id": "a", "text": "1", "isCorrect": false},
-          {"id": "b", "text": "2", "isCorrect": true},
-          {"id": "c", "text": "3", "isCorrect": false},
-          {"id": "d", "text": "0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The characteristic of a common logarithm equals one less than the number of digits before the decimal point; 357 has 3 digits, so the characteristic is 3 - 1 = 2.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Given that log 2 = 0.3010, what is the value of log 8?",
         "options": [
-          {"id": "a", "text": "0.6020", "isCorrect": false},
-          {"id": "b", "text": "0.9030", "isCorrect": true},
-          {"id": "c", "text": "0.2408", "isCorrect": false},
-          {"id": "d", "text": "1.2040", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.6020",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.9030",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.2408",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.2040",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "log 8 = log 2^3 = 3 log 2 = 3 x 0.3010 = 0.9030.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Using log a^n = n log a, the expression log 5^2 equals:",
         "options": [
-          {"id": "a", "text": "2 log 5", "isCorrect": true},
-          {"id": "b", "text": "5 log 2", "isCorrect": false},
-          {"id": "c", "text": "log 10", "isCorrect": false},
-          {"id": "d", "text": "(log 5)^2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2 log 5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5 log 2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "log 10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(log 5)^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The power law of logarithms states log a^n = n log a, so log 5^2 = 2 log 5.",
@@ -116,10 +260,26 @@
       {
         "questionText": "If log_3 x = 4, then the value of x is:",
         "options": [
-          {"id": "a", "text": "12", "isCorrect": false},
-          {"id": "b", "text": "64", "isCorrect": false},
-          {"id": "c", "text": "81", "isCorrect": true},
-          {"id": "d", "text": "7", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "64",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "81",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "7",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "log_3 x = 4 means x = 3^4 = 81.",
@@ -128,10 +288,26 @@
       {
         "questionText": "The value of log_10 0.001 is:",
         "options": [
-          {"id": "a", "text": "3", "isCorrect": false},
-          {"id": "b", "text": "-3", "isCorrect": true},
-          {"id": "c", "text": "-2", "isCorrect": false},
-          {"id": "d", "text": "0.001", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.001",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "0.001 = 10^-3, therefore log_10 0.001 = -3.",
@@ -140,10 +316,26 @@
       {
         "questionText": "The number whose common logarithm is exactly 2 is:",
         "options": [
-          {"id": "a", "text": "20", "isCorrect": false},
-          {"id": "b", "text": "100", "isCorrect": true},
-          {"id": "c", "text": "200", "isCorrect": false},
-          {"id": "d", "text": "1000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "100",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "200",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "If log_10 n = 2 then n = 10^2 = 100; this is the antilogarithm of 2.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Simplify log 12 + log 5 - log 6.",
         "options": [
-          {"id": "a", "text": "log 10", "isCorrect": true},
-          {"id": "b", "text": "log 11", "isCorrect": false},
-          {"id": "c", "text": "log 60", "isCorrect": false},
-          {"id": "d", "text": "log 360", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "log 10",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "log 11",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "log 60",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "log 360",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Combine using the laws: log(12 x 5 / 6) = log(60/6) = log 10.",
@@ -164,10 +372,26 @@
       {
         "questionText": "If 10^x = 4500, in which two consecutive whole numbers does x lie?",
         "options": [
-          {"id": "a", "text": "Between 2 and 3", "isCorrect": false},
-          {"id": "b", "text": "Between 3 and 4", "isCorrect": true},
-          {"id": "c", "text": "Between 4 and 5", "isCorrect": false},
-          {"id": "d", "text": "Between 1 and 2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Between 2 and 3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Between 3 and 4",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Between 4 and 5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Between 1 and 2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Since 10^3 = 1000 and 10^4 = 10000, and 4500 lies between them, x = log 4500 lies between 3 and 4.",
@@ -176,10 +400,26 @@
       {
         "questionText": "What is the value of log_a a for any valid base a (where a > 0 and a is not 1)?",
         "options": [
-          {"id": "a", "text": "0", "isCorrect": false},
-          {"id": "b", "text": "1", "isCorrect": true},
-          {"id": "c", "text": "a", "isCorrect": false},
-          {"id": "d", "text": "10", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "a",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Since a^1 = a, it follows that log_a a = 1 for every valid base a.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The index statement 3^4 = 81 written in logarithmic form is log_3 81 = _____.",
-        "options": [],
-        "correctAnswer": "4",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "81",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Since a^x = n gives log_a n = x, the exponent 4 becomes the logarithm.",
         "difficulty": "easy"
       },
       {
         "questionText": "The value of log_10 100000 is _____.",
-        "options": [],
-        "correctAnswer": "5",
+        "options": [
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "100000 = 10^5, so log_10 100000 = 5.",
         "difficulty": "easy"
       },
       {
         "questionText": "Using the laws of logarithms, log 7 + log 2 = log _____.",
-        "options": [],
-        "correctAnswer": "14",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "14",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "72",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "log a + log b = log(ab), so log 7 + log 2 = log(7 x 2) = log 14.",
         "difficulty": "easy"
       },
       {
         "questionText": "The characteristic of the common logarithm of 4582 is _____.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3.66",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The number 4582 has 4 digits before the decimal point, so the characteristic is 4 - 1 = 3.",
         "difficulty": "medium"
       },
       {
         "questionText": "If log_10 x = 3, then the antilogarithm gives x = _____.",
-        "options": [],
-        "correctAnswer": "1000",
+        "options": [
+          {
+            "id": "a",
+            "text": "1000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "300",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "30",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "x = 10^3 = 1000, found by taking the antilogarithm of 3.",
         "difficulty": "easy"
       },
       {
         "questionText": "Given log 3 = 0.4771, the value of log 9 is _____.",
-        "options": [],
-        "correctAnswer": "0.9542",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.4771",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.9542",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1.4313",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.2386",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "log 9 = log 3^2 = 2 log 3 = 2 x 0.4771 = 0.9542.",
         "difficulty": "medium"
       },
       {
         "questionText": "The value of log_4 64 is _____.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Since 4^3 = 64, log_4 64 = 3.",
         "difficulty": "medium"
       },
       {
         "questionText": "Expressed as a single logarithm, 2 log 5 = log _____.",
-        "options": [],
-        "correctAnswer": "25",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "32",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "25",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "By the power law, 2 log 5 = log 5^2 = log 25.",
         "difficulty": "medium"
       },
       {
         "questionText": "The value of log_7 7 is _____.",
-        "options": [],
-        "correctAnswer": "1",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "49",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "For any valid base a, log_a a = 1, so log_7 7 = 1.",
         "difficulty": "easy"
       },
       {
         "questionText": "If log_2 x = 5, then x = _____.",
-        "options": [],
-        "correctAnswer": "32",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "32",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "log_2 x = 5 means x = 2^5 = 32.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Given that log 2 = 0.3010 and log 3 = 0.4771, what is the value of log 12?",
         "options": [
-          {"id": "a", "text": "0.7781", "isCorrect": false},
-          {"id": "b", "text": "1.0791", "isCorrect": true},
-          {"id": "c", "text": "1.2552", "isCorrect": false},
-          {"id": "d", "text": "0.9031", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.7781",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1.0791",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1.2552",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.9031",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "12 = 2^2 x 3, so log 12 = 2 log 2 + log 3 = 2(0.3010) + 0.4771 = 0.6020 + 0.4771 = 1.0791.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Solve for x in the equation log_2(x + 3) = 4.",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": false},
-          {"id": "b", "text": "11", "isCorrect": false},
-          {"id": "c", "text": "13", "isCorrect": true},
-          {"id": "d", "text": "16", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "11",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "13",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "16",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "log_2(x + 3) = 4 means x + 3 = 2^4 = 16, so x = 16 - 3 = 13.",
@@ -430,10 +912,26 @@
       {
         "questionText": "If log x + log(x - 3) = log 10, what is the value of x?",
         "options": [
-          {"id": "a", "text": "2", "isCorrect": false},
-          {"id": "b", "text": "5", "isCorrect": true},
-          {"id": "c", "text": "-2", "isCorrect": false},
-          {"id": "d", "text": "10", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "log x + log(x - 3) = log[x(x - 3)] = log 10, so x(x - 3) = 10, giving x^2 - 3x - 10 = 0, (x - 5)(x + 2) = 0; x must be positive and greater than 3, so x = 5.",

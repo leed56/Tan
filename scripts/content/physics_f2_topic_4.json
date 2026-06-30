@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The turning effect of a force about a point is called the _____ of the force.",
-        "options": [],
-        "correctAnswer": "moment",
+        "options": [
+          {
+            "id": "a",
+            "text": "moment",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "impulse",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "momentum",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "inertia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The moment of a force measures its turning effect about a pivot.",
         "difficulty": "easy"
       },
       {
         "questionText": "The formula for the moment of a force is moment = force x _____ distance.",
-        "options": [],
-        "correctAnswer": "perpendicular",
+        "options": [
+          {
+            "id": "a",
+            "text": "horizontal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "perpendicular",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "vertical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "diagonal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The distance used is the perpendicular distance from the pivot to the line of action of the force.",
         "difficulty": "easy"
       },
       {
         "questionText": "A force of 15 N acts at a perpendicular distance of 2 m from a pivot. The moment produced is _____ N m.",
-        "options": [],
-        "correctAnswer": "30",
+        "options": [
+          {
+            "id": "a",
+            "text": "15",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7.5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "30",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "17",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Moment = 15 N x 2 m = 30 N m.",
         "difficulty": "easy"
       },
       {
         "questionText": "The fixed point about which a lever turns is called the _____ (or pivot).",
-        "options": [],
-        "correctAnswer": "fulcrum",
+        "options": [
+          {
+            "id": "a",
+            "text": "lever",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "effort",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "load",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fulcrum",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A lever rotates about its fulcrum, also known as the pivot.",
         "difficulty": "easy"
       },
       {
         "questionText": "According to the principle of moments, for a balanced body the total clockwise moment equals the total _____ moment.",
-        "options": [],
-        "correctAnswer": "anticlockwise",
+        "options": [
+          {
+            "id": "a",
+            "text": "anticlockwise",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "clockwise",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "downward",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "upward",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Balance requires clockwise moments to equal anticlockwise moments about the same point.",
         "difficulty": "easy"
       },
       {
         "questionText": "A 10 N weight is placed 0.6 m from a pivot. To balance it, a 12 N weight must be placed _____ m from the pivot on the other side.",
-        "options": [],
-        "correctAnswer": "0.5",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.72",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "10 x 0.6 = 6 N m; 12 x d = 6, so d = 6 / 12 = 0.5 m.",
         "difficulty": "medium"
       },
       {
         "questionText": "For a uniform body, the centre of gravity is located at the _____ of the body.",
-        "options": [],
-        "correctAnswer": "centre",
+        "options": [
+          {
+            "id": "a",
+            "text": "edge",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "surface",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "centre",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "base",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "In a uniform (regularly shaped) body the centre of gravity lies at its geometric centre.",
         "difficulty": "easy"
       },
       {
         "questionText": "The type of equilibrium in which a body topples further away when slightly displaced is called _____ equilibrium.",
-        "options": [],
-        "correctAnswer": "unstable",
+        "options": [
+          {
+            "id": "a",
+            "text": "stable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "neutral",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rigid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "unstable",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "In unstable equilibrium the centre of gravity falls when displaced, so the body topples over.",
         "difficulty": "medium"
       },
       {
         "questionText": "Two equal and opposite parallel forces that do not share the same line of action form a _____.",
-        "options": [],
-        "correctAnswer": "couple",
+        "options": [
+          {
+            "id": "a",
+            "text": "couple",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "moment",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "torque",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "lever",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A couple consists of two equal, opposite, parallel forces that produce only a turning effect.",
         "difficulty": "medium"
       },
       {
         "questionText": "A couple consists of two 8 N forces acting 0.25 m apart. The moment of this couple is _____ N m.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "32",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Moment of a couple = force x distance between forces = 8 x 0.25 = 2 N m.",
         "difficulty": "medium"
       }

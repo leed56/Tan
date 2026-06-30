@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A _____ is a legally recognised member of a particular state.",
-        "options": [],
-        "correctAnswer": "citizen",
+        "options": [
+          {
+            "id": "a",
+            "text": "citizen",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "foreigner",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "refugee",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tourist",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A citizen belongs legally to a state and enjoys its rights while fulfilling its duties.",
         "difficulty": "easy"
       },
       {
         "questionText": "The legal status of belonging to a state, together with its rights and duties, is called _____.",
-        "options": [],
-        "correctAnswer": "citizenship",
+        "options": [
+          {
+            "id": "a",
+            "text": "nationality",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "citizenship",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "residency",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ancestry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Citizenship is the status of being a recognised member of a state.",
         "difficulty": "easy"
       },
       {
         "questionText": "A person born within a country or to citizen parents acquires citizenship by _____.",
-        "options": [],
-        "correctAnswer": "birth",
+        "options": [
+          {
+            "id": "a",
+            "text": "marriage",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "registration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "birth",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "investment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Citizenship by birth is the most common way of becoming a citizen.",
         "difficulty": "easy"
       },
       {
         "questionText": "A foreigner who fulfils legal conditions and a residence period may gain citizenship through _____.",
-        "options": [],
-        "correctAnswer": "naturalisation",
+        "options": [
+          {
+            "id": "a",
+            "text": "descent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "adoption",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "declaration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "naturalisation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Naturalisation grants citizenship to qualifying foreigners after meeting legal requirements.",
         "difficulty": "medium"
       },
       {
         "questionText": "The strong love and loyalty a citizen has for their country is known as _____.",
-        "options": [],
-        "correctAnswer": "patriotism",
+        "options": [
+          {
+            "id": "a",
+            "text": "patriotism",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "tribalism",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nationality",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "leadership",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Patriotism motivates citizens to serve and protect their nation.",
         "difficulty": "easy"
       },
       {
         "questionText": "Paying _____ provides the government with funds to deliver public services.",
-        "options": [],
-        "correctAnswer": "taxes",
+        "options": [
+          {
+            "id": "a",
+            "text": "fines",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "taxes",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tips",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rents",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Tax revenue finances schools, hospitals, roads and other services.",
         "difficulty": "easy"
       },
       {
         "questionText": "Choosing leaders by casting a ballot in an election is called _____.",
-        "options": [],
-        "correctAnswer": "voting",
+        "options": [
+          {
+            "id": "a",
+            "text": "lobbying",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "campaigning",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "voting",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "petitioning",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Voting is a key form of civic participation in a democracy.",
         "difficulty": "easy"
       },
       {
         "questionText": "Voluntary work done to improve the welfare of one's community is called community _____.",
-        "options": [],
-        "correctAnswer": "service",
+        "options": [
+          {
+            "id": "a",
+            "text": "leave",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "duty",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "labour",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "service",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Community service shows commitment to the common good.",
         "difficulty": "medium"
       },
       {
         "questionText": "The state in which citizens of different backgrounds live together in peace as one people is called national _____.",
-        "options": [],
-        "correctAnswer": "unity",
+        "options": [
+          {
+            "id": "a",
+            "text": "unity",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "security",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "equality",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "liberty",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "National unity binds diverse people together as one nation.",
         "difficulty": "medium"
       },
       {
         "questionText": "Obeying the _____ of the country is an important duty of every responsible citizen.",
-        "options": [],
-        "correctAnswer": "law",
+        "options": [
+          {
+            "id": "a",
+            "text": "king",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "law",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "elders",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "majority",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Obeying the law maintains peace, order and justice in society.",
         "difficulty": "easy"
       }

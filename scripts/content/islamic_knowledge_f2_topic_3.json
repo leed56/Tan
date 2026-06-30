@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Fasting in Ramadan is the _____ pillar of Islam.",
-        "options": [],
-        "correctAnswer": "fourth",
+        "options": [
+          {
+            "id": "a",
+            "text": "fourth",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "third",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "second",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fifth",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Sawm is the fourth of the five pillars of Islam.",
         "difficulty": "easy"
       },
       {
         "questionText": "The pre-dawn meal eaten before beginning the fast is called _____.",
-        "options": [],
-        "correctAnswer": "Suhur",
+        "options": [
+          {
+            "id": "a",
+            "text": "Iftar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Suhur",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Sahur prayer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Tarawih",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Suhur is taken before Fajr to provide energy for the day's fast.",
         "difficulty": "easy"
       },
       {
         "questionText": "Breaking the fast at sunset is known as _____.",
-        "options": [],
-        "correctAnswer": "Iftar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Suhur",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tarawih",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Iftar",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "I'tikaf",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Iftar is the meal that ends the day's fast at Maghrib.",
         "difficulty": "easy"
       },
       {
         "questionText": "A Muslim fasts each day from dawn until _____.",
-        "options": [],
-        "correctAnswer": "sunset",
+        "options": [
+          {
+            "id": "a",
+            "text": "midday",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "midnight",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dawn",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sunset",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The fast lasts from Fajr (dawn) to Maghrib (sunset).",
         "difficulty": "easy"
       },
       {
         "questionText": "The Arabic word Sawm literally means to _____.",
-        "options": [],
-        "correctAnswer": "abstain",
+        "options": [
+          {
+            "id": "a",
+            "text": "abstain",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pray",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "give",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "travel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Sawm means to abstain or refrain from food, drink and other invalidating acts.",
         "difficulty": "medium"
       },
       {
         "questionText": "Making up a missed obligatory fast on another day is called _____.",
-        "options": [],
-        "correctAnswer": "Qada",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kaffarah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Qada",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Fidyah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Niyyah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Qada refers to making up fasts missed for valid reasons such as illness or travel.",
         "difficulty": "medium"
       },
       {
         "questionText": "The voluntary night prayer performed during the nights of Ramadan is called _____.",
-        "options": [],
-        "correctAnswer": "Tarawih",
+        "options": [
+          {
+            "id": "a",
+            "text": "Witr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tahajjud",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Tarawih",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Duha",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Tarawih is offered after the Isha prayer during Ramadan.",
         "difficulty": "medium"
       },
       {
         "questionText": "The main spiritual aim of fasting, mentioned in the Quran, is to attain _____.",
-        "options": [],
-        "correctAnswer": "Taqwa",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sabr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ihsan",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Iman",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Taqwa",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Taqwa means God-consciousness and self-restraint, the chief goal of fasting.",
         "difficulty": "medium"
       },
       {
         "questionText": "A person who is _____ may be excused from fasting and make up the days when recovered.",
-        "options": [],
-        "correctAnswer": "sick",
+        "options": [
+          {
+            "id": "a",
+            "text": "sick",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "wealthy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "young",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fasting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Illness is a valid reason for exemption, after which the missed days are made up.",
         "difficulty": "easy"
       },
       {
         "questionText": "It is recommended to break the fast quickly at sunset and to delay the _____ meal until close to dawn.",
-        "options": [],
-        "correctAnswer": "Suhur",
+        "options": [
+          {
+            "id": "a",
+            "text": "Iftar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Suhur",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Tarawih",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Eid",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Hastening Iftar and delaying Suhur until near dawn are recommended practices in Ramadan.",
         "difficulty": "hard"
       }

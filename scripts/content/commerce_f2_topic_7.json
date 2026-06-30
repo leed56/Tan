@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "Settling a debt immediately using coins and banknotes is known as _____ payment.",
-        "options": [],
-        "correctAnswer": "cash",
+        "options": [
+          {"id": "a", "text": "cash", "isCorrect": true},
+          {"id": "b", "text": "credit", "isCorrect": false},
+          {"id": "c", "text": "barter", "isCorrect": false},
+          {"id": "d", "text": "deferred", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Cash payment uses legal tender and is the simplest and most immediate means of payment.",
         "difficulty": "easy"
       },
       {
         "questionText": "The person named on a cheque to whom the money is to be paid is called the _____.",
-        "options": [],
-        "correctAnswer": "payee",
+        "options": [
+          {"id": "a", "text": "drawer", "isCorrect": false},
+          {"id": "b", "text": "payee", "isCorrect": true},
+          {"id": "c", "text": "drawee", "isCorrect": false},
+          {"id": "d", "text": "endorser", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "The payee is the person or business that receives the payment stated on the cheque.",
         "difficulty": "easy"
       },
       {
         "questionText": "The bank on which a cheque is drawn and which is ordered to pay is called the _____.",
-        "options": [],
-        "correctAnswer": "drawee",
+        "options": [
+          {"id": "a", "text": "payee", "isCorrect": false},
+          {"id": "b", "text": "drawer", "isCorrect": false},
+          {"id": "c", "text": "drawee", "isCorrect": true},
+          {"id": "d", "text": "endorser", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "The drawee is the bank that holds the drawer's account and is instructed to make the payment.",
         "difficulty": "medium"
       },
       {
         "questionText": "An instruction to the bank to pay a fixed amount on regular dates is called a _____ order.",
-        "options": [],
-        "correctAnswer": "standing",
+        "options": [
+          {"id": "a", "text": "stopping", "isCorrect": false},
+          {"id": "b", "text": "banker's", "isCorrect": false},
+          {"id": "c", "text": "postal", "isCorrect": false},
+          {"id": "d", "text": "standing", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "A standing order suits regular fixed payments such as rent or loan instalments.",
         "difficulty": "medium"
       },
       {
         "questionText": "A pre-paid order to pay that is drawn on and guaranteed by a bank is called a bank _____.",
-        "options": [],
-        "correctAnswer": "draft",
+        "options": [
+          {"id": "a", "text": "draft", "isCorrect": true},
+          {"id": "b", "text": "note", "isCorrect": false},
+          {"id": "c", "text": "order", "isCorrect": false},
+          {"id": "d", "text": "voucher", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "A bank draft is trusted because the bank itself guarantees the payment.",
         "difficulty": "medium"
       },
       {
         "questionText": "Drawing two parallel lines across the face of a cheque is known as _____ the cheque.",
-        "options": [],
-        "correctAnswer": "crossing",
+        "options": [
+          {"id": "a", "text": "endorsing", "isCorrect": false},
+          {"id": "b", "text": "crossing", "isCorrect": true},
+          {"id": "c", "text": "stamping", "isCorrect": false},
+          {"id": "d", "text": "clearing", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Crossing makes a cheque safer because it must be paid into a bank account rather than cashed over the counter.",
         "difficulty": "medium"
       },
       {
         "questionText": "Sending money over the internet to pay for goods bought online is called _____ payment.",
-        "options": [],
-        "correctAnswer": "electronic",
+        "options": [
+          {"id": "a", "text": "manual", "isCorrect": false},
+          {"id": "b", "text": "postal", "isCorrect": false},
+          {"id": "c", "text": "electronic", "isCorrect": true},
+          {"id": "d", "text": "telephone", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Electronic or online payment is widely used in e-commerce to pay using digital details.",
         "difficulty": "easy"
       },
       {
         "questionText": "A method that lets one payer settle many people's accounts at once using a single bank instruction is called a credit _____.",
-        "options": [],
-        "correctAnswer": "transfer",
+        "options": [
+          {"id": "a", "text": "voucher", "isCorrect": false},
+          {"id": "b", "text": "deposit", "isCorrect": false},
+          {"id": "c", "text": "withdrawal", "isCorrect": false},
+          {"id": "d", "text": "transfer", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "A credit transfer is convenient for employers paying wages into many workers' accounts.",
         "difficulty": "hard"
       },
       {
         "questionText": "A cheque that is too old to be paid, usually after six months, is described as a _____ cheque.",
-        "options": [],
-        "correctAnswer": "stale",
+        "options": [
+          {"id": "a", "text": "stale", "isCorrect": true},
+          {"id": "b", "text": "open", "isCorrect": false},
+          {"id": "c", "text": "blank", "isCorrect": false},
+          {"id": "d", "text": "dishonoured", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Banks refuse to honour stale cheques because they have passed their valid period.",
         "difficulty": "hard"
       },
       {
         "questionText": "Under a _____ debit, the organisation receiving the money may collect varying amounts from the payer's account with prior permission.",
-        "options": [],
-        "correctAnswer": "direct",
+        "options": [
+          {"id": "a", "text": "standing", "isCorrect": false},
+          {"id": "b", "text": "direct", "isCorrect": true},
+          {"id": "c", "text": "credit", "isCorrect": false},
+          {"id": "d", "text": "banker's", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Direct debit suits bills that change in amount, such as electricity and water bills.",
         "difficulty": "medium"
       }

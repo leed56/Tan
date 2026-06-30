@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The permanent and irreversible increase in the size and dry mass of an organism is called _____.",
-        "options": [],
-        "correctAnswer": "growth",
+        "options": [
+          {
+            "id": "a",
+            "text": "growth",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "respiration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "excretion",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reproduction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Growth is one of the characteristics of living things and involves a lasting increase in size and mass.",
         "difficulty": "easy"
       },
       {
         "questionText": "The increase in the number of cells through division is known as cell _____.",
-        "options": [],
-        "correctAnswer": "division",
+        "options": [
+          {
+            "id": "a",
+            "text": "differentiation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "division",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "elongation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "respiration",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Cell division increases cell number and is a key aspect of growth.",
         "difficulty": "easy"
       },
       {
         "questionText": "The specialisation of cells to perform particular functions is called cell _____.",
-        "options": [],
-        "correctAnswer": "differentiation",
+        "options": [
+          {
+            "id": "a",
+            "text": "division",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "elongation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "differentiation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "germination",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Differentiation produces specialised cells such as nerve and muscle cells.",
         "difficulty": "medium"
       },
       {
         "questionText": "The most reliable measure of growth, which excludes water content, is the _____ mass.",
-        "options": [],
-        "correctAnswer": "dry",
+        "options": [
+          {
+            "id": "a",
+            "text": "wet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fresh",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "live",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dry",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Dry mass is measured after removing all water, giving a reliable indication of true growth.",
         "difficulty": "medium"
       },
       {
         "questionText": "Plant tissue made up of actively dividing cells is called _____ tissue.",
-        "options": [],
-        "correctAnswer": "meristematic",
+        "options": [
+          {
+            "id": "a",
+            "text": "meristematic",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "epidermal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "parenchyma",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "permanent",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Meristematic tissue is found at root and shoot tips and is responsible for plant growth.",
         "difficulty": "medium"
       },
       {
         "questionText": "The embryonic root of a seed that grows first during germination is called the _____.",
-        "options": [],
-        "correctAnswer": "radicle",
+        "options": [
+          {
+            "id": "a",
+            "text": "plumule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "radicle",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cotyledon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "coleoptile",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The radicle emerges first and develops into the root system.",
         "difficulty": "easy"
       },
       {
         "questionText": "The embryonic shoot of a seed that grows upwards is called the _____.",
-        "options": [],
-        "correctAnswer": "plumule",
+        "options": [
+          {
+            "id": "a",
+            "text": "radicle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cotyledon",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "plumule",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "coleoptile",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The plumule develops into the stem and the first leaves of the plant.",
         "difficulty": "easy"
       },
       {
         "questionText": "The S-shaped curve obtained when growth is plotted against time is called a _____ curve.",
-        "options": [],
-        "correctAnswer": "sigmoid",
+        "options": [
+          {
+            "id": "a",
+            "text": "linear",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "exponential",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "parabolic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sigmoid",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A sigmoid curve shows lag, log (exponential) and stationary phases of growth.",
         "difficulty": "medium"
       },
       {
         "questionText": "Type of germination in which the cotyledons are pushed above the soil surface is called _____ germination.",
-        "options": [],
-        "correctAnswer": "epigeal",
+        "options": [
+          {
+            "id": "a",
+            "text": "epigeal",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hypogeal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "vivipary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "viviparous",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "In epigeal germination, such as in beans, the cotyledons rise above the ground.",
         "difficulty": "hard"
       },
       {
         "questionText": "The plant growth hormone that promotes cell elongation in the shoot is called _____.",
-        "options": [],
-        "correctAnswer": "auxin",
+        "options": [
+          {
+            "id": "a",
+            "text": "gibberellin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "auxin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cytokinin",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "abscisic acid",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Auxin stimulates elongation of cells in the growing regions of plants.",
         "difficulty": "medium"
       }

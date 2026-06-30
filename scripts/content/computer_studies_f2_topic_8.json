@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A malicious program that can copy itself and spread from one computer to another is called a _____.",
-        "options": [],
-        "correctAnswer": "virus",
+        "options": [
+          {
+            "id": "a",
+            "text": "virus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "firewall",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cookie",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "macro",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A virus is self-replicating malware that spreads and damages computers.",
         "difficulty": "easy"
       },
       {
         "questionText": "Software used to detect and remove malware is known as _____ software.",
-        "options": [],
-        "correctAnswer": "antivirus",
+        "options": [
+          {
+            "id": "a",
+            "text": "firewall",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "antivirus",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "spyware",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "adware",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Antivirus software scans for and removes viruses and other malware.",
         "difficulty": "easy"
       },
       {
         "questionText": "A secret code or word used to gain access to a computer account is called a _____.",
-        "options": [],
-        "correctAnswer": "password",
+        "options": [
+          {
+            "id": "a",
+            "text": "username",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "captcha",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "password",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "token",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A password is a secret used to verify a user's identity before granting access.",
         "difficulty": "easy"
       },
       {
         "questionText": "A _____ is a security system that filters network traffic to block unauthorised access.",
-        "options": [],
-        "correctAnswer": "firewall",
+        "options": [
+          {
+            "id": "a",
+            "text": "antivirus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "encryption",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "password",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "firewall",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A firewall controls traffic between a network and the outside, blocking unwanted connections.",
         "difficulty": "medium"
       },
       {
         "questionText": "Converting data into a secret coded form to keep it safe is called _____.",
-        "options": [],
-        "correctAnswer": "encryption",
+        "options": [
+          {
+            "id": "a",
+            "text": "encryption",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "compression",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "formatting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "authentication",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Encryption makes data unreadable to anyone without the correct decryption key.",
         "difficulty": "medium"
       },
       {
         "questionText": "Making a spare copy of data so it can be restored if the original is lost is called a _____.",
-        "options": [],
-        "correctAnswer": "backup",
+        "options": [
+          {
+            "id": "a",
+            "text": "restore",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shortcut",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A backup allows data to be recovered after loss, theft or damage.",
         "difficulty": "easy"
       },
       {
         "questionText": "Using another person's work or ideas and claiming them as your own is called _____.",
-        "options": [],
-        "correctAnswer": "plagiarism",
+        "options": [
+          {
+            "id": "a",
+            "text": "hacking",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "piracy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "plagiarism",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "forgery",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Plagiarism is academic dishonesty and a breach of ethics.",
         "difficulty": "easy"
       },
       {
         "questionText": "The illegal copying and use of software is known as software _____.",
-        "options": [],
-        "correctAnswer": "piracy",
+        "options": [
+          {
+            "id": "a",
+            "text": "plagiarism",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hacking",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fraud",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "piracy",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Software piracy violates the intellectual property rights of software owners.",
         "difficulty": "medium"
       },
       {
         "questionText": "The general term for harmful software such as viruses, worms and spyware is _____.",
-        "options": [],
-        "correctAnswer": "malware",
+        "options": [
+          {
+            "id": "a",
+            "text": "malware",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "spyware",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "adware",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ransomware",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Malware is any software designed to harm or exploit a computer system.",
         "difficulty": "medium"
       },
       {
         "questionText": "Sending fake emails to trick people into revealing passwords or bank details is called _____.",
-        "options": [],
-        "correctAnswer": "phishing",
+        "options": [
+          {
+            "id": "a",
+            "text": "spamming",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "phishing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hacking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "spoofing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Phishing relies on deception to steal sensitive personal information.",
         "difficulty": "hard"
       }

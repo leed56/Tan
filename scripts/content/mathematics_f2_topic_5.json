@@ -8,10 +8,26 @@
       {
         "questionText": "Two plane figures are said to be congruent if they have",
         "options": [
-          { "id": "a", "text": "the same shape but different sizes", "isCorrect": false },
-          { "id": "b", "text": "the same size but different shapes", "isCorrect": false },
-          { "id": "c", "text": "exactly the same shape and the same size", "isCorrect": true },
-          { "id": "d", "text": "the same area only", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "the same shape but different sizes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "the same size but different shapes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "exactly the same shape and the same size",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "the same area only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Congruent figures are identical copies of each other, so they must have both the same shape and the same size.",
@@ -20,10 +36,26 @@
       {
         "questionText": "In triangle ABC and triangle PQR, AB = PQ, BC = QR and AC = PR. Which condition shows the triangles are congruent?",
         "options": [
-          { "id": "a", "text": "SAS", "isCorrect": false },
-          { "id": "b", "text": "SSS", "isCorrect": true },
-          { "id": "c", "text": "ASA", "isCorrect": false },
-          { "id": "d", "text": "RHS", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "SAS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "SSS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ASA",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "RHS",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "All three pairs of corresponding sides are equal, which is the Side-Side-Side (SSS) condition.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Which of the following is NOT a valid condition for proving that two triangles are congruent?",
         "options": [
-          { "id": "a", "text": "ASA", "isCorrect": false },
-          { "id": "b", "text": "SAS", "isCorrect": false },
-          { "id": "c", "text": "AAA", "isCorrect": true },
-          { "id": "d", "text": "RHS", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "ASA",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "SAS",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "AAA",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "RHS",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "AAA (three equal angles) only proves the triangles are similar, not congruent, because the sizes may differ.",
@@ -44,10 +92,26 @@
       {
         "questionText": "The symbol used to show that two figures are congruent is",
         "options": [
-          { "id": "a", "text": "=", "isCorrect": false },
-          { "id": "b", "text": "≅", "isCorrect": true },
-          { "id": "c", "text": "~", "isCorrect": false },
-          { "id": "d", "text": "≈", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "=",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "≅",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "~",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "≈",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The symbol ≅ means 'is congruent to'; the symbol ~ on its own means 'is similar to'.",
@@ -56,10 +120,26 @@
       {
         "questionText": "In two congruent triangles, two angles fitted together at a point are equal because they are",
         "options": [
-          { "id": "a", "text": "corresponding angles", "isCorrect": true },
-          { "id": "b", "text": "opposite angles", "isCorrect": false },
-          { "id": "c", "text": "interior angles", "isCorrect": false },
-          { "id": "d", "text": "reflex angles", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "corresponding angles",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "opposite angles",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "interior angles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reflex angles",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In congruent triangles the matching (corresponding) angles are always equal in size.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Triangle DEF is congruent to triangle KLM. If angle D = 50 degrees and angle E = 70 degrees, what is angle M?",
         "options": [
-          { "id": "a", "text": "50 degrees", "isCorrect": false },
-          { "id": "b", "text": "70 degrees", "isCorrect": false },
-          { "id": "c", "text": "60 degrees", "isCorrect": true },
-          { "id": "d", "text": "120 degrees", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "50 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "70 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "60 degrees",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "120 degrees",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Angle F = 180 - 50 - 70 = 60 degrees, and since F corresponds to M, angle M = 60 degrees.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Which condition is used when two sides and the included angle of one triangle equal those of another?",
         "options": [
-          { "id": "a", "text": "SSS", "isCorrect": false },
-          { "id": "b", "text": "SAS", "isCorrect": true },
-          { "id": "c", "text": "AAS", "isCorrect": false },
-          { "id": "d", "text": "ASA", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "SSS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "SAS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "AAS",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ASA",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Two sides and the angle between them (the included angle) being equal is the Side-Angle-Side (SAS) condition.",
@@ -92,10 +204,26 @@
       {
         "questionText": "The RHS condition for congruence can only be applied to",
         "options": [
-          { "id": "a", "text": "any triangle", "isCorrect": false },
-          { "id": "b", "text": "equilateral triangles only", "isCorrect": false },
-          { "id": "c", "text": "right-angled triangles", "isCorrect": true },
-          { "id": "d", "text": "isosceles triangles only", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "any triangle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equilateral triangles only",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "right-angled triangles",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "isosceles triangles only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "RHS stands for Right angle-Hypotenuse-Side, so it applies only to right-angled triangles.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Triangle ABC is congruent to triangle XYZ with AB = 8 cm, BC = 5 cm and CA = 6 cm. What is the length of side YZ?",
         "options": [
-          { "id": "a", "text": "8 cm", "isCorrect": false },
-          { "id": "b", "text": "6 cm", "isCorrect": false },
-          { "id": "c", "text": "5 cm", "isCorrect": true },
-          { "id": "d", "text": "Cannot be found", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "8 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Cannot be found",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "BC corresponds to YZ in the congruence ABC ≅ XYZ, so YZ = BC = 5 cm.",
@@ -116,10 +260,26 @@
       {
         "questionText": "In triangle ABC and triangle DEF, angle B = angle E, BC = EF and angle C = angle F. The triangles are congruent by",
         "options": [
-          { "id": "a", "text": "SAS", "isCorrect": false },
-          { "id": "b", "text": "ASA", "isCorrect": true },
-          { "id": "c", "text": "SSS", "isCorrect": false },
-          { "id": "d", "text": "RHS", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "SAS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ASA",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "SSS",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "RHS",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Two angles and the side between them (the included side BC = EF) are equal, which is the Angle-Side-Angle (ASA) condition.",
@@ -128,10 +288,26 @@
       {
         "questionText": "If two triangles are congruent, which of the following must be equal?",
         "options": [
-          { "id": "a", "text": "Their areas only", "isCorrect": false },
-          { "id": "b", "text": "Their perimeters only", "isCorrect": false },
-          { "id": "c", "text": "All corresponding sides, angles, perimeters and areas", "isCorrect": true },
-          { "id": "d", "text": "Their largest angles only", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Their areas only",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Their perimeters only",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "All corresponding sides, angles, perimeters and areas",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Their largest angles only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Because congruent triangles are identical, every pair of corresponding measurements, including perimeter and area, is equal.",
@@ -140,10 +316,26 @@
       {
         "questionText": "In triangle PQR and triangle STU, angle Q = angle T = 90 degrees, hypotenuse PR = SU and PQ = ST. Which condition proves congruence?",
         "options": [
-          { "id": "a", "text": "ASA", "isCorrect": false },
-          { "id": "b", "text": "AAS", "isCorrect": false },
-          { "id": "c", "text": "RHS", "isCorrect": true },
-          { "id": "d", "text": "SSS", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "ASA",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "AAS",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "RHS",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "SSS",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A right angle, equal hypotenuses and one equal side give the Right angle-Hypotenuse-Side (RHS) condition.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Two triangles have angles 40 degrees, 60 degrees, 80 degrees each but one has sides twice as long as the other. The triangles are",
         "options": [
-          { "id": "a", "text": "congruent", "isCorrect": false },
-          { "id": "b", "text": "similar but not congruent", "isCorrect": true },
-          { "id": "c", "text": "neither similar nor congruent", "isCorrect": false },
-          { "id": "d", "text": "congruent by AAA", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "congruent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "similar but not congruent",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "neither similar nor congruent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "congruent by AAA",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Equal angles make them the same shape (similar), but different side lengths mean they are not the same size, so not congruent.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Given triangle ABC ≅ triangle DEF, which statement correctly lists a pair of corresponding angles?",
         "options": [
-          { "id": "a", "text": "angle A = angle E", "isCorrect": false },
-          { "id": "b", "text": "angle B = angle D", "isCorrect": false },
-          { "id": "c", "text": "angle C = angle F", "isCorrect": true },
-          { "id": "d", "text": "angle A = angle F", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "angle A = angle E",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "angle B = angle D",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "angle C = angle F",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "angle A = angle F",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "In the statement ABC ≅ DEF the vertices match in order, so A corresponds to D, B to E and C to F.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which of these conditions would FAIL to guarantee that two triangles are congruent?",
         "options": [
-          { "id": "a", "text": "SSS", "isCorrect": false },
-          { "id": "b", "text": "Two sides and a non-included angle (SSA)", "isCorrect": true },
-          { "id": "c", "text": "ASA", "isCorrect": false },
-          { "id": "d", "text": "SAS", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "SSS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Two sides and a non-included angle (SSA)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ASA",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "SAS",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "SSA (two sides and a non-included angle) is not a valid condition because it can produce two different triangles (the ambiguous case).",
@@ -187,49 +427,455 @@
       }
     ],
     "fib": [
-      { "questionText": "Figures that have exactly the same shape and the same size are called _____ figures.", "options": [], "correctAnswer": "congruent", "explanation": "Congruent figures are identical in both shape and size.", "difficulty": "easy" },
-      { "questionText": "The congruence condition in which all three pairs of sides are equal is abbreviated as _____.", "options": [], "correctAnswer": "SSS", "explanation": "SSS stands for Side-Side-Side.", "difficulty": "easy" },
-      { "questionText": "The angle that lies between the two known sides in the SAS condition is called the _____ angle.", "options": [], "correctAnswer": "included", "explanation": "SAS requires the angle to be the one included (lying) between the two sides.", "difficulty": "medium" },
-      { "questionText": "The symbol _____ is read as 'is congruent to'.", "options": [], "correctAnswer": "≅", "explanation": "The double symbol ≅ shows congruence between two figures.", "difficulty": "easy" },
-      { "questionText": "The condition RHS can only be used for _____ -angled triangles.", "options": [], "correctAnswer": "right", "explanation": "RHS applies only to right-angled triangles since R stands for the right angle.", "difficulty": "easy" },
-      { "questionText": "In RHS, the side labelled H stands for the _____ of the right-angled triangle.", "options": [], "correctAnswer": "hypotenuse", "explanation": "The hypotenuse is the longest side, opposite the right angle.", "difficulty": "medium" },
-      { "questionText": "Sides or angles that occupy the matching position in two congruent triangles are called _____ parts.", "options": [], "correctAnswer": "corresponding", "explanation": "Corresponding parts of congruent triangles are equal (CPCT).", "difficulty": "medium" },
-      { "questionText": "The condition AAA proves that two triangles are _____ but not necessarily congruent.", "options": [], "correctAnswer": "similar", "explanation": "Equal angles guarantee the same shape only, so the triangles are similar.", "difficulty": "medium" },
-      { "questionText": "If triangle ABC ≅ triangle DEF, then side AB corresponds to side _____.", "options": [], "correctAnswer": "DE", "explanation": "Matching the vertices in order, AB corresponds to DE.", "difficulty": "medium" },
-      { "questionText": "The congruence condition needing two angles and the side between them is called _____.", "options": [], "correctAnswer": "ASA", "explanation": "ASA stands for Angle-Side-Angle, where the side is included between the two angles.", "difficulty": "easy" }
+      {
+        "questionText": "Figures that have exactly the same shape and the same size are called _____ figures.",
+        "options": [
+          {
+            "id": "a",
+            "text": "congruent",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "similar",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "equal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "identical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Congruent figures are identical in both shape and size.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The congruence condition in which all three pairs of sides are equal is abbreviated as _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "SAS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "SSS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ASA",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "RHS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "SSS stands for Side-Side-Side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The angle that lies between the two known sides in the SAS condition is called the _____ angle.",
+        "options": [
+          {
+            "id": "a",
+            "text": "adjacent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "exterior",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "included",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "corresponding",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "SAS requires the angle to be the one included (lying) between the two sides.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The symbol _____ is read as 'is congruent to'.",
+        "options": [
+          {
+            "id": "a",
+            "text": "≈",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "~",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "≅",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "The double symbol ≅ shows congruence between two figures.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The condition RHS can only be used for _____ -angled triangles.",
+        "options": [
+          {
+            "id": "a",
+            "text": "right",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "acute",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "obtuse",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "equilateral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "RHS applies only to right-angled triangles since R stands for the right angle.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In RHS, the side labelled H stands for the _____ of the right-angled triangle.",
+        "options": [
+          {
+            "id": "a",
+            "text": "height",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hypotenuse",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "adjacent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "base",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The hypotenuse is the longest side, opposite the right angle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Sides or angles that occupy the matching position in two congruent triangles are called _____ parts.",
+        "options": [
+          {
+            "id": "a",
+            "text": "adjacent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "opposite",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "corresponding",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "alternate",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Corresponding parts of congruent triangles are equal (CPCT).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The condition AAA proves that two triangles are _____ but not necessarily congruent.",
+        "options": [
+          {
+            "id": "a",
+            "text": "congruent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "identical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "similar",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Equal angles guarantee the same shape only, so the triangles are similar.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If triangle ABC ≅ triangle DEF, then side AB corresponds to side _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "DE",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "EF",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "DF",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "BC",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Matching the vertices in order, AB corresponds to DE.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The congruence condition needing two angles and the side between them is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "SAS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ASA",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "SSS",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "AAS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "ASA stands for Angle-Side-Angle, where the side is included between the two angles.",
+        "difficulty": "easy"
+      }
     ],
     "tf": [
-      { "questionText": "All congruent figures are also similar.", "options": [], "correctAnswer": "true", "explanation": "Congruent figures have equal angles and proportional (in fact equal) sides, so they satisfy the conditions for similarity.", "difficulty": "medium" },
-      { "questionText": "All similar figures are always congruent.", "options": [], "correctAnswer": "false", "explanation": "Similar figures have the same shape but may differ in size, so they are not always congruent.", "difficulty": "medium" },
-      { "questionText": "The AAA condition is enough to prove that two triangles are congruent.", "options": [], "correctAnswer": "false", "explanation": "AAA only proves similarity; the triangles could be different sizes.", "difficulty": "medium" },
-      { "questionText": "Congruent triangles always have equal areas.", "options": [], "correctAnswer": "true", "explanation": "Since congruent triangles are identical in shape and size, their areas are equal.", "difficulty": "easy" },
-      { "questionText": "RHS can be applied to any triangle regardless of its angles.", "options": [], "correctAnswer": "false", "explanation": "RHS works only for right-angled triangles because it requires a right angle.", "difficulty": "easy" },
-      { "questionText": "In the SAS condition the equal angle must be the one included between the two equal sides.", "options": [], "correctAnswer": "true", "explanation": "If the angle is not the included angle, the condition becomes SSA, which does not guarantee congruence.", "difficulty": "medium" },
-      { "questionText": "If two triangles are congruent, their corresponding angles may be different.", "options": [], "correctAnswer": "false", "explanation": "Corresponding angles of congruent triangles are always equal.", "difficulty": "easy" },
-      { "questionText": "The condition SSA always guarantees that two triangles are congruent.", "options": [], "correctAnswer": "false", "explanation": "SSA is ambiguous and can give two different triangles, so it is not a valid congruence condition.", "difficulty": "hard" },
-      { "questionText": "Reflecting (flipping) a triangle over a line produces a triangle congruent to the original.", "options": [], "correctAnswer": "true", "explanation": "Reflection keeps all lengths and angles unchanged, so the image is congruent to the object.", "difficulty": "medium" },
-      { "questionText": "Two congruent triangles must have equal perimeters.", "options": [], "correctAnswer": "true", "explanation": "Because all corresponding sides are equal, the sums of the sides (perimeters) are also equal.", "difficulty": "easy" }
+      {
+        "questionText": "All congruent figures are also similar.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Congruent figures have equal angles and proportional (in fact equal) sides, so they satisfy the conditions for similarity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "All similar figures are always congruent.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Similar figures have the same shape but may differ in size, so they are not always congruent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The AAA condition is enough to prove that two triangles are congruent.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "AAA only proves similarity; the triangles could be different sizes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Congruent triangles always have equal areas.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Since congruent triangles are identical in shape and size, their areas are equal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "RHS can be applied to any triangle regardless of its angles.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "RHS works only for right-angled triangles because it requires a right angle.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the SAS condition the equal angle must be the one included between the two equal sides.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "If the angle is not the included angle, the condition becomes SSA, which does not guarantee congruence.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If two triangles are congruent, their corresponding angles may be different.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Corresponding angles of congruent triangles are always equal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The condition SSA always guarantees that two triangles are congruent.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "SSA is ambiguous and can give two different triangles, so it is not a valid congruence condition.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Reflecting (flipping) a triangle over a line produces a triangle congruent to the original.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Reflection keeps all lengths and angles unchanged, so the image is congruent to the object.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two congruent triangles must have equal perimeters.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Because all corresponding sides are equal, the sums of the sides (perimeters) are also equal.",
+        "difficulty": "easy"
+      }
     ],
     "summary": [
-      { "questionText": "Definition of congruent figures", "options": [], "correctAnswer": "Figures with exactly the same shape and the same size.", "explanation": "One can be placed exactly on top of the other.", "difficulty": "easy" },
-      { "questionText": "Symbol for congruence", "options": [], "correctAnswer": "≅ means 'is congruent to'.", "explanation": "Different from ~ which means 'is similar to'.", "difficulty": "easy" },
-      { "questionText": "The five conditions for congruent triangles", "options": [], "correctAnswer": "SSS, SAS, ASA, AAS and RHS.", "explanation": "Each guarantees the triangles are identical.", "difficulty": "easy" },
-      { "questionText": "SSS condition", "options": [], "correctAnswer": "All three pairs of corresponding sides are equal.", "explanation": "Side-Side-Side.", "difficulty": "easy" },
-      { "questionText": "SAS condition", "options": [], "correctAnswer": "Two sides and the included angle are equal.", "explanation": "The angle must lie between the two sides.", "difficulty": "easy" },
-      { "questionText": "ASA condition", "options": [], "correctAnswer": "Two angles and the included side are equal.", "explanation": "The side lies between the two angles.", "difficulty": "easy" },
-      { "questionText": "AAS condition", "options": [], "correctAnswer": "Two angles and a non-included side are equal.", "explanation": "The third angle is fixed since angles sum to 180 degrees.", "difficulty": "easy" },
-      { "questionText": "RHS condition", "options": [], "correctAnswer": "Right angle, equal hypotenuse and one equal side in right-angled triangles.", "explanation": "Right angle-Hypotenuse-Side.", "difficulty": "easy" },
-      { "questionText": "Why AAA fails for congruence", "options": [], "correctAnswer": "Equal angles give the same shape but not the same size, so only similarity is proved.", "explanation": "Sides may be scaled up or down.", "difficulty": "easy" },
-      { "questionText": "Corresponding parts of congruent triangles", "options": [], "correctAnswer": "All matching sides and angles are equal (CPCT).", "explanation": "Read vertices in the same order to find them.", "difficulty": "easy" }
+      {
+        "questionText": "Definition of congruent figures",
+        "options": [],
+        "correctAnswer": "Figures with exactly the same shape and the same size.",
+        "explanation": "One can be placed exactly on top of the other.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Symbol for congruence",
+        "options": [],
+        "correctAnswer": "≅ means 'is congruent to'.",
+        "explanation": "Different from ~ which means 'is similar to'.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The five conditions for congruent triangles",
+        "options": [],
+        "correctAnswer": "SSS, SAS, ASA, AAS and RHS.",
+        "explanation": "Each guarantees the triangles are identical.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "SSS condition",
+        "options": [],
+        "correctAnswer": "All three pairs of corresponding sides are equal.",
+        "explanation": "Side-Side-Side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "SAS condition",
+        "options": [],
+        "correctAnswer": "Two sides and the included angle are equal.",
+        "explanation": "The angle must lie between the two sides.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "ASA condition",
+        "options": [],
+        "correctAnswer": "Two angles and the included side are equal.",
+        "explanation": "The side lies between the two angles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "AAS condition",
+        "options": [],
+        "correctAnswer": "Two angles and a non-included side are equal.",
+        "explanation": "The third angle is fixed since angles sum to 180 degrees.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "RHS condition",
+        "options": [],
+        "correctAnswer": "Right angle, equal hypotenuse and one equal side in right-angled triangles.",
+        "explanation": "Right angle-Hypotenuse-Side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why AAA fails for congruence",
+        "options": [],
+        "correctAnswer": "Equal angles give the same shape but not the same size, so only similarity is proved.",
+        "explanation": "Sides may be scaled up or down.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Corresponding parts of congruent triangles",
+        "options": [],
+        "correctAnswer": "All matching sides and angles are equal (CPCT).",
+        "explanation": "Read vertices in the same order to find them.",
+        "difficulty": "easy"
+      }
     ],
     "hoq": [
       {
         "questionText": "In triangle ABC, AB = AC and AD is drawn from A to the midpoint D of BC. Which congruence condition proves that triangle ABD is congruent to triangle ACD?",
         "options": [
-          { "id": "a", "text": "ASA", "isCorrect": false },
-          { "id": "b", "text": "SSS", "isCorrect": true },
-          { "id": "c", "text": "RHS", "isCorrect": false },
-          { "id": "d", "text": "AAA", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "ASA",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "SSS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "RHS",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "AAA",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "AB = AC (given), BD = DC (D is the midpoint) and AD = AD (common side), giving three equal sides, so SSS proves congruence.",
@@ -238,10 +884,26 @@
       {
         "questionText": "Triangle ABC ≅ triangle DEF. Given AB = (2x + 1) cm, DE = 9 cm, BC = (y + 3) cm and EF = 7 cm, find the value of x + y.",
         "options": [
-          { "id": "a", "text": "8", "isCorrect": true },
-          { "id": "b", "text": "6", "isCorrect": false },
-          { "id": "c", "text": "10", "isCorrect": false },
-          { "id": "d", "text": "12", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "AB = DE gives 2x + 1 = 9, so x = 4; BC = EF gives y + 3 = 7, so y = 4; therefore x + y = 8.",
@@ -250,10 +912,26 @@
       {
         "questionText": "Two right-angled triangles each have a hypotenuse of 13 cm and one other side of 5 cm. By RHS they are congruent, so what is the length of the remaining side in each triangle?",
         "options": [
-          { "id": "a", "text": "8 cm", "isCorrect": false },
-          { "id": "b", "text": "18 cm", "isCorrect": false },
-          { "id": "c", "text": "12 cm", "isCorrect": true },
-          { "id": "d", "text": "11 cm", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "8 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "18 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "11 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Using Pythagoras, the remaining side = sqrt(13^2 - 5^2) = sqrt(169 - 25) = sqrt(144) = 12 cm, the same in both congruent triangles.",

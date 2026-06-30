@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A letter written to people we know well, such as friends and relatives, is called an _____ letter.",
-        "options": [],
-        "correctAnswer": "informal",
+        "options": [
+          {
+            "id": "a",
+            "text": "informal",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "formal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "official",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "business",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Informal (or personal) letters are written to people we are close to and use a friendly tone.",
         "difficulty": "easy"
       },
       {
         "questionText": "A letter written to organisations, offices or strangers for official purposes is called a _____ letter.",
-        "options": [],
-        "correctAnswer": "formal",
+        "options": [
+          {
+            "id": "a",
+            "text": "informal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "formal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "personal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "friendly",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Formal (official) letters are used for business and official communication and use polite, standard language.",
         "difficulty": "easy"
       },
       {
         "questionText": "The greeting at the beginning of a letter, such as 'Dear Sir', is called the _____.",
-        "options": [],
-        "correctAnswer": "salutation",
+        "options": [
+          {
+            "id": "a",
+            "text": "signature",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "heading",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "salutation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "address",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The salutation is the opening greeting that addresses the reader.",
         "difficulty": "easy"
       },
       {
         "questionText": "A formal letter that begins with 'Dear Sir/Madam' should end with 'Yours _____'.",
-        "options": [],
-        "correctAnswer": "faithfully",
+        "options": [
+          {
+            "id": "a",
+            "text": "sincerely",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "truly",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kindly",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "faithfully",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "When the recipient's name is unknown, the correct closing is 'Yours faithfully'.",
         "difficulty": "medium"
       },
       {
         "questionText": "A formal letter that uses the receiver's actual name should end with 'Yours _____'.",
-        "options": [],
-        "correctAnswer": "sincerely",
+        "options": [
+          {
+            "id": "a",
+            "text": "sincerely",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "faithfully",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "truly",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kindly",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "When the recipient's name is used in the salutation, the correct closing is 'Yours sincerely'.",
         "difficulty": "medium"
       },
       {
         "questionText": "A short heading that states the main reason of a formal letter is called the _____.",
-        "options": [],
-        "correctAnswer": "subject",
+        "options": [
+          {
+            "id": "a",
+            "text": "address",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "subject",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "salutation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "signature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The subject line summarises the purpose of the letter for the reader.",
         "difficulty": "medium"
       },
       {
         "questionText": "The main part of the letter where the message is written is called the _____.",
-        "options": [],
-        "correctAnswer": "body",
+        "options": [
+          {
+            "id": "a",
+            "text": "heading",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "closing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "body",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "address",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The body contains the actual content and message of the letter.",
         "difficulty": "easy"
       },
       {
         "questionText": "In a formal letter there are two addresses: the writer's address and the _____ address.",
-        "options": [],
-        "correctAnswer": "receiver's",
+        "options": [
+          {
+            "id": "a",
+            "text": "sender's",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "writer's",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reader's",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "receiver's",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A formal letter shows both the writer's address and the receiver's (recipient's) address.",
         "difficulty": "medium"
       },
       {
         "questionText": "A formal letter written to ask for a job or a place is known as an _____ letter.",
-        "options": [],
-        "correctAnswer": "application",
+        "options": [
+          {
+            "id": "a",
+            "text": "application",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "invitation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "apology",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "inquiry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "An application letter formally requests a job, position or place.",
         "difficulty": "easy"
       },
       {
         "questionText": "The writer's own address is usually written at the top _____ corner of the letter.",
-        "options": [],
-        "correctAnswer": "right",
+        "options": [
+          {
+            "id": "a",
+            "text": "left",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "right",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "centre",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bottom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Traditionally, the writer's address and date appear at the top right-hand corner.",
         "difficulty": "medium"
       }

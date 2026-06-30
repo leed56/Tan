@@ -8,10 +8,26 @@
       {
         "questionText": "Which of the following best defines a set?",
         "options": [
-          {"id": "a", "text": "A collection of well-defined and distinct objects", "isCorrect": true},
-          {"id": "b", "text": "A list of numbers arranged in increasing order", "isCorrect": false},
-          {"id": "c", "text": "Any group of objects whether defined or not", "isCorrect": false},
-          {"id": "d", "text": "A pair of two equal numbers", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A collection of well-defined and distinct objects",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A list of numbers arranged in increasing order",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Any group of objects whether defined or not",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A pair of two equal numbers",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A set is a collection of well-defined and distinct (different) objects called elements.",
@@ -20,10 +36,26 @@
       {
         "questionText": "If A = {2, 4, 6, 8}, which statement is TRUE?",
         "options": [
-          {"id": "a", "text": "5 ∈ A", "isCorrect": false},
-          {"id": "b", "text": "6 ∈ A", "isCorrect": true},
-          {"id": "c", "text": "3 ∈ A", "isCorrect": false},
-          {"id": "d", "text": "8 ∉ A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5 ∈ A",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6 ∈ A",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "3 ∈ A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8 ∉ A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The symbol ∈ means 'is an element of'. Since 6 is listed in A, 6 ∈ A is true.",
@@ -32,10 +64,26 @@
       {
         "questionText": "How many elements are in the set B = {a, e, i, o, u}?",
         "options": [
-          {"id": "a", "text": "3", "isCorrect": false},
-          {"id": "b", "text": "4", "isCorrect": false},
-          {"id": "c", "text": "5", "isCorrect": true},
-          {"id": "d", "text": "6", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Set B contains the five vowels, so n(B) = 5.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which of the following is an empty set?",
         "options": [
-          {"id": "a", "text": "{0}", "isCorrect": false},
-          {"id": "b", "text": "Set of whole numbers between 3 and 4", "isCorrect": true},
-          {"id": "c", "text": "Set of even numbers less than 10", "isCorrect": false},
-          {"id": "d", "text": "{ } containing the number 1", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{0}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Set of whole numbers between 3 and 4",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Set of even numbers less than 10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{ } containing the number 1",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "There is no whole number strictly between 3 and 4, so the set has no elements and is empty.",
@@ -56,10 +120,26 @@
       {
         "questionText": "If P = {1, 2, 3}, how many subsets does P have?",
         "options": [
-          {"id": "a", "text": "6", "isCorrect": false},
-          {"id": "b", "text": "8", "isCorrect": true},
-          {"id": "c", "text": "9", "isCorrect": false},
-          {"id": "d", "text": "3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The number of subsets of a set with n elements is 2^n. Here 2^3 = 8.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Given A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, what is A ∩ B?",
         "options": [
-          {"id": "a", "text": "{1, 2, 5, 6}", "isCorrect": false},
-          {"id": "b", "text": "{3, 4}", "isCorrect": true},
-          {"id": "c", "text": "{1, 2, 3, 4, 5, 6}", "isCorrect": false},
-          {"id": "d", "text": "{ }", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{1, 2, 5, 6}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{3, 4}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{1, 2, 3, 4, 5, 6}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{ }",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The intersection A ∩ B contains only elements common to both sets, which are 3 and 4.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Given A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, what is A ∪ B?",
         "options": [
-          {"id": "a", "text": "{3, 4}", "isCorrect": false},
-          {"id": "b", "text": "{1, 2}", "isCorrect": false},
-          {"id": "c", "text": "{1, 2, 3, 4, 5, 6}", "isCorrect": true},
-          {"id": "d", "text": "{5, 6}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{3, 4}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{1, 2}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{1, 2, 3, 4, 5, 6}",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "{5, 6}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The union A ∪ B contains all elements that are in A or B (or both), listed once each.",
@@ -92,10 +204,26 @@
       {
         "questionText": "If the universal set U = {1, 2, 3, 4, 5, 6, 7} and A = {2, 4, 6}, what is A' (the complement of A)?",
         "options": [
-          {"id": "a", "text": "{1, 3, 5, 7}", "isCorrect": true},
-          {"id": "b", "text": "{2, 4, 6}", "isCorrect": false},
-          {"id": "c", "text": "{1, 2, 3, 4, 5, 6, 7}", "isCorrect": false},
-          {"id": "d", "text": "{1, 3, 5}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{1, 3, 5, 7}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "{2, 4, 6}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{1, 2, 3, 4, 5, 6, 7}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{1, 3, 5}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The complement A' contains all elements of U that are not in A, which are 1, 3, 5 and 7.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Two sets X and Y are called disjoint when:",
         "options": [
-          {"id": "a", "text": "They have exactly one element in common", "isCorrect": false},
-          {"id": "b", "text": "They have no element in common, so X ∩ Y = { }", "isCorrect": true},
-          {"id": "c", "text": "They contain the same elements", "isCorrect": false},
-          {"id": "d", "text": "One is a subset of the other", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "They have exactly one element in common",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "They have no element in common, so X ∩ Y = { }",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "They contain the same elements",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "One is a subset of the other",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Disjoint sets share no elements, so their intersection is the empty set.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Which symbol means 'is a subset of'?",
         "options": [
-          {"id": "a", "text": "∈", "isCorrect": false},
-          {"id": "b", "text": "∪", "isCorrect": false},
-          {"id": "c", "text": "⊆", "isCorrect": true},
-          {"id": "d", "text": "∩", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "∈",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "∪",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "⊆",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "∩",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The symbol ⊆ means 'is a subset of'; ∈ means 'element of', ∪ is union and ∩ is intersection.",
@@ -128,10 +288,26 @@
       {
         "questionText": "If n(A) = 12, n(B) = 9 and n(A ∩ B) = 4, what is n(A ∪ B)?",
         "options": [
-          {"id": "a", "text": "25", "isCorrect": false},
-          {"id": "b", "text": "21", "isCorrect": false},
-          {"id": "c", "text": "17", "isCorrect": true},
-          {"id": "d", "text": "13", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "21",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "17",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "13",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Using n(A ∪ B) = n(A) + n(B) − n(A ∩ B) = 12 + 9 − 4 = 17.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Set A = {2, 4} and set B = {2, 4}. These two sets are:",
         "options": [
-          {"id": "a", "text": "Disjoint sets", "isCorrect": false},
-          {"id": "b", "text": "Equal sets", "isCorrect": true},
-          {"id": "c", "text": "Empty sets", "isCorrect": false},
-          {"id": "d", "text": "Universal sets", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Disjoint sets",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Equal sets",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Empty sets",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Universal sets",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Two sets are equal when they contain exactly the same elements; both contain 2 and 4.",
@@ -152,10 +344,26 @@
       {
         "questionText": "In a class of 40 pupils, 25 like Mathematics and 18 like English. If 8 like both subjects, how many like neither subject?",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": true},
-          {"id": "b", "text": "7", "isCorrect": false},
-          {"id": "c", "text": "9", "isCorrect": false},
-          {"id": "d", "text": "3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Those liking at least one = 25 + 18 − 8 = 35, so those liking neither = 40 − 35 = 5.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Which of the following is always TRUE for any set A?",
         "options": [
-          {"id": "a", "text": "A ∩ A' = U", "isCorrect": false},
-          {"id": "b", "text": "A ∪ A' = U", "isCorrect": true},
-          {"id": "c", "text": "A ∪ A' = { }", "isCorrect": false},
-          {"id": "d", "text": "A' ⊆ A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A ∩ A' = U",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A ∪ A' = U",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A ∪ A' = { }",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A' ⊆ A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Every element of the universal set is either in A or not in A, so A ∪ A' = U.",
@@ -176,10 +400,26 @@
       {
         "questionText": "The set C = {x : x is an odd number, 1 ≤ x ≤ 9} written by listing is:",
         "options": [
-          {"id": "a", "text": "{1, 3, 5, 7, 9}", "isCorrect": true},
-          {"id": "b", "text": "{2, 4, 6, 8}", "isCorrect": false},
-          {"id": "c", "text": "{1, 3, 5, 7}", "isCorrect": false},
-          {"id": "d", "text": "{3, 5, 7, 9}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{1, 3, 5, 7, 9}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "{2, 4, 6, 8}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{1, 3, 5, 7}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{3, 5, 7, 9}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The odd numbers from 1 to 9 inclusive are 1, 3, 5, 7 and 9.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The objects that make up a set are called its _____.",
-        "options": [],
-        "correctAnswer": "elements",
+        "options": [
+          {
+            "id": "a",
+            "text": "elements",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "members",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "subsets",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "factors",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The members of a set are called elements (or members).",
         "difficulty": "easy"
       },
       {
         "questionText": "The symbol used to mean 'is an element of' is _____.",
-        "options": [],
-        "correctAnswer": "∈",
+        "options": [
+          {
+            "id": "a",
+            "text": "∉",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "∈",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "⊂",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "∪",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The symbol ∈ is read as 'is an element of' or 'belongs to'.",
         "difficulty": "easy"
       },
       {
         "questionText": "A set with no elements is called the _____ set.",
-        "options": [],
-        "correctAnswer": "empty",
+        "options": [
+          {
+            "id": "a",
+            "text": "universal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "singleton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "empty",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "finite",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The empty (or null) set has no elements and is written { } or ∅.",
         "difficulty": "easy"
       },
       {
         "questionText": "If A = {5, 10, 15, 20}, then n(A) = _____.",
-        "options": [],
-        "correctAnswer": "4",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "n(A) counts the number of elements; A has 4 elements.",
         "difficulty": "easy"
       },
       {
         "questionText": "A set that contains all elements under consideration is called the _____ set.",
-        "options": [],
-        "correctAnswer": "universal",
+        "options": [
+          {
+            "id": "a",
+            "text": "universal",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "empty",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "complement",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "power",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The universal set, denoted U, contains every element being considered in a problem.",
         "difficulty": "easy"
       },
       {
         "questionText": "If U = {1,2,3,4,5,6} and B = {1,3,5}, then B' = _____.",
-        "options": [],
-        "correctAnswer": "{2, 4, 6}",
+        "options": [
+          {
+            "id": "a",
+            "text": "{1, 3, 5}",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "{2, 4, 6}",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "{1, 2, 3, 4, 5, 6}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{4, 6}",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The complement B' contains the elements of U not in B, namely 2, 4 and 6.",
         "difficulty": "medium"
       },
       {
         "questionText": "A set with exactly one element, such as {7}, is called a _____ set.",
-        "options": [],
-        "correctAnswer": "singleton",
+        "options": [
+          {
+            "id": "a",
+            "text": "empty",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "unit",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "singleton",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "finite",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A singleton (or unit) set is a set containing exactly one element.",
         "difficulty": "medium"
       },
       {
         "questionText": "If P = {a, b} and Q = {a, b, c, d}, then P is a _____ of Q.",
-        "options": [],
-        "correctAnswer": "subset",
+        "options": [
+          {
+            "id": "a",
+            "text": "superset",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "complement",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "union",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "subset",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Every element of P is also in Q, so P ⊆ Q (P is a subset of Q).",
         "difficulty": "medium"
       },
       {
         "questionText": "Given X = {2,4,6,8} and Y = {6,8,10}, then X ∩ Y = _____.",
-        "options": [],
-        "correctAnswer": "{6, 8}",
+        "options": [
+          {
+            "id": "a",
+            "text": "{6, 8}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "{2, 4, 6, 8, 10}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{2, 4}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{10}",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The intersection contains the elements common to both X and Y, which are 6 and 8.",
         "difficulty": "medium"
       },
       {
         "questionText": "If n(A) = 15, n(B) = 11 and n(A ∪ B) = 20, then n(A ∩ B) = _____.",
-        "options": [],
-        "correctAnswer": "6",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "From n(A ∪ B) = n(A) + n(B) − n(A ∩ B), we get 20 = 15 + 11 − n(A ∩ B), so n(A ∩ B) = 6.",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "In a group of 50 students, 30 play football, 22 play netball and x students play both games. If 6 students play neither game, what is the value of x?",
         "options": [
-          {"id": "a", "text": "6", "isCorrect": false},
-          {"id": "b", "text": "8", "isCorrect": true},
-          {"id": "c", "text": "10", "isCorrect": false},
-          {"id": "d", "text": "12", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Students playing at least one game = 50 − 6 = 44. Then 44 = 30 + 22 − x, so x = 52 − 44 = 8.",
@@ -418,10 +884,26 @@
       {
         "questionText": "If U = {1,2,3,4,5,6,7,8}, A = {1,2,3,4} and B = {3,4,5,6}, what is (A ∪ B)'?",
         "options": [
-          {"id": "a", "text": "{7, 8}", "isCorrect": true},
-          {"id": "b", "text": "{3, 4}", "isCorrect": false},
-          {"id": "c", "text": "{1, 2, 5, 6}", "isCorrect": false},
-          {"id": "d", "text": "{5, 6, 7, 8}", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "{7, 8}",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "{3, 4}",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "{1, 2, 5, 6}",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "{5, 6, 7, 8}",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A ∪ B = {1,2,3,4,5,6}, so its complement in U is the remaining elements {7, 8}.",
@@ -430,10 +912,26 @@
       {
         "questionText": "In a survey of 80 people, 45 read newspaper P, 38 read newspaper Q, and 12 read neither. How many people read both newspapers?",
         "options": [
-          {"id": "a", "text": "15", "isCorrect": true},
-          {"id": "b", "text": "17", "isCorrect": false},
-          {"id": "c", "text": "20", "isCorrect": false},
-          {"id": "d", "text": "23", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "15",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "17",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "23",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Readers of at least one = 80 − 12 = 68. Then 68 = 45 + 38 − both, so both = 83 − 68 = 15.",

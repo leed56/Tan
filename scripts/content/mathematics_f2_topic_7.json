@@ -8,10 +8,26 @@
       {
         "questionText": "Under a reflection in the x-axis, the point (4, 3) is mapped onto which image point?",
         "options": [
-          {"id": "a", "text": "(4, -3)", "isCorrect": true},
-          {"id": "b", "text": "(-4, 3)", "isCorrect": false},
-          {"id": "c", "text": "(-4, -3)", "isCorrect": false},
-          {"id": "d", "text": "(3, 4)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(4, -3)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(-4, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(-4, -3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(3, 4)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Reflection in the x-axis keeps the x-coordinate and negates the y-coordinate: (x, y) maps to (x, -y).",
@@ -20,10 +36,26 @@
       {
         "questionText": "Under a reflection in the y-axis, the point (-5, 2) is mapped onto which image point?",
         "options": [
-          {"id": "a", "text": "(-5, -2)", "isCorrect": false},
-          {"id": "b", "text": "(5, 2)", "isCorrect": true},
-          {"id": "c", "text": "(5, -2)", "isCorrect": false},
-          {"id": "d", "text": "(2, -5)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(-5, -2)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(5, 2)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(5, -2)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(2, -5)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Reflection in the y-axis negates the x-coordinate and keeps the y-coordinate: (x, y) maps to (-x, y).",
@@ -32,10 +64,26 @@
       {
         "questionText": "A translation moves every point 3 units to the right and 2 units down. What is the image of the point (1, 5)?",
         "options": [
-          {"id": "a", "text": "(4, 7)", "isCorrect": false},
-          {"id": "b", "text": "(-2, 7)", "isCorrect": false},
-          {"id": "c", "text": "(4, 3)", "isCorrect": true},
-          {"id": "d", "text": "(-2, 3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(4, 7)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(-2, 7)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(4, 3)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(-2, 3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Right 3 adds 3 to x and down 2 subtracts 2 from y: (1+3, 5-2) = (4, 3).",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which type of transformation always changes the size of a figure (except when the scale factor is 1)?",
         "options": [
-          {"id": "a", "text": "Reflection", "isCorrect": false},
-          {"id": "b", "text": "Rotation", "isCorrect": false},
-          {"id": "c", "text": "Translation", "isCorrect": false},
-          {"id": "d", "text": "Enlargement", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Reflection",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Rotation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Translation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Enlargement",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Enlargement multiplies all distances from the centre by the scale factor, changing the size unless the scale factor equals 1.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Under the translation with vector (col 2, -4), the point (6, -1) is mapped onto which image point?",
         "options": [
-          {"id": "a", "text": "(8, -5)", "isCorrect": true},
-          {"id": "b", "text": "(4, 3)", "isCorrect": false},
-          {"id": "c", "text": "(8, 3)", "isCorrect": false},
-          {"id": "d", "text": "(4, -5)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(8, -5)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(4, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(8, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(4, -5)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Add the vector components: (6+2, -1+(-4)) = (8, -5).",
@@ -68,10 +148,26 @@
       {
         "questionText": "The point (2, 7) is rotated 90 degrees anticlockwise about the origin. What is its image?",
         "options": [
-          {"id": "a", "text": "(7, 2)", "isCorrect": false},
-          {"id": "b", "text": "(-7, 2)", "isCorrect": true},
-          {"id": "c", "text": "(7, -2)", "isCorrect": false},
-          {"id": "d", "text": "(-2, -7)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(7, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(-7, 2)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(7, -2)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-2, -7)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A 90 degree anticlockwise rotation about the origin maps (x, y) to (-y, x), so (2, 7) maps to (-7, 2).",
@@ -80,10 +176,26 @@
       {
         "questionText": "The point (3, -5) is rotated 90 degrees clockwise about the origin. What is its image?",
         "options": [
-          {"id": "a", "text": "(-5, -3)", "isCorrect": true},
-          {"id": "b", "text": "(5, 3)", "isCorrect": false},
-          {"id": "c", "text": "(-5, 3)", "isCorrect": false},
-          {"id": "d", "text": "(5, -3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(-5, -3)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(5, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(-5, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(5, -3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A 90 degree clockwise rotation about the origin maps (x, y) to (y, -x), so (3, -5) maps to (-5, -3).",
@@ -92,10 +204,26 @@
       {
         "questionText": "The point (-4, 6) is rotated 180 degrees about the origin. What is its image?",
         "options": [
-          {"id": "a", "text": "(4, 6)", "isCorrect": false},
-          {"id": "b", "text": "(-4, -6)", "isCorrect": false},
-          {"id": "c", "text": "(4, -6)", "isCorrect": true},
-          {"id": "d", "text": "(6, -4)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(4, 6)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(-4, -6)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(4, -6)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(6, -4)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A 180 degree rotation about the origin maps (x, y) to (-x, -y), so (-4, 6) maps to (4, -6).",
@@ -104,10 +232,26 @@
       {
         "questionText": "An enlargement with centre the origin and scale factor 3 maps the point (2, -1) onto which image?",
         "options": [
-          {"id": "a", "text": "(5, 2)", "isCorrect": false},
-          {"id": "b", "text": "(6, -3)", "isCorrect": true},
-          {"id": "c", "text": "(6, -1)", "isCorrect": false},
-          {"id": "d", "text": "(2, -3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(5, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(6, -3)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(6, -1)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(2, -3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "With centre the origin, multiply each coordinate by the scale factor: (2x3, -1x3) = (6, -3).",
@@ -116,10 +260,26 @@
       {
         "questionText": "Under a reflection in the line y = x, the point (7, 2) is mapped onto which image point?",
         "options": [
-          {"id": "a", "text": "(-7, 2)", "isCorrect": false},
-          {"id": "b", "text": "(7, -2)", "isCorrect": false},
-          {"id": "c", "text": "(2, 7)", "isCorrect": true},
-          {"id": "d", "text": "(-2, -7)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(-7, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(7, -2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2, 7)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(-2, -7)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Reflection in the line y = x interchanges the coordinates: (x, y) maps to (y, x).",
@@ -128,10 +288,26 @@
       {
         "questionText": "A figure has area 12 cm^2. After an enlargement with scale factor 2, what is the area of the image?",
         "options": [
-          {"id": "a", "text": "24 cm^2", "isCorrect": false},
-          {"id": "b", "text": "48 cm^2", "isCorrect": true},
-          {"id": "c", "text": "36 cm^2", "isCorrect": false},
-          {"id": "d", "text": "12 cm^2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "24 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "48 cm^2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "36 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12 cm^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Area scales by the square of the scale factor: 12 x 2^2 = 12 x 4 = 48 cm^2.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Which of the following properties is NOT necessarily preserved under an enlargement with scale factor 2?",
         "options": [
-          {"id": "a", "text": "Sizes of angles", "isCorrect": false},
-          {"id": "b", "text": "Shape of the figure", "isCorrect": false},
-          {"id": "c", "text": "Lengths of sides", "isCorrect": true},
-          {"id": "d", "text": "Ratio of corresponding sides", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sizes of angles",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Shape of the figure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Lengths of sides",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ratio of corresponding sides",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Enlargement changes lengths (by the scale factor) but preserves angles and shape, so the figures remain similar.",
@@ -152,10 +344,26 @@
       {
         "questionText": "An enlargement with centre (1, 1) and scale factor 2 maps the point (3, 4) onto which image?",
         "options": [
-          {"id": "a", "text": "(5, 7)", "isCorrect": true},
-          {"id": "b", "text": "(6, 8)", "isCorrect": false},
-          {"id": "c", "text": "(4, 5)", "isCorrect": false},
-          {"id": "d", "text": "(7, 9)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(5, 7)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(6, 8)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(4, 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(7, 9)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Image = centre + k(point - centre) = (1,1) + 2(2,3) = (1+4, 1+6) = (5, 7).",
@@ -164,10 +372,26 @@
       {
         "questionText": "The point (5, 0) is first reflected in the y-axis, then the image is rotated 90 degrees anticlockwise about the origin. What is the final image?",
         "options": [
-          {"id": "a", "text": "(0, 5)", "isCorrect": false},
-          {"id": "b", "text": "(0, -5)", "isCorrect": true},
-          {"id": "c", "text": "(5, 0)", "isCorrect": false},
-          {"id": "d", "text": "(-5, 0)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(0, 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(0, -5)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(5, 0)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-5, 0)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Reflection in the y-axis gives (-5, 0); a 90 degree anticlockwise rotation maps (x,y) to (-y,x), so (-5,0) maps to (0,-5).",
@@ -176,10 +400,26 @@
       {
         "questionText": "A point P maps to image P'(8, -6) under an enlargement with centre the origin and scale factor 2. What are the coordinates of P?",
         "options": [
-          {"id": "a", "text": "(16, -12)", "isCorrect": false},
-          {"id": "b", "text": "(4, -3)", "isCorrect": true},
-          {"id": "c", "text": "(6, -4)", "isCorrect": false},
-          {"id": "d", "text": "(-4, 3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(16, -12)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(4, -3)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(6, -4)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-4, 3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Divide the image coordinates by the scale factor: (8/2, -6/2) = (4, -3).",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A transformation that turns a figure about a fixed point is called a _____.",
-        "options": [],
-        "correctAnswer": "rotation",
+        "options": [
+          {
+            "id": "a",
+            "text": "rotation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "translation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reflection",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "enlargement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Rotation turns every point of a figure through a fixed angle about a fixed point called the centre of rotation.",
         "difficulty": "easy"
       },
       {
         "questionText": "Under a reflection in the x-axis, the point (-3, 8) is mapped onto _____.",
-        "options": [],
-        "correctAnswer": "(-3, -8)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(3, 8)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(-3, -8)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(3, -8)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-3, 8)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Reflection in the x-axis maps (x, y) to (x, -y).",
         "difficulty": "easy"
       },
       {
         "questionText": "The fixed point about which an enlargement is performed is called the centre of _____.",
-        "options": [],
-        "correctAnswer": "enlargement",
+        "options": [
+          {
+            "id": "a",
+            "text": "rotation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "reflection",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "enlargement",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "translation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "All distances are measured from the centre of enlargement and multiplied by the scale factor.",
         "difficulty": "easy"
       },
       {
         "questionText": "Under the translation with vector (col -3, 5), the point (7, 2) is mapped onto _____.",
-        "options": [],
-        "correctAnswer": "(4, 7)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(10, 7)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(4, -3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(-3, 12)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(4, 7)",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Add the vector components: (7+(-3), 2+5) = (4, 7).",
         "difficulty": "easy"
       },
       {
         "questionText": "A transformation that produces a mirror image of a figure is called a _____.",
-        "options": [],
-        "correctAnswer": "reflection",
+        "options": [
+          {
+            "id": "a",
+            "text": "reflection",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "rotation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "translation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "enlargement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Reflection flips a figure over a line called the mirror line or axis of reflection.",
         "difficulty": "easy"
       },
       {
         "questionText": "Under a 180 degree rotation about the origin, the point (9, -4) is mapped onto _____.",
-        "options": [],
-        "correctAnswer": "(-9, 4)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(9, 4)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(-9, 4)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(-9, -4)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(4, -9)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A 180 degree rotation about the origin maps (x, y) to (-x, -y).",
         "difficulty": "medium"
       },
       {
         "questionText": "An enlargement with centre the origin and scale factor -2 maps the point (3, 1) onto _____.",
-        "options": [],
-        "correctAnswer": "(-6, -2)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(6, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(-6, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(-6, -2)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(-1.5, -0.5)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Multiply each coordinate by -2: (3x-2, 1x-2) = (-6, -2). A negative scale factor places the image on the opposite side of the centre.",
         "difficulty": "medium"
       },
       {
         "questionText": "If a length of 5 cm is enlarged by a scale factor of 4, the new length is _____ cm.",
-        "options": [],
-        "correctAnswer": "20",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1.25",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "New length = original length x scale factor = 5 x 4 = 20 cm.",
         "difficulty": "medium"
       },
       {
         "questionText": "Under a reflection in the line y = x, the point (-6, 5) is mapped onto _____.",
-        "options": [],
-        "correctAnswer": "(5, -6)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(5, -6)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(-5, 6)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(6, -5)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-6, -5)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Reflection in y = x interchanges the coordinates: (x, y) maps to (y, x).",
         "difficulty": "medium"
       },
       {
         "questionText": "The single translation vector that maps (2, 9) onto (10, 4) is (col 8, _____).",
-        "options": [],
-        "correctAnswer": "-5",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-13",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "13",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The vector is (10-2, 4-9) = (8, -5), so the missing component is -5.",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Triangle ABC has vertices A(1, 1), B(4, 1) and C(1, 3). It is enlarged with centre the origin and scale factor 2 to give triangle A'B'C'. By how many times is the area of triangle A'B'C' greater than the area of triangle ABC?",
         "options": [
-          {"id": "a", "text": "2 times", "isCorrect": false},
-          {"id": "b", "text": "4 times", "isCorrect": true},
-          {"id": "c", "text": "6 times", "isCorrect": false},
-          {"id": "d", "text": "8 times", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2 times",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4 times",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6 times",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8 times",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Area scales by the square of the scale factor, so the new area is 2^2 = 4 times the original.",
@@ -418,10 +884,26 @@
       {
         "questionText": "The point (2, 3) is reflected in the line y = x and the image is then reflected in the x-axis. What are the coordinates of the final image?",
         "options": [
-          {"id": "a", "text": "(3, -2)", "isCorrect": true},
-          {"id": "b", "text": "(-3, 2)", "isCorrect": false},
-          {"id": "c", "text": "(2, -3)", "isCorrect": false},
-          {"id": "d", "text": "(-2, 3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(3, -2)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(-3, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2, -3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-2, 3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Reflection in y = x gives (3, 2); reflection in the x-axis then maps (3, 2) to (3, -2).",
@@ -430,10 +912,26 @@
       {
         "questionText": "A point A(2, 3) is mapped onto A'(8, 11) by an enlargement with scale factor 3. What are the coordinates of the centre of enlargement?",
         "options": [
-          {"id": "a", "text": "(-1, -1)", "isCorrect": true},
-          {"id": "b", "text": "(1, 1)", "isCorrect": false},
-          {"id": "c", "text": "(0, 0)", "isCorrect": false},
-          {"id": "d", "text": "(-1, 1)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(-1, -1)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(1, 1)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(0, 0)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-1, 1)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Using A' = C + 3(A - C), let C = (x, y): 8 = x + 3(2 - x) gives x = -1, and 11 = y + 3(3 - y) gives y = -1, so the centre is (-1, -1).",

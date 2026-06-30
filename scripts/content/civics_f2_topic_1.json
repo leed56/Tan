@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The moral principles that guide people in distinguishing right from wrong are called _____.",
-        "options": [],
-        "correctAnswer": "ethics",
+        "options": [
+          {
+            "id": "a",
+            "text": "ethics",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "laws",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "customs",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rituals",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Ethics are the standards that guide right and wrong behaviour.",
         "difficulty": "easy"
       },
       {
         "questionText": "The quality of being honest and doing what is right even when no one is watching is called _____.",
-        "options": [],
-        "correctAnswer": "integrity",
+        "options": [
+          {
+            "id": "a",
+            "text": "greed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "integrity",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "loyalty",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "obedience",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Integrity is a key value in good conduct and leadership.",
         "difficulty": "easy"
       },
       {
         "questionText": "The dishonest use of public office for private gain is known as _____.",
-        "options": [],
-        "correctAnswer": "corruption",
+        "options": [
+          {
+            "id": "a",
+            "text": "taxation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "legislation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "corruption",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "negotiation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Corruption involves misusing entrusted power for personal benefit.",
         "difficulty": "easy"
       },
       {
         "questionText": "Money or a gift given dishonestly to influence the action of an official is called a _____.",
-        "options": [],
-        "correctAnswer": "bribe",
+        "options": [
+          {
+            "id": "a",
+            "text": "fee",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fine",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "wage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bribe",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Bribery is one of the most common forms of corruption.",
         "difficulty": "easy"
       },
       {
         "questionText": "In Tanzania, the government bureau that fights corruption is abbreviated as _____.",
-        "options": [],
-        "correctAnswer": "PCCB",
+        "options": [
+          {
+            "id": "a",
+            "text": "PCCB",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "TANESCO",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "TRA",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TBC",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "PCCB stands for the Prevention and Combating of Corruption Bureau.",
         "difficulty": "medium"
       },
       {
         "questionText": "Being answerable and responsible for one's actions and use of resources is called _____.",
-        "options": [],
-        "correctAnswer": "accountability",
+        "options": [
+          {
+            "id": "a",
+            "text": "secrecy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "accountability",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "popularity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "seniority",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Accountability is essential for good governance.",
         "difficulty": "medium"
       },
       {
         "questionText": "Openness in conducting public affairs so that people can see how decisions are made is called _____.",
-        "options": [],
-        "correctAnswer": "transparency",
+        "options": [
+          {
+            "id": "a",
+            "text": "secrecy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bureaucracy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transparency",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "formality",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Transparency reduces the chances of corruption.",
         "difficulty": "medium"
       },
       {
         "questionText": "The dishonest taking of public funds entrusted to a person is called _____.",
-        "options": [],
-        "correctAnswer": "embezzlement",
+        "options": [
+          {
+            "id": "a",
+            "text": "budgeting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "auditing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "investment",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "embezzlement",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Embezzlement is a serious form of corruption involving misuse of entrusted money.",
         "difficulty": "medium"
       },
       {
         "questionText": "A person's individual beliefs about what is good and bad behaviour are called _____.",
-        "options": [],
-        "correctAnswer": "morals",
+        "options": [
+          {
+            "id": "a",
+            "text": "morals",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "talents",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hobbies",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ambitions",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Morals are the personal standards that shape a person's conduct.",
         "difficulty": "easy"
       },
       {
         "questionText": "Love and loyalty for one's country, which is an important national value, is called _____.",
-        "options": [],
-        "correctAnswer": "patriotism",
+        "options": [
+          {
+            "id": "a",
+            "text": "tribalism",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "patriotism",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "favouritism",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "materialism",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Patriotism encourages citizens to work for the good of their nation.",
         "difficulty": "medium"
       }

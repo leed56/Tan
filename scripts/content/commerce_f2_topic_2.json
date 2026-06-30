@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "The movement of people and goods from one place to another is called _____.",
-        "options": [],
-        "correctAnswer": "transport",
+        "options": [
+          {"id": "a", "text": "transport", "isCorrect": true},
+          {"id": "b", "text": "warehousing", "isCorrect": false},
+          {"id": "c", "text": "advertising", "isCorrect": false},
+          {"id": "d", "text": "insurance", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Transport bridges the gap between producers and consumers by moving goods and people.",
         "difficulty": "easy"
       },
       {
         "questionText": "The mode of transport that is the fastest over long distances is _____ transport.",
-        "options": [],
-        "correctAnswer": "air",
+        "options": [
+          {"id": "a", "text": "road", "isCorrect": false},
+          {"id": "b", "text": "air", "isCorrect": true},
+          {"id": "c", "text": "rail", "isCorrect": false},
+          {"id": "d", "text": "pipeline", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Air transport is the quickest mode, suitable for urgent and perishable goods.",
         "difficulty": "easy"
       },
       {
         "questionText": "The cheapest mode of transport for carrying very heavy bulky goods between countries is _____ transport.",
-        "options": [],
-        "correctAnswer": "water",
+        "options": [
+          {"id": "a", "text": "air", "isCorrect": false},
+          {"id": "b", "text": "road", "isCorrect": false},
+          {"id": "c", "text": "water", "isCorrect": true},
+          {"id": "d", "text": "rail", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Water transport carries large loads at the lowest cost per tonne.",
         "difficulty": "easy"
       },
       {
         "questionText": "The mode of transport used mainly to carry liquids and gases such as oil is _____ transport.",
-        "options": [],
-        "correctAnswer": "pipeline",
+        "options": [
+          {"id": "a", "text": "road", "isCorrect": false},
+          {"id": "b", "text": "rail", "isCorrect": false},
+          {"id": "c", "text": "air", "isCorrect": false},
+          {"id": "d", "text": "pipeline", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Pipelines are designed to move liquids and gases over long distances.",
         "difficulty": "easy"
       },
       {
         "questionText": "Packing goods into large standard-sized metal boxes for easy handling and transport is known as _____.",
-        "options": [],
-        "correctAnswer": "containerisation",
+        "options": [
+          {"id": "a", "text": "containerisation", "isCorrect": true},
+          {"id": "b", "text": "warehousing", "isCorrect": false},
+          {"id": "c", "text": "palletisation", "isCorrect": false},
+          {"id": "d", "text": "standardisation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Containerisation allows goods to be moved easily between ships, trains and trucks.",
         "difficulty": "medium"
       },
       {
         "questionText": "Road transport is preferred for short journeys because it can offer _____ delivery directly from seller to buyer.",
-        "options": [],
-        "correctAnswer": "door-to-door",
+        "options": [
+          {"id": "a", "text": "point-to-point", "isCorrect": false},
+          {"id": "b", "text": "door-to-door", "isCorrect": true},
+          {"id": "c", "text": "city-to-city", "isCorrect": false},
+          {"id": "d", "text": "port-to-port", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Road transport delivers goods directly without changing vehicles.",
         "difficulty": "medium"
       },
       {
         "questionText": "By moving goods to the place where they are needed, transport creates _____ utility.",
-        "options": [],
-        "correctAnswer": "place",
+        "options": [
+          {"id": "a", "text": "time", "isCorrect": false},
+          {"id": "b", "text": "form", "isCorrect": false},
+          {"id": "c", "text": "place", "isCorrect": true},
+          {"id": "d", "text": "ownership", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Place utility is created when goods are carried from areas of production to areas of demand.",
         "difficulty": "medium"
       },
       {
         "questionText": "The modern high-capacity railway being developed in Tanzania is abbreviated as _____.",
-        "options": [],
-        "correctAnswer": "SGR",
+        "options": [
+          {"id": "a", "text": "TRC", "isCorrect": false},
+          {"id": "b", "text": "TPA", "isCorrect": false},
+          {"id": "c", "text": "TRL", "isCorrect": false},
+          {"id": "d", "text": "SGR", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "SGR stands for Standard Gauge Railway, a modern railway in Tanzania.",
         "difficulty": "medium"
       },
       {
         "questionText": "A place where ships load and unload goods and passengers is called a _____.",
-        "options": [],
-        "correctAnswer": "harbour",
+        "options": [
+          {"id": "a", "text": "harbour", "isCorrect": true},
+          {"id": "b", "text": "depot", "isCorrect": false},
+          {"id": "c", "text": "terminal", "isCorrect": false},
+          {"id": "d", "text": "junction", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "A harbour (or port) is where ships dock to load and unload cargo, such as Dar es Salaam port.",
         "difficulty": "medium"
       },
       {
         "questionText": "Goods such as fresh fish and flowers that decay quickly are described as _____ goods and need fast transport.",
-        "options": [],
-        "correctAnswer": "perishable",
+        "options": [
+          {"id": "a", "text": "durable", "isCorrect": false},
+          {"id": "b", "text": "perishable", "isCorrect": true},
+          {"id": "c", "text": "fragile", "isCorrect": false},
+          {"id": "d", "text": "bulky", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Perishable goods spoil quickly, so they require fast transport such as air or refrigerated transport.",
         "difficulty": "hard"
       }

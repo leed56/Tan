@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "A market that deals in long-term funds such as shares and bonds is called a _____ market.",
-        "options": [],
-        "correctAnswer": "capital",
+        "options": [
+          {"id": "a", "text": "capital", "isCorrect": true},
+          {"id": "b", "text": "money", "isCorrect": false},
+          {"id": "c", "text": "produce", "isCorrect": false},
+          {"id": "d", "text": "retail", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "The capital market handles long-term financial instruments, unlike the money market which deals in short-term funds.",
         "difficulty": "easy"
       },
       {
         "questionText": "An organised market where securities are bought and sold is known as a _____ exchange.",
-        "options": [],
-        "correctAnswer": "stock",
+        "options": [
+          {"id": "a", "text": "money", "isCorrect": false},
+          {"id": "b", "text": "stock", "isCorrect": true},
+          {"id": "c", "text": "produce", "isCorrect": false},
+          {"id": "d", "text": "labour", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "A stock exchange provides a regulated place for trading securities such as shares and bonds.",
         "difficulty": "easy"
       },
       {
         "questionText": "The share of profit paid to shareholders is called a _____.",
-        "options": [],
-        "correctAnswer": "dividend",
+        "options": [
+          {"id": "a", "text": "interest", "isCorrect": false},
+          {"id": "b", "text": "commission", "isCorrect": false},
+          {"id": "c", "text": "dividend", "isCorrect": true},
+          {"id": "d", "text": "premium", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Dividends are the returns shareholders receive from a company's profits.",
         "difficulty": "easy"
       },
       {
         "questionText": "A person who buys and sells securities on behalf of clients for a commission is called a _____.",
-        "options": [],
-        "correctAnswer": "broker",
+        "options": [
+          {"id": "a", "text": "jobber", "isCorrect": false},
+          {"id": "b", "text": "trustee", "isCorrect": false},
+          {"id": "c", "text": "registrar", "isCorrect": false},
+          {"id": "d", "text": "broker", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "A broker (stockbroker) acts as an agent between buyers and sellers of securities on the stock exchange.",
         "difficulty": "easy"
       },
       {
         "questionText": "The market where new securities are sold for the first time is called the _____ market.",
-        "options": [],
-        "correctAnswer": "primary",
+        "options": [
+          {"id": "a", "text": "primary", "isCorrect": true},
+          {"id": "b", "text": "secondary", "isCorrect": false},
+          {"id": "c", "text": "tertiary", "isCorrect": false},
+          {"id": "d", "text": "central", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "In the primary market, companies issue brand-new securities to raise fresh capital.",
         "difficulty": "medium"
       },
       {
         "questionText": "The market where already-issued securities are resold among investors is called the _____ market.",
-        "options": [],
-        "correctAnswer": "secondary",
+        "options": [
+          {"id": "a", "text": "primary", "isCorrect": false},
+          {"id": "b", "text": "secondary", "isCorrect": true},
+          {"id": "c", "text": "tertiary", "isCorrect": false},
+          {"id": "d", "text": "central", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "The secondary market gives investors liquidity by allowing them to trade existing securities.",
         "difficulty": "medium"
       },
       {
         "questionText": "A long-term loan to a company that pays fixed interest is called a _____.",
-        "options": [],
-        "correctAnswer": "debenture",
+        "options": [
+          {"id": "a", "text": "dividend", "isCorrect": false},
+          {"id": "b", "text": "premium", "isCorrect": false},
+          {"id": "c", "text": "debenture", "isCorrect": true},
+          {"id": "d", "text": "warrant", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "A debenture is a loan instrument; its holder is a creditor who earns fixed interest, not an owner.",
         "difficulty": "medium"
       },
       {
         "questionText": "The abbreviation DSE stands for the Dar es Salaam _____ Exchange.",
-        "options": [],
-        "correctAnswer": "Stock",
+        "options": [
+          {"id": "a", "text": "Securities", "isCorrect": false},
+          {"id": "b", "text": "Share", "isCorrect": false},
+          {"id": "c", "text": "Capital", "isCorrect": false},
+          {"id": "d", "text": "Stock", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "The Dar es Salaam Stock Exchange (DSE) is Tanzania's national stock exchange.",
         "difficulty": "easy"
       },
       {
         "questionText": "A document that shows a person owns a part of a company is called a share _____.",
-        "options": [],
-        "correctAnswer": "certificate",
+        "options": [
+          {"id": "a", "text": "certificate", "isCorrect": true},
+          {"id": "b", "text": "prospectus", "isCorrect": false},
+          {"id": "c", "text": "debenture", "isCorrect": false},
+          {"id": "d", "text": "warrant", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "A share certificate is proof of ownership of shares in a company.",
         "difficulty": "medium"
       },
       {
         "questionText": "The fixed return earned by the holder of a bond is called _____.",
-        "options": [],
-        "correctAnswer": "interest",
+        "options": [
+          {"id": "a", "text": "dividend", "isCorrect": false},
+          {"id": "b", "text": "interest", "isCorrect": true},
+          {"id": "c", "text": "commission", "isCorrect": false},
+          {"id": "d", "text": "premium", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Bondholders are lenders, so they earn interest rather than dividends.",
         "difficulty": "medium"
       }

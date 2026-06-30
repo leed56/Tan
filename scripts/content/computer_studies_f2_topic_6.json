@@ -8,10 +8,26 @@
       {
         "questionText": "What does the word 'email' stand for?",
         "options": [
-          {"id": "a", "text": "Electronic mail", "isCorrect": true},
-          {"id": "b", "text": "Electric message", "isCorrect": false},
-          {"id": "c", "text": "Express mail", "isCorrect": false},
-          {"id": "d", "text": "Encrypted mail", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Electronic mail",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Electric message",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Express mail",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Encrypted mail",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Email is short for electronic mail, which is the exchange of messages between people using electronic devices over a network.",
@@ -20,10 +36,26 @@
       {
         "questionText": "In the email address learner@school.co.tz, which part is the username?",
         "options": [
-          {"id": "a", "text": "school", "isCorrect": false},
-          {"id": "b", "text": "learner", "isCorrect": true},
-          {"id": "c", "text": "co.tz", "isCorrect": false},
-          {"id": "d", "text": "@", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "school",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "learner",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "co.tz",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "@",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The username is the part before the @ symbol that identifies the specific account holder.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Which symbol always separates the username from the domain name in every email address?",
         "options": [
-          {"id": "a", "text": "The hyphen (-)", "isCorrect": false},
-          {"id": "b", "text": "The dot (.)", "isCorrect": false},
-          {"id": "c", "text": "The at sign (@)", "isCorrect": true},
-          {"id": "d", "text": "The underscore (_)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The hyphen (-)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The dot (.)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The at sign (@)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The underscore (_)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The @ (at) symbol is a required part of every email address and separates the username from the domain.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which field would you use to send a copy of an email to someone while letting all recipients see that this person also received it?",
         "options": [
-          {"id": "a", "text": "BCC", "isCorrect": false},
-          {"id": "b", "text": "CC", "isCorrect": true},
-          {"id": "c", "text": "Subject", "isCorrect": false},
-          {"id": "d", "text": "Attachment", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "BCC",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "CC",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Subject",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Attachment",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "CC (Carbon Copy) sends a visible copy to additional recipients, and everyone can see who was copied.",
@@ -56,10 +120,26 @@
       {
         "questionText": "What is the main purpose of the BCC field in an email?",
         "options": [
-          {"id": "a", "text": "To attach large files", "isCorrect": false},
-          {"id": "b", "text": "To send a copy without other recipients seeing that address", "isCorrect": true},
-          {"id": "c", "text": "To set the subject of the message", "isCorrect": false},
-          {"id": "d", "text": "To reply to all recipients automatically", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "To attach large files",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To send a copy without other recipients seeing that address",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To set the subject of the message",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To reply to all recipients automatically",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "BCC (Blind Carbon Copy) sends a hidden copy so other recipients cannot see that address, protecting privacy.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which feature lets you send an email you received on to a third person who was not an original recipient?",
         "options": [
-          {"id": "a", "text": "Reply", "isCorrect": false},
-          {"id": "b", "text": "Compose", "isCorrect": false},
-          {"id": "c", "text": "Forward", "isCorrect": true},
-          {"id": "d", "text": "Delete", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Reply",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Compose",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Forward",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Delete",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Forwarding passes a received message on to a new recipient, usually keeping the original content.",
@@ -80,10 +176,26 @@
       {
         "questionText": "What is an email attachment?",
         "options": [
-          {"id": "a", "text": "The subject line of the message", "isCorrect": false},
-          {"id": "b", "text": "A file sent along with the email message", "isCorrect": true},
-          {"id": "c", "text": "The signature at the end of an email", "isCorrect": false},
-          {"id": "d", "text": "The address of the sender", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The subject line of the message",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A file sent along with the email message",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The signature at the end of an email",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The address of the sender",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An attachment is a separate file, such as a document or picture, that is sent together with an email message.",
@@ -92,10 +204,26 @@
       {
         "questionText": "What does 'netiquette' mean?",
         "options": [
-          {"id": "a", "text": "The speed of an internet connection", "isCorrect": false},
-          {"id": "b", "text": "The rules for polite and proper behaviour online", "isCorrect": true},
-          {"id": "c", "text": "A type of computer virus", "isCorrect": false},
-          {"id": "d", "text": "A way of compressing files", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The speed of an internet connection",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The rules for polite and proper behaviour online",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A type of computer virus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A way of compressing files",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Netiquette is a combination of 'network' and 'etiquette' and refers to good manners when communicating online.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which of the following is an example of an instant messaging activity?",
         "options": [
-          {"id": "a", "text": "Posting a printed letter", "isCorrect": false},
-          {"id": "b", "text": "Sending a real-time text chat message to a friend", "isCorrect": true},
-          {"id": "c", "text": "Saving a document to a flash disk", "isCorrect": false},
-          {"id": "d", "text": "Printing a report", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Posting a printed letter",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sending a real-time text chat message to a friend",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Saving a document to a flash disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Printing a report",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Instant messaging allows two or more people to exchange typed messages in real time over a network.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Which electronic communication tool allows people in different locations to see and hear each other live?",
         "options": [
-          {"id": "a", "text": "Video conferencing", "isCorrect": true},
-          {"id": "b", "text": "Email attachment", "isCorrect": false},
-          {"id": "c", "text": "Spam filter", "isCorrect": false},
-          {"id": "d", "text": "Spreadsheet", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Video conferencing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Email attachment",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Spam filter",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Spreadsheet",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Video conferencing uses cameras and microphones to let people in different places hold a live audio and video meeting.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Which of these is a clear advantage of email over traditional postal mail?",
         "options": [
-          {"id": "a", "text": "It is delivered almost instantly", "isCorrect": true},
-          {"id": "b", "text": "It always requires postage stamps", "isCorrect": false},
-          {"id": "c", "text": "It cannot carry attachments", "isCorrect": false},
-          {"id": "d", "text": "It works only without electricity", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It is delivered almost instantly",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "It always requires postage stamps",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It cannot carry attachments",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It works only without electricity",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Email is delivered in seconds or minutes, while postal mail can take days, making email much faster.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Unwanted and unsolicited bulk email is commonly called what?",
         "options": [
-          {"id": "a", "text": "Spam", "isCorrect": true},
-          {"id": "b", "text": "Draft", "isCorrect": false},
-          {"id": "c", "text": "Signature", "isCorrect": false},
-          {"id": "d", "text": "Inbox", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Spam",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Draft",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Signature",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Inbox",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Spam is junk email sent in bulk to many people who did not ask for it, often containing adverts or scams.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Which part of an email tells the recipient what the message is about before they open it?",
         "options": [
-          {"id": "a", "text": "The attachment", "isCorrect": false},
-          {"id": "b", "text": "The subject line", "isCorrect": true},
-          {"id": "c", "text": "The BCC field", "isCorrect": false},
-          {"id": "d", "text": "The domain name", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The attachment",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The subject line",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The BCC field",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The domain name",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The subject line is a short summary of the email's topic and helps the reader know what the message concerns.",
@@ -164,10 +372,26 @@
       {
         "questionText": "A trick where an email pretends to be from a trusted organisation to steal your password is known as what?",
         "options": [
-          {"id": "a", "text": "Forwarding", "isCorrect": false},
-          {"id": "b", "text": "Phishing", "isCorrect": true},
-          {"id": "c", "text": "Composing", "isCorrect": false},
-          {"id": "d", "text": "Archiving", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Forwarding",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Phishing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Composing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Archiving",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Phishing is a scam where fake emails imitate trusted sources to trick people into revealing passwords or personal details.",
@@ -176,10 +400,26 @@
       {
         "questionText": "When you click 'Reply All' on an email sent to many people, what happens?",
         "options": [
-          {"id": "a", "text": "Your response goes only to the original sender", "isCorrect": false},
-          {"id": "b", "text": "Your response goes to the sender and all other recipients", "isCorrect": true},
-          {"id": "c", "text": "The original email is permanently deleted", "isCorrect": false},
-          {"id": "d", "text": "The message is saved as a draft without sending", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Your response goes only to the original sender",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Your response goes to the sender and all other recipients",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The original email is permanently deleted",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The message is saved as a draft without sending",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Reply All sends your message to the original sender and everyone who received the original email, so it should be used carefully.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The part of an email address that comes after the @ symbol is called the _____ name.",
-        "options": [],
-        "correctAnswer": "domain",
+        "options": [
+          {
+            "id": "a",
+            "text": "domain",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "user",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "host",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "server",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The domain name identifies the mail server or organisation that hosts the email account, for example gmail.com.",
         "difficulty": "easy"
       },
       {
         "questionText": "Sending a hidden copy of an email so that other recipients cannot see that address uses the _____ field.",
-        "options": [],
-        "correctAnswer": "BCC",
+        "options": [
+          {
+            "id": "a",
+            "text": "CC",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "BCC",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "TO",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "FROM",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "BCC stands for Blind Carbon Copy and keeps the listed addresses hidden from the other recipients.",
         "difficulty": "medium"
       },
       {
         "questionText": "A file such as a photo or document sent together with an email is known as an _____.",
-        "options": [],
-        "correctAnswer": "attachment",
+        "options": [
+          {
+            "id": "a",
+            "text": "enclosure",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "embed",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "attachment",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "insert",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "An attachment is an extra file added to an email so the recipient can download and open it.",
         "difficulty": "easy"
       },
       {
         "questionText": "The set of polite rules for behaving well when communicating online is called _____.",
-        "options": [],
-        "correctAnswer": "netiquette",
+        "options": [
+          {
+            "id": "a",
+            "text": "protocol",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "etiquette",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "firewall",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "netiquette",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Netiquette combines 'network' and 'etiquette' and guides courteous online communication.",
         "difficulty": "medium"
       },
       {
         "questionText": "Unwanted bulk junk email sent to many people is called _____.",
-        "options": [],
-        "correctAnswer": "spam",
+        "options": [
+          {
+            "id": "a",
+            "text": "spam",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "junk",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "phishing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "malware",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Spam clutters inboxes and may contain adverts, scams, or harmful links.",
         "difficulty": "easy"
       },
       {
         "questionText": "Replying to a message and sending it on to a new person who was not an original recipient is called _____.",
-        "options": [],
-        "correctAnswer": "forwarding",
+        "options": [
+          {
+            "id": "a",
+            "text": "replying",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "forwarding",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "copying",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "deleting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Forwarding passes a received email on to another person, usually keeping the original message.",
         "difficulty": "easy"
       },
       {
         "questionText": "The folder where newly received emails first arrive is called the _____.",
-        "options": [],
-        "correctAnswer": "inbox",
+        "options": [
+          {
+            "id": "a",
+            "text": "outbox",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "draft",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "inbox",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "trash",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The inbox stores incoming messages until the user reads, replies to, or deletes them.",
         "difficulty": "easy"
       },
       {
         "questionText": "A short line summarising what an email is about is called the _____ line.",
-        "options": [],
-        "correctAnswer": "subject",
+        "options": [
+          {
+            "id": "a",
+            "text": "address",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "header",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "signature",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "subject",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The subject line helps the recipient quickly understand the purpose of the email.",
         "difficulty": "easy"
       },
       {
         "questionText": "A communication tool that lets people in different places see and hear each other live using cameras and microphones is called _____ conferencing.",
-        "options": [],
-        "correctAnswer": "video",
+        "options": [
+          {
+            "id": "a",
+            "text": "video",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "audio",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "web",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tele",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Video conferencing supports live meetings with both picture and sound over the internet.",
         "difficulty": "easy"
       },
       {
         "questionText": "A scam email that pretends to be from a trusted source in order to steal personal information is an example of _____.",
-        "options": [],
-        "correctAnswer": "phishing",
+        "options": [
+          {
+            "id": "a",
+            "text": "spam",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "phishing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hacking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "spoofing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Phishing tricks users into giving away passwords or bank details by imitating real organisations.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A teacher wants to email exam results to 40 parents individually so that no parent can see the email addresses of the other parents. Which approach is best?",
         "options": [
-          {"id": "a", "text": "Put all 40 addresses in the To field", "isCorrect": false},
-          {"id": "b", "text": "Put all 40 addresses in the CC field", "isCorrect": false},
-          {"id": "c", "text": "Put all 40 addresses in the BCC field", "isCorrect": true},
-          {"id": "d", "text": "Forward the email 40 separate times to each parent", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Put all 40 addresses in the To field",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Put all 40 addresses in the CC field",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Put all 40 addresses in the BCC field",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Forward the email 40 separate times to each parent",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Using BCC hides every address from the others, protecting each parent's privacy while still sending one message.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A student receives an email claiming to be from their bank, asking them to click a link and confirm their password urgently. What is the most appropriate response?",
         "options": [
-          {"id": "a", "text": "Click the link quickly and enter the password before the deadline", "isCorrect": false},
-          {"id": "b", "text": "Treat it as possible phishing and do not click or share the password", "isCorrect": true},
-          {"id": "c", "text": "Forward it to all friends so they can also confirm their passwords", "isCorrect": false},
-          {"id": "d", "text": "Reply with the password to prove the account is active", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Click the link quickly and enter the password before the deadline",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Treat it as possible phishing and do not click or share the password",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Forward it to all friends so they can also confirm their passwords",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Reply with the password to prove the account is active",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Urgent requests for passwords through links are a common phishing tactic, so the student should not click or reveal any details.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A company needs to hold a meeting where staff in three different cities can see and hear each other and share their screens at the same time. Which tool is most suitable?",
         "options": [
-          {"id": "a", "text": "Sending an email with attachments", "isCorrect": false},
-          {"id": "b", "text": "Video conferencing", "isCorrect": true},
-          {"id": "c", "text": "Posting a letter to each office", "isCorrect": false},
-          {"id": "d", "text": "Saving notes on a shared flash disk", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sending an email with attachments",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Video conferencing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Posting a letter to each office",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Saving notes on a shared flash disk",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Video conferencing supports live audio, video, and screen sharing among people in different locations simultaneously.",

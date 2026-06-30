@@ -8,10 +8,26 @@
       {
         "questionText": "Simplify the expression 5x + 3y - 2x + 4y.",
         "options": [
-          { "id": "a", "text": "3x + 7y", "isCorrect": true },
-          { "id": "b", "text": "7x + 7y", "isCorrect": false },
-          { "id": "c", "text": "3x + y", "isCorrect": false },
-          { "id": "d", "text": "7x + y", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "3x + 7y",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7x + 7y",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3x + y",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7x + y",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Collect like terms: 5x - 2x = 3x and 3y + 4y = 7y, giving 3x + 7y.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Expand 3(2a + 5).",
         "options": [
-          { "id": "a", "text": "6a + 5", "isCorrect": false },
-          { "id": "b", "text": "6a + 15", "isCorrect": true },
-          { "id": "c", "text": "5a + 15", "isCorrect": false },
-          { "id": "d", "text": "2a + 15", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "6a + 5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6a + 15",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "5a + 15",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2a + 15",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Multiply each term inside the bracket by 3: 3 x 2a = 6a and 3 x 5 = 15.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Factorize completely 8x + 12.",
         "options": [
-          { "id": "a", "text": "4(2x + 3)", "isCorrect": true },
-          { "id": "b", "text": "2(4x + 12)", "isCorrect": false },
-          { "id": "c", "text": "4(2x + 12)", "isCorrect": false },
-          { "id": "d", "text": "8(x + 12)", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "4(2x + 3)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2(4x + 12)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4(2x + 12)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8(x + 12)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The highest common factor of 8 and 12 is 4, so 8x + 12 = 4(2x + 3).",
@@ -44,10 +92,26 @@
       {
         "questionText": "Expand (x + 4)(x + 2).",
         "options": [
-          { "id": "a", "text": "x^2 + 6x + 6", "isCorrect": false },
-          { "id": "b", "text": "x^2 + 8x + 6", "isCorrect": false },
-          { "id": "c", "text": "x^2 + 6x + 8", "isCorrect": true },
-          { "id": "d", "text": "x^2 + 2x + 8", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "x^2 + 6x + 6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x^2 + 8x + 6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x^2 + 6x + 8",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "x^2 + 2x + 8",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Using FOIL: x^2 + 2x + 4x + 8 = x^2 + 6x + 8.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Solve the equation 4x - 7 = 13.",
         "options": [
-          { "id": "a", "text": "x = 5", "isCorrect": true },
-          { "id": "b", "text": "x = 3", "isCorrect": false },
-          { "id": "c", "text": "x = 6", "isCorrect": false },
-          { "id": "d", "text": "x = 1.5", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "x = 5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "x = 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x = 6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x = 1.5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Add 7 to both sides: 4x = 20, then divide by 4 to get x = 5.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Factorize x^2 - 9 using difference of two squares.",
         "options": [
-          { "id": "a", "text": "(x - 3)(x - 3)", "isCorrect": false },
-          { "id": "b", "text": "(x + 3)(x + 3)", "isCorrect": false },
-          { "id": "c", "text": "(x - 9)(x + 1)", "isCorrect": false },
-          { "id": "d", "text": "(x + 3)(x - 3)", "isCorrect": true }
+          {
+            "id": "a",
+            "text": "(x - 3)(x - 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(x + 3)(x + 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(x - 9)(x + 1)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(x + 3)(x - 3)",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Since 9 = 3^2, x^2 - 9 = x^2 - 3^2 = (x + 3)(x - 3).",
@@ -80,10 +176,26 @@
       {
         "questionText": "Factorize the quadratic trinomial x^2 + 7x + 12.",
         "options": [
-          { "id": "a", "text": "(x + 3)(x + 4)", "isCorrect": true },
-          { "id": "b", "text": "(x + 2)(x + 6)", "isCorrect": false },
-          { "id": "c", "text": "(x + 1)(x + 12)", "isCorrect": false },
-          { "id": "d", "text": "(x + 5)(x + 2)", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "(x + 3)(x + 4)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(x + 2)(x + 6)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(x + 1)(x + 12)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(x + 5)(x + 2)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Find two numbers multiplying to 12 and adding to 7: these are 3 and 4, so the factors are (x + 3)(x + 4).",
@@ -92,10 +204,26 @@
       {
         "questionText": "Simplify the algebraic fraction (6x^2y) / (2xy).",
         "options": [
-          { "id": "a", "text": "3x", "isCorrect": true },
-          { "id": "b", "text": "3xy", "isCorrect": false },
-          { "id": "c", "text": "4x", "isCorrect": false },
-          { "id": "d", "text": "3x^2", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "3x",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3xy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4x",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3x^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Divide: 6/2 = 3, x^2/x = x and y/y = 1, giving 3x.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Factorize by grouping: ax + ay + bx + by.",
         "options": [
-          { "id": "a", "text": "(a + b)(x + y)", "isCorrect": true },
-          { "id": "b", "text": "(a + x)(b + y)", "isCorrect": false },
-          { "id": "c", "text": "(a + y)(b + x)", "isCorrect": false },
-          { "id": "d", "text": "(ax + by)(a + b)", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "(a + b)(x + y)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(a + x)(b + y)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(a + y)(b + x)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(ax + by)(a + b)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Group as a(x + y) + b(x + y), then factor out (x + y) to get (a + b)(x + y).",
@@ -116,10 +260,26 @@
       {
         "questionText": "Solve for x: 3(x - 2) = 2x + 4.",
         "options": [
-          { "id": "a", "text": "x = 2", "isCorrect": false },
-          { "id": "b", "text": "x = 10", "isCorrect": true },
-          { "id": "c", "text": "x = 6", "isCorrect": false },
-          { "id": "d", "text": "x = -10", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "x = 2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x = 10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "x = 6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x = -10",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Expand: 3x - 6 = 2x + 4, so 3x - 2x = 4 + 6, giving x = 10.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Add the algebraic fractions: x/3 + x/4.",
         "options": [
-          { "id": "a", "text": "2x/7", "isCorrect": false },
-          { "id": "b", "text": "x/12", "isCorrect": false },
-          { "id": "c", "text": "7x/12", "isCorrect": true },
-          { "id": "d", "text": "x^2/12", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "2x/7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x/12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7x/12",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "x^2/12",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The LCM of 3 and 4 is 12: x/3 = 4x/12 and x/4 = 3x/12, so the sum is 7x/12.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Solve the simultaneous equations: x + y = 10 and x - y = 4.",
         "options": [
-          { "id": "a", "text": "x = 7, y = 3", "isCorrect": true },
-          { "id": "b", "text": "x = 3, y = 7", "isCorrect": false },
-          { "id": "c", "text": "x = 6, y = 4", "isCorrect": false },
-          { "id": "d", "text": "x = 5, y = 5", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "x = 7, y = 3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "x = 3, y = 7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x = 6, y = 4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x = 5, y = 5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Adding the equations gives 2x = 14, so x = 7; then y = 10 - 7 = 3.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Expand (2x - 3)^2.",
         "options": [
-          { "id": "a", "text": "4x^2 - 9", "isCorrect": false },
-          { "id": "b", "text": "4x^2 - 12x + 9", "isCorrect": true },
-          { "id": "c", "text": "4x^2 + 12x + 9", "isCorrect": false },
-          { "id": "d", "text": "2x^2 - 12x + 9", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "4x^2 - 9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4x^2 - 12x + 9",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4x^2 + 12x + 9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2x^2 - 12x + 9",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Using (a - b)^2 = a^2 - 2ab + b^2: (2x)^2 - 2(2x)(3) + 3^2 = 4x^2 - 12x + 9.",
@@ -164,10 +372,26 @@
       {
         "questionText": "A number is multiplied by 3 and then 5 is added; the result is 26. What is the number?",
         "options": [
-          { "id": "a", "text": "5", "isCorrect": false },
-          { "id": "b", "text": "9", "isCorrect": false },
-          { "id": "c", "text": "7", "isCorrect": true },
-          { "id": "d", "text": "8", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Form the equation 3n + 5 = 26, so 3n = 21 and n = 7.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Factorize completely 2x^2 - 8.",
         "options": [
-          { "id": "a", "text": "2(x^2 - 8)", "isCorrect": false },
-          { "id": "b", "text": "2(x - 2)(x - 2)", "isCorrect": false },
-          { "id": "c", "text": "(2x - 4)(x + 2)", "isCorrect": false },
-          { "id": "d", "text": "2(x - 2)(x + 2)", "isCorrect": true }
+          {
+            "id": "a",
+            "text": "2(x^2 - 8)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2(x - 2)(x - 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2x - 4)(x + 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2(x - 2)(x + 2)",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "First take out the common factor 2: 2(x^2 - 4), then use difference of two squares: 2(x - 2)(x + 2).",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "When like terms 9m and 4m are combined, the result is _____.",
-        "options": [],
-        "correctAnswer": "13m",
+        "options": [
+          {
+            "id": "a",
+            "text": "13m",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "36m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "13",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Like terms are added directly: 9m + 4m = 13m.",
         "difficulty": "easy"
       },
       {
         "questionText": "The expansion of 2(x + 7) is _____.",
-        "options": [],
-        "correctAnswer": "2x + 14",
+        "options": [
+          {
+            "id": "a",
+            "text": "2x + 7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2x + 14",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "x + 14",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2x + 9",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Multiply each term in the bracket by 2: 2 x x = 2x and 2 x 7 = 14.",
         "difficulty": "easy"
       },
       {
         "questionText": "The highest common factor of the terms in 15a + 10 is _____.",
-        "options": [],
-        "correctAnswer": "5",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "5 is the largest number dividing both 15 and 10, so 15a + 10 = 5(3a + 2).",
         "difficulty": "easy"
       },
       {
         "questionText": "The solution of the equation x + 9 = 15 is x = _____.",
-        "options": [],
-        "correctAnswer": "6",
+        "options": [
+          {
+            "id": "a",
+            "text": "24",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Subtract 9 from both sides: x = 15 - 9 = 6.",
         "difficulty": "easy"
       },
       {
         "questionText": "Factorized completely, x^2 - 25 is _____.",
-        "options": [],
-        "correctAnswer": "(x + 5)(x - 5)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(x + 5)(x - 5)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(x - 5)(x - 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(x + 5)(x + 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(x + 25)(x - 1)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "This is a difference of two squares since 25 = 5^2, giving (x + 5)(x - 5).",
         "difficulty": "medium"
       },
       {
         "questionText": "The product (x - 6)(x + 6) expands to _____.",
-        "options": [],
-        "correctAnswer": "x^2 - 36",
+        "options": [
+          {
+            "id": "a",
+            "text": "x^2 + 36",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x^2 - 36",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "x^2 - 12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x^2 - 36x",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "By difference of two squares, (x - 6)(x + 6) = x^2 - 36.",
         "difficulty": "medium"
       },
       {
         "questionText": "Simplified to a single fraction, (5x)/8 - x/8 equals _____.",
-        "options": [],
-        "correctAnswer": "x/2",
+        "options": [
+          {
+            "id": "a",
+            "text": "4x",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3x/4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x/2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6x/8",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Subtract the numerators over the common denominator: (5x - x)/8 = 4x/8 = x/2.",
         "difficulty": "medium"
       },
       {
         "questionText": "The two numbers whose product is 10 and whose sum is 7 (used to factorize x^2 + 7x + 10) are _____.",
-        "options": [],
-        "correctAnswer": "2 and 5",
+        "options": [
+          {
+            "id": "a",
+            "text": "3 and 4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1 and 10",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-2 and -5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2 and 5",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "2 x 5 = 10 and 2 + 5 = 7, so x^2 + 7x + 10 = (x + 2)(x + 5).",
         "difficulty": "medium"
       },
       {
         "questionText": "If 2x + 3y = 12 and x = 3, then y = _____.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Substitute x = 3: 6 + 3y = 12, so 3y = 6 and y = 2.",
         "difficulty": "medium"
       },
       {
         "questionText": "The sum of a number and twice the number is 27; the number is _____.",
-        "options": [],
-        "correctAnswer": "9",
+        "options": [
+          {
+            "id": "a",
+            "text": "13.5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "18",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "27",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Form n + 2n = 27, so 3n = 27 and n = 9.",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A father is three times as old as his son. In 5 years' time, the sum of their ages will be 54 years. How old is the son now?",
         "options": [
-          { "id": "a", "text": "8 years", "isCorrect": false },
-          { "id": "b", "text": "11 years", "isCorrect": true },
-          { "id": "c", "text": "12 years", "isCorrect": false },
-          { "id": "d", "text": "33 years", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "8 years",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "11 years",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12 years",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "33 years",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Let the son be x; father is 3x. (x + 5) + (3x + 5) = 54 gives 4x + 10 = 54, so 4x = 44 and x = 11.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Solve the simultaneous equations 3x + 2y = 16 and 2x - y = 6 using the elimination method.",
         "options": [
-          { "id": "a", "text": "x = 4, y = 2", "isCorrect": true },
-          { "id": "b", "text": "x = 2, y = 4", "isCorrect": false },
-          { "id": "c", "text": "x = 3, y = 3.5", "isCorrect": false },
-          { "id": "d", "text": "x = 5, y = 0.5", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "x = 4, y = 2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "x = 2, y = 4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x = 3, y = 3.5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x = 5, y = 0.5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Multiply the second equation by 2: 4x - 2y = 12; add to 3x + 2y = 16 to get 7x = 28, so x = 4, then y = 2x - 6 = 2.",
@@ -430,10 +912,26 @@
       {
         "questionText": "Simplify the algebraic fraction (x^2 - 9) / (x^2 + 7x + 12).",
         "options": [
-          { "id": "a", "text": "(x - 3) / (x + 4)", "isCorrect": true },
-          { "id": "b", "text": "(x + 3) / (x + 4)", "isCorrect": false },
-          { "id": "c", "text": "(x - 3) / (x + 3)", "isCorrect": false },
-          { "id": "d", "text": "(x + 3) / (x - 4)", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "(x - 3) / (x + 4)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(x + 3) / (x + 4)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(x - 3) / (x + 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(x + 3) / (x - 4)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Factorize: x^2 - 9 = (x + 3)(x - 3) and x^2 + 7x + 12 = (x + 3)(x + 4); cancelling (x + 3) leaves (x - 3)/(x + 4).",

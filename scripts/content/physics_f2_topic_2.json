@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The rate of flow of electric charge in a conductor is called electric _____.",
-        "options": [],
-        "correctAnswer": "current",
+        "options": [
+          {
+            "id": "a",
+            "text": "current",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "voltage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "resistance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "power",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Electric current is the rate of flow of charge, measured in amperes.",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of potential difference (voltage) is the _____.",
-        "options": [],
-        "correctAnswer": "volt",
+        "options": [
+          {
+            "id": "a",
+            "text": "ampere",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "volt",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ohm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "watt",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Potential difference is measured in volts (V).",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of electrical resistance is the _____.",
-        "options": [],
-        "correctAnswer": "ohm",
+        "options": [
+          {
+            "id": "a",
+            "text": "volt",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ampere",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ohm",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "joule",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Resistance is measured in ohms, symbol the Greek letter omega.",
         "difficulty": "easy"
       },
       {
         "questionText": "Ohm's law is written as the equation V = _____.",
-        "options": [],
-        "correctAnswer": "IR",
+        "options": [
+          {
+            "id": "a",
+            "text": "I/R",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "R/I",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "I+R",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "IR",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Voltage equals current multiplied by resistance, V = IR.",
         "difficulty": "easy"
       },
       {
         "questionText": "A voltmeter is always connected in _____ with the component whose voltage is being measured.",
-        "options": [],
-        "correctAnswer": "parallel",
+        "options": [
+          {
+            "id": "a",
+            "text": "parallel",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "series",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "junction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "loop",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A high-resistance voltmeter is placed in parallel across the component.",
         "difficulty": "medium"
       },
       {
         "questionText": "An ammeter is always connected in _____ with the component in a circuit.",
-        "options": [],
-        "correctAnswer": "series",
+        "options": [
+          {
+            "id": "a",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "series",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "junction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "branch",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A low-resistance ammeter is placed in series so all the current passes through it.",
         "difficulty": "medium"
       },
       {
         "questionText": "If a 9 V battery drives a current of 3 A through a resistor, the resistance is _____ ohms.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "27",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "R = V/I = 9 V / 3 A = 3 ohms.",
         "difficulty": "medium"
       },
       {
         "questionText": "Two resistors of 2 ohms and 4 ohms in series give a total resistance of _____ ohms.",
-        "options": [],
-        "correctAnswer": "6",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "In series resistances add: 2 + 4 = 6 ohms.",
         "difficulty": "medium"
       },
       {
         "questionText": "Materials such as rubber and plastic that do not allow current to flow easily are called electrical _____.",
-        "options": [],
-        "correctAnswer": "insulators",
+        "options": [
+          {
+            "id": "a",
+            "text": "insulators",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "conductors",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "resistors",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "capacitors",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Insulators have few free electrons and resist the flow of current.",
         "difficulty": "easy"
       },
       {
         "questionText": "The energy supplied to each unit of charge by a cell is called the _____ of the cell.",
-        "options": [],
-        "correctAnswer": "EMF",
+        "options": [
+          {
+            "id": "a",
+            "text": "power",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "EMF",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "charge",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "current",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Electromotive force (EMF) is the energy per unit charge given by the source, measured in volts.",
         "difficulty": "medium"
       }

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "In the periodic table, the vertical columns are called _____.",
-        "options": [],
-        "correctAnswer": "groups",
+        "options": [
+          {
+            "id": "a",
+            "text": "groups",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "periods",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "blocks",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "series",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Vertical columns are groups; elements in the same group have similar properties.",
         "difficulty": "easy"
       },
       {
         "questionText": "The horizontal rows of the periodic table are called _____.",
-        "options": [],
-        "correctAnswer": "periods",
+        "options": [
+          {
+            "id": "a",
+            "text": "groups",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "periods",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "columns",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "blocks",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Horizontal rows are called periods and show the number of electron shells.",
         "difficulty": "easy"
       },
       {
         "questionText": "Modern elements are arranged in order of increasing atomic _____.",
-        "options": [],
-        "correctAnswer": "number",
+        "options": [
+          {
+            "id": "a",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "size",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "number",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "weight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Atomic number (the number of protons) is the basis of arrangement in the modern periodic table.",
         "difficulty": "easy"
       },
       {
         "questionText": "Elements of Group I are collectively known as the alkali _____.",
-        "options": [],
-        "correctAnswer": "metals",
+        "options": [
+          {
+            "id": "a",
+            "text": "earth",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "noble",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transition",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "metals",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Group I elements are soft, reactive metals known as alkali metals.",
         "difficulty": "easy"
       },
       {
         "questionText": "Elements of Group VII are collectively called the _____.",
-        "options": [],
-        "correctAnswer": "halogens",
+        "options": [
+          {
+            "id": "a",
+            "text": "halogens",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "alkali metals",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "noble gases",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transition metals",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The halogens are reactive non-metals found in Group VII.",
         "difficulty": "easy"
       },
       {
         "questionText": "Elements showing properties of both metals and non-metals are called _____.",
-        "options": [],
-        "correctAnswer": "metalloids",
+        "options": [
+          {
+            "id": "a",
+            "text": "isotopes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "metalloids",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "allotropes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transition metals",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Metalloids such as silicon lie along the dividing line between metals and non-metals.",
         "difficulty": "medium"
       },
       {
         "questionText": "The very unreactive gases in Group 0 are called the _____ gases.",
-        "options": [],
-        "correctAnswer": "noble",
+        "options": [
+          {
+            "id": "a",
+            "text": "inert",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "halogen",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "noble",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "alkali",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Noble gases are unreactive because they have full outer electron shells.",
         "difficulty": "easy"
       },
       {
         "questionText": "The number of valence electrons of an element is equal to its _____ number (for groups I to VII).",
-        "options": [],
-        "correctAnswer": "group",
+        "options": [
+          {
+            "id": "a",
+            "text": "period",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "atomic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "group",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "For main-group elements the group number equals the number of outer electrons.",
         "difficulty": "medium"
       },
       {
         "questionText": "Going down Group I, the reactivity of the metals _____.",
-        "options": [],
-        "correctAnswer": "increases",
+        "options": [
+          {
+            "id": "a",
+            "text": "increases",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "decreases",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "stays the same",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "doubles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Reactivity increases down Group I as the outer electron is lost more easily.",
         "difficulty": "medium"
       },
       {
         "questionText": "An atom with electron arrangement 2,8,7 has a valency of _____.",
-        "options": [],
-        "correctAnswer": "1",
+        "options": [
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "With 7 outer electrons it needs to gain 1 electron, giving a valency of 1 (this element is chlorine).",
         "difficulty": "hard"
       }

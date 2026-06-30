@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "The regular amount of money paid by the insured to the insurer for cover is called the _____.",
-        "options": [],
-        "correctAnswer": "premium",
+        "options": [
+          {"id": "a", "text": "premium", "isCorrect": true},
+          {"id": "b", "text": "policy", "isCorrect": false},
+          {"id": "c", "text": "bonus", "isCorrect": false},
+          {"id": "d", "text": "claim", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "The premium is the price paid for the transfer of risk to the insurer.",
         "difficulty": "easy"
       },
       {
         "questionText": "The legal document that contains the terms and conditions of an insurance contract is called the insurance _____.",
-        "options": [],
-        "correctAnswer": "policy",
+        "options": [
+          {"id": "a", "text": "premium", "isCorrect": false},
+          {"id": "b", "text": "policy", "isCorrect": true},
+          {"id": "c", "text": "proposal", "isCorrect": false},
+          {"id": "d", "text": "cover", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "The policy is the written evidence of the insurance agreement.",
         "difficulty": "easy"
       },
       {
         "questionText": "The principle requiring full and honest disclosure of all material facts is known as utmost _____ faith.",
-        "options": [],
-        "correctAnswer": "good",
+        "options": [
+          {"id": "a", "text": "great", "isCorrect": false},
+          {"id": "b", "text": "pure", "isCorrect": false},
+          {"id": "c", "text": "good", "isCorrect": true},
+          {"id": "d", "text": "full", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Utmost good faith (uberrimae fidei) binds both parties to disclose material facts honestly.",
         "difficulty": "easy"
       },
       {
         "questionText": "The principle that restores the insured to the same financial position as before the loss is called _____.",
-        "options": [],
-        "correctAnswer": "indemnity",
+        "options": [
+          {"id": "a", "text": "contribution", "isCorrect": false},
+          {"id": "b", "text": "subrogation", "isCorrect": false},
+          {"id": "c", "text": "proximate", "isCorrect": false},
+          {"id": "d", "text": "indemnity", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Indemnity prevents the insured from making a profit out of a loss.",
         "difficulty": "medium"
       },
       {
         "questionText": "The financial stake a person must have in the insured property is called insurable _____.",
-        "options": [],
-        "correctAnswer": "interest",
+        "options": [
+          {"id": "a", "text": "interest", "isCorrect": true},
+          {"id": "b", "text": "value", "isCorrect": false},
+          {"id": "c", "text": "benefit", "isCorrect": false},
+          {"id": "d", "text": "profit", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Insurable interest means the insured would suffer financially if the property were lost.",
         "difficulty": "medium"
       },
       {
         "questionText": "The type of insurance that covers loss or damage to ships and their cargo at sea is called _____ insurance.",
-        "options": [],
-        "correctAnswer": "marine",
+        "options": [
+          {"id": "a", "text": "fire", "isCorrect": false},
+          {"id": "b", "text": "marine", "isCorrect": true},
+          {"id": "c", "text": "life", "isCorrect": false},
+          {"id": "d", "text": "motor", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Marine insurance covers hull, cargo and freight risks of sea transport.",
         "difficulty": "easy"
       },
       {
         "questionText": "Because death is certain to happen, cover on human life is more correctly called life _____.",
-        "options": [],
-        "correctAnswer": "assurance",
+        "options": [
+          {"id": "a", "text": "indemnity", "isCorrect": false},
+          {"id": "b", "text": "guarantee", "isCorrect": false},
+          {"id": "c", "text": "assurance", "isCorrect": true},
+          {"id": "d", "text": "warranty", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "The term assurance is used because the insured event (death) will certainly occur.",
         "difficulty": "medium"
       },
       {
         "questionText": "When an item is insured with several insurers, the sharing of the loss among them follows the principle of _____.",
-        "options": [],
-        "correctAnswer": "contribution",
+        "options": [
+          {"id": "a", "text": "indemnity", "isCorrect": false},
+          {"id": "b", "text": "subrogation", "isCorrect": false},
+          {"id": "c", "text": "averages", "isCorrect": false},
+          {"id": "d", "text": "contribution", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Contribution ensures each insurer pays a proportionate share of the claim.",
         "difficulty": "medium"
       },
       {
         "questionText": "Risks that involve a chance of both profit and loss, such as buying shares to resell, are called _____ risks and cannot be insured.",
-        "options": [],
-        "correctAnswer": "speculative",
+        "options": [
+          {"id": "a", "text": "speculative", "isCorrect": true},
+          {"id": "b", "text": "pure", "isCorrect": false},
+          {"id": "c", "text": "fundamental", "isCorrect": false},
+          {"id": "d", "text": "particular", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Only pure risks (loss or no loss) are insurable; speculative risks are not.",
         "difficulty": "hard"
       },
       {
         "questionText": "The form completed by a person applying for insurance, giving details of the risk, is called the _____ form.",
-        "options": [],
-        "correctAnswer": "proposal",
+        "options": [
+          {"id": "a", "text": "policy", "isCorrect": false},
+          {"id": "b", "text": "proposal", "isCorrect": true},
+          {"id": "c", "text": "cover", "isCorrect": false},
+          {"id": "d", "text": "claim", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "The proposal form provides the insurer with information to assess and price the risk.",
         "difficulty": "medium"
       }
