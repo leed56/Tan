@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The pillars of Iman are _____ in number.",
-        "options": [],
-        "correctAnswer": "six",
+        "options": [
+          {
+            "id": "a",
+            "text": "six",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "four",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "five",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "seven",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The six articles of faith are belief in Allah, angels, books, messengers, the Last Day, and Qadar.",
         "difficulty": "easy"
       },
       {
         "questionText": "Belief in the Oneness of Allah is called _____.",
-        "options": [],
-        "correctAnswer": "Tawhid",
+        "options": [
+          {
+            "id": "a",
+            "text": "Risalah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tawhid",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Akhirah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Iman",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Tawhid affirms that Allah is one, with no partner or equal.",
         "difficulty": "easy"
       },
       {
         "questionText": "The angel who delivered revelation to the prophets is _____.",
-        "options": [],
-        "correctAnswer": "Jibril",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mikail",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Israfil",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Jibril",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Izrail",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Jibril (Gabriel) brought Allah's words to the prophets, including the Qur'an.",
         "difficulty": "easy"
       },
       {
         "questionText": "The holy book revealed to Prophet Muhammad is the _____.",
-        "options": [],
-        "correctAnswer": "Qur'an",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tawrat",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Zabur",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Injil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Qur'an",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Qur'an is the final revelation and a guidance for all mankind.",
         "difficulty": "easy"
       },
       {
         "questionText": "The scripture revealed to Prophet Isa (Jesus) is the _____.",
-        "options": [],
-        "correctAnswer": "Injil",
+        "options": [
+          {
+            "id": "a",
+            "text": "Injil",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Tawrat",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Zabur",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Qur'an",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Injil (Gospel) was the book given to Prophet Isa.",
         "difficulty": "medium"
       },
       {
         "questionText": "Angels were created by Allah from _____.",
-        "options": [],
-        "correctAnswer": "light",
+        "options": [
+          {
+            "id": "a",
+            "text": "clay",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "light",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "fire",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "water",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Angels are made of light (nur), unlike humans made of clay and jinn made of fire.",
         "difficulty": "medium"
       },
       {
         "questionText": "Belief in Allah's divine decree and predestination is called _____.",
-        "options": [],
-        "correctAnswer": "Qadar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tawhid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Risalah",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Qadar",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Akhirah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Qadar means accepting that everything happens by Allah's knowledge and will.",
         "difficulty": "medium"
       },
       {
         "questionText": "Prophet Muhammad is described as the _____ of the Prophets, meaning the last one.",
-        "options": [],
-        "correctAnswer": "Seal",
+        "options": [
+          {
+            "id": "a",
+            "text": "first",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "greatest",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "messenger",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Seal",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "He is the Seal of the Prophets (Khatam an-Nabiyyin); no prophet comes after him.",
         "difficulty": "medium"
       },
       {
         "questionText": "The Day on which all people will be raised and judged is called the _____ Day.",
-        "options": [],
-        "correctAnswer": "Last",
+        "options": [
+          {
+            "id": "a",
+            "text": "Last",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "First",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sacred",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Blessed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Belief in the Last Day includes resurrection, judgement, and reward or punishment.",
         "difficulty": "easy"
       },
       {
         "questionText": "The opposite of Tawhid, associating partners with Allah, is called _____.",
-        "options": [],
-        "correctAnswer": "shirk",
+        "options": [
+          {
+            "id": "a",
+            "text": "kufr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "shirk",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "nifaq",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bid'ah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Shirk is the most serious sin in Islam and contradicts belief in Allah's Oneness.",
         "difficulty": "hard"
       }

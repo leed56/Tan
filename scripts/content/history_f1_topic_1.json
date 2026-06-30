@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The study of past human events and how people lived is called _____.",
-        "options": [],
-        "correctAnswer": "history",
+        "options": [
+          {
+            "id": "a",
+            "text": "history",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "geography",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "biology",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "economics",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "History is the study of the human past and the activities of people over time.",
         "difficulty": "easy"
       },
       {
         "questionText": "A specialist who researches and writes about the past is known as a _____.",
-        "options": [],
-        "correctAnswer": "historian",
+        "options": [
+          {
+            "id": "a",
+            "text": "geographer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "historian",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archaeologist",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "journalist",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A historian is the expert who studies and interprets past events.",
         "difficulty": "easy"
       },
       {
         "questionText": "The arrangement of events in the order in which they happened in time is called _____.",
-        "options": [],
-        "correctAnswer": "chronology",
+        "options": [
+          {
+            "id": "a",
+            "text": "genealogy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biography",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "chronology",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "mythology",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Chronology orders past events according to the time they occurred.",
         "difficulty": "medium"
       },
       {
         "questionText": "History helps to build love for one's country, a quality known as _____.",
-        "options": [],
-        "correctAnswer": "patriotism",
+        "options": [
+          {
+            "id": "a",
+            "text": "nationalism",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "heroism",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tourism",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "patriotism",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Patriotism is the love and loyalty towards one's nation that history helps to develop.",
         "difficulty": "medium"
       },
       {
         "questionText": "Because it studies human beings in society, history is classified as a _____ science.",
-        "options": [],
-        "correctAnswer": "social",
+        "options": [
+          {
+            "id": "a",
+            "text": "social",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "natural",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "physical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "applied",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "History is a social science since it deals with people and their activities.",
         "difficulty": "medium"
       },
       {
         "questionText": "The materials or evidence used by historians to learn about the past are called historical _____.",
-        "options": [],
-        "correctAnswer": "sources",
+        "options": [
+          {
+            "id": "a",
+            "text": "records",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sources",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archives",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "relics",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Historical sources are the materials and evidence from which knowledge of the past is obtained.",
         "difficulty": "medium"
       },
       {
         "questionText": "We study history to learn lessons from past mistakes so that we do not _____ them.",
-        "options": [],
-        "correctAnswer": "repeat",
+        "options": [
+          {
+            "id": "a",
+            "text": "forget",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ignore",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "repeat",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "deny",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "History helps people avoid repeating the errors of the past.",
         "difficulty": "easy"
       },
       {
         "questionText": "Knowing where we come from and who we are gives a person a sense of _____.",
-        "options": [],
-        "correctAnswer": "identity",
+        "options": [
+          {
+            "id": "a",
+            "text": "wealth",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "power",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "freedom",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "identity",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "History gives individuals a sense of identity by revealing their origin and culture.",
         "difficulty": "medium"
       },
       {
         "questionText": "The events that happened before the present day are referred to as the _____.",
-        "options": [],
-        "correctAnswer": "past",
+        "options": [
+          {
+            "id": "a",
+            "text": "past",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "future",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "present",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "moment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "History is fundamentally the study of the past.",
         "difficulty": "easy"
       },
       {
         "questionText": "History promotes _____ among different groups of people by teaching their shared origin.",
-        "options": [],
-        "correctAnswer": "unity",
+        "options": [
+          {
+            "id": "a",
+            "text": "conflict",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "unity",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "rivalry",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "division",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "By showing a common past, history fosters national unity.",
         "difficulty": "medium"
       }

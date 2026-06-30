@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Physics is the study of matter and _____.",
-        "options": [],
-        "correctAnswer": "energy",
+        "options": [
+          {
+            "id": "a",
+            "text": "energy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "force",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "volume",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Physics deals with matter, energy and how they interact.",
         "difficulty": "easy"
       },
       {
         "questionText": "The branch of physics that deals with light is called _____.",
-        "options": [],
-        "correctAnswer": "optics",
+        "options": [
+          {
+            "id": "a",
+            "text": "acoustics",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "optics",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mechanics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "thermodynamics",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Optics studies light and how it behaves with mirrors and lenses.",
         "difficulty": "easy"
       },
       {
         "questionText": "The branch of physics that deals with motion and forces is called _____.",
-        "options": [],
-        "correctAnswer": "mechanics",
+        "options": [
+          {
+            "id": "a",
+            "text": "optics",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "acoustics",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mechanics",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "electronics",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Mechanics studies the motion of objects and the forces acting on them.",
         "difficulty": "medium"
       },
       {
         "questionText": "The study of sound in physics is known as _____.",
-        "options": [],
-        "correctAnswer": "acoustics",
+        "options": [
+          {
+            "id": "a",
+            "text": "optics",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "dynamics",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "statics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "acoustics",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Acoustics is the branch of physics that deals with sound.",
         "difficulty": "medium"
       },
       {
         "questionText": "The subject that physics depends on most for calculations is _____.",
-        "options": [],
-        "correctAnswer": "mathematics",
+        "options": [
+          {
+            "id": "a",
+            "text": "mathematics",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "biology",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "geography",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "history",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Mathematics provides the tools for measuring and calculating physical quantities.",
         "difficulty": "easy"
       },
       {
         "questionText": "The application of the discoveries of physics to make useful devices is called _____.",
-        "options": [],
-        "correctAnswer": "technology",
+        "options": [
+          {
+            "id": "a",
+            "text": "science",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "technology",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "research",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "experiment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Technology turns physics principles into practical machines and tools.",
         "difficulty": "medium"
       },
       {
         "questionText": "A person who designs machines, roads and bridges using physics is called an _____.",
-        "options": [],
-        "correctAnswer": "engineer",
+        "options": [
+          {
+            "id": "a",
+            "text": "operator",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "assistant",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "engineer",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "inventor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Engineering is a major career that applies physics to design and build things.",
         "difficulty": "easy"
       },
       {
         "questionText": "The branch of physics that studies heat and temperature is called _____.",
-        "options": [],
-        "correctAnswer": "thermodynamics",
+        "options": [
+          {
+            "id": "a",
+            "text": "electromagnetism",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "optics",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "acoustics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "thermodynamics",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Thermodynamics, or heat physics, deals with heat and temperature.",
         "difficulty": "hard"
       },
       {
         "questionText": "The use of X-rays and ultrasound in hospitals is an example of physics applied in the field of _____.",
-        "options": [],
-        "correctAnswer": "medicine",
+        "options": [
+          {
+            "id": "a",
+            "text": "medicine",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "agriculture",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transport",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "communication",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Medical physics applies physics to diagnose and treat diseases.",
         "difficulty": "hard"
       },
       {
         "questionText": "The branch of physics that studies electricity and magnetism together is called _____.",
-        "options": [],
-        "correctAnswer": "electromagnetism",
+        "options": [
+          {
+            "id": "a",
+            "text": "thermodynamics",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "electromagnetism",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "acoustics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mechanics",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Electromagnetism links the study of electric charges and magnets.",
         "difficulty": "medium"
       }

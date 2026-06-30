@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The science of classifying and naming living organisms is called _____.",
-        "options": [],
-        "correctAnswer": "taxonomy",
+        "options": [
+          {
+            "id": "a",
+            "text": "taxonomy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "anatomy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "physiology",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ecology",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Taxonomy deals with grouping organisms and giving them scientific names.",
         "difficulty": "easy"
       },
       {
         "questionText": "The smallest unit in the taxonomic hierarchy is the _____.",
-        "options": [],
-        "correctAnswer": "species",
+        "options": [
+          {
+            "id": "a",
+            "text": "kingdom",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "species",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "phylum",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "family",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Species is the most specific rank, made up of organisms that can interbreed and produce fertile offspring.",
         "difficulty": "easy"
       },
       {
         "questionText": "The largest and broadest taxonomic group used to classify living things is the _____.",
-        "options": [],
-        "correctAnswer": "kingdom",
+        "options": [
+          {
+            "id": "a",
+            "text": "species",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "genus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kingdom",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "order",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Kingdom is the highest rank, and the five kingdoms are Monera, Protoctista, Fungi, Plantae and Animalia.",
         "difficulty": "easy"
       },
       {
         "questionText": "The scientist who introduced the system of binomial nomenclature was _____.",
-        "options": [],
-        "correctAnswer": "Carolus Linnaeus",
+        "options": [
+          {
+            "id": "a",
+            "text": "Charles Darwin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Gregor Mendel",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Robert Hooke",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Carolus Linnaeus",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Carolus Linnaeus developed the two-name system and the modern hierarchy of classification.",
         "difficulty": "medium"
       },
       {
         "questionText": "Single-celled organisms that have no true (membrane-bound) nucleus are placed in the kingdom _____.",
-        "options": [],
-        "correctAnswer": "Monera",
+        "options": [
+          {
+            "id": "a",
+            "text": "Monera",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Protista",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Plantae",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Monera contains prokaryotes such as bacteria, whose genetic material is not enclosed in a nucleus.",
         "difficulty": "medium"
       },
       {
         "questionText": "Fungi obtain their food by _____ nutrients from dead or living material rather than by making it.",
-        "options": [],
-        "correctAnswer": "absorbing",
+        "options": [
+          {
+            "id": "a",
+            "text": "producing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "absorbing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "synthesising",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "manufacturing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Fungi lack chlorophyll, so they absorb digested nutrients, acting as decomposers or parasites.",
         "difficulty": "medium"
       },
       {
         "questionText": "Green plants make their own food by the process of _____.",
-        "options": [],
-        "correctAnswer": "photosynthesis",
+        "options": [
+          {
+            "id": "a",
+            "text": "respiration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "transpiration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "photosynthesis",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "fermentation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Photosynthesis uses chlorophyll, sunlight, water and carbon dioxide to produce food (glucose).",
         "difficulty": "easy"
       },
       {
         "questionText": "An identification tool made of paired contrasting statements is called a _____ key.",
-        "options": [],
-        "correctAnswer": "dichotomous",
+        "options": [
+          {
+            "id": "a",
+            "text": "botanical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "numerical",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alphabetical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dichotomous",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A dichotomous key splits choices into two at each step to lead to the organism's name.",
         "difficulty": "easy"
       },
       {
         "questionText": "In the name Zea mays, the word 'mays' is the _____ name.",
-        "options": [],
-        "correctAnswer": "species",
+        "options": [
+          {
+            "id": "a",
+            "text": "species",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "genus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "family",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kingdom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The second word in a binomial name, written in small letters, is the species name.",
         "difficulty": "medium"
       },
       {
         "questionText": "Unlike plants and fungi, members of kingdom Animalia do not have a _____ around their cells.",
-        "options": [],
-        "correctAnswer": "cell wall",
+        "options": [
+          {
+            "id": "a",
+            "text": "nucleus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cell wall",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cytoplasm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cell membrane",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Animal cells have only a cell membrane, while plant and fungal cells also have a rigid cell wall.",
         "difficulty": "medium"
       }

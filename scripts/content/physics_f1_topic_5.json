@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "All matter is made up of tiny particles that are in continuous _____, according to the kinetic theory.",
-        "options": [],
-        "correctAnswer": "motion",
+        "options": [
+          {
+            "id": "a",
+            "text": "motion",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "rest",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "equilibrium",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "contact",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The key idea of the kinetic theory is that particles are always moving.",
         "difficulty": "easy"
       },
       {
         "questionText": "The three common states of matter are solid, liquid and _____.",
-        "options": [],
-        "correctAnswer": "gas",
+        "options": [
+          {
+            "id": "a",
+            "text": "plasma",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "gas",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "vapour",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fluid",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Solids, liquids and gases differ in how their particles are arranged and how they move.",
         "difficulty": "easy"
       },
       {
         "questionText": "The force of attraction between molecules of different substances is called _____.",
-        "options": [],
-        "correctAnswer": "adhesion",
+        "options": [
+          {
+            "id": "a",
+            "text": "cohesion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "viscosity",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "adhesion",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "friction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Adhesion explains why water wets glass and why ink sticks to paper.",
         "difficulty": "easy"
       },
       {
         "questionText": "The rise or fall of a liquid in a narrow tube is called _____.",
-        "options": [],
-        "correctAnswer": "capillarity",
+        "options": [
+          {
+            "id": "a",
+            "text": "diffusion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "osmosis",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "viscosity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "capillarity",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Capillarity (capillary action) results from the balance between adhesion and cohesion in a thin tube.",
         "difficulty": "medium"
       },
       {
         "questionText": "The property that makes the surface of a liquid behave like a stretched elastic skin is called surface _____.",
-        "options": [],
-        "correctAnswer": "tension",
+        "options": [
+          {
+            "id": "a",
+            "text": "tension",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pressure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "viscosity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "density",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Surface tension is caused by the unbalanced cohesive forces on molecules at the liquid surface.",
         "difficulty": "medium"
       },
       {
         "questionText": "The change of state from a liquid to a gas is called _____.",
-        "options": [],
-        "correctAnswer": "evaporation",
+        "options": [
+          {
+            "id": "a",
+            "text": "condensation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "evaporation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "freezing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "melting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Evaporation (or boiling) occurs when liquid particles gain enough energy to escape into the gaseous state.",
         "difficulty": "easy"
       },
       {
         "questionText": "The random movement of visible particles caused by collisions with invisible particles is called _____ motion.",
-        "options": [],
-        "correctAnswer": "Brownian",
+        "options": [
+          {
+            "id": "a",
+            "text": "random",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "molecular",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Brownian",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "thermal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Brownian motion gives evidence that liquids and gases are made of moving particles.",
         "difficulty": "medium"
       },
       {
         "questionText": "Within the elastic limit, the extension of a spring is directly proportional to the applied force; this is known as _____ law.",
-        "options": [],
-        "correctAnswer": "Hooke's",
+        "options": [
+          {
+            "id": "a",
+            "text": "Newton's",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Boyle's",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Charles'",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hooke's",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Hooke's law links the load on a spring to its extension.",
         "difficulty": "medium"
       },
       {
         "questionText": "The maximum force beyond which a material does not return to its original shape is the _____ limit.",
-        "options": [],
-        "correctAnswer": "elastic",
+        "options": [
+          {
+            "id": "a",
+            "text": "elastic",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "plastic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "yield",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "breaking",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Stretching past the elastic limit causes permanent deformation.",
         "difficulty": "medium"
       },
       {
         "questionText": "Diffusion is the movement of particles from a region of high concentration to a region of _____ concentration.",
-        "options": [],
-        "correctAnswer": "low",
+        "options": [
+          {
+            "id": "a",
+            "text": "high",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "low",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "equal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "medium",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Particles spread out until they are evenly distributed.",
         "difficulty": "easy"
       }

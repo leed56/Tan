@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The system software that controls the whole computer and allows other programs to run is called the _____.",
-        "options": [],
-        "correctAnswer": "operating system",
+        "options": [
+          {
+            "id": "a",
+            "text": "operating system",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "word processor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "web browser",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "antivirus program",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The operating system is the most important system software because all other programs depend on it to run.",
         "difficulty": "easy"
       },
       {
         "questionText": "The process of starting a computer and loading the operating system is known as _____.",
-        "options": [],
-        "correctAnswer": "booting",
+        "options": [
+          {
+            "id": "a",
+            "text": "shutting down",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "booting",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "logging in",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "formatting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Booting happens automatically when the computer is switched on.",
         "difficulty": "easy"
       },
       {
         "questionText": "A small picture on the desktop that represents a program or file is called an _____.",
-        "options": [],
-        "correctAnswer": "icon",
+        "options": [
+          {
+            "id": "a",
+            "text": "window",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "menu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "icon",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "cursor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Icons make it easy to find and open programs and files by clicking on them.",
         "difficulty": "easy"
       },
       {
         "questionText": "The main screen shown after the computer starts, where icons and the taskbar appear, is called the _____.",
-        "options": [],
-        "correctAnswer": "desktop",
+        "options": [
+          {
+            "id": "a",
+            "text": "taskbar",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "toolbar",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "folder",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "desktop",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The desktop is the user's main working area on the screen.",
         "difficulty": "easy"
       },
       {
         "questionText": "A named container that is used to store and organise related files is called a _____.",
-        "options": [],
-        "correctAnswer": "folder",
+        "options": [
+          {
+            "id": "a",
+            "text": "folder",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "file",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "icon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shortcut",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Folders, also known as directories, help keep files neat and easy to locate.",
         "difficulty": "easy"
       },
       {
         "questionText": "An interface that uses icons, windows and a mouse is called a graphical user interface, often shortened to _____.",
-        "options": [],
-        "correctAnswer": "GUI",
+        "options": [
+          {
+            "id": "a",
+            "text": "CLI",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "GUI",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "API",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "URL",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "GUI stands for Graphical User Interface and makes computers easier for beginners to use.",
         "difficulty": "medium"
       },
       {
         "questionText": "An interface where the user must type text commands to control the computer is called a _____ interface.",
-        "options": [],
-        "correctAnswer": "command line",
+        "options": [
+          {
+            "id": "a",
+            "text": "graphical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "touch",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "command line",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "voice",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A command line interface requires the user to know and type the correct commands.",
         "difficulty": "medium"
       },
       {
         "questionText": "The mobile operating system developed by Google and used on many smartphones is called _____.",
-        "options": [],
-        "correctAnswer": "Android",
+        "options": [
+          {
+            "id": "a",
+            "text": "Windows",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "macOS",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Linux",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Android",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Android is one of the most widely used operating systems for touch-screen mobile devices.",
         "difficulty": "easy"
       },
       {
         "questionText": "To make an exact duplicate of a file in another location while keeping the original is called to _____ the file.",
-        "options": [],
-        "correctAnswer": "copy",
+        "options": [
+          {
+            "id": "a",
+            "text": "copy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "move",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "delete",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rename",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Copying produces a second version of the file and leaves the original unchanged.",
         "difficulty": "medium"
       },
       {
         "questionText": "Giving a file a new name without changing its contents is called to _____ the file.",
-        "options": [],
-        "correctAnswer": "rename",
+        "options": [
+          {
+            "id": "a",
+            "text": "copy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "rename",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "move",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "delete",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Renaming only changes the file's name, not the information stored inside it.",
         "difficulty": "easy"
       }

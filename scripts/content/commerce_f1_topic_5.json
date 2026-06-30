@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The services that help to overcome the obstacles of trade are known as aids to _____.",
-        "options": [],
-        "correctAnswer": "trade",
+        "options": [
+          {
+            "id": "a",
+            "text": "trade",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "commerce",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "business",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "industry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "These supporting services exist to make trading activities easier.",
         "difficulty": "easy"
       },
       {
         "questionText": "_____ is the aid to trade that moves goods and people from one place to another.",
-        "options": [],
-        "correctAnswer": "Transport",
+        "options": [
+          {
+            "id": "a",
+            "text": "Banking",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Transport",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Insurance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Advertising",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Transport overcomes the obstacle of distance between producers and consumers.",
         "difficulty": "easy"
       },
       {
         "questionText": "The aid to trade that protects traders against the risk of loss by paying compensation is _____.",
-        "options": [],
-        "correctAnswer": "insurance",
+        "options": [
+          {
+            "id": "a",
+            "text": "banking",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "transport",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "insurance",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "warehousing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "In return for a premium, the insurer compensates the insured for an agreed loss.",
         "difficulty": "easy"
       },
       {
         "questionText": "_____ is the storing of goods from the time they are produced until they are needed by consumers.",
-        "options": [],
-        "correctAnswer": "Warehousing",
+        "options": [
+          {
+            "id": "a",
+            "text": "Transport",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Banking",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Advertising",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Warehousing",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Warehousing overcomes the obstacle of time and helps ensure a steady supply of goods.",
         "difficulty": "easy"
       },
       {
         "questionText": "The aid to trade that informs and persuades people to buy goods and services is _____.",
-        "options": [],
-        "correctAnswer": "advertising",
+        "options": [
+          {
+            "id": "a",
+            "text": "advertising",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "banking",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "insurance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transport",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Advertising creates awareness and demand for goods in the market.",
         "difficulty": "easy"
       },
       {
         "questionText": "Banks help trade by keeping money safe, transferring payments and giving _____ to traders.",
-        "options": [],
-        "correctAnswer": "loans",
+        "options": [
+          {
+            "id": "a",
+            "text": "shares",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "loans",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "premiums",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dividends",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Loans provide traders with the finance they need to run and expand their businesses.",
         "difficulty": "medium"
       },
       {
         "questionText": "The passing of information between traders by telephone, e-mail or letter is called _____.",
-        "options": [],
-        "correctAnswer": "communication",
+        "options": [
+          {
+            "id": "a",
+            "text": "transport",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "banking",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "communication",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "warehousing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Communication links buyers and sellers so that orders and information can be exchanged.",
         "difficulty": "easy"
       },
       {
         "questionText": "The traders who act as a link between producers and consumers are called _____.",
-        "options": [],
-        "correctAnswer": "middlemen",
+        "options": [
+          {
+            "id": "a",
+            "text": "producers",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "consumers",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "manufacturers",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "middlemen",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Wholesalers and retailers are middlemen who help in the distribution of goods.",
         "difficulty": "medium"
       },
       {
         "questionText": "The amount of money paid to an insurance company for cover is called the _____.",
-        "options": [],
-        "correctAnswer": "premium",
+        "options": [
+          {
+            "id": "a",
+            "text": "premium",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "interest",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "commission",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dividend",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The premium is the regular payment the insured makes to keep the policy in force.",
         "difficulty": "medium"
       },
       {
         "questionText": "By storing surplus goods and releasing them when supply is low, warehousing helps to _____ prices.",
-        "options": [],
-        "correctAnswer": "stabilise",
+        "options": [
+          {
+            "id": "a",
+            "text": "increase",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "stabilise",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "double",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reduce",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Steady supply from warehouses prevents sharp rises and falls in prices.",
         "difficulty": "hard"
       }

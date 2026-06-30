@@ -6,8 +6,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  KeyboardAvoidingView,
-  Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -17,7 +15,7 @@ import { LoadingState } from '../../components/ui/LoadingState';
 import { ErrorState } from '../../components/ui/ErrorState';
 import { QuizProgressBar } from '../../components/ui/quiz/QuizProgressBar';
 import { QuestionRenderer } from '../../components/ui/quiz/QuestionRenderer';
-import { FIBInput } from '../../components/ui/quiz/FIBInput';
+import { MCQOption } from '../../components/ui/quiz/MCQOption';
 import { FeedbackModal } from '../../components/ui/quiz/FeedbackModal';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
 import { useQuizStore } from '../../store/quizStore';
@@ -25,16 +23,7 @@ import { useGamificationStore } from '../../store/gamificationStore';
 
 type Props = StackScreenProps<HomeStackParamList, 'FIBQuiz'>;
 
-function normalise(s: string): string {
-  // Lowercase, collapse whitespace, and keep letters/digits/decimal points so
-  // numeric answers ("3.14") and multi-word answers ("carbon dioxide") survive.
-  return s
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .replace(/[^a-z0-9 .]/g, '')
-    .trim();
-}
+const OPTION_LABELS = ['A', 'B', 'C', 'D'];
 
 export function FIBScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
@@ -42,9 +31,7 @@ export function FIBScreen({ navigation, route }: Props) {
   const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults, loadingQuestions } = useQuizStore();
   const { addXp, addCoins } = useGamificationStore();
 
-  const [inputValue, setInputValue] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
 
   const question = currentQuestion();
@@ -54,23 +41,20 @@ export function FIBScreen({ navigation, route }: Props) {
   const prevQuestionId = React.useRef<string | undefined>(undefined);
   if (question?.id !== prevQuestionId.current) {
     prevQuestionId.current = question?.id;
-    if (submitted) {
-      setInputValue('');
-      setSubmitted(false);
-      setIsCorrect(null);
+    if (selectedOption !== null) {
+      setSelectedOption(null);
       setShowFeedback(false);
     }
   }
 
-  const handleSubmit = useCallback(() => {
-    if (!question || submitted || inputValue.trim().length === 0) return;
+  const handleAnswer = useCallback((optionId: string) => {
+    if (selectedOption !== null || !question) return;
 
-    const correct = normalise(inputValue) === normalise(question.correctAnswer);
+    const correct = question.correctAnswer === optionId;
     const timeTaken = 0; // no timer for FIB
 
-    setIsCorrect(correct);
-    setSubmitted(true);
-    submitAnswer(question.id, inputValue.trim(), correct, timeTaken);
+    setSelectedOption(optionId);
+    submitAnswer(question.id, optionId, correct, timeTaken);
 
     if (correct) {
       addXp(question.xpReward);
@@ -78,7 +62,7 @@ export function FIBScreen({ navigation, route }: Props) {
     }
 
     setShowFeedback(true);
-  }, [question, submitted, inputValue, submitAnswer, addXp, addCoins]);
+  }, [selectedOption, question, submitAnswer, addXp, addCoins]);
 
   const handleContinue = useCallback(() => {
     setShowFeedback(false);
@@ -99,9 +83,7 @@ export function FIBScreen({ navigation, route }: Props) {
         quizType: 'fib',
       });
     } else {
-      setInputValue('');
-      setSubmitted(false);
-      setIsCorrect(null);
+      setSelectedOption(null);
       advance();
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
@@ -116,7 +98,7 @@ export function FIBScreen({ navigation, route }: Props) {
       subjectId,
       formId,
       correctAnswer: question.correctAnswer,
-      options: [],
+      options: question.options.map((o) => ({ id: o.id, text: o.text })),
       packTitle,
       subjectColor,
       fallbackExplanation: question.explanation,
@@ -125,10 +107,10 @@ export function FIBScreen({ navigation, route }: Props) {
 
   useFocusEffect(
     useCallback(() => {
-      if (submitted && !showFeedback) {
+      if (selectedOption !== null && !showFeedback) {
         setShowFeedback(true);
       }
-    }, [submitted]),
+    }, [selectedOption]),
   );
 
   if (loadingQuestions) {
@@ -148,61 +130,61 @@ export function FIBScreen({ navigation, route }: Props) {
 
   const current = session.currentIndex + 1;
   const total = session.questions.length;
+  const isCorrect = selectedOption !== null && question.correctAnswer === selectedOption;
+  const correctOption = question.options.find((o) => o.id === question.correctAnswer);
 
   return (
     <ScreenContainer padded={false}>
-      <KeyboardAvoidingView
-        style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-        keyboardVerticalOffset={0}
+      {/* Header */}
+      <View style={styles.header}>
+        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.closeBtn}>
+          <Ionicons name="close" size={22} color={COLORS.textMuted} />
+        </TouchableOpacity>
+        <Text style={styles.packTitle} numberOfLines={1}>{packTitle}</Text>
+        <View style={{ width: 36 }} />
+      </View>
+
+      {/* Progress */}
+      <View style={styles.progressWrap}>
+        <QuizProgressBar current={current} total={total} color={subjectColor} />
+      </View>
+
+      <ScrollView
+        contentContainerStyle={styles.body}
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
       >
-        {/* Header */}
-        <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.closeBtn}>
-            <Ionicons name="close" size={22} color={COLORS.textMuted} />
-          </TouchableOpacity>
-          <Text style={styles.packTitle} numberOfLines={1}>{packTitle}</Text>
-          <View style={{ width: 36 }} />
+        {/* Question */}
+        <QuestionRenderer question={question} questionNumber={current} />
+
+        {/* Options — choose the term that fills the blank */}
+        <View style={styles.options}>
+          {question.options.map((opt, i) => {
+            let state: 'idle' | 'selected' | 'correct' | 'wrong' = 'idle';
+            if (selectedOption !== null) {
+              if (opt.id === question.correctAnswer) state = 'correct';
+              else if (opt.id === selectedOption) state = 'wrong';
+            }
+            return (
+              <MCQOption
+                key={opt.id}
+                option={opt}
+                label={OPTION_LABELS[i]}
+                state={state}
+                disabled={selectedOption !== null}
+                onPress={handleAnswer}
+              />
+            );
+          })}
         </View>
-
-        {/* Progress */}
-        <View style={styles.progressWrap}>
-          <QuizProgressBar current={current} total={total} color={subjectColor} />
-        </View>
-
-        <ScrollView
-          contentContainerStyle={styles.body}
-          showsVerticalScrollIndicator={false}
-          keyboardShouldPersistTaps="handled"
-        >
-          {/* Question */}
-          <QuestionRenderer question={question} questionNumber={current} />
-
-          {/* Input */}
-          <FIBInput
-            value={inputValue}
-            onChange={setInputValue}
-            onSubmit={handleSubmit}
-            disabled={submitted}
-            isCorrect={isCorrect}
-          />
-
-          {/* Correct answer reveal after wrong */}
-          {submitted && isCorrect === false && (
-            <View style={styles.answerReveal}>
-              <Text style={styles.answerLabel}>Correct answer:</Text>
-              <Text style={styles.answerValue}>{question.correctAnswer}</Text>
-            </View>
-          )}
-        </ScrollView>
-      </KeyboardAvoidingView>
+      </ScrollView>
 
       <FeedbackModal
         visible={showFeedback}
-        isCorrect={isCorrect ?? false}
+        isCorrect={isCorrect}
         xpEarned={question.xpReward}
         explanation={question.explanation}
-        correctAnswerLabel={isCorrect === false ? question.correctAnswer : undefined}
+        correctAnswerLabel={!isCorrect && correctOption ? correctOption.text : undefined}
         onContinue={handleContinue}
         onViewExplanation={handleViewExplanation}
       />
@@ -246,18 +228,5 @@ const styles = StyleSheet.create({
     paddingBottom: SPACING['3xl'],
     gap: SPACING.xl,
   },
-  answerReveal: {
-    backgroundColor: 'rgba(78,205,196,0.08)',
-    borderRadius: SPACING.sm,
-    padding: SPACING.md,
-    borderWidth: 1,
-    borderColor: `${COLORS.success}40`,
-    gap: 4,
-  },
-  answerLabel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
-  answerValue: {
-    color: COLORS.success,
-    fontSize: TYPOGRAPHY.sizes.lg,
-    fontWeight: TYPOGRAPHY.weights.bold,
-  },
+  options: { gap: SPACING.sm },
 });

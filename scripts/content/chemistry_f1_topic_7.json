@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A substance that burns to produce useful heat energy is called a _____.",
-        "options": [],
-        "correctAnswer": "fuel",
+        "options": [
+          {
+            "id": "a",
+            "text": "fuel",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "catalyst",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solvent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mineral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A fuel is any substance that produces heat or energy when it burns.",
         "difficulty": "easy"
       },
       {
         "questionText": "The burning of a fuel in the presence of oxygen to produce heat is called _____.",
-        "options": [],
-        "correctAnswer": "combustion",
+        "options": [
+          {
+            "id": "a",
+            "text": "respiration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "combustion",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "fermentation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "evaporation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Combustion is the chemical reaction in which a fuel burns in oxygen and releases heat energy.",
         "difficulty": "easy"
       },
       {
         "questionText": "Fuels formed from the remains of dead plants and animals over millions of years are called _____ fuels.",
-        "options": [],
-        "correctAnswer": "fossil",
+        "options": [
+          {
+            "id": "a",
+            "text": "nuclear",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biomass",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fossil",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "mineral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Coal, petroleum and natural gas are fossil fuels formed from ancient plant and animal remains.",
         "difficulty": "easy"
       },
       {
         "questionText": "Charcoal is produced by heating wood in a limited supply of _____.",
-        "options": [],
-        "correctAnswer": "air",
+        "options": [
+          {
+            "id": "a",
+            "text": "water",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "steam",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sunlight",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "air",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Charcoal is made by heating wood with little air so that it does not burn away completely.",
         "difficulty": "medium"
       },
       {
         "questionText": "The poisonous gas produced during incomplete combustion of fuels is _____.",
-        "options": [],
-        "correctAnswer": "carbon monoxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "carbon monoxide",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "carbon dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sulphur dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nitrogen dioxide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "When fuels burn in insufficient oxygen, the poisonous gas carbon monoxide is formed.",
         "difficulty": "medium"
       },
       {
         "questionText": "The main gas found in biogas is _____.",
-        "options": [],
-        "correctAnswer": "methane",
+        "options": [
+          {
+            "id": "a",
+            "text": "ethane",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "methane",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "propane",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "butane",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Biogas is made up mainly of methane, which burns to release heat energy.",
         "difficulty": "medium"
       },
       {
         "questionText": "Fuels that can be replaced naturally within a short time, such as firewood, are called _____ fuels.",
-        "options": [],
-        "correctAnswer": "renewable",
+        "options": [
+          {
+            "id": "a",
+            "text": "fossil",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "nuclear",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "renewable",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "synthetic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Renewable fuels can be replenished naturally and are not easily exhausted.",
         "difficulty": "easy"
       },
       {
         "questionText": "Crude oil is separated into petrol, kerosene and diesel by a process called fractional _____.",
-        "options": [],
-        "correctAnswer": "distillation",
+        "options": [
+          {
+            "id": "a",
+            "text": "filtration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "evaporation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "condensation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "distillation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Fractional distillation separates crude oil into different fuels based on their boiling points.",
         "difficulty": "hard"
       },
       {
         "questionText": "The gas released from burning fuels that contributes most to global warming is _____.",
-        "options": [],
-        "correctAnswer": "carbon dioxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "carbon dioxide",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "carbon monoxide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sulphur dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nitrogen dioxide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Carbon dioxide is a greenhouse gas that traps heat in the atmosphere and causes global warming.",
         "difficulty": "medium"
       },
       {
         "questionText": "Reducing the amount of fuel and energy we waste in our daily activities is known as energy _____.",
-        "options": [],
-        "correctAnswer": "conservation",
+        "options": [
+          {
+            "id": "a",
+            "text": "consumption",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "conservation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "production",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transmission",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Energy conservation means using energy wisely and avoiding waste so that fuels last longer.",
         "difficulty": "easy"
       }

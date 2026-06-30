@@ -14,8 +14,8 @@ export interface Question {
   learningPackId: string;
   type: QuizType;
   questionText: string;
-  options: QuestionOption[];  // MCQ only; empty array for FIB/TF
-  correctAnswer: string;      // MCQ: correct option id | FIB: expected text | TF: 'true'|'false'
+  options: QuestionOption[];  // MCQ/FIB: 4 options; empty array for TF
+  correctAnswer: string;      // MCQ/FIB: correct option id | TF: 'true'|'false'
   explanation: string;
   difficulty: 'easy' | 'medium' | 'hard';
   xpReward: number;

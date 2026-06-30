@@ -56,7 +56,7 @@ function validateAndHeal(file, t) {
     if (!Array.isArray(arr)) { errs.push(`${file}: pack '${key}' missing`); continue; }
     if (arr.length !== want) errs.push(`${file}: pack '${key}' has ${arr.length}, expected ${want}`);
   }
-  for (const key of ['mcq', 'hoq']) {
+  for (const key of ['mcq', 'fib', 'hoq']) {
     (t.packs[key] || []).forEach((q, i) => {
       if (!Array.isArray(q.options) || q.options.length !== 4) {
         errs.push(`${file}: ${key}[${i}] must have 4 options`);

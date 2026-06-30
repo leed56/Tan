@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A _____ is the laboratory apparatus used to deliver one fixed and accurate volume of liquid.",
-        "options": [],
-        "correctAnswer": "pipette",
+        "options": [
+          {
+            "id": "a",
+            "text": "pipette",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "funnel",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "spatula",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "crucible",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A pipette is calibrated to deliver one accurate volume such as 25 cm3.",
         "difficulty": "easy"
       },
       {
         "questionText": "The hazard symbol of a flame shows that a substance is _____.",
-        "options": [],
-        "correctAnswer": "flammable",
+        "options": [
+          {
+            "id": "a",
+            "text": "corrosive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "flammable",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "radioactive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "explosive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The flame symbol warns that a substance can easily catch fire.",
         "difficulty": "easy"
       },
       {
         "questionText": "When diluting a concentrated acid, you must always add the acid slowly to _____.",
-        "options": [],
-        "correctAnswer": "water",
+        "options": [
+          {
+            "id": "a",
+            "text": "alkali",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "oil",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "water",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ethanol",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Adding acid to water lets the heat produced be absorbed safely and prevents dangerous spattering.",
         "difficulty": "medium"
       },
       {
         "questionText": "A _____ burner is the common source of heat in a school chemistry laboratory.",
-        "options": [],
-        "correctAnswer": "Bunsen",
+        "options": [
+          {
+            "id": "a",
+            "text": "spirit",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "blow",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "oil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Bunsen",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Bunsen burner gives a controllable flame for heating substances.",
         "difficulty": "easy"
       },
       {
         "questionText": "In filtration, the clear liquid that passes through the filter paper is called the _____.",
-        "options": [],
-        "correctAnswer": "filtrate",
+        "options": [
+          {
+            "id": "a",
+            "text": "filtrate",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "residue",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solute",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "precipitate",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The filtrate is the liquid that drains through, while the solid left behind is the residue.",
         "difficulty": "medium"
       },
       {
         "questionText": "Eating, drinking and _____ are strictly forbidden in the laboratory because chemicals may enter the body.",
-        "options": [],
-        "correctAnswer": "tasting chemicals",
+        "options": [
+          {
+            "id": "a",
+            "text": "washing hands",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tasting chemicals",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "wearing gloves",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "labelling bottles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "These actions can lead to poisoning if traces of chemicals are swallowed.",
         "difficulty": "easy"
       },
       {
         "questionText": "Protective eye wear known as safety _____ should be worn to guard the eyes against splashes.",
-        "options": [],
-        "correctAnswer": "goggles",
+        "options": [
+          {
+            "id": "a",
+            "text": "helmets",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "gloves",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "goggles",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "aprons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Goggles protect the eyes from chemical splashes and flying particles.",
         "difficulty": "easy"
       },
       {
         "questionText": "The skull and crossbones hazard symbol indicates that a substance is _____.",
-        "options": [],
-        "correctAnswer": "toxic",
+        "options": [
+          {
+            "id": "a",
+            "text": "flammable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "magnetic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "soluble",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "toxic",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Toxic substances are poisonous and can cause serious harm or death.",
         "difficulty": "medium"
       },
       {
         "questionText": "Waste chemicals should be placed in the correct labelled _____ instead of being poured down the sink.",
-        "options": [],
-        "correctAnswer": "waste containers",
+        "options": [
+          {
+            "id": "a",
+            "text": "waste containers",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "measuring cylinders",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "storage cupboards",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fume cupboards",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Proper disposal in designated containers prevents pipe damage and pollution.",
         "difficulty": "medium"
       },
       {
         "questionText": "A small instrument marked in degrees Celsius used to measure temperature is called a _____.",
-        "options": [],
-        "correctAnswer": "thermometer",
+        "options": [
+          {
+            "id": "a",
+            "text": "barometer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "thermometer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hydrometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "manometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A thermometer measures how hot or cold a substance is.",
         "difficulty": "easy"
       }

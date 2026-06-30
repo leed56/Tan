@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Pressure is calculated as force divided by _____.",
-        "options": [],
-        "correctAnswer": "area",
+        "options": [
+          {
+            "id": "a",
+            "text": "area",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "length",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Pressure = force / area.",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of pressure is the _____.",
-        "options": [],
-        "correctAnswer": "pascal",
+        "options": [
+          {
+            "id": "a",
+            "text": "newton",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pascal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "joule",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "watt",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "1 pascal = 1 N/m^2.",
         "difficulty": "easy"
       },
       {
         "questionText": "One pascal is equal to one newton per square _____.",
-        "options": [],
-        "correctAnswer": "metre",
+        "options": [
+          {
+            "id": "a",
+            "text": "centimetre",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kilometre",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "metre",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "millimetre",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "1 Pa = 1 N/m^2.",
         "difficulty": "easy"
       },
       {
         "questionText": "In the formula P = hρg, the symbol h stands for the _____ of the liquid.",
-        "options": [],
-        "correctAnswer": "depth",
+        "options": [
+          {
+            "id": "a",
+            "text": "height",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "density",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "area",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "depth",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "h is the vertical depth below the liquid surface.",
         "difficulty": "easy"
       },
       {
         "questionText": "Liquid pressure at a given depth acts equally in all _____.",
-        "options": [],
-        "correctAnswer": "directions",
+        "options": [
+          {
+            "id": "a",
+            "text": "directions",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "one direction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "the upward direction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "horizontal directions",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "At the same depth the pressure is the same in every direction.",
         "difficulty": "easy"
       },
       {
         "questionText": "Atmospheric pressure is measured using an instrument called a _____.",
-        "options": [],
-        "correctAnswer": "barometer",
+        "options": [
+          {
+            "id": "a",
+            "text": "thermometer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "barometer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hydrometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "manometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A barometer measures the pressure of the atmosphere.",
         "difficulty": "easy"
       },
       {
         "questionText": "The principle that pressure in an enclosed fluid is transmitted equally throughout is known as _____ principle.",
-        "options": [],
-        "correctAnswer": "Pascal's",
+        "options": [
+          {
+            "id": "a",
+            "text": "Archimedes'",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Bernoulli's",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Pascal's",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Boyle's",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Pascal's principle is the basis of hydraulic machines.",
         "difficulty": "medium"
       },
       {
         "questionText": "A force of 100 N on an area of 2 m^2 produces a pressure of _____ Pa.",
-        "options": [],
-        "correctAnswer": "50",
+        "options": [
+          {
+            "id": "a",
+            "text": "200",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "50",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "P = 100 / 2 = 50 Pa.",
         "difficulty": "medium"
       },
       {
         "questionText": "The pressure at a depth of 10 m in water (density 1000 kg/m^3, g = 10 N/kg) is _____ Pa.",
-        "options": [],
-        "correctAnswer": "100000",
+        "options": [
+          {
+            "id": "a",
+            "text": "100000",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "10000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "50000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1000000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "P = h*rho*g = 10 * 1000 * 10 = 100000 Pa.",
         "difficulty": "medium"
       },
       {
         "questionText": "A machine that uses transmitted liquid pressure to multiply force is the hydraulic _____.",
-        "options": [],
-        "correctAnswer": "press",
+        "options": [
+          {
+            "id": "a",
+            "text": "pump",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "press",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "lift",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "jack",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The hydraulic press uses a small force on a small piston to produce a large force on a large piston.",
         "difficulty": "medium"
       }

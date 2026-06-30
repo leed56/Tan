@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The creation of goods and services to satisfy human wants is called _____.",
-        "options": [],
-        "correctAnswer": "production",
+        "options": [
+          {
+            "id": "a",
+            "text": "production",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "consumption",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "distribution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "exchange",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Production is the process of creating goods and services to satisfy human wants.",
         "difficulty": "easy"
       },
       {
         "questionText": "The stage of production that involves extracting natural resources such as farming and mining is called _____ production.",
-        "options": [],
-        "correctAnswer": "primary",
+        "options": [
+          {
+            "id": "a",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "primary",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "tertiary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "quaternary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Primary production is concerned with extracting raw materials from nature.",
         "difficulty": "easy"
       },
       {
         "questionText": "Manufacturing and processing raw materials into finished goods belongs to _____ production.",
-        "options": [],
-        "correctAnswer": "secondary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tertiary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "secondary",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "extractive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Secondary production changes raw materials into finished or semi-finished goods.",
         "difficulty": "easy"
       },
       {
         "questionText": "Services such as transport, banking and insurance form part of _____ production.",
-        "options": [],
-        "correctAnswer": "tertiary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "constructive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tertiary",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Tertiary production provides services that aid the production and distribution of goods.",
         "difficulty": "easy"
       },
       {
         "questionText": "The reward paid to labour for its effort in production is called _____.",
-        "options": [],
-        "correctAnswer": "wages",
+        "options": [
+          {
+            "id": "a",
+            "text": "wages",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "interest",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "profit",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Labour is rewarded with wages or salaries for the work done.",
         "difficulty": "easy"
       },
       {
         "questionText": "The reward earned by capital is known as _____.",
-        "options": [],
-        "correctAnswer": "interest",
+        "options": [
+          {
+            "id": "a",
+            "text": "wages",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "interest",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "rent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "profit",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Capital used in production earns interest as its reward.",
         "difficulty": "medium"
       },
       {
         "questionText": "The factor of production that organises the other factors and bears business risks is called _____.",
-        "options": [],
-        "correctAnswer": "entrepreneurship",
+        "options": [
+          {
+            "id": "a",
+            "text": "labour",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "entrepreneurship",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "land",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The entrepreneur combines land, labour and capital and takes risks, earning profit as a reward.",
         "difficulty": "medium"
       },
       {
         "questionText": "When work is split into separate tasks performed by different workers it is called _____.",
-        "options": [],
-        "correctAnswer": "division of labour",
+        "options": [
+          {
+            "id": "a",
+            "text": "mass production",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "specialisation of goods",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mobility of labour",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "division of labour",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Division of labour breaks a job into smaller tasks, each handled by a particular worker.",
         "difficulty": "medium"
       },
       {
         "questionText": "Producing goods and services for one's own use without exchange is called _____ production.",
-        "options": [],
-        "correctAnswer": "direct",
+        "options": [
+          {
+            "id": "a",
+            "text": "direct",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "indirect",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "joint",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Direct production means producing for personal use rather than for sale.",
         "difficulty": "medium"
       },
       {
         "questionText": "The natural resources provided free by nature, such as land, water and minerals, are together called the factor of _____.",
-        "options": [],
-        "correctAnswer": "land",
+        "options": [
+          {
+            "id": "a",
+            "text": "labour",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "land",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "enterprise",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Land includes all natural resources used in production and earns rent as its reward.",
         "difficulty": "easy"
       }

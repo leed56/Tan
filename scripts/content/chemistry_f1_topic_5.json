@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The most abundant gas in air, making up about 78% by volume, is _____.",
-        "options": [],
-        "correctAnswer": "nitrogen",
+        "options": [
+          {
+            "id": "a",
+            "text": "nitrogen",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "oxygen",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "argon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hydrogen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Nitrogen is the most plentiful gas in the air at roughly 78% by volume.",
         "difficulty": "easy"
       },
       {
         "questionText": "The active part of air that supports combustion is the gas called _____.",
-        "options": [],
-        "correctAnswer": "oxygen",
+        "options": [
+          {
+            "id": "a",
+            "text": "nitrogen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "oxygen",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "argon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "helium",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Oxygen is the active part of air because it is needed for substances to burn.",
         "difficulty": "easy"
       },
       {
         "questionText": "The slow reaction of iron with oxygen and water to form a reddish-brown solid is called _____.",
-        "options": [],
-        "correctAnswer": "rusting",
+        "options": [
+          {
+            "id": "a",
+            "text": "burning",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "melting",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rusting",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "corroding",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Rusting is the gradual corrosion of iron when it is exposed to both oxygen and water.",
         "difficulty": "easy"
       },
       {
         "questionText": "A chemical reaction in which a substance reacts with oxygen to release heat and light is called _____.",
-        "options": [],
-        "correctAnswer": "combustion",
+        "options": [
+          {
+            "id": "a",
+            "text": "respiration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "evaporation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fermentation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "combustion",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Combustion, or burning, is the reaction of a substance with oxygen that gives out heat and usually light.",
         "difficulty": "easy"
       },
       {
         "questionText": "The gas that turns limewater milky and does not support burning is _____.",
-        "options": [],
-        "correctAnswer": "carbon dioxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "carbon dioxide",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "carbon monoxide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sulphur dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nitrogen dioxide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Carbon dioxide turns limewater milky and puts out a burning splint, which are its standard tests.",
         "difficulty": "medium"
       },
       {
         "questionText": "Oxygen makes up about _____ percent of air by volume.",
-        "options": [],
-        "correctAnswer": "21",
+        "options": [
+          {
+            "id": "a",
+            "text": "78",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "21",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.03",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Oxygen forms approximately 21% of the air by volume.",
         "difficulty": "easy"
       },
       {
         "questionText": "Coating iron with a thin layer of zinc to prevent rusting is called _____.",
-        "options": [],
-        "correctAnswer": "galvanising",
+        "options": [
+          {
+            "id": "a",
+            "text": "painting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "greasing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "galvanising",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "alloying",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Galvanising protects iron by covering it with zinc, which keeps out air and water.",
         "difficulty": "medium"
       },
       {
         "questionText": "Both oxygen and _____ must be present for iron to rust.",
-        "options": [],
-        "correctAnswer": "water",
+        "options": [
+          {
+            "id": "a",
+            "text": "nitrogen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "carbon",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "argon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "water",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Iron rusts only when both oxygen and water are present; removing either one prevents rusting.",
         "difficulty": "medium"
       },
       {
         "questionText": "In a rusting experiment, the volume of air decreases by about one _____ because oxygen is used up.",
-        "options": [],
-        "correctAnswer": "fifth",
+        "options": [
+          {
+            "id": "a",
+            "text": "fifth",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "half",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "third",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "quarter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Since oxygen is about one fifth of air, using it up reduces the air volume by roughly one fifth.",
         "difficulty": "medium"
       },
       {
         "questionText": "Burning with a limited supply of oxygen can produce a poisonous gas called carbon _____.",
-        "options": [],
-        "correctAnswer": "monoxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "monoxide",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "trioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "peroxide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Incomplete combustion, where oxygen is limited, produces poisonous carbon monoxide instead of carbon dioxide.",
         "difficulty": "hard"
       }

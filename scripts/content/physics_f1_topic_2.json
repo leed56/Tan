@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The branch of physics concerned with finding the size of physical quantities is called _____.",
-        "options": [],
-        "correctAnswer": "measurement",
+        "options": [
+          {
+            "id": "a",
+            "text": "measurement",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "estimation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "calculation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "observation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Measurement involves comparing an unknown quantity with a known standard.",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of length is the _____.",
-        "options": [],
-        "correctAnswer": "metre",
+        "options": [
+          {
+            "id": "a",
+            "text": "gram",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "metre",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "second",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "litre",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The metre (m) is the SI base unit of length.",
         "difficulty": "easy"
       },
       {
         "questionText": "Density is calculated by dividing mass by _____.",
-        "options": [],
-        "correctAnswer": "volume",
+        "options": [
+          {
+            "id": "a",
+            "text": "area",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "weight",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "volume",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "length",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Density = mass / volume.",
         "difficulty": "easy"
       },
       {
         "questionText": "A quantity that is obtained by combining fundamental quantities is called a _____ quantity.",
-        "options": [],
-        "correctAnswer": "derived",
+        "options": [
+          {
+            "id": "a",
+            "text": "fundamental",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vector",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "scalar",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "derived",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Examples of derived quantities include area, volume and density.",
         "difficulty": "medium"
       },
       {
         "questionText": "The instrument used to measure lengths to an accuracy of 0.01 mm is the _____ screw gauge.",
-        "options": [],
-        "correctAnswer": "micrometer",
+        "options": [
+          {
+            "id": "a",
+            "text": "micrometer",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "vernier",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "optical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "standard",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The micrometer screw gauge can measure very small thicknesses and diameters.",
         "difficulty": "medium"
       },
       {
         "questionText": "A mass of 2000 g is equal to _____ kg.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "200",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Since 1 kg = 1000 g, 2000 g divided by 1000 equals 2 kg.",
         "difficulty": "easy"
       },
       {
         "questionText": "The prefix that represents one millionth is _____.",
-        "options": [],
-        "correctAnswer": "micro",
+        "options": [
+          {
+            "id": "a",
+            "text": "milli",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "nano",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "micro",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kilo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Micro is symbolised by the Greek letter mu and means 0.000001.",
         "difficulty": "medium"
       },
       {
         "questionText": "The method of finding the volume of an irregular solid by submerging it in water is called the _____ method.",
-        "options": [],
-        "correctAnswer": "displacement",
+        "options": [
+          {
+            "id": "a",
+            "text": "evaporation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "flotation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "filtration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "displacement",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The volume of water pushed aside equals the volume of the submerged solid.",
         "difficulty": "medium"
       },
       {
         "questionText": "An object with a mass of 60 g and a volume of 20 cm3 has a density of _____ g/cm3.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "30",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Density = 60 / 20 = 3 g/cm3.",
         "difficulty": "medium"
       },
       {
         "questionText": "The instrument used to measure the mass of objects in the laboratory is the beam _____.",
-        "options": [],
-        "correctAnswer": "balance",
+        "options": [
+          {
+            "id": "a",
+            "text": "scale",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "balance",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ruler",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cylinder",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A beam balance compares the mass of an object with known standard masses.",
         "difficulty": "easy"
       }

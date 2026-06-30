@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Chemistry is the branch of science that studies the composition, properties and _____ of matter.",
-        "options": [],
-        "correctAnswer": "changes",
+        "options": [
+          {
+            "id": "a",
+            "text": "changes",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "colours",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "density",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shapes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Chemistry examines how matter is made up, its properties, and the changes (reactions) it undergoes.",
         "difficulty": "easy"
       },
       {
         "questionText": "The branch of chemistry that deals with compounds that do not contain carbon-hydrogen bonds, such as metals and minerals, is called _____ chemistry.",
-        "options": [],
-        "correctAnswer": "inorganic",
+        "options": [
+          {
+            "id": "a",
+            "text": "organic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "inorganic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "analytical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "industrial",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Inorganic chemistry studies non-carbon-based compounds such as salts, metals and minerals.",
         "difficulty": "medium"
       },
       {
         "questionText": "A testable explanation that a scientist proposes before doing an experiment is called a _____.",
-        "options": [],
-        "correctAnswer": "hypothesis",
+        "options": [
+          {
+            "id": "a",
+            "text": "theory",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "conclusion",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hypothesis",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "variable",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A hypothesis is an intelligent, testable guess that the experiment will support or reject.",
         "difficulty": "easy"
       },
       {
         "questionText": "The branch of chemistry that studies energy changes and the physical behaviour of matter during reactions is _____ chemistry.",
-        "options": [],
-        "correctAnswer": "physical",
+        "options": [
+          {
+            "id": "a",
+            "text": "nuclear",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "industrial",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "environmental",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "physical",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Physical chemistry combines physics and chemistry to study energy, rates and the behaviour of matter.",
         "difficulty": "medium"
       },
       {
         "questionText": "Anything that has mass and occupies space is called _____.",
-        "options": [],
-        "correctAnswer": "matter",
+        "options": [
+          {
+            "id": "a",
+            "text": "matter",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "energy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "force",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Matter is the substance that makes up all physical objects, having mass and volume.",
         "difficulty": "easy"
       },
       {
         "questionText": "Before using any chemical in the laboratory, you should always read its _____ on the bottle.",
-        "options": [],
-        "correctAnswer": "label",
+        "options": [
+          {
+            "id": "a",
+            "text": "price",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "label",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "barcode",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Reading the label tells you the name, concentration and hazards of the chemical, preventing accidents.",
         "difficulty": "easy"
       },
       {
         "questionText": "The study of chemical reactions that take place inside living organisms is called _____.",
-        "options": [],
-        "correctAnswer": "biochemistry",
+        "options": [
+          {
+            "id": "a",
+            "text": "geochemistry",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "astrochemistry",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "biochemistry",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "electrochemistry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Biochemistry deals with chemical processes such as respiration and digestion in living things.",
         "difficulty": "medium"
       },
       {
         "questionText": "A scientist who specialises in chemistry is called a _____.",
-        "options": [],
-        "correctAnswer": "chemist",
+        "options": [
+          {
+            "id": "a",
+            "text": "physicist",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biologist",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "geologist",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chemist",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A chemist is a professional who studies and works with the composition and changes of matter.",
         "difficulty": "easy"
       },
       {
         "questionText": "In the scientific method, the final step where you state whether your hypothesis was supported is called the _____.",
-        "options": [],
-        "correctAnswer": "conclusion",
+        "options": [
+          {
+            "id": "a",
+            "text": "conclusion",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hypothesis",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "observation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "experiment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The conclusion interprets the results and states whether the hypothesis was accepted or rejected.",
         "difficulty": "medium"
       },
       {
         "questionText": "Loose hair and clothing should be tied back, and a _____ coat should be worn to protect the body during practical work.",
-        "options": [],
-        "correctAnswer": "laboratory",
+        "options": [
+          {
+            "id": "a",
+            "text": "raincoat",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "laboratory",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "winter",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "duffel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A laboratory coat protects clothing and skin from spills and splashes of chemicals.",
         "difficulty": "easy"
       }

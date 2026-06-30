@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Anything that has mass and occupies space is called _____.",
-        "options": [],
-        "correctAnswer": "matter",
+        "options": [
+          {
+            "id": "a",
+            "text": "matter",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "energy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "force",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "volume",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Matter is the general term for anything that has mass and takes up space.",
         "difficulty": "easy"
       },
       {
         "questionText": "The three common states of matter are solid, liquid and _____.",
-        "options": [],
-        "correctAnswer": "gas",
+        "options": [
+          {
+            "id": "a",
+            "text": "plasma",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "gas",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "vapour",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fluid",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Matter usually exists in three states: solid, liquid and gas.",
         "difficulty": "easy"
       },
       {
         "questionText": "The change of a solid into a liquid when it is heated is called _____.",
-        "options": [],
-        "correctAnswer": "melting",
+        "options": [
+          {
+            "id": "a",
+            "text": "freezing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "boiling",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "melting",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "condensation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Melting (or fusion) is the change of state from solid to liquid as the particles gain heat energy.",
         "difficulty": "easy"
       },
       {
         "questionText": "The change of a liquid into a solid when it is cooled is called _____.",
-        "options": [],
-        "correctAnswer": "freezing",
+        "options": [
+          {
+            "id": "a",
+            "text": "melting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "evaporation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sublimation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "freezing",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Freezing (solidification) is the change of state from liquid to solid as particles lose heat energy.",
         "difficulty": "easy"
       },
       {
         "questionText": "The theory that explains the behaviour of matter in terms of tiny moving particles is called the _____ theory.",
-        "options": [],
-        "correctAnswer": "kinetic",
+        "options": [
+          {
+            "id": "a",
+            "text": "kinetic",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "atomic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cellular",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "molecular",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The kinetic (particle) theory states that all matter is made of tiny particles that are constantly moving.",
         "difficulty": "medium"
       },
       {
         "questionText": "A change in which no new substance is formed and which can usually be reversed is called a _____ change.",
-        "options": [],
-        "correctAnswer": "physical",
+        "options": [
+          {
+            "id": "a",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "physical",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "nuclear",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "thermal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Physical changes, such as melting or dissolving, do not form new substances and are usually reversible.",
         "difficulty": "medium"
       },
       {
         "questionText": "A change in which one or more new substances are formed is called a _____ change.",
-        "options": [],
-        "correctAnswer": "chemical",
+        "options": [
+          {
+            "id": "a",
+            "text": "physical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "nuclear",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "chemical",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "thermal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Chemical changes, such as burning or rusting, form new substances and are usually difficult to reverse.",
         "difficulty": "medium"
       },
       {
         "questionText": "A pure substance made of two or more elements chemically joined together is called a _____.",
-        "options": [],
-        "correctAnswer": "compound",
+        "options": [
+          {
+            "id": "a",
+            "text": "mixture",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "molecule",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "compound",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A compound is formed when different elements combine chemically in a fixed ratio, for example water and carbon dioxide.",
         "difficulty": "medium"
       },
       {
         "questionText": "Two or more substances that are physically combined and can be separated again form a _____.",
-        "options": [],
-        "correctAnswer": "mixture",
+        "options": [
+          {
+            "id": "a",
+            "text": "mixture",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "compound",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "element",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "molecule",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A mixture contains substances that are not chemically joined, so they can be separated by physical methods.",
         "difficulty": "medium"
       },
       {
         "questionText": "The direct change of a gas into a solid without becoming a liquid is called _____.",
-        "options": [],
-        "correctAnswer": "deposition",
+        "options": [
+          {
+            "id": "a",
+            "text": "sublimation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "deposition",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "condensation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "vaporisation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Deposition is the reverse of sublimation, where a gas changes straight into a solid, for example frost forming from water vapour.",
         "difficulty": "hard"
       }

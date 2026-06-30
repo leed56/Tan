@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The thin top layer of the earth in which plants grow is called _____.",
-        "options": [],
-        "correctAnswer": "soil",
+        "options": [
+          {
+            "id": "a",
+            "text": "soil",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sand",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "clay",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rock",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Soil is the natural top layer of the earth that supports plant growth.",
         "difficulty": "easy"
       },
       {
         "questionText": "The process of breaking down rocks into small particles to form soil is known as _____.",
-        "options": [],
-        "correctAnswer": "weathering",
+        "options": [
+          {
+            "id": "a",
+            "text": "erosion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "weathering",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "leaching",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sedimentation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Weathering breaks rocks into smaller fragments that form the mineral part of soil.",
         "difficulty": "easy"
       },
       {
         "questionText": "The dark, decomposed organic matter in the soil is called _____.",
-        "options": [],
-        "correctAnswer": "humus",
+        "options": [
+          {
+            "id": "a",
+            "text": "clay",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "silt",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "humus",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "gravel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Humus results from the decay of plant and animal remains and improves soil fertility.",
         "difficulty": "easy"
       },
       {
         "questionText": "The vertical arrangement of soil layers from the surface to the parent rock is called the soil _____.",
-        "options": [],
-        "correctAnswer": "profile",
+        "options": [
+          {
+            "id": "a",
+            "text": "texture",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "structure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "horizon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "profile",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A soil profile shows the different horizons of the soil.",
         "difficulty": "medium"
       },
       {
         "questionText": "Each distinct layer seen in a soil profile is known as a soil _____.",
-        "options": [],
-        "correctAnswer": "horizon",
+        "options": [
+          {
+            "id": "a",
+            "text": "horizon",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "profile",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "texture",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "layer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Soil horizons are the separate layers that make up a soil profile.",
         "difficulty": "medium"
       },
       {
         "questionText": "The soil type made up of very fine, sticky particles that hold a lot of water is _____ soil.",
-        "options": [],
-        "correctAnswer": "clay",
+        "options": [
+          {
+            "id": "a",
+            "text": "sandy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "clay",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "loam",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "silt",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Clay soil has tiny particles, holds much water and drains poorly.",
         "difficulty": "medium"
       },
       {
         "questionText": "The relative proportion of sand, silt and clay in a soil is called soil _____.",
-        "options": [],
-        "correctAnswer": "texture",
+        "options": [
+          {
+            "id": "a",
+            "text": "structure",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "profile",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "texture",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "colour",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Soil texture is determined by the proportions of the different sized mineral particles.",
         "difficulty": "medium"
       },
       {
         "questionText": "A soil with a pH of exactly 7 is described as _____.",
-        "options": [],
-        "correctAnswer": "neutral",
+        "options": [
+          {
+            "id": "a",
+            "text": "acidic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "alkaline",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "saline",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "neutral",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A pH of 7 is neutral, neither acidic nor alkaline.",
         "difficulty": "medium"
       },
       {
         "questionText": "The ability of a soil to hold water for use by plants is called its water-holding _____.",
-        "options": [],
-        "correctAnswer": "capacity",
+        "options": [
+          {
+            "id": "a",
+            "text": "capacity",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "porosity",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "drainage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "aeration",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Water-holding capacity is the amount of water a soil can retain for plant use.",
         "difficulty": "hard"
       },
       {
         "questionText": "The substance added to acidic soils to raise their pH is called _____.",
-        "options": [],
-        "correctAnswer": "lime",
+        "options": [
+          {
+            "id": "a",
+            "text": "gypsum",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "lime",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sulphur",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "manure",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Lime neutralises soil acidity and raises the pH towards neutral.",
         "difficulty": "hard"
       }

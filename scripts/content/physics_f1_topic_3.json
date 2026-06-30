@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A force is a push or a _____ acting on a body.",
-        "options": [],
-        "correctAnswer": "pull",
+        "options": [
+          {
+            "id": "a",
+            "text": "pull",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "lift",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "turn",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "spin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A force is defined as a push or a pull exerted on a body.",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of force is the _____.",
-        "options": [],
-        "correctAnswer": "newton",
+        "options": [
+          {
+            "id": "a",
+            "text": "joule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "newton",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "pascal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "watt",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Force is measured in newtons (N).",
         "difficulty": "easy"
       },
       {
         "questionText": "The force of attraction of the Earth on a body is called _____ force.",
-        "options": [],
-        "correctAnswer": "gravitational",
+        "options": [
+          {
+            "id": "a",
+            "text": "frictional",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "magnetic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gravitational",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "electric",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Gravitational force pulls bodies towards the centre of the Earth.",
         "difficulty": "easy"
       },
       {
         "questionText": "The force that opposes motion between two surfaces in contact is called _____.",
-        "options": [],
-        "correctAnswer": "friction",
+        "options": [
+          {
+            "id": "a",
+            "text": "tension",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "upthrust",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gravity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "friction",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Friction acts opposite to the direction of relative motion of surfaces.",
         "difficulty": "easy"
       },
       {
         "questionText": "The upward force that a liquid exerts on an object placed in it is called _____.",
-        "options": [],
-        "correctAnswer": "upthrust",
+        "options": [
+          {
+            "id": "a",
+            "text": "upthrust",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "friction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tension",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Upthrust is the buoyant force acting upward on an immersed object.",
         "difficulty": "medium"
       },
       {
         "questionText": "The weight of a body is calculated using the formula W = m _____.",
-        "options": [],
-        "correctAnswer": "g",
+        "options": [
+          {
+            "id": "a",
+            "text": "a",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "g",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "v",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "t",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Weight equals mass times gravitational field strength, W = mg.",
         "difficulty": "medium"
       },
       {
         "questionText": "The quantity of matter contained in a body is called its _____.",
-        "options": [],
-        "correctAnswer": "mass",
+        "options": [
+          {
+            "id": "a",
+            "text": "weight",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mass",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "density",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Mass is the amount of matter in a body, measured in kilograms.",
         "difficulty": "easy"
       },
       {
         "questionText": "A body of mass 2 kg has a weight of _____ N when g = 10 N/kg.",
-        "options": [],
-        "correctAnswer": "20",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "200",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "W = mg = 2 kg x 10 N/kg = 20 N.",
         "difficulty": "medium"
       },
       {
         "questionText": "When the resultant of all forces on a body is zero, the forces are said to be _____.",
-        "options": [],
-        "correctAnswer": "balanced",
+        "options": [
+          {
+            "id": "a",
+            "text": "balanced",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "unbalanced",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "resultant",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "equal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Balanced forces produce no change in the motion of a body.",
         "difficulty": "medium"
       },
       {
         "questionText": "The pulling force in a stretched rope or string is called _____.",
-        "options": [],
-        "correctAnswer": "tension",
+        "options": [
+          {
+            "id": "a",
+            "text": "compression",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tension",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "thrust",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "friction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Tension is the force transmitted along a taut rope or string.",
         "difficulty": "easy"
       }

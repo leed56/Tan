@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Work is defined as the product of force and the _____ moved in the direction of the force.",
-        "options": [],
-        "correctAnswer": "distance",
+        "options": [
+          {
+            "id": "a",
+            "text": "distance",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "time",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "speed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Work = force x distance moved in the direction of the force.",
         "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of work and energy is the _____.",
-        "options": [],
-        "correctAnswer": "joule",
+        "options": [
+          {
+            "id": "a",
+            "text": "watt",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "joule",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "newton",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "pascal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Both work and energy are measured in joules (J).",
         "difficulty": "easy"
       },
       {
         "questionText": "The energy possessed by a body because of its motion is called _____ energy.",
-        "options": [],
-        "correctAnswer": "kinetic",
+        "options": [
+          {
+            "id": "a",
+            "text": "potential",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kinetic",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "thermal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Kinetic energy is given by KE = 1/2 mv².",
         "difficulty": "easy"
       },
       {
         "questionText": "The energy possessed by a body because of its position or height above the ground is called gravitational _____ energy.",
-        "options": [],
-        "correctAnswer": "potential",
+        "options": [
+          {
+            "id": "a",
+            "text": "kinetic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "elastic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "potential",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Gravitational potential energy is given by PE = mgh.",
         "difficulty": "easy"
       },
       {
         "questionText": "A force of 50 N moves an object 4 m in the direction of the force, doing _____ J of work.",
-        "options": [],
-        "correctAnswer": "200",
+        "options": [
+          {
+            "id": "a",
+            "text": "200",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "54",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12.5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "400",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Work = 50 N x 4 m = 200 J.",
         "difficulty": "medium"
       },
       {
         "questionText": "An object of mass 3 kg held at a height of 2 m has a potential energy of _____ J (g = 10 N/kg).",
-        "options": [],
-        "correctAnswer": "60",
+        "options": [
+          {
+            "id": "a",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "60",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "15",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "600",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "PE = mgh = 3 x 10 x 2 = 60 J.",
         "difficulty": "medium"
       },
       {
         "questionText": "Power is the rate of doing work, and its SI unit is the _____.",
-        "options": [],
-        "correctAnswer": "watt",
+        "options": [
+          {
+            "id": "a",
+            "text": "joule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "newton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "watt",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "pascal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Power = work / time, measured in watts (W).",
         "difficulty": "easy"
       },
       {
         "questionText": "The law of conservation of energy states that energy can neither be created nor _____.",
-        "options": [],
-        "correctAnswer": "destroyed",
+        "options": [
+          {
+            "id": "a",
+            "text": "stored",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "transferred",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transformed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "destroyed",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Energy only changes from one form to another; the total amount stays the same.",
         "difficulty": "easy"
       },
       {
         "questionText": "A worker does 900 J of work in 30 s, so the power developed is _____ W.",
-        "options": [],
-        "correctAnswer": "30",
+        "options": [
+          {
+            "id": "a",
+            "text": "30",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "27",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "900",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "870",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Power = work / time = 900 J / 30 s = 30 W.",
         "difficulty": "medium"
       },
       {
         "questionText": "In machines, energy lost to overcome friction is usually changed into _____ energy.",
-        "options": [],
-        "correctAnswer": "heat",
+        "options": [
+          {
+            "id": "a",
+            "text": "sound",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "heat",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "light",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "electrical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Friction converts useful energy into wasted heat, lowering the machine's efficiency.",
         "difficulty": "medium"
       }

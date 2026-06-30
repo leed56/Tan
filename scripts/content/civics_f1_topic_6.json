@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Basic entitlements that every person has from birth simply because they are human are called human _____.",
-        "options": [],
-        "correctAnswer": "rights",
+        "options": [
+          {
+            "id": "a",
+            "text": "rights",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "duties",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rules",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "laws",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Human rights belong to every person from birth simply because they are human.",
         "difficulty": "easy"
       },
       {
         "questionText": "The most fundamental human right, without which no other right can be enjoyed, is the right to _____.",
-        "options": [],
-        "correctAnswer": "life",
+        "options": [
+          {
+            "id": "a",
+            "text": "education",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "life",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "freedom",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "property",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The right to life is fundamental because all other rights depend on a person being alive.",
         "difficulty": "easy"
       },
       {
         "questionText": "The right that enables a person to attend school and gain knowledge and skills is the right to _____.",
-        "options": [],
-        "correctAnswer": "education",
+        "options": [
+          {
+            "id": "a",
+            "text": "health",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "shelter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "education",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "work",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The right to education allows people to learn and develop their abilities.",
         "difficulty": "easy"
       },
       {
         "questionText": "The freedom to share one's opinions and ideas without unfair restriction is called freedom of _____.",
-        "options": [],
-        "correctAnswer": "expression",
+        "options": [
+          {
+            "id": "a",
+            "text": "movement",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "worship",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "association",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "expression",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Freedom of expression lets people share opinions and ideas while respecting the law.",
         "difficulty": "easy"
       },
       {
         "questionText": "The international document adopted by the United Nations in 1948 that lists rights for all people is the Universal _____ of Human Rights.",
-        "options": [],
-        "correctAnswer": "Declaration",
+        "options": [
+          {
+            "id": "a",
+            "text": "Declaration",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Charter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Convention",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Treaty",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Universal Declaration of Human Rights was adopted by the UN in 1948.",
         "difficulty": "medium"
       },
       {
         "questionText": "People with disabilities, the elderly and orphans are examples of groups with special _____.",
-        "options": [],
-        "correctAnswer": "needs",
+        "options": [
+          {
+            "id": "a",
+            "text": "duties",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "needs",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "rights",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "groups",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Groups with special needs require extra support to enjoy their rights equally.",
         "difficulty": "medium"
       },
       {
         "questionText": "Every right that a person enjoys is accompanied by a matching _____.",
-        "options": [],
-        "correctAnswer": "responsibility",
+        "options": [
+          {
+            "id": "a",
+            "text": "right",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "duty",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "responsibility",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "freedom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Rights and responsibilities go together, so each right carries a related duty.",
         "difficulty": "medium"
       },
       {
         "questionText": "When a person's rights are denied, abused or ignored, this is called a human rights _____.",
-        "options": [],
-        "correctAnswer": "violation",
+        "options": [
+          {
+            "id": "a",
+            "text": "abuse",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "denial",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "crime",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "violation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A human rights violation occurs when rights are denied, abused or ignored.",
         "difficulty": "medium"
       },
       {
         "questionText": "In Tanzania, the body responsible for promoting and protecting human rights and good governance is the _____ for Human Rights and Good Governance.",
-        "options": [],
-        "correctAnswer": "Commission",
+        "options": [
+          {
+            "id": "a",
+            "text": "Commission",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ministry",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Court",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Council",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Commission for Human Rights and Good Governance protects rights in Tanzania.",
         "difficulty": "hard"
       },
       {
         "questionText": "The legal age below which a person is considered a child and entitled to special protection in Tanzania is _____ years.",
-        "options": [],
-        "correctAnswer": "eighteen",
+        "options": [
+          {
+            "id": "a",
+            "text": "sixteen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "eighteen",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "fifteen",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "twenty-one",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A person below eighteen years is considered a child and entitled to special protection.",
         "difficulty": "hard"
       }

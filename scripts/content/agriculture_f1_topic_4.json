@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A crop grown by the farmer mainly for sale and earning money is called a _____ crop.",
-        "options": [],
-        "correctAnswer": "cash",
+        "options": [
+          {
+            "id": "a",
+            "text": "cash",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "food",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cover",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "catch",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Cash crops such as coffee and cotton are grown primarily for income.",
         "difficulty": "easy"
       },
       {
         "questionText": "A crop that lives and produces for many years, such as coffee, is called a _____ crop.",
-        "options": [],
-        "correctAnswer": "perennial",
+        "options": [
+          {
+            "id": "a",
+            "text": "annual",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "perennial",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "biennial",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cover",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Perennial crops continue to grow and yield over several years.",
         "difficulty": "easy"
       },
       {
         "questionText": "Moving young seedlings from the nursery bed to the main field is called _____.",
-        "options": [],
-        "correctAnswer": "transplanting",
+        "options": [
+          {
+            "id": "a",
+            "text": "pricking",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "budding",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transplanting",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "layering",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Transplanting places established seedlings into the field where they will mature.",
         "difficulty": "easy"
       },
       {
         "questionText": "Scattering seeds evenly over a piece of land without using rows is a planting method called _____.",
-        "options": [],
-        "correctAnswer": "broadcasting",
+        "options": [
+          {
+            "id": "a",
+            "text": "drilling",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "dibbling",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "row planting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "broadcasting",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Broadcasting spreads seeds randomly over the field and is quick but uses more seed.",
         "difficulty": "medium"
       },
       {
         "questionText": "Removing surplus seedlings to leave the correct number of plants per stand is called _____.",
-        "options": [],
-        "correctAnswer": "thinning",
+        "options": [
+          {
+            "id": "a",
+            "text": "thinning",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "gapping",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pruning",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weeding",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Thinning prevents overcrowding and reduces competition among plants.",
         "difficulty": "medium"
       },
       {
         "questionText": "Covering the soil with dry grass or plant residues to conserve moisture is called _____.",
-        "options": [],
-        "correctAnswer": "mulching",
+        "options": [
+          {
+            "id": "a",
+            "text": "weeding",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mulching",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "pruning",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "earthing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Mulching reduces evaporation, controls weeds and adds organic matter to the soil.",
         "difficulty": "easy"
       },
       {
         "questionText": "The cash crop that provides lint used to make cloth in the textile industry is _____.",
-        "options": [],
-        "correctAnswer": "cotton",
+        "options": [
+          {
+            "id": "a",
+            "text": "sisal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "coffee",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cotton",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "tobacco",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Cotton lint is spun into thread and woven into cloth.",
         "difficulty": "easy"
       },
       {
         "questionText": "The quantity of seed used to plant a given area of land, such as kilograms per hectare, is called the _____.",
-        "options": [],
-        "correctAnswer": "seed rate",
+        "options": [
+          {
+            "id": "a",
+            "text": "plant population",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "spacing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "germination rate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "seed rate",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The seed rate helps the farmer plant the right amount of seed for good plant population.",
         "difficulty": "medium"
       },
       {
         "questionText": "Filling empty spaces where seeds failed to germinate by planting new seeds or seedlings is called _____.",
-        "options": [],
-        "correctAnswer": "gapping",
+        "options": [
+          {
+            "id": "a",
+            "text": "gapping",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "thinning",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pricking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transplanting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Gapping keeps the plant population uniform across the field.",
         "difficulty": "medium"
       },
       {
         "questionText": "The food crop grown in flooded paddy fields in areas like Kilombero is _____.",
-        "options": [],
-        "correctAnswer": "rice",
+        "options": [
+          {
+            "id": "a",
+            "text": "maize",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "rice",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "wheat",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sorghum",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Rice is grown in flooded fields and is a major food crop in Tanzania.",
         "difficulty": "easy"
       }
