@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The word 'apartheid' comes from the Afrikaans language and means '_____'.",
-        "options": [],
-        "correctAnswer": "apartness",
+        "options": [
+          {
+            "id": "a",
+            "text": "apartness",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "togetherness",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "equality",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "freedom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "'Apartheid' is an Afrikaans word meaning 'apartness' or 'separateness', describing the policy of keeping the races apart.",
         "difficulty": "easy"
       },
       {
         "questionText": "Apartheid became the official policy of South Africa after the National Party won the elections of _____.",
-        "options": [],
-        "correctAnswer": "1948",
+        "options": [
+          {
+            "id": "a",
+            "text": "1944",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1948",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1952",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1960",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The National Party came to power in 1948 and formalised apartheid as state policy.",
         "difficulty": "easy"
       },
       {
         "questionText": "Black South Africans were required to carry a _____ book that controlled their movement under the pass laws.",
-        "options": [],
-        "correctAnswer": "pass",
+        "options": [
+          {
+            "id": "a",
+            "text": "work",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "loyalty",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pass",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "tax",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Under the pass laws, black Africans had to carry a pass (reference) book restricting where they could live, work and travel.",
         "difficulty": "easy"
       },
       {
         "questionText": "The leading liberation organisation against apartheid, founded in 1912, was the African National Congress, abbreviated as _____.",
-        "options": [],
-        "correctAnswer": "ANC",
+        "options": [
+          {
+            "id": "a",
+            "text": "PAC",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "SACP",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "UDF",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ANC",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The African National Congress (ANC) was the principal movement leading the struggle against apartheid.",
         "difficulty": "easy"
       },
       {
         "questionText": "The massacre in which police killed 69 anti-pass protesters in 1960 took place at a township called _____.",
-        "options": [],
-        "correctAnswer": "Sharpeville",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sharpeville",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Soweto",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Langa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Bisho",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Sharpeville massacre of 21 March 1960 left 69 people dead and drew worldwide condemnation of apartheid.",
         "difficulty": "medium"
       },
       {
         "questionText": "The student-led uprising of 1976 against being taught in Afrikaans began in the township of _____.",
-        "options": [],
-        "correctAnswer": "Soweto",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sharpeville",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Soweto",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Langa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cato Manor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The Soweto uprising of June 1976 was a major turning point in the resistance against apartheid.",
         "difficulty": "medium"
       },
       {
         "questionText": "The armed wing of the ANC, meaning 'Spear of the Nation', was called _____.",
-        "options": [],
-        "correctAnswer": "Umkhonto we Sizwe",
+        "options": [
+          {
+            "id": "a",
+            "text": "Inkatha Freedom Party",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Pan Africanist Congress",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Umkhonto we Sizwe",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Black Consciousness Movement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Umkhonto we Sizwe, formed in 1961, carried out the armed struggle against the apartheid state.",
         "difficulty": "medium"
       },
       {
         "questionText": "The OAU body that coordinated aid to liberation movements was based in the Tanzanian city of _____.",
-        "options": [],
-        "correctAnswer": "Dar es Salaam",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lusaka",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Addis Ababa",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Nairobi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Dar es Salaam",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The OAU Liberation Committee had its headquarters in Dar es Salaam, making Tanzania a centre of the liberation struggle.",
         "difficulty": "hard"
       },
       {
         "questionText": "Nelson Mandela was released from prison in the year _____.",
-        "options": [],
-        "correctAnswer": "1990",
+        "options": [
+          {
+            "id": "a",
+            "text": "1990",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1984",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1988",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1992",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Mandela was freed on 11 February 1990 after 27 years of imprisonment.",
         "difficulty": "easy"
       },
       {
         "questionText": "South Africa held its first democratic, non-racial elections in the year _____.",
-        "options": [],
-        "correctAnswer": "1994",
+        "options": [
+          {
+            "id": "a",
+            "text": "1990",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1994",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1996",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1991",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "In 1994 all South Africans voted together for the first time, ending apartheid and electing Nelson Mandela as president.",
         "difficulty": "easy"
       }

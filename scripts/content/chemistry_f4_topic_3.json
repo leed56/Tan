@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The two main allotropes of carbon studied at O-Level are diamond and _____.",
-        "options": [],
-        "correctAnswer": "graphite",
+        "options": [
+          {
+            "id": "a",
+            "text": "graphite",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "quartz",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "silica",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "charcoal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Diamond and graphite are the two crystalline allotropes of carbon, differing in structure and properties.",
         "difficulty": "easy"
       },
       {
         "questionText": "The gas that turns limewater milky is _____.",
-        "options": [],
-        "correctAnswer": "carbon dioxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "carbon monoxide",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "carbon dioxide",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sulphur dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nitrogen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Carbon dioxide reacts with limewater to form insoluble calcium carbonate, producing the milky appearance.",
         "difficulty": "easy"
       },
       {
         "questionText": "Carbon _____ is a poisonous gas formed by the incomplete combustion of carbon-containing fuels.",
-        "options": [],
-        "correctAnswer": "monoxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "trioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "monoxide",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "tetroxide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Carbon monoxide (CO) is toxic because it combines with haemoglobin and prevents the blood from carrying oxygen.",
         "difficulty": "medium"
       },
       {
         "questionText": "In the Haber process, nitrogen reacts with _____ to produce ammonia.",
-        "options": [],
-        "correctAnswer": "hydrogen",
+        "options": [
+          {
+            "id": "a",
+            "text": "oxygen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chlorine",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "carbon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hydrogen",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Haber process combines nitrogen and hydrogen over an iron catalyst: N2 + 3H2 -> 2NH3.",
         "difficulty": "medium"
       },
       {
         "questionText": "When ammonia is oxidised industrially in the Ostwald process, the acid produced is _____ acid.",
-        "options": [],
-        "correctAnswer": "nitric",
+        "options": [
+          {
+            "id": "a",
+            "text": "nitric",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sulphuric",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hydrochloric",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "carbonic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Ostwald process oxidises ammonia to make nitric acid (HNO3), which is used to manufacture fertilisers and explosives.",
         "difficulty": "hard"
       },
       {
         "questionText": "The process by which nitrogen circulates between the atmosphere, soil and living organisms is called the nitrogen _____.",
-        "options": [],
-        "correctAnswer": "cycle",
+        "options": [
+          {
+            "id": "a",
+            "text": "chain",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cycle",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ladder",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "loop",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The nitrogen cycle describes how nitrogen is fixed, converted into nitrates, used by living things and returned to the atmosphere.",
         "difficulty": "easy"
       },
       {
         "questionText": "Sulphuric acid is manufactured industrially by the _____ process.",
-        "options": [],
-        "correctAnswer": "Contact",
+        "options": [
+          {
+            "id": "a",
+            "text": "Haber",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Solvay",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Contact",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ostwald",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The Contact process converts SO2 to SO3 over a vanadium(V) oxide catalyst, which is then used to make sulphuric acid.",
         "difficulty": "medium"
       },
       {
         "questionText": "Concentrated sulphuric acid is a powerful _____ agent because it removes water (or the elements of water) from substances.",
-        "options": [],
-        "correctAnswer": "dehydrating",
+        "options": [
+          {
+            "id": "a",
+            "text": "oxidising",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bleaching",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reducing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dehydrating",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Concentrated sulphuric acid dehydrates substances such as sugar and hydrated salts by removing water.",
         "difficulty": "medium"
       },
       {
         "questionText": "The greenish-yellow poisonous gas commonly used to disinfect drinking water is _____.",
-        "options": [],
-        "correctAnswer": "chlorine",
+        "options": [
+          {
+            "id": "a",
+            "text": "chlorine",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "fluorine",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "bromine",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "iodine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Chlorine is a greenish-yellow gas widely used to kill bacteria in water treatment and to bleach textiles and paper.",
         "difficulty": "easy"
       },
       {
         "questionText": "The acid formed when hydrogen chloride gas dissolves in water is _____ acid.",
-        "options": [],
-        "correctAnswer": "hydrochloric",
+        "options": [
+          {
+            "id": "a",
+            "text": "sulphuric",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hydrochloric",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "nitric",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "carbonic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Hydrogen chloride gas is very soluble in water and dissolves to form hydrochloric acid (HCl), a strong acid.",
         "difficulty": "easy"
       }

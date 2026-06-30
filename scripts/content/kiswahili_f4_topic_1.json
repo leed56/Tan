@@ -8,10 +8,26 @@
       {
         "questionText": "Sentensi 'Mtoto analia' ni ya aina gani kwa muundo?",
         "options": [
-          {"id": "a", "text": "Sentensi sahili", "isCorrect": true},
-          {"id": "b", "text": "Sentensi ambatano", "isCorrect": false},
-          {"id": "c", "text": "Sentensi changamano", "isCorrect": false},
-          {"id": "d", "text": "Sentensi shurutia", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sentensi sahili",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Sentensi ambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sentensi changamano",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sentensi shurutia",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A simple sentence (sentensi sahili) has one independent clause with a single subject and predicate, like 'Mtoto analia'.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Katika sentensi 'Juma anasoma kitabu', kiima ni kipi?",
         "options": [
-          {"id": "a", "text": "anasoma", "isCorrect": false},
-          {"id": "b", "text": "kitabu", "isCorrect": false},
-          {"id": "c", "text": "Juma", "isCorrect": true},
-          {"id": "d", "text": "anasoma kitabu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "anasoma",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kitabu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Juma",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "anasoma kitabu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The kiima (subject) is the doer of the action. Here 'Juma' performs the reading, so it is the subject.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Katika sentensi 'Mwalimu anafundisha darasani', kiarifu ni kipi?",
         "options": [
-          {"id": "a", "text": "Mwalimu", "isCorrect": false},
-          {"id": "b", "text": "anafundisha darasani", "isCorrect": true},
-          {"id": "c", "text": "darasani", "isCorrect": false},
-          {"id": "d", "text": "Mwalimu anafundisha", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mwalimu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "anafundisha darasani",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "darasani",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mwalimu anafundisha",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The kiarifu (predicate) is the part that says something about the subject. Here 'anafundisha darasani' is the predicate.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Sentensi 'Baba amefika na mama amepika' ni ya aina gani?",
         "options": [
-          {"id": "a", "text": "Sentensi sahili", "isCorrect": false},
-          {"id": "b", "text": "Sentensi changamano", "isCorrect": false},
-          {"id": "c", "text": "Sentensi ambatano", "isCorrect": true},
-          {"id": "d", "text": "Sentensi tegemezi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sentensi sahili",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sentensi changamano",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sentensi ambatano",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Sentensi tegemezi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A compound sentence (sentensi ambatano) joins two or more independent clauses, often using 'na'. Both 'Baba amefika' and 'mama amepika' can stand alone.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Kishazi ambacho kinaweza kusimama peke yake na kuleta maana kamili kinaitwaje?",
         "options": [
-          {"id": "a", "text": "Kishazi tegemezi", "isCorrect": false},
-          {"id": "b", "text": "Kishazi huru", "isCorrect": true},
-          {"id": "c", "text": "Kirai nomino", "isCorrect": false},
-          {"id": "d", "text": "Kirai kitenzi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kishazi tegemezi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kishazi huru",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kirai nomino",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kirai kitenzi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A kishazi huru (independent clause) carries complete meaning and can stand on its own as a sentence.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Katika sentensi 'Watoto wadogo wanacheza', fungu la maneno 'Watoto wadogo' ni kirai cha aina gani?",
         "options": [
-          {"id": "a", "text": "Kirai kitenzi", "isCorrect": false},
-          {"id": "b", "text": "Kirai kihusishi", "isCorrect": false},
-          {"id": "c", "text": "Kirai nomino", "isCorrect": true},
-          {"id": "d", "text": "Kirai kielezi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kirai kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kirai kihusishi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kirai nomino",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kirai kielezi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A kirai nomino (noun phrase) is headed by a noun. 'Watoto wadogo' is headed by the noun 'watoto', so it is a noun phrase.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Sentensi 'Nilipofika nyumbani, nilikuta wageni' ni ya aina gani?",
         "options": [
-          {"id": "a", "text": "Sentensi sahili", "isCorrect": false},
-          {"id": "b", "text": "Sentensi ambatano", "isCorrect": false},
-          {"id": "c", "text": "Sentensi changamano", "isCorrect": true},
-          {"id": "d", "text": "Sentensi swali", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Sentensi sahili",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sentensi ambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sentensi changamano",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Sentensi swali",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A complex sentence (sentensi changamano) has an independent clause plus at least one dependent clause. 'Nilipofika nyumbani' is dependent, while 'nilikuta wageni' is independent.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Katika sentensi 'Mwanafunzi anakimbia haraka', kirai kitenzi ni kipi?",
         "options": [
-          {"id": "a", "text": "Mwanafunzi", "isCorrect": false},
-          {"id": "b", "text": "anakimbia haraka", "isCorrect": true},
-          {"id": "c", "text": "haraka", "isCorrect": false},
-          {"id": "d", "text": "Mwanafunzi anakimbia", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Mwanafunzi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "anakimbia haraka",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "haraka",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mwanafunzi anakimbia",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A kirai kitenzi (verb phrase) is headed by a verb. 'Anakimbia haraka' is headed by the verb 'anakimbia'.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Vishazi tegemezi hutumia maneno gani kuanza mara nyingi?",
         "options": [
-          {"id": "a", "text": "na, au, lakini", "isCorrect": false},
-          {"id": "b", "text": "ambaye, kwamba, kwa sababu", "isCorrect": true},
-          {"id": "c", "text": "ni, si, ndiyo", "isCorrect": false},
-          {"id": "d", "text": "huyu, hawa, hivi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "na, au, lakini",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ambaye, kwamba, kwa sababu",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ni, si, ndiyo",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "huyu, hawa, hivi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Dependent clauses (vishazi tegemezi) are typically introduced by subordinators such as 'ambaye', 'kwamba', and 'kwa sababu'.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Katika sentensi 'Kitabu kiko juu ya meza', fungu 'juu ya meza' ni kirai cha aina gani?",
         "options": [
-          {"id": "a", "text": "Kirai nomino", "isCorrect": false},
-          {"id": "b", "text": "Kirai kitenzi", "isCorrect": false},
-          {"id": "c", "text": "Kirai kivumishi", "isCorrect": false},
-          {"id": "d", "text": "Kirai kihusishi", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Kirai nomino",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kirai kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kirai kivumishi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kirai kihusishi",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "A kirai kihusishi (prepositional phrase) begins with a preposition. 'Juu ya' is a preposition, so 'juu ya meza' is a prepositional phrase.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Uchanganuzi wa sentensi kwa njia ya matawi hujulikana zaidi kama njia gani?",
         "options": [
-          {"id": "a", "text": "Njia ya mistari", "isCorrect": false},
-          {"id": "b", "text": "Njia ya jedwali", "isCorrect": false},
-          {"id": "c", "text": "Njia ya kielelezo cha matawi (mti)", "isCorrect": true},
-          {"id": "d", "text": "Njia ya visanduku pekee", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Njia ya mistari",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Njia ya jedwali",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Njia ya kielelezo cha matawi (mti)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Njia ya visanduku pekee",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Tree analysis (njia ya matawi) represents sentence structure as a branching tree diagram showing how units combine.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Katika sentensi 'Gari jekundu limeharibika', neno 'jekundu' ni la aina gani?",
         "options": [
-          {"id": "a", "text": "Nomino", "isCorrect": false},
-          {"id": "b", "text": "Kivumishi", "isCorrect": true},
-          {"id": "c", "text": "Kitenzi", "isCorrect": false},
-          {"id": "d", "text": "Kielezi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Nomino",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kivumishi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kielezi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "'Jekundu' describes the noun 'gari', telling its colour, so it functions as a kivumishi (adjective).",
@@ -152,10 +344,26 @@
       {
         "questionText": "Sehemu kuu mbili za sentensi ni zipi?",
         "options": [
-          {"id": "a", "text": "Nomino na kitenzi", "isCorrect": false},
-          {"id": "b", "text": "Kiima na kiarifu", "isCorrect": true},
-          {"id": "c", "text": "Kirai na kishazi", "isCorrect": false},
-          {"id": "d", "text": "Yambwa na yambiwa", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Nomino na kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kiima na kiarifu",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kirai na kishazi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Yambwa na yambiwa",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Every full sentence is divided into two main parts: the kiima (subject) and the kiarifu (predicate).",
@@ -164,10 +372,26 @@
       {
         "questionText": "Katika sentensi 'Mama anapika chakula jikoni', neno 'jikoni' linafanya kazi gani?",
         "options": [
-          {"id": "a", "text": "Kiima", "isCorrect": false},
-          {"id": "b", "text": "Yambwa", "isCorrect": false},
-          {"id": "c", "text": "Chagizo (kielezi cha mahali)", "isCorrect": true},
-          {"id": "d", "text": "Kitenzi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kiima",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Yambwa",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Chagizo (kielezi cha mahali)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kitenzi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "'Jikoni' tells where the action takes place, so it functions as chagizo, an adverbial of place within the predicate.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Ni sentensi ipi kati ya zifuatazo ni sentensi changamano?",
         "options": [
-          {"id": "a", "text": "Watoto wanacheza uwanjani.", "isCorrect": false},
-          {"id": "b", "text": "Asha anasoma na Neema anaandika.", "isCorrect": false},
-          {"id": "c", "text": "Nitakununulia zawadi ukifaulu mtihani.", "isCorrect": true},
-          {"id": "d", "text": "Baba na mama wamesafiri.", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Watoto wanacheza uwanjani.",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Asha anasoma na Neema anaandika.",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Nitakununulia zawadi ukifaulu mtihani.",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Baba na mama wamesafiri.",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Option C contains an independent clause 'Nitakununulia zawadi' and a dependent clause 'ukifaulu mtihani', making it complex (changamano).",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "Sentensi yenye kishazi huru kimoja tu huitwa sentensi _____.",
-        "options": [],
-        "correctAnswer": "sahili",
+        "options": [
+          {
+            "id": "a",
+            "text": "sahili",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "changamano",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tegemezi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A sentence with only one independent clause is a simple sentence (sentensi sahili).",
         "difficulty": "easy"
       },
       {
         "questionText": "Sehemu ya sentensi inayotaja mtendaji wa kitendo huitwa _____.",
-        "options": [],
-        "correctAnswer": "kiima",
+        "options": [
+          {
+            "id": "a",
+            "text": "kiarifu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kiima",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "yambwa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chagizo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The part naming the doer of the action is the kiima (subject).",
         "difficulty": "easy"
       },
       {
         "questionText": "Sehemu ya sentensi inayoeleza jambo kuhusu kiima huitwa _____.",
-        "options": [],
-        "correctAnswer": "kiarifu",
+        "options": [
+          {
+            "id": "a",
+            "text": "kiima",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "yambwa",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kiarifu",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kiunganishi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The part that says something about the subject is the kiarifu (predicate).",
         "difficulty": "easy"
       },
       {
         "questionText": "Kirai kinachoongozwa na nomino huitwa kirai _____.",
-        "options": [],
-        "correctAnswer": "nomino",
+        "options": [
+          {
+            "id": "a",
+            "text": "kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kivumishi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kihusishi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nomino",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A phrase headed by a noun is a kirai nomino (noun phrase).",
         "difficulty": "easy"
       },
       {
         "questionText": "Kishazi kisichoweza kusimama peke yake huitwa kishazi _____.",
-        "options": [],
-        "correctAnswer": "tegemezi",
+        "options": [
+          {
+            "id": "a",
+            "text": "tegemezi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "huru",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nomino",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kitenzi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A clause that cannot stand alone is a dependent clause (kishazi tegemezi).",
         "difficulty": "medium"
       },
       {
         "questionText": "Sentensi inayounganisha vishazi huru viwili kwa kiunganishi 'na' huitwa sentensi _____.",
-        "options": [],
-        "correctAnswer": "ambatano",
+        "options": [
+          {
+            "id": "a",
+            "text": "sahili",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ambatano",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "changamano",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tegemezi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A sentence joining two independent clauses is a compound sentence (sentensi ambatano).",
         "difficulty": "medium"
       },
       {
         "questionText": "Katika sentensi 'Mwanafunzi anasoma', kirai kitenzi ni _____.",
-        "options": [],
-        "correctAnswer": "anasoma",
+        "options": [
+          {
+            "id": "a",
+            "text": "mwanafunzi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kitabu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "anasoma",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "darasani",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The verb phrase here is simply the verb 'anasoma'.",
         "difficulty": "medium"
       },
       {
         "questionText": "Kirai kinachoanza na kihusishi kama 'kwa', 'katika' au 'juu ya' huitwa kirai _____.",
-        "options": [],
-        "correctAnswer": "kihusishi",
+        "options": [
+          {
+            "id": "a",
+            "text": "nomino",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kitenzi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kivumishi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kihusishi",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A phrase introduced by a preposition is a kirai kihusishi (prepositional phrase).",
         "difficulty": "medium"
       },
       {
         "questionText": "Sentensi yenye kishazi huru na kishazi tegemezi huitwa sentensi _____.",
-        "options": [],
-        "correctAnswer": "changamano",
+        "options": [
+          {
+            "id": "a",
+            "text": "changamano",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sahili",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ambatano",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tegemezi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A sentence with an independent and a dependent clause is a complex sentence (sentensi changamano).",
         "difficulty": "medium"
       },
       {
         "questionText": "Njia ya uchanganuzi inayotumia kielelezo cha mti huitwa njia ya _____.",
-        "options": [],
-        "correctAnswer": "matawi",
+        "options": [
+          {
+            "id": "a",
+            "text": "mistari",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "matawi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "jedwali",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "visanduku",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The analysis method using a branching tree diagram is njia ya matawi (tree method).",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Chunguza sentensi 'Wanafunzi waliofaulu watapewa zawadi kesho'. Ni kauli ipi inayoeleza muundo wake kwa usahihi?",
         "options": [
-          {"id": "a", "text": "Ni sentensi sahili yenye kishazi huru kimoja tu bila kishazi tegemezi.", "isCorrect": false},
-          {"id": "b", "text": "Ni sentensi changamano; 'waliofaulu' ni kishazi tegemezi na 'Wanafunzi watapewa zawadi kesho' ni kishazi huru.", "isCorrect": true},
-          {"id": "c", "text": "Ni sentensi ambatano yenye vishazi huru viwili vilivyounganishwa kwa 'na'.", "isCorrect": false},
-          {"id": "d", "text": "Ni sentensi ambatano changamano yenye vishazi huru viwili na tegemezi viwili.", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ni sentensi sahili yenye kishazi huru kimoja tu bila kishazi tegemezi.",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ni sentensi changamano; 'waliofaulu' ni kishazi tegemezi na 'Wanafunzi watapewa zawadi kesho' ni kishazi huru.",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Ni sentensi ambatano yenye vishazi huru viwili vilivyounganishwa kwa 'na'.",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ni sentensi ambatano changamano yenye vishazi huru viwili na tegemezi viwili.",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The relative clause 'waliofaulu' is dependent and modifies 'Wanafunzi', so the sentence is complex (changamano) with one independent and one dependent clause.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Katika sentensi 'Mama alimpikia mgeni chakula kitamu jikoni', uchanganuzi upi wa kiarifu ni sahihi zaidi?",
         "options": [
-          {"id": "a", "text": "Kiarifu ni 'Mama' pekee.", "isCorrect": false},
-          {"id": "b", "text": "Kiarifu ni 'chakula kitamu' pekee.", "isCorrect": false},
-          {"id": "c", "text": "Kiarifu ni 'alimpikia mgeni chakula kitamu jikoni', kikiwa na kitenzi, yambiwa, yambwa na chagizo.", "isCorrect": true},
-          {"id": "d", "text": "Kiarifu ni 'Mama alimpikia' pekee bila yambwa wala chagizo.", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kiarifu ni 'Mama' pekee.",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kiarifu ni 'chakula kitamu' pekee.",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kiarifu ni 'alimpikia mgeni chakula kitamu jikoni', kikiwa na kitenzi, yambiwa, yambwa na chagizo.",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kiarifu ni 'Mama alimpikia' pekee bila yambwa wala chagizo.",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The predicate is everything except the subject 'Mama'. It contains the verb 'alimpikia', the indirect object 'mgeni', the direct object 'chakula kitamu', and the adverbial 'jikoni'.",
@@ -430,10 +912,26 @@
       {
         "questionText": "Sentensi 'Ingawa alikuwa mgonjwa, alihudhuria mtihani na akafaulu vizuri' ni ya aina gani kwa muundo?",
         "options": [
-          {"id": "a", "text": "Sentensi sahili", "isCorrect": false},
-          {"id": "b", "text": "Sentensi ambatano pekee", "isCorrect": false},
-          {"id": "c", "text": "Sentensi changamano pekee", "isCorrect": false},
-          {"id": "d", "text": "Sentensi ambatano changamano (yenye kishazi tegemezi na vishazi huru viwili)", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Sentensi sahili",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sentensi ambatano pekee",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sentensi changamano pekee",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sentensi ambatano changamano (yenye kishazi tegemezi na vishazi huru viwili)",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "It has a dependent clause 'Ingawa alikuwa mgonjwa' plus two independent clauses 'alihudhuria mtihani' and 'akafaulu vizuri', making it a compound-complex sentence (ambatano changamano).",

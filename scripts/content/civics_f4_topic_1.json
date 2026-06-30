@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A state of harmony, calm and absence of violence in society is called _____.",
-        "options": [],
-        "correctAnswer": "peace",
+        "options": [
+          {
+            "id": "a",
+            "text": "peace",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "justice",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tolerance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "democracy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Peace is the absence of violence and the presence of harmony and order in society.",
         "difficulty": "easy"
       },
       {
         "questionText": "The condition of being protected from danger, fear and threats is known as _____.",
-        "options": [],
-        "correctAnswer": "security",
+        "options": [
+          {
+            "id": "a",
+            "text": "safety",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "security",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "liberty",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "privacy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Security means being safe from danger and threats to life and property.",
         "difficulty": "easy"
       },
       {
         "questionText": "A serious disagreement or struggle between people or groups is called _____.",
-        "options": [],
-        "correctAnswer": "conflict",
+        "options": [
+          {
+            "id": "a",
+            "text": "debate",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "competition",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "conflict",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "negotiation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Conflict is a struggle, disagreement or clash of interests between individuals or groups.",
         "difficulty": "easy"
       },
       {
         "questionText": "The national language that unites Tanzanians of different ethnic groups and promotes peace is _____.",
-        "options": [],
-        "correctAnswer": "Kiswahili",
+        "options": [
+          {
+            "id": "a",
+            "text": "English",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Arabic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Maasai",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kiswahili",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Kiswahili serves as a unifying national language, reducing tribalism and strengthening national unity.",
         "difficulty": "easy"
       },
       {
         "questionText": "The method of conflict resolution in which a neutral third party makes a binding decision is called _____.",
-        "options": [],
-        "correctAnswer": "arbitration",
+        "options": [
+          {
+            "id": "a",
+            "text": "arbitration",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mediation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "negotiation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "conciliation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "In arbitration, a neutral arbitrator gives a binding decision that the parties have agreed to accept.",
         "difficulty": "medium"
       },
       {
         "questionText": "The international organisation with the main duty of maintaining world peace and security is the _____.",
-        "options": [],
-        "correctAnswer": "United Nations",
+        "options": [
+          {
+            "id": "a",
+            "text": "African Union",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "United Nations",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "European Union",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Red Cross",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The United Nations was established to maintain international peace and security.",
         "difficulty": "easy"
       },
       {
         "questionText": "Conflict between a husband and wife within a household is an example of _____ conflict.",
-        "options": [],
-        "correctAnswer": "family",
+        "options": [
+          {
+            "id": "a",
+            "text": "tribal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "international",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "family",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "political",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Conflict occurring within a household is family-level conflict.",
         "difficulty": "easy"
       },
       {
         "questionText": "Restoring broken relationships and forgiveness between conflicting parties is called _____.",
-        "options": [],
-        "correctAnswer": "reconciliation",
+        "options": [
+          {
+            "id": "a",
+            "text": "retaliation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "punishment",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "segregation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reconciliation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Reconciliation rebuilds relationships through forgiveness and renewed cooperation.",
         "difficulty": "medium"
       },
       {
         "questionText": "The regional organisation of East African states that works to promote peace and cooperation is the _____.",
-        "options": [],
-        "correctAnswer": "East African Community",
+        "options": [
+          {
+            "id": "a",
+            "text": "East African Community",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Southern African Development Community",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Economic Community of West African States",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Arab League",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The East African Community (EAC) promotes cooperation, integration and peace among member states such as Tanzania, Kenya and Uganda.",
         "difficulty": "medium"
       },
       {
         "questionText": "Unequal treatment and denial of people's rights, which can cause conflict, is known as _____.",
-        "options": [],
-        "correctAnswer": "injustice",
+        "options": [
+          {
+            "id": "a",
+            "text": "poverty",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "injustice",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "corruption",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ignorance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Injustice, such as unfair treatment and denial of rights, is a major cause of conflict.",
         "difficulty": "medium"
       }

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The star at the centre of our solar system is the _____.",
-        "options": [],
-        "correctAnswer": "Sun",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sun",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Moon",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Earth",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "comet",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Sun is the star at the centre of the solar system and provides light and heat to the planets.",
         "difficulty": "easy"
       },
       {
         "questionText": "The planet on which we live is called the _____.",
-        "options": [],
-        "correctAnswer": "Earth",
+        "options": [
+          {
+            "id": "a",
+            "text": "Moon",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Earth",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mars",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sun",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The Earth is the third planet from the Sun and the only one known to support life.",
         "difficulty": "easy"
       },
       {
         "questionText": "The spinning of the Earth about its own axis is called _____.",
-        "options": [],
-        "correctAnswer": "rotation",
+        "options": [
+          {
+            "id": "a",
+            "text": "revolution",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "precession",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rotation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "orbit",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Rotation is the turning of the Earth about its axis once in about 24 hours, causing day and night.",
         "difficulty": "easy"
       },
       {
         "questionText": "The movement of the Earth around the Sun is called _____.",
-        "options": [],
-        "correctAnswer": "revolution",
+        "options": [
+          {
+            "id": "a",
+            "text": "rotation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "spin",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "precession",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "revolution",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Revolution is the orbiting of the Earth around the Sun once in about 365.25 days.",
         "difficulty": "medium"
       },
       {
         "questionText": "The different shapes of the lit part of the Moon seen from Earth are called the _____ of the Moon.",
-        "options": [],
-        "correctAnswer": "phases",
+        "options": [
+          {
+            "id": "a",
+            "text": "phases",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "orbits",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "eclipses",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tides",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The phases of the Moon (new, crescent, half, full, etc.) result from how much of its sunlit side faces the Earth.",
         "difficulty": "medium"
       },
       {
         "questionText": "The hot, semi-solid layer of the Earth lying between the crust and the core is the _____.",
-        "options": [],
-        "correctAnswer": "mantle",
+        "options": [
+          {
+            "id": "a",
+            "text": "crust",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mantle",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "core",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "atmosphere",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The mantle is the thick layer of hot, partly molten rock between the crust and the core.",
         "difficulty": "medium"
       },
       {
         "questionText": "The layer of gases surrounding the Earth is called the _____.",
-        "options": [],
-        "correctAnswer": "atmosphere",
+        "options": [
+          {
+            "id": "a",
+            "text": "mantle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "crust",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "atmosphere",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "hydrosphere",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The atmosphere is the envelope of gases held around the Earth by gravity and is divided into layers such as the troposphere and stratosphere.",
         "difficulty": "easy"
       },
       {
         "questionText": "A sudden shaking of the ground caused by movement of rocks beneath the surface is called an _____.",
-        "options": [],
-        "correctAnswer": "earthquake",
+        "options": [
+          {
+            "id": "a",
+            "text": "eruption",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "aftershock",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tremor zone",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "earthquake",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "An earthquake is the shaking of the ground caused by the sudden release of energy when rocks move along faults.",
         "difficulty": "easy"
       },
       {
         "questionText": "A mountain or opening through which molten rock and gases erupt from inside the Earth is called a _____.",
-        "options": [],
-        "correctAnswer": "volcano",
+        "options": [
+          {
+            "id": "a",
+            "text": "volcano",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "geyser",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "crater",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fault",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A volcano is an opening in the Earth's crust through which magma, ash and gases reach the surface.",
         "difficulty": "easy"
       },
       {
         "questionText": "The system that uses artificial satellites to find the exact position of a place on Earth is known by the abbreviation _____.",
-        "options": [],
-        "correctAnswer": "GPS",
+        "options": [
+          {
+            "id": "a",
+            "text": "GIS",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "GPS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "GSM",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "GMT",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "GPS (Global Positioning System) uses signals from satellites to determine location and is used for navigation.",
         "difficulty": "medium"
       }

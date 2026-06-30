@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The hadith teaches that cleanliness is part of _____.",
-        "options": [],
-        "correctAnswer": "faith",
+        "options": [
+          {
+            "id": "a",
+            "text": "faith",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "worship",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "charity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "patience",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Prophet (peace be upon him) stated that cleanliness (taharah) is part of faith (iman).",
         "difficulty": "easy"
       },
       {
         "questionText": "The Arabic word for ritual purity or cleanliness is _____.",
-        "options": [],
-        "correctAnswer": "taharah",
+        "options": [
+          {
+            "id": "a",
+            "text": "najasah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "taharah",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "fitrah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "wudu",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Taharah refers to the state of purity required for worship and to general cleanliness in Islam.",
         "difficulty": "easy"
       },
       {
         "questionText": "The minor ablution performed before Salah is called _____.",
-        "options": [],
-        "correctAnswer": "wudu",
+        "options": [
+          {
+            "id": "a",
+            "text": "ghusl",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tayammum",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "wudu",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "istinja",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Wudu is the washing of specific body parts to attain purity before prayer.",
         "difficulty": "easy"
       },
       {
         "questionText": "The complete ritual bath of the whole body is known as _____.",
-        "options": [],
-        "correctAnswer": "ghusl",
+        "options": [
+          {
+            "id": "a",
+            "text": "wudu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tayammum",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "istinja",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ghusl",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Ghusl is the major purification that involves washing the entire body.",
         "difficulty": "easy"
       },
       {
         "questionText": "Food that is lawful is called halal, while food that is good and wholesome is called _____.",
-        "options": [],
-        "correctAnswer": "tayyib",
+        "options": [
+          {
+            "id": "a",
+            "text": "tayyib",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "halal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mubah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "makruh",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Muslims should eat food that is both halal (lawful) and tayyib (wholesome, pure and clean).",
         "difficulty": "medium"
       },
       {
         "questionText": "Wastefulness and extravagance, which Islam condemns, is called _____ in Arabic.",
-        "options": [],
-        "correctAnswer": "israf",
+        "options": [
+          {
+            "id": "a",
+            "text": "riba",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "israf",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ghulul",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "tabdhir",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Israf means excess and waste; the Qur'an commands believers not to be wasteful in eating and drinking.",
         "difficulty": "medium"
       },
       {
         "questionText": "Human beings are appointed as _____, meaning stewards or caretakers of the earth.",
-        "options": [],
-        "correctAnswer": "khalifah",
+        "options": [
+          {
+            "id": "a",
+            "text": "amin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "wali",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "khalifah",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "abd",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Khalifah means vicegerent or steward, indicating humanity's responsibility to look after the earth.",
         "difficulty": "medium"
       },
       {
         "questionText": "The natural grooming acts such as using the miswak and trimming the nails are part of the _____.",
-        "options": [],
-        "correctAnswer": "fitrah",
+        "options": [
+          {
+            "id": "a",
+            "text": "sunnah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "taharah",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "adab",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fitrah",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "These hygiene practices are described in hadith as belonging to the fitrah, the natural disposition.",
         "difficulty": "medium"
       },
       {
         "questionText": "Planting a tree that benefits others is regarded as a form of _____ in Islam.",
-        "options": [],
-        "correctAnswer": "sadaqah",
+        "options": [
+          {
+            "id": "a",
+            "text": "sadaqah",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "zakat",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "waqf",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hibah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Prophet (peace be upon him) taught that planting trees from which people or animals benefit is counted as charity (sadaqah).",
         "difficulty": "medium"
       },
       {
         "questionText": "The human body is a trust, or _____, from Allah that must be protected and kept healthy.",
-        "options": [],
-        "correctAnswer": "amanah",
+        "options": [
+          {
+            "id": "a",
+            "text": "barakah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "amanah",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ni'mah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rizq",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Caring for health is honouring the amanah (trust) of the body given by Allah.",
         "difficulty": "medium"
       }

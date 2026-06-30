@@ -8,10 +8,26 @@
       {
         "questionText": "Electromagnetic induction is best described as the production of an e.m.f. in a conductor due to a:",
         "options": [
-          {"id": "a", "text": "steady current flowing through the conductor", "isCorrect": false},
-          {"id": "b", "text": "changing magnetic flux linking the conductor", "isCorrect": true},
-          {"id": "c", "text": "constant magnetic field around the conductor", "isCorrect": false},
-          {"id": "d", "text": "high temperature applied to the conductor", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "steady current flowing through the conductor",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "changing magnetic flux linking the conductor",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "constant magnetic field around the conductor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "high temperature applied to the conductor",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An e.m.f. is induced only when the magnetic flux linking a conductor changes; a steady or constant field produces no induced e.m.f.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which scientist is credited with the discovery of electromagnetic induction through his coil-and-magnet experiments?",
         "options": [
-          {"id": "a", "text": "Michael Faraday", "isCorrect": true},
-          {"id": "b", "text": "Isaac Newton", "isCorrect": false},
-          {"id": "c", "text": "Georg Ohm", "isCorrect": false},
-          {"id": "d", "text": "James Joule", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Michael Faraday",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Isaac Newton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Georg Ohm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "James Joule",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Michael Faraday discovered electromagnetic induction by showing that moving a magnet in and out of a coil produces an induced current.",
@@ -32,10 +64,26 @@
       {
         "questionText": "In Faraday's experiment, an induced current is registered by the galvanometer only when the magnet is:",
         "options": [
-          {"id": "a", "text": "held stationary inside the coil", "isCorrect": false},
-          {"id": "b", "text": "moving relative to the coil", "isCorrect": true},
-          {"id": "c", "text": "removed completely from the room", "isCorrect": false},
-          {"id": "d", "text": "replaced by a piece of copper", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "held stationary inside the coil",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "moving relative to the coil",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "removed completely from the room",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "replaced by a piece of copper",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Only relative motion between the magnet and coil changes the flux through the coil, so the galvanometer deflects only while the magnet is moving.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Faraday's law of electromagnetic induction states that the magnitude of the induced e.m.f. is proportional to the:",
         "options": [
-          {"id": "a", "text": "total amount of magnetic flux present", "isCorrect": false},
-          {"id": "b", "text": "rate of change of magnetic flux", "isCorrect": true},
-          {"id": "c", "text": "resistance of the coil", "isCorrect": false},
-          {"id": "d", "text": "mass of the magnet used", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "total amount of magnetic flux present",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "rate of change of magnetic flux",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "resistance of the coil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mass of the magnet used",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Faraday's law states that the induced e.m.f. is directly proportional to the rate of change of magnetic flux linkage.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Lenz's law tells us that the direction of an induced current always:",
         "options": [
-          {"id": "a", "text": "aids the change in flux that produced it", "isCorrect": false},
-          {"id": "b", "text": "opposes the change in flux that produced it", "isCorrect": true},
-          {"id": "c", "text": "is the same as the supply current", "isCorrect": false},
-          {"id": "d", "text": "flows from negative to positive outside the coil", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "aids the change in flux that produced it",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "opposes the change in flux that produced it",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "is the same as the supply current",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "flows from negative to positive outside the coil",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Lenz's law states that the induced current flows in a direction that opposes the change in magnetic flux causing it; this is a consequence of conservation of energy.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which of the following does NOT increase the size of the e.m.f. induced in a coil?",
         "options": [
-          {"id": "a", "text": "Increasing the number of turns on the coil", "isCorrect": false},
-          {"id": "b", "text": "Moving the magnet faster", "isCorrect": false},
-          {"id": "c", "text": "Using a stronger magnet", "isCorrect": false},
-          {"id": "d", "text": "Holding the magnet still inside the coil", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Increasing the number of turns on the coil",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Moving the magnet faster",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Using a stronger magnet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Holding the magnet still inside the coil",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Holding the magnet still gives no change in flux and therefore zero induced e.m.f. More turns, faster motion and a stronger magnet all increase the induced e.m.f.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Lenz's law is a direct consequence of the principle of conservation of:",
         "options": [
-          {"id": "a", "text": "mass", "isCorrect": false},
-          {"id": "b", "text": "charge", "isCorrect": false},
-          {"id": "c", "text": "energy", "isCorrect": true},
-          {"id": "d", "text": "momentum", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "charge",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "energy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "momentum",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "If the induced current aided the change, energy would be created from nothing; opposing the change ensures energy is conserved.",
@@ -92,10 +204,26 @@
       {
         "questionText": "In an a.c. generator, the main function of the slip rings is to:",
         "options": [
-          {"id": "a", "text": "reverse the connections every half turn", "isCorrect": false},
-          {"id": "b", "text": "keep the coil connected to the external circuit while it rotates", "isCorrect": true},
-          {"id": "c", "text": "increase the strength of the magnetic field", "isCorrect": false},
-          {"id": "d", "text": "convert alternating current into direct current", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "reverse the connections every half turn",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "keep the coil connected to the external circuit while it rotates",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "increase the strength of the magnetic field",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "convert alternating current into direct current",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Slip rings rotate with the coil and, with the brushes, maintain a continuous connection to the external circuit, allowing the alternating current out without reversing it.",
@@ -104,10 +232,26 @@
       {
         "questionText": "How does a d.c. generator differ in construction from an a.c. generator?",
         "options": [
-          {"id": "a", "text": "It uses a split-ring commutator instead of two slip rings", "isCorrect": true},
-          {"id": "b", "text": "It has no magnetic field", "isCorrect": false},
-          {"id": "c", "text": "It uses no rotating coil", "isCorrect": false},
-          {"id": "d", "text": "It has no brushes", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It uses a split-ring commutator instead of two slip rings",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "It has no magnetic field",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It uses no rotating coil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It has no brushes",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A d.c. generator uses a split-ring commutator that reverses the coil's connections every half turn, so the output current always flows in one direction.",
@@ -116,10 +260,26 @@
       {
         "questionText": "A transformer works only with alternating current because it requires a:",
         "options": [
-          {"id": "a", "text": "steady, unchanging magnetic flux in the core", "isCorrect": false},
-          {"id": "b", "text": "continuously changing magnetic flux in the core", "isCorrect": true},
-          {"id": "c", "text": "very high resistance in the primary coil", "isCorrect": false},
-          {"id": "d", "text": "permanent magnet between the two coils", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "steady, unchanging magnetic flux in the core",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "continuously changing magnetic flux in the core",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "very high resistance in the primary coil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "permanent magnet between the two coils",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A transformer needs a changing flux to induce an e.m.f. in the secondary. Direct current gives a steady flux (after switch-on), so no e.m.f. is induced and the transformer cannot work on d.c.",
@@ -128,10 +288,26 @@
       {
         "questionText": "The core of a transformer is usually made of soft iron because soft iron:",
         "options": [
-          {"id": "a", "text": "is a poor conductor of electricity", "isCorrect": false},
-          {"id": "b", "text": "is easily magnetised and demagnetised, linking the coils strongly", "isCorrect": true},
-          {"id": "c", "text": "remains permanently magnetised", "isCorrect": false},
-          {"id": "d", "text": "is the cheapest metal available", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "is a poor conductor of electricity",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "is easily magnetised and demagnetised, linking the coils strongly",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "remains permanently magnetised",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "is the cheapest metal available",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Soft iron is easily magnetised and demagnetised, so it follows the changing current and concentrates the magnetic flux, linking the primary and secondary coils efficiently.",
@@ -140,10 +316,26 @@
       {
         "questionText": "A step-up transformer is one in which the:",
         "options": [
-          {"id": "a", "text": "secondary coil has more turns than the primary coil", "isCorrect": true},
-          {"id": "b", "text": "secondary coil has fewer turns than the primary coil", "isCorrect": false},
-          {"id": "c", "text": "two coils have equal numbers of turns", "isCorrect": false},
-          {"id": "d", "text": "core is made of copper", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "secondary coil has more turns than the primary coil",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "secondary coil has fewer turns than the primary coil",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "two coils have equal numbers of turns",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "core is made of copper",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In a step-up transformer the secondary has more turns than the primary, so the output (secondary) voltage is greater than the input voltage.",
@@ -152,10 +344,26 @@
       {
         "questionText": "For an ideal transformer, which quantity is the same in the primary and secondary circuits?",
         "options": [
-          {"id": "a", "text": "Voltage", "isCorrect": false},
-          {"id": "b", "text": "Current", "isCorrect": false},
-          {"id": "c", "text": "Number of turns", "isCorrect": false},
-          {"id": "d", "text": "Power", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Voltage",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Current",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Number of turns",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Power",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "An ideal transformer is 100% efficient, so the power input equals the power output: VpIp = VsIs.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Electrical power is transmitted over long distances at very high voltage mainly in order to:",
         "options": [
-          {"id": "a", "text": "make the cables lighter and cheaper", "isCorrect": false},
-          {"id": "b", "text": "reduce the current and so reduce power lost as heat in the cables", "isCorrect": true},
-          {"id": "c", "text": "increase the current carried by the cables", "isCorrect": false},
-          {"id": "d", "text": "make the electricity safer to touch", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "make the cables lighter and cheaper",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "reduce the current and so reduce power lost as heat in the cables",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "increase the current carried by the cables",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "make the electricity safer to touch",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "High transmission voltage means a smaller current for the same power. Since power lost in cables is I^2 R, a smaller current greatly reduces heat losses in the lines.",
@@ -176,10 +400,26 @@
       {
         "questionText": "The production of an induced e.m.f. in a coil due to a changing current in the SAME coil is called:",
         "options": [
-          {"id": "a", "text": "mutual induction", "isCorrect": false},
-          {"id": "b", "text": "self induction", "isCorrect": true},
-          {"id": "c", "text": "magnetic saturation", "isCorrect": false},
-          {"id": "d", "text": "electrolysis", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "mutual induction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "self induction",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "magnetic saturation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "electrolysis",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Self induction is the induction of an e.m.f. in a coil caused by a change in the current flowing through that very coil. Mutual induction involves two separate coils.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The phenomenon of producing an e.m.f. in a conductor by a changing magnetic field is called electromagnetic _____.",
-        "options": [],
-        "correctAnswer": "induction",
+        "options": [
+          {
+            "id": "a",
+            "text": "induction",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "conduction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "radiation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "attraction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Electromagnetic induction is the process by which a changing magnetic flux induces an e.m.f. in a conductor.",
         "difficulty": "easy"
       },
       {
         "questionText": "_____ law states that the magnitude of the induced e.m.f. is proportional to the rate of change of magnetic flux linkage.",
-        "options": [],
-        "correctAnswer": "Faraday's",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lenz's",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Faraday's",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Ohm's",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Newton's",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Faraday's law relates the size of the induced e.m.f. to how fast the magnetic flux linkage changes.",
         "difficulty": "easy"
       },
       {
         "questionText": "_____ law states that the direction of the induced current opposes the change producing it.",
-        "options": [],
-        "correctAnswer": "Lenz's",
+        "options": [
+          {
+            "id": "a",
+            "text": "Faraday's",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ohm's",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Lenz's",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ampere's",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Lenz's law gives the direction of the induced current and is a statement of energy conservation.",
         "difficulty": "easy"
       },
       {
         "questionText": "In an a.c. generator the coil is connected to the external circuit by two _____ rings.",
-        "options": [],
-        "correctAnswer": "slip",
+        "options": [
+          {
+            "id": "a",
+            "text": "split",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "carbon",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "commutator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "slip",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Slip rings keep the rotating coil connected to the external circuit and allow alternating current to flow out.",
         "difficulty": "easy"
       },
       {
         "questionText": "A d.c. generator uses a split-ring _____ to keep the output current flowing in one direction.",
-        "options": [],
-        "correctAnswer": "commutator",
+        "options": [
+          {
+            "id": "a",
+            "text": "commutator",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "slip ring",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "brush",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "armature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The split-ring commutator reverses the coil connections every half turn, producing a direct (one-direction) output current.",
         "difficulty": "medium"
       },
       {
         "questionText": "The core of a transformer is made of soft _____ so that it is easily magnetised and demagnetised.",
-        "options": [],
-        "correctAnswer": "iron",
+        "options": [
+          {
+            "id": "a",
+            "text": "copper",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "iron",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "aluminium",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "steel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A soft iron core links the primary and secondary coils strongly because it is easily magnetised and demagnetised.",
         "difficulty": "easy"
       },
       {
         "questionText": "For an ideal transformer, the turns-voltage relationship is written as Vp/Vs = Np/_____.",
-        "options": [],
-        "correctAnswer": "Ns",
+        "options": [
+          {
+            "id": "a",
+            "text": "Np",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Vp",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ns",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Is",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The transformer equation is Vp/Vs = Np/Ns, relating the primary and secondary voltages to their numbers of turns.",
         "difficulty": "medium"
       },
       {
         "questionText": "A transformer that increases voltage from input to output is called a step-_____ transformer.",
-        "options": [],
-        "correctAnswer": "up",
+        "options": [
+          {
+            "id": "a",
+            "text": "down",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "over",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "out",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "up",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A step-up transformer has more turns on the secondary than the primary, so it raises the voltage.",
         "difficulty": "easy"
       },
       {
         "questionText": "The induction of an e.m.f. in one coil due to a changing current in a neighbouring coil is called _____ induction.",
-        "options": [],
-        "correctAnswer": "mutual",
+        "options": [
+          {
+            "id": "a",
+            "text": "mutual",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "self",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "forward",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reverse",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Mutual induction occurs between two coils when the changing current in one induces an e.m.f. in the other; this is the basis of the transformer.",
         "difficulty": "medium"
       },
       {
         "questionText": "Power transmitted over long distances is sent at high voltage so that the _____ in the cables is small, reducing heat losses.",
-        "options": [],
-        "correctAnswer": "current",
+        "options": [
+          {
+            "id": "a",
+            "text": "voltage",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "current",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "resistance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "power",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "At high voltage the current is small for the same power, and since power loss is I^2 R, a smaller current means much less heat lost in the cables.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A transformer has 200 turns on its primary coil and 1000 turns on its secondary coil. If the primary is connected to a 240 V a.c. supply, what is the secondary voltage (assume an ideal transformer)?",
         "options": [
-          {"id": "a", "text": "48 V", "isCorrect": false},
-          {"id": "b", "text": "1200 V", "isCorrect": true},
-          {"id": "c", "text": "240 V", "isCorrect": false},
-          {"id": "d", "text": "4800 V", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "48 V",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1200 V",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "240 V",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4800 V",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Using Vp/Vs = Np/Ns, Vs = Vp x (Ns/Np) = 240 x (1000/200) = 240 x 5 = 1200 V. The secondary has more turns, so it is a step-up transformer.",
@@ -418,10 +884,26 @@
       {
         "questionText": "An ideal step-down transformer reduces 240 V to 12 V. If the current drawn in the primary coil is 0.5 A, what is the current in the secondary coil?",
         "options": [
-          {"id": "a", "text": "0.025 A", "isCorrect": false},
-          {"id": "b", "text": "10 A", "isCorrect": true},
-          {"id": "c", "text": "0.5 A", "isCorrect": false},
-          {"id": "d", "text": "20 A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.025 A",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10 A",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.5 A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20 A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "For an ideal transformer VpIp = VsIs. So Is = (Vp x Ip)/Vs = (240 x 0.5)/12 = 120/12 = 10 A. The voltage is stepped down, so the current is stepped up.",
@@ -430,10 +912,26 @@
       {
         "questionText": "An ideal transformer has 800 turns on the primary and 100 turns on the secondary. The primary is connected to a 240 V a.c. supply and the secondary supplies a current of 4 A to a load. What is the current in the primary coil?",
         "options": [
-          {"id": "a", "text": "0.5 A", "isCorrect": true},
-          {"id": "b", "text": "32 A", "isCorrect": false},
-          {"id": "c", "text": "4 A", "isCorrect": false},
-          {"id": "d", "text": "8 A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.5 A",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "32 A",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4 A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8 A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "First find the secondary voltage: Vs = Vp x (Ns/Np) = 240 x (100/800) = 30 V. Then using VpIp = VsIs, Ip = (Vs x Is)/Vp = (30 x 4)/240 = 120/240 = 0.5 A.",

@@ -8,10 +8,26 @@
       {
         "questionText": "Data communication is best defined as the process of:",
         "options": [
-          { "id": "a", "text": "Storing data permanently on a hard disk", "isCorrect": false },
-          { "id": "b", "text": "Exchanging data between two or more devices through a transmission medium", "isCorrect": true },
-          { "id": "c", "text": "Converting a program into machine code", "isCorrect": false },
-          { "id": "d", "text": "Printing documents from a computer", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Storing data permanently on a hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Exchanging data between two or more devices through a transmission medium",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Converting a program into machine code",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Printing documents from a computer",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Data communication is the exchange (transfer) of data between two or more devices over a transmission medium, using an agreed protocol.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which of the following is NOT one of the basic components of a data communication system?",
         "options": [
-          { "id": "a", "text": "Sender", "isCorrect": false },
-          { "id": "b", "text": "Receiver", "isCorrect": false },
-          { "id": "c", "text": "Transmission medium", "isCorrect": false },
-          { "id": "d", "text": "Power supply unit", "isCorrect": true }
+          {
+            "id": "a",
+            "text": "Sender",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Receiver",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Transmission medium",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Power supply unit",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "The five basic components are the sender, message, transmission medium, receiver and protocol. A power supply unit is not counted as a communication component.",
@@ -32,10 +64,26 @@
       {
         "questionText": "In a data communication system, the set of rules that governs how data is exchanged is called the:",
         "options": [
-          { "id": "a", "text": "Medium", "isCorrect": false },
-          { "id": "b", "text": "Message", "isCorrect": false },
-          { "id": "c", "text": "Protocol", "isCorrect": true },
-          { "id": "d", "text": "Receiver", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Medium",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Message",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Protocol",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Receiver",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A protocol is a set of rules that both sender and receiver agree on so that communication is understood correctly.",
@@ -44,10 +92,26 @@
       {
         "questionText": "A transmission mode in which data flows in only one direction, like a radio broadcast, is called:",
         "options": [
-          { "id": "a", "text": "Simplex", "isCorrect": true },
-          { "id": "b", "text": "Half-duplex", "isCorrect": false },
-          { "id": "c", "text": "Full-duplex", "isCorrect": false },
-          { "id": "d", "text": "Multiplex", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Simplex",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Half-duplex",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Full-duplex",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Multiplex",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In simplex mode data travels in one direction only; the receiver cannot send back. Radio and television broadcasts are examples.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Which transmission mode allows data to flow in both directions but only one direction at a time, as in a walkie-talkie?",
         "options": [
-          { "id": "a", "text": "Simplex", "isCorrect": false },
-          { "id": "b", "text": "Half-duplex", "isCorrect": true },
-          { "id": "c", "text": "Full-duplex", "isCorrect": false },
-          { "id": "d", "text": "Broadcast", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Simplex",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Half-duplex",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Full-duplex",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Broadcast",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Half-duplex allows two-way communication but not simultaneously; each side takes turns, like a walkie-talkie.",
@@ -68,10 +148,26 @@
       {
         "questionText": "A telephone conversation, where both people can talk and listen at the same time, is an example of which transmission mode?",
         "options": [
-          { "id": "a", "text": "Simplex", "isCorrect": false },
-          { "id": "b", "text": "Half-duplex", "isCorrect": false },
-          { "id": "c", "text": "Full-duplex", "isCorrect": true },
-          { "id": "d", "text": "Simplex-duplex", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Simplex",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Half-duplex",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Full-duplex",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Simplex-duplex",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Full-duplex allows data to flow in both directions simultaneously, as in a normal telephone call.",
@@ -80,10 +176,26 @@
       {
         "questionText": "In parallel transmission, data is sent:",
         "options": [
-          { "id": "a", "text": "One bit at a time over a single wire", "isCorrect": false },
-          { "id": "b", "text": "Several bits at the same time over multiple wires", "isCorrect": true },
-          { "id": "c", "text": "Only as analog signals", "isCorrect": false },
-          { "id": "d", "text": "Without any wires", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "One bit at a time over a single wire",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Several bits at the same time over multiple wires",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Only as analog signals",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Without any wires",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Parallel transmission sends multiple bits simultaneously, each on its own wire, making it faster over short distances but more costly.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Which statement correctly compares serial and parallel transmission?",
         "options": [
-          { "id": "a", "text": "Serial sends one bit at a time and is suited for long distances", "isCorrect": true },
-          { "id": "b", "text": "Serial sends many bits at once over many wires", "isCorrect": false },
-          { "id": "c", "text": "Parallel is cheaper for very long distances", "isCorrect": false },
-          { "id": "d", "text": "Parallel can use only one wire", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Serial sends one bit at a time and is suited for long distances",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Serial sends many bits at once over many wires",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Parallel is cheaper for very long distances",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Parallel can use only one wire",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Serial transmission sends bits one after another on a single line, which is cheaper and more reliable over long distances; parallel uses many wires and suits short distances.",
@@ -104,10 +232,26 @@
       {
         "questionText": "An analog signal is best described as one that:",
         "options": [
-          { "id": "a", "text": "Has only two discrete values, 0 and 1", "isCorrect": false },
-          { "id": "b", "text": "Varies continuously over time, like a sound wave", "isCorrect": true },
-          { "id": "c", "text": "Can only be stored on a computer", "isCorrect": false },
-          { "id": "d", "text": "Cannot carry information", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Has only two discrete values, 0 and 1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Varies continuously over time, like a sound wave",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Can only be stored on a computer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cannot carry information",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An analog signal is continuous and can take any value within a range, such as the human voice or a sound wave.",
@@ -116,10 +260,26 @@
       {
         "questionText": "The full meaning of the word 'modem' comes from which two operations?",
         "options": [
-          { "id": "a", "text": "Monitor and demonstrate", "isCorrect": false },
-          { "id": "b", "text": "Modulator and demodulator", "isCorrect": true },
-          { "id": "c", "text": "Module and device manager", "isCorrect": false },
-          { "id": "d", "text": "Memory and decoder", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Monitor and demonstrate",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Modulator and demodulator",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Module and device manager",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Memory and decoder",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Modem stands for modulator-demodulator: it modulates digital data into analog for transmission and demodulates received analog signals back into digital.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Modulation in a modem refers to converting:",
         "options": [
-          { "id": "a", "text": "Analog signals into digital signals", "isCorrect": false },
-          { "id": "b", "text": "Digital signals into analog signals", "isCorrect": true },
-          { "id": "c", "text": "Text into images", "isCorrect": false },
-          { "id": "d", "text": "Bits into bytes", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Analog signals into digital signals",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Digital signals into analog signals",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Text into images",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Bits into bytes",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Modulation is the process of converting digital data from the computer into analog signals suitable for transmission over media such as telephone lines.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Bandwidth in data communication refers to:",
         "options": [
-          { "id": "a", "text": "The physical length of a cable", "isCorrect": false },
-          { "id": "b", "text": "The maximum amount of data a channel can carry in a given time", "isCorrect": true },
-          { "id": "c", "text": "The number of computers in a network", "isCorrect": false },
-          { "id": "d", "text": "The colour of a network cable", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "The physical length of a cable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The maximum amount of data a channel can carry in a given time",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The number of computers in a network",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The colour of a network cable",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Bandwidth is the capacity of a communication channel, often measured in bits per second (bps); higher bandwidth means more data can be carried.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Which transmission medium uses light to carry data and offers very high speed with immunity to electrical interference?",
         "options": [
-          { "id": "a", "text": "Twisted pair cable", "isCorrect": false },
-          { "id": "b", "text": "Coaxial cable", "isCorrect": false },
-          { "id": "c", "text": "Fibre optic cable", "isCorrect": true },
-          { "id": "d", "text": "Telephone wire", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Twisted pair cable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Coaxial cable",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fibre optic cable",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Telephone wire",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Fibre optic cable transmits data as pulses of light, giving very high bandwidth, long distance and immunity to electromagnetic interference.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Which of the following is an UNGUIDED (wireless) transmission medium?",
         "options": [
-          { "id": "a", "text": "Twisted pair cable", "isCorrect": false },
-          { "id": "b", "text": "Coaxial cable", "isCorrect": false },
-          { "id": "c", "text": "Fibre optic cable", "isCorrect": false },
-          { "id": "d", "text": "Microwave", "isCorrect": true }
+          {
+            "id": "a",
+            "text": "Twisted pair cable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Coaxial cable",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fibre optic cable",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Microwave",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Microwave is an unguided medium because it sends signals through the air without a physical cable; twisted pair, coaxial and fibre optic are guided media.",
@@ -176,10 +400,26 @@
       {
         "questionText": "A parity bit is added to transmitted data mainly to:",
         "options": [
-          { "id": "a", "text": "Increase transmission speed", "isCorrect": false },
-          { "id": "b", "text": "Detect errors that occur during transmission", "isCorrect": true },
-          { "id": "c", "text": "Encrypt the data", "isCorrect": false },
-          { "id": "d", "text": "Compress the data", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Increase transmission speed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Detect errors that occur during transmission",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Encrypt the data",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Compress the data",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A parity bit is an extra bit added to make the number of 1s even or odd, allowing the receiver to detect single-bit errors in the data.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The component of a data communication system that originates and sends the data is called the _____.",
-        "options": [],
-        "correctAnswer": "sender",
+        "options": [
+          {
+            "id": "a",
+            "text": "sender",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "receiver",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "medium",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "protocol",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The sender (source) is the device or person that generates and transmits the message.",
         "difficulty": "easy"
       },
       {
         "questionText": "A transmission mode in which data flows in one direction only is called _____.",
-        "options": [],
-        "correctAnswer": "simplex",
+        "options": [
+          {
+            "id": "a",
+            "text": "duplex",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "simplex",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "half-duplex",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "broadcast",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Simplex transmission allows data to move in a single direction only, such as a radio or TV broadcast.",
         "difficulty": "easy"
       },
       {
         "questionText": "In _____ transmission, bits are sent one after another along a single wire.",
-        "options": [],
-        "correctAnswer": "serial",
+        "options": [
+          {
+            "id": "a",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "synchronous",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "serial",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "analog",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Serial transmission sends one bit at a time over a single line, which is economical and reliable over long distances.",
         "difficulty": "easy"
       },
       {
         "questionText": "A signal that has only two distinct states, represented as 0 and 1, is called a _____ signal.",
-        "options": [],
-        "correctAnswer": "digital",
+        "options": [
+          {
+            "id": "a",
+            "text": "analog",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "carrier",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "modulated",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "digital",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A digital signal is discrete, taking only specific values (such as 0 and 1), which computers use internally.",
         "difficulty": "easy"
       },
       {
         "questionText": "The device that converts digital signals to analog for transmission and back again is called a _____.",
-        "options": [],
-        "correctAnswer": "modem",
+        "options": [
+          {
+            "id": "a",
+            "text": "modem",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "switch",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "router",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "repeater",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A modem (modulator-demodulator) modulates outgoing digital data into analog and demodulates incoming analog back into digital.",
         "difficulty": "easy"
       },
       {
         "questionText": "The amount of data a communication channel can carry per unit of time is known as _____.",
-        "options": [],
-        "correctAnswer": "bandwidth",
+        "options": [
+          {
+            "id": "a",
+            "text": "latency",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bandwidth",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "throughput",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "attenuation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Bandwidth measures the data-carrying capacity of a channel, commonly expressed in bits per second.",
         "difficulty": "medium"
       },
       {
         "questionText": "The unit used to measure the data transfer rate of a communication channel is bits per _____.",
-        "options": [],
-        "correctAnswer": "second",
+        "options": [
+          {
+            "id": "a",
+            "text": "byte",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hertz",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "second",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "baud",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Data transfer rate is measured in bits per second (bps), which states how many bits travel through the channel each second.",
         "difficulty": "easy"
       },
       {
         "questionText": "A networking device that joins different networks together and directs data along the best path is called a _____.",
-        "options": [],
-        "correctAnswer": "router",
+        "options": [
+          {
+            "id": "a",
+            "text": "switch",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hub",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "bridge",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "router",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A router connects different networks and forwards data packets between them using the best available route.",
         "difficulty": "medium"
       },
       {
         "questionText": "The card fitted inside a computer that allows it to connect to a network is called a _____ (NIC).",
-        "options": [],
-        "correctAnswer": "network interface card",
+        "options": [
+          {
+            "id": "a",
+            "text": "network interface card",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "modem",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "access point",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "network hub",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A Network Interface Card (NIC) provides the hardware connection that lets a computer communicate on a network.",
         "difficulty": "medium"
       },
       {
         "questionText": "An extra bit added to data to check for errors during transmission is called a _____ bit.",
-        "options": [],
-        "correctAnswer": "parity",
+        "options": [
+          {
+            "id": "a",
+            "text": "check",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "parity",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "stop",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "start",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A parity bit is added so the receiver can check whether the number of 1s is correct and detect single-bit errors.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A school wants to connect its computer laboratory to the Internet through an existing analog telephone line. Which device is essential to make this possible, and why?",
         "options": [
-          { "id": "a", "text": "A modem, because it converts the computer's digital signals to analog for the line and back again", "isCorrect": true },
-          { "id": "b", "text": "A hub, because it broadcasts data to all telephones", "isCorrect": false },
-          { "id": "c", "text": "A printer, because it produces a record of the data", "isCorrect": false },
-          { "id": "d", "text": "A scanner, because it digitises documents", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "A modem, because it converts the computer's digital signals to analog for the line and back again",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A hub, because it broadcasts data to all telephones",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A printer, because it produces a record of the data",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A scanner, because it digitises documents",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "An analog telephone line cannot carry digital signals directly, so a modem is needed to modulate digital data into analog for sending and demodulate analog back into digital on receiving.",
@@ -418,10 +884,26 @@
       {
         "questionText": "An engineer must lay a high-speed data link between two buildings that have heavy electrical machinery generating strong electromagnetic interference. Which transmission medium is the most suitable choice?",
         "options": [
-          { "id": "a", "text": "Twisted pair cable, because it is the cheapest option", "isCorrect": false },
-          { "id": "b", "text": "Coaxial cable, because it is thick", "isCorrect": false },
-          { "id": "c", "text": "Fibre optic cable, because it carries data as light and is immune to electromagnetic interference", "isCorrect": true },
-          { "id": "d", "text": "Infrared, because it does not need cables", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Twisted pair cable, because it is the cheapest option",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Coaxial cable, because it is thick",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fibre optic cable, because it carries data as light and is immune to electromagnetic interference",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Infrared, because it does not need cables",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Fibre optic transmits data as light pulses, so electromagnetic interference from machinery does not affect it, and it also provides very high bandwidth for a high-speed link.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A walkie-talkie set lets two security guards talk to each other but only one can speak at a time. Which transmission mode does this illustrate, and what would have to change for them to speak simultaneously?",
         "options": [
-          { "id": "a", "text": "Simplex; it would need a longer antenna", "isCorrect": false },
-          { "id": "b", "text": "Half-duplex; it would need to support full-duplex for simultaneous two-way communication", "isCorrect": true },
-          { "id": "c", "text": "Full-duplex; nothing needs to change", "isCorrect": false },
-          { "id": "d", "text": "Simplex; it would need a parity bit", "isCorrect": false }
+          {
+            "id": "a",
+            "text": "Simplex; it would need a longer antenna",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Half-duplex; it would need to support full-duplex for simultaneous two-way communication",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Full-duplex; nothing needs to change",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Simplex; it would need a parity bit",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Taking turns to speak is half-duplex (two-way but not simultaneous); to talk and listen at the same time the system would need to operate in full-duplex mode.",

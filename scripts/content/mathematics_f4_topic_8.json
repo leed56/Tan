@@ -8,10 +8,26 @@
       {
         "questionText": "What is linear programming?",
         "options": [
-          {"id": "a", "text": "A method of solving quadratic equations using graphs", "isCorrect": false},
-          {"id": "b", "text": "A method of finding the maximum or minimum value of a linear objective function subject to linear constraints", "isCorrect": true},
-          {"id": "c", "text": "A method of writing computer programs in straight lines", "isCorrect": false},
-          {"id": "d", "text": "A way of drawing straight lines only", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A method of solving quadratic equations using graphs",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A method of finding the maximum or minimum value of a linear objective function subject to linear constraints",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A method of writing computer programs in straight lines",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A way of drawing straight lines only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Linear programming is a technique for optimising (maximising or minimising) a linear objective function subject to a set of linear inequalities called constraints.",
@@ -20,10 +36,26 @@
       {
         "questionText": "In a linear programming problem, the linear inequalities that limit the possible values of the variables are called the:",
         "options": [
-          {"id": "a", "text": "objective function", "isCorrect": false},
-          {"id": "b", "text": "vertices", "isCorrect": false},
-          {"id": "c", "text": "constraints", "isCorrect": true},
-          {"id": "d", "text": "feasible points", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "objective function",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vertices",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "constraints",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "feasible points",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Constraints are the linear inequalities derived from the conditions of the problem; they restrict the values the variables may take.",
@@ -32,10 +64,26 @@
       {
         "questionText": "The region of a graph that satisfies all the constraints of a linear programming problem at the same time is called the:",
         "options": [
-          {"id": "a", "text": "feasible region", "isCorrect": true},
-          {"id": "b", "text": "unwanted region", "isCorrect": false},
-          {"id": "c", "text": "objective region", "isCorrect": false},
-          {"id": "d", "text": "shaded boundary", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "feasible region",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "unwanted region",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "objective region",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shaded boundary",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The feasible region (also called the wanted region) is the set of all points that satisfy every constraint simultaneously.",
@@ -44,10 +92,26 @@
       {
         "questionText": "A trader wants to buy x chairs and y tables. If she can buy at most 20 items altogether, the correct inequality is:",
         "options": [
-          {"id": "a", "text": "x + y > 20", "isCorrect": false},
-          {"id": "b", "text": "x + y < 20", "isCorrect": false},
-          {"id": "c", "text": "x + y ≤ 20", "isCorrect": true},
-          {"id": "d", "text": "x + y ≥ 20", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "x + y > 20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x + y < 20",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x + y ≤ 20",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "x + y ≥ 20",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "\"At most 20\" means the total cannot exceed 20, so x + y ≤ 20.",
@@ -56,10 +120,26 @@
       {
         "questionText": "A farmer must plant at least 5 hectares of maize (m). The correct inequality is:",
         "options": [
-          {"id": "a", "text": "m ≤ 5", "isCorrect": false},
-          {"id": "b", "text": "m ≥ 5", "isCorrect": true},
-          {"id": "c", "text": "m < 5", "isCorrect": false},
-          {"id": "d", "text": "m = 5", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "m ≤ 5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "m ≥ 5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "m < 5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "m = 5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "\"At least 5\" means 5 or more, which is written as m ≥ 5.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Because the number of items produced cannot be negative, every linear programming problem about real quantities includes the constraints:",
         "options": [
-          {"id": "a", "text": "x ≤ 0 and y ≤ 0", "isCorrect": false},
-          {"id": "b", "text": "x ≥ 0 and y ≥ 0", "isCorrect": true},
-          {"id": "c", "text": "x < 0 and y < 0", "isCorrect": false},
-          {"id": "d", "text": "x = y", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "x ≤ 0 and y ≤ 0",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x ≥ 0 and y ≥ 0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "x < 0 and y < 0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x = y",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Quantities such as numbers of items cannot be negative, so the non-negativity constraints x ≥ 0 and y ≥ 0 are always included.",
@@ -80,10 +176,26 @@
       {
         "questionText": "The quantity that is to be maximised or minimised in a linear programming problem is called the:",
         "options": [
-          {"id": "a", "text": "constraint", "isCorrect": false},
-          {"id": "b", "text": "feasible region", "isCorrect": false},
-          {"id": "c", "text": "objective function", "isCorrect": true},
-          {"id": "d", "text": "boundary line", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "constraint",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "feasible region",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "objective function",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "boundary line",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The objective function (for example profit P = 3x + 5y) is the expression that is optimised.",
@@ -92,10 +204,26 @@
       {
         "questionText": "In the corner-point method, the maximum or minimum value of the objective function is found by:",
         "options": [
-          {"id": "a", "text": "testing the centre of the feasible region", "isCorrect": false},
-          {"id": "b", "text": "evaluating the objective function at each vertex (corner) of the feasible region", "isCorrect": true},
-          {"id": "c", "text": "choosing any random point in the region", "isCorrect": false},
-          {"id": "d", "text": "adding all the constraints together", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "testing the centre of the feasible region",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "evaluating the objective function at each vertex (corner) of the feasible region",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "choosing any random point in the region",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "adding all the constraints together",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The optimum value of a linear objective function over a polygonal feasible region always occurs at a vertex, so we test every corner point.",
@@ -104,10 +232,26 @@
       {
         "questionText": "When graphing the inequality y ≤ 2x + 1, the boundary line y = 2x + 1 is drawn as a:",
         "options": [
-          {"id": "a", "text": "solid (continuous) line", "isCorrect": true},
-          {"id": "b", "text": "dashed (broken) line", "isCorrect": false},
-          {"id": "c", "text": "curved line", "isCorrect": false},
-          {"id": "d", "text": "dotted vertical line", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "solid (continuous) line",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "dashed (broken) line",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "curved line",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dotted vertical line",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Inequalities with ≤ or ≥ include the boundary, so the line is drawn solid. Strict inequalities (< or >) use a dashed line.",
@@ -116,10 +260,26 @@
       {
         "questionText": "To test which side of the line x + y = 6 satisfies x + y ≤ 6, we can substitute the test point (0, 0). Which statement is true?",
         "options": [
-          {"id": "a", "text": "(0,0) gives 0 ≤ 6, which is true, so the region containing the origin is wanted", "isCorrect": true},
-          {"id": "b", "text": "(0,0) gives 0 ≤ 6, which is false, so the origin side is unwanted", "isCorrect": false},
-          {"id": "c", "text": "(0,0) cannot be used as a test point", "isCorrect": false},
-          {"id": "d", "text": "(0,0) gives 6 ≤ 0, which is false", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(0,0) gives 0 ≤ 6, which is true, so the region containing the origin is wanted",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(0,0) gives 0 ≤ 6, which is false, so the origin side is unwanted",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(0,0) cannot be used as a test point",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(0,0) gives 6 ≤ 0, which is false",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Substituting (0,0): 0 + 0 = 0 ≤ 6 is true, so the side of the line that contains the origin is the wanted region.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Maximise P = 4x + 3y. The vertices of the feasible region are (0,0), (5,0), (3,4) and (0,6). Which vertex gives the maximum value of P?",
         "options": [
-          {"id": "a", "text": "(5,0) giving P = 20", "isCorrect": false},
-          {"id": "b", "text": "(3,4) giving P = 24", "isCorrect": true},
-          {"id": "c", "text": "(0,6) giving P = 18", "isCorrect": false},
-          {"id": "d", "text": "(0,0) giving P = 0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(5,0) giving P = 20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(3,4) giving P = 24",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(0,6) giving P = 18",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(0,0) giving P = 0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "P at the vertices: (0,0)=0, (5,0)=20, (3,4)=4(3)+3(4)=12+12=24, (0,6)=18. The maximum is 24 at (3,4).",
@@ -140,10 +316,26 @@
       {
         "questionText": "Minimise C = 2x + 5y. The vertices of the feasible region are (2,4), (6,1) and (8,0). Which vertex gives the minimum value of C?",
         "options": [
-          {"id": "a", "text": "(2,4) giving C = 24", "isCorrect": false},
-          {"id": "b", "text": "(6,1) giving C = 17", "isCorrect": false},
-          {"id": "c", "text": "(8,0) giving C = 16", "isCorrect": true},
-          {"id": "d", "text": "(2,4) giving C = 28", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(2,4) giving C = 24",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(6,1) giving C = 17",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(8,0) giving C = 16",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(2,4) giving C = 28",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "C at the vertices: (2,4)=2(2)+5(4)=4+20=24, (6,1)=12+5=17, (8,0)=16+0=16. The smallest value is 16, so the minimum occurs at (8,0).",
@@ -152,10 +344,26 @@
       {
         "questionText": "A statement says \"the number of buses (b) is greater than the number of cars (c)\". The correct inequality is:",
         "options": [
-          {"id": "a", "text": "b < c", "isCorrect": false},
-          {"id": "b", "text": "b ≤ c", "isCorrect": false},
-          {"id": "c", "text": "b > c", "isCorrect": true},
-          {"id": "d", "text": "b = c", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "b < c",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "b ≤ c",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "b > c",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "b = c",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "\"Greater than\" translates directly to the strict inequality b > c.",
@@ -164,10 +372,26 @@
       {
         "questionText": "The corner points of a feasible region for maximising P = x + 2y are (0,0), (4,0), (4,3) and (0,5). What is the maximum value of P?",
         "options": [
-          {"id": "a", "text": "4", "isCorrect": false},
-          {"id": "b", "text": "10", "isCorrect": true},
-          {"id": "c", "text": "11", "isCorrect": false},
-          {"id": "d", "text": "5", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "11",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "P at the vertices: (0,0)=0, (4,0)=4, (4,3)=4+6=10, (0,5)=10. The maximum value is 10 (occurring at both (4,3) and (0,5)).",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which of the following is NOT a step in solving a linear programming word problem?",
         "options": [
-          {"id": "a", "text": "Forming the inequalities (constraints) from the given conditions", "isCorrect": false},
-          {"id": "b", "text": "Drawing the constraints and identifying the feasible region", "isCorrect": false},
-          {"id": "c", "text": "Solving a quadratic equation by factorisation", "isCorrect": true},
-          {"id": "d", "text": "Evaluating the objective function at the corner points", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Forming the inequalities (constraints) from the given conditions",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Drawing the constraints and identifying the feasible region",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Solving a quadratic equation by factorisation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Evaluating the objective function at the corner points",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Linear programming uses linear inequalities and an objective function; solving a quadratic equation is not part of the method.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The linear inequalities that restrict the values of the variables in a linear programming problem are called _____.",
-        "options": [],
-        "correctAnswer": "constraints",
+        "options": [
+          {
+            "id": "a",
+            "text": "constraints",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "variables",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solutions",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "objectives",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Constraints are the limiting linear inequalities formed from the conditions of the problem.",
         "difficulty": "easy"
       },
       {
         "questionText": "The region on the Cartesian plane that satisfies all the constraints simultaneously is called the _____ region.",
-        "options": [],
-        "correctAnswer": "feasible",
+        "options": [
+          {
+            "id": "a",
+            "text": "optimal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "feasible",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "bounded",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solution",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The feasible (wanted) region contains all points satisfying every constraint.",
         "difficulty": "easy"
       },
       {
         "questionText": "The expression to be maximised or minimised, such as P = 3x + 4y, is called the _____ function.",
-        "options": [],
-        "correctAnswer": "objective",
+        "options": [
+          {
+            "id": "a",
+            "text": "constraint",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "feasible",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "objective",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "linear",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The objective function is the quantity being optimised.",
         "difficulty": "easy"
       },
       {
         "questionText": "The condition \"at most 30\" written as an inequality using the symbol is x _____ 30.",
-        "options": [],
-        "correctAnswer": "≤",
+        "options": [
+          {
+            "id": "a",
+            "text": "≥",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "<",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": ">",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "≤",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "\"At most 30\" means not more than 30, so x ≤ 30.",
         "difficulty": "easy"
       },
       {
         "questionText": "The condition \"at least 12\" written as an inequality is y _____ 12.",
-        "options": [],
-        "correctAnswer": "≥",
+        "options": [
+          {
+            "id": "a",
+            "text": "≥",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "≤",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": ">",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "<",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "\"At least 12\" means 12 or more, so y ≥ 12.",
         "difficulty": "easy"
       },
       {
         "questionText": "When an inequality uses ≤ or ≥, the boundary line on the graph is drawn as a _____ line.",
-        "options": [],
-        "correctAnswer": "solid",
+        "options": [
+          {
+            "id": "a",
+            "text": "dashed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "solid",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "dotted",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "broken",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Because the boundary points are included, the line is drawn solid (continuous). Strict inequalities use a dashed line.",
         "difficulty": "medium"
       },
       {
         "questionText": "The maximum or minimum value of a linear objective function always occurs at a _____ of the feasible region.",
-        "options": [],
-        "correctAnswer": "vertex",
+        "options": [
+          {
+            "id": "a",
+            "text": "centre",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "midpoint",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "vertex",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "edge",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The optimum of a linear function over a polygonal feasible region occurs at a corner point (vertex).",
         "difficulty": "medium"
       },
       {
         "questionText": "Since quantities of real items cannot be negative, the constraints x ≥ 0 and y ≥ 0 are called the _____ constraints.",
-        "options": [],
-        "correctAnswer": "non-negativity",
+        "options": [
+          {
+            "id": "a",
+            "text": "positive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "boundary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "optimal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "non-negativity",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Non-negativity constraints state that the variables cannot be less than zero.",
         "difficulty": "medium"
       },
       {
         "questionText": "If the objective function P = 2x + 3y is evaluated at the vertex (4, 5), then P = _____.",
-        "options": [],
-        "correctAnswer": "23",
+        "options": [
+          {
+            "id": "a",
+            "text": "23",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "22",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "26",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "14",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "P = 2(4) + 3(5) = 8 + 15 = 23.",
         "difficulty": "medium"
       },
       {
         "questionText": "If C = 5x + 2y is evaluated at the corner point (3, 6), then C = _____.",
-        "options": [],
-        "correctAnswer": "27",
+        "options": [
+          {
+            "id": "a",
+            "text": "21",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "27",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "23",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "30",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "C = 5(3) + 2(6) = 15 + 12 = 27.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A carpenter makes x stools and y chairs each day. Each stool needs 2 hours and each chair needs 3 hours, and at most 12 hours are available, so 2x + 3y ≤ 12. He must make at least 1 stool (x ≥ 1) and at least 1 chair (y ≥ 1). The profit is P = 4x + 5y (in thousands of shillings). Testing the corner points (1,1), (4.5,1) but using whole-number feasible vertices (1,1), (1, 10/3) and (4.5,1), the integer optimal is found among feasible whole-number points. Using the vertices (1,1), (3,2) and (1, 3) of the region, which gives the maximum profit?",
         "options": [
-          {"id": "a", "text": "(1,1) giving P = 9 thousand", "isCorrect": false},
-          {"id": "b", "text": "(3,2) giving P = 22 thousand", "isCorrect": true},
-          {"id": "c", "text": "(1,3) giving P = 19 thousand", "isCorrect": false},
-          {"id": "d", "text": "(1,1) giving P = 14 thousand", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(1,1) giving P = 9 thousand",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(3,2) giving P = 22 thousand",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(1,3) giving P = 19 thousand",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(1,1) giving P = 14 thousand",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Check the constraint 2x + 3y ≤ 12: at (3,2), 2(3)+3(2)=12 ≤ 12 (valid). P values: (1,1)=4+5=9, (3,2)=12+10=22, (1,3)=4+15=19. The maximum profit is 22 thousand shillings at (3,2).",
@@ -418,10 +884,26 @@
       {
         "questionText": "A school orders x desks and y tables. Storage allows at most 50 items, so x + y ≤ 50. Money allows at most 30 desks (x ≤ 30) and at most 40 tables (y ≤ 40), with x ≥ 0 and y ≥ 0. The total seating value is V = 2x + 3y. Among the corner points (0,40), (10,40), (30,20) and (30,0), which gives the maximum value of V?",
         "options": [
-          {"id": "a", "text": "(0,40) giving V = 120", "isCorrect": false},
-          {"id": "b", "text": "(10,40) giving V = 140", "isCorrect": true},
-          {"id": "c", "text": "(30,20) giving V = 120", "isCorrect": false},
-          {"id": "d", "text": "(30,0) giving V = 60", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(0,40) giving V = 120",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(10,40) giving V = 140",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(30,20) giving V = 120",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(30,0) giving V = 60",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Check x+y≤50: (10,40) gives 50 ≤ 50 (valid). V values: (0,40)=120, (10,40)=20+120=140, (30,20)=60+60=120, (30,0)=60. The maximum is 140 at (10,40).",
@@ -430,10 +912,26 @@
       {
         "questionText": "A factory blends two feeds X and Y. Each kg of X costs 300 shillings and each kg of Y costs 200 shillings, so cost C = 300x + 200y. The mixture must contain at least 8 kg of protein where X gives 2 units/kg and Y gives 1 unit/kg, so 2x + y ≥ 8, and at least 6 kg total so x + y ≥ 6, with x ≥ 0, y ≥ 0. The corner points are (0,8), (2,4) and (6,0). Which gives the minimum cost?",
         "options": [
-          {"id": "a", "text": "(0,8) giving C = 1600", "isCorrect": false},
-          {"id": "b", "text": "(2,4) giving C = 1400", "isCorrect": true},
-          {"id": "c", "text": "(6,0) giving C = 1800", "isCorrect": false},
-          {"id": "d", "text": "(2,4) giving C = 1000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(0,8) giving C = 1600",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(2,4) giving C = 1400",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(6,0) giving C = 1800",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(2,4) giving C = 1000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "C values: (0,8)=300(0)+200(8)=1600, (2,4)=600+800=1400, (6,0)=1800+0=1800. The minimum cost is 1400 shillings at (2,4), which also satisfies 2x+y=8 ≥ 8 and x+y=6 ≥ 6.",

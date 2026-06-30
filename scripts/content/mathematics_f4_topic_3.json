@@ -8,10 +8,26 @@
       {
         "questionText": "A cube has an edge length of 5 cm. What is its total surface area?",
         "options": [
-          {"id": "a", "text": "25 cm^2", "isCorrect": false},
-          {"id": "b", "text": "125 cm^2", "isCorrect": false},
-          {"id": "c", "text": "150 cm^2", "isCorrect": true},
-          {"id": "d", "text": "100 cm^2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "25 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "125 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "150 cm^2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "100 cm^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A cube has 6 equal square faces. Surface area = 6 * (edge)^2 = 6 * 5^2 = 6 * 25 = 150 cm^2.",
@@ -20,10 +36,26 @@
       {
         "questionText": "A cuboid measures 8 cm by 4 cm by 3 cm. What is its volume?",
         "options": [
-          {"id": "a", "text": "96 cm^3", "isCorrect": true},
-          {"id": "b", "text": "15 cm^3", "isCorrect": false},
-          {"id": "c", "text": "44 cm^3", "isCorrect": false},
-          {"id": "d", "text": "120 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "96 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "15 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "44 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "120 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Volume of a cuboid = length * width * height = 8 * 4 * 3 = 96 cm^3.",
@@ -32,10 +64,26 @@
       {
         "questionText": "A cylinder has a base radius of 7 cm and a height of 10 cm. Taking pi = 22/7, what is its volume?",
         "options": [
-          {"id": "a", "text": "220 cm^3", "isCorrect": false},
-          {"id": "b", "text": "1540 cm^3", "isCorrect": true},
-          {"id": "c", "text": "440 cm^3", "isCorrect": false},
-          {"id": "d", "text": "770 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "220 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1540 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "440 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "770 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume = pi * r^2 * h = (22/7) * 7^2 * 10 = (22/7) * 49 * 10 = 22 * 7 * 10 = 1540 cm^3.",
@@ -44,10 +92,26 @@
       {
         "questionText": "What is the curved (lateral) surface area of a cylinder with radius 7 cm and height 15 cm? Take pi = 22/7.",
         "options": [
-          {"id": "a", "text": "660 cm^2", "isCorrect": true},
-          {"id": "b", "text": "330 cm^2", "isCorrect": false},
-          {"id": "c", "text": "462 cm^2", "isCorrect": false},
-          {"id": "d", "text": "154 cm^2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "660 cm^2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "330 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "462 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "154 cm^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Curved surface area of a cylinder = 2 * pi * r * h = 2 * (22/7) * 7 * 15 = 2 * 22 * 15 = 660 cm^2.",
@@ -56,10 +120,26 @@
       {
         "questionText": "A sphere has a radius of 7 cm. Taking pi = 22/7, what is its volume?",
         "options": [
-          {"id": "a", "text": "616 cm^3", "isCorrect": false},
-          {"id": "b", "text": "1437.33 cm^3", "isCorrect": true},
-          {"id": "c", "text": "2156 cm^3", "isCorrect": false},
-          {"id": "d", "text": "718.67 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "616 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1437.33 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2156 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "718.67 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume of a sphere = (4/3) * pi * r^3 = (4/3) * (22/7) * 7^3 = (4/3) * (22/7) * 343 = (4/3) * 1078 = 4312/3 = 1437.33 cm^3.",
@@ -68,10 +148,26 @@
       {
         "questionText": "What is the surface area of a sphere with radius 7 cm? Take pi = 22/7.",
         "options": [
-          {"id": "a", "text": "154 cm^2", "isCorrect": false},
-          {"id": "b", "text": "308 cm^2", "isCorrect": false},
-          {"id": "c", "text": "616 cm^2", "isCorrect": true},
-          {"id": "d", "text": "1232 cm^2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "154 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "308 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "616 cm^2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1232 cm^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Surface area of a sphere = 4 * pi * r^2 = 4 * (22/7) * 7^2 = 4 * (22/7) * 49 = 4 * 154 = 616 cm^2.",
@@ -80,10 +176,26 @@
       {
         "questionText": "A cone has a base radius of 3 cm and a height of 4 cm. What is its slant height?",
         "options": [
-          {"id": "a", "text": "7 cm", "isCorrect": false},
-          {"id": "b", "text": "5 cm", "isCorrect": true},
-          {"id": "c", "text": "12 cm", "isCorrect": false},
-          {"id": "d", "text": "25 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "7 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "25 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Slant height l = sqrt(r^2 + h^2) = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5 cm.",
@@ -92,10 +204,26 @@
       {
         "questionText": "A cone has a base radius of 7 cm and a height of 12 cm. Taking pi = 22/7, what is its volume?",
         "options": [
-          {"id": "a", "text": "1848 cm^3", "isCorrect": false},
-          {"id": "b", "text": "616 cm^3", "isCorrect": true},
-          {"id": "c", "text": "264 cm^3", "isCorrect": false},
-          {"id": "d", "text": "1232 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1848 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "616 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "264 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1232 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume of a cone = (1/3) * pi * r^2 * h = (1/3) * (22/7) * 49 * 12 = (1/3) * 22 * 7 * 12 = (1/3) * 1848 = 616 cm^3.",
@@ -104,10 +232,26 @@
       {
         "questionText": "A square-based pyramid has a base edge of 6 cm and a vertical height of 10 cm. What is its volume?",
         "options": [
-          {"id": "a", "text": "360 cm^3", "isCorrect": false},
-          {"id": "b", "text": "120 cm^3", "isCorrect": true},
-          {"id": "c", "text": "60 cm^3", "isCorrect": false},
-          {"id": "d", "text": "180 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "360 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "120 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "60 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "180 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume of a pyramid = (1/3) * base area * height = (1/3) * (6 * 6) * 10 = (1/3) * 36 * 10 = (1/3) * 360 = 120 cm^3.",
@@ -116,10 +260,26 @@
       {
         "questionText": "A triangular prism has a triangular cross-section of area 12 cm^2 and a length of 9 cm. What is its volume?",
         "options": [
-          {"id": "a", "text": "21 cm^3", "isCorrect": false},
-          {"id": "b", "text": "108 cm^3", "isCorrect": true},
-          {"id": "c", "text": "54 cm^3", "isCorrect": false},
-          {"id": "d", "text": "216 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "21 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "108 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "54 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "216 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume of a prism = cross-sectional area * length = 12 * 9 = 108 cm^3.",
@@ -128,10 +288,26 @@
       {
         "questionText": "How many litres of water can a tank of capacity 5000 cm^3 hold?",
         "options": [
-          {"id": "a", "text": "5 litres", "isCorrect": true},
-          {"id": "b", "text": "50 litres", "isCorrect": false},
-          {"id": "c", "text": "0.5 litres", "isCorrect": false},
-          {"id": "d", "text": "500 litres", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5 litres",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "50 litres",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.5 litres",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "500 litres",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "1 litre = 1000 cm^3, so 5000 cm^3 = 5000 / 1000 = 5 litres.",
@@ -140,10 +316,26 @@
       {
         "questionText": "A hemisphere has a radius of 7 cm. Taking pi = 22/7, what is its volume?",
         "options": [
-          {"id": "a", "text": "1437.33 cm^3", "isCorrect": false},
-          {"id": "b", "text": "718.67 cm^3", "isCorrect": true},
-          {"id": "c", "text": "308 cm^3", "isCorrect": false},
-          {"id": "d", "text": "462 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1437.33 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "718.67 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "308 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "462 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume of a hemisphere = (2/3) * pi * r^3 = (2/3) * (22/7) * 343 = (2/3) * 1078 = 2156/3 = 718.67 cm^3.",
@@ -152,10 +344,26 @@
       {
         "questionText": "The total surface area of a closed cylinder is given by which formula?",
         "options": [
-          {"id": "a", "text": "2 * pi * r * h", "isCorrect": false},
-          {"id": "b", "text": "pi * r^2 * h", "isCorrect": false},
-          {"id": "c", "text": "2 * pi * r * (r + h)", "isCorrect": true},
-          {"id": "d", "text": "pi * r * (r + l)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2 * pi * r * h",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pi * r^2 * h",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2 * pi * r * (r + h)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "pi * r * (r + l)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Total surface area of a closed cylinder = curved surface + two circular ends = 2*pi*r*h + 2*pi*r^2 = 2*pi*r*(r + h).",
@@ -164,10 +372,26 @@
       {
         "questionText": "A rectangular tank measures 50 cm by 40 cm by 30 cm. What is its capacity in litres? (1 litre = 1000 cm^3)",
         "options": [
-          {"id": "a", "text": "6 litres", "isCorrect": false},
-          {"id": "b", "text": "60 litres", "isCorrect": true},
-          {"id": "c", "text": "600 litres", "isCorrect": false},
-          {"id": "d", "text": "120 litres", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6 litres",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "60 litres",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "600 litres",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "120 litres",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Volume = 50 * 40 * 30 = 60000 cm^3. Capacity = 60000 / 1000 = 60 litres.",
@@ -176,10 +400,26 @@
       {
         "questionText": "What is the curved surface area of a cone with base radius 7 cm and slant height 10 cm? Take pi = 22/7.",
         "options": [
-          {"id": "a", "text": "220 cm^2", "isCorrect": true},
-          {"id": "b", "text": "440 cm^2", "isCorrect": false},
-          {"id": "c", "text": "154 cm^2", "isCorrect": false},
-          {"id": "d", "text": "374 cm^2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "220 cm^2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "440 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "154 cm^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "374 cm^2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Curved surface area of a cone = pi * r * l = (22/7) * 7 * 10 = 22 * 10 = 220 cm^2.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The volume of a cuboid is found by multiplying length by width by _____.",
-        "options": [],
-        "correctAnswer": "height",
+        "options": [
+          {
+            "id": "a",
+            "text": "height",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "radius",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "diameter",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "perimeter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Volume of a cuboid = length * width * height.",
         "difficulty": "easy"
       },
       {
         "questionText": "A cube of edge 4 cm has a volume of _____ cm^3.",
-        "options": [],
-        "correctAnswer": "64",
+        "options": [
+          {
+            "id": "a",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "64",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "48",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Volume of a cube = (edge)^3 = 4^3 = 64 cm^3.",
         "difficulty": "easy"
       },
       {
         "questionText": "Using pi = 22/7, the area of a circle of radius 7 cm is _____ cm^2.",
-        "options": [],
-        "correctAnswer": "154",
+        "options": [
+          {
+            "id": "a",
+            "text": "44",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "308",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "154",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "49",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Area = pi * r^2 = (22/7) * 7^2 = (22/7) * 49 = 22 * 7 = 154 cm^2.",
         "difficulty": "easy"
       },
       {
         "questionText": "1 litre is equal to _____ cm^3.",
-        "options": [],
-        "correctAnswer": "1000",
+        "options": [
+          {
+            "id": "a",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1000",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "By definition of capacity units, 1 litre = 1000 cm^3 (also 1 cm^3 = 1 millilitre).",
         "difficulty": "easy"
       },
       {
         "questionText": "The volume of a cone is _____ of the volume of a cylinder with the same base radius and height.",
-        "options": [],
-        "correctAnswer": "one third",
+        "options": [
+          {
+            "id": "a",
+            "text": "one third",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "twice",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "one half",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "three times",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Volume of cone = (1/3) * pi * r^2 * h while a cylinder is pi * r^2 * h, so the cone is one third of the cylinder.",
         "difficulty": "medium"
       },
       {
         "questionText": "A cylinder has radius 7 cm and height 5 cm. Using pi = 22/7, its volume is _____ cm^3.",
-        "options": [],
-        "correctAnswer": "770",
+        "options": [
+          {
+            "id": "a",
+            "text": "110",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "770",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "154",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "385",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Volume = pi * r^2 * h = (22/7) * 49 * 5 = 22 * 7 * 5 = 770 cm^3.",
         "difficulty": "medium"
       },
       {
         "questionText": "For a cone with base radius r and height h, the slant height l equals the square root of (r^2 + _____).",
-        "options": [],
-        "correctAnswer": "h^2",
+        "options": [
+          {
+            "id": "a",
+            "text": "h",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2h",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "h^2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "r^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "By Pythagoras, l = sqrt(r^2 + h^2).",
         "difficulty": "medium"
       },
       {
         "questionText": "The total surface area of a cube with edge 10 cm is _____ cm^2.",
-        "options": [],
-        "correctAnswer": "600",
+        "options": [
+          {
+            "id": "a",
+            "text": "1000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "360",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "600",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Surface area = 6 * (edge)^2 = 6 * 10^2 = 6 * 100 = 600 cm^2.",
         "difficulty": "easy"
       },
       {
         "questionText": "A sphere of radius 3 cm has surface area equal to _____ * pi cm^2 (leave answer in terms of pi).",
-        "options": [],
-        "correctAnswer": "36",
+        "options": [
+          {
+            "id": "a",
+            "text": "36",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Surface area = 4 * pi * r^2 = 4 * pi * 3^2 = 4 * 9 * pi = 36 * pi cm^2.",
         "difficulty": "medium"
       },
       {
         "questionText": "A water tank holds 2500 millilitres, which is equal to _____ litres.",
-        "options": [],
-        "correctAnswer": "2.5",
+        "options": [
+          {
+            "id": "a",
+            "text": "25",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2.5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.25",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "250",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "1 litre = 1000 millilitres, so 2500 ml = 2500 / 1000 = 2.5 litres.",
         "difficulty": "easy"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A solid is made of a cylinder of radius 7 cm and height 10 cm with a hemisphere of the same radius on top. Taking pi = 22/7, what is the total volume of the solid?",
         "options": [
-          {"id": "a", "text": "2258.33 cm^3", "isCorrect": true},
-          {"id": "b", "text": "1540 cm^3", "isCorrect": false},
-          {"id": "c", "text": "718.67 cm^3", "isCorrect": false},
-          {"id": "d", "text": "3080 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2258.33 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1540 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "718.67 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3080 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Cylinder volume = pi*r^2*h = (22/7)*49*10 = 1540 cm^3. Hemisphere volume = (2/3)*pi*r^3 = (2/3)*(22/7)*343 = 718.67 cm^3. Total = 1540 + 718.67 = 2258.33 cm^3.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A cylindrical tank of radius 7 cm and height 20 cm is full of water. The water is poured into a cone of base radius 7 cm and height 20 cm. Using pi = 22/7, how much water (in cm^3) remains in the tank after the cone is completely filled?",
         "options": [
-          {"id": "a", "text": "1026.67 cm^3", "isCorrect": false},
-          {"id": "b", "text": "2053.33 cm^3", "isCorrect": true},
-          {"id": "c", "text": "3080 cm^3", "isCorrect": false},
-          {"id": "d", "text": "1540 cm^3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1026.67 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2053.33 cm^3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "3080 cm^3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1540 cm^3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Cylinder volume = (22/7)*49*20 = 3080 cm^3. Cone volume = (1/3)*(22/7)*49*20 = (1/3)*3080 = 1026.67 cm^3. Remaining = 3080 - 1026.67 = 2053.33 cm^3.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A metal cone of base radius 6 cm and height 24 cm is melted and recast into spheres each of radius 3 cm. Using the same value of pi throughout, how many complete spheres can be made?",
         "options": [
-          {"id": "a", "text": "6 spheres", "isCorrect": false},
-          {"id": "b", "text": "8 spheres", "isCorrect": true},
-          {"id": "c", "text": "12 spheres", "isCorrect": false},
-          {"id": "d", "text": "4 spheres", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6 spheres",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8 spheres",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12 spheres",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4 spheres",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Cone volume = (1/3)*pi*6^2*24 = (1/3)*pi*36*24 = 288*pi. Each sphere = (4/3)*pi*3^3 = (4/3)*pi*27 = 36*pi. Number = 288*pi / 36*pi = 8 complete spheres.",

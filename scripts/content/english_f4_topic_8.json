@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The variety of language chosen to suit a particular situation, audience and purpose is called _____.",
-        "options": [],
-        "correctAnswer": "register",
+        "options": [
+          {
+            "id": "a",
+            "text": "register",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "dialect",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "accent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "grammar",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Register refers to the appropriate style or variety of language for a given context.",
         "difficulty": "easy"
       },
       {
         "questionText": "Language that is relaxed and used among friends, often including slang, is described as _____ language.",
-        "options": [],
-        "correctAnswer": "informal",
+        "options": [
+          {
+            "id": "a",
+            "text": "formal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "informal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "standard",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "technical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Informal (or colloquial) language is casual and suitable for friendly, everyday situations.",
         "difficulty": "easy"
       },
       {
         "questionText": "The specialised technical vocabulary used within a particular profession or trade is known as _____.",
-        "options": [],
-        "correctAnswer": "jargon",
+        "options": [
+          {
+            "id": "a",
+            "text": "slang",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "dialect",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "jargon",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "idiom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Jargon is the technical language understood mainly by people in a specific field.",
         "difficulty": "medium"
       },
       {
         "questionText": "In the communication process, the path or medium through which a message travels is called the _____.",
-        "options": [],
-        "correctAnswer": "channel",
+        "options": [
+          {
+            "id": "a",
+            "text": "source",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sender",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "receiver",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "channel",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The channel is the medium, such as speech, letter or telephone, that carries the message.",
         "difficulty": "easy"
       },
       {
         "questionText": "The reply or reaction the receiver gives to show the message was understood is called _____.",
-        "options": [],
-        "correctAnswer": "feedback",
+        "options": [
+          {
+            "id": "a",
+            "text": "feedback",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "encoding",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "decoding",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reception",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Feedback closes the communication loop by informing the sender of the receiver's response.",
         "difficulty": "easy"
       },
       {
         "questionText": "Communication that uses gestures, facial expressions and body language instead of words is called _____ communication.",
-        "options": [],
-        "correctAnswer": "non-verbal",
+        "options": [
+          {
+            "id": "a",
+            "text": "unspoken",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "non-verbal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "wordless",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "silent",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Non-verbal communication conveys meaning through body language rather than spoken or written words.",
         "difficulty": "easy"
       },
       {
         "questionText": "Expressing a message in as few clear words as necessary, without unnecessary repetition, is known as _____.",
-        "options": [],
-        "correctAnswer": "conciseness",
+        "options": [
+          {
+            "id": "a",
+            "text": "clarity",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fluency",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "conciseness",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "brevity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Conciseness means being brief and to the point while still being clear.",
         "difficulty": "medium"
       },
       {
         "questionText": "A sentence that can be understood in more than one way is said to be _____.",
-        "options": [],
-        "correctAnswer": "ambiguous",
+        "options": [
+          {
+            "id": "a",
+            "text": "unclear",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "confusing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "vague",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ambiguous",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Ambiguity should be avoided because it confuses the receiver about the intended meaning.",
         "difficulty": "medium"
       },
       {
         "questionText": "Anything such as noise or distraction that interferes with the message between sender and receiver is a communication _____.",
-        "options": [],
-        "correctAnswer": "barrier",
+        "options": [
+          {
+            "id": "a",
+            "text": "barrier",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "block",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gap",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "noise",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A barrier blocks or distorts effective communication.",
         "difficulty": "easy"
       },
       {
         "questionText": "The variety of English that follows widely accepted grammar rules and is used in schools and official documents is called _____ English.",
-        "options": [],
-        "correctAnswer": "standard",
+        "options": [
+          {
+            "id": "a",
+            "text": "formal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "standard",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "official",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "proper",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Standard English is the accepted form used in formal, educational and official settings.",
         "difficulty": "medium"
       }

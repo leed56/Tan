@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The place where information is received, recorded, processed, stored and supplied is called an _____.",
-        "options": [],
-        "correctAnswer": "office",
+        "options": [
+          {
+            "id": "a",
+            "text": "office",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "factory",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "warehouse",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "workshop",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "An office is the centre where all clerical and information work of a business is carried out.",
         "difficulty": "easy"
       },
       {
         "questionText": "An office that consists of one large room shared by many workers is called an open-plan or _____ office.",
-        "options": [],
-        "correctAnswer": "general",
+        "options": [
+          {
+            "id": "a",
+            "text": "private",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "general",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cellular",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "registry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "An open-plan office is also called a general office because all staff work together in one large room.",
         "difficulty": "easy"
       },
       {
         "questionText": "Small separate rooms used by individuals or small groups of workers form what is called a _____ office.",
-        "options": [],
-        "correctAnswer": "cellular",
+        "options": [
+          {
+            "id": "a",
+            "text": "open-plan",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "communal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cellular",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "landscaped",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A cellular (private) office uses small separate rooms, giving each worker or group privacy.",
         "difficulty": "easy"
       },
       {
         "questionText": "The office machine that prints postage marks on envelopes instead of using stamps is called a _____ machine.",
-        "options": [],
-        "correctAnswer": "franking",
+        "options": [
+          {
+            "id": "a",
+            "text": "binding",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "laminating",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "shredding",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "franking",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A franking machine prints the value of postage directly onto envelopes, replacing postage stamps.",
         "difficulty": "medium"
       },
       {
         "questionText": "Filing documents in order of their numbers, such as invoice 001, 002, 003, is known as _____ filing.",
-        "options": [],
-        "correctAnswer": "numerical",
+        "options": [
+          {
+            "id": "a",
+            "text": "numerical",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "alphabetical",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "geographical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "subject",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Numerical filing arranges records by number, which is useful for invoices, receipts and account numbers.",
         "difficulty": "easy"
       },
       {
         "questionText": "The office worker who carries messages, letters and parcels from one office to another is called a _____.",
-        "options": [],
-        "correctAnswer": "messenger",
+        "options": [
+          {
+            "id": "a",
+            "text": "receptionist",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "messenger",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cashier",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "secretary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A messenger delivers internal and external mail, documents and small parcels within and outside the office.",
         "difficulty": "easy"
       },
       {
         "questionText": "The department that receives, records and distributes all incoming and outgoing mail is called the _____.",
-        "options": [],
-        "correctAnswer": "registry",
+        "options": [
+          {
+            "id": "a",
+            "text": "reception",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "accounts",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "registry",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "sales",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The registry (or mailing department) is responsible for handling and keeping records of all correspondence.",
         "difficulty": "medium"
       },
       {
         "questionText": "Arranging documents according to topics such as 'Salaries', 'Loans' and 'Customers' is called _____ filing.",
-        "options": [],
-        "correctAnswer": "subject",
+        "options": [
+          {
+            "id": "a",
+            "text": "numerical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "geographical",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "chronological",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "subject",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Subject filing groups documents by topic or subject matter rather than by name, number or date.",
         "difficulty": "medium"
       },
       {
         "questionText": "An office that uses computers and electronic systems to handle information with very little paper is called a _____ office.",
-        "options": [],
-        "correctAnswer": "paperless",
+        "options": [
+          {
+            "id": "a",
+            "text": "paperless",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "cellular",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "open-plan",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "branch",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A paperless office relies on electronic storage, email and computers instead of paper records.",
         "difficulty": "medium"
       },
       {
         "questionText": "The piece of furniture with drawers used to keep files and documents safely is called a filing _____.",
-        "options": [],
-        "correctAnswer": "cabinet",
+        "options": [
+          {
+            "id": "a",
+            "text": "tray",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cabinet",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "folder",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "register",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A filing cabinet has drawers in which files are stored in an orderly and secure way.",
         "difficulty": "easy"
       }

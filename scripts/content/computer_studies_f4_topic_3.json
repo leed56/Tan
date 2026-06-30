@@ -8,10 +8,26 @@
       {
         "questionText": "Which part of the central processing unit (CPU) is responsible for directing and coordinating the operations of the computer?",
         "options": [
-          {"id": "a", "text": "The arithmetic and logic unit (ALU)", "isCorrect": false},
-          {"id": "b", "text": "The control unit (CU)", "isCorrect": true},
-          {"id": "c", "text": "The accumulator", "isCorrect": false},
-          {"id": "d", "text": "The hard disk", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The arithmetic and logic unit (ALU)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The control unit (CU)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The accumulator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The hard disk",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The control unit (CU) manages and coordinates all activities of the CPU by fetching, decoding and directing the execution of instructions; the ALU only performs calculations and comparisons.",
@@ -20,10 +36,26 @@
       {
         "questionText": "In which part of the CPU are arithmetic operations such as addition and logical comparisons performed?",
         "options": [
-          {"id": "a", "text": "The control unit (CU)", "isCorrect": false},
-          {"id": "b", "text": "The program counter", "isCorrect": false},
-          {"id": "c", "text": "The arithmetic and logic unit (ALU)", "isCorrect": true},
-          {"id": "d", "text": "Read-only memory (ROM)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The control unit (CU)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The program counter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The arithmetic and logic unit (ALU)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Read-only memory (ROM)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The arithmetic and logic unit (ALU) carries out all arithmetic operations (add, subtract, etc.) and logical operations (such as comparisons of greater than, less than or equal to).",
@@ -32,10 +64,26 @@
       {
         "questionText": "What is the main purpose of a register inside the CPU?",
         "options": [
-          {"id": "a", "text": "To store programs permanently when the computer is switched off", "isCorrect": false},
-          {"id": "b", "text": "To hold small amounts of data temporarily during processing at very high speed", "isCorrect": true},
-          {"id": "c", "text": "To connect the computer to the internet", "isCorrect": false},
-          {"id": "d", "text": "To display output to the user", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "To store programs permanently when the computer is switched off",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To hold small amounts of data temporarily during processing at very high speed",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To connect the computer to the internet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To display output to the user",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Registers are very fast, very small storage locations inside the CPU used to hold data, addresses or instructions that are being worked on at that instant.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which register holds the address of the next instruction to be fetched from memory?",
         "options": [
-          {"id": "a", "text": "The program counter (PC)", "isCorrect": true},
-          {"id": "b", "text": "The accumulator", "isCorrect": false},
-          {"id": "c", "text": "The memory data register (MDR)", "isCorrect": false},
-          {"id": "d", "text": "The instruction register (IR)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The program counter (PC)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The accumulator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The memory data register (MDR)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The instruction register (IR)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The program counter (PC) always stores the memory address of the next instruction to be executed and is automatically increased after each fetch.",
@@ -56,10 +120,26 @@
       {
         "questionText": "The instruction register (IR) is used to hold which of the following?",
         "options": [
-          {"id": "a", "text": "The address of the next instruction", "isCorrect": false},
-          {"id": "b", "text": "The result of an arithmetic operation", "isCorrect": false},
-          {"id": "c", "text": "The instruction that is currently being decoded and executed", "isCorrect": true},
-          {"id": "d", "text": "The clock speed of the processor", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The address of the next instruction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The result of an arithmetic operation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The instruction that is currently being decoded and executed",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The clock speed of the processor",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The instruction register (IR) holds the current instruction that has just been fetched from memory so that the control unit can decode and execute it.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which register temporarily stores the result of calculations carried out by the ALU?",
         "options": [
-          {"id": "a", "text": "The memory address register (MAR)", "isCorrect": false},
-          {"id": "b", "text": "The accumulator", "isCorrect": true},
-          {"id": "c", "text": "The program counter (PC)", "isCorrect": false},
-          {"id": "d", "text": "The instruction register (IR)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The memory address register (MAR)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The accumulator",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The program counter (PC)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The instruction register (IR)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The accumulator is a special register that temporarily holds the data being processed and the intermediate or final results produced by the ALU.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Which part of the system bus carries the location (address) of the memory cell that the CPU wants to read from or write to?",
         "options": [
-          {"id": "a", "text": "The data bus", "isCorrect": false},
-          {"id": "b", "text": "The control bus", "isCorrect": false},
-          {"id": "c", "text": "The address bus", "isCorrect": true},
-          {"id": "d", "text": "The power bus", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The data bus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The control bus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The address bus",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The power bus",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The address bus carries memory addresses from the CPU to memory, identifying the exact location to be accessed; it is one-directional.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Which type of system bus carries the actual information being transferred between the CPU and memory and is bidirectional?",
         "options": [
-          {"id": "a", "text": "The address bus", "isCorrect": false},
-          {"id": "b", "text": "The data bus", "isCorrect": true},
-          {"id": "c", "text": "The control bus", "isCorrect": false},
-          {"id": "d", "text": "The clock bus", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The address bus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The data bus",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The control bus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The clock bus",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The data bus carries the actual data and instructions between the CPU, memory and other devices and works in both directions (to and from the CPU).",
@@ -104,10 +232,26 @@
       {
         "questionText": "What is the correct order of the steps in the machine (instruction) cycle?",
         "options": [
-          {"id": "a", "text": "Execute, Decode, Fetch", "isCorrect": false},
-          {"id": "b", "text": "Decode, Fetch, Execute", "isCorrect": false},
-          {"id": "c", "text": "Fetch, Decode, Execute", "isCorrect": true},
-          {"id": "d", "text": "Fetch, Execute, Decode", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Execute, Decode, Fetch",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Decode, Fetch, Execute",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fetch, Decode, Execute",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Fetch, Execute, Decode",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The machine cycle follows the order Fetch (get the instruction from memory), Decode (interpret the instruction) and Execute (carry out the instruction).",
@@ -116,10 +260,26 @@
       {
         "questionText": "Clock speed measured in gigahertz (GHz) tells us about which feature of the CPU?",
         "options": [
-          {"id": "a", "text": "How much data the storage can hold", "isCorrect": false},
-          {"id": "b", "text": "How many cycles or pulses the CPU performs each second", "isCorrect": true},
-          {"id": "c", "text": "How many colours the monitor can display", "isCorrect": false},
-          {"id": "d", "text": "How long the battery lasts", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "How much data the storage can hold",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "How many cycles or pulses the CPU performs each second",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "How many colours the monitor can display",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "How long the battery lasts",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Clock speed is the number of cycles (pulses) the CPU can carry out per second; 1 GHz equals one thousand million cycles per second, so a higher clock speed generally means faster processing.",
@@ -128,10 +288,26 @@
       {
         "questionText": "In the memory hierarchy, which type of memory is the fastest but also the smallest and most expensive per byte?",
         "options": [
-          {"id": "a", "text": "Secondary storage (hard disk)", "isCorrect": false},
-          {"id": "b", "text": "RAM (main memory)", "isCorrect": false},
-          {"id": "c", "text": "Registers", "isCorrect": true},
-          {"id": "d", "text": "ROM", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Secondary storage (hard disk)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "RAM (main memory)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Registers",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ROM",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Registers are at the top of the memory hierarchy; they are the fastest to access but are very few and the most costly per byte, so they store only tiny amounts of data.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Which small high-speed memory sits between the CPU and main memory to store frequently used data and speed up processing?",
         "options": [
-          {"id": "a", "text": "Cache memory", "isCorrect": true},
-          {"id": "b", "text": "ROM", "isCorrect": false},
-          {"id": "c", "text": "A magnetic tape", "isCorrect": false},
-          {"id": "d", "text": "A CD-ROM", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Cache memory",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ROM",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A magnetic tape",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A CD-ROM",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Cache memory is a small, very fast memory placed between the CPU and RAM; it holds copies of frequently used instructions and data so the CPU can access them quickly.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Which statement correctly describes the difference between primary and secondary memory?",
         "options": [
-          {"id": "a", "text": "Primary memory is permanent storage while secondary memory loses data when power is off", "isCorrect": false},
-          {"id": "b", "text": "Primary memory is directly accessed by the CPU and is mostly volatile, while secondary memory stores data permanently and is slower", "isCorrect": true},
-          {"id": "c", "text": "Primary memory is always larger than secondary memory", "isCorrect": false},
-          {"id": "d", "text": "There is no difference between them", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Primary memory is permanent storage while secondary memory loses data when power is off",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Primary memory is directly accessed by the CPU and is mostly volatile, while secondary memory stores data permanently and is slower",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Primary memory is always larger than secondary memory",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "There is no difference between them",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Primary memory (such as RAM) is accessed directly by the CPU and is mostly volatile, whereas secondary memory (such as a hard disk) is slower, larger, cheaper and stores data permanently even without power.",
@@ -164,10 +372,26 @@
       {
         "questionText": "According to the von Neumann architecture, the stored-program concept means that:",
         "options": [
-          {"id": "a", "text": "Programs are stored only on paper before use", "isCorrect": false},
-          {"id": "b", "text": "Both program instructions and data are stored together in the same memory", "isCorrect": true},
-          {"id": "c", "text": "Programs cannot be changed once written", "isCorrect": false},
-          {"id": "d", "text": "Data is processed without using any memory", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Programs are stored only on paper before use",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Both program instructions and data are stored together in the same memory",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Programs cannot be changed once written",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Data is processed without using any memory",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "In the von Neumann (stored-program) architecture, both the instructions of a program and the data they use are held in the same main memory and fetched by the CPU as needed.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which of the following would most improve the overall performance of a computer?",
         "options": [
-          {"id": "a", "text": "Reducing the clock speed of the CPU", "isCorrect": false},
-          {"id": "b", "text": "Increasing the amount of RAM and using a faster CPU with more cache", "isCorrect": true},
-          {"id": "c", "text": "Removing the cache memory", "isCorrect": false},
-          {"id": "d", "text": "Using a slower hard disk", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Reducing the clock speed of the CPU",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Increasing the amount of RAM and using a faster CPU with more cache",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Removing the cache memory",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Using a slower hard disk",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Performance improves with a higher clock speed, more cores, larger cache and more RAM, because these reduce waiting and allow more data and instructions to be processed quickly.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The two main parts of the CPU are the control unit and the _____ unit.",
-        "options": [],
-        "correctAnswer": "arithmetic and logic",
+        "options": [
+          {
+            "id": "a",
+            "text": "arithmetic and logic",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "input and output",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "memory and storage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fetch and decode",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The CPU is made up of the control unit (CU) and the arithmetic and logic unit (ALU), supported by registers.",
         "difficulty": "easy"
       },
       {
         "questionText": "The register that always holds the address of the next instruction to be executed is called the program _____.",
-        "options": [],
-        "correctAnswer": "counter",
+        "options": [
+          {
+            "id": "a",
+            "text": "accumulator",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "counter",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "instruction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "status",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The program counter (PC) keeps the address of the next instruction and is increased after each instruction is fetched.",
         "difficulty": "medium"
       },
       {
         "questionText": "The three steps of the machine cycle are fetch, decode and _____.",
-        "options": [],
-        "correctAnswer": "execute",
+        "options": [
+          {
+            "id": "a",
+            "text": "store",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "write",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "execute",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "encode",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "After an instruction is fetched and decoded, it is executed (carried out) by the CPU; this fetch-decode-execute sequence repeats continuously.",
         "difficulty": "easy"
       },
       {
         "questionText": "The part of the system bus that carries memory addresses from the CPU to memory is the _____ bus.",
-        "options": [],
-        "correctAnswer": "address",
+        "options": [
+          {
+            "id": "a",
+            "text": "data",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "control",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "expansion",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "address",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The address bus carries the address of the memory location to be accessed and is unidirectional (from CPU to memory).",
         "difficulty": "medium"
       },
       {
         "questionText": "Memory that loses all its contents when the computer is switched off is described as _____ memory.",
-        "options": [],
-        "correctAnswer": "volatile",
+        "options": [
+          {
+            "id": "a",
+            "text": "volatile",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "non-volatile",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "virtual",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "RAM is volatile memory because it requires power to keep data; once power is removed, its contents are lost.",
         "difficulty": "medium"
       },
       {
         "questionText": "The small, very fast memory placed between the CPU and main memory to speed up processing is called _____ memory.",
-        "options": [],
-        "correctAnswer": "cache",
+        "options": [
+          {
+            "id": "a",
+            "text": "virtual",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cache",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "buffer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "register",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Cache memory stores frequently used data and instructions close to the CPU so they can be reached faster than from RAM.",
         "difficulty": "medium"
       },
       {
         "questionText": "Read-only memory, which stores start-up instructions permanently and is non-volatile, is abbreviated as _____.",
-        "options": [],
-        "correctAnswer": "ROM",
+        "options": [
+          {
+            "id": "a",
+            "text": "RAM",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "CPU",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ROM",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ALU",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "ROM (Read-Only Memory) holds permanent instructions such as the bootstrap (start-up) program and keeps its contents even when power is off.",
         "difficulty": "easy"
       },
       {
         "questionText": "Inside the computer, all data and instructions are represented using the _____ number system, which uses only 0 and 1.",
-        "options": [],
-        "correctAnswer": "binary",
+        "options": [
+          {
+            "id": "a",
+            "text": "decimal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hexadecimal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "octal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "binary",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Computers represent and process all data and instructions in binary (base 2), using the digits 0 and 1 to match the two states of electronic circuits.",
         "difficulty": "easy"
       },
       {
         "questionText": "The architecture in which program instructions and data are stored together in the same memory is known as the _____ architecture.",
-        "options": [],
-        "correctAnswer": "von Neumann",
+        "options": [
+          {
+            "id": "a",
+            "text": "von Neumann",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Harvard",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "client-server",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "parallel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The von Neumann architecture introduced the stored-program concept, keeping both instructions and data in the same main memory.",
         "difficulty": "hard"
       },
       {
         "questionText": "The speed of a CPU, measured as the number of cycles per second in hertz, is called the _____ speed.",
-        "options": [],
-        "correctAnswer": "clock",
+        "options": [
+          {
+            "id": "a",
+            "text": "bus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "clock",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "word",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bandwidth",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Clock speed, measured in hertz (commonly GHz), is the number of cycles the CPU performs each second; a higher value usually means faster processing.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A student writes: \"To make the CPU process data faster, the program counter should store the results of calculations.\" Why is this statement incorrect?",
         "options": [
-          {"id": "a", "text": "Because the program counter stores results, just like the accumulator does", "isCorrect": false},
-          {"id": "b", "text": "Because the program counter holds the address of the next instruction, while results of calculations are held in the accumulator", "isCorrect": true},
-          {"id": "c", "text": "Because the program counter is part of secondary storage", "isCorrect": false},
-          {"id": "d", "text": "Because the program counter only works when the computer is off", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Because the program counter stores results, just like the accumulator does",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Because the program counter holds the address of the next instruction, while results of calculations are held in the accumulator",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Because the program counter is part of secondary storage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because the program counter only works when the computer is off",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The roles are different: the program counter keeps the address of the next instruction to fetch, while calculation results are held in the accumulator. Confusing these registers leads to the wrong conclusion.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Two computers have the same clock speed, but Computer A has 8 GB of RAM and a large cache while Computer B has 2 GB of RAM and no cache. Why is Computer A likely to perform better when running several large programs?",
         "options": [
-          {"id": "a", "text": "Because clock speed is the only factor that matters, so they perform the same", "isCorrect": false},
-          {"id": "b", "text": "Because more RAM and a larger cache let Computer A keep more data close to the CPU, reducing waiting and slow access to secondary storage", "isCorrect": true},
-          {"id": "c", "text": "Because Computer B has a faster hard disk that slows the CPU down", "isCorrect": false},
-          {"id": "d", "text": "Because RAM and cache make no difference to performance", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Because clock speed is the only factor that matters, so they perform the same",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Because more RAM and a larger cache let Computer A keep more data close to the CPU, reducing waiting and slow access to secondary storage",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Because Computer B has a faster hard disk that slows the CPU down",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because RAM and cache make no difference to performance",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Performance depends on more than clock speed. More RAM allows more programs and data to stay in fast main memory, and a larger cache keeps frequently used items near the CPU, so Computer A waits less and runs faster.",
@@ -430,10 +912,26 @@
       {
         "questionText": "During the fetch step of the machine cycle, the CPU must read an instruction from a specific memory location. Which registers and bus work together to make this happen?",
         "options": [
-          {"id": "a", "text": "The MAR puts the address on the address bus, then the fetched instruction returns via the data bus into the MDR", "isCorrect": true},
-          {"id": "b", "text": "The accumulator puts the result on the control bus, then it returns via the address bus", "isCorrect": false},
-          {"id": "c", "text": "The instruction register sends the clock speed to the data bus", "isCorrect": false},
-          {"id": "d", "text": "The ALU calculates the address and sends it to secondary storage", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The MAR puts the address on the address bus, then the fetched instruction returns via the data bus into the MDR",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The accumulator puts the result on the control bus, then it returns via the address bus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The instruction register sends the clock speed to the data bus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The ALU calculates the address and sends it to secondary storage",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The memory address register (MAR) places the required address on the address bus; the memory then returns the instruction along the data bus into the memory data register (MDR), from where it can be passed to the instruction register for decoding.",

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Raw, unprocessed facts and figures that have not yet been given meaning are called _____.",
-        "options": [],
-        "correctAnswer": "data",
+        "options": [
+          {
+            "id": "a",
+            "text": "data",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "information",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "records",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "metadata",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Data is the raw input; once processed and organised it becomes information.",
         "difficulty": "easy"
       },
       {
         "questionText": "The software used to create and manage a database is known by the abbreviation _____.",
-        "options": [],
-        "correctAnswer": "DBMS",
+        "options": [
+          {
+            "id": "a",
+            "text": "SQL",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "DBMS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ERD",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "RDBMS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "DBMS stands for Database Management System, for example Microsoft Access, MySQL or Oracle.",
         "difficulty": "easy"
       },
       {
         "questionText": "A field that uniquely identifies each record in a table is called the _____ key.",
-        "options": [],
-        "correctAnswer": "primary",
+        "options": [
+          {
+            "id": "a",
+            "text": "foreign",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "candidate",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "primary",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "secondary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A primary key uniquely identifies every record and cannot contain duplicate or null values.",
         "difficulty": "easy"
       },
       {
         "questionText": "A field in one table that links to the primary key of another table is called a _____ key.",
-        "options": [],
-        "correctAnswer": "foreign",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "composite",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alternate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "foreign",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A foreign key creates relationships between tables and enforces referential integrity.",
         "difficulty": "medium"
       },
       {
         "questionText": "In SQL, the clause used to filter records based on a given condition is the _____ clause.",
-        "options": [],
-        "correctAnswer": "WHERE",
+        "options": [
+          {
+            "id": "a",
+            "text": "WHERE",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ORDER BY",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "GROUP BY",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "HAVING",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The WHERE clause selects only the rows that satisfy the stated condition.",
         "difficulty": "medium"
       },
       {
         "questionText": "To change the value of existing records in a table, the SQL command _____ is used together with SET.",
-        "options": [],
-        "correctAnswer": "UPDATE",
+        "options": [
+          {
+            "id": "a",
+            "text": "INSERT",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "UPDATE",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "DELETE",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "SELECT",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "UPDATE table SET column = value WHERE condition modifies existing records.",
         "difficulty": "medium"
       },
       {
         "questionText": "Complete the SQL: SELECT * FROM Students _____ Class = 'F4A'; to show only Form 4A students.",
-        "options": [],
-        "correctAnswer": "WHERE",
+        "options": [
+          {
+            "id": "a",
+            "text": "FROM",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ORDER BY",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "WHERE",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "HAVING",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "WHERE Class = 'F4A' filters the rows so that only Form 4A records are returned.",
         "difficulty": "medium"
       },
       {
         "questionText": "The process of organising data into tables to remove duplication and redundancy is called _____.",
-        "options": [],
-        "correctAnswer": "normalisation",
+        "options": [
+          {
+            "id": "a",
+            "text": "validation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "indexing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "encryption",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "normalisation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Normalisation reduces redundancy and avoids update, insertion and deletion problems.",
         "difficulty": "medium"
       },
       {
         "questionText": "A database object that presents data in a printable, well-formatted layout for output is called a _____.",
-        "options": [],
-        "correctAnswer": "report",
+        "options": [
+          {
+            "id": "a",
+            "text": "report",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "form",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "query",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "table",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A report formats data, often from queries or tables, for printing or presentation.",
         "difficulty": "easy"
       },
       {
         "questionText": "Keeping a duplicate copy of a database in a safe place so it can be restored after loss is called taking a _____.",
-        "options": [],
-        "correctAnswer": "backup",
+        "options": [
+          {
+            "id": "a",
+            "text": "recovery",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "restore",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A backup is a copy of data kept so the database can be recovered if the original is damaged or lost.",
         "difficulty": "easy"
       }

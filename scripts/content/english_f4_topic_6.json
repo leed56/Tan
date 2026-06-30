@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A literary work written mainly to be performed on stage by actors is called _____.",
-        "options": [],
-        "correctAnswer": "drama",
+        "options": [
+          {
+            "id": "a",
+            "text": "drama",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "prose",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "poetry",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fiction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Drama is the genre meant for performance on stage before an audience.",
         "difficulty": "easy"
       },
       {
         "questionText": "A serious play that ends in the suffering or downfall of the main character is a _____.",
-        "options": [],
-        "correctAnswer": "tragedy",
+        "options": [
+          {
+            "id": "a",
+            "text": "comedy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tragedy",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "farce",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "satire",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A tragedy is a serious play with an unhappy ending, usually the protagonist's downfall.",
         "difficulty": "easy"
       },
       {
         "questionText": "A humorous play that amuses the audience and usually ends happily is a _____.",
-        "options": [],
-        "correctAnswer": "comedy",
+        "options": [
+          {
+            "id": "a",
+            "text": "tragedy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "farce",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "comedy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "epic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A comedy is light and amusing and typically ends well.",
         "difficulty": "easy"
       },
       {
         "questionText": "A speech delivered by a character who is alone on stage, revealing inner thoughts, is called a _____.",
-        "options": [],
-        "correctAnswer": "soliloquy",
+        "options": [
+          {
+            "id": "a",
+            "text": "monologue",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "dialogue",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "aside",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "soliloquy",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A soliloquy lets the audience hear a lone character's private thoughts.",
         "difficulty": "medium"
       },
       {
         "questionText": "The conversation between two or more characters in a play is known as _____.",
-        "options": [],
-        "correctAnswer": "dialogue",
+        "options": [
+          {
+            "id": "a",
+            "text": "dialogue",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "monologue",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "narration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "prologue",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Dialogue is the spoken exchange between characters and drives the play forward.",
         "difficulty": "easy"
       },
       {
         "questionText": "The struggle between opposing forces or characters in a play is called _____.",
-        "options": [],
-        "correctAnswer": "conflict",
+        "options": [
+          {
+            "id": "a",
+            "text": "climax",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "conflict",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "setting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "theme",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Conflict is the central struggle that creates tension and drives the plot of a play.",
         "difficulty": "medium"
       },
       {
         "questionText": "Bracketed instructions telling actors how to move and speak on stage are called stage _____.",
-        "options": [],
-        "correctAnswer": "directions",
+        "options": [
+          {
+            "id": "a",
+            "text": "cues",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "notes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "directions",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "scripts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Stage directions guide the actors' movements, gestures and delivery.",
         "difficulty": "easy"
       },
       {
         "questionText": "The time and place in which the events of a play happen are called the _____.",
-        "options": [],
-        "correctAnswer": "setting",
+        "options": [
+          {
+            "id": "a",
+            "text": "plot",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "theme",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mood",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "setting",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The setting is the time and location where the action of a play takes place.",
         "difficulty": "easy"
       },
       {
         "questionText": "A technique that interrupts the present action to show events that happened earlier is called a _____.",
-        "options": [],
-        "correctAnswer": "flashback",
+        "options": [
+          {
+            "id": "a",
+            "text": "flashback",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "foreshadow",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "prologue",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "epilogue",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A flashback takes the story back in time to reveal earlier events.",
         "difficulty": "medium"
       },
       {
         "questionText": "The person who guides actors and oversees the production of a play on stage is the _____.",
-        "options": [],
-        "correctAnswer": "director",
+        "options": [
+          {
+            "id": "a",
+            "text": "producer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "director",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "playwright",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "narrator",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The director interprets the script and guides actors and the whole production.",
         "difficulty": "easy"
       }

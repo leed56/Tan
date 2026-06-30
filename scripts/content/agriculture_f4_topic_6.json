@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The reduction in quantity and quality of produce that occurs between harvest and consumption is called _____ losses.",
-        "options": [],
-        "correctAnswer": "post-harvest",
+        "options": [
+          {
+            "id": "a",
+            "text": "post-harvest",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pre-harvest",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "handling",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "marketing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Post-harvest losses occur from harvesting through handling, storage and processing up to consumption, and reducing them improves food security and farmers' income.",
         "difficulty": "easy"
       },
       {
         "questionText": "The preservation method that removes moisture from food by exposing it to the sun or a drier is called _____.",
-        "options": [],
-        "correctAnswer": "drying",
+        "options": [
+          {
+            "id": "a",
+            "text": "canning",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "drying",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "smoking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "salting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Drying (dehydration) lowers moisture content so that micro-organisms cannot grow, for example sun-drying cassava, maize and fish (dagaa).",
         "difficulty": "easy"
       },
       {
         "questionText": "Heating milk to about 72 degrees Celsius for a short time to kill harmful micro-organisms is called _____.",
-        "options": [],
-        "correctAnswer": "pasteurisation",
+        "options": [
+          {
+            "id": "a",
+            "text": "sterilisation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fermentation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pasteurisation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "homogenisation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Pasteurisation makes milk safe to drink by destroying pathogenic micro-organisms while preserving most of its nutritive value.",
         "difficulty": "medium"
       },
       {
         "questionText": "A tall, cylindrical structure made of metal or concrete used for bulk storage of grain is called a _____.",
-        "options": [],
-        "correctAnswer": "silo",
+        "options": [
+          {
+            "id": "a",
+            "text": "crib",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "granary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "warehouse",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "silo",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Silos store large quantities of grain such as maize and are used by the National Food Reserve Agency to keep the national strategic grain reserve.",
         "difficulty": "easy"
       },
       {
         "questionText": "Sealing food in airtight metal containers and heating them to destroy micro-organisms is a preservation method known as _____.",
-        "options": [],
-        "correctAnswer": "canning",
+        "options": [
+          {
+            "id": "a",
+            "text": "canning",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "bottling",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "freezing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "pickling",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "In canning, food is placed in airtight cans, heated to kill micro-organisms and sealed, allowing long storage without refrigeration, for example canned beef and canned fruit.",
         "difficulty": "medium"
       },
       {
         "questionText": "The milk product formed when milk is fermented by lactic acid bacteria and known locally as mtindi is _____.",
-        "options": [],
-        "correctAnswer": "yoghurt",
+        "options": [
+          {
+            "id": "a",
+            "text": "cheese",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "yoghurt",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "butter",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ghee",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Yoghurt (mtindi) is produced by fermenting milk with lactic acid bacteria, which preserves it and gives it a sour taste and thick texture.",
         "difficulty": "medium"
       },
       {
         "questionText": "The smoke and heat from burning wood used to preserve and flavour fish and meat describes the preservation method called _____.",
-        "options": [],
-        "correctAnswer": "smoking",
+        "options": [
+          {
+            "id": "a",
+            "text": "drying",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "salting",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "smoking",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "canning",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Smoking dries the food and deposits chemicals from smoke that inhibit micro-organisms, commonly used for fish along Lake Victoria and the coast.",
         "difficulty": "easy"
       },
       {
         "questionText": "Adding a high concentration of sugar to fruits to make jam or marmalade preserves them by the method called _____.",
-        "options": [],
-        "correctAnswer": "sugaring",
+        "options": [
+          {
+            "id": "a",
+            "text": "salting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "drying",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "smoking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sugaring",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Sugaring (use of high sugar concentration) draws water out of micro-organisms by osmosis, preventing their growth, as in making jam from mangoes or guavas.",
         "difficulty": "medium"
       },
       {
         "questionText": "Changing raw produce into a more useful and marketable product, such as making sunflower oil from sunflower seeds, is known as _____.",
-        "options": [],
-        "correctAnswer": "value addition",
+        "options": [
+          {
+            "id": "a",
+            "text": "value addition",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "preservation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "storage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "grading",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Value addition increases the worth of produce, reduces losses and raises farmers' income, for example processing sunflower seeds into cooking oil.",
         "difficulty": "medium"
       },
       {
         "questionText": "Government grain stores in Tanzania that keep the national strategic grain reserve are managed by the agency known by the initials _____.",
-        "options": [],
-        "correctAnswer": "NFRA",
+        "options": [
+          {
+            "id": "a",
+            "text": "NMC",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "NFRA",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "NAFCO",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "SGR",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The National Food Reserve Agency (NFRA) stores cereals such as maize in silos and warehouses to ensure national food security during shortages.",
         "difficulty": "medium"
       }

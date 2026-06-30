@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Resources that can be replaced naturally within a reasonable time, such as water and forests, are called _____ resources.",
-        "options": [],
-        "correctAnswer": "renewable",
+        "options": [
+          {
+            "id": "a",
+            "text": "renewable",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "non-renewable",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "exhaustible",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "artificial",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Renewable resources can be replenished by natural processes within a short time, for example water, forests, wildlife and solar energy.",
         "difficulty": "easy"
       },
       {
         "questionText": "Resources that cannot be replaced once used up, such as coal and minerals, are called _____ resources.",
-        "options": [],
-        "correctAnswer": "non-renewable",
+        "options": [
+          {
+            "id": "a",
+            "text": "renewable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "non-renewable",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "biological",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "inexhaustible",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Non-renewable resources such as fossil fuels and minerals form over millions of years and cannot be replaced within a human lifetime.",
         "difficulty": "easy"
       },
       {
         "questionText": "The wise use and protection of natural resources so that they last for future generations is called _____.",
-        "options": [],
-        "correctAnswer": "conservation",
+        "options": [
+          {
+            "id": "a",
+            "text": "exploitation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "degradation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "conservation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "extraction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Conservation involves managing and protecting natural resources to keep them available for present and future use.",
         "difficulty": "easy"
       },
       {
         "questionText": "The large-scale cutting down of trees without replacing them is called _____.",
-        "options": [],
-        "correctAnswer": "deforestation",
+        "options": [
+          {
+            "id": "a",
+            "text": "afforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "reforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cultivation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "deforestation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Deforestation reduces forest cover and leads to soil erosion, loss of biodiversity and climate change.",
         "difficulty": "easy"
       },
       {
         "questionText": "The illegal hunting of protected wild animals like elephants for ivory is called _____.",
-        "options": [],
-        "correctAnswer": "poaching",
+        "options": [
+          {
+            "id": "a",
+            "text": "poaching",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "fishing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "herding",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ranching",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Poaching is the illegal killing or capture of wildlife and is a major threat to endangered species in Tanzania.",
         "difficulty": "easy"
       },
       {
         "questionText": "Planting trees in areas where forests have been cleared is called _____.",
-        "options": [],
-        "correctAnswer": "reforestation",
+        "options": [
+          {
+            "id": "a",
+            "text": "deforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "reforestation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "afforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weeding",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Reforestation restores forest cover in deforested areas and helps conserve soil, water and wildlife.",
         "difficulty": "easy"
       },
       {
         "questionText": "The washing away or blowing away of the top fertile layer of soil is called soil _____.",
-        "options": [],
-        "correctAnswer": "erosion",
+        "options": [
+          {
+            "id": "a",
+            "text": "leaching",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "weathering",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "erosion",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "sedimentation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Soil erosion is the removal of topsoil by water or wind, reducing soil fertility and farm productivity.",
         "difficulty": "easy"
       },
       {
         "questionText": "The famous national park in Tanzania known for the great wildebeest migration is _____ National Park.",
-        "options": [],
-        "correctAnswer": "Serengeti",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ruaha",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mikumi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Tarangire",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Serengeti",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Serengeti National Park is renowned worldwide for the annual migration of wildebeest and zebra across its plains.",
         "difficulty": "medium"
       },
       {
         "questionText": "Building level steps across a slope to slow down running water and reduce soil erosion is called _____.",
-        "options": [],
-        "correctAnswer": "terracing",
+        "options": [
+          {
+            "id": "a",
+            "text": "terracing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mulching",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "contouring",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "irrigation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Terracing creates flat steps on hillsides that reduce the speed of water flow, controlling soil erosion on steep land.",
         "difficulty": "medium"
       },
       {
         "questionText": "Using natural resources in a way that meets present needs without harming the ability of future generations to use them is called _____ use.",
-        "options": [],
-        "correctAnswer": "sustainable",
+        "options": [
+          {
+            "id": "a",
+            "text": "renewable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sustainable",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "intensive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "commercial",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Sustainable use balances the use of resources today with their conservation for the future.",
         "difficulty": "medium"
       }

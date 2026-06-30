@@ -8,10 +8,26 @@
       {
         "questionText": "What is the distance between the points A(1, 2) and B(4, 6)?",
         "options": [
-          {"id": "a", "text": "5 units", "isCorrect": true},
-          {"id": "b", "text": "7 units", "isCorrect": false},
-          {"id": "c", "text": "25 units", "isCorrect": false},
-          {"id": "d", "text": "4 units", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5 units",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7 units",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "25 units",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4 units",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Distance = sqrt((4-1)^2 + (6-2)^2) = sqrt(9 + 16) = sqrt(25) = 5 units.",
@@ -20,10 +36,26 @@
       {
         "questionText": "What is the midpoint of the line segment joining P(2, 4) and Q(6, 10)?",
         "options": [
-          {"id": "a", "text": "(4, 7)", "isCorrect": true},
-          {"id": "b", "text": "(8, 14)", "isCorrect": false},
-          {"id": "c", "text": "(4, 6)", "isCorrect": false},
-          {"id": "d", "text": "(3, 7)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(4, 7)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(8, 14)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(4, 6)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(3, 7)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Midpoint = ((2+6)/2, (4+10)/2) = (8/2, 14/2) = (4, 7).",
@@ -32,10 +64,26 @@
       {
         "questionText": "What is the gradient of the line passing through the points (1, 3) and (5, 11)?",
         "options": [
-          {"id": "a", "text": "2", "isCorrect": true},
-          {"id": "b", "text": "4", "isCorrect": false},
-          {"id": "c", "text": "1/2", "isCorrect": false},
-          {"id": "d", "text": "8", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Gradient = (11 - 3)/(5 - 1) = 8/4 = 2.",
@@ -44,10 +92,26 @@
       {
         "questionText": "In the equation of a straight line y = mx + c, what does the letter c represent?",
         "options": [
-          {"id": "a", "text": "The y-intercept", "isCorrect": true},
-          {"id": "b", "text": "The gradient", "isCorrect": false},
-          {"id": "c", "text": "The x-intercept", "isCorrect": false},
-          {"id": "d", "text": "The midpoint", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The y-intercept",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The gradient",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The x-intercept",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The midpoint",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In y = mx + c, m is the gradient and c is the y-intercept, where the line crosses the y-axis.",
@@ -56,10 +120,26 @@
       {
         "questionText": "A line has the equation y = 3x - 5. What is its gradient?",
         "options": [
-          {"id": "a", "text": "3", "isCorrect": true},
-          {"id": "b", "text": "-5", "isCorrect": false},
-          {"id": "c", "text": "5", "isCorrect": false},
-          {"id": "d", "text": "-3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "-5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Comparing y = 3x - 5 with y = mx + c, the gradient m = 3.",
@@ -68,10 +148,26 @@
       {
         "questionText": "What is the y-intercept of the line y = -2x + 7?",
         "options": [
-          {"id": "a", "text": "7", "isCorrect": true},
-          {"id": "b", "text": "-2", "isCorrect": false},
-          {"id": "c", "text": "2", "isCorrect": false},
-          {"id": "d", "text": "-7", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-7",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "In y = -2x + 7, the value of c is 7, so the y-intercept is 7.",
@@ -80,10 +176,26 @@
       {
         "questionText": "A line has gradient 4. What is the gradient of any line parallel to it?",
         "options": [
-          {"id": "a", "text": "4", "isCorrect": true},
-          {"id": "b", "text": "-4", "isCorrect": false},
-          {"id": "c", "text": "-1/4", "isCorrect": false},
-          {"id": "d", "text": "1/4", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "-4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-1/4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1/4",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Parallel lines have equal gradients, so a line parallel to one with gradient 4 also has gradient 4.",
@@ -92,10 +204,26 @@
       {
         "questionText": "A line has gradient 2. What is the gradient of a line perpendicular to it?",
         "options": [
-          {"id": "a", "text": "-1/2", "isCorrect": true},
-          {"id": "b", "text": "2", "isCorrect": false},
-          {"id": "c", "text": "1/2", "isCorrect": false},
-          {"id": "d", "text": "-2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "-1/2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "For perpendicular lines, the product of gradients is -1. So the gradient is -1/2 because 2 x (-1/2) = -1.",
@@ -104,10 +232,26 @@
       {
         "questionText": "What is the equation of the straight line with gradient 3 passing through the point (0, -4)?",
         "options": [
-          {"id": "a", "text": "y = 3x - 4", "isCorrect": true},
-          {"id": "b", "text": "y = -4x + 3", "isCorrect": false},
-          {"id": "c", "text": "y = 3x + 4", "isCorrect": false},
-          {"id": "d", "text": "y = 4x - 3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "y = 3x - 4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "y = -4x + 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "y = 3x + 4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "y = 4x - 3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The point (0, -4) is on the y-axis, so the y-intercept c = -4. With gradient m = 3, the equation is y = 3x - 4.",
@@ -116,10 +260,26 @@
       {
         "questionText": "What is the x-intercept of the line y = 2x - 8?",
         "options": [
-          {"id": "a", "text": "4", "isCorrect": true},
-          {"id": "b", "text": "-8", "isCorrect": false},
-          {"id": "c", "text": "8", "isCorrect": false},
-          {"id": "d", "text": "2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "-8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "At the x-intercept, y = 0. So 0 = 2x - 8, giving 2x = 8 and x = 4.",
@@ -128,10 +288,26 @@
       {
         "questionText": "The line through points (2, 5) and (2, 9) is a vertical line. What is its gradient?",
         "options": [
-          {"id": "a", "text": "Undefined", "isCorrect": true},
-          {"id": "b", "text": "0", "isCorrect": false},
-          {"id": "c", "text": "2", "isCorrect": false},
-          {"id": "d", "text": "4", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Undefined",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Gradient = (9-5)/(2-2) = 4/0, which is undefined. Vertical lines have an undefined gradient.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Find the equation of the straight line passing through the points (1, 2) and (3, 8).",
         "options": [
-          {"id": "a", "text": "y = 3x - 1", "isCorrect": true},
-          {"id": "b", "text": "y = 3x + 1", "isCorrect": false},
-          {"id": "c", "text": "y = 2x", "isCorrect": false},
-          {"id": "d", "text": "y = x + 1", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "y = 3x - 1",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "y = 3x + 1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "y = 2x",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "y = x + 1",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Gradient = (8-2)/(3-1) = 6/2 = 3. Using y - 2 = 3(x - 1), y = 3x - 3 + 2 = 3x - 1.",
@@ -152,10 +344,26 @@
       {
         "questionText": "At what point do the lines y = x + 1 and y = -x + 5 meet?",
         "options": [
-          {"id": "a", "text": "(2, 3)", "isCorrect": true},
-          {"id": "b", "text": "(3, 2)", "isCorrect": false},
-          {"id": "c", "text": "(1, 5)", "isCorrect": false},
-          {"id": "d", "text": "(0, 1)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(2, 3)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(3, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(1, 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(0, 1)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Set x + 1 = -x + 5, so 2x = 4 and x = 2. Then y = 2 + 1 = 3. The lines meet at (2, 3).",
@@ -164,10 +372,26 @@
       {
         "questionText": "Which of the following lines is parallel to y = 5x + 2?",
         "options": [
-          {"id": "a", "text": "y = 5x - 7", "isCorrect": true},
-          {"id": "b", "text": "y = -5x + 2", "isCorrect": false},
-          {"id": "c", "text": "y = 2x + 5", "isCorrect": false},
-          {"id": "d", "text": "y = -1/5 x + 2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "y = 5x - 7",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "y = -5x + 2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "y = 2x + 5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "y = -1/5 x + 2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Parallel lines have the same gradient. The line y = 5x + 2 has gradient 5, and y = 5x - 7 also has gradient 5.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which line is perpendicular to the line y = 3x + 1?",
         "options": [
-          {"id": "a", "text": "y = -1/3 x + 4", "isCorrect": true},
-          {"id": "b", "text": "y = 3x - 4", "isCorrect": false},
-          {"id": "c", "text": "y = 1/3 x + 1", "isCorrect": false},
-          {"id": "d", "text": "y = -3x + 1", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "y = -1/3 x + 4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "y = 3x - 4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "y = 1/3 x + 1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "y = -3x + 1",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A line perpendicular to gradient 3 must have gradient -1/3, since 3 x (-1/3) = -1. So y = -1/3 x + 4 is perpendicular.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The distance between the points (0, 0) and (6, 8) is _____ units.",
-        "options": [],
-        "correctAnswer": "10",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "14",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Distance = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 units.",
         "difficulty": "easy"
       },
       {
         "questionText": "The midpoint of the line segment joining (-2, 3) and (4, 7) is _____.",
-        "options": [],
-        "correctAnswer": "(1, 5)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(2, 5)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(1, 5)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(1, 10)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(3, 4)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Midpoint = ((-2+4)/2, (3+7)/2) = (2/2, 10/2) = (1, 5).",
         "difficulty": "easy"
       },
       {
         "questionText": "The gradient of the line through (0, 0) and (4, 12) is _____.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Gradient = (12 - 0)/(4 - 0) = 12/4 = 3.",
         "difficulty": "easy"
       },
       {
         "questionText": "In the line y = 7x + 9, the gradient is _____.",
-        "options": [],
-        "correctAnswer": "7",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Comparing with y = mx + c, the gradient m = 7.",
         "difficulty": "easy"
       },
       {
         "questionText": "The y-intercept of the line y = 4x - 11 is _____.",
-        "options": [],
-        "correctAnswer": "-11",
+        "options": [
+          {
+            "id": "a",
+            "text": "-11",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "11",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "In y = mx + c, c is the y-intercept. Here c = -11.",
         "difficulty": "easy"
       },
       {
         "questionText": "The x-intercept of the line y = 3x - 12 is _____.",
-        "options": [],
-        "correctAnswer": "4",
+        "options": [
+          {
+            "id": "a",
+            "text": "-4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-12",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Set y = 0: 0 = 3x - 12, so 3x = 12 and x = 4.",
         "difficulty": "medium"
       },
       {
         "questionText": "The gradient of a line perpendicular to one with gradient 5 is _____.",
-        "options": [],
-        "correctAnswer": "-1/5",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-1/5",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "-5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "For perpendicular lines the product of gradients is -1, so the required gradient is -1/5 because 5 x (-1/5) = -1.",
         "difficulty": "medium"
       },
       {
         "questionText": "The equation of the line with gradient 2 passing through the point (0, 6) is y = _____.",
-        "options": [],
-        "correctAnswer": "2x + 6",
+        "options": [
+          {
+            "id": "a",
+            "text": "2x - 6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6x + 2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2x",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2x + 6",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The y-intercept is 6 and gradient is 2, so y = 2x + 6.",
         "difficulty": "medium"
       },
       {
         "questionText": "The gradient of the line through points (-1, -2) and (3, 6) is _____.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Gradient = (6 - (-2))/(3 - (-1)) = 8/4 = 2.",
         "difficulty": "medium"
       },
       {
         "questionText": "The lines y = 2x + 1 and y = 2x + 5 are _____ to each other (parallel or perpendicular).",
-        "options": [],
-        "correctAnswer": "parallel",
+        "options": [
+          {
+            "id": "a",
+            "text": "perpendicular",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "parallel",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "intersecting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "identical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Both lines have the same gradient of 2, so they are parallel.",
         "difficulty": "easy"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "The point M(3, 5) is the midpoint of segment AB. If A is (1, 2), what are the coordinates of B?",
         "options": [
-          {"id": "a", "text": "(5, 8)", "isCorrect": true},
-          {"id": "b", "text": "(2, 3.5)", "isCorrect": false},
-          {"id": "c", "text": "(4, 7)", "isCorrect": false},
-          {"id": "d", "text": "(-1, -1)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(5, 8)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(2, 3.5)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(4, 7)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(-1, -1)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Using midpoint formula: (1 + x)/2 = 3 gives x = 5, and (2 + y)/2 = 5 gives y = 8. So B = (5, 8).",
@@ -418,10 +884,26 @@
       {
         "questionText": "Find the equation of the line that passes through (2, 3) and is perpendicular to the line y = 2x + 1.",
         "options": [
-          {"id": "a", "text": "y = -1/2 x + 4", "isCorrect": true},
-          {"id": "b", "text": "y = 2x - 1", "isCorrect": false},
-          {"id": "c", "text": "y = -2x + 7", "isCorrect": false},
-          {"id": "d", "text": "y = 1/2 x + 2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "y = -1/2 x + 4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "y = 2x - 1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "y = -2x + 7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "y = 1/2 x + 2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The given line has gradient 2, so the perpendicular gradient is -1/2. Using y - 3 = -1/2(x - 2): y = -1/2 x + 1 + 3 = -1/2 x + 4.",
@@ -430,10 +912,26 @@
       {
         "questionText": "The lines 2x + y = 7 and x - y = 2 intersect at one point. What are the coordinates of that point?",
         "options": [
-          {"id": "a", "text": "(3, 1)", "isCorrect": true},
-          {"id": "b", "text": "(1, 3)", "isCorrect": false},
-          {"id": "c", "text": "(2, 3)", "isCorrect": false},
-          {"id": "d", "text": "(3, -1)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(3, 1)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(1, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2, 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(3, -1)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Add the equations: (2x + y) + (x - y) = 7 + 2 gives 3x = 9, so x = 3. Then from x - y = 2, 3 - y = 2 so y = 1. Intersection is (3, 1).",

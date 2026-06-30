@@ -8,10 +8,26 @@
       {
         "questionText": "What is the order (size) of the matrix A = [[2, -1, 0], [4, 3, 5]]?",
         "options": [
-          {"id": "a", "text": "3 x 2", "isCorrect": false},
-          {"id": "b", "text": "2 x 3", "isCorrect": true},
-          {"id": "c", "text": "2 x 2", "isCorrect": false},
-          {"id": "d", "text": "6 x 1", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3 x 2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 x 3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2 x 2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6 x 1",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The order is rows x columns. The matrix has 2 rows and 3 columns, so its order is 2 x 3.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Given A = [[2, 3], [1, 4]] and B = [[1, 0], [5, 2]], find A + B.",
         "options": [
-          {"id": "a", "text": "[[3, 3], [6, 6]]", "isCorrect": true},
-          {"id": "b", "text": "[[2, 0], [5, 8]]", "isCorrect": false},
-          {"id": "c", "text": "[[3, 3], [5, 6]]", "isCorrect": false},
-          {"id": "d", "text": "[[1, 3], [-4, 2]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[3, 3], [6, 6]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[2, 0], [5, 8]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[3, 3], [5, 6]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[1, 3], [-4, 2]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Add corresponding entries: 2+1=3, 3+0=3, 1+5=6, 4+2=6, giving [[3, 3], [6, 6]].",
@@ -32,10 +64,26 @@
       {
         "questionText": "Given A = [[5, 2], [3, 7]] and B = [[1, 4], [2, 6]], find A - B.",
         "options": [
-          {"id": "a", "text": "[[4, -2], [1, 1]]", "isCorrect": true},
-          {"id": "b", "text": "[[6, 6], [5, 13]]", "isCorrect": false},
-          {"id": "c", "text": "[[4, 2], [1, 1]]", "isCorrect": false},
-          {"id": "d", "text": "[[-4, 2], [-1, -1]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[4, -2], [1, 1]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[6, 6], [5, 13]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[4, 2], [1, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[-4, 2], [-1, -1]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Subtract corresponding entries: 5-1=4, 2-4=-2, 3-2=1, 7-6=1, giving [[4, -2], [1, 1]].",
@@ -44,10 +92,26 @@
       {
         "questionText": "If A = [[3, -1], [0, 2]], find 4A (scalar multiplication by 4).",
         "options": [
-          {"id": "a", "text": "[[12, -4], [0, 8]]", "isCorrect": true},
-          {"id": "b", "text": "[[7, 3], [4, 6]]", "isCorrect": false},
-          {"id": "c", "text": "[[12, -1], [0, 8]]", "isCorrect": false},
-          {"id": "d", "text": "[[12, -4], [4, 8]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[12, -4], [0, 8]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[7, 3], [4, 6]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[12, -1], [0, 8]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[12, -4], [4, 8]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Multiply every entry by 4: 4x3=12, 4x(-1)=-4, 4x0=0, 4x2=8, giving [[12, -4], [0, 8]].",
@@ -56,10 +120,26 @@
       {
         "questionText": "Find the product AB where A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 5]].",
         "options": [
-          {"id": "a", "text": "[[4, 10], [10, 20]]", "isCorrect": true},
-          {"id": "b", "text": "[[2, 0], [3, 20]]", "isCorrect": false},
-          {"id": "c", "text": "[[4, 10], [6, 20]]", "isCorrect": false},
-          {"id": "d", "text": "[[3, 2], [4, 9]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[4, 10], [10, 20]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[2, 0], [3, 20]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[4, 10], [6, 20]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[3, 2], [4, 9]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Row 1: (1x2+2x1, 1x0+2x5) = (4, 10). Row 2: (3x2+4x1, 3x0+4x5) = (10, 20). So AB = [[4, 10], [10, 20]].",
@@ -68,10 +148,26 @@
       {
         "questionText": "What is the 2 x 2 identity matrix I?",
         "options": [
-          {"id": "a", "text": "[[0, 0], [0, 0]]", "isCorrect": false},
-          {"id": "b", "text": "[[1, 1], [1, 1]]", "isCorrect": false},
-          {"id": "c", "text": "[[1, 0], [0, 1]]", "isCorrect": true},
-          {"id": "d", "text": "[[0, 1], [1, 0]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[0, 0], [0, 0]]",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "[[1, 1], [1, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[1, 0], [0, 1]]",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "[[0, 1], [1, 0]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The 2 x 2 identity matrix has 1s on the main diagonal and 0s elsewhere: [[1, 0], [0, 1]]. It satisfies AI = IA = A.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Find the determinant of the matrix A = [[4, 3], [2, 5]].",
         "options": [
-          {"id": "a", "text": "14", "isCorrect": true},
-          {"id": "b", "text": "26", "isCorrect": false},
-          {"id": "c", "text": "-14", "isCorrect": false},
-          {"id": "d", "text": "20", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "14",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "26",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-14",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "For [[a, b], [c, d]], det = ad - bc = (4x5) - (3x2) = 20 - 6 = 14.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Find the determinant of A = [[6, 2], [9, 3]].",
         "options": [
-          {"id": "a", "text": "0", "isCorrect": true},
-          {"id": "b", "text": "36", "isCorrect": false},
-          {"id": "c", "text": "-36", "isCorrect": false},
-          {"id": "d", "text": "12", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "36",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "-36",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "det = ad - bc = (6x3) - (2x9) = 18 - 18 = 0. A zero determinant means the matrix is singular (has no inverse).",
@@ -104,10 +232,26 @@
       {
         "questionText": "Find the inverse of the matrix A = [[2, 0], [0, 4]].",
         "options": [
-          {"id": "a", "text": "[[1/2, 0], [0, 1/4]]", "isCorrect": true},
-          {"id": "b", "text": "[[4, 0], [0, 2]]", "isCorrect": false},
-          {"id": "c", "text": "[[2, 0], [0, 4]]", "isCorrect": false},
-          {"id": "d", "text": "[[1/8, 0], [0, 1/8]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[1/2, 0], [0, 1/4]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[4, 0], [0, 2]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[2, 0], [0, 4]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[1/8, 0], [0, 1/8]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "det = 2x4 - 0 = 8. Inverse = (1/det)[[d, -b], [-c, a]] = (1/8)[[4, 0], [0, 2]] = [[1/2, 0], [0, 1/4]].",
@@ -116,10 +260,26 @@
       {
         "questionText": "A matrix is called singular when its determinant is:",
         "options": [
-          {"id": "a", "text": "equal to 1", "isCorrect": false},
-          {"id": "b", "text": "equal to 0", "isCorrect": true},
-          {"id": "c", "text": "negative", "isCorrect": false},
-          {"id": "d", "text": "greater than 1", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "equal to 1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equal to 0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "negative",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "greater than 1",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A singular matrix has determinant equal to 0 and therefore has no inverse, since the inverse requires dividing by the determinant.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Which matrix represents a reflection in the x-axis?",
         "options": [
-          {"id": "a", "text": "[[1, 0], [0, -1]]", "isCorrect": true},
-          {"id": "b", "text": "[[-1, 0], [0, 1]]", "isCorrect": false},
-          {"id": "c", "text": "[[0, 1], [1, 0]]", "isCorrect": false},
-          {"id": "d", "text": "[[-1, 0], [0, -1]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[1, 0], [0, -1]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[-1, 0], [0, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[0, 1], [1, 0]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[-1, 0], [0, -1]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Reflection in the x-axis keeps x and negates y: (x, y) -> (x, -y). The matrix is [[1, 0], [0, -1]].",
@@ -140,10 +316,26 @@
       {
         "questionText": "The point P(3, 2) is reflected in the y-axis. What is its image?",
         "options": [
-          {"id": "a", "text": "(-3, 2)", "isCorrect": true},
-          {"id": "b", "text": "(3, -2)", "isCorrect": false},
-          {"id": "c", "text": "(-3, -2)", "isCorrect": false},
-          {"id": "d", "text": "(2, 3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(-3, 2)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(3, -2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(-3, -2)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(2, 3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Reflection in the y-axis maps (x, y) -> (-x, y), so (3, 2) -> (-3, 2).",
@@ -152,10 +344,26 @@
       {
         "questionText": "The point A(2, 5) is enlarged with centre the origin and scale factor 3. What is the image?",
         "options": [
-          {"id": "a", "text": "(6, 15)", "isCorrect": true},
-          {"id": "b", "text": "(5, 8)", "isCorrect": false},
-          {"id": "c", "text": "(2/3, 5/3)", "isCorrect": false},
-          {"id": "d", "text": "(6, 5)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(6, 15)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(5, 8)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(2/3, 5/3)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(6, 5)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Enlargement matrix is [[3, 0], [0, 3]]. Image = (3x2, 3x5) = (6, 15).",
@@ -164,10 +372,26 @@
       {
         "questionText": "The point P(1, 0) is rotated 90 degrees anticlockwise about the origin. What is its image?",
         "options": [
-          {"id": "a", "text": "(0, 1)", "isCorrect": true},
-          {"id": "b", "text": "(0, -1)", "isCorrect": false},
-          {"id": "c", "text": "(-1, 0)", "isCorrect": false},
-          {"id": "d", "text": "(1, 0)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(0, 1)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(0, -1)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(-1, 0)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(1, 0)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The rotation matrix for 90 degrees anticlockwise is [[0, -1], [1, 0]]. Image = (0x1 - 1x0, 1x1 + 0x0) = (0, 1).",
@@ -176,10 +400,26 @@
       {
         "questionText": "If AB is defined where A is a 2 x 3 matrix and B is a 3 x 2 matrix, what is the order of the product AB?",
         "options": [
-          {"id": "a", "text": "2 x 2", "isCorrect": true},
-          {"id": "b", "text": "3 x 3", "isCorrect": false},
-          {"id": "c", "text": "2 x 3", "isCorrect": false},
-          {"id": "d", "text": "3 x 2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2 x 2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3 x 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2 x 3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3 x 2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "When multiplying an (m x n) by an (n x p) matrix, the inner numbers must match and the product has order m x p. Here (2 x 3)(3 x 2) gives a 2 x 2 matrix.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A matrix with 3 rows and 4 columns has order _____.",
-        "options": [],
-        "correctAnswer": "3 x 4",
+        "options": [
+          {
+            "id": "a",
+            "text": "3 x 4",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "4 x 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3 + 4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Order is written as rows x columns, so a matrix with 3 rows and 4 columns has order 3 x 4.",
         "difficulty": "easy"
       },
       {
         "questionText": "If A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]], then A + B = _____.",
-        "options": [],
-        "correctAnswer": "[[6, 8], [10, 12]]",
+        "options": [
+          {
+            "id": "a",
+            "text": "[[6, 8], [10, 11]]",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "[[6, 8], [10, 12]]",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "[[5, 12], [21, 32]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[4, 4], [4, 4]]",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Add corresponding entries: 1+5=6, 2+6=8, 3+7=10, 4+8=12.",
         "difficulty": "easy"
       },
       {
         "questionText": "The determinant of [[3, 4], [1, 2]] is _____.",
-        "options": [],
-        "correctAnswer": "2",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "-2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "14",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "det = ad - bc = (3x2) - (4x1) = 6 - 4 = 2.",
         "difficulty": "easy"
       },
       {
         "questionText": "Scalar multiplication: 5 x [[1, -2], [0, 3]] = _____.",
-        "options": [],
-        "correctAnswer": "[[5, -10], [0, 15]]",
+        "options": [
+          {
+            "id": "a",
+            "text": "[[6, 3], [5, 8]]",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "[[5, -10], [5, 15]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[5, -2], [0, 3]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[5, -10], [0, 15]]",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Multiply each entry by 5: 5, -10, 0, 15.",
         "difficulty": "easy"
       },
       {
         "questionText": "The product of any 2 x 2 matrix A and the identity matrix I is _____.",
-        "options": [],
-        "correctAnswer": "A",
+        "options": [
+          {
+            "id": "a",
+            "text": "A",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "I",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The identity matrix leaves a matrix unchanged: AI = IA = A.",
         "difficulty": "easy"
       },
       {
         "questionText": "The inverse of A = [[1, 2], [3, 5]] is _____.",
-        "options": [],
-        "correctAnswer": "[[-5, 2], [3, -1]]",
+        "options": [
+          {
+            "id": "a",
+            "text": "[[5, -2], [-3, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "[[-5, 2], [3, -1]]",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "[[5, 2], [3, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[1, 2], [3, 5]]",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "det = (1x5) - (2x3) = 5 - 6 = -1. Inverse = (1/-1)[[5, -2], [-3, 1]] = [[-5, 2], [3, -1]].",
         "difficulty": "hard"
       },
       {
         "questionText": "Under reflection in the line y = x, the image of the point (4, 7) is _____.",
-        "options": [],
-        "correctAnswer": "(7, 4)",
+        "options": [
+          {
+            "id": "a",
+            "text": "(-4, 7)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(4, -7)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(7, 4)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(-7, -4)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Reflection in y = x swaps coordinates: (x, y) -> (y, x), so (4, 7) -> (7, 4).",
         "difficulty": "medium"
       },
       {
         "questionText": "The transformation matrix for a rotation of 180 degrees about the origin is _____.",
-        "options": [],
-        "correctAnswer": "[[-1, 0], [0, -1]]",
+        "options": [
+          {
+            "id": "a",
+            "text": "[[1, 0], [0, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "[[0, -1], [1, 0]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[-1, 0], [0, 1]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[-1, 0], [0, -1]]",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A 180 degree rotation maps (x, y) -> (-x, -y), represented by [[-1, 0], [0, -1]].",
         "difficulty": "medium"
       },
       {
         "questionText": "Find the product [[2, 1], [0, 3]] x [[1], [4]] = _____.",
-        "options": [],
-        "correctAnswer": "[[6], [12]]",
+        "options": [
+          {
+            "id": "a",
+            "text": "[[6], [12]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[6], [3]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[3], [12]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[2], [12]]",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Row 1: 2x1 + 1x4 = 6. Row 2: 0x1 + 3x4 = 12. The result is the column matrix [[6], [12]].",
         "difficulty": "medium"
       },
       {
         "questionText": "An enlargement with centre the origin and scale factor k has transformation matrix [[k, 0], [0, _____]].",
-        "options": [],
-        "correctAnswer": "k",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "k",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-k",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The enlargement matrix is [[k, 0], [0, k]], scaling both coordinates by k.",
         "difficulty": "easy"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Use matrices to solve the simultaneous equations 2x + y = 8 and x + 3y = 9. The coefficient matrix is [[2, 1], [1, 3]]. Find (x, y).",
         "options": [
-          {"id": "a", "text": "x = 3, y = 2", "isCorrect": true},
-          {"id": "b", "text": "x = 2, y = 3", "isCorrect": false},
-          {"id": "c", "text": "x = 4, y = 0", "isCorrect": false},
-          {"id": "d", "text": "x = 1, y = 6", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "x = 3, y = 2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "x = 2, y = 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x = 4, y = 0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x = 1, y = 6",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "det = (2x3) - (1x1) = 5. Inverse = (1/5)[[3, -1], [-1, 2]]. X = inverse x [[8], [9]] = (1/5)[[3x8 - 1x9], [-1x8 + 2x9]] = (1/5)[[15], [10]] = [[3], [2]]. So x = 3, y = 2. Check: 2(3)+2=8 and 3+3(2)=9.",
@@ -418,10 +884,26 @@
       {
         "questionText": "The point P(2, 3) is rotated 90 degrees anticlockwise about the origin using the matrix [[0, -1], [1, 0]]. The image is then reflected in the x-axis. What are the final coordinates?",
         "options": [
-          {"id": "a", "text": "(-3, -2)", "isCorrect": true},
-          {"id": "b", "text": "(-3, 2)", "isCorrect": false},
-          {"id": "c", "text": "(3, 2)", "isCorrect": false},
-          {"id": "d", "text": "(2, -3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(-3, -2)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(-3, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(3, 2)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(2, -3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Rotation: [[0, -1], [1, 0]] x [[2], [3]] = (0x2 - 1x3, 1x2 + 0x3) = (-3, 2). Reflection in x-axis maps (x, y) -> (x, -y): (-3, 2) -> (-3, -2).",
@@ -430,10 +912,26 @@
       {
         "questionText": "Given A = [[3, 2], [4, 3]], find A inverse and use it to verify A times A inverse gives the identity. What is A inverse?",
         "options": [
-          {"id": "a", "text": "[[3, -2], [-4, 3]]", "isCorrect": true},
-          {"id": "b", "text": "[[3, 2], [4, 3]]", "isCorrect": false},
-          {"id": "c", "text": "[[-3, 2], [4, -3]]", "isCorrect": false},
-          {"id": "d", "text": "[[3, 4], [2, 3]]", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "[[3, -2], [-4, 3]]",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "[[3, 2], [4, 3]]",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "[[-3, 2], [4, -3]]",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "[[3, 4], [2, 3]]",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "det = (3x3) - (2x4) = 9 - 8 = 1. Inverse = (1/1)[[3, -2], [-4, 3]] = [[3, -2], [-4, 3]]. Check A x A inverse: [[3, 2], [4, 3]] x [[3, -2], [-4, 3]] = [[9-8, -6+6], [12-12, -8+9]] = [[1, 0], [0, 1]], the identity.",

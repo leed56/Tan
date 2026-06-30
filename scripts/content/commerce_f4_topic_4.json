@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A _____ association is a voluntary organisation formed by firms or persons in the same trade to promote their common interests.",
-        "options": [],
-        "correctAnswer": "trade",
+        "options": [
+          {
+            "id": "a",
+            "text": "trade",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "consumer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "employers",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "welfare",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Such bodies are called trade associations because they unite members of the same trade.",
         "difficulty": "easy"
       },
       {
         "questionText": "The leading national chamber of commerce in Tanzania is abbreviated as _____.",
-        "options": [],
-        "correctAnswer": "TCCIA",
+        "options": [
+          {
+            "id": "a",
+            "text": "TRA",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "TCCIA",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "TPSF",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "BRELA",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "TCCIA stands for the Tanzania Chamber of Commerce, Industry and Agriculture.",
         "difficulty": "easy"
       },
       {
         "questionText": "An association of workers formed to protect their welfare and bargain for better pay is called a trade _____.",
-        "options": [],
-        "correctAnswer": "union",
+        "options": [
+          {
+            "id": "a",
+            "text": "association",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "federation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "union",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "guild",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A trade union represents the collective interests of employees.",
         "difficulty": "easy"
       },
       {
         "questionText": "An association formed by business owners to deal with workers and government is called an _____ association.",
-        "options": [],
-        "correctAnswer": "employers'",
+        "options": [
+          {
+            "id": "a",
+            "text": "consumers'",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "traders'",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "workers'",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "employers'",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Employers' associations represent the interests of employers in labour and policy matters.",
         "difficulty": "medium"
       },
       {
         "questionText": "Influencing the government to make policies favourable to members is known as _____.",
-        "options": [],
-        "correctAnswer": "lobbying",
+        "options": [
+          {
+            "id": "a",
+            "text": "lobbying",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "arbitration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mediation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "advertising",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Lobbying is the act of seeking to influence government decisions in members' favour.",
         "difficulty": "medium"
       },
       {
         "questionText": "Money paid regularly by members to fund the activities of an association is called a _____ or membership fee.",
-        "options": [],
-        "correctAnswer": "subscription",
+        "options": [
+          {
+            "id": "a",
+            "text": "dividend",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "subscription",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "commission",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "levy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Subscriptions or membership fees are the main source of funds for most associations.",
         "difficulty": "easy"
       },
       {
         "questionText": "An association formed mainly to protect the rights of buyers is called a _____ association.",
-        "options": [],
-        "correctAnswer": "consumer",
+        "options": [
+          {
+            "id": "a",
+            "text": "producer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "employers'",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "consumer",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "trade",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Consumer associations defend buyers against unfair trade practices.",
         "difficulty": "easy"
       },
       {
         "questionText": "The Tanzanian government body that promotes fair competition and protects consumers is the Fair _____ Commission.",
-        "options": [],
-        "correctAnswer": "Competition",
+        "options": [
+          {
+            "id": "a",
+            "text": "Revenue",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Trade",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Markets",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Competition",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Fair Competition Commission (FCC) regulates fair competition and protects consumers in Tanzania.",
         "difficulty": "medium"
       },
       {
         "questionText": "Resolving disputes between members through a neutral third party instead of going to court is called _____.",
-        "options": [],
-        "correctAnswer": "arbitration",
+        "options": [
+          {
+            "id": "a",
+            "text": "arbitration",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "litigation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "negotiation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "lobbying",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Associations often use arbitration to settle disputes among members peacefully.",
         "difficulty": "medium"
       },
       {
         "questionText": "A document issued by a chamber of commerce to prove where exported goods were produced is called a certificate of _____.",
-        "options": [],
-        "correctAnswer": "origin",
+        "options": [
+          {
+            "id": "a",
+            "text": "quality",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "origin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "value",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "insurance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Chambers of commerce issue certificates of origin to support members' export trade.",
         "difficulty": "hard"
       }

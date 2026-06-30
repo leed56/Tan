@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The process of getting work done through people by planning, organising, directing and controlling resources is called _____.",
-        "options": [],
-        "correctAnswer": "management",
+        "options": [
+          {
+            "id": "a",
+            "text": "management",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "accounting",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "auditing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "marketing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Management is the coordination of resources and people to achieve the objectives of an organisation.",
         "difficulty": "easy"
       },
       {
         "questionText": "The first function of management, which involves deciding in advance what to do, is _____.",
-        "options": [],
-        "correctAnswer": "planning",
+        "options": [
+          {
+            "id": "a",
+            "text": "staffing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "planning",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "controlling",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "budgeting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Planning sets the objectives and the means of achieving them before any other function is performed.",
         "difficulty": "easy"
       },
       {
         "questionText": "Arranging resources and grouping activities into departments so that work can be done is the function of _____.",
-        "options": [],
-        "correctAnswer": "organising",
+        "options": [
+          {
+            "id": "a",
+            "text": "staffing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "directing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "organising",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "controlling",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Organising creates the structure of the business by grouping tasks, assigning duties and establishing relationships of authority.",
         "difficulty": "easy"
       },
       {
         "questionText": "The level of management that sets overall policies and objectives for the whole business is the _____ level.",
-        "options": [],
-        "correctAnswer": "top",
+        "options": [
+          {
+            "id": "a",
+            "text": "middle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "lower",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "operative",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "top",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Top-level management, such as the board of directors and managing director, is responsible for major decisions and overall direction.",
         "difficulty": "easy"
       },
       {
         "questionText": "Supervisors and foremen who control daily work of operatives belong to the _____ level of management.",
-        "options": [],
-        "correctAnswer": "lower",
+        "options": [
+          {
+            "id": "a",
+            "text": "lower",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "top",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "middle",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "executive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The lower or supervisory level directly oversees the workers carrying out the day-to-day tasks.",
         "difficulty": "medium"
       },
       {
         "questionText": "In the 4 Ms of management, the resource 'Money' refers to the _____ resources of the business.",
-        "options": [],
-        "correctAnswer": "financial",
+        "options": [
+          {
+            "id": "a",
+            "text": "physical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "financial",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "human",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "material",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Money represents the financial resources (capital and funds) needed to run and grow the business.",
         "difficulty": "medium"
       },
       {
         "questionText": "The managerial skill that involves the ability to work well with and through other people is called _____ skill.",
-        "options": [],
-        "correctAnswer": "human",
+        "options": [
+          {
+            "id": "a",
+            "text": "technical",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "conceptual",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "human",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "analytical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Human (interpersonal) skill is the ability to communicate, motivate and lead people effectively and is important at all levels.",
         "difficulty": "medium"
       },
       {
         "questionText": "Splitting a job into small tasks where each worker does one task is called division of _____.",
-        "options": [],
-        "correctAnswer": "labour",
+        "options": [
+          {
+            "id": "a",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "authority",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "resources",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "labour",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Division of labour increases efficiency because workers become skilled and faster at the specific task they repeat.",
         "difficulty": "medium"
       },
       {
         "questionText": "The department responsible for producing or manufacturing the goods of a business is the _____ department.",
-        "options": [],
-        "correctAnswer": "production",
+        "options": [
+          {
+            "id": "a",
+            "text": "production",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "finance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "marketing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "purchasing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The production department converts raw materials into finished goods ready for sale.",
         "difficulty": "easy"
       },
       {
         "questionText": "Choosing the best course of action from among several alternatives is known as _____.",
-        "options": [],
-        "correctAnswer": "decision-making",
+        "options": [
+          {
+            "id": "a",
+            "text": "forecasting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "decision-making",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "planning",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "budgeting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Decision-making is at the heart of management; managers must select the best alternative to solve problems and reach goals.",
         "difficulty": "medium"
       }

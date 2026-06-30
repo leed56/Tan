@@ -8,10 +8,26 @@
       {
         "questionText": "In a right-angled triangle, the sine of an acute angle is defined as the ratio of which two sides?",
         "options": [
-          {"id": "a", "text": "Opposite side divided by hypotenuse", "isCorrect": true},
-          {"id": "b", "text": "Adjacent side divided by hypotenuse", "isCorrect": false},
-          {"id": "c", "text": "Opposite side divided by adjacent side", "isCorrect": false},
-          {"id": "d", "text": "Hypotenuse divided by opposite side", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Opposite side divided by hypotenuse",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Adjacent side divided by hypotenuse",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Opposite side divided by adjacent side",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hypotenuse divided by opposite side",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "By definition sin = opposite/hypotenuse. Cosine is adjacent/hypotenuse and tangent is opposite/adjacent.",
@@ -20,10 +36,26 @@
       {
         "questionText": "What is the exact value of sin 30 degrees?",
         "options": [
-          {"id": "a", "text": "1", "isCorrect": false},
-          {"id": "b", "text": "1/2", "isCorrect": true},
-          {"id": "c", "text": "(sqrt 3)/2", "isCorrect": false},
-          {"id": "d", "text": "(sqrt 2)/2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(sqrt 3)/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(sqrt 2)/2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "From the special angles, sin 30 = 1/2. Note that cos 30 = (sqrt 3)/2 and sin 45 = (sqrt 2)/2.",
@@ -32,10 +64,26 @@
       {
         "questionText": "What is the exact value of cos 60 degrees?",
         "options": [
-          {"id": "a", "text": "1/2", "isCorrect": true},
-          {"id": "b", "text": "(sqrt 3)/2", "isCorrect": false},
-          {"id": "c", "text": "1", "isCorrect": false},
-          {"id": "d", "text": "0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "(sqrt 3)/2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "cos 60 = 1/2. This equals sin 30 because cos 60 = sin(90 - 60) = sin 30.",
@@ -44,10 +92,26 @@
       {
         "questionText": "What is the exact value of tan 45 degrees?",
         "options": [
-          {"id": "a", "text": "0", "isCorrect": false},
-          {"id": "b", "text": "(sqrt 3)", "isCorrect": false},
-          {"id": "c", "text": "1", "isCorrect": true},
-          {"id": "d", "text": "1/(sqrt 3)", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(sqrt 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1/(sqrt 3)",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "tan 45 = sin 45 / cos 45 = ((sqrt 2)/2) / ((sqrt 2)/2) = 1.",
@@ -56,10 +120,26 @@
       {
         "questionText": "The sine rule for a triangle with sides a, b, c opposite angles A, B, C respectively is stated as:",
         "options": [
-          {"id": "a", "text": "a/sin A = b/sin B = c/sin C", "isCorrect": true},
-          {"id": "b", "text": "a sin A = b sin B = c sin C", "isCorrect": false},
-          {"id": "c", "text": "a squared = b squared + c squared", "isCorrect": false},
-          {"id": "d", "text": "sin A / sin B = c", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "a/sin A = b/sin B = c/sin C",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "a sin A = b sin B = c sin C",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "a squared = b squared + c squared",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sin A / sin B = c",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "The sine rule states that each side divided by the sine of its opposite angle gives the same constant: a/sin A = b/sin B = c/sin C.",
@@ -68,10 +148,26 @@
       {
         "questionText": "The cosine rule for finding side a in a triangle is:",
         "options": [
-          {"id": "a", "text": "a squared = b squared + c squared + 2bc cos A", "isCorrect": false},
-          {"id": "b", "text": "a squared = b squared + c squared - 2bc cos A", "isCorrect": true},
-          {"id": "c", "text": "a squared = b squared - c squared - 2bc cos A", "isCorrect": false},
-          {"id": "d", "text": "a = b + c - 2bc cos A", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "a squared = b squared + c squared + 2bc cos A",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "a squared = b squared + c squared - 2bc cos A",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "a squared = b squared - c squared - 2bc cos A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "a = b + c - 2bc cos A",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The cosine rule is a squared = b squared + c squared - 2bc cos A, used when two sides and the included angle are known, or all three sides are known.",
@@ -80,10 +176,26 @@
       {
         "questionText": "The area of a triangle with sides a and b enclosing angle C is given by:",
         "options": [
-          {"id": "a", "text": "(1/2) a b cos C", "isCorrect": false},
-          {"id": "b", "text": "a b sin C", "isCorrect": false},
-          {"id": "c", "text": "(1/2) a b sin C", "isCorrect": true},
-          {"id": "d", "text": "(1/2) a b tan C", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "(1/2) a b cos C",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "a b sin C",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(1/2) a b sin C",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(1/2) a b tan C",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "The area formula uses two sides and the included angle: Area = (1/2) a b sin C.",
@@ -92,10 +204,26 @@
       {
         "questionText": "In triangle ABC, angle A = 40 degrees, angle B = 60 degrees and side a = 8 cm. Using the sine rule, side b is closest to: (sin 40 = 0.643, sin 60 = 0.866)",
         "options": [
-          {"id": "a", "text": "10.8 cm", "isCorrect": true},
-          {"id": "b", "text": "6.0 cm", "isCorrect": false},
-          {"id": "c", "text": "12.5 cm", "isCorrect": false},
-          {"id": "d", "text": "5.9 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "10.8 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6.0 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12.5 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5.9 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "b = a sin B / sin A = 8 x 0.866 / 0.643 = 6.928 / 0.643 = 10.77, which rounds to 10.8 cm.",
@@ -104,10 +232,26 @@
       {
         "questionText": "In triangle ABC, b = 5 cm, c = 7 cm and angle A = 60 degrees. Using the cosine rule, side a is closest to: (cos 60 = 0.5)",
         "options": [
-          {"id": "a", "text": "6.24 cm", "isCorrect": true},
-          {"id": "b", "text": "8.60 cm", "isCorrect": false},
-          {"id": "c", "text": "5.00 cm", "isCorrect": false},
-          {"id": "d", "text": "4.36 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "6.24 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "8.60 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5.00 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4.36 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "a squared = 5 squared + 7 squared - 2(5)(7)cos 60 = 25 + 49 - 70(0.5) = 74 - 35 = 39. a = sqrt 39 = 6.245, about 6.24 cm.",
@@ -116,10 +260,26 @@
       {
         "questionText": "A triangle has sides 6 cm and 9 cm with an included angle of 30 degrees. Its area is: (sin 30 = 0.5)",
         "options": [
-          {"id": "a", "text": "13.5 cm squared", "isCorrect": true},
-          {"id": "b", "text": "27 cm squared", "isCorrect": false},
-          {"id": "c", "text": "23.4 cm squared", "isCorrect": false},
-          {"id": "d", "text": "6.75 cm squared", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "13.5 cm squared",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "27 cm squared",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "23.4 cm squared",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6.75 cm squared",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Area = (1/2)(6)(9) sin 30 = 27 x 0.5 = 13.5 cm squared.",
@@ -128,10 +288,26 @@
       {
         "questionText": "In triangle ABC, a = 9 cm, A = 50 degrees and B = 70 degrees. The side b is closest to: (sin 50 = 0.766, sin 70 = 0.940)",
         "options": [
-          {"id": "a", "text": "11.0 cm", "isCorrect": true},
-          {"id": "b", "text": "7.3 cm", "isCorrect": false},
-          {"id": "c", "text": "12.7 cm", "isCorrect": false},
-          {"id": "d", "text": "9.4 cm", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "11.0 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7.3 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12.7 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "9.4 cm",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "b = a sin B / sin A = 9 x 0.940 / 0.766 = 8.46 / 0.766 = 11.04, about 11.0 cm.",
@@ -140,10 +316,26 @@
       {
         "questionText": "The angle of elevation of the top of a tower from a point on the ground is the angle measured:",
         "options": [
-          {"id": "a", "text": "Upward from the horizontal to the line of sight", "isCorrect": true},
-          {"id": "b", "text": "Downward from the horizontal to the line of sight", "isCorrect": false},
-          {"id": "c", "text": "From the vertical to the line of sight", "isCorrect": false},
-          {"id": "d", "text": "Between two lines of sight to the same object", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Upward from the horizontal to the line of sight",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Downward from the horizontal to the line of sight",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "From the vertical to the line of sight",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Between two lines of sight to the same object",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "An angle of elevation is measured upward from the horizontal line of sight, while an angle of depression is measured downward.",
@@ -152,10 +344,26 @@
       {
         "questionText": "A bearing is always measured:",
         "options": [
-          {"id": "a", "text": "Clockwise from North as a three-figure angle", "isCorrect": true},
-          {"id": "b", "text": "Anticlockwise from North", "isCorrect": false},
-          {"id": "c", "text": "Clockwise from East", "isCorrect": false},
-          {"id": "d", "text": "From the nearest cardinal direction only", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Clockwise from North as a three-figure angle",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Anticlockwise from North",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Clockwise from East",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "From the nearest cardinal direction only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A compass bearing is measured clockwise from the North direction and written as three digits, for example 075 degrees.",
@@ -164,10 +372,26 @@
       {
         "questionText": "In triangle ABC, a = 10 cm, b = 8 cm and the included angle C = 90 degrees. Its area is: (sin 90 = 1)",
         "options": [
-          {"id": "a", "text": "40 cm squared", "isCorrect": true},
-          {"id": "b", "text": "80 cm squared", "isCorrect": false},
-          {"id": "c", "text": "20 cm squared", "isCorrect": false},
-          {"id": "d", "text": "45 cm squared", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "40 cm squared",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "80 cm squared",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20 cm squared",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "45 cm squared",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Area = (1/2)(10)(8) sin 90 = 40 x 1 = 40 cm squared, which agrees with the right-angled triangle area (1/2) base x height.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which set of given information requires the COSINE rule (not the sine rule) to begin solving a triangle?",
         "options": [
-          {"id": "a", "text": "Two angles and one side", "isCorrect": false},
-          {"id": "b", "text": "Two sides and the angle included between them", "isCorrect": true},
-          {"id": "c", "text": "Two sides and a non-included angle", "isCorrect": false},
-          {"id": "d", "text": "One angle and the side opposite to it plus another angle", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Two angles and one side",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Two sides and the angle included between them",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Two sides and a non-included angle",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "One angle and the side opposite to it plus another angle",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The cosine rule is needed when two sides and the included angle (SAS) are given, or when all three sides (SSS) are known. The other cases use the sine rule.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "In a right-angled triangle, the ratio adjacent/hypotenuse defines the _____ of the angle.",
-        "options": [],
-        "correctAnswer": "cosine",
+        "options": [
+          {
+            "id": "a",
+            "text": "cosine",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sine",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tangent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "secant",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Cosine of an angle equals adjacent side divided by hypotenuse.",
         "difficulty": "easy"
       },
       {
         "questionText": "The exact value of cos 30 degrees is _____.",
-        "options": [],
-        "correctAnswer": "(sqrt 3)/2",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(sqrt 3)/2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(sqrt 2)/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(sqrt 3)/3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "From the special-angle table, cos 30 = (sqrt 3)/2, approximately 0.866.",
         "difficulty": "easy"
       },
       {
         "questionText": "The exact value of tan 60 degrees is _____.",
-        "options": [],
-        "correctAnswer": "(sqrt 3)",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/(sqrt 3)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "(sqrt 3)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "(sqrt 2)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "tan 60 = sin 60 / cos 60 = ((sqrt 3)/2)/(1/2) = sqrt 3, about 1.732.",
         "difficulty": "easy"
       },
       {
         "questionText": "In triangle ABC, a/sin A = b/sin B = c/sin C is known as the _____ rule.",
-        "options": [],
-        "correctAnswer": "sine",
+        "options": [
+          {
+            "id": "a",
+            "text": "cosine",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tangent",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "area",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sine",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "This relationship between sides and the sines of their opposite angles is the sine rule.",
         "difficulty": "easy"
       },
       {
         "questionText": "In triangle ABC, b = 6 cm, c = 10 cm and angle A = 60 degrees. Using a squared = b squared + c squared - 2bc cos A, side a = _____ cm (to 2 decimal places). Use cos 60 = 0.5.",
-        "options": [],
-        "correctAnswer": "8.72",
+        "options": [
+          {
+            "id": "a",
+            "text": "8.72",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "9.17",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7.21",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "11.36",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "a squared = 36 + 100 - 2(6)(10)(0.5) = 136 - 60 = 76. a = sqrt 76 = 8.718, about 8.72 cm.",
         "difficulty": "medium"
       },
       {
         "questionText": "A triangle has sides 8 cm and 5 cm enclosing an angle of 30 degrees. Its area is _____ cm squared. Use sin 30 = 0.5.",
-        "options": [],
-        "correctAnswer": "10",
+        "options": [
+          {
+            "id": "a",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18.75",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Area = (1/2)(8)(5) sin 30 = 20 x 0.5 = 10 cm squared.",
         "difficulty": "easy"
       },
       {
         "questionText": "In triangle ABC, a = 12 cm, A = 30 degrees and B = 45 degrees. Using the sine rule, b = _____ cm (to 2 decimal places). Use sin 30 = 0.5 and sin 45 = 0.707.",
-        "options": [],
-        "correctAnswer": "16.97",
+        "options": [
+          {
+            "id": "a",
+            "text": "8.49",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "24.00",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "16.97",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6.36",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "b = a sin B / sin A = 12 x 0.707 / 0.5 = 8.484 / 0.5 = 16.968, about 16.97 cm.",
         "difficulty": "medium"
       },
       {
         "questionText": "An angle measured downward from the horizontal to the line of sight of an object below the observer is called the angle of _____.",
-        "options": [],
-        "correctAnswer": "depression",
+        "options": [
+          {
+            "id": "a",
+            "text": "elevation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "inclination",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reflection",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "depression",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The angle of depression is measured downward from the horizontal, whereas the angle of elevation is measured upward.",
         "difficulty": "easy"
       },
       {
         "questionText": "A ladder 10 m long leans against a wall making an angle of 60 degrees with the ground. The height it reaches up the wall is _____ m. Use sin 60 = 0.866.",
-        "options": [],
-        "correctAnswer": "8.66",
+        "options": [
+          {
+            "id": "a",
+            "text": "8.66",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5.00",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10.00",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7.07",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Height = 10 sin 60 = 10 x 0.866 = 8.66 m.",
         "difficulty": "medium"
       },
       {
         "questionText": "In triangle ABC, all three sides are a = 5 cm, b = 6 cm, c = 7 cm. Using cos A = (b squared + c squared - a squared)/(2bc), cos A = _____ (to 4 decimal places).",
-        "options": [],
-        "correctAnswer": "0.7143",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.2857",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.7143",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.5714",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.3571",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "cos A = (36 + 49 - 25)/(2 x 6 x 7) = 60/84 = 0.7142857, about 0.7143 (giving A about 44.4 degrees).",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A ship sails 30 km on a bearing of 040 degrees from port P to point Q, then 20 km on a bearing of 100 degrees to point R. The angle PQR is 120 degrees. The distance PR is closest to: (cos 120 = -0.5)",
         "options": [
-          {"id": "a", "text": "43.6 km", "isCorrect": true},
-          {"id": "b", "text": "36.1 km", "isCorrect": false},
-          {"id": "c", "text": "50.0 km", "isCorrect": false},
-          {"id": "d", "text": "26.5 km", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "43.6 km",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "36.1 km",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "50.0 km",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "26.5 km",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "By the cosine rule PR squared = 30 squared + 20 squared - 2(30)(20)cos 120 = 900 + 400 - 1200(-0.5) = 1300 + 600 = 1900. PR = sqrt 1900 = 43.59, about 43.6 km.",
@@ -418,10 +884,26 @@
       {
         "questionText": "In triangle ABC, a = 13 cm, b = 14 cm and c = 15 cm. Using the cosine rule to find angle A, then the area, the area of the triangle is closest to: (cos A = 0.6 gives A = 53.13 degrees, sin A = 0.8)",
         "options": [
-          {"id": "a", "text": "84 cm squared", "isCorrect": true},
-          {"id": "b", "text": "91 cm squared", "isCorrect": false},
-          {"id": "c", "text": "105 cm squared", "isCorrect": false},
-          {"id": "d", "text": "78 cm squared", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "84 cm squared",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "91 cm squared",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "105 cm squared",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "78 cm squared",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "cos A = (14^2 + 15^2 - 13^2)/(2x14x15) = (196 + 225 - 169)/420 = 252/420 = 0.6, so sin A = 0.8. Area = (1/2) b c sin A = (1/2)(14)(15)(0.8) = 105 x 0.8 = 84 cm squared.",
@@ -430,10 +912,26 @@
       {
         "questionText": "From the top of a 50 m vertical cliff, the angles of depression of two boats in line with the base are 45 degrees and 30 degrees. The distance between the two boats is closest to: (tan 45 = 1, tan 30 = 0.5774)",
         "options": [
-          {"id": "a", "text": "36.6 m", "isCorrect": true},
-          {"id": "b", "text": "50.0 m", "isCorrect": false},
-          {"id": "c", "text": "86.6 m", "isCorrect": false},
-          {"id": "d", "text": "28.9 m", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "36.6 m",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "50.0 m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "86.6 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "28.9 m",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Horizontal distance to near boat = 50/tan 45 = 50 m. To far boat = 50/tan 30 = 50/0.5774 = 86.6 m. Difference = 86.6 - 50 = 36.6 m.",

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Maintenance done regularly to stop faults before they happen is called _____ maintenance.",
-        "options": [],
-        "correctAnswer": "preventive",
+        "options": [
+          {
+            "id": "a",
+            "text": "preventive",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "corrective",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "adaptive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "emergency",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Preventive maintenance is performed in advance to keep faults from developing.",
         "difficulty": "easy"
       },
       {
         "questionText": "Maintenance carried out to repair a computer after it has already developed a fault is called _____ maintenance.",
-        "options": [],
-        "correctAnswer": "corrective",
+        "options": [
+          {
+            "id": "a",
+            "text": "preventive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "corrective",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "predictive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "routine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Corrective maintenance fixes or replaces parts after a breakdown has occurred.",
         "difficulty": "easy"
       },
       {
         "questionText": "A device that supplies temporary backup power during a power cut so the computer can be shut down safely is called a _____.",
-        "options": [],
-        "correctAnswer": "UPS",
+        "options": [
+          {
+            "id": "a",
+            "text": "AVR",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "PSU",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "UPS",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "SMPS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A UPS (Uninterruptible Power Supply) provides backup power and protects against sudden power loss.",
         "difficulty": "medium"
       },
       {
         "questionText": "The process of reorganising scattered file fragments on a hard disk to speed up access is called disk _____.",
-        "options": [],
-        "correctAnswer": "defragmentation",
+        "options": [
+          {
+            "id": "a",
+            "text": "formatting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "partitioning",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "compression",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "defragmentation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Defragmentation rearranges fragmented files into continuous blocks for faster access.",
         "difficulty": "medium"
       },
       {
         "questionText": "Software used to detect and remove viruses and other malware from a computer is called _____ software.",
-        "options": [],
-        "correctAnswer": "antivirus",
+        "options": [
+          {
+            "id": "a",
+            "text": "antivirus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "firewall",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "diagnostic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "utility",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Antivirus software scans for, detects and removes malicious programs.",
         "difficulty": "easy"
       },
       {
         "questionText": "Making a copy of important data so it can be restored if lost is known as creating a _____.",
-        "options": [],
-        "correctAnswer": "backup",
+        "options": [
+          {
+            "id": "a",
+            "text": "restore",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "clone",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A backup is a copy of data kept for recovery in case the original is lost or damaged.",
         "difficulty": "easy"
       },
       {
         "questionText": "Build-up of _____ inside a computer can block airflow and cause overheating.",
-        "options": [],
-        "correctAnswer": "dust",
+        "options": [
+          {
+            "id": "a",
+            "text": "moisture",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "static",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dust",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "heat",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Dust clogs vents and fans, reducing cooling and leading to overheating.",
         "difficulty": "easy"
       },
       {
         "questionText": "The first step in the troubleshooting process is to _____ the problem.",
-        "options": [],
-        "correctAnswer": "identify",
+        "options": [
+          {
+            "id": "a",
+            "text": "replace",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "document",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "escalate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "identify",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Identifying the problem clearly is the first step before isolating its cause and fixing it.",
         "difficulty": "medium"
       },
       {
         "questionText": "A device that protects a computer from sudden voltage spikes is called a surge _____.",
-        "options": [],
-        "correctAnswer": "protector",
+        "options": [
+          {
+            "id": "a",
+            "text": "protector",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "adapter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "regulator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "stabiliser",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A surge protector shields equipment from damaging voltage surges.",
         "difficulty": "easy"
       },
       {
         "questionText": "The person trained to install, maintain and repair computers is called a _____.",
-        "options": [],
-        "correctAnswer": "technician",
+        "options": [
+          {
+            "id": "a",
+            "text": "programmer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "technician",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "operator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "analyst",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A computer technician installs, services, troubleshoots and repairs computer hardware and software.",
         "difficulty": "easy"
       }

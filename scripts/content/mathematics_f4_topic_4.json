@@ -8,10 +8,26 @@
       {
         "questionText": "What is the probability of an event that is certain to happen?",
         "options": [
-          {"id": "a", "text": "0", "isCorrect": false},
-          {"id": "b", "text": "0.5", "isCorrect": false},
-          {"id": "c", "text": "1", "isCorrect": true},
-          {"id": "d", "text": "2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A certain event always occurs, so its probability is 1. Probabilities range from 0 (impossible) to 1 (certain).",
@@ -20,10 +36,26 @@
       {
         "questionText": "A fair coin is tossed once. What is the probability of getting a head?",
         "options": [
-          {"id": "a", "text": "1/4", "isCorrect": false},
-          {"id": "b", "text": "1/2", "isCorrect": true},
-          {"id": "c", "text": "1", "isCorrect": false},
-          {"id": "d", "text": "0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A coin has 2 equally likely outcomes (head, tail). P(head) = 1/2.",
@@ -32,10 +64,26 @@
       {
         "questionText": "A fair die is rolled once. What is the probability of getting an even number?",
         "options": [
-          {"id": "a", "text": "1/6", "isCorrect": false},
-          {"id": "b", "text": "1/3", "isCorrect": false},
-          {"id": "c", "text": "1/2", "isCorrect": true},
-          {"id": "d", "text": "2/3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "2/3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Even numbers on a die are 2, 4, 6 (3 outcomes) out of 6. P = 3/6 = 1/2.",
@@ -44,10 +92,26 @@
       {
         "questionText": "A bag contains 3 red balls and 5 blue balls. One ball is picked at random. What is the probability that it is red?",
         "options": [
-          {"id": "a", "text": "3/8", "isCorrect": true},
-          {"id": "b", "text": "5/8", "isCorrect": false},
-          {"id": "c", "text": "3/5", "isCorrect": false},
-          {"id": "d", "text": "1/3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3/8",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5/8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3/5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1/3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Total balls = 3 + 5 = 8. P(red) = 3/8.",
@@ -56,10 +120,26 @@
       {
         "questionText": "If P(A) = 0.3, what is P(not A)?",
         "options": [
-          {"id": "a", "text": "0.3", "isCorrect": false},
-          {"id": "b", "text": "0.7", "isCorrect": true},
-          {"id": "c", "text": "1.3", "isCorrect": false},
-          {"id": "d", "text": "0", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.7",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1.3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "P(not A) = 1 - P(A) = 1 - 0.3 = 0.7.",
@@ -68,10 +148,26 @@
       {
         "questionText": "A die is rolled once. What is the probability of getting a number greater than 4?",
         "options": [
-          {"id": "a", "text": "1/6", "isCorrect": false},
-          {"id": "b", "text": "1/3", "isCorrect": true},
-          {"id": "c", "text": "1/2", "isCorrect": false},
-          {"id": "d", "text": "2/3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2/3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Numbers greater than 4 are 5 and 6 (2 outcomes) out of 6. P = 2/6 = 1/3.",
@@ -80,10 +176,26 @@
       {
         "questionText": "A card is drawn at random from a standard pack of 52 cards. What is the probability that it is a heart?",
         "options": [
-          {"id": "a", "text": "1/52", "isCorrect": false},
-          {"id": "b", "text": "1/13", "isCorrect": false},
-          {"id": "c", "text": "1/4", "isCorrect": true},
-          {"id": "d", "text": "1/2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/52",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/13",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1/2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "There are 13 hearts in 52 cards. P = 13/52 = 1/4.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Two fair coins are tossed together. What is the probability of getting two heads?",
         "options": [
-          {"id": "a", "text": "1/2", "isCorrect": false},
-          {"id": "b", "text": "1/3", "isCorrect": false},
-          {"id": "c", "text": "1/4", "isCorrect": true},
-          {"id": "d", "text": "3/4", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "3/4",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Sample space = {HH, HT, TH, TT}, 4 outcomes. Only HH gives two heads. P = 1/4.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Events A and B are mutually exclusive with P(A) = 0.4 and P(B) = 0.25. What is P(A or B)?",
         "options": [
-          {"id": "a", "text": "0.10", "isCorrect": false},
-          {"id": "b", "text": "0.65", "isCorrect": true},
-          {"id": "c", "text": "0.15", "isCorrect": false},
-          {"id": "d", "text": "1.00", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.65",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "0.15",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.00",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "For mutually exclusive events, P(A or B) = P(A) + P(B) = 0.4 + 0.25 = 0.65.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Two independent events have P(A) = 1/2 and P(B) = 1/3. What is P(A and B)?",
         "options": [
-          {"id": "a", "text": "5/6", "isCorrect": false},
-          {"id": "b", "text": "1/5", "isCorrect": false},
-          {"id": "c", "text": "1/6", "isCorrect": true},
-          {"id": "d", "text": "2/3", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "5/6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/6",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "2/3",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "For independent events, P(A and B) = P(A) x P(B) = 1/2 x 1/3 = 1/6.",
@@ -128,10 +288,26 @@
       {
         "questionText": "A die is rolled once. What is the probability of getting a 3 or a 5?",
         "options": [
-          {"id": "a", "text": "1/6", "isCorrect": false},
-          {"id": "b", "text": "1/3", "isCorrect": true},
-          {"id": "c", "text": "1/2", "isCorrect": false},
-          {"id": "d", "text": "2/6", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2/6",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Getting 3 and getting 5 are mutually exclusive. P = 1/6 + 1/6 = 2/6 = 1/3.",
@@ -140,10 +316,26 @@
       {
         "questionText": "A bag has 4 white and 6 black balls. A ball is drawn and replaced, then another is drawn. What is the probability that both are white?",
         "options": [
-          {"id": "a", "text": "4/25", "isCorrect": true},
-          {"id": "b", "text": "2/5", "isCorrect": false},
-          {"id": "c", "text": "16/100", "isCorrect": false},
-          {"id": "d", "text": "8/10", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4/25",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2/5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "16/100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8/10",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Total = 10. With replacement the draws are independent: P = 4/10 x 4/10 = 16/100 = 4/25.",
@@ -152,10 +344,26 @@
       {
         "questionText": "A card is drawn from 52 cards. What is the probability that it is a King or a Queen?",
         "options": [
-          {"id": "a", "text": "1/13", "isCorrect": false},
-          {"id": "b", "text": "2/13", "isCorrect": true},
-          {"id": "c", "text": "4/52", "isCorrect": false},
-          {"id": "d", "text": "1/26", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/13",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2/13",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4/52",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1/26",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "There are 4 Kings and 4 Queens (mutually exclusive). P = 8/52 = 2/13.",
@@ -164,10 +372,26 @@
       {
         "questionText": "In a class of 40 students, 24 are girls. If one student is chosen at random, what is the probability of choosing a boy?",
         "options": [
-          {"id": "a", "text": "3/5", "isCorrect": false},
-          {"id": "b", "text": "2/5", "isCorrect": true},
-          {"id": "c", "text": "1/2", "isCorrect": false},
-          {"id": "d", "text": "16/24", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "3/5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2/5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16/24",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Boys = 40 - 24 = 16. P(boy) = 16/40 = 2/5.",
@@ -176,10 +400,26 @@
       {
         "questionText": "A bag has 3 red and 2 green balls. Two balls are drawn without replacement. What is the probability that both are red?",
         "options": [
-          {"id": "a", "text": "9/25", "isCorrect": false},
-          {"id": "b", "text": "3/10", "isCorrect": true},
-          {"id": "c", "text": "6/25", "isCorrect": false},
-          {"id": "d", "text": "1/2", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "9/25",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3/10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6/25",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1/2",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Without replacement: P = 3/5 x 2/4 = 6/20 = 3/10.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The probability of an impossible event is _____.",
-        "options": [],
-        "correctAnswer": "0",
+        "options": [
+          {
+            "id": "a",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "-1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "An impossible event can never occur, so its probability is 0.",
         "difficulty": "easy"
       },
       {
         "questionText": "The set of all possible outcomes of an experiment is called the _____.",
-        "options": [],
-        "correctAnswer": "sample space",
+        "options": [
+          {
+            "id": "a",
+            "text": "event",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sample space",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "outcome",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "probability",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The sample space lists every possible outcome of an experiment.",
         "difficulty": "easy"
       },
       {
         "questionText": "When a fair die is rolled once, the probability of getting a 4 is _____.",
-        "options": [],
-        "correctAnswer": "1/6",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/6",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1/2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "There is one '4' out of six equally likely outcomes, so P = 1/6.",
         "difficulty": "easy"
       },
       {
         "questionText": "If P(A) = 1/5, then P(not A) = _____.",
-        "options": [],
-        "correctAnswer": "4/5",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5/4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4/5",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "P(not A) = 1 - P(A) = 1 - 1/5 = 4/5.",
         "difficulty": "easy"
       },
       {
         "questionText": "Two events that cannot happen at the same time are called _____ events.",
-        "options": [],
-        "correctAnswer": "mutually exclusive",
+        "options": [
+          {
+            "id": "a",
+            "text": "mutually exclusive",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "independent",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "complementary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "exhaustive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Mutually exclusive events have no outcomes in common; they cannot occur together.",
         "difficulty": "medium"
       },
       {
         "questionText": "For independent events A and B, P(A and B) = P(A) _____ P(B).",
-        "options": [],
-        "correctAnswer": "x",
+        "options": [
+          {
+            "id": "a",
+            "text": "+",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "-",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "/",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The multiplication rule for independent events: P(A and B) = P(A) x P(B).",
         "difficulty": "medium"
       },
       {
         "questionText": "A bag contains 2 red and 3 yellow balls. The probability of picking a yellow ball is _____.",
-        "options": [],
-        "correctAnswer": "3/5",
+        "options": [
+          {
+            "id": "a",
+            "text": "2/5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3/2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3/5",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1/5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Total = 5 balls. P(yellow) = 3/5.",
         "difficulty": "medium"
       },
       {
         "questionText": "When two fair coins are tossed, the probability of getting exactly one head is _____.",
-        "options": [],
-        "correctAnswer": "1/2",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3/4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1/2",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Sample space {HH, HT, TH, TT}. Exactly one head: HT, TH = 2 outcomes. P = 2/4 = 1/2.",
         "difficulty": "medium"
       },
       {
         "questionText": "A card is drawn from a standard pack of 52 cards. The probability that it is an ace is _____.",
-        "options": [],
-        "correctAnswer": "1/13",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/13",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1/52",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4/13",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1/4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "There are 4 aces in 52 cards. P = 4/52 = 1/13.",
         "difficulty": "medium"
       },
       {
         "questionText": "If a die is rolled once, the probability of getting a number less than 3 is _____.",
-        "options": [],
-        "correctAnswer": "1/3",
+        "options": [
+          {
+            "id": "a",
+            "text": "1/2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1/3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1/6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2/3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Numbers less than 3 are 1 and 2 (2 outcomes) out of 6. P = 2/6 = 1/3.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A bag contains 5 red, 3 green and 2 blue balls. Two balls are drawn one after another without replacement. What is the probability that both are red?",
         "options": [
-          {"id": "a", "text": "2/9", "isCorrect": true},
-          {"id": "b", "text": "1/4", "isCorrect": false},
-          {"id": "c", "text": "1/5", "isCorrect": false},
-          {"id": "d", "text": "5/18", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2/9",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1/4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1/5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5/18",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Total = 10. P(both red) = 5/10 x 4/9 = 20/90 = 2/9.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A fair die is rolled twice. What is the probability of getting a 6 on at least one of the two rolls?",
         "options": [
-          {"id": "a", "text": "1/36", "isCorrect": false},
-          {"id": "b", "text": "11/36", "isCorrect": true},
-          {"id": "c", "text": "1/3", "isCorrect": false},
-          {"id": "d", "text": "25/36", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1/36",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "11/36",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1/3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "25/36",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "P(no 6 on either roll) = 5/6 x 5/6 = 25/36. P(at least one 6) = 1 - 25/36 = 11/36.",
@@ -430,10 +912,26 @@
       {
         "questionText": "In an examination, the probability that a student passes Mathematics is 0.7 and the probability of passing English is 0.6. Assuming the results are independent, what is the probability that the student passes both subjects?",
         "options": [
-          {"id": "a", "text": "0.42", "isCorrect": true},
-          {"id": "b", "text": "1.30", "isCorrect": false},
-          {"id": "c", "text": "0.13", "isCorrect": false},
-          {"id": "d", "text": "0.10", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "0.42",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1.30",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.13",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.10",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "For independent events, P(both) = 0.7 x 0.6 = 0.42.",

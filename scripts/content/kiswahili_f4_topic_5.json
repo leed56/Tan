@@ -8,10 +8,26 @@
       {
         "questionText": "Semantiki ni nini katika taaluma ya lugha?",
         "options": [
-          {"id": "a", "text": "Ni taaluma inayochunguza maana za maneno na tungo", "isCorrect": true},
-          {"id": "b", "text": "Ni taaluma inayochunguza sauti za lugha", "isCorrect": false},
-          {"id": "c", "text": "Ni taaluma inayochunguza muundo wa sentensi", "isCorrect": false},
-          {"id": "d", "text": "Ni taaluma inayochunguza historia ya lugha", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ni taaluma inayochunguza maana za maneno na tungo",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ni taaluma inayochunguza sauti za lugha",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ni taaluma inayochunguza muundo wa sentensi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ni taaluma inayochunguza historia ya lugha",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Semantics is the branch of linguistics that studies the meaning of words and sentences.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Maana ya msingi ya neno ni ipi?",
         "options": [
-          {"id": "a", "text": "Maana ya ziada inayotokana na mazingira", "isCorrect": false},
-          {"id": "b", "text": "Maana ya kamusi au maana halisi ya neno", "isCorrect": true},
-          {"id": "c", "text": "Maana ya kificho ya nahau", "isCorrect": false},
-          {"id": "d", "text": "Maana ya kihisia tu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Maana ya ziada inayotokana na mazingira",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Maana ya kamusi au maana halisi ya neno",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Maana ya kificho ya nahau",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Maana ya kihisia tu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Basic (denotative) meaning is the literal dictionary meaning of a word.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Neno 'nyumba' na 'jumba' yana uhusiano gani wa kimaana?",
         "options": [
-          {"id": "a", "text": "Ni vinyume", "isCorrect": false},
-          {"id": "b", "text": "Ni homonimu", "isCorrect": false},
-          {"id": "c", "text": "Ni visawe", "isCorrect": true},
-          {"id": "d", "text": "Ni polisemia", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ni vinyume",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ni homonimu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ni visawe",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ni polisemia",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Synonyms (visawe) are words with the same or very similar meaning, like 'nyumba' and 'jumba'.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Maneno 'kubwa' na 'dogo' ni mfano wa nini?",
         "options": [
-          {"id": "a", "text": "Visawe", "isCorrect": false},
-          {"id": "b", "text": "Vinyume", "isCorrect": true},
-          {"id": "c", "text": "Homofoni", "isCorrect": false},
-          {"id": "d", "text": "Hiponimia", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Visawe",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Vinyume",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Homofoni",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hiponimia",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Antonyms (vinyume) are words with opposite meanings, such as 'kubwa' (big) and 'dogo' (small).",
@@ -56,10 +120,26 @@
       {
         "questionText": "Neno moja lenye maana nyingi zinazohusiana huitwaje?",
         "options": [
-          {"id": "a", "text": "Homonimu", "isCorrect": false},
-          {"id": "b", "text": "Polisemia", "isCorrect": true},
-          {"id": "c", "text": "Visawe", "isCorrect": false},
-          {"id": "d", "text": "Vinyume", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Homonimu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Polisemia",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Visawe",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Vinyume",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Polysemy (polisemia) is when one word has several related meanings.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Katika sentensi 'Mtoto amefungua mlango', neno 'mlango' limetumika kwa maana ya msingi. Hii ina maana gani?",
         "options": [
-          {"id": "a", "text": "Limetumika kwa maana ya kificho", "isCorrect": false},
-          {"id": "b", "text": "Limetumika kwa maana yake halisi ya kamusi", "isCorrect": true},
-          {"id": "c", "text": "Limetumika kama nahau", "isCorrect": false},
-          {"id": "d", "text": "Limetumika kama kinyume", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Limetumika kwa maana ya kificho",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Limetumika kwa maana yake halisi ya kamusi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Limetumika kama nahau",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Limetumika kama kinyume",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Here 'mlango' (door) is used in its literal, basic dictionary sense.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Maneno 'paa' (kuruka juu) na 'paa' (sehemu ya juu ya nyumba) ni mfano wa nini?",
         "options": [
-          {"id": "a", "text": "Homonimu", "isCorrect": true},
-          {"id": "b", "text": "Visawe", "isCorrect": false},
-          {"id": "c", "text": "Vinyume", "isCorrect": false},
-          {"id": "d", "text": "Hiponimia", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Homonimu",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Visawe",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Vinyume",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hiponimia",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Homonyms (homonimu) are words spelt and pronounced the same but with unrelated meanings.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Uhusiano wa neno la jumla na maneno mahususi yaliyo chini yake huitwaje? Mfano: 'mnyama' na 'simba, mbuzi, ng'ombe'.",
         "options": [
-          {"id": "a", "text": "Polisemia", "isCorrect": false},
-          {"id": "b", "text": "Hiponimia", "isCorrect": true},
-          {"id": "c", "text": "Homofoni", "isCorrect": false},
-          {"id": "d", "text": "Visawe", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Polisemia",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hiponimia",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Homofoni",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Visawe",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Hyponymy (hiponimia) is the relationship where specific words fall under a general (superordinate) term.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Nahau 'kupiga chuku' ina maana gani ya kificho?",
         "options": [
-          {"id": "a", "text": "Kupiga ngumi", "isCorrect": false},
-          {"id": "b", "text": "Kutia chumvi au kuzidisha maelezo", "isCorrect": true},
-          {"id": "c", "text": "Kupika chakula", "isCorrect": false},
-          {"id": "d", "text": "Kucheza muziki", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kupiga ngumi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kutia chumvi au kuzidisha maelezo",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kupika chakula",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kucheza muziki",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The idiom 'kupiga chuku' means to exaggerate, not its literal words.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Neno lenye maana pana ni lipi kati ya haya?",
         "options": [
-          {"id": "a", "text": "Simba", "isCorrect": false},
-          {"id": "b", "text": "Mwembe", "isCorrect": false},
-          {"id": "c", "text": "Mti", "isCorrect": true},
-          {"id": "d", "text": "Mbuyu", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Simba",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mwembe",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mti",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Mbuyu",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "'Mti' (tree) has a broad meaning that includes specific trees like 'mwembe' and 'mbuyu'.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Maana ya ziada (picha) ya neno hutokana na nini?",
         "options": [
-          {"id": "a", "text": "Maana ya kamusi pekee", "isCorrect": false},
-          {"id": "b", "text": "Hisia, mazingira na utamaduni unaohusishwa na neno", "isCorrect": true},
-          {"id": "c", "text": "Matamshi ya neno", "isCorrect": false},
-          {"id": "d", "text": "Idadi ya silabi za neno", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Maana ya kamusi pekee",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hisia, mazingira na utamaduni unaohusishwa na neno",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Matamshi ya neno",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Idadi ya silabi za neno",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Connotative (additional) meaning arises from the feelings, associations and culture linked to a word.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Maneno 'sita' (namba 6) na 'sita' (kusitasita) yanafanana kwa matamshi na maandishi lakini maana zake hazihusiani. Ni mfano wa nini?",
         "options": [
-          {"id": "a", "text": "Polisemia", "isCorrect": false},
-          {"id": "b", "text": "Hiponimia", "isCorrect": false},
-          {"id": "c", "text": "Homonimu", "isCorrect": true},
-          {"id": "d", "text": "Visawe", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Polisemia",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hiponimia",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Homonimu",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Visawe",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Because they share spelling and pronunciation but have unrelated meanings, they are homonyms.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Katika sentensi 'Alikula kiapo mbele ya hakimu', neno 'kula' limetumika kwa maana gani?",
         "options": [
-          {"id": "a", "text": "Maana ya msingi ya kumeza chakula", "isCorrect": false},
-          {"id": "b", "text": "Maana ya ziada/kificho ya kuapa", "isCorrect": true},
-          {"id": "c", "text": "Maana ya kinyume", "isCorrect": false},
-          {"id": "d", "text": "Hakuna maana", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Maana ya msingi ya kumeza chakula",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Maana ya ziada/kificho ya kuapa",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Maana ya kinyume",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hakuna maana",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "'Kula kiapo' is an idiomatic use meaning to take an oath, not literally to eat.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Mabadiliko ya maana ya maneno kutoka maana finyu kwenda maana pana huitwaje?",
         "options": [
-          {"id": "a", "text": "Upanuzi wa maana", "isCorrect": true},
-          {"id": "b", "text": "Ufinyu wa maana", "isCorrect": false},
-          {"id": "c", "text": "Ushushaji wa maana", "isCorrect": false},
-          {"id": "d", "text": "Upandishaji wa maana", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Upanuzi wa maana",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ufinyu wa maana",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ushushaji wa maana",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Upandishaji wa maana",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Widening (upanuzi wa maana) is when a word's meaning broadens from a narrow to a wider sense.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Muktadha husaidiaje katika kufafanua maana ya neno lenye maana zaidi ya moja?",
         "options": [
-          {"id": "a", "text": "Hubadilisha matamshi ya neno", "isCorrect": false},
-          {"id": "b", "text": "Hubainisha maana inayokusudiwa kwa kuzingatia maneno mengine na hali ya matumizi", "isCorrect": true},
-          {"id": "c", "text": "Huongeza idadi ya silabi", "isCorrect": false},
-          {"id": "d", "text": "Huondoa maana zote za neno", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Hubadilisha matamshi ya neno",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hubainisha maana inayokusudiwa kwa kuzingatia maneno mengine na hali ya matumizi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Huongeza idadi ya silabi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Huondoa maana zote za neno",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Context determines the intended meaning by considering surrounding words and the situation of use.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "Taaluma inayochunguza maana za maneno na tungo katika lugha huitwa _____.",
-        "options": [],
-        "correctAnswer": "semantiki",
+        "options": [
+          {
+            "id": "a",
+            "text": "semantiki",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "fonolojia",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mofolojia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sintaksia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The study of meaning of words and sentences is called semantics (semantiki).",
         "difficulty": "easy"
       },
       {
         "questionText": "Maneno yenye maana sawa au inayokaribiana, kama 'furaha' na 'raha', huitwa _____.",
-        "options": [],
-        "correctAnswer": "visawe",
+        "options": [
+          {
+            "id": "a",
+            "text": "vinyume",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "visawe",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "homonimu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hiponimu",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Words with the same or similar meaning are synonyms (visawe).",
         "difficulty": "easy"
       },
       {
         "questionText": "Maneno yenye maana zinazopingana, kama 'juu' na 'chini', huitwa _____.",
-        "options": [],
-        "correctAnswer": "vinyume",
+        "options": [
+          {
+            "id": "a",
+            "text": "visawe",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "homonimu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "vinyume",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "polisemia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Words with opposite meanings are antonyms (vinyume).",
         "difficulty": "easy"
       },
       {
         "questionText": "Neno moja lenye maana nyingi zinazohusiana huitwa _____.",
-        "options": [],
-        "correctAnswer": "polisemia",
+        "options": [
+          {
+            "id": "a",
+            "text": "homonimu",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sinonimia",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hiponimia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "polisemia",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A single word with several related meanings is polysemy (polisemia).",
         "difficulty": "medium"
       },
       {
         "questionText": "Maana halisi ya neno kama inavyotolewa katika kamusi huitwa maana ya _____.",
-        "options": [],
-        "correctAnswer": "msingi",
+        "options": [
+          {
+            "id": "a",
+            "text": "msingi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ziada",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fiche",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kimuktadha",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The literal dictionary meaning is the basic (msingi) meaning.",
         "difficulty": "medium"
       },
       {
         "questionText": "Uhusiano wa neno la jumla 'ndege' na maneno mahususi 'tai, kware, njiwa' huitwa _____.",
-        "options": [],
-        "correctAnswer": "hiponimia",
+        "options": [
+          {
+            "id": "a",
+            "text": "polisemia",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hiponimia",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "homonimia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sinonimia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The general-to-specific relationship is hyponymy (hiponimia).",
         "difficulty": "medium"
       },
       {
         "questionText": "Maneno yenye matamshi na maandishi sawa lakini maana tofauti zisizohusiana huitwa _____.",
-        "options": [],
-        "correctAnswer": "homonimu",
+        "options": [
+          {
+            "id": "a",
+            "text": "visawe",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vinyume",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "homonimu",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "viyeyusho",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Words pronounced and spelt the same but with unrelated meanings are homonyms (homonimu).",
         "difficulty": "medium"
       },
       {
         "questionText": "Nahau '_____ chuku' ina maana ya kutia chumvi au kuzidisha jambo.",
-        "options": [],
-        "correctAnswer": "kupiga",
+        "options": [
+          {
+            "id": "a",
+            "text": "kutupa",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "kukata",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kufunga",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kupiga",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The idiom 'kupiga chuku' means to exaggerate.",
         "difficulty": "medium"
       },
       {
         "questionText": "Maana inayotokana na hisia na mazingira yanayohusishwa na neno huitwa maana ya _____.",
-        "options": [],
-        "correctAnswer": "ziada",
+        "options": [
+          {
+            "id": "a",
+            "text": "ziada",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "msingi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kamusi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kileksika",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Meaning arising from feelings and associations is additional/connotative (ziada) meaning.",
         "difficulty": "hard"
       },
       {
         "questionText": "Hali ya neno kupata maana mpya au kupoteza maana yake ya zamani kadiri muda unavyopita huitwa _____ ya maana.",
-        "options": [],
-        "correctAnswer": "mabadiliko",
+        "options": [
+          {
+            "id": "a",
+            "text": "upanuzi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mabadiliko",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ufinyu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "uhamisho",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The process of words gaining or losing meanings over time is meaning change (mabadiliko ya maana).",
         "difficulty": "hard"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "Soma sentensi: 'Baada ya kushinda, wachezaji walipiga makofi na kufurahia ushindi.' Katika muktadha huu, neno 'kupiga' lina maana gani na ni kipengele kipi cha kisemantiki kinachoonekana?",
         "options": [
-          {"id": "a", "text": "Lina maana ya kuumiza, hivyo ni kinyume", "isCorrect": false},
-          {"id": "b", "text": "Lina maana inayotegemea muktadha, likionyesha polisemia ya neno 'kupiga'", "isCorrect": true},
-          {"id": "c", "text": "Lina maana ya kamusi pekee bila muktadha", "isCorrect": false},
-          {"id": "d", "text": "Halina maana yoyote", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Lina maana ya kuumiza, hivyo ni kinyume",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Lina maana inayotegemea muktadha, likionyesha polisemia ya neno 'kupiga'",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Lina maana ya kamusi pekee bila muktadha",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Halina maana yoyote",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "'Kupiga' has many related senses (kupiga makofi, kupiga simu, kupiga picha); the meaning here depends on context, illustrating polysemy.",
@@ -418,10 +884,26 @@
       {
         "questionText": "Mwalimu alisema: 'Asha ni mwanafunzi mwenye mkono mrefu.' Kwa kuzingatia semantiki, kauli hii inapaswa kueleweka vipi?",
         "options": [
-          {"id": "a", "text": "Kwa maana ya msingi kwamba mkono wake ni mrefu kimwili", "isCorrect": false},
-          {"id": "b", "text": "Kwa maana ya ziada/kinahau kwamba Asha ana tabia ya kuiba", "isCorrect": true},
-          {"id": "c", "text": "Kama kisawe cha urefu", "isCorrect": false},
-          {"id": "d", "text": "Kama kinyume cha ufupi", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Kwa maana ya msingi kwamba mkono wake ni mrefu kimwili",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kwa maana ya ziada/kinahau kwamba Asha ana tabia ya kuiba",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kama kisawe cha urefu",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kama kinyume cha ufupi",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "'Mkono mrefu' is an idiom whose hidden meaning is that someone tends to steal, an example of connotative/idiomatic meaning.",
@@ -430,10 +912,26 @@
       {
         "questionText": "Zingatia kundi la maneno: 'kiatu, ndara, raba, buti'. Kati ya chaguo zifuatazo, ipi inaonyesha vyema uhusiano wa kisemantiki katika kundi hili?",
         "options": [
-          {"id": "a", "text": "Yote ni vinyume vya kila kimoja", "isCorrect": false},
-          {"id": "b", "text": "Yote ni homonimu", "isCorrect": false},
-          {"id": "c", "text": "Yote ni hiponimu za neno la jumla 'viatu'", "isCorrect": true},
-          {"id": "d", "text": "Yote ni polisemia ya neno moja", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Yote ni vinyume vya kila kimoja",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Yote ni homonimu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Yote ni hiponimu za neno la jumla 'viatu'",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Yote ni polisemia ya neno moja",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "All these are specific kinds of footwear (hyponyms) under the superordinate term 'viatu', illustrating hyponymy.",

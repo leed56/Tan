@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The average atmospheric conditions of a place recorded over a long period, usually 30 years or more, is called _____.",
-        "options": [],
-        "correctAnswer": "climate",
+        "options": [
+          {
+            "id": "a",
+            "text": "climate",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "weather",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "season",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "temperature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Climate is the long-term average of weather elements such as temperature and rainfall for a place over at least 30 years.",
         "difficulty": "easy"
       },
       {
         "questionText": "The gradual rise in the Earth's average surface temperature due to increasing greenhouse gases is known as global _____.",
-        "options": [],
-        "correctAnswer": "warming",
+        "options": [
+          {
+            "id": "a",
+            "text": "cooling",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "warming",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "dimming",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "heating",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Global warming is the long-term increase in the Earth's average temperature caused mainly by the enhanced greenhouse effect.",
         "difficulty": "easy"
       },
       {
         "questionText": "The trapping of heat in the atmosphere by gases such as carbon dioxide and methane is called the _____ effect.",
-        "options": [],
-        "correctAnswer": "greenhouse",
+        "options": [
+          {
+            "id": "a",
+            "text": "ozone",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "albedo",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "greenhouse",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "radiation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The greenhouse effect describes how certain atmospheric gases trap outgoing heat, keeping the planet warm; its enhancement by human activity drives global warming.",
         "difficulty": "easy"
       },
       {
         "questionText": "Large-scale planting of trees to absorb carbon dioxide and reduce climate change is called _____.",
-        "options": [],
-        "correctAnswer": "afforestation",
+        "options": [
+          {
+            "id": "a",
+            "text": "deforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "reforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "irrigation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "afforestation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Afforestation increases forest cover; trees act as carbon sinks by absorbing carbon dioxide during photosynthesis.",
         "difficulty": "easy"
       },
       {
         "questionText": "The 2015 international treaty in which nations agreed to limit global temperature rise is known as the _____ Agreement.",
-        "options": [],
-        "correctAnswer": "Paris",
+        "options": [
+          {
+            "id": "a",
+            "text": "Paris",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Kyoto",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Montreal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Rio",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Paris Agreement (2015) commits countries to limiting global warming to well below 2 degrees Celsius above pre-industrial levels.",
         "difficulty": "medium"
       },
       {
         "questionText": "The greenhouse gas released mainly by livestock, flooded rice fields and decaying waste is _____.",
-        "options": [],
-        "correctAnswer": "methane",
+        "options": [
+          {
+            "id": "a",
+            "text": "ozone",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "methane",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "nitrogen",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chlorofluorocarbon",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Methane (CH4) is a potent greenhouse gas produced by cattle digestion, rice paddies and the decomposition of organic waste.",
         "difficulty": "medium"
       },
       {
         "questionText": "Measures taken to help people and ecosystems cope with the effects of climate change that are already happening are called _____ measures.",
-        "options": [],
-        "correctAnswer": "adaptation",
+        "options": [
+          {
+            "id": "a",
+            "text": "mitigation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "prevention",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "adaptation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "response",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Adaptation measures, such as drought-resistant crops and improved water storage, help communities adjust to climate change impacts, unlike mitigation which tackles the causes.",
         "difficulty": "medium"
       },
       {
         "questionText": "The melting of the ice cap on Mount _____ in Tanzania is often given as visible evidence of climate change.",
-        "options": [],
-        "correctAnswer": "Kilimanjaro",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenya",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Meru",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Everest",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Kilimanjaro",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The shrinking glaciers and ice cap on Mount Kilimanjaro, Africa's highest peak, are commonly cited as evidence of warming.",
         "difficulty": "easy"
       },
       {
         "questionText": "Burning of fossil fuels such as coal, oil and natural gas is the main human source of the gas _____ in the atmosphere.",
-        "options": [],
-        "correctAnswer": "carbon dioxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "carbon dioxide",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "nitrous oxide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sulphur dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ozone",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Combustion of fossil fuels releases large amounts of carbon dioxide, the leading greenhouse gas driving global warming.",
         "difficulty": "medium"
       },
       {
         "questionText": "Energy obtained from naturally replenished sources such as the sun and wind, which produces little or no greenhouse gas, is called _____ energy.",
-        "options": [],
-        "correctAnswer": "renewable",
+        "options": [
+          {
+            "id": "a",
+            "text": "non-renewable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "renewable",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "fossil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nuclear",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Renewable energy sources such as solar and wind do not run out and emit little carbon dioxide, making them key to mitigating climate change.",
         "difficulty": "medium"
       }
