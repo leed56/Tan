@@ -69,7 +69,7 @@ export interface DailyUsage {
 export const FREE_DAILY_LIMITS: Record<QuizType, number> = {
   mcq: 5,
   fib: 3,
-  tf: 2,
+  tf: 3,
   // HOQ packs are always premium-gated (see LearningPackDetailScreen), so this
   // limit is never actually enforced — premium users bypass it entirely — but
   // a value is required for QuizCard's usage-pip math to stay type-safe.

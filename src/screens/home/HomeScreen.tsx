@@ -24,6 +24,7 @@ import { useAuthStore } from '../../store/authStore';
 import { useProgressStore } from '../../store/progressStore';
 import { useMissionStore } from '../../store/missionStore';
 import { useLeaderboardStore } from '../../store/leaderboardStore';
+import { useFamilyStore } from '../../store/familyStore';
 import { DAILY_MISSIONS } from '../../utils/seedBadges';
 import { SUBJECTS, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
@@ -41,6 +42,7 @@ export function HomeScreen({ navigation }: Props) {
   const { records: progressRecords, fetchProgress, getSubjectProgress } = useProgressStore();
   const { fetchMissions, completedCount, progressFor } = useMissionStore();
   const { data: leaderboardData, fetchLeaderboard } = useLeaderboardStore();
+  const activeChild = useFamilyStore((s) => s.activeChild());
 
   // Load the persisted gamification profile so XP/coins/streak reflect Firestore.
   useEffect(() => {
@@ -96,7 +98,21 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.topBarContent}>
           <View>
             <Text style={styles.greeting}>{greeting},</Text>
-            <Text style={styles.userName}>{name} 👋</Text>
+            <Text style={styles.userName}>{activeChild ? activeChild.name : name} 👋</Text>
+            {activeChild && (
+              <TouchableOpacity
+                style={styles.playingAsPill}
+                onPress={() =>
+                  (navigation.getParent() as any)?.navigate('ProfileTab', {
+                    screen: 'FamilyProfiles',
+                  })
+                }
+                activeOpacity={0.8}
+              >
+                <Ionicons name="people" size={11} color={COLORS.gold} />
+                <Text style={styles.playingAsText}>Playing as {activeChild.name}</Text>
+              </TouchableOpacity>
+            )}
           </View>
           <View style={styles.topBarActions}>
             <TouchableOpacity style={styles.iconBtn}>
@@ -329,6 +345,20 @@ const styles = StyleSheet.create({
   },
   greeting: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
   userName: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.xl, fontWeight: TYPOGRAPHY.weights.extrabold, marginTop: 2 },
+  playingAsPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    alignSelf: 'flex-start',
+    backgroundColor: `${COLORS.gold}15`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 3,
+    borderWidth: 1,
+    borderColor: `${COLORS.gold}40`,
+    marginTop: 6,
+  },
+  playingAsText: { color: COLORS.gold, fontSize: 11, fontWeight: TYPOGRAPHY.weights.semibold },
   topBarActions: { flexDirection: 'row', alignItems: 'center', gap: SPACING.md },
   iconBtn: { position: 'relative' },
   notifDot: {

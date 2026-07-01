@@ -161,7 +161,12 @@ export type QuizStackSharedParams = {
   // Phase 4 — subscription screens
   SubscriptionScreen: undefined;
   SubscriptionStatus: undefined;
-  PaymentMethodScreen: { planId: string; planTitle: string; priceMonthly: number };
+  PaymentMethodScreen: {
+    planId: string;
+    planTitle: string;
+    billingCycle: 'monthly' | 'yearly';
+    price: number;
+  };
   LockedFeaturePreview: { featureKey: string; featureTitle: string; featureDescription: string };
   // Phase 5 — gamification screens
   GamificationProfile: undefined;
@@ -228,6 +233,7 @@ export type ProfileStackParamList = {
   Settings: undefined;
   SubscriptionStatus: undefined;
   FamilyProfiles: undefined;
+  ManageDevices: undefined;
 };
 
 export type AppTabParamList = {

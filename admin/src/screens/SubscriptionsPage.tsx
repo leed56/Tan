@@ -46,10 +46,14 @@ export function SubscriptionsPage() {
         verifiedBy: user?.email,
       });
       if (action === 'verified') {
+        // The client listens to users/{uid} in real time, so this write is
+        // what makes activation reflect instantly in the app.
         const expiry = new Date();
-        expiry.setDate(expiry.getDate() + 30);
-        await updateDoc(doc(db, 'users', payment.studentId), {
-          subscriptionStatus: payment.planType === 'family' ? 'family' : 'premium',
+        expiry.setDate(expiry.getDate() + (payment.billingCycle === 'yearly' ? 365 : 30));
+        await updateDoc(doc(db, 'users', payment.userId), {
+          subscriptionStatus: 'active',
+          subscriptionPlan: payment.planId,
+          billingCycle: payment.billingCycle,
           subscriptionExpiry: expiry,
         });
       }
@@ -69,11 +73,17 @@ export function SubscriptionsPage() {
   const filtered = payments.filter((p) => filterStatus === 'all' || p.status === filterStatus);
 
   const columns: Column<PaymentRequest>[] = [
-    { key: 'phone', header: 'Student', render: (r) => <span className="font-medium">{r.studentPhone}</span> },
-    { key: 'plan', header: 'Plan', render: (r) => <Badge variant={r.planType === 'family' ? 'info' : 'secondary'}>{r.planType}</Badge> },
+    { key: 'phone', header: 'Student', render: (r) => <span className="font-medium">{r.studentPhone ?? r.userId}</span> },
+    {
+      key: 'plan', header: 'Plan', render: (r) => (
+        <Badge variant={r.planId === 'family' ? 'info' : 'secondary'}>
+          {r.planId} · {r.billingCycle === 'yearly' ? 'yr' : 'mo'}
+        </Badge>
+      ),
+    },
     { key: 'amount', header: 'Amount', render: (r) => <span className="font-medium text-amber-400">{r.amount?.toLocaleString()} TSH</span> },
-    { key: 'method', header: 'Method', render: (r) => <span className="text-sm">{r.paymentMethod}</span> },
-    { key: 'ref', header: 'Ref', render: (r) => <code className="text-xs bg-muted px-1.5 py-0.5 rounded">{r.transactionRef}</code> },
+    { key: 'method', header: 'Method', render: (r) => <span className="text-sm capitalize">{r.provider?.replace('_', ' ')}</span> },
+    { key: 'ref', header: 'Ref', render: (r) => <code className="text-xs bg-muted px-1.5 py-0.5 rounded">{r.transactionRef ?? '—'}</code> },
     { key: 'submitted', header: 'Submitted', render: (r) => <span className="text-xs text-muted-foreground">{format(r.submittedAt, 'MMM d, HH:mm')}</span> },
     { key: 'status', header: 'Status', render: (r) => <StatusBadge status={r.status} /> },
     {
@@ -117,8 +127,8 @@ export function SubscriptionsPage() {
         title={confirmAction?.action === 'verified' ? 'Verify Payment' : 'Reject Payment'}
         description={
           confirmAction?.action === 'verified'
-            ? `Verify payment of ${confirmAction?.payment.amount?.toLocaleString()} TSH from ${confirmAction?.payment.studentPhone}? This will activate their subscription.`
-            : `Reject payment from ${confirmAction?.payment.studentPhone}?`
+            ? `Verify payment of ${confirmAction?.payment.amount?.toLocaleString()} TSH from ${confirmAction?.payment.studentPhone ?? confirmAction?.payment.userId}? This activates their ${confirmAction?.payment.planId} subscription instantly.`
+            : `Reject payment from ${confirmAction?.payment.studentPhone ?? confirmAction?.payment.userId}?`
         }
         confirmLabel={confirmAction?.action === 'verified' ? 'Verify & Activate' : 'Reject'}
         variant={confirmAction?.action === 'rejected' ? 'destructive' : 'default'}

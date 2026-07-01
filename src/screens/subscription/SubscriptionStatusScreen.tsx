@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   View,
   Text,
   StyleSheet,
   ScrollView,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -18,6 +19,9 @@ import { SEED_PLANS } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { useAuthStore } from '../../store/authStore';
 import type { FeatureKey } from '../../types/subscription';
+import { FREE_DAILY_LIMITS } from '../../types/quiz';
+
+const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? '+255700000000';
 
 type Props = StackScreenProps<ProfileStackParamList, 'SubscriptionStatus'>;
 
@@ -40,14 +44,26 @@ function formatDate(ts: number): string {
 
 export function SubscriptionStatusScreen({ navigation }: Props) {
   const user = useAuthStore((s) => s.user);
-  const { subscription, isPremium, fetchSubscription } = useSubscriptionStore();
-
-  useEffect(() => {
-    if (user?.uid) fetchSubscription(user.uid);
-  }, [user?.uid, fetchSubscription]);
+  // A real-time users/{uid} listener is started app-wide (App.tsx) as soon as
+  // the user is authenticated, so admin activation reflects here instantly —
+  // no fetch-on-mount needed.
+  const { subscription, isPremium, planMaxDevices } = useSubscriptionStore();
 
   const premium = isPremium();
   const plan = subscription ? SEED_PLANS.find((p) => p.id === subscription.planId) : null;
+  const cycleLabel = subscription?.billingCycle === 'yearly' ? 'year' : 'month';
+  const price = plan
+    ? subscription?.billingCycle === 'yearly'
+      ? plan.priceYearly
+      : plan.priceMonthly
+    : 0;
+
+  const handleCancelRequest = () => {
+    const message = encodeURIComponent(
+      `Hello! I'd like to cancel/manage my Soma AI subscription. My account ID: ${user?.uid ?? ''}`,
+    );
+    Linking.openURL(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`);
+  };
 
   return (
     <ScreenContainer padded={false}>
@@ -80,15 +96,17 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
             <View style={styles.statusMeta}>
               <View style={styles.metaItem}>
                 <Text style={styles.metaLabel}>Expires</Text>
-                <Text style={styles.metaValue}>{formatDate(subscription.expiresAt)}</Text>
+                <Text style={styles.metaValue}>
+                  {subscription.expiresAt ? formatDate(subscription.expiresAt) : '—'}
+                </Text>
               </View>
               <View style={styles.metaItem}>
-                <Text style={styles.metaLabel}>Profiles</Text>
-                <Text style={styles.metaValue}>{plan.maxProfiles} allowed</Text>
+                <Text style={styles.metaLabel}>Devices</Text>
+                <Text style={styles.metaValue}>Up to {planMaxDevices()}</Text>
               </View>
               <View style={styles.metaItem}>
                 <Text style={styles.metaLabel}>Price</Text>
-                <Text style={styles.metaValue}>{plan.priceMonthly.toLocaleString()} TSH/mo</Text>
+                <Text style={styles.metaValue}>{price.toLocaleString()} TSH/{cycleLabel}</Text>
               </View>
             </View>
           </LinearGradient>
@@ -117,15 +135,22 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
             <Text style={styles.sectionLabel}>Free Daily Limits</Text>
             <View style={styles.limitsCard}>
               {[
-                { label: 'Multiple Choice', used: 'MCQ', limit: 5 },
-                { label: 'Fill in the Blanks', used: 'FIB', limit: 3 },
-                { label: 'True / False', used: 'TF', limit: 2 },
+                { label: 'Multiple Choice', key: 'mcq' as const },
+                { label: 'Fill in the Blanks', key: 'fib' as const },
+                { label: 'True / False', key: 'tf' as const },
               ].map((item) => (
-                <View key={item.used} style={styles.limitRow}>
+                <View key={item.key} style={styles.limitRow}>
                   <Text style={styles.limitLabel}>{item.label}</Text>
-                  <Text style={styles.limitValue}>{item.limit}/day</Text>
+                  <Text style={styles.limitValue}>{FREE_DAILY_LIMITS[item.key]}/day</Text>
                 </View>
               ))}
+              <View style={styles.limitRow}>
+                <Text style={styles.limitLabel}>Summary & Higher-Order</Text>
+                <View style={styles.limitLockedPill}>
+                  <Ionicons name="lock-closed" size={11} color={COLORS.gold} />
+                  <Text style={styles.limitLockedText}>Premium</Text>
+                </View>
+              </View>
             </View>
           </>
         )}
@@ -133,10 +158,20 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
         {/* Family link */}
         {premium && subscription?.planId === 'family' && (
           <AppButton
-            title="Manage Family Profiles"
+            title="Family Hub"
             onPress={() => navigation.navigate('FamilyProfiles')}
             variant="secondary"
             icon={<Ionicons name="people-outline" size={18} color={COLORS.primary} />}
+          />
+        )}
+
+        {/* Devices */}
+        {premium && (
+          <AppButton
+            title="Manage Devices"
+            onPress={() => navigation.navigate('ManageDevices')}
+            variant="secondary"
+            icon={<Ionicons name="phone-portrait-outline" size={18} color={COLORS.primary} />}
           />
         )}
 
@@ -149,8 +184,8 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
             icon={<Ionicons name="flash" size={18} color={COLORS.textPrimary} />}
           />
         ) : (
-          <TouchableOpacity style={styles.manageBtn}>
-            <Text style={styles.manageBtnText}>Cancel subscription</Text>
+          <TouchableOpacity style={styles.manageBtn} onPress={handleCancelRequest}>
+            <Text style={styles.manageBtnText}>Cancel subscription (WhatsApp support)</Text>
           </TouchableOpacity>
         )}
       </ScrollView>
@@ -245,6 +280,18 @@ const styles = StyleSheet.create({
   },
   limitLabel: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.sm },
   limitValue: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
+  limitLockedPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: `${COLORS.gold}15`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 3,
+    borderWidth: 1,
+    borderColor: `${COLORS.gold}40`,
+  },
+  limitLockedText: { color: COLORS.gold, fontSize: 11, fontWeight: TYPOGRAPHY.weights.bold },
   manageBtn: { alignItems: 'center', paddingVertical: SPACING.sm },
   manageBtnText: { color: COLORS.error, fontSize: TYPOGRAPHY.sizes.sm },
 });

@@ -15,13 +15,17 @@ import {
 import { COLLECTIONS } from './firebaseConfig';
 import type { DailyUsage, QuizType, FREE_DAILY_LIMITS } from '../types/quiz';
 import { FREE_DAILY_LIMITS as LIMITS } from '../types/quiz';
+import { localDateStr } from '../utils/date';
 
 function isFirebaseConfigured(): boolean {
   return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
 }
 
+// Local (EAT) calendar day, matching the rest of the app's streak/mission
+// bucketing — using UTC here would reset free-tier limits up to 3 hours
+// early or late relative to the student's actual midnight.
 function todayDate(): string {
-  return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  return localDateStr();
 }
 
 function makeUsageId(userId: string, date: string): string {

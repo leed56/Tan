@@ -3,6 +3,7 @@ import type { DailyUsage, QuizType } from '../types/quiz';
 import { FREE_DAILY_LIMITS } from '../types/quiz';
 import { getTodayUsage, incrementUsage, checkDailyLimit } from '../services/usageService';
 import { useSubscriptionStore } from './subscriptionStore';
+import { localDateStr } from '../utils/date';
 
 interface UsageStore {
   usage: DailyUsage | null;
@@ -18,7 +19,7 @@ interface UsageStore {
 }
 
 function emptyUsage(): DailyUsage {
-  const date = new Date().toISOString().slice(0, 10);
+  const date = localDateStr();
   return {
     id: `_${date}`,
     userId: '',

@@ -62,11 +62,11 @@ function AppSettingsTab() {
       maxDailyMcq: settings.maxDailyMcq ?? 10,
       maxDailyFib: settings.maxDailyFib ?? 5,
       maxDailyTf: settings.maxDailyTf ?? 10,
-      singlePlanPriceTzs: settings.singlePlanPriceTzs ?? 5000,
-      familyPlanPriceTzs: settings.familyPlanPriceTzs ?? 8000,
+      singlePlanPriceTzs: settings.singlePlanPriceTzs ?? 4999,
+      familyPlanPriceTzs: settings.familyPlanPriceTzs ?? 7999,
       singlePlanDurationDays: settings.singlePlanDurationDays ?? 30,
       familyPlanDurationDays: settings.familyPlanDurationDays ?? 30,
-      maxFamilyMembers: settings.maxFamilyMembers ?? 5,
+      maxFamilyMembers: settings.maxFamilyMembers ?? 4,
       geminiApiEnabled: settings.geminiApiEnabled ?? true,
       maintenanceMode: settings.maintenanceMode ?? false,
     } : undefined,
@@ -101,11 +101,11 @@ function AppSettingsTab() {
       <Card>
         <CardHeader><CardTitle className="text-base">Subscription Plans</CardTitle></CardHeader>
         <CardContent className="grid grid-cols-2 gap-4">
-          <div className="space-y-2"><Label>Single Plan Price (TSH)</Label><Input type="number" {...register('singlePlanPriceTzs', { valueAsNumber: true })} /></div>
-          <div className="space-y-2"><Label>Family Plan Price (TSH)</Label><Input type="number" {...register('familyPlanPriceTzs', { valueAsNumber: true })} /></div>
-          <div className="space-y-2"><Label>Single Plan Duration (days)</Label><Input type="number" {...register('singlePlanDurationDays', { valueAsNumber: true })} /></div>
+          <div className="space-y-2"><Label>Standard Plan — Monthly (TSH)</Label><Input type="number" {...register('singlePlanPriceTzs', { valueAsNumber: true })} /></div>
+          <div className="space-y-2"><Label>Family Plan — Monthly (TSH)</Label><Input type="number" {...register('familyPlanPriceTzs', { valueAsNumber: true })} /></div>
+          <div className="space-y-2"><Label>Standard Plan Duration (days)</Label><Input type="number" {...register('singlePlanDurationDays', { valueAsNumber: true })} /></div>
           <div className="space-y-2"><Label>Family Plan Duration (days)</Label><Input type="number" {...register('familyPlanDurationDays', { valueAsNumber: true })} /></div>
-          <div className="space-y-2"><Label>Max Family Members</Label><Input type="number" {...register('maxFamilyMembers', { valueAsNumber: true })} /></div>
+          <div className="space-y-2"><Label>Max Family Profiles (1 primary + N)</Label><Input type="number" {...register('maxFamilyMembers', { valueAsNumber: true })} /></div>
         </CardContent>
       </Card>
 

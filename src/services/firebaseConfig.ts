@@ -88,7 +88,8 @@ export const COLLECTIONS = {
   // Phase 4 — subscription & payments
   subscriptionPlans: 'subscription_plans',
   paymentRequests: 'payment_requests',
-  familyProfiles: 'family_profiles',
+  familyChildren: 'family_children',
+  devices: 'devices',
   premiumUnlockEvents: 'premium_unlock_events',
   // Phase 5 — gamification
   gamificationProfiles: 'gamification_profiles',

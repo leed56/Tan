@@ -18,6 +18,7 @@ import { useGamificationStore } from '../../store/gamificationStore';
 import { useAuthStore } from '../../store/authStore';
 import { useProfileStore } from '../../store/profileStore';
 import { useMissionStore } from '../../store/missionStore';
+import { useFamilyStore } from '../../store/familyStore';
 import { updateLeaderboardScore } from '../../services/leaderboardService';
 import { XPAnimationOverlay } from '../../components/ui/gamification/XPAnimationOverlay';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
@@ -52,11 +53,20 @@ export function QuizResultScreen({ navigation, route }: Props) {
   const uid = useAuthStore((s) => s.user?.uid);
   const profile = useProfileStore((s) => s.profile);
   const updateMissionProgress = useMissionStore((s) => s.updateProgress);
+  const activeChild = useFamilyStore((s) => s.activeChild());
+  const creditChildXp = useFamilyStore((s) => s.creditXp);
   const [showXpAnim, setShowXpAnim] = useState(xpEarned > 0);
 
   // On quiz completion: advance the daily streak, evaluate badge unlocks, persist
   // the gamification profile, update the leaderboard, and advance daily missions.
+  // When a Family-plan child profile is active ("Playing as"), XP routes to
+  // that child's own aggregate record instead — so switching profiles never
+  // mixes progress between family members.
   useEffect(() => {
+    if (activeChild) {
+      if (xpEarned > 0) creditChildXp(xpEarned).catch(() => {});
+      return;
+    }
     if (uid) {
       checkBadges(uid, {
         quizScorePercent: scorePercent,

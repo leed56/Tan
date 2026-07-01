@@ -10,12 +10,22 @@ import { RootNavigator } from './src/navigation/RootNavigator';
 import { initCrashReporting } from './src/services/crashReportingService';
 import { initOfflineSupport } from './src/services/offlineService';
 import { useAuthStore } from './src/store/authStore';
+import { useSubscriptionStore } from './src/store/subscriptionStore';
+import { useFamilyStore } from './src/store/familyStore';
+import { registerDevice } from './src/services/deviceService';
 
 // Keep the native splash visible until persisted state is rehydrated
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const hasHydrated = useAuthStore((s) => s.hasHydrated);
+  const uid = useAuthStore((s) => s.user?.uid);
+  const startSubscriptionListening = useSubscriptionStore((s) => s.startListening);
+  const stopSubscriptionListening = useSubscriptionStore((s) => s.stopListening);
+  const startFamilyListening = useFamilyStore((s) => s.startListening);
+  const stopFamilyListening = useFamilyStore((s) => s.stopListening);
+  const subscription = useSubscriptionStore((s) => s.subscription);
+  const planMaxDevices = useSubscriptionStore((s) => s.planMaxDevices);
 
   const onReady = useCallback(async () => {
     await SplashScreen.hideAsync().catch(() => {});
@@ -37,6 +47,33 @@ export default function App() {
     const t = setTimeout(() => SplashScreen.hideAsync().catch(() => {}), 3000);
     return () => clearTimeout(t);
   }, [hasHydrated]);
+
+  // Real-time subscription + family-profile listeners, app-wide — this is what
+  // makes admin-panel activation reflect instantly (no manual refresh needed),
+  // and keeps isPremium()/child profiles accurate on every screen, not just
+  // the ones that happen to fetch them on mount.
+  useEffect(() => {
+    if (!uid) {
+      stopSubscriptionListening();
+      stopFamilyListening();
+      return;
+    }
+    startSubscriptionListening(uid);
+    startFamilyListening(uid);
+    return () => {
+      stopSubscriptionListening();
+      stopFamilyListening();
+    };
+  }, [uid, startSubscriptionListening, stopSubscriptionListening, startFamilyListening, stopFamilyListening]);
+
+  // Device-limit registration — only meaningfully capped for paying plans;
+  // free accounts get a generous, effectively unlimited allowance here.
+  useEffect(() => {
+    if (!uid || !subscription) return;
+    const isPaid = subscription.status === 'active' || subscription.status === 'demo';
+    const maxDevices = isPaid ? planMaxDevices() : 99;
+    registerDevice(uid, maxDevices).catch(() => {});
+  }, [uid, subscription, planMaxDevices]);
 
   return (
     <GestureHandlerRootView style={styles.root}>

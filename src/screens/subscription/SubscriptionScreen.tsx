@@ -17,7 +17,7 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { SEED_PLANS, FEATURE_META } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
-import type { FeatureKey, PlanId } from '../../types/subscription';
+import type { FeatureKey, PlanId, BillingCycle } from '../../types/subscription';
 
 type Props = StackScreenProps<HomeStackParamList, 'SubscriptionScreen'>;
 
@@ -33,15 +33,21 @@ const ALL_FEATURES: FeatureKey[] = [
 export function SubscriptionScreen({ navigation }: Props) {
   const { isPremium, subscription, enableDemo } = useSubscriptionStore();
   const [selectedPlanId, setSelectedPlanId] = useState<PlanId>('family');
+  const [billingCycle, setBillingCycle] = useState<BillingCycle>('monthly');
 
   const alreadyPremium = isPremium();
   const selectedPlan = SEED_PLANS.find((p) => p.id === selectedPlanId)!;
+  const price = billingCycle === 'yearly' ? selectedPlan.priceYearly : selectedPlan.priceMonthly;
+  const yearlySavingsPct = Math.round(
+    100 - (selectedPlan.priceYearly / (selectedPlan.priceMonthly * 12)) * 100,
+  );
 
   const handleContinue = () => {
     navigation.navigate('PaymentMethodScreen', {
       planId: selectedPlanId,
       planTitle: selectedPlan.title,
-      priceMonthly: selectedPlan.priceMonthly,
+      billingCycle,
+      price,
     });
   };
 
@@ -75,7 +81,7 @@ export function SubscriptionScreen({ navigation }: Props) {
           <View style={styles.activeBanner}>
             <Ionicons name="checkmark-circle" size={16} color={COLORS.success} />
             <Text style={styles.activeBannerText}>
-              Premium active · {subscription?.planId === 'family' ? 'Family Pack' : 'Single User'}
+              Premium active · {subscription?.planId === 'family' ? 'Family Pack' : 'Standard'}
             </Text>
           </View>
         )}
@@ -96,6 +102,28 @@ export function SubscriptionScreen({ navigation }: Props) {
           ))}
         </View>
 
+        {/* Billing cycle toggle */}
+        <Text style={styles.sectionLabel}>Billing Cycle</Text>
+        <View style={styles.cycleToggle}>
+          {(['monthly', 'yearly'] as BillingCycle[]).map((cycle) => (
+            <TouchableOpacity
+              key={cycle}
+              style={[styles.cycleOption, billingCycle === cycle && styles.cycleOptionActive]}
+              onPress={() => setBillingCycle(cycle)}
+              activeOpacity={0.8}
+            >
+              <Text style={[styles.cycleText, billingCycle === cycle && styles.cycleTextActive]}>
+                {cycle === 'monthly' ? 'Monthly' : 'Yearly'}
+              </Text>
+              {cycle === 'yearly' && (
+                <View style={styles.saveBadge}>
+                  <Text style={styles.saveBadgeText}>Save {yearlySavingsPct}%</Text>
+                </View>
+              )}
+            </TouchableOpacity>
+          ))}
+        </View>
+
         {/* Plan cards */}
         <Text style={styles.sectionLabel}>Choose a Plan</Text>
         {SEED_PLANS.map((plan) => (
@@ -103,13 +131,14 @@ export function SubscriptionScreen({ navigation }: Props) {
             key={plan.id}
             plan={plan}
             isSelected={selectedPlanId === plan.id}
+            billingCycle={billingCycle}
             onSelect={(id) => setSelectedPlanId(id as PlanId)}
           />
         ))}
 
         {/* CTA */}
         <AppButton
-          title={`Subscribe · ${selectedPlan.priceMonthly.toLocaleString()} TSH/mo`}
+          title={`Subscribe · ${price.toLocaleString()} TSH/${billingCycle === 'yearly' ? 'yr' : 'mo'}`}
           onPress={handleContinue}
           variant="primary"
           icon={<Ionicons name="arrow-forward" size={18} color={COLORS.textPrimary} />}
@@ -199,6 +228,34 @@ const styles = StyleSheet.create({
     borderColor: COLORS.glassBorder,
   },
   divider: { height: 1, backgroundColor: COLORS.glassBorder, marginLeft: 52 },
+  cycleToggle: {
+    flexDirection: 'row',
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.glassBorder,
+    padding: 4,
+    gap: 4,
+  },
+  cycleOption: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    paddingVertical: SPACING.sm,
+    borderRadius: RADIUS.full,
+  },
+  cycleOptionActive: { backgroundColor: `${COLORS.primary}20` },
+  cycleText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
+  cycleTextActive: { color: COLORS.primary },
+  saveBadge: {
+    backgroundColor: `${COLORS.gold}20`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.xs,
+    paddingVertical: 2,
+  },
+  saveBadgeText: { color: COLORS.gold, fontSize: 10, fontWeight: TYPOGRAPHY.weights.bold },
   demoBtn: {
     alignItems: 'center',
     paddingVertical: SPACING.sm,

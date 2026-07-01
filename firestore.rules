@@ -50,9 +50,14 @@ service cloud.firestore {
         && request.resource.data.subscriptionStatus == 'free'
         && request.resource.data.role == 'student';
       allow update: if (isOwner(userId)
-        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'createdAt', 'phoneNumber']))
+        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'subscriptionPlan', 'billingCycle', 'createdAt', 'phoneNumber']))
         || isAdmin();
       allow delete: if isSuperAdmin();
+    }
+
+    // ── users/{userId}/devices — device-limit registration ────────────────────
+    match /users/{userId}/devices/{deviceId} {
+      allow read, write: if isOwner(userId) || isAdmin();
     }
 
     // ── quiz_progress ─────────────────────────────────────────────────────────
@@ -132,27 +137,20 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
-    // ── payment_requests ──────────────────────────────────────────────────────
+    // ── payment_requests — manual WhatsApp/mobile-money verification queue ────
     match /payment_requests/{requestId} {
       allow read: if isOwner(resource.data.userId) || isAdmin();
       allow create: if isSignedIn()
         && request.resource.data.userId == request.auth.uid
         && request.resource.data.status == 'pending'
-        && request.resource.data.amount in [5000, 8000]
+        && request.resource.data.billingCycle in ['monthly', 'yearly']
+        && request.resource.data.amount in [4999, 40000, 7999, 60000]
         && request.resource.data.provider in [
-             'mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl',
-             'google_play', 'apple_iap', 'azampay', 'selcom', 'bank_transfer'
+             'mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl', 'google_play', 'whatsapp'
            ];
       allow update: if isAdmin()
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['status', 'verifiedAt', 'verifiedBy', 'rejectionReason']);
-      allow delete: if isSuperAdmin();
-    }
-
-    // ── subscriptions ─────────────────────────────────────────────────────────
-    match /subscriptions/{subId} {
-      allow read: if isOwner(resource.data.userId) || isAdmin();
-      allow create, update: if isAdmin();
       allow delete: if isSuperAdmin();
     }
 
@@ -280,12 +278,14 @@ service cloud.firestore {
       allow write: if isOwner(userId);
     }
 
-    // ── family_profiles — owner-scoped (premium feature) ──────────────────────
-    match /family_profiles/{profileId} {
-      allow read: if isOwner(resource.data.familyOwnerId) || isAdmin();
-      allow create, update: if isSignedIn()
-        && request.resource.data.familyOwnerId == request.auth.uid;
-      allow delete: if isOwner(resource.data.familyOwnerId) || isAdmin();
+    // ── family_children — Family Pack student profiles (owner-scoped) ─────────
+    // No separate login: owned by the paying parent's real auth.uid (rootUid),
+    // never the (locally synthetic) profile being played as.
+    match /family_children/{childId} {
+      allow read: if isOwner(resource.data.rootUid) || isAdmin();
+      allow create: if isSignedIn() && request.resource.data.rootUid == request.auth.uid;
+      allow update: if isOwner(resource.data.rootUid) || isAdmin();
+      allow delete: if isOwner(resource.data.rootUid) || isAdmin();
     }
 
     // ── deny everything else ──────────────────────────────────────────────────

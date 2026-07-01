@@ -9,10 +9,17 @@ import { FEATURE_META } from '../../../utils/seedPlans';
 interface Props {
   plan: SubscriptionPlan;
   isSelected: boolean;
+  billingCycle?: 'monthly' | 'yearly';
   onSelect: (planId: string) => void;
 }
 
-export function PlanCard({ plan, isSelected, onSelect }: Props) {
+export function PlanCard({ plan, isSelected, billingCycle = 'monthly', onSelect }: Props) {
+  const price = billingCycle === 'yearly' ? plan.priceYearly : plan.priceMonthly;
+  const profileLabel =
+    plan.id === 'family'
+      ? '1 primary + 3 student profiles'
+      : `${plan.maxProfiles} profile`;
+
   return (
     <TouchableOpacity
       onPress={() => onSelect(plan.id)}
@@ -35,10 +42,10 @@ export function PlanCard({ plan, isSelected, onSelect }: Props) {
         </View>
         <View style={styles.pricing}>
           <Text style={styles.price}>
-            {plan.priceMonthly.toLocaleString()}
+            {price.toLocaleString()}
             <Text style={styles.currency}> TSH</Text>
           </Text>
-          <Text style={styles.period}>/month</Text>
+          <Text style={styles.period}>/{billingCycle === 'yearly' ? 'year' : 'month'}</Text>
         </View>
       </View>
 
@@ -53,7 +60,11 @@ export function PlanCard({ plan, isSelected, onSelect }: Props) {
         ))}
         <View style={styles.featureRow}>
           <Ionicons name="people-outline" size={14} color={COLORS.textMuted} />
-          <Text style={styles.featureText}>Up to {plan.maxProfiles} profile{plan.maxProfiles > 1 ? 's' : ''}</Text>
+          <Text style={styles.featureText}>{profileLabel}</Text>
+        </View>
+        <View style={styles.featureRow}>
+          <Ionicons name="phone-portrait-outline" size={14} color={COLORS.textMuted} />
+          <Text style={styles.featureText}>Up to {plan.maxDevices} devices</Text>
         </View>
       </View>
     </TouchableOpacity>

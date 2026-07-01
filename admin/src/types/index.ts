@@ -88,24 +88,29 @@ export interface Student {
   lastActiveAt?: Date;
   totalXp: number;
   currentStreak: number;
-  subscriptionStatus: 'free' | 'premium' | 'family';
+  // Canonical subscription state — matches firestore.rules' isPremium() check
+  // and what the client reads off users/{uid}. 'family'/'premium' are legacy
+  // values from before the pricing redesign and are treated as 'active'.
+  subscriptionStatus: 'free' | 'active' | 'premium' | 'family';
+  subscriptionPlan?: 'standard' | 'family';
   subscriptionExpiry?: Date;
   isSuspended: boolean;
 }
 
 export interface PaymentRequest {
   id: string;
-  studentId: string;
-  studentPhone: string;
-  planType: 'single' | 'family';
+  userId: string;
+  studentPhone: string | null;
+  planId: 'standard' | 'family';
+  billingCycle: 'monthly' | 'yearly';
+  provider: string;
   amount: number;
-  paymentMethod: string;
-  transactionRef: string;
+  transactionRef: string | null;
   status: 'pending' | 'verified' | 'rejected';
   submittedAt: Date;
   verifiedAt?: Date;
   verifiedBy?: string;
-  notes?: string;
+  rejectionReason?: string;
 }
 
 export interface AppSettings {

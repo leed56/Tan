@@ -51,9 +51,15 @@ export function StudentsPage() {
     onSuccess: () => { qc.invalidateQueries({ queryKey: ['students'] }); setConfirmAction(null); },
   });
 
+  const isActiveSub = (s: Student) => s.subscriptionStatus === 'active' || s.subscriptionStatus === 'premium' || s.subscriptionStatus === 'family';
+
   const filtered = students.filter((s) => {
     const matchSearch = !search || s.phone?.includes(search) || s.displayName?.toLowerCase().includes(search.toLowerCase());
-    const matchSub = filterSub === 'all' || s.subscriptionStatus === filterSub;
+    const matchSub =
+      filterSub === 'all' ||
+      (filterSub === 'free' && !isActiveSub(s)) ||
+      (filterSub === 'standard' && isActiveSub(s) && (s.subscriptionPlan ?? 'standard') === 'standard') ||
+      (filterSub === 'family' && isActiveSub(s) && s.subscriptionPlan === 'family');
     return matchSearch && matchSub;
   });
 
@@ -66,7 +72,11 @@ export function StudentsPage() {
         </div>
       ),
     },
-    { key: 'sub', header: 'Subscription', render: (r) => <StatusBadge status={r.subscriptionStatus} /> },
+    {
+      key: 'sub', header: 'Subscription', render: (r) => (
+        <StatusBadge status={isActiveSub(r) ? (r.subscriptionPlan ?? 'standard') : 'free'} />
+      ),
+    },
     { key: 'xp', header: 'XP', render: (r) => <span className="font-medium text-amber-400">{r.totalXp?.toLocaleString() ?? 0}</span> },
     { key: 'streak', header: 'Streak', render: (r) => <span>{r.currentStreak ?? 0} days</span> },
     { key: 'joined', header: 'Joined', render: (r) => <span className="text-xs text-muted-foreground">{format(r.createdAt, 'MMM d, yyyy')}</span> },
@@ -106,7 +116,7 @@ export function StudentsPage() {
             <Input placeholder="Search by name or phone..." value={search} onChange={(e) => setSearch(e.target.value)} className="pl-9 max-w-xs" />
           </div>
           <div className="flex gap-2">
-            {['all', 'free', 'premium', 'family'].map((s) => (
+            {['all', 'free', 'standard', 'family'].map((s) => (
               <Button key={s} size="sm" variant={filterSub === s ? 'default' : 'outline'} onClick={() => setFilterSub(s)}>
                 {s.charAt(0).toUpperCase() + s.slice(1)}
               </Button>
@@ -129,7 +139,7 @@ export function StudentsPage() {
                   <p className="font-semibold text-lg">{viewStudent.displayName || 'Unnamed'}</p>
                   <p className="text-sm text-muted-foreground">{viewStudent.phone}</p>
                   <div className="mt-1 flex gap-2">
-                    <StatusBadge status={viewStudent.subscriptionStatus} />
+                    <StatusBadge status={isActiveSub(viewStudent) ? (viewStudent.subscriptionPlan ?? 'standard') : 'free'} />
                     <StatusBadge status={viewStudent.isSuspended ? 'suspended' : 'active'} />
                   </div>
                 </div>
