@@ -43,9 +43,18 @@ export async function getQuestionsByLearningPack(
         orderBy('order'),
       ),
     );
-    if (snap.empty) return getSeedQuestionsByPack(learningPackId);
+    if (snap.empty) {
+      console.warn(
+        `[quizService] getQuestionsByLearningPack: Firestore query for learningPackId="${learningPackId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
+      return getSeedQuestionsByPack(learningPackId);
+    }
     return snap.docs.map((d) => d.data() as Question);
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[quizService] getQuestionsByLearningPack: Firestore query for learningPackId="${learningPackId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedQuestionsByPack(learningPackId);
   }
 }

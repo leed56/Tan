@@ -76,12 +76,19 @@ export async function getSubjectsByForm(formId: string): Promise<CurriculumSubje
       ),
     );
     if (snap.empty) {
+      console.warn(
+        `[curriculumService] getSubjectsByForm: Firestore query for formId="${formId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
       return getSeedSubjects()
         .filter((s) => s.formId === formId)
         .sort((a, b) => a.order - b.order);
     }
     return snap.docs.map((d) => d.data() as CurriculumSubject);
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[curriculumService] getSubjectsByForm: Firestore query for formId="${formId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedSubjects()
       .filter((s) => s.formId === formId)
       .sort((a, b) => a.order - b.order);
@@ -110,12 +117,19 @@ export async function getTopicsBySubject(
       ),
     );
     if (snap.empty) {
+      console.warn(
+        `[curriculumService] getTopicsBySubject: Firestore query for formId="${formId}" subjectId="${subjectId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
       return getSeedTopics()
         .filter((t) => t.formId === formId && t.subjectId === subjectId)
         .sort((a, b) => a.order - b.order);
     }
     return snap.docs.map((d) => d.data() as CurriculumTopic);
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[curriculumService] getTopicsBySubject: Firestore query for formId="${formId}" subjectId="${subjectId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedTopics()
       .filter((t) => t.formId === formId && t.subjectId === subjectId)
       .sort((a, b) => a.order - b.order);
@@ -148,6 +162,9 @@ export async function getLearningPacksByTopic(
       ),
     );
     if (snap.empty) {
+      console.warn(
+        `[curriculumService] getLearningPacksByTopic: Firestore query for formId="${formId}" subjectId="${subjectId}" topicId="${topicId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
       return getSeedLearningPacks()
         .filter(
           (p) =>
@@ -161,7 +178,11 @@ export async function getLearningPacksByTopic(
       const data = d.data() as CurriculumLearningPack & { xpReward?: number };
       return { ...data, completionXP: data.completionXP ?? data.xpReward ?? 0 };
     });
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[curriculumService] getLearningPacksByTopic: Firestore query for formId="${formId}" subjectId="${subjectId}" topicId="${topicId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedLearningPacks()
       .filter(
         (p) => p.formId === formId && p.subjectId === subjectId && p.topicId === topicId,
