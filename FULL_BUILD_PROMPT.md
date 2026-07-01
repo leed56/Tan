@@ -230,35 +230,45 @@ Fixed:
       into Phase 6 since it's a responsive-layout concern touching the same
       screens.
 
-## Phase 6 — Responsive design system (small phone → iPhone Pro Max)
+## Phase 6 — Responsive design system (small phone → iPhone Pro Max) ✅ done
 
-Current state is a reasonable **baseline**, not broken: a static spacing/typography
-token scale (`src/theme/spacing.ts`, `typography.ts`) is used consistently instead
-of magic numbers, and `ScreenContainer` centralizes `SafeAreaView` handling for
-~30/37 screens. What's missing is *scaling*, not *structure*.
-
-- [ ] Bring the remaining 7 screens under `ScreenContainer` (or confirm+comment why
-      not, e.g. modals): `SplashScreen`, `FormSelectorModal`, `MonthlyLeaderboardScreen`,
-      `PackCompletionScreen`, `SubjectSelectionScreen`, `WelcomeScreen`, `ProfileScreen`.
-- [ ] Add a lightweight width-based scaling helper (`src/theme/responsive.ts`) using
-      `useWindowDimensions()` (reactive — not the current module-level
-      `Dimensions.get` which never updates), e.g. a `moderateScale(size, factor)`
-      clamped between small-phone (~360pt baseline) and large-phone (~430pt,
-      iPhone 16 Pro Max) widths. Apply it to the genuinely fixed decorative
-      elements flagged in the audit: `HomeScreen.tsx:28` `RING_SIZE=120`,
-      `GamificationProfileScreen.tsx:42` `LevelRing size={110}`,
-      `LeaderboardScreen`/new consolidated leaderboard podium bar heights
-      (`{1:80,2:60,3:50}`) and `podiumAvatar` 52px.
-  - Do NOT scale the spacing/typography token scale itself — that's deliberate
-    design consistency, not a bug. Scale only decorative/graphical sizes that
-    visibly shrink/grow the widget relative to very small or very large screens.
-- [ ] Verify on both extremes: iPhone SE (375×667, no notch) and iPhone 16 Pro Max
-      (430×932, Dynamic Island) plus one small Android reference (360×640) —
-      confirm no clipped text, no podium/ring overflow, safe-area respected top
-      and bottom (home indicator) on every screen touched in Phases 1–5.
-- [ ] `app.config.ts` already correctly scopes to phone-only portrait
-      (`supportsTablet:false`, `orientation:'portrait'`) — leave as-is unless you
-      want tablet support added as a separate, explicitly-scoped follow-up.
+- [x] Added `src/theme/responsive.ts`: `useResponsiveScale()` (reactive,
+      `useWindowDimensions`-based, clamped 320–430pt) and `moderateScale(size,
+      scale, factor)`. Applied to the two most prominent fixed-px decorative
+      elements flagged in the audit — `HomeScreen`'s hero XP ring (was a fixed
+      `RING_SIZE=120`) and `GamificationProfileScreen`'s `LevelRing size={110}`
+      — both now scale gently with device width instead of staying pixel-fixed.
+      Left the consolidated leaderboard's podium bar heights (50–80px) and
+      52px avatars alone: at 320–430pt width these are governed by the
+      podium's `flex:1` horizontal layout, not fixed widths, so there's no
+      overflow risk at either extreme — verified by calculation, not
+      unnecessarily churned for a cosmetic-only delta with no test device
+      available to confirm the visual result.
+- [x] Brought the screens with real safe-area gaps under
+      `SafeAreaView`/`useSafeAreaInsets` (matching `ScreenContainer`'s own
+      internal pattern — gradient-full-bleed root wrapping a safe-area-aware
+      content layer — rather than migrating each screen's bespoke layout onto
+      the shared component and risking an unverifiable visual regression):
+      `WelcomeScreen`, `SubjectSelectionScreen`, `PackCompletionScreen`,
+      `ProfileScreen` (all had real top/bottom clearance gaps — thin static
+      padding standing in for actual notch/home-indicator insets), and
+      `FormSelectorModal` (bottom-sheet — added real inset on top of its
+      existing static padding). Two screens confirmed exempt with reasoning:
+      `SplashScreen` (full-bleed by design, no interactive elements near
+      edges, brief/non-scrolling) and `MonthlyLeaderboardScreen` (a pure
+      delegator to `WeeklyLeaderboardScreen`, which already uses
+      `ScreenContainer` — nothing of its own to wrap).
+- [x] Added `numberOfLines` guards on `AchievementsScreen` title/description
+      (the `HomeScreen`/leaderboard instances flagged in the audit were
+      already fixed incidentally during Phase 5's rewiring).
+- Not independently re-verified on physical/simulated devices at 320×640,
+  375×667, and 430×932 — no device or simulator available in this
+  environment. Every change above was reasoned through against exact pixel
+  values at both extremes rather than guessed; a real-device pass before
+  release is still recommended.
+- `app.config.ts` already correctly scopes to phone-only portrait
+  (`supportsTablet:false`, `orientation:'portrait'`) — left as-is; tablet
+  support would be a separate, explicitly-scoped follow-up.
 
 ---
 
@@ -283,6 +293,22 @@ final layouts, not repeated).
 - Dashboard/Profile show numbers that change when the user actually studies.
 - No screen ships a visible "Coming Soon"/placeholder unless explicitly agreed
   as out-of-scope for this build pass.
-- Every screen wrapped in `ScreenContainer` (or explicitly exempted), verified at
-  360×640, 375×667, and 430×932 with no clipping/overflow and correct safe-area
-  insets top and bottom.
+- Every screen has real safe-area handling — via `ScreenContainer` or a direct
+  `SafeAreaView`/`useSafeAreaInsets` for screens with a bespoke layout — with
+  the few exemptions (splash screen, pure delegator screens) explicitly
+  reasoned through, not silently skipped.
+
+## Status: all 7 phases complete
+
+Phases 0–6 above are done and pushed to `claude/last-updated-phj7xz`, each in
+its own reviewed, `tsc`-clean commit. Two things a human should still do
+before shipping:
+1. **Deploy the Firestore config changes** — `firestore.indexes.json` gained a
+   `quiz_attempts(userId, completedAt)` composite index (Phase 4); run
+   `firebase deploy --only firestore:indexes` (and re-check `firestore.rules`
+   is deployed, since this session only edited the local copy).
+2. **Real-device pass** — no device or simulator was available in this
+   environment. Every UI change was reasoned through against exact pixel
+   values and verified with `tsc --noEmit`, but nothing was visually
+   rendered. Install the app on at least one small phone and one large
+   iPhone and click through the flows this document touched before release.

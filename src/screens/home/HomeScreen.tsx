@@ -5,7 +5,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  Dimensions,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -18,6 +17,7 @@ import { StreakFireCard } from '../../components/ui/gamification/StreakFireCard'
 import { CoinBalanceChip } from '../../components/ui/gamification/CoinBalanceChip';
 import { PremiumLockCard } from '../../components/ui/PremiumLockCard';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
+import { useResponsiveScale, moderateScale } from '../../theme/responsive';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
@@ -28,11 +28,7 @@ import { DAILY_MISSIONS } from '../../utils/seedBadges';
 import { SUBJECTS, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
 
-const { width } = Dimensions.get('window');
-const RING_SIZE = 120;
 const RING_STROKE = 12;
-const RING_R = (RING_SIZE - RING_STROKE) / 2;
-const RING_CIRCUMFERENCE = 2 * Math.PI * RING_R;
 
 type Props = StackScreenProps<HomeStackParamList, 'Home'>;
 
@@ -56,8 +52,13 @@ export function HomeScreen({ navigation }: Props) {
     fetchLeaderboard('national');
   }, [uid, fetchProfile, fetchProgress, fetchMissions, fetchLeaderboard]);
 
+  const scale = useResponsiveScale();
+  const ringSize = moderateScale(120, scale);
+  const ringR = (ringSize - RING_STROKE) / 2;
+  const ringCircumference = 2 * Math.PI * ringR;
+
   const progressPercent = getXpProgressPercent(xp);
-  const strokeDash = RING_CIRCUMFERENCE * (1 - progressPercent / 100);
+  const strokeDash = ringCircumference * (1 - progressPercent / 100);
 
   const greeting = getGreeting();
   const name = profile?.name ?? 'Student';
@@ -122,28 +123,28 @@ export function HomeScreen({ navigation }: Props) {
         >
           <View style={styles.heroLeft}>
             {/* Circular XP ring */}
-            <View style={styles.ringWrapper}>
-              <Svg width={RING_SIZE} height={RING_SIZE}>
+            <View style={[styles.ringWrapper, { width: ringSize, height: ringSize }]}>
+              <Svg width={ringSize} height={ringSize}>
                 <Circle
-                  cx={RING_SIZE / 2}
-                  cy={RING_SIZE / 2}
-                  r={RING_R}
+                  cx={ringSize / 2}
+                  cy={ringSize / 2}
+                  r={ringR}
                   stroke={COLORS.bgCardLight}
                   strokeWidth={RING_STROKE}
                   fill="none"
                 />
                 <Circle
-                  cx={RING_SIZE / 2}
-                  cy={RING_SIZE / 2}
-                  r={RING_R}
+                  cx={ringSize / 2}
+                  cy={ringSize / 2}
+                  r={ringR}
                   stroke={COLORS.primary}
                   strokeWidth={RING_STROKE}
                   fill="none"
-                  strokeDasharray={RING_CIRCUMFERENCE}
+                  strokeDasharray={ringCircumference}
                   strokeDashoffset={strokeDash}
                   strokeLinecap="round"
                   rotation="-90"
-                  origin={`${RING_SIZE / 2}, ${RING_SIZE / 2}`}
+                  origin={`${ringSize / 2}, ${ringSize / 2}`}
                 />
               </Svg>
               <View style={styles.ringCenter}>
@@ -346,7 +347,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(123,111,242,0.3)',
   },
   heroLeft: {},
-  ringWrapper: { position: 'relative', width: RING_SIZE, height: RING_SIZE, justifyContent: 'center', alignItems: 'center' },
+  ringWrapper: { position: 'relative', justifyContent: 'center', alignItems: 'center' },
   ringCenter: { position: 'absolute', alignItems: 'center' },
   ringLevel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.medium },
   ringLevelNum: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes['2xl'], fontWeight: TYPOGRAPHY.weights.extrabold, lineHeight: TYPOGRAPHY.sizes['2xl'] * 1.1 },

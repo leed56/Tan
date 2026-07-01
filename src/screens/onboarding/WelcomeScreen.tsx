@@ -12,6 +12,7 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { AppButton } from '../../components/ui/AppButton';
@@ -60,6 +61,7 @@ export function WelcomeScreen({ navigation }: Props) {
   return (
     <LinearGradient colors={GRADIENTS.background} style={styles.root}>
       <StatusBar style="light" />
+      <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       <View style={styles.container}>
         {/* Header */}
         <View style={styles.header}>
@@ -142,12 +144,14 @@ export function WelcomeScreen({ navigation }: Props) {
           />
         </View>
       </View>
+      </SafeAreaView>
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
+  safeArea: { flex: 1 },
   container: {
     flex: 1,
     paddingHorizontal: SPACING.screenPadding,

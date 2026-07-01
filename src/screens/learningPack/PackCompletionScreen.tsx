@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Animated, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -44,6 +45,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
 
   return (
     <LinearGradient colors={GRADIENTS.background} style={styles.root}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       <ConfettiOverlay visible />
       {/* Close button */}
       <TouchableOpacity
@@ -145,6 +147,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
           />
         </Animated.View>
       </View>
+      </SafeAreaView>
 
       <LevelUpModal
         visible={pendingLevelUp !== null}
@@ -162,6 +165,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
+  safeArea: { flex: 1 },
   closeBtn: {
     position: 'absolute',
     top: SPACING['3xl'],

@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { ProfileStackParamList } from '../../types';
 import { AchievementBadge } from '../../components/ui/AchievementBadge';
@@ -49,6 +50,7 @@ export function ProfileScreen({ navigation }: Props) {
   const subjectsStarted = new Set(progressRecords.map((r) => r.subjectId)).size;
 
   return (
+    <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
     <ScrollView
       style={styles.root}
       contentContainerStyle={styles.content}
@@ -214,10 +216,12 @@ export function ProfileScreen({ navigation }: Props) {
 
       <View style={{ height: SPACING['2xl'] }} />
     </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: { flex: 1, backgroundColor: COLORS.bgDark },
   root: { flex: 1, backgroundColor: COLORS.bgDark },
   content: { flexGrow: 1 },
   heroBanner: {

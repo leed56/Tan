@@ -11,6 +11,7 @@ import { CoinBalanceChip } from '../../components/ui/gamification/CoinBalanceChi
 import { BadgeCard } from '../../components/ui/gamification/BadgeCard';
 import { MissionProgressBar } from '../../components/ui/gamification/MissionProgressBar';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
+import { useResponsiveScale, moderateScale } from '../../theme/responsive';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useAuthStore } from '../../store/authStore';
 import { getLevelProgress } from '../../utils/xpUtils';
@@ -21,6 +22,8 @@ type Props = StackScreenProps<HomeStackParamList, 'GamificationProfile'>;
 export function GamificationProfileScreen({ navigation }: Props) {
   const user = useAuthStore((s) => s.user);
   const { xp, level, streak, coins, badges, earnedBadgeIds, fetchProfile } = useGamificationStore();
+  const scale = useResponsiveScale();
+  const ringSize = moderateScale(110, scale);
 
   useEffect(() => {
     if (user?.uid) fetchProfile(user.uid);
@@ -39,7 +42,7 @@ export function GamificationProfileScreen({ navigation }: Props) {
 
         {/* Hero row */}
         <View style={styles.heroRow}>
-          <LevelRing xp={xp} level={level} size={110} color={COLORS.primary} />
+          <LevelRing xp={xp} level={level} size={ringSize} color={COLORS.primary} />
           <View style={styles.heroStats}>
             <Text style={styles.xpValue}>{formatXp(xp)} XP</Text>
             <Text style={styles.xpSub}>Level {level} · {getLevelProgress(xp).percent}% to next</Text>

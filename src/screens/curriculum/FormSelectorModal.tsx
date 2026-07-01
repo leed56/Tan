@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { AppRootStackParamList } from '../../types';
 import { FormSelector } from '../../components/ui/curriculum/FormSelector';
@@ -38,6 +39,7 @@ const FORM_DESCRIPTIONS: Record<string, { desc: string; topics: string[] }> = {
 
 export function FormSelectorModal({ navigation }: Props) {
   const { forms, selectedFormId, setSelectedForm } = useCurriculumStore();
+  const insets = useSafeAreaInsets();
 
   const handleSelect = (form: CurriculumForm) => {
     setSelectedForm(form.id);
@@ -52,7 +54,7 @@ export function FormSelectorModal({ navigation }: Props) {
       {/* Dim overlay tap to close */}
       <TouchableOpacity style={styles.backdrop} onPress={() => navigation.goBack()} />
 
-      <View style={styles.sheet}>
+      <View style={[styles.sheet, { paddingBottom: SPACING['3xl'] + insets.bottom }]}>
         {/* Handle */}
         <View style={styles.handle} />
 
