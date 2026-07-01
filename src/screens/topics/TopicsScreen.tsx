@@ -38,14 +38,14 @@ export function TopicsScreen({ navigation, route }: Props) {
   const { getTopicProgress } = useProgressStore();
 
   const formId = routeFormId ?? selectedFormId;
-  const topics = topicsBySubject[subjectId] ?? [];
+  const topics = topicsBySubject[`${formId}::${subjectId}`] ?? [];
 
   useEffect(() => {
     fetchTopics(formId, subjectId);
   }, [formId, subjectId, fetchTopics]);
 
   const handleRefresh = useCallback(() => {
-    fetchTopics(formId, subjectId);
+    fetchTopics(formId, subjectId, true);
   }, [formId, subjectId, fetchTopics]);
 
   const enrichedTopics = useMemo(
@@ -76,7 +76,7 @@ export function TopicsScreen({ navigation, route }: Props) {
       <ScreenContainer>
         <ErrorState
           message={error}
-          onRetry={() => { clearError(); fetchTopics(formId, subjectId); }}
+          onRetry={() => { clearError(); fetchTopics(formId, subjectId, true); }}
         />
       </ScreenContainer>
     );
