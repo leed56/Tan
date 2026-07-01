@@ -109,21 +109,6 @@ export interface LearningPack {
   estimatedMinutes: number;
 }
 
-// ─── Leaderboard ─────────────────────────────────────────────────────────────
-
-export type LeaderboardTab = 'national' | 'school' | 'friends';
-
-export interface LeaderboardEntry {
-  uid: string;
-  name: string;
-  avatarId: AvatarId;
-  form: FormLevel;
-  school: string;
-  xp: number;
-  rank: number;
-  weeklyXp: number;
-}
-
 // ─── Analytics ───────────────────────────────────────────────────────────────
 
 export interface SubjectMastery {

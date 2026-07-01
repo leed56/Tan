@@ -84,7 +84,7 @@ Everything else in Phase 0 is done. Move straight to Phase 1.
 
 ---
 
-## Phase 1 — Missing quiz screens (Summary + HOQ)
+## Phase 1 — Missing quiz screens (Summary + HOQ) ✅ done (commit `2aeb8eb`)
 
 Currently `QuizType` (`src/types/quiz.ts:1`) is only `'mcq'|'fib'|'tf'`; summary/hoq
 packs are premium-gated and dead-end at a placeholder. This is a content-completeness
@@ -135,7 +135,18 @@ bug, not just polish — 30% of the 19,584 authored items are unreachable.
       conditions are driven by real store data end-to-end (they read progress, but
       verify against Phase 0's real persistence, not stale local state).
 
-## Phase 3 — Leaderboard consolidation
+## Phase 3 — Leaderboard consolidation ✅ done
+
+Shared `LeaderboardBoard` component now backs the Leaderboard tab root and
+the pushed Weekly/Monthly Leaderboard screens — one real data source
+(`useLeaderboardStore`), uid-based "is this me" highlighting, podium header
+for the top 3. Deleted the old hardcoded-`DEMO_LEADERBOARD` tab screen, its
+dead `LeaderboardCard` component, and the unused "Friends" tab (was a
+permanent `[]` stub labeled "Coming in Phase 2" — removed rather than
+shipped fake). Also fixed `MonthlyLeaderboardScreen`, which called a store
+`setTab()` action its child never actually read, so it never opened on the
+monthly tab.
+
 
 - [ ] Pick ONE leaderboard experience and delete the other. Recommendation: keep
       `WeeklyLeaderboardScreen`'s tab taxonomy (Weekly/Monthly/All-Time/School) and
