@@ -136,6 +136,7 @@ export function TopicsScreen({ navigation, route }: Props) {
             <EmptyCurriculumState
               variant="topics"
               onAction={() => navigation.goBack()}
+              onRetry={() => fetchTopics(formId, subjectId, true)}
             />
           }
           renderItem={({ item }) => (

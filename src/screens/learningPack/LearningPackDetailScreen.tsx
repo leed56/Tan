@@ -143,7 +143,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
       <ScreenContainer>
         <ErrorState
           message={error}
-          onRetry={() => { clearError(); fetchLearningPacks(formId, subjectId, topicId); }}
+          onRetry={() => { clearError(); fetchLearningPacks(formId, subjectId, topicId, true); }}
         />
       </ScreenContainer>
     );
@@ -185,6 +185,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
           <EmptyCurriculumState
             variant="packs"
             onAction={() => navigation.goBack()}
+            onRetry={() => fetchLearningPacks(formId, subjectId, topicId, true)}
           />
         </ScrollView>
       ) : (

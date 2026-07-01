@@ -10,6 +10,11 @@ interface EmptyCurriculumStateProps {
   variant: Variant;
   formName?: string;
   onAction?: () => void;
+  /** Forces a fresh fetch instead of navigating away — surfaced separately
+   * from onAction so an empty result (as opposed to a thrown error, which
+   * already has its own "Try Again" via ErrorState) is still recoverable
+   * without a full app reload. */
+  onRetry?: () => void;
 }
 
 const CONFIG: Record<Variant, { icon: string; title: string; desc: string; action: string }> = {
@@ -43,6 +48,7 @@ export function EmptyCurriculumState({
   variant,
   formName,
   onAction,
+  onRetry,
 }: EmptyCurriculumStateProps) {
   const c = CONFIG[variant];
   return (
@@ -54,11 +60,14 @@ export function EmptyCurriculumState({
       <Text style={styles.desc}>
         {formName ? `${formName}: ${c.desc}` : c.desc}
       </Text>
-      {onAction && (
-        <View style={styles.action}>
+      <View style={styles.actionRow}>
+        {onRetry && (
+          <AppButton title="Retry" onPress={onRetry} fullWidth={false} size="md" variant="primary" />
+        )}
+        {onAction && (
           <AppButton title={c.action} onPress={onAction} fullWidth={false} size="md" variant="secondary" />
-        </View>
-      )}
+        )}
+      </View>
     </View>
   );
 }
@@ -95,5 +104,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: TYPOGRAPHY.sizes.base * 1.6,
   },
-  action: { marginTop: SPACING.sm },
+  actionRow: { flexDirection: 'row', gap: SPACING.sm, marginTop: SPACING.sm },
 });

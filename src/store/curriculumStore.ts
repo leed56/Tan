@@ -33,9 +33,9 @@ interface CurriculumStore {
   // Actions
   setSelectedForm: (formId: string) => void;
   fetchForms: () => Promise<void>;
-  fetchSubjects: (formId: string) => Promise<void>;
+  fetchSubjects: (formId: string, force?: boolean) => Promise<void>;
   fetchTopics: (formId: string, subjectId: string, force?: boolean) => Promise<void>;
-  fetchLearningPacks: (formId: string, subjectId: string, topicId: string) => Promise<void>;
+  fetchLearningPacks: (formId: string, subjectId: string, topicId: string, force?: boolean) => Promise<void>;
   clearError: () => void;
 }
 
@@ -69,9 +69,11 @@ export const useCurriculumStore = create<CurriculumStore>((set, get) => ({
     }
   },
 
-  fetchSubjects: async (formId) => {
-    // Return cached if available
-    if (get().subjectsByForm[formId]) return;
+  fetchSubjects: async (formId, force = false) => {
+    // Return cached if available — unless forced, an empty array from an
+    // earlier transient/unauthenticated fetch would otherwise be cached
+    // forever with no way to retry short of a full app reload.
+    if (!force && get().subjectsByForm[formId]) return;
     set({ loadingSubjects: true, error: null });
     try {
       const subjects = await getSubjectsByForm(formId);
@@ -103,8 +105,12 @@ export const useCurriculumStore = create<CurriculumStore>((set, get) => ({
     }
   },
 
-  fetchLearningPacks: async (formId, subjectId, topicId) => {
-    if (get().packsByTopic[topicId]) return;
+  fetchLearningPacks: async (formId, subjectId, topicId, force = false) => {
+    // Same class of bug as topicsBySubject: an empty array from an earlier
+    // failed/transient fetch (e.g. before a real auth token was available)
+    // is truthy, so without `force` a stale empty result would be cached
+    // forever with no way to retry short of a full app reload.
+    if (!force && get().packsByTopic[topicId]) return;
     set({ loadingPacks: true, error: null });
     try {
       const packs = await getLearningPacksByTopic(formId, subjectId, topicId);
