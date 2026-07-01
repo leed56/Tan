@@ -1,5 +1,5 @@
 /**
- * Admin-SDK curriculum seeder for tanza-9b182.
+ * Admin-SDK curriculum seeder for tanzania-81c27.
  *
  * Uses the Firebase Admin SDK (service account) so it bypasses Firestore rules,
  * which only allow content writes from admin/content-editor accounts. Seeds the
@@ -24,7 +24,7 @@ import {
   buildSeedLearningPacks,
 } from '../src/utils/seedData.ts';
 
-const PROJECT = process.env.SEED_PROJECT_ID || 'tanza-9b182';
+const PROJECT = process.env.SEED_PROJECT_ID || 'tanzania-81c27';
 
 admin.initializeApp({
   credential: admin.credential.cert(process.env.GOOGLE_APPLICATION_CREDENTIALS),

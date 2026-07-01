@@ -6,8 +6,8 @@ import { getFirestore, collection, getDocs, query, where, orderBy, limit } from 
 
 const app = initializeApp({
   apiKey: 'AIzaSyA9NxggtzrTbs24_5gwwbqKwxFHPa9EV4k',
-  authDomain: 'tanza-9b182.firebaseapp.com',
-  projectId: 'tanza-9b182',
+  authDomain: 'tanzania-81c27.firebaseapp.com',
+  projectId: 'tanzania-81c27',
 });
 const db = getFirestore(app);
 

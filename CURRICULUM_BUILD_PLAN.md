@@ -1,5 +1,13 @@
 # Soma AI — Curriculum & Quiz Build Plan
 
+> **2026-07-01 — project switched to `tanzania-81c27`.** Every "seeded to
+> tanza-9b182" line below reflects what actually happened at the time — do
+> not rewrite that history. `.firebaserc` and all `scripts/*.mjs` defaults
+> now point at `tanzania-81c27`, but **the content has not been re-seeded
+> there yet**. Until someone runs `seed-content.mjs` (all files) against the
+> new project with valid `GOOGLE_APPLICATION_CREDENTIALS`, the app will find
+> Firestore empty on `tanzania-81c27` and fall back to local seed/demo data.
+
 Build the full Tanzania NECTA O-Level curriculum (13 subjects × Forms 1–4) and
 quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 
