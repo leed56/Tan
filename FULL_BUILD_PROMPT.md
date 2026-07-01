@@ -31,50 +31,56 @@ survive a restart.
 
 ## Phase 0 — Backend persistence & security (P0/P1 from AUDIT_FINDINGS.md)
 
-Do this before touching UI. Reference `AUDIT_FINDINGS.md` for full detail; summary
-of the fix set:
+**Status: already done.** Re-verified against current `git log` — every P0/P1/P2
+item below was fixed in a prior pass (commits `e235dee`…`d3df1b2`), independent of
+this session. `AUDIT_FINDINGS.md` is now a stale diagnosis snapshot, not current
+state. Confirmed fixed:
 
-- [ ] Remove secret `EXPO_PUBLIC_*` vars from `.env`; proxy Gemini/Selcom/Azampay
-      through Cloud Functions.
-- [ ] Fix unguarded `data[tab].length` crash in `leaderboardStore.ts:24`.
-- [ ] Fix `usageStore.ts` type/limits to include `summary`/`hoq` (NaN crash risk).
-- [ ] One source of truth for Firestore collection names that **matches
-      `firestore.rules`** — currently `leaderboard_scores` vs `leaderboard`,
-      `explanation_feedback` vs `ai_feedback`, `daily_usage`/`student_progress`/
-      `quiz_attempts`/`quiz_answers`/`family_profiles` all denied by name mismatch.
-- [ ] Wire `authStore` with `persist` + real `onAuthStateChanged`; replace faked
-      OTP (`DEMO_OTP='123456'`, `demo_user_001`) with real `phoneAuthService`
-      behind an explicit `DEMO_MODE` flag (default OFF for production builds).
-- [ ] Write `users/{uid}` on profile creation with the exact shape the rules
-      require (`displayName`, `subscriptionStatus:'free'`, `role:'student'`, etc).
-- [ ] Route XP/coins/streak/badges through the already-written
-      `awardXP`/`persistProfile`/`checkStreak`/`checkBadges` — currently store-only,
-      zero callers. Fix EAT (UTC+3) day-boundary bug in streak calc.
-      Remove the double-XP-award bug in `PackCompletionScreen.tsx:30-31`.
-      Unify the two conflicting level curves (`XPProgressBar`'s flat 500/level vs
-      `LEVEL_THRESHOLDS`).
-- [ ] Point leaderboard writes at `leaderboard/{userId}` with `increment()`, add
-      weekly/monthly reset; call on every XP gain instead of demo fallback.
-- [ ] Fix daily-missions write path to the `/progress/{uid}` subcollection the
-      rules actually allow; call `updateProgress` from quiz completion.
-- [ ] Map `xpReward`↔`completionXP` field mismatch; normalize TF answer
-      comparison (case-insensitive); form-scope onboarding subject ids
-      (`mathematics` → `form_1_mathematics`) and persist selection.
-- [ ] Fix AI-explanation cache (`userId` field, premium gate source) and surface
-      Gemini 429 rate-limit errors to the user instead of silently degrading.
-- [ ] One source of truth for premium status: an activation Cloud Function/webhook
-      sets `users.subscriptionStatus`; app and rules both read that, not two
-      different local stores.
-- [ ] Add the 3 missing composite Firestore indexes (`leaderboard_scores`,
-      `student_progress`, `daily_missions` date+userId).
-- [ ] Delete dead code: `aiExplanationService.ts`, `quizEngineService.ts` stubs;
-      wire or delete `offlineService`/`crashReportingService`/`revenueCatService`
-      (currently zero callers on all three).
+- [x] Secrets removed from `EXPO_PUBLIC_*` (`e235dee`).
+- [x] `leaderboardStore.ts` unguarded-length crash fixed (`2d2ca2c`).
+- [x] `usageStore.ts` NaN/summary+hoq limits fixed (`f9b176e`).
+- [x] `payment_requests` provider allowlist aligned (`d554384`).
+- [x] `ai_feedback` collection + numeric rating fixed (`3a3a340`).
+- [x] Owner-scoped rules added for all app collections incl.
+      `leaderboard_scores`, `student_progress`, `quiz_attempts`, `quiz_answers`,
+      `daily_usage`, `user_daily_missions`, `user_badges`, `family_profiles`
+      (`dee6f20`) — and `src/services/firebaseConfig.ts`'s `COLLECTIONS` constant
+      already matches every one of these rule paths (verified directly).
+- [x] Auth session persisted, `users/{uid}` written on profile creation,
+      form-scoped subject ids (`d09c56b`); anonymous Firebase session backs
+      curriculum reads (`467e0ff`, `c4fd9c0`).
+- [x] XP/coins/streak persisted, level curve unified, EAT timezone fixed
+      (`7807094`); leaderboard + daily missions wired on quiz completion
+      (`b2900dc`).
+- [x] Pack XP double-award fixed, TF scoring normalized, empty-pack state
+      handled (`ca97ba9`).
+- [x] Composite indexes added (`69caef3`).
+- [x] AI explanation cache `userId` fixed (`36483d8`); crash/offline subsystems
+      initialized in `App.tsx`, AI rate-limit surfaced (`fffaee0`).
+- [x] Dead stub services deleted, dead route removed, topics rule fixed
+      (`d3df1b2`).
 
-**Decision needed before this phase starts** (see questions below): should real
-phone-auth OTP and real mobile-money payments go live now, or should Phase 0 wire
-everything *except* flip DEMO_MODE/payments live, so the app is release-ready but
-you control the go-live switch?
+**Genuinely still open, and gated on your "wire but keep demo mode" decision:**
+
+- [ ] Real phone-OTP: `OTPVerifyScreen.tsx` still checks a hardcoded
+      `DEMO_OTP='123456'` (`src/constants/index.ts:7`) and `useAuth.ts:20`
+      returns a fixed `'demo_user_001'` uid — there is no `DEMO_MODE` flag yet,
+      demo is unconditionally the only path. Build out the real
+      `phoneAuthService` call path (it already exists as dead code per the
+      original audit) behind an explicit `EXPO_PUBLIC_DEMO_MODE` flag that
+      defaults **on**, so nothing changes for current testers until you flip it.
+- [ ] Real payments: `PaymentMethodScreen`/`tanzaniaPaymentService` still
+      simulate success; wire the real Selcom/Azampay call behind the same
+      `DEMO_MODE` flag, server-side secrets only (never `EXPO_PUBLIC_*`).
+- [ ] `revenueCatService.initRevenueCat` still has zero callers — wire it only
+      if/when IAP (as opposed to direct mobile-money) ships; otherwise leave
+      unused and out of scope.
+- [ ] One remaining data-shape check: confirm `subscriptions/{uid}` activation
+      still requires `isAdmin()` per rules (`subscriptionService.ts:135-159`
+      finding #23) — client-side "activate" writes would still be silently
+      denied; needs a Cloud Function/webhook, independent of DEMO_MODE.
+
+Everything else in Phase 0 is done. Move straight to Phase 1.
 
 ---
 
