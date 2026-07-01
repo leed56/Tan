@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, TYPOGRAPHY } from '../theme';
 import type {
@@ -50,6 +51,8 @@ import { ExplanationScreen } from '../screens/explanation/ExplanationScreen';
 import { LearningPackReviewScreen } from '../screens/explanation/LearningPackReviewScreen';
 import { WrongAnswerReviewScreen } from '../screens/explanation/WrongAnswerReviewScreen';
 import { ExplanationFeedbackScreen } from '../screens/explanation/ExplanationFeedbackScreen';
+// Dev tooling
+import { DevTestMenuScreen } from '../screens/dev/DevTestMenuScreen';
 
 const RootStack = createStackNavigator<AppRootStackParamList>();
 const Tab = createBottomTabNavigator<AppTabParamList>();
@@ -86,6 +89,7 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="LearningPackReview" component={LearningPackReviewScreen} />
       <HomeStack.Screen name="WrongAnswerReview" component={WrongAnswerReviewScreen} />
       <HomeStack.Screen name="ExplanationFeedback" component={ExplanationFeedbackScreen} options={{ presentation: 'transparentModal', cardOverlayEnabled: true }} />
+      {__DEV__ && <HomeStack.Screen name="DevTestMenu" component={DevTestMenuScreen} />}
     </HomeStack.Navigator>
   );
 }
@@ -149,36 +153,56 @@ const TAB_CONFIG: Record<
   ProfileTab: { label: 'Profile', icon: 'person-outline', iconFocused: 'person' },
 };
 
+// __DEV__-only floating shortcut into the Dev Test Menu, visible from any
+// tab — the alternative (a persistent extra tab item) would risk shipping
+// visibly in a release build if the __DEV__ guard were ever missed.
+function DevMenuFab() {
+  const navigation = useNavigation<any>();
+  if (!__DEV__) return null;
+  return (
+    <TouchableOpacity
+      style={styles.devFab}
+      activeOpacity={0.8}
+      onPress={() => navigation.navigate('HomeTab', { screen: 'DevTestMenu' })}
+    >
+      <Ionicons name="flask" size={20} color="#1A1A1A" />
+    </TouchableOpacity>
+  );
+}
+
 function MainTabsNavigator() {
   return (
-    <Tab.Navigator
-      screenOptions={({ route }) => {
-        const config = TAB_CONFIG[route.name as keyof AppTabParamList];
-        return {
-          headerShown: false,
-          tabBarStyle: styles.tabBar,
-          tabBarActiveTintColor: COLORS.primary,
-          tabBarInactiveTintColor: COLORS.textMuted,
-          tabBarLabelStyle: styles.tabLabel,
-          tabBarIcon: ({ focused, color, size }) => (
-            <Ionicons
-              name={focused ? config.iconFocused : config.icon}
-              size={size}
-              color={color}
-            />
-          ),
-          tabBarLabel: ({ color }) => (
-            <Text style={[styles.tabLabel, { color }]}>{config.label}</Text>
-          ),
-        };
-      }}
-    >
-      <Tab.Screen name="HomeTab" component={HomeStackNavigator} />
-      <Tab.Screen name="SubjectsTab" component={SubjectsStackNavigator} />
-      <Tab.Screen name="LeaderboardTab" component={LeaderboardScreen} />
-      <Tab.Screen name="AnalyticsTab" component={AnalyticsScreen} />
-      <Tab.Screen name="ProfileTab" component={ProfileStackNavigator} />
-    </Tab.Navigator>
+    <View style={styles.tabsRoot}>
+      <Tab.Navigator
+        screenOptions={({ route }) => {
+          const config = TAB_CONFIG[route.name as keyof AppTabParamList];
+          return {
+            headerShown: false,
+            tabBarStyle: styles.tabBar,
+            tabBarActiveTintColor: COLORS.primary,
+            tabBarInactiveTintColor: COLORS.textMuted,
+            tabBarLabelStyle: styles.tabLabel,
+            tabBarIcon: ({ focused, color, size }) => (
+              <Ionicons
+                name={focused ? config.iconFocused : config.icon}
+                size={size}
+                color={color}
+              />
+            ),
+            tabBarLabel: ({ color }) => (
+              <Text style={[styles.tabLabel, { color }]}>{config.label}</Text>
+            ),
+          };
+        }}
+      >
+        <Tab.Screen name="HomeTab" component={HomeStackNavigator} />
+        <Tab.Screen name="SubjectsTab" component={SubjectsStackNavigator} />
+        <Tab.Screen name="LeaderboardTab" component={LeaderboardScreen} />
+        <Tab.Screen name="AnalyticsTab" component={AnalyticsScreen} />
+        <Tab.Screen name="ProfileTab" component={ProfileStackNavigator} />
+      </Tab.Navigator>
+      <DevMenuFab />
+    </View>
   );
 }
 
@@ -208,5 +232,22 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.sizes.xs,
     fontWeight: TYPOGRAPHY.weights.medium,
     marginTop: 2,
+  },
+  tabsRoot: { flex: 1 },
+  devFab: {
+    position: 'absolute',
+    right: 16,
+    bottom: 80,
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: COLORS.gold,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 6,
   },
 });

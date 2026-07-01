@@ -218,6 +218,8 @@ export type HomeStackParamList = QuizStackSharedParams & {
   Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
   LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId?: string; subjectId?: string };
   PackCompletion: { xpEarned: number; packTitle: string };
+  // __DEV__-only — see src/screens/dev/DevTestMenuScreen.tsx
+  DevTestMenu: undefined;
 };
 
 export type SubjectsStackParamList = QuizStackSharedParams & {

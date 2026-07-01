@@ -18,6 +18,8 @@ import type { AuthStackParamList } from '../../types';
 import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { SUBJECT_COUNT, FORM_COUNT } from '../../constants';
+import { useAuth } from '../../hooks/useAuth';
+import { useProfileStore } from '../../store/profileStore';
 
 const { width } = Dimensions.get('window');
 
@@ -47,6 +49,27 @@ const BENEFITS = [
 export function WelcomeScreen({ navigation }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<ScrollView>(null);
+  const { enterTestMode } = useAuth();
+  const setProfile = useProfileStore((s) => s.setProfile);
+
+  // __DEV__-only: skip phone OTP and onboarding entirely — sets a complete
+  // auth session + profile in one tap so RootNavigator's isOnboarded check
+  // flips true immediately and lands straight in the main app, where the
+  // floating flask button opens the Dev Test Menu (every screen, one tap).
+  const handleEnterTestMode = () => {
+    enterTestMode();
+    const now = Date.now();
+    setProfile({
+      uid: 'demo_user_001',
+      name: 'Test Student',
+      form: 4,
+      school: 'Dev Test School',
+      avatarId: 'avatar_1',
+      selectedSubjectIds: ['mathematics', 'biology', 'english'],
+      createdAt: now,
+      updatedAt: now,
+    });
+  };
 
   const handleScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const index = Math.round(e.nativeEvent.contentOffset.x / width);
@@ -142,6 +165,11 @@ export function WelcomeScreen({ navigation }: Props) {
             onPress={() => navigation.navigate('OTPLogin')}
             variant="ghost"
           />
+          {__DEV__ && (
+            <TouchableOpacity onPress={handleEnterTestMode} style={styles.devTestBtn}>
+              <Text style={styles.devTestBtnText}>🧪 Enter Test Mode (no OTP, dev only)</Text>
+            </TouchableOpacity>
+          )}
         </View>
       </View>
       </SafeAreaView>
@@ -257,4 +285,14 @@ const styles = StyleSheet.create({
     fontWeight: TYPOGRAPHY.weights.medium,
   },
   ctas: { gap: SPACING.sm },
+  devTestBtn: {
+    alignItems: 'center',
+    paddingVertical: SPACING.sm,
+    marginTop: SPACING.xs,
+  },
+  devTestBtnText: {
+    color: COLORS.gold,
+    fontSize: TYPOGRAPHY.sizes.xs,
+    fontWeight: TYPOGRAPHY.weights.semibold,
+  },
 });

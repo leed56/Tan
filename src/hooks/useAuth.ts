@@ -49,6 +49,21 @@ export function useAuth() {
     setLoading(false);
   }, [setUser, setLoading]);
 
+  // __DEV__-only test-mode bypass (see WelcomeScreen's "Enter Test Mode"
+  // button). Deliberately skips ensureFirebaseUid()/signInAnonymously — test
+  // mode must resolve instantly and work with no network reachable at all,
+  // not just no real OTP. Firestore writes made under this uid will be
+  // rejected by rules (no matching auth.uid token), which is fine: it's for
+  // exercising every screen's UI, not persisting real data.
+  const enterTestMode = useCallback(() => {
+    setUser({
+      uid: 'dev_test_user',
+      phoneNumber: '+255700000000',
+      displayName: 'Test Student',
+      photoURL: null,
+    });
+  }, [setUser]);
+
   const handleLogout = useCallback(async () => {
     // TODO: Phase 2 — call Firebase Auth signOut()
     logout();
@@ -83,6 +98,7 @@ export function useAuth() {
     error,
     setError,
     loginDemo,
+    enterTestMode,
     logout: handleLogout,
     sendOtp,
     verifyOtp,
