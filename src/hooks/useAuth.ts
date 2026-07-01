@@ -9,9 +9,19 @@ import type { FirebaseUser } from '../types';
 // TODO: Phase 2 — integrate Firebase Auth phone OTP flow
 // TODO: Phase 2 — persist auth state with AsyncStorage / SecureStore
 
+function isFirebaseConfigured(): boolean {
+  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
+}
+
 // Until real phone auth is wired, back the demo session with a real Firebase
 // (anonymous) uid so per-user writes satisfy `request.auth.uid == userId`.
+// Skips the network call entirely when Firebase isn't configured — without
+// this guard, `signInAnonymously` hangs for a long time against a nonexistent
+// project (firebaseConfig.ts substitutes a syntactically-valid dummy config
+// so the SDK itself doesn't throw on init, but that also means this call no
+// longer fails fast).
 async function ensureFirebaseUid(): Promise<string> {
+  if (!isFirebaseConfigured()) return 'demo_user_001';
   try {
     if (auth.currentUser) return auth.currentUser.uid;
     const cred = await signInAnonymously(auth);
@@ -36,6 +46,7 @@ export function useAuth() {
       photoURL: null,
     };
     setUser(demoUser);
+    setLoading(false);
   }, [setUser, setLoading]);
 
   const handleLogout = useCallback(async () => {
@@ -62,6 +73,7 @@ export function useAuth() {
       photoURL: null,
     };
     setUser(demoUser);
+    setLoading(false);
   }, [setUser, setLoading]);
 
   return {

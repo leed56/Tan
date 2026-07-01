@@ -9,13 +9,24 @@ import {
 } from 'firebase/firestore';
 import { getStorage, FirebaseStorage } from 'firebase/storage';
 
+// `isFirebaseConfigured()` (checked by every service before touching
+// Firestore/Auth/Storage) reads this exact env var, so leaving it unset is
+// the supported way to run the app fully offline against local seed data —
+// e.g. for local dev/testing without real credentials. But the Firebase SDK
+// itself validates `apiKey`'s format at `getAuth()`/`initializeApp()` time and
+// throws synchronously on an empty string, which would crash the whole app
+// before a single screen renders. Substitute a syntactically-valid dummy
+// config in that case so the SDK objects construct cleanly; every real
+// network call downstream still stays gated on the real env var below.
+const hasRealCredentials = !!process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID;
+
 const firebaseConfig = {
-  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY ?? '',
-  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN ?? '',
-  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '',
-  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET ?? '',
-  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID ?? '',
-  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID ?? '',
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || 'demo-api-key',
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || 'demo.firebaseapp.com',
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID || 'demo-project',
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET || 'demo.appspot.com',
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '000000000000',
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || '1:000000000000:web:0000000000000000000000',
   measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID ?? '',
 };
 
@@ -42,7 +53,9 @@ storage = getStorage(app);
 // `isSignedIn()` security rules. The phone/OTP flow is still demo-only, so until
 // real auth is wired we sign in anonymously; otherwise every curriculum read is
 // permission-denied and the app silently falls back to local seed data.
-if (firebaseConfig.projectId) {
+// Gated on the real env var, not `firebaseConfig.projectId` (which is always
+// truthy now thanks to the dummy fallback above).
+if (hasRealCredentials) {
   onAuthStateChanged(auth, (user) => {
     if (!user) signInAnonymously(auth).catch(() => {});
   });

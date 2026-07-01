@@ -229,9 +229,9 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
                       subjectColor={subjectColor}
                       progressPercent={progressPercent}
                       isCompleted={isCompleted}
-                      onPress={() => {}}
+                      onPress={handlePackPress}
                     />
-                    <View style={styles.lockedOverlay}>
+                    <View style={styles.lockedOverlay} pointerEvents="none">
                       <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
                     </View>
                   </View>
