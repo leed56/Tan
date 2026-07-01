@@ -23,7 +23,7 @@ interface Props {
   onClose: () => void;
   questionId: string;
   questionText: string;
-  quizType: 'mcq' | 'fib' | 'tf';
+  quizType: 'mcq' | 'fib' | 'tf' | 'hoq';
   subjectId: string;
   formId: string;
   correctAnswer: string;

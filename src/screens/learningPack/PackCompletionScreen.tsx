@@ -16,7 +16,7 @@ import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockMo
 type Props = StackScreenProps<HomeStackParamList, 'PackCompletion'>;
 
 export function PackCompletionScreen({ navigation, route }: Props) {
-  const { xpEarned, packTitle, streakDays } = route.params;
+  const { xpEarned, packTitle } = route.params;
   const { xp, level, streak, addXp, addCoins, pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge } = useGamificationStore();
 
   const scaleAnim = useRef(new Animated.Value(0)).current;
@@ -97,7 +97,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
             style={styles.statCard}
           >
             <Text style={styles.statEmoji}>🔥</Text>
-            <Text style={[styles.statValue, { color: '#FF8C42' }]}>{streakDays}</Text>
+            <Text style={[styles.statValue, { color: '#FF8C42' }]}>{streak}</Text>
             <Text style={styles.statLabel}>Day Streak</Text>
           </LinearGradient>
 

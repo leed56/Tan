@@ -29,6 +29,7 @@ const TYPE_LABEL: Record<string, string> = {
   mcq: 'Multiple Choice',
   fib: 'Fill in the Blanks',
   tf: 'True / False',
+  hoq: 'Higher Order Questions',
 };
 
 export function QuizResultScreen({ navigation, route }: Props) {
@@ -162,20 +163,20 @@ export function QuizResultScreen({ navigation, route }: Props) {
                 subjectId,
               })}
               variant="secondary"
-              icon="bulb-outline"
+              icon={<Ionicons name="bulb-outline" size={18} color={COLORS.primary} />}
             />
           )}
           <AppButton
             title="Retry Quiz"
             onPress={handleRetry}
             variant="secondary"
-            icon="refresh"
+            icon={<Ionicons name="refresh" size={18} color={COLORS.primary} />}
           />
           <AppButton
             title="Back to Packs"
             onPress={handleBackToPacks}
             variant="primary"
-            icon="arrow-back"
+            icon={<Ionicons name="arrow-back" size={18} color={COLORS.textPrimary} />}
           />
         </View>
 

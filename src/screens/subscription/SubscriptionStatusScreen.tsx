@@ -136,7 +136,7 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
             title="Manage Family Profiles"
             onPress={() => navigation.navigate('FamilyProfiles')}
             variant="secondary"
-            icon="people-outline"
+            icon={<Ionicons name="people-outline" size={18} color={COLORS.primary} />}
           />
         )}
 
@@ -146,7 +146,7 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
             title="Upgrade to Premium"
             onPress={() => (navigation as any).navigate('SubscriptionScreen')}
             variant="primary"
-            icon="flash"
+            icon={<Ionicons name="flash" size={18} color={COLORS.textPrimary} />}
           />
         ) : (
           <TouchableOpacity style={styles.manageBtn}>

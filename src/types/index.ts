@@ -162,11 +162,17 @@ export type AuthStackParamList = {
 };
 
 export type QuizStackSharedParams = {
-  QuizIntro: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' };
+  QuizIntro: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' | 'hoq' };
   MCQQuiz: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
   FIBQuiz: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
   TFQuiz:  { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
-  QuizResult: { xpEarned: number; scorePercent: number; correctCount: number; wrongCount: number; totalQuestions: number; packTitle: string; packId: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' };
+  HOQQuiz: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId: string; subjectId: string };
+  SummaryPack: {
+    packId: string; packTitle: string; topicId: string; subjectColor: string;
+    formId: string; subjectId: string; completionXP: number;
+    summaryPoints: { point: string; detail: string }[];
+  };
+  QuizResult: { xpEarned: number; scorePercent: number; correctCount: number; wrongCount: number; totalQuestions: number; packTitle: string; packId: string; topicId: string; subjectColor: string; formId: string; subjectId: string; quizType: 'mcq' | 'fib' | 'tf' | 'hoq' };
   // Phase 4 — subscription screens
   SubscriptionScreen: undefined;
   SubscriptionStatus: undefined;
@@ -184,7 +190,7 @@ export type QuizStackSharedParams = {
   ExplanationScreen: {
     questionId: string;
     questionText: string;
-    quizType: 'mcq' | 'fib' | 'tf';
+    quizType: 'mcq' | 'fib' | 'tf' | 'hoq';
     subjectId: string;
     formId: string;
     correctAnswer: string;
@@ -221,14 +227,14 @@ export type HomeStackParamList = QuizStackSharedParams & {
   // formId is optional for backward compat — falls back to curriculumStore.selectedFormId
   Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
   LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId?: string; subjectId?: string };
-  PackCompletion: { xpEarned: number; packTitle: string; streakDays: number };
+  PackCompletion: { xpEarned: number; packTitle: string };
 };
 
 export type SubjectsStackParamList = QuizStackSharedParams & {
   Subjects: undefined;
   Topics: { subjectId: string; subjectName: string; color: string; formId?: string };
   LearningPackDetail: { packId: string; packTitle: string; topicId: string; subjectColor: string; formId?: string; subjectId?: string };
-  PackCompletion: { xpEarned: number; packTitle: string; streakDays: number };
+  PackCompletion: { xpEarned: number; packTitle: string };
 };
 
 export type ProfileStackParamList = {

@@ -23,6 +23,7 @@ const TYPE_LABEL: Record<QuizType, string> = {
   mcq: 'Multiple Choice',
   fib: 'Fill in the Blanks',
   tf: 'True / False',
+  hoq: 'Higher Order Questions',
 };
 
 export function DailyLimitModal({ visible, quizType, onClose, onUpgrade }: DailyLimitModalProps) {

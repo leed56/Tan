@@ -112,7 +112,7 @@ export function LockedFeaturePreviewScreen({ navigation, route }: Props) {
           title="Upgrade to Premium"
           onPress={() => navigation.navigate('SubscriptionScreen')}
           variant="primary"
-          icon="flash"
+          icon={<Ionicons name="flash" size={18} color={COLORS.textPrimary} />}
         />
 
         <TouchableOpacity

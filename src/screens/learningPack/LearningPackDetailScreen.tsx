@@ -85,13 +85,34 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
         });
         return;
       }
-      // Premium user — placeholder (real content screens TBD)
-      navigation.navigate('PackCompletion', {
-        xpEarned: pack.completionXP,
-        packTitle: pack.title,
-        streakDays: 6,
-      });
-      return;
+      // Premium user, HOQ — same 4-option quiz engine as MCQ, via QuizIntro.
+      if (pack.type === 'hoq') {
+        navigation.navigate('QuizIntro', {
+          packId: pack.id,
+          packTitle: pack.title,
+          topicId: pack.topicId,
+          subjectColor,
+          formId,
+          subjectId,
+          quizType: 'hoq',
+        });
+        return;
+      }
+      // Premium user, Summary — no question docs; review content lives on the
+      // pack itself as summaryPoints.
+      if (pack.type === 'summary') {
+        navigation.navigate('SummaryPack', {
+          packId: pack.id,
+          packTitle: pack.title,
+          topicId: pack.topicId,
+          subjectColor,
+          formId,
+          subjectId,
+          completionXP: pack.completionXP,
+          summaryPoints: pack.summaryPoints ?? [],
+        });
+        return;
+      }
     }
     // Free pack — MCQ / FIB / TF → quiz engine
     if (pack.type === 'mcq' || pack.type === 'fib' || pack.type === 'tf') {
@@ -106,14 +127,13 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
       });
       return;
     }
-    // Fallback placeholder
+    // Fallback placeholder (unrecognized pack type)
     setLaunching(true);
     setTimeout(() => {
       setLaunching(false);
       navigation.navigate('PackCompletion', {
         xpEarned: pack.completionXP,
         packTitle: pack.title,
-        streakDays: 6,
       });
     }, 600);
   }, [navigation, subjectColor, formId, subjectId, isPremium]);

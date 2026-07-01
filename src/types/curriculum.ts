@@ -65,6 +65,9 @@ export interface CurriculumLearningPack {
   completionXP: number;
   createdAt: number;
   updatedAt: number;
+  // Only present on `type: 'summary'` packs — no question docs exist for these,
+  // the review content lives directly on the pack (see scripts/seed-content.mjs).
+  summaryPoints?: { point: string; detail: string }[];
 }
 
 // Firestore: student_progress collection

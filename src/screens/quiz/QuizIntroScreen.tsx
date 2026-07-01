@@ -52,7 +52,8 @@ export function QuizIntroScreen({ navigation, route }: Props) {
       const params = { packId, packTitle, topicId, subjectColor, formId, subjectId };
       if (quizType === 'mcq') navigation.navigate('MCQQuiz', params);
       else if (quizType === 'fib') navigation.navigate('FIBQuiz', params);
-      else navigation.navigate('TFQuiz', params);
+      else if (quizType === 'tf') navigation.navigate('TFQuiz', params);
+      else navigation.navigate('HOQQuiz', params);
     } finally {
       setStarting(false);
     }
@@ -119,7 +120,7 @@ export function QuizIntroScreen({ navigation, route }: Props) {
           onPress={handleStart}
           loading={starting || loadingQuestions}
           variant={withinLimit ? 'primary' : 'gold'}
-          icon={withinLimit ? 'play' : 'star'}
+          icon={<Ionicons name={withinLimit ? 'play' : 'star'} size={18} color={withinLimit ? COLORS.textPrimary : '#1A1A1A'} />}
         />
 
         <Text style={styles.hint}>
@@ -154,6 +155,11 @@ const TIPS: Record<string, string[]> = {
     'Every statement is based on your syllabus.',
     'If any part of the statement is false, it\'s false.',
     'Tap True or False confidently!',
+  ],
+  hoq: [
+    'These questions require analysis, not just recall.',
+    'Read the full scenario before choosing an answer.',
+    'You have 90 seconds per question — think it through.',
   ],
 };
 

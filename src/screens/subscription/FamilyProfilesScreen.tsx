@@ -112,7 +112,7 @@ export function FamilyProfilesScreen({ navigation }: Props) {
             title="Add Family Member"
             onPress={() => setShowAdd(true)}
             variant="secondary"
-            icon="person-add-outline"
+            icon={<Ionicons name="person-add-outline" size={18} color={COLORS.primary} />}
           />
         )}
 

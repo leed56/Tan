@@ -26,6 +26,8 @@ import { QuizIntroScreen } from '../screens/quiz/QuizIntroScreen';
 import { MCQScreen } from '../screens/quiz/MCQScreen';
 import { FIBScreen } from '../screens/quiz/FIBScreen';
 import { TFScreen } from '../screens/quiz/TFScreen';
+import { HOQScreen } from '../screens/quiz/HOQScreen';
+import { SummaryScreen } from '../screens/quiz/SummaryScreen';
 import { QuizResultScreen } from '../screens/quiz/QuizResultScreen';
 // Phase 4 — subscription screens
 import { SubscriptionScreen } from '../screens/subscription/SubscriptionScreen';
@@ -64,6 +66,8 @@ function HomeStackNavigator() {
       <HomeStack.Screen name="MCQQuiz"   component={MCQScreen} />
       <HomeStack.Screen name="FIBQuiz"   component={FIBScreen} />
       <HomeStack.Screen name="TFQuiz"    component={TFScreen} />
+      <HomeStack.Screen name="HOQQuiz"   component={HOQScreen} />
+      <HomeStack.Screen name="SummaryPack" component={SummaryScreen} />
       <HomeStack.Screen name="QuizResult" component={QuizResultScreen} />
       <HomeStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
       <HomeStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />
@@ -95,6 +99,8 @@ function SubjectsStackNavigator() {
       <SubjectsStack.Screen name="MCQQuiz"   component={MCQScreen} />
       <SubjectsStack.Screen name="FIBQuiz"   component={FIBScreen} />
       <SubjectsStack.Screen name="TFQuiz"    component={TFScreen} />
+      <SubjectsStack.Screen name="HOQQuiz"   component={HOQScreen} />
+      <SubjectsStack.Screen name="SummaryPack" component={SummaryScreen} />
       <SubjectsStack.Screen name="QuizResult" component={QuizResultScreen} />
       <SubjectsStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
       <SubjectsStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />

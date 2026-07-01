@@ -112,7 +112,7 @@ export function SubscriptionScreen({ navigation }: Props) {
           title={`Subscribe · ${selectedPlan.priceMonthly.toLocaleString()} TSH/mo`}
           onPress={handleContinue}
           variant="primary"
-          icon="arrow-forward"
+          icon={<Ionicons name="arrow-forward" size={18} color={COLORS.textPrimary} />}
         />
 
         {/* Demo mode */}

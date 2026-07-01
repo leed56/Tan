@@ -37,6 +37,11 @@ const TYPE_META: Record<QuizType, { label: string; icon: keyof typeof Ionicons.g
     icon: 'swap-horizontal',
     desc: 'Decide if each statement is true or false. Fast and effective.',
   },
+  hoq: {
+    label: 'Higher Order Questions',
+    icon: 'bulb',
+    desc: "NECTA's most tested format — critical thinking and analysis, not recall.",
+  },
 };
 
 const DIFF_COLORS = { easy: '#10B981', medium: COLORS.warning, hard: COLORS.error };
