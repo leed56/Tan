@@ -50,18 +50,35 @@ export function useAuth() {
   }, [setUser, setLoading]);
 
   // __DEV__-only test-mode bypass (see WelcomeScreen's "Enter Test Mode"
-  // button). Deliberately skips ensureFirebaseUid()/signInAnonymously — test
-  // mode must resolve instantly and work with no network reachable at all,
-  // not just no real OTP. Firestore writes made under this uid will be
-  // rejected by rules (no matching auth.uid token), which is fine: it's for
-  // exercising every screen's UI, not persisting real data.
-  const enterTestMode = useCallback(() => {
-    setUser({
+  // button). Skips OTP, but still gets a REAL anonymous Firebase Auth token
+  // when Firebase is configured and reachable — otherwise Firestore's
+  // isSignedIn() rules reject every read, and content that genuinely exists
+  // (real curriculum topics, questions, etc.) silently falls back to the
+  // tiny local demo dataset instead, which looks like missing content.
+  // Time-boxed to 4s so it still resolves instantly with no network at all
+  // (this sandbox, CI, offline dev) — it just won't have real data either.
+  const enterTestMode = useCallback(async () => {
+    const fakeUser: FirebaseUser = {
       uid: 'dev_test_user',
       phoneNumber: '+255700000000',
       displayName: 'Test Student',
       photoURL: null,
-    });
+    };
+
+    if (!isFirebaseConfigured()) {
+      setUser(fakeUser);
+      return;
+    }
+
+    try {
+      const uid = await Promise.race([
+        signInAnonymously(auth).then((cred) => cred.user.uid),
+        new Promise<never>((_, reject) => setTimeout(() => reject(new Error('timeout')), 4000)),
+      ]);
+      setUser({ ...fakeUser, uid });
+    } catch {
+      setUser(fakeUser);
+    }
   }, [setUser]);
 
   const handleLogout = useCallback(async () => {

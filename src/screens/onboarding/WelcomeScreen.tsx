@@ -56,8 +56,8 @@ export function WelcomeScreen({ navigation }: Props) {
   // auth session + profile in one tap so RootNavigator's isOnboarded check
   // flips true immediately and lands straight in the main app, where the
   // floating flask button opens the Dev Test Menu (every screen, one tap).
-  const handleEnterTestMode = () => {
-    enterTestMode();
+  const handleEnterTestMode = async () => {
+    await enterTestMode();
     const now = Date.now();
     setProfile({
       uid: 'demo_user_001',
