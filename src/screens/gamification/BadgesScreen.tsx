@@ -27,7 +27,7 @@ export function BadgesScreen({ navigation }: Props) {
         <View style={styles.progress}>
           <Text style={styles.progressText}>{earned.length} / {badges.length} earned</Text>
           <View style={styles.progressTrack}>
-            <View style={[styles.progressFill, { width: `${(earned.length / badges.length) * 100}%` as any }]} />
+            <View style={[styles.progressFill, { width: `${(earned.length / Math.max(badges.length, 1)) * 100}%` as any }]} />
           </View>
         </View>
       </LinearGradient>

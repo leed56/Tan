@@ -13,11 +13,24 @@ import type { RewardBox } from '../../types/gamification';
 
 type Props = StackScreenProps<HomeStackParamList, 'Rewards'>;
 
-const REWARD_BOXES: RewardBox[] = [
-  { id: 'daily_box', label: 'Daily Box', coinsMin: 5, coinsMax: 15, xpBonus: 10, rarity: 'common', isAvailable: true },
-  { id: 'weekly_box', label: 'Weekly Box', coinsMin: 20, coinsMax: 50, xpBonus: 50, rarity: 'rare', isAvailable: false },
-  { id: 'epic_box', label: 'Epic Box', coinsMin: 80, coinsMax: 150, xpBonus: 100, rarity: 'epic', isAvailable: false },
-];
+const WEEKLY_STREAK_REQUIREMENT = 7;
+const EPIC_STREAK_REQUIREMENT = 30;
+
+function buildRewardBoxes(streak: number): RewardBox[] {
+  return [
+    { id: 'daily_box', label: 'Daily Box', coinsMin: 5, coinsMax: 15, xpBonus: 10, rarity: 'common', isAvailable: true },
+    {
+      id: 'weekly_box', label: 'Weekly Box', coinsMin: 20, coinsMax: 50, xpBonus: 50, rarity: 'rare',
+      isAvailable: streak >= WEEKLY_STREAK_REQUIREMENT,
+      unlockHint: `Unlocks at a ${WEEKLY_STREAK_REQUIREMENT}-day streak`,
+    },
+    {
+      id: 'epic_box', label: 'Epic Box', coinsMin: 80, coinsMax: 150, xpBonus: 100, rarity: 'epic',
+      isAvailable: streak >= EPIC_STREAK_REQUIREMENT,
+      unlockHint: `Unlocks at a ${EPIC_STREAK_REQUIREMENT}-day streak`,
+    },
+  ];
+}
 
 const SHOP_ITEMS = [
   { id: 'xp_boost', label: 'XP Boost 2×', desc: '2× XP for 30 minutes', cost: 50, icon: 'flash' },
@@ -26,8 +39,9 @@ const SHOP_ITEMS = [
 ];
 
 export function RewardsScreen({ navigation }: Props) {
-  const { coins, addCoins, addXp } = useGamificationStore();
+  const { coins, streak, addCoins, addXp } = useGamificationStore();
   const [opened, setOpened] = useState<string | null>(null);
+  const rewardBoxes = buildRewardBoxes(streak);
 
   const handleOpen = (box: RewardBox) => {
     if (opened === box.id) return;
@@ -57,7 +71,7 @@ export function RewardsScreen({ navigation }: Props) {
         {/* Reward Boxes */}
         <Text style={styles.sectionLabel}>Reward Boxes</Text>
         <View style={styles.boxGrid}>
-          {REWARD_BOXES.map((box) => (
+          {rewardBoxes.map((box) => (
             <View key={box.id} style={styles.boxItem}>
               <RewardBoxCard
                 box={{ ...box, isAvailable: box.isAvailable && opened !== box.id }}

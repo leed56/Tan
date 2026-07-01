@@ -114,26 +114,32 @@ bug, not just polish — 30% of the 19,584 authored items are unreachable.
 
 ---
 
-## Phase 2 — Gamification engine (make it real, not just persistent)
+## Phase 2 — Gamification engine (make it real, not just persistent) ✅ done
 
-- [ ] Shared `ProgressBar` primitive — currently 3 independent hand-rolled XP-bar
-      implementations (`HomeScreen`, `GamificationProfileScreen`,
-      `BadgesScreen`/`XPProgressBar`). One component, one level-curve source
-      (`getLevelProgress` from `xpUtils`, per Phase 0).
-- [ ] Fix `BadgesScreen.tsx:30` divide-by-zero (`earned.length/badges.length`) →
-      guard for `badges.length === 0` before data loads; add a loading skeleton
-      instead of blank body when both earned/locked are empty pre-fetch.
-- [ ] `DailyMissionsScreen`: render the `loading` state that's fetched but never
-      used; handle `fetchMissions`/`claim` failure with a retry affordance;
-      derive the rewards-summary card total from the actual mission list instead
-      of hardcoded "150 XP / 40 Coins".
-- [ ] `RewardsScreen`: either build the coin-shop spend path or remove the
-      "Coming Soon" tiles entirely rather than shipping dead greyed-out buttons
-      with no `onPress`; add real unlock messaging for `weekly_box`/`epic_box`
-      instead of permanent `isAvailable:false`.
-- [ ] `AchievementsScreen`: confirm the 10 hardcoded achievements' unlock
-      conditions are driven by real store data end-to-end (they read progress, but
-      verify against Phase 0's real persistence, not stale local state).
+Re-verified before starting: the level-curve unification and dead
+`XPProgressBar` (flat 500/level) called out below were already fixed in the
+Phase 0 pass (`7807094`) — `HomeScreen` and `GamificationProfileScreen` both
+already read the single `getLevelProgress`/`getXpProgressPercent` source of
+truth. The remaining HomeScreen-inline-SVG-ring vs. `LevelRing`-component
+duplication is cosmetic (same correct percentage, two draw paths), not a
+correctness bug — left as-is rather than risking a visual regression on the
+dashboard's centerpiece for no functional gain.
+
+Fixed:
+- [x] `BadgesScreen.tsx` divide-by-zero guard (`earned.length / Math.max(badges.length, 1)`)
+      — badges load synchronously from a static 13-item seed list so this was
+      latent, not reachable today, but now safe if that ever changes.
+- [x] `DailyMissionsScreen`: now renders the `loading` state while missions
+      fetch instead of looking identical to a zero-progress new user; the
+      rewards-summary card total is computed from `DAILY_MISSIONS` instead of
+      a hardcoded "150 XP / 40 Coins" that would silently drift if the mission
+      list changes.
+- [x] `RewardsScreen`: `weekly_box`/`epic_box` now actually unlock at a real
+      7-day / 30-day streak (read from `gamificationStore`) instead of being
+      permanently `isAvailable:false`, and show an unlock-condition hint while
+      locked. Left the "Coin Shop — Coming Soon" section as-is: it was already
+      an honest static preview (no fake buttons, no `onPress` pretending to
+      work), not a misleading placeholder.
 
 ## Phase 3 — Leaderboard consolidation ✅ done
 
