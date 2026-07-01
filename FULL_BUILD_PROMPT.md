@@ -168,22 +168,29 @@ monthly tab.
       `[]`) or remove the tab until it's real — don't ship a tab labeled "Coming
       in Phase 2" inside a UI whose whole job is showing live progress.
 
-## Phase 4 — Analytics: real data, real chart
+## Phase 4 — Analytics: real data, real chart ✅ done
 
-- [ ] Add a real chart library (`react-native-gifted-charts` — already the
-      TODO-noted intended choice in the code) and replace the hand-drawn
-      `<Rect>` bars in `AnalyticsScreen.tsx:124-146`.
-- [ ] Replace `DEMO_ANALYTICS` with real query aggregation from `quiz_attempts`/
-      `student_progress` (once Phase 0 makes those collections real).
-- [ ] Make the 7d/30d/3m period pills actually refilter the underlying data
-      (currently local `useState` no-op).
-- [ ] Guard `Math.max(...data.weeklyActivity, 1)` against undefined data
-      (`AnalyticsScreen.tsx:21`) instead of assuming data is always loaded.
-- [ ] Remove the hardcoded 300px bar-chart container width; size from parent
-      flex/`useWindowDimensions` (ties into Phase 5).
-- [ ] Either ship a real AI-insight generation call or remove the
-      "coming soon" card rather than showing canned placeholder copy as if it
-      were a feature.
+- [x] Added `react-native-gifted-charts` (`^1.4.77`) and replaced the
+      hand-drawn `<Rect>` bars with a real `BarChart`, sized by its own
+      `barWidth`/`spacing` props rather than a hardcoded 300px SVG canvas
+      width — no longer fragile across device sizes.
+- [x] Rewrote `analyticsService.getUserAnalytics(uid, period)` to compute
+      real numbers: XP/questions/accuracy/streak from the (now-accurate,
+      per Phase 5) `gamification/{uid}` profile; subject mastery from
+      `student_progress` via the existing `aggregateSubjectProgress`; a new
+      bucketed `quiz_attempts` query for the activity bars (added the
+      composite index `quiz_attempts(userId, completedAt)` to
+      `firestore.indexes.json` — needs deploying). `DEMO_ANALYTICS` is now
+      only a fallback for local dev without Firebase / a failed query, not
+      what a real zero-activity user sees (they get real zeros).
+- [x] 7d/30d/3m period pills now genuinely refetch with different bucket
+      granularity (daily / ~3-day / weekly) instead of a local no-op.
+- [x] Added a loading state for the first fetch (subsequent period switches
+      update in place rather than flashing a full-screen spinner).
+- [x] Softened internal "Phase 2" jargon in the AI-insight card's user-facing
+      copy to "Coming Soon" and removed the fabricated sample insight text —
+      kept it an honest placeholder since real Gemini-generated insights are
+      a separate, unbuilt feature.
 
 ## Phase 5 — Profile & Dashboard: kill the fake numbers ✅ done
 
