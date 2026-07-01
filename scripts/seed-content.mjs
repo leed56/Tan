@@ -1,5 +1,5 @@
 /**
- * Content seeder — seeds authored quiz content files into Firestore (tanzania-81c27).
+ * Content seeder — seeds authored quiz content files into Firestore (tanza-9b182).
  *
  * Reads scripts/content/<glob>.json (default: all *.json), each file = one topic
  * with packs { mcq, fib, tf, summary, hoq }. Writes:
@@ -18,7 +18,7 @@ import { readdirSync, readFileSync } from 'fs';
 const require = createRequire('/home/user/Tan/functions/');
 const admin = require('firebase-admin');
 
-const PROJECT = process.env.SEED_PROJECT_ID || 'tanzania-81c27';
+const PROJECT = process.env.SEED_PROJECT_ID || 'tanza-9b182';
 const FILTER = process.argv[2] || '';
 const DIR = '/home/user/Tan/scripts/content';
 

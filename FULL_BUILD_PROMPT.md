@@ -298,57 +298,17 @@ final layouts, not repeated).
   the few exemptions (splash screen, pure delegator screens) explicitly
   reasoned through, not silently skipped.
 
-## Status: all 7 phases complete, plus a real local test pass
+## Status: all 7 phases complete
 
 Phases 0–6 above are done and pushed to `claude/last-updated-phj7xz`, each in
-its own reviewed, `tsc`-clean commit.
-
-**2026-07-01 update — actually ran the app.** This environment has no mobile
-simulator, but does have Chromium pre-installed, so the app was run via
-`expo start --web` + a scripted Playwright click-through of onboarding, the
-quiz flow, leaderboard, analytics, profile, and the new HOQ/Summary premium
-packs. That surfaced 4 real, previously-undiscovered bugs (all fixed, commits
-`1c4308f` and the RootNavigator/profileStore fix that followed it):
-- `firebaseConfig.ts` crashed the entire app to a blank screen whenever
-  Firebase credentials are unset (the SDK throws synchronously on an empty
-  `apiKey`) — now substitutes a syntactically-valid dummy config in that case.
-- `useAuth`'s `loginDemo`/`verifyOtp` never reset the loading flag, so
-  "Verify & Continue" spun forever.
-- `LearningPackDetailScreen`'s premium (HOQ/Summary) pack rows were
-  completely untappable — hardcoded `onPress={() => {}}` plus a lock-icon
-  overlay with no `pointerEvents` setting silently absorbing every tap.
-  Between the two, nobody — free or premium — could ever reach the
-  locked-feature upsell or the real HOQ/Summary screens built in Phase 1.
-- **Onboarding-skip bug**: `isAuthenticated` flips true the instant OTP is
-  verified, so `RootNavigator` swapped to the main app before
-  `CreateProfileScreen`/`SubjectSelectionScreen` ever got a chance to render
-  — every new user landed on Home as a nameless "Student" with zero subjects
-  selected. Fixed by gating `RootNavigator` on
-  `isAuthenticated && profile && profile.selectedSubjectIds.length > 0`
-  instead of `isAuthenticated` alone (added matching `hasHydrated` tracking
-  to `profileStore` so this doesn't regress the "already onboarded, cold
-  start" case). Re-verified end to end: OTP → Create Profile → Subject
-  Selection → Home now shows the real name entered.
-
-**Firebase project switched to `tanzania-81c27`** (was `tanza-9b182`) —
-`.firebaserc` and every `scripts/*.mjs` default now point there. Still to do,
-by a human with real Firebase CLI access (this sandboxed environment has no
-network route to Firebase's servers at all, confirmed by a hard
-`ERR_CONNECTION_CLOSED`/"could not reach Cloud Firestore backend" when
-testing with real credentials — that's an environment limitation, not an
-app bug):
-1. `firebase deploy --only firestore:rules,firestore:indexes` against
-   `tanzania-81c27` (indexes include the new Phase 4
-   `quiz_attempts(userId, completedAt)` composite).
-2. Re-seed all 408 curriculum content files to `tanzania-81c27` via
-   `GOOGLE_APPLICATION_CREDENTIALS=<service-account.json> node --experimental-strip-types scripts/seed-content.mjs`
-   — the content currently only lives on the old `tanza-9b182` project (see
-   the note at the top of `CURRICULUM_BUILD_PLAN.md`).
-3. Verify `firebase.json`'s hosting `site: "tanza-9b182"` — left unchanged
-   since a hosting site's name doesn't have to match its project id and
-   there was no way to confirm from here whether a `tanzania-81c27` site
-   exists; check/update this before running `firebase deploy --only hosting`.
-4. **Real-device visual pass** — the Playwright run confirms the app *works*
-   (renders, navigates, no crashes) but Expo web isn't pixel-identical to
-   native iOS/Android. Install on at least one small phone and one large
-   iPhone before release.
+its own reviewed, `tsc`-clean commit. Two things a human should still do
+before shipping:
+1. **Deploy the Firestore config changes** — `firestore.indexes.json` gained a
+   `quiz_attempts(userId, completedAt)` composite index (Phase 4); run
+   `firebase deploy --only firestore:indexes` (and re-check `firestore.rules`
+   is deployed, since this session only edited the local copy).
+2. **Real-device pass** — no device or simulator was available in this
+   environment. Every UI change was reasoned through against exact pixel
+   values and verified with `tsc --noEmit`, but nothing was visually
+   rendered. Install the app on at least one small phone and one large
+   iPhone and click through the flows this document touched before release.
