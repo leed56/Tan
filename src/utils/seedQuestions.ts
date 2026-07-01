@@ -1,6 +1,6 @@
 /**
  * Seed questions for Phase 3 quiz engine.
- * Real Tanzania O-Level difficulty questions for Mathematics, Biology, Geography (Form 2).
+ * Real Tanzania O-Level difficulty questions for Mathematics, Biology, Geography (Form 1).
  *
  * Pack ID format (from seedData.ts generator):
  *   {formId}_{subjectKey}_topic_{N}_pack_{M}
@@ -13,13 +13,13 @@ const NOW = Date.now();
 
 // ─── Mathematics — Form 2 Topic 1 (Linear Equations and Inequalities) ─────────
 
-const MATH_PACK_PREFIX = 'form_2_mathematics_topic_1';
+const MATH_PACK_PREFIX = 'form_1_mathematics_topic_1';
 
 const MATH_MCQ: Question[] = [
   {
     id: 'math_mcq_1',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -42,8 +42,8 @@ const MATH_MCQ: Question[] = [
   },
   {
     id: 'math_mcq_2',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -66,8 +66,8 @@ const MATH_MCQ: Question[] = [
   },
   {
     id: 'math_mcq_3',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -90,8 +90,8 @@ const MATH_MCQ: Question[] = [
   },
   {
     id: 'math_mcq_4',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -114,8 +114,8 @@ const MATH_MCQ: Question[] = [
   },
   {
     id: 'math_mcq_5',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -141,8 +141,8 @@ const MATH_MCQ: Question[] = [
 const MATH_FIB: Question[] = [
   {
     id: 'math_fib_1',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -160,8 +160,8 @@ const MATH_FIB: Question[] = [
   },
   {
     id: 'math_fib_2',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -179,8 +179,8 @@ const MATH_FIB: Question[] = [
   },
   {
     id: 'math_fib_3',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -201,8 +201,8 @@ const MATH_FIB: Question[] = [
 const MATH_TF: Question[] = [
   {
     id: 'math_tf_1',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_2`,
     type: 'tf',
@@ -220,8 +220,8 @@ const MATH_TF: Question[] = [
   },
   {
     id: 'math_tf_2',
-    formId: 'form_2',
-    subjectId: 'form_2_mathematics',
+    formId: 'form_1',
+    subjectId: 'form_1_mathematics',
     topicId: `${MATH_PACK_PREFIX}`,
     learningPackId: `${MATH_PACK_PREFIX}_pack_2`,
     type: 'tf',
@@ -241,13 +241,13 @@ const MATH_TF: Question[] = [
 
 // ─── Biology — Form 2 Topic 1 (Nutrition in Plants and Animals) ───────────────
 
-const BIO_PACK_PREFIX = 'form_2_biology_topic_1';
+const BIO_PACK_PREFIX = 'form_1_biology_topic_1';
 
 const BIO_MCQ: Question[] = [
   {
     id: 'bio_mcq_1',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -270,8 +270,8 @@ const BIO_MCQ: Question[] = [
   },
   {
     id: 'bio_mcq_2',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -294,8 +294,8 @@ const BIO_MCQ: Question[] = [
   },
   {
     id: 'bio_mcq_3',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -318,8 +318,8 @@ const BIO_MCQ: Question[] = [
   },
   {
     id: 'bio_mcq_4',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -342,8 +342,8 @@ const BIO_MCQ: Question[] = [
   },
   {
     id: 'bio_mcq_5',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -369,8 +369,8 @@ const BIO_MCQ: Question[] = [
 const BIO_FIB: Question[] = [
   {
     id: 'bio_fib_1',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -388,8 +388,8 @@ const BIO_FIB: Question[] = [
   },
   {
     id: 'bio_fib_2',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -407,8 +407,8 @@ const BIO_FIB: Question[] = [
   },
   {
     id: 'bio_fib_3',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -429,8 +429,8 @@ const BIO_FIB: Question[] = [
 const BIO_TF: Question[] = [
   {
     id: 'bio_tf_1',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_2`,
     type: 'tf',
@@ -448,8 +448,8 @@ const BIO_TF: Question[] = [
   },
   {
     id: 'bio_tf_2',
-    formId: 'form_2',
-    subjectId: 'form_2_biology',
+    formId: 'form_1',
+    subjectId: 'form_1_biology',
     topicId: `${BIO_PACK_PREFIX}`,
     learningPackId: `${BIO_PACK_PREFIX}_pack_2`,
     type: 'tf',
@@ -469,13 +469,13 @@ const BIO_TF: Question[] = [
 
 // ─── Geography — Form 2 Topic 1 (Rocks and Weathering) ────────────────────────
 
-const GEO_PACK_PREFIX = 'form_2_geography_topic_1';
+const GEO_PACK_PREFIX = 'form_1_geography_topic_1';
 
 const GEO_MCQ: Question[] = [
   {
     id: 'geo_mcq_1',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -498,8 +498,8 @@ const GEO_MCQ: Question[] = [
   },
   {
     id: 'geo_mcq_2',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -522,8 +522,8 @@ const GEO_MCQ: Question[] = [
   },
   {
     id: 'geo_mcq_3',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -546,8 +546,8 @@ const GEO_MCQ: Question[] = [
   },
   {
     id: 'geo_mcq_4',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -570,8 +570,8 @@ const GEO_MCQ: Question[] = [
   },
   {
     id: 'geo_mcq_5',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_1`,
     type: 'mcq',
@@ -597,8 +597,8 @@ const GEO_MCQ: Question[] = [
 const GEO_FIB: Question[] = [
   {
     id: 'geo_fib_1',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -616,8 +616,8 @@ const GEO_FIB: Question[] = [
   },
   {
     id: 'geo_fib_2',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -635,8 +635,8 @@ const GEO_FIB: Question[] = [
   },
   {
     id: 'geo_fib_3',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_3`,
     type: 'fib',
@@ -657,8 +657,8 @@ const GEO_FIB: Question[] = [
 const GEO_TF: Question[] = [
   {
     id: 'geo_tf_1',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_2`,
     type: 'tf',
@@ -676,8 +676,8 @@ const GEO_TF: Question[] = [
   },
   {
     id: 'geo_tf_2',
-    formId: 'form_2',
-    subjectId: 'form_2_geography',
+    formId: 'form_1',
+    subjectId: 'form_1_geography',
     topicId: `${GEO_PACK_PREFIX}`,
     learningPackId: `${GEO_PACK_PREFIX}_pack_2`,
     type: 'tf',

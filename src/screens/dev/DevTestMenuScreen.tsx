@@ -20,7 +20,12 @@ import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 // (empty state, not a crash) when it isn't.
 const SAMPLE = {
   formId: 'form_1',
-  subjectId: 'mathematics',
+  // Firestore/local-seed convention (see scripts/seed-content.mjs) is
+  // `${formId}_${bareSubjectId}` — used wherever subjectId feeds a query
+  // (Topics, LearningPackDetail). Quiz screens' own fetch only keys off
+  // learningPackId, so they keep the bare id for gamification's subjectKey.
+  subjectId: 'form_1_mathematics',
+  bareSubjectId: 'mathematics',
   topicId: 'form_1_mathematics_topic_1',
   packId: 'form_1_mathematics_topic_1_pack_1',
   subjectColor: COLORS.subjects.mathematics,
@@ -43,7 +48,7 @@ const quizParams = {
   topicId: SAMPLE.topicId,
   subjectColor: SAMPLE.subjectColor,
   formId: SAMPLE.formId,
-  subjectId: SAMPLE.subjectId,
+  subjectId: SAMPLE.bareSubjectId,
 };
 
 const SECTIONS: Section[] = [
@@ -133,7 +138,7 @@ const SECTIONS: Section[] = [
           questionId: 'sample_q1',
           questionText: 'What is 7 x 8?',
           quizType: 'mcq',
-          subjectId: SAMPLE.subjectId,
+          subjectId: SAMPLE.bareSubjectId,
           formId: SAMPLE.formId,
           correctAnswer: 'b',
           options: [{ id: 'a', text: '54' }, { id: 'b', text: '56' }, { id: 'c', text: '58' }, { id: 'd', text: '64' }],
@@ -145,12 +150,12 @@ const SECTIONS: Section[] = [
       {
         label: 'Pack review (all answers)',
         icon: 'reader-outline',
-        onPress: (nav) => nav.navigate('LearningPackReview', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', subjectId: SAMPLE.subjectId, formId: SAMPLE.formId, topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor }),
+        onPress: (nav) => nav.navigate('LearningPackReview', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', subjectId: SAMPLE.bareSubjectId, formId: SAMPLE.formId, topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor }),
       },
       {
         label: 'Wrong answers review',
         icon: 'close-circle-outline',
-        onPress: (nav) => nav.navigate('WrongAnswerReview', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', subjectId: SAMPLE.subjectId, formId: SAMPLE.formId, topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor }),
+        onPress: (nav) => nav.navigate('WrongAnswerReview', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', subjectId: SAMPLE.bareSubjectId, formId: SAMPLE.formId, topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor }),
       },
       {
         label: 'Explanation feedback',

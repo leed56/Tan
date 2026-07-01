@@ -25,6 +25,7 @@ import { useProgressStore } from '../../store/progressStore';
 import { useMissionStore } from '../../store/missionStore';
 import { useLeaderboardStore } from '../../store/leaderboardStore';
 import { useFamilyStore } from '../../store/familyStore';
+import { useCurriculumStore } from '../../store/curriculumStore';
 import { DAILY_MISSIONS } from '../../utils/seedBadges';
 import { SUBJECTS, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
@@ -43,6 +44,7 @@ export function HomeScreen({ navigation }: Props) {
   const { fetchMissions, completedCount, progressFor } = useMissionStore();
   const { data: leaderboardData, fetchLeaderboard } = useLeaderboardStore();
   const activeChild = useFamilyStore((s) => s.activeChild());
+  const selectedFormId = useCurriculumStore((s) => s.selectedFormId);
 
   // Load the persisted gamification profile so XP/coins/streak reflect Firestore.
   useEffect(() => {
@@ -75,6 +77,12 @@ export function HomeScreen({ navigation }: Props) {
     .filter((r) => r.status !== 'completed')
     .sort((a, b) => (b.lastOpenedAt ?? 0) - (a.lastOpenedAt ?? 0))[0];
   const continueSubjectId = inProgress?.subjectId.replace(/^form_\d+_/, '') ?? recommended[0]?.id;
+  // Resume under the Form the progress record was actually made in, not
+  // necessarily whichever Form happens to be selected right now — otherwise
+  // subjectId/formId end up out of sync with what curriculumStore expects
+  // (it keys everything as `${formId}_${bareSubjectId}`), and Topics loads
+  // empty.
+  const continueFormId = inProgress?.subjectId.match(/^form_\d+/)?.[0] ?? selectedFormId;
   const continueSubject = SUBJECTS.find((s) => s.id === continueSubjectId) ?? recommended[0];
   const continuePercent = inProgress ? getSubjectProgress(inProgress.subjectId).progressPercent : 0;
 
@@ -193,7 +201,7 @@ export function HomeScreen({ navigation }: Props) {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Text style={styles.sectionTitle}>Continue Learning</Text>
-              <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: continueSubject.id, subjectName: continueSubject.name, color: continueSubject.color })}>
+              <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: `${continueFormId}_${continueSubject.id}`, subjectName: continueSubject.name, color: continueSubject.color, formId: continueFormId })}>
                 <Text style={styles.seeAll}>See all</Text>
               </TouchableOpacity>
             </View>
@@ -202,9 +210,10 @@ export function HomeScreen({ navigation }: Props) {
               style={styles.continueCard}
               onPress={() =>
                 navigation.navigate('Topics', {
-                  subjectId: continueSubject.id,
+                  subjectId: `${continueFormId}_${continueSubject.id}`,
                   subjectName: continueSubject.name,
                   color: continueSubject.color,
+                  formId: continueFormId,
                 })
               }
               activeOpacity={0.8}
@@ -281,9 +290,10 @@ export function HomeScreen({ navigation }: Props) {
                 subject={subject}
                 onPress={(s) =>
                   navigation.navigate('Topics', {
-                    subjectId: s.id,
+                    subjectId: `${selectedFormId}_${s.id}`,
                     subjectName: s.name,
                     color: s.color,
+                    formId: selectedFormId,
                   })
                 }
               />
