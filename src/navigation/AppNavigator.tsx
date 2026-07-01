@@ -182,6 +182,13 @@ function MainTabsNavigator() {
             tabBarActiveTintColor: COLORS.primary,
             tabBarInactiveTintColor: COLORS.textMuted,
             tabBarLabelStyle: styles.tabLabel,
+            // Force the phone-style icon-above-label layout at every viewport
+            // width. Left at its default, @react-navigation/bottom-tabs
+            // switches to a side-by-side "beside-icon" layout above ~480px —
+            // our custom tabBarIcon/tabBarLabel render functions are sized
+            // and positioned for stacking, so on a wide desktop browser the
+            // icon and label overlap instead of switching layouts cleanly.
+            tabBarLabelPosition: 'below-icon',
             tabBarIcon: ({ focused, color, size }) => (
               <Ionicons
                 name={focused ? config.iconFocused : config.icon}

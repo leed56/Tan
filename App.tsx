@@ -7,6 +7,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { RootNavigator } from './src/navigation/RootNavigator';
+import { WebPhoneFrame } from './src/components/WebPhoneFrame';
 import { initCrashReporting } from './src/services/crashReportingService';
 import { initOfflineSupport } from './src/services/offlineService';
 import { useAuthStore } from './src/store/authStore';
@@ -79,9 +80,11 @@ export default function App() {
     <GestureHandlerRootView style={styles.root}>
       <SafeAreaProvider>
         <StatusBar style="light" />
-        <NavigationContainer onReady={onReady}>
-          <RootNavigator />
-        </NavigationContainer>
+        <WebPhoneFrame>
+          <NavigationContainer onReady={onReady}>
+            <RootNavigator />
+          </NavigationContainer>
+        </WebPhoneFrame>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );
