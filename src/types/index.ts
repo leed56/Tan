@@ -224,6 +224,7 @@ export type SubjectsStackParamList = QuizStackSharedParams & {
 
 export type ProfileStackParamList = {
   Profile: undefined;
+  EditProfile: undefined;
   Settings: undefined;
   SubscriptionStatus: undefined;
   FamilyProfiles: undefined;

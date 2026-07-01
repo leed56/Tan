@@ -58,3 +58,27 @@ export async function updateSelectedSubjects(
     // Swallow — persisted locally regardless.
   }
 }
+
+// Fields a signed-in user is allowed to self-edit after profile creation —
+// the `users` update rule forbids touching role/subscriptionStatus/
+// subscriptionExpiry/createdAt/phoneNumber, so only these may be patched here.
+export async function updateUserProfileFields(
+  uid: string,
+  patch: Partial<Pick<UserProfile, 'name' | 'form' | 'school' | 'avatarId'>>,
+): Promise<void> {
+  if (!isFirebaseConfigured()) return;
+  try {
+    const { name, ...rest } = patch;
+    await setDoc(
+      doc(firestore, COLLECTIONS.users, uid),
+      {
+        ...(name !== undefined ? { displayName: name } : {}),
+        ...rest,
+        updatedAt: serverTimestamp(),
+      },
+      { merge: true },
+    );
+  } catch {
+    // Swallow — persisted locally regardless.
+  }
+}

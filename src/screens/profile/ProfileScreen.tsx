@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   View,
   Text,
@@ -16,7 +16,9 @@ import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
 import { useGamificationStore } from '../../store/gamificationStore';
-import { AVATARS, DEMO_BADGES } from '../../constants';
+import { useProgressStore } from '../../store/progressStore';
+import { useLeaderboardStore } from '../../store/leaderboardStore';
+import { AVATARS } from '../../constants';
 import { formatXp } from '../../utils';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
 
@@ -25,14 +27,26 @@ type Props = StackScreenProps<ProfileStackParamList, 'Profile'>;
 export function ProfileScreen({ navigation }: Props) {
   const profile = useProfileStore((s) => s.profile);
   const user = useAuthStore((s) => s.user);
-  const { xp, level, streak, coins } = useGamificationStore();
+  const { xp, level, streak, coins, badges, earnedBadgeIds, profile: gamificationProfile } = useGamificationStore();
   const { isPremium } = useSubscriptionStore();
+  const { records: progressRecords, fetchProgress } = useProgressStore();
+  const { data: leaderboardData, fetchLeaderboard } = useLeaderboardStore();
+
+  useEffect(() => {
+    if (user?.uid) fetchProgress(user.uid);
+    fetchLeaderboard('national');
+  }, [user?.uid, fetchProgress, fetchLeaderboard]);
 
   const avatar = AVATARS.find((a) => a.id === (profile?.avatarId ?? 'avatar_1'));
-  const earnedBadges = DEMO_BADGES.filter((b) => b.isEarned);
-  const totalBadges = DEMO_BADGES.length;
+  const earnedBadges = badges.filter((b) => earnedBadgeIds.includes(b.id));
+  const totalBadges = badges.length;
 
   const subscriptionTier = isPremium() ? 'premium' : 'free';
+
+  const packsDone = progressRecords.filter((r) => r.status === 'completed').length;
+  const questionsAnswered = gamificationProfile?.totalQuestions ?? 0;
+  const nationalRank = leaderboardData.national.findIndex((e) => e.userId === user?.uid) + 1;
+  const subjectsStarted = new Set(progressRecords.map((r) => r.subjectId)).size;
 
   return (
     <ScrollView
@@ -54,8 +68,7 @@ export function ProfileScreen({ navigation }: Props) {
           <LinearGradient colors={GRADIENTS.primary} style={styles.avatarBg}>
             <Text style={styles.avatarEmoji}>{avatar?.emoji ?? '👤'}</Text>
           </LinearGradient>
-          <TouchableOpacity style={styles.editAvatarBtn}>
-            {/* TODO: Phase 2 — avatar editor */}
+          <TouchableOpacity style={styles.editAvatarBtn} onPress={() => navigation.navigate('EditProfile')}>
             <Ionicons name="camera" size={14} color="#fff" />
           </TouchableOpacity>
         </View>
@@ -92,8 +105,7 @@ export function ProfileScreen({ navigation }: Props) {
         </View>
 
         {/* Edit button */}
-        <TouchableOpacity style={styles.editBtn}>
-          {/* TODO: Phase 2 — edit profile screen */}
+        <TouchableOpacity style={styles.editBtn} onPress={() => navigation.navigate('EditProfile')}>
           <Ionicons name="create-outline" size={16} color={COLORS.primary} />
           <Text style={styles.editBtnText}>Edit Profile</Text>
         </TouchableOpacity>
@@ -137,14 +149,18 @@ export function ProfileScreen({ navigation }: Props) {
           </Text>
         </View>
         <View style={styles.badgesGrid}>
-          {DEMO_BADGES.map((badge) => (
+          {badges.map((badge) => (
             <AchievementBadge
               key={badge.id}
-              badge={badge}
-              size="md"
-              onPress={(b) => {
-                // TODO: Phase 2 — show badge detail modal
+              badge={{
+                id: badge.id,
+                title: badge.title,
+                description: badge.description,
+                iconName: badge.iconName,
+                isEarned: earnedBadgeIds.includes(badge.id),
+                earnedAt: null,
               }}
+              size="md"
             />
           ))}
         </View>
@@ -155,10 +171,10 @@ export function ProfileScreen({ navigation }: Props) {
         <Text style={styles.sectionTitle}>Quick Stats</Text>
         <View style={styles.quickStats}>
           {[
-            { icon: 'layers-outline', label: 'Packs Done', value: '14', color: COLORS.primary },
-            { icon: 'checkmark-circle-outline', label: 'Questions', value: '87', color: COLORS.success },
-            { icon: 'trophy-outline', label: 'National Rank', value: '#42', color: COLORS.gold },
-            { icon: 'book-outline', label: 'Subjects', value: '3', color: COLORS.secondary },
+            { icon: 'layers-outline', label: 'Packs Done', value: String(packsDone), color: COLORS.primary },
+            { icon: 'checkmark-circle-outline', label: 'Questions', value: String(questionsAnswered), color: COLORS.success },
+            { icon: 'trophy-outline', label: 'National Rank', value: nationalRank > 0 ? `#${nationalRank}` : '—', color: COLORS.gold },
+            { icon: 'book-outline', label: 'Subjects', value: String(subjectsStarted), color: COLORS.secondary },
           ].map((stat) => (
             <View key={stat.label} style={styles.quickStatCard}>
               <Ionicons

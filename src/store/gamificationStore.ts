@@ -9,6 +9,9 @@ import {
   applyCoins,
   updateStreak,
   checkBadgeUnlocks,
+  recordQuizStats,
+  saveUserBadges,
+  getUserBadgeIds,
 } from '../services/gamificationService';
 import { SEED_BADGES } from '../utils/seedBadges';
 import type { BadgeDefinition } from '../types/gamification';
@@ -44,7 +47,16 @@ interface GamificationStore {
   awardXP: (uid: string, source: XPSource) => Promise<void>;
   awardCoins: (uid: string, source: keyof typeof COIN_REWARDS) => void;
   checkStreak: (uid: string) => Promise<number[]>;
-  checkBadges: (context: { quizScorePercent?: number; subjectKey?: string; isPremium?: boolean }) => BadgeId[];
+  checkBadges: (
+    uid: string,
+    context: {
+      quizScorePercent?: number;
+      subjectKey?: string;
+      isPremium?: boolean;
+      totalQuestions?: number;
+      correctCount?: number;
+    },
+  ) => BadgeId[];
   dismissLevelUp: () => void;
   dismissBadge: () => void;
   persistProfile: (uid: string) => Promise<void>;
@@ -132,8 +144,14 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
   fetchProfile: async (uid) => {
     set({ loading: true });
     try {
-      const profile = await getGamificationProfile(uid);
-      set({ xp: profile.xp, level: profile.level, streak: profile.currentStreak, coins: profile.coins, profile, loading: false });
+      const [profile, earnedBadgeIds] = await Promise.all([
+        getGamificationProfile(uid),
+        getUserBadgeIds(uid),
+      ]);
+      set({
+        xp: profile.xp, level: profile.level, streak: profile.currentStreak, coins: profile.coins,
+        profile, earnedBadgeIds, loading: false,
+      });
     } catch {
       set({ loading: false });
     }
@@ -164,9 +182,17 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
     return milestonesHit;
   },
 
-  checkBadges: (context) => {
+  checkBadges: (uid, context) => {
     const s = get();
-    const base = s.profile ?? buildLocal(s.xp, s.streak, s.coins);
+    let base = s.profile ?? buildLocal(s.xp, s.streak, s.coins);
+    if (context.totalQuestions !== undefined) {
+      base = recordQuizStats(base, {
+        totalQuestions: context.totalQuestions,
+        correctCount: context.correctCount ?? 0,
+      });
+      set({ profile: base });
+      saveGamificationProfile({ ...base, uid }).catch(() => {});
+    }
     const newIds = checkBadgeUnlocks(base, s.earnedBadgeIds, context);
     if (newIds.length === 0) return [];
     const newBadgeDefs = SEED_BADGES.filter((b) => newIds.includes(b.id));
@@ -174,6 +200,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
       earnedBadgeIds: [...prev.earnedBadgeIds, ...newIds] as BadgeId[],
       pendingBadges: [...prev.pendingBadges, ...newBadgeDefs],
     }));
+    saveUserBadges(uid, newIds).catch(() => {});
     return newIds;
   },
 

@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, addDoc, collection, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, addDoc, collection, updateDoc, getDocs, query, where } from 'firebase/firestore';
 import { firestore, COLLECTIONS } from './firebaseConfig';
 import type { GamificationProfile, XPSource, CoinSource, BadgeId } from '../types/gamification';
 import { XP_REWARDS, COIN_REWARDS, STREAK_MILESTONES } from '../types/gamification';
@@ -132,6 +132,21 @@ export function updateStreak(
   return { profile: updated, milestonesHit };
 }
 
+// Accumulate lifetime quiz stats onto the profile — the source of truth for
+// the 'first_quiz' badge and the Profile screen's Quick Stats.
+export function recordQuizStats(
+  profile: GamificationProfile,
+  result: { totalQuestions: number; correctCount: number },
+): GamificationProfile {
+  return {
+    ...profile,
+    totalQuizzes: profile.totalQuizzes + 1,
+    totalQuestions: profile.totalQuestions + result.totalQuestions,
+    totalCorrect: profile.totalCorrect + result.correctCount,
+    updatedAt: Date.now(),
+  };
+}
+
 // Check which badges the user just earned
 export function checkBadgeUnlocks(
   profile: GamificationProfile,
@@ -177,6 +192,18 @@ export async function saveUserBadges(uid: string, badgeIds: BadgeId[]): Promise<
       });
     }
   } catch {}
+}
+
+export async function getUserBadgeIds(uid: string): Promise<BadgeId[]> {
+  if (!isFirebaseConfigured()) return [];
+  try {
+    const snap = await getDocs(
+      query(collection(firestore, COLLECTIONS.userBadges), where('userId', '==', uid)),
+    );
+    return snap.docs.map((d) => d.data().badgeId as BadgeId);
+  } catch {
+    return [];
+  }
 }
 
 export { SEED_BADGES };

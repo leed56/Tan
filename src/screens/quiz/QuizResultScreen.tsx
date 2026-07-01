@@ -57,8 +57,13 @@ export function QuizResultScreen({ navigation, route }: Props) {
   // On quiz completion: advance the daily streak, evaluate badge unlocks, persist
   // the gamification profile, update the leaderboard, and advance daily missions.
   useEffect(() => {
-    checkBadges({ quizScorePercent: scorePercent, subjectKey: subjectId });
     if (uid) {
+      checkBadges(uid, {
+        quizScorePercent: scorePercent,
+        subjectKey: subjectId,
+        totalQuestions,
+        correctCount,
+      });
       checkStreak(uid).catch(() => {});
       persistProfile(uid).catch(() => {});
       if (xpEarned > 0 && profile) {

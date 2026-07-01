@@ -185,25 +185,43 @@ monthly tab.
       "coming soon" card rather than showing canned placeholder copy as if it
       were a feature.
 
-## Phase 5 — Profile & Dashboard: kill the fake numbers
+## Phase 5 — Profile & Dashboard: kill the fake numbers ✅ done
 
-- [ ] `ProfileScreen`: Quick Stats grid ("14"/"87"/"#42"/"3") must read from real
-      stores post-Phase-0, not hardcoded literals; wire the dead "Edit Profile"
-      and avatar-edit buttons (currently no `onPress`); replace `DEMO_BADGES`
-      with the real badge store.
-  - Also: `ProfileScreen` and `PackCompletionScreen` don't use `ScreenContainer`
-    (see Phase 6) — bring them in line so safe-area handling is consistent.
-- [ ] `HomeScreen`: "Continue Learning" card must reflect the user's actual
-      last-touched topic/pack and % progress, not the hardcoded
-      "Mathematics/Quadratic Equations/60%" (`HomeScreen.tsx:157-190`); Daily
-      Mission card's "3/5" must come from the real mission store; "Top Students"
-      widget must use the consolidated real leaderboard (Phase 3), not
-      `DEMO_LEADERBOARD`; make pull-to-refresh actually re-fetch instead of a
-      cosmetic `setTimeout`.
-- [ ] Add `numberOfLines`/`ellipsizeMode` to any user-generated or variable-length
-      text sitting next to fixed-width siblings (`HomeScreen` continueTopic/
-      missionTitle/leaderName; `AchievementsScreen` titles/descriptions) so long
-      subject/topic names don't overflow on narrow screens.
+Two real, previously-undiscovered bugs surfaced while wiring this phase (not
+in either prior audit):
+- `GamificationProfile.totalQuizzes`/`totalQuestions`/`totalCorrect` existed
+  in the schema and were even read by badge-unlock logic
+  (`profile.totalQuizzes >= 1` for the `first_quiz` badge) but **nothing ever
+  incremented them** — that badge could never be earned. Added
+  `recordQuizStats()`, called from `checkBadges` on every quiz completion.
+- `saveUserBadges()` had zero callers — earned badges lived only in
+  in-memory Zustand state and vanished on every app restart. Wired it into
+  `checkBadges`, and added `getUserBadgeIds()` + a `fetchProfile` fix so
+  badges rehydrate on load.
+
+Fixed:
+- [x] `ProfileScreen`: Quick Stats (Packs Done / Questions / National Rank /
+      Subjects) now read from `progressStore`/`gamificationStore`/
+      `leaderboardStore`; badge grid reads the real store instead of
+      `DEMO_BADGES`.
+- [x] Built a real `EditProfileScreen` (name/form/school/avatar, persisted to
+      `users/{uid}` via a new `updateUserProfileFields`) and wired both the
+      "Edit Profile" button and the avatar camera-badge to it — both were
+      previously `onPress`-less dead buttons.
+- [x] `HomeScreen`: "Continue Learning" now shows the subject with the most
+      recently opened, not-yet-completed progress record (real % from
+      `progressStore`), falling back to "not started yet" for new users
+      instead of a fabricated topic name — discovered along the way that
+      `progressStore.fetchProgress()` had **zero callers anywhere in the
+      app**, so pack-completion checkmarks in `LearningPackDetailScreen` were
+      silently always 0% regardless of real progress; now fetched on Home
+      mount. Daily Mission card and hero "3/5" text now reflect real
+      `missionStore` completion. "Top Students" uses the real national
+      leaderboard. Pull-to-refresh now actually re-fetches profile/progress/
+      missions instead of a cosmetic `setTimeout`.
+- [ ] `numberOfLines`/`ellipsizeMode` pass on variable-length text — folded
+      into Phase 6 since it's a responsive-layout concern touching the same
+      screens.
 
 ## Phase 6 — Responsive design system (small phone → iPhone Pro Max)
 

@@ -20,6 +20,7 @@ import { PackCompletionScreen } from '../screens/learningPack/PackCompletionScre
 import { LeaderboardScreen } from '../screens/leaderboard/LeaderboardScreen';
 import { AnalyticsScreen } from '../screens/analytics/AnalyticsScreen';
 import { ProfileScreen } from '../screens/profile/ProfileScreen';
+import { EditProfileScreen } from '../screens/profile/EditProfileScreen';
 import { SettingsScreen } from '../screens/settings/SettingsScreen';
 import { FormSelectorModal } from '../screens/curriculum/FormSelectorModal';
 import { QuizIntroScreen } from '../screens/quiz/QuizIntroScreen';
@@ -125,6 +126,7 @@ function ProfileStackNavigator() {
   return (
     <ProfileStack.Navigator screenOptions={{ headerShown: false }}>
       <ProfileStack.Screen name="Profile" component={ProfileScreen} />
+      <ProfileStack.Screen name="EditProfile" component={EditProfileScreen} />
       <ProfileStack.Screen name="Settings" component={SettingsScreen} />
       <ProfileStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />
       <ProfileStack.Screen name="FamilyProfiles" component={FamilyProfilesScreen} />

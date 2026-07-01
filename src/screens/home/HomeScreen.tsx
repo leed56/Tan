@@ -21,7 +21,11 @@ import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
-import { SUBJECTS, DEMO_LEADERBOARD, AVATARS } from '../../constants';
+import { useProgressStore } from '../../store/progressStore';
+import { useMissionStore } from '../../store/missionStore';
+import { useLeaderboardStore } from '../../store/leaderboardStore';
+import { DAILY_MISSIONS } from '../../utils/seedBadges';
+import { SUBJECTS, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
 
 const { width } = Dimensions.get('window');
@@ -38,11 +42,19 @@ export function HomeScreen({ navigation }: Props) {
   const fetchProfile = useGamificationStore((s) => s.fetchProfile);
   const profile = useProfileStore((s) => s.profile);
   const uid = useAuthStore((s) => s.user?.uid);
+  const { records: progressRecords, fetchProgress, getSubjectProgress } = useProgressStore();
+  const { fetchMissions, completedCount, progressFor } = useMissionStore();
+  const { data: leaderboardData, fetchLeaderboard } = useLeaderboardStore();
 
   // Load the persisted gamification profile so XP/coins/streak reflect Firestore.
   useEffect(() => {
-    if (uid) fetchProfile(uid);
-  }, [uid, fetchProfile]);
+    if (uid) {
+      fetchProfile(uid);
+      fetchProgress(uid);
+      fetchMissions(uid);
+    }
+    fetchLeaderboard('national');
+  }, [uid, fetchProfile, fetchProgress, fetchMissions, fetchLeaderboard]);
 
   const progressPercent = getXpProgressPercent(xp);
   const strokeDash = RING_CIRCUMFERENCE * (1 - progressPercent / 100);
@@ -50,12 +62,26 @@ export function HomeScreen({ navigation }: Props) {
   const greeting = getGreeting();
   const name = profile?.name ?? 'Student';
   const recommended = SUBJECTS.filter((s) => !s.isPremium).slice(0, 4);
-  const topPlayers = DEMO_LEADERBOARD.slice(0, 3);
+  const topPlayers = leaderboardData.national.slice(0, 3);
+  const missionsTotal = DAILY_MISSIONS.length;
+  const missionsDone = completedCount();
+
+  // Most recently opened, not-yet-completed subject — falls back to the first
+  // recommended subject for a brand-new user with no progress yet.
+  const inProgress = [...progressRecords]
+    .filter((r) => r.status !== 'completed')
+    .sort((a, b) => (b.lastOpenedAt ?? 0) - (a.lastOpenedAt ?? 0))[0];
+  const continueSubjectId = inProgress?.subjectId.replace(/^form_\d+_/, '') ?? recommended[0]?.id;
+  const continueSubject = SUBJECTS.find((s) => s.id === continueSubjectId) ?? recommended[0];
+  const continuePercent = inProgress ? getSubjectProgress(inProgress.subjectId).progressPercent : 0;
 
   const handleRefresh = async () => {
     setRefreshing(true);
-    // TODO: Phase 2 — re-fetch user data from Firestore
-    await new Promise((r) => setTimeout(r, 1000));
+    await Promise.all([
+      uid ? fetchProfile(uid) : Promise.resolve(),
+      uid ? fetchProgress(uid) : Promise.resolve(),
+      uid ? fetchMissions(uid) : Promise.resolve(),
+    ]);
     setRefreshing(false);
   };
 
@@ -136,7 +162,7 @@ export function HomeScreen({ navigation }: Props) {
 
             <View style={styles.heroMission}>
               <Ionicons name="flag" size={14} color={COLORS.gold} />
-              <Text style={styles.heroMissionText}>Daily Mission: 3/5 packs</Text>
+              <Text style={styles.heroMissionText}>Daily Missions: {missionsDone}/{missionsTotal} complete</Text>
             </View>
           </View>
         </LinearGradient>
@@ -146,77 +172,82 @@ export function HomeScreen({ navigation }: Props) {
         <StreakFireCard streak={streak} />
 
         {/* Continue Learning */}
-        <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Continue Learning</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: `form_${profile?.form ?? 1}_mathematics`, subjectName: 'Mathematics', color: COLORS.subjects.mathematics, formId: `form_${profile?.form ?? 1}` })}>
-              <Text style={styles.seeAll}>See all</Text>
+        {continueSubject && (
+          <View style={styles.section}>
+            <View style={styles.sectionHeader}>
+              <Text style={styles.sectionTitle}>Continue Learning</Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: continueSubject.id, subjectName: continueSubject.name, color: continueSubject.color })}>
+                <Text style={styles.seeAll}>See all</Text>
+              </TouchableOpacity>
+            </View>
+
+            <TouchableOpacity
+              style={styles.continueCard}
+              onPress={() =>
+                navigation.navigate('Topics', {
+                  subjectId: continueSubject.id,
+                  subjectName: continueSubject.name,
+                  color: continueSubject.color,
+                })
+              }
+              activeOpacity={0.8}
+            >
+              <LinearGradient
+                colors={[continueSubject.color + '30', COLORS.bgCard]}
+                style={styles.continueCardGrad}
+              >
+                <View style={[styles.continueIcon, { backgroundColor: continueSubject.color + '20' }]}>
+                  <Ionicons name={continueSubject.iconName as keyof typeof Ionicons.glyphMap} size={24} color={continueSubject.color} />
+                </View>
+                <View style={styles.continueInfo}>
+                  <Text style={styles.continueSubject}>{continueSubject.name}</Text>
+                  <Text style={styles.continueTopic} numberOfLines={1}>
+                    {inProgress ? `${continuePercent}% complete` : 'Not started yet'}
+                  </Text>
+                  <View style={styles.continueProgress}>
+                    <View style={styles.continueTrack}>
+                      <View style={[styles.continueFill, { width: `${continuePercent}%`, backgroundColor: continueSubject.color }]} />
+                    </View>
+                    <Text style={styles.continuePercent}>{continuePercent}%</Text>
+                  </View>
+                </View>
+                <Ionicons name="play-circle" size={36} color={continueSubject.color} />
+              </LinearGradient>
             </TouchableOpacity>
           </View>
+        )}
 
-          <TouchableOpacity
-            style={styles.continueCard}
-            onPress={() =>
-              // Route to the real (form-scoped) Mathematics topics; resuming a
-              // specific pack needs last-activity tracking (not yet wired).
-              navigation.navigate('Topics', {
-                subjectId: `form_${profile?.form ?? 1}_mathematics`,
-                subjectName: 'Mathematics',
-                color: COLORS.subjects.mathematics,
-                formId: `form_${profile?.form ?? 1}`,
-              })
-            }
-            activeOpacity={0.8}
-          >
+        {/* Daily Missions */}
+        <TouchableOpacity activeOpacity={0.85} onPress={() => navigation.navigate('DailyMissions')}>
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Daily Missions</Text>
             <LinearGradient
-              colors={[COLORS.subjects.mathematics + '30', COLORS.bgCard]}
-              style={styles.continueCardGrad}
+              colors={['rgba(247,197,46,0.12)', 'rgba(247,197,46,0.04)']}
+              style={styles.missionCard}
             >
-              <View style={[styles.continueIcon, { backgroundColor: COLORS.subjects.mathematics + '20' }]}>
-                <Ionicons name="calculator" size={24} color={COLORS.subjects.mathematics} />
-              </View>
-              <View style={styles.continueInfo}>
-                <Text style={styles.continueSubject}>Mathematics</Text>
-                <Text style={styles.continueTopic}>Quadratic Equations</Text>
-                <View style={styles.continueProgress}>
-                  <View style={styles.continueTrack}>
-                    <View style={[styles.continueFill, { width: '60%', backgroundColor: COLORS.subjects.mathematics }]} />
-                  </View>
-                  <Text style={styles.continuePercent}>60%</Text>
+              <View style={styles.missionHeader}>
+                <Text style={styles.missionEmoji}>⚡</Text>
+                <View style={styles.missionInfo}>
+                  <Text style={styles.missionTitle}>Today's challenges</Text>
+                  <Text style={styles.missionReward}>
+                    {missionsDone === missionsTotal ? 'All complete — see you tomorrow!' : 'Tap to view and claim rewards'}
+                  </Text>
+                </View>
+                <View style={styles.missionProgress}>
+                  <Text style={styles.missionCount}>{missionsDone}/{missionsTotal}</Text>
                 </View>
               </View>
-              <Ionicons name="play-circle" size={36} color={COLORS.subjects.mathematics} />
+              <View style={styles.missionTrack}>
+                {DAILY_MISSIONS.map((def) => (
+                  <View
+                    key={def.id}
+                    style={[styles.missionStep, progressFor(def.id).isCompleted && styles.missionStepDone]}
+                  />
+                ))}
+              </View>
             </LinearGradient>
-          </TouchableOpacity>
-        </View>
-
-        {/* Daily Mission */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Daily Mission</Text>
-          <LinearGradient
-            colors={['rgba(247,197,46,0.12)', 'rgba(247,197,46,0.04)']}
-            style={styles.missionCard}
-          >
-            <View style={styles.missionHeader}>
-              <Text style={styles.missionEmoji}>⚡</Text>
-              <View style={styles.missionInfo}>
-                <Text style={styles.missionTitle}>Complete 5 learning packs</Text>
-                <Text style={styles.missionReward}>+150 XP reward</Text>
-              </View>
-              <View style={styles.missionProgress}>
-                <Text style={styles.missionCount}>3/5</Text>
-              </View>
-            </View>
-            <View style={styles.missionTrack}>
-              {[0, 1, 2, 3, 4].map((i) => (
-                <View
-                  key={i}
-                  style={[styles.missionStep, i < 3 && styles.missionStepDone]}
-                />
-              ))}
-            </View>
-          </LinearGradient>
-        </View>
+          </View>
+        </TouchableOpacity>
 
         {/* Recommended Subjects */}
         <View style={styles.section}>
@@ -244,33 +275,35 @@ export function HomeScreen({ navigation }: Props) {
         </View>
 
         {/* Leaderboard Preview */}
-        <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Top Students</Text>
-            <TouchableOpacity>
-              <Text style={styles.seeAll}>Full rankings</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.leaderPreview}>
-            {topPlayers.map((player, idx) => {
-              const avatar = AVATARS.find((a) => a.id === player.avatarId);
-              const medals = ['🥇', '🥈', '🥉'];
-              return (
-                <View key={player.uid} style={styles.leaderRow}>
-                  <Text style={styles.leaderMedal}>{medals[idx]}</Text>
-                  <View style={styles.leaderAvatar}>
-                    <Text style={{ fontSize: 20 }}>{avatar?.emoji ?? '👤'}</Text>
+        {topPlayers.length > 0 && (
+          <View style={styles.section}>
+            <View style={styles.sectionHeader}>
+              <Text style={styles.sectionTitle}>Top Students</Text>
+              <TouchableOpacity onPress={() => navigation.getParent()?.navigate('LeaderboardTab' as never)}>
+                <Text style={styles.seeAll}>Full rankings</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.leaderPreview}>
+              {topPlayers.map((player, idx) => {
+                const avatar = AVATARS.find((a) => a.id === player.avatarId);
+                const medals = ['🥇', '🥈', '🥉'];
+                return (
+                  <View key={player.id} style={styles.leaderRow}>
+                    <Text style={styles.leaderMedal}>{medals[idx]}</Text>
+                    <View style={styles.leaderAvatar}>
+                      <Text style={{ fontSize: 20 }}>{avatar?.emoji ?? '👤'}</Text>
+                    </View>
+                    <View style={styles.leaderInfo}>
+                      <Text style={styles.leaderName} numberOfLines={1}>{player.name}</Text>
+                      <Text style={styles.leaderForm}>Form {player.form}</Text>
+                    </View>
+                    <Text style={styles.leaderXp}>{formatXp(player.totalXp)} XP</Text>
                   </View>
-                  <View style={styles.leaderInfo}>
-                    <Text style={styles.leaderName}>{player.name}</Text>
-                    <Text style={styles.leaderForm}>Form {player.form}</Text>
-                  </View>
-                  <Text style={styles.leaderXp}>{formatXp(player.xp)} XP</Text>
-                </View>
-              );
-            })}
+                );
+              })}
+            </View>
           </View>
-        </View>
+        )}
 
         {/* Premium Banner */}
         <PremiumLockCard
