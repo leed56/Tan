@@ -33,14 +33,15 @@ const styles = StyleSheet.create({
   qNum: {
     color: COLORS.textMuted,
     fontSize: TYPOGRAPHY.sizes.xs,
-    fontWeight: TYPOGRAPHY.weights.semibold,
+    fontFamily: TYPOGRAPHY.families.semibold,
     textTransform: 'uppercase',
-    letterSpacing: 0.8,
+    letterSpacing: 1.4,
   },
   questionText: {
     color: COLORS.textPrimary,
-    fontSize: TYPOGRAPHY.sizes.lg,
-    lineHeight: TYPOGRAPHY.sizes.lg * 1.55,
-    fontWeight: TYPOGRAPHY.weights.semibold,
+    fontSize: TYPOGRAPHY.sizes.xl,
+    lineHeight: TYPOGRAPHY.sizes.xl * 1.4,
+    fontFamily: TYPOGRAPHY.families.bold,
+    letterSpacing: -0.4,
   },
 });

@@ -87,11 +87,13 @@ const styles = StyleSheet.create({
   labelText: {
     color: COLORS.textMuted,
     fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.extrabold,
+    fontFamily: TYPOGRAPHY.families.extrabold,
   },
   text: {
     flex: 1,
-    fontSize: TYPOGRAPHY.sizes.base,
-    lineHeight: TYPOGRAPHY.sizes.base * 1.4,
+    fontSize: 16,
+    lineHeight: 23,
+    letterSpacing: -0.2,
+    fontFamily: TYPOGRAPHY.families.medium,
   },
 });

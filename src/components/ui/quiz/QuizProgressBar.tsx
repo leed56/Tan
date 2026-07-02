@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
   label: {
     color: COLORS.textMuted,
     fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.medium,
+    fontFamily: TYPOGRAPHY.families.medium,
+    letterSpacing: 0.1,
   },
   rightRow: { flexDirection: 'row', alignItems: 'center', gap: SPACING.sm },
   timerBadge: {
@@ -91,10 +92,10 @@ const styles = StyleSheet.create({
   timerText: {
     color: COLORS.textMuted,
     fontSize: TYPOGRAPHY.sizes.xs,
-    fontWeight: TYPOGRAPHY.weights.bold,
+    fontFamily: TYPOGRAPHY.families.bold,
   },
   timerTextLow: { color: COLORS.error },
-  pctText: { fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.bold },
+  pctText: { fontSize: TYPOGRAPHY.sizes.xs, fontFamily: TYPOGRAPHY.families.bold },
   track: {
     height: 5,
     backgroundColor: COLORS.bgCardLight,

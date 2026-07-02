@@ -252,7 +252,8 @@ const styles = StyleSheet.create({
   packTitle: {
     color: COLORS.textSecondary,
     fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.medium,
+    fontFamily: TYPOGRAPHY.families.semibold,
+    letterSpacing: 0.1,
     textAlign: 'center',
   },
   hoqBadge: {

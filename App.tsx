@@ -6,6 +6,14 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
+import {
+  useFonts,
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_600SemiBold,
+  Inter_700Bold,
+  Inter_800ExtraBold,
+} from '@expo-google-fonts/inter';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { WebPhoneFrame } from './src/components/WebPhoneFrame';
 import { DevDataModeBanner } from './src/components/DevDataModeBanner';
@@ -21,6 +29,16 @@ SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const hasHydrated = useAuthStore((s) => s.hasHydrated);
+  // Fonts are bundled assets, so this resolves almost instantly; fontError
+  // still releases the splash so a (near-impossible) load failure degrades to
+  // the system font instead of blanking the app.
+  const [fontsLoaded, fontError] = useFonts({
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_600SemiBold,
+    Inter_700Bold,
+    Inter_800ExtraBold,
+  });
   const uid = useAuthStore((s) => s.user?.uid);
   const startSubscriptionListening = useSubscriptionStore((s) => s.startListening);
   const stopSubscriptionListening = useSubscriptionStore((s) => s.stopListening);
@@ -43,12 +61,12 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // Hide the native splash once the persisted session has rehydrated; a
-    // timeout fallback guarantees we never get stuck on the native splash.
-    if (hasHydrated) SplashScreen.hideAsync().catch(() => {});
+    // Hide the native splash once the persisted session has rehydrated AND
+    // fonts are ready; a timeout fallback guarantees we never get stuck.
+    if (hasHydrated && (fontsLoaded || fontError)) SplashScreen.hideAsync().catch(() => {});
     const t = setTimeout(() => SplashScreen.hideAsync().catch(() => {}), 3000);
     return () => clearTimeout(t);
-  }, [hasHydrated]);
+  }, [hasHydrated, fontsLoaded, fontError]);
 
   // Real-time subscription + family-profile listeners, app-wide — this is what
   // makes admin-panel activation reflect instantly (no manual refresh needed),

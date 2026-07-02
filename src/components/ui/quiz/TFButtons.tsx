@@ -123,11 +123,13 @@ const styles = StyleSheet.create({
   btnLabel: {
     color: COLORS.textMuted,
     fontSize: TYPOGRAPHY.sizes.xl,
-    fontWeight: TYPOGRAPHY.weights.bold,
+    fontFamily: TYPOGRAPHY.families.bold,
+    letterSpacing: -0.3,
   },
   btnLabelActive: {
     color: '#fff',
     fontSize: TYPOGRAPHY.sizes.xl,
-    fontWeight: TYPOGRAPHY.weights.bold,
+    fontFamily: TYPOGRAPHY.families.bold,
+    letterSpacing: -0.3,
   },
 });

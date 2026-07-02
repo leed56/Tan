@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     flex: 1,
     color: COLORS.textPrimary,
     fontSize: TYPOGRAPHY.sizes.lg,
-    fontWeight: TYPOGRAPHY.weights.medium,
+    fontFamily: TYPOGRAPHY.families.medium,
   },
   submitBtn: {
     flexDirection: 'row',
@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
   submitText: {
     color: '#fff',
     fontSize: TYPOGRAPHY.sizes.base,
-    fontWeight: TYPOGRAPHY.weights.bold,
+    fontFamily: TYPOGRAPHY.families.bold,
+    letterSpacing: 0.2,
   },
 });
