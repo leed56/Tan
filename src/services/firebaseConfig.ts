@@ -61,6 +61,24 @@ if (hasRealCredentials) {
   });
 }
 
+// One-time startup diagnostic so it's unambiguous which data source the app is
+// using. Without a real EXPO_PUBLIC_FIREBASE_PROJECT_ID (e.g. a fresh clone
+// with no .env — .env is gitignored) every service silently falls back to the
+// local seed dataset, which reads as "mock data / only 4 topics" with no error.
+if (hasRealCredentials) {
+  console.log(
+    `%c[Soma] LIVE MODE — Firestore project "${firebaseConfig.projectId}". Real curriculum will load if it's been seeded there.`,
+    'color:#4ECDC4;font-weight:bold',
+  );
+} else {
+  console.warn(
+    '%c[Soma] OFFLINE SEED MODE — no EXPO_PUBLIC_FIREBASE_PROJECT_ID found. ' +
+      'The app is showing LOCAL SEED DATA (this is why you see only the demo topics/questions). ' +
+      'Create a .env from .env.example with your Firebase keys and restart with `expo start -c` to load real data.',
+    'color:#F7C52E;font-weight:bold',
+  );
+}
+
 export { app, auth, firestore, storage };
 
 // ─── Firestore Collection Keys ─────────────────────────────────────────────
