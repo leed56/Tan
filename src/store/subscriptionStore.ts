@@ -23,7 +23,6 @@ interface SubscriptionStore {
    * panel is reflected here instantly, with no polling or manual refresh. */
   startListening: (userId: string) => void;
   stopListening: () => void;
-  setSubscription: (sub: UserSubscription) => void;
   enableDemo: (planId?: PlanId) => void;
   clear: () => void;
 }
@@ -73,8 +72,6 @@ export const useSubscriptionStore = create<SubscriptionStore>((set, get) => ({
     get().unsubscribe?.();
     set({ unsubscribe: null });
   },
-
-  setSubscription: (sub) => set({ subscription: sub }),
 
   enableDemo: (planId = 'standard') => {
     const sub = activateDemoPremium(planId);

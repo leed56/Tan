@@ -21,7 +21,7 @@ import { useAuthStore } from '../../store/authStore';
 import type { FeatureKey } from '../../types/subscription';
 import { FREE_DAILY_LIMITS } from '../../types/quiz';
 
-const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? '+255700000000';
+const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
 
 type Props = StackScreenProps<ProfileStackParamList, 'SubscriptionStatus'>;
 
@@ -59,6 +59,7 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
     : 0;
 
   const handleCancelRequest = () => {
+    if (!WHATSAPP_NUMBER) return;
     const message = encodeURIComponent(
       `Hello! I'd like to cancel/manage my Soma AI subscription. My account ID: ${user?.uid ?? ''}`,
     );

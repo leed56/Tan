@@ -1,5 +1,5 @@
 import { doc, getDoc, setDoc, collection, getDocs, query, where } from 'firebase/firestore';
-import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import type { UserDailyMission, MissionType } from '../types/gamification';
 import { DAILY_MISSIONS } from '../utils/seedBadges';
 import { localDateStr } from '../utils/date';
@@ -24,6 +24,7 @@ export async function getTodayMissions(userId: string): Promise<UserDailyMission
   const today = todayStr();
   if (!isFirebaseConfigured()) return buildMissions(userId, today);
   try {
+    await waitForAuthReady();
     const q = query(
       collection(firestore, COLLECTIONS.userDailyMissions),
       where('userId', '==', userId),
@@ -51,6 +52,7 @@ export async function updateMissionProgress(
   const today = todayStr();
   if (!isFirebaseConfigured()) return buildMissions(userId, today);
   try {
+    await waitForAuthReady();
     const q = query(
       collection(firestore, COLLECTIONS.userDailyMissions),
       where('userId', '==', userId),

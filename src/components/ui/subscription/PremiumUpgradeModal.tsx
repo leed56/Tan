@@ -147,7 +147,7 @@ export function PremiumUpgradeModal({
           ))}
 
           <Text style={styles.footer}>
-            Cancel anytime. Mobile money, Google Play & WhatsApp payments accepted.
+            Cancel anytime. Mobile money & WhatsApp payments accepted.
           </Text>
         </ScrollView>
       </View>

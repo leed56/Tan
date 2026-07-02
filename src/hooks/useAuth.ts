@@ -32,19 +32,6 @@ export function useAuth() {
     useAuthStore();
   const { clearProfile } = useProfileStore();
 
-  const loginDemo = useCallback(async () => {
-    setLoading(true);
-    const uid = await ensureFirebaseUid();
-    const demoUser: FirebaseUser = {
-      uid,
-      phoneNumber: '+255712345678',
-      displayName: 'Amara Student',
-      photoURL: null,
-    };
-    setUser(demoUser);
-    setLoading(false);
-  }, [setUser, setLoading]);
-
   // __DEV__-only test-mode bypass (see WelcomeScreen's "Enter Test Mode"
   // button). Skips OTP, but still gets a REAL anonymous Firebase Auth token
   // when Firebase is configured and reachable — otherwise Firestore's
@@ -110,7 +97,6 @@ export function useAuth() {
     loading,
     error,
     setError,
-    loginDemo,
     enterTestMode,
     logout: handleLogout,
     sendOtp,

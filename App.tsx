@@ -1,6 +1,6 @@
 import './global.css';
 import React, { useEffect, useCallback } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Alert } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -74,7 +74,16 @@ export default function App() {
     if (!uid || !subscription) return;
     const isPaid = subscription.status === 'active' || subscription.status === 'demo';
     const maxDevices = isPaid ? planMaxDevices() : 99;
-    registerDevice(uid, maxDevices).catch(() => {});
+    registerDevice(uid, maxDevices)
+      .then(({ blocked }) => {
+        if (blocked) {
+          Alert.alert(
+            'Device limit reached',
+            `Your plan allows up to ${maxDevices} devices. Remove a device in Profile → Subscription → Manage Devices to use this one.`,
+          );
+        }
+      })
+      .catch(() => {});
   }, [uid, subscription, planMaxDevices]);
 
   return (

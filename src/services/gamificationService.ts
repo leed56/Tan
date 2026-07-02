@@ -1,5 +1,5 @@
-import { doc, getDoc, setDoc, addDoc, collection, updateDoc, getDocs, query, where } from 'firebase/firestore';
-import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
+import { doc, getDoc, setDoc, collection, updateDoc, getDocs, query, where } from 'firebase/firestore';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import type { GamificationProfile, XPSource, CoinSource, BadgeId } from '../types/gamification';
 import { XP_REWARDS, COIN_REWARDS, STREAK_MILESTONES } from '../types/gamification';
 import { getLevelFromXp } from '../utils/xpUtils';
@@ -28,23 +28,26 @@ function emptyProfile(uid: string): GamificationProfile {
 
 export async function getGamificationProfile(uid: string): Promise<GamificationProfile> {
   if (!isFirebaseConfigured()) return emptyProfile(uid);
-  try {
-    const ref = doc(firestore, COLLECTIONS.gamification, uid);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) {
-      const profile = emptyProfile(uid);
-      await setDoc(ref, profile).catch(() => {});
-      return profile;
-    }
-    return snap.data() as GamificationProfile;
-  } catch {
-    return emptyProfile(uid);
+  // No catch-all → emptyProfile here: this getter's result is cached by the
+  // store and later persisted with a full-document write, so returning zeros
+  // on a transient failure would eventually OVERWRITE the user's real
+  // xp/coins/streak in Firestore. Let failures throw; the store keeps its
+  // previous state and the hydration flag stays false.
+  await waitForAuthReady();
+  const ref = doc(firestore, COLLECTIONS.gamification, uid);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) {
+    const profile = emptyProfile(uid);
+    await setDoc(ref, profile).catch(() => {});
+    return profile;
   }
+  return snap.data() as GamificationProfile;
 }
 
 export async function saveGamificationProfile(profile: GamificationProfile): Promise<void> {
   if (!isFirebaseConfigured()) return;
   try {
+    await waitForAuthReady();
     await setDoc(doc(firestore, COLLECTIONS.gamification, profile.uid), {
       ...profile,
       updatedAt: Date.now(),
@@ -94,7 +97,9 @@ export function updateStreak(
   profile: GamificationProfile,
 ): { profile: GamificationProfile; milestonesHit: number[] } {
   const today = todayStr();
-  const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  // Local calendar day, same as todayStr()/lastStudyDate — computing this in
+  // UTC broke streak continuity for anyone studying between 00:00–03:00 EAT.
+  const yesterday = localDateStr(new Date(Date.now() - 86400000));
 
   let currentStreak = profile.currentStreak;
   if (profile.lastStudyDate === today) {
@@ -179,27 +184,29 @@ export function checkBadgeUnlocks(
 
 export async function saveUserBadges(uid: string, badgeIds: BadgeId[]): Promise<void> {
   if (!isFirebaseConfigured() || badgeIds.length === 0) return;
-  try {
-    for (const badgeId of badgeIds) {
-      await addDoc(collection(firestore, COLLECTIONS.userBadges), {
-        userId: uid,
-        badgeId,
-        earnedAt: Date.now(),
-      });
-    }
-  } catch {}
+  await waitForAuthReady().catch(() => {});
+  for (const badgeId of badgeIds) {
+    // Deterministic id makes re-awards idempotent: user_badges rules forbid
+    // updates, so a second attempt for the same badge is rejected instead of
+    // creating a duplicate doc (which addDoc did whenever the earned-badge
+    // list had been fetched pre-auth as empty).
+    await setDoc(doc(firestore, COLLECTIONS.userBadges, `${uid}_${badgeId}`), {
+      userId: uid,
+      badgeId,
+      earnedAt: Date.now(),
+    }).catch(() => {});
+  }
 }
 
 export async function getUserBadgeIds(uid: string): Promise<BadgeId[]> {
   if (!isFirebaseConfigured()) return [];
-  try {
-    const snap = await getDocs(
-      query(collection(firestore, COLLECTIONS.userBadges), where('userId', '==', uid)),
-    );
-    return snap.docs.map((d) => d.data().badgeId as BadgeId);
-  } catch {
-    return [];
-  }
+  // Throws on failure (no [] fallback): a cached-empty earned list makes
+  // checkBadges re-award old badges — duplicate XP popups and inflated counts.
+  await waitForAuthReady();
+  const snap = await getDocs(
+    query(collection(firestore, COLLECTIONS.userBadges), where('userId', '==', uid)),
+  );
+  return snap.docs.map((d) => d.data().badgeId as BadgeId);
 }
 
 export { SEED_BADGES };

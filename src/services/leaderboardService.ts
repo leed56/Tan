@@ -9,7 +9,7 @@ import {
   where,
   runTransaction,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import type { LeaderboardScore } from '../types/gamification';
 import { DEMO_LEADERBOARD, AVATARS } from '../constants';
 import { weekKey, monthKey } from '../utils/date';
@@ -44,6 +44,7 @@ export async function getLeaderboard(
   if (!isFirebaseConfigured()) return demoScores(tab === 'friends' ? 'national' : tab);
 
   try {
+    await waitForAuthReady();
     const sortField =
       tab === 'weekly' ? 'weeklyXp' : tab === 'monthly' ? 'monthlyXp' : 'totalXp';
 
@@ -65,7 +66,10 @@ export async function getLeaderboard(
     const snap = await getDocs(q);
     return snap.docs.map((d, i) => ({ id: d.id, ...d.data(), rank: i + 1 } as LeaderboardScore));
   } catch {
-    return demoScores(tab === 'friends' ? 'national' : tab);
+    // Empty, NOT demoScores: the store only refetches tabs whose cache is
+    // empty, so a fabricated fallback would pin fake players on the board for
+    // the whole session after one failed (e.g. pre-auth) fetch.
+    return [];
   }
 }
 
@@ -78,6 +82,7 @@ export async function updateLeaderboardScore(
   xpDelta: number,
 ): Promise<void> {
   if (!isFirebaseConfigured() || xpDelta <= 0) return;
+  await waitForAuthReady().catch(() => {});
   const ref = doc(firestore, COLLECTIONS.leaderboardScores, userId);
   const wk = weekKey();
   const mk = monthKey();

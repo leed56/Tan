@@ -200,39 +200,3 @@ export function getTopicCountForSubject(formId: string, subjectId: string): numb
 export function getPackCountForTopic(topicId: string): number {
   return getSeedLearningPacks().filter((p) => p.topicId === topicId && p.isActive).length;
 }
-
-// ─── Seed Firestore (run once from admin / onboarding) ────────────────────────
-// TODO: Phase 3 — move this to a Cloud Function or admin script
-
-export async function seedFirestore(): Promise<void> {
-  if (!isFirebaseConfigured()) {
-    console.warn('[curriculumService] Firebase not configured — skipping Firestore seed.');
-    return;
-  }
-  const batch = writeBatch(firestore);
-
-  for (const form of SEED_FORMS) {
-    batch.set(doc(firestore, COLLECTIONS.forms, form.id), form);
-  }
-  for (const subject of getSeedSubjects()) {
-    batch.set(doc(firestore, COLLECTIONS.subjects, subject.id), subject);
-  }
-  await batch.commit();
-
-  // Topics and packs are too large for one batch — write in chunks
-  const topics = getSeedTopics();
-  for (let i = 0; i < topics.length; i += 400) {
-    const chunk = topics.slice(i, i + 400);
-    const b = writeBatch(firestore);
-    chunk.forEach((t) => b.set(doc(firestore, COLLECTIONS.topics, t.id), t));
-    await b.commit();
-  }
-
-  const packs = getSeedLearningPacks();
-  for (let i = 0; i < packs.length; i += 400) {
-    const chunk = packs.slice(i, i + 400);
-    const b = writeBatch(firestore);
-    chunk.forEach((p) => b.set(doc(firestore, COLLECTIONS.learningPacks, p.id), p));
-    await b.commit();
-  }
-}

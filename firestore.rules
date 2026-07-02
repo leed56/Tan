@@ -143,8 +143,22 @@ service cloud.firestore {
       allow create: if isSignedIn()
         && request.resource.data.userId == request.auth.uid
         && request.resource.data.status == 'pending'
-        && request.resource.data.billingCycle in ['monthly', 'yearly']
-        && request.resource.data.amount in [4999, 40000, 7999, 60000]
+        // Amount must match the exact plan+cycle combination — validating the
+        // three fields independently let a client submit planId 'family' /
+        // yearly with the standard-monthly amount and get the bigger plan
+        // activated for the smaller price on admin approval.
+        && ((request.resource.data.planId == 'standard'
+              && request.resource.data.billingCycle == 'monthly'
+              && request.resource.data.amount == 4999)
+            || (request.resource.data.planId == 'standard'
+              && request.resource.data.billingCycle == 'yearly'
+              && request.resource.data.amount == 40000)
+            || (request.resource.data.planId == 'family'
+              && request.resource.data.billingCycle == 'monthly'
+              && request.resource.data.amount == 7999)
+            || (request.resource.data.planId == 'family'
+              && request.resource.data.billingCycle == 'yearly'
+              && request.resource.data.amount == 60000))
         && request.resource.data.provider in [
              'mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl', 'google_play', 'whatsapp'
            ];

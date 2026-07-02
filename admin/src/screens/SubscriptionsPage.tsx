@@ -29,11 +29,22 @@ export function SubscriptionsPage() {
     queryFn: async () => {
       const q = query(collection(db, 'payment_requests'), orderBy('submittedAt', 'desc'));
       const snap = await getDocs(q);
+      // The app writes these as epoch-millis numbers while admin-side writes
+      // use serverTimestamp() — calling .toDate() on a number throws, which
+      // crashed this whole page as soon as one client-created request existed.
+      const asDate = (v: unknown): Date | undefined => {
+        if (v instanceof Date) return v;
+        if (typeof v === 'number') return new Date(v);
+        if (v && typeof (v as { toDate?: () => Date }).toDate === 'function') {
+          return (v as { toDate: () => Date }).toDate();
+        }
+        return undefined;
+      };
       return snap.docs.map((d) => ({
         id: d.id,
         ...d.data(),
-        submittedAt: d.data().submittedAt?.toDate() ?? new Date(),
-        verifiedAt: d.data().verifiedAt?.toDate(),
+        submittedAt: asDate(d.data().submittedAt) ?? new Date(),
+        verifiedAt: asDate(d.data().verifiedAt),
       } as PaymentRequest));
     },
   });

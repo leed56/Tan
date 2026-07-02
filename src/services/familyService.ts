@@ -21,7 +21,7 @@ import {
   where,
   increment,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import type { ChildProfile } from '../types/subscription';
 import { getLevelFromXp } from '../utils/xpUtils';
 import { localDateStr, weekKey } from '../utils/date';
@@ -34,15 +34,31 @@ export function subscribeToChildProfiles(
     callback([]);
     return () => {};
   }
-  const q = query(
-    collection(firestore, COLLECTIONS.familyChildren),
-    where('rootUid', '==', rootUid),
-  );
-  return onSnapshot(
-    q,
-    (snap) => callback(snap.docs.map((d) => ({ id: d.id, ...d.data() } as ChildProfile))),
-    () => callback([]),
-  );
+  // Deferred start — same rationale as subscribeToSubscription: this fires
+  // from App.tsx before the startup sign-in finishes, and one pre-auth
+  // permission-denied kills the listener permanently, emptying the Family
+  // Hub (and silently reverting a "playing as child" session to the parent).
+  let cancelled = false;
+  let unsubscribe: (() => void) | null = null;
+
+  (async () => {
+    await waitForAuthReady();
+    if (cancelled) return;
+    const q = query(
+      collection(firestore, COLLECTIONS.familyChildren),
+      where('rootUid', '==', rootUid),
+    );
+    unsubscribe = onSnapshot(
+      q,
+      (snap) => callback(snap.docs.map((d) => ({ id: d.id, ...d.data() } as ChildProfile))),
+      () => callback([]),
+    );
+  })();
+
+  return () => {
+    cancelled = true;
+    unsubscribe?.();
+  };
 }
 
 export async function addChildProfile(

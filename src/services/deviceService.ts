@@ -15,7 +15,7 @@ import {
   serverTimestamp,
   Timestamp,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import type { RegisteredDevice } from '../types/subscription';
 
 const DEVICE_ID_KEY = 'soma-device-id';
@@ -55,6 +55,7 @@ export async function registerDevice(
   if (!isFirebaseConfigured()) return { blocked: false };
   const deviceId = await getOrCreateDeviceId();
   try {
+    await waitForAuthReady();
     const snap = await getDocs(devicesRef(userId));
     const alreadyRegistered = snap.docs.some((d) => d.id === deviceId);
     if (!alreadyRegistered && snap.size >= maxDevices) {

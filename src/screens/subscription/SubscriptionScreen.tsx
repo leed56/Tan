@@ -144,13 +144,16 @@ export function SubscriptionScreen({ navigation }: Props) {
           icon={<Ionicons name="arrow-forward" size={18} color={COLORS.textPrimary} />}
         />
 
-        {/* Demo mode */}
-        <TouchableOpacity onPress={handleDemo} style={styles.demoBtn}>
-          <Text style={styles.demoBtnText}>Try Demo Premium (dev only)</Text>
-        </TouchableOpacity>
+        {/* Demo mode — dev builds only; in release this granted full premium
+            (unlimited quizzes, HOQ, summaries) to any free user in one tap. */}
+        {__DEV__ && (
+          <TouchableOpacity onPress={handleDemo} style={styles.demoBtn}>
+            <Text style={styles.demoBtnText}>Try Demo Premium (dev only)</Text>
+          </TouchableOpacity>
+        )}
 
         <Text style={styles.footer}>
-          Cancel anytime. Payments via mobile money, Google Play, or WhatsApp.
+          Cancel anytime. Payments via mobile money or WhatsApp support.
         </Text>
       </ScrollView>
     </ScreenContainer>

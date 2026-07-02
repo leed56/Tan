@@ -1,12 +1,11 @@
 import {
   doc,
-  getDoc,
   addDoc,
   onSnapshot,
   collection,
   Timestamp,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 
 import type {
   UserSubscription,
@@ -14,7 +13,6 @@ import type {
   PaymentProvider,
   PlanId,
   BillingCycle,
-  FeatureKey,
 } from '../types/subscription';
 import { SEED_PLANS } from '../utils/seedPlans';
 
@@ -72,69 +70,50 @@ export function subscribeToSubscription(
     return () => {};
   }
 
-  const ref = doc(firestore, COLLECTIONS.users, userId);
-  return onSnapshot(
-    ref,
-    (snap) => {
-      const data = snap.data();
-      if (!data) {
-        callback(freeSubscription(userId));
-        return;
-      }
-      const expiresAt = toMillis(data.subscriptionExpiry);
-      const active = data.subscriptionStatus === 'active';
-      const status: UserSubscription['status'] =
-        active && expiresAt !== null && expiresAt > Date.now()
-          ? 'active'
-          : active
-          ? 'expired'
-          : 'free';
-      callback({
-        userId,
-        status,
-        planId: (data.subscriptionPlan as PlanId | undefined) ?? null,
-        billingCycle: (data.billingCycle as BillingCycle | undefined) ?? null,
-        expiresAt,
-      });
-    },
-    () => callback(freeSubscription(userId)),
-  );
-}
+  // Deferred start: this is called from App.tsx as soon as the persisted
+  // auth store rehydrates — often before the startup anonymous sign-in has a
+  // token. A Firestore listener that errors once (permission-denied) is
+  // terminated permanently by the SDK, which would leave a paying user stuck
+  // on "free" for the whole session with admin activation never arriving.
+  let cancelled = false;
+  let unsubscribe: (() => void) | null = null;
 
-async function getUserSubscriptionOnce(userId: string): Promise<UserSubscription> {
-  if (_demoActive) return buildDemoSubscription(_demoPlanId);
-  if (!isFirebaseConfigured()) return freeSubscription(userId);
-  try {
-    const snap = await getDoc(doc(firestore, COLLECTIONS.users, userId));
-    const data = snap.data();
-    if (!data) return freeSubscription(userId);
-    const expiresAt = toMillis(data.subscriptionExpiry);
-    const active = data.subscriptionStatus === 'active';
-    return {
-      userId,
-      status: active && expiresAt !== null && expiresAt > Date.now() ? 'active' : 'free',
-      planId: (data.subscriptionPlan as PlanId | undefined) ?? null,
-      billingCycle: (data.billingCycle as BillingCycle | undefined) ?? null,
-      expiresAt,
-    };
-  } catch {
-    return freeSubscription(userId);
-  }
-}
+  (async () => {
+    await waitForAuthReady();
+    if (cancelled) return;
+    const ref = doc(firestore, COLLECTIONS.users, userId);
+    unsubscribe = onSnapshot(
+      ref,
+      (snap) => {
+        const data = snap.data();
+        if (!data) {
+          callback(freeSubscription(userId));
+          return;
+        }
+        const expiresAt = toMillis(data.subscriptionExpiry);
+        const active = data.subscriptionStatus === 'active';
+        const status: UserSubscription['status'] =
+          active && expiresAt !== null && expiresAt > Date.now()
+            ? 'active'
+            : active
+            ? 'expired'
+            : 'free';
+        callback({
+          userId,
+          status,
+          planId: (data.subscriptionPlan as PlanId | undefined) ?? null,
+          billingCycle: (data.billingCycle as BillingCycle | undefined) ?? null,
+          expiresAt,
+        });
+      },
+      () => callback(freeSubscription(userId)),
+    );
+  })();
 
-export async function isPremiumUser(userId: string): Promise<boolean> {
-  const sub = await getUserSubscriptionOnce(userId);
-  return sub.status === 'active' || sub.status === 'demo';
-}
-
-export async function canAccessFeature(
-  userId: string,
-  featureKey: FeatureKey,
-): Promise<boolean> {
-  const sub = await getUserSubscriptionOnce(userId);
-  if (sub.status !== 'active' && sub.status !== 'demo') return false;
-  const plan = SEED_PLANS.find((p) => p.id === sub.planId);
-  return plan?.features.includes(featureKey) ?? false;
+  return () => {
+    cancelled = true;
+    unsubscribe?.();
+  };
 }
 
 // ─── Payment requests ──────────────────────────────────────────────────────
@@ -176,10 +155,11 @@ export async function createPaymentRequest(
     return { id: `local_${Date.now()}`, ...payload };
   }
 
-  try {
-    const ref = await addDoc(collection(firestore, COLLECTIONS.paymentRequests), payload);
-    return { id: ref.id, ...payload };
-  } catch {
-    return { id: `local_${Date.now()}`, ...payload };
-  }
+  // No catch: if this write fails the admin panel never sees the request, so
+  // fabricating a local "success" here made the UI tell students their
+  // payment was submitted while nothing was recorded — they'd send mobile
+  // money with no request to verify against. Let the screen show its error.
+  await waitForAuthReady();
+  const ref = await addDoc(collection(firestore, COLLECTIONS.paymentRequests), payload);
+  return { id: ref.id, ...payload };
 }

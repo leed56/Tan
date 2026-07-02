@@ -7,7 +7,7 @@
  * TODO: Phase 3 — aggregate stats (accuracy, time spent) into a summary doc
  */
 
-import { firestore, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import {
   collection,
   doc,
@@ -28,6 +28,7 @@ function progressId(userId: string, learningPackId: string): string {
 export async function getStudentProgress(userId: string): Promise<StudentProgress[]> {
   if (!isFirebaseConfigured()) return [];
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.studentProgress),
@@ -46,6 +47,7 @@ export async function getSubjectProgress(
 ): Promise<SubjectProgressSummary | null> {
   if (!isFirebaseConfigured()) return null;
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.studentProgress),

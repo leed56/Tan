@@ -32,6 +32,10 @@ interface GamificationStore {
 
   loading: boolean;
   profile: GamificationProfile | null;
+  // True only after a successful server fetch this session. Remote persists
+  // are gated on it: writing a never-hydrated (zero-based) profile with a
+  // full-document setDoc would destroy the user's accumulated xp/streak.
+  hydrated: boolean;
 
   // Phase 1-compatible API
   addXp: (amount: number) => void;
@@ -85,6 +89,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
   pendingBadges: [],
   loading: false,
   profile: null,
+  hydrated: false,
 
   // ─── Phase 1-compatible ────────────────────────────────────────────────────
   addXp: (amount) => {
@@ -150,9 +155,11 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
       ]);
       set({
         xp: profile.xp, level: profile.level, streak: profile.currentStreak, coins: profile.coins,
-        profile, earnedBadgeIds, loading: false,
+        profile, earnedBadgeIds, loading: false, hydrated: true,
       });
     } catch {
+      // Fetch failed (offline / pre-auth) — keep previous state and leave
+      // hydrated false so nothing zero-based gets persisted over real data.
       set({ loading: false });
     }
   },
@@ -162,7 +169,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
     const base = s.profile ?? buildLocal(s.xp, s.streak, s.coins);
     const { profile: updated, leveledUp, newLevel } = applyXP(base, source);
     set({ xp: updated.xp, level: updated.level, profile: updated, pendingLevelUp: leveledUp ? newLevel : s.pendingLevelUp });
-    await saveGamificationProfile({ ...updated, uid }).catch(() => {});
+    if (get().hydrated) await saveGamificationProfile({ ...updated, uid }).catch(() => {});
   },
 
   awardCoins: (uid, source) => {
@@ -170,7 +177,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
     const base = s.profile ?? buildLocal(s.xp, s.streak, s.coins);
     const updated = applyCoins(base, source);
     set({ coins: updated.coins, profile: updated });
-    saveGamificationProfile({ ...updated, uid }).catch(() => {});
+    if (get().hydrated) saveGamificationProfile({ ...updated, uid }).catch(() => {});
   },
 
   checkStreak: async (uid) => {
@@ -178,7 +185,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
     const base = s.profile ?? buildLocal(s.xp, s.streak, s.coins);
     const { profile: updated, milestonesHit } = updateStreak(base);
     set({ xp: updated.xp, level: updated.level, streak: updated.currentStreak, coins: updated.coins, profile: updated });
-    await saveGamificationProfile({ ...updated, uid }).catch(() => {});
+    if (get().hydrated) await saveGamificationProfile({ ...updated, uid }).catch(() => {});
     return milestonesHit;
   },
 
@@ -191,7 +198,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
         correctCount: context.correctCount ?? 0,
       });
       set({ profile: base });
-      saveGamificationProfile({ ...base, uid }).catch(() => {});
+      if (get().hydrated) saveGamificationProfile({ ...base, uid }).catch(() => {});
     }
     const newIds = checkBadgeUnlocks(base, s.earnedBadgeIds, context);
     if (newIds.length === 0) return [];
@@ -209,7 +216,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
 
   persistProfile: async (uid) => {
     const s = get();
-    if (!s.profile) return;
+    if (!s.profile || !s.hydrated) return;
     await saveGamificationProfile({ ...s.profile, uid }).catch(() => {});
   },
 
@@ -218,7 +225,7 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
   persistIfSignedIn: () => {
     const uid = useAuthStore.getState().user?.uid;
     const s = get();
-    if (!uid || !s.profile) return;
+    if (!uid || !s.profile || !s.hydrated) return;
     saveGamificationProfile({ ...s.profile, uid }).catch(() => {});
   },
 }));

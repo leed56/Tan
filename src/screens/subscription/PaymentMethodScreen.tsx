@@ -29,7 +29,10 @@ type Props = StackScreenProps<HomeStackParamList, 'PaymentMethodScreen'>;
 // mobile money and WhatsApp alike — routes through admin manual verification.
 const ANDROID_PROVIDERS: PaymentProvider[] = ['mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl', 'whatsapp'];
 
-const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? '+255700000000';
+// No placeholder fallback: this is the ONLY payment path on iOS, and a
+// build without the env var was silently opening chats to a number nobody
+// owns. Unset now disables the action with a clear message instead.
+const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
 
 export function PaymentMethodScreen({ navigation, route }: Props) {
   const { planId, planTitle, billingCycle, price } = route.params;
@@ -48,6 +51,13 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
 
   const submitAndOpenWhatsApp = async () => {
     if (!user?.uid) return;
+    if (!WHATSAPP_NUMBER) {
+      Alert.alert(
+        'Support unavailable',
+        'WhatsApp support is not configured yet. Please try again later.',
+      );
+      return;
+    }
     setProcessing(true);
     try {
       await createPaymentRequest(
@@ -66,6 +76,8 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
         "Complete payment with our support team. Once confirmed, your account activates instantly — no need to reopen the app.",
         [{ text: 'OK', onPress: () => navigation.navigate('SubscriptionStatus') }],
       );
+    } catch {
+      Alert.alert('Something went wrong', 'Your request was not submitted. Please try again.');
     } finally {
       setProcessing(false);
     }
