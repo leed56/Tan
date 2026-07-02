@@ -16,6 +16,7 @@ import { ErrorState } from '../../components/ui/ErrorState';
 import { QuizProgressBar } from '../../components/ui/quiz/QuizProgressBar';
 import { QuestionRenderer } from '../../components/ui/quiz/QuestionRenderer';
 import { MCQOption } from '../../components/ui/quiz/MCQOption';
+import { FIBInput } from '../../components/ui/quiz/FIBInput';
 import { FeedbackModal } from '../../components/ui/quiz/FeedbackModal';
 import { stripMathMarkup } from '../../components/ui/quiz/MathRenderer';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
@@ -26,6 +27,18 @@ type Props = StackScreenProps<HomeStackParamList, 'FIBQuiz'>;
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D'];
 
+// Free-text FIB answers are matched leniently: case/whitespace-insensitive,
+// and numerically when both sides parse as numbers ("180" == "180.0").
+const normalizeAnswer = (s: string) => s.trim().toLowerCase().replace(/\s+/g, ' ');
+const answersMatch = (given: string, expected: string) => {
+  const a = normalizeAnswer(given);
+  const b = normalizeAnswer(expected);
+  if (a === b) return true;
+  const na = Number(a.replace(/,/g, ''));
+  const nb = Number(b.replace(/,/g, ''));
+  return Number.isFinite(na) && Number.isFinite(nb) && na === nb;
+};
+
 export function FIBScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
 
@@ -33,10 +46,14 @@ export function FIBScreen({ navigation, route }: Props) {
   const { addXp, addCoins } = useGamificationStore();
 
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [typedAnswer, setTypedAnswer] = useState('');
   const [showFeedback, setShowFeedback] = useState(false);
 
   const question = currentQuestion();
   const session = currentSession;
+  // Nearly all FIB content is free-text (correctAnswer holds the expected
+  // answer, options is empty); option-based fill-ins remain supported.
+  const isFreeText = (question?.options?.length ?? 0) === 0;
 
   // Reset state on new question
   const prevQuestionId = React.useRef<string | undefined>(undefined);
@@ -44,18 +61,22 @@ export function FIBScreen({ navigation, route }: Props) {
     prevQuestionId.current = question?.id;
     if (selectedOption !== null) {
       setSelectedOption(null);
+      setTypedAnswer('');
       setShowFeedback(false);
     }
   }
 
-  const handleAnswer = useCallback((optionId: string) => {
+  const handleAnswer = useCallback((answer: string) => {
     if (selectedOption !== null || !question) return;
 
-    const correct = question.correctAnswer === optionId;
+    const freeText = (question.options?.length ?? 0) === 0;
+    const correct = freeText
+      ? answersMatch(answer, question.correctAnswer)
+      : question.correctAnswer === answer;
     const timeTaken = 0; // no timer for FIB
 
-    setSelectedOption(optionId);
-    submitAnswer(question.id, optionId, correct, timeTaken);
+    setSelectedOption(answer);
+    submitAnswer(question.id, answer, correct, timeTaken);
 
     if (correct) {
       addXp(question.xpReward);
@@ -131,8 +152,13 @@ export function FIBScreen({ navigation, route }: Props) {
 
   const current = session.currentIndex + 1;
   const total = session.questions.length;
-  const isCorrect = selectedOption !== null && question.correctAnswer === selectedOption;
+  const isCorrect =
+    selectedOption !== null &&
+    (isFreeText
+      ? answersMatch(selectedOption, question.correctAnswer)
+      : question.correctAnswer === selectedOption);
   const correctOption = question.options.find((o) => o.id === question.correctAnswer);
+  const correctAnswerText = correctOption ? correctOption.text : question.correctAnswer;
 
   return (
     <ScreenContainer padded={false}>
@@ -158,26 +184,39 @@ export function FIBScreen({ navigation, route }: Props) {
         {/* Question */}
         <QuestionRenderer question={question} questionNumber={current} />
 
-        {/* Options — choose the term that fills the blank */}
-        <View style={styles.options}>
-          {question.options.map((opt, i) => {
-            let state: 'idle' | 'selected' | 'correct' | 'wrong' = 'idle';
-            if (selectedOption !== null) {
-              if (opt.id === question.correctAnswer) state = 'correct';
-              else if (opt.id === selectedOption) state = 'wrong';
-            }
-            return (
-              <MCQOption
-                key={opt.id}
-                option={opt}
-                label={OPTION_LABELS[i]}
-                state={state}
-                disabled={selectedOption !== null}
-                onPress={handleAnswer}
-              />
-            );
-          })}
-        </View>
+        {isFreeText ? (
+          /* Free-text answer — the standard FIB shape in the question bank */
+          <View style={styles.options}>
+            <FIBInput
+              value={typedAnswer}
+              onChange={setTypedAnswer}
+              onSubmit={() => handleAnswer(typedAnswer)}
+              disabled={selectedOption !== null}
+              isCorrect={selectedOption === null ? null : isCorrect}
+            />
+          </View>
+        ) : (
+          /* Options — choose the term that fills the blank */
+          <View style={styles.options}>
+            {question.options.map((opt, i) => {
+              let state: 'idle' | 'selected' | 'correct' | 'wrong' = 'idle';
+              if (selectedOption !== null) {
+                if (opt.id === question.correctAnswer) state = 'correct';
+                else if (opt.id === selectedOption) state = 'wrong';
+              }
+              return (
+                <MCQOption
+                  key={opt.id}
+                  option={opt}
+                  label={OPTION_LABELS[i]}
+                  state={state}
+                  disabled={selectedOption !== null}
+                  onPress={handleAnswer}
+                />
+              );
+            })}
+          </View>
+        )}
       </ScrollView>
 
       <FeedbackModal
@@ -185,7 +224,7 @@ export function FIBScreen({ navigation, route }: Props) {
         isCorrect={isCorrect}
         xpEarned={question.xpReward}
         explanation={question.explanation}
-        correctAnswerLabel={!isCorrect && correctOption ? stripMathMarkup(correctOption.text) : undefined}
+        correctAnswerLabel={!isCorrect && correctAnswerText ? stripMathMarkup(correctAnswerText) : undefined}
         onContinue={handleContinue}
         onViewExplanation={handleViewExplanation}
       />
