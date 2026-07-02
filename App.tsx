@@ -8,6 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { WebPhoneFrame } from './src/components/WebPhoneFrame';
+import { DevDataModeBanner } from './src/components/DevDataModeBanner';
 import { initCrashReporting } from './src/services/crashReportingService';
 import { initOfflineSupport } from './src/services/offlineService';
 import { useAuthStore } from './src/store/authStore';
@@ -84,6 +85,7 @@ export default function App() {
           <NavigationContainer onReady={onReady}>
             <RootNavigator />
           </NavigationContainer>
+          <DevDataModeBanner />
         </WebPhoneFrame>
       </SafeAreaProvider>
     </GestureHandlerRootView>

@@ -7,15 +7,11 @@ import {
   doc,
   setDoc,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { AIExplanation, ExplanationFeedback, GeminiExplanationResponse } from '../types/explanation';
 import { isAIAvailable, generateExplanation } from './aiProviderService';
 import { RateLimitError } from './geminiService';
 import type { ExplanationGenerationParams } from './promptTemplateService';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 const MATH_SUBJECTS = new Set(['mathematics', 'physics', 'chemistry']);
 

@@ -6,12 +6,8 @@
  * `role == 'student'`. App-specific profile fields are stored alongside.
  */
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { FirebaseUser, UserProfile } from '../types';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 export async function createUserProfile(
   user: FirebaseUser,

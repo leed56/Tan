@@ -7,12 +7,8 @@ import {
   serverTimestamp,
 } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
-import { app, firestore, COLLECTIONS } from './firebaseConfig';
+import { app, firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { PaymentProvider } from '../types/subscription';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 // ─── Selcom PayBox ────────────────────────────────────────────────────────────
 

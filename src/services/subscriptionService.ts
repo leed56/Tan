@@ -6,11 +6,7 @@ import {
   collection,
   Timestamp,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 
 import type {
   UserSubscription,

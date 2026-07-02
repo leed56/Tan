@@ -10,7 +10,7 @@
  * TODO: Phase 3 — add caching layer (AsyncStorage) for offline-first
  */
 
-import { firestore } from './firebaseConfig';
+import { firestore, isFirebaseConfigured } from './firebaseConfig';
 import {
   collection,
   getDocs,
@@ -36,12 +36,6 @@ import {
 import { COLLECTIONS } from './firebaseConfig';
 
 // ─── Check if Firebase is configured ─────────────────────────────────────────
-
-function isFirebaseConfigured(): boolean {
-  // TODO: Phase 3 — replace with proper connectivity check
-  const projectId = process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '';
-  return projectId.length > 0;
-}
 
 // ─── Forms ────────────────────────────────────────────────────────────────────
 

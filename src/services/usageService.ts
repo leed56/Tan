@@ -4,7 +4,7 @@
  * TODO: Phase 4 — integrate with subscription status for premium bypass
  */
 
-import { firestore } from './firebaseConfig';
+import { firestore, isFirebaseConfigured } from './firebaseConfig';
 import {
   doc,
   getDoc,
@@ -16,10 +16,6 @@ import { COLLECTIONS } from './firebaseConfig';
 import type { DailyUsage, QuizType, FREE_DAILY_LIMITS } from '../types/quiz';
 import { FREE_DAILY_LIMITS as LIMITS } from '../types/quiz';
 import { localDateStr } from '../utils/date';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 // Local (EAT) calendar day, matching the rest of the app's streak/mission
 // bucketing — using UTC here would reset free-tier limits up to 3 hours

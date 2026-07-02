@@ -15,12 +15,8 @@ import {
   serverTimestamp,
   Timestamp,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { RegisteredDevice } from '../types/subscription';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 const DEVICE_ID_KEY = 'soma-device-id';
 

@@ -18,7 +18,11 @@ import { getStorage, FirebaseStorage } from 'firebase/storage';
 // before a single screen renders. Substitute a syntactically-valid dummy
 // config in that case so the SDK objects construct cleanly; every real
 // network call downstream still stays gated on the real env var below.
-const hasRealCredentials = !!process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID;
+// Treat .env.example's placeholder values ("your_project_id" etc.) the same as
+// no credentials — a copied-but-unedited .env would otherwise pass this check
+// and point every request at a nonexistent project.
+const _envProjectId = process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '';
+const hasRealCredentials = _envProjectId.length > 0 && !_envProjectId.startsWith('your_');
 
 const firebaseConfig = {
   apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || 'demo-api-key',
@@ -70,6 +74,12 @@ if (hasRealCredentials) {
     `%c[Soma] LIVE MODE — Firestore project "${firebaseConfig.projectId}". Real curriculum will load if it's been seeded there.`,
     'color:#4ECDC4;font-weight:bold',
   );
+} else if (_envProjectId.startsWith('your_')) {
+  console.warn(
+    '%c[Soma] OFFLINE SEED MODE — .env still contains the PLACEHOLDER values from .env.example ' +
+      `(projectId "${_envProjectId}"). Edit .env with your real Firebase keys, save, and restart with \`expo start -c\`.`,
+    'color:#F7C52E;font-weight:bold',
+  );
 } else {
   console.warn(
     '%c[Soma] OFFLINE SEED MODE — no EXPO_PUBLIC_FIREBASE_PROJECT_ID found. ' +
@@ -80,6 +90,17 @@ if (hasRealCredentials) {
 }
 
 export { app, auth, firestore, storage };
+
+/**
+ * Single source of truth for "should services hit the real Firebase network."
+ * False when EXPO_PUBLIC_FIREBASE_PROJECT_ID is unset OR still holds the
+ * .env.example placeholder — either way real queries can't succeed, so
+ * services should use the local seed fallback immediately instead of timing
+ * out against a nonexistent project first.
+ */
+export function isFirebaseConfigured(): boolean {
+  return hasRealCredentials;
+}
 
 // ─── Firestore Collection Keys ─────────────────────────────────────────────
 export const COLLECTIONS = {

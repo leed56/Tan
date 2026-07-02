@@ -9,7 +9,7 @@ import {
   where,
   runTransaction,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { LeaderboardScore } from '../types/gamification';
 import { DEMO_LEADERBOARD, AVATARS } from '../constants';
 import { weekKey, monthKey } from '../utils/date';
@@ -17,10 +17,6 @@ import { weekKey, monthKey } from '../utils/date';
 /** Stable school id derived from the free-text school name (no schools table yet). */
 function schoolSlug(school: string): string {
   return school.trim().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-}
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
 }
 
 function demoScores(tab: 'national' | 'school' | 'weekly' | 'monthly'): LeaderboardScore[] {

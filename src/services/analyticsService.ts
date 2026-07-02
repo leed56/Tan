@@ -1,16 +1,12 @@
 // TODO: Phase 2 — log custom events to Firebase Analytics
 
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { AnalyticsSummary, SubjectMastery } from '../types';
 import type { QuizAttempt } from '../types/quiz';
 import { getGamificationProfile } from './gamificationService';
 import { getStudentProgress, aggregateSubjectProgress } from './progressService';
 import { SUBJECTS } from '../constants/subjects';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 export type AnalyticsPeriod = '7d' | '30d' | '3m';
 

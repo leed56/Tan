@@ -21,14 +21,10 @@ import {
   where,
   increment,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { ChildProfile } from '../types/subscription';
 import { getLevelFromXp } from '../utils/xpUtils';
 import { localDateStr, weekKey } from '../utils/date';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 export function subscribeToChildProfiles(
   rootUid: string,

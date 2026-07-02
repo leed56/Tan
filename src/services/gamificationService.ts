@@ -1,14 +1,10 @@
 import { doc, getDoc, setDoc, addDoc, collection, updateDoc, getDocs, query, where } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured } from './firebaseConfig';
 import type { GamificationProfile, XPSource, CoinSource, BadgeId } from '../types/gamification';
 import { XP_REWARDS, COIN_REWARDS, STREAK_MILESTONES } from '../types/gamification';
 import { getLevelFromXp } from '../utils/xpUtils';
 import { SEED_BADGES } from '../utils/seedBadges';
 import { localDateStr } from '../utils/date';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 function todayStr(): string {
   return localDateStr();

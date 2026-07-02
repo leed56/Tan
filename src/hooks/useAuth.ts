@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { signInAnonymously } from 'firebase/auth';
-import { auth } from '../services/firebaseConfig';
+import { auth, isFirebaseConfigured } from '../services/firebaseConfig';
 import { useAuthStore } from '../store/authStore';
 import { useProfileStore } from '../store/profileStore';
 import { useGamificationStore } from '../store/gamificationStore';
@@ -8,10 +8,6 @@ import type { FirebaseUser } from '../types';
 
 // TODO: Phase 2 — integrate Firebase Auth phone OTP flow
 // TODO: Phase 2 — persist auth state with AsyncStorage / SecureStore
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 // Until real phone auth is wired, back the demo session with a real Firebase
 // (anonymous) uid so per-user writes satisfy `request.auth.uid == userId`.

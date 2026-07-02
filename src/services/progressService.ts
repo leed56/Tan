@@ -7,7 +7,7 @@
  * TODO: Phase 3 — aggregate stats (accuracy, time spent) into a summary doc
  */
 
-import { firestore } from './firebaseConfig';
+import { firestore, isFirebaseConfigured } from './firebaseConfig';
 import {
   collection,
   doc,
@@ -21,10 +21,6 @@ import { COLLECTIONS } from './firebaseConfig';
 
 function progressId(userId: string, learningPackId: string): string {
   return `${userId}_${learningPackId}`;
-}
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
 }
 
 // ─── Read ─────────────────────────────────────────────────────────────────────

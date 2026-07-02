@@ -4,7 +4,7 @@
  * TODO: Phase 4 — add real-time listeners for live question bank updates
  */
 
-import { firestore } from './firebaseConfig';
+import { firestore, isFirebaseConfigured } from './firebaseConfig';
 import {
   collection,
   getDocs,
@@ -18,10 +18,6 @@ import {
 import { COLLECTIONS } from './firebaseConfig';
 import type { Question, QuizAttempt, QuizAnswer } from '../types/quiz';
 import { getSeedQuestionsByPack } from '../utils/seedQuestions';
-
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 
 // ─── Questions ────────────────────────────────────────────────────────────────
 
