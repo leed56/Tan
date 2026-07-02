@@ -26,10 +26,27 @@ const unwrapTextCommands = (s: string) =>
 // reads as prose — rendering it in the monospace math chip would be noise.
 const isProse = (s: string) => /[A-Za-z]/.test(s) && !/[\\^_{}=<>+|~]|\d\s*[*/]/.test(s);
 
+const SUPERSCRIPTS: Record<string, string> = {
+  '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
+  '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻',
+};
+const toSuperscript = (s: string) => s.split('').map((c) => SUPERSCRIPTS[c] ?? c).join('');
+
+// Question authors write math in plain ASCII ("sqrt(50)", "2^3") as often as
+// in LaTeX ("\sqrt{50}") — render both as real math symbols (√50, 2³).
+// Simple radicands drop their parentheses; compound ones keep them: √(x+1).
+const prettifyMath = (s: string) =>
+  s
+    .replace(/\\sqrt\s*\{([^{}]*)\}|\bsqrt\s*\(([^()]*)\)/g, (_, a, b) => {
+      const x = (a ?? b).trim();
+      return '√' + (/^[A-Za-z0-9.]+$/.test(x) ? x : `(${x})`);
+    })
+    .replace(/\^(-?\d+)\b/g, (_, exp) => toSuperscript(exp));
+
 /** Strip \( \) / \[ \] delimiters and \text{...} wrappers for contexts that
  *  need a plain string (e.g. "Correct answer: …" labels). */
 export function stripMathMarkup(raw: string): string {
-  return unwrapTextCommands(raw.replace(/\\[[\]()]/g, ''))
+  return prettifyMath(unwrapTextCommands(raw.replace(/\\[[\]()]/g, '')))
     .replace(/\s{2,}/g, ' ')
     .replace(/\s+([,.;:!?])/g, '$1')
     .trim();
@@ -42,14 +59,15 @@ function parseSegments(raw: string): Segment[] {
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
+  const pushText = (content: string) => segments.push({ type: 'text', content: prettifyMath(content) });
   const pushMath = (type: 'block' | 'inline', rawContent: string) => {
-    const content = unwrapTextCommands(rawContent).trim();
+    const content = prettifyMath(unwrapTextCommands(rawContent).trim());
     segments.push(isProse(content) ? { type: 'text', content } : { type, content });
   };
 
   while ((match = pattern.exec(raw)) !== null) {
     if (match.index > lastIndex) {
-      segments.push({ type: 'text', content: raw.slice(lastIndex, match.index) });
+      pushText(raw.slice(lastIndex, match.index));
     }
     if (match[1] !== undefined) {
       pushMath('block', match[1]);
@@ -60,9 +78,9 @@ function parseSegments(raw: string): Segment[] {
   }
 
   if (lastIndex < raw.length) {
-    segments.push({ type: 'text', content: raw.slice(lastIndex) });
+    pushText(raw.slice(lastIndex));
   }
-  return segments.length > 0 ? segments : [{ type: 'text', content: raw }];
+  return segments.length > 0 ? segments : [{ type: 'text', content: prettifyMath(raw) }];
 }
 
 export function MathRenderer({ text, style, displayMode = false }: MathRendererProps) {
