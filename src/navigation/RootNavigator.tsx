@@ -7,6 +7,7 @@ import { AuthNavigator } from './AuthNavigator';
 import { AppNavigator } from './AppNavigator';
 import { COLORS } from '../theme';
 import type { RootStackParamList } from '../types';
+import { VIEWPORT_CARD } from './stackCardStyle';
 
 const Root = createStackNavigator<RootStackParamList>();
 
@@ -30,7 +31,7 @@ export function RootNavigator() {
     isAuthenticated && !!profile && profile.selectedSubjectIds.length > 0;
 
   return (
-    <Root.Navigator screenOptions={{ headerShown: false, animationEnabled: false }}>
+    <Root.Navigator screenOptions={{ headerShown: false, animationEnabled: false, ...VIEWPORT_CARD }}>
       {isOnboarded ? (
         <Root.Screen name="App" component={AppNavigator} />
       ) : (

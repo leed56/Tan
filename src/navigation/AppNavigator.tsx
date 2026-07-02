@@ -12,6 +12,7 @@ import type {
   ProfileStackParamList,
   AppRootStackParamList,
 } from '../types';
+import { VIEWPORT_CARD } from './stackCardStyle';
 
 import { HomeScreen } from '../screens/home/HomeScreen';
 import { SubjectsScreen } from '../screens/subjects/SubjectsScreen';
@@ -62,7 +63,7 @@ const ProfileStack = createStackNavigator<ProfileStackParamList>();
 
 function HomeStackNavigator() {
   return (
-    <HomeStack.Navigator screenOptions={{ headerShown: false }}>
+    <HomeStack.Navigator screenOptions={{ headerShown: false, ...VIEWPORT_CARD }}>
       <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="Topics" component={TopicsScreen} />
       <HomeStack.Screen name="LearningPackDetail" component={LearningPackDetailScreen} />
@@ -96,7 +97,7 @@ function HomeStackNavigator() {
 
 function SubjectsStackNavigator() {
   return (
-    <SubjectsStack.Navigator screenOptions={{ headerShown: false }}>
+    <SubjectsStack.Navigator screenOptions={{ headerShown: false, ...VIEWPORT_CARD }}>
       <SubjectsStack.Screen name="Subjects" component={SubjectsScreen} />
       <SubjectsStack.Screen name="Topics" component={TopicsScreen} />
       <SubjectsStack.Screen name="LearningPackDetail" component={LearningPackDetailScreen} />
@@ -129,7 +130,7 @@ function SubjectsStackNavigator() {
 
 function ProfileStackNavigator() {
   return (
-    <ProfileStack.Navigator screenOptions={{ headerShown: false }}>
+    <ProfileStack.Navigator screenOptions={{ headerShown: false, ...VIEWPORT_CARD }}>
       <ProfileStack.Screen name="Profile" component={ProfileScreen} />
       <ProfileStack.Screen name="EditProfile" component={EditProfileScreen} />
       <ProfileStack.Screen name="Settings" component={SettingsScreen} />
@@ -215,7 +216,7 @@ function MainTabsNavigator() {
 
 export function AppNavigator() {
   return (
-    <RootStack.Navigator screenOptions={{ headerShown: false }}>
+    <RootStack.Navigator screenOptions={{ headerShown: false, ...VIEWPORT_CARD }}>
       <RootStack.Screen name="MainTabs" component={MainTabsNavigator} />
       <RootStack.Screen
         name="FormSelectorModal"
