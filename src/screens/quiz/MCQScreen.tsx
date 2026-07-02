@@ -17,6 +17,7 @@ import { QuizProgressBar } from '../../components/ui/quiz/QuizProgressBar';
 import { QuestionRenderer } from '../../components/ui/quiz/QuestionRenderer';
 import { MCQOption } from '../../components/ui/quiz/MCQOption';
 import { FeedbackModal } from '../../components/ui/quiz/FeedbackModal';
+import { stripMathMarkup } from '../../components/ui/quiz/MathRenderer';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useQuizStore } from '../../store/quizStore';
 import { useGamificationStore } from '../../store/gamificationStore';
@@ -213,7 +214,7 @@ export function MCQScreen({ navigation, route }: Props) {
         isCorrect={isCorrect}
         xpEarned={question.xpReward}
         explanation={question.explanation}
-        correctAnswerLabel={!isCorrect && correctOption ? correctOption.text : undefined}
+        correctAnswerLabel={!isCorrect && correctOption ? stripMathMarkup(correctOption.text) : undefined}
         onContinue={handleContinue}
         onViewExplanation={handleViewExplanation}
       />

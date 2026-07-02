@@ -17,6 +17,24 @@ interface MathRendererProps {
 
 type Segment = { type: 'text' | 'inline' | 'block'; content: string };
 
+// Content authors often wrap ordinary words in LaTeX text commands
+// ("\( \text{Mathema} \)") — unwrap them so readers see the word, not markup.
+const unwrapTextCommands = (s: string) =>
+  s.replace(/\\text(?:bf|it|rm|sf|tt)?\s*\{([^{}]*)\}/g, '$1');
+
+// After unwrapping, content with no math syntax left (just words/punctuation)
+// reads as prose — rendering it in the monospace math chip would be noise.
+const isProse = (s: string) => /[A-Za-z]/.test(s) && !/[\\^_{}=<>+|~]|\d\s*[*/]/.test(s);
+
+/** Strip \( \) / \[ \] delimiters and \text{...} wrappers for contexts that
+ *  need a plain string (e.g. "Correct answer: …" labels). */
+export function stripMathMarkup(raw: string): string {
+  return unwrapTextCommands(raw.replace(/\\[[\]()]/g, ''))
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .trim();
+}
+
 function parseSegments(raw: string): Segment[] {
   const segments: Segment[] = [];
   // Match \[ … \] first (block), then \( … \) (inline)
@@ -24,14 +42,19 @@ function parseSegments(raw: string): Segment[] {
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
+  const pushMath = (type: 'block' | 'inline', rawContent: string) => {
+    const content = unwrapTextCommands(rawContent).trim();
+    segments.push(isProse(content) ? { type: 'text', content } : { type, content });
+  };
+
   while ((match = pattern.exec(raw)) !== null) {
     if (match.index > lastIndex) {
       segments.push({ type: 'text', content: raw.slice(lastIndex, match.index) });
     }
     if (match[1] !== undefined) {
-      segments.push({ type: 'block', content: match[1].trim() });
+      pushMath('block', match[1]);
     } else if (match[2] !== undefined) {
-      segments.push({ type: 'inline', content: match[2].trim() });
+      pushMath('inline', match[2]);
     }
     lastIndex = pattern.lastIndex;
   }

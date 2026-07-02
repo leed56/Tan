@@ -18,6 +18,7 @@ import { StepByStepCard } from '../../components/ui/explanation/StepByStepCard';
 import { ExplanationFeedbackButtons } from '../../components/ui/explanation/ExplanationFeedbackButtons';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
 import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
+import { stripMathMarkup } from '../../components/ui/quiz/MathRenderer';
 import { useExplanationStore } from '../../store/explanationStore';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
@@ -58,7 +59,7 @@ export function ExplanationScreen({ navigation, route }: Props) {
   const displayCorrectAnswer = () => {
     if (quizType === 'tf') return correctAnswer === 'true' ? 'True' : 'False';
     const opt = options.find((o) => o.id === correctAnswer);
-    return opt ? opt.text : correctAnswer;
+    return stripMathMarkup(opt ? opt.text : correctAnswer);
   };
 
   return (
@@ -92,7 +93,7 @@ export function ExplanationScreen({ navigation, route }: Props) {
         </View>
 
         {/* Question reference */}
-        <Text style={styles.questionRef} numberOfLines={3}>{questionText}</Text>
+        <Text style={styles.questionRef} numberOfLines={3}>{stripMathMarkup(questionText)}</Text>
 
         {loading && <ExplanationSkeleton />}
 

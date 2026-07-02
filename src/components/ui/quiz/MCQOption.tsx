@@ -1,6 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { MathRenderer } from './MathRenderer';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
 import type { QuestionOption } from '../../../types/quiz';
 
@@ -56,7 +57,9 @@ export function MCQOption({ option, state, label, onPress, disabled }: MCQOption
           {label}
         </Text>
       </View>
-      <Text style={[styles.text, { color: s.text }]}>{option.text}</Text>
+      <View style={styles.textWrap}>
+        <MathRenderer text={option.text} style={[styles.text, { color: s.text }]} />
+      </View>
       {state === 'correct' && (
         <Ionicons name="checkmark-circle" size={20} color={COLORS.success} />
       )}
@@ -89,8 +92,8 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.sizes.sm,
     fontFamily: TYPOGRAPHY.families.extrabold,
   },
+  textWrap: { flex: 1 },
   text: {
-    flex: 1,
     fontSize: 16,
     lineHeight: 23,
     letterSpacing: -0.2,
