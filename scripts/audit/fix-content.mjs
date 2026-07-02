@@ -14,7 +14,10 @@
  *   GOOGLE_APPLICATION_CREDENTIALS=<sa.json> node scripts/audit/fix-content.mjs
  */
 import { createRequire } from 'module';
-const require = createRequire('/home/user/Tan/functions/');
+import { fileURLToPath } from 'url';
+// firebase-admin lives in functions/node_modules (run `npm install` there
+// first); resolve it relative to this script so it runs from any OS.
+const require = createRequire(fileURLToPath(new URL('../../functions/noop.js', import.meta.url)));
 const admin = require('firebase-admin');
 
 const PROJECT = process.env.SEED_PROJECT_ID || 'tanza-9b182';

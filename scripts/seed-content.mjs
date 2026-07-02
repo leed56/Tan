@@ -15,12 +15,15 @@
  */
 import { createRequire } from 'module';
 import { readdirSync, readFileSync } from 'fs';
-const require = createRequire('/home/user/Tan/functions/');
+import { fileURLToPath } from 'url';
+// firebase-admin lives in functions/node_modules (run `npm install` there
+// first); resolve it relative to this script so the seeder runs from any OS.
+const require = createRequire(fileURLToPath(new URL('../functions/noop.js', import.meta.url)));
 const admin = require('firebase-admin');
 
 const PROJECT = process.env.SEED_PROJECT_ID || 'tanza-9b182';
 const FILTER = process.argv[2] || '';
-const DIR = '/home/user/Tan/scripts/content';
+const DIR = fileURLToPath(new URL('./content', import.meta.url));
 
 admin.initializeApp({
   credential: admin.credential.cert(process.env.GOOGLE_APPLICATION_CREDENTIALS),
