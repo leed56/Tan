@@ -54,7 +54,7 @@ export function StudentsPage() {
   const isActiveSub = (s: Student) => s.subscriptionStatus === 'active' || s.subscriptionStatus === 'premium' || s.subscriptionStatus === 'family';
 
   const filtered = students.filter((s) => {
-    const matchSearch = !search || s.phone?.includes(search) || s.displayName?.toLowerCase().includes(search.toLowerCase());
+    const matchSearch = !search || s.phoneNumber?.includes(search) || s.displayName?.toLowerCase().includes(search.toLowerCase());
     const matchSub =
       filterSub === 'all' ||
       (filterSub === 'free' && !isActiveSub(s)) ||
@@ -68,7 +68,7 @@ export function StudentsPage() {
       key: 'name', header: 'Student', render: (r) => (
         <div>
           <p className="font-medium text-sm">{r.displayName || 'Unnamed'}</p>
-          <p className="text-xs text-muted-foreground">{r.phone}</p>
+          <p className="text-xs text-muted-foreground">{r.phoneNumber}</p>
         </div>
       ),
     },
@@ -137,7 +137,7 @@ export function StudentsPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-lg">{viewStudent.displayName || 'Unnamed'}</p>
-                  <p className="text-sm text-muted-foreground">{viewStudent.phone}</p>
+                  <p className="text-sm text-muted-foreground">{viewStudent.phoneNumber}</p>
                   <div className="mt-1 flex gap-2">
                     <StatusBadge status={isActiveSub(viewStudent) ? (viewStudent.subscriptionPlan ?? 'standard') : 'free'} />
                     <StatusBadge status={viewStudent.isSuspended ? 'suspended' : 'active'} />

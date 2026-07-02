@@ -57,7 +57,12 @@ export function QuestionsPage() {
     queryFn: async () => {
       const q = query(collection(db, 'questions'), orderBy('createdAt', 'desc'), limit(200));
       const snap = await getDocs(q);
-      return snap.docs.map((d) => ({ id: d.id, ...d.data() } as Question));
+      // Seeded docs store type UPPERCASE (rules-enforced); normalize so the
+      // lowercase filter tabs and badges match them.
+      return snap.docs.map((d) => {
+        const data = d.data();
+        return { id: d.id, ...data, type: String(data.type).toLowerCase() } as Question;
+      });
     },
   });
 
@@ -70,12 +75,29 @@ export function QuestionsPage() {
 
   const mutation = useMutation({
     mutationFn: async (data: QuestionValues) => {
-      const payload = { ...data, options: [], updatedAt: serverTimestamp() };
+      // Contract with the app + rules: rules only accept UPPERCASE type; the
+      // quiz query filters on learningPackId + isActive and sorts by order,
+      // so docs missing those fields are invisible in every quiz. On edit,
+      // options must be preserved — writing [] stripped seeded MCQs of all
+      // four answers.
+      const payload = {
+        ...data,
+        type: data.type.toUpperCase(),
+        learningPackId: data.packId,
+        updatedAt: serverTimestamp(),
+      };
       if (editItem) {
         await updateDoc(doc(db, 'questions', editItem.id), payload);
         await logAudit('update', 'questions', editItem.id, { type: data.type });
       } else {
-        const ref = await addDoc(collection(db, 'questions'), { ...payload, createdAt: serverTimestamp() });
+        const ref = await addDoc(collection(db, 'questions'), {
+          ...payload,
+          options: [],
+          isActive: true,
+          order: 999,
+          isPremium: false,
+          createdAt: serverTimestamp(),
+        });
         await logAudit('create', 'questions', ref.id, { type: data.type });
       }
     },

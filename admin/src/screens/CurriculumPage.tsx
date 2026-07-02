@@ -49,11 +49,13 @@ function FormsTab() {
 
   const mutation = useMutation({
     mutationFn: async (data: FormValues) => {
+      // Forms are sorted by `order` in the app; keep it in sync with displayOrder.
+      const appFields = { order: data.displayOrder, isActive: true };
       if (editItem) {
-        await updateDoc(doc(db, 'forms', editItem.id), { ...data, updatedAt: serverTimestamp() });
+        await updateDoc(doc(db, 'forms', editItem.id), { ...data, ...appFields, updatedAt: serverTimestamp() });
         await logAudit('update', 'forms', editItem.id, data as unknown as Record<string, unknown>);
       } else {
-        const ref = await addDoc(collection(db, 'forms'), { ...data, createdAt: serverTimestamp() });
+        const ref = await addDoc(collection(db, 'forms'), { ...data, ...appFields, createdAt: serverTimestamp() });
         await logAudit('create', 'forms', ref.id, data as unknown as Record<string, unknown>);
       }
     },
@@ -165,11 +167,14 @@ function SubjectsTab() {
 
   const mutation = useMutation({
     mutationFn: async (data: SubjectValues) => {
+      // The app queries subjects with isActive == true and sorts by `order` —
+      // docs missing either field are silently invisible to students.
+      const appFields = { order: data.displayOrder, isActive: true };
       if (editItem) {
-        await updateDoc(doc(db, 'subjects', editItem.id), { ...data, updatedAt: serverTimestamp() });
+        await updateDoc(doc(db, 'subjects', editItem.id), { ...data, ...appFields, updatedAt: serverTimestamp() });
         await logAudit('update', 'subjects', editItem.id, data as unknown as Record<string, unknown>);
       } else {
-        const ref = await addDoc(collection(db, 'subjects'), { ...data, createdAt: serverTimestamp() });
+        const ref = await addDoc(collection(db, 'subjects'), { ...data, ...appFields, description: '', createdAt: serverTimestamp() });
         await logAudit('create', 'subjects', ref.id, data as unknown as Record<string, unknown>);
       }
     },

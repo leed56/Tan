@@ -47,7 +47,7 @@ export function ExplanationScreen({ navigation, route }: Props) {
   useEffect(() => {
     fetchExplanation({
       questionId, questionText, correctAnswer, options, quizType,
-      subjectId, subjectName: SUBJECT_NAMES[subjectId] ?? subjectId,
+      subjectId, subjectName: SUBJECT_NAMES[subjectId.replace(/^form_\d+_/, '')] ?? subjectId,
       formId, fallbackExplanation, userId,
     });
   }, [questionId]);

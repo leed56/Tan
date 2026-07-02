@@ -198,5 +198,12 @@ export function getTopicCountForSubject(formId: string, subjectId: string): numb
 }
 
 export function getPackCountForTopic(topicId: string): number {
-  return getSeedLearningPacks().filter((p) => p.topicId === topicId && p.isActive).length;
+  const seedCount = getSeedLearningPacks().filter(
+    (p) => p.topicId === topicId && p.isActive,
+  ).length;
+  // Real DB topics beyond the small local sample have no seed packs, so this
+  // returned 0 — TopicCard showed "0 packs" and aggregateTopicProgress's
+  // totalPacks>0 guard pinned those topics at 0% forever. Every topic in the
+  // content pipeline ships exactly 5 packs (MCQ/TF/FIB/Summary/HOQ).
+  return seedCount > 0 ? seedCount : 5;
 }

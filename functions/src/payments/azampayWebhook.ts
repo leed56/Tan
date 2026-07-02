@@ -91,7 +91,7 @@ export const azampayWebhook = functions
       tx.update(admin.firestore().collection('users').doc(payment.userId), {
         subscriptionStatus: 'active',
         subscriptionExpiry: admin.firestore.Timestamp.fromDate(expiryDate),
-        subscriptionPlan: payment.planType ?? 'single',
+        subscriptionPlan: payment.planType ?? 'standard',
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
 

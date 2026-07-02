@@ -79,7 +79,8 @@ export interface Question {
 
 export interface Student {
   id: string;
-  phone: string;
+  // Written by the app's userService as `phoneNumber` (there is no `phone`).
+  phoneNumber: string;
   displayName: string;
   email?: string;
   formId: string;

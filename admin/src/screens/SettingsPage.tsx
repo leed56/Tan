@@ -39,6 +39,9 @@ const settingsSchema = z.object({
 type SettingsValues = z.infer<typeof settingsSchema>;
 
 const adminSchema = z.object({
+  // Firebase Auth UID of the target account — rules and login both key
+  // admin_users by uid, so a random-id doc never grants access.
+  uid: z.string().min(10),
   email: z.string().email(),
   displayName: z.string().min(1),
   role: z.enum(['super_admin', 'content_editor', 'viewer']),
@@ -161,8 +164,9 @@ function AdminUsersTab() {
         await updateDoc(doc(db, 'admin_users', editItem.id), { role: data.role, displayName: data.displayName, updatedAt: serverTimestamp() });
         await logAudit('update', 'admin_users', editItem.id, { role: data.role });
       } else {
-        const docRef = await addDoc(collection(db, 'admin_users'), { ...data, isActive: true, createdAt: serverTimestamp() });
-        await logAudit('create', 'admin_users', docRef.id, { email: data.email, role: data.role });
+        const { uid, ...rest } = data;
+        await setDoc(doc(db, 'admin_users', uid), { ...rest, isActive: true, createdAt: serverTimestamp() });
+        await logAudit('create', 'admin_users', uid, { email: data.email, role: data.role });
       }
     },
     onSuccess: () => { qc.invalidateQueries({ queryKey: ['admin_users'] }); setOpen(false); reset(); setEditItem(null); },
@@ -190,7 +194,7 @@ function AdminUsersTab() {
     {
       key: 'actions', header: '', render: (r) => (
         <div className="flex gap-2 justify-end">
-          <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setEditItem(r); reset({ email: r.email, displayName: r.displayName, role: r.role }); setOpen(true); }}>
+          <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setEditItem(r); reset({ uid: r.id, email: r.email, displayName: r.displayName, role: r.role }); setOpen(true); }}>
             <Pencil size={14} />
           </Button>
           <Button
@@ -208,7 +212,7 @@ function AdminUsersTab() {
   return (
     <div className="space-y-4">
       <div className="flex justify-end">
-        <Button size="sm" onClick={() => { reset({ email: '', displayName: '', role: 'viewer' }); setEditItem(null); setOpen(true); }}>
+        <Button size="sm" onClick={() => { reset({ uid: '', email: '', displayName: '', role: 'viewer' }); setEditItem(null); setOpen(true); }}>
           <Plus size={16} className="mr-2" /> Add Admin
         </Button>
       </div>
@@ -228,6 +232,16 @@ function AdminUsersTab() {
               <Input {...register('email')} placeholder="admin@somaai.tz" disabled={!!editItem} />
               {errors.email && <p className="text-xs text-destructive">{errors.email.message}</p>}
             </div>
+            {!editItem && (
+              <div className="space-y-2">
+                <Label>Firebase Auth UID</Label>
+                <Input {...register('uid')} placeholder="From Firebase Console → Authentication → Users" />
+                <p className="text-xs text-muted-foreground">
+                  The account must exist in Firebase Auth first; access is keyed to its UID.
+                </p>
+                {errors.uid && <p className="text-xs text-destructive">{errors.uid.message}</p>}
+              </div>
+            )}
             <div className="space-y-2">
               <Label>Role</Label>
               <Controller

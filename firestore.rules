@@ -207,6 +207,14 @@ service cloud.firestore {
       allow create, update, delete: if isSuperAdmin();
     }
 
+    // ── notifications_sent — admin broadcast log ──────────────────────────────
+    // The admin panel writes/reads this collection; without a block the
+    // catch-all denied it entirely (Send did nothing, history never loaded).
+    match /notifications_sent/{notifId} {
+      allow read, create: if isAdmin();
+      allow update, delete: if false;
+    }
+
     // ── admin_audit_logs — append-only via admin ──────────────────────────────
     match /admin_audit_logs/{logId} {
       allow read: if isAdmin();
@@ -243,8 +251,13 @@ service cloud.firestore {
     // ── student_progress — owner-scoped (id = `${uid}_${packId}`) ─────────────
     match /student_progress/{docId} {
       allow read: if isOwner(resource.data.userId) || isAdmin();
+      // Bind writes to the doc-id prefix as well as the userId field: with the
+      // field-only check, any signed-in user could plant a doc at another
+      // user's deterministic `${uid}_${packId}` path (uids are enumerable via
+      // the public leaderboard), locking the victim out of their own record.
       allow create, update: if isSignedIn()
-        && request.resource.data.userId == request.auth.uid;
+        && request.resource.data.userId == request.auth.uid
+        && docId.matches(request.auth.uid + '_.*');
       allow delete: if isAdmin();
     }
 
@@ -266,9 +279,14 @@ service cloud.firestore {
 
     // ── daily_usage — owner-scoped (id = `${uid}_${date}`) ────────────────────
     match /daily_usage/{docId} {
-      allow read: if isOwner(resource.data.userId) || isAdmin();
+      // Id-prefix read (not resource.data.userId): dereferencing resource on a
+      // NONEXISTENT doc errors, which denied the app's very first read of the
+      // day. Same prefix binding on writes as student_progress (see above).
+      allow read: if isAdmin()
+        || (isSignedIn() && docId.matches(request.auth.uid + '_.*'));
       allow create, update: if isSignedIn()
-        && request.resource.data.userId == request.auth.uid;
+        && request.resource.data.userId == request.auth.uid
+        && docId.matches(request.auth.uid + '_.*');
     }
 
     // ── user_daily_missions — owner-scoped per-user mission progress ──────────

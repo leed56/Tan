@@ -46,7 +46,14 @@ export async function getQuestionsByLearningPack(
       );
       return getSeedQuestionsByPack(learningPackId);
     }
-    return snap.docs.map((d) => d.data() as Question);
+    return snap.docs.map((d) => {
+      // DB docs store type UPPERCASE ('MCQ' — enforced by rules); the app's
+      // QuizType union and every comparison downstream (prompt building, TF
+      // answer rendering, attempt records) are lowercase. Normalize here so
+      // no consumer has to care.
+      const data = d.data() as Question;
+      return { ...data, type: String(data.type).toLowerCase() as Question['type'] };
+    });
   } catch (e) {
     console.warn(
       `[quizService] getQuestionsByLearningPack: Firestore query for learningPackId="${learningPackId}" threw — falling back to local seed data. Error:`,

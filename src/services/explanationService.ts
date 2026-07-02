@@ -34,7 +34,7 @@ function validateExplanation(
   if (!whyCorrectLower.includes('this is wrong') && !whyCorrectLower.includes('incorrect answer')) score++;
 
   // 4. For math subjects, has LaTeX (lenient: at least tries to explain)
-  if (MATH_SUBJECTS.has(params.subjectId)) {
+  if (MATH_SUBJECTS.has(params.subjectId.replace(/^form_\d+_/, ''))) {
     const hasLatex =
       response.simpleExplanation.includes('\\(') ||
       response.simpleExplanation.includes('\\[') ||
@@ -138,12 +138,17 @@ async function saveExplanation(explanation: AIExplanation): Promise<void> {
   }
 }
 
-async function fetchFromFirestore(questionId: string): Promise<AIExplanation | null> {
-  if (!isFirebaseConfigured()) return null;
+async function fetchFromFirestore(questionId: string, userId?: string): Promise<AIExplanation | null> {
+  if (!isFirebaseConfigured() || !userId) return null;
   try {
+    // Owner-scoped: the read rule requires isOwner(resource.data.userId), and
+    // Firestore denies any query it can't prove owner-scoped — the previous
+    // unconstrained query was always rejected, so the cache never hit and
+    // every explanation regenerated (fresh Gemini call each time).
     const q = query(
       collection(firestore, COLLECTIONS.aiExplanations),
       where('questionId', '==', questionId),
+      where('userId', '==', userId),
     );
     const snap = await getDocs(q);
     if (!snap.empty) {
@@ -159,7 +164,7 @@ export async function getOrGenerateExplanation(
   params: ExplanationGenerationParams & { userId?: string },
 ): Promise<AIExplanation> {
   // 1. Check Firestore cache
-  const cached = await fetchFromFirestore(params.questionId);
+  const cached = await fetchFromFirestore(params.questionId, params.userId);
   if (cached) return cached;
 
   // 2. Check if AI is available

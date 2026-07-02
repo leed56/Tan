@@ -9,7 +9,6 @@ import {
   doc,
   getDoc,
   setDoc,
-  updateDoc,
   increment,
 } from 'firebase/firestore';
 import { COLLECTIONS } from './firebaseConfig';
@@ -64,15 +63,15 @@ export async function incrementUsage(userId: string, type: QuizType): Promise<vo
   const id = makeUsageId(userId, date);
   const field = `${type}Used` as 'mcqUsed' | 'fibUsed' | 'tfUsed';
   try {
+    // Single merge-write, no get-then-set: reading a NONEXISTENT doc is
+    // rules-denied (the read rule dereferences resource.data), so the old
+    // getDoc threw before the create ever ran — usage was never persisted
+    // and free-tier daily limits reset on every app restart. Only identity
+    // fields plus the ONE incremented counter are written — spreading a full
+    // zeroed template into a merge would reset the other counters. Readers
+    // already coalesce missing counter fields to 0.
     const ref = doc(firestore, COLLECTIONS.dailyUsage, id);
-    const snap = await getDoc(ref);
-    if (snap.exists()) {
-      await updateDoc(ref, { [field]: increment(1) });
-    } else {
-      const usage = emptyUsage(userId);
-      usage[field] = 1;
-      await setDoc(ref, usage);
-    }
+    await setDoc(ref, { id, userId, date, [field]: increment(1) }, { merge: true });
   } catch {
     // Fire-and-forget
   }
