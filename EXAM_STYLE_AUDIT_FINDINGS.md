@@ -129,7 +129,44 @@ available (proxy allowlist) or sourced offline.
 
 ## Part A — Flows, routes, cards & buttons (static audit)
 
-_Section pending — background route audit in progress; will be appended._
+Coverage: 74 route registrations across 7 navigators (41 unique screens); 136
+navigation call sites verified against their declared param types.
+
+**Fixed during the audit (separate commits):**
+- ✅ **PaymentMethodScreen crashed on native** — string `icon` props rendered as raw
+  View children throw "Text strings must be rendered within a \<Text\>" on iOS/
+  Android (web tolerates it, which is why web testing never saw it). The entire
+  purchase flow was unreachable on phones. Fixed: both call sites now pass
+  `<Ionicons/>` elements.
+- ✅ **"Upgrade to Premium" was a no-op from the Profile tab** — `SubscriptionScreen`
+  / `PaymentMethodScreen` weren't registered in ProfileStack and an `as any` cast
+  hid the type error. Fixed: routes + param types registered, cast removed.
+
+**Open P1 — wrong behavior:**
+
+| # | Finding | Evidence | Suggested fix |
+|---|---|---|---|
+| A1 | `math_starter` badge can never unlock via the real flow: QuizResult passes SCOPED `subjectKey` (`form_1_mathematics`) but `gamificationService` compares against bare `'mathematics'`. Every other consumer strips the prefix; this one doesn't. | `QuizResultScreen.tsx:71-76` → `gamificationService.ts:175` | strip `^form_\d+_` in `checkBadgeUnlocks` (1 line) |
+| A2 | QuizIntro consumes a limited daily attempt and navigates into the quiz even when 0 questions loaded (`initSession` sets `error:'no_questions'` instead of throwing; caller never checks). | `QuizIntroScreen.tsx:48-56`, `quizStore.ts:61-66` | bail + skip `increment()` when store error set |
+| A3 | Reward boxes are infinitely farmable: `opened` holds a single box id (alternate Daily/Weekly taps = unlimited coins) and resets every mount. | `RewardsScreen.tsx:43-77` | persist opened-box Set with per-day key |
+| A4 | Logout leaks the previous account's state: subscription (incl. premium), family (persisted `activeChildId`), XP/coins/streak, quiz, missions all survive into the next login. `subscriptionStore.clear()` / `familyStore.clear()` have zero callers. | `useAuth.ts:70-74` | clear all user stores in `handleLogout` |
+| A5 | TF correct-answer display is case-strict while scoring is tolerant: a DB `'True'` scores correctly but the Explanation screen would display "Correct Answer: False". Latent (current content is lowercase). | `TFScreen.tsx:106` → `ExplanationScreen.tsx:60` | pass `normalizeTF(...)` at the call site |
+
+**Open P2 — polish (selection; full detail in audit transcript):**
+- "Try Again" buttons on quiz no-session error states actually `goBack()` (5 screens) — relabel or truly retry.
+- FeedbackModal / DailyLimitModal miss `onRequestClose` → Android hardware-back is swallowed.
+- Quiz retry stacks a duplicate QuizIntro (`replace` instead of `pop`); "Back to Packs" rewrites the pack-list header title with quiz params.
+- Dead buttons: Home notification bell, Recommended "View all", "Share my achievement", Settings Privacy/Terms/Help/Rate + gold "Upgrade to Premium" (empty TODO handlers) — wire or hide.
+- Quiz timers call `handleAnswer('__timeout__')` inside a `setTimeLeft` updater (double-submit risk under StrictMode).
+- Analytics silently renders `DEMO_ANALYTICS` as the user's own data when queries fail — needs an offline/demo indicator.
+- Back arrows/close buttons are ~32-36px touch targets (<44px) across most headers; `hitSlop` used in only 4 places.
+- Quitting a quiz mid-session has no confirm and wastes the consumed daily attempt.
+- OTP reset path can render a back arrow with nothing to pop (SubjectSelection after `navigation.reset`).
+
+**Verified clean:** onboarding chain has no unreachable step and gates correctly on
+hydration + selected subjects; all checked async buttons have loading/disabled
+guards; Subjects/Topics/PackDetail render real loading/empty/error states with
+working retries; curriculum store force-refetch avoids the stale-empty-cache trap.
 
 ## Part B — Quiz engine functional verification (running app)
 
