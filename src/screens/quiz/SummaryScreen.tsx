@@ -37,6 +37,7 @@ export function SummaryScreen({ navigation, route }: Props) {
         <ErrorState
           message="This summary isn't ready yet. Please check back soon."
           onRetry={() => navigation.goBack()}
+          retryLabel="Go Back"
           fullScreen
         />
       </ScreenContainer>

@@ -65,6 +65,7 @@ interface GamificationStore {
   dismissBadge: () => void;
   persistProfile: (uid: string) => Promise<void>;
   persistIfSignedIn: () => void;
+  clear: () => void;
 }
 
 function buildLocal(xp: number, streak: number, coins: number): GamificationProfile {
@@ -228,4 +229,14 @@ export const useGamificationStore = create<GamificationStore>((set, get) => ({
     if (!uid || !s.profile || !s.hydrated) return;
     saveGamificationProfile({ ...s.profile, uid }).catch(() => {});
   },
+
+  // Drop everything user-scoped on logout so the next account doesn't
+  // inherit this one's XP/streak/badges (hydrated=false re-arms the
+  // zero-profile write guard for the next sign-in).
+  clear: () =>
+    set({
+      xp: 0, level: getLevelFromXp(0), streak: 0, coins: 0,
+      earnedBadgeIds: [] as BadgeId[], pendingLevelUp: null, pendingBadges: [],
+      loading: false, profile: null, hydrated: false,
+    }),
 }));

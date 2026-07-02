@@ -37,6 +37,9 @@ export function AnalyticsScreen() {
   const [data, setData] = useState<AnalyticsSummary>(DEMO_ANALYTICS);
   const [loading, setLoading] = useState(true);
   const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
+  // True when the service fell back to DEMO_ANALYTICS (offline/unconfigured/
+  // query failure) — shown as a banner so sample stats aren't mistaken for real ones.
+  const [isDemoData, setIsDemoData] = useState(false);
   const uid = useAuthStore((s) => s.user?.uid);
 
   const load = useCallback(async () => {
@@ -47,6 +50,7 @@ export function AnalyticsScreen() {
     setLoading(true);
     const result = await getUserAnalytics(uid, period);
     setData(result);
+    setIsDemoData(result === DEMO_ANALYTICS);
     setLoading(false);
     setHasLoadedOnce(true);
   }, [uid, period]);
@@ -84,6 +88,18 @@ export function AnalyticsScreen() {
         contentContainerStyle={styles.body}
         showsVerticalScrollIndicator={false}
       >
+        {isDemoData && (
+          <View style={styles.demoBanner}>
+            <Ionicons name="cloud-offline-outline" size={14} color={COLORS.warning} />
+            <Text style={styles.demoBannerText}>
+              Sample data — your real stats will appear when you're back online.
+            </Text>
+            <TouchableOpacity onPress={load}>
+              <Text style={styles.demoRetry}>Retry</Text>
+            </TouchableOpacity>
+          </View>
+        )}
+
         {/* Summary stats */}
         <View style={styles.statsGrid}>
           <StatCard
@@ -277,6 +293,14 @@ function MasteryRow({ mastery, isStrength }: { mastery: SubjectMastery; isStreng
 }
 
 const styles = StyleSheet.create({
+  demoBanner: {
+    flexDirection: 'row', alignItems: 'center', gap: 8,
+    backgroundColor: 'rgba(255,169,77,0.1)',
+    borderRadius: 10, borderWidth: 1, borderColor: 'rgba(255,169,77,0.3)',
+    paddingHorizontal: 12, paddingVertical: 8,
+  },
+  demoBannerText: { flex: 1, color: COLORS.warning, fontSize: TYPOGRAPHY.sizes.xs },
+  demoRetry: { color: COLORS.primary, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.bold },
   header: {
     paddingTop: SPACING.base,
     paddingHorizontal: SPACING.screenPadding,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -7,6 +7,7 @@ import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { RewardBoxCard } from '../../components/ui/gamification/RewardBoxCard';
 import { CoinBalanceChip } from '../../components/ui/gamification/CoinBalanceChip';
+import { useRewardsStore } from '../../store/rewardsStore';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import type { RewardBox } from '../../types/gamification';
@@ -40,15 +41,20 @@ const SHOP_ITEMS = [
 
 export function RewardsScreen({ navigation }: Props) {
   const { coins, streak, addCoins, addXp } = useGamificationStore();
-  const [opened, setOpened] = useState<string | null>(null);
+  // Claims persist across mounts and are keyed per box cooldown period
+  // (daily box per day, weekly/epic per week) — see rewardsStore.
+  const isClaimed = useRewardsStore((s) => s.isClaimed);
+  const markClaimed = useRewardsStore((s) => s.markClaimed);
+  const claimed = useRewardsStore((s) => s.claimed); // subscribe for re-render
+  void claimed;
   const rewardBoxes = buildRewardBoxes(streak);
 
   const handleOpen = (box: RewardBox) => {
-    if (opened === box.id) return;
+    if (isClaimed(box.id)) return;
+    markClaimed(box.id);
     const earnedCoins = box.coinsMin + Math.floor(Math.random() * (box.coinsMax - box.coinsMin));
     addCoins(earnedCoins);
     if (box.xpBonus > 0) addXp(box.xpBonus);
-    setOpened(box.id);
     Alert.alert('🎉 Reward Opened!', `You earned ${earnedCoins} coins${box.xpBonus > 0 ? ` and +${box.xpBonus} XP` : ''}!`);
   };
 
@@ -74,7 +80,7 @@ export function RewardsScreen({ navigation }: Props) {
           {rewardBoxes.map((box) => (
             <View key={box.id} style={styles.boxItem}>
               <RewardBoxCard
-                box={{ ...box, isAvailable: box.isAvailable && opened !== box.id }}
+                box={{ ...box, isAvailable: box.isAvailable && !isClaimed(box.id) }}
                 onOpen={() => handleOpen(box)}
               />
             </View>

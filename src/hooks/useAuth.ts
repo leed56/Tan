@@ -4,6 +4,9 @@ import { auth, isFirebaseConfigured } from '../services/firebaseConfig';
 import { useAuthStore } from '../store/authStore';
 import { useProfileStore } from '../store/profileStore';
 import { useGamificationStore } from '../store/gamificationStore';
+import { useSubscriptionStore } from '../store/subscriptionStore';
+import { useFamilyStore } from '../store/familyStore';
+import { useQuizStore } from '../store/quizStore';
 import type { FirebaseUser } from '../types';
 
 // TODO: Phase 2 — integrate Firebase Auth phone OTP flow
@@ -68,6 +71,13 @@ export function useAuth() {
     // TODO: Phase 2 — call Firebase Auth signOut()
     logout();
     clearProfile();
+    // Every user-scoped store must reset, or the next account signing in on
+    // this device inherits the previous one's premium status, family
+    // profiles, XP/streak/badges, and any in-flight quiz session.
+    useSubscriptionStore.getState().clear();
+    useFamilyStore.getState().clear();
+    useGamificationStore.getState().clear();
+    useQuizStore.getState().resetSession();
   }, [logout, clearProfile]);
 
   const sendOtp = useCallback(async (_phoneNumber: string): Promise<void> => {

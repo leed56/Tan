@@ -21,6 +21,7 @@ import { FeedbackModal } from '../../components/ui/quiz/FeedbackModal';
 import { stripMathMarkup } from '../../components/ui/quiz/MathRenderer';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
 import { useQuizStore } from '../../store/quizStore';
+import { confirmAction } from '../../utils/confirm';
 import { useGamificationStore } from '../../store/gamificationStore';
 
 type Props = StackScreenProps<HomeStackParamList, 'FIBQuiz'>;
@@ -135,6 +136,16 @@ export function FIBScreen({ navigation, route }: Props) {
     }, [selectedOption, showFeedback]),
   );
 
+  // Quitting mid-quiz abandons a session that already consumed a daily
+  // attempt — confirm first, and reset the store so nothing stale leaks
+  // into the next quiz.
+  const handleQuit = () => {
+    confirmAction('Quit quiz?', 'Your progress in this quiz will be lost.', 'Quit', () => {
+      useQuizStore.getState().resetSession();
+      navigation.goBack();
+    });
+  };
+
   if (loadingQuestions) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
   }
@@ -144,6 +155,7 @@ export function FIBScreen({ navigation, route }: Props) {
         <ErrorState
           message="No questions are available for this pack yet. Please try another pack."
           onRetry={() => navigation.goBack()}
+          retryLabel="Go Back"
           fullScreen
         />
       </ScreenContainer>
@@ -164,7 +176,7 @@ export function FIBScreen({ navigation, route }: Props) {
     <ScreenContainer padded={false}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.closeBtn}>
+        <TouchableOpacity onPress={handleQuit} style={styles.closeBtn} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
           <Ionicons name="close" size={22} color={COLORS.textMuted} />
         </TouchableOpacity>
         <Text style={styles.packTitle} numberOfLines={1}>{packTitle}</Text>

@@ -25,7 +25,9 @@ export function PackCompletionScreen({ navigation, route }: Props) {
   const confettiAnim = useRef(new Animated.Value(0)).current;
 
   const message = getRandomMotivation(MOTIVATIONAL_MESSAGES);
-  const levelProgress = getXpProgressPercent(xp + xpEarned);
+  // addXp below already applies xpEarned to the store before first paint, so
+  // progress reads the store value as-is (adding again double-counted it).
+  const levelProgress = getXpProgressPercent(xp);
 
   useEffect(() => {
     addXp(xpEarned);
@@ -137,14 +139,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
             onPress={() => navigation.popToTop()}
             variant="primary"
           />
-          <AppButton
-            title="Share my achievement"
-            onPress={() => {
-              // TODO: Phase 2 — implement share sheet
-            }}
-            variant="secondary"
-            icon={<Ionicons name="share-social-outline" size={18} color={COLORS.primary} />}
-          />
+          {/* TODO: Phase 2 — share sheet. Button hidden until it does something. */}
         </Animated.View>
       </View>
       </SafeAreaView>

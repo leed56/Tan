@@ -28,7 +28,7 @@ const TYPE_LABEL: Record<QuizType, string> = {
 
 export function DailyLimitModal({ visible, quizType, onClose, onUpgrade }: DailyLimitModalProps) {
   return (
-    <Modal visible={visible} transparent animationType="fade" statusBarTranslucent>
+    <Modal visible={visible} transparent animationType="fade" statusBarTranslucent onRequestClose={onClose}>
       <View style={styles.backdrop}>
         <View style={styles.card}>
           {/* Gold badge */}

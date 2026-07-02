@@ -19,6 +19,7 @@ import { TFButtons } from '../../components/ui/quiz/TFButtons';
 import { FeedbackModal } from '../../components/ui/quiz/FeedbackModal';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
 import { useQuizStore } from '../../store/quizStore';
+import { confirmAction } from '../../utils/confirm';
 import { useGamificationStore } from '../../store/gamificationStore';
 
 type Props = StackScreenProps<HomeStackParamList, 'TFQuiz'>;
@@ -103,7 +104,7 @@ export function TFScreen({ navigation, route }: Props) {
       quizType: 'tf',
       subjectId,
       formId,
-      correctAnswer: question.correctAnswer,
+      correctAnswer: normalizeTF(question.correctAnswer),
       options: [{ id: 'true', text: 'True' }, { id: 'false', text: 'False' }],
       packTitle,
       subjectColor,
@@ -119,6 +120,16 @@ export function TFScreen({ navigation, route }: Props) {
     }, [revealed, showFeedback]),
   );
 
+  // Quitting mid-quiz abandons a session that already consumed a daily
+  // attempt — confirm first, and reset the store so nothing stale leaks
+  // into the next quiz.
+  const handleQuit = () => {
+    confirmAction('Quit quiz?', 'Your progress in this quiz will be lost.', 'Quit', () => {
+      useQuizStore.getState().resetSession();
+      navigation.goBack();
+    });
+  };
+
   if (loadingQuestions) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
   }
@@ -128,6 +139,7 @@ export function TFScreen({ navigation, route }: Props) {
         <ErrorState
           message="No questions are available for this pack yet. Please try another pack."
           onRetry={() => navigation.goBack()}
+          retryLabel="Go Back"
           fullScreen
         />
       </ScreenContainer>
@@ -143,7 +155,7 @@ export function TFScreen({ navigation, route }: Props) {
     <ScreenContainer padded={false}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.closeBtn}>
+        <TouchableOpacity onPress={handleQuit} style={styles.closeBtn} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
           <Ionicons name="close" size={22} color={COLORS.textMuted} />
         </TouchableOpacity>
         <Text style={styles.packTitle} numberOfLines={1}>{packTitle}</Text>

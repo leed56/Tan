@@ -149,9 +149,7 @@ export function SettingsScreen({ navigation }: Props) {
             icon="star"
             iconColor={COLORS.gold}
             label="Upgrade to Premium"
-            onPress={() => {
-              // TODO: Phase 2 — navigate to subscription screen
-            }}
+            onPress={() => navigation.navigate('SubscriptionScreen')}
             highlight
           />
         </SettingsSection>

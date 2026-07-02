@@ -172,7 +172,7 @@ export function checkBadgeUnlocks(
   if (!earnedBadgeIds.includes('streak_7') && profile.currentStreak >= 7) {
     newlyEarned.push('streak_7');
   }
-  if (!earnedBadgeIds.includes('math_starter') && context.subjectKey === 'mathematics') {
+  if (!earnedBadgeIds.includes('math_starter') && String(context.subjectKey ?? '').replace(/^form_\d+_/, '') === 'mathematics') {
     newlyEarned.push('math_starter');
   }
   if (!earnedBadgeIds.includes('premium_learner') && context.isPremium) {

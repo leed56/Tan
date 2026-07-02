@@ -279,7 +279,7 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Recommended</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.getParent()?.navigate('SubjectsTab', { screen: 'Subjects' })}>
               <Text style={styles.seeAll}>View all</Text>
             </TouchableOpacity>
           </View>

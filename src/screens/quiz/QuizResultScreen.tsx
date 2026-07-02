@@ -94,27 +94,28 @@ export function QuizResultScreen({ navigation, route }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // The stack here is LearningPackDetail → QuizIntro → QuizResult (the quiz
+  // screen replaced itself with this result). Pop back to the screens that
+  // already exist instead of pushing/replacing duplicates — replace()
+  // stacked a second identical QuizIntro, and navigate() to
+  // LearningPackDetail overwrote its params so the header showed the quiz
+  // title instead of the topic name.
   const handleRetry = () => {
-    navigation.replace('QuizIntro', {
-      packId,
-      packTitle,
-      topicId,
-      subjectColor,
-      formId,
-      subjectId,
-      quizType,
-    });
+    if (navigation.canGoBack()) {
+      navigation.goBack();
+    } else {
+      navigation.replace('QuizIntro', { packId, packTitle, topicId, subjectColor, formId, subjectId, quizType });
+    }
   };
 
   const handleBackToPacks = () => {
-    navigation.navigate('LearningPackDetail', {
-      packId,
-      packTitle,
-      topicId,
-      subjectColor,
-      formId,
-      subjectId,
-    });
+    const state = navigation.getState();
+    const hasLPD = state.routes.some((r) => r.name === 'LearningPackDetail');
+    if (hasLPD) {
+      navigation.pop(2);
+    } else {
+      navigation.navigate('LearningPackDetail', { packId, packTitle, topicId, subjectColor, formId, subjectId });
+    }
   };
 
   return (

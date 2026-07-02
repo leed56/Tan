@@ -63,9 +63,15 @@ export function SubjectSelectionScreen({ navigation }: Props) {
       <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
-          <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
-        </TouchableOpacity>
+        {/* After an OTP-flow reset this can be the only route in the stack —
+            hide the arrow rather than render a back button that does nothing. */}
+        {navigation.canGoBack() ? (
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
+            <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
+          </TouchableOpacity>
+        ) : (
+          <View style={styles.back} />
+        )}
         <Text style={styles.step}>Step 2 of 2</Text>
       </View>
 

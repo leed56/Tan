@@ -31,17 +31,53 @@ const SUPERSCRIPTS: Record<string, string> = {
   '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻',
 };
 const toSuperscript = (s: string) => s.split('').map((c) => SUPERSCRIPTS[c] ?? c).join('');
+const SUBSCRIPTS: Record<string, string> = {
+  '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄',
+  '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉',
+};
+const toSubscript = (s: string) => s.split('').map((c) => SUBSCRIPTS[c] ?? c).join('');
+
+// LaTeX operator commands → the symbol students should see.
+const LATEX_SYMBOLS: Array<[RegExp, string]> = [
+  [/\\times\b/g, '×'],
+  [/\\div\b/g, '÷'],
+  [/\\pm\b/g, '±'],
+  [/\\cdot\b/g, '·'],
+  [/\\(?:rightarrow|to)\b/g, '→'],
+  [/\\leq\b/g, '≤'],
+  [/\\geq\b/g, '≥'],
+  [/\\neq\b/g, '≠'],
+  [/\\approx\b/g, '≈'],
+  [/\\degree\b|\^\{?\\circ\}?/g, '°'],
+  [/\\%/g, '%'],
+  [/\\,|\\;|\\!|\\ /g, ' '],
+  [/\\left|\\right/g, ''],
+];
 
 // Question authors write math in plain ASCII ("sqrt(50)", "2^3") as often as
-// in LaTeX ("\sqrt{50}") — render both as real math symbols (√50, 2³).
-// Simple radicands drop their parentheses; compound ones keep them: √(x+1).
-const prettifyMath = (s: string) =>
-  s
+// in LaTeX ("\sqrt{50}", "\frac{P R T}{100}") — render all of it as real math
+// symbols. Simple radicands drop their parentheses; compound ones keep them.
+const prettifyMath = (s: string) => {
+  let out = s;
+  for (const [re, sym] of LATEX_SYMBOLS) out = out.replace(re, sym);
+  out = out
+    // \frac{a}{b} → a/b, wrapping compound numerators/denominators in parens
+    .replace(/\\[dt]?frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, (_, num, den) => {
+      const wrap = (x: string) => (/^[A-Za-z0-9.°%]+$/.test(x.trim()) ? x.trim() : `(${x.trim()})`);
+      return `${wrap(num)}/${wrap(den)}`;
+    })
     .replace(/\\sqrt\s*\{([^{}]*)\}|\bsqrt\s*\(([^()]*)\)/g, (_, a, b) => {
       const x = (a ?? b).trim();
       return '√' + (/^[A-Za-z0-9.]+$/.test(x) ? x : `(${x})`);
     })
-    .replace(/\^(-?\d+)\b/g, (_, exp) => toSuperscript(exp));
+    // exponents: x^2, x^{12} → superscripts
+    .replace(/\^\{(-?\d+)\}/g, (_, exp) => toSuperscript(exp))
+    .replace(/\^(-?\d+)\b/g, (_, exp) => toSuperscript(exp))
+    // subscripts: x_1, H_{2}O → x₁, H₂O
+    .replace(/_\{(\d+)\}/g, (_, sub) => toSubscript(sub))
+    .replace(/([A-Za-z])_(\d+)/g, (_, ch, sub) => ch + toSubscript(sub));
+  return out;
+};
 
 /** Strip \( \) / \[ \] delimiters and \text{...} wrappers for contexts that
  *  need a plain string (e.g. "Correct answer: …" labels). */

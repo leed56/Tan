@@ -217,10 +217,12 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
           {premiumPacks.length > 0 && (
             <>
               <Text style={styles.sectionLabel}>Premium Content</Text>
-              <PremiumLockCard
-                title="Premium Packs Locked"
-                description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
-              />
+              {!isPremium() && (
+                <PremiumLockCard
+                  title="Premium Packs Locked"
+                  description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
+                />
+              )}
               {premiumPacks.map((pack) => {
                 const { progressPercent, isCompleted } = getPackProgress(pack.id);
                 return (
@@ -232,9 +234,11 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
                       isCompleted={isCompleted}
                       onPress={handlePackPress}
                     />
-                    <View style={styles.lockedOverlay} pointerEvents="none">
-                      <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
-                    </View>
+                    {!isPremium() && (
+                      <View style={styles.lockedOverlay} pointerEvents="none">
+                        <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
+                      </View>
+                    )}
                   </View>
                 );
               })}

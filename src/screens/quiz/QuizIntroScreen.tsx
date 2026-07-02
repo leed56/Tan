@@ -19,6 +19,7 @@ import { useCurriculumStore } from '../../store/curriculumStore';
 import { useQuizStore } from '../../store/quizStore';
 import { useUsageStore } from '../../store/usageStore';
 import { useAuthStore } from '../../store/authStore';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
 
 type Props = StackScreenProps<HomeStackParamList, 'QuizIntro'>;
 
@@ -26,10 +27,13 @@ export function QuizIntroScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId, quizType } = route.params;
   const [showLimitModal, setShowLimitModal] = useState(false);
   const [starting, setStarting] = useState(false);
+  const [loadError, setLoadError] = useState(false);
 
   const { packsByTopic } = useCurriculumStore();
   const { initSession, loadingQuestions } = useQuizStore();
   const { isWithinLimit, remainingUses, fetchUsage, increment } = useUsageStore();
+  const { isPremium } = useSubscriptionStore();
+  const isPremiumUser = isPremium();
   const user = useAuthStore((s) => s.user);
 
   const packs = packsByTopic[topicId] ?? [];
@@ -48,6 +52,14 @@ export function QuizIntroScreen({ navigation, route }: Props) {
     setStarting(true);
     try {
       await initSession(packId, formId, subjectId, topicId, user?.uid ?? 'demo');
+      // initSession reports "no questions" via store state rather than
+      // throwing — bail here so an empty pack doesn't consume one of the
+      // user's limited daily attempts and dump them on an error screen.
+      if (useQuizStore.getState().error || !useQuizStore.getState().currentSession) {
+        setLoadError(true);
+        return;
+      }
+      setLoadError(false);
       if (user?.uid) await increment(user.uid, quizType);
       const params = { packId, packTitle, topicId, subjectColor, formId, subjectId };
       if (quizType === 'mcq') navigation.navigate('MCQQuiz', params);
@@ -114,6 +126,16 @@ export function QuizIntroScreen({ navigation, route }: Props) {
           </View>
         )}
 
+        {/* Empty-pack notice (no attempt consumed) */}
+        {loadError && (
+          <View style={styles.limitBanner}>
+            <Ionicons name="alert-circle-outline" size={16} color={COLORS.warning} />
+            <Text style={styles.limitText}>
+              No questions are available for this pack yet — your free attempt was not used. Please try another pack.
+            </Text>
+          </View>
+        )}
+
         {/* CTA */}
         <AppButton
           title={withinLimit ? (starting || loadingQuestions ? 'Loading...' : 'Start Quiz') : 'Upgrade to Continue'}
@@ -123,11 +145,13 @@ export function QuizIntroScreen({ navigation, route }: Props) {
           icon={<Ionicons name={withinLimit ? 'play' : 'star'} size={18} color={withinLimit ? COLORS.textPrimary : '#1A1A1A'} />}
         />
 
-        <Text style={styles.hint}>
-          {withinLimit
-            ? `${remaining} free attempt${remaining !== 1 ? 's' : ''} remaining today`
-            : 'Free daily limit reached — resets at midnight'}
-        </Text>
+        {!isPremiumUser && (
+          <Text style={styles.hint}>
+            {withinLimit
+              ? `${remaining} free attempt${remaining !== 1 ? 's' : ''} remaining today`
+              : 'Free daily limit reached — resets at midnight'}
+          </Text>
+        )}
       </ScrollView>
 
       <DailyLimitModal

@@ -57,6 +57,7 @@ export function FeedbackModal({
       transparent
       animationType="none"
       statusBarTranslucent
+      onRequestClose={onContinue}
     >
       <View style={styles.backdrop}>
         <Animated.View style={[styles.sheet, { transform: [{ translateY }] }]}>
