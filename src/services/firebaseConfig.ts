@@ -59,10 +59,39 @@ storage = getStorage(app);
 // permission-denied and the app silently falls back to local seed data.
 // Gated on the real env var, not `firebaseConfig.projectId` (which is always
 // truthy now thanks to the dummy fallback above).
+// Resolves once a real auth session exists. Data fetches must await this —
+// at cold start the anonymous sign-in and the first screen's Firestore reads
+// race, and a query that fires before the token exists is rejected by the
+// `isSignedIn()` rules, silently falling back to (and caching) seed data even
+// though the project, credentials, and content are all fine.
+let _authReadyResolve: (() => void) | null = null;
+const _authReady = new Promise<void>((resolve) => {
+  _authReadyResolve = resolve;
+});
+
 if (hasRealCredentials) {
   onAuthStateChanged(auth, (user) => {
-    if (!user) signInAnonymously(auth).catch(() => {});
+    if (user) {
+      _authReadyResolve?.();
+      _authReadyResolve = null;
+    } else {
+      signInAnonymously(auth).catch(() => {});
+    }
   });
+}
+
+/**
+ * Await before any Firestore read/write that runs near app start. Resolves
+ * immediately when Firebase isn't configured or a user already exists;
+ * otherwise waits for the startup sign-in, capped by `timeoutMs` so a broken
+ * auth config degrades to the seed fallback instead of hanging forever.
+ */
+export function waitForAuthReady(timeoutMs = 8000): Promise<void> {
+  if (!hasRealCredentials || auth.currentUser) return Promise.resolve();
+  return Promise.race([
+    _authReady,
+    new Promise<void>((resolve) => setTimeout(resolve, timeoutMs)),
+  ]);
 }
 
 // One-time startup diagnostic so it's unambiguous which data source the app is

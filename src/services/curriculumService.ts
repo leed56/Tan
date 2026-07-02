@@ -10,7 +10,7 @@
  * TODO: Phase 3 — add caching layer (AsyncStorage) for offline-first
  */
 
-import { firestore, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import {
   collection,
   getDocs,
@@ -42,6 +42,7 @@ import { COLLECTIONS } from './firebaseConfig';
 export async function getForms(): Promise<CurriculumForm[]> {
   if (!isFirebaseConfigured()) return SEED_FORMS;
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(collection(firestore, COLLECTIONS.forms), orderBy('order')),
     );
@@ -61,6 +62,7 @@ export async function getSubjectsByForm(formId: string): Promise<CurriculumSubje
       .sort((a, b) => a.order - b.order);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.subjects),
@@ -101,6 +103,7 @@ export async function getTopicsBySubject(
       .sort((a, b) => a.order - b.order);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.topics),
@@ -145,6 +148,7 @@ export async function getLearningPacksByTopic(
       .sort((a, b) => a.order - b.order);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.learningPacks),

@@ -4,7 +4,7 @@
  * TODO: Phase 4 — add real-time listeners for live question bank updates
  */
 
-import { firestore, isFirebaseConfigured } from './firebaseConfig';
+import { firestore, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import {
   collection,
   getDocs,
@@ -31,6 +31,7 @@ export async function getQuestionsByLearningPack(
     return getSeedQuestionsByPack(learningPackId);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.questions),
