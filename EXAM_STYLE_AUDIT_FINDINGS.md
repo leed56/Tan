@@ -15,6 +15,12 @@ papers is systematic: **every MCQ has 4 options; CSEE Section A uses 5 (A–E)**
 One old Form 1 Math batch ships 27 unanswerable HOQ questions and 158 questions
 whose LaTeX still renders as raw markup.
 
+**Fixed during this audit (4 commits):** every fill-in-the-blank quiz was
+unanswerable (no input rendered — all 2,170 FIB questions are free-text, screen
+only drew option buttons); the quiz soft-locked after viewing an explanation;
+the payment screen crashed on native phones; and "Upgrade to Premium" from the
+Profile tab did nothing.
+
 ---
 
 ## 🔴 P0 — students hit these today
@@ -170,7 +176,27 @@ working retries; curriculum store force-refetch avoids the stale-empty-cache tra
 
 ## Part B — Quiz engine functional verification (running app)
 
-_Section pending — background E2E run in progress; will be appended._
+Full E2E run in the web app (seed mode, 390×740 touch viewport), 47 screenshots.
+
+| Test | Verdict |
+|---|---|
+| MCQ full run (timer, lock-in, feedback, progress, result math, XP = sum of per-question rewards) | ✅ PASS |
+| Result screen (Review Mistakes lists exactly the missed questions; Retry = genuinely fresh run) | ✅ PASS |
+| Explanation round-trip | ❌ was FAIL → **fixed**: quiz soft-locked after "View Full Explanation" (stale `showFeedback` closure in `useFocusEffect` deps) — fixed in all 4 quiz screens |
+| Timer expiry auto-submit (exactly once, no crash) | ✅ PASS |
+| TF quiz end-to-end | ✅ PASS |
+| FIB quiz | ❌ was FAIL → **fixed**: FIBScreen only rendered option buttons while ALL 2,170 production FIB questions are free-text with empty options — every fill-in-the-blank quiz was unanswerable. FIBInput (existing component, never mounted) now wired in with lenient text/numeric matching; verified live |
+| HOQ / Summary via curriculum | ⚠️ BLOCKED in seed data (no HOQ seed questions / no seed summaryPoints); Summary screen itself works via dev sample |
+| Session integrity (quit + re-enter = fresh; double-tap Continue = single navigation) | ✅ PASS |
+| Mid-quiz browser reload | app reboots to Home, session silently discarded (no resume prompt) — acceptable, recorded |
+
+**Open findings from the run (not yet fixed):**
+- B1 Pack metadata vs reality: intros advertise 10/12/8 questions where actual counts are 5/2/3 (same family as the 320-pack `questionCount` drift, P2 #9).
+- B2 PackCompletion level bar double-counts fresh XP (`getXpProgressPercent(xp + xpEarned)` after `addXp` already applied it) — showed 24% after a 12-XP first quiz.
+- B3 React warning "Cannot update QuizIntroScreen while rendering MCQScreen" — setState-in-render smell in the intro→quiz handoff.
+- B4 Explanation screen body repeats the same sentence in three sections ("Simple Explanation" / "Why This Is Correct" / "Summary") — placeholder-looking until the AI explanation CF is wired (known launch blocker).
+- B5 With Demo Premium on, the pack list still shows the "Premium Packs Locked" upsell card and HOQ intro still shows free-use pips.
+- B6 Mid-quiz reload discards session + in-memory XP with no resume prompt (seed mode; in live mode XP persists via gamification store hydration).
 
 ---
 
