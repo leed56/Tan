@@ -116,7 +116,7 @@ export function TFScreen({ navigation, route }: Props) {
       if (revealed && !showFeedback) {
         setShowFeedback(true);
       }
-    }, [revealed]),
+    }, [revealed, showFeedback]),
   );
 
   if (loadingQuestions) {

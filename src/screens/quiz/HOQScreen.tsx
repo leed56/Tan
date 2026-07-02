@@ -137,7 +137,7 @@ export function HOQScreen({ navigation, route }: Props) {
       if (selectedOption !== null && !showFeedback) {
         setShowFeedback(true);
       }
-    }, [selectedOption]),
+    }, [selectedOption, showFeedback]),
   );
 
   if (loadingQuestions) {
