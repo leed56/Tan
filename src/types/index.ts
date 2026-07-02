@@ -234,6 +234,15 @@ export type ProfileStackParamList = {
   EditProfile: undefined;
   Settings: undefined;
   SubscriptionStatus: undefined;
+  // Purchase flow must be reachable from the Profile tab too — the
+  // "Upgrade to Premium" CTA on SubscriptionStatus navigates here.
+  SubscriptionScreen: undefined;
+  PaymentMethodScreen: {
+    planId: string;
+    planTitle: string;
+    billingCycle: 'monthly' | 'yearly';
+    price: number;
+  };
   FamilyProfiles: undefined;
   ManageDevices: undefined;
 };

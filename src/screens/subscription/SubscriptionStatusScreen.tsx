@@ -180,7 +180,7 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
         {!premium ? (
           <AppButton
             title="Upgrade to Premium"
-            onPress={() => (navigation as any).navigate('SubscriptionScreen')}
+            onPress={() => navigation.navigate('SubscriptionScreen')}
             variant="primary"
             icon={<Ionicons name="flash" size={18} color={COLORS.textPrimary} />}
           />

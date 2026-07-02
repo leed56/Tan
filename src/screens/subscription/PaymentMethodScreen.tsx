@@ -150,7 +150,7 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
               onPress={handlePay}
               loading={processing}
               variant="primary"
-              icon="logo-whatsapp"
+              icon={<Ionicons name="logo-whatsapp" size={18} color="#fff" />}
             />
           </>
         ) : (
@@ -208,7 +208,13 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
               onPress={handlePay}
               loading={processing}
               variant="primary"
-              icon={selectedProvider === 'whatsapp' ? 'logo-whatsapp' : 'card-outline'}
+              icon={
+                <Ionicons
+                  name={selectedProvider === 'whatsapp' ? 'logo-whatsapp' : 'card-outline'}
+                  size={18}
+                  color="#fff"
+                />
+              }
             />
           </>
         )}

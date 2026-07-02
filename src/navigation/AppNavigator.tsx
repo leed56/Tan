@@ -135,6 +135,8 @@ function ProfileStackNavigator() {
       <ProfileStack.Screen name="EditProfile" component={EditProfileScreen} />
       <ProfileStack.Screen name="Settings" component={SettingsScreen} />
       <ProfileStack.Screen name="SubscriptionStatus" component={SubscriptionStatusScreen} />
+      <ProfileStack.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
+      <ProfileStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
       <ProfileStack.Screen name="FamilyProfiles" component={FamilyProfilesScreen} />
       <ProfileStack.Screen name="ManageDevices" component={ManageDevicesScreen} />
     </ProfileStack.Navigator>
