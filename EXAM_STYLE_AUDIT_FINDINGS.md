@@ -15,11 +15,20 @@ papers is systematic: **every MCQ has 4 options; CSEE Section A uses 5 (A–E)**
 One old Form 1 Math batch ships 27 unanswerable HOQ questions and 158 questions
 whose LaTeX still renders as raw markup.
 
-**Fixed during this audit (4 commits):** every fill-in-the-blank quiz was
+**Fixed during this audit:** every fill-in-the-blank quiz was
 unanswerable (no input rendered — all 2,170 FIB questions are free-text, screen
 only drew option buttons); the quiz soft-locked after viewing an explanation;
 the payment screen crashed on native phones; and "Upgrade to Premium" from the
 Profile tab did nothing.
+
+**Follow-up cleanup batch (also done):** all five Part A P1s (badge subjectKey,
+daily-attempt burn on empty packs, farmable reward boxes, logout state leak, TF
+answer casing), the math renderer now covers \frac/\times/subscripts/arrows
+(all 158 raw-markup questions render), quit-quiz confirmation, navigation-stack
+hygiene on quiz results, XP double-count on PackCompletion, hardware-back on
+quiz modals, premium users no longer see lock upsells/counters, analytics
+labels demo data, and the dead Settings/Home buttons were wired or hidden.
+Forms 3–4 content (15,846 questions total) was seeded to production.
 
 ---
 
