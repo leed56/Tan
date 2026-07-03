@@ -18,7 +18,7 @@ import { StepByStepCard } from '../../components/ui/explanation/StepByStepCard';
 import { ExplanationFeedbackButtons } from '../../components/ui/explanation/ExplanationFeedbackButtons';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
 import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
-import { stripMathMarkup } from '../../components/ui/quiz/MathRenderer';
+import { stripMathMarkup, MathRenderer } from '../../components/ui/quiz/MathRenderer';
 import { useExplanationStore } from '../../store/explanationStore';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
@@ -102,12 +102,12 @@ export function ExplanationScreen({ navigation, route }: Props) {
             {explanation.notice ? (
               <View style={styles.noticeBanner}>
                 <Ionicons name="time-outline" size={16} color={COLORS.warning} />
-                <Text style={styles.noticeText}>{explanation.notice}</Text>
+                <MathRenderer text={explanation.notice} style={styles.noticeText} />
               </View>
             ) : null}
 
             <GoldExplanationCard title="Simple Explanation" icon="bulb-outline" defaultExpanded>
-              <Text style={styles.bodyText}>{explanation.explanationText}</Text>
+              <MathRenderer text={explanation.explanationText} style={styles.bodyText} />
             </GoldExplanationCard>
 
             <GoldExplanationCard
@@ -116,7 +116,7 @@ export function ExplanationScreen({ navigation, route }: Props) {
               accentColor={COLORS.success}
               defaultExpanded
             >
-              <Text style={styles.bodyText}>{explanation.whyCorrect}</Text>
+              <MathRenderer text={explanation.whyCorrect} style={styles.bodyText} />
             </GoldExplanationCard>
 
             {Object.keys(explanation.whyWrong).length > 0 && (
@@ -141,7 +141,7 @@ export function ExplanationScreen({ navigation, route }: Props) {
             {explanation.finalSummary ? (
               <View style={[styles.summaryCard, { borderColor: `${subjectColor}30` }]}>
                 <Text style={[styles.summaryLabel, { color: subjectColor }]}>Summary</Text>
-                <Text style={styles.summaryText}>{explanation.finalSummary}</Text>
+                <MathRenderer text={explanation.finalSummary} style={styles.summaryText} />
               </View>
             ) : null}
 

@@ -17,6 +17,19 @@ interface MathRendererProps {
 
 type Segment = { type: 'text' | 'inline' | 'block'; content: string };
 
+// Authored content carries JSON-escaping artifacts and markdown the app never
+// renders: literal \n sequences shown as text, \" escaped quotes, and
+// **bold**/*italic* asterisks. Strip them before display. The \n replacement
+// skips lowercase letters so LaTeX commands like \neq survive.
+export function normalizeContentText(raw: string): string {
+  return raw
+    .replace(/\\n(?![a-z])/g, '\n')
+    .replace(/\\"/g, '"')
+    .replace(/\\'/g, "'")
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/(^|[\s(])\*(\S(?:[^*\n]*\S)?)\*(?=$|[\s).,;:!?])/g, '$1$2');
+}
+
 // Content authors often wrap ordinary words in LaTeX text commands
 // ("\( \text{Mathema} \)") — unwrap them so readers see the word, not markup.
 const unwrapTextCommands = (s: string) =>
@@ -82,13 +95,14 @@ const prettifyMath = (s: string) => {
 /** Strip \( \) / \[ \] delimiters and \text{...} wrappers for contexts that
  *  need a plain string (e.g. "Correct answer: …" labels). */
 export function stripMathMarkup(raw: string): string {
-  return prettifyMath(unwrapTextCommands(raw.replace(/\\[[\]()]/g, '')))
+  return prettifyMath(unwrapTextCommands(normalizeContentText(raw).replace(/\\[[\]()]/g, '')))
     .replace(/\s{2,}/g, ' ')
     .replace(/\s+([,.;:!?])/g, '$1')
     .trim();
 }
 
-function parseSegments(raw: string): Segment[] {
+function parseSegments(input: string): Segment[] {
+  const raw = normalizeContentText(input);
   const segments: Segment[] = [];
   // Match \[ … \] first (block), then \( … \) (inline)
   const pattern = /\\\[(.+?)\\\]|\\\((.+?)\\\)/gs;

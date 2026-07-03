@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
+import { MathRenderer } from './MathRenderer';
 
 interface ExplanationCardProps {
   explanation: string;
@@ -21,7 +22,7 @@ export function ExplanationCard({ explanation, correctLabel }: ExplanationCardPr
           <Text style={styles.correctText}>{correctLabel}</Text>
         </View>
       )}
-      <Text style={styles.body}>{explanation}</Text>
+      <MathRenderer text={explanation} style={styles.body} />
     </View>
   );
 }
