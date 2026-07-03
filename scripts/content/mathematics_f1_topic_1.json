@@ -2,491 +2,371 @@
   "topicId": "form_1_mathematics_topic_1",
   "topicName": "Concept of Mathematics",
   "order": 1,
-  "description": "An introduction to the meaning and importance of mathematics covering the base ten numeration system, place value, reading and writing whole numbers, roman numerals, the four basic operations, order of operations (BODMAS), factors, multiples, prime numbers, and finding HCF and LCM.",
+  "description": "An introduction to what Mathematics is, its main branches such as Arithmetic, Algebra, Geometry, Statistics, Trigonometry and Calculus, and how Mathematics is applied in other subjects, daily life, technology and careers.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the place value of the digit 7 in the number 4736?",
+        "questionText": "What is Mathematics best defined as?",
         "options": [
-          {"id": "a", "text": "Tens", "isCorrect": false},
-          {"id": "b", "text": "Hundreds", "isCorrect": true},
-          {"id": "c", "text": "Thousands", "isCorrect": false},
-          {"id": "d", "text": "Units", "isCorrect": false}
+          {"id": "a", "text": "The study of shapes only", "isCorrect": false},
+          {"id": "b", "text": "The study of numbers, quantities, structures and their relationships", "isCorrect": true},
+          {"id": "c", "text": "The study of chemical reactions", "isCorrect": false},
+          {"id": "d", "text": "The study of historical events", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "In 4736 the digits from the right are units (6), tens (3), hundreds (7), thousands (4). So the 7 stands for 7 hundreds.",
+        "explanation": "Mathematics is the study of numbers, quantities, structures, patterns and the relationships between them; it is much wider than any single topic like shapes. Exam Tip: If a definition option only names one topic (like \"shapes\"), it's describing a branch, not the whole subject.",
         "difficulty": "easy"
       },
       {
-        "questionText": "How is the number 3050 written in words?",
+        "questionText": "What do we call the branch dealing with points, lines, angles and shapes?",
         "options": [
-          {"id": "a", "text": "Three thousand and fifty", "isCorrect": true},
-          {"id": "b", "text": "Three hundred and fifty", "isCorrect": false},
-          {"id": "c", "text": "Thirty thousand and fifty", "isCorrect": false},
-          {"id": "d", "text": "Three thousand five hundred", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "3050 has 3 thousands, 0 hundreds, 5 tens and 0 units, which reads as three thousand and fifty.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following is the correct value of the roman numeral XIV?",
-        "options": [
-          {"id": "a", "text": "16", "isCorrect": false},
-          {"id": "b", "text": "4", "isCorrect": false},
-          {"id": "c", "text": "14", "isCorrect": true},
-          {"id": "d", "text": "24", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "X = 10 and IV = 4 (one before five), so XIV = 10 + 4 = 14.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the sum of 2468 and 1357?",
-        "options": [
-          {"id": "a", "text": "3825", "isCorrect": true},
-          {"id": "b", "text": "3725", "isCorrect": false},
-          {"id": "c", "text": "3815", "isCorrect": false},
-          {"id": "d", "text": "3925", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Adding: 2468 + 1357 = 3825, carrying where the column totals exceed 9.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Find the value of 45 x 12.",
-        "options": [
-          {"id": "a", "text": "540", "isCorrect": true},
-          {"id": "b", "text": "450", "isCorrect": false},
-          {"id": "c", "text": "504", "isCorrect": false},
-          {"id": "d", "text": "570", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "45 x 12 = 45 x 10 + 45 x 2 = 450 + 90 = 540.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the value of 8 + 4 x 3 when the order of operations (BODMAS) is used?",
-        "options": [
-          {"id": "a", "text": "36", "isCorrect": false},
-          {"id": "b", "text": "20", "isCorrect": true},
-          {"id": "c", "text": "24", "isCorrect": false},
-          {"id": "d", "text": "44", "isCorrect": false}
+          {"id": "a", "text": "Arithmetic", "isCorrect": false},
+          {"id": "b", "text": "Geometry", "isCorrect": true},
+          {"id": "c", "text": "Statistics", "isCorrect": false},
+          {"id": "d", "text": "Calculus", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Multiplication is done before addition: 4 x 3 = 12, then 8 + 12 = 20.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is a prime number?",
-        "options": [
-          {"id": "a", "text": "21", "isCorrect": false},
-          {"id": "b", "text": "27", "isCorrect": false},
-          {"id": "c", "text": "29", "isCorrect": true},
-          {"id": "d", "text": "33", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "A prime number has exactly two factors, 1 and itself. 29 has only 1 and 29 as factors, while 21, 27 and 33 each have other factors.",
+        "explanation": "Geometry is the branch of Mathematics that studies points, lines, angles, surfaces and shapes. Exam Tip: Any question mentioning \"shape/angle/line\" points to Geometry.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following lists ALL the factors of 12?",
+        "questionText": "Which branch represents unknown numbers using letters such as x and y?",
         "options": [
-          {"id": "a", "text": "1, 2, 3, 4, 6, 12", "isCorrect": true},
-          {"id": "b", "text": "2, 3, 4, 6", "isCorrect": false},
-          {"id": "c", "text": "1, 2, 4, 12", "isCorrect": false},
-          {"id": "d", "text": "12, 24, 36, 48", "isCorrect": false}
+          {"id": "a", "text": "Geometry", "isCorrect": false},
+          {"id": "b", "text": "Algebra", "isCorrect": true},
+          {"id": "c", "text": "Trigonometry", "isCorrect": false},
+          {"id": "d", "text": "Statistics", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "The factors of 12 are all numbers that divide 12 exactly: 1, 2, 3, 4, 6 and 12.",
+        "correctAnswer": "b",
+        "explanation": "Algebra uses letters and symbols such as x and y to represent unknown numbers so that they can be worked with and solved. Exam Tip: \"Unknown number represented by a letter\" is Algebra.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What is the value of 20 - (6 + 2) x 2?",
+        "questionText": "Branch that focuses on collecting, organising and analysing data?",
         "options": [
-          {"id": "a", "text": "28", "isCorrect": false},
-          {"id": "b", "text": "16", "isCorrect": false},
-          {"id": "c", "text": "4", "isCorrect": true},
-          {"id": "d", "text": "12", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "Brackets first: 6 + 2 = 8. Then multiply: 8 x 2 = 16. Finally subtract: 20 - 16 = 4.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The number 900 is written in roman numerals as:",
-        "options": [
-          {"id": "a", "text": "DCCCC", "isCorrect": false},
-          {"id": "b", "text": "CM", "isCorrect": true},
-          {"id": "c", "text": "MC", "isCorrect": false},
-          {"id": "d", "text": "CD", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "C = 100 placed before M = 1000 means 1000 - 100 = 900, written CM. CD is 400.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the remainder when 250 is divided by 7?",
-        "options": [
-          {"id": "a", "text": "1", "isCorrect": false},
-          {"id": "b", "text": "3", "isCorrect": false},
-          {"id": "c", "text": "5", "isCorrect": true},
-          {"id": "d", "text": "6", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "The largest multiple of 7 not exceeding 250 is 7 x 35 = 245, so the remainder is 250 - 245 = 5.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the Highest Common Factor (HCF) of 18 and 24?",
-        "options": [
-          {"id": "a", "text": "3", "isCorrect": false},
-          {"id": "b", "text": "6", "isCorrect": true},
-          {"id": "c", "text": "9", "isCorrect": false},
-          {"id": "d", "text": "12", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "18 = 2 x 3^2 and 24 = 2^3 x 3. The common prime factors are 2 and 3, so HCF = 2 x 3 = 6.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the Lowest Common Multiple (LCM) of 4 and 6?",
-        "options": [
-          {"id": "a", "text": "24", "isCorrect": false},
-          {"id": "b", "text": "2", "isCorrect": false},
-          {"id": "c", "text": "12", "isCorrect": true},
-          {"id": "d", "text": "10", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "Multiples of 4 are 4, 8, 12, 16 and of 6 are 6, 12, 18. The smallest number appearing in both lists is 12.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following numbers is exactly divisible by both 2 and 3?",
-        "options": [
-          {"id": "a", "text": "26", "isCorrect": false},
-          {"id": "b", "text": "33", "isCorrect": false},
-          {"id": "c", "text": "42", "isCorrect": true},
-          {"id": "d", "text": "35", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "42 is even (divisible by 2) and its digit sum 4 + 2 = 6 is divisible by 3, so 42 is divisible by both 2 and 3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The prime factorization of 60 is:",
-        "options": [
-          {"id": "a", "text": "2^2 x 3 x 5", "isCorrect": true},
-          {"id": "b", "text": "2 x 3 x 5", "isCorrect": false},
-          {"id": "c", "text": "2^2 x 15", "isCorrect": false},
-          {"id": "d", "text": "6 x 10", "isCorrect": false}
+          {"id": "a", "text": "Statistics", "isCorrect": true},
+          {"id": "b", "text": "Calculus", "isCorrect": false},
+          {"id": "c", "text": "Geometry", "isCorrect": false},
+          {"id": "d", "text": "Algebra", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "60 = 2 x 30 = 2 x 2 x 15 = 2 x 2 x 3 x 5, which is written as 2^2 x 3 x 5 using only prime factors.",
-        "difficulty": "hard"
+        "explanation": "Statistics is the branch concerned with collecting, organising, presenting and analysing data to draw conclusions. Exam Tip: \"survey/average/data\" point to Statistics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One of these is NOT a branch of Mathematics:",
+        "options": [
+          {"id": "a", "text": "Algebra", "isCorrect": false},
+          {"id": "b", "text": "Geometry", "isCorrect": false},
+          {"id": "c", "text": "Photosynthesis", "isCorrect": true},
+          {"id": "d", "text": "Statistics", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Algebra, Geometry and Statistics are all branches of Mathematics, but photosynthesis is a biological process, not a branch of Mathematics. Exam Tip: In \"which is NOT\" check whether each option even belongs to the subject.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How does Physics mainly depend on Mathematics?",
+        "options": [
+          {"id": "a", "text": "Through grammar rules", "isCorrect": false},
+          {"id": "b", "text": "Through formulas and calculations used to explain physical events", "isCorrect": true},
+          {"id": "c", "text": "Through drawing maps", "isCorrect": false},
+          {"id": "d", "text": "Through writing essays", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Physics uses mathematical formulas and calculations to describe and explain physical events such as motion, force and energy. Exam Tip: When a subject uses formulas to explain something, that's Mathematics inside it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In Chemistry, balancing equations and calculating concentrations rely on which subject?",
+        "options": [
+          {"id": "a", "text": "Kiswahili", "isCorrect": false},
+          {"id": "b", "text": "History", "isCorrect": false},
+          {"id": "c", "text": "Mathematics", "isCorrect": true},
+          {"id": "d", "text": "Literature", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Balancing chemical equations and calculating concentrations both require counting and calculation, which are Mathematics. Exam Tip: Chemistry tasks with \"calculate/balance\" are Mathematics in disguise.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is Mathematics mainly used for in Economics?",
+        "options": [
+          {"id": "a", "text": "Composing music", "isCorrect": false},
+          {"id": "b", "text": "Calculating profit, loss and budgets", "isCorrect": true},
+          {"id": "c", "text": "Drawing pictures", "isCorrect": false},
+          {"id": "d", "text": "Writing poems", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Economics uses Mathematics to calculate profit, loss, budgets and other money-related figures. Exam Tip: Subjects dealing with money lean on Mathematics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Everyday activity that best shows Mathematics in daily life?",
+        "options": [
+          {"id": "a", "text": "Calculating change when shopping", "isCorrect": true},
+          {"id": "b", "text": "Singing a song", "isCorrect": false},
+          {"id": "c", "text": "Painting a picture", "isCorrect": false},
+          {"id": "d", "text": "Watching a movie", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Working out the change you should receive when shopping uses subtraction and is a clear example of Mathematics in daily life. Exam Tip: Daily-life examples usually involve money, time, or measurement.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why is Mathematics important in technology?",
+        "options": [
+          {"id": "a", "text": "It helps grow crops", "isCorrect": false},
+          {"id": "b", "text": "It is used to design and program computers and mobile devices", "isCorrect": true},
+          {"id": "c", "text": "It helps write novels", "isCorrect": false},
+          {"id": "d", "text": "It helps play football", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Mathematics is used to design, program and build computers and mobile devices, making it essential to technology. Exam Tip: \"Importance in technology\" points to programming/design/engineering.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Branch used to study rates of change such as speed?",
+        "options": [
+          {"id": "a", "text": "Calculus", "isCorrect": true},
+          {"id": "b", "text": "Statistics", "isCorrect": false},
+          {"id": "c", "text": "Geometry", "isCorrect": false},
+          {"id": "d", "text": "Arithmetic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Calculus is the branch that studies the rate of change of quantities, such as how speed changes over time. Exam Tip: \"Measuring how a quantity changes\" signals Calculus.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Branch studying the relationship between angles and sides of a triangle?",
+        "options": [
+          {"id": "a", "text": "Trigonometry", "isCorrect": true},
+          {"id": "b", "text": "Algebra", "isCorrect": false},
+          {"id": "c", "text": "Statistics", "isCorrect": false},
+          {"id": "d", "text": "Arithmetic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Trigonometry studies the relationships between the angles and sides of triangles. Exam Tip: \"Trig\" = triangle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How is Mathematics applied in Geography?",
+        "options": [
+          {"id": "a", "text": "Through map scale and distance calculations", "isCorrect": true},
+          {"id": "b", "text": "Through writing essays", "isCorrect": false},
+          {"id": "c", "text": "Through studying grammar", "isCorrect": false},
+          {"id": "d", "text": "Through memorising historical dates", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Geography uses Mathematics through map scales and distance calculations, where a scale is a ratio linking map distance to real distance. Exam Tip: \"scale\" on a map is a ratio, a Mathematics concept.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is Mathematics called the \"language of science\"?",
+        "options": [
+          {"id": "a", "text": "Because scientists speak only in numbers", "isCorrect": false},
+          {"id": "b", "text": "Because scientific laws and relationships are expressed using equations", "isCorrect": true},
+          {"id": "c", "text": "Because Mathematics has no connection to science", "isCorrect": false},
+          {"id": "d", "text": "Because it is written in Latin", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Mathematics is called the language of science because scientific laws and relationships are expressed precisely using equations. Exam Tip: \"Language of science\" ties back to equations being the precise way ideas are expressed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which career depends most heavily on Mathematics?",
+        "options": [
+          {"id": "a", "text": "Engineer", "isCorrect": true},
+          {"id": "b", "text": "Singer", "isCorrect": false},
+          {"id": "c", "text": "Actor", "isCorrect": false},
+          {"id": "d", "text": "Dancer", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An engineer relies heavily on Mathematics for measurements, calculations and design, more than the other careers listed. Exam Tip: Careers like Engineering, Accounting, Architecture are calculation-heavy.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "The number system we normally use, which has ten digits from 0 to 9, is called the ____ numeration system.",
+        "questionText": "Mathematics is the study of numbers, quantities, ____, patterns and their relationships.",
         "options": [
-          {"id": "a", "text": "base ten", "isCorrect": true},
-          {"id": "b", "text": "base two", "isCorrect": false},
-          {"id": "c", "text": "roman", "isCorrect": false},
-          {"id": "d", "text": "base five", "isCorrect": false}
+          {"id": "a", "text": "structures", "isCorrect": true},
+          {"id": "b", "text": "languages", "isCorrect": false},
+          {"id": "c", "text": "colours", "isCorrect": false},
+          {"id": "d", "text": "events", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The base ten (decimal) system uses ten digits, 0 to 9, and each place is ten times the place to its right.",
+        "explanation": "The full definition names numbers, quantities, structures, patterns and their relationships. Exam Tip: Memorize the definition sentence.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In the number 5842, the digit 5 has a place value of ____ .",
+        "questionText": "____ is the branch dealing with addition, subtraction, multiplication and division.",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": false},
-          {"id": "b", "text": "50", "isCorrect": false},
-          {"id": "c", "text": "500", "isCorrect": false},
-          {"id": "d", "text": "5000", "isCorrect": true}
-        ],
-        "correctAnswer": "d",
-        "explanation": "The 5 is in the thousands place, so its place value is 5 x 1000 = 5000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The roman numeral for the number 50 is ____ .",
-        "options": [
-          {"id": "a", "text": "L", "isCorrect": true},
-          {"id": "b", "text": "C", "isCorrect": false},
-          {"id": "c", "text": "D", "isCorrect": false},
-          {"id": "d", "text": "X", "isCorrect": false}
+          {"id": "a", "text": "Arithmetic", "isCorrect": true},
+          {"id": "b", "text": "Geometry", "isCorrect": false},
+          {"id": "c", "text": "Statistics", "isCorrect": false},
+          {"id": "d", "text": "Trigonometry", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "In roman numerals L = 50, C = 100, D = 500 and X = 10.",
+        "explanation": "Arithmetic is the branch that deals with the basic operations of addition, subtraction, multiplication and division. Exam Tip: Basic operations on numbers always point to Arithmetic.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A number that has exactly two factors, one and itself, is called a ____ number.",
+        "questionText": "____ is the branch concerned with points, lines, angles and shapes.",
         "options": [
-          {"id": "a", "text": "even", "isCorrect": false},
-          {"id": "b", "text": "prime", "isCorrect": true},
-          {"id": "c", "text": "square", "isCorrect": false},
-          {"id": "d", "text": "composite", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "A prime number has only two factors: 1 and the number itself, for example 2, 3, 5 and 7.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the operation 24 / 6 = 4, the number 24 is called the ____ .",
-        "options": [
-          {"id": "a", "text": "divisor", "isCorrect": false},
-          {"id": "b", "text": "quotient", "isCorrect": false},
-          {"id": "c", "text": "dividend", "isCorrect": true},
-          {"id": "d", "text": "product", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "In division the number being divided is the dividend, the number dividing it is the divisor, and the answer is the quotient.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In BODMAS, the letter O stands for ____ .",
-        "options": [
-          {"id": "a", "text": "operations", "isCorrect": false},
-          {"id": "b", "text": "order (powers and roots)", "isCorrect": true},
-          {"id": "c", "text": "odd numbers", "isCorrect": false},
-          {"id": "d", "text": "one", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "In BODMAS, O stands for Order, meaning powers (indices) and roots, which are worked out after brackets.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The result obtained when two numbers are multiplied together is called the ____ .",
-        "options": [
-          {"id": "a", "text": "sum", "isCorrect": false},
-          {"id": "b", "text": "difference", "isCorrect": false},
-          {"id": "c", "text": "product", "isCorrect": true},
-          {"id": "d", "text": "quotient", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "The answer to a multiplication is the product; for example the product of 3 and 4 is 12.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The smallest prime number is ____ .",
-        "options": [
-          {"id": "a", "text": "0", "isCorrect": false},
-          {"id": "b", "text": "1", "isCorrect": false},
-          {"id": "c", "text": "2", "isCorrect": true},
-          {"id": "d", "text": "3", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "2 is the smallest prime number and the only even prime, since 1 has just one factor and is not prime.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The Highest Common Factor of two numbers is the ____ number that divides both of them exactly.",
-        "options": [
-          {"id": "a", "text": "largest", "isCorrect": true},
-          {"id": "b", "text": "smallest", "isCorrect": false},
-          {"id": "c", "text": "first even", "isCorrect": false},
-          {"id": "d", "text": "last odd", "isCorrect": false}
+          {"id": "a", "text": "Geometry", "isCorrect": true},
+          {"id": "b", "text": "Algebra", "isCorrect": false},
+          {"id": "c", "text": "Calculus", "isCorrect": false},
+          {"id": "d", "text": "Arithmetic", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The HCF (Highest Common Factor) is the greatest number that is a factor of both given numbers.",
-        "difficulty": "medium"
+        "explanation": "Geometry deals with points, lines, angles, shapes and their properties. Exam Tip: Shapes, lines and angles always mean Geometry.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The number 19 written in roman numerals is ____ .",
+        "questionText": "In Biology, Mathematics is used to calculate population growth rates and ____.",
         "options": [
-          {"id": "a", "text": "IXX", "isCorrect": false},
-          {"id": "b", "text": "XIX", "isCorrect": true},
-          {"id": "c", "text": "XVIV", "isCorrect": false},
-          {"id": "d", "text": "XXI", "isCorrect": false}
+          {"id": "a", "text": "statistics", "isCorrect": true},
+          {"id": "b", "text": "poems", "isCorrect": false},
+          {"id": "c", "text": "grammar", "isCorrect": false},
+          {"id": "d", "text": "maps", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "19 = 10 + 9, and 9 is IX, so 19 is written XIX (X followed by IX).",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "Biology uses Mathematics to calculate population growth rates and to work with statistics from experiments and surveys. Exam Tip: Data about living things is handled with statistics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mathematics helps manage money through budgeting, saving and ____.",
+        "options": [
+          {"id": "a", "text": "calculating profit/loss", "isCorrect": true},
+          {"id": "b", "text": "singing songs", "isCorrect": false},
+          {"id": "c", "text": "drawing pictures", "isCorrect": false},
+          {"id": "d", "text": "writing essays", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Managing money uses Mathematics for budgeting, saving and calculating profit or loss. Exam Tip: Anything to do with money uses Mathematics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch studying angles and sides of triangles is called ____.",
+        "options": [
+          {"id": "a", "text": "Trigonometry", "isCorrect": true},
+          {"id": "b", "text": "Statistics", "isCorrect": false},
+          {"id": "c", "text": "Algebra", "isCorrect": false},
+          {"id": "d", "text": "Arithmetic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Trigonometry studies the relationship between the angles and sides of triangles. Exam Tip: \"Trig\" = triangle.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mathematics is described as the ____ of science because scientific laws are expressed using equations.",
+        "options": [
+          {"id": "a", "text": "language", "isCorrect": true},
+          {"id": "b", "text": "enemy", "isCorrect": false},
+          {"id": "c", "text": "history", "isCorrect": false},
+          {"id": "d", "text": "picture", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Mathematics is called the language of science because scientific laws and relationships are written as equations. Exam Tip: Equations are the precise way science expresses ideas.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "____ is the branch dealing with the rate of change of quantities.",
+        "options": [
+          {"id": "a", "text": "Calculus", "isCorrect": true},
+          {"id": "b", "text": "Geometry", "isCorrect": false},
+          {"id": "c", "text": "Statistics", "isCorrect": false},
+          {"id": "d", "text": "Arithmetic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Calculus is the branch that studies the rate of change of quantities, such as speed and growth. Exam Tip: Rates of change signal Calculus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In Geography, Mathematics is applied through the use of map ____ to calculate real distances.",
+        "options": [
+          {"id": "a", "text": "scale", "isCorrect": true},
+          {"id": "b", "text": "colour", "isCorrect": false},
+          {"id": "c", "text": "title", "isCorrect": false},
+          {"id": "d", "text": "legend", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A map scale is a ratio that links distance on the map to real distance on the ground, used to calculate real distances. Exam Tip: Scale is a ratio, so it is a Mathematics concept.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mathematics is used to design and ____ computer systems and mobile applications.",
+        "options": [
+          {"id": "a", "text": "program", "isCorrect": true},
+          {"id": "b", "text": "paint", "isCorrect": false},
+          {"id": "c", "text": "sing", "isCorrect": false},
+          {"id": "d", "text": "farm", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Mathematics is used to design and program computer systems and mobile applications. Exam Tip: Technology relies on Mathematics for programming and design.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Mathematics is the study of numbers, quantities, shapes and their relationships.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Mathematics deals with numbers, measurement, patterns, shapes and the relationships between them, and is useful in daily life such as trade and building.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the base ten system, moving one place to the left multiplies the place value by 10.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Each place in base ten is ten times the place to its right, so units, tens, hundreds and thousands increase by a factor of 10.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The number 1 is a prime number.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "1 is not prime because it has only one factor (itself), while a prime number must have exactly two different factors.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The roman numeral C stands for 100.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "In roman numerals C = 100, just as X = 10, L = 50, D = 500 and M = 1000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "According to BODMAS, addition is always done before multiplication.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "In BODMAS, multiplication and division come before addition and subtraction, so multiplication is done first.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Every whole number is a factor of itself.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Any number divides itself exactly once, so a number is always one of its own factors, for example 8 is a factor of 8.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The Lowest Common Multiple of two numbers is always smaller than both numbers.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The LCM is the smallest number that both numbers divide into, so it is equal to or greater than the larger number, not smaller.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The value of 6 + 2 x 5 is 40.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Using BODMAS, multiply first: 2 x 5 = 10, then add 6 to get 16, not 40.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Multiples of a number are found by multiplying it by 1, 2, 3, 4 and so on.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The multiples of a number are the products of that number with the counting numbers, for example the multiples of 5 are 5, 10, 15, 20.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the number 706, the digit 0 shows that there are no tens.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "706 has 7 hundreds, 0 tens and 6 units, so the 0 is a place holder showing there are no tens.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Mathematics is only useful in science subjects.", "options": [], "correctAnswer": "false", "explanation": "Mathematics is used in many areas beyond science, including money, technology, geography and daily life. Exam Tip: Statements using \"only\" are often false.", "difficulty": "easy"},
+      {"questionText": "Geometry studies shapes, sizes and positions of figures.", "options": [], "correctAnswer": "true", "explanation": "Geometry is the branch that deals with shapes, sizes, positions and properties of figures. Exam Tip: Shapes, lines and angles always mean Geometry.", "difficulty": "easy"},
+      {"questionText": "Statistics deals only with triangles.", "options": [], "correctAnswer": "false", "explanation": "Statistics deals with collecting and analysing data; it is Trigonometry that deals with triangles. Exam Tip: Match the key word to the correct branch before answering.", "difficulty": "easy"},
+      {"questionText": "Mathematics has no relationship with Physics.", "options": [], "correctAnswer": "false", "explanation": "Physics depends heavily on Mathematics through formulas and calculations that explain physical events. Exam Tip: If a subject uses formulas, Mathematics is inside it.", "difficulty": "easy"},
+      {"questionText": "Algebra uses letters and symbols to represent unknown numbers.", "options": [], "correctAnswer": "true", "explanation": "Algebra represents unknown numbers with letters such as x and y so they can be solved. Exam Tip: Letters standing for unknowns is Algebra.", "difficulty": "easy"},
+      {"questionText": "Calculus is used to study rates of change such as speed and growth.", "options": [], "correctAnswer": "true", "explanation": "Calculus studies how quantities change, including rates of change such as speed and growth. Exam Tip: Rates of change signal Calculus.", "difficulty": "easy"},
+      {"questionText": "Mathematics is not used in Economics.", "options": [], "correctAnswer": "false", "explanation": "Economics uses Mathematics to calculate profit, loss, budgets and other money figures. Exam Tip: Subjects dealing with money lean on Mathematics.", "difficulty": "easy"},
+      {"questionText": "Trigonometry and Geometry are exactly the same branch with no differences.", "options": [], "correctAnswer": "false", "explanation": "They are related but different: Trigonometry focuses on angles and sides of triangles, while Geometry covers points, lines, shapes and figures more broadly. Exam Tip: Related topics are not always identical branches.", "difficulty": "easy"},
+      {"questionText": "Mathematics plays a role in the design of mobile phones and computers.", "options": [], "correctAnswer": "true", "explanation": "Mathematics is used to design and program mobile phones and computers, so it plays a key role in technology. Exam Tip: Technology relies on Mathematics for design and programming.", "difficulty": "easy"},
+      {"questionText": "Mathematics is called the \"language of science\" because science is written using words only, not equations.", "options": [], "correctAnswer": "false", "explanation": "It is the opposite: Mathematics is the language of science because scientific laws are expressed using equations, not just words. Exam Tip: Watch for statements where the reasoning is reversed.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Base ten numeration.",
-        "options": [],
-        "correctAnswer": "The base ten system uses digits 0 to 9 and each place is 10 times the one to its right.",
-        "explanation": "Places from the right are units, tens, hundreds, thousands and so on, each ten times larger than the previous.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Place value.",
-        "options": [],
-        "correctAnswer": "Place value = the digit multiplied by the value of its position.",
-        "explanation": "For example in 3400 the 3 means 3 x 1000 = 3000 and the 4 means 4 x 100 = 400.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Main roman numerals.",
-        "options": [],
-        "correctAnswer": "I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000.",
-        "explanation": "A smaller symbol before a larger one is subtracted (IV = 4), and after a larger one is added (VI = 6).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The four basic operations.",
-        "options": [],
-        "correctAnswer": "Addition (+), subtraction (-), multiplication (x) and division (/).",
-        "explanation": "These operations give the sum, difference, product and quotient of whole numbers.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Order of operations (BODMAS).",
-        "options": [],
-        "correctAnswer": "Brackets, Order, Division, Multiplication, Addition, Subtraction.",
-        "explanation": "Work out brackets first, then powers and roots, then division and multiplication, then addition and subtraction.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Factors.",
-        "options": [],
-        "correctAnswer": "A factor is a number that divides another number exactly with no remainder.",
-        "explanation": "For example the factors of 6 are 1, 2, 3 and 6 because each divides 6 exactly.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Multiples.",
-        "options": [],
-        "correctAnswer": "A multiple is the product of a number and any counting number.",
-        "explanation": "The multiples of 4 are 4, 8, 12, 16, 20 and so on.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Prime numbers.",
-        "options": [],
-        "correctAnswer": "A prime number has exactly two factors, 1 and itself.",
-        "explanation": "The first prime numbers are 2, 3, 5, 7, 11 and 13, with 2 being the only even prime.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Highest Common Factor (HCF).",
-        "options": [],
-        "correctAnswer": "The HCF is the largest number that divides two or more numbers exactly.",
-        "explanation": "Find it by taking the product of the common prime factors, for example HCF of 12 and 18 is 6.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Lowest Common Multiple (LCM).",
-        "options": [],
-        "correctAnswer": "The LCM is the smallest number that is a multiple of two or more numbers.",
-        "explanation": "For example the LCM of 3 and 4 is 12, the smallest number that both 3 and 4 divide into.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Mathematics", "options": [], "correctAnswer": "The study of numbers, quantities, structures, patterns and their relationships.", "explanation": "It is the foundation subject that supports science, technology, money and everyday problem solving.", "difficulty": "easy"},
+      {"questionText": "Arithmetic", "options": [], "correctAnswer": "The branch dealing with addition, subtraction, multiplication and division of numbers.", "explanation": "It provides the basic operations used in almost every other area of Mathematics and daily life.", "difficulty": "easy"},
+      {"questionText": "Algebra", "options": [], "correctAnswer": "The branch that uses letters and symbols to represent unknown numbers.", "explanation": "It lets us write and solve equations for unknown values such as x and y.", "difficulty": "easy"},
+      {"questionText": "Geometry", "options": [], "correctAnswer": "The branch concerned with points, lines, angles, shapes and their properties.", "explanation": "It is used in design, construction and any work involving figures and space.", "difficulty": "easy"},
+      {"questionText": "Statistics", "options": [], "correctAnswer": "The branch that collects, organises, presents and analyses data.", "explanation": "It helps make sense of surveys, averages and data so decisions can be made.", "difficulty": "easy"},
+      {"questionText": "Trigonometry", "options": [], "correctAnswer": "The branch that studies the relationship between the angles and sides of triangles.", "explanation": "It is essential for measuring heights, distances and angles that cannot be reached directly.", "difficulty": "easy"},
+      {"questionText": "Calculus", "options": [], "correctAnswer": "The branch that studies the rate of change of quantities.", "explanation": "It describes how things change, such as speed and growth, and is widely used in science and engineering.", "difficulty": "easy"},
+      {"questionText": "Mathematics in Physics", "options": [], "correctAnswer": "Using formulas and calculations to explain physical events such as motion and force.", "explanation": "Physics relies on Mathematics to state its laws precisely and to make predictions.", "difficulty": "easy"},
+      {"questionText": "Mathematics in Geography", "options": [], "correctAnswer": "Using map scale as a ratio to calculate real distances from a map.", "explanation": "Scale, ratio and measurement show that Geography is more than just facts and places.", "difficulty": "easy"},
+      {"questionText": "Mathematics in technology", "options": [], "correctAnswer": "Designing and programming computers, mobile devices and applications.", "explanation": "Modern technology could not be built or run without the calculations Mathematics provides.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Three bells ring at intervals of 6, 8 and 12 minutes. If they ring together at 9:00 am, after how many minutes will they next ring together?",
+        "questionText": "With reference to Chemistry, which pair of tasks best shows that Chemistry depends on Mathematics?",
         "options": [
-          {"id": "a", "text": "24 minutes", "isCorrect": true},
-          {"id": "b", "text": "48 minutes", "isCorrect": false},
-          {"id": "c", "text": "12 minutes", "isCorrect": false},
-          {"id": "d", "text": "26 minutes", "isCorrect": false}
+          {"id": "a", "text": "Balancing chemical equations and calculating concentration", "isCorrect": true},
+          {"id": "b", "text": "Naming elements and drawing apparatus", "isCorrect": false},
+          {"id": "c", "text": "Memorising the periodic table song", "isCorrect": false},
+          {"id": "d", "text": "Writing a laboratory safety essay", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "They ring together again after the LCM of 6, 8 and 12. LCM = 2^3 x 3 = 24, so they next ring together after 24 minutes.",
+        "explanation": "Balancing a chemical equation means counting and matching the atoms on each side, and calculating concentration means dividing the amount of solute by the solvent, which is a ratio. Both are Mathematics, so Chemistry needs Mathematics for accurate results.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A teacher wants to share 36 pens and 48 books equally among the greatest possible number of pupils, with nothing left over. How many pupils can share them?",
+        "questionText": "A student claims Mathematics has nothing to do with Geography because it is \"only about numbers.\" What is the correct response?",
         "options": [
-          {"id": "a", "text": "6", "isCorrect": false},
-          {"id": "b", "text": "12", "isCorrect": true},
-          {"id": "c", "text": "4", "isCorrect": false},
-          {"id": "d", "text": "18", "isCorrect": false}
+          {"id": "a", "text": "Agree, because Geography never uses numbers", "isCorrect": false},
+          {"id": "b", "text": "Disagree, because Mathematics includes measurement, ratio and spatial relationships used in map scale", "isCorrect": true},
+          {"id": "c", "text": "Agree, because map scale is not a ratio", "isCorrect": false},
+          {"id": "d", "text": "Disagree, because Geography only uses grammar", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The greatest number sharing both exactly is the HCF of 36 and 48. 36 = 2^2 x 3^2 and 48 = 2^4 x 3, so HCF = 2^2 x 3 = 12 pupils.",
+        "explanation": "We should disagree with the claim. Mathematics is more than numbers; it includes measurement, ratio and spatial relationships. A map's scale, for example 1 cm to 1 km, is a ratio used constantly in Geography, so the student's claim is incorrect.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Evaluate 4 + 2 x (18 / 3 - 1) using the order of operations.",
+        "questionText": "How does strong Mathematics best help a student who wants to become an engineer?",
         "options": [
-          {"id": "a", "text": "14", "isCorrect": true},
-          {"id": "b", "text": "36", "isCorrect": false},
-          {"id": "c", "text": "12", "isCorrect": false},
-          {"id": "d", "text": "40", "isCorrect": false}
+          {"id": "a", "text": "It lets them use Geometry and Algebra to design safe, accurate structures", "isCorrect": true},
+          {"id": "b", "text": "It helps them memorise poems for meetings", "isCorrect": false},
+          {"id": "c", "text": "It improves their singing at ceremonies", "isCorrect": false},
+          {"id": "d", "text": "It replaces the need for any drawing or planning", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Brackets first: 18 / 3 = 6, then 6 - 1 = 5. Next multiply: 2 x 5 = 10. Finally add: 4 + 10 = 14.",
+        "explanation": "Engineers use Geometry to work with angles and shapes and Algebra to solve for unknown values when designing safe and accurate structures such as bridges. Strong Mathematics skills therefore improve accuracy, safety and overall career success.",
         "difficulty": "hard"
       }
     ]
