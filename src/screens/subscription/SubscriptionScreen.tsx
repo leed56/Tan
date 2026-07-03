@@ -6,7 +6,6 @@ import {
   ScrollView,
   TouchableOpacity,
   Platform,
-  Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -20,11 +19,11 @@ import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { SEED_PLANS, FEATURE_META } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { notify } from '../../utils/confirm';
+import { openWhatsApp } from '../../utils/support';
 import type { FeatureKey, PlanId, BillingCycle } from '../../types/subscription';
 
 type Props = StackScreenProps<HomeStackParamList, 'SubscriptionScreen'>;
 
-const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
 const WHATSAPP_GREEN = '#25D366';
 // Google Play billing only exists inside the installed Android app — it must
 // never surface on web or iOS (where it does nothing and confuses buyers, and
@@ -68,24 +67,10 @@ export function SubscriptionScreen({ navigation }: Props) {
 
   // Direct WhatsApp upgrade — opens a chat pre-filled with the chosen plan so
   // support can confirm mobile-money payment and activate instantly.
-  const handleWhatsAppUpgrade = () => {
-    if (!WHATSAPP_NUMBER) {
-      notify(
-        'WhatsApp upgrade',
-        'Our WhatsApp line is being set up. For now, tap "Pay with Mobile Money" to subscribe.',
-      );
-      return;
-    }
-    const text = encodeURIComponent(
+  const handleWhatsAppUpgrade = () =>
+    openWhatsApp(
       `Hello! I'd like to upgrade to Soma AI *${selectedPlan.title}* (${billingCycle}) for ${price.toLocaleString()} TSH.`,
     );
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-    if (Platform.OS === 'web') {
-      if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer');
-      return;
-    }
-    Linking.openURL(url).catch(() => {});
-  };
 
   // Google Play billing is a native module that isn't wired yet. Rather than a
   // dead button (or a Play-policy-violating WhatsApp redirect), it degrades to

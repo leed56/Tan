@@ -6,8 +6,6 @@ import {
   ScrollView,
   Switch,
   TouchableOpacity,
-  Platform,
-  Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -18,12 +16,10 @@ import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useAppThemeStore } from '../../store/appThemeStore';
 import { useAuth } from '../../hooks/useAuth';
 import { confirmAction, notify } from '../../utils/confirm';
+import { openWhatsApp } from '../../utils/support';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
 
-// Shared with the subscription flow — the support/activation line students
-// reach us on. Configured via env so it's never hard-coded in the bundle.
-const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
 const WHATSAPP_GREEN = '#25D366';
 
 export function SettingsScreen({ navigation }: Props) {
@@ -44,28 +40,7 @@ export function SettingsScreen({ navigation }: Props) {
     notify('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
   };
 
-  const handleWhatsApp = async () => {
-    if (!WHATSAPP_NUMBER) {
-      notify(
-        'WhatsApp Support',
-        'Our WhatsApp line is being set up. In the meantime, email support@somaaiedu.com.',
-      );
-      return;
-    }
-    const message = encodeURIComponent('Hi Soma AI, I need help with the app.');
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
-    // On web, window.open reliably opens WhatsApp in a new tab; Linking is the
-    // native path.
-    if (Platform.OS === 'web') {
-      if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer');
-      return;
-    }
-    try {
-      await Linking.openURL(url);
-    } catch {
-      notify('WhatsApp Support', `Message us on WhatsApp: +${WHATSAPP_NUMBER}`);
-    }
-  };
+  const handleWhatsApp = () => openWhatsApp('Hi Soma AI, I need help with the app.');
 
   const comingSoon = (feature: string) => () =>
     notify(feature, "This is on the way — we're adding it in the next update.");

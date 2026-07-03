@@ -22,6 +22,7 @@ import { PAYMENT_META } from '../../utils/seedPlans';
 import { createPaymentRequest } from '../../services/subscriptionService';
 import { useAuthStore } from '../../store/authStore';
 import { notify } from '../../utils/confirm';
+import { SUPPORT_WHATSAPP_NUMBER } from '../../utils/support';
 
 type Props = StackScreenProps<HomeStackParamList, 'PaymentMethodScreen'>;
 
@@ -29,10 +30,9 @@ type Props = StackScreenProps<HomeStackParamList, 'PaymentMethodScreen'>;
 // mobile money and WhatsApp alike — routes through admin manual verification.
 const ANDROID_PROVIDERS: PaymentProvider[] = ['mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl', 'whatsapp'];
 
-// No placeholder fallback: this is the ONLY payment path on iOS, and a
-// build without the env var was silently opening chats to a number nobody
-// owns. Unset now disables the action with a clear message instead.
-const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
+// Shared support line (baked-in default, env-overridable) so subscription
+// activation reaches the same WhatsApp number as the rest of the app.
+const WHATSAPP_NUMBER = SUPPORT_WHATSAPP_NUMBER;
 
 export function PaymentMethodScreen({ navigation, route }: Props) {
   const { planId, planTitle, billingCycle, price } = route.params;
