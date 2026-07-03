@@ -39,12 +39,16 @@ const PACK_CFG = {
 
 console.log(`repairing content in ${PROJECT}…`);
 
-// Load everything once.
+// Every defect this script repairs lives in the legacy Form 1 Mathematics
+// batch, so scope all reads to that subject (~1k docs instead of ~16k —
+// matters on the Spark plan's daily read quota).
+const SUBJECT = 'form_1_mathematics';
 const [packsSnap, questionsSnap, topicsSnap] = await Promise.all([
-  db.collection('learning_packs').get(),
-  db.collection('questions').get(),
-  db.collection('topics').get(),
+  db.collection('learning_packs').where('subjectId', '==', SUBJECT).get(),
+  db.collection('questions').where('subjectId', '==', SUBJECT).get(),
+  db.collection('topics').where('subjectId', '==', SUBJECT).get(),
 ]);
+console.log(`loaded ${packsSnap.size} packs, ${questionsSnap.size} questions, ${topicsSnap.size} topics (${SUBJECT} only)`);
 const packs = new Map(packsSnap.docs.map((d) => [d.id, d.data()]));
 const topics = new Map(topicsSnap.docs.map((d) => [d.id, d.data()]));
 
