@@ -1,940 +1,372 @@
 {
   "topicId": "form_4_mathematics_topic_3",
-  "topicName": "Three Dimensional Figures",
+  "topicName": "Three-Dimensional Figures",
   "order": 3,
-  "description": "This topic covers surface area and volume of common three dimensional solids including prisms, cylinders, pyramids, cones, spheres and composite figures, together with the relationship between volume and capacity.",
+  "description": "A study of three-dimensional solids including prisms, cylinders, cones, pyramids and spheres, covering their properties, volumes and surface areas, together with slant heights, space diagonals and the angle between a line and a plane.",
   "packs": {
     "mcq": [
       {
-        "questionText": "A cube has an edge length of 5 cm. What is its total surface area?",
+        "questionText": "Find the volume of a cuboid measuring 5 cm by 4 cm by 3 cm.",
         "options": [
-          {
-            "id": "a",
-            "text": "25 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "125 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "150 cm^2",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "100 cm^2",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "12 cm³", "isCorrect": false},
+          {"id": "b", "text": "60 cm³", "isCorrect": true},
+          {"id": "c", "text": "94 cm³", "isCorrect": false},
+          {"id": "d", "text": "47 cm³", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The volume of a cuboid is length x width x height, so 5 x 4 x 3 = 60 cm³. Exam Tip: multiply all three dimensions for a cuboid's volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the volume of a cylinder of radius 7 cm and height 10 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "440 cm³", "isCorrect": false},
+          {"id": "b", "text": "220 cm³", "isCorrect": false},
+          {"id": "c", "text": "1540 cm³", "isCorrect": true},
+          {"id": "d", "text": "154 cm³", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A cube has 6 equal square faces. Surface area = 6 * (edge)^2 = 6 * 5^2 = 6 * 25 = 150 cm^2.",
-        "difficulty": "easy"
+        "explanation": "Using V = pi r² h = (22/7) x 7 x 7 x 10 = 1540 cm³. Exam Tip: square the radius before multiplying by the height.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "A cuboid measures 8 cm by 4 cm by 3 cm. What is its volume?",
+        "questionText": "Find the volume of a cone of radius 6 cm and height 7 cm (pi = 22/7).",
         "options": [
-          {
-            "id": "a",
-            "text": "96 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "15 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "44 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "120 cm^3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Volume of a cuboid = length * width * height = 8 * 4 * 3 = 96 cm^3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A cylinder has a base radius of 7 cm and a height of 10 cm. Taking pi = 22/7, what is its volume?",
-        "options": [
-          {
-            "id": "a",
-            "text": "220 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1540 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "440 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "770 cm^3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "792 cm³", "isCorrect": false},
+          {"id": "b", "text": "264 cm³", "isCorrect": true},
+          {"id": "c", "text": "528 cm³", "isCorrect": false},
+          {"id": "d", "text": "88 cm³", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Volume = pi * r^2 * h = (22/7) * 7^2 * 10 = (22/7) * 49 * 10 = 22 * 7 * 10 = 1540 cm^3.",
+        "explanation": "Using V = (1/3) pi r² h = (1/3) x (22/7) x 6 x 6 x 7 = 264 cm³. Exam Tip: a cone is one-third of the matching cylinder, so remember the 1/3 factor.",
         "difficulty": "medium"
       },
       {
-        "questionText": "What is the curved (lateral) surface area of a cylinder with radius 7 cm and height 15 cm? Take pi = 22/7.",
+        "questionText": "Find the volume of a sphere of radius 21 cm (pi = 22/7).",
         "options": [
-          {
-            "id": "a",
-            "text": "660 cm^2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "330 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "462 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "154 cm^2",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "38808 cm³", "isCorrect": true},
+          {"id": "b", "text": "9702 cm³", "isCorrect": false},
+          {"id": "c", "text": "29106 cm³", "isCorrect": false},
+          {"id": "d", "text": "5544 cm³", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Curved surface area of a cylinder = 2 * pi * r * h = 2 * (22/7) * 7 * 15 = 2 * 22 * 15 = 660 cm^2.",
+        "explanation": "Using V = (4/3) pi r³ = (4/3) x (22/7) x 21 x 21 x 21 = 38808 cm³. Exam Tip: cube the radius first, then apply the 4/3 pi factor.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A sphere has a radius of 7 cm. Taking pi = 22/7, what is its volume?",
+        "questionText": "Find the total surface area of a cube of side 4 cm.",
         "options": [
-          {
-            "id": "a",
-            "text": "616 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1437.33 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "2156 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "718.67 cm^3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Volume of a sphere = (4/3) * pi * r^3 = (4/3) * (22/7) * 7^3 = (4/3) * (22/7) * 343 = (4/3) * 1078 = 4312/3 = 1437.33 cm^3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the surface area of a sphere with radius 7 cm? Take pi = 22/7.",
-        "options": [
-          {
-            "id": "a",
-            "text": "154 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "308 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "616 cm^2",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "1232 cm^2",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "64 cm²", "isCorrect": false},
+          {"id": "b", "text": "16 cm²", "isCorrect": false},
+          {"id": "c", "text": "96 cm²", "isCorrect": true},
+          {"id": "d", "text": "48 cm²", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Surface area of a sphere = 4 * pi * r^2 = 4 * (22/7) * 7^2 = 4 * (22/7) * 49 = 4 * 154 = 616 cm^2.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A cone has a base radius of 3 cm and a height of 4 cm. What is its slant height?",
-        "options": [
-          {
-            "id": "a",
-            "text": "7 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5 cm",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "12 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "25 cm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Slant height l = sqrt(r^2 + h^2) = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5 cm.",
+        "explanation": "A cube has 6 equal square faces, so the total surface area is 6 x 4² = 6 x 16 = 96 cm². Exam Tip: a cube has 6 identical faces, so multiply one face area by 6.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A cone has a base radius of 7 cm and a height of 12 cm. Taking pi = 22/7, what is its volume?",
+        "questionText": "Find the total surface area of a closed cylinder of radius 7 cm and height 3 cm (pi = 22/7).",
         "options": [
-          {
-            "id": "a",
-            "text": "1848 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "616 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "264 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1232 cm^3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "132 cm²", "isCorrect": false},
+          {"id": "b", "text": "440 cm²", "isCorrect": true},
+          {"id": "c", "text": "308 cm²", "isCorrect": false},
+          {"id": "d", "text": "154 cm²", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Volume of a cone = (1/3) * pi * r^2 * h = (1/3) * (22/7) * 49 * 12 = (1/3) * 22 * 7 * 12 = (1/3) * 1848 = 616 cm^3.",
+        "explanation": "Using TSA = 2 pi r(r + h) = 2 x (22/7) x 7 x (7 + 3) = 44 x 10 = 440 cm². Exam Tip: a closed cylinder includes both circular ends, so use 2 pi r(r + h).",
         "difficulty": "medium"
       },
       {
-        "questionText": "A square-based pyramid has a base edge of 6 cm and a vertical height of 10 cm. What is its volume?",
+        "questionText": "Find the volume of a pyramid with a square base of side 6 cm and height 10 cm.",
         "options": [
-          {
-            "id": "a",
-            "text": "360 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "120 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "60 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "180 cm^3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Volume of a pyramid = (1/3) * base area * height = (1/3) * (6 * 6) * 10 = (1/3) * 36 * 10 = (1/3) * 360 = 120 cm^3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A triangular prism has a triangular cross-section of area 12 cm^2 and a length of 9 cm. What is its volume?",
-        "options": [
-          {
-            "id": "a",
-            "text": "21 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "108 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "54 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "216 cm^3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Volume of a prism = cross-sectional area * length = 12 * 9 = 108 cm^3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How many litres of water can a tank of capacity 5000 cm^3 hold?",
-        "options": [
-          {
-            "id": "a",
-            "text": "5 litres",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "50 litres",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.5 litres",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "500 litres",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "1 litre = 1000 cm^3, so 5000 cm^3 = 5000 / 1000 = 5 litres.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A hemisphere has a radius of 7 cm. Taking pi = 22/7, what is its volume?",
-        "options": [
-          {
-            "id": "a",
-            "text": "1437.33 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "718.67 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "308 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "462 cm^3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Volume of a hemisphere = (2/3) * pi * r^3 = (2/3) * (22/7) * 343 = (2/3) * 1078 = 2156/3 = 718.67 cm^3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The total surface area of a closed cylinder is given by which formula?",
-        "options": [
-          {
-            "id": "a",
-            "text": "2 * pi * r * h",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "pi * r^2 * h",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "2 * pi * r * (r + h)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "pi * r * (r + l)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "360 cm³", "isCorrect": false},
+          {"id": "b", "text": "180 cm³", "isCorrect": false},
+          {"id": "c", "text": "120 cm³", "isCorrect": true},
+          {"id": "d", "text": "60 cm³", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Total surface area of a closed cylinder = curved surface + two circular ends = 2*pi*r*h + 2*pi*r^2 = 2*pi*r*(r + h).",
+        "explanation": "Using V = (1/3) x base area x height = (1/3) x 36 x 10 = 120 cm³. Exam Tip: find the base area first, then apply the 1/3 factor for a pyramid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the curved surface area of a cone of radius 7 cm and slant height 10 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "220 cm²", "isCorrect": true},
+          {"id": "b", "text": "154 cm²", "isCorrect": false},
+          {"id": "c", "text": "440 cm²", "isCorrect": false},
+          {"id": "d", "text": "70 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using curved surface area = pi r l = (22/7) x 7 x 10 = 220 cm². Exam Tip: the curved surface of a cone uses the slant height l, not the vertical height.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the surface area of a sphere of radius 7 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "154 cm²", "isCorrect": false},
+          {"id": "b", "text": "308 cm²", "isCorrect": false},
+          {"id": "c", "text": "616 cm²", "isCorrect": true},
+          {"id": "d", "text": "1437 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using SA = 4 pi r² = 4 x (22/7) x 7 x 7 = 616 cm². Exam Tip: the surface area of a sphere is 4 pi r², with no separate flat faces.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A prism has a triangular cross-section of area 20 cm² and length 12 cm. Find its volume.",
+        "options": [
+          {"id": "a", "text": "32 cm³", "isCorrect": false},
+          {"id": "b", "text": "240 cm³", "isCorrect": true},
+          {"id": "c", "text": "120 cm³", "isCorrect": false},
+          {"id": "d", "text": "480 cm³", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The volume of a prism is cross-section area x length = 20 x 12 = 240 cm³. Exam Tip: for any prism, multiply the cross-section area by the length.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A rectangular tank measures 50 cm by 40 cm by 30 cm. What is its capacity in litres? (1 litre = 1000 cm^3)",
+        "questionText": "How many edges does a cuboid have?",
         "options": [
-          {
-            "id": "a",
-            "text": "6 litres",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "60 litres",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "600 litres",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "120 litres",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "6", "isCorrect": false},
+          {"id": "b", "text": "8", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": true},
+          {"id": "d", "text": "10", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A cuboid has 6 faces, 8 vertices and 12 edges. Exam Tip: a cuboid has 12 edges, made of 3 groups of 4 equal edges.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the space diagonal of a cuboid measuring 3 cm by 4 cm by 12 cm.",
+        "options": [
+          {"id": "a", "text": "19 cm", "isCorrect": false},
+          {"id": "b", "text": "13 cm", "isCorrect": true},
+          {"id": "c", "text": "12.6 cm", "isCorrect": false},
+          {"id": "d", "text": "169 cm", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Volume = 50 * 40 * 30 = 60000 cm^3. Capacity = 60000 / 1000 = 60 litres.",
+        "explanation": "The space diagonal is √(3² + 4² + 12²) = √(9 + 16 + 144) = √169 = 13 cm. Exam Tip: the space diagonal of a cuboid is √(l² + w² + h²).",
         "difficulty": "medium"
       },
       {
-        "questionText": "What is the curved surface area of a cone with base radius 7 cm and slant height 10 cm? Take pi = 22/7.",
+        "questionText": "The angle between a line and a plane is the angle between the line and its ______ on the plane.",
         "options": [
-          {
-            "id": "a",
-            "text": "220 cm^2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "440 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "154 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "374 cm^2",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Normal", "isCorrect": false},
+          {"id": "b", "text": "Projection", "isCorrect": true},
+          {"id": "c", "text": "Parallel", "isCorrect": false},
+          {"id": "d", "text": "Reflection", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Curved surface area of a cone = pi * r * l = (22/7) * 7 * 10 = 22 * 10 = 220 cm^2.",
+        "correctAnswer": "b",
+        "explanation": "The angle between a line and a plane is measured between the line and its projection (its shadow) on the plane. Exam Tip: drop a perpendicular to the plane to find the projection first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A cone has radius 6 cm and vertical height 8 cm. Find its slant height.",
+        "options": [
+          {"id": "a", "text": "14 cm", "isCorrect": false},
+          {"id": "b", "text": "48 cm", "isCorrect": false},
+          {"id": "c", "text": "10 cm", "isCorrect": true},
+          {"id": "d", "text": "100 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using l = √(r² + h²) = √(36 + 64) = √100 = 10 cm. Exam Tip: the slant height, radius and vertical height form a right-angled triangle.",
         "difficulty": "medium"
+      },
+      {
+        "questionText": "How many cubic centimetres are there in 1 cubic metre?",
+        "options": [
+          {"id": "a", "text": "100", "isCorrect": false},
+          {"id": "b", "text": "10000", "isCorrect": false},
+          {"id": "c", "text": "1000000", "isCorrect": true},
+          {"id": "d", "text": "1000", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since 1 m = 100 cm, 1 m³ = 100 x 100 x 100 = 1000000 cm³. Exam Tip: cube the length conversion, so 100³ = 1000000.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "The volume of a cuboid is found by multiplying length by width by _____.",
+        "questionText": "A cube has ______ faces.",
         "options": [
-          {
-            "id": "a",
-            "text": "height",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "radius",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "diameter",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "perimeter",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "6", "isCorrect": true},
+          {"id": "b", "text": "4", "isCorrect": false},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "12", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Volume of a cuboid = length * width * height.",
+        "explanation": "A cube is bounded by 6 identical square faces. Exam Tip: a cube has 6 faces, 8 vertices and 12 edges.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A cube of edge 4 cm has a volume of _____ cm^3.",
+        "questionText": "The volume of a cylinder of radius r and height h is V = ______.",
         "options": [
-          {
-            "id": "a",
-            "text": "16",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "64",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "48",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Volume of a cube = (edge)^3 = 4^3 = 64 cm^3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Using pi = 22/7, the area of a circle of radius 7 cm is _____ cm^2.",
-        "options": [
-          {
-            "id": "a",
-            "text": "44",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "308",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "154",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "49",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Area = pi * r^2 = (22/7) * 7^2 = (22/7) * 49 = 22 * 7 = 154 cm^2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "1 litre is equal to _____ cm^3.",
-        "options": [
-          {
-            "id": "a",
-            "text": "100",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "10",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "10000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1000",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "By definition of capacity units, 1 litre = 1000 cm^3 (also 1 cm^3 = 1 millilitre).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The volume of a cone is _____ of the volume of a cylinder with the same base radius and height.",
-        "options": [
-          {
-            "id": "a",
-            "text": "one third",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "twice",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "one half",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "three times",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "pi r² h", "isCorrect": true},
+          {"id": "b", "text": "2 pi r h", "isCorrect": false},
+          {"id": "c", "text": "(1/3) pi r² h", "isCorrect": false},
+          {"id": "d", "text": "pi r h²", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Volume of cone = (1/3) * pi * r^2 * h while a cylinder is pi * r^2 * h, so the cone is one third of the cylinder.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A cylinder has radius 7 cm and height 5 cm. Using pi = 22/7, its volume is _____ cm^3.",
-        "options": [
-          {
-            "id": "a",
-            "text": "110",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "770",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "154",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "385",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Volume = pi * r^2 * h = (22/7) * 49 * 5 = 22 * 7 * 5 = 770 cm^3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "For a cone with base radius r and height h, the slant height l equals the square root of (r^2 + _____).",
-        "options": [
-          {
-            "id": "a",
-            "text": "h",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2h",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "h^2",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "r^2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "By Pythagoras, l = sqrt(r^2 + h^2).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The total surface area of a cube with edge 10 cm is _____ cm^2.",
-        "options": [
-          {
-            "id": "a",
-            "text": "1000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "100",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "360",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "600",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Surface area = 6 * (edge)^2 = 6 * 10^2 = 6 * 100 = 600 cm^2.",
+        "explanation": "A cylinder's volume is the circular base area pi r² multiplied by the height h, giving pi r² h. Exam Tip: volume of a cylinder is base area times height.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A sphere of radius 3 cm has surface area equal to _____ * pi cm^2 (leave answer in terms of pi).",
+        "questionText": "The volume of a cone is V = ______.",
         "options": [
-          {
-            "id": "a",
-            "text": "36",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "18",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(1/3) pi r² h", "isCorrect": true},
+          {"id": "b", "text": "pi r² h", "isCorrect": false},
+          {"id": "c", "text": "(4/3) pi r³", "isCorrect": false},
+          {"id": "d", "text": "pi r l", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Surface area = 4 * pi * r^2 = 4 * pi * 3^2 = 4 * 9 * pi = 36 * pi cm^2.",
-        "difficulty": "medium"
+        "explanation": "A cone has one-third the volume of a cylinder with the same base and height, so V = (1/3) pi r² h. Exam Tip: remember the 1/3 factor that separates a cone from a cylinder.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A water tank holds 2500 millilitres, which is equal to _____ litres.",
+        "questionText": "The surface area of a sphere of radius r is SA = ______.",
         "options": [
-          {
-            "id": "a",
-            "text": "25",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2.5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "0.25",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "250",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "4 pi r²", "isCorrect": true},
+          {"id": "b", "text": "(4/3) pi r³", "isCorrect": false},
+          {"id": "c", "text": "2 pi r²", "isCorrect": false},
+          {"id": "d", "text": "pi r²", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "1 litre = 1000 millilitres, so 2500 ml = 2500 / 1000 = 2.5 litres.",
+        "correctAnswer": "a",
+        "explanation": "The surface area of a sphere is 4 pi r², four times the area of its great circle. Exam Tip: do not confuse 4 pi r² (area) with (4/3) pi r³ (volume).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A square-based pyramid has ______ vertices.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "4", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "8", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A square-based pyramid has 4 vertices around the square base and 1 apex, giving 5 vertices in total. Exam Tip: count the base corners plus the single apex.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The volume of any prism equals the area of its cross-section multiplied by its ______.",
+        "options": [
+          {"id": "a", "text": "length", "isCorrect": true},
+          {"id": "b", "text": "perimeter", "isCorrect": false},
+          {"id": "c", "text": "diagonal", "isCorrect": false},
+          {"id": "d", "text": "radius", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "For a prism the cross-section is constant, so the volume is cross-section area times its length. Exam Tip: this rule works for any prism, whatever the shape of the cross-section.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The volume of a cube of side 5 cm is ______ cm³.",
+        "options": [
+          {"id": "a", "text": "125", "isCorrect": true},
+          {"id": "b", "text": "25", "isCorrect": false},
+          {"id": "c", "text": "75", "isCorrect": false},
+          {"id": "d", "text": "150", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The volume of a cube is side³ = 5 x 5 x 5 = 125 cm³. Exam Tip: cube the side length to get a cube's volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For a cone, l² = ______.",
+        "options": [
+          {"id": "a", "text": "r² + h²", "isCorrect": true},
+          {"id": "b", "text": "r² - h²", "isCorrect": false},
+          {"id": "c", "text": "2rh", "isCorrect": false},
+          {"id": "d", "text": "r² h²", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The slant height, radius and vertical height form a right-angled triangle, so by Pythagoras l² = r² + h². Exam Tip: the slant height is the hypotenuse, so it is the largest of the three.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When the curved surface of a cylinder is unrolled flat, it forms a ______.",
+        "options": [
+          {"id": "a", "text": "rectangle", "isCorrect": true},
+          {"id": "b", "text": "circle", "isCorrect": false},
+          {"id": "c", "text": "triangle", "isCorrect": false},
+          {"id": "d", "text": "square", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Unrolling the curved surface gives a rectangle whose length is the circumference 2 pi r and whose width is the height h. Exam Tip: the rectangle's length equals the circle's circumference.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "1 litre = ______ cm³.",
+        "options": [
+          {"id": "a", "text": "1000", "isCorrect": true},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "10000", "isCorrect": false},
+          {"id": "d", "text": "1000000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "One litre is defined as 1000 cm³, the volume of a 10 cm cube. Exam Tip: 1 litre = 1000 cm³ and 1 m³ = 1000 litres.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "A cube is a special type of cuboid in which all edges are equal.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A cube has all faces square and all edges equal, making it a special cuboid.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The volume of a pyramid is equal to the volume of a prism with the same base and height.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A pyramid's volume is one third of a prism with the same base area and height: V = (1/3) * base area * height.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The curved surface area of a cone is given by pi * r * l, where l is the slant height.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The lateral (curved) surface area of a cone is pi * r * l.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "1 cubic metre is equal to 1000 cubic centimetres.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "1 m = 100 cm, so 1 m^3 = 100^3 = 1,000,000 cm^3, not 1000.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The total surface area of a solid hemisphere of radius r is 3 * pi * r^2.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A solid hemisphere has a curved part 2*pi*r^2 plus a flat circular base pi*r^2, giving 3*pi*r^2.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The volume of a sphere is (4/3) * pi * r^3.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The standard formula for the volume of a sphere is (4/3) * pi * r^3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For a prism, the volume is found by multiplying the cross-sectional area by the length of the prism.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Volume of any prism = cross-sectional area * length (or height).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The capacity of a container measures how much liquid it can hold, while volume measures the space it occupies.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Capacity refers to how much a container can hold; for liquids 1 cm^3 of space corresponds to 1 ml of capacity.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A cylinder open at both ends has a total surface area of 2 * pi * r * (r + h).",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "An open-ended cylinder (a tube) has only its curved surface 2*pi*r*h, with no circular ends.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Doubling the radius of a sphere multiplies its volume by 8.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Volume depends on r^3, so doubling r gives (2)^3 = 8 times the original volume.",
-        "difficulty": "hard"
-      }
+      {"questionText": "The volume of a cone is one-third the volume of a cylinder with the same base and height.", "options": [], "correctAnswer": "true", "explanation": "A cone of matching base and height fills exactly one-third of the cylinder, which is why its volume formula carries the 1/3 factor.", "difficulty": "easy"},
+      {"questionText": "A sphere has one curved surface and no vertices or edges.", "options": [], "correctAnswer": "true", "explanation": "A sphere is a perfectly round solid bounded by a single curved surface, with no flat faces, edges or vertices.", "difficulty": "easy"},
+      {"questionText": "All the faces of a cuboid are squares.", "options": [], "correctAnswer": "false", "explanation": "A cuboid's faces are rectangles that need not be squares; only in the special case of a cube are all faces square.", "difficulty": "easy"},
+      {"questionText": "Doubling the radius of a sphere multiplies its volume by 8.", "options": [], "correctAnswer": "true", "explanation": "Volume depends on r³, so doubling the radius multiplies the volume by 2³ = 8.", "difficulty": "easy"},
+      {"questionText": "A square-based pyramid has 8 edges.", "options": [], "correctAnswer": "true", "explanation": "It has 4 edges around the square base and 4 slant edges rising to the apex, giving 8 edges in total.", "difficulty": "easy"},
+      {"questionText": "Total surface area is measured in cubic units.", "options": [], "correctAnswer": "false", "explanation": "Area is measured in square units such as cm²; cubic units such as cm³ are used for volume.", "difficulty": "easy"},
+      {"questionText": "The volume of a hemisphere of radius r is (2/3) pi r³.", "options": [], "correctAnswer": "true", "explanation": "A hemisphere is half a sphere, so its volume is half of (4/3) pi r³, which gives (2/3) pi r³.", "difficulty": "easy"},
+      {"questionText": "The space diagonal of a cube of side a has length a√3.", "options": [], "correctAnswer": "true", "explanation": "Using √(a² + a² + a²) = √(3a²) = a√3, the space diagonal of a cube is a√3.", "difficulty": "easy"},
+      {"questionText": "A prism has the same cross-section throughout its length.", "options": [], "correctAnswer": "true", "explanation": "By definition a prism has a uniform cross-section along its whole length, which is why volume equals cross-section area times length.", "difficulty": "easy"},
+      {"questionText": "A closed cylinder has two circular faces.", "options": [], "correctAnswer": "true", "explanation": "A closed cylinder is sealed at both ends by a circular face, giving two circular faces plus one curved surface.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "State the formula for the volume of a cuboid and name its dimensions.",
-        "options": [],
-        "correctAnswer": "Volume of a cuboid = length * width * height.",
-        "explanation": "A cuboid is bounded by six rectangular faces; its volume is the product of its three dimensions: length, width and height.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Explain the difference between curved (lateral) surface area and total surface area of a cylinder.",
-        "options": [],
-        "correctAnswer": "Curved surface area is only the side (2*pi*r*h), while total surface area also includes the two circular ends, giving 2*pi*r*(r + h).",
-        "explanation": "The curved surface area covers only the rounded side; the total surface area adds the areas of both flat circular bases.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Write the formula for the volume of a cone and explain how it relates to a cylinder.",
-        "options": [],
-        "correctAnswer": "Volume of a cone = (1/3) * pi * r^2 * h, which is one third of a cylinder with the same base radius and height.",
-        "explanation": "A cone and a cylinder of equal base and height are related by a factor of one third.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "State the formulas for the surface area and volume of a sphere.",
-        "options": [],
-        "correctAnswer": "Surface area of a sphere = 4 * pi * r^2 and volume = (4/3) * pi * r^3.",
-        "explanation": "These two formulas give the area covering a sphere and the space it encloses, both depending only on the radius.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Describe how to find the volume of a composite solid.",
-        "options": [],
-        "correctAnswer": "Split the composite solid into simple known shapes, find the volume of each part, then add (or subtract for hollow parts) the volumes.",
-        "explanation": "Composite solids are handled by breaking them into basic solids whose volumes are known and combining the results.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Explain the relationship between units of volume and capacity using cm^3 and litres.",
-        "options": [],
-        "correctAnswer": "1 cm^3 = 1 millilitre and 1000 cm^3 = 1 litre, so capacity in litres = volume in cm^3 divided by 1000.",
-        "explanation": "Volume in cubic centimetres converts directly to capacity: 1 cm^3 holds 1 ml of liquid, and 1000 cm^3 holds 1 litre.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "State the formula for the volume of any prism.",
-        "options": [],
-        "correctAnswer": "Volume of a prism = area of cross-section * length (or height).",
-        "explanation": "A prism has a uniform cross-section; multiplying its area by the length gives the volume.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Explain how the slant height of a cone is found from its radius and vertical height.",
-        "options": [],
-        "correctAnswer": "Slant height l = sqrt(r^2 + h^2), using Pythagoras' theorem on the radius and vertical height.",
-        "explanation": "The radius, vertical height and slant height form a right-angled triangle, so l is the hypotenuse.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "State the formula for the volume of a pyramid.",
-        "options": [],
-        "correctAnswer": "Volume of a pyramid = (1/3) * base area * vertical height.",
-        "explanation": "Any pyramid's volume is one third of the product of its base area and perpendicular height.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Describe the difference between the total surface area of a solid hemisphere and that of a sphere.",
-        "options": [],
-        "correctAnswer": "A sphere has surface area 4*pi*r^2, while a solid hemisphere has 3*pi*r^2 (curved 2*pi*r^2 plus the flat circular base pi*r^2).",
-        "explanation": "Cutting a sphere in half exposes a flat circular face, so the hemisphere's total area includes that base.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Volume of a cuboid", "options": [], "correctAnswer": "V = length x width x height, the product of the three perpendicular dimensions.", "explanation": "For a cuboid 5 by 4 by 3 the volume is 5 x 4 x 3 = 60 cubic units. Exam Tip: make sure all three dimensions are in the same unit before multiplying.", "difficulty": "easy"},
+      {"questionText": "Volume of a cylinder", "options": [], "correctAnswer": "V = pi r² h, the circular base area times the height.", "explanation": "The base is a circle of area pi r², and stacking it to a height h gives pi r² h. Exam Tip: square the radius first, then multiply by height and pi.", "difficulty": "easy"},
+      {"questionText": "Volume of a cone", "options": [], "correctAnswer": "V = (1/3) pi r² h, one-third of the matching cylinder's volume.", "explanation": "A cone fills exactly one-third of a cylinder with the same base and height, hence the 1/3 factor. Exam Tip: use the vertical height h here, not the slant height.", "difficulty": "easy"},
+      {"questionText": "Volume of a sphere", "options": [], "correctAnswer": "V = (4/3) pi r³, which depends on the cube of the radius.", "explanation": "Because the volume uses r³, doubling the radius multiplies the volume by 8. Exam Tip: cube the radius before applying the 4/3 pi factor.", "difficulty": "easy"},
+      {"questionText": "Surface area of a sphere", "options": [], "correctAnswer": "SA = 4 pi r², four times the area of the sphere's great circle.", "explanation": "For r = 7 with pi = 22/7 this gives 4 x (22/7) x 49 = 616 square units. Exam Tip: do not confuse 4 pi r² for area with (4/3) pi r³ for volume.", "difficulty": "easy"},
+      {"questionText": "Total surface area of a closed cylinder", "options": [], "correctAnswer": "TSA = 2 pi r(r + h), the curved surface plus both circular ends.", "explanation": "The curved part is 2 pi r h and the two ends add 2 pi r², combining to 2 pi r(r + h). Exam Tip: an open cylinder drops one or both of the circular ends.", "difficulty": "easy"},
+      {"questionText": "Slant height of a cone", "options": [], "correctAnswer": "l² = r² + h², so l = √(r² + h²) from Pythagoras.", "explanation": "The radius, vertical height and slant height form a right-angled triangle with l as the hypotenuse. Exam Tip: the slant height is always the longest of the three lengths.", "difficulty": "easy"},
+      {"questionText": "Volume of a prism", "options": [], "correctAnswer": "V = cross-section area x length, for any uniform prism.", "explanation": "Since the cross-section is constant along the prism, multiplying its area by the length gives the volume. Exam Tip: this works for triangular, hexagonal or any other prism shape.", "difficulty": "easy"},
+      {"questionText": "Space diagonal of a cuboid", "options": [], "correctAnswer": "d = √(l² + w² + h²), the longest straight line inside the cuboid.", "explanation": "For a 3 by 4 by 12 cuboid this gives √(9 + 16 + 144) = √169 = 13 units. Exam Tip: for a cube of side a it simplifies to a√3.", "difficulty": "easy"},
+      {"questionText": "Angle between a line and a plane", "options": [], "correctAnswer": "The angle between the line and its projection (shadow) on the plane.", "explanation": "Dropping a perpendicular from the line to the plane gives the projection, and the required angle sits between the line and that projection. Exam Tip: form a right-angled triangle and use tan, sin or cos to find the angle.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A solid is made of a cylinder of radius 7 cm and height 10 cm with a hemisphere of the same radius on top. Taking pi = 22/7, what is the total volume of the solid?",
+        "questionText": "A closed container is made of a cylinder of radius 7 cm and height 10 cm topped by a hemisphere of the same radius (pi = 22/7). Find the total volume.",
         "options": [
-          {
-            "id": "a",
-            "text": "2258.67 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1540 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "718.67 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "3080 cm^3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "1540 cm³", "isCorrect": false},
+          {"id": "b", "text": "2258.7 cm³", "isCorrect": true},
+          {"id": "c", "text": "2977.3 cm³", "isCorrect": false},
+          {"id": "d", "text": "718.7 cm³", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cylinder volume = pi r² h = (22/7) x 49 x 10 = 1540 cm³. Hemisphere volume = (2/3) pi r³ = (2/3) x (22/7) x 343 = 718.7 cm³. Adding the parts gives 1540 + 718.7 = 2258.7 cm³. Exam Tip: break a composite solid into standard parts and add their volumes.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A cuboid has base AB = 8 cm, BC = 6 cm and height 5 cm. Find the angle between the space diagonal AG and the base, to 1 decimal place.",
+        "options": [
+          {"id": "a", "text": "26.6°", "isCorrect": true},
+          {"id": "b", "text": "63.4°", "isCorrect": false},
+          {"id": "c", "text": "30°", "isCorrect": false},
+          {"id": "d", "text": "45°", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Cylinder volume = pi*r^2*h = (22/7)*49*10 = 1540 cm^3. Hemisphere volume = (2/3)*pi*r^3 = (2/3)*(22/7)*343 = 718.67 cm^3. Total = 1540 + 718.67 = 2258.67 cm^3.",
+        "explanation": "The projection of AG on the base is the base diagonal AC = √(8² + 6²) = √100 = 10 cm. The angle satisfies tan(angle) = height / base diagonal = 5/10 = 0.5, so the angle = 26.6°. Exam Tip: the angle to the base is measured from the diagonal's projection (the base diagonal).",
         "difficulty": "hard"
       },
       {
-        "questionText": "A cylindrical tank of radius 7 cm and height 20 cm is full of water. The water is poured into a cone of base radius 7 cm and height 20 cm. Using pi = 22/7, how much water (in cm^3) remains in the tank after the cone is completely filled?",
+        "questionText": "A cylindrical tank has radius 1.4 m and height 2 m (pi = 22/7). Find its capacity in litres.",
         "options": [
-          {
-            "id": "a",
-            "text": "1026.67 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2053.33 cm^3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "3080 cm^3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1540 cm^3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "12.32 litres", "isCorrect": false},
+          {"id": "b", "text": "1232 litres", "isCorrect": false},
+          {"id": "c", "text": "12320 litres", "isCorrect": true},
+          {"id": "d", "text": "123200 litres", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Cylinder volume = (22/7)*49*20 = 3080 cm^3. Cone volume = (1/3)*(22/7)*49*20 = (1/3)*3080 = 1026.67 cm^3. Remaining = 3080 - 1026.67 = 2053.33 cm^3.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A metal cone of base radius 6 cm and height 24 cm is melted and recast into spheres each of radius 3 cm. Using the same value of pi throughout, how many complete spheres can be made?",
-        "options": [
-          {
-            "id": "a",
-            "text": "6 spheres",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "8 spheres",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "12 spheres",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "4 spheres",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Cone volume = (1/3)*pi*6^2*24 = (1/3)*pi*36*24 = 288*pi. Each sphere = (4/3)*pi*3^3 = (4/3)*pi*27 = 36*pi. Number = 288*pi / 36*pi = 8 complete spheres.",
+        "correctAnswer": "c",
+        "explanation": "Volume = pi r² h = (22/7) x 1.4 x 1.4 x 2 = 12.32 m³. Converting, 12.32 m³ x 1000 = 12320 litres. Exam Tip: 1 m³ = 1000 litres, so multiply cubic metres by 1000.",
         "difficulty": "hard"
       }
     ]
