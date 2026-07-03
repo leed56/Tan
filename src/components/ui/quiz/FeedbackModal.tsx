@@ -39,8 +39,9 @@ export function FeedbackModal({
     if (visible) {
       Animated.spring(translateY, {
         toValue: 0,
-        damping: 18,
-        stiffness: 200,
+        damping: 22,
+        stiffness: 260,
+        mass: 0.9,
         useNativeDriver: true,
       }).start();
     } else {
@@ -63,13 +64,17 @@ export function FeedbackModal({
     >
       <View style={styles.backdrop}>
         <Animated.View style={[styles.sheet, { transform: [{ translateY }] }]}>
+          {/* Accent bar so correct/wrong reads at a glance */}
+          <View style={[styles.accentBar, { backgroundColor: accentColor }]} />
           <LinearGradient colors={gradientColors} style={styles.inner}>
+            <View style={styles.grabber} />
+
             {/* Status row */}
             <View style={styles.statusRow}>
-              <View style={[styles.iconCircle, { backgroundColor: `${accentColor}22` }]}>
+              <View style={[styles.iconCircle, { backgroundColor: `${accentColor}22`, borderColor: `${accentColor}55` }]}>
                 <Ionicons
-                  name={isCorrect ? 'checkmark-circle' : 'information-circle'}
-                  size={32}
+                  name={isCorrect ? 'checkmark' : 'bulb'}
+                  size={30}
                   color={accentColor}
                 />
               </View>
@@ -78,13 +83,13 @@ export function FeedbackModal({
                   {isCorrect ? 'Correct!' : 'Good try!'}
                 </Text>
                 <Text style={styles.statusSub}>
-                  {isCorrect ? 'Well done, keep it up!' : 'Let\'s learn from this one.'}
+                  {isCorrect ? 'Well done, keep it up.' : "Here's the explanation."}
                 </Text>
               </View>
               {isCorrect && (
                 <View style={styles.xpBadge}>
-                  <Ionicons name="flash" size={14} color={COLORS.gold} />
-                  <Text style={styles.xpText}>+{xpEarned} XP</Text>
+                  <Ionicons name="flash" size={15} color={COLORS.gold} />
+                  <Text style={styles.xpText}>+{xpEarned}</Text>
                 </View>
               )}
             </View>
@@ -95,6 +100,7 @@ export function FeedbackModal({
               style={styles.explainScroll}
               contentContainerStyle={styles.explainScrollContent}
               showsVerticalScrollIndicator={false}
+              bounces={false}
             >
               <ExplanationCard
                 explanation={parsed.body}
@@ -103,14 +109,17 @@ export function FeedbackModal({
               {parsed.tip ? <ExamTipCard tip={parsed.tip} /> : null}
             </ScrollView>
 
-            {/* Continue button */}
-            <TouchableOpacity
-              onPress={onContinue}
-              activeOpacity={0.85}
-              style={[styles.continueBtn, { borderColor: accentColor }]}
-            >
-              <Text style={[styles.continueBtnText, { color: accentColor }]}>Continue</Text>
-              <Ionicons name="arrow-forward" size={18} color={accentColor} />
+            {/* Continue button — filled, prominent */}
+            <TouchableOpacity onPress={onContinue} activeOpacity={0.9}>
+              <LinearGradient
+                colors={isCorrect ? ['#4ECDC4', '#3DBAB2'] : ['#FFB74D', '#F5A623']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.continueBtn}
+              >
+                <Text style={styles.continueBtnText}>Continue</Text>
+                <Ionicons name="arrow-forward" size={20} color="#0B1020" />
+              </LinearGradient>
             </TouchableOpacity>
           </LinearGradient>
         </Animated.View>
@@ -133,40 +142,57 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: 480,
     backgroundColor: COLORS.bgMid,
-    borderTopLeftRadius: RADIUS['2xl'],
-    borderTopRightRadius: RADIUS['2xl'],
-    borderTopWidth: 1,
-    borderColor: COLORS.glassBorder,
+    borderTopLeftRadius: 28,
+    borderTopRightRadius: 28,
     overflow: 'hidden',
+    // Lift the sheet off the screen for depth.
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: -8 },
+    shadowOpacity: 0.35,
+    shadowRadius: 24,
+    elevation: 24,
   },
+  accentBar: { height: 4, width: '100%' },
   inner: {
-    padding: SPACING.screenPadding,
-    gap: SPACING.base,
-    paddingBottom: SPACING['3xl'],
+    paddingHorizontal: SPACING.xl,
+    paddingTop: SPACING.md,
+    paddingBottom: SPACING['2xl'],
+    gap: SPACING.lg,
   },
-  explainScroll: { maxHeight: 320 },
-  explainScrollContent: { gap: SPACING.base },
+  grabber: {
+    alignSelf: 'center',
+    width: 44,
+    height: 5,
+    borderRadius: 3,
+    backgroundColor: COLORS.glassBorder,
+    marginBottom: SPACING.xs,
+  },
+  explainScroll: { maxHeight: 340 },
+  explainScrollContent: { gap: SPACING.md },
   statusRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: SPACING.md,
+    gap: SPACING.base,
   },
   iconCircle: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    borderWidth: 1.5,
     justifyContent: 'center',
     alignItems: 'center',
   },
   statusText: { flex: 1 },
   statusTitle: {
-    fontSize: TYPOGRAPHY.sizes.xl,
-    fontWeight: TYPOGRAPHY.weights.extrabold,
+    fontSize: TYPOGRAPHY.sizes['2xl'],
+    fontFamily: TYPOGRAPHY.families.extrabold,
+    letterSpacing: -0.4,
   },
   statusSub: {
-    color: COLORS.textMuted,
+    color: COLORS.textSecondary,
     fontSize: TYPOGRAPHY.sizes.sm,
-    marginTop: 2,
+    fontFamily: TYPOGRAPHY.families.medium,
+    marginTop: 3,
   },
   xpBadge: {
     flexDirection: 'row',
@@ -174,27 +200,29 @@ const styles = StyleSheet.create({
     gap: 4,
     backgroundColor: 'rgba(247,197,46,0.15)',
     borderRadius: RADIUS.full,
-    paddingHorizontal: SPACING.sm,
-    paddingVertical: 4,
+    paddingHorizontal: SPACING.md,
+    paddingVertical: 6,
     borderWidth: 1,
-    borderColor: 'rgba(247,197,46,0.3)',
+    borderColor: 'rgba(247,197,46,0.35)',
   },
   xpText: {
     color: COLORS.gold,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.extrabold,
+    fontSize: TYPOGRAPHY.sizes.base,
+    fontFamily: TYPOGRAPHY.families.extrabold,
   },
   continueBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: SPACING.sm,
-    borderRadius: RADIUS.lg,
-    borderWidth: 2,
-    paddingVertical: SPACING.md,
+    borderRadius: RADIUS.xl,
+    paddingVertical: SPACING.base,
+    marginTop: SPACING.xs,
   },
   continueBtnText: {
-    fontSize: TYPOGRAPHY.sizes.base,
-    fontWeight: TYPOGRAPHY.weights.bold,
+    color: '#0B1020',
+    fontSize: TYPOGRAPHY.sizes.md,
+    fontFamily: TYPOGRAPHY.families.bold,
+    letterSpacing: 0.2,
   },
 });
