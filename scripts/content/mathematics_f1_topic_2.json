@@ -1,0 +1,374 @@
+{
+  "topicId": "form_1_mathematics_topic_2",
+  "topicName": "Numbers",
+  "order": 2,
+  "description": "An introduction to natural numbers, whole numbers and integers, the number line, ordering and operations on signed numbers, even and odd numbers, and rounding, estimation and approximation in real-life contexts.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following is the set of natural numbers?",
+        "options": [
+          {"id": "a", "text": "0, 1, 2, 3, 4, ...", "isCorrect": false},
+          {"id": "b", "text": "1, 2, 3, 4, 5, ...", "isCorrect": true},
+          {"id": "c", "text": "..., -2, -1, 0, 1, 2, ...", "isCorrect": false},
+          {"id": "d", "text": "0, 2, 4, 6, 8, ...", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Natural numbers are the counting numbers 1, 2, 3, ... They begin at 1 and do not include 0 or negative numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the set of whole numbers?",
+        "options": [
+          {"id": "a", "text": "1, 2, 3, 4, ...", "isCorrect": false},
+          {"id": "b", "text": "0, 1, 2, 3, 4, ...", "isCorrect": true},
+          {"id": "c", "text": "..., -2, -1, 0, 1, 2, ...", "isCorrect": false},
+          {"id": "d", "text": "-1, -2, -3, ...", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Whole numbers are the natural numbers together with 0, that is 0, 1, 2, 3, ...",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the value of -7 + 5?",
+        "options": [
+          {"id": "a", "text": "-12", "isCorrect": false},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "-2", "isCorrect": true},
+          {"id": "d", "text": "2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Adding a positive to a negative: find the difference 7 - 5 = 2 and keep the sign of the larger, so -7 + 5 = -2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the value of -6 - 4?",
+        "options": [
+          {"id": "a", "text": "-2", "isCorrect": false},
+          {"id": "b", "text": "-10", "isCorrect": true},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Subtracting 4 from -6 moves further to the left on the number line: -6 - 4 = -10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the value of (-8) x (-3)?",
+        "options": [
+          {"id": "a", "text": "-24", "isCorrect": false},
+          {"id": "b", "text": "24", "isCorrect": true},
+          {"id": "c", "text": "-11", "isCorrect": false},
+          {"id": "d", "text": "11", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A negative times a negative gives a positive: (-8) x (-3) = 24.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the value of (-20) / 4?",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "-16", "isCorrect": false},
+          {"id": "c", "text": "-5", "isCorrect": true},
+          {"id": "d", "text": "-24", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A negative divided by a positive gives a negative: (-20) / 4 = -5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which symbol makes the statement -3 __ -8 true?",
+        "options": [
+          {"id": "a", "text": "<", "isCorrect": false},
+          {"id": "b", "text": ">", "isCorrect": true},
+          {"id": "c", "text": "=", "isCorrect": false},
+          {"id": "d", "text": "not equal to", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "On the number line -3 lies to the right of -8, so -3 is greater than -8, giving -3 > -8.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following integers is the smallest?",
+        "options": [
+          {"id": "a", "text": "-9", "isCorrect": true},
+          {"id": "b", "text": "-2", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": false},
+          {"id": "d", "text": "5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The further a negative number is to the left of 0, the smaller it is, so -9 is the smallest of these integers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following numbers is an even number?",
+        "options": [
+          {"id": "a", "text": "17", "isCorrect": false},
+          {"id": "b", "text": "23", "isCorrect": false},
+          {"id": "c", "text": "34", "isCorrect": true},
+          {"id": "d", "text": "45", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "An even number is exactly divisible by 2. 34 / 2 = 17 with no remainder, so 34 is even.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is 3 764 rounded off to the nearest hundred?",
+        "options": [
+          {"id": "a", "text": "3 700", "isCorrect": false},
+          {"id": "b", "text": "3 800", "isCorrect": true},
+          {"id": "c", "text": "3 760", "isCorrect": false},
+          {"id": "d", "text": "4 000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The tens digit is 6, which is 5 or more, so we round the hundreds up: 3 764 becomes 3 800.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the value of -5 + (-6) - (-4)?",
+        "options": [
+          {"id": "a", "text": "-15", "isCorrect": false},
+          {"id": "b", "text": "-7", "isCorrect": true},
+          {"id": "c", "text": "-3", "isCorrect": false},
+          {"id": "d", "text": "3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Subtracting -4 is the same as adding 4: -5 + (-6) - (-4) = -5 - 6 + 4 = -11 + 4 = -7.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the value of (-2) x 3 x (-4)?",
+        "options": [
+          {"id": "a", "text": "-24", "isCorrect": false},
+          {"id": "b", "text": "24", "isCorrect": true},
+          {"id": "c", "text": "-9", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "(-2) x 3 = -6, then -6 x (-4) = 24. Two negative factors give a positive product.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is the best estimate of 48 x 21 by rounding each number to the nearest ten?",
+        "options": [
+          {"id": "a", "text": "1 000", "isCorrect": true},
+          {"id": "b", "text": "1 200", "isCorrect": false},
+          {"id": "c", "text": "800", "isCorrect": false},
+          {"id": "d", "text": "1 500", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Round 48 to 50 and 21 to 20, then 50 x 20 = 1 000, which is a good estimate of the exact product 1 008.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The temperature was -3 degrees Celsius at night and rose by 9 degrees by noon. What was the temperature at noon?",
+        "options": [
+          {"id": "a", "text": "-12 degrees Celsius", "isCorrect": false},
+          {"id": "b", "text": "6 degrees Celsius", "isCorrect": true},
+          {"id": "c", "text": "-6 degrees Celsius", "isCorrect": false},
+          {"id": "d", "text": "12 degrees Celsius", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A rise of 9 degrees means adding 9: -3 + 9 = 6, so the temperature at noon was 6 degrees Celsius.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the value of (-36) / (-9) x 2?",
+        "options": [
+          {"id": "a", "text": "-8", "isCorrect": false},
+          {"id": "b", "text": "8", "isCorrect": true},
+          {"id": "c", "text": "-2", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Work left to right: (-36) / (-9) = 4, then 4 x 2 = 8. A negative divided by a negative is positive.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The numbers 1, 2, 3, 4, ... used for counting are called ____ numbers.",
+        "options": [
+          {"id": "a", "text": "natural", "isCorrect": true},
+          {"id": "b", "text": "negative", "isCorrect": false},
+          {"id": "c", "text": "even", "isCorrect": false},
+          {"id": "d", "text": "odd", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The counting numbers 1, 2, 3, ... are known as the natural numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The set of positive numbers, negative numbers and zero together forms the ____.",
+        "options": [
+          {"id": "a", "text": "natural numbers", "isCorrect": false},
+          {"id": "b", "text": "integers", "isCorrect": true},
+          {"id": "c", "text": "even numbers", "isCorrect": false},
+          {"id": "d", "text": "odd numbers", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Integers are ..., -3, -2, -1, 0, 1, 2, 3, ..., which include positive numbers, negative numbers and zero.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On the number line, numbers to the left of a given number are always ____ than it.",
+        "options": [
+          {"id": "a", "text": "greater", "isCorrect": false},
+          {"id": "b", "text": "equal", "isCorrect": false},
+          {"id": "c", "text": "smaller", "isCorrect": true},
+          {"id": "d", "text": "positive", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "On the number line values increase from left to right, so any number to the left is smaller.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The value of -4 + (-3) is ____.",
+        "options": [
+          {"id": "a", "text": "-1", "isCorrect": false},
+          {"id": "b", "text": "7", "isCorrect": false},
+          {"id": "c", "text": "-7", "isCorrect": true},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Adding two negatives gives a negative: -4 + (-3) = -7.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A number that can be divided exactly by 2 with no remainder is called an ____ number.",
+        "options": [
+          {"id": "a", "text": "odd", "isCorrect": false},
+          {"id": "b", "text": "even", "isCorrect": true},
+          {"id": "c", "text": "prime", "isCorrect": false},
+          {"id": "d", "text": "negative", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An even number is divisible by 2 with no remainder, for example 2, 4, 6, 8.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The product of a positive number and a negative number is always ____.",
+        "options": [
+          {"id": "a", "text": "positive", "isCorrect": false},
+          {"id": "b", "text": "zero", "isCorrect": false},
+          {"id": "c", "text": "negative", "isCorrect": true},
+          {"id": "d", "text": "even", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "When the two factors have different signs, the product is negative, for example 5 x (-3) = -15.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When 6 528 is rounded off to the nearest thousand, the result is ____.",
+        "options": [
+          {"id": "a", "text": "6 000", "isCorrect": false},
+          {"id": "b", "text": "7 000", "isCorrect": true},
+          {"id": "c", "text": "6 500", "isCorrect": false},
+          {"id": "d", "text": "6 600", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The hundreds digit is 5, which is 5 or more, so the thousands digit rounds up: 6 528 becomes 7 000.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The value of (-45) / 9 is ____.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "-5", "isCorrect": true},
+          {"id": "c", "text": "-36", "isCorrect": false},
+          {"id": "d", "text": "-54", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A negative divided by a positive is negative: (-45) / 9 = -5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The result of subtracting a negative number, such as 7 - (-2), is ____.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "-5", "isCorrect": false},
+          {"id": "c", "text": "9", "isCorrect": true},
+          {"id": "d", "text": "-9", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Subtracting a negative is the same as adding a positive: 7 - (-2) = 7 + 2 = 9.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The smallest whole number is ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "0", "isCorrect": true},
+          {"id": "c", "text": "-1", "isCorrect": false},
+          {"id": "d", "text": "10", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Whole numbers begin at 0, so the smallest whole number is 0.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "Every natural number is also a whole number.", "options": [], "correctAnswer": "true", "explanation": "The natural numbers 1, 2, 3, ... are all included in the whole numbers 0, 1, 2, 3, ...", "difficulty": "easy"},
+      {"questionText": "Zero is a natural number.", "options": [], "correctAnswer": "false", "explanation": "Natural numbers start at 1, so 0 is a whole number but not a natural number.", "difficulty": "easy"},
+      {"questionText": "On the number line, -1 is greater than -5.", "options": [], "correctAnswer": "true", "explanation": "-1 lies to the right of -5 on the number line, so -1 is greater than -5.", "difficulty": "easy"},
+      {"questionText": "The product of two negative numbers is negative.", "options": [], "correctAnswer": "false", "explanation": "A negative times a negative gives a positive, for example (-3) x (-4) = 12.", "difficulty": "easy"},
+      {"questionText": "The number 57 is an odd number.", "options": [], "correctAnswer": "true", "explanation": "57 is not exactly divisible by 2 (it leaves a remainder of 1), so it is odd.", "difficulty": "easy"},
+      {"questionText": "Subtracting a negative number is the same as adding a positive number.", "options": [], "correctAnswer": "true", "explanation": "For example 8 - (-3) = 8 + 3 = 11, so subtracting a negative is the same as adding.", "difficulty": "easy"},
+      {"questionText": "When 249 is rounded off to the nearest hundred, the answer is 300.", "options": [], "correctAnswer": "false", "explanation": "The tens digit is 4, which is less than 5, so 249 rounds down to 200, not 300.", "difficulty": "easy"},
+      {"questionText": "All integers are whole numbers.", "options": [], "correctAnswer": "false", "explanation": "Negative integers such as -2 are not whole numbers, so not every integer is a whole number.", "difficulty": "easy"},
+      {"questionText": "The sum of any two even numbers is always even.", "options": [], "correctAnswer": "true", "explanation": "Adding two even numbers always gives an even result, for example 4 + 6 = 10.", "difficulty": "easy"},
+      {"questionText": "Estimation is used to find an approximate answer quickly rather than an exact one.", "options": [], "correctAnswer": "true", "explanation": "Estimation gives a value close to the exact answer, often by rounding, and is useful for quick checks.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Natural numbers", "options": [], "correctAnswer": "The counting numbers 1, 2, 3, 4, ... starting from 1.", "explanation": "Natural numbers are used for counting and do not include 0 or negative numbers.", "difficulty": "easy"},
+      {"questionText": "Whole numbers", "options": [], "correctAnswer": "The natural numbers together with 0: 0, 1, 2, 3, ...", "explanation": "Whole numbers are the natural numbers plus zero; the smallest whole number is 0.", "difficulty": "easy"},
+      {"questionText": "Integers", "options": [], "correctAnswer": "Positive numbers, negative numbers and zero: ..., -2, -1, 0, 1, 2, ...", "explanation": "Integers extend the whole numbers to the left of 0 to include negative numbers.", "difficulty": "easy"},
+      {"questionText": "The number line", "options": [], "correctAnswer": "A line where numbers increase from left to right, with 0 at the centre.", "explanation": "It is used to order numbers; values to the right are greater and to the left are smaller.", "difficulty": "easy"},
+      {"questionText": "Adding integers with the same sign", "options": [], "correctAnswer": "Add the numbers and keep the common sign.", "explanation": "For example -4 + (-3) = -7 and 4 + 3 = 7; the sign of the answer matches the addends.", "difficulty": "easy"},
+      {"questionText": "Adding integers with different signs", "options": [], "correctAnswer": "Subtract the smaller from the larger and keep the sign of the larger.", "explanation": "For example -7 + 5 = -2, since 7 - 5 = 2 and 7 has the larger absolute value.", "difficulty": "easy"},
+      {"questionText": "Rules of signs in multiplication and division", "options": [], "correctAnswer": "Same signs give a positive; different signs give a negative.", "explanation": "For example (-6) x (-2) = 12 and (-6) x 2 = -12; the same rule applies to division.", "difficulty": "easy"},
+      {"questionText": "Even and odd numbers", "options": [], "correctAnswer": "Even numbers are divisible by 2; odd numbers are not.", "explanation": "Even numbers end in 0, 2, 4, 6, 8 while odd numbers end in 1, 3, 5, 7, 9.", "difficulty": "easy"},
+      {"questionText": "Rounding off rule", "options": [], "correctAnswer": "If the next digit is 5 or more round up, otherwise round down.", "explanation": "For example 3 764 to the nearest hundred is 3 800 because the tens digit 6 is 5 or more.", "difficulty": "easy"},
+      {"questionText": "Estimation and approximation", "options": [], "correctAnswer": "Rounding numbers first to get a quick approximate answer.", "explanation": "For example 48 x 21 is about 50 x 20 = 1 000, close to the exact value 1 008.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "A trader owed 15 000 shillings. He paid 9 000 shillings and later borrowed another 4 000 shillings. Using integers, what is his balance now?",
+        "options": [
+          {"id": "a", "text": "-10 000 shillings", "isCorrect": true},
+          {"id": "b", "text": "-2 000 shillings", "isCorrect": false},
+          {"id": "c", "text": "10 000 shillings", "isCorrect": false},
+          {"id": "d", "text": "-28 000 shillings", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A debt is negative: start at -15 000, paying 9 000 gives -15 000 + 9 000 = -6 000, then borrowing 4 000 gives -6 000 - 4 000 = -10 000 shillings.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A diver starts at the surface (0 m), descends 18 m, rises 7 m, then descends another 5 m. What is the diver's final position relative to the surface?",
+        "options": [
+          {"id": "a", "text": "-30 m", "isCorrect": false},
+          {"id": "b", "text": "-16 m", "isCorrect": true},
+          {"id": "c", "text": "-6 m", "isCorrect": false},
+          {"id": "d", "text": "16 m", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Descending is negative and rising is positive: 0 - 18 + 7 - 5 = -16, so the diver is 16 m below the surface.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A shopkeeper sold 38 crates of soda on Monday and 63 crates on Tuesday, each crate holding 24 bottles. By rounding each figure to the nearest ten, estimate the total number of bottles sold.",
+        "options": [
+          {"id": "a", "text": "About 2 000 bottles", "isCorrect": true},
+          {"id": "b", "text": "About 1 500 bottles", "isCorrect": false},
+          {"id": "c", "text": "About 2 400 bottles", "isCorrect": false},
+          {"id": "d", "text": "About 1 000 bottles", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Round to the nearest ten: 38 to 40, 63 to 60 and 24 to 20. Total crates about 40 + 60 = 100, then 100 x 20 = 2 000 bottles.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

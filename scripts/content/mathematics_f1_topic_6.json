@@ -1,0 +1,494 @@
+{
+  "topicId": "form_1_mathematics_topic_6",
+  "topicName": "Coordinate Geometry",
+  "order": 6,
+  "description": "An introduction to the Cartesian plane, plotting and reading points, the four quadrants and signs of coordinates, distance between points on the same horizontal or vertical line, and the gradient of a line as rise over run.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "The horizontal number line on the Cartesian plane is called the?",
+        "options": [
+          {"id": "a", "text": "x-axis", "isCorrect": true},
+          {"id": "b", "text": "y-axis", "isCorrect": false},
+          {"id": "c", "text": "origin", "isCorrect": false},
+          {"id": "d", "text": "quadrant", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The horizontal line is the x-axis, while the vertical line is the y-axis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What are the coordinates of the origin?",
+        "options": [
+          {"id": "a", "text": "(1, 1)", "isCorrect": false},
+          {"id": "b", "text": "(0, 0)", "isCorrect": true},
+          {"id": "c", "text": "(0, 1)", "isCorrect": false},
+          {"id": "d", "text": "(1, 0)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The origin is the point where the x-axis and y-axis meet, and its coordinates are (0, 0).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the ordered pair (5, 3), which number is the y-coordinate?",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In an ordered pair (x, y), the first number is the x-coordinate and the second number is the y-coordinate, so 3 is the y-coordinate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In which quadrant does the point (-4, 6) lie?",
+        "options": [
+          {"id": "a", "text": "First quadrant", "isCorrect": false},
+          {"id": "b", "text": "Second quadrant", "isCorrect": true},
+          {"id": "c", "text": "Third quadrant", "isCorrect": false},
+          {"id": "d", "text": "Fourth quadrant", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A point with a negative x and a positive y lies in the second quadrant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A point in the third quadrant has coordinates with which signs?",
+        "options": [
+          {"id": "a", "text": "(+, +)", "isCorrect": false},
+          {"id": "b", "text": "(+, -)", "isCorrect": false},
+          {"id": "c", "text": "(-, -)", "isCorrect": true},
+          {"id": "d", "text": "(-, +)", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "In the third quadrant both the x-coordinate and the y-coordinate are negative, giving (-, -).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The point (0, -5) lies on which axis?",
+        "options": [
+          {"id": "a", "text": "x-axis", "isCorrect": false},
+          {"id": "b", "text": "y-axis", "isCorrect": true},
+          {"id": "c", "text": "Both axes", "isCorrect": false},
+          {"id": "d", "text": "Neither axis", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "When the x-coordinate is 0, the point lies on the y-axis. Here (0, -5) is 5 units below the origin on the y-axis.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which point lies in the fourth quadrant?",
+        "options": [
+          {"id": "a", "text": "(3, 2)", "isCorrect": false},
+          {"id": "b", "text": "(-3, 2)", "isCorrect": false},
+          {"id": "c", "text": "(3, -2)", "isCorrect": true},
+          {"id": "d", "text": "(-3, -2)", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The fourth quadrant has a positive x and a negative y, so (3, -2) lies there.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the distance between the points (2, 3) and (7, 3)?",
+        "options": [
+          {"id": "a", "text": "5 units", "isCorrect": true},
+          {"id": "b", "text": "9 units", "isCorrect": false},
+          {"id": "c", "text": "4 units", "isCorrect": false},
+          {"id": "d", "text": "10 units", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The points share the same y-coordinate, so they lie on a horizontal line. The distance is 7 - 2 = 5 units.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the distance between the points (4, 1) and (4, 9)?",
+        "options": [
+          {"id": "a", "text": "5 units", "isCorrect": false},
+          {"id": "b", "text": "8 units", "isCorrect": true},
+          {"id": "c", "text": "13 units", "isCorrect": false},
+          {"id": "d", "text": "10 units", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The points share the same x-coordinate, so they lie on a vertical line. The distance is 9 - 1 = 8 units.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "To plot the point (3, 4), you move?",
+        "options": [
+          {"id": "a", "text": "3 units up and 4 units right", "isCorrect": false},
+          {"id": "b", "text": "3 units right and 4 units up", "isCorrect": true},
+          {"id": "c", "text": "4 units right and 3 units up", "isCorrect": false},
+          {"id": "d", "text": "3 units left and 4 units down", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The x-coordinate comes first, so you move 3 units right along the x-axis, then 4 units up along the y-axis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient (slope) of a line is defined as?",
+        "options": [
+          {"id": "a", "text": "run divided by rise", "isCorrect": false},
+          {"id": "b", "text": "rise divided by run", "isCorrect": true},
+          {"id": "c", "text": "rise multiplied by run", "isCorrect": false},
+          {"id": "d", "text": "rise added to run", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gradient = rise / run, that is the change in y divided by the change in x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A line rises 6 units for every 3 units it moves to the right. What is its gradient?",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": true},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gradient = rise / run = 6 / 3 = 2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following points lies on the x-axis?",
+        "options": [
+          {"id": "a", "text": "(0, 4)", "isCorrect": false},
+          {"id": "b", "text": "(6, 0)", "isCorrect": true},
+          {"id": "c", "text": "(2, 2)", "isCorrect": false},
+          {"id": "d", "text": "(0, 0) only counts as origin", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A point lies on the x-axis when its y-coordinate is 0, so (6, 0) lies on the x-axis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The point (-7, -2) is located in which quadrant?",
+        "options": [
+          {"id": "a", "text": "First quadrant", "isCorrect": false},
+          {"id": "b", "text": "Second quadrant", "isCorrect": false},
+          {"id": "c", "text": "Third quadrant", "isCorrect": true},
+          {"id": "d", "text": "Fourth quadrant", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Both coordinates are negative, so the point lies in the third quadrant.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A line passes through (0, 0) and (2, 8). What is its gradient?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "4", "isCorrect": true},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "1/4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gradient = rise / run = (8 - 0) / (2 - 0) = 8 / 2 = 4.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The vertical number line on the Cartesian plane is called the ____.",
+        "options": [
+          {"id": "a", "text": "x-axis", "isCorrect": false},
+          {"id": "b", "text": "y-axis", "isCorrect": true},
+          {"id": "c", "text": "origin", "isCorrect": false},
+          {"id": "d", "text": "gradient", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The vertical axis is the y-axis; the horizontal axis is the x-axis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The point where the x-axis and y-axis cross is called the ____.",
+        "options": [
+          {"id": "a", "text": "quadrant", "isCorrect": false},
+          {"id": "b", "text": "origin", "isCorrect": true},
+          {"id": "c", "text": "coordinate", "isCorrect": false},
+          {"id": "d", "text": "gradient", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The two axes cross at the origin, which has coordinates (0, 0).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the ordered pair (x, y), the first number x is called the ____.",
+        "options": [
+          {"id": "a", "text": "y-coordinate", "isCorrect": false},
+          {"id": "b", "text": "x-coordinate", "isCorrect": true},
+          {"id": "c", "text": "gradient", "isCorrect": false},
+          {"id": "d", "text": "origin", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The first value in an ordered pair is the x-coordinate, also called the abscissa.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The Cartesian plane is divided into ____ quadrants.",
+        "options": [
+          {"id": "a", "text": "two", "isCorrect": false},
+          {"id": "b", "text": "three", "isCorrect": false},
+          {"id": "c", "text": "four", "isCorrect": true},
+          {"id": "d", "text": "six", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The two axes divide the plane into four regions called quadrants.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the first quadrant, both coordinates are ____.",
+        "options": [
+          {"id": "a", "text": "negative", "isCorrect": false},
+          {"id": "b", "text": "positive", "isCorrect": true},
+          {"id": "c", "text": "zero", "isCorrect": false},
+          {"id": "d", "text": "equal", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In the first quadrant the x-coordinate and y-coordinate are both positive, giving (+, +).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The distance between the points (1, 2) and (1, 7) is ____ units.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "6", "isCorrect": false},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The points share the same x-coordinate, so the distance is 7 - 2 = 5 units along the vertical line.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A point with coordinates (+, -) lies in the ____ quadrant.",
+        "options": [
+          {"id": "a", "text": "first", "isCorrect": false},
+          {"id": "b", "text": "second", "isCorrect": false},
+          {"id": "c", "text": "third", "isCorrect": false},
+          {"id": "d", "text": "fourth", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "A positive x and a negative y place the point in the fourth quadrant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The gradient of a line is found by dividing the rise by the ____.",
+        "options": [
+          {"id": "a", "text": "run", "isCorrect": true},
+          {"id": "b", "text": "origin", "isCorrect": false},
+          {"id": "c", "text": "axis", "isCorrect": false},
+          {"id": "d", "text": "quadrant", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Gradient = rise / run, where run is the horizontal change in x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A point on the x-axis always has a y-coordinate equal to ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "0", "isCorrect": true},
+          {"id": "c", "text": "the x-coordinate", "isCorrect": false},
+          {"id": "d", "text": "2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Any point lying on the x-axis has no vertical distance from it, so its y-coordinate is 0.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A line rises 10 units over a run of 5 units, so its gradient is ____.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": true},
+          {"id": "c", "text": "5", "isCorrect": false},
+          {"id": "d", "text": "15", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gradient = rise / run = 10 / 5 = 2.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The x-axis is the horizontal line on the Cartesian plane.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The x-axis runs horizontally, while the y-axis runs vertically.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The coordinates of the origin are (1, 1).",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The origin is where the axes meet and its coordinates are (0, 0), not (1, 1).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the ordered pair (x, y), the x-coordinate is always written first.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By convention the x-coordinate is written first and the y-coordinate second.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A point with coordinates (-2, -5) lies in the first quadrant.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Both coordinates are negative, so the point lies in the third quadrant, not the first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the second quadrant the x-coordinate is negative and the y-coordinate is positive.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The second quadrant has signs (-, +).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The distance between (3, 5) and (8, 5) is 5 units.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The y-coordinates are the same, so the distance is 8 - 3 = 5 units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient of a line is calculated as run divided by rise.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The gradient is rise divided by run, not run divided by rise.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A point that lies on the y-axis has an x-coordinate of 0.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Points on the y-axis have no horizontal distance from it, so their x-coordinate is 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To plot the point (2, 6) you move 2 units up and 6 units to the right.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "You move 2 units right (x first) and then 6 units up, not the other way around.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A line that rises 4 units over a run of 2 units has a gradient of 2.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Gradient = rise / run = 4 / 2 = 2.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "The Cartesian plane",
+        "options": [],
+        "correctAnswer": "A flat surface formed by a horizontal x-axis and a vertical y-axis that cross at the origin.",
+        "explanation": "It is used to locate points using ordered pairs of numbers (x, y).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The origin",
+        "options": [],
+        "correctAnswer": "The point (0, 0) where the x-axis and y-axis meet.",
+        "explanation": "All positions on the plane are measured from the origin.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ordered pair (x, y)",
+        "options": [],
+        "correctAnswer": "The x-coordinate is written first (horizontal position) and the y-coordinate second (vertical position).",
+        "explanation": "Order matters: (3, 4) is a different point from (4, 3).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The four quadrants",
+        "options": [],
+        "correctAnswer": "The axes divide the plane into four regions numbered anticlockwise starting from the top right.",
+        "explanation": "Quadrant 1 is top right, quadrant 2 top left, quadrant 3 bottom left, quadrant 4 bottom right.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Signs of coordinates in each quadrant",
+        "options": [],
+        "correctAnswer": "Q1 (+, +), Q2 (-, +), Q3 (-, -), Q4 (+, -).",
+        "explanation": "Knowing the signs helps you decide which quadrant a point belongs to.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Points on the axes",
+        "options": [],
+        "correctAnswer": "A point on the x-axis has y = 0, and a point on the y-axis has x = 0.",
+        "explanation": "For example (5, 0) is on the x-axis and (0, 5) is on the y-axis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distance on a horizontal line",
+        "options": [],
+        "correctAnswer": "When two points share the same y-coordinate, the distance is the difference of their x-coordinates.",
+        "explanation": "For (2, 3) and (7, 3) the distance is 7 - 2 = 5 units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distance on a vertical line",
+        "options": [],
+        "correctAnswer": "When two points share the same x-coordinate, the distance is the difference of their y-coordinates.",
+        "explanation": "For (4, 1) and (4, 9) the distance is 9 - 1 = 8 units.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gradient (slope)",
+        "options": [],
+        "correctAnswer": "Gradient = rise / run, the change in y divided by the change in x.",
+        "explanation": "A line rising 6 units over a run of 2 units has gradient 6 / 2 = 3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Plotting a point",
+        "options": [],
+        "correctAnswer": "Move along the x-axis by the x-value first, then up or down by the y-value.",
+        "explanation": "To plot (3, 4) go 3 right then 4 up and mark the point.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "The points A(1, 2), B(6, 2) and C(6, 7) are three corners of a rectangle. What is the length of side AB?",
+        "options": [
+          {"id": "a", "text": "5 units", "isCorrect": true},
+          {"id": "b", "text": "7 units", "isCorrect": false},
+          {"id": "c", "text": "9 units", "isCorrect": false},
+          {"id": "d", "text": "4 units", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A and B share the same y-coordinate (2), so AB is horizontal. Its length is 6 - 1 = 5 units.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A line passes through the points (2, 3) and (5, 12). What is its gradient?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "1/3", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gradient = rise / run = (12 - 3) / (5 - 2) = 9 / 3 = 3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A rectangle has corners at (1, 1), (5, 1), (5, 4) and (1, 4). What is its perimeter?",
+        "options": [
+          {"id": "a", "text": "12 units", "isCorrect": false},
+          {"id": "b", "text": "14 units", "isCorrect": true},
+          {"id": "c", "text": "7 units", "isCorrect": false},
+          {"id": "d", "text": "24 units", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The length is 5 - 1 = 4 units and the width is 4 - 1 = 3 units, so the perimeter is 2 x (4 + 3) = 14 units.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

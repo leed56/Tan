@@ -1,0 +1,494 @@
+{
+  "topicId": "form_1_mathematics_topic_1",
+  "topicName": "Concept of Mathematics",
+  "order": 1,
+  "description": "An introduction to the meaning and importance of mathematics covering the base ten numeration system, place value, reading and writing whole numbers, roman numerals, the four basic operations, order of operations (BODMAS), factors, multiples, prime numbers, and finding HCF and LCM.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the place value of the digit 7 in the number 4736?",
+        "options": [
+          {"id": "a", "text": "Tens", "isCorrect": false},
+          {"id": "b", "text": "Hundreds", "isCorrect": true},
+          {"id": "c", "text": "Thousands", "isCorrect": false},
+          {"id": "d", "text": "Units", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In 4736 the digits from the right are units (6), tens (3), hundreds (7), thousands (4). So the 7 stands for 7 hundreds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How is the number 3050 written in words?",
+        "options": [
+          {"id": "a", "text": "Three thousand and fifty", "isCorrect": true},
+          {"id": "b", "text": "Three hundred and fifty", "isCorrect": false},
+          {"id": "c", "text": "Thirty thousand and fifty", "isCorrect": false},
+          {"id": "d", "text": "Three thousand five hundred", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "3050 has 3 thousands, 0 hundreds, 5 tens and 0 units, which reads as three thousand and fifty.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the correct value of the roman numeral XIV?",
+        "options": [
+          {"id": "a", "text": "16", "isCorrect": false},
+          {"id": "b", "text": "4", "isCorrect": false},
+          {"id": "c", "text": "14", "isCorrect": true},
+          {"id": "d", "text": "24", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "X = 10 and IV = 4 (one before five), so XIV = 10 + 4 = 14.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the sum of 2468 and 1357?",
+        "options": [
+          {"id": "a", "text": "3825", "isCorrect": true},
+          {"id": "b", "text": "3725", "isCorrect": false},
+          {"id": "c", "text": "3815", "isCorrect": false},
+          {"id": "d", "text": "3925", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Adding: 2468 + 1357 = 3825, carrying where the column totals exceed 9.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the value of 45 x 12.",
+        "options": [
+          {"id": "a", "text": "540", "isCorrect": true},
+          {"id": "b", "text": "450", "isCorrect": false},
+          {"id": "c", "text": "504", "isCorrect": false},
+          {"id": "d", "text": "570", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "45 x 12 = 45 x 10 + 45 x 2 = 450 + 90 = 540.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the value of 8 + 4 x 3 when the order of operations (BODMAS) is used?",
+        "options": [
+          {"id": "a", "text": "36", "isCorrect": false},
+          {"id": "b", "text": "20", "isCorrect": true},
+          {"id": "c", "text": "24", "isCorrect": false},
+          {"id": "d", "text": "44", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiplication is done before addition: 4 x 3 = 12, then 8 + 12 = 20.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a prime number?",
+        "options": [
+          {"id": "a", "text": "21", "isCorrect": false},
+          {"id": "b", "text": "27", "isCorrect": false},
+          {"id": "c", "text": "29", "isCorrect": true},
+          {"id": "d", "text": "33", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A prime number has exactly two factors, 1 and itself. 29 has only 1 and 29 as factors, while 21, 27 and 33 each have other factors.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following lists ALL the factors of 12?",
+        "options": [
+          {"id": "a", "text": "1, 2, 3, 4, 6, 12", "isCorrect": true},
+          {"id": "b", "text": "2, 3, 4, 6", "isCorrect": false},
+          {"id": "c", "text": "1, 2, 4, 12", "isCorrect": false},
+          {"id": "d", "text": "12, 24, 36, 48", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The factors of 12 are all numbers that divide 12 exactly: 1, 2, 3, 4, 6 and 12.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the value of 20 - (6 + 2) x 2?",
+        "options": [
+          {"id": "a", "text": "28", "isCorrect": false},
+          {"id": "b", "text": "16", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "12", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Brackets first: 6 + 2 = 8. Then multiply: 8 x 2 = 16. Finally subtract: 20 - 16 = 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The number 900 is written in roman numerals as:",
+        "options": [
+          {"id": "a", "text": "DCCCC", "isCorrect": false},
+          {"id": "b", "text": "CM", "isCorrect": true},
+          {"id": "c", "text": "MC", "isCorrect": false},
+          {"id": "d", "text": "CD", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "C = 100 placed before M = 1000 means 1000 - 100 = 900, written CM. CD is 400.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the remainder when 250 is divided by 7?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "5", "isCorrect": true},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The largest multiple of 7 not exceeding 250 is 7 x 35 = 245, so the remainder is 250 - 245 = 5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the Highest Common Factor (HCF) of 18 and 24?",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": false},
+          {"id": "b", "text": "6", "isCorrect": true},
+          {"id": "c", "text": "9", "isCorrect": false},
+          {"id": "d", "text": "12", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "18 = 2 x 3^2 and 24 = 2^3 x 3. The common prime factors are 2 and 3, so HCF = 2 x 3 = 6.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the Lowest Common Multiple (LCM) of 4 and 6?",
+        "options": [
+          {"id": "a", "text": "24", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": true},
+          {"id": "d", "text": "10", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Multiples of 4 are 4, 8, 12, 16 and of 6 are 6, 12, 18. The smallest number appearing in both lists is 12.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following numbers is exactly divisible by both 2 and 3?",
+        "options": [
+          {"id": "a", "text": "26", "isCorrect": false},
+          {"id": "b", "text": "33", "isCorrect": false},
+          {"id": "c", "text": "42", "isCorrect": true},
+          {"id": "d", "text": "35", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "42 is even (divisible by 2) and its digit sum 4 + 2 = 6 is divisible by 3, so 42 is divisible by both 2 and 3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The prime factorization of 60 is:",
+        "options": [
+          {"id": "a", "text": "2^2 x 3 x 5", "isCorrect": true},
+          {"id": "b", "text": "2 x 3 x 5", "isCorrect": false},
+          {"id": "c", "text": "2^2 x 15", "isCorrect": false},
+          {"id": "d", "text": "6 x 10", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "60 = 2 x 30 = 2 x 2 x 15 = 2 x 2 x 3 x 5, which is written as 2^2 x 3 x 5 using only prime factors.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The number system we normally use, which has ten digits from 0 to 9, is called the ____ numeration system.",
+        "options": [
+          {"id": "a", "text": "base ten", "isCorrect": true},
+          {"id": "b", "text": "base two", "isCorrect": false},
+          {"id": "c", "text": "roman", "isCorrect": false},
+          {"id": "d", "text": "base five", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The base ten (decimal) system uses ten digits, 0 to 9, and each place is ten times the place to its right.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the number 5842, the digit 5 has a place value of ____ .",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "50", "isCorrect": false},
+          {"id": "c", "text": "500", "isCorrect": false},
+          {"id": "d", "text": "5000", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "The 5 is in the thousands place, so its place value is 5 x 1000 = 5000.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The roman numeral for the number 50 is ____ .",
+        "options": [
+          {"id": "a", "text": "L", "isCorrect": true},
+          {"id": "b", "text": "C", "isCorrect": false},
+          {"id": "c", "text": "D", "isCorrect": false},
+          {"id": "d", "text": "X", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In roman numerals L = 50, C = 100, D = 500 and X = 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A number that has exactly two factors, one and itself, is called a ____ number.",
+        "options": [
+          {"id": "a", "text": "even", "isCorrect": false},
+          {"id": "b", "text": "prime", "isCorrect": true},
+          {"id": "c", "text": "square", "isCorrect": false},
+          {"id": "d", "text": "composite", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A prime number has only two factors: 1 and the number itself, for example 2, 3, 5 and 7.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the operation 24 / 6 = 4, the number 24 is called the ____ .",
+        "options": [
+          {"id": "a", "text": "divisor", "isCorrect": false},
+          {"id": "b", "text": "quotient", "isCorrect": false},
+          {"id": "c", "text": "dividend", "isCorrect": true},
+          {"id": "d", "text": "product", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "In division the number being divided is the dividend, the number dividing it is the divisor, and the answer is the quotient.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In BODMAS, the letter O stands for ____ .",
+        "options": [
+          {"id": "a", "text": "operations", "isCorrect": false},
+          {"id": "b", "text": "order (powers and roots)", "isCorrect": true},
+          {"id": "c", "text": "odd numbers", "isCorrect": false},
+          {"id": "d", "text": "one", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In BODMAS, O stands for Order, meaning powers (indices) and roots, which are worked out after brackets.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The result obtained when two numbers are multiplied together is called the ____ .",
+        "options": [
+          {"id": "a", "text": "sum", "isCorrect": false},
+          {"id": "b", "text": "difference", "isCorrect": false},
+          {"id": "c", "text": "product", "isCorrect": true},
+          {"id": "d", "text": "quotient", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The answer to a multiplication is the product; for example the product of 3 and 4 is 12.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The smallest prime number is ____ .",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "2", "isCorrect": true},
+          {"id": "d", "text": "3", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "2 is the smallest prime number and the only even prime, since 1 has just one factor and is not prime.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The Highest Common Factor of two numbers is the ____ number that divides both of them exactly.",
+        "options": [
+          {"id": "a", "text": "largest", "isCorrect": true},
+          {"id": "b", "text": "smallest", "isCorrect": false},
+          {"id": "c", "text": "first even", "isCorrect": false},
+          {"id": "d", "text": "last odd", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The HCF (Highest Common Factor) is the greatest number that is a factor of both given numbers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The number 19 written in roman numerals is ____ .",
+        "options": [
+          {"id": "a", "text": "IXX", "isCorrect": false},
+          {"id": "b", "text": "XIX", "isCorrect": true},
+          {"id": "c", "text": "XVIV", "isCorrect": false},
+          {"id": "d", "text": "XXI", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "19 = 10 + 9, and 9 is IX, so 19 is written XIX (X followed by IX).",
+        "difficulty": "hard"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Mathematics is the study of numbers, quantities, shapes and their relationships.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Mathematics deals with numbers, measurement, patterns, shapes and the relationships between them, and is useful in daily life such as trade and building.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the base ten system, moving one place to the left multiplies the place value by 10.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Each place in base ten is ten times the place to its right, so units, tens, hundreds and thousands increase by a factor of 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number 1 is a prime number.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "1 is not prime because it has only one factor (itself), while a prime number must have exactly two different factors.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The roman numeral C stands for 100.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "In roman numerals C = 100, just as X = 10, L = 50, D = 500 and M = 1000.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to BODMAS, addition is always done before multiplication.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "In BODMAS, multiplication and division come before addition and subtraction, so multiplication is done first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Every whole number is a factor of itself.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Any number divides itself exactly once, so a number is always one of its own factors, for example 8 is a factor of 8.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The Lowest Common Multiple of two numbers is always smaller than both numbers.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The LCM is the smallest number that both numbers divide into, so it is equal to or greater than the larger number, not smaller.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The value of 6 + 2 x 5 is 40.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Using BODMAS, multiply first: 2 x 5 = 10, then add 6 to get 16, not 40.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Multiples of a number are found by multiplying it by 1, 2, 3, 4 and so on.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The multiples of a number are the products of that number with the counting numbers, for example the multiples of 5 are 5, 10, 15, 20.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the number 706, the digit 0 shows that there are no tens.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "706 has 7 hundreds, 0 tens and 6 units, so the 0 is a place holder showing there are no tens.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Base ten numeration.",
+        "options": [],
+        "correctAnswer": "The base ten system uses digits 0 to 9 and each place is 10 times the one to its right.",
+        "explanation": "Places from the right are units, tens, hundreds, thousands and so on, each ten times larger than the previous.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Place value.",
+        "options": [],
+        "correctAnswer": "Place value = the digit multiplied by the value of its position.",
+        "explanation": "For example in 3400 the 3 means 3 x 1000 = 3000 and the 4 means 4 x 100 = 400.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Main roman numerals.",
+        "options": [],
+        "correctAnswer": "I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000.",
+        "explanation": "A smaller symbol before a larger one is subtracted (IV = 4), and after a larger one is added (VI = 6).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The four basic operations.",
+        "options": [],
+        "correctAnswer": "Addition (+), subtraction (-), multiplication (x) and division (/).",
+        "explanation": "These operations give the sum, difference, product and quotient of whole numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Order of operations (BODMAS).",
+        "options": [],
+        "correctAnswer": "Brackets, Order, Division, Multiplication, Addition, Subtraction.",
+        "explanation": "Work out brackets first, then powers and roots, then division and multiplication, then addition and subtraction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Factors.",
+        "options": [],
+        "correctAnswer": "A factor is a number that divides another number exactly with no remainder.",
+        "explanation": "For example the factors of 6 are 1, 2, 3 and 6 because each divides 6 exactly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Multiples.",
+        "options": [],
+        "correctAnswer": "A multiple is the product of a number and any counting number.",
+        "explanation": "The multiples of 4 are 4, 8, 12, 16, 20 and so on.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Prime numbers.",
+        "options": [],
+        "correctAnswer": "A prime number has exactly two factors, 1 and itself.",
+        "explanation": "The first prime numbers are 2, 3, 5, 7, 11 and 13, with 2 being the only even prime.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Highest Common Factor (HCF).",
+        "options": [],
+        "correctAnswer": "The HCF is the largest number that divides two or more numbers exactly.",
+        "explanation": "Find it by taking the product of the common prime factors, for example HCF of 12 and 18 is 6.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Lowest Common Multiple (LCM).",
+        "options": [],
+        "correctAnswer": "The LCM is the smallest number that is a multiple of two or more numbers.",
+        "explanation": "For example the LCM of 3 and 4 is 12, the smallest number that both 3 and 4 divide into.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "Three bells ring at intervals of 6, 8 and 12 minutes. If they ring together at 9:00 am, after how many minutes will they next ring together?",
+        "options": [
+          {"id": "a", "text": "24 minutes", "isCorrect": true},
+          {"id": "b", "text": "48 minutes", "isCorrect": false},
+          {"id": "c", "text": "12 minutes", "isCorrect": false},
+          {"id": "d", "text": "26 minutes", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "They ring together again after the LCM of 6, 8 and 12. LCM = 2^3 x 3 = 24, so they next ring together after 24 minutes.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A teacher wants to share 36 pens and 48 books equally among the greatest possible number of pupils, with nothing left over. How many pupils can share them?",
+        "options": [
+          {"id": "a", "text": "6", "isCorrect": false},
+          {"id": "b", "text": "12", "isCorrect": true},
+          {"id": "c", "text": "4", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The greatest number sharing both exactly is the HCF of 36 and 48. 36 = 2^2 x 3^2 and 48 = 2^4 x 3, so HCF = 2^2 x 3 = 12 pupils.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Evaluate 4 + 2 x (18 / 3 - 1) using the order of operations.",
+        "options": [
+          {"id": "a", "text": "14", "isCorrect": true},
+          {"id": "b", "text": "36", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "40", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Brackets first: 18 / 3 = 6, then 6 - 1 = 5. Next multiply: 2 x 5 = 10. Finally add: 4 + 10 = 14.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

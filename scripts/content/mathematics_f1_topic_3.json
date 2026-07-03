@@ -1,0 +1,494 @@
+{
+  "topicId": "form_1_mathematics_topic_3",
+  "topicName": "Fractions, Decimals, and Percentages",
+  "order": 3,
+  "description": "A study of proper and improper fractions, mixed numbers, equivalent and simplified fractions, comparing and ordering, the four operations on fractions and decimals, place value, and converting between fractions, decimals and percentages, with real-life percentage problems.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following is a proper fraction?",
+        "options": [
+          {"id": "a", "text": "7/4", "isCorrect": false},
+          {"id": "b", "text": "3/5", "isCorrect": true},
+          {"id": "c", "text": "9/9", "isCorrect": false},
+          {"id": "d", "text": "5/2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A proper fraction has a numerator smaller than its denominator. Since 3 is less than 5, 3/5 is proper.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Express the improper fraction 11/4 as a mixed number.",
+        "options": [
+          {"id": "a", "text": "2 3/4", "isCorrect": true},
+          {"id": "b", "text": "3 1/4", "isCorrect": false},
+          {"id": "c", "text": "2 1/4", "isCorrect": false},
+          {"id": "d", "text": "1 3/4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Divide 11 by 4 to get 2 remainder 3. So 11/4 = 2 3/4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplify the fraction 18/24 to its lowest terms.",
+        "options": [
+          {"id": "a", "text": "9/12", "isCorrect": false},
+          {"id": "b", "text": "2/3", "isCorrect": false},
+          {"id": "c", "text": "3/4", "isCorrect": true},
+          {"id": "d", "text": "6/8", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The greatest common factor of 18 and 24 is 6. Dividing both by 6 gives 18/24 = 3/4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which fraction is equivalent to 2/3?",
+        "options": [
+          {"id": "a", "text": "4/9", "isCorrect": false},
+          {"id": "b", "text": "6/9", "isCorrect": true},
+          {"id": "c", "text": "3/4", "isCorrect": false},
+          {"id": "d", "text": "5/6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply numerator and denominator of 2/3 by 3 to get 6/9, so they are equivalent fractions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following fractions is the largest?",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "3/5", "isCorrect": false},
+          {"id": "c", "text": "2/3", "isCorrect": true},
+          {"id": "d", "text": "4/7", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using a common denominator of 210: 1/2 = 105/210, 3/5 = 126/210, 2/3 = 140/210, 4/7 = 120/210. The largest is 2/3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is 1/2 + 1/3?",
+        "options": [
+          {"id": "a", "text": "2/5", "isCorrect": false},
+          {"id": "b", "text": "5/6", "isCorrect": true},
+          {"id": "c", "text": "1/6", "isCorrect": false},
+          {"id": "d", "text": "2/6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Use a common denominator of 6: 1/2 = 3/6 and 1/3 = 2/6, so 3/6 + 2/6 = 5/6.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Work out 3/4 - 1/6.",
+        "options": [
+          {"id": "a", "text": "2/2", "isCorrect": false},
+          {"id": "b", "text": "1/2", "isCorrect": false},
+          {"id": "c", "text": "7/12", "isCorrect": true},
+          {"id": "d", "text": "2/10", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Use a common denominator of 12: 3/4 = 9/12 and 1/6 = 2/12, so 9/12 - 2/12 = 7/12.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is 2/3 multiplied by 3/5?",
+        "options": [
+          {"id": "a", "text": "2/5", "isCorrect": true},
+          {"id": "b", "text": "5/8", "isCorrect": false},
+          {"id": "c", "text": "6/15", "isCorrect": false},
+          {"id": "d", "text": "10/9", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply numerators and denominators: (2 x 3)/(3 x 5) = 6/15, which simplifies to 2/5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Work out 4/5 divided by 2/3.",
+        "options": [
+          {"id": "a", "text": "8/15", "isCorrect": false},
+          {"id": "b", "text": "6/5", "isCorrect": true},
+          {"id": "c", "text": "2/3", "isCorrect": false},
+          {"id": "d", "text": "5/6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "To divide by a fraction, multiply by its reciprocal: 4/5 x 3/2 = 12/10 = 6/5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Convert the fraction 3/4 to a decimal.",
+        "options": [
+          {"id": "a", "text": "0.34", "isCorrect": false},
+          {"id": "b", "text": "0.75", "isCorrect": true},
+          {"id": "c", "text": "0.43", "isCorrect": false},
+          {"id": "d", "text": "1.33", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Divide the numerator by the denominator: 3 divided by 4 = 0.75.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Express 0.6 as a percentage.",
+        "options": [
+          {"id": "a", "text": "0.6%", "isCorrect": false},
+          {"id": "b", "text": "6%", "isCorrect": false},
+          {"id": "c", "text": "60%", "isCorrect": true},
+          {"id": "d", "text": "600%", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "To change a decimal to a percentage, multiply by 100: 0.6 x 100 = 60%.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is 25% of 80?",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": true},
+          {"id": "b", "text": "25", "isCorrect": false},
+          {"id": "c", "text": "40", "isCorrect": false},
+          {"id": "d", "text": "16", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "25% = 25/100 = 1/4. One quarter of 80 is 80 divided by 4 = 20.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Express 15 as a percentage of 60.",
+        "options": [
+          {"id": "a", "text": "15%", "isCorrect": false},
+          {"id": "b", "text": "45%", "isCorrect": false},
+          {"id": "c", "text": "25%", "isCorrect": true},
+          {"id": "d", "text": "40%", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Write it as a fraction and multiply by 100: (15/60) x 100 = 25%.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the decimal number 24.375, what is the place value of the digit 7?",
+        "options": [
+          {"id": "a", "text": "Tenths", "isCorrect": false},
+          {"id": "b", "text": "Hundredths", "isCorrect": true},
+          {"id": "c", "text": "Thousandths", "isCorrect": false},
+          {"id": "d", "text": "Tens", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "After the decimal point the positions are tenths, hundredths, thousandths. The 7 is in the second position, the hundredths place, meaning 7/100.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Work out 3.6 + 0.45.",
+        "options": [
+          {"id": "a", "text": "4.05", "isCorrect": true},
+          {"id": "b", "text": "3.81", "isCorrect": false},
+          {"id": "c", "text": "8.1", "isCorrect": false},
+          {"id": "d", "text": "4.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Line up the decimal points: 3.60 + 0.45 = 4.05.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A fraction whose numerator is greater than or equal to its denominator, such as 7/3, is called an ____ fraction.",
+        "options": [
+          {"id": "a", "text": "improper", "isCorrect": true},
+          {"id": "b", "text": "proper", "isCorrect": false},
+          {"id": "c", "text": "equivalent", "isCorrect": false},
+          {"id": "d", "text": "mixed", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An improper fraction has a numerator that is greater than or equal to the denominator, like 7/3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The fraction 4/6 written in its lowest terms is ____.",
+        "options": [
+          {"id": "a", "text": "2/3", "isCorrect": true},
+          {"id": "b", "text": "3/4", "isCorrect": false},
+          {"id": "c", "text": "1/2", "isCorrect": false},
+          {"id": "d", "text": "8/12", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The greatest common factor of 4 and 6 is 2. Dividing both by 2 gives 2/3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mixed number 3 1/2 written as an improper fraction is ____.",
+        "options": [
+          {"id": "a", "text": "5/2", "isCorrect": false},
+          {"id": "b", "text": "7/2", "isCorrect": true},
+          {"id": "c", "text": "6/2", "isCorrect": false},
+          {"id": "d", "text": "3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply the whole number by the denominator and add the numerator: (3 x 2) + 1 = 7, giving 7/2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The sum 2/7 + 3/7 = ____.",
+        "options": [
+          {"id": "a", "text": "5/14", "isCorrect": false},
+          {"id": "b", "text": "6/49", "isCorrect": false},
+          {"id": "c", "text": "5/7", "isCorrect": true},
+          {"id": "d", "text": "6/7", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "When denominators are the same, add only the numerators: 2 + 3 = 5, keeping the denominator 7, giving 5/7.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When 1/5 is written as a decimal it is equal to ____.",
+        "options": [
+          {"id": "a", "text": "0.15", "isCorrect": false},
+          {"id": "b", "text": "0.5", "isCorrect": false},
+          {"id": "c", "text": "0.2", "isCorrect": true},
+          {"id": "d", "text": "5.0", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Divide 1 by 5 to get 0.2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Written as a percentage, the fraction 1/4 is equal to ____.",
+        "options": [
+          {"id": "a", "text": "14%", "isCorrect": false},
+          {"id": "b", "text": "25%", "isCorrect": true},
+          {"id": "c", "text": "40%", "isCorrect": false},
+          {"id": "d", "text": "4%", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "1/4 = 0.25 and 0.25 x 100 = 25%.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "50% of 200 is equal to ____.",
+        "options": [
+          {"id": "a", "text": "50", "isCorrect": false},
+          {"id": "b", "text": "150", "isCorrect": false},
+          {"id": "c", "text": "100", "isCorrect": true},
+          {"id": "d", "text": "250", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "50% means one half, and one half of 200 is 100.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The product 0.2 x 0.3 = ____.",
+        "options": [
+          {"id": "a", "text": "0.6", "isCorrect": false},
+          {"id": "b", "text": "0.06", "isCorrect": true},
+          {"id": "c", "text": "0.5", "isCorrect": false},
+          {"id": "d", "text": "6.0", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply 2 x 3 = 6, then count two decimal places in total, giving 0.06.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Arranging 1/2, 1/4 and 1/3 from smallest to largest gives 1/4, 1/3, ____.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "1/5", "isCorrect": false},
+          {"id": "c", "text": "1/6", "isCorrect": false},
+          {"id": "d", "text": "1/4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "For unit fractions, a larger denominator means a smaller value. So 1/4 < 1/3 < 1/2, and the last one is 1/2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A shirt costing 20000 shillings is given a 10% discount, so the amount taken off is ____ shillings.",
+        "options": [
+          {"id": "a", "text": "200", "isCorrect": false},
+          {"id": "b", "text": "2000", "isCorrect": true},
+          {"id": "c", "text": "1000", "isCorrect": false},
+          {"id": "d", "text": "18000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "10% of 20000 = (10/100) x 20000 = 2000 shillings.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "In the fraction 5/8, the number 8 is called the denominator.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The bottom number of a fraction is the denominator; it shows how many equal parts the whole is divided into.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The fractions 2/4 and 1/2 are equivalent fractions.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Dividing the numerator and denominator of 2/4 by 2 gives 1/2, so they represent the same value.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The fraction 9/5 is a proper fraction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Since the numerator 9 is greater than the denominator 5, it is an improper fraction, not a proper one.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To add fractions with different denominators, you must first find a common denominator.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Fractions can only be added directly when their denominators are the same, so a common denominator is needed first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The decimal 0.5 is equal to the fraction 1/2.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "0.5 means 5 tenths, which is 5/10, and 5/10 simplifies to 1/2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number 100% represents a whole quantity.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Percent means out of 100, so 100% equals 100/100, which is one whole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To divide one fraction by another, you multiply the first fraction by the reciprocal of the second.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Dividing by a fraction is the same as multiplying by its reciprocal, for example a/b divided by c/d = a/b x d/c.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the decimal 3.47, the digit 4 is in the tenths place.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The first digit after the decimal point is the tenths place, so 4 stands for 4/10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The percentage 3/4 is equal to 34%.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "3/4 = 0.75, and 0.75 x 100 = 75%, not 34%.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When you multiply two fractions, you multiply the numerators together and the denominators together.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "To multiply fractions, for example 2/3 x 4/5 = (2 x 4)/(3 x 5) = 8/15.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Proper fraction",
+        "options": [],
+        "correctAnswer": "A fraction whose numerator is smaller than its denominator, such as 3/5.",
+        "explanation": "In a proper fraction the value is less than one whole because fewer parts are taken than make up the whole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Improper fraction and mixed number",
+        "options": [],
+        "correctAnswer": "An improper fraction has numerator greater than or equal to the denominator, like 7/4, and can be written as a mixed number such as 1 3/4.",
+        "explanation": "Divide the numerator by the denominator; the quotient is the whole number and the remainder over the denominator is the fraction part.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Equivalent fractions",
+        "options": [],
+        "correctAnswer": "Fractions that have the same value, obtained by multiplying or dividing numerator and denominator by the same number, for example 1/2 = 2/4 = 3/6.",
+        "explanation": "Multiplying or dividing top and bottom by the same non-zero number does not change the value of a fraction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplifying a fraction",
+        "options": [],
+        "correctAnswer": "Divide the numerator and denominator by their greatest common factor to write the fraction in its lowest terms.",
+        "explanation": "For example, 6/8 has GCF 2, so dividing both by 2 gives 3/4, the simplest form.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Adding and subtracting fractions",
+        "options": [],
+        "correctAnswer": "Make the denominators the same, then add or subtract the numerators while keeping the common denominator.",
+        "explanation": "For example, 1/2 + 1/3 = 3/6 + 2/6 = 5/6.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Multiplying and dividing fractions",
+        "options": [],
+        "correctAnswer": "To multiply, multiply numerators and denominators; to divide, multiply by the reciprocal of the second fraction.",
+        "explanation": "For example 2/3 x 4/5 = 8/15, and 2/3 divided by 4/5 = 2/3 x 5/4 = 10/12 = 5/6.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Converting a fraction to a decimal",
+        "options": [],
+        "correctAnswer": "Divide the numerator by the denominator, for example 3/4 = 3 divided by 4 = 0.75.",
+        "explanation": "Every fraction can be written as a decimal by carrying out the division of numerator by denominator.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Converting between decimals and percentages",
+        "options": [],
+        "correctAnswer": "Multiply a decimal by 100 to get a percentage, and divide a percentage by 100 to get a decimal.",
+        "explanation": "For example 0.45 x 100 = 45%, and 45% divided by 100 = 0.45.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Percentage of a quantity",
+        "options": [],
+        "correctAnswer": "To find a percentage of a quantity, write the percentage as a fraction over 100 and multiply by the quantity.",
+        "explanation": "For example 20% of 50 = (20/100) x 50 = 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Expressing one quantity as a percentage of another",
+        "options": [],
+        "correctAnswer": "Write the first quantity over the second as a fraction, then multiply by 100.",
+        "explanation": "For example, 15 out of 60 is (15/60) x 100 = 25%.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A trader bought a bag of rice for 40000 shillings and sold it for 50000 shillings. What was the percentage profit?",
+        "options": [
+          {"id": "a", "text": "25%", "isCorrect": true},
+          {"id": "b", "text": "20%", "isCorrect": false},
+          {"id": "c", "text": "10%", "isCorrect": false},
+          {"id": "d", "text": "50%", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Profit = 50000 - 40000 = 10000. Percentage profit = (profit/cost price) x 100 = (10000/40000) x 100 = 25%.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A jacket is marked at 60000 shillings. During a sale it is given a 15% discount. How much does a customer pay for the jacket?",
+        "options": [
+          {"id": "a", "text": "45000 shillings", "isCorrect": false},
+          {"id": "b", "text": "51000 shillings", "isCorrect": true},
+          {"id": "c", "text": "9000 shillings", "isCorrect": false},
+          {"id": "d", "text": "54000 shillings", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Discount = 15% of 60000 = (15/100) x 60000 = 9000. The customer pays 60000 - 9000 = 51000 shillings.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student scored 3/5 of the marks in a test that was out of 40 marks. How many marks did the student score, and what percentage is this?",
+        "options": [
+          {"id": "a", "text": "24 marks, 60%", "isCorrect": true},
+          {"id": "b", "text": "20 marks, 50%", "isCorrect": false},
+          {"id": "c", "text": "24 marks, 40%", "isCorrect": false},
+          {"id": "d", "text": "15 marks, 60%", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Marks scored = 3/5 x 40 = 24. As a percentage, 3/5 = 0.6 = 60%, so the student scored 24 marks which is 60%.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

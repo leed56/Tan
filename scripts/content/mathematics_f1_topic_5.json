@@ -1,0 +1,942 @@
+{
+  "topicId": "form_1_mathematics_topic_5",
+  "topicName": "Algebra",
+  "order": 5,
+  "description": "An introduction to algebra covering variables, algebraic expressions and terms, like and unlike terms, coefficients, simplifying by collecting like terms, substitution, removing brackets and forming expressions from word statements.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "In the expression 5x, what is the number 5 called?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The coefficient",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The variable",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The constant",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The exponent",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "In a term like 5x, the number multiplying the variable is called the coefficient, so 5 is the coefficient of x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a variable in the expression 3y + 7?",
+        "options": [
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "y",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "+",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A variable is a letter that represents an unknown or changing value. Here y is the variable, while 3 and 7 are numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplify 4x + 3x.",
+        "options": [
+          {
+            "id": "a",
+            "text": "7x",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12x",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7x^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1x",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "4x and 3x are like terms, so add their coefficients: 4 + 3 = 7, giving 7x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplify 9y - 5y.",
+        "options": [
+          {
+            "id": "a",
+            "text": "14y",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4y",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4y^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "These are like terms, so subtract the coefficients: 9 - 5 = 4, giving 4y.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following are like terms?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2x and 2y",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3x and 5x",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4x and 4x^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "x and 7",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Like terms have exactly the same variable part. 3x and 5x both have the variable x, so they are like terms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplify 6x + 2y + 3x + 4y.",
+        "options": [
+          {
+            "id": "a",
+            "text": "15xy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "9x + 6y",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6x + 6y",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "9x + 2y",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Collect like terms: 6x + 3x = 9x and 2y + 4y = 6y, giving 9x + 6y.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the value of 3x when x = 4.",
+        "options": [
+          {
+            "id": "a",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "34",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Substitute x = 4 into 3x: 3 x 4 = 12.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Multiply the term 5 by 2x.",
+        "options": [
+          {
+            "id": "a",
+            "text": "10x",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "7x",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "52x",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply the constant by the coefficient: 5 x 2x = 10x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Remove the brackets: 2(x + 3).",
+        "options": [
+          {
+            "id": "a",
+            "text": "2x + 3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2x + 6",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "x + 6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2x + 5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply each term inside the bracket by 2: 2 x x = 2x and 2 x 3 = 6, giving 2x + 6.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Simplify 7a - 3a + 2a.",
+        "options": [
+          {
+            "id": "a",
+            "text": "6a",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12a",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2a",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "All terms are like terms in a: 7 - 3 + 2 = 6, giving 6a.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the value of 2x + 5 when x = 3.",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "11",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "13",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "25",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Substitute x = 3: 2 x 3 + 5 = 6 + 5 = 11.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How many terms are in the expression 4x + 3y - 2?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Terms are separated by + or - signs. The three terms are 4x, 3y and -2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which expression represents 'a number x increased by 8'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "8x",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "x - 8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x + 8",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "8 - x",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "'Increased by 8' means add 8 to the number, giving x + 8.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Remove the brackets: 3(2x - 4).",
+        "options": [
+          {
+            "id": "a",
+            "text": "6x - 4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6x - 12",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "5x - 12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "6x - 7",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply each term by 3: 3 x 2x = 6x and 3 x 4 = 12, giving 6x - 12.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Simplify 5x^2 + 2x + 3x^2.",
+        "options": [
+          {
+            "id": "a",
+            "text": "10x^2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8x^2 + 2x",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "10x^4 + 2x",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8x^4 + 2x",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Only like terms can be combined. 5x^2 + 3x^2 = 8x^2, and 2x stays, giving 8x^2 + 2x.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A letter used to represent an unknown number is called a ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "variable",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "constant",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "product",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sum",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A variable is a letter such as x or y that stands for an unknown or changing value.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the term 8x, the number 8 is the ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "variable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "coefficient",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "exponent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bracket",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The number multiplying the variable in a term is called its coefficient.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Terms that have exactly the same variable part are called ____ terms.",
+        "options": [
+          {
+            "id": "a",
+            "text": "unlike",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "like",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "prime",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "equal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Like terms have the same variable part and can be combined by adding or subtracting their coefficients.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplifying 6m + 2m gives ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "8m",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "8m^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "6m and 2m are like terms, so add the coefficients: 6 + 2 = 8, giving 8m.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When x = 5, the value of x + 6 is ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "56",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "11",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Substitute x = 5 into x + 6: 5 + 6 = 11.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Expanding 4(x + 2) gives ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "4x + 2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4x + 8",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "x + 8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4x + 6",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply each term inside the bracket by 4: 4x + 8.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The expression for 'the sum of x and y' is ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "x - y",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "xy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "x + y",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "x/y",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "'Sum' means addition, so the sum of x and y is x + y.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplifying 10p - 4p - p gives ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "5p",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6p",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "14p",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "All are like terms in p: 10 - 4 - 1 = 5, giving 5p.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The number of terms in 7a - 2b + 9 is ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Terms are separated by + or - signs: 7a, -2b and 9 make three terms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When x = 2, the value of 3x - 1 is ____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substitute x = 2 into 3x - 1: 3 x 2 - 1 = 6 - 1 = 5.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "In the expression 6x, the variable is x.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The variable is the letter part, so x is the variable and 6 is the coefficient.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The terms 3x and 5y are like terms.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Like terms must have the same variable part. 3x has x and 5y has y, so they are unlike terms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Simplifying 2a + 3a gives 5a.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "2a and 3a are like terms, so add the coefficients: 2 + 3 = 5, giving 5a.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The expression 4x + 3 has two terms.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The terms 4x and 3 are separated by a plus sign, so there are two terms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When x = 3, the value of 2x is 23.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Substitution means multiply: 2 x 3 = 6, not 23. Writing 2 next to 3 does not mean 23.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Expanding 2(x + 5) gives 2x + 10.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Multiply each term inside the bracket by 2: 2x + 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The terms 7x and 2x are unlike terms.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Both terms have the same variable x, so 7x and 2x are like terms and can be combined.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The coefficient of x in the term x is 1.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "When a variable stands alone, its coefficient is understood to be 1, since x means 1x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The terms 5x^2 and 5x are like terms.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Their variable parts differ: x^2 is not the same as x, so they are unlike terms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The expression 'a number decreased by 4' can be written as x - 4.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "'Decreased by 4' means subtract 4 from the number, giving x - 4.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Variable",
+        "options": [],
+        "correctAnswer": "A letter such as x or y used to represent an unknown or changing number.",
+        "explanation": "Variables let us write general rules and solve for unknown quantities in algebra.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Algebraic term",
+        "options": [],
+        "correctAnswer": "A number, a variable, or a product of numbers and variables, such as 5, x, or 3xy.",
+        "explanation": "Terms are the building blocks of expressions and are separated by + or - signs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Coefficient",
+        "options": [],
+        "correctAnswer": "The number that multiplies the variable in a term, for example 4 in 4x.",
+        "explanation": "A variable on its own, like x, has a coefficient of 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Like terms",
+        "options": [],
+        "correctAnswer": "Terms that have exactly the same variable part, such as 3x and 5x.",
+        "explanation": "Only like terms can be added or subtracted by combining their coefficients.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Unlike terms",
+        "options": [],
+        "correctAnswer": "Terms with different variable parts, such as 2x and 3y, which cannot be combined.",
+        "explanation": "Unlike terms are left separate in a simplified expression.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Collecting like terms",
+        "options": [],
+        "correctAnswer": "Add or subtract the coefficients of like terms to simplify an expression.",
+        "explanation": "For example 6x + 2x = 8x and 5y - y = 4y.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Substitution",
+        "options": [],
+        "correctAnswer": "Replacing a variable with a given number to find the value of an expression.",
+        "explanation": "For example, if x = 3 then 2x + 1 = 2 x 3 + 1 = 7.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Expanding brackets",
+        "options": [],
+        "correctAnswer": "Multiply each term inside the bracket by the term outside it.",
+        "explanation": "For example a(b + c) = ab + ac, so 2(x + 3) = 2x + 6.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Forming an expression",
+        "options": [],
+        "correctAnswer": "Turning a word statement into algebra using symbols.",
+        "explanation": "For example 'a number increased by 5' becomes x + 5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Multiplying a term by a constant",
+        "options": [],
+        "correctAnswer": "Multiply the constant by the coefficient and keep the variable.",
+        "explanation": "For example 3 x 4x = 12x.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A pen costs x shillings and a book costs 3 shillings more than the pen. Which expression gives the total cost of one pen and one book?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2x + 3",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "x + 3",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3x",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4x",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The book costs x + 3. Total = pen + book = x + (x + 3) = 2x + 3.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Simplify the expression 2(x + 4) + 3(x + 1).",
+        "options": [
+          {
+            "id": "a",
+            "text": "5x + 11",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5x + 5",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "6x + 11",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5x + 7",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Expand: 2(x + 4) = 2x + 8 and 3(x + 1) = 3x + 3. Add: 2x + 3x = 5x and 8 + 3 = 11, giving 5x + 11.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Find the value of 3x + 2y when x = 4 and y = 5.",
+        "options": [
+          {
+            "id": "a",
+            "text": "22",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "27",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "17",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "70",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substitute both values: 3 x 4 + 2 x 5 = 12 + 10 = 22.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
