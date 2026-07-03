@@ -1,6 +1,6 @@
 import './global.css';
 import React, { useEffect, useCallback } from 'react';
-import { View, StyleSheet, Alert } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -23,6 +23,7 @@ import { useAuthStore } from './src/store/authStore';
 import { useSubscriptionStore } from './src/store/subscriptionStore';
 import { useFamilyStore } from './src/store/familyStore';
 import { registerDevice } from './src/services/deviceService';
+import { notify } from './src/utils/confirm';
 
 // Keep the native splash visible until persisted state is rehydrated
 SplashScreen.preventAutoHideAsync();
@@ -96,7 +97,7 @@ export default function App() {
     registerDevice(uid, maxDevices)
       .then(({ blocked }) => {
         if (blocked) {
-          Alert.alert(
+          notify(
             'Device limit reached',
             `This account is signed in on ${maxDevices} device${maxDevices > 1 ? 's' : ''} already. Remove one in Profile → Subscription → Manage Devices to use this one.`,
           );

@@ -20,3 +20,18 @@ export function confirmAction(
     { text: confirmLabel, style: 'destructive', onPress: onConfirm },
   ]);
 }
+
+/**
+ * Cross-platform informational alert. RN-web's `Alert.alert` is a silent
+ * no-op, so an OK-only Alert never appears in the browser — the web build
+ * uses window.alert instead. Native keeps the styled Alert.
+ */
+export function notify(title: string, message: string, onDismiss?: () => void): void {
+  if (Platform.OS === 'web') {
+    // eslint-disable-next-line no-alert
+    if (typeof window !== 'undefined') window.alert(`${title}\n\n${message}`);
+    onDismiss?.();
+    return;
+  }
+  Alert.alert(title, message, onDismiss ? [{ text: 'OK', onPress: onDismiss }] : undefined);
+}

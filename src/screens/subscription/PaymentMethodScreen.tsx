@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   TextInput,
   Linking,
-  Alert,
   Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -22,6 +21,7 @@ import type { PaymentProvider, PlanId, BillingCycle } from '../../types/subscrip
 import { PAYMENT_META } from '../../utils/seedPlans';
 import { createPaymentRequest } from '../../services/subscriptionService';
 import { useAuthStore } from '../../store/authStore';
+import { notify } from '../../utils/confirm';
 
 type Props = StackScreenProps<HomeStackParamList, 'PaymentMethodScreen'>;
 
@@ -52,7 +52,7 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
   const submitAndOpenWhatsApp = async () => {
     if (!user?.uid) return;
     if (!WHATSAPP_NUMBER) {
-      Alert.alert(
+      notify(
         'Support unavailable',
         'WhatsApp support is not configured yet. Please try again later.',
       );
@@ -70,14 +70,19 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
       const message = encodeURIComponent(
         `Hello! I'd like to subscribe to Soma AI *${planTitle}* plan (${billingCycle}) for ${price.toLocaleString()} TSH. My account ID: ${user.uid}`,
       );
-      await Linking.openURL(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`);
-      Alert.alert(
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+      if (Platform.OS === 'web') {
+        if (typeof window !== 'undefined') window.open(waUrl, '_blank', 'noopener,noreferrer');
+      } else {
+        await Linking.openURL(waUrl);
+      }
+      notify(
         'Chat sent to WhatsApp',
-        "Complete payment with our support team. Once confirmed, your account activates instantly — no need to reopen the app.",
-        [{ text: 'OK', onPress: () => navigation.navigate('SubscriptionStatus') }],
+        'Complete payment with our support team. Once confirmed, your account activates instantly — no need to reopen the app.',
+        () => navigation.navigate('SubscriptionStatus'),
       );
     } catch {
-      Alert.alert('Something went wrong', 'Your request was not submitted. Please try again.');
+      notify('Something went wrong', 'Your request was not submitted. Please try again.');
     } finally {
       setProcessing(false);
     }
@@ -90,7 +95,7 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
       return;
     }
     if (needsPhone && phone.trim().length < 9) {
-      Alert.alert('Phone required', 'Please enter a valid phone number.');
+      notify('Phone required', 'Please enter a valid phone number.');
       return;
     }
 
@@ -103,13 +108,13 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
         selectedProvider,
         needsPhone ? phone : (user.phoneNumber ?? null),
       );
-      Alert.alert(
+      notify(
         'Payment submitted!',
         'We’ve received your request. Our team verifies mobile money payments and activates your subscription — usually within minutes. You’ll see it unlock automatically, right here in the app.',
-        [{ text: 'OK', onPress: () => navigation.navigate('SubscriptionStatus') }],
+        () => navigation.navigate('SubscriptionStatus'),
       );
     } catch {
-      Alert.alert('Something went wrong', 'Please try again or contact support on WhatsApp.');
+      notify('Something went wrong', 'Please try again or contact support on WhatsApp.');
     } finally {
       setProcessing(false);
     }

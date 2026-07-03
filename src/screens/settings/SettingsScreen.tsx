@@ -6,7 +6,7 @@ import {
   ScrollView,
   Switch,
   TouchableOpacity,
-  Alert,
+  Platform,
   Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -17,7 +17,7 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useAppThemeStore } from '../../store/appThemeStore';
 import { useAuth } from '../../hooks/useAuth';
-import { confirmAction } from '../../utils/confirm';
+import { confirmAction, notify } from '../../utils/confirm';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
 
@@ -41,28 +41,34 @@ export function SettingsScreen({ navigation }: Props) {
 
   const handleSupport = () => {
     // TODO: Phase 2 — open in-app support chat or email link
-    Alert.alert('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
+    notify('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
   };
 
   const handleWhatsApp = async () => {
     if (!WHATSAPP_NUMBER) {
-      Alert.alert(
+      notify(
         'WhatsApp Support',
         'Our WhatsApp line is being set up. In the meantime, email support@somaaiedu.com.',
       );
       return;
     }
-    const message = encodeURIComponent("Hi Soma AI, I need help with the app.");
+    const message = encodeURIComponent('Hi Soma AI, I need help with the app.');
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    // On web, window.open reliably opens WhatsApp in a new tab; Linking is the
+    // native path.
+    if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
     try {
       await Linking.openURL(url);
     } catch {
-      Alert.alert('WhatsApp Support', `Message us on WhatsApp: +${WHATSAPP_NUMBER}`);
+      notify('WhatsApp Support', `Message us on WhatsApp: +${WHATSAPP_NUMBER}`);
     }
   };
 
   const comingSoon = (feature: string) => () =>
-    Alert.alert(feature, "This is on the way — we're adding it in the next update.");
+    notify(feature, "This is on the way — we're adding it in the next update.");
 
   const handleDeleteAccount = () => {
     confirmAction(

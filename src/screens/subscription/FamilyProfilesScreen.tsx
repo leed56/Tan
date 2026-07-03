@@ -6,7 +6,6 @@ import {
   ScrollView,
   TouchableOpacity,
   TextInput,
-  Alert,
   Modal,
   Pressable,
 } from 'react-native';
@@ -16,7 +15,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { ProfileStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { AppButton } from '../../components/ui/AppButton';
-import { confirmAction } from '../../utils/confirm';
+import { confirmAction, notify } from '../../utils/confirm';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { AVATARS } from '../../constants';
 import { useFamilyStore } from '../../store/familyStore';
@@ -99,11 +98,11 @@ export function FamilyProfilesScreen({ navigation }: Props) {
   const handleAdd = async () => {
     if (!user?.uid) return;
     if (name.trim().length === 0) {
-      Alert.alert('Name required', "Please enter the student's name.");
+      notify('Name required', "Please enter the student's name.");
       return;
     }
     if (profiles.length >= maxChildren) {
-      Alert.alert('Profile limit reached', `Your plan allows ${maxChildren} student profiles.`);
+      notify('Profile limit reached', `Your plan allows ${maxChildren} student profiles.`);
       return;
     }
     await addProfile(user.uid, name.trim(), selectedAvatar, formLevel);

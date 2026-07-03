@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -11,6 +11,7 @@ import { useRewardsStore } from '../../store/rewardsStore';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import type { RewardBox } from '../../types/gamification';
+import { notify } from '../../utils/confirm';
 
 type Props = StackScreenProps<HomeStackParamList, 'Rewards'>;
 
@@ -55,7 +56,7 @@ export function RewardsScreen({ navigation }: Props) {
     const earnedCoins = box.coinsMin + Math.floor(Math.random() * (box.coinsMax - box.coinsMin));
     addCoins(earnedCoins);
     if (box.xpBonus > 0) addXp(box.xpBonus);
-    Alert.alert('🎉 Reward Opened!', `You earned ${earnedCoins} coins${box.xpBonus > 0 ? ` and +${box.xpBonus} XP` : ''}!`);
+    notify('🎉 Reward Opened!', `You earned ${earnedCoins} coins${box.xpBonus > 0 ? ` and +${box.xpBonus} XP` : ''}!`);
   };
 
   return (
