@@ -7,6 +7,7 @@ import {
   Switch,
   TouchableOpacity,
   Alert,
+  Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -19,6 +20,11 @@ import { useAuth } from '../../hooks/useAuth';
 import { confirmAction } from '../../utils/confirm';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
+
+// Shared with the subscription flow — the support/activation line students
+// reach us on. Configured via env so it's never hard-coded in the bundle.
+const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
+const WHATSAPP_GREEN = '#25D366';
 
 export function SettingsScreen({ navigation }: Props) {
   const { isDark, toggle } = useAppThemeStore();
@@ -36,6 +42,23 @@ export function SettingsScreen({ navigation }: Props) {
   const handleSupport = () => {
     // TODO: Phase 2 — open in-app support chat or email link
     Alert.alert('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
+  };
+
+  const handleWhatsApp = async () => {
+    if (!WHATSAPP_NUMBER) {
+      Alert.alert(
+        'WhatsApp Support',
+        'Our WhatsApp line is being set up. In the meantime, email support@somaaiedu.com.',
+      );
+      return;
+    }
+    const message = encodeURIComponent("Hi Soma AI, I need help with the app.");
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    try {
+      await Linking.openURL(url);
+    } catch {
+      Alert.alert('WhatsApp Support', `Message us on WhatsApp: +${WHATSAPP_NUMBER}`);
+    }
   };
 
   const comingSoon = (feature: string) => () =>
@@ -142,6 +165,13 @@ export function SettingsScreen({ navigation }: Props) {
         {/* Support */}
         <SettingsSection title="Support">
           <SettingsRow
+            icon="logo-whatsapp"
+            iconColor={WHATSAPP_GREEN}
+            label="WhatsApp Support"
+            description="Chat with our team — fastest reply"
+            onPress={handleWhatsApp}
+          />
+          <SettingsRow
             icon="help-circle"
             iconColor={COLORS.primary}
             label="Help & FAQ"
@@ -238,12 +268,14 @@ function SettingsRow({
   icon,
   iconColor,
   label,
+  description,
   onPress,
   highlight = false,
 }: {
   icon: string;
   iconColor: string;
   label: string;
+  description?: string;
   onPress: () => void;
   highlight?: boolean;
 }) {
@@ -252,9 +284,10 @@ function SettingsRow({
       <View style={[sStyles.iconBox, { backgroundColor: `${iconColor}20` }]}>
         <Ionicons name={icon as keyof typeof Ionicons.glyphMap} size={18} color={iconColor} />
       </View>
-      <Text style={[sStyles.rowLabel, sStyles.rowFlex, highlight && { color: COLORS.gold }]}>
-        {label}
-      </Text>
+      <View style={sStyles.rowContent}>
+        <Text style={[sStyles.rowLabel, highlight && { color: COLORS.gold }]}>{label}</Text>
+        {description ? <Text style={sStyles.rowDesc}>{description}</Text> : null}
+      </View>
       <Ionicons name="chevron-forward" size={16} color={COLORS.textMuted} />
     </TouchableOpacity>
   );
