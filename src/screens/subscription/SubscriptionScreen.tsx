@@ -5,6 +5,8 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
+  Platform,
+  Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -17,9 +19,17 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { SEED_PLANS, FEATURE_META } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
+import { notify } from '../../utils/confirm';
 import type { FeatureKey, PlanId, BillingCycle } from '../../types/subscription';
 
 type Props = StackScreenProps<HomeStackParamList, 'SubscriptionScreen'>;
+
+const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
+const WHATSAPP_GREEN = '#25D366';
+// Google Play billing only exists inside the installed Android app — it must
+// never surface on web or iOS (where it does nothing and confuses buyers, and
+// on Play it's the *required* path for digital goods). Shown on Android only.
+const SHOW_GOOGLE_PLAY = Platform.OS === 'android';
 
 const ALL_FEATURES: FeatureKey[] = [
   'summary',
@@ -54,6 +64,37 @@ export function SubscriptionScreen({ navigation }: Props) {
   const handleDemo = () => {
     enableDemo(selectedPlanId);
     navigation.goBack();
+  };
+
+  // Direct WhatsApp upgrade — opens a chat pre-filled with the chosen plan so
+  // support can confirm mobile-money payment and activate instantly.
+  const handleWhatsAppUpgrade = () => {
+    if (!WHATSAPP_NUMBER) {
+      notify(
+        'WhatsApp upgrade',
+        'Our WhatsApp line is being set up. For now, tap "Pay with Mobile Money" to subscribe.',
+      );
+      return;
+    }
+    const text = encodeURIComponent(
+      `Hello! I'd like to upgrade to Soma AI *${selectedPlan.title}* (${billingCycle}) for ${price.toLocaleString()} TSH.`,
+    );
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+    if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    Linking.openURL(url).catch(() => {});
+  };
+
+  // Google Play billing is a native module that isn't wired yet. Rather than a
+  // dead button (or a Play-policy-violating WhatsApp redirect), it degrades to
+  // a clear message pointing at the working payment routes.
+  const handleGooglePlay = () => {
+    notify(
+      'Google Play',
+      'Google Play billing is coming to the Android app. For now, upgrade instantly via mobile money or WhatsApp.',
+    );
   };
 
   return (
@@ -136,13 +177,29 @@ export function SubscriptionScreen({ navigation }: Props) {
           />
         ))}
 
-        {/* CTA */}
+        {/* CTAs — mobile money is the primary route everywhere; WhatsApp is a
+            direct-contact fallback; Google Play only shows inside the Android
+            app (never on web/iOS). */}
         <AppButton
-          title={`Subscribe · ${price.toLocaleString()} TSH/${billingCycle === 'yearly' ? 'yr' : 'mo'}`}
+          title={`Pay with Mobile Money · ${price.toLocaleString()} TSH/${billingCycle === 'yearly' ? 'yr' : 'mo'}`}
           onPress={handleContinue}
           variant="primary"
-          icon={<Ionicons name="arrow-forward" size={18} color={COLORS.textPrimary} />}
+          icon={<Ionicons name="phone-portrait-outline" size={18} color={COLORS.textPrimary} />}
         />
+        <AppButton
+          title="Chat on WhatsApp to upgrade"
+          onPress={handleWhatsAppUpgrade}
+          variant="secondary"
+          icon={<Ionicons name="logo-whatsapp" size={18} color={WHATSAPP_GREEN} />}
+        />
+        {SHOW_GOOGLE_PLAY && (
+          <AppButton
+            title="Subscribe with Google Play"
+            onPress={handleGooglePlay}
+            variant="secondary"
+            icon={<Ionicons name="logo-google-playstore" size={18} color={COLORS.primary} />}
+          />
+        )}
 
         {/* Demo mode — dev builds only; in release this granted full premium
             (unlimited quizzes, HOQ, summaries) to any free user in one tap. */}
@@ -153,7 +210,10 @@ export function SubscriptionScreen({ navigation }: Props) {
         )}
 
         <Text style={styles.footer}>
-          Cancel anytime. Payments via mobile money or WhatsApp support.
+          Cancel anytime.{' '}
+          {SHOW_GOOGLE_PLAY
+            ? 'Pay via Google Play, mobile money, or WhatsApp.'
+            : 'Payments via mobile money or WhatsApp support.'}
         </Text>
       </ScrollView>
     </ScreenContainer>
