@@ -2,939 +2,371 @@
   "topicId": "form_3_mathematics_topic_6",
   "topicName": "Circles",
   "order": 6,
-  "description": "This topic covers the parts of a circle, the main circle theorems, chord and tangent properties, and calculations of arc length and sector area.",
+  "description": "A study of circles covering radian measure, arc length, and the key circle theorems involving angles at the centre and circumference, cyclic quadrilaterals, chords and tangents. It applies these properties to calculate unknown angles and lengths.",
   "packs": {
     "mcq": [
       {
-        "questionText": "An angle subtended by an arc at the centre of a circle is 110 degrees. What is the angle subtended by the same arc at the circumference?",
+        "questionText": "Convert 90° to radians.",
         "options": [
-          {
-            "id": "a",
-            "text": "55 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "110 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "220 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "70 degrees",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "pi/4", "isCorrect": false},
+          {"id": "b", "text": "pi/2", "isCorrect": true},
+          {"id": "c", "text": "pi", "isCorrect": false},
+          {"id": "d", "text": "2pi", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since 180° = pi radians, multiply degrees by pi/180: 90 × pi/180 = pi/2. Exam Tip: to change degrees to radians, multiply by pi/180.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An arc subtends 90° at the centre of a circle of radius 7 cm. Find its length (take pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "44 cm", "isCorrect": false},
+          {"id": "b", "text": "22 cm", "isCorrect": false},
+          {"id": "c", "text": "11 cm", "isCorrect": true},
+          {"id": "d", "text": "5.5 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Arc length = (angle/360) × 2 × pi × r = (90/360) × 2 × (22/7) × 7 = 11 cm. Exam Tip: use the fraction angle/360 of the full circumference 2 × pi × r.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The angle subtended by an arc at the circumference is 35°. What is the angle subtended by the same arc at the centre?",
+        "options": [
+          {"id": "a", "text": "17.5°", "isCorrect": false},
+          {"id": "b", "text": "35°", "isCorrect": false},
+          {"id": "c", "text": "70°", "isCorrect": true},
+          {"id": "d", "text": "145°", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The angle at the centre is twice the angle at the circumference standing on the same arc, so 2 × 35° = 70°. Exam Tip: centre angle = 2 × circumference angle on the same arc.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "AB is a diameter of a circle and C is a point on the circle. What is angle ACB?",
+        "options": [
+          {"id": "a", "text": "45°", "isCorrect": false},
+          {"id": "b", "text": "60°", "isCorrect": false},
+          {"id": "c", "text": "90°", "isCorrect": true},
+          {"id": "d", "text": "180°", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The angle in a semicircle is a right angle, so angle ACB = 90°. Exam Tip: any angle standing on a diameter is 90°.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One angle of a cyclic quadrilateral is 110°. What is its opposite angle?",
+        "options": [
+          {"id": "a", "text": "110°", "isCorrect": false},
+          {"id": "b", "text": "70°", "isCorrect": true},
+          {"id": "c", "text": "250°", "isCorrect": false},
+          {"id": "d", "text": "55°", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so the opposite angle = 180° − 110° = 70°. Exam Tip: opposite angles of a cyclic quadrilateral add up to 180°.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Angles P and Q are in the same segment and P = 42°. What is Q?",
+        "options": [
+          {"id": "a", "text": "42°", "isCorrect": true},
+          {"id": "b", "text": "84°", "isCorrect": false},
+          {"id": "c", "text": "21°", "isCorrect": false},
+          {"id": "d", "text": "138°", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The angle at the centre is twice the angle at the circumference subtended by the same arc, so 110 / 2 = 55 degrees.",
+        "explanation": "Angles in the same segment stand on the same arc and are therefore equal, so Q = 42°. Exam Tip: angles in the same segment are equal.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The straight line drawn from the centre of a circle to any point on the circle is called the:",
+        "questionText": "A chord of length 16 cm is 6 cm from the centre of a circle. Find the radius.",
         "options": [
-          {
-            "id": "a",
-            "text": "Diameter",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Radius",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Chord",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Tangent",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A radius joins the centre of a circle to any point on its circumference.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An angle in a semicircle is always equal to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "45 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "60 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "90 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "180 degrees",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The angle subtended by a diameter at the circumference is a right angle (90 degrees).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a cyclic quadrilateral PQRS, angle P = 95 degrees. What is the size of angle R?",
-        "options": [
-          {
-            "id": "a",
-            "text": "95 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "85 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "180 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "190 degrees",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so angle R = 180 - 95 = 85 degrees.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A tangent to a circle meets the radius drawn to the point of contact at an angle of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "60 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "90 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "120 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "45 degrees",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A tangent is always perpendicular to the radius at the point of contact.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Two angles in the same segment of a circle are subtended by the same chord. If one of them is 38 degrees, the other is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "76 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "142 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "38 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "52 degrees",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Angles in the same segment subtended by the same chord are equal, so both are 38 degrees.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The length of an arc that subtends an angle of 90 degrees at the centre of a circle of radius 14 cm is (take pi = 22/7):",
-        "options": [
-          {
-            "id": "a",
-            "text": "11 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "22 cm",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "44 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "88 cm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Arc length = (90/360) x 2 x (22/7) x 14 = (1/4) x 88 = 22 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The area of a sector with angle 60 degrees in a circle of radius 6 cm is (take pi = 22/7):",
-        "options": [
-          {
-            "id": "a",
-            "text": "18.86 square cm",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "37.71 square cm",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "6.28 square cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "113.14 square cm",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "10 cm", "isCorrect": true},
+          {"id": "b", "text": "8 cm", "isCorrect": false},
+          {"id": "c", "text": "14 cm", "isCorrect": false},
+          {"id": "d", "text": "22 cm", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Area = (60/360) x (22/7) x 6 x 6 = (1/6) x 113.14 = 18.86 square cm (to 2 d.p.).",
+        "explanation": "The perpendicular from the centre bisects the chord, giving half-length 8 cm, so radius = √(8² + 6²) = √100 = 10 cm. Exam Tip: use the right triangle formed by half the chord, the distance from the centre, and the radius.",
         "difficulty": "medium"
       },
       {
-        "questionText": "From an external point, two tangents are drawn to a circle. A correct statement about these tangents is that they are:",
+        "questionText": "Two chords of a circle are equal in length. Which statement is correct?",
         "options": [
-          {
-            "id": "a",
-            "text": "Always perpendicular to each other",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Equal in length",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Parallel to each other",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Equal to the radius",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "They intersect at the centre", "isCorrect": false},
+          {"id": "b", "text": "They are equidistant from the centre", "isCorrect": true},
+          {"id": "c", "text": "One of them is a diameter", "isCorrect": false},
+          {"id": "d", "text": "They are parallel", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Two tangents drawn from the same external point to a circle are equal in length.",
+        "explanation": "Equal chords of a circle are always the same perpendicular distance from the centre. Exam Tip: equal chords are equidistant from the centre, and vice versa.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A tangent touches a circle at A, and OA is the radius to that point. What is the angle between the tangent and OA?",
+        "options": [
+          {"id": "a", "text": "45°", "isCorrect": false},
+          {"id": "b", "text": "60°", "isCorrect": false},
+          {"id": "c", "text": "180°", "isCorrect": false},
+          {"id": "d", "text": "90°", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "A tangent is perpendicular to the radius drawn to the point of contact, so the angle is 90°. Exam Tip: tangent meets the radius at the point of contact at a right angle.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A chord of length 16 cm is at a perpendicular distance of 6 cm from the centre of a circle. The radius of the circle is:",
+        "questionText": "From an external point P, tangents PA and PB are drawn to a circle, with PA = 12 cm. What is PB?",
         "options": [
-          {
-            "id": "a",
-            "text": "8 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "10 cm",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "14 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12 cm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The perpendicular from the centre bisects the chord, so half-chord = 8. Radius = sqrt(8^2 + 6^2) = sqrt(100) = 10 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "AB is a diameter of a circle and C is a point on the circumference. If angle CAB = 35 degrees, then angle ABC is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "35 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "45 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "55 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "90 degrees",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "6 cm", "isCorrect": false},
+          {"id": "b", "text": "24 cm", "isCorrect": false},
+          {"id": "c", "text": "12 cm", "isCorrect": true},
+          {"id": "d", "text": "cannot be determined", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Angle ACB = 90 degrees (angle in a semicircle), so angle ABC = 180 - 90 - 35 = 55 degrees.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A part of the circumference of a circle between two points is called a/an:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Sector",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Segment",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Arc",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Chord",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "An arc is a portion of the circumference of a circle between two points.",
+        "explanation": "Two tangents drawn from the same external point are equal in length, so PB = PA = 12 cm. Exam Tip: tangents from an external point are equal.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The angle subtended at the centre of a circle by an arc of length 11 cm in a circle of radius 7 cm is (take pi = 22/7):",
+        "questionText": "Convert 2pi/3 radians to degrees.",
         "options": [
-          {
-            "id": "a",
-            "text": "45 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "60 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "90 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "120 degrees",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "60°", "isCorrect": false},
+          {"id": "b", "text": "120°", "isCorrect": true},
+          {"id": "c", "text": "150°", "isCorrect": false},
+          {"id": "d", "text": "240°", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Arc = (theta/360) x 2 x (22/7) x 7 = 11, so (theta/360) x 44 = 11, giving theta = 11 x 360 / 44 = 90 degrees.",
+        "correctAnswer": "b",
+        "explanation": "Since pi radians = 180°, multiply by 180/pi: (2pi/3) × (180/pi) = 2 × 60 = 120°. Exam Tip: to change radians to degrees, multiply by 180/pi.",
         "difficulty": "medium"
       },
       {
-        "questionText": "PA and PB are tangents from an external point P to a circle with centre O. If angle APB = 50 degrees, then angle AOB is:",
+        "questionText": "An arc subtends 1.2 radians at the centre of a circle of radius 5 cm. Find the arc length.",
         "options": [
-          {
-            "id": "a",
-            "text": "50 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "100 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "130 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "180 degrees",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "In quadrilateral OAPB, angles OAP and OBP are each 90 degrees, so angle AOB = 360 - 90 - 90 - 50 = 130 degrees.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The reflex angle at the centre of a circle subtended by an arc is 250 degrees. The angle subtended by the same arc at a point on the major arc (using the non-reflex angle) is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "55 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "125 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "250 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "110 degrees",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "6 cm", "isCorrect": true},
+          {"id": "b", "text": "4.17 cm", "isCorrect": false},
+          {"id": "c", "text": "12 cm", "isCorrect": false},
+          {"id": "d", "text": "3 cm", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The non-reflex angle at the centre is 360 - 250 = 110 degrees, so the angle at the circumference is 110 / 2 = 55 degrees.",
-        "difficulty": "hard"
+        "explanation": "When the angle is in radians, arc length s = r × theta = 5 × 1.2 = 6 cm. Exam Tip: with radians, arc length is simply s = r × theta.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The angle at the centre subtended by an arc is 140°. What is the angle subtended by the same arc at a point on the major arc?",
+        "options": [
+          {"id": "a", "text": "280°", "isCorrect": false},
+          {"id": "b", "text": "70°", "isCorrect": true},
+          {"id": "c", "text": "140°", "isCorrect": false},
+          {"id": "d", "text": "40°", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The angle at the circumference is half the angle at the centre on the same arc, so 140° ÷ 2 = 70°. Exam Tip: circumference angle = half the centre angle on the same arc.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A point T is 13 cm from the centre O of a circle of radius 5 cm. Find the length of the tangent from T.",
+        "options": [
+          {"id": "a", "text": "18 cm", "isCorrect": false},
+          {"id": "b", "text": "8 cm", "isCorrect": false},
+          {"id": "c", "text": "12 cm", "isCorrect": true},
+          {"id": "d", "text": "13 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The tangent is perpendicular to the radius, so tangent length = √(13² − 5²) = √(169 − 25) = √144 = 12 cm. Exam Tip: use the right triangle with the centre-to-point distance as the hypotenuse.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In cyclic quadrilateral ABCD, side AB is produced to E, and angle ADC = 95°. What is the exterior angle CBE?",
+        "options": [
+          {"id": "a", "text": "85°", "isCorrect": false},
+          {"id": "b", "text": "95°", "isCorrect": true},
+          {"id": "c", "text": "47.5°", "isCorrect": false},
+          {"id": "d", "text": "105°", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The exterior angle of a cyclic quadrilateral equals the interior opposite angle, so angle CBE = angle ADC = 95°. Exam Tip: exterior angle of a cyclic quadrilateral = interior opposite angle.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The angle at the centre of a circle is _____ times the angle at the circumference subtended by the same arc.",
+        "questionText": "The longest chord of a circle is called the ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "4",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "half",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "diameter", "isCorrect": true},
+          {"id": "b", "text": "radius", "isCorrect": false},
+          {"id": "c", "text": "tangent", "isCorrect": false},
+          {"id": "d", "text": "arc", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "By the angle at the centre theorem, the central angle is twice the angle at the circumference on the same arc.",
+        "explanation": "The diameter passes through the centre and is the longest possible chord of a circle. Exam Tip: the diameter is a chord through the centre and is twice the radius.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A chord that passes through the centre of a circle is called the _____.",
+        "questionText": "pi radians = ____ degrees.",
         "options": [
-          {
-            "id": "a",
-            "text": "radius",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "diameter",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "tangent",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "arc",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The diameter is the longest chord and passes through the centre of the circle.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The opposite angles of a cyclic quadrilateral add up to _____ degrees.",
-        "options": [
-          {
-            "id": "a",
-            "text": "90",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "360",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "180",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "270",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, summing to 180 degrees.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The perpendicular drawn from the centre of a circle to a chord _____ the chord.",
-        "options": [
-          {
-            "id": "a",
-            "text": "touches",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "crosses",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "trisects",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "bisects",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "The perpendicular from the centre to a chord divides the chord into two equal parts.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The arc length of a circle of radius 21 cm subtending an angle of 120 degrees at the centre is _____ cm (take pi = 22/7).",
-        "options": [
-          {
-            "id": "a",
-            "text": "44",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "22",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "88",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "66",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "180", "isCorrect": true},
+          {"id": "b", "text": "90", "isCorrect": false},
+          {"id": "c", "text": "360", "isCorrect": false},
+          {"id": "d", "text": "57", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Arc length = (120/360) x 2 x (22/7) x 21 = (1/3) x 132 = 44 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The area of a circle of radius 7 cm is _____ square cm (take pi = 22/7).",
-        "options": [
-          {
-            "id": "a",
-            "text": "44",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "154",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "308",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "49",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Area = (22/7) x 7 x 7 = 22 x 7 = 154 square cm.",
+        "explanation": "By definition half a full turn is pi radians, which equals 180°. Exam Tip: remember pi radians = 180° as the key conversion fact.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If a tangent makes an angle of 90 degrees with a line at the point of contact, that line passes through the centre and is the _____.",
+        "questionText": "The angle in a semicircle is ____ degrees.",
         "options": [
-          {
-            "id": "a",
-            "text": "diameter",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "tangent",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "radius",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "chord",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "A tangent is perpendicular to the radius at the point of contact.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a cyclic quadrilateral, if one angle is 70 degrees, its opposite angle is _____ degrees.",
-        "options": [
-          {
-            "id": "a",
-            "text": "70",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "90",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "290",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "110",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Opposite angles are supplementary, so 180 - 70 = 110 degrees.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The area of a sector with central angle 90 degrees in a circle of radius 14 cm is _____ square cm (take pi = 22/7).",
-        "options": [
-          {
-            "id": "a",
-            "text": "154",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "77",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "308",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "49",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "90", "isCorrect": true},
+          {"id": "b", "text": "180", "isCorrect": false},
+          {"id": "c", "text": "45", "isCorrect": false},
+          {"id": "d", "text": "60", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Area = (90/360) x (22/7) x 14 x 14 = (1/4) x 616 = 154 square cm.",
-        "difficulty": "medium"
+        "explanation": "An angle standing on a diameter always equals 90°, so the angle in a semicircle is a right angle. Exam Tip: spotting a diameter usually signals a 90° angle.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Two tangents drawn to a circle from the same external point are _____ in length.",
+        "questionText": "A perpendicular from the centre of a circle to a chord ____ the chord.",
         "options": [
-          {
-            "id": "a",
-            "text": "unequal",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "equal",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "perpendicular",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "parallel",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "bisects", "isCorrect": true},
+          {"id": "b", "text": "doubles", "isCorrect": false},
+          {"id": "c", "text": "extends", "isCorrect": false},
+          {"id": "d", "text": "touches", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Tangents from an external point to a circle are always equal in length.",
+        "correctAnswer": "a",
+        "explanation": "The perpendicular drawn from the centre to a chord cuts the chord into two equal halves. Exam Tip: this gives a right triangle you can solve with Pythagoras.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The sum of the opposite angles of a cyclic quadrilateral is ____ degrees.",
+        "options": [
+          {"id": "a", "text": "180", "isCorrect": true},
+          {"id": "b", "text": "90", "isCorrect": false},
+          {"id": "c", "text": "360", "isCorrect": false},
+          {"id": "d", "text": "270", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, adding up to 180°. Exam Tip: use 180° minus the known angle to find its opposite.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "60° expressed in radians is ____.",
+        "options": [
+          {"id": "a", "text": "pi/3", "isCorrect": true},
+          {"id": "b", "text": "pi/6", "isCorrect": false},
+          {"id": "c", "text": "pi/2", "isCorrect": false},
+          {"id": "d", "text": "pi/4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply by pi/180: 60 × pi/180 = pi/3. Exam Tip: to convert degrees to radians multiply by pi/180.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The circumference of a circle of radius 14 cm is ____ cm (take pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "88", "isCorrect": true},
+          {"id": "b", "text": "44", "isCorrect": false},
+          {"id": "c", "text": "154", "isCorrect": false},
+          {"id": "d", "text": "22", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Circumference = 2 × pi × r = 2 × (22/7) × 14 = 88 cm. Exam Tip: circumference is 2 × pi × r, not pi × r².",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A straight line which touches a circle at exactly one point is called a ____.",
+        "options": [
+          {"id": "a", "text": "tangent", "isCorrect": true},
+          {"id": "b", "text": "chord", "isCorrect": false},
+          {"id": "c", "text": "secant", "isCorrect": false},
+          {"id": "d", "text": "diameter", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A tangent meets the circle at just one point of contact and does not cross it. Exam Tip: a tangent touches at one point; a chord or secant cuts at two.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The angle between a tangent and the radius at the point of contact is ____ degrees.",
+        "options": [
+          {"id": "a", "text": "90", "isCorrect": true},
+          {"id": "b", "text": "45", "isCorrect": false},
+          {"id": "c", "text": "180", "isCorrect": false},
+          {"id": "d", "text": "60", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A tangent is always perpendicular to the radius drawn to the point of contact, giving 90°. Exam Tip: mark the right angle where a tangent meets the radius.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An arc subtends 2 radians at the centre of a circle of radius 6 cm. Its arc length is ____ cm.",
+        "options": [
+          {"id": "a", "text": "12", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "8", "isCorrect": false},
+          {"id": "d", "text": "36", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "With the angle in radians, s = r × theta = 6 × 2 = 12 cm. Exam Tip: the formula s = r × theta only works when theta is in radians.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "The angle subtended by a diameter at the circumference of a circle is always 90 degrees.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the angle in a semicircle theorem.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Angles in the same segment of a circle subtended by the same chord are unequal.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Angles in the same segment subtended by the same chord are equal.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A tangent to a circle touches the circle at exactly one point.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "By definition, a tangent meets a circle at only one point, the point of contact.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The opposite angles of a cyclic quadrilateral are equal.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Opposite angles of a cyclic quadrilateral are supplementary (sum to 180 degrees), not necessarily equal.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A diameter is the longest chord of a circle.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The diameter passes through the centre and is the longest possible chord.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The angle at the centre of a circle is half the angle at the circumference subtended by the same arc.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The angle at the centre is twice (not half) the angle at the circumference subtended by the same arc.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Equal chords of a circle are equidistant from the centre.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Chords of equal length lie at equal perpendicular distances from the centre.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A sector is the region enclosed by a chord and the arc it cuts off.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "That region is a segment; a sector is enclosed by two radii and an arc.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The radius drawn to the point of contact of a tangent is perpendicular to the tangent.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The radius at the point of contact is always perpendicular to the tangent.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If a quadrilateral has all four vertices on a circle, its diagonals must be diameters.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A cyclic quadrilateral's diagonals are not necessarily diameters; they are only chords unless the quadrilateral is a rectangle.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Every chord of a circle passes through the centre.", "options": [], "correctAnswer": "false", "explanation": "Only the diameter passes through the centre; most chords do not, so the statement is false.", "difficulty": "easy"},
+      {"questionText": "The angle at the centre is twice the angle at the circumference subtended by the same arc.", "options": [], "correctAnswer": "true", "explanation": "For any arc, the angle at the centre is exactly double the angle at the circumference on the same arc.", "difficulty": "easy"},
+      {"questionText": "Angles subtended by the same arc in the same segment are equal.", "options": [], "correctAnswer": "true", "explanation": "All angles in the same segment stand on the same arc, so they are equal to one another.", "difficulty": "easy"},
+      {"questionText": "A cyclic quadrilateral has all four vertices on the circumference of a circle.", "options": [], "correctAnswer": "true", "explanation": "By definition a cyclic quadrilateral is one whose four vertices all lie on the circle.", "difficulty": "easy"},
+      {"questionText": "A tangent intersects a circle at two points.", "options": [], "correctAnswer": "false", "explanation": "A tangent touches the circle at exactly one point; a line meeting it at two points is a secant.", "difficulty": "easy"},
+      {"questionText": "Equal chords of a circle subtend equal angles at the centre.", "options": [], "correctAnswer": "true", "explanation": "Chords of equal length always subtend equal angles at the centre of the circle.", "difficulty": "easy"},
+      {"questionText": "One radian is larger than 60°.", "options": [], "correctAnswer": "false", "explanation": "One radian is about 57.3°, which is less than 60°, so the statement is false.", "difficulty": "easy"},
+      {"questionText": "Two tangents drawn to a circle from the same external point are equal in length.", "options": [], "correctAnswer": "true", "explanation": "The two tangents from a single external point to a circle are always equal in length.", "difficulty": "easy"},
+      {"questionText": "The diameter of a circle is twice its radius.", "options": [], "correctAnswer": "true", "explanation": "The diameter passes through the centre and equals two radii, so diameter = 2 × radius.", "difficulty": "easy"},
+      {"questionText": "The opposite angles of a cyclic quadrilateral add up to 90°.", "options": [], "correctAnswer": "false", "explanation": "Opposite angles of a cyclic quadrilateral add up to 180°, not 90°, so the statement is false.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Angle at the centre theorem",
-        "options": [],
-        "correctAnswer": "The angle at the centre is twice the angle at the circumference on the same arc.",
-        "explanation": "Central angle = 2 x inscribed angle subtended by the same arc.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Angle in a semicircle",
-        "options": [],
-        "correctAnswer": "The angle subtended by a diameter at the circumference is 90 degrees.",
-        "explanation": "Any inscribed angle standing on the diameter is a right angle.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Angles in the same segment",
-        "options": [],
-        "correctAnswer": "Angles in the same segment subtended by the same chord are equal.",
-        "explanation": "Inscribed angles on the same side of a chord are equal.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Cyclic quadrilateral property",
-        "options": [],
-        "correctAnswer": "Opposite angles of a cyclic quadrilateral are supplementary.",
-        "explanation": "The sum of each pair of opposite angles is 180 degrees.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Tangent and radius",
-        "options": [],
-        "correctAnswer": "A tangent is perpendicular to the radius at the point of contact.",
-        "explanation": "The angle between a tangent and the radius at the contact point is 90 degrees.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Tangents from an external point",
-        "options": [],
-        "correctAnswer": "Tangents drawn from an external point to a circle are equal in length.",
-        "explanation": "The two tangent segments from one external point have the same length.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Perpendicular from centre to a chord",
-        "options": [],
-        "correctAnswer": "The perpendicular from the centre to a chord bisects the chord.",
-        "explanation": "It divides the chord into two equal halves.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Arc length formula",
-        "options": [],
-        "correctAnswer": "Arc length = (theta/360) x 2 x pi x r.",
-        "explanation": "It is the fraction theta/360 of the full circumference.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Area of a sector formula",
-        "options": [],
-        "correctAnswer": "Sector area = (theta/360) x pi x r squared.",
-        "explanation": "It is the fraction theta/360 of the total area of the circle.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Parts of a circle",
-        "options": [],
-        "correctAnswer": "A sector is bounded by two radii and an arc; a segment is bounded by a chord and an arc.",
-        "explanation": "These distinguish the two main regions inside a circle.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Radian", "options": [], "correctAnswer": "A unit of angle measure where 180 degrees = pi radians (a full turn is 2pi radians).", "explanation": "To convert, multiply degrees by pi/180, or multiply radians by 180/pi. One radian is about 57.3°. Exam Tip: keep 180° = pi radians handy for every conversion.", "difficulty": "easy"},
+      {"questionText": "Arc length", "options": [], "correctAnswer": "The distance along part of a circle, given by s = r × theta when theta is in radians, or (angle/360) × 2 × pi × r in degrees.", "explanation": "For example, radius 5 cm with theta = 1.2 rad gives s = 5 × 1.2 = 6 cm. Exam Tip: check whether the angle is in radians or degrees before choosing the formula.", "difficulty": "easy"},
+      {"questionText": "Angle at centre theorem", "options": [], "correctAnswer": "The angle subtended by an arc at the centre is twice the angle it subtends at the circumference.", "explanation": "So an arc giving 35° at the circumference gives 70° at the centre. Exam Tip: centre angle = 2 × circumference angle on the same arc.", "difficulty": "easy"},
+      {"questionText": "Angle in a semicircle", "options": [], "correctAnswer": "An angle subtended by a diameter at the circumference is a right angle of 90 degrees.", "explanation": "If AB is a diameter and C is on the circle, angle ACB = 90°. Exam Tip: seeing a diameter usually points to a 90° angle.", "difficulty": "easy"},
+      {"questionText": "Cyclic quadrilateral", "options": [], "correctAnswer": "A four-sided figure with all vertices on a circle whose opposite angles are supplementary (add to 180 degrees).", "explanation": "If one angle is 110°, the opposite angle is 180° − 110° = 70°. Exam Tip: also remember the exterior angle equals the interior opposite angle.", "difficulty": "easy"},
+      {"questionText": "Angles in the same segment", "options": [], "correctAnswer": "Angles subtended by the same arc in the same segment of a circle are equal to each other.", "explanation": "If one such angle is 42°, every other angle on that arc in the same segment is also 42°. Exam Tip: look for angles standing on the same arc to spot equal angles.", "difficulty": "easy"},
+      {"questionText": "Perpendicular from centre to a chord", "options": [], "correctAnswer": "The perpendicular drawn from the centre of a circle to a chord bisects that chord.", "explanation": "This creates a right triangle so, for a chord 16 cm long 6 cm from the centre, the radius is √(8² + 6²) = 10 cm. Exam Tip: use half the chord with Pythagoras to find the radius.", "difficulty": "easy"},
+      {"questionText": "Tangent perpendicular to radius", "options": [], "correctAnswer": "A tangent to a circle is perpendicular to the radius at the point of contact, meeting it at 90 degrees.", "explanation": "This right angle lets you use Pythagoras, so from a point 13 cm from the centre of a radius-5 circle the tangent is √(13² − 5²) = 12 cm. Exam Tip: mark the right angle at the point of contact.", "difficulty": "easy"},
+      {"questionText": "Tangents from an external point", "options": [], "correctAnswer": "Two tangents drawn to a circle from the same external point are equal in length.", "explanation": "So if PA = 12 cm then the other tangent PB from P also equals 12 cm. Exam Tip: this equality often creates isosceles triangles to exploit.", "difficulty": "easy"},
+      {"questionText": "Diameter", "options": [], "correctAnswer": "The longest chord of a circle, passing through the centre, equal to twice the radius.", "explanation": "A radius of 7 cm gives a diameter of 14 cm. Exam Tip: an angle standing on the diameter is always 90°.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "In a circle with centre O, A, B and C lie on the circumference. The chord AB equals the radius of the circle. What is the size of angle ACB (the angle subtended by AB at the circumference)?",
+        "questionText": "A chord of a circle of radius 13 cm lies at a perpendicular distance of 5 cm from the centre. Find the length of the chord.",
         "options": [
-          {
-            "id": "a",
-            "text": "30 degrees",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "60 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "45 degrees",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "90 degrees",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "24 cm", "isCorrect": true},
+          {"id": "b", "text": "12 cm", "isCorrect": false},
+          {"id": "c", "text": "26 cm", "isCorrect": false},
+          {"id": "d", "text": "8 cm", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Triangle OAB has OA = OB = AB (all equal to the radius), so it is equilateral and angle AOB = 60 degrees. Angle ACB = 60 / 2 = 30 degrees.",
+        "explanation": "The perpendicular from the centre bisects the chord, forming a right triangle with the radius. Half the chord = √(13² − 5²) = √(169 − 25) = √144 = 12 cm, so the full chord = 2 × 12 = 24 cm. Exam Tip: option B forgets to double the half-chord back to the full length.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A circle has radius 10 cm. A sector of this circle has an arc length of 15 cm. Taking pi = 3.14, what is the area of the sector?",
+        "questionText": "Points A, B, C and D lie on a circle centre O, with C on the major arc of AB and D on the minor arc of AB, and angle AOB = 100°. Find angle ACB and angle ADB.",
         "options": [
-          {
-            "id": "a",
-            "text": "75 square cm",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "150 square cm",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "37.5 square cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "100 square cm",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "ACB = 50°, ADB = 130°", "isCorrect": true},
+          {"id": "b", "text": "ACB = 100°, ADB = 80°", "isCorrect": false},
+          {"id": "c", "text": "ACB = 50°, ADB = 50°", "isCorrect": false},
+          {"id": "d", "text": "ACB = 130°, ADB = 50°", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Area of a sector = (1/2) x arc length x radius = (1/2) x 15 x 10 = 75 square cm.",
+        "explanation": "The angle at the circumference is half the angle at the centre, so angle ACB = 100° ÷ 2 = 50°. Since ACBD is a cyclic quadrilateral, ADB and ACB are opposite angles, so angle ADB = 180° − 50° = 130°. Exam Tip: points on opposite arcs give supplementary angles that add to 180°.",
         "difficulty": "hard"
       },
       {
-        "questionText": "TP and TQ are tangents from an external point T to a circle with centre O. The radius is 5 cm and OT = 13 cm. What is the total length of the two tangents TP and TQ?",
+        "questionText": "A point T is 25 m from the centre of a circular garden of radius 7 m. Find the length of the tangent from T to the garden.",
         "options": [
-          {
-            "id": "a",
-            "text": "24 cm",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "12 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "26 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "18 cm",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "32 m", "isCorrect": false},
+          {"id": "b", "text": "18 m", "isCorrect": false},
+          {"id": "c", "text": "26 m", "isCorrect": false},
+          {"id": "d", "text": "24 m", "isCorrect": true}
         ],
-        "correctAnswer": "a",
-        "explanation": "Each tangent length TP = sqrt(OT^2 - r^2) = sqrt(169 - 25) = sqrt(144) = 12 cm, so TP + TQ = 24 cm.",
+        "correctAnswer": "d",
+        "explanation": "The tangent is perpendicular to the radius, so the radius, tangent and centre-to-point line form a right triangle. Tangent length = √(25² − 7²) = √(625 − 49) = √576 = 24 m (a 7-24-25 triple). Exam Tip: the centre-to-point distance is always the hypotenuse, not a leg.",
         "difficulty": "hard"
       }
     ]

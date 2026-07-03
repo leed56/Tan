@@ -2,939 +2,371 @@
   "topicId": "form_3_mathematics_topic_8",
   "topicName": "Accounts",
   "order": 8,
-  "description": "Commercial mathematics covering profit and loss, discount, commission, simple and compound interest, hire purchase, depreciation, and basic book-keeping concepts.",
+  "description": "An introduction to basic book-keeping and accounts, covering the accounting equation, double entry, debtors and creditors, and the preparation of trading accounts, trial balances and the balance sheet to find gross profit, net profit and capital.",
   "packs": {
     "mcq": [
       {
-        "questionText": "A trader buys a radio for TZS 40,000 and sells it for TZS 50,000. What is the percentage profit?",
+        "questionText": "A business has assets worth Tsh 5,000,000 and liabilities of Tsh 2,000,000. What is its capital?",
         "options": [
-          {
-            "id": "a",
-            "text": "20%",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "25%",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "10%",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12.5%",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tsh 7,000,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 3,000,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 2,500,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 10,000,000", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Profit = 50,000 - 40,000 = 10,000. Percentage profit = (10,000 / 40,000) x 100 = 25%.",
+        "explanation": "From the accounting equation, Capital = Assets - Liabilities = 5,000,000 - 2,000,000 = Tsh 3,000,000. Exam Tip: rearrange Assets = Capital + Liabilities to find any missing part.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Find the simple interest on TZS 200,000 invested for 3 years at a rate of 5% per annum.",
+        "questionText": "The principle of double entry states that:",
         "options": [
-          {
-            "id": "a",
-            "text": "TZS 30,000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "TZS 10,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 60,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "TZS 15,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "every transaction is recorded twice in the same account", "isCorrect": false},
+          {"id": "b", "text": "every debit entry has a corresponding credit entry of equal amount", "isCorrect": true},
+          {"id": "c", "text": "all entries are made on the debit side", "isCorrect": false},
+          {"id": "d", "text": "each transaction is recorded once per month", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Double entry means each transaction affects two accounts, with a debit in one equal to a credit in another. Exam Tip: for every debit there must be an equal credit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Juma buys goods for resale and pays cash. What is the correct double entry?",
+        "options": [
+          {"id": "a", "text": "Debit Cash, Credit Purchases", "isCorrect": false},
+          {"id": "b", "text": "Debit Purchases, Credit Cash", "isCorrect": true},
+          {"id": "c", "text": "Debit Sales, Credit Cash", "isCorrect": false},
+          {"id": "d", "text": "Debit Purchases, Credit Sales", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Purchases increase so they are debited, and cash goes out so it is credited: Debit Purchases, Credit Cash. Exam Tip: what the business receives is debited, what it gives out is credited.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Sales are Tsh 800,000 and the cost of goods sold is Tsh 550,000. What is the gross profit?",
+        "options": [
+          {"id": "a", "text": "Tsh 1,350,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 250,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 550,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 150,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gross profit = Sales - Cost of goods sold = 800,000 - 550,000 = Tsh 250,000. Exam Tip: gross profit comes before expenses are deducted.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gross profit is Tsh 250,000 and operating expenses are Tsh 90,000. What is the net profit?",
+        "options": [
+          {"id": "a", "text": "Tsh 340,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 90,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 160,000", "isCorrect": true},
+          {"id": "d", "text": "Tsh 250,000", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Net profit = Gross profit - Expenses = 250,000 - 90,000 = Tsh 160,000. Exam Tip: subtract all expenses from gross profit to get net profit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Opening stock is Tsh 120,000, purchases are Tsh 600,000 and closing stock is Tsh 150,000. What is the cost of goods sold?",
+        "options": [
+          {"id": "a", "text": "Tsh 870,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 570,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 630,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 330,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cost of goods sold = Opening stock + Purchases - Closing stock = 120,000 + 600,000 - 150,000 = Tsh 570,000. Exam Tip: always subtract the closing stock at the end.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a correctly prepared trial balance:",
+        "options": [
+          {"id": "a", "text": "the debit total exceeds the credit total", "isCorrect": false},
+          {"id": "b", "text": "the credit total exceeds the debit total", "isCorrect": false},
+          {"id": "c", "text": "the debit and credit totals are equal", "isCorrect": true},
+          {"id": "d", "text": "only debit balances are listed", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A trial balance lists all debit and credit balances, and when the books are correct the two totals are equal. Exam Tip: equal totals show the ledger is arithmetically balanced.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an asset?",
+        "options": [
+          {"id": "a", "text": "Creditors", "isCorrect": false},
+          {"id": "b", "text": "Bank loan", "isCorrect": false},
+          {"id": "c", "text": "Debtors", "isCorrect": true},
+          {"id": "d", "text": "Capital", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Debtors owe money to the business, so they are an asset, while creditors, a bank loan and capital are all things the business owes. Exam Tip: an asset is something the business owns or is owed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a liability?",
+        "options": [
+          {"id": "a", "text": "Cash in hand", "isCorrect": false},
+          {"id": "b", "text": "Creditors", "isCorrect": true},
+          {"id": "c", "text": "Stock", "isCorrect": false},
+          {"id": "d", "text": "Furniture", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Creditors are people the business owes money to, so they are a liability, while cash, stock and furniture are assets. Exam Tip: a liability is something the business owes to others.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Asha sells goods for cash. What is the correct double entry?",
+        "options": [
+          {"id": "a", "text": "Debit Sales, Credit Cash", "isCorrect": false},
+          {"id": "b", "text": "Debit Cash, Credit Sales", "isCorrect": true},
+          {"id": "c", "text": "Debit Cash, Credit Purchases", "isCorrect": false},
+          {"id": "d", "text": "Debit Debtors, Credit Sales", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cash comes in so it is debited, and sales are made so the sales account is credited: Debit Cash, Credit Sales. Exam Tip: money received is debited to the cash account.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A business has capital of Tsh 4,500,000 and liabilities of Tsh 1,200,000. What are its total assets?",
+        "options": [
+          {"id": "a", "text": "Tsh 3,300,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 5,700,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 4,500,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 1,200,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "From the accounting equation, Assets = Capital + Liabilities = 4,500,000 + 1,200,000 = Tsh 5,700,000. Exam Tip: assets always equal capital plus liabilities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A debtor pays Tsh 80,000 in cash to the business. What is the correct double entry?",
+        "options": [
+          {"id": "a", "text": "Debit Cash, Credit Debtors", "isCorrect": true},
+          {"id": "b", "text": "Debit Debtors, Credit Cash", "isCorrect": false},
+          {"id": "c", "text": "Debit Cash, Credit Sales", "isCorrect": false},
+          {"id": "d", "text": "Debit Capital, Credit Cash", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Simple interest = (P x R x T) / 100 = (200,000 x 5 x 3) / 100 = 30,000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An item marked at TZS 80,000 is sold at a discount of 15%. How much does a customer pay?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 12,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 65,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 68,000",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "TZS 72,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Discount = 15% of 80,000 = 12,000. Amount paid = 80,000 - 12,000 = 68,000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A salesperson earns a commission of 8% on goods sold worth TZS 1,500,000. What is the commission?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 100,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 150,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 12,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "TZS 120,000",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Commission = 8% of 1,500,000 = (8/100) x 1,500,000 = 120,000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A shopkeeper sells a bag for TZS 36,000, making a loss of 10%. What was the cost price?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 40,000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "TZS 39,600",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 32,400",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "TZS 33,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Selling price = 90% of cost. Cost = 36,000 / 0.90 = 40,000.",
+        "explanation": "Cash comes in so it is debited, and the debtor now owes less so the debtors account is credited: Debit Cash, Credit Debtors. Exam Tip: when a debtor pays, reduce debtors by crediting the account.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Calculate the compound interest on TZS 100,000 for 2 years at 10% per annum, compounded annually.",
+        "questionText": "Current assets are Tsh 2,400,000 and current liabilities are Tsh 900,000. What is the working capital?",
         "options": [
-          {
-            "id": "a",
-            "text": "TZS 20,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 21,000",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "TZS 121,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "TZS 22,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tsh 3,300,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 1,500,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 2,400,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 900,000", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Amount = 100,000 x (1.10)^2 = 121,000. Compound interest = 121,000 - 100,000 = 21,000.",
+        "explanation": "Working capital = Current assets - Current liabilities = 2,400,000 - 900,000 = Tsh 1,500,000. Exam Tip: working capital measures short-term funds available to run the business.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A laptop costing TZS 800,000 depreciates at 25% per annum. What is its value after 1 year?",
+        "questionText": "Which of the following appears in the trading account?",
         "options": [
-          {
-            "id": "a",
-            "text": "TZS 200,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 575,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 600,000",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "TZS 700,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Rent paid", "isCorrect": false},
+          {"id": "b", "text": "Salaries", "isCorrect": false},
+          {"id": "c", "text": "Purchases", "isCorrect": true},
+          {"id": "d", "text": "Machinery", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Depreciation = 25% of 800,000 = 200,000. Value = 800,000 - 200,000 = 600,000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A bicycle is bought on hire purchase by paying a deposit of TZS 50,000 plus 12 monthly instalments of TZS 15,000. What is the total hire purchase price?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 180,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 200,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 230,000",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "TZS 65,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Total = deposit + (12 x 15,000) = 50,000 + 180,000 = 230,000.",
+        "explanation": "The trading account uses sales, purchases and stock to find gross profit, so purchases belong there, while rent and salaries are expenses and machinery is a fixed asset. Exam Tip: the trading account deals with the buying and selling of goods only.",
         "difficulty": "medium"
       },
       {
-        "questionText": "At what rate per annum will TZS 250,000 earn simple interest of TZS 60,000 in 4 years?",
+        "questionText": "Baraka starts a business by depositing Tsh 3,000,000 cash. What is the correct double entry?",
         "options": [
-          {
-            "id": "a",
-            "text": "6%",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "5%",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "8%",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "4%",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "R = (I x 100) / (P x T) = (60,000 x 100) / (250,000 x 4) = 6,000,000 / 1,000,000 = 6%.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A trader marks goods 40% above cost and then allows a discount of 10% on the marked price. If the cost is TZS 50,000, what is the selling price?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 70,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 63,000",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "TZS 65,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "TZS 60,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Debit Capital, Credit Cash", "isCorrect": false},
+          {"id": "b", "text": "Debit Cash, Credit Capital", "isCorrect": true},
+          {"id": "c", "text": "Debit Cash, Credit Sales", "isCorrect": false},
+          {"id": "d", "text": "Debit Bank, Credit Debtors", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Marked price = 50,000 x 1.40 = 70,000. After 10% discount: 70,000 x 0.90 = 63,000.",
+        "explanation": "Cash comes into the business so it is debited, and the owner's capital increases so the capital account is credited: Debit Cash, Credit Capital. Exam Tip: money brought in by the owner is credited to capital.",
         "difficulty": "medium"
-      },
-      {
-        "questionText": "In a trial balance, which of the following normally appears on the credit side?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Purchases",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Capital",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Cash in hand",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Rent expense",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Capital is a liability of the business to the owner, so it carries a credit balance in the trial balance.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A man invests TZS 400,000 at 5% per annum simple interest. After how many years will the total amount become TZS 500,000?",
-        "options": [
-          {
-            "id": "a",
-            "text": "4 years",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "6 years",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "5 years",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "10 years",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Interest needed = 500,000 - 400,000 = 100,000. T = (I x 100) / (P x R) = (100,000 x 100) / (400,000 x 5) = 5 years.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An article is sold for TZS 575,000 at a profit of 15%. What was the cost price?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 500,000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "TZS 488,750",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 525,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "TZS 460,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Selling price = 115% of cost. Cost = 575,000 / 1.15 = 500,000.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The cash price of a sofa is TZS 600,000. On hire purchase it costs TZS 720,000. What is the percentage increase paid by buying on hire purchase?",
-        "options": [
-          {
-            "id": "a",
-            "text": "15%",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "20%",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "25%",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12%",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Extra cost = 720,000 - 600,000 = 120,000. Percentage = (120,000 / 600,000) x 100 = 20%.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A machine valued at TZS 1,000,000 depreciates at 20% per annum on the reducing balance. What is its value after 2 years?",
-        "options": [
-          {
-            "id": "a",
-            "text": "TZS 600,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 660,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 640,000",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "TZS 800,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Value = 1,000,000 x (0.80)^2 = 1,000,000 x 0.64 = 640,000.",
-        "difficulty": "hard"
       }
     ],
     "fib": [
       {
-        "questionText": "If a cost price is TZS 30,000 and the selling price is TZS 36,000, the profit made is TZS _____.",
+        "questionText": "The accounting equation is Assets = Capital + ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "6,000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "6,600",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "5,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "36,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Liabilities", "isCorrect": true},
+          {"id": "b", "text": "Expenses", "isCorrect": false},
+          {"id": "c", "text": "Sales", "isCorrect": false},
+          {"id": "d", "text": "Profit", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Profit = Selling price - Cost price = 36,000 - 30,000 = 6,000.",
+        "explanation": "The accounting equation states that Assets = Capital + Liabilities, showing how the business resources are financed. Exam Tip: memorise Assets = Capital + Liabilities.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The simple interest formula is I = (P x R x T) / _____.",
+        "questionText": "In double entry, every transaction affects at least ____ accounts.",
         "options": [
-          {
-            "id": "a",
-            "text": "1000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "100",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "360",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Since the rate R is a percentage, we divide the product P x R x T by 100.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The simple interest on TZS 150,000 for 2 years at 4% per annum is TZS _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "6,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "120,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "12,000",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "18,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "I = (150,000 x 4 x 2) / 100 = 1,200,000 / 100 = 12,000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A book marked at TZS 20,000 is given a 25% discount. The discount amount is TZS _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "4,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "15,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "25,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "5,000",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Discount = 25% of 20,000 = (25/100) x 20,000 = 5,000.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If goods worth TZS 500,000 are sold and the agent earns 6% commission, the commission is TZS _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "30,000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "3,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "60,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "6,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "two", "isCorrect": true},
+          {"id": "b", "text": "one", "isCorrect": false},
+          {"id": "c", "text": "three", "isCorrect": false},
+          {"id": "d", "text": "four", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Commission = 6% of 500,000 = (6/100) x 500,000 = 30,000.",
+        "explanation": "Double entry records each transaction in at least two accounts, one debited and one credited. Exam Tip: two accounts means one debit and one credit.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The amount obtained when TZS 50,000 is invested for 1 year at 12% per annum simple interest is TZS _____.",
+        "questionText": "A person who owes money to the business is called a ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "6,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "56,000",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "62,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "50,000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Interest = (50,000 x 12 x 1)/100 = 6,000. Amount = 50,000 + 6,000 = 56,000.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An item bought for TZS 25,000 and sold for TZS 20,000 gives a percentage loss of _____%.",
-        "options": [
-          {
-            "id": "a",
-            "text": "25",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "20",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "80",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Loss = 25,000 - 20,000 = 5,000. Percentage loss = (5,000 / 25,000) x 100 = 20%.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The two sides of a trial balance are the debit side and the _____ side.",
-        "options": [
-          {
-            "id": "a",
-            "text": "debit",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "balance",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "cash",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "credit",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A trial balance lists balances under debit and credit columns, which should be equal.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "TZS 200,000 invested at 10% per annum compound interest for 2 years grows to an amount of TZS _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "242,000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "240,000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "220,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "244,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "debtor", "isCorrect": true},
+          {"id": "b", "text": "creditor", "isCorrect": false},
+          {"id": "c", "text": "supplier", "isCorrect": false},
+          {"id": "d", "text": "shareholder", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Amount = 200,000 x (1.10)^2 = 200,000 x 1.21 = 242,000.",
-        "difficulty": "medium"
+        "explanation": "A debtor is someone who owes money to the business, usually because they bought goods on credit. Exam Tip: a debtor owes the business, a creditor is owed by the business.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A car worth TZS 5,000,000 depreciating at 10% per annum will have a value of TZS _____ after one year.",
+        "questionText": "Sales are Tsh 950,000 and cost of goods sold is Tsh 700,000. The gross profit is Tsh ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "5,500,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "4,500,000",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "4,000,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "450,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "250,000", "isCorrect": true},
+          {"id": "b", "text": "1,650,000", "isCorrect": false},
+          {"id": "c", "text": "700,000", "isCorrect": false},
+          {"id": "d", "text": "300,000", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Depreciation = 10% of 5,000,000 = 500,000. Value = 5,000,000 - 500,000 = 4,500,000.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "Gross profit = Sales - Cost of goods sold = 950,000 - 700,000 = Tsh 250,000. Exam Tip: gross profit is found in the trading account.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A list of all the debit and credit balances taken from the ledger is called a ____.",
+        "options": [
+          {"id": "a", "text": "trial balance", "isCorrect": true},
+          {"id": "b", "text": "balance sheet", "isCorrect": false},
+          {"id": "c", "text": "trading account", "isCorrect": false},
+          {"id": "d", "text": "cash book", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The trial balance lists every debit and credit balance from the ledger to check that the totals agree. Exam Tip: the trial balance checks the arithmetic of the ledger.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Net profit = Gross profit - ____.",
+        "options": [
+          {"id": "a", "text": "expenses", "isCorrect": true},
+          {"id": "b", "text": "sales", "isCorrect": false},
+          {"id": "c", "text": "purchases", "isCorrect": false},
+          {"id": "d", "text": "capital", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Net profit is found by subtracting all expenses from the gross profit. Exam Tip: net profit is what remains after paying running costs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The money or resources invested in a business by its owner is called ____.",
+        "options": [
+          {"id": "a", "text": "capital", "isCorrect": true},
+          {"id": "b", "text": "profit", "isCorrect": false},
+          {"id": "c", "text": "a liability", "isCorrect": false},
+          {"id": "d", "text": "revenue", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Capital is the amount of money or resources the owner puts into the business. Exam Tip: capital is what the business owes back to its owner.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Closing stock appears in the trading account and also in the ____ as a current asset.",
+        "options": [
+          {"id": "a", "text": "balance sheet", "isCorrect": true},
+          {"id": "b", "text": "trial balance", "isCorrect": false},
+          {"id": "c", "text": "profit and loss account", "isCorrect": false},
+          {"id": "d", "text": "cash book", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Closing stock reduces the cost of goods sold in the trading account and is shown as a current asset in the balance sheet. Exam Tip: closing stock is used in two places at the year end.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Assets are Tsh 8,000,000 and capital is Tsh 6,500,000. The liabilities are Tsh ____.",
+        "options": [
+          {"id": "a", "text": "1,500,000", "isCorrect": true},
+          {"id": "b", "text": "14,500,000", "isCorrect": false},
+          {"id": "c", "text": "6,500,000", "isCorrect": false},
+          {"id": "d", "text": "2,000,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Liabilities = Assets - Capital = 8,000,000 - 6,500,000 = Tsh 1,500,000. Exam Tip: rearrange the accounting equation to isolate liabilities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When goods are bought on credit, the goods are received now and payment is made ____.",
+        "options": [
+          {"id": "a", "text": "later", "isCorrect": true},
+          {"id": "b", "text": "immediately", "isCorrect": false},
+          {"id": "c", "text": "never", "isCorrect": false},
+          {"id": "d", "text": "in advance", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Buying on credit means the buyer receives the goods now but pays for them at a later agreed date. Exam Tip: credit means pay later, which creates a creditor.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Profit is calculated as selling price minus cost price.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "When the selling price exceeds the cost price, the difference is the profit.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Percentage profit is always calculated based on the selling price.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Percentage profit is calculated on the cost price: (profit / cost price) x 100.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Simple interest is calculated only on the original principal throughout the period.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Unlike compound interest, simple interest is based on the unchanged original principal each year.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Compound interest is generally greater than simple interest for the same principal, rate, and time greater than one year.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Compound interest earns interest on accumulated interest, so it exceeds simple interest after the first period.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A discount reduces the marked price of an item.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A discount is a reduction off the marked price, so the customer pays less.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The total hire purchase price is always equal to the cash price.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Hire purchase price is usually higher than the cash price because of the extra interest charged on instalments.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Depreciation refers to the loss in value of an asset over time.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Assets such as machinery and vehicles lose value due to wear, age, and use; this loss is called depreciation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a correctly prepared trial balance, the total of the debit side equals the total of the credit side.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A balanced trial balance shows equal debit and credit totals, indicating arithmetic accuracy of the ledger.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Commission is a payment based on the value of goods or services sold.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "An agent or salesperson is paid commission as a percentage of total sales made.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If an item is sold at a loss, the cost price is less than the selling price.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A loss occurs when the cost price is greater than the selling price, not less.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Every debit entry must have a corresponding credit entry of equal amount.", "options": [], "correctAnswer": "true", "explanation": "This is the basic rule of double entry, so each debit is matched by an equal credit.", "difficulty": "easy"},
+      {"questionText": "Creditors are classified as current assets.", "options": [], "correctAnswer": "false", "explanation": "Creditors are people the business owes money to, so they are a liability, not an asset.", "difficulty": "easy"},
+      {"questionText": "A trial balance tests the arithmetical accuracy of the ledger entries.", "options": [], "correctAnswer": "true", "explanation": "The trial balance checks that total debits equal total credits, confirming arithmetical accuracy.", "difficulty": "easy"},
+      {"questionText": "Gross profit is calculated in the trading account.", "options": [], "correctAnswer": "true", "explanation": "The trading account compares sales with the cost of goods sold to find gross profit.", "difficulty": "easy"},
+      {"questionText": "A net loss occurs when total expenses exceed the gross profit.", "options": [], "correctAnswer": "true", "explanation": "If expenses are greater than gross profit, the result is a net loss rather than a net profit.", "difficulty": "easy"},
+      {"questionText": "Cash in hand is a current asset.", "options": [], "correctAnswer": "true", "explanation": "Cash in hand is money the business owns and can use quickly, so it is a current asset.", "difficulty": "easy"},
+      {"questionText": "The capital of a business increases when the business makes a net profit.", "options": [], "correctAnswer": "true", "explanation": "Net profit belongs to the owner and is added to capital, so the capital increases.", "difficulty": "easy"},
+      {"questionText": "The balance sheet is an account in the ledger.", "options": [], "correctAnswer": "false", "explanation": "The balance sheet is a statement of assets, liabilities and capital, not an account in the ledger.", "difficulty": "easy"},
+      {"questionText": "A machine bought for use over many years is a current asset.", "options": [], "correctAnswer": "false", "explanation": "A machine used over many years is a fixed asset, not a current asset.", "difficulty": "easy"},
+      {"questionText": "If the trial balance totals agree, the ledger is certainly free of all errors.", "options": [], "correctAnswer": "false", "explanation": "Agreeing totals only prove arithmetical accuracy; some errors such as omissions do not affect the totals.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Formula for profit",
-        "options": [],
-        "correctAnswer": "Profit = Selling Price - Cost Price",
-        "explanation": "Used whenever the selling price is greater than the cost price.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for percentage profit",
-        "options": [],
-        "correctAnswer": "Percentage profit = (Profit / Cost Price) x 100",
-        "explanation": "Percentage profit and loss are always based on the cost price.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for simple interest",
-        "options": [],
-        "correctAnswer": "I = (P x R x T) / 100",
-        "explanation": "P is principal, R is rate per annum, and T is time in years.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for the amount under compound interest",
-        "options": [],
-        "correctAnswer": "A = P(1 + R/100)^n",
-        "explanation": "P is principal, R is rate per period, and n is the number of periods.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of discount",
-        "options": [],
-        "correctAnswer": "A reduction made off the marked price of an item",
-        "explanation": "Selling price = Marked price - Discount.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of commission",
-        "options": [],
-        "correctAnswer": "A payment, usually a percentage, given for selling goods or services",
-        "explanation": "Commission = rate x total sales value.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of hire purchase",
-        "options": [],
-        "correctAnswer": "Buying goods by paying a deposit and the balance in instalments",
-        "explanation": "Total hire purchase price = deposit + total instalments, usually more than the cash price.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of depreciation",
-        "options": [],
-        "correctAnswer": "The decrease in the value of an asset over time",
-        "explanation": "Often calculated on the reducing balance using A = P(1 - R/100)^n.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Purpose of a trial balance",
-        "options": [],
-        "correctAnswer": "To check that total debits equal total credits in the ledger",
-        "explanation": "It helps detect arithmetic errors before preparing final accounts.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of a ledger",
-        "options": [],
-        "correctAnswer": "A book containing all the accounts of a business",
-        "explanation": "Transactions are posted to individual accounts in the ledger after being recorded.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Accounting equation", "options": [], "correctAnswer": "The relationship Assets = Capital + Liabilities, which must always balance.", "explanation": "It shows that everything the business owns is financed either by the owner's capital or by amounts owed to others. Rearranging it lets you find any missing value. Exam Tip: learn Assets = Capital + Liabilities and rearrange it as needed.", "difficulty": "easy"},
+      {"questionText": "Double entry", "options": [], "correctAnswer": "A system where every transaction is recorded twice, as a debit in one account and an equal credit in another.", "explanation": "Because debits always equal credits, the books stay balanced after each transaction. This keeps a complete record of both sides of every deal. Exam Tip: for every debit there is an equal and opposite credit.", "difficulty": "easy"},
+      {"questionText": "Debtor", "options": [], "correctAnswer": "A person or business that owes money to the business, usually for goods bought on credit.", "explanation": "Debtors are shown as an asset because the business expects to receive the money owed. When a debtor pays, the debtors account is credited. Exam Tip: a debtor owes you, so it is an asset.", "difficulty": "easy"},
+      {"questionText": "Creditor", "options": [], "correctAnswer": "A person or business to whom the business owes money, usually for goods bought on credit.", "explanation": "Creditors are shown as a liability because the business must pay them later. Paying a creditor reduces both cash and the creditor's balance. Exam Tip: a creditor is owed by you, so it is a liability.", "difficulty": "easy"},
+      {"questionText": "Asset", "options": [], "correctAnswer": "Anything of value that the business owns or is owed, such as cash, stock, machinery or debtors.", "explanation": "Assets can be fixed, like machinery, or current, like cash and stock. They appear on the assets side of the balance sheet. Exam Tip: assets are what the business owns or is owed.", "difficulty": "easy"},
+      {"questionText": "Liability", "options": [], "correctAnswer": "An amount that the business owes to others, such as creditors or a bank loan.", "explanation": "Liabilities show how much of the business is financed by outsiders. They are settled by paying money in the future. Exam Tip: liabilities are the debts the business must repay.", "difficulty": "easy"},
+      {"questionText": "Capital", "options": [], "correctAnswer": "The money or resources that the owner invests in the business.", "explanation": "Capital equals assets minus liabilities and represents what the business owes back to its owner. It increases with net profit and decreases with drawings. Exam Tip: Capital = Assets - Liabilities.", "difficulty": "easy"},
+      {"questionText": "Gross profit", "options": [], "correctAnswer": "The profit found using Gross profit = Sales - Cost of goods sold.", "explanation": "It measures the profit made on buying and selling goods before other expenses. For example sales of 800,000 minus cost of goods sold of 550,000 gives 250,000. Exam Tip: gross profit is calculated in the trading account.", "difficulty": "easy"},
+      {"questionText": "Net profit", "options": [], "correctAnswer": "The profit found using Net profit = Gross profit - Expenses.", "explanation": "It shows the true profit after all running expenses are deducted from gross profit. For example gross profit of 250,000 minus expenses of 90,000 gives 160,000. Exam Tip: net profit is added to the owner's capital.", "difficulty": "easy"},
+      {"questionText": "Trial balance", "options": [], "correctAnswer": "A list of all the debit and credit balances taken from the ledger to check they are equal.", "explanation": "If total debits equal total credits, the ledger is arithmetically correct, though some errors do not affect the totals. It is prepared before the final accounts. Exam Tip: an agreeing trial balance does not prove there are no errors.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A trader sold two articles for TZS 48,000 each. On the first he made a 20% profit and on the second a 20% loss. What was his overall result on the two transactions?",
+        "questionText": "Opening stock is Tsh 200,000, purchases are Tsh 1,500,000, closing stock is Tsh 300,000 and sales are Tsh 2,000,000. What is the gross profit?",
         "options": [
-          {
-            "id": "a",
-            "text": "No profit, no loss",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A loss of TZS 4,000",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "A profit of TZS 4,000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A loss of TZS 2,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tsh 500,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 600,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 700,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 1,400,000", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Cost 1 = 48,000/1.20 = 40,000; Cost 2 = 48,000/0.80 = 60,000. Total cost = 100,000, total sales = 96,000, so a loss of 4,000.",
+        "explanation": "First find the cost of goods sold = Opening stock + Purchases - Closing stock = 200,000 + 1,500,000 - 300,000 = 1,400,000. Then gross profit = Sales - Cost of goods sold = 2,000,000 - 1,400,000 = Tsh 600,000. Exam Tip: option D stops at the cost of goods sold; remember to subtract it from sales.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A sum of money invested at compound interest doubles in 2 years. If the rate of interest is the same each year, which equation gives the annual rate r (as a fraction)?",
+        "questionText": "Gross profit is Tsh 600,000. Expenses are rent Tsh 120,000, salaries Tsh 200,000 and electricity Tsh 30,000. Opening capital is Tsh 2,000,000 and drawings are Tsh 100,000. What is the closing capital?",
         "options": [
-          {
-            "id": "a",
-            "text": "(1 + r)^2 = 2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1 + 2r = 2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(1 + r)^2 = 1",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "2(1 + r) = 2",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tsh 2,150,000", "isCorrect": true},
+          {"id": "b", "text": "Tsh 2,250,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 2,600,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 2,050,000", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Amount = P(1 + r)^2 and it equals 2P, so dividing by P gives (1 + r)^2 = 2.",
+        "explanation": "Total expenses = 120,000 + 200,000 + 30,000 = 350,000, so net profit = 600,000 - 350,000 = 250,000. Closing capital = Opening capital + Net profit - Drawings = 2,000,000 + 250,000 - 100,000 = Tsh 2,150,000. Exam Tip: option B forgets to subtract the drawings.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A shopkeeper allows a 4% cash discount on the marked price and still makes a 20% profit on cost. If the cost price is TZS 100,000, what is the marked price?",
+        "questionText": "A business has fixed assets Tsh 3,000,000, stock Tsh 800,000, debtors Tsh 400,000, cash Tsh 300,000 and creditors Tsh 700,000. What is the capital?",
         "options": [
-          {
-            "id": "a",
-            "text": "TZS 120,000",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "TZS 124,800",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "TZS 125,000",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "TZS 130,000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tsh 4,500,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 5,200,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 3,800,000", "isCorrect": true},
+          {"id": "d", "text": "Tsh 3,100,000", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Selling price = 120,000 (20% profit). Since this is 96% of the marked price, marked price = 120,000 / 0.96 = 125,000.",
+        "explanation": "Total assets = 3,000,000 + 800,000 + 400,000 + 300,000 = 4,500,000. Capital = Assets - Liabilities = 4,500,000 - 700,000 = Tsh 3,800,000. Exam Tip: creditors are a liability, not an asset, so subtract them.",
         "difficulty": "hard"
       }
     ]

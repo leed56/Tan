@@ -2,939 +2,371 @@
   "topicId": "form_3_mathematics_topic_3",
   "topicName": "Statistics",
   "order": 3,
-  "description": "Collection and presentation of data using frequency distribution tables, measures of central tendency (mean, median, mode) and range for raw and grouped data, and statistical graphs including histograms, frequency polygons and the cumulative frequency curve (ogive).",
+  "description": "An introduction to statistics covering measures of central tendency (mean, median and mode) for ungrouped and grouped data, including the assumed mean method, modal and median classes, class boundaries and midpoints, and reading the median from a cumulative frequency curve.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the mode of the data set: 4, 7, 7, 2, 9, 7, 4?",
+        "questionText": "Find the mean of 2, 5, 7, 10, 12, 12.",
         "options": [
-          {
-            "id": "a",
-            "text": "4",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "7",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The mode is the value that appears most often. The value 7 appears three times, more than any other.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Find the range of the data: 12, 5, 18, 9, 21, 7.",
-        "options": [
-          {
-            "id": "a",
-            "text": "16",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "21",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "14",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "9",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Range = highest value - lowest value = 21 - 5 = 16.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the mean of the numbers 6, 10, 14, 8, 12?",
-        "options": [
-          {
-            "id": "a",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "10",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "11",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "8.5", "isCorrect": false},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "8", "isCorrect": true},
+          {"id": "d", "text": "9.6", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Mean = (6 + 10 + 14 + 8 + 12) / 5 = 50 / 5 = 10.",
+        "explanation": "The sum of the values is 48 and there are 6 values, so the mean is 48/6 = 8. Here 8.5 is the median and 12 is the mode. Exam Tip: the mean is the total divided by how many values there are.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Find the median of the data set: 3, 8, 1, 6, 9.",
+        "questionText": "Find the median of 13, 5, 9, 21, 7.",
         "options": [
-          {
-            "id": "a",
-            "text": "8",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "6",
-            "isCorrect": true
-          }
+          {"id": "a", "text": "9", "isCorrect": true},
+          {"id": "b", "text": "13", "isCorrect": false},
+          {"id": "c", "text": "11", "isCorrect": false},
+          {"id": "d", "text": "7", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sorting the values gives 5, 7, 9, 13, 21, and the middle value of these five numbers is 9. Exam Tip: always arrange the data in order before finding the median.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the mode of 3, 6, 6, 7, 9, 6, 9.",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": false},
+          {"id": "b", "text": "6", "isCorrect": true},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "6.57", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The value 6 appears three times, more often than any other value, so it is the mode. Exam Tip: the mode is the most frequent value, not the average.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the median of 4, 8, 10, 14.",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": false},
+          {"id": "b", "text": "10", "isCorrect": false},
+          {"id": "c", "text": "9", "isCorrect": true},
+          {"id": "d", "text": "12", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "With an even number of values, the median is the average of the two middle values, (8 + 10)/2 = 9. Exam Tip: for an even count, average the two central values.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A grouped frequency table has classes 0-9, 10-19, 20-29 with frequencies 2, 5, 3 for 10 students. What is the mean score?",
+        "options": [
+          {"id": "a", "text": "11", "isCorrect": false},
+          {"id": "b", "text": "15.5", "isCorrect": true},
+          {"id": "c", "text": "14.5", "isCorrect": false},
+          {"id": "d", "text": "16.2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Using midpoints 4.5, 14.5, 24.5, the sum of fx is 2(4.5) + 5(14.5) + 3(24.5) = 155, so the mean is 155/10 = 15.5. Exam Tip: represent each class by its midpoint before multiplying by the frequency.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Using an assumed mean A = 50 for 20 values with a sum of fd equal to 30, find the actual mean.",
+        "options": [
+          {"id": "a", "text": "50", "isCorrect": false},
+          {"id": "b", "text": "48.5", "isCorrect": false},
+          {"id": "c", "text": "51.5", "isCorrect": true},
+          {"id": "d", "text": "80", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The actual mean is A + (sum of fd)/(sum of f) = 50 + 30/20 = 50 + 1.5 = 51.5. Exam Tip: add the average deviation to the assumed mean.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mean of five numbers is 12. Four of them are 10, 15, 8 and 14. Find the fifth number.",
+        "options": [
+          {"id": "a", "text": "12", "isCorrect": false},
+          {"id": "b", "text": "13", "isCorrect": true},
+          {"id": "c", "text": "11.75", "isCorrect": false},
+          {"id": "d", "text": "47", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The total of the five numbers is 5 x 12 = 60, and the four known values sum to 47, so the fifth is 60 - 47 = 13. Exam Tip: multiply the mean by the count to get the total.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A marks table has classes 1-10, 11-20, 21-30, 31-40 with frequencies 3, 7, 6, 4 for 20 students. Which is the median class?",
+        "options": [
+          {"id": "a", "text": "1-10", "isCorrect": false},
+          {"id": "b", "text": "11-20", "isCorrect": true},
+          {"id": "c", "text": "21-30", "isCorrect": false},
+          {"id": "d", "text": "31-40", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Here n/2 = 10, and the cumulative frequencies are 3 then 10, so the 10th value falls in the class 11-20. Exam Tip: the median class is where the cumulative frequency first reaches n/2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The modal class 20-24 has frequency 12, the class before it has frequency 8, the class after it has frequency 6, and the class width is 5. Find the mode.",
+        "options": [
+          {"id": "a", "text": "22", "isCorrect": false},
+          {"id": "b", "text": "22.5", "isCorrect": false},
+          {"id": "c", "text": "21.5", "isCorrect": true},
+          {"id": "d", "text": "23.5", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "With L = 19.5, d1 = 12 - 8 = 4 and d2 = 12 - 6 = 6, the mode is 19.5 + (4/(4+6)) x 5 = 19.5 + 2 = 21.5. Exam Tip: use the lower boundary of the modal class, not its lower limit.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For n = 40, the median class has lower boundary L = 29.5, frequency 10, class width 10 and cumulative frequency before it of 14. Find the median.",
+        "options": [
+          {"id": "a", "text": "30.1", "isCorrect": false},
+          {"id": "b", "text": "35.5", "isCorrect": true},
+          {"id": "c", "text": "36", "isCorrect": false},
+          {"id": "d", "text": "34.5", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The median is L + ((n/2 - cf)/f) x c = 29.5 + ((20 - 14)/10) x 10 = 29.5 + 6 = 35.5. Exam Tip: n/2 = 20 here, and cf is the cumulative frequency of the class before the median class.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Each of 10 values is increased by 5. What happens to the mean?",
+        "options": [
+          {"id": "a", "text": "It increases by 50", "isCorrect": false},
+          {"id": "b", "text": "It stays the same", "isCorrect": false},
+          {"id": "c", "text": "It increases by 5", "isCorrect": true},
+          {"id": "d", "text": "It increases by 0.5", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Adding 5 to every value adds 50 to the total, and 50 divided by 10 values raises the mean by 5. Exam Tip: adding a constant to every value shifts the mean by that same constant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mean mark of 8 students is 62. What is the total of their marks?",
+        "options": [
+          {"id": "a", "text": "70", "isCorrect": false},
+          {"id": "b", "text": "496", "isCorrect": true},
+          {"id": "c", "text": "54", "isCorrect": false},
+          {"id": "d", "text": "7.75", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The total equals the mean times the number of students, 62 x 8 = 496. Exam Tip: total = mean x number of values.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which measure of central tendency is most affected by an extremely large value?",
+        "options": [
+          {"id": "a", "text": "Median", "isCorrect": false},
+          {"id": "b", "text": "Mode", "isCorrect": false},
+          {"id": "c", "text": "Mean", "isCorrect": true},
+          {"id": "d", "text": "All equally", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The mean uses every value in its calculation, so a very large outlier pulls it up, while the median and mode are barely affected. Exam Tip: the mean is the least resistant to outliers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a class, 20 boys have a mean of 60 and 30 girls have a mean of 70. What is the mean for the whole class?",
+        "options": [
+          {"id": "a", "text": "65", "isCorrect": false},
+          {"id": "b", "text": "66", "isCorrect": true},
+          {"id": "c", "text": "68", "isCorrect": false},
+          {"id": "d", "text": "64", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The boys total 20 x 60 = 1200 and the girls total 30 x 70 = 2100, so the combined mean is (1200 + 2100)/50 = 3300/50 = 66. Exam Tip: combine totals and counts separately, then divide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On an ogive (cumulative frequency curve) for 40 students, at which cumulative frequency is the median read off?",
+        "options": [
+          {"id": "a", "text": "40", "isCorrect": false},
+          {"id": "b", "text": "20.5", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "20", "isCorrect": true}
         ],
         "correctAnswer": "d",
-        "explanation": "Arranged in order: 1, 3, 6, 8, 9. The middle value (3rd of 5) is 6.",
+        "explanation": "The median on an ogive is read at a cumulative frequency of n/2 = 40/2 = 20. Exam Tip: draw a line across from n/2 on the cumulative frequency axis to find the median.",
         "difficulty": "easy"
-      },
-      {
-        "questionText": "Find the median of the data set: 4, 11, 7, 2, 9, 5.",
-        "options": [
-          {
-            "id": "a",
-            "text": "6",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "7",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "8",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Ordered: 2, 4, 5, 7, 9, 11. With 6 values the median is the mean of the 3rd and 4th: (5 + 7) / 2 = 6.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In a frequency distribution table, what does the frequency of a value represent?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The sum of all the values",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The number of times that value occurs",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The largest value in the data",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The average of the values",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Frequency is a count of how many times a particular value or class occurs in the data.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The scores 5, 6, 7, 8 have frequencies 2, 3, 4, 1 respectively. What is the mean score?",
-        "options": [
-          {
-            "id": "a",
-            "text": "6.6",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "6.0",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "6.4",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "6.5",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Sum = 5(2)+6(3)+7(4)+8(1) = 10+18+28+8 = 64; total frequency = 2+3+4+1 = 10; mean = 64/10 = 6.4.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which graph is used to display the cumulative frequency of grouped data?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Histogram",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Frequency polygon",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Ogive",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Pie chart",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The cumulative frequency curve is called an ogive; it plots cumulative frequency against the upper class boundaries.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For the class interval 20 - 29, what is the class mark (mid-value)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "24.5",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "25",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "24",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "29",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Class mark = (lower limit + upper limit) / 2 = (20 + 29) / 2 = 49 / 2 = 24.5.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "For the class interval 10 - 19, what is the class size (width) using class boundaries?",
-        "options": [
-          {
-            "id": "a",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "10",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "19",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "11",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Boundaries are 9.5 and 19.5, so the class size = 19.5 - 9.5 = 10.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In a histogram of grouped data with equal class widths, what is plotted on the vertical axis?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cumulative frequency",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Class boundaries",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Frequency",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Class marks",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "For equal class widths the heights of the bars represent the frequency of each class.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The mean of 5 numbers is 14. If a sixth number 26 is added, what is the new mean?",
-        "options": [
-          {
-            "id": "a",
-            "text": "16",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "20",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "15",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "18",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Original sum = 5 x 14 = 70; new sum = 70 + 26 = 96; new mean = 96 / 6 = 16.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which measure of central tendency is most affected by an extreme (very large) value?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Mode",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Median",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Mean",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Range",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The mean uses every value in its calculation, so an extreme value (outlier) pulls it strongly; the median and mode are resistant to outliers.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "From a cumulative frequency table, the cumulative frequency up to 'less than 40' is 18 and up to 'less than 50' is 27. How many values lie in the class 40 - 49?",
-        "options": [
-          {
-            "id": "a",
-            "text": "27",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "9",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "45",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "18",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The class frequency = difference of cumulative frequencies = 27 - 18 = 9.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The total frequency of a distribution is 50. Using an ogive, the median corresponds to which cumulative frequency value?",
-        "options": [
-          {
-            "id": "a",
-            "text": "50",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "12.5",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "25",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "37.5",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "On an ogive the median is read at a cumulative frequency of N/2 = 50/2 = 25.",
-        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The value that occurs most frequently in a set of data is called the _____.",
+        "questionText": "The mean of 7, 11, 6 and 16 is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "mode",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "mean",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "median",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "range",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "10", "isCorrect": true},
+          {"id": "b", "text": "40", "isCorrect": false},
+          {"id": "c", "text": "9", "isCorrect": false},
+          {"id": "d", "text": "11", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The mode is the most frequently occurring value in a data set.",
+        "explanation": "The sum is 40 and there are 4 values, so the mean is 40/4 = 10. Exam Tip: divide the total by the number of values.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The difference between the highest and lowest values in a data set is called the _____.",
+        "questionText": "The mode of 4, 9, 4, 7, 4, 9 is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "mean",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "range",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "mode",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "median",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Range = highest value - lowest value, a simple measure of spread.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The mean of the numbers 3, 7, 11, 15, 19 is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "13",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "11",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "55",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Sum = 3 + 7 + 11 + 15 + 19 = 55; mean = 55 / 5 = 11.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When data values are arranged in order, the middle value is called the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "mode",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "mean",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "range",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "median",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "The median is the central value of an ordered data set.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For the class interval 30 - 39, the class mark (mid-value) is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "34.5",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "35",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "34",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "39.5",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "4", "isCorrect": true},
+          {"id": "b", "text": "9", "isCorrect": false},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "6.17", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Class mark = (30 + 39) / 2 = 69 / 2 = 34.5.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The graph formed by joining the mid-points of the tops of histogram bars with straight lines is called a frequency _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "histogram",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "polygon",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "curve",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "ogive",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A frequency polygon joins the class marks (or tops of bars) with straight line segments.",
+        "explanation": "The value 4 appears three times, more than any other value, so it is the mode. Exam Tip: count how often each value occurs.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The cumulative frequency curve is also known as an _____.",
+        "questionText": "The median of 12, 3, 8 is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "histogram",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "polygon",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "ogive",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "parabola",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The ogive plots cumulative frequency against the upper class boundaries.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If the mean of 8 numbers is 12, then the sum of the 8 numbers is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "24",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "104",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "96",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Sum = mean x number of values = 12 x 8 = 96.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The median of the data set 14, 9, 21, 6, 18, 11 is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "12.5",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "11",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "14.5",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "8", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "7.67", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Ordered: 6, 9, 11, 14, 18, 21. Median = (11 + 14) / 2 = 25 / 2 = 12.5.",
-        "difficulty": "medium"
+        "explanation": "Sorted the values are 3, 8, 12, so the middle value is 8. Exam Tip: order the data first, then take the centre value.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "For the class interval 50 - 59, the lower class boundary is _____.",
+        "questionText": "If the mean of 6 numbers is 15, the sum of the numbers is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "50.5",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "49.5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "59.5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "54.5",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "90", "isCorrect": true},
+          {"id": "b", "text": "21", "isCorrect": false},
+          {"id": "c", "text": "2.5", "isCorrect": false},
+          {"id": "d", "text": "75", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "The lower class boundary is found by subtracting 0.5 from the lower limit: 50 - 0.5 = 49.5.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "The sum equals the mean times the count, 15 x 6 = 90. Exam Tip: sum = mean x number of values.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The class midpoint of the class 30-39 is ____.",
+        "options": [
+          {"id": "a", "text": "34.5", "isCorrect": true},
+          {"id": "b", "text": "35", "isCorrect": false},
+          {"id": "c", "text": "34", "isCorrect": false},
+          {"id": "d", "text": "39.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The midpoint is the average of the class limits, (30 + 39)/2 = 34.5. Exam Tip: add the lower and upper limits and divide by 2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the assumed mean method with A = 50, the deviation d for x = 57 is ____.",
+        "options": [
+          {"id": "a", "text": "7", "isCorrect": true},
+          {"id": "b", "text": "-7", "isCorrect": false},
+          {"id": "c", "text": "107", "isCorrect": false},
+          {"id": "d", "text": "50", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The deviation is d = x - A = 57 - 50 = 7. Exam Tip: subtract the assumed mean from the value.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For 25 ordered values, the median is the ____th value.",
+        "options": [
+          {"id": "a", "text": "13", "isCorrect": true},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "12.5", "isCorrect": false},
+          {"id": "d", "text": "25", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "For an odd count the median position is (n+1)/2 = (25+1)/2 = 13, so it is the 13th value. Exam Tip: use (n+1)/2 to locate the median position.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If the mean of x, 8 and 12 is 10, then x = ____.",
+        "options": [
+          {"id": "a", "text": "10", "isCorrect": true},
+          {"id": "b", "text": "30", "isCorrect": false},
+          {"id": "c", "text": "9", "isCorrect": false},
+          {"id": "d", "text": "20", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The total must be 3 x 10 = 30, so x = 30 - 8 - 12 = 10. Exam Tip: multiply the mean by the count, then subtract the known values.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a cumulative frequency table, the cumulative frequency of the last class equals the ____.",
+        "options": [
+          {"id": "a", "text": "total frequency n", "isCorrect": true},
+          {"id": "b", "text": "modal frequency", "isCorrect": false},
+          {"id": "c", "text": "median value", "isCorrect": false},
+          {"id": "d", "text": "class width", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Cumulative frequency adds up all frequencies, so by the last class it reaches the total frequency n. Exam Tip: the final cumulative frequency should equal the sum of all frequencies.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The lower class boundary of the class 40-49 is ____.",
+        "options": [
+          {"id": "a", "text": "39.5", "isCorrect": true},
+          {"id": "b", "text": "40", "isCorrect": false},
+          {"id": "c", "text": "40.5", "isCorrect": false},
+          {"id": "d", "text": "44.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The lower boundary is halfway between 39 and 40, which is 39.5. Exam Tip: subtract 0.5 from the lower limit to get the lower boundary.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "The mode of a data set can be more than one value.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "If two or more values share the highest frequency the data is bimodal or multimodal.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The mean of a data set must always be one of the values in the data set.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The mean is a calculated average and need not equal any actual data value, for example the mean of 2 and 5 is 3.5.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The range is a measure of how spread out the data is.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The range measures spread (dispersion) as the difference between the highest and lowest values.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a histogram with equal class widths the bars are drawn with gaps between them.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Histogram bars are drawn touching each other because the data is continuous.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When a data set has an even number of values, the median is the average of the two middle values.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "For an even number of ordered values the median is the mean of the two central values.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The cumulative frequency of the last class equals the total number of observations.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Cumulative frequency adds up all frequencies, so the final value equals the total frequency N.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The mean is the best measure of central tendency to use when the data contains extreme outliers.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The mean is strongly affected by outliers, so the median is usually preferred when extreme values are present.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A frequency distribution table organises data by showing each value or class together with its frequency.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A frequency distribution table lists values or class intervals alongside how often each occurs.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "On an ogive, the cumulative frequency is plotted against the lower class boundaries.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "An ogive plots cumulative frequency against the upper class boundaries, since the cumulative count is reached at the top of each class.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "For grouped data, the modal class is the class interval with the highest frequency.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The modal class is the interval that contains the greatest number of observations.",
-        "difficulty": "easy"
-      }
+      {"questionText": "The mode is the value that occurs most frequently in a data set.", "options": [], "correctAnswer": "true", "explanation": "By definition, the mode is the value that appears more often than any other in the data set.", "difficulty": "easy"},
+      {"questionText": "A data set can have more than one mode.", "options": [], "correctAnswer": "true", "explanation": "If two or more values share the highest frequency, the data set has more than one mode and is called bimodal or multimodal.", "difficulty": "easy"},
+      {"questionText": "The median of a data set is always one of the values in the data set.", "options": [], "correctAnswer": "false", "explanation": "For an even number of values the median is the average of the two middle values, which may not itself be in the data set.", "difficulty": "easy"},
+      {"questionText": "The mean of the data 5, 5, 5, 5 is 5.", "options": [], "correctAnswer": "true", "explanation": "The sum is 20 and there are 4 values, so the mean is 20/4 = 5, which matches every value.", "difficulty": "easy"},
+      {"questionText": "Data must be arranged in order of size before the median can be located.", "options": [], "correctAnswer": "true", "explanation": "The median is the middle value, so the data must first be sorted in order of size to find it.", "difficulty": "easy"},
+      {"questionText": "When calculating the mean of grouped data, each class is represented by its class midpoint.", "options": [], "correctAnswer": "true", "explanation": "The exact values within a class are unknown, so the midpoint is used to represent the whole class in the calculation.", "difficulty": "easy"},
+      {"questionText": "The modal class is the class interval with the highest frequency.", "options": [], "correctAnswer": "true", "explanation": "The modal class is defined as the class interval containing the greatest number of values, that is the highest frequency.", "difficulty": "easy"},
+      {"questionText": "If every value in a data set is increased by 3, the median also increases by 3.", "options": [], "correctAnswer": "true", "explanation": "Adding the same constant to every value shifts the whole ordered data set up by that amount, so the middle value also increases by 3.", "difficulty": "easy"},
+      {"questionText": "If all data values are whole numbers, the mean must also be a whole number.", "options": [], "correctAnswer": "false", "explanation": "The mean is a total divided by a count, so whole-number data can still give a decimal mean, such as (2 + 3)/2 = 2.5.", "difficulty": "easy"},
+      {"questionText": "In the assumed mean method, the actual mean is A + (sum of fd divided by sum of f).", "options": [], "correctAnswer": "true", "explanation": "The assumed mean method corrects the guess A by adding the average of the deviations, which is (sum of fd)/(sum of f).", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Mean",
-        "options": [],
-        "correctAnswer": "Sum of all values divided by the number of values.",
-        "explanation": "Mean = (sum of values) / (number of values); it uses every data value.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Median",
-        "options": [],
-        "correctAnswer": "The middle value of data arranged in order.",
-        "explanation": "For an even count, it is the average of the two middle values; unaffected by outliers.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Mode",
-        "options": [],
-        "correctAnswer": "The value that occurs most often.",
-        "explanation": "A data set can have one mode, more than one mode, or no mode at all.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Range",
-        "options": [],
-        "correctAnswer": "Highest value minus lowest value.",
-        "explanation": "The range is a simple measure of how spread out the data is.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Frequency",
-        "options": [],
-        "correctAnswer": "The number of times a value or class occurs.",
-        "explanation": "Frequencies are recorded in a frequency distribution table.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Class mark",
-        "options": [],
-        "correctAnswer": "The mid-value of a class interval.",
-        "explanation": "Class mark = (lower limit + upper limit) / 2; used to estimate the mean of grouped data.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Cumulative frequency",
-        "options": [],
-        "correctAnswer": "The running total of frequencies up to a given class.",
-        "explanation": "It is used to draw the ogive and to estimate the median of grouped data.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Histogram",
-        "options": [],
-        "correctAnswer": "A graph of touching bars showing the frequency of class intervals.",
-        "explanation": "Used for continuous grouped data; bar heights show frequency when class widths are equal.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Frequency polygon",
-        "options": [],
-        "correctAnswer": "A line graph joining the class marks plotted against frequency.",
-        "explanation": "It is formed by joining the mid-points of the tops of histogram bars with straight lines.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ogive",
-        "options": [],
-        "correctAnswer": "The cumulative frequency curve.",
-        "explanation": "Plots cumulative frequency against upper class boundaries; used to read the median and quartiles.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Mean of ungrouped data", "options": [], "correctAnswer": "The sum of all the values divided by the number of values.", "explanation": "For 2, 4, 6 the sum is 12 and there are 3 values, so the mean is 12/3 = 4. Exam Tip: mean = total divided by count.", "difficulty": "easy"},
+      {"questionText": "Median of ungrouped data", "options": [], "correctAnswer": "The middle value when the data is arranged in order of size, or the average of the two middle values if there is an even number of them.", "explanation": "For 3, 8, 9 the median is 8, while for 4, 8, 10, 14 it is (8 + 10)/2 = 9. Exam Tip: always sort the data before locating the middle.", "difficulty": "easy"},
+      {"questionText": "Mode", "options": [], "correctAnswer": "The value that occurs most frequently in a data set.", "explanation": "In 6, 6, 6, 7, 9 the value 6 appears most often, so the mode is 6. Exam Tip: the mode is about frequency, not size.", "difficulty": "easy"},
+      {"questionText": "Mean of grouped data (midpoint method)", "options": [], "correctAnswer": "The sum of frequency times midpoint (sum of fx) divided by the total frequency (sum of f).", "explanation": "Each class is represented by its midpoint, then mean = (sum of fx)/(sum of f). For midpoints 4.5, 14.5, 24.5 with frequencies 2, 5, 3 the mean is 155/10 = 15.5. Exam Tip: find each midpoint first, then multiply by the frequency.", "difficulty": "easy"},
+      {"questionText": "Assumed mean method", "options": [], "correctAnswer": "A method that finds the mean using mean = A + (sum of fd)/(sum of f), where A is a guessed mean and d = x - A is the deviation.", "explanation": "With A = 50 and (sum of fd)/(sum of f) = 30/20 = 1.5, the mean is 50 + 1.5 = 51.5. Exam Tip: choose A near the centre to keep the deviations small.", "difficulty": "easy"},
+      {"questionText": "Modal class", "options": [], "correctAnswer": "The class interval that has the highest frequency in a grouped frequency table.", "explanation": "If the class 20-24 has the greatest frequency of 12, then 20-24 is the modal class. Exam Tip: look for the row with the largest frequency.", "difficulty": "easy"},
+      {"questionText": "Median class", "options": [], "correctAnswer": "The class interval that contains the (n/2)th value, found using the cumulative frequencies.", "explanation": "For n = 20, n/2 = 10, and if the cumulative frequencies reach 10 in the class 11-20, that is the median class. Exam Tip: find where the cumulative frequency first reaches n/2.", "difficulty": "easy"},
+      {"questionText": "Class boundary", "options": [], "correctAnswer": "The point halfway between the upper limit of one class and the lower limit of the next, removing the gaps between classes.", "explanation": "For the class 40-49 the lower boundary is 39.5 and the upper boundary is 49.5. Exam Tip: subtract 0.5 from the lower limit and add 0.5 to the upper limit.", "difficulty": "easy"},
+      {"questionText": "Class midpoint", "options": [], "correctAnswer": "The average of the lower and upper class limits, used to represent the class.", "explanation": "For the class 30-39 the midpoint is (30 + 39)/2 = 34.5. Exam Tip: add the two limits and divide by 2.", "difficulty": "easy"},
+      {"questionText": "Cumulative frequency (ogive)", "options": [], "correctAnswer": "A running total of frequencies up to the upper boundary of each class, which is plotted to draw an ogive curve.", "explanation": "The last cumulative frequency equals the total frequency n, and the median is read from the ogive at n/2. Exam Tip: plot cumulative frequency against the upper class boundaries.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "The marks of 40 students are grouped as follows: 0-9 (4), 10-19 (10), 20-29 (14), 30-39 (8), 40-49 (4). Using class marks, estimate the mean mark.",
+        "questionText": "A grouped table has marks 10-19, 20-29, 30-39, 40-49 with frequencies 4, 6, 10, 5 for 25 students. What is the mean mark?",
         "options": [
-          {
-            "id": "a",
-            "text": "23.0",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "24.0",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "24.5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "22.0",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "26.4", "isCorrect": false},
+          {"id": "b", "text": "30.9", "isCorrect": true},
+          {"id": "c", "text": "34.5", "isCorrect": false},
+          {"id": "d", "text": "29.9", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Class marks: 4.5, 14.5, 24.5, 34.5, 44.5. Sum of fx = 4(4.5)+10(14.5)+14(24.5)+8(34.5)+4(44.5) = 18+145+343+276+178 = 960; estimated mean = 960/40 = 24.0.",
+        "explanation": "The midpoints are 14.5, 24.5, 34.5, 44.5. Multiplying by the frequencies gives 4(14.5) + 6(24.5) + 10(34.5) + 5(44.5) = 58 + 147 + 345 + 222.5 = 772.5. Dividing by 25 gives a mean of 772.5/25 = 30.9. Option A wrongly uses the lower class limits instead of the midpoints. Exam Tip: use the class midpoints, not the lower limits.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A data set of 7 numbers has a mean of 10. Six of the numbers are 8, 12, 9, 11, 7 and 13. What is the seventh number?",
+        "questionText": "Using the same table (marks 10-19, 20-29, 30-39, 40-49 with frequencies 4, 6, 10, 5 for 25 students), what is the median mark?",
         "options": [
-          {
-            "id": "a",
-            "text": "10",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "8",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "14",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Total required = 7 x 10 = 70; sum of six given = 8+12+9+11+7+13 = 60; seventh number = 70 - 60 = 10.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The cumulative frequencies for classes with upper boundaries 9.5, 19.5, 29.5, 39.5 are 5, 17, 33, 40 respectively. Using N/2, which class contains the median?",
-        "options": [
-          {
-            "id": "a",
-            "text": "0 - 9",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "10 - 19",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "20 - 29",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "30 - 39",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "34.5", "isCorrect": false},
+          {"id": "b", "text": "32.5", "isCorrect": false},
+          {"id": "c", "text": "32", "isCorrect": true},
+          {"id": "d", "text": "35", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "N = 40 so N/2 = 20. The cumulative frequency first reaches or passes 20 in the class 20 - 29 (cumulative 33, since the previous class only reached 17).",
+        "explanation": "Here n/2 = 12.5, and the cumulative frequencies are 4, 10, 20, so the median falls in the class 30-39. With L = 29.5, cf before = 10, f = 10 and c = 10, the median is 29.5 + ((12.5 - 10)/10) x 10 = 29.5 + 2.5 = 32. Exam Tip: use the lower boundary 29.5, not the limit 30.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Fatuma records her six daily sales in thousand Tsh as 40, 55, 45, 40, 60, 48. What are the mean, median and mode?",
+        "options": [
+          {"id": "a", "text": "Mean 48, Median 46.5, Mode 40", "isCorrect": true},
+          {"id": "b", "text": "Mean 48, Median 45, Mode 40", "isCorrect": false},
+          {"id": "c", "text": "Mean 46.5, Median 48, Mode 60", "isCorrect": false},
+          {"id": "d", "text": "Mean 48, Median 46.5, Mode 60", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The mean is 288/6 = 48. Sorting gives 40, 40, 45, 48, 55, 60, so the median is (45 + 48)/2 = 46.5. The value 40 occurs twice, so the mode is 40. Exam Tip: the mode is the most frequent value, not the largest.",
         "difficulty": "hard"
       }
     ]

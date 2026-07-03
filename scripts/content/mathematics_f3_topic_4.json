@@ -2,939 +2,371 @@
   "topicId": "form_3_mathematics_topic_4",
   "topicName": "Rates and Variations",
   "order": 4,
-  "description": "Rates and ratios, the constant of proportionality, and direct, inverse, joint and partial variation, including forming variation equations and solving real-life word problems.",
+  "description": "An introduction to rates and unit rates, average speed and unit conversions such as km/h to m/s, currency exchange, and direct, inverse and joint variation using the constant of variation. It applies these ideas to practical problems including worker-days and currency conversion.",
   "packs": {
     "mcq": [
       {
-        "questionText": "If y varies directly as x and y = 20 when x = 5, what is the constant of proportionality k?",
+        "questionText": "A bus travels 240 km in 3 hours. What is its average speed?",
         "options": [
-          {
-            "id": "a",
-            "text": "4",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "100",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.25",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "720 km/h", "isCorrect": false},
+          {"id": "b", "text": "80 km/h", "isCorrect": true},
+          {"id": "c", "text": "60 km/h", "isCorrect": false},
+          {"id": "d", "text": "0.0125 km/h", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Average speed is distance divided by time, so 240 km / 3 h = 80 km/h. Exam Tip: speed = distance / time, so divide the kilometres by the hours.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 1 USD = Tsh 2,500, convert 40 USD to shillings.",
+        "options": [
+          {"id": "a", "text": "Tsh 62.50", "isCorrect": false},
+          {"id": "b", "text": "Tsh 10,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 100,000", "isCorrect": true},
+          {"id": "d", "text": "Tsh 2,540", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "To change dollars into shillings, multiply by the rate: 40 x 2,500 = Tsh 100,000. Exam Tip: going from USD to shillings you multiply by the rate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 1 USD = Tsh 2,500, convert Tsh 150,000 to USD.",
+        "options": [
+          {"id": "a", "text": "600", "isCorrect": false},
+          {"id": "b", "text": "60", "isCorrect": true},
+          {"id": "c", "text": "375,000,000", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "To change shillings into dollars, divide by the rate: 150,000 / 2,500 = 60 USD. Exam Tip: going from shillings to USD you divide by the rate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A tap fills 45 litres in 9 minutes. What is the rate of flow?",
+        "options": [
+          {"id": "a", "text": "5 L/min", "isCorrect": true},
+          {"id": "b", "text": "405 L/min", "isCorrect": false},
+          {"id": "c", "text": "0.2 L/min", "isCorrect": false},
+          {"id": "d", "text": "9 L/min", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "For direct variation y = kx, so k = y/x = 20/5 = 4.",
+        "explanation": "The rate is the amount per unit time, so 45 L / 9 min = 5 L/min. Exam Tip: a rate is found by dividing the quantity by the time.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which symbol is used to represent variation (proportionality)?",
+        "questionText": "y varies directly as x, and y = 12 when x = 3. Find y when x = 7.",
         "options": [
-          {
-            "id": "a",
-            "text": "=",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "∝",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "≈",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "≠",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "16", "isCorrect": false},
+          {"id": "b", "text": "28", "isCorrect": true},
+          {"id": "c", "text": "84", "isCorrect": false},
+          {"id": "d", "text": "21", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The symbol ∝ means 'varies as' or 'is proportional to', as in y ∝ x.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A car travels 240 km in 3 hours. What is its average rate (speed)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "720 km/h",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "80 km/h",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "60 km/h",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "243 km/h",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Rate = distance ÷ time = 240 ÷ 3 = 80 km/h.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If p varies inversely as q and p = 6 when q = 4, find p when q = 8.",
-        "options": [
-          {
-            "id": "a",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "48",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Inverse: pq = k = 6×4 = 24. When q = 8, p = 24/8 = 3.",
+        "explanation": "Direct variation means y = kx. From 12 = k x 3, k = 4, so y = 4 x 7 = 28. Exam Tip: find k first from the given pair, then use it.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The ratio of boys to girls in a class is 3:5. If there are 40 students, how many are girls?",
+        "questionText": "y varies inversely as x, and y = 8 when x = 5. Find y when x = 10.",
         "options": [
-          {
-            "id": "a",
-            "text": "15",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "25",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "20",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "8",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "16", "isCorrect": false},
+          {"id": "b", "text": "40", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "2", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Total parts = 3+5 = 8. Girls = (5/8)×40 = 25.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If y ∝ x and y = 18 when x = 6, find y when x = 10.",
-        "options": [
-          {
-            "id": "a",
-            "text": "30",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "60",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "28",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "k = 18/6 = 3, so y = 3x = 3×10 = 30.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If 5 workers build a wall in 12 days, how many days will 3 workers take, working at the same rate?",
-        "options": [
-          {
-            "id": "a",
-            "text": "20 days",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "7.2 days",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "36 days",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "4 days",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Workers and time are inversely proportional: 5×12 = 60 worker-days. Time = 60/3 = 20 days.",
+        "correctAnswer": "c",
+        "explanation": "Inverse variation means y = k/x. From 8 = k/5, k = 40, so y = 40/10 = 4. Exam Tip: for inverse variation the product xy stays constant.",
         "difficulty": "medium"
       },
       {
-        "questionText": "z varies jointly as x and y. If z = 24 when x = 2 and y = 3, find k.",
+        "questionText": "y varies directly as the square of x, and y = 18 when x = 3. Find y when x = 5.",
         "options": [
-          {
-            "id": "a",
-            "text": "6",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "4",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "144",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "30", "isCorrect": false},
+          {"id": "b", "text": "50", "isCorrect": true},
+          {"id": "c", "text": "45", "isCorrect": false},
+          {"id": "d", "text": "10", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Joint variation z = kxy, so k = z/(xy) = 24/(2×3) = 24/6 = 4.",
+        "explanation": "Here y = kx². From 18 = k x 3² = 9k, k = 2, so y = 2 x 5² = 50. Exam Tip: square the value of x before multiplying by k.",
         "difficulty": "medium"
       },
       {
-        "questionText": "If a varies directly as the square of b, and a = 50 when b = 5, find a when b = 8.",
+        "questionText": "y varies directly as x, and y = 20 when x = 4. Find x when y = 35.",
         "options": [
-          {
-            "id": "a",
-            "text": "80",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "128",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "64",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "100",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "175", "isCorrect": false},
+          {"id": "b", "text": "8.75", "isCorrect": false},
+          {"id": "c", "text": "7", "isCorrect": true},
+          {"id": "d", "text": "140", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "a = kb²; k = 50/25 = 2. When b = 8, a = 2×64 = 128.",
+        "correctAnswer": "c",
+        "explanation": "From y = kx, 20 = k x 4 gives k = 5, so 35 = 5x and x = 35/5 = 7. Exam Tip: once you know k, rearrange to solve for the unknown.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A tap fills a tank in 6 hours. What fraction of the tank is filled in 1 hour?",
+        "questionText": "6 workers dig a shamba in 10 days. How many days will 4 workers take at the same rate?",
         "options": [
-          {
-            "id": "a",
-            "text": "1/6",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "6",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "1/3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "5/6",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "6 2/3 days", "isCorrect": false},
+          {"id": "b", "text": "24 days", "isCorrect": false},
+          {"id": "c", "text": "15 days", "isCorrect": true},
+          {"id": "d", "text": "12 days", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Rate of filling = 1 tank ÷ 6 hours = 1/6 of the tank per hour.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If m ∝ 1/n and m = 9 when n = 2, find n when m = 6.",
-        "options": [
-          {
-            "id": "a",
-            "text": "3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "4",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "1.33",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "mn = k = 9×2 = 18. When m = 6, n = 18/6 = 3.",
+        "correctAnswer": "c",
+        "explanation": "Workers and days are inversely proportional, so total work = 6 x 10 = 60 worker-days, and 60 / 4 = 15 days. Exam Tip: fewer workers means more days; keep worker-days constant.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The cost C is partly constant and partly varies with n, given by C = a + bn. If C = 70 when n = 10 and C = 100 when n = 20, find b.",
+        "questionText": "y varies jointly as x and z, and y = 24 when x = 2 and z = 3. Find y when x = 5 and z = 2.",
         "options": [
-          {
-            "id": "a",
-            "text": "3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "30",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "40",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "7",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "30", "isCorrect": false},
+          {"id": "b", "text": "20", "isCorrect": false},
+          {"id": "c", "text": "48", "isCorrect": false},
+          {"id": "d", "text": "40", "isCorrect": true}
         ],
-        "correctAnswer": "a",
-        "explanation": "Subtracting: 100−70 = b(20−10), so 30 = 10b, giving b = 3.",
-        "difficulty": "hard"
+        "correctAnswer": "d",
+        "explanation": "Joint variation means y = kxz. From 24 = k x 2 x 3 = 6k, k = 4, so y = 4 x 5 x 2 = 40. Exam Tip: multiply both variables together, then by k.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "Which equation represents 'y varies inversely as x'?",
+        "questionText": "Convert 90 km/h to m/s.",
         "options": [
-          {
-            "id": "a",
-            "text": "y = kx",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "y = k/x",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "y = k + x",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "y = kx²",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "324", "isCorrect": false},
+          {"id": "b", "text": "25", "isCorrect": true},
+          {"id": "c", "text": "90", "isCorrect": false},
+          {"id": "d", "text": "15", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Inverse variation means y = k/x, so that the product xy is constant.",
-        "difficulty": "easy"
+        "explanation": "To change km/h to m/s multiply by 5/18, so 90 x 5/18 = 25 m/s. Exam Tip: km/h to m/s means multiply by 5/18.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "If 8 pens cost 2400 shillings, what is the cost of 5 pens at the same rate?",
+        "questionText": "y varies directly as the square root of x, and y = 6 when x = 9. Find y when x = 25.",
         "options": [
-          {
-            "id": "a",
-            "text": "1500 shillings",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1200 shillings",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3840 shillings",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "300 shillings",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "50/3", "isCorrect": false},
+          {"id": "b", "text": "30", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": true},
+          {"id": "d", "text": "12.5", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Here y = k√x. From 6 = k√9 = 3k, k = 2, so y = 2√25 = 2 x 5 = 10. Exam Tip: take the square root of x first, then multiply by k.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Juma changes Tsh 520,000 to Kenyan shillings at 1 KSh = Tsh 20. How much does he get?",
+        "options": [
+          {"id": "a", "text": "KSh 10,400,000", "isCorrect": false},
+          {"id": "b", "text": "KSh 2,600", "isCorrect": false},
+          {"id": "c", "text": "KSh 26,000", "isCorrect": true},
+          {"id": "d", "text": "KSh 260,000", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since 1 KSh costs Tsh 20, divide the shillings by 20: 520,000 / 20 = KSh 26,000. Exam Tip: to find how many units of the pricier currency you get, divide by the rate.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A car uses 8 litres of fuel per 100 km. How many litres are needed for 350 km?",
+        "options": [
+          {"id": "a", "text": "43.75", "isCorrect": false},
+          {"id": "b", "text": "2.8", "isCorrect": false},
+          {"id": "c", "text": "35", "isCorrect": false},
+          {"id": "d", "text": "28", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "350 km is 3.5 lots of 100 km, so fuel = 3.5 x 8 = 28 litres. Exam Tip: scale the rate by how many 100 km blocks the distance contains.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "y varies inversely as the square of x, and y = 4 when x = 3. Find y when x = 2.",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": true},
+          {"id": "b", "text": "6", "isCorrect": false},
+          {"id": "c", "text": "16", "isCorrect": false},
+          {"id": "d", "text": "24", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Unit cost = 2400/8 = 300 shillings per pen. For 5 pens: 5×300 = 1500 shillings.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "V varies directly as h and inversely as the square of r. If V doubles and r stays the same, what happens to h?",
-        "options": [
-          {
-            "id": "a",
-            "text": "h is halved",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "h doubles",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "h is unchanged",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "h is quartered",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "V = kh/r². With r constant, V ∝ h, so doubling V doubles h.",
-        "difficulty": "hard"
+        "explanation": "Here y = k/x². From 4 = k/3² = k/9, k = 36, so y = 36/2² = 36/4 = 9. Exam Tip: square x first, then divide k by it.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "In direct variation y = kx, the letter k is called the constant of _____.",
+        "questionText": "A lorry covers 300 km in 4 hours. Its average speed is ______ km/h.",
         "options": [
-          {
-            "id": "a",
-            "text": "proportionality",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "variation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "ratio",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "gradient",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "75", "isCorrect": true},
+          {"id": "b", "text": "1200", "isCorrect": false},
+          {"id": "c", "text": "60", "isCorrect": false},
+          {"id": "d", "text": "80", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "k is the constant of proportionality (or constant of variation) relating the two quantities.",
+        "explanation": "Average speed is distance over time, so 300 / 4 = 75 km/h. Exam Tip: divide the distance by the time to get the speed.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If y ∝ x and y = 35 when x = 7, then k = _____.",
+        "questionText": "If y varies directly as x, then y = ______ (in terms of k and x).",
         "options": [
-          {
-            "id": "a",
-            "text": "7",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "35",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "245",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "k = y/x = 35/7 = 5.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A train covers 360 km in 4 hours. Its average speed is _____ km/h.",
-        "options": [
-          {
-            "id": "a",
-            "text": "80",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "100",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "90",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "1440",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Speed = distance/time = 360/4 = 90 km/h.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If p varies inversely as q and pq = 36, then when q = 9, p = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "324",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "4",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "p = 36/q = 36/9 = 4.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Sharing 6000 shillings in the ratio 1:2:3, the largest share is _____ shillings.",
-        "options": [
-          {
-            "id": "a",
-            "text": "3000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1000",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "2000",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "6000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "kx", "isCorrect": true},
+          {"id": "b", "text": "k/x", "isCorrect": false},
+          {"id": "c", "text": "x/k", "isCorrect": false},
+          {"id": "d", "text": "k + x", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Total parts = 6. Largest share = (3/6)×6000 = 3000 shillings.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If z = kxy and z = 60 when x = 4 and y = 5, then k = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "60",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "240",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "k = z/(xy) = 60/(4×5) = 60/20 = 3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If a varies as the square of b, and a = 12 when b = 2, then when b = 3, a = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "18",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "24",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "27",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "48",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "k = 12/4 = 3, so a = 3b² = 3×9 = 27.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A variation that has the form y = a + bx, with one constant part and one varying part, is called _____ variation.",
-        "options": [
-          {
-            "id": "a",
-            "text": "joint",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "direct",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "inverse",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "partial",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Partial variation has a fixed (constant) part plus a part that varies with another quantity.",
+        "explanation": "Direct variation is written y = kx, where k is the constant of variation. Exam Tip: direct variation multiplies x by a constant.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If 4 machines complete a job in 9 hours, then 6 machines complete it in _____ hours.",
+        "questionText": "If y varies inversely as x and y = 10 when x = 2, the constant k = ______.",
         "options": [
-          {
-            "id": "a",
-            "text": "6",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "13.5",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "8",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "20", "isCorrect": true},
+          {"id": "b", "text": "5", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "0.2", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Inverse proportion: 4×9 = 36 machine-hours; 36/6 = 6 hours.",
-        "difficulty": "medium"
+        "explanation": "Inverse variation means k = xy, so k = 2 x 10 = 20. Exam Tip: for inverse variation the constant is the product xy.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If y ∝ 1/x² and y = 8 when x = 2, then k = _____.",
+        "questionText": "If 1 USD = Tsh 2,450, then 10 USD = Tsh ______.",
         "options": [
-          {
-            "id": "a",
-            "text": "16",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "32",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "8",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "24,500", "isCorrect": true},
+          {"id": "b", "text": "2,460", "isCorrect": false},
+          {"id": "c", "text": "245", "isCorrect": false},
+          {"id": "d", "text": "2,450", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "y = k/x², so k = yx² = 8×4 = 32.",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "Multiply the dollars by the rate: 10 x 2,450 = Tsh 24,500. Exam Tip: USD to shillings means multiply by the rate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If y varies directly as x and x is doubled, then y is ______.",
+        "options": [
+          {"id": "a", "text": "doubled", "isCorrect": true},
+          {"id": "b", "text": "halved", "isCorrect": false},
+          {"id": "c", "text": "unchanged", "isCorrect": false},
+          {"id": "d", "text": "quadrupled", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In y = kx, doubling x doubles the product kx, so y is doubled. Exam Tip: in direct variation, y changes in the same proportion as x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If y varies inversely as x and x is trebled, then y is divided by ______.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "9", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In y = k/x, trebling x means dividing by 3, so y becomes one third of its value. Exam Tip: inverse variation moves y in the opposite proportion to x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 5 identical pens cost Tsh 3,750, one pen costs Tsh ______.",
+        "options": [
+          {"id": "a", "text": "750", "isCorrect": true},
+          {"id": "b", "text": "18,750", "isCorrect": false},
+          {"id": "c", "text": "375", "isCorrect": false},
+          {"id": "d", "text": "700", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The unit rate is the total divided by the number of pens: 3,750 / 5 = Tsh 750. Exam Tip: a unit rate is the cost of one item, found by dividing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If y varies jointly as x and z, and y = 36 when x = 3, z = 4, then k = ______.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "9", "isCorrect": false},
+          {"id": "d", "text": "36", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Joint variation means y = kxz, so 36 = k x 3 x 4 = 12k, giving k = 3. Exam Tip: divide y by the product of the variables to find k.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "72 km/h in metres per second is ______ m/s.",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": true},
+          {"id": "b", "text": "259.2", "isCorrect": false},
+          {"id": "c", "text": "72", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply by 5/18 to convert km/h to m/s: 72 x 5/18 = 20 m/s. Exam Tip: remember the factor 5/18 for km/h to m/s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 8 workers finish a job in 12 days, 1 worker needs ______ days.",
+        "options": [
+          {"id": "a", "text": "96", "isCorrect": true},
+          {"id": "b", "text": "1.5", "isCorrect": false},
+          {"id": "c", "text": "20", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The total work is 8 x 12 = 96 worker-days, so one worker needs 96 days. Exam Tip: multiply workers by days to get the constant worker-days.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "In direct variation, as one quantity increases the other also increases.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Direct variation y = kx (with k > 0) means both quantities increase or decrease together.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In inverse variation, the product of the two variables is constant.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "For y = k/x, xy = k is constant.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The graph of a direct variation y = kx is a straight line passing through the origin.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "y = kx has y-intercept 0, so the line passes through (0, 0).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The symbol ∝ means 'is equal to'.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The symbol ∝ means 'is proportional to' or 'varies as', not 'equal to'.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Speed measured in kilometres per hour is an example of a rate.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A rate compares two quantities of different units, such as distance per unit time.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In joint variation z = kxy, if x and y both double, then z becomes four times as large.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "z = k(2x)(2y) = 4kxy, so z quadruples.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Partial variation always passes through the origin.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Partial variation y = a + bx has y-intercept a, so it does not pass through the origin unless a = 0.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If more workers take fewer days to finish a fixed task, this is an example of inverse variation.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Number of workers and time taken are inversely proportional for a fixed amount of work.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If y varies directly as x, then doubling x will halve y.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "In direct variation doubling x doubles y, since y = kx.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The constant of proportionality can be found from a single pair of corresponding values of the variables.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Once the form of variation is known, one matching pair of values is enough to solve for k.",
-        "difficulty": "medium"
-      }
+      {"questionText": "In direct variation, the graph of y against x is a straight line through the origin.", "options": [], "correctAnswer": "true", "explanation": "Since y = kx, when x = 0 then y = 0, so the line passes through the origin with gradient k.", "difficulty": "easy"},
+      {"questionText": "If y varies inversely as x, then the product xy is constant.", "options": [], "correctAnswer": "true", "explanation": "Inverse variation means y = k/x, which rearranges to xy = k, a fixed constant.", "difficulty": "easy"},
+      {"questionText": "If y varies directly as x, then doubling x halves y.", "options": [], "correctAnswer": "false", "explanation": "In direct variation doubling x also doubles y, since y = kx changes in the same proportion.", "difficulty": "easy"},
+      {"questionText": "A rate compares two quantities of different kinds.", "options": [], "correctAnswer": "true", "explanation": "A rate such as km/h or litres per minute compares quantities measured in different units.", "difficulty": "easy"},
+      {"questionText": "If y varies directly as the square of x, then doubling x doubles y.", "options": [], "correctAnswer": "false", "explanation": "Since y = kx², doubling x multiplies y by 2² = 4, so y becomes four times as large, not double.", "difficulty": "easy"},
+      {"questionText": "In inverse variation with a positive constant, as x increases, y decreases.", "options": [], "correctAnswer": "true", "explanation": "With y = k/x and k positive, a larger x gives a smaller y, so y decreases as x increases.", "difficulty": "easy"},
+      {"questionText": "A currency exchange rate is an example of a rate.", "options": [], "correctAnswer": "true", "explanation": "An exchange rate compares two different currencies, such as shillings per dollar, so it is a rate.", "difficulty": "easy"},
+      {"questionText": "If y varies jointly as x and z, and both are doubled, y becomes four times as large.", "options": [], "correctAnswer": "true", "explanation": "Since y = kxz, doubling both x and z multiplies y by 2 x 2 = 4.", "difficulty": "easy"},
+      {"questionText": "The constant of variation k can be found from one pair of corresponding values.", "options": [], "correctAnswer": "true", "explanation": "Substituting one matching pair of values into the variation equation lets you solve for k.", "difficulty": "easy"},
+      {"questionText": "If y varies inversely as x with k > 0, then when x = 0, y = 0.", "options": [], "correctAnswer": "false", "explanation": "In y = k/x, substituting x = 0 divides by zero, so y is undefined, not zero.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Direct variation",
-        "options": [],
-        "correctAnswer": "y = kx; y increases as x increases",
-        "explanation": "Two quantities are in direct proportion when their ratio y/x is constant (= k).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Inverse variation",
-        "options": [],
-        "correctAnswer": "y = k/x; the product xy is constant",
-        "explanation": "As one quantity increases, the other decreases so that their product stays equal to k.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Constant of proportionality",
-        "options": [],
-        "correctAnswer": "the fixed value k linking the variables",
-        "explanation": "k is found by substituting a known pair of values into the variation equation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Joint variation",
-        "options": [],
-        "correctAnswer": "z = kxy; z varies with two or more variables together",
-        "explanation": "A quantity varies directly as the product of two or more other quantities.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Partial variation",
-        "options": [],
-        "correctAnswer": "y = a + bx; a constant part plus a varying part",
-        "explanation": "Used when one part of a quantity is fixed and another part changes with a variable.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Rate",
-        "options": [],
-        "correctAnswer": "a comparison of two quantities with different units",
-        "explanation": "Examples include speed (km/h), price (sh/kg) and flow (litres/min).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ratio",
-        "options": [],
-        "correctAnswer": "a comparison of two quantities of the same kind",
-        "explanation": "Ratios such as 3:5 are usually written in their simplest form and have no units.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The variation symbol",
-        "options": [],
-        "correctAnswer": "∝ means 'varies as' or 'is proportional to'",
-        "explanation": "Replacing ∝ with '= k×' turns a proportionality statement into an equation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Steps to solve a variation problem",
-        "options": [],
-        "correctAnswer": "write the equation, find k, then solve",
-        "explanation": "Form the relation, use given values to find k, then substitute to find the unknown.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Graph of direct variation",
-        "options": [],
-        "correctAnswer": "a straight line through the origin with gradient k",
-        "explanation": "Since y = kx, the line has y-intercept 0 and slope equal to the constant k.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Rate", "options": [], "correctAnswer": "A comparison of two quantities of different kinds, usually expressed as one quantity per unit of another.", "explanation": "Examples are speed in km/h and flow in litres per minute. A rate is written as one quantity per unit of the other. Exam Tip: watch the units to identify a rate.", "difficulty": "easy"},
+      {"questionText": "Unit rate", "options": [], "correctAnswer": "A rate that gives the amount of one quantity for exactly one unit of another, such as the cost of one item.", "explanation": "You find a unit rate by dividing so the second quantity becomes 1, for example the price of one pen. It makes comparing different offers easy. Exam Tip: divide by the number to get the cost of one.", "difficulty": "easy"},
+      {"questionText": "Average speed", "options": [], "correctAnswer": "The total distance travelled divided by the total time taken.", "explanation": "For example 240 km in 3 hours gives 240/3 = 80 km/h. It is a rate comparing distance and time. Exam Tip: average speed = total distance / total time.", "difficulty": "easy"},
+      {"questionText": "Direct variation", "options": [], "correctAnswer": "A relationship where y = kx, so y increases in the same proportion as x.", "explanation": "Doubling x doubles y, and the graph is a straight line through the origin. The constant k is the gradient. Exam Tip: direct variation means y = kx.", "difficulty": "easy"},
+      {"questionText": "Inverse variation", "options": [], "correctAnswer": "A relationship where y = k/x, so as x increases, y decreases and the product xy stays constant.", "explanation": "Doubling x halves y, as seen when fewer workers need more days. The product xy always equals k. Exam Tip: inverse variation keeps xy constant.", "difficulty": "easy"},
+      {"questionText": "Joint variation", "options": [], "correctAnswer": "A relationship where one quantity varies as the product of two or more others, written y = kxz.", "explanation": "For example y = kxz means y depends on both x and z together. Doubling both x and z multiplies y by four. Exam Tip: multiply all the variables together, then by k.", "difficulty": "easy"},
+      {"questionText": "Constant of variation", "options": [], "correctAnswer": "The fixed number k that links the variables in a variation equation.", "explanation": "You find k by substituting one known pair of values into the equation. Once k is known, you can solve for any unknown. Exam Tip: always find k first before answering.", "difficulty": "easy"},
+      {"questionText": "Currency exchange rate", "options": [], "correctAnswer": "A rate that tells how much of one currency equals one unit of another currency.", "explanation": "For example 1 USD = Tsh 2,500. Multiply to change into the smaller-valued currency and divide to change back. Exam Tip: multiply into shillings, divide back into dollars.", "difficulty": "easy"},
+      {"questionText": "Converting km/h to m/s", "options": [], "correctAnswer": "Multiply the speed in km/h by 5/18 to get the speed in m/s.", "explanation": "This factor comes from 1000 metres divided by 3600 seconds, which simplifies to 5/18. For example 90 km/h x 5/18 = 25 m/s. Exam Tip: km/h to m/s means multiply by 5/18.", "difficulty": "easy"},
+      {"questionText": "Worker-days (inverse proportion)", "options": [], "correctAnswer": "The total amount of work found by multiplying the number of workers by the number of days, which stays constant.", "explanation": "Workers and days are inversely proportional, so more workers means fewer days. Keep the worker-days product fixed to solve problems. Exam Tip: workers x days stays the same for the same job.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "y varies partly as x and partly as the square of x, so that y = ax + bx². Given y = 14 when x = 2 and y = 36 when x = 3, find the value of y when x = 4.",
+        "questionText": "z varies directly as the square of x and inversely as y. Given z = 12 when x = 2 and y = 3, find z when x = 4 and y = 6.",
         "options": [
-          {
-            "id": "a",
-            "text": "68",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "56",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "48",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "72",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "48", "isCorrect": false},
+          {"id": "b", "text": "24", "isCorrect": true},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "2a + 4b = 14 and 3a + 9b = 36. Solving gives a = 1, b = 3, so y = 4 + 3×16 = 68.",
+        "correctAnswer": "b",
+        "explanation": "The relationship is z = kx²/y. Substituting the first values, 12 = k x 2²/3 = 4k/3, so k = 9. Then z = 9 x 4²/6 = 9 x 16/6 = 144/6 = 24. Exam Tip: option A forgets to divide by y; always include every part of the combined variation.",
         "difficulty": "hard"
       },
       {
-        "questionText": "The force F between two objects varies inversely as the square of the distance d between them. When d = 3 m, F = 40 N. What is F when d = 6 m?",
+        "questionText": "12 workers can build a wall in 20 days. They all work together for 5 days, then 3 workers leave. How many MORE days will the remaining workers need to finish the wall?",
         "options": [
-          {
-            "id": "a",
-            "text": "10 N",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "20 N",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "80 N",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "160 N",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "15", "isCorrect": false},
+          {"id": "b", "text": "20", "isCorrect": true},
+          {"id": "c", "text": "30", "isCorrect": false},
+          {"id": "d", "text": "12", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "F = k/d²; k = 40×9 = 360. When d = 6, F = 360/36 = 10 N.",
+        "correctAnswer": "b",
+        "explanation": "The total work is 12 x 20 = 240 worker-days. In the first 5 days, 12 x 5 = 60 worker-days are done, leaving 240 - 60 = 180 worker-days. After 3 leave, 9 workers remain, so 180 / 9 = 20 more days. Exam Tip: track the number of workers in each phase and keep worker-days constant.",
         "difficulty": "hard"
       },
       {
-        "questionText": "The cost C of printing books is partly fixed and partly varies with the number n of books, where C = a + bn shillings. Printing 100 books costs 80,000 shillings and printing 250 books costs 155,000 shillings. Find the cost of printing 400 books.",
+        "questionText": "A bank buys USD at Tsh 2,450 and sells at Tsh 2,550. Asha exchanges 200 USD to shillings, spends Tsh 337,000, then converts the rest back to USD at the same bank. How many USD does she receive?",
         "options": [
-          {
-            "id": "a",
-            "text": "230,000 shillings",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "248,000 shillings",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "200,000 shillings",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "310,000 shillings",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "61.20", "isCorrect": false},
+          {"id": "b", "text": "60", "isCorrect": true},
+          {"id": "c", "text": "62.45", "isCorrect": false},
+          {"id": "d", "text": "59", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "155000−80000 = b(250−100) gives b = 500; then a = 80000−500×100 = 30000. C = 30000 + 500×400 = 230,000.",
+        "correctAnswer": "b",
+        "explanation": "When Asha sells her dollars the bank uses its buy rate, so 200 x 2,450 = Tsh 490,000. After spending, 490,000 - 337,000 = Tsh 153,000 remain. Buying dollars back uses the bank's sell rate, so 153,000 / 2,550 = 60 USD. Exam Tip: the customer always gets the worse side of each exchange rate.",
         "difficulty": "hard"
       }
     ]
