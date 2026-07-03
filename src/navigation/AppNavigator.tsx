@@ -39,6 +39,7 @@ import { LockedFeaturePreviewScreen } from '../screens/subscription/LockedFeatur
 import { SubscriptionStatusScreen } from '../screens/subscription/SubscriptionStatusScreen';
 import { FamilyProfilesScreen } from '../screens/subscription/FamilyProfilesScreen';
 import { ManageDevicesScreen } from '../screens/subscription/ManageDevicesScreen';
+import { LegalScreen } from '../screens/legal/LegalScreen';
 // Phase 5 — gamification screens
 import { GamificationProfileScreen } from '../screens/gamification/GamificationProfileScreen';
 import { DailyMissionsScreen } from '../screens/gamification/DailyMissionsScreen';
@@ -139,6 +140,7 @@ function ProfileStackNavigator() {
       <ProfileStack.Screen name="PaymentMethodScreen" component={PaymentMethodScreen} />
       <ProfileStack.Screen name="FamilyProfiles" component={FamilyProfilesScreen} />
       <ProfileStack.Screen name="ManageDevices" component={ManageDevicesScreen} />
+      <ProfileStack.Screen name="Legal" component={LegalScreen} />
     </ProfileStack.Navigator>
   );
 }

@@ -246,6 +246,7 @@ export type ProfileStackParamList = {
   };
   FamilyProfiles: undefined;
   ManageDevices: undefined;
+  Legal: { doc: 'privacy' | 'terms' };
 };
 
 export type AppTabParamList = {

@@ -17,6 +17,7 @@ import { useAppThemeStore } from '../../store/appThemeStore';
 import { useAuth } from '../../hooks/useAuth';
 import { confirmAction, notify } from '../../utils/confirm';
 import { openWhatsApp } from '../../utils/support';
+import { deleteAccount } from '../../services/deleteAccountService';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
 
@@ -27,7 +28,8 @@ export function SettingsScreen({ navigation }: Props) {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [studyReminders, setStudyReminders] = useState(true);
   const [leaderboardAlerts, setLeaderboardAlerts] = useState(false);
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
+  const [deleting, setDeleting] = useState(false);
 
   const handleLogout = () => {
     // Alert.alert's buttons are ignored on React Native Web, so the confirm
@@ -48,11 +50,22 @@ export function SettingsScreen({ navigation }: Props) {
   const handleDeleteAccount = () => {
     confirmAction(
       'Delete Account',
-      'This will permanently delete all your data. This cannot be undone.',
+      'This permanently deletes your account and all your data — progress, XP, badges, and family profiles. This cannot be undone.',
       'Delete',
-      () => {
-        // TODO: Phase 2 — delete Firestore user data, revoke Firebase auth
-        logout();
+      async () => {
+        setDeleting(true);
+        try {
+          if (user?.uid) await deleteAccount(user.uid);
+          // Clears local stores and returns to the Welcome screen.
+          logout();
+        } catch {
+          notify(
+            'Could not delete account',
+            'Please sign in again and retry from Settings, or contact support on WhatsApp.',
+          );
+        } finally {
+          setDeleting(false);
+        }
       },
     );
   };
@@ -126,13 +139,13 @@ export function SettingsScreen({ navigation }: Props) {
             icon="shield-checkmark"
             iconColor={COLORS.success}
             label="Privacy Policy"
-            onPress={comingSoon('Privacy Policy')}
+            onPress={() => navigation.navigate('Legal', { doc: 'privacy' })}
           />
           <SettingsRow
             icon="document-text"
             iconColor={COLORS.secondary}
             label="Terms of Service"
-            onPress={comingSoon('Terms of Service')}
+            onPress={() => navigation.navigate('Legal', { doc: 'terms' })}
           />
           <SettingsRow
             icon="star"
@@ -181,8 +194,9 @@ export function SettingsScreen({ navigation }: Props) {
             size="md"
           />
           <AppButton
-            title="Delete Account"
+            title={deleting ? 'Deleting…' : 'Delete Account'}
             onPress={handleDeleteAccount}
+            loading={deleting}
             variant="danger"
             size="md"
           />

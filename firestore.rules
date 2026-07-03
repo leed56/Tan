@@ -52,7 +52,9 @@ service cloud.firestore {
       allow update: if (isOwner(userId)
         && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'subscriptionPlan', 'billingCycle', 'createdAt', 'phoneNumber']))
         || isAdmin();
-      allow delete: if isSuperAdmin();
+      // Owners may delete their own account (Settings → Delete Account); admins
+      // retain deletion for moderation.
+      allow delete: if isOwner(userId) || isSuperAdmin();
     }
 
     // ── users/{userId}/devices — device-limit registration ────────────────────
