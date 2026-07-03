@@ -18,7 +18,8 @@ import { StepByStepCard } from '../../components/ui/explanation/StepByStepCard';
 import { ExplanationFeedbackButtons } from '../../components/ui/explanation/ExplanationFeedbackButtons';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
 import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockModal';
-import { stripMathMarkup, MathRenderer } from '../../components/ui/quiz/MathRenderer';
+import { stripMathMarkup, MathRenderer, normalizeContentText } from '../../components/ui/quiz/MathRenderer';
+import { parseExplanation } from '../../utils/parseExplanation';
 import { useExplanationStore } from '../../store/explanationStore';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
@@ -97,61 +98,83 @@ export function ExplanationScreen({ navigation, route }: Props) {
 
         {loading && <ExplanationSkeleton />}
 
-        {!loading && explanation && (
-          <>
-            {explanation.notice ? (
-              <View style={styles.noticeBanner}>
-                <Ionicons name="time-outline" size={16} color={COLORS.warning} />
-                <MathRenderer text={explanation.notice} style={styles.noticeText} />
-              </View>
-            ) : null}
+        {!loading && explanation && (() => {
+          // Without a live AI service the fallback copies the same DB
+          // paragraph into explanationText / whyCorrect / finalSummary. Detect
+          // that and render ONE clean explanation (plus any embedded tip)
+          // instead of three identical cards. When real AI content exists
+          // (distinct fields), show the full structured breakdown.
+          const isAI = explanation.aiProvider === 'gemini';
+          const distinct =
+            isAI &&
+            explanation.whyCorrect.trim() !== explanation.explanationText.trim();
+          const parsed = parseExplanation(explanation.explanationText);
+          const tip =
+            parsed.tip ??
+            (isAI && explanation.examTip && !/review this topic/i.test(explanation.examTip)
+              ? normalizeContentText(explanation.examTip)
+              : null);
 
-            <GoldExplanationCard title="Simple Explanation" icon="bulb-outline" defaultExpanded>
-              <MathRenderer text={explanation.explanationText} style={styles.bodyText} />
-            </GoldExplanationCard>
+          return (
+            <>
+              {explanation.notice ? (
+                <View style={styles.noticeBanner}>
+                  <Ionicons name="time-outline" size={16} color={COLORS.warning} />
+                  <MathRenderer text={explanation.notice} style={styles.noticeText} />
+                </View>
+              ) : null}
 
-            <GoldExplanationCard
-              title="Why This Is Correct"
-              icon="checkmark-circle-outline"
-              accentColor={COLORS.success}
-              defaultExpanded
-            >
-              <MathRenderer text={explanation.whyCorrect} style={styles.bodyText} />
-            </GoldExplanationCard>
-
-            {Object.keys(explanation.whyWrong).length > 0 && (
-              <GoldExplanationCard
-                title="Why Other Options Are Wrong"
-                icon="close-circle-outline"
-                accentColor={COLORS.error}
-              >
-                {Object.entries(explanation.whyWrong).map(([key, text]) => (
-                  <View key={key} style={styles.wrongRow}>
-                    <Text style={styles.wrongKey}>{key}.</Text>
-                    <Text style={styles.wrongText}>{text}</Text>
-                  </View>
-                ))}
+              <GoldExplanationCard title="Explanation" icon="bulb-outline" defaultExpanded>
+                <MathRenderer text={parsed.body} style={styles.bodyText} />
               </GoldExplanationCard>
-            )}
 
-            <ExamTipCard tip={explanation.examTip} />
-            <MemoryTrickCard trick={explanation.memoryTrick} />
-            <StepByStepCard steps={explanation.stepByStep} />
+              {distinct && (
+                <GoldExplanationCard
+                  title="Why This Is Correct"
+                  icon="checkmark-circle-outline"
+                  accentColor={COLORS.success}
+                  defaultExpanded
+                >
+                  <MathRenderer text={explanation.whyCorrect} style={styles.bodyText} />
+                </GoldExplanationCard>
+              )}
 
-            {explanation.finalSummary ? (
-              <View style={[styles.summaryCard, { borderColor: `${subjectColor}30` }]}>
-                <Text style={[styles.summaryLabel, { color: subjectColor }]}>Summary</Text>
-                <MathRenderer text={explanation.finalSummary} style={styles.summaryText} />
-              </View>
-            ) : null}
+              {Object.keys(explanation.whyWrong).length > 0 && (
+                <GoldExplanationCard
+                  title="Why Other Options Are Wrong"
+                  icon="close-circle-outline"
+                  accentColor={COLORS.error}
+                >
+                  {Object.entries(explanation.whyWrong).map(([key, text]) => (
+                    <View key={key} style={styles.wrongRow}>
+                      <Text style={styles.wrongKey}>{key}.</Text>
+                      <MathRenderer text={text} style={styles.wrongText} />
+                    </View>
+                  ))}
+                </GoldExplanationCard>
+              )}
 
-            <ExplanationFeedbackButtons
-              questionId={questionId}
-              explanationId={explanation.id}
-              userId={userId}
-            />
-          </>
-        )}
+              {tip ? <ExamTipCard tip={tip} /> : null}
+              <MemoryTrickCard trick={explanation.memoryTrick} />
+              <StepByStepCard steps={explanation.stepByStep} />
+
+              {/* Only show a Summary when it genuinely differs from the body. */}
+              {isAI && explanation.finalSummary &&
+               explanation.finalSummary.trim() !== explanation.explanationText.trim() ? (
+                <View style={[styles.summaryCard, { borderColor: `${subjectColor}30` }]}>
+                  <Text style={[styles.summaryLabel, { color: subjectColor }]}>Summary</Text>
+                  <MathRenderer text={explanation.finalSummary} style={styles.summaryText} />
+                </View>
+              ) : null}
+
+              <ExplanationFeedbackButtons
+                questionId={questionId}
+                explanationId={explanation.id}
+                userId={userId}
+              />
+            </>
+          );
+        })()}
       </ScrollView>
 
       <LevelUpModal

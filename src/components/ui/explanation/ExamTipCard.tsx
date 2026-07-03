@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
+import { MathRenderer } from '../quiz/MathRenderer';
 
 interface Props { tip: string }
 
@@ -13,7 +14,7 @@ export function ExamTipCard({ tip }: Props) {
         <Ionicons name="school-outline" size={16} color={COLORS.warning} />
         <Text style={styles.headerText}>NECTA Exam Tip</Text>
       </View>
-      <Text style={styles.body}>{tip}</Text>
+      <MathRenderer text={tip} style={styles.body} />
     </View>
   );
 }

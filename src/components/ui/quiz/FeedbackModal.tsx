@@ -10,6 +10,7 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { ExplanationCard } from './ExplanationCard';
+import { parseExplanation } from '../../../utils/parseExplanation';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
 
 interface FeedbackModalProps {
@@ -89,7 +90,7 @@ export function FeedbackModal({
 
             {/* Explanation */}
             <ExplanationCard
-              explanation={explanation}
+              explanation={parseExplanation(explanation).body}
               correctLabel={!isCorrect && correctAnswerLabel ? `Correct answer: ${correctAnswerLabel}` : undefined}
             />
 
