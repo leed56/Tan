@@ -46,6 +46,15 @@ export function HomeScreen({ navigation }: Props) {
   const activeChild = useFamilyStore((s) => s.activeChild());
   const selectedFormId = useCurriculumStore((s) => s.selectedFormId);
 
+  // When "Playing as" a Family-Pack child, the hero must show THAT child's
+  // aggregate stats — otherwise the greeting swaps to the child's name while
+  // the XP ring, streak and coins still show the account owner's numbers.
+  // Children don't earn coins, so that chip reads 0 while a child is active.
+  const displayXp = activeChild ? activeChild.xp : xp;
+  const displayLevel = activeChild ? activeChild.level : level;
+  const displayStreak = activeChild ? activeChild.streakDays : streak;
+  const displayCoins = activeChild ? 0 : coins;
+
   // Load the persisted gamification profile so XP/coins/streak reflect Firestore.
   useEffect(() => {
     if (uid) {
@@ -61,7 +70,7 @@ export function HomeScreen({ navigation }: Props) {
   const ringR = (ringSize - RING_STROKE) / 2;
   const ringCircumference = 2 * Math.PI * ringR;
 
-  const progressPercent = getXpProgressPercent(xp);
+  const progressPercent = getXpProgressPercent(displayXp);
   const strokeDash = ringCircumference * (1 - progressPercent / 100);
 
   const greeting = getGreeting();
@@ -128,7 +137,7 @@ export function HomeScreen({ navigation }: Props) {
               <View style={styles.notifDot} />
             </TouchableOpacity>
             <CoinBalanceChip
-              coins={coins}
+              coins={displayCoins}
               onPress={() => navigation.navigate('GamificationProfile')}
             />
           </View>
@@ -173,15 +182,15 @@ export function HomeScreen({ navigation }: Props) {
               </Svg>
               <View style={styles.ringCenter}>
                 <Text style={styles.ringLevel}>Lvl</Text>
-                <Text style={styles.ringLevelNum}>{level}</Text>
+                <Text style={styles.ringLevelNum}>{displayLevel}</Text>
               </View>
             </View>
           </View>
 
           <View style={styles.heroRight}>
             <Text style={styles.heroXpLabel}>Total XP</Text>
-            <Text style={styles.heroXp}>{formatXp(xp)}</Text>
-            <Text style={styles.heroXpSub}>{progressPercent}% to Level {level + 1}</Text>
+            <Text style={styles.heroXp}>{formatXp(displayXp)}</Text>
+            <Text style={styles.heroXpSub}>{progressPercent}% to Level {displayLevel + 1}</Text>
 
             <View style={styles.heroDivider} />
 
@@ -194,7 +203,7 @@ export function HomeScreen({ navigation }: Props) {
         </TouchableOpacity>
 
         {/* Streak card */}
-        <StreakFireCard streak={streak} />
+        <StreakFireCard streak={displayStreak} />
 
         {/* Continue Learning */}
         {continueSubject && (
