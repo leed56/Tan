@@ -16,6 +16,7 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useAppThemeStore } from '../../store/appThemeStore';
 import { useAuth } from '../../hooks/useAuth';
+import { confirmAction } from '../../utils/confirm';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
 
@@ -27,18 +28,9 @@ export function SettingsScreen({ navigation }: Props) {
   const { logout } = useAuth();
 
   const handleLogout = () => {
-    Alert.alert(
-      'Log Out',
-      'Are you sure you want to log out?',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Log Out',
-          style: 'destructive',
-          onPress: logout,
-        },
-      ],
-    );
+    // Alert.alert's buttons are ignored on React Native Web, so the confirm
+    // never fired there — confirmAction uses window.confirm on web.
+    confirmAction('Log Out', 'Are you sure you want to log out?', 'Log Out', logout);
   };
 
   const handleSupport = () => {
@@ -47,20 +39,14 @@ export function SettingsScreen({ navigation }: Props) {
   };
 
   const handleDeleteAccount = () => {
-    Alert.alert(
+    confirmAction(
       'Delete Account',
       'This will permanently delete all your data. This cannot be undone.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Delete',
-          style: 'destructive',
-          onPress: () => {
-            // TODO: Phase 2 — delete Firestore user data, revoke Firebase auth
-            logout();
-          },
-        },
-      ],
+      'Delete',
+      () => {
+        // TODO: Phase 2 — delete Firestore user data, revoke Firebase auth
+        logout();
+      },
     );
   };
 

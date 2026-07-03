@@ -5,6 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { ProfileStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
+import { confirmAction } from '../../utils/confirm';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useAuthStore } from '../../store/authStore';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
@@ -42,14 +43,12 @@ export function ManageDevicesScreen({ navigation }: Props) {
   const maxDevices = planMaxDevices();
 
   const handleRemove = (device: RegisteredDevice) => {
-    Alert.alert('Remove device', `Sign out ${device.deviceName} from this account?`, [
-      { text: 'Cancel', style: 'cancel' },
-      {
-        text: 'Remove',
-        style: 'destructive',
-        onPress: () => user?.uid && removeDevice(user.uid, device.id),
-      },
-    ]);
+    confirmAction(
+      'Remove device',
+      `Sign out ${device.deviceName} from this account?`,
+      'Remove',
+      () => { if (user?.uid) removeDevice(user.uid, device.id); },
+    );
   };
 
   return (

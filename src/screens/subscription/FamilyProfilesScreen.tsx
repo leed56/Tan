@@ -16,6 +16,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { ProfileStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { AppButton } from '../../components/ui/AppButton';
+import { confirmAction } from '../../utils/confirm';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { AVATARS } from '../../constants';
 import { useFamilyStore } from '../../store/familyStore';
@@ -113,10 +114,12 @@ export function FamilyProfilesScreen({ navigation }: Props) {
   };
 
   const handleRemove = (childId: string, childName: string) => {
-    Alert.alert('Remove profile', `Remove ${childName}'s profile? Their progress will be lost.`, [
-      { text: 'Cancel', style: 'cancel' },
-      { text: 'Remove', style: 'destructive', onPress: () => removeProfile(childId) },
-    ]);
+    confirmAction(
+      'Remove profile',
+      `Remove ${childName}'s profile? Their progress will be lost.`,
+      'Remove',
+      () => removeProfile(childId),
+    );
   };
 
   return (
