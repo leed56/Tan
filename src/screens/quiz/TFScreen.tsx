@@ -95,23 +95,6 @@ export function TFScreen({ navigation, route }: Props) {
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
 
-  const handleViewExplanation = useCallback(() => {
-    if (!question) return;
-    setShowFeedback(false);
-    navigation.navigate('ExplanationScreen', {
-      questionId: question.id,
-      questionText: question.questionText,
-      quizType: 'tf',
-      subjectId,
-      formId,
-      correctAnswer: normalizeTF(question.correctAnswer),
-      options: [{ id: 'true', text: 'True' }, { id: 'false', text: 'False' }],
-      packTitle,
-      subjectColor,
-      fallbackExplanation: question.explanation,
-    });
-  }, [question, navigation, subjectId, formId, packTitle, subjectColor]);
-
   useFocusEffect(
     useCallback(() => {
       if (revealed && !showFeedback) {
@@ -191,7 +174,6 @@ export function TFScreen({ navigation, route }: Props) {
         explanation={question.explanation}
         correctAnswerLabel={!isCorrect ? (correctAnswer === 'true' ? 'True' : 'False') : undefined}
         onContinue={handleContinue}
-        onViewExplanation={handleViewExplanation}
       />
     </ScreenContainer>
   );

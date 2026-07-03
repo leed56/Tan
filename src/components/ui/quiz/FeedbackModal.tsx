@@ -6,10 +6,12 @@ import {
   StyleSheet,
   TouchableOpacity,
   Animated,
+  ScrollView,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { ExplanationCard } from './ExplanationCard';
+import { ExamTipCard } from '../explanation/ExamTipCard';
 import { parseExplanation } from '../../../utils/parseExplanation';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
 
@@ -20,7 +22,6 @@ interface FeedbackModalProps {
   explanation: string;
   correctAnswerLabel?: string;
   onContinue: () => void;
-  onViewExplanation?: () => void;
 }
 
 export function FeedbackModal({
@@ -30,8 +31,8 @@ export function FeedbackModal({
   explanation,
   correctAnswerLabel,
   onContinue,
-  onViewExplanation,
 }: FeedbackModalProps) {
+  const parsed = parseExplanation(explanation);
   const translateY = useRef(new Animated.Value(300)).current;
 
   useEffect(() => {
@@ -88,24 +89,19 @@ export function FeedbackModal({
               )}
             </View>
 
-            {/* Explanation */}
-            <ExplanationCard
-              explanation={parseExplanation(explanation).body}
-              correctLabel={!isCorrect && correctAnswerLabel ? `Correct answer: ${correctAnswerLabel}` : undefined}
-            />
-
-            {/* View Full Explanation */}
-            {onViewExplanation && (
-              <TouchableOpacity
-                onPress={onViewExplanation}
-                activeOpacity={0.8}
-                style={styles.explainBtn}
-              >
-                <Ionicons name="bulb-outline" size={16} color={COLORS.primary} />
-                <Text style={styles.explainBtnText}>View Full Explanation</Text>
-                <Ionicons name="arrow-forward" size={14} color={COLORS.primary} />
-              </TouchableOpacity>
-            )}
+            {/* Explanation — the single explanation surface; long content
+                scrolls within the sheet so nothing is cut off. */}
+            <ScrollView
+              style={styles.explainScroll}
+              contentContainerStyle={styles.explainScrollContent}
+              showsVerticalScrollIndicator={false}
+            >
+              <ExplanationCard
+                explanation={parsed.body}
+                correctLabel={!isCorrect && correctAnswerLabel ? `Correct answer: ${correctAnswerLabel}` : undefined}
+              />
+              {parsed.tip ? <ExamTipCard tip={parsed.tip} /> : null}
+            </ScrollView>
 
             {/* Continue button */}
             <TouchableOpacity
@@ -148,6 +144,8 @@ const styles = StyleSheet.create({
     gap: SPACING.base,
     paddingBottom: SPACING['3xl'],
   },
+  explainScroll: { maxHeight: 320 },
+  explainScrollContent: { gap: SPACING.base },
   statusRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -198,21 +196,5 @@ const styles = StyleSheet.create({
   continueBtnText: {
     fontSize: TYPOGRAPHY.sizes.base,
     fontWeight: TYPOGRAPHY.weights.bold,
-  },
-  explainBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: SPACING.sm,
-    paddingVertical: SPACING.sm,
-    borderRadius: RADIUS.lg,
-    borderWidth: 1,
-    borderColor: `${COLORS.primary}50`,
-    backgroundColor: `${COLORS.primary}10`,
-  },
-  explainBtnText: {
-    color: COLORS.primary,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.semibold,
   },
 });
