@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: SPACING.md,
     width: '100%',
+    maxWidth: 460,
   },
   iconWrap: { marginBottom: SPACING.sm },
   iconCircle: {

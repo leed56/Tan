@@ -127,9 +127,15 @@ const styles = StyleSheet.create({
   backdrop: {
     flex: 1,
     justifyContent: 'flex-end',
+    // Center horizontally so on wide/desktop web (where the Modal portals
+    // outside the phone frame) the sheet stays phone-width instead of
+    // spanning the whole browser.
+    alignItems: 'center',
     backgroundColor: 'rgba(10,14,39,0.7)',
   },
   sheet: {
+    width: '100%',
+    maxWidth: 480,
     backgroundColor: COLORS.bgMid,
     borderTopLeftRadius: RADIUS['2xl'],
     borderTopRightRadius: RADIUS['2xl'],

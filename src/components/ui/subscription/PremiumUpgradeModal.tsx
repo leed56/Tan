@@ -158,9 +158,13 @@ export function PremiumUpgradeModal({
 const styles = StyleSheet.create({
   backdrop: {
     flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0.6)',
   },
   sheet: {
+    width: '100%',
+    maxWidth: 480,
     backgroundColor: COLORS.bgMid,
     borderTopLeftRadius: RADIUS['2xl'],
     borderTopRightRadius: RADIUS['2xl'],
