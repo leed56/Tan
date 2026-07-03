@@ -88,10 +88,16 @@ export function ProfileScreen({ navigation }: Props) {
               <Text style={styles.metaText}>{profile.school}</Text>
             </View>
           )}
-          <View style={styles.metaChip}>
-            <Ionicons name="call-outline" size={12} color={COLORS.textMuted} />
-            <Text style={styles.metaText}>{user?.phoneNumber ?? 'Unknown'}</Text>
-          </View>
+          {(user?.email || user?.phoneNumber) && (
+            <View style={styles.metaChip}>
+              <Ionicons
+                name={user?.email ? 'mail-outline' : 'call-outline'}
+                size={12}
+                color={COLORS.textMuted}
+              />
+              <Text style={styles.metaText}>{user?.email ?? user?.phoneNumber}</Text>
+            </View>
+          )}
         </View>
 
         {/* Subscription badge */}

@@ -38,6 +38,9 @@ export function SettingsScreen({ navigation }: Props) {
     Alert.alert('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
   };
 
+  const comingSoon = (feature: string) => () =>
+    Alert.alert(feature, "This is on the way — we're adding it in the next update.");
+
   const handleDeleteAccount = () => {
     confirmAction(
       'Delete Account',
@@ -119,17 +122,13 @@ export function SettingsScreen({ navigation }: Props) {
             icon="shield-checkmark"
             iconColor={COLORS.success}
             label="Privacy Policy"
-            onPress={() => {
-              // TODO: Phase 2 — open WebView with privacy policy URL
-            }}
+            onPress={comingSoon('Privacy Policy')}
           />
           <SettingsRow
             icon="document-text"
             iconColor={COLORS.secondary}
             label="Terms of Service"
-            onPress={() => {
-              // TODO: Phase 2 — open WebView with ToS URL
-            }}
+            onPress={comingSoon('Terms of Service')}
           />
           <SettingsRow
             icon="star"
@@ -146,9 +145,7 @@ export function SettingsScreen({ navigation }: Props) {
             icon="help-circle"
             iconColor={COLORS.primary}
             label="Help & FAQ"
-            onPress={() => {
-              // TODO: Phase 2 — open FAQ screen
-            }}
+            onPress={comingSoon('Help & FAQ')}
           />
           <SettingsRow
             icon="chatbubble-ellipses"
@@ -160,9 +157,7 @@ export function SettingsScreen({ navigation }: Props) {
             icon="star-half"
             iconColor={COLORS.gold}
             label="Rate the App"
-            onPress={() => {
-              // TODO: Phase 2 — open app store rating
-            }}
+            onPress={comingSoon('Rate the App')}
           />
         </SettingsSection>
 
@@ -186,7 +181,7 @@ export function SettingsScreen({ navigation }: Props) {
         <View style={styles.versionBlock}>
           <Text style={styles.versionText}>Soma AI · Version 1.0.0 (Phase 1)</Text>
           <Text style={styles.versionSub}>Made with ❤️ for Tanzania</Text>
-          <Text style={styles.versionSub}>© 2025 Soma AI Education</Text>
+          <Text style={styles.versionSub}>© 2026 Soma AI Education</Text>
         </View>
       </ScrollView>
     </ScreenContainer>
