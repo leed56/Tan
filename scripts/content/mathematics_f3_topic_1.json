@@ -2,939 +2,371 @@
   "topicId": "form_3_mathematics_topic_1",
   "topicName": "Relations",
   "order": 1,
-  "description": "An introduction to relations covering their meaning, domain, codomain and range, ways of representing them, their types, and the inequalities and regions that describe them.",
+  "description": "An introduction to relations between sets, including ordered pairs, domain and range, the inverse of a relation, and the different types of relations such as one-to-one, many-to-one and functions. It also covers finding domains and ranges of algebraic relations and graphing linear inequalities.",
   "packs": {
     "mcq": [
       {
-        "questionText": "A relation from set A to set B is best described as a rule that connects elements of A to elements of B. Which of the following is the correct mathematical meaning of a relation?",
+        "questionText": "R = {(2, 5), (4, 9), (6, 13)}. Find the domain.",
         "options": [
-          {
-            "id": "a",
-            "text": "A set of ordered pairs",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "A single number",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "A straight line only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A list with no order",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{2, 4, 6}", "isCorrect": true},
+          {"id": "b", "text": "{5, 9, 13}", "isCorrect": false},
+          {"id": "c", "text": "{2, 4, 5, 6, 9, 13}", "isCorrect": false},
+          {"id": "d", "text": "{(2, 5)}", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A relation is a set of ordered pairs (x, y) that links elements of one set to elements of another according to a rule.",
+        "explanation": "The domain is the set of all first elements of the ordered pairs, which are 2, 4 and 6. Option B lists the second elements, which is the range. Exam Tip: the domain is always the set of first coordinates.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Given the relation R = {(1, 3), (2, 5), (4, 7)}, what is the domain of R?",
+        "questionText": "What type of relation is R = {(1, 4), (2, 4), (3, 4)}?",
         "options": [
-          {
-            "id": "a",
-            "text": "{3, 5, 7}",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "{1, 2, 4}",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "{1, 2, 3, 4, 5, 7}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "{1, 3}",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "One-to-one", "isCorrect": false},
+          {"id": "b", "text": "Many-to-one", "isCorrect": true},
+          {"id": "c", "text": "One-to-many", "isCorrect": false},
+          {"id": "d", "text": "Many-to-many", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The domain is the set of all first elements (x-values) of the ordered pairs: 1, 2 and 4.",
+        "explanation": "Several different inputs (1, 2 and 3) all map to the same single output 4, so many inputs go to one output. Exam Tip: when different domain values share one range value, the relation is many-to-one.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Given the relation R = {(1, 3), (2, 5), (4, 7)}, what is the range of R?",
+        "questionText": "Find the range of y = 2x + 1 for x in {0, 1, 2, 3}.",
         "options": [
-          {
-            "id": "a",
-            "text": "{1, 2, 4}",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "{3, 5}",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "{3, 5, 7}",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "{1, 3, 5, 7}",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{0, 1, 2, 3}", "isCorrect": false},
+          {"id": "b", "text": "{0, 2, 4, 6}", "isCorrect": false},
+          {"id": "c", "text": "{1, 3, 5, 7}", "isCorrect": true},
+          {"id": "d", "text": "{3, 5, 7, 9}", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The range is the set of all second elements (y-values) of the ordered pairs: 3, 5 and 7.",
+        "explanation": "Substituting each x gives 2(0)+1 = 1, 2(1)+1 = 3, 2(2)+1 = 5 and 2(3)+1 = 7, so the range is {1, 3, 5, 7}. Option B forgets to add the +1. Exam Tip: substitute every domain value into the rule to build the range.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the inverse of R = {(3, 8), (5, 12), (7, 16)}.",
+        "options": [
+          {"id": "a", "text": "{(8, 3), (12, 5), (16, 7)}", "isCorrect": true},
+          {"id": "b", "text": "{(3, 8), (5, 12), (7, 16)}", "isCorrect": false},
+          {"id": "c", "text": "{(−3, −8), (−5, −12), (−7, −16)}", "isCorrect": false},
+          {"id": "d", "text": "{(1/3, 1/8), (1/5, 1/12), (1/7, 1/16)}", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The inverse of a relation is found by swapping the coordinates in each ordered pair, so (3, 8) becomes (8, 3) and so on. Option D wrongly takes reciprocals. Exam Tip: to find an inverse, simply swap the first and second coordinates.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In a relation from set A to set B, the set B in which the second elements are chosen is called the:",
+        "questionText": "Find the domain of y = 6/(x − 4).",
         "options": [
-          {
-            "id": "a",
-            "text": "Domain",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Range",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Codomain",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Image",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "All real numbers", "isCorrect": false},
+          {"id": "b", "text": "All real except x = 4", "isCorrect": true},
+          {"id": "c", "text": "All real except x = 6", "isCorrect": false},
+          {"id": "d", "text": "x ≥ 4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The denominator cannot be zero, so x − 4 ≠ 0, which means x ≠ 4. Every other real number is allowed. Exam Tip: for a fraction, exclude the value that makes the denominator zero.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the range of y = x² − 9 for x real.",
+        "options": [
+          {"id": "a", "text": "y ≥ 9", "isCorrect": false},
+          {"id": "b", "text": "y ≥ 0", "isCorrect": false},
+          {"id": "c", "text": "y ≥ −9", "isCorrect": true},
+          {"id": "d", "text": "All real numbers", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The codomain is the whole set B from which the second elements are taken; the range is the subset of B that is actually used.",
+        "explanation": "The smallest value of x² is 0, which occurs at x = 0, so the smallest value of y is 0 − 9 = −9. Therefore y ≥ −9. Exam Tip: the minimum of x² is 0, so add the constant to find the least y value.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The relation 'is the double of' connects A = {2, 4, 6} to B = {1, 2, 3}. Which set of ordered pairs represents this relation?",
+        "questionText": "Find the domain of y = √(x + 5).",
         "options": [
-          {
-            "id": "a",
-            "text": "{(2, 1), (4, 2), (6, 3)}",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "{(1, 2), (2, 4), (3, 6)}",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "{(2, 2), (4, 4), (6, 6)}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "{(2, 4), (4, 8), (6, 12)}",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Each element of A is the double of its partner in B, so 2 pairs with 1, 4 with 2, and 6 with 3, giving (2,1), (4,2), (6,3).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A relation R is defined by R = {(x, y): y = x + 2, x is in {0, 1, 2, 3}}. Which ordered pair belongs to R?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(2, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(3, 5)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(1, 1)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(4, 6)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "x ≥ 5", "isCorrect": false},
+          {"id": "b", "text": "x ≥ −5", "isCorrect": true},
+          {"id": "c", "text": "x > −5", "isCorrect": false},
+          {"id": "d", "text": "x ≤ −5", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Using y = x + 2 with x = 3 gives y = 5, so (3, 5) is in R; x = 4 is not allowed.",
+        "explanation": "The expression under the square root must not be negative, so x + 5 ≥ 0, giving x ≥ −5. We include −5 because √0 = 0 is defined. Exam Tip: for a square root, set the inside greater than or equal to zero.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is a way of representing a relation?",
+        "questionText": "Which point satisfies y < 3x − 2?",
         "options": [
-          {
-            "id": "a",
-            "text": "Arrow diagram",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "A protractor",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "A bar of soap",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A clock face",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Relations can be represented by ordered pairs, arrow diagrams and graphs; the arrow diagram shows arrows linking domain elements to range elements.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A relation in which every element of the domain is paired with exactly one element of the range is also called a:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Region",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Function",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Sequence",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Vector",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(0, 0)", "isCorrect": false},
+          {"id": "b", "text": "(2, 1)", "isCorrect": true},
+          {"id": "c", "text": "(1, 5)", "isCorrect": false},
+          {"id": "d", "text": "(0, 3)", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A function is a special relation in which each domain element has exactly one image in the range.",
+        "explanation": "Substituting (2, 1) gives 1 < 3(2) − 2, that is 1 < 4, which is true. Exam Tip: substitute each point into the inequality and check that it holds.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following relations is NOT a function?",
+        "questionText": "Find the inverse of y = 4x + 8.",
         "options": [
-          {
-            "id": "a",
-            "text": "{(1, 2), (2, 4), (3, 6)}",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "{(1, 2), (1, 5), (3, 6)}",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "{(0, 0), (1, 1), (2, 2)}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "{(5, 1), (6, 1), (7, 1)}",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "y = (x + 8)/4", "isCorrect": false},
+          {"id": "b", "text": "y = (x − 8)/4", "isCorrect": true},
+          {"id": "c", "text": "y = 1/(4x + 8)", "isCorrect": false},
+          {"id": "d", "text": "y = 4x − 8", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The domain element 1 is paired with both 2 and 5, so it has two images, which violates the function rule.",
+        "explanation": "Swap x and y to get x = 4y + 8, then solve: x − 8 = 4y, so y = (x − 8)/4. Exam Tip: to invert a function, swap x and y and then make y the subject.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The relation 'is greater than' on the set {1, 2, 3} produces the pair (3, 1). Which other pair also belongs to this relation?",
+        "questionText": "R = {(x, y) : x + y = 5, x and y non-negative integers}. How many pairs are there?",
         "options": [
-          {
-            "id": "a",
-            "text": "(1, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(2, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(2, 1)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(1, 2)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "4", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": true},
+          {"id": "d", "text": "10", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "For 'is greater than', the first element must be larger than the second; 2 > 1 so (2, 1) belongs to the relation.",
+        "explanation": "Taking x = 0, 1, 2, 3, 4, 5 gives the pairs (0,5), (1,4), (2,3), (3,2), (4,1), (5,0), which is 6 pairs. Option B forgets that x = 0 is allowed. Exam Tip: non-negative integers include 0, so start counting from x = 0.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A relation R on a set is said to be reflexive if, for every element a in the set, the pair (a, a) belongs to R. Which relation on {1, 2} is reflexive?",
+        "questionText": "The relation \"is a father of\" is best described as:",
         "options": [
-          {
-            "id": "a",
-            "text": "{(1, 2)}",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "{(1, 1), (2, 2)}",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "{(2, 1)}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "{(1, 2), (2, 1)}",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "One-to-one", "isCorrect": false},
+          {"id": "b", "text": "Many-to-one", "isCorrect": false},
+          {"id": "c", "text": "One-to-many", "isCorrect": true},
+          {"id": "d", "text": "Many-to-many", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "A reflexive relation must contain (1, 1) and (2, 2); only option b contains both pairs.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A relation R is symmetric if whenever (a, b) is in R then (b, a) is also in R. Which of these relations on {1, 2, 3} is symmetric?",
-        "options": [
-          {
-            "id": "a",
-            "text": "{(1, 2), (2, 1), (3, 3)}",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "{(1, 2), (2, 3)}",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "{(1, 2), (3, 1)}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "{(1, 3), (2, 3)}",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "In option a, (1, 2) has its reverse (2, 1), and (3, 3) is its own reverse, so the relation is symmetric.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The region described by the inequality y >= x includes which of the following points?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(1, 0)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(2, 5)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(4, 1)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(3, 0)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "For y >= x, the point (2, 5) gives 5 >= 2 which is true; the other points have y less than x.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When graphing the region of the inequality y > 2x + 1, the boundary line y = 2x + 1 is drawn as a:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Solid line",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Dotted (broken) line",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Curve",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Circle",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A strict inequality (> or <) excludes the boundary, so the line is drawn dotted (broken); only >= or <= use a solid line.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A relation R = {(x, y): y = 2x, x is in {1, 2, 3}} is represented by which arrow diagram description?",
-        "options": [
-          {
-            "id": "a",
-            "text": "1 to 2, 2 to 4, 3 to 6",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1 to 1, 2 to 2, 3 to 3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "1 to 3, 2 to 6, 3 to 9",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1 to 0, 2 to 1, 3 to 2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Using y = 2x, the arrows go 1 to 2, 2 to 4 and 3 to 6, mapping each domain element to its double.",
+        "correctAnswer": "c",
+        "explanation": "One father can have many children, so a single domain element maps to several range elements, which is one-to-many. Exam Tip: one input linked to several outputs signals a one-to-many relation.",
         "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the domain of y = (x + 2)/(x² − 16).",
+        "options": [
+          {"id": "a", "text": "All real except x = 4", "isCorrect": false},
+          {"id": "b", "text": "All real except x = −2", "isCorrect": false},
+          {"id": "c", "text": "All real except x = 4 and x = −4", "isCorrect": true},
+          {"id": "d", "text": "All real except x = 16", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The denominator factors as (x − 4)(x + 4), which is zero when x = 4 or x = −4, so both values are excluded. Option A forgets the negative root. Exam Tip: factor the denominator fully to catch every excluded value.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If R⁻¹ = {(6, 1), (7, 2), (9, 5)}, find R.",
+        "options": [
+          {"id": "a", "text": "{(6, 1), (7, 2), (9, 5)}", "isCorrect": false},
+          {"id": "b", "text": "{(1, 6), (2, 7), (5, 9)}", "isCorrect": true},
+          {"id": "c", "text": "{(−6, −1), (−7, −2), (−9, −5)}", "isCorrect": false},
+          {"id": "d", "text": "{(1, 7), (2, 9), (5, 6)}", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since R⁻¹ is R with the coordinates swapped, swap them back to recover R, giving {(1, 6), (2, 7), (5, 9)}. Exam Tip: the inverse of an inverse returns the original, so swap the pairs again.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For the graph of y ≥ 2x + 3, which describes the boundary line and shading?",
+        "options": [
+          {"id": "a", "text": "Solid line, region above shaded", "isCorrect": true},
+          {"id": "b", "text": "Broken line, above shaded", "isCorrect": false},
+          {"id": "c", "text": "Solid line, below shaded", "isCorrect": false},
+          {"id": "d", "text": "Broken line, below shaded", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The sign ≥ includes the boundary, so the line is solid, and testing (0, 0) gives 0 ≥ 3 which is false, so the region above the line is shaded. Exam Tip: ≥ or ≤ means a solid line; use a test point to decide which side to shade.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the range of y = √(x − 3).",
+        "options": [
+          {"id": "a", "text": "y ≥ 3", "isCorrect": false},
+          {"id": "b", "text": "y ≥ 0", "isCorrect": true},
+          {"id": "c", "text": "y ≥ −3", "isCorrect": false},
+          {"id": "d", "text": "All real numbers", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A square root always gives a non-negative result, so y ≥ 0. Option A confuses this with the domain condition x ≥ 3. Exam Tip: the output of a square root is never negative, so its range starts at 0.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A relation is a set of _____ pairs that connects elements of one set to elements of another.",
+        "questionText": "The domain of {(4, 9), (6, 13), (10, 21)} is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "ordered",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "unordered",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "random",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "equal",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{4, 6, 10}", "isCorrect": true},
+          {"id": "b", "text": "{9, 13, 21}", "isCorrect": false},
+          {"id": "c", "text": "{4, 6, 9, 10, 13, 21}", "isCorrect": false},
+          {"id": "d", "text": "{4, 9}", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A relation is formally defined as a set of ordered pairs (x, y).",
+        "explanation": "The domain is the set of first elements of the pairs, which are 4, 6 and 10. Exam Tip: read only the first number in each ordered pair for the domain.",
         "difficulty": "easy"
       },
       {
-        "questionText": "For the relation {(2, 4), (3, 9), (5, 25)}, the domain is _____.",
+        "questionText": "The inverse of the ordered pair (m, n) is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "{4, 9, 25}",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "{2, 3, 5}",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "{2, 4, 5}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "{2, 3, 9}",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The domain is the set of first elements of the ordered pairs.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For the relation {(2, 4), (3, 9), (5, 25)}, the range is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "{2, 3, 5}",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "{4, 9, 24}",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "{4, 9, 25}",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "{2, 4, 25}",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The range is the set of second elements of the ordered pairs.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The complete set from which the second elements of a relation are chosen is called the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "domain",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "range",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "image",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "codomain",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "The codomain is the whole target set; the range is the part of it that is actually used.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A relation in which each element of the domain has exactly one image is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "function",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "relation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "sequence",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "mapping rule",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(n, m)", "isCorrect": true},
+          {"id": "b", "text": "(m, n)", "isCorrect": false},
+          {"id": "c", "text": "(−m, −n)", "isCorrect": false},
+          {"id": "d", "text": "(1/m, 1/n)", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A function is a special type of relation with exactly one output per input.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If the relation is given by y = x + 3 and x = 4, then the value of y is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "1",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "7",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "8",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Substituting x = 4 into y = x + 3 gives y = 4 + 3 = 7.",
+        "explanation": "The inverse swaps the two coordinates, so (m, n) becomes (n, m). Exam Tip: inverting a pair just switches the order of its two numbers.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A relation that satisfies (a, a) for every element a of the set is said to be _____.",
+        "questionText": "The range of y = x² + 7 for x real is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "symmetric",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "transitive",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "reflexive",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "antisymmetric",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "A reflexive relation contains every pair of the form (a, a).",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "When drawing the region for y <= 3, the boundary line y = 3 is drawn as a _____ line because the inequality includes equality.",
-        "options": [
-          {
-            "id": "a",
-            "text": "dotted",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "broken",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "curved",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "solid",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Inequalities with <= or >= include the boundary, so it is drawn as a solid line.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The relation 'is a factor of' connecting 2 to 6 gives the ordered pair _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "(2, 6)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(6, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(2, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(3, 6)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "y ≥ 7", "isCorrect": true},
+          {"id": "b", "text": "y ≥ 0", "isCorrect": false},
+          {"id": "c", "text": "y ≥ −7", "isCorrect": false},
+          {"id": "d", "text": "All real numbers", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Since 2 is a factor of 6, the ordered pair (2, 6) belongs to the relation.",
-        "difficulty": "medium"
+        "explanation": "The least value of x² is 0, so the least value of y is 0 + 7 = 7, giving y ≥ 7. Exam Tip: add the constant to the minimum of x², which is 0.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A relation is symmetric if whenever (a, b) is in it then _____ is also in it.",
+        "questionText": "The inverse of y = 5x − 10 is y = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "(a, b)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(b, a)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(a, a)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(b, b)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(x + 10)/5", "isCorrect": true},
+          {"id": "b", "text": "(x − 10)/5", "isCorrect": false},
+          {"id": "c", "text": "5x + 10", "isCorrect": false},
+          {"id": "d", "text": "1/(5x − 10)", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Symmetry requires the reverse pair (b, a) to be present for each pair (a, b).",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "Swap x and y to get x = 5y − 10, then solve: x + 10 = 5y, so y = (x + 10)/5. Exam Tip: swap x and y, then make y the subject.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When graphing y > x − 4, the boundary line is drawn as a ____ line.",
+        "options": [
+          {"id": "a", "text": "broken (dashed)", "isCorrect": true},
+          {"id": "b", "text": "solid", "isCorrect": false},
+          {"id": "c", "text": "curved", "isCorrect": false},
+          {"id": "d", "text": "vertical", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A strict inequality using > or < does not include the boundary, so the line is drawn broken or dashed. Exam Tip: strict inequalities (> or <) always use a dashed line.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The range of {(1, 3), (2, 6), (3, 6), (4, 9)} is ____.",
+        "options": [
+          {"id": "a", "text": "{3, 6, 9}", "isCorrect": true},
+          {"id": "b", "text": "{3, 6, 6, 9}", "isCorrect": false},
+          {"id": "c", "text": "{1, 2, 3, 4}", "isCorrect": false},
+          {"id": "d", "text": "{1, 3, 6, 9}", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The range is the set of second elements, and a set lists each value only once, so the repeated 6 is written a single time, giving {3, 6, 9}. Exam Tip: in a set, never repeat a value even if it appears in more than one pair.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The domain of y = 3/(x + 7) is all real except x = ____.",
+        "options": [
+          {"id": "a", "text": "−7", "isCorrect": true},
+          {"id": "b", "text": "7", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The denominator cannot be zero, so x + 7 ≠ 0, giving x ≠ −7. Exam Tip: set the denominator equal to zero and solve to find the excluded value.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If R is y = x − 5 then R⁻¹ is y = ____.",
+        "options": [
+          {"id": "a", "text": "x + 5", "isCorrect": true},
+          {"id": "b", "text": "x − 5", "isCorrect": false},
+          {"id": "c", "text": "5 − x", "isCorrect": false},
+          {"id": "d", "text": "1/(x − 5)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Swap x and y to get x = y − 5, then solve: y = x + 5. Exam Tip: swapping and solving turns subtracting 5 into adding 5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The domain of y = √(16 − x²) is ____.",
+        "options": [
+          {"id": "a", "text": "−4 ≤ x ≤ 4", "isCorrect": true},
+          {"id": "b", "text": "x ≥ 4", "isCorrect": false},
+          {"id": "c", "text": "x ≤ 4", "isCorrect": false},
+          {"id": "d", "text": "all real numbers", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The inside must be non-negative, so 16 − x² ≥ 0, meaning x² ≤ 16, which gives −4 ≤ x ≤ 4. Exam Tip: solving x² ≤ 16 gives a closed interval between the two roots.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A relation where every domain element pairs with exactly one range element is called a ____.",
+        "options": [
+          {"id": "a", "text": "function", "isCorrect": true},
+          {"id": "b", "text": "inverse", "isCorrect": false},
+          {"id": "c", "text": "domain", "isCorrect": false},
+          {"id": "d", "text": "many-to-many relation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A function is a special relation in which each input is linked to exactly one output. Exam Tip: if every domain value has just one partner, the relation is a function.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "A relation can be represented by ordered pairs, arrow diagrams and graphs.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "These are the three standard ways of representing a relation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The domain of a relation is the set of all second elements of its ordered pairs.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The domain is the set of first elements; the second elements form the range.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The range of a relation is always a subset of its codomain.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The range consists of the codomain elements that are actually used, so it is a subset of the codomain.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Every function is a relation.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A function is a special relation in which each input has exactly one output.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Every relation is a function.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A relation can pair one domain element with several images, which a function cannot do.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In the relation {(1, 2), (1, 3)}, the domain element 1 has two images.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The element 1 is paired with both 2 and 3, so it has two images.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For the inequality y < x, the point (3, 1) lies in the region.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Substituting gives 1 < 3, which is true, so (3, 1) lies in the region.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The boundary line of the inequality y > x + 2 is drawn as a solid line.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A strict inequality (>) excludes the boundary, so the line is drawn dotted (broken), not solid.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An arrow diagram uses arrows to show how each element of the domain is linked to an element of the range.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Arrow diagrams connect domain elements to range elements with arrows.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A relation that contains (a, a) for every element a is called a symmetric relation.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "That property defines a reflexive relation; symmetry concerns reversing pairs (a, b) to (b, a).",
-        "difficulty": "hard"
-      }
+      {"questionText": "Every relation is a function.", "options": [], "correctAnswer": "false", "explanation": "A function requires each input to have exactly one output, but relations may pair an input with several outputs, so not every relation is a function.", "difficulty": "easy"},
+      {"questionText": "The domain of R⁻¹ equals the range of R.", "options": [], "correctAnswer": "true", "explanation": "Since the inverse swaps coordinates, the first elements of R⁻¹ are the second elements of R, so the domain of R⁻¹ is the range of R.", "difficulty": "easy"},
+      {"questionText": "If (3, 7) belongs to R, then (7, 3) belongs to R⁻¹.", "options": [], "correctAnswer": "true", "explanation": "The inverse is formed by swapping each ordered pair, so (3, 7) in R becomes (7, 3) in R⁻¹.", "difficulty": "easy"},
+      {"questionText": "The range of y = x² is all real numbers.", "options": [], "correctAnswer": "false", "explanation": "Squaring any real number gives a result of 0 or more, so the range is y ≥ 0, not all real numbers.", "difficulty": "easy"},
+      {"questionText": "The graph of y ≤ x + 2 includes the boundary line y = x + 2.", "options": [], "correctAnswer": "true", "explanation": "The sign ≤ allows equality, so points on the line y = x + 2 satisfy the inequality and the boundary is included as a solid line.", "difficulty": "easy"},
+      {"questionText": "The relation {(2, 5), (4, 5)} is a one-to-many relation.", "options": [], "correctAnswer": "false", "explanation": "Here two different inputs 2 and 4 map to the same output 5, which is a many-to-one relation, not one-to-many.", "difficulty": "easy"},
+      {"questionText": "x = 0 is in the domain of y = 1/x.", "options": [], "correctAnswer": "false", "explanation": "At x = 0 the denominator is zero and the expression is undefined, so 0 is excluded from the domain.", "difficulty": "easy"},
+      {"questionText": "The inverse of y = 3x is y = x/3.", "options": [], "correctAnswer": "true", "explanation": "Swapping x and y gives x = 3y, and solving for y gives y = x/3, so the inverse is y = x/3.", "difficulty": "easy"},
+      {"questionText": "The graph of R⁻¹ is the mirror image of R in the line y = x.", "options": [], "correctAnswer": "true", "explanation": "Swapping coordinates reflects each point across the line y = x, so the graph of the inverse is the mirror image of R in that line.", "difficulty": "easy"},
+      {"questionText": "In a many-to-many relation, a domain element may pair with more than one range element and a range element may pair with more than one domain element.", "options": [], "correctAnswer": "true", "explanation": "A many-to-many relation allows inputs to link to several outputs and outputs to link to several inputs at the same time.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Meaning of a relation",
-        "options": [],
-        "correctAnswer": "A relation is a set of ordered pairs linking two sets by a rule.",
-        "explanation": "It connects elements of a first set to elements of a second set.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Domain of a relation",
-        "options": [],
-        "correctAnswer": "The set of all first elements of the ordered pairs.",
-        "explanation": "These are the input or x-values of the relation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Range of a relation",
-        "options": [],
-        "correctAnswer": "The set of all second elements of the ordered pairs.",
-        "explanation": "These are the output or y-values actually produced.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Codomain of a relation",
-        "options": [],
-        "correctAnswer": "The full set from which second elements are chosen.",
-        "explanation": "The range is a subset of the codomain.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ways of representing a relation",
-        "options": [],
-        "correctAnswer": "Ordered pairs, arrow diagrams and graphs.",
-        "explanation": "Each method shows the same links in a different visual form.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function as a special relation",
-        "options": [],
-        "correctAnswer": "A relation in which each input has exactly one output.",
-        "explanation": "Every function is a relation, but not every relation is a function.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Reflexive relation",
-        "options": [],
-        "correctAnswer": "A relation containing (a, a) for every element a.",
-        "explanation": "Each element is related to itself.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Symmetric relation",
-        "options": [],
-        "correctAnswer": "A relation where (a, b) present means (b, a) is also present.",
-        "explanation": "Each pair has its reverse in the relation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Solid vs dotted boundary lines",
-        "options": [],
-        "correctAnswer": "Use solid for <= or >= and dotted for < or >.",
-        "explanation": "Solid includes the boundary; dotted excludes it.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Region of an inequality",
-        "options": [],
-        "correctAnswer": "The set of all points satisfying the inequality.",
-        "explanation": "An inequality describes a relation shown as a shaded region on a graph.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Relation", "options": [], "correctAnswer": "A rule that links elements of one set to elements of another set, often shown as a set of ordered pairs.", "explanation": "Any connection between a domain and a range, such as {(1, 2), (3, 4)}, is a relation. It does not have to be a function.", "difficulty": "easy"},
+      {"questionText": "Ordered pair", "options": [], "correctAnswer": "A pair of elements written as (x, y) in which the order matters, with x first and y second.", "explanation": "In (x, y) the first value comes from the domain and the second from the range. Swapping them, as in (y, x), gives a different pair.", "difficulty": "easy"},
+      {"questionText": "Domain", "options": [], "correctAnswer": "The set of all first elements (x-values) of the ordered pairs in a relation.", "explanation": "The domain gathers every input of the relation. For {(2, 5), (4, 9)} the domain is {2, 4}. Exam Tip: read only the first number of each pair.", "difficulty": "easy"},
+      {"questionText": "Range", "options": [], "correctAnswer": "The set of all second elements (y-values) of the ordered pairs in a relation.", "explanation": "The range gathers every output of the relation, listing repeated values only once. For {(2, 5), (4, 9)} the range is {5, 9}. Exam Tip: read only the second number of each pair.", "difficulty": "easy"},
+      {"questionText": "Inverse of a relation", "options": [], "correctAnswer": "A new relation formed by swapping the first and second elements of every ordered pair, written R⁻¹.", "explanation": "If R = {(1, 6)} then R⁻¹ = {(6, 1)}, so the domain and range trade places. Exam Tip: to invert, simply swap each pair's coordinates.", "difficulty": "easy"},
+      {"questionText": "One-to-one relation", "options": [], "correctAnswer": "A relation in which each domain element pairs with exactly one range element and each range element with exactly one domain element.", "explanation": "Every input has a unique output and every output a unique input, like {(1, 2), (3, 4)}. Exam Tip: no value is shared or repeated on either side.", "difficulty": "easy"},
+      {"questionText": "Many-to-one relation", "options": [], "correctAnswer": "A relation in which two or more domain elements pair with the same single range element.", "explanation": "Several inputs share one output, such as {(1, 4), (2, 4)} where 1 and 2 both map to 4. Exam Tip: different inputs, same output signals many-to-one.", "difficulty": "easy"},
+      {"questionText": "One-to-many relation", "options": [], "correctAnswer": "A relation in which one domain element pairs with two or more range elements.", "explanation": "A single input links to several outputs, like \"is a father of\" where one father has many children. Exam Tip: one input, several outputs signals one-to-many.", "difficulty": "easy"},
+      {"questionText": "Many-to-many relation", "options": [], "correctAnswer": "A relation in which domain elements can pair with several range elements and range elements with several domain elements.", "explanation": "Both sides may connect to more than one partner, such as students and the subjects they study. Exam Tip: sharing occurs on both the input and output sides.", "difficulty": "easy"},
+      {"questionText": "Function", "options": [], "correctAnswer": "A special relation in which every domain element is paired with exactly one range element.", "explanation": "Each input has one and only one output, so one-to-one and many-to-one relations are functions, but one-to-many relations are not. Exam Tip: no input may map to two different outputs.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A relation R is defined on the set {1, 2, 3, 4} by R = {(x, y): y = x + 1}. How many ordered pairs does R contain, and what is its range?",
+        "questionText": "Find the inverse of y = (2x + 1)/(x − 3) and state the excluded x-value of the inverse.",
         "options": [
-          {
-            "id": "a",
-            "text": "3 pairs, range {2, 3, 4}",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "4 pairs, range {2, 3, 4, 5}",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3 pairs, range {1, 2, 3}",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "4 pairs, range {1, 2, 3, 4}",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "y = (3x + 1)/(x − 2), x ≠ 2", "isCorrect": true},
+          {"id": "b", "text": "y = (x − 3)/(2x + 1), x ≠ −1/2", "isCorrect": false},
+          {"id": "c", "text": "y = (3x − 1)/(x + 2), x ≠ −2", "isCorrect": false},
+          {"id": "d", "text": "y = (2x + 1)/(x − 3), x ≠ 3", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Both x and y must be in the set, so x can be 1, 2, 3 giving (1,2), (2,3), (3,4); x = 4 needs y = 5 which is not in the set, so there are 3 pairs with range {2, 3, 4}.",
+        "explanation": "Swap x and y to get x = (2y + 1)/(y − 3). Multiply out: x(y − 3) = 2y + 1, so xy − 3x = 2y + 1. Collect y terms: xy − 2y = 3x + 1, so y(x − 2) = 3x + 1, giving y = (3x + 1)/(x − 2). The denominator x − 2 cannot be zero, so x ≠ 2. Option B is the reciprocal trap. Exam Tip: swap, clear the fraction, gather the y terms and factor to make y the subject.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Which single point lies in the region satisfying BOTH y >= x and y <= 4 at the same time?",
+        "questionText": "State the domain and range of y = √(x − 1) + 2.",
         "options": [
-          {
-            "id": "a",
-            "text": "(5, 6)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(1, 3)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(3, 1)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(2, 5)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Domain x ≥ 1; Range y ≥ 2", "isCorrect": true},
+          {"id": "b", "text": "Domain x ≥ −1; Range y ≥ 2", "isCorrect": false},
+          {"id": "c", "text": "Domain x ≥ 1; Range y ≥ 0", "isCorrect": false},
+          {"id": "d", "text": "Domain x ≥ 2; Range y ≥ 1", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "At (1, 3): 3 >= 1 is true and 3 <= 4 is true, so both conditions hold; the others fail at least one inequality.",
+        "correctAnswer": "a",
+        "explanation": "For the square root, the inside must be non-negative, so x − 1 ≥ 0, giving the domain x ≥ 1. The square root itself is at least 0, so the smallest value of y is 0 + 2 = 2, giving the range y ≥ 2. Option C forgets the +2 shift. Exam Tip: the domain comes from the inside of the root, and the range starts at the added constant.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A relation R on {1, 2, 3} is R = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)}. Which statement is true about R?",
+        "questionText": "Asha keeps x chickens and y ducks subject to x + y ≤ 10, x ≥ 3 and y ≥ 2. Which pair satisfies all three conditions?",
         "options": [
-          {
-            "id": "a",
-            "text": "It is reflexive and symmetric",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "It is reflexive but not symmetric",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "It is symmetric but not reflexive",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It is neither reflexive nor symmetric",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(2, 6)", "isCorrect": false},
+          {"id": "b", "text": "(8, 3)", "isCorrect": false},
+          {"id": "c", "text": "(4, 5)", "isCorrect": true},
+          {"id": "d", "text": "(5, 1)", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "R contains (1,1), (2,2) and (3,3) so it is reflexive, and (1,2) has its reverse (2,1) so it is symmetric.",
+        "correctAnswer": "c",
+        "explanation": "Test (4, 5): the sum 4 + 5 = 9 ≤ 10 holds, 4 ≥ 3 holds and 5 ≥ 2 holds, so all three conditions are satisfied. Each distractor fails exactly one condition: (2, 6) fails x ≥ 3, (8, 3) fails x + y ≤ 10, and (5, 1) fails y ≥ 2. Exam Tip: check every point against all constraints, since one failure rules it out.",
         "difficulty": "hard"
       }
     ]
