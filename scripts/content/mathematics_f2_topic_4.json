@@ -1,940 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_4",
-  "topicName": "Logarithms",
+  "topicName": "Algebra",
   "order": 4,
-  "description": "An introduction to logarithms covering their relationship with indices, the laws of logarithms, common (base 10) logarithms, antilogarithms and their use in solving equations and simple real-life calculations.",
+  "description": "An introduction to binary operations and their properties, transposing formulae to change the subject, expanding and factorising algebraic expressions, and forming and solving quadratic equations by factorisation.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which of the following is the logarithmic form of the index statement 2^5 = 32?",
+        "questionText": "If a*b = 2a + b, find 3*5.",
         "options": [
-          {
-            "id": "a",
-            "text": "log_2 5 = 32",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "log_2 32 = 5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "log_5 32 = 2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "log_32 2 = 5",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "If a^x = n then log_a n = x, so 2^5 = 32 becomes log_2 32 = 5.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the value of log_10 1000?",
-        "options": [
-          {
-            "id": "a",
-            "text": "2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "10",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "100",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Since 10^3 = 1000, log_10 1000 = 3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The value of log_5 1 is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "0",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "undefined",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "For any base a, a^0 = 1, therefore log_a 1 = 0, so log_5 1 = 0.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Using the laws of logarithms, log 4 + log 25 is equal to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "log 29",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "log 100",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "log 21",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "log 625",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "log a + log b = log(ab), so log 4 + log 25 = log(4 x 25) = log 100.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The expression log 60 - log 6 simplifies to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "log 10",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "log 54",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "log 66",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "log 360",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "log a - log b = log(a/b), so log 60 - log 6 = log(60/6) = log 10.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the value of log_2 16?",
-        "options": [
-          {
-            "id": "a",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "4",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "8",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Since 2^4 = 16, we have log_2 16 = 4.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The characteristic of log 357 is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "1",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The characteristic of a common logarithm equals one less than the number of digits before the decimal point; 357 has 3 digits, so the characteristic is 3 - 1 = 2.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Given that log 2 = 0.3010, what is the value of log 8?",
-        "options": [
-          {
-            "id": "a",
-            "text": "0.6020",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "0.9030",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "0.2408",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1.2040",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "log 8 = log 2^3 = 3 log 2 = 3 x 0.3010 = 0.9030.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Using log a^n = n log a, the expression log 5^2 equals:",
-        "options": [
-          {
-            "id": "a",
-            "text": "2 log 5",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "5 log 2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "log 10",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(log 5)^2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "The power law of logarithms states log a^n = n log a, so log 5^2 = 2 log 5.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If log_3 x = 4, then the value of x is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "12",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "64",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "81",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "7",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "8", "isCorrect": false},
+          {"id": "b", "text": "10", "isCorrect": false},
+          {"id": "c", "text": "11", "isCorrect": true},
+          {"id": "d", "text": "13", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "log_3 x = 4 means x = 3^4 = 81.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The value of log_10 0.001 is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "-3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "-2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.001",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "0.001 = 10^-3, therefore log_10 0.001 = -3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The number whose common logarithm is exactly 2 is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "20",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "100",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "200",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "If log_10 n = 2 then n = 10^2 = 100; this is the antilogarithm of 2.",
+        "explanation": "Substitute a = 3 and b = 5 into 2a + b to get 2(3) + 5 = 6 + 5 = 11. Exam Tip: replace a with the first number and b with the second, in that order.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Simplify log 12 + log 5 - log 6.",
+        "questionText": "If a*b = 2a + b, find 5*3.",
         "options": [
-          {
-            "id": "a",
-            "text": "log 10",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "log 11",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "log 60",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "log 360",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "11", "isCorrect": false},
+          {"id": "b", "text": "13", "isCorrect": true},
+          {"id": "c", "text": "16", "isCorrect": false},
+          {"id": "d", "text": "10", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Here a = 5 and b = 3, so 2(5) + 3 = 10 + 3 = 13, which differs from 3*5, showing the operation is not commutative. Exam Tip: order matters unless the operation is proven commutative.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If p⊕q = pq − p, find 4⊕6.",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": true},
+          {"id": "b", "text": "24", "isCorrect": false},
+          {"id": "c", "text": "18", "isCorrect": false},
+          {"id": "d", "text": "22", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Combine using the laws: log(12 x 5 / 6) = log(60/6) = log 10.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If 10^x = 4500, in which two consecutive whole numbers does x lie?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Between 2 and 3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Between 3 and 4",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Between 4 and 5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Between 1 and 2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Since 10^3 = 1000 and 10^4 = 10000, and 4500 lies between them, x = log 4500 lies between 3 and 4.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the value of log_a a for any valid base a (where a > 0 and a is not 1)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "0",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "a",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "10",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Since a^1 = a, it follows that log_a a = 1 for every valid base a.",
+        "explanation": "Substitute p = 4 and q = 6 into pq − p to get (4)(6) − 4 = 24 − 4 = 20. Exam Tip: work out the product first, then subtract.",
         "difficulty": "easy"
+      },
+      {
+        "questionText": "Make x the subject of y = x + 5.",
+        "options": [
+          {"id": "a", "text": "x = y + 5", "isCorrect": false},
+          {"id": "b", "text": "x = y − 5", "isCorrect": true},
+          {"id": "c", "text": "x = 5 − y", "isCorrect": false},
+          {"id": "d", "text": "x = 5y", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Subtract 5 from both sides of y = x + 5 to leave x on its own, giving x = y − 5. Exam Tip: a term crossing the equals sign changes its sign.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Make t the subject of v = u + at.",
+        "options": [
+          {"id": "a", "text": "t = (v − u)/a", "isCorrect": true},
+          {"id": "b", "text": "t = v − u − a", "isCorrect": false},
+          {"id": "c", "text": "t = (u − v)/a", "isCorrect": false},
+          {"id": "d", "text": "t = va − u", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Subtract u from both sides to get v − u = at, then divide both sides by a to obtain t = (v − u)/a. Exam Tip: undo addition first, then undo the multiplication by dividing.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Make r the subject of A = πr².",
+        "options": [
+          {"id": "a", "text": "r = A/π", "isCorrect": false},
+          {"id": "b", "text": "r = √(A/π)", "isCorrect": true},
+          {"id": "c", "text": "r = (√A)/π", "isCorrect": false},
+          {"id": "d", "text": "r = A²/π", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Divide both sides by π to get r² = A/π, then take the square root of both sides to obtain r = √(A/π). Exam Tip: remove the multiplier before taking the root.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Expand (x + 3)(x + 2).",
+        "options": [
+          {"id": "a", "text": "x² + 5x + 6", "isCorrect": true},
+          {"id": "b", "text": "x² + 6x + 5", "isCorrect": false},
+          {"id": "c", "text": "x² + 5x + 5", "isCorrect": false},
+          {"id": "d", "text": "x² + 6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply each term: x·x + x·2 + 3·x + 3·2 = x² + 2x + 3x + 6 = x² + 5x + 6. Exam Tip: the middle term is the sum of the two numbers, the last term is their product.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Expand (x − 4)(x + 4).",
+        "options": [
+          {"id": "a", "text": "x² − 8x − 16", "isCorrect": false},
+          {"id": "b", "text": "x² + 16", "isCorrect": false},
+          {"id": "c", "text": "x² − 16", "isCorrect": true},
+          {"id": "d", "text": "x² − 8x + 16", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This is a difference of two squares, (a − b)(a + b) = a² − b², so (x − 4)(x + 4) = x² − 16 with the middle terms cancelling. Exam Tip: (a − b)(a + b) always gives a² − b² with no middle term.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Expand (x + 5)².",
+        "options": [
+          {"id": "a", "text": "x² + 25", "isCorrect": false},
+          {"id": "b", "text": "x² + 5x + 25", "isCorrect": false},
+          {"id": "c", "text": "x² + 10x + 25", "isCorrect": true},
+          {"id": "d", "text": "x² + 10x + 10", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using (a + b)² = a² + 2ab + b², we get x² + 2(x)(5) + 5² = x² + 10x + 25. Exam Tip: never forget the middle term 2ab when squaring a bracket.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Factorise x² + 7x + 12.",
+        "options": [
+          {"id": "a", "text": "(x + 3)(x + 4)", "isCorrect": true},
+          {"id": "b", "text": "(x + 2)(x + 6)", "isCorrect": false},
+          {"id": "c", "text": "(x + 1)(x + 12)", "isCorrect": false},
+          {"id": "d", "text": "(x − 3)(x − 4)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Find two numbers with product 12 and sum 7; these are 3 and 4, so x² + 7x + 12 = (x + 3)(x + 4). Exam Tip: list factor pairs of the last number and pick the pair that adds to the middle number.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Factorise x² − 5x − 14.",
+        "options": [
+          {"id": "a", "text": "(x − 7)(x + 2)", "isCorrect": true},
+          {"id": "b", "text": "(x + 7)(x − 2)", "isCorrect": false},
+          {"id": "c", "text": "(x − 7)(x − 2)", "isCorrect": false},
+          {"id": "d", "text": "(x + 14)(x − 1)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "We need two numbers with product −14 and sum −5; these are −7 and +2, giving (x − 7)(x + 2). Exam Tip: when the last term is negative, the two numbers have opposite signs.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Factorise completely 3x² − 12.",
+        "options": [
+          {"id": "a", "text": "3(x² − 4)", "isCorrect": false},
+          {"id": "b", "text": "3(x − 2)(x + 2)", "isCorrect": true},
+          {"id": "c", "text": "(3x − 12)(x + 1)", "isCorrect": false},
+          {"id": "d", "text": "3(x − 4)(x + 1)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Take out the common factor 3 to get 3(x² − 4), then factorise the difference of squares x² − 4 = (x − 2)(x + 2), giving 3(x − 2)(x + 2). Exam Tip: always remove the common factor first, then check for a difference of squares.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Solve x² − 9 = 0.",
+        "options": [
+          {"id": "a", "text": "x = 3 only", "isCorrect": false},
+          {"id": "b", "text": "x = −3 only", "isCorrect": false},
+          {"id": "c", "text": "x = 3 or x = −3", "isCorrect": true},
+          {"id": "d", "text": "x = 9 or x = −9", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Factorise as (x − 3)(x + 3) = 0, so each factor gives x = 3 or x = −3. Exam Tip: a difference of squares equal to zero gives two opposite solutions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Solve x² + 5x + 6 = 0.",
+        "options": [
+          {"id": "a", "text": "x = 2 or 3", "isCorrect": false},
+          {"id": "b", "text": "x = −2 or −3", "isCorrect": true},
+          {"id": "c", "text": "x = −1 or −6", "isCorrect": false},
+          {"id": "d", "text": "x = 1 or 6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Factorise into (x + 2)(x + 3) = 0, so x + 2 = 0 or x + 3 = 0, giving x = −2 or x = −3. Exam Tip: set each factor equal to zero to find the roots.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A rectangular shamba has area 96 m² and its length is 4 m more than its width w. Which equation represents this?",
+        "options": [
+          {"id": "a", "text": "w² + 4w − 96 = 0", "isCorrect": true},
+          {"id": "b", "text": "w² − 4w − 96 = 0", "isCorrect": false},
+          {"id": "c", "text": "4w² = 96", "isCorrect": false},
+          {"id": "d", "text": "w² + 4w + 96 = 0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Length is w + 4, so area = w(w + 4) = 96, which expands to w² + 4w = 96, and moving 96 across gives w² + 4w − 96 = 0. Exam Tip: form the area product first, then move everything to one side.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The index statement 3^4 = 81 written in logarithmic form is log_3 81 = _____.",
+        "questionText": "If a*b = a² + b, then 3*4 = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "4",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "81",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "13", "isCorrect": true},
+          {"id": "b", "text": "10", "isCorrect": false},
+          {"id": "c", "text": "25", "isCorrect": false},
+          {"id": "d", "text": "19", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Since a^x = n gives log_a n = x, the exponent 4 becomes the logarithm.",
+        "explanation": "Substitute a = 3 and b = 4 into a² + b to get 3² + 4 = 9 + 4 = 13. Exam Tip: square the first number before adding the second.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The value of log_10 100000 is _____.",
+        "questionText": "In P = 2(l + w), making l the subject gives l = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "6",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "4",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "10",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "100000 = 10^5, so log_10 100000 = 5.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Using the laws of logarithms, log 7 + log 2 = log _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "14",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "72",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "log a + log b = log(ab), so log 7 + log 2 = log(7 x 2) = log 14.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The characteristic of the common logarithm of 4582 is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "4",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3.66",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "3",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "The number 4582 has 4 digits before the decimal point, so the characteristic is 4 - 1 = 3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If log_10 x = 3, then the antilogarithm gives x = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "1000",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "100",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "300",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "30",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "P/2 − w", "isCorrect": true},
+          {"id": "b", "text": "P − w", "isCorrect": false},
+          {"id": "c", "text": "P/2 + w", "isCorrect": false},
+          {"id": "d", "text": "(P − w)/2", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "x = 10^3 = 1000, found by taking the antilogarithm of 3.",
+        "explanation": "Divide both sides by 2 to get P/2 = l + w, then subtract w to obtain l = P/2 − w. Exam Tip: undo the multiplication by 2 before removing w.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Given log 3 = 0.4771, the value of log 9 is _____.",
+        "questionText": "Making u the subject of v² = u² + 2as gives u = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "0.4771",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "0.9542",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "1.4313",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.2386",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "log 9 = log 3^2 = 2 log 3 = 2 x 0.4771 = 0.9542.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The value of log_4 64 is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "16",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "4",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Since 4^3 = 64, log_4 64 = 3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Expressed as a single logarithm, 2 log 5 = log _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "10",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "7",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "32",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "25",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "By the power law, 2 log 5 = log 5^2 = log 25.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The value of log_7 7 is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "1",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "7",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "49",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "√(v² − 2as)", "isCorrect": true},
+          {"id": "b", "text": "v − 2as", "isCorrect": false},
+          {"id": "c", "text": "√(v²) − 2as", "isCorrect": false},
+          {"id": "d", "text": "v² − 2as", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "For any valid base a, log_a a = 1, so log_7 7 = 1.",
+        "explanation": "Subtract 2as from both sides to get u² = v² − 2as, then take the square root to obtain u = √(v² − 2as). Exam Tip: isolate the squared term before taking the root.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If log_2 x = 5, then x = _____.",
+        "questionText": "Expand (x + 6)(x − 6) = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "10",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "32",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "25",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "16",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "x² − 36", "isCorrect": true},
+          {"id": "b", "text": "x² + 36", "isCorrect": false},
+          {"id": "c", "text": "x² − 12x − 36", "isCorrect": false},
+          {"id": "d", "text": "x² − 12", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "log_2 x = 5 means x = 2^5 = 32.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "This is a difference of two squares, so (x + 6)(x − 6) = x² − 6² = x² − 36 with no middle term. Exam Tip: (a + b)(a − b) = a² − b².",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Expand (x − 3)² = ____.",
+        "options": [
+          {"id": "a", "text": "x² − 6x + 9", "isCorrect": true},
+          {"id": "b", "text": "x² + 9", "isCorrect": false},
+          {"id": "c", "text": "x² − 9", "isCorrect": false},
+          {"id": "d", "text": "x² − 6x − 9", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using (a − b)² = a² − 2ab + b², we get x² − 2(x)(3) + 3² = x² − 6x + 9. Exam Tip: squaring a subtraction gives a negative middle term but a positive last term.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Factorise x² + 9x = ____.",
+        "options": [
+          {"id": "a", "text": "x(x + 9)", "isCorrect": true},
+          {"id": "b", "text": "(x + 3)(x + 3)", "isCorrect": false},
+          {"id": "c", "text": "9x²", "isCorrect": false},
+          {"id": "d", "text": "x(x − 9)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Both terms share the common factor x, so x² + 9x = x(x + 9). Exam Tip: always check for a common factor before any other method.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Factorise x² − 49 = ____.",
+        "options": [
+          {"id": "a", "text": "(x − 7)(x + 7)", "isCorrect": true},
+          {"id": "b", "text": "(x − 7)(x − 7)", "isCorrect": false},
+          {"id": "c", "text": "(x + 7)(x + 7)", "isCorrect": false},
+          {"id": "d", "text": "(x − 49)(x + 1)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since 49 = 7², this is a difference of two squares, so x² − 49 = (x − 7)(x + 7). Exam Tip: a² − b² factorises as (a − b)(a + b).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The solutions of (x − 5)(x + 2) = 0 are x = ____ and x = ____.",
+        "options": [
+          {"id": "a", "text": "5 and −2", "isCorrect": true},
+          {"id": "b", "text": "−5 and 2", "isCorrect": false},
+          {"id": "c", "text": "5 and 2", "isCorrect": false},
+          {"id": "d", "text": "−5 and −2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "By the zero product property, x − 5 = 0 or x + 2 = 0, giving x = 5 or x = −2. Exam Tip: set each bracket to zero and change the sign of the number inside.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The solutions of x² = 6x are x = ____ and x = ____.",
+        "options": [
+          {"id": "a", "text": "0 and 6", "isCorrect": true},
+          {"id": "b", "text": "6 and −6", "isCorrect": false},
+          {"id": "c", "text": "0 and −6", "isCorrect": false},
+          {"id": "d", "text": "6 only", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Move everything to one side: x² − 6x = 0, factorise to x(x − 6) = 0, so x = 0 or x = 6. Exam Tip: never divide both sides by x, or you lose the solution x = 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If x² + bx + 16 is a perfect square, then b = ____ (positive value).",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": true},
+          {"id": "b", "text": "4", "isCorrect": false},
+          {"id": "c", "text": "16", "isCorrect": false},
+          {"id": "d", "text": "32", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A perfect square (x + a)² = x² + 2ax + a² needs a² = 16, so a = 4, and then b = 2a = 8. Exam Tip: the middle coefficient is twice the square root of the last term.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "The statement a^x = n is equivalent to log_a n = x.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the fundamental relationship between indices and logarithms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For any base a, log_a 1 = 1.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Since a^0 = 1, log_a 1 = 0, not 1.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The law log(ab) = log a + log b is one of the laws of logarithms.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The product of numbers becomes the sum of their logarithms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "log(a + b) is equal to log a + log b.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "There is no law for the logarithm of a sum; log a + log b equals log(ab), not log(a + b).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A common logarithm is a logarithm taken to base 10.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Common logarithms use base 10 and are usually written simply as log.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "log a^n = n log a is the power law of logarithms.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The exponent of the number can be brought down to multiply the logarithm.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The antilogarithm reverses the process of finding a logarithm.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "If log n = x, then the antilogarithm of x gives back n = 10^x.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The logarithm of a negative number such as log(-5) can be found using base 10.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Logarithms of zero and negative numbers are not defined in the real number system.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The characteristic of log 0.045 is negative.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "For numbers less than 1, the characteristic of the common logarithm is negative (here it is -2).",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The quotient law states that log(a/b) = log a - log b.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Dividing numbers corresponds to subtracting their logarithms.",
-        "difficulty": "easy"
-      }
+      {"questionText": "For a*b = a + 2b, the operation is commutative.", "options": [], "correctAnswer": "false", "explanation": "Testing shows a*b = a + 2b but b*a = b + 2a, and these are not equal in general, so the operation is not commutative.", "difficulty": "easy"},
+      {"questionText": "Ordinary addition of numbers is commutative.", "options": [], "correctAnswer": "true", "explanation": "For any numbers a and b, a + b = b + a, so ordinary addition is commutative.", "difficulty": "easy"},
+      {"questionText": "(x + y)² = x² + y² for all x and y.", "options": [], "correctAnswer": "false", "explanation": "The correct expansion is (x + y)² = x² + 2xy + y², so the middle term 2xy is missing from the given statement.", "difficulty": "easy"},
+      {"questionText": "x² − 25 factorises as (x − 5)(x + 5).", "options": [], "correctAnswer": "true", "explanation": "Since 25 = 5², this is a difference of two squares and factorises as (x − 5)(x + 5).", "difficulty": "easy"},
+      {"questionText": "x² + 25 factorises as (x + 5)(x + 5).", "options": [], "correctAnswer": "false", "explanation": "Expanding (x + 5)(x + 5) gives x² + 10x + 25, not x² + 25, and a sum of two squares does not factorise over real numbers.", "difficulty": "easy"},
+      {"questionText": "A quadratic equation can have at most two solutions.", "options": [], "correctAnswer": "true", "explanation": "A quadratic has degree two, so it can have at most two real roots.", "difficulty": "easy"},
+      {"questionText": "In transposition, if a term crosses the equals sign its sign changes.", "options": [], "correctAnswer": "true", "explanation": "Moving a term to the other side is really adding or subtracting it from both sides, so its sign changes.", "difficulty": "easy"},
+      {"questionText": "The equation x² = 16 has only one solution x = 4.", "options": [], "correctAnswer": "false", "explanation": "Both 4 and −4 square to 16, so x² = 16 has two solutions, x = 4 and x = −4.", "difficulty": "easy"},
+      {"questionText": "x(x + 3) = 0 implies x = 0 or x = −3.", "options": [], "correctAnswer": "true", "explanation": "By the zero product property, x = 0 or x + 3 = 0, giving x = 0 or x = −3.", "difficulty": "easy"},
+      {"questionText": "To factorise x² + bx + c, we look for two numbers whose sum is b and product is c.", "options": [], "correctAnswer": "true", "explanation": "The two numbers must multiply to the constant term c and add to the middle coefficient b.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Relationship between indices and logarithms",
-        "options": [],
-        "correctAnswer": "If a^x = n then log_a n = x",
-        "explanation": "A logarithm answers the question: to what power must the base be raised to give the number.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Product law of logarithms",
-        "options": [],
-        "correctAnswer": "log(ab) = log a + log b",
-        "explanation": "Multiplication of numbers becomes addition of their logarithms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Quotient law of logarithms",
-        "options": [],
-        "correctAnswer": "log(a/b) = log a - log b",
-        "explanation": "Division of numbers becomes subtraction of their logarithms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Power law of logarithms",
-        "options": [],
-        "correctAnswer": "log a^n = n log a",
-        "explanation": "An exponent inside a logarithm can be moved out as a multiplier.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Logarithm of 1",
-        "options": [],
-        "correctAnswer": "log_a 1 = 0 for any base a",
-        "explanation": "Because any base raised to the power 0 equals 1.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Logarithm of the base itself",
-        "options": [],
-        "correctAnswer": "log_a a = 1",
-        "explanation": "Because the base raised to the power 1 equals itself.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of a common logarithm",
-        "options": [],
-        "correctAnswer": "A logarithm to base 10, written as log",
-        "explanation": "Common logarithms are used with log tables for calculations.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Characteristic and mantissa of a common logarithm",
-        "options": [],
-        "correctAnswer": "The whole-number part is the characteristic and the decimal part is the mantissa",
-        "explanation": "The characteristic shows the size of the number while the mantissa comes from log tables.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of an antilogarithm",
-        "options": [],
-        "correctAnswer": "The number whose logarithm is given; antilog of x is 10^x",
-        "explanation": "Taking the antilogarithm reverses the logarithm to recover the original number.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Domain restriction of logarithms",
-        "options": [],
-        "correctAnswer": "Logarithms exist only for positive numbers",
-        "explanation": "The logarithm of zero or a negative number is undefined for real numbers.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Binary operation", "options": [], "correctAnswer": "A rule that combines two elements to give a single result, often written with a symbol such as a*b.", "explanation": "For example a*b = 2a + b defines a binary operation that produces one value from the pair a and b. Exam Tip: always substitute the first number for a and the second for b in the given order.", "difficulty": "easy"},
+      {"questionText": "Commutative property", "options": [], "correctAnswer": "A property where the order of the two elements does not change the result, so a*b = b*a.", "explanation": "Ordinary addition and multiplication are commutative, but many defined operations like a*b = 2a + b are not. Exam Tip: test commutativity by comparing a*b with b*a using numbers.", "difficulty": "easy"},
+      {"questionText": "Transposition (making a subject of a formula)", "options": [], "correctAnswer": "Rearranging a formula so that a chosen variable stands alone on one side of the equals sign.", "explanation": "To make t the subject of v = u + at you subtract u then divide by a, giving t = (v − u)/a. Exam Tip: use inverse operations and remember a term changes sign when it crosses the equals sign.", "difficulty": "easy"},
+      {"questionText": "Expanding brackets", "options": [], "correctAnswer": "Multiplying out brackets so that every term inside is multiplied by every term outside, removing the brackets.", "explanation": "For example (x + 3)(x + 2) expands to x² + 5x + 6 by multiplying each pair of terms. Exam Tip: multiply each term systematically so no product is missed.", "difficulty": "easy"},
+      {"questionText": "Perfect square", "options": [], "correctAnswer": "The square of a binomial, following the pattern (a + b)² = a² + 2ab + b².", "explanation": "For example (x + 5)² = x² + 10x + 25, where the middle term 2ab must not be forgotten. Exam Tip: the middle term is twice the product of the two terms.", "difficulty": "easy"},
+      {"questionText": "Difference of two squares", "options": [], "correctAnswer": "An expression of the form a² − b² that factorises as (a − b)(a + b).", "explanation": "For example x² − 16 factorises to (x − 4)(x + 4) because 16 = 4². Exam Tip: this pattern works only for a subtraction of two square terms.", "difficulty": "easy"},
+      {"questionText": "Factorisation of a trinomial", "options": [], "correctAnswer": "Writing x² + bx + c as a product of two brackets using two numbers whose sum is b and product is c.", "explanation": "For x² + 7x + 12 the numbers 3 and 4 give (x + 3)(x + 4). Exam Tip: list factor pairs of c and pick the pair that adds to b.", "difficulty": "easy"},
+      {"questionText": "Quadratic equation", "options": [], "correctAnswer": "An equation of the form ax² + bx + c = 0 where a is not zero, having at most two solutions.", "explanation": "For example x² + 5x + 6 = 0 is quadratic because its highest power of x is two. Exam Tip: always rearrange to the form = 0 before solving.", "difficulty": "easy"},
+      {"questionText": "Zero product property", "options": [], "correctAnswer": "If a product of factors equals zero, then at least one of the factors must be zero.", "explanation": "So (x − 5)(x + 2) = 0 means x − 5 = 0 or x + 2 = 0, giving x = 5 or x = −2. Exam Tip: set each factor equal to zero to find every solution.", "difficulty": "easy"},
+      {"questionText": "Solving quadratics by factorisation", "options": [], "correctAnswer": "Writing a quadratic as a product of factors equal to zero, then setting each factor to zero to find the roots.", "explanation": "For x² + 5x + 6 = 0 we factorise to (x + 2)(x + 3) = 0, giving x = −2 or x = −3. Exam Tip: make sure the equation equals zero first, then factorise and solve each bracket.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Given that log 2 = 0.3010 and log 3 = 0.4771, what is the value of log 12?",
+        "questionText": "For the operation a*b = a² − ab, find (3*1)*2.",
         "options": [
-          {
-            "id": "a",
-            "text": "0.7781",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1.0791",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "1.2552",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.9031",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "6", "isCorrect": false},
+          {"id": "b", "text": "24", "isCorrect": true},
+          {"id": "c", "text": "30", "isCorrect": false},
+          {"id": "d", "text": "12", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "12 = 2^2 x 3, so log 12 = 2 log 2 + log 3 = 2(0.3010) + 0.4771 = 0.6020 + 0.4771 = 1.0791.",
+        "explanation": "Work the inner bracket first: 3*1 = 3² − 3(1) = 9 − 3 = 6. Then 6*2 = 6² − 6(2) = 36 − 12 = 24. Exam Tip: evaluate nested operations from the inside out.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Solve for x in the equation log_2(x + 3) = 4.",
+        "questionText": "For a closed cylinder A = 2πr² + 2πrh, make h the subject and find h when A = 660, r = 7 and π = 22/7.",
         "options": [
-          {
-            "id": "a",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "11",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "13",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "16",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "h = (A − 2πr²)/(2πr); h = 8", "isCorrect": false},
+          {"id": "b", "text": "h = A/(2πr) − r; h = 8", "isCorrect": false},
+          {"id": "c", "text": "h = (A − 2πr²)/(2πr); h = 15", "isCorrect": false},
+          {"id": "d", "text": "Both A and B are correct forms; h = 8", "isCorrect": true}
         ],
-        "correctAnswer": "c",
-        "explanation": "log_2(x + 3) = 4 means x + 3 = 2^4 = 16, so x = 16 - 3 = 13.",
+        "correctAnswer": "d",
+        "explanation": "Subtract 2πr² from both sides then divide by 2πr to get h = (A − 2πr²)/(2πr), which is the same as A/(2πr) − r. With the numbers, 2πr² = 2(22/7)(49) = 308, so A − 308 = 352, and 2πr = 2(22/7)(7) = 44, giving h = 352/44 = 8. Exam Tip: two transposition routes can give equivalent correct forms of the same answer.",
         "difficulty": "hard"
       },
       {
-        "questionText": "If log x + log(x - 3) = log 10, what is the value of x?",
+        "questionText": "The product of two consecutive positive whole numbers is 132. Taking the smaller number as n, form an equation and find the numbers.",
         "options": [
-          {
-            "id": "a",
-            "text": "2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "-2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "10",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "n² + n − 132 = 0; 11 and 12", "isCorrect": true},
+          {"id": "b", "text": "n² − n − 132 = 0; 12 and 13", "isCorrect": false},
+          {"id": "c", "text": "n² + n + 132 = 0; 10 and 11", "isCorrect": false},
+          {"id": "d", "text": "2n + 1 = 132; 65 and 66", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "log x + log(x - 3) = log[x(x - 3)] = log 10, so x(x - 3) = 10, giving x^2 - 3x - 10 = 0, (x - 5)(x + 2) = 0; x must be positive and greater than 3, so x = 5.",
+        "correctAnswer": "a",
+        "explanation": "The numbers are n and n + 1, so n(n + 1) = 132 gives n² + n − 132 = 0. Factorising gives (n + 12)(n − 11) = 0, so n = 11 (rejecting n = −12), and the numbers are 11 and 12. Exam Tip: reject the negative root when the problem asks for positive whole numbers.",
         "difficulty": "hard"
       }
     ]

@@ -1,940 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_7",
-  "topicName": "Geometric Transformations",
+  "topicName": "Sets",
   "order": 7,
-  "description": "This topic covers reflection, rotation, translation and enlargement, including describing transformations, finding image coordinates, properties preserved and combined transformations.",
+  "description": "An introduction to sets and their notation, including well-defined sets, the empty and universal sets, subsets, and the operations of union, intersection, complement and difference. It also covers counting elements with the formula n(A∪B) = n(A) + n(B) − n(A∩B) and simple Venn diagram problems.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Under a reflection in the x-axis, the point (4, 3) is mapped onto which image point?",
+        "questionText": "Which of the following is a well-defined set?",
         "options": [
-          {
-            "id": "a",
-            "text": "(4, -3)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(-4, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(-4, -3)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(3, 4)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The tall students in a class", "isCorrect": false},
+          {"id": "b", "text": "The interesting books in a library", "isCorrect": false},
+          {"id": "c", "text": "The even numbers between 1 and 11", "isCorrect": true},
+          {"id": "d", "text": "The beautiful cities in Tanzania", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Reflection in the x-axis keeps the x-coordinate and negates the y-coordinate: (x, y) maps to (x, -y).",
+        "correctAnswer": "c",
+        "explanation": "A set is well-defined when we can decide clearly whether an object belongs to it. The even numbers between 1 and 11 are exactly 2, 4, 6, 8, 10, but words like tall, interesting and beautiful are opinions that differ from person to person. Exam Tip: opinion words such as good, tall or beautiful are not well-defined.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Under a reflection in the y-axis, the point (-5, 2) is mapped onto which image point?",
+        "questionText": "If A = {1, 2, 3, 4, 5}, what is n(A)?",
         "options": [
-          {
-            "id": "a",
-            "text": "(-5, -2)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(5, 2)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(5, -2)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(2, -5)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "4", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "15", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Reflection in the y-axis negates the x-coordinate and keeps the y-coordinate: (x, y) maps to (-x, y).",
+        "explanation": "n(A) means the number of elements in the set A. The set A = {1, 2, 3, 4, 5} lists five different elements, so n(A) = 5. Exam Tip: n(A) counts how many elements are in the set, not their sum.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A translation moves every point 3 units to the right and 2 units down. What is the image of the point (1, 5)?",
+        "questionText": "A set with no elements is called a:",
         "options": [
-          {
-            "id": "a",
-            "text": "(4, 7)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(-2, 7)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(4, 3)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(-2, 3)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "unit set", "isCorrect": false},
+          {"id": "b", "text": "empty set", "isCorrect": true},
+          {"id": "c", "text": "universal set", "isCorrect": false},
+          {"id": "d", "text": "finite set", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Right 3 adds 3 to x and down 2 subtracts 2 from y: (1+3, 5-2) = (4, 3).",
+        "correctAnswer": "b",
+        "explanation": "A set that contains no elements at all is called the empty set or null set, written ∅ or {}. A unit set has exactly one element, so it is different. Exam Tip: the empty set is written ∅ or {} and has n = 0.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which type of transformation always changes the size of a figure (except when the scale factor is 1)?",
+        "questionText": "Which symbol means \"is an element of\"?",
         "options": [
-          {
-            "id": "a",
-            "text": "Reflection",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Rotation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Translation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Enlargement",
-            "isCorrect": true
-          }
+          {"id": "a", "text": "⊂", "isCorrect": false},
+          {"id": "b", "text": "∈", "isCorrect": true},
+          {"id": "c", "text": "∪", "isCorrect": false},
+          {"id": "d", "text": "∩", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "Enlargement multiplies all distances from the centre by the scale factor, changing the size unless the scale factor equals 1.",
+        "correctAnswer": "b",
+        "explanation": "The symbol ∈ means \"is an element of\" and links an object to a set it belongs to, as in 3 ∈ {1, 2, 3}. The symbol ⊂ means subset, ∪ means union and ∩ means intersection. Exam Tip: ∈ links an element to a set, while ⊂ links a set to a set.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Under the translation with vector (col 2, -4), the point (6, -1) is mapped onto which image point?",
+        "questionText": "If A = {a, b}, how many subsets does A have?",
         "options": [
-          {
-            "id": "a",
-            "text": "(8, -5)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(4, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(8, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(4, -5)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Add the vector components: (6+2, -1+(-4)) = (8, -5).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The point (2, 7) is rotated 90 degrees anticlockwise about the origin. What is its image?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(7, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(-7, 2)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(7, -2)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-2, -7)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A 90 degree anticlockwise rotation about the origin maps (x, y) to (-y, x), so (2, 7) maps to (-7, 2).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The point (3, -5) is rotated 90 degrees clockwise about the origin. What is its image?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(-5, -3)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(5, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(-5, 3)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(5, -3)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "A 90 degree clockwise rotation about the origin maps (x, y) to (y, -x), so (3, -5) maps to (-5, -3).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The point (-4, 6) is rotated 180 degrees about the origin. What is its image?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(4, 6)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(-4, -6)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(4, -6)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(6, -4)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "8", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A 180 degree rotation about the origin maps (x, y) to (-x, -y), so (-4, 6) maps to (4, -6).",
+        "explanation": "A set with n elements has 2 to the power n subsets. Here n = 2, so the number of subsets is 2 squared = 4, namely ∅, {a}, {b} and {a, b}. Exam Tip: the number of subsets is 2 raised to the number of elements.",
         "difficulty": "medium"
       },
       {
-        "questionText": "An enlargement with centre the origin and scale factor 3 maps the point (2, -1) onto which image?",
+        "questionText": "If A = {1, 2, 3} and B = {3, 4, 5}, what is A∩B?",
         "options": [
-          {
-            "id": "a",
-            "text": "(5, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(6, -3)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(6, -1)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(2, -3)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{1, 2, 3, 4, 5}", "isCorrect": false},
+          {"id": "b", "text": "{3}", "isCorrect": true},
+          {"id": "c", "text": "{1, 2}", "isCorrect": false},
+          {"id": "d", "text": "∅", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "With centre the origin, multiply each coordinate by the scale factor: (2x3, -1x3) = (6, -3).",
+        "explanation": "The intersection A∩B contains only the elements found in both sets. The only element that appears in A = {1, 2, 3} and B = {3, 4, 5} is 3, so A∩B = {3}. Exam Tip: intersection keeps only the elements shared by both sets.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Under a reflection in the line y = x, the point (7, 2) is mapped onto which image point?",
+        "questionText": "For A = {1, 2, 3} and B = {3, 4, 5}, what is A∪B?",
         "options": [
-          {
-            "id": "a",
-            "text": "(-7, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(7, -2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(2, 7)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(-2, -7)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{3}", "isCorrect": false},
+          {"id": "b", "text": "{1, 2, 4, 5}", "isCorrect": false},
+          {"id": "c", "text": "{1, 2, 3, 4, 5}", "isCorrect": true},
+          {"id": "d", "text": "{1, 2, 3, 3, 4, 5}", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Reflection in the line y = x interchanges the coordinates: (x, y) maps to (y, x).",
+        "explanation": "The union A∪B contains every element that is in A or in B, listing each element only once. Combining {1, 2, 3} and {3, 4, 5} gives {1, 2, 3, 4, 5}. Exam Tip: in a union, write shared elements such as 3 only once.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A figure has area 12 cm^2. After an enlargement with scale factor 2, what is the area of the image?",
+        "questionText": "If U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and A = {2, 4, 6, 8, 10}, what is A′?",
         "options": [
-          {
-            "id": "a",
-            "text": "24 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "48 cm^2",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "36 cm^2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12 cm^2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Area scales by the square of the scale factor: 12 x 2^2 = 12 x 4 = 48 cm^2.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Which of the following properties is NOT necessarily preserved under an enlargement with scale factor 2?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Sizes of angles",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Shape of the figure",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Lengths of sides",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Ratio of corresponding sides",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Enlargement changes lengths (by the scale factor) but preserves angles and shape, so the figures remain similar.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "An enlargement with centre (1, 1) and scale factor 2 maps the point (3, 4) onto which image?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(5, 7)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(6, 8)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(4, 5)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(7, 9)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{1, 3, 5, 7, 9}", "isCorrect": true},
+          {"id": "b", "text": "{2, 4, 6, 8, 10}", "isCorrect": false},
+          {"id": "c", "text": "∅", "isCorrect": false},
+          {"id": "d", "text": "U", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Image = centre + k(point - centre) = (1,1) + 2(2,3) = (1+4, 1+6) = (5, 7).",
-        "difficulty": "hard"
+        "explanation": "The complement A′ contains all elements of the universal set U that are not in A. Removing the even numbers from U leaves the odd numbers {1, 3, 5, 7, 9}. Exam Tip: the complement is everything in U that is left after removing the set.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "The point (5, 0) is first reflected in the y-axis, then the image is rotated 90 degrees anticlockwise about the origin. What is the final image?",
+        "questionText": "Two sets with no common elements are said to be:",
         "options": [
-          {
-            "id": "a",
-            "text": "(0, 5)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(0, -5)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(5, 0)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-5, 0)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Equal", "isCorrect": false},
+          {"id": "b", "text": "Equivalent", "isCorrect": false},
+          {"id": "c", "text": "Disjoint", "isCorrect": true},
+          {"id": "d", "text": "Universal", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Reflection in the y-axis gives (-5, 0); a 90 degree anticlockwise rotation maps (x,y) to (-y,x), so (-5,0) maps to (0,-5).",
-        "difficulty": "hard"
+        "correctAnswer": "c",
+        "explanation": "Two sets are disjoint when they share no elements, so their intersection is the empty set. Equal sets have exactly the same elements and equivalent sets have the same number of elements. Exam Tip: disjoint sets have A∩B = ∅.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A point P maps to image P'(8, -6) under an enlargement with centre the origin and scale factor 2. What are the coordinates of P?",
+        "questionText": "If A = {2, 4, 6} and B = {6, 4, 2}, the sets are:",
         "options": [
-          {
-            "id": "a",
-            "text": "(16, -12)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(4, -3)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(6, -4)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-4, 3)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Disjoint", "isCorrect": false},
+          {"id": "b", "text": "Equal", "isCorrect": true},
+          {"id": "c", "text": "Equivalent but not equal", "isCorrect": false},
+          {"id": "d", "text": "Empty", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Divide the image coordinates by the scale factor: (8/2, -6/2) = (4, -3).",
-        "difficulty": "hard"
+        "explanation": "Two sets are equal when they contain exactly the same elements, and the order in which they are listed does not matter. Both sets contain 2, 4 and 6, so A = B. Exam Tip: order does not matter in a set, so {2, 4, 6} and {6, 4, 2} are equal.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If A = {1, 2, 3, 4} and B = {2, 4}, what is A−B?",
+        "options": [
+          {"id": "a", "text": "{1, 3}", "isCorrect": true},
+          {"id": "b", "text": "{2, 4}", "isCorrect": false},
+          {"id": "c", "text": "{1, 2, 3, 4}", "isCorrect": false},
+          {"id": "d", "text": "∅", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The set difference A−B contains the elements that are in A but not in B. Removing 2 and 4 from A leaves {1, 3}. Exam Tip: A−B keeps the elements of A that do not appear in B.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a class of 40 students, 25 study Biology, 20 study Chemistry and 10 study both. How many study Biology only?",
+        "options": [
+          {"id": "a", "text": "25", "isCorrect": false},
+          {"id": "b", "text": "15", "isCorrect": true},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "35", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Students who study Biology only are those in Biology minus those who also study Chemistry. That is 25 − 10 = 15. Exam Tip: to find the only region, subtract the overlap from the whole set.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the same class of 40 students where 25 study Biology, 20 study Chemistry and 10 study both, how many study neither subject?",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "15", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The number who study at least one subject is n(A∪B) = 25 + 20 − 10 = 35. Those who study neither are 40 − 35 = 5. Exam Tip: neither = total − n(A∪B).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a Venn diagram, the region inside both circles A and B represents:",
+        "options": [
+          {"id": "a", "text": "A∪B", "isCorrect": false},
+          {"id": "b", "text": "A∩B", "isCorrect": true},
+          {"id": "c", "text": "A′", "isCorrect": false},
+          {"id": "d", "text": "A−B", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The overlapping region that lies inside both circles shows the elements common to A and B, which is the intersection A∩B. The full area covered by both circles is the union A∪B. Exam Tip: the overlap of the two circles is always the intersection.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a market, 18 traders sell fruits, 14 sell vegetables and 6 sell both. If every trader sells at least one of these, how many traders are there in total?",
+        "options": [
+          {"id": "a", "text": "32", "isCorrect": false},
+          {"id": "b", "text": "26", "isCorrect": true},
+          {"id": "c", "text": "38", "isCorrect": false},
+          {"id": "d", "text": "20", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Using n(A∪B) = n(A) + n(B) − n(A∩B), the total is 18 + 14 − 6 = 26. Subtracting the 6 counted twice avoids double counting the traders who sell both. Exam Tip: add the two sets and subtract the overlap once.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A transformation that turns a figure about a fixed point is called a _____.",
+        "questionText": "The set containing all the elements under discussion is called the ____ set.",
         "options": [
-          {
-            "id": "a",
-            "text": "rotation",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "translation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "reflection",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "enlargement",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "universal", "isCorrect": true},
+          {"id": "b", "text": "empty", "isCorrect": false},
+          {"id": "c", "text": "unit", "isCorrect": false},
+          {"id": "d", "text": "disjoint", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Rotation turns every point of a figure through a fixed angle about a fixed point called the centre of rotation.",
+        "explanation": "The universal set, written U, contains every element being considered in a particular problem, and all other sets are drawn inside it. Exam Tip: the universal set U holds all elements under discussion.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Under a reflection in the x-axis, the point (-3, 8) is mapped onto _____.",
+        "questionText": "The symbol ∅ represents the ____ set.",
         "options": [
-          {
-            "id": "a",
-            "text": "(3, 8)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(-3, -8)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(3, -8)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-3, 8)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Reflection in the x-axis maps (x, y) to (x, -y).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The fixed point about which an enlargement is performed is called the centre of _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "rotation",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "reflection",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "enlargement",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "translation",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "All distances are measured from the centre of enlargement and multiplied by the scale factor.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Under the translation with vector (col -3, 5), the point (7, 2) is mapped onto _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "(10, 7)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(4, -3)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(-3, 12)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(4, 7)",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Add the vector components: (7+(-3), 2+5) = (4, 7).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A transformation that produces a mirror image of a figure is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "reflection",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "rotation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "translation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "enlargement",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "empty", "isCorrect": true},
+          {"id": "b", "text": "universal", "isCorrect": false},
+          {"id": "c", "text": "unit", "isCorrect": false},
+          {"id": "d", "text": "equal", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Reflection flips a figure over a line called the mirror line or axis of reflection.",
+        "explanation": "The symbol ∅, which can also be written {}, stands for the empty set that has no elements. Exam Tip: ∅ and {} both mean the empty set.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Under a 180 degree rotation about the origin, the point (9, -4) is mapped onto _____.",
+        "questionText": "If A = {x : x is a day of the week}, then n(A) = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "(9, 4)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(-9, 4)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(-9, -4)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(4, -9)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A 180 degree rotation about the origin maps (x, y) to (-x, -y).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An enlargement with centre the origin and scale factor -2 maps the point (3, 1) onto _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "(6, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(-6, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(-6, -2)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(-1.5, -0.5)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Multiply each coordinate by -2: (3x-2, 1x-2) = (-6, -2). A negative scale factor places the image on the opposite side of the centre.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If a length of 5 cm is enlarged by a scale factor of 4, the new length is _____ cm.",
-        "options": [
-          {
-            "id": "a",
-            "text": "9",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1.25",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "25",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "20",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "New length = original length x scale factor = 5 x 4 = 20 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Under a reflection in the line y = x, the point (-6, 5) is mapped onto _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "(5, -6)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(-5, 6)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(6, -5)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-6, -5)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "7", "isCorrect": true},
+          {"id": "b", "text": "5", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "24", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Reflection in y = x interchanges the coordinates: (x, y) maps to (y, x).",
-        "difficulty": "medium"
+        "explanation": "There are seven days of the week, so the set has seven elements and n(A) = 7. Exam Tip: list the elements in words first, then count them.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The single translation vector that maps (2, 9) onto (10, 4) is (col 8, _____).",
+        "questionText": "A set with exactly one element is called a ____ set.",
         "options": [
-          {
-            "id": "a",
-            "text": "5",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "-5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "-13",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "13",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "unit", "isCorrect": true},
+          {"id": "b", "text": "empty", "isCorrect": false},
+          {"id": "c", "text": "universal", "isCorrect": false},
+          {"id": "d", "text": "finite", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "The vector is (10-2, 4-9) = (8, -5), so the missing component is -5.",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "A set that contains only one element is called a unit set or singleton set, such as {5}. Exam Tip: a unit set has exactly one element, so n = 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If P = {1, 3, 5} and Q = {1, 2, 3, 4, 5, 6}, then P is a ____ of Q.",
+        "options": [
+          {"id": "a", "text": "subset", "isCorrect": true},
+          {"id": "b", "text": "complement", "isCorrect": false},
+          {"id": "c", "text": "union", "isCorrect": false},
+          {"id": "d", "text": "difference", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Every element of P is also found in Q, so P is a subset of Q, written P ⊂ Q. Exam Tip: if all elements of one set are inside another, the first is a subset.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A set with 3 elements has ____ subsets.",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": true},
+          {"id": "b", "text": "6", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The number of subsets is 2 to the power of the number of elements, so a set with 3 elements has 2 cubed = 8 subsets. Exam Tip: use 2 raised to n to count subsets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If A = {a, e, i} and B = {i, o, u}, then A∪B = ____.",
+        "options": [
+          {"id": "a", "text": "{a, e, i, o, u}", "isCorrect": true},
+          {"id": "b", "text": "{i}", "isCorrect": false},
+          {"id": "c", "text": "{a, e, o, u}", "isCorrect": false},
+          {"id": "d", "text": "{a, e, i, i, o, u}", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The union collects all elements from both sets, writing the shared element i only once, giving {a, e, i, o, u}. Exam Tip: never repeat a shared element in a union.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If A = {a, e, i} and B = {i, o, u}, then A∩B = ____.",
+        "options": [
+          {"id": "a", "text": "{i}", "isCorrect": true},
+          {"id": "b", "text": "{a, e}", "isCorrect": false},
+          {"id": "c", "text": "{o, u}", "isCorrect": false},
+          {"id": "d", "text": "∅", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The intersection keeps only elements found in both sets, and the single shared element is i, so A∩B = {i}. Exam Tip: intersection returns the shared elements only.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If U = {1, 2, 3, 4, 5, 6} and A = {1, 2, 3}, then A′ = ____.",
+        "options": [
+          {"id": "a", "text": "{4, 5, 6}", "isCorrect": true},
+          {"id": "b", "text": "{1, 2, 3}", "isCorrect": false},
+          {"id": "c", "text": "{1, 2, 3, 4, 5, 6}", "isCorrect": false},
+          {"id": "d", "text": "∅", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The complement A′ contains the elements of U that are not in A, so removing 1, 2 and 3 leaves {4, 5, 6}. Exam Tip: the complement is what remains in U after taking out the set.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If n(A) = 12, n(B) = 9 and n(A∩B) = 4, then n(A∪B) = ____.",
+        "options": [
+          {"id": "a", "text": "17", "isCorrect": true},
+          {"id": "b", "text": "25", "isCorrect": false},
+          {"id": "c", "text": "21", "isCorrect": false},
+          {"id": "d", "text": "13", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using n(A∪B) = n(A) + n(B) − n(A∩B), we get 12 + 9 − 4 = 17. Exam Tip: always subtract the intersection once to avoid double counting.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "A translation changes the size of a figure.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A translation slides a figure without changing its size, shape or orientation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Reflection, rotation and translation all preserve the size and shape of a figure.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "These three are isometries (congruence transformations); the image is congruent to the object.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Under a reflection in the y-axis, the point (0, 5) stays exactly where it is.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Points on the mirror line are invariant; (0, 5) lies on the y-axis, so it maps onto itself.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An enlargement with scale factor 1 leaves every point unchanged.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Multiplying every distance from the centre by 1 keeps each point in its original position.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A rotation of 90 degrees clockwise gives the same image as a rotation of 90 degrees anticlockwise.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Clockwise and anticlockwise 90 degree rotations turn in opposite directions and produce different images.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Under an enlargement, corresponding angles of the object and image are equal.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Enlargement preserves angles, so the object and image are similar figures.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If a shape is enlarged by scale factor 3, its area increases by a factor of 3.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Area increases by the square of the scale factor, so the area becomes 3^2 = 9 times larger.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A 180 degree rotation about the origin maps the point (4, -7) onto (-4, 7).",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A 180 degree rotation about the origin maps (x, y) to (-x, -y), so (4, -7) maps to (-4, 7).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An enlargement with a negative scale factor places the image on the same side of the centre as the object.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A negative scale factor places the image on the opposite side of the centre of enlargement and inverts the figure.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Reflecting a point in the x-axis and then in the y-axis gives the same result as rotating it 180 degrees about the origin.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Reflection in the x-axis then the y-axis maps (x,y) to (x,-y) to (-x,-y), which is exactly a 180 degree rotation about the origin.",
-        "difficulty": "hard"
-      }
+      {"questionText": "The set {0} is an empty set.", "options": [], "correctAnswer": "false", "explanation": "The set {0} contains one element, the number 0, so it is a unit set, not the empty set. The empty set has no elements at all.", "difficulty": "easy"},
+      {"questionText": "The empty set is a subset of every set.", "options": [], "correctAnswer": "true", "explanation": "The empty set has no elements, so there is nothing in it that could fail to be in another set, which makes it a subset of every set.", "difficulty": "easy"},
+      {"questionText": "The sets {2, 4, 6} and {4, 6, 2} are equal.", "options": [], "correctAnswer": "true", "explanation": "The order of elements does not matter in a set, and both sets contain exactly 2, 4 and 6, so they are equal.", "difficulty": "easy"},
+      {"questionText": "If A ⊂ B then A∩B = A.", "options": [], "correctAnswer": "true", "explanation": "When A is a subset of B, every element of A is also in B, so the elements common to both are exactly the elements of A, giving A∩B = A.", "difficulty": "easy"},
+      {"questionText": "A∪B always has more elements than A.", "options": [], "correctAnswer": "false", "explanation": "If B is a subset of A, then A∪B is just A, so the union has the same number of elements as A rather than more.", "difficulty": "easy"},
+      {"questionText": "n(A∪B) = n(A) + n(B) when A and B are disjoint.", "options": [], "correctAnswer": "true", "explanation": "Disjoint sets share no elements, so n(A∩B) = 0 and the formula n(A∪B) = n(A) + n(B) − n(A∩B) reduces to n(A) + n(B).", "difficulty": "easy"},
+      {"questionText": "The complement of the universal set is the empty set.", "options": [], "correctAnswer": "true", "explanation": "The complement of U contains the elements of U that are not in U, and there are none, so U′ = ∅.", "difficulty": "easy"},
+      {"questionText": "In a Venn diagram, the universal set is represented by a circle.", "options": [], "correctAnswer": "false", "explanation": "The universal set is drawn as a rectangle, and the sets inside it are drawn as circles.", "difficulty": "easy"},
+      {"questionText": "The sets A = {1, 2} and B = {x, y} are equivalent.", "options": [], "correctAnswer": "true", "explanation": "Equivalent sets have the same number of elements, and both A and B have exactly two elements, so they are equivalent even though the elements differ.", "difficulty": "easy"},
+      {"questionText": "A−B is always the same as B−A.", "options": [], "correctAnswer": "false", "explanation": "A−B keeps the elements of A not in B, while B−A keeps the elements of B not in A, so in general they are different sets.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "The four basic geometric transformations",
-        "options": [],
-        "correctAnswer": "Reflection, rotation, translation and enlargement.",
-        "explanation": "The first three preserve size and shape, while enlargement changes size.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Effect of reflection in the x-axis on coordinates",
-        "options": [],
-        "correctAnswer": "(x, y) maps to (x, -y).",
-        "explanation": "The x-coordinate stays the same and the y-coordinate changes sign.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Effect of reflection in the y-axis on coordinates",
-        "options": [],
-        "correctAnswer": "(x, y) maps to (-x, y).",
-        "explanation": "The y-coordinate stays the same and the x-coordinate changes sign.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Effect of reflection in the line y = x",
-        "options": [],
-        "correctAnswer": "(x, y) maps to (y, x).",
-        "explanation": "The coordinates are interchanged.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Image of (x, y) under 180 degree rotation about the origin",
-        "options": [],
-        "correctAnswer": "(-x, -y).",
-        "explanation": "Both coordinates change sign for a half-turn about the origin.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Image of (x, y) under 90 degree anticlockwise rotation about the origin",
-        "options": [],
-        "correctAnswer": "(-y, x).",
-        "explanation": "A quarter-turn anticlockwise about the origin swaps coordinates and changes the sign of the new x.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What a translation is described by",
-        "options": [],
-        "correctAnswer": "A translation vector giving the horizontal and vertical shift.",
-        "explanation": "The vector (a, b) moves each point a units horizontally and b units vertically.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Two things needed to fully describe an enlargement",
-        "options": [],
-        "correctAnswer": "The centre of enlargement and the scale factor.",
-        "explanation": "Distances from the centre are multiplied by the scale factor to find the image.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How area changes under an enlargement",
-        "options": [],
-        "correctAnswer": "Area is multiplied by the square of the scale factor.",
-        "explanation": "If the scale factor is k, then the area scale factor is k^2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties preserved by reflection, rotation and translation",
-        "options": [],
-        "correctAnswer": "Length of sides and size of angles (congruence).",
-        "explanation": "These isometries produce an image congruent to the object.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Set", "options": [], "correctAnswer": "A collection of well-defined and distinct objects, called elements, written inside curly brackets { }.", "explanation": "For example {1, 2, 3} is a set of three elements, and the order in which they are listed does not matter. Exam Tip: elements are written once each inside curly brackets.", "difficulty": "easy"},
+      {"questionText": "Well-defined set", "options": [], "correctAnswer": "A set for which it is possible to decide clearly whether any given object belongs to it or not.", "explanation": "The even numbers less than 10 form a well-defined set, but the good students in a class do not because good is an opinion. Exam Tip: avoid opinion words like tall, good or beautiful, which are not well-defined.", "difficulty": "easy"},
+      {"questionText": "Empty (null) set", "options": [], "correctAnswer": "A set that contains no elements at all, written ∅ or { }.", "explanation": "For example the set of months with 32 days is empty because no such month exists, so n = 0. Exam Tip: ∅ and {} mean the same empty set, but {0} is not empty.", "difficulty": "easy"},
+      {"questionText": "Unit (singleton) set", "options": [], "correctAnswer": "A set that contains exactly one element.", "explanation": "For example {5} and {Tanzania} are unit sets because each has a single element, so n = 1. Exam Tip: a unit set has exactly one member, giving n = 1.", "difficulty": "easy"},
+      {"questionText": "Universal set", "options": [], "correctAnswer": "The set that contains all the elements under discussion in a particular problem, written U.", "explanation": "All the other sets in the problem are subsets of U and are drawn inside it in a Venn diagram. Exam Tip: the universal set is drawn as a rectangle enclosing all other sets.", "difficulty": "easy"},
+      {"questionText": "Subset", "options": [], "correctAnswer": "A set whose every element is also an element of another set, written A ⊂ B.", "explanation": "For example {1, 3} is a subset of {1, 2, 3}, and a set with n elements has 2 to the power n subsets. Exam Tip: the empty set is a subset of every set.", "difficulty": "easy"},
+      {"questionText": "Union", "options": [], "correctAnswer": "The set of all elements that belong to A or to B or to both, written A∪B.", "explanation": "For example {1, 2}∪{2, 3} = {1, 2, 3}, with the shared element written only once. Exam Tip: a union combines all elements without repeating any.", "difficulty": "easy"},
+      {"questionText": "Intersection", "options": [], "correctAnswer": "The set of all elements that belong to both A and B, written A∩B.", "explanation": "For example {1, 2, 3}∩{2, 3, 4} = {2, 3}, keeping only the shared elements. Exam Tip: the intersection is the overlap of the two sets.", "difficulty": "easy"},
+      {"questionText": "Complement", "options": [], "correctAnswer": "The set of all elements in the universal set that are not in A, written A′.", "explanation": "If U = {1, 2, 3, 4} and A = {1, 2}, then A′ = {3, 4}. Exam Tip: the complement is everything in U left after removing A.", "difficulty": "easy"},
+      {"questionText": "Set difference and the counting formula", "options": [], "correctAnswer": "A−B is the set of elements in A but not in B, and the number in a union is n(A∪B) = n(A) + n(B) − n(A∩B).", "explanation": "For example {1, 2, 3}−{2} = {1, 3}, and the formula subtracts the shared elements once so nothing is counted twice. Exam Tip: subtract n(A∩B) once when counting a union to avoid double counting.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Triangle ABC has vertices A(1, 1), B(4, 1) and C(1, 3). It is enlarged with centre the origin and scale factor 2 to give triangle A'B'C'. By how many times is the area of triangle A'B'C' greater than the area of triangle ABC?",
+        "questionText": "In a class of 45 students, 28 play football, 20 play basketball and 8 play neither. How many students play BOTH sports?",
         "options": [
-          {
-            "id": "a",
-            "text": "2 times",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "4 times",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "6 times",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "8 times",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "3", "isCorrect": false},
+          {"id": "b", "text": "8", "isCorrect": false},
+          {"id": "c", "text": "11", "isCorrect": true},
+          {"id": "d", "text": "12", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Area scales by the square of the scale factor, so the new area is 2^2 = 4 times the original.",
+        "correctAnswer": "c",
+        "explanation": "First find those who play at least one sport: 45 − 8 = 37. Then use n(A∪B) = n(A) + n(B) − n(both), so 37 = 28 + 20 − both, which gives both = 48 − 37 = 11. Exam Tip: subtract those who play neither first, then apply the union formula.",
         "difficulty": "hard"
       },
       {
-        "questionText": "The point (2, 3) is reflected in the line y = x and the image is then reflected in the x-axis. What are the coordinates of the final image?",
+        "questionText": "If U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}, A is the set of multiples of 2 and B is the set of multiples of 3, find (A∪B)′.",
         "options": [
-          {
-            "id": "a",
-            "text": "(3, -2)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(-3, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(2, -3)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-2, 3)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "{1, 5, 7, 11}", "isCorrect": true},
+          {"id": "b", "text": "{6, 12}", "isCorrect": false},
+          {"id": "c", "text": "{1, 5, 7, 9, 11}", "isCorrect": false},
+          {"id": "d", "text": "{2, 3, 4, 6}", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Reflection in y = x gives (3, 2); reflection in the x-axis then maps (3, 2) to (3, -2).",
+        "explanation": "The multiples of 2 are {2, 4, 6, 8, 10, 12} and the multiples of 3 are {3, 6, 9, 12}, so A∪B = {2, 3, 4, 6, 8, 9, 10, 12}. The complement is the elements of U not in this union, which is {1, 5, 7, 11}. Exam Tip: 9 is a multiple of 3 so it belongs to B and is not in the complement.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A point A(2, 3) is mapped onto A'(8, 11) by an enlargement with scale factor 3. What are the coordinates of the centre of enlargement?",
+        "questionText": "Among 60 households, 32 own a radio, 25 own a TV and 15 own both. How many own a radio only, and how many own neither?",
         "options": [
-          {
-            "id": "a",
-            "text": "(-1, -1)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(1, 1)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(0, 0)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(-1, 1)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Radio only 17; neither 18", "isCorrect": true},
+          {"id": "b", "text": "Radio only 32; neither 3", "isCorrect": false},
+          {"id": "c", "text": "Radio only 17; neither 3", "isCorrect": false},
+          {"id": "d", "text": "Radio only 15; neither 18", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Using A' = C + 3(A - C), let C = (x, y): 8 = x + 3(2 - x) gives x = -1, and 11 = y + 3(3 - y) gives y = -1, so the centre is (-1, -1).",
+        "explanation": "Radio only is 32 − 15 = 17 and TV only is 25 − 15 = 10, so those owning at least one are 17 + 10 + 15 = 42. The number owning neither is 60 − 42 = 18. Exam Tip: work from the intersection outwards to the only regions, then subtract from the total to find neither.",
         "difficulty": "hard"
       }
     ]
