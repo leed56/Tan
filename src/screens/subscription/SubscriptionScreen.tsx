@@ -5,7 +5,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -18,17 +17,10 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { SEED_PLANS, FEATURE_META } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
-import { notify } from '../../utils/confirm';
 import { openWhatsApp } from '../../utils/support';
 import type { FeatureKey, PlanId, BillingCycle } from '../../types/subscription';
 
 type Props = StackScreenProps<HomeStackParamList, 'SubscriptionScreen'>;
-
-const WHATSAPP_GREEN = '#25D366';
-// Google Play billing only exists inside the installed Android app — it must
-// never surface on web or iOS (where it does nothing and confuses buyers, and
-// on Play it's the *required* path for digital goods). Shown on Android only.
-const SHOW_GOOGLE_PLAY = Platform.OS === 'android';
 
 const ALL_FEATURES: FeatureKey[] = [
   'summary',
@@ -51,36 +43,18 @@ export function SubscriptionScreen({ navigation }: Props) {
     100 - (selectedPlan.priceYearly / (selectedPlan.priceMonthly * 12)) * 100,
   );
 
-  const handleContinue = () => {
-    navigation.navigate('PaymentMethodScreen', {
-      planId: selectedPlanId,
-      planTitle: selectedPlan.title,
-      billingCycle,
-      price,
-    });
-  };
-
   const handleDemo = () => {
     enableDemo(selectedPlanId);
     navigation.goBack();
   };
 
-  // Direct WhatsApp upgrade — opens a chat pre-filled with the chosen plan so
-  // support can confirm mobile-money payment and activate instantly.
+  // WhatsApp is currently the sole upgrade route (mobile money paused). Opens a
+  // chat pre-filled with the chosen plan so support can confirm payment and
+  // activate the account instantly.
   const handleWhatsAppUpgrade = () =>
     openWhatsApp(
       `Hello! I'd like to upgrade to Soma AI *${selectedPlan.title}* (${billingCycle}) for ${price.toLocaleString()} TSH.`,
     );
-
-  // Google Play billing is a native module that isn't wired yet. Rather than a
-  // dead button (or a Play-policy-violating WhatsApp redirect), it degrades to
-  // a clear message pointing at the working payment routes.
-  const handleGooglePlay = () => {
-    notify(
-      'Google Play',
-      'Google Play billing is coming to the Android app. For now, upgrade instantly via mobile money or WhatsApp.',
-    );
-  };
 
   return (
     <ScreenContainer padded={false}>
@@ -162,29 +136,15 @@ export function SubscriptionScreen({ navigation }: Props) {
           />
         ))}
 
-        {/* CTAs — mobile money is the primary route everywhere; WhatsApp is a
-            direct-contact fallback; Google Play only shows inside the Android
-            app (never on web/iOS). */}
+        {/* WhatsApp is the only upgrade route for now — mobile money & Google
+            Play are paused. Our team confirms payment on chat and activates the
+            account instantly. */}
         <AppButton
-          title={`Pay with Mobile Money · ${price.toLocaleString()} TSH/${billingCycle === 'yearly' ? 'yr' : 'mo'}`}
-          onPress={handleContinue}
-          variant="primary"
-          icon={<Ionicons name="phone-portrait-outline" size={18} color={COLORS.textPrimary} />}
-        />
-        <AppButton
-          title="Chat on WhatsApp to upgrade"
+          title={`Upgrade on WhatsApp · ${price.toLocaleString()} TSH/${billingCycle === 'yearly' ? 'yr' : 'mo'}`}
           onPress={handleWhatsAppUpgrade}
-          variant="secondary"
-          icon={<Ionicons name="logo-whatsapp" size={18} color={WHATSAPP_GREEN} />}
+          variant="primary"
+          icon={<Ionicons name="logo-whatsapp" size={18} color={COLORS.textPrimary} />}
         />
-        {SHOW_GOOGLE_PLAY && (
-          <AppButton
-            title="Subscribe with Google Play"
-            onPress={handleGooglePlay}
-            variant="secondary"
-            icon={<Ionicons name="logo-google-playstore" size={18} color={COLORS.primary} />}
-          />
-        )}
 
         {/* Demo mode — dev builds only; in release this granted full premium
             (unlimited quizzes, HOQ, summaries) to any free user in one tap. */}
@@ -195,10 +155,8 @@ export function SubscriptionScreen({ navigation }: Props) {
         )}
 
         <Text style={styles.footer}>
-          Cancel anytime.{' '}
-          {SHOW_GOOGLE_PLAY
-            ? 'Pay via Google Play, mobile money, or WhatsApp.'
-            : 'Payments via mobile money or WhatsApp support.'}
+          Cancel anytime. Upgrade via WhatsApp — our support team activates your
+          account instantly.
         </Text>
       </ScrollView>
     </ScreenContainer>
