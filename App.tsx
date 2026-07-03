@@ -86,18 +86,19 @@ export default function App() {
     };
   }, [uid, startSubscriptionListening, stopSubscriptionListening, startFamilyListening, stopFamilyListening]);
 
-  // Device-limit registration — only meaningfully capped for paying plans;
-  // free accounts get a generous, effectively unlimited allowance here.
+  // Device-limit registration — everyone is capped: Free 2, Standard 2,
+  // Family 5. Runs on real (Google) sign-in, where the uid is stable per user
+  // so the count is meaningful. Free users (no active/demo subscription) get 2.
   useEffect(() => {
-    if (!uid || !subscription) return;
-    const isPaid = subscription.status === 'active' || subscription.status === 'demo';
-    const maxDevices = isPaid ? planMaxDevices() : 99;
+    if (!uid) return;
+    const isPaid = subscription?.status === 'active' || subscription?.status === 'demo';
+    const maxDevices = isPaid ? planMaxDevices() : 2;
     registerDevice(uid, maxDevices)
       .then(({ blocked }) => {
         if (blocked) {
           Alert.alert(
             'Device limit reached',
-            `Your plan allows up to ${maxDevices} devices. Remove a device in Profile → Subscription → Manage Devices to use this one.`,
+            `This account is signed in on ${maxDevices} device${maxDevices > 1 ? 's' : ''} already. Remove one in Profile → Subscription → Manage Devices to use this one.`,
           );
         }
       })

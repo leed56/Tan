@@ -48,9 +48,25 @@ const BENEFITS = [
 
 export function WelcomeScreen({ navigation }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [signingIn, setSigningIn] = useState(false);
   const scrollRef = useRef<ScrollView>(null);
-  const { enterTestMode } = useAuth();
+  const { enterTestMode, signInWithGoogle, error } = useAuth();
   const setProfile = useProfileStore((s) => s.setProfile);
+
+  // Google is the real sign-in. New users continue to Create Profile; returning
+  // users (profile already hydrated by the hook) fall through to the app via
+  // RootNavigator's isOnboarded check.
+  const handleGoogle = async () => {
+    setSigningIn(true);
+    try {
+      const { isNewUser } = await signInWithGoogle();
+      if (isNewUser) navigation.navigate('CreateProfile');
+    } catch {
+      // error surfaced via the auth store; popup-close is silently ignored.
+    } finally {
+      setSigningIn(false);
+    }
+  };
 
   // __DEV__-only: skip phone OTP and onboarding entirely — sets a complete
   // auth session + profile in one tap so RootNavigator's isOnboarded check
@@ -156,18 +172,19 @@ export function WelcomeScreen({ navigation }: Props) {
         {/* CTAs */}
         <View style={styles.ctas}>
           <AppButton
-            title="Start Learning — It's Free"
-            onPress={() => navigation.navigate('OTPLogin')}
+            title={signingIn ? 'Signing in…' : 'Continue with Google'}
+            onPress={handleGoogle}
+            loading={signingIn}
             variant="primary"
+            icon={<Ionicons name="logo-google" size={18} color={COLORS.textPrimary} />}
           />
-          <AppButton
-            title="I already have an account"
-            onPress={() => navigation.navigate('OTPLogin')}
-            variant="ghost"
-          />
+          <Text style={styles.ctaHint}>
+            Sign in with your Google account to start learning — it's free.
+          </Text>
+          {error ? <Text style={styles.ctaError}>{error}</Text> : null}
           {__DEV__ && (
             <TouchableOpacity onPress={handleEnterTestMode} style={styles.devTestBtn}>
-              <Text style={styles.devTestBtnText}>🧪 Enter Test Mode (no OTP, dev only)</Text>
+              <Text style={styles.devTestBtnText}>🧪 Enter Test Mode (no login, dev only)</Text>
             </TouchableOpacity>
           )}
         </View>
@@ -285,6 +302,18 @@ const styles = StyleSheet.create({
     fontWeight: TYPOGRAPHY.weights.medium,
   },
   ctas: { gap: SPACING.sm },
+  ctaHint: {
+    color: COLORS.textMuted,
+    fontSize: TYPOGRAPHY.sizes.xs,
+    textAlign: 'center',
+    marginTop: 2,
+  },
+  ctaError: {
+    color: COLORS.error,
+    fontSize: TYPOGRAPHY.sizes.xs,
+    textAlign: 'center',
+    marginTop: 2,
+  },
   devTestBtn: {
     alignItems: 'center',
     paddingVertical: SPACING.sm,
