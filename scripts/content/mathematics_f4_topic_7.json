@@ -2,939 +2,371 @@
   "topicId": "form_4_mathematics_topic_7",
   "topicName": "Matrices and Transformations",
   "order": 7,
-  "description": "This topic covers operations on matrices, the determinant and inverse of a 2x2 matrix, solving simultaneous equations with matrices, and using transformation matrices to find images of points under reflection, rotation and enlargement.",
+  "description": "An introduction to matrices covering order, addition, scalar and matrix multiplication, determinants, singular matrices and inverses, solving simultaneous equations by matrices, and the transformations of reflection, rotation, translation and enlargement.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the order (size) of the matrix A = [[2, -1, 0], [4, 3, 5]]?",
+        "questionText": "State the order of the matrix (1 2 3 / 4 5 6).",
         "options": [
-          {
-            "id": "a",
-            "text": "3 x 2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2 x 3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "2 x 2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "6 x 1",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "3 × 2", "isCorrect": false},
+          {"id": "b", "text": "2 × 3", "isCorrect": true},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "2 × 2", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The order is rows x columns. The matrix has 2 rows and 3 columns, so its order is 2 x 3.",
+        "explanation": "Count the rows, which is 2, then count the columns, which is 3, so the order is 2 × 3 written as rows × columns. Exam Tip: A reverses the convention. ROWS come first, always. Use RC (rows, columns) as a habit, not a choice.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Given A = [[2, 3], [1, 4]] and B = [[1, 0], [5, 2]], find A + B.",
+        "questionText": "Given A = (1 2 / 3 4) and B = (5 0 / −1 2), find A + B.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[3, 3], [6, 6]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[2, 0], [5, 8]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[3, 3], [5, 6]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[1, 3], [-4, 2]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(6 2 / 2 6)", "isCorrect": true},
+          {"id": "b", "text": "(6 2 / 4 6)", "isCorrect": false},
+          {"id": "c", "text": "(5 0 / −3 8)", "isCorrect": false},
+          {"id": "d", "text": "(4 2 / 4 2)", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Add corresponding entries: 2+1=3, 3+0=3, 1+5=6, 4+2=6, giving [[3, 3], [6, 6]].",
+        "explanation": "Add corresponding entries: row 1 gives 1 + 5 = 6 and 2 + 0 = 2, and row 2 gives 3 + (−1) = 2 and 4 + 2 = 6, so A + B = (6 2 / 2 6). Exam Tip: B ignores the −1's sign. Matrix addition is entry-by-entry, same position to same position, and only for matrices of the SAME order.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Given A = [[5, 2], [3, 7]] and B = [[1, 4], [2, 6]], find A - B.",
+        "questionText": "Given A = (2 −1 / 0 4), find 3A.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[4, -2], [1, 1]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[6, 6], [5, 13]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[4, 2], [1, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[-4, 2], [-1, -1]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(5 2 / 3 7)", "isCorrect": false},
+          {"id": "b", "text": "(6 −3 / 0 12)", "isCorrect": true},
+          {"id": "c", "text": "(6 3 / 0 12)", "isCorrect": false},
+          {"id": "d", "text": "(6 −1 / 0 4)", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Subtract corresponding entries: 5-1=4, 2-4=-2, 3-2=1, 7-6=1, giving [[4, -2], [1, 1]].",
+        "correctAnswer": "b",
+        "explanation": "Multiply every entry by 3: 3(2) = 6, 3(−1) = −3, 3(0) = 0 and 3(4) = 12, so 3A = (6 −3 / 0 12). Exam Tip: D multiplies only the first entry as an adding-3 reflex, and C drops the minus. The scalar visits ALL four entries, signs intact.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If A = [[3, -1], [0, 2]], find 4A (scalar multiplication by 4).",
+        "questionText": "Given A = (1 2 / 3 4) and B = (2 0 / 1 3), find AB.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[12, -4], [0, 8]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[7, 3], [4, 6]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[12, -1], [0, 8]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[12, -4], [4, 8]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(2 0 / 3 12)", "isCorrect": false},
+          {"id": "b", "text": "(4 6 / 10 12)", "isCorrect": true},
+          {"id": "c", "text": "(3 2 / 4 7)", "isCorrect": false},
+          {"id": "d", "text": "(4 10 / 6 12)", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Multiply every entry by 4: 4x3=12, 4x(-1)=-4, 4x0=0, 4x2=8, giving [[12, -4], [0, 8]].",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Find the product AB where A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 5]].",
-        "options": [
-          {
-            "id": "a",
-            "text": "[[4, 10], [10, 20]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[2, 0], [3, 20]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[4, 10], [6, 20]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[3, 2], [4, 9]]",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Row 1: (1x2+2x1, 1x0+2x5) = (4, 10). Row 2: (3x2+4x1, 3x0+4x5) = (10, 20). So AB = [[4, 10], [10, 20]].",
+        "correctAnswer": "b",
+        "explanation": "Entry (1,1) is row 1 of A times column 1 of B, giving 1(2) + 2(1) = 4, entry (1,2) is 1(0) + 2(3) = 6, entry (2,1) is 3(2) + 4(1) = 10 and entry (2,2) is 3(0) + 4(3) = 12, so AB = (4 6 / 10 12). Exam Tip: A multiplies entry-by-entry, which is the addition rule wrongly transplanted. Matrix multiplication is ROW × COLUMN with a sum, and D writes correct numbers in transposed positions.",
         "difficulty": "medium"
       },
       {
-        "questionText": "What is the 2 x 2 identity matrix I?",
+        "questionText": "Find the determinant of (3 2 / 1 4).",
         "options": [
-          {
-            "id": "a",
-            "text": "[[0, 0], [0, 0]]",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "[[1, 1], [1, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[1, 0], [0, 1]]",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "[[0, 1], [1, 0]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "14", "isCorrect": false},
+          {"id": "b", "text": "10", "isCorrect": true},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "−10", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The determinant is ad − bc = (3)(4) − (2)(1) = 12 − 2 = 10. Exam Tip: A adds the products, but the determinant SUBTRACTS the off-diagonal product. Main diagonal times, minus anti-diagonal times, one line, one subtraction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following matrices is singular?",
+        "options": [
+          {"id": "a", "text": "(1 2 / 3 4)", "isCorrect": false},
+          {"id": "b", "text": "(2 4 / 3 6)", "isCorrect": true},
+          {"id": "c", "text": "(5 0 / 0 5)", "isCorrect": false},
+          {"id": "d", "text": "(1 0 / 0 1)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Singular means the determinant equals 0, and for B the determinant is (2)(6) − (4)(3) = 12 − 12 = 0, so B is singular. Exam Tip: A singular matrix has NO inverse, and its rows are proportional, here row 2 = 1.5 × row 1, which is the visual giveaway.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the inverse of A = (4 3 / 2 2).",
+        "options": [
+          {"id": "a", "text": "(2 −3 / −2 4)", "isCorrect": false},
+          {"id": "b", "text": "(1 −1.5 / −1 2)", "isCorrect": true},
+          {"id": "c", "text": "(2 3 / 2 4)", "isCorrect": false},
+          {"id": "d", "text": "(0.25 0.33 / 0.5 0.5)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The determinant is (4)(2) − (3)(2) = 8 − 6 = 2, then swap the main diagonal and negate the other two to get (2 −3 / −2 4), and dividing by the determinant gives A inverse = (1/2)(2 −3 / −2 4) = (1 −1.5 / −1 2). Exam Tip: A forgets to divide by the determinant, but the adjoint alone is NOT the inverse, and D inverts each entry individually, which is never valid. Verify that A times A inverse gives I.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which is the 2 × 2 identity matrix?",
+        "options": [
+          {"id": "a", "text": "(1 1 / 1 1)", "isCorrect": false},
+          {"id": "b", "text": "(0 1 / 1 0)", "isCorrect": false},
+          {"id": "c", "text": "(1 0 / 0 1)", "isCorrect": true},
+          {"id": "d", "text": "(2 0 / 0 2)", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The 2 x 2 identity matrix has 1s on the main diagonal and 0s elsewhere: [[1, 0], [0, 1]]. It satisfies AI = IA = A.",
+        "explanation": "The identity leaves any matrix unchanged under multiplication, which requires 1's on the main diagonal and 0's elsewhere, so I = (1 0 / 0 1). Exam Tip: A with all ones is NOT the identity. Test it on any matrix and watch entries add. I plays the role of 1 in matrix arithmetic.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Find the determinant of the matrix A = [[4, 3], [2, 5]].",
+        "questionText": "Use the matrix method (or otherwise) to solve x + y = 5 and x − y = 1.",
         "options": [
-          {
-            "id": "a",
-            "text": "14",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "26",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "-14",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "20",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "x = 3, y = 2", "isCorrect": true},
+          {"id": "b", "text": "x = 2, y = 3", "isCorrect": false},
+          {"id": "c", "text": "x = 4, y = 1", "isCorrect": false},
+          {"id": "d", "text": "x = 1, y = 4", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "For [[a, b], [c, d]], det = ad - bc = (4x5) - (3x2) = 20 - 6 = 14.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Find the determinant of A = [[6, 2], [9, 3]].",
-        "options": [
-          {
-            "id": "a",
-            "text": "0",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "36",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "-36",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "det = ad - bc = (6x3) - (2x9) = 18 - 18 = 0. A zero determinant means the matrix is singular (has no inverse).",
+        "explanation": "The coefficient matrix is (1 1 / 1 −1) with determinant −1 − 1 = −2, and adding the equations gives 2x = 6 so x = 3, then y = 5 − 3 = 2, giving (x, y) = (3, 2). Exam Tip: B swaps the values, so substitute BOTH back: 3 + 2 = 5 and 3 − 2 = 1 both check. The two-equation check takes ten seconds and is decisive.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Find the inverse of the matrix A = [[2, 0], [0, 4]].",
+        "questionText": "The point (3, 4) is reflected in the x-axis. Find its image.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[1/2, 0], [0, 1/4]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[4, 0], [0, 2]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[2, 0], [0, 4]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[1/8, 0], [0, 1/8]]",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "det = 2x4 - 0 = 8. Inverse = (1/det)[[d, -b], [-c, a]] = (1/8)[[4, 0], [0, 2]] = [[1/2, 0], [0, 1/4]].",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A matrix is called singular when its determinant is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "equal to 1",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "equal to 0",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "negative",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "greater than 1",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(−3, 4)", "isCorrect": false},
+          {"id": "b", "text": "(3, −4)", "isCorrect": true},
+          {"id": "c", "text": "(−3, −4)", "isCorrect": false},
+          {"id": "d", "text": "(4, 3)", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A singular matrix has determinant equal to 0 and therefore has no inverse, since the inverse requires dividing by the determinant.",
+        "explanation": "Reflection in the x-axis fixes x and negates y, mapping (x, y) to (x, −y), so x stays 3 and y becomes −4, giving the image (3, −4). Exam Tip: A is reflection in the y-axis. The mirror named is the line the point flips ACROSS, so the OTHER coordinate changes sign. An x-axis mirror means y changes.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which matrix represents a reflection in the x-axis?",
+        "questionText": "The point (2, 5) is reflected in the line y = x. Find its image.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[1, 0], [0, -1]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[-1, 0], [0, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[0, 1], [1, 0]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[-1, 0], [0, -1]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(−2, 5)", "isCorrect": false},
+          {"id": "b", "text": "(2, −5)", "isCorrect": false},
+          {"id": "c", "text": "(5, 2)", "isCorrect": true},
+          {"id": "d", "text": "(−5, −2)", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Reflection in the x-axis keeps x and negates y: (x, y) -> (x, -y). The matrix is [[1, 0], [0, -1]].",
+        "correctAnswer": "c",
+        "explanation": "Reflection in the line y = x swaps the coordinates, mapping (x, y) to (y, x), so (2, 5) becomes (5, 2). Exam Tip: No sign changes here, just a swap. Reflection in y = −x swaps AND negates, mapping (x, y) to (−y, −x), which is option D's rule and the sister transformation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The point (3, 1) is rotated 90° anticlockwise about the origin. Find its image.",
+        "options": [
+          {"id": "a", "text": "(1, −3)", "isCorrect": false},
+          {"id": "b", "text": "(−1, 3)", "isCorrect": true},
+          {"id": "c", "text": "(−3, −1)", "isCorrect": false},
+          {"id": "d", "text": "(1, 3)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rotation of 90° anticlockwise maps (x, y) to (−y, x), so (3, 1) becomes (−1, 3). Exam Tip: A is the CLOCKWISE rule (x, y) to (y, −x). The two 90° rotations are each other's opposites and NECTA plants both. Check with a sketch: (3, 1) in quadrant 1 must land in quadrant 2 going anticlockwise.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The point P(3, 2) is reflected in the y-axis. What is its image?",
+        "questionText": "The point (2, 3) is enlarged from the origin with scale factor 2. Find its image.",
         "options": [
-          {
-            "id": "a",
-            "text": "(-3, 2)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(3, -2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(-3, -2)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(2, 3)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(4, 5)", "isCorrect": false},
+          {"id": "b", "text": "(2, 6)", "isCorrect": false},
+          {"id": "c", "text": "(4, 6)", "isCorrect": true},
+          {"id": "d", "text": "(1, 1.5)", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Reflection in the y-axis maps (x, y) -> (-x, y), so (3, 2) -> (-3, 2).",
+        "correctAnswer": "c",
+        "explanation": "Enlargement with centre O and factor k maps (x, y) to (kx, ky), so (2, 3) becomes (2 × 2, 2 × 3) = (4, 6). Exam Tip: A ADDS 2 instead of multiplying and D divides using factor a half. BOTH coordinates scale, because enlargement stretches the position vector.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The point A(2, 5) is enlarged with centre the origin and scale factor 3. What is the image?",
+        "questionText": "The point (1, 4) is translated by the vector (3, −2). Find its image.",
         "options": [
-          {
-            "id": "a",
-            "text": "(6, 15)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(5, 8)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(2/3, 5/3)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(6, 5)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(4, 2)", "isCorrect": true},
+          {"id": "b", "text": "(4, 6)", "isCorrect": false},
+          {"id": "c", "text": "(−2, 6)", "isCorrect": false},
+          {"id": "d", "text": "(3, −8)", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Enlargement matrix is [[3, 0], [0, 3]]. Image = (3x2, 3x5) = (6, 15).",
+        "explanation": "Translation ADDS the vector, giving (1 + 3, 4 + (−2)) = (4, 2). Exam Tip: B ignores the minus and D multiplies. Translation is vector ADDITION, the one transformation NOT done by a 2×2 matrix.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The point P(1, 0) is rotated 90 degrees anticlockwise about the origin. What is its image?",
+        "questionText": "The point (2, −3) is rotated 180° about the origin. Find its image.",
         "options": [
-          {
-            "id": "a",
-            "text": "(0, 1)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(0, -1)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(-1, 0)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(1, 0)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(2, 3)", "isCorrect": false},
+          {"id": "b", "text": "(−2, −3)", "isCorrect": false},
+          {"id": "c", "text": "(3, −2)", "isCorrect": false},
+          {"id": "d", "text": "(−2, 3)", "isCorrect": true}
         ],
-        "correctAnswer": "a",
-        "explanation": "The rotation matrix for 90 degrees anticlockwise is [[0, -1], [1, 0]]. Image = (0x1 - 1x0, 1x1 + 0x0) = (0, 1).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If AB is defined where A is a 2 x 3 matrix and B is a 3 x 2 matrix, what is the order of the product AB?",
-        "options": [
-          {
-            "id": "a",
-            "text": "2 x 2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "3 x 3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "2 x 3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "3 x 2",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "When multiplying an (m x n) by an (n x p) matrix, the inner numbers must match and the product has order m x p. Here (2 x 3)(3 x 2) gives a 2 x 2 matrix.",
+        "correctAnswer": "d",
+        "explanation": "Rotation of 180° maps (x, y) to (−x, −y), so negating both coordinates of (2, −3) gives (−2, 3). Exam Tip: A negates only y as an x-axis reflection and B only x as a y-axis reflection. A 180° rotation negates BOTH, which is equivalent to an enlargement with scale factor −1.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A matrix with 3 rows and 4 columns has order _____.",
+        "questionText": "A matrix with the same number of rows as columns is called a ____ matrix.",
         "options": [
-          {
-            "id": "a",
-            "text": "3 x 4",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "4 x 3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3 + 4",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "12",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "square", "isCorrect": true},
+          {"id": "b", "text": "rectangular", "isCorrect": false},
+          {"id": "c", "text": "identity", "isCorrect": false},
+          {"id": "d", "text": "singular", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Order is written as rows x columns, so a matrix with 3 rows and 4 columns has order 3 x 4.",
+        "explanation": "Equal numbers of rows and columns, such as 2×2 or 3×3, give a square shape. Exam Tip: Only square matrices have determinants and possibly inverses.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]], then A + B = _____.",
+        "questionText": "The determinant of (a b / c d) is ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[6, 8], [10, 11]]",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "[[6, 8], [10, 12]]",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "[[5, 12], [21, 32]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[4, 4], [4, 4]]",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Add corresponding entries: 1+5=6, 2+6=8, 3+7=10, 4+8=12.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The determinant of [[3, 4], [1, 2]] is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "10",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "-2",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "2",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "14",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "det = ad - bc = (3x2) - (4x1) = 6 - 4 = 2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Scalar multiplication: 5 x [[1, -2], [0, 3]] = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "[[6, 3], [5, 8]]",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "[[5, -10], [5, 15]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[5, -2], [0, 3]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[5, -10], [0, 15]]",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Multiply each entry by 5: 5, -10, 0, 15.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The product of any 2 x 2 matrix A and the identity matrix I is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "A",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "I",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A^2",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "ad − bc", "isCorrect": true},
+          {"id": "b", "text": "ad + bc", "isCorrect": false},
+          {"id": "c", "text": "ab − cd", "isCorrect": false},
+          {"id": "d", "text": "ac − bd", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The identity matrix leaves a matrix unchanged: AI = IA = A.",
+        "explanation": "The main diagonal product is ad and you subtract the anti-diagonal product bc, so the determinant is ad − bc. Exam Tip: The minus is the formula's soul, because writing ad + bc scores zero.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The inverse of A = [[1, 2], [3, 5]] is _____.",
+        "questionText": "For any matrix A of matching order, IA = ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[5, -2], [-3, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "[[-5, 2], [3, -1]]",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "[[5, 2], [3, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[1, 2], [3, 5]]",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "det = (1x5) - (2x3) = 5 - 6 = -1. Inverse = (1/-1)[[5, -2], [-3, 1]] = [[-5, 2], [3, -1]].",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Under reflection in the line y = x, the image of the point (4, 7) is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "(-4, 7)",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(4, -7)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(7, 4)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(-7, -4)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Reflection in y = x swaps coordinates: (x, y) -> (y, x), so (4, 7) -> (7, 4).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The transformation matrix for a rotation of 180 degrees about the origin is _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "[[1, 0], [0, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "[[0, -1], [1, 0]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[-1, 0], [0, 1]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[-1, 0], [0, -1]]",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A 180 degree rotation maps (x, y) -> (-x, -y), represented by [[-1, 0], [0, -1]].",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Find the product [[2, 1], [0, 3]] x [[1], [4]] = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "[[6], [12]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[6], [3]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[3], [12]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[2], [12]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A", "isCorrect": true},
+          {"id": "b", "text": "I", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": false},
+          {"id": "d", "text": "A⁻¹", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Row 1: 2x1 + 1x4 = 6. Row 2: 0x1 + 3x4 = 12. The result is the column matrix [[6], [12]].",
-        "difficulty": "medium"
+        "explanation": "I is the multiplicative identity, so multiplying by it changes nothing and IA = A. Exam Tip: Likewise AI = A, because the identity commutes with everything, the rare exception in matrix multiplication.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "An enlargement with centre the origin and scale factor k has transformation matrix [[k, 0], [0, _____]].",
+        "questionText": "A matrix whose determinant is zero is called a ____ matrix.",
         "options": [
-          {
-            "id": "a",
-            "text": "1",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "k",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "0",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "-k",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "singular", "isCorrect": true},
+          {"id": "b", "text": "identity", "isCorrect": false},
+          {"id": "c", "text": "square", "isCorrect": false},
+          {"id": "d", "text": "inverse", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "The enlargement matrix is [[k, 0], [0, k]], scaling both coordinates by k.",
+        "correctAnswer": "a",
+        "explanation": "A zero determinant blocks division by the determinant, so the inverse formula fails and the matrix is singular. Exam Tip: In simultaneous equations, a singular coefficient matrix means no unique solution, because the equations are parallel or identical lines.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Under reflection in the y-axis, the point (x, y) maps to ____.",
+        "options": [
+          {"id": "a", "text": "(−x, y)", "isCorrect": true},
+          {"id": "b", "text": "(x, −y)", "isCorrect": false},
+          {"id": "c", "text": "(y, x)", "isCorrect": false},
+          {"id": "d", "text": "(−x, −y)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The mirror is vertical, so horizontal positions flip: x changes sign and y is untouched, giving (−x, y). Exam Tip: In matrix form this is (−1 0 / 0 1), and the −1 sits in the position of the coordinate that flips.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Under rotation of 90° clockwise about the origin, (x, y) maps to ____.",
+        "options": [
+          {"id": "a", "text": "(y, −x)", "isCorrect": true},
+          {"id": "b", "text": "(−y, x)", "isCorrect": false},
+          {"id": "c", "text": "(−x, −y)", "isCorrect": false},
+          {"id": "d", "text": "(x, −y)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Clockwise 90° sends the positive y-axis onto the positive x-axis, and testing (0, 1) to (1, 0) confirms (x, y) maps to (y, −x). Exam Tip: Anticlockwise is (−y, x). Test EACH remembered rule on the point (0, 1) for a one-second, no-ambiguity check.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An enlargement with scale factor 3 multiplies areas by ____.",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "27", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Lengths scale by k = 3, so areas scale by k² = 9. Exam Tip: The k² law again, since the determinant of the enlargement matrix (3 0 / 0 3) is 9, the same fact in matrix language.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The determinant of (5 2 / 3 2) is ____.",
+        "options": [
+          {"id": "a", "text": "4", "isCorrect": true},
+          {"id": "b", "text": "16", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "−4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The determinant is (5)(2) − (2)(3) = 10 − 6 = 4. Exam Tip: The result is non-zero, so this matrix HAS an inverse, because the determinant is the gatekeeper.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The transpose of (1 2 / 3 4) is ____.",
+        "options": [
+          {"id": "a", "text": "(1 3 / 2 4)", "isCorrect": true},
+          {"id": "b", "text": "(4 3 / 2 1)", "isCorrect": false},
+          {"id": "c", "text": "(2 1 / 4 3)", "isCorrect": false},
+          {"id": "d", "text": "(1 2 / 3 4)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Transpose swaps rows with columns, so the row (1, 2) becomes the column (1, 2), giving (1 3 / 2 4). Exam Tip: The main diagonal never moves under transposition, and only the off-diagonal entries trade places.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The translation vector that maps (2, 3) onto (7, 1) is ____.",
+        "options": [
+          {"id": "a", "text": "(5, −2)", "isCorrect": true},
+          {"id": "b", "text": "(−5, 2)", "isCorrect": false},
+          {"id": "c", "text": "(5, 2)", "isCorrect": false},
+          {"id": "d", "text": "(9, 4)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The vector is image minus object, so x gives 7 − 2 = 5 and y gives 1 − 3 = −2, making the translation vector (5, −2). Exam Tip: Where it lands minus where it started, and subtraction order matters, since reversing gives the inverse translation.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Matrix addition requires the two matrices to have the same order.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Matrices can only be added (or subtracted) when they have exactly the same order, because addition is done entry by entry.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "For any two matrices A and B, AB always equals BA.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Matrix multiplication is generally not commutative; AB is usually different from BA.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The determinant of the matrix [[2, 5], [1, 3]] is 1.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "det = (2x3) - (5x1) = 6 - 5 = 1, so the statement is true.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A matrix whose determinant is zero has an inverse.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A matrix with determinant zero is singular and has no inverse, because finding the inverse requires dividing by the determinant.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The order of the product of a 2 x 2 matrix and a 2 x 1 matrix is 2 x 1.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "(2 x 2)(2 x 1): the inner dimensions match and the product has order 2 x 1.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The transformation matrix [[1, 0], [0, -1]] represents a reflection in the x-axis.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This matrix maps (x, y) -> (x, -y), which is reflection in the x-axis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Multiplying a matrix by the identity matrix changes its values.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The identity matrix leaves a matrix unchanged: AI = IA = A.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A rotation of 90 degrees clockwise about the origin maps the point (1, 0) to (0, -1).",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The 90 degree clockwise rotation matrix is [[0, 1], [-1, 0]]. Applying it to (1, 0): (0x1+1x0, -1x1+0x0) = (0, -1).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Scalar multiplication of a 2 x 2 matrix changes its order.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Multiplying by a scalar multiplies each entry but keeps the same order; a 2 x 2 matrix stays 2 x 2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Matrices can be used to solve a pair of simultaneous linear equations.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Writing the equations as AX = B, the solution is X = A inverse times B, provided A is non-singular.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Matrix multiplication is commutative: AB = BA for all matrices A and B.", "options": [], "correctAnswer": "false", "explanation": "Testing A = (1 1 / 0 1) and B = (1 0 / 1 1) gives AB = (2 1 / 1 1) but BA = (1 1 / 1 2), so AB is not equal to BA. Exam Tip: Order matters in matrix products, and pre-multiply and post-multiply are different operations. This non-commutativity is the biggest culture shock of the chapter.", "difficulty": "easy"},
+      {"questionText": "For a non-singular matrix A, A × A⁻¹ = I.", "options": [], "correctAnswer": "true", "explanation": "This is the defining property of the inverse, and A⁻¹A = I as well. Exam Tip: Use it as the CHECK after computing any inverse by multiplying back and demanding the identity.", "difficulty": "easy"},
+      {"questionText": "Only square matrices have determinants.", "options": [], "correctAnswer": "true", "explanation": "The determinant is defined via the diagonal structure, and a 2×3 matrix has no complete diagonals to multiply. Exam Tip: Asked for the determinant of a non-square matrix, the correct answer is that it does not exist, not zero.", "difficulty": "easy"},
+      {"questionText": "Reflection preserves the size and shape of a figure.", "options": [], "correctAnswer": "true", "explanation": "Reflection is an isometry, so distances are unchanged and the image is congruent to the object with orientation reversed. Exam Tip: The isometry family is reflection, rotation and translation. Enlargement is the odd one out, changing size unless k = ±1.", "difficulty": "easy"},
+      {"questionText": "An enlargement with scale factor −1 is equivalent to a rotation of 180° about the centre.", "options": [], "correctAnswer": "true", "explanation": "Enlargement with k = −1 maps (x, y) to (−x, −y), and rotation of 180° maps (x, y) to (−x, −y), the identical rule. Exam Tip: Same matrix too, namely (−1 0 / 0 −1). Two transformation names, one map, a favourite NECTA true or false.", "difficulty": "easy"},
+      {"questionText": "A 2 × 3 matrix multiplied by a 3 × 2 matrix gives a 2 × 2 matrix.", "options": [], "correctAnswer": "true", "explanation": "The inner dimensions match, 3 = 3, so the product exists and it takes the outer dimensions 2 × 2. Exam Tip: (m×n)(n×p) = m×p. Write the four numbers side by side, the middle pair must match and the outer pair names the answer.", "difficulty": "easy"},
+      {"questionText": "Two matrices can be added only if they have the same order.", "options": [], "correctAnswer": "true", "explanation": "Addition pairs corresponding entries, so mismatched shapes leave entries unpaired. Exam Tip: Note the contrast with multiplication, which needs matching INNER dimensions, not identical shape.", "difficulty": "easy"},
+      {"questionText": "Rotation changes the shape of a figure.", "options": [], "correctAnswer": "false", "explanation": "Rotation is an isometry, so every distance and angle is preserved and only the orientation in the plane turns, meaning shape and size survive. Exam Tip: The image after rotation is CONGRUENT to the object. Changes position, not shape, is the exam-safe phrasing.", "difficulty": "easy"},
+      {"questionText": "The determinant of the identity matrix is 1.", "options": [], "correctAnswer": "true", "explanation": "The determinant of (1 0 / 0 1) is (1)(1) − (0)(0) = 1. Exam Tip: Geometrically the identity transformation scales areas by 1, changing nothing, so its determinant says so.", "difficulty": "easy"},
+      {"questionText": "A translation can be represented by multiplying by a 2 × 2 matrix.", "options": [], "correctAnswer": "false", "explanation": "Every 2×2 matrix fixes the origin, mapping (0, 0) to (0, 0), but a non-zero translation MOVES the origin, which is impossible for matrix multiplication, so translation is done by vector ADDITION. Exam Tip: Reflections, rotations and enlargements about O are matrix multiplications, while translation stands apart as the additive transformation. Composite questions often mix the two, so apply each by its own rule.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "How is the order of a matrix described?",
-        "options": [],
-        "correctAnswer": "The order of a matrix is written as rows x columns, where the first number is the number of rows and the second is the number of columns.",
-        "explanation": "Knowing the order is essential for deciding whether matrices can be added or multiplied.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "State the rule for adding or subtracting two matrices.",
-        "options": [],
-        "correctAnswer": "Two matrices can be added or subtracted only if they have the same order, and the operation is performed by adding or subtracting corresponding entries.",
-        "explanation": "Addition and subtraction are entry-by-entry operations that require matching orders.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Describe how to multiply a matrix by a scalar.",
-        "options": [],
-        "correctAnswer": "To multiply a matrix by a scalar, multiply every entry of the matrix by that scalar; the order of the matrix stays the same.",
-        "explanation": "Scalar multiplication scales each element equally without changing the shape.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When can two matrices be multiplied together, and what is the order of the result?",
-        "options": [],
-        "correctAnswer": "Two matrices can be multiplied when the number of columns of the first equals the number of rows of the second; an (m x n) times (n x p) matrix gives a product of order m x p.",
-        "explanation": "The inner dimensions must match, and the outer dimensions give the order of the product.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the identity matrix and what is its key property?",
-        "options": [],
-        "correctAnswer": "The identity matrix has 1s on the main diagonal and 0s elsewhere; for the 2 x 2 case it is [[1, 0], [0, 1]], and it satisfies AI = IA = A.",
-        "explanation": "The identity matrix behaves like the number 1 in matrix multiplication.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How do you find the determinant of a 2 x 2 matrix [[a, b], [c, d]]?",
-        "options": [],
-        "correctAnswer": "The determinant is ad - bc, found by multiplying the main diagonal entries and subtracting the product of the other diagonal entries.",
-        "explanation": "The determinant tells you whether the matrix is invertible (non-zero) or singular (zero).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How do you find the inverse of a 2 x 2 matrix [[a, b], [c, d]]?",
-        "options": [],
-        "correctAnswer": "The inverse is (1/(ad - bc)) times [[d, -b], [-c, a]], provided the determinant ad - bc is not zero.",
-        "explanation": "Swap the main diagonal entries, negate the other two, and divide by the determinant.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Explain how matrices are used to solve simultaneous equations.",
-        "options": [],
-        "correctAnswer": "Write the equations as AX = B, where A is the coefficient matrix, X the variable matrix and B the constants; then X = A inverse times B, which gives the solution provided A is non-singular.",
-        "explanation": "This matrix method gives a systematic way to solve two equations in two unknowns.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "List the standard transformation matrices for reflection in the x-axis, the y-axis and the line y = x.",
-        "options": [],
-        "correctAnswer": "Reflection in the x-axis: [[1, 0], [0, -1]]; reflection in the y-axis: [[-1, 0], [0, 1]]; reflection in y = x: [[0, 1], [1, 0]].",
-        "explanation": "These matrices, when multiplied by a point's coordinates, give the reflected image.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "How do you find the image of a point under a transformation given by a matrix?",
-        "options": [],
-        "correctAnswer": "Write the point as a column matrix, multiply the transformation matrix by it, and the resulting column matrix gives the coordinates of the image.",
-        "explanation": "Matrix multiplication applies the transformation to the point's coordinates.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Order of a matrix", "options": [], "correctAnswer": "The size of a matrix written as rows × columns, for example a matrix with 2 rows and 3 columns has order 2 × 3.", "explanation": "Rows are counted first and columns second, so (1 2 3 / 4 5 6) has order 2 × 3. Exam Tip: Always state rows before columns, using RC as a fixed habit.", "difficulty": "easy"},
+      {"questionText": "Matrix addition", "options": [], "correctAnswer": "Adding two matrices of the same order by adding corresponding entries in matching positions.", "explanation": "For (1 2 / 3 4) + (5 0 / −1 2) each entry adds to give (6 2 / 2 6). Exam Tip: Only matrices of the SAME order can be added, entry by entry.", "difficulty": "easy"},
+      {"questionText": "Scalar multiplication", "options": [], "correctAnswer": "Multiplying every entry of a matrix by a single number called the scalar.", "explanation": "For 3 times (2 −1 / 0 4) every entry is multiplied by 3 to give (6 −3 / 0 12). Exam Tip: The scalar visits ALL entries with their signs intact, not just the first.", "difficulty": "easy"},
+      {"questionText": "Matrix multiplication", "options": [], "correctAnswer": "Combining rows of the first matrix with columns of the second, multiplying pairs and summing, so each entry is a row times a column.", "explanation": "For (1 2 / 3 4)(2 0 / 1 3) the (1,1) entry is 1(2) + 2(1) = 4. Exam Tip: It is ROW × COLUMN with a sum, and it is not commutative, so AB is generally not BA.", "difficulty": "easy"},
+      {"questionText": "Determinant of a 2×2 matrix", "options": [], "correctAnswer": "For (a b / c d) the determinant is ad − bc, the main diagonal product minus the anti-diagonal product.", "explanation": "For (3 2 / 1 4) the determinant is (3)(4) − (2)(1) = 10. Exam Tip: Never write ad + bc, since the subtraction is essential.", "difficulty": "easy"},
+      {"questionText": "Singular matrix", "options": [], "correctAnswer": "A square matrix whose determinant is zero, so it has no inverse.", "explanation": "For (2 4 / 3 6) the determinant is 12 − 12 = 0, so it is singular and its rows are proportional. Exam Tip: A singular coefficient matrix means simultaneous equations have no unique solution.", "difficulty": "easy"},
+      {"questionText": "Inverse of a 2×2 matrix", "options": [], "correctAnswer": "For A = (a b / c d) the inverse is (1/det) times (d −b / −c a), where det = ad − bc.", "explanation": "For (4 3 / 2 2) with determinant 2 the inverse is (1/2)(2 −3 / −2 4) = (1 −1.5 / −1 2). Exam Tip: You must divide by the determinant, because the adjoint alone is not the inverse.", "difficulty": "easy"},
+      {"questionText": "Identity matrix", "options": [], "correctAnswer": "The square matrix with 1's on the main diagonal and 0's elsewhere, written I, which leaves any matrix unchanged under multiplication.", "explanation": "The 2×2 identity is (1 0 / 0 1) and IA = A and AI = A. Exam Tip: I plays the role of the number 1 in matrix arithmetic.", "difficulty": "easy"},
+      {"questionText": "Reflection transformation", "options": [], "correctAnswer": "A flip across a mirror line: the x-axis maps (x, y) to (x, −y), the y-axis maps (x, y) to (−x, y), and y = x maps (x, y) to (y, x).", "explanation": "Reflecting (3, 4) in the x-axis gives (3, −4). Exam Tip: The coordinate that changes sign is the one perpendicular to the mirror line named.", "difficulty": "easy"},
+      {"questionText": "Enlargement and area scale factor", "options": [], "correctAnswer": "An enlargement from a centre with scale factor k maps (x, y) to (kx, ky) and multiplies areas by k².", "explanation": "Enlarging (2, 3) by factor 2 gives (4, 6), and areas grow by k², so factor 3 multiplies areas by 9. Exam Tip: Lengths scale by k but areas scale by k², a constant NECTA trap.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Use matrices to solve the simultaneous equations 2x + y = 8 and x + 3y = 9. The coefficient matrix is [[2, 1], [1, 3]]. Find (x, y).",
+        "questionText": "Use the inverse matrix method to solve the simultaneous equations 2x + 3y = 8 and x + 2y = 5.",
         "options": [
-          {
-            "id": "a",
-            "text": "x = 3, y = 2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "x = 2, y = 3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "x = 4, y = 0",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "x = 1, y = 6",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "x = 2, y = 1", "isCorrect": false},
+          {"id": "b", "text": "x = 1, y = 2", "isCorrect": true},
+          {"id": "c", "text": "x = 4, y = 0", "isCorrect": false},
+          {"id": "d", "text": "x = −1, y = 3", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "det = (2x3) - (1x1) = 5. Inverse = (1/5)[[3, -1], [-1, 2]]. X = inverse x [[8], [9]] = (1/5)[[3x8 - 1x9], [-1x8 + 2x9]] = (1/5)[[15], [10]] = [[3], [2]]. So x = 3, y = 2. Check: 2(3)+2=8 and 3+3(2)=9.",
+        "correctAnswer": "b",
+        "explanation": "Write the system as (2 3 / 1 2)(x / y) = (8 / 5) with determinant (2)(2) − (3)(1) = 1, so the inverse is (1/1)(2 −3 / −1 2) = (2 −3 / −1 2). Then (x / y) = (2 −3 / −1 2)(8 / 5) = (2(8) − 3(5) / −1(8) + 2(5)) = (16 − 15 / −8 + 10), giving x = 1 and y = 2, and the check 2(1) + 3(2) = 8 and 1 + 2(2) = 5 both hold. Exam Tip: A swaps x and y, but the top entry of the result is ALWAYS x. A determinant of 1 makes the inverse clean, yet the substitution check at the end is the only proof the marker and you need.",
         "difficulty": "hard"
       },
       {
-        "questionText": "The point P(2, 3) is rotated 90 degrees anticlockwise about the origin using the matrix [[0, -1], [1, 0]]. The image is then reflected in the x-axis. What are the final coordinates?",
+        "questionText": "The point P(2, 1) is first reflected in the x-axis, and the image is then rotated 90° anticlockwise about the origin. Find the final image of P.",
         "options": [
-          {
-            "id": "a",
-            "text": "(-3, -2)",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(-3, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(3, 2)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(2, -3)",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(1, 2)", "isCorrect": true},
+          {"id": "b", "text": "(−1, 2)", "isCorrect": false},
+          {"id": "c", "text": "(2, 1)", "isCorrect": false},
+          {"id": "d", "text": "(−2, −1)", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Rotation: [[0, -1], [1, 0]] x [[2], [3]] = (0x2 - 1x3, 1x2 + 0x3) = (-3, 2). Reflection in x-axis maps (x, y) -> (x, -y): (-3, 2) -> (-3, -2).",
+        "explanation": "Reflection in the x-axis maps (2, 1) to (2, −1), then rotation of 90° anticlockwise applies (x, y) to (−y, x) on (2, −1), giving (−(−1), 2) = (1, 2), so the final image is (1, 2). Exam Tip: Composite transformations apply IN THE STATED ORDER, and reversing the order here gives (−1, −2), a different point entirely, because the underlying matrices do not commute. The double negative −(−1) = +1 is the arithmetic trap inside the geometry.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Given A = [[3, 2], [4, 3]], find A inverse and use it to verify A times A inverse gives the identity. What is A inverse?",
+        "questionText": "A rectangular photograph in Neema's studio in Arusha measures 4 cm by 6 cm. It is enlarged with scale factor 2.5. Find the area of the enlarged photograph.",
         "options": [
-          {
-            "id": "a",
-            "text": "[[3, -2], [-4, 3]]",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "[[3, 2], [4, 3]]",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "[[-3, 2], [4, -3]]",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "[[3, 4], [2, 3]]",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "60 cm²", "isCorrect": false},
+          {"id": "b", "text": "150 cm²", "isCorrect": true},
+          {"id": "c", "text": "100 cm²", "isCorrect": false},
+          {"id": "d", "text": "240 cm²", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "det = (3x3) - (2x4) = 9 - 8 = 1. Inverse = (1/1)[[3, -2], [-4, 3]] = [[3, -2], [-4, 3]]. Check A x A inverse: [[3, 2], [4, 3]] x [[3, -2], [-4, 3]] = [[9-8, -6+6], [12-12, -8+9]] = [[1, 0], [0, 1]], the identity.",
+        "correctAnswer": "b",
+        "explanation": "The original area is 4 × 6 = 24 cm², the area scale factor is k² = 2.5² = 6.25, so the new area is 24 × 6.25 = 150 cm². Exam Tip: A of 60 multiplies the area by k = 2.5 un-squared, the linear versus area confusion that never stops appearing on NECTA. An alternative route uses new sides 10 × 15 = 150, which doubles as the check.",
         "difficulty": "hard"
       }
     ]

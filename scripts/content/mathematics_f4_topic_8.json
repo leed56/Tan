@@ -2,939 +2,371 @@
   "topicId": "form_4_mathematics_topic_8",
   "topicName": "Linear Programming",
   "order": 8,
-  "description": "This topic covers forming linear inequalities from word problems, drawing the feasible region on the Cartesian plane, and using the corner-point method to find the maximum or minimum value of an objective function.",
+  "description": "Forming linear inequalities from word statements, graphing boundary lines and feasible regions, and using the objective function and corner-point method to solve real-life maximisation and minimisation problems.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is linear programming?",
+        "questionText": "A region lies below (and including) the solid line y = x + 2. Which inequality describes it?",
         "options": [
-          {
-            "id": "a",
-            "text": "A method of solving quadratic equations using graphs",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A method of finding the maximum or minimum value of a linear objective function subject to linear constraints",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "A method of writing computer programs in straight lines",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A way of drawing straight lines only",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "y < x + 2", "isCorrect": false},
+          {"id": "b", "text": "y ≤ x + 2", "isCorrect": true},
+          {"id": "c", "text": "y ≥ x + 2", "isCorrect": false},
+          {"id": "d", "text": "y > x + 2", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Linear programming is a technique for optimising (maximising or minimising) a linear objective function subject to a set of linear inequalities called constraints.",
+        "explanation": "\"Below the line\" means smaller y-values, so the symbol is ≤ or <. A solid line includes the boundary, so equality is allowed, giving y ≤ x + 2. Exam Tip: Two decisions per inequality: direction (above/below) and boundary type (solid means ≤/≥, broken means </>). Option A gets the direction right but drops the boundary.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In a linear programming problem, the linear inequalities that limit the possible values of the variables are called the:",
+        "questionText": "The region satisfying ALL the constraints of a linear programming problem simultaneously is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "objective function",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "vertices",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "constraints",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "feasible points",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Objective region", "isCorrect": false},
+          {"id": "b", "text": "Boundary region", "isCorrect": false},
+          {"id": "c", "text": "Feasible region", "isCorrect": true},
+          {"id": "d", "text": "Optimal point", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Constraints are the linear inequalities derived from the conditions of the problem; they restrict the values the variables may take.",
+        "explanation": "Each constraint shades a half-plane, and their common overlap contains every allowed point, which is the feasible region. Exam Tip: Points OUTSIDE it violate at least one constraint and are infeasible, no matter how good the objective value looks there.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The region of a graph that satisfies all the constraints of a linear programming problem at the same time is called the:",
+        "questionText": "In linear programming, the quantity to be maximised or minimised is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "feasible region",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "unwanted region",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "objective region",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "shaded boundary",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Constraint", "isCorrect": false},
+          {"id": "b", "text": "Objective function", "isCorrect": true},
+          {"id": "c", "text": "Feasible region", "isCorrect": false},
+          {"id": "d", "text": "Vertex", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "The feasible region (also called the wanted region) is the set of all points that satisfy every constraint simultaneously.",
+        "correctAnswer": "b",
+        "explanation": "The problem's goal is expressed as a linear function such as f = 3x + 2y, and that function is what we optimise, so it is the objective function. Exam Tip: Constraints are INEQUALITIES limiting the choices; the objective is an EXPRESSION being pushed up or down. Never confuse the two roles.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A trader wants to buy x chairs and y tables. If she can buy at most 20 items altogether, the correct inequality is:",
+        "questionText": "The vertices of a feasible region are (0, 0), (5, 0), (0, 6) and (3, 4). Find the maximum value of f = 3x + 2y.",
         "options": [
-          {
-            "id": "a",
-            "text": "x + y > 20",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "x + y < 20",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "x + y ≤ 20",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "x + y ≥ 20",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "15", "isCorrect": false},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "17", "isCorrect": true},
+          {"id": "d", "text": "0", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "\"At most 20\" means the total cannot exceed 20, so x + y ≤ 20.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A farmer must plant at least 5 hectares of maize (m). The correct inequality is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "m ≤ 5",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "m ≥ 5",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "m < 5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "m = 5",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "\"At least 5\" means 5 or more, which is written as m ≥ 5.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Because the number of items produced cannot be negative, every linear programming problem about real quantities includes the constraints:",
-        "options": [
-          {
-            "id": "a",
-            "text": "x ≤ 0 and y ≤ 0",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "x ≥ 0 and y ≥ 0",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "x < 0 and y < 0",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "x = y",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Quantities such as numbers of items cannot be negative, so the non-negativity constraints x ≥ 0 and y ≥ 0 are always included.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The quantity that is to be maximised or minimised in a linear programming problem is called the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "constraint",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "feasible region",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "objective function",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "boundary line",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The objective function (for example profit P = 3x + 5y) is the expression that is optimised.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the corner-point method, the maximum or minimum value of the objective function is found by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "testing the centre of the feasible region",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "evaluating the objective function at each vertex (corner) of the feasible region",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "choosing any random point in the region",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "adding all the constraints together",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The optimum value of a linear objective function over a polygonal feasible region always occurs at a vertex, so we test every corner point.",
+        "explanation": "Evaluate f at every vertex: (0,0) gives 0, (5,0) gives 15, (0,6) gives 12, and (3,4) gives 9 + 8 = 17. The maximum is 17 at (3, 4). Exam Tip: Option A stops at the first big-looking vertex, but the corner-point method demands testing ALL vertices; the winner is often an interior intersection like (3, 4), not an axis point.",
         "difficulty": "medium"
       },
       {
-        "questionText": "When graphing the inequality y ≤ 2x + 1, the boundary line y = 2x + 1 is drawn as a:",
+        "questionText": "The constraints x ≥ 0 and y ≥ 0 restrict the feasible region to:",
         "options": [
-          {
-            "id": "a",
-            "text": "solid (continuous) line",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "dashed (broken) line",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "curved line",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "dotted vertical line",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Inequalities with ≤ or ≥ include the boundary, so the line is drawn solid. Strict inequalities (< or >) use a dashed line.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "To test which side of the line x + y = 6 satisfies x + y ≤ 6, we can substitute the test point (0, 0). Which statement is true?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(0,0) gives 0 ≤ 6, which is true, so the region containing the origin is wanted",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "(0,0) gives 0 ≤ 6, which is false, so the origin side is unwanted",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(0,0) cannot be used as a test point",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(0,0) gives 6 ≤ 0, which is false",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Substituting (0,0): 0 + 0 = 0 ≤ 6 is true, so the side of the line that contains the origin is the wanted region.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Maximise P = 4x + 3y. The vertices of the feasible region are (0,0), (5,0), (3,4) and (0,6). Which vertex gives the maximum value of P?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(5,0) giving P = 20",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(3,4) giving P = 24",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(0,6) giving P = 18",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(0,0) giving P = 0",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "P at the vertices: (0,0)=0, (5,0)=20, (3,4)=4(3)+3(4)=12+12=24, (0,6)=18. The maximum is 24 at (3,4).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Minimise C = 2x + 5y. The vertices of the feasible region are (2,4), (6,1) and (8,0). Which vertex gives the minimum value of C?",
-        "options": [
-          {
-            "id": "a",
-            "text": "(2,4) giving C = 24",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(6,1) giving C = 17",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "(8,0) giving C = 16",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "(2,4) giving C = 28",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The second quadrant", "isCorrect": false},
+          {"id": "b", "text": "The x-axis only", "isCorrect": false},
+          {"id": "c", "text": "The first quadrant", "isCorrect": true},
+          {"id": "d", "text": "The whole plane", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "C at the vertices: (2,4)=2(2)+5(4)=4+20=24, (6,1)=12+5=17, (8,0)=16+0=16. The smallest value is 16, so the minimum occurs at (8,0).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A statement says \"the number of buses (b) is greater than the number of cars (c)\". The correct inequality is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "b < c",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "b ≤ c",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "b > c",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "b = c",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "\"Greater than\" translates directly to the strict inequality b > c.",
+        "explanation": "x ≥ 0 keeps points right of (or on) the y-axis and y ≥ 0 keeps points above (or on) the x-axis, so together they give the first quadrant. Exam Tip: These non-negativity constraints appear in almost every word problem, since you cannot bake −3 cakes. Include them even when the wording does not shout them.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The corner points of a feasible region for maximising P = x + 2y are (0,0), (4,0), (4,3) and (0,5). What is the maximum value of P?",
+        "questionText": "According to the corner-point (vertex) principle, the optimum value of the objective function occurs:",
         "options": [
-          {
-            "id": "a",
-            "text": "4",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "10",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "11",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "5",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "At the centre of the feasible region", "isCorrect": false},
+          {"id": "b", "text": "At a vertex of the feasible region", "isCorrect": true},
+          {"id": "c", "text": "Outside the feasible region", "isCorrect": false},
+          {"id": "d", "text": "At the origin always", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "P at the vertices: (0,0)=0, (4,0)=4, (4,3)=4+6=10, (0,5)=10. The maximum value is 10 (occurring at both (4,3) and (0,5)).",
+        "explanation": "A linear objective changes at a constant rate across the plane, so its extremes over a polygon are pushed to the boundary and along a straight edge to its ends, landing the optimum at a vertex. Exam Tip: This theorem is WHY the method works: find vertices, evaluate f, compare, and no other points need checking.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is NOT a step in solving a linear programming word problem?",
+        "questionText": "Use the test point (0, 0) on the inequality 2x + 3y ≤ 12. Which side of the line 2x + 3y = 12 is the wanted region?",
         "options": [
-          {
-            "id": "a",
-            "text": "Forming the inequalities (constraints) from the given conditions",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Drawing the constraints and identifying the feasible region",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Solving a quadratic equation by factorisation",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Evaluating the objective function at the corner points",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The side not containing the origin", "isCorrect": false},
+          {"id": "b", "text": "The side containing the origin", "isCorrect": true},
+          {"id": "c", "text": "The line itself only", "isCorrect": false},
+          {"id": "d", "text": "Both sides", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Substituting (0, 0) gives 2(0) + 3(0) = 0, and since 0 ≤ 12 is true, the origin satisfies the inequality, so the wanted region is the origin's side. Exam Tip: (0, 0) is the fastest test point, unless the boundary passes THROUGH the origin, in which case pick (1, 0) or (0, 1) instead.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The boundary line of a STRICT inequality (< or >) is drawn as:",
+        "options": [
+          {"id": "a", "text": "A solid line", "isCorrect": false},
+          {"id": "b", "text": "A double line", "isCorrect": false},
+          {"id": "c", "text": "A broken (dashed) line", "isCorrect": true},
+          {"id": "d", "text": "A thick line", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Linear programming uses linear inequalities and an objective function; solving a quadratic equation is not part of the method.",
+        "explanation": "A strict inequality excludes the boundary points, and the convention marks that exclusion with dashes, so the line is broken (dashed). Exam Tip: Solid means included (≤, ≥); broken means excluded (<, >). Markers check the line style, so a solid line for y < x costs the mark.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A carpenter makes tables (x) and chairs (y). Each table needs 4 hours and each chair 2 hours, and at most 20 hours are available. Which inequality models the time constraint?",
+        "options": [
+          {"id": "a", "text": "4x + 2y ≥ 20", "isCorrect": false},
+          {"id": "b", "text": "4x + 2y ≤ 20", "isCorrect": true},
+          {"id": "c", "text": "4x + 2y = 20", "isCorrect": false},
+          {"id": "d", "text": "2x + 4y ≤ 20", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Time used is 4 per table times x plus 2 per chair times y, and \"at most 20\" caps it with ≤ 20, giving 4x + 2y ≤ 20. Exam Tip: Option A reverses the direction (\"at most\" is NEVER ≥) and D swaps the coefficients, so attach each rate to ITS product. Translation errors here doom the whole question downstream.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which point lies in the region defined by x + y ≤ 6, x ≥ 1 and y ≥ 2?",
+        "options": [
+          {"id": "a", "text": "(0, 3)", "isCorrect": false},
+          {"id": "b", "text": "(2, 3)", "isCorrect": true},
+          {"id": "c", "text": "(5, 4)", "isCorrect": false},
+          {"id": "d", "text": "(1, 0)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Testing (2, 3): x + y = 5 ≤ 6 holds, x = 2 ≥ 1 holds, and y = 3 ≥ 2 holds, so all three constraints are satisfied. Exam Tip: Option A fails x ≥ 1, C fails the sum, and D fails y ≥ 2. A point must pass EVERY constraint; one failure evicts it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The vertices of a feasible region are (1, 4), (3, 2) and (6, 1). Find the minimum value of C = 2x + 5y.",
+        "options": [
+          {"id": "a", "text": "22", "isCorrect": false},
+          {"id": "b", "text": "16", "isCorrect": true},
+          {"id": "c", "text": "17", "isCorrect": false},
+          {"id": "d", "text": "13", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "At (1, 4), C = 2 + 20 = 22; at (3, 2), C = 6 + 10 = 16; at (6, 1), C = 12 + 5 = 17. The minimum is 16 at (3, 2). Exam Tip: For MINIMISATION pick the smallest, which sounds obvious but exam pressure flips it, so write \"min\" beside the comparison. The largest coordinate values do not automatically give the extreme C.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "\"A trader can buy AT MOST 40 crates.\" The inequality is:",
+        "options": [
+          {"id": "a", "text": "x ≥ 40", "isCorrect": false},
+          {"id": "b", "text": "x > 40", "isCorrect": false},
+          {"id": "c", "text": "x ≤ 40", "isCorrect": true},
+          {"id": "d", "text": "x < 40", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "\"At most\" sets an upper limit with 40 included, and an upper limit with inclusion is ≤, giving x ≤ 40. Exam Tip: Vocabulary map: at most / not more than means ≤; at least / not less than means ≥; fewer than means <; more than means >. The words ARE the mathematics here.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "\"A school must buy AT LEAST 15 desks.\" The inequality is:",
+        "options": [
+          {"id": "a", "text": "x ≤ 15", "isCorrect": false},
+          {"id": "b", "text": "x ≥ 15", "isCorrect": true},
+          {"id": "c", "text": "x < 15", "isCorrect": false},
+          {"id": "d", "text": "x = 15", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "\"At least\" sets a lower limit with 15 included, and a lower limit with inclusion is ≥, giving x ≥ 15. Exam Tip: This is the mirror of the \"at most\" case; \"at least\" and \"at most\" point opposite ways, and both INCLUDE the stated number.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The vertices of a feasible region are found by:",
+        "options": [
+          {"id": "a", "text": "Guessing points inside the region", "isCorrect": false},
+          {"id": "b", "text": "Solving the equations of intersecting boundary lines simultaneously", "isCorrect": true},
+          {"id": "c", "text": "Taking the midpoint of the region", "isCorrect": false},
+          {"id": "d", "text": "Reading the objective function", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Each vertex is where two boundary lines cross, and those crossing points come from solving the two boundary equations together, so vertices are found by simultaneous equations. Exam Tip: Axis vertices are the easy ones (set x = 0 or y = 0); the interior vertex, usually where the optimum hides, needs genuine simultaneous solving.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the x-intercept of the boundary line x + 2y = 8.",
+        "options": [
+          {"id": "a", "text": "(0, 4)", "isCorrect": false},
+          {"id": "b", "text": "(4, 0)", "isCorrect": false},
+          {"id": "c", "text": "(8, 0)", "isCorrect": true},
+          {"id": "d", "text": "(0, 8)", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "At the x-intercept y = 0, so x + 0 = 8 gives x = 8 and the intercept is (8, 0). Exam Tip: Option A is the Y-intercept (x = 0 gives 2y = 8, y = 4). The two intercepts are the fastest way to draw any boundary line: find both, join, done.",
         "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "The linear inequalities that restrict the values of the variables in a linear programming problem are called _____.",
+        "questionText": "The region containing all points that satisfy every constraint is called the __________ region.",
         "options": [
-          {
-            "id": "a",
-            "text": "constraints",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "variables",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "solutions",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "objectives",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "feasible", "isCorrect": true},
+          {"id": "b", "text": "boundary", "isCorrect": false},
+          {"id": "c", "text": "optimal", "isCorrect": false},
+          {"id": "d", "text": "objective", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Constraints are the limiting linear inequalities formed from the conditions of the problem.",
+        "explanation": "It is the intersection of all the half-planes, so every point in it is possible, making it the feasible region. Exam Tip: Label it R (or shade it clearly) on the graph; an unlabelled region loses presentation marks.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The region on the Cartesian plane that satisfies all the constraints simultaneously is called the _____ region.",
+        "questionText": "The phrase \"at least\" translates to the inequality symbol __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "optimal",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "feasible",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "bounded",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "solution",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The feasible (wanted) region contains all points satisfying every constraint.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The expression to be maximised or minimised, such as P = 3x + 4y, is called the _____ function.",
-        "options": [
-          {
-            "id": "a",
-            "text": "constraint",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "feasible",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "objective",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "linear",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The objective function is the quantity being optimised.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The condition \"at most 30\" written as an inequality using the symbol is x _____ 30.",
-        "options": [
-          {
-            "id": "a",
-            "text": "≥",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "<",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": ">",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "≤",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "\"At most 30\" means not more than 30, so x ≤ 30.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The condition \"at least 12\" written as an inequality is y _____ 12.",
-        "options": [
-          {
-            "id": "a",
-            "text": "≥",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "≤",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": ">",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "<",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "≥", "isCorrect": true},
+          {"id": "b", "text": "≤", "isCorrect": false},
+          {"id": "c", "text": ">", "isCorrect": false},
+          {"id": "d", "text": "<", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "\"At least 12\" means 12 or more, so y ≥ 12.",
+        "explanation": "\"At least\" is a lower bound that includes the value itself, meaning greater than or equal to, which is ≥. Exam Tip: \"At least 5\" allows 5, so the equality bar matters.",
         "difficulty": "easy"
       },
       {
-        "questionText": "When an inequality uses ≤ or ≥, the boundary line on the graph is drawn as a _____ line.",
+        "questionText": "A __________ line is used for the boundary of a strict inequality such as y > 2x.",
         "options": [
-          {
-            "id": "a",
-            "text": "dashed",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "solid",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "dotted",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "broken",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Because the boundary points are included, the line is drawn solid (continuous). Strict inequalities use a dashed line.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The maximum or minimum value of a linear objective function always occurs at a _____ of the feasible region.",
-        "options": [
-          {
-            "id": "a",
-            "text": "centre",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "midpoint",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "vertex",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "edge",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The optimum of a linear function over a polygonal feasible region occurs at a corner point (vertex).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Since quantities of real items cannot be negative, the constraints x ≥ 0 and y ≥ 0 are called the _____ constraints.",
-        "options": [
-          {
-            "id": "a",
-            "text": "positive",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "boundary",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "optimal",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "non-negativity",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Non-negativity constraints state that the variables cannot be less than zero.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If the objective function P = 2x + 3y is evaluated at the vertex (4, 5), then P = _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "23",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "22",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "26",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "14",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "broken (dashed)", "isCorrect": true},
+          {"id": "b", "text": "solid", "isCorrect": false},
+          {"id": "c", "text": "double", "isCorrect": false},
+          {"id": "d", "text": "curved", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "P = 2(4) + 3(5) = 8 + 15 = 23.",
-        "difficulty": "medium"
+        "explanation": "Strict means the boundary itself is excluded, and exclusion is drawn dashed, so a broken (dashed) line is used. Exam Tip: Line style is the FIRST thing to decide before drawing, and it is set by the symbol, not the region.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If C = 5x + 2y is evaluated at the corner point (3, 6), then C = _____.",
+        "questionText": "The maximum or minimum of the objective function occurs at a __________ of the feasible region.",
         "options": [
-          {
-            "id": "a",
-            "text": "21",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "27",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "23",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "30",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "vertex (corner point)", "isCorrect": true},
+          {"id": "b", "text": "centre", "isCorrect": false},
+          {"id": "c", "text": "midpoint", "isCorrect": false},
+          {"id": "d", "text": "boundary midpoint", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "C = 5(3) + 2(6) = 15 + 12 = 27.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "By the corner-point theorem, extremes of linear functions over polygons sit at corners, so the optimum is at a vertex (corner point). Exam Tip: List vertices in a table with their f-values, the format NECTA expects for full marks.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The constraints x ≥ 0, y ≥ 0 confine the feasible region to the __________ quadrant.",
+        "options": [
+          {"id": "a", "text": "first", "isCorrect": true},
+          {"id": "b", "text": "second", "isCorrect": false},
+          {"id": "c", "text": "third", "isCorrect": false},
+          {"id": "d", "text": "fourth", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Non-negative x is the right half and non-negative y is the upper half, and the overlap is the first quadrant. Exam Tip: Real-world quantities (items made, kg bought) cannot go negative; that is the constraint's meaning, not just its geometry.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Testing the point (0, 0) in x + y ≤ 5 gives 0 ≤ 5, which is __________, so the origin's side is the wanted region.",
+        "options": [
+          {"id": "a", "text": "true", "isCorrect": true},
+          {"id": "b", "text": "false", "isCorrect": false},
+          {"id": "c", "text": "undefined", "isCorrect": false},
+          {"id": "d", "text": "equal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substituting gives 0 + 0 = 0 and 0 ≤ 5 holds, so the statement is true. Exam Tip: A TRUE test keeps the test point's side; a FALSE test sends you to the other side, a two-outcome decision and nothing more.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the objective function f = 4x + 7y, the value of f at the point (3, 2) is __________.",
+        "options": [
+          {"id": "a", "text": "26", "isCorrect": true},
+          {"id": "b", "text": "29", "isCorrect": false},
+          {"id": "c", "text": "13", "isCorrect": false},
+          {"id": "d", "text": "22", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "f = 4(3) + 7(2) = 12 + 14 = 26. Exam Tip: Vertex evaluation is pure substitution, so do it in a tidy table, one row per vertex, and the comparison makes itself.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The intersection point of the lines x + y = 7 and x − y = 1 is __________.",
+        "options": [
+          {"id": "a", "text": "(4, 3)", "isCorrect": true},
+          {"id": "b", "text": "(3, 4)", "isCorrect": false},
+          {"id": "c", "text": "(5, 2)", "isCorrect": false},
+          {"id": "d", "text": "(6, 1)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Adding the equations gives 2x = 8 so x = 4, and substituting gives 4 + y = 7 so y = 3, giving (4, 3). Exam Tip: Elimination by adding is fastest when the y-coefficients are already opposite, so spot the structure before choosing a method.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The phrase \"not more than\" translates to the inequality symbol __________.",
+        "options": [
+          {"id": "a", "text": "≤", "isCorrect": true},
+          {"id": "b", "text": "≥", "isCorrect": false},
+          {"id": "c", "text": "<", "isCorrect": false},
+          {"id": "d", "text": ">", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "\"Not more than\" is an upper bound that includes the value, meaning less than or equal to, which is ≤. Exam Tip: \"Not more than\" equals \"at most\": different words, identical symbol.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a linear programming problem, the inequalities that limit the values of the variables are called the __________.",
+        "options": [
+          {"id": "a", "text": "constraints", "isCorrect": true},
+          {"id": "b", "text": "objectives", "isCorrect": false},
+          {"id": "c", "text": "vertices", "isCorrect": false},
+          {"id": "d", "text": "intercepts", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "They express the resource limits and requirements and fence in the feasible region, so they are the constraints. Exam Tip: A complete formulation equals variables defined plus objective function plus ALL constraints (including non-negativity). Marks are allotted to each part.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Linear programming is used to find the maximum or minimum value of a linear objective function subject to linear constraints.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the exact definition of linear programming.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The feasible region is the area of the graph that does not satisfy any of the constraints.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The feasible region satisfies ALL the constraints at the same time; it is the wanted region.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The phrase \"at most\" is represented by the inequality symbol ≤.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "\"At most\" means not exceeding a value, which is ≤.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The phrase \"at least\" is represented by the inequality symbol ≤.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "\"At least\" means a value or more, which is ≥, not ≤.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A strict inequality such as x > 3 is drawn using a dashed (broken) boundary line.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Strict inequalities (< or >) exclude the boundary, so the line is drawn dashed.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The maximum value of a linear objective function can always be found by testing only the centre point of the feasible region.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The optimum occurs at a vertex (corner) of the feasible region, so all corner points must be tested, not the centre.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The non-negativity constraints x ≥ 0 and y ≥ 0 are usually included when the variables represent real, countable quantities.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Real quantities such as numbers of items cannot be negative, so these constraints apply.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "To decide which side of a boundary line is wanted, you can substitute a test point such as the origin (0, 0) into the inequality.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Substituting a test point shows whether that side satisfies the inequality; (0,0) is convenient when the line does not pass through it.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "For the objective function P = 3x + 2y, the value of P at the point (2, 5) is 16.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "P = 3(2) + 2(5) = 6 + 10 = 16, so the statement is true.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An objective function in linear programming can contain a term such as x squared.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The objective function in linear programming must be linear, so it cannot contain squared or other non-linear terms.",
-        "difficulty": "medium"
-      }
+      {"questionText": "A feasible region can be unbounded.", "options": [], "correctAnswer": "true", "explanation": "Constraints like x + 2y ≥ 8, x ≥ 0, y ≥ 0 leave the region open upwards with no upper fence, so it is unbounded, which is common in minimisation problems. Exam Tip: An unbounded region can still have a MINIMUM at a vertex even though no maximum exists; the direction of optimisation decides solvability.", "difficulty": "easy"},
+      {"questionText": "The optimum value always occurs at exactly one vertex.", "options": [], "correctAnswer": "false", "explanation": "If the objective line is parallel to an edge, both end-vertices give the same optimal value and every point along that edge is optimal, so the optimum can be shared. Exam Tip: Two vertices giving equal maximum f is the signature of this case; report both, since NECTA occasionally sets it deliberately.", "difficulty": "easy"},
+      {"questionText": "The origin (0, 0) is always inside the feasible region.", "options": [], "correctAnswer": "false", "explanation": "For the constraint x + y ≥ 4, the origin gives 0 ≥ 4 which is false, so the origin is excluded. Exam Tip: \"≥ constraints\" (minimum requirements) typically push the region AWAY from the origin, so never assume; always test.", "difficulty": "easy"},
+      {"questionText": "A solid boundary line means the points on the line are included in the region.", "options": [], "correctAnswer": "true", "explanation": "A solid line corresponds to ≤ or ≥, so equality is permitted and the boundary points qualify. Exam Tip: Optimal vertices USUALLY lie on solid boundaries, and that inclusion is what lets the corner-point method quote them.", "difficulty": "easy"},
+      {"questionText": "Linear programming optimises a linear objective function subject to linear constraints.", "options": [], "correctAnswer": "true", "explanation": "Both the objective (ax + by) and the constraints (inequalities in x and y) are linear, and that linearity is what the corner-point theorem requires, hence the name. Exam Tip: \"Linear\" appears twice in the definition: function AND constraints. NECTA's theory question asks exactly this sentence.", "difficulty": "easy"},
+      {"questionText": "Every point in the feasible region satisfies all the given inequalities simultaneously.", "options": [], "correctAnswer": "true", "explanation": "The region is defined as the common solution set, so membership means passing every constraint. Exam Tip: \"Simultaneously\" is the operative word; the region is an intersection, not a union, of half-planes.", "difficulty": "easy"},
+      {"questionText": "Non-negativity constraints such as x ≥ 0 can be part of a linear programming problem.", "options": [], "correctAnswer": "true", "explanation": "Real quantities cannot be negative, so x ≥ 0 and y ≥ 0 are standard members of the constraint list. Exam Tip: Forgetting them can create false vertices with negative coordinates, which are physically meaningless solutions.", "difficulty": "easy"},
+      {"questionText": "The objective function is written as an inequality.", "options": [], "correctAnswer": "false", "explanation": "The objective is an EXPRESSION to optimise, f = ax + by, and it carries no ≤ or ≥ of its own; the constraints are the inequalities. Exam Tip: Writing \"maximise 3x + 2y ≤ 60\" merges the two roles into nonsense, so keep the function and the fences separate.", "difficulty": "easy"},
+      {"questionText": "The vertices of the feasible region are obtained from the intersections of boundary lines.", "options": [], "correctAnswer": "true", "explanation": "Corners occur where two boundaries meet, and solving pairs of boundary equations yields them. Exam Tip: Check each computed intersection against the OTHER constraints too; an intersection outside the region is not a vertex.", "difficulty": "easy"},
+      {"questionText": "For the objective function f = 4x + 3y, the value of f at the point (2, 3) is 17.", "options": [], "correctAnswer": "true", "explanation": "f = 4(2) + 3(3) = 8 + 9 = 17, so the statement is true. Exam Tip: Coefficient-to-variable pairing matters: the 4 goes with x and the 3 with y; swapping gives 6 + 12 = 18, the near-miss distractor pattern.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Briefly explain what linear programming is.",
-        "options": [],
-        "correctAnswer": "Linear programming is a mathematical method used to find the maximum or minimum value of a linear objective function subject to a set of linear inequalities called constraints.",
-        "explanation": "It combines an objective function with constraints to find the best (optimal) outcome.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "List the main steps used to solve a linear programming word problem.",
-        "options": [],
-        "correctAnswer": "Identify the variables, form the inequalities (constraints) from the conditions, write the objective function, graph the constraints and find the feasible region, identify the corner points, then evaluate the objective function at each corner to find the maximum or minimum.",
-        "explanation": "These ordered steps form the standard corner-point method.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Explain the difference between a constraint and the objective function.",
-        "options": [],
-        "correctAnswer": "A constraint is a linear inequality that limits the possible values of the variables, while the objective function is the linear expression (such as profit or cost) that is to be maximised or minimised.",
-        "explanation": "Constraints restrict the choices; the objective function measures the quantity being optimised.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Explain what the feasible region represents and why it is sometimes called the wanted region.",
-        "options": [],
-        "correctAnswer": "The feasible region is the set of all points on the Cartesian plane that satisfy every constraint at the same time; it is called the wanted region because any optimal solution must lie within it.",
-        "explanation": "Only points inside or on the boundary of the feasible region are valid solutions.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Describe the corner-point (vertex) method for finding the optimal value of an objective function.",
-        "options": [],
-        "correctAnswer": "Find the coordinates of all the corner points (vertices) of the feasible region, substitute each into the objective function, then choose the vertex that gives the largest value (for a maximum) or the smallest value (for a minimum).",
-        "explanation": "The optimum of a linear function over a polygon occurs at a vertex, so testing all vertices is sufficient.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Explain how to convert the phrases \"at most\" and \"at least\" into inequality symbols.",
-        "options": [],
-        "correctAnswer": "\"At most\" means not more than a value and is written with ≤, while \"at least\" means not less than a value and is written with ≥.",
-        "explanation": "These two phrases are the most common in NECTA word problems and must be translated correctly.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Explain when a boundary line should be drawn solid and when it should be dashed.",
-        "options": [],
-        "correctAnswer": "A boundary line is drawn solid when the inequality includes the boundary (≤ or ≥) and dashed (broken) when the inequality is strict (< or >) and does not include the boundary.",
-        "explanation": "The line style shows whether the points on the boundary belong to the solution.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Explain how to use a test point to identify the wanted region of an inequality.",
-        "options": [],
-        "correctAnswer": "Choose a point not on the boundary line, often the origin (0,0), and substitute it into the inequality; if the inequality is true the side containing that point is the wanted region, otherwise the other side is wanted.",
-        "explanation": "Testing one point quickly determines which side of the line to shade as the wanted region.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why must the objective function and all constraints in linear programming be linear?",
-        "options": [],
-        "correctAnswer": "They must be linear because the method relies on straight-line boundaries forming a polygonal feasible region whose optimum lies at a vertex; non-linear terms would produce curves and the corner-point method would not apply.",
-        "explanation": "Linearity guarantees the optimal solution is at a corner point.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Explain what it means to interpret the optimal solution in context after solving a linear programming problem.",
-        "options": [],
-        "correctAnswer": "It means translating the coordinates of the optimal vertex and the optimal value back into the real-world situation, for example stating how many of each item should be produced and the resulting maximum profit or minimum cost.",
-        "explanation": "Interpretation connects the mathematics to a practical decision or recommendation.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Linear programming", "options": [], "correctAnswer": "A method of optimising a linear objective function subject to a set of linear inequality constraints.", "explanation": "Both the function being optimised and the limiting conditions are linear, which is what lets the corner-point method work. Exam Tip: \"Linear\" describes BOTH the objective and the constraints.", "difficulty": "easy"},
+      {"questionText": "Linear inequality", "options": [], "correctAnswer": "A statement comparing two linear expressions using <, >, ≤ or ≥ rather than an equals sign.", "explanation": "Each inequality such as 4x + 2y ≤ 20 shades a half-plane on the graph. Exam Tip: Word phrases fix the symbol: at most means ≤, at least means ≥.", "difficulty": "easy"},
+      {"questionText": "Constraint", "options": [], "correctAnswer": "An inequality that limits the possible values of the variables in a linear programming problem.", "explanation": "Constraints express resource limits and requirements and together fence in the feasible region. Exam Tip: Always include the non-negativity constraints x ≥ 0 and y ≥ 0.", "difficulty": "easy"},
+      {"questionText": "Feasible region", "options": [], "correctAnswer": "The set of all points that satisfy every constraint simultaneously, formed by the overlap of the half-planes.", "explanation": "Only points inside it are allowed; points outside violate at least one constraint. Exam Tip: Shade and label the region clearly to earn presentation marks.", "difficulty": "easy"},
+      {"questionText": "Objective function", "options": [], "correctAnswer": "The linear expression f = ax + by that is to be maximised or minimised.", "explanation": "It is an expression, not an inequality, and it is evaluated at each vertex to find the optimum. Exam Tip: Never write the objective with a ≤ or ≥ sign; that belongs to constraints.", "difficulty": "easy"},
+      {"questionText": "Corner-point (vertex) method", "options": [], "correctAnswer": "The technique of evaluating the objective function at every vertex of the feasible region and comparing the results.", "explanation": "Because a linear objective reaches its extremes at corners, only the vertices need testing. Exam Tip: Tabulate each vertex with its f-value, then pick the max or min as required.", "difficulty": "easy"},
+      {"questionText": "Vertex (corner point)", "options": [], "correctAnswer": "A point where two boundary lines of the feasible region intersect.", "explanation": "Vertices are found by solving the two boundary equations simultaneously. Exam Tip: Axis vertices come from setting x = 0 or y = 0; the interior vertex needs real simultaneous solving.", "difficulty": "easy"},
+      {"questionText": "Boundary line", "options": [], "correctAnswer": "The straight line drawn from a constraint's equation that separates the wanted and unwanted half-planes.", "explanation": "It is solid for ≤ or ≥ (boundary included) and broken for < or > (boundary excluded). Exam Tip: Decide the line style from the symbol before you draw.", "difficulty": "easy"},
+      {"questionText": "Test point", "options": [], "correctAnswer": "A chosen point substituted into an inequality to decide which side of the boundary line to shade.", "explanation": "If the point makes the inequality true, its side is wanted; if false, the other side is. Exam Tip: Use (0, 0) unless the line passes through the origin, then use (1, 0) or (0, 1).", "difficulty": "easy"},
+      {"questionText": "Optimisation", "options": [], "correctAnswer": "The process of finding the maximum or minimum value of the objective function within the feasible region.", "explanation": "Maximisation seeks the largest f-value and minimisation the smallest, both occurring at a vertex. Exam Tip: Write \"max\" or \"min\" beside your comparison so exam pressure does not flip the choice.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A carpenter makes x stools and y chairs each day. Each stool needs 2 hours and each chair needs 3 hours, and at most 12 hours are available, so 2x + 3y ≤ 12. He must make at least 1 stool (x ≥ 1) and at least 1 chair (y ≥ 1). The profit is P = 4x + 5y (in thousands of shillings). Testing the corner points (1,1), (4.5,1) but using whole-number feasible vertices (1,1), (1, 10/3) and (4.5,1), the integer optimal is found among feasible whole-number points. Using the vertices (1,1), (3,2) and (1, 3) of the region, which gives the maximum profit?",
+        "questionText": "Maximise f = 5x + 4y subject to the constraints x + y ≤ 8, y ≤ 6, x ≥ 0 and y ≥ 0.",
         "options": [
-          {
-            "id": "a",
-            "text": "(1,1) giving P = 9 thousand",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(3,2) giving P = 22 thousand",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(1,3) giving P = 19 thousand",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(1,1) giving P = 14 thousand",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "40", "isCorrect": true},
+          {"id": "b", "text": "34", "isCorrect": false},
+          {"id": "c", "text": "24", "isCorrect": false},
+          {"id": "d", "text": "48", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Check the constraint 2x + 3y ≤ 12: at (3,2), 2(3)+3(2)=12 ≤ 12 (valid). P values: (1,1)=4+5=9, (3,2)=12+10=22, (1,3)=4+15=19. The maximum profit is 22 thousand shillings at (3,2).",
+        "correctAnswer": "a",
+        "explanation": "The vertices of the feasible region are (0, 0), (8, 0), (0, 6) and the intersection of x + y = 8 with y = 6, which is (2, 6). Evaluating f gives (0,0) → 0, (8,0) → 40, (0,6) → 24, and (2,6) → 10 + 24 = 34, so the maximum is f = 40 at (8, 0). Exam Tip: Option B = 34 comes from assuming the most inland vertex must win, but the coefficient 5 on x rewards pushing x hard, so the axis vertex (8, 0) triumphs; D = 48 evaluates at a point outside the region. Only true vertices enter the table, and the table decides.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A school orders x desks and y tables. Storage allows at most 50 items, so x + y ≤ 50. Money allows at most 30 desks (x ≤ 30) and at most 40 tables (y ≤ 40), with x ≥ 0 and y ≥ 0. The total seating value is V = 2x + 3y. Among the corner points (0,40), (10,40), (30,20) and (30,0), which gives the maximum value of V?",
+        "questionText": "Asha bakes cakes (x) and loaves of bread (y) in Iringa. Each cake needs 2 hours of oven time and each loaf 1 hour; at most 10 oven-hours are available daily. Each item needs 1 kg of flour and at most 8 kg of flour is available daily. Which pair of inequalities (with x ≥ 0, y ≥ 0) models the situation?",
         "options": [
-          {
-            "id": "a",
-            "text": "(0,40) giving V = 120",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(10,40) giving V = 140",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(30,20) giving V = 120",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(30,0) giving V = 60",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "2x + y ≤ 10 and x + y ≤ 8", "isCorrect": true},
+          {"id": "b", "text": "x + 2y ≤ 10 and x + y ≤ 8", "isCorrect": false},
+          {"id": "c", "text": "2x + y ≥ 10 and x + y ≥ 8", "isCorrect": false},
+          {"id": "d", "text": "2x + y ≤ 10 and x + y ≥ 8", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Check x+y≤50: (10,40) gives 50 ≤ 50 (valid). V values: (0,40)=120, (10,40)=20+120=140, (30,20)=60+60=120, (30,0)=60. The maximum is 140 at (10,40).",
+        "correctAnswer": "a",
+        "explanation": "Oven time is 2x + y (cakes 2 hrs each, bread 1 hr each) and \"at most 10\" gives 2x + y ≤ 10; flour is x + y (1 kg each item) and \"at most 8\" gives x + y ≤ 8. Both resources are limits, so both use ≤, giving 2x + y ≤ 10 and x + y ≤ 8. Exam Tip: Option B attaches the 2 to the wrong product (bread does not take 2 hours), and C and D flip directions, but resource ceilings are ALWAYS ≤. Formulation is marked line by line: define variables, build each inequality from its own sentence, add non-negativity.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A factory blends two feeds X and Y. Each kg of X costs 300 shillings and each kg of Y costs 200 shillings, so cost C = 300x + 200y. The mixture must contain at least 8 kg of protein where X gives 2 units/kg and Y gives 1 unit/kg, so 2x + y ≥ 8, and at least 6 kg total so x + y ≥ 6, with x ≥ 0, y ≥ 0. The corner points are (0,8), (2,4) and (6,0). Which gives the minimum cost?",
+        "questionText": "Juma mixes two poultry feeds in Shinyanga: maize (x kg) at Tsh 800 per kg and pellets (y kg) at Tsh 1,200 per kg. The mixture must provide at least 16 units of protein (maize gives 2 units/kg, pellets 4 units/kg) and at least 12 units of energy (maize gives 3 units/kg, pellets 2 units/kg). Find the minimum cost of an acceptable mixture.",
         "options": [
-          {
-            "id": "a",
-            "text": "(0,8) giving C = 1600",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "(2,4) giving C = 1400",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "(6,0) giving C = 1800",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "(2,4) giving C = 1000",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tsh 6,400", "isCorrect": false},
+          {"id": "b", "text": "Tsh 7,200", "isCorrect": false},
+          {"id": "c", "text": "Tsh 5,200", "isCorrect": true},
+          {"id": "d", "text": "Tsh 4,800", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "C values: (0,8)=300(0)+200(8)=1600, (2,4)=600+800=1400, (6,0)=1800+0=1800. The minimum cost is 1400 shillings at (2,4), which also satisfies 2x+y=8 ≥ 8 and x+y=6 ≥ 6.",
+        "correctAnswer": "c",
+        "explanation": "The constraints are protein 2x + 4y ≥ 16 (i.e. x + 2y ≥ 8), energy 3x + 2y ≥ 12, and x, y ≥ 0, with objective minimise C = 800x + 1,200y. The vertices are (8, 0), (0, 6), and the intersection of x + 2y = 8 with 3x + 2y = 12: subtracting gives 2x = 4 so x = 2, y = 3, the vertex (2, 3). Costs are (8,0) → 6,400, (0,6) → 7,200, and (2,3) → 1,600 + 3,600 = 5,200, so the minimum is Tsh 5,200 using 2 kg of maize and 3 kg of pellets. Exam Tip: A and B are the single-feed corner costs, but pure strategies are rarely cheapest when requirements pull in different directions; the mixed vertex wins. D invents a point outside the region. In minimisation with ≥ constraints, verify each vertex satisfies BOTH requirements before costing it: (2,3) gives protein 2(2)+4(3) = 16 and energy 3(2)+2(3) = 12, both met.",
         "difficulty": "hard"
       }
     ]
