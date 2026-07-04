@@ -2,939 +2,371 @@
   "topicId": "form_1_biology_topic_4",
   "topicName": "Cell Structure and Organization of Life",
   "order": 4,
-  "description": "This topic explores the cell as the basic structural and functional unit of life, the use of the light microscope, differences between plant and animal cells, the functions of cell organelles, and how cells build up tissues, organs, systems and whole organisms.",
+  "description": "An introduction to the cell as the basic unit of life, the structures of plant and animal cells and their functions, using the microscope, and how cells are organised into tissues, organs and systems.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the basic structural and functional unit of all living things?",
+        "questionText": "The basic structural and functional unit of all living things is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "The tissue",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The cell",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The organ",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The organelle",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The cell is the smallest unit that can carry out all the activities of life, so it is the basic unit of structure and function in organisms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which instrument is most commonly used in a Form 1 laboratory to view cells that are too small to see with the naked eye?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Light microscope",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Telescope",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Periscope",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Hand fork",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "The light microscope uses lenses and light to magnify tiny specimens such as cells, making them visible to the observer.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which structure is found in plant cells but NOT in animal cells?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Nucleus",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cell membrane",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Cell wall",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Cytoplasm",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Tissue", "isCorrect": false},
+          {"id": "b", "text": "Organ", "isCorrect": false},
+          {"id": "c", "text": "Cell", "isCorrect": true},
+          {"id": "d", "text": "Organ system", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Only plant cells have a rigid cellulose cell wall outside the cell membrane; animal cells lack a cell wall.",
+        "explanation": "Cells build tissues, which build organs, which build systems, so the cell is the basic unit of life. Exam Tip: Order of organisation: cell to tissue to organ to system to organism.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which organelle controls the activities of the cell and contains the genetic material?",
+        "questionText": "Which instrument is commonly used to study the structure of cells in the school laboratory?",
         "options": [
-          {
-            "id": "a",
-            "text": "Vacuole",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Nucleus",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Ribosome",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Mitochondrion",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Hand lens", "isCorrect": false},
+          {"id": "b", "text": "Light microscope", "isCorrect": true},
+          {"id": "c", "text": "Telescope", "isCorrect": false},
+          {"id": "d", "text": "Binoculars", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The nucleus contains chromosomes (genetic material) and directs all the activities of the cell, acting like its control centre.",
+        "explanation": "Cells are too small for the naked eye or a hand lens, but the light microscope magnifies enough to reveal cell structures. Exam Tip: The light (optical) microscope is standard in schools; the electron microscope is far more powerful but rarely available.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which organelle is the main site of energy release (respiration) in the cell?",
+        "questionText": "Which part of the cell controls all the activities of the cell?",
         "options": [
-          {
-            "id": "a",
-            "text": "Chloroplast",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Mitochondrion",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Cell wall",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Nucleus",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Cytoplasm", "isCorrect": false},
+          {"id": "b", "text": "Cell membrane", "isCorrect": false},
+          {"id": "c", "text": "Nucleus", "isCorrect": true},
+          {"id": "d", "text": "Cell wall", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Mitochondria carry out aerobic respiration, releasing energy from food for the cell to use.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The green pigment in chloroplasts that traps light energy for photosynthesis is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Haemoglobin",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Chlorophyll",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Melanin",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Cellulose",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Chlorophyll is the green pigment inside chloroplasts that absorbs light energy used to make food during photosynthesis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which part of the cell controls the movement of substances into and out of the cell?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cell membrane",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Nucleus",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Vacuole",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Cytoplasm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "The cell membrane is partially permeable and regulates which substances enter or leave the cell.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "On a light microscope, which part is turned to bring the specimen into sharp focus under high power?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Coarse adjustment knob",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Fine adjustment knob",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Diaphragm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Stage",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The fine adjustment knob makes small, precise movements of the lens to sharpen the image, especially under high power.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A large, permanent, fluid-filled vacuole that helps keep the cell firm is a typical feature of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "A mature plant cell",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "A red blood cell",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "A nerve cell",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A bacterial flagellum",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Mature plant cells have one large permanent vacuole containing cell sap that keeps the cell turgid and firm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which sequence correctly shows the levels of organization from simplest to most complex?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Organ → tissue → cell → system → organism",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cell → tissue → organ → system → organism",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Tissue → cell → organism → organ → system",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Cell → organ → tissue → organism → system",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Cells group into tissues, tissues form organs, organs work together as systems, and systems make up the whole organism.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is an example of an organ in the human body?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Muscle tissue",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The heart",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "A red blood cell",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A ribosome",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The heart is an organ made of several tissues working together to pump blood around the body.",
+        "correctAnswer": "c",
+        "explanation": "The nucleus contains chromosomes made of DNA that direct all cell activities. Exam Tip: Think of the nucleus as the brain or control centre of the cell.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Why is a thin specimen prepared on a slide before viewing under a light microscope?",
+        "questionText": "Which structure is found in plant cells but ABSENT in animal cells?",
         "options": [
-          {
-            "id": "a",
-            "text": "To make it heavier",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To allow light to pass through it",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "To kill the cells",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To increase its mass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Nucleus", "isCorrect": false},
+          {"id": "b", "text": "Cell membrane", "isCorrect": false},
+          {"id": "c", "text": "Cytoplasm", "isCorrect": false},
+          {"id": "d", "text": "Cell wall", "isCorrect": true}
         ],
-        "correctAnswer": "b",
-        "explanation": "A thin specimen lets light pass through so the structures inside the cells can be seen clearly.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The jelly-like material where many chemical reactions of the cell take place is the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cell wall",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cytoplasm",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Nucleus",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Chloroplast",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Cytoplasm is the watery, jelly-like substance that holds the organelles and where many cell reactions occur.",
+        "correctAnswer": "d",
+        "explanation": "Nucleus, membrane and cytoplasm occur in both cell types, but the cell wall is unique to plants. Exam Tip: Plant-only structures are the cell wall, chloroplasts and a large permanent vacuole.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A stain such as iodine or methylene blue is added to a specimen mainly to:",
+        "questionText": "The part of the plant cell that contains chlorophyll for photosynthesis is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Make the cells grow faster",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Make cell structures easier to see",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Remove the cell wall",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Add energy to the cells",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Vacuole", "isCorrect": false},
+          {"id": "b", "text": "Chloroplast", "isCorrect": true},
+          {"id": "c", "text": "Nucleus", "isCorrect": false},
+          {"id": "d", "text": "Mitochondrion", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Stains colour certain parts of the cell so that structures such as the nucleus stand out clearly under the microscope.",
+        "explanation": "Chloroplasts hold the green pigment chlorophyll that traps light for photosynthesis. Exam Tip: Chloro means green; chloroplasts are in plant cells, never in animal cells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The structure that controls the movement of substances into and out of the cell is the:",
+        "options": [
+          {"id": "a", "text": "Cell wall", "isCorrect": false},
+          {"id": "b", "text": "Cell membrane", "isCorrect": true},
+          {"id": "c", "text": "Nucleus", "isCorrect": false},
+          {"id": "d", "text": "Vacuole", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The cell (plasma) membrane is selectively permeable, letting some substances pass and blocking others. Exam Tip: The cell wall in plants is fully permeable and gives support, while the cell membrane is selectively permeable and controls entry and exit.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A group of similar cells working together to perform a particular function is called a/an:",
+        "questionText": "The jelly-like fluid in which the cell organelles are suspended is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Organ",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Tissue",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "System",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Organism",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Nucleus", "isCorrect": false},
+          {"id": "b", "text": "Cytoplasm", "isCorrect": true},
+          {"id": "c", "text": "Vacuole", "isCorrect": false},
+          {"id": "d", "text": "Chloroplast", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A tissue is a group of similar cells specialised to carry out the same function, for example muscle tissue.",
+        "explanation": "Cytoplasm is the medium that holds the organelles and where many reactions occur. Exam Tip: Most chemical reactions happen in the cytoplasm, the workshop of the cell.",
         "difficulty": "easy"
+      },
+      {
+        "questionText": "The site of respiration where energy is released in the cell is the:",
+        "options": [
+          {"id": "a", "text": "Chloroplast", "isCorrect": false},
+          {"id": "b", "text": "Ribosome", "isCorrect": false},
+          {"id": "c", "text": "Mitochondrion", "isCorrect": true},
+          {"id": "d", "text": "Nucleus", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Mitochondria carry out respiration, releasing energy for the cell to use. Exam Tip: The mitochondrion is the powerhouse of the cell; the chloroplast traps energy in plants, so do not confuse them.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A large permanent vacuole filled with cell sap is a feature of:",
+        "options": [
+          {"id": "a", "text": "Animal cells only", "isCorrect": false},
+          {"id": "b", "text": "Plant cells", "isCorrect": true},
+          {"id": "c", "text": "Bacteria only", "isCorrect": false},
+          {"id": "d", "text": "All cells equally", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Mature plant cells have one large, permanent central vacuole filled with cell sap. Exam Tip: The large vacuole stores sap and keeps the plant cell firm (turgid).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following correctly shows the levels of organisation from simplest to most complex?",
+        "options": [
+          {"id": "a", "text": "Organ to tissue to cell to system", "isCorrect": false},
+          {"id": "b", "text": "Cell to tissue to organ to system", "isCorrect": true},
+          {"id": "c", "text": "Tissue to cell to system to organ", "isCorrect": false},
+          {"id": "d", "text": "System to organ to tissue to cell", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Start from the cell; similar cells form a tissue, tissues form an organ, and organs form a system. Exam Tip: Build up from the cell; any sequence not starting with the cell is wrong.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If the eyepiece lens has a magnification of x10 and the objective lens x40, the total magnification is:",
+        "options": [
+          {"id": "a", "text": "x50", "isCorrect": false},
+          {"id": "b", "text": "x400", "isCorrect": true},
+          {"id": "c", "text": "x30", "isCorrect": false},
+          {"id": "d", "text": "x4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Total magnification = eyepiece x objective = 10 x 40 = x400. Exam Tip: Multiply the two lenses, never add; x50 is the add-trap.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is NOT a function of the cell wall in plant cells?",
+        "options": [
+          {"id": "a", "text": "Giving the cell a definite shape", "isCorrect": false},
+          {"id": "b", "text": "Providing support", "isCorrect": false},
+          {"id": "c", "text": "Controlling what enters the cell", "isCorrect": true},
+          {"id": "d", "text": "Protecting the cell", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The cell wall gives shape, support and protection and is fully permeable, so controlling entry is the membrane's job, not the wall's. Exam Tip: The wall is permeable and lets everything through, so selection belongs to the membrane.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The specialisation of cells to perform particular functions is called cell:",
+        "options": [
+          {"id": "a", "text": "Division", "isCorrect": false},
+          {"id": "b", "text": "Differentiation", "isCorrect": true},
+          {"id": "c", "text": "Respiration", "isCorrect": false},
+          {"id": "d", "text": "Multiplication", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cell differentiation is the process by which cells become specialised, for example nerve cells and root hair cells. Exam Tip: Differentiation leads to specialised cells, which form tissues.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A root hair cell is long and narrow with a large surface area. This adaptation helps it to:",
+        "options": [
+          {"id": "a", "text": "Carry out photosynthesis", "isCorrect": false},
+          {"id": "b", "text": "Absorb water and mineral salts efficiently", "isCorrect": true},
+          {"id": "c", "text": "Transmit nerve impulses", "isCorrect": false},
+          {"id": "d", "text": "Store food", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A large surface area increases the rate at which the root hair cell absorbs water and mineral salts. Exam Tip: Link structure to function; a large surface area means more absorption.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of cell would you expect to have many mitochondria because it needs a lot of energy?",
+        "options": [
+          {"id": "a", "text": "A dead cell", "isCorrect": false},
+          {"id": "b", "text": "A muscle cell", "isCorrect": true},
+          {"id": "c", "text": "A cork cell", "isCorrect": false},
+          {"id": "d", "text": "An empty xylem vessel", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cells that do a lot of work, such as contracting muscle cells, need much energy and so contain many mitochondria. Exam Tip: More activity means more energy means more mitochondria; dead or empty cells need none.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The smallest unit that can carry out all the activities of life is the _____.",
+        "questionText": "The three main parts common to both plant and animal cells are the cell membrane, the cytoplasm and the __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "cell",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "tissue",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "organ",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "organism",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "nucleus", "isCorrect": true},
+          {"id": "b", "text": "cell wall", "isCorrect": false},
+          {"id": "c", "text": "chloroplast", "isCorrect": false},
+          {"id": "d", "text": "vacuole", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The cell is the basic unit of structure and function in all living organisms.",
+        "explanation": "The nucleus is present in both plant and animal cells alongside the membrane and cytoplasm. Exam Tip: These three are the universal cell parts.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The rigid layer made of cellulose found only outside plant cells is the _____.",
+        "questionText": "The green pigment found in chloroplasts is called __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "cell membrane",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "cell wall",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "nucleus",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "cytoplasm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The cellulose cell wall gives plant cells shape and support and is absent in animal cells.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The organelle that controls all the activities of the cell is the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "ribosome",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "vacuole",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "nucleus",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "chloroplast",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The nucleus contains the genetic material and acts as the control centre of the cell.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The green pigment found in chloroplasts that traps light energy is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "haemoglobin",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "melanin",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "carotene",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "chlorophyll",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Chlorophyll absorbs light energy used by the plant to make food during photosynthesis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Energy is released from food during respiration mainly in organelles called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "mitochondria",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "ribosomes",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "lysosomes",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "vacuoles",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "chlorophyll", "isCorrect": true},
+          {"id": "b", "text": "cytoplasm", "isCorrect": false},
+          {"id": "c", "text": "cellulose", "isCorrect": false},
+          {"id": "d", "text": "chromosome", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Mitochondria are the sites of aerobic respiration where energy is released for cell activities.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The partially permeable structure that controls what enters and leaves the cell is the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "cell wall",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "cell membrane",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "nuclear membrane",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "cytoplasm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The cell membrane regulates the movement of substances into and out of the cell.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A group of similar cells that work together to do the same job is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "organ",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "organelle",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "tissue",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "system",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Tissues are made of similar cells specialised for a common function.",
+        "explanation": "Chlorophyll is the green pigment inside chloroplasts that traps light for photosynthesis. Exam Tip: Chlorophyll (pigment) sits inside the chloroplast (organelle).",
         "difficulty": "easy"
       },
       {
-        "questionText": "Different organs that work together to perform a major task form an organ _____.",
+        "questionText": "The part of the cell that stores cell sap in plants is the __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "tissue",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "cell",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "organism",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "system",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "An organ system, such as the digestive system, is made of several organs working together.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Before viewing on a microscope, a glass cover slip is lowered onto the specimen to avoid trapping _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "air bubbles",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "water drops",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "dust grains",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "oil patches",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "vacuole", "isCorrect": true},
+          {"id": "b", "text": "nucleus", "isCorrect": false},
+          {"id": "c", "text": "mitochondrion", "isCorrect": false},
+          {"id": "d", "text": "cell wall", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Lowering the cover slip slowly prevents air bubbles, which can be mistaken for cell structures.",
-        "difficulty": "hard"
+        "explanation": "The vacuole stores cell sap in plant cells. Exam Tip: A full vacuole makes the cell turgid; loss of sap makes the plant wilt.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The total magnification of a microscope is found by multiplying the eyepiece magnification by the _____ magnification.",
+        "questionText": "Total magnification of a microscope is obtained by multiplying the magnification of the eyepiece by that of the __________ lens.",
         "options": [
-          {
-            "id": "a",
-            "text": "condenser lens",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "objective lens",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "eyepiece lens",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "diaphragm",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "objective", "isCorrect": true},
+          {"id": "b", "text": "condenser", "isCorrect": false},
+          {"id": "c", "text": "mirror", "isCorrect": false},
+          {"id": "d", "text": "hand", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Total magnification = eyepiece magnification multiplied by the objective lens magnification in use.",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "Total magnification is the eyepiece magnification multiplied by the objective magnification. Exam Tip: Total = eyepiece x objective; the objective is the lens near the specimen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A group of similar cells performing the same function is called a __________.",
+        "options": [
+          {"id": "a", "text": "tissue", "isCorrect": true},
+          {"id": "b", "text": "organ", "isCorrect": false},
+          {"id": "c", "text": "system", "isCorrect": false},
+          {"id": "d", "text": "organism", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A tissue is a group of similar cells that carry out the same function. Exam Tip: The order is cell to tissue to organ to system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The structure that gives the plant cell a fixed shape and support is the __________.",
+        "options": [
+          {"id": "a", "text": "cell wall", "isCorrect": true},
+          {"id": "b", "text": "cell membrane", "isCorrect": false},
+          {"id": "c", "text": "cytoplasm", "isCorrect": false},
+          {"id": "d", "text": "vacuole", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The cell wall gives the plant cell a fixed shape and provides support. Exam Tip: Made of cellulose, the wall keeps plant cells box-like.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The powerhouse of the cell, where energy is released, is the __________.",
+        "options": [
+          {"id": "a", "text": "mitochondrion", "isCorrect": true},
+          {"id": "b", "text": "chloroplast", "isCorrect": false},
+          {"id": "c", "text": "nucleus", "isCorrect": false},
+          {"id": "d", "text": "ribosome", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The mitochondrion releases energy through respiration, so it is called the powerhouse of the cell. Exam Tip: Powerhouse of the cell means mitochondrion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Organisms whose bodies are made of many cells are said to be __________.",
+        "options": [
+          {"id": "a", "text": "multicellular", "isCorrect": true},
+          {"id": "b", "text": "unicellular", "isCorrect": false},
+          {"id": "c", "text": "acellular", "isCorrect": false},
+          {"id": "d", "text": "microscopic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Organisms made of many cells are described as multicellular. Exam Tip: Examples include humans, trees and most fungi; the opposite is unicellular.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process by which cells become specialised to perform particular functions is called cell __________.",
+        "options": [
+          {"id": "a", "text": "differentiation", "isCorrect": true},
+          {"id": "b", "text": "division", "isCorrect": false},
+          {"id": "c", "text": "respiration", "isCorrect": false},
+          {"id": "d", "text": "reproduction", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Cell differentiation is the process by which cells become specialised for particular functions. Exam Tip: Do not confuse it with cell division, which makes more cells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The selectively permeable structure that surrounds the cytoplasm is the __________.",
+        "options": [
+          {"id": "a", "text": "cell membrane", "isCorrect": true},
+          {"id": "b", "text": "cell wall", "isCorrect": false},
+          {"id": "c", "text": "nucleus", "isCorrect": false},
+          {"id": "d", "text": "vacuole", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The cell membrane is the selectively permeable layer that surrounds the cytoplasm. Exam Tip: Selectively permeable tags the membrane; fully permeable tags the wall.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "All living organisms are made up of one or more cells.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The cell theory states that all living things are made of cells, whether unicellular or multicellular.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Animal cells have a cell wall made of cellulose.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Only plant cells have a cellulose cell wall; animal cells are bounded only by a cell membrane.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Chloroplasts are found in most animal cells.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Chloroplasts are present in green plant cells, not in animal cells, because animals do not photosynthesise.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The nucleus contains the cell's genetic material.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The nucleus holds chromosomes that carry the hereditary information of the cell.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Mitochondria are responsible for storing genetic information in the cell.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Mitochondria release energy through respiration; the nucleus stores the genetic information.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A mature plant cell usually has one large permanent vacuole.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Mature plant cells contain a single large vacuole filled with cell sap that keeps the cell firm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Tissues are simpler in organization than cells.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Cells are simpler; tissues are made up of many similar cells and are therefore more complex.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A light microscope uses light and lenses to magnify small specimens.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The light microscope passes light through a thin specimen and uses lenses to enlarge the image.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The cell membrane allows all substances to pass freely into and out of the cell.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The cell membrane is partially (selectively) permeable, allowing only certain substances to pass through.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Increasing the objective lens power on a microscope increases the total magnification of the specimen.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Total magnification is the eyepiece power times the objective power, so a higher objective gives greater magnification.",
-        "difficulty": "hard"
-      }
+      {"questionText": "The nucleus controls the activities of the cell.", "options": [], "correctAnswer": "true", "explanation": "The nucleus contains DNA that directs and controls all activities of the cell. Exam Tip: The nucleus is the control centre.", "difficulty": "easy"},
+      {"questionText": "Animal cells have a cell wall made of cellulose.", "options": [], "correctAnswer": "false", "explanation": "A cellulose cell wall is a plant feature; animal cells have only a cell membrane. Exam Tip: The cellulose cell wall is a plant feature; animal cells have only a membrane.", "difficulty": "easy"},
+      {"questionText": "Chloroplasts are found in both plant and animal cells.", "options": [], "correctAnswer": "false", "explanation": "Only plants and some protists photosynthesise, so chloroplasts are absent from animal cells. Exam Tip: Animals have no chloroplasts.", "difficulty": "easy"},
+      {"questionText": "The total magnification of a microscope is found by adding the magnification of the two lenses.", "options": [], "correctAnswer": "false", "explanation": "Total magnification is found by multiplying the two lens magnifications, not adding them. Exam Tip: Multiply, not add (10 x 40 = 400).", "difficulty": "easy"},
+      {"questionText": "A large permanent vacuole is characteristic of mature plant cells.", "options": [], "correctAnswer": "true", "explanation": "Mature plant cells have one large permanent central vacuole filled with sap. Exam Tip: Animal cells may have small temporary vacuoles, not a large permanent one.", "difficulty": "easy"},
+      {"questionText": "The cell membrane is selectively permeable.", "options": [], "correctAnswer": "true", "explanation": "The cell membrane lets some substances pass while blocking others, so it is selectively permeable. Exam Tip: Selective permeability underlies diffusion and osmosis.", "difficulty": "easy"},
+      {"questionText": "Cytoplasm is the site where many chemical reactions of the cell take place.", "options": [], "correctAnswer": "true", "explanation": "Many of the cell's chemical reactions occur in the cytoplasm. Exam Tip: The cytoplasm is the cell's workshop.", "difficulty": "easy"},
+      {"questionText": "All cells in a multicellular organism are identical in structure and function.", "options": [], "correctAnswer": "false", "explanation": "Differentiation produces many different cell types with different structures and functions. Exam Tip: Differentiation produces variety such as nerve, muscle, root hair and blood cells.", "difficulty": "easy"},
+      {"questionText": "The cell wall is fully (freely) permeable while the cell membrane is selectively permeable.", "options": [], "correctAnswer": "true", "explanation": "The wall lets all substances through while the membrane selects what passes. Exam Tip: Wall means fully permeable plus support; membrane means selectively permeable plus control.", "difficulty": "easy"},
+      {"questionText": "A sperm cell has a tail to enable it to swim towards the egg.", "options": [], "correctAnswer": "true", "explanation": "The sperm's tail allows it to swim towards the egg, a classic structure-function adaptation. Exam Tip: This is a classic structure-function adaptation.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Basic unit of life",
-        "options": [],
-        "correctAnswer": "The cell is the basic structural and functional unit of all living things.",
-        "explanation": "Everything an organism does ultimately happens at the level of cells.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of the nucleus",
-        "options": [],
-        "correctAnswer": "The nucleus controls cell activities and stores the genetic material.",
-        "explanation": "It directs growth, repair and reproduction by controlling the cell's processes.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of mitochondria",
-        "options": [],
-        "correctAnswer": "Mitochondria release energy from food through respiration.",
-        "explanation": "They are often called the powerhouse of the cell because they supply usable energy.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of chloroplasts",
-        "options": [],
-        "correctAnswer": "Chloroplasts trap light energy and make food during photosynthesis.",
-        "explanation": "They contain the green pigment chlorophyll and are found only in green plant cells.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of the cell membrane",
-        "options": [],
-        "correctAnswer": "The cell membrane controls the movement of substances into and out of the cell.",
-        "explanation": "It is partially permeable, letting only certain substances pass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Plant cell features absent in animal cells",
-        "options": [],
-        "correctAnswer": "Cell wall, chloroplasts and a large permanent vacuole are found in plant cells but not animal cells.",
-        "explanation": "These features support the plant and allow it to make its own food.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Role of the cytoplasm",
-        "options": [],
-        "correctAnswer": "Cytoplasm is the jelly-like material that holds organelles and where many reactions occur.",
-        "explanation": "It provides a medium for the chemical activities of the cell.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Levels of organization in living things",
-        "options": [],
-        "correctAnswer": "Cell, tissue, organ, organ system and organism, from simplest to most complex.",
-        "explanation": "Each level is built from the level below it.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Use of the light microscope",
-        "options": [],
-        "correctAnswer": "The light microscope magnifies tiny specimens using light and lenses so cells can be seen.",
-        "explanation": "Total magnification equals eyepiece power times objective power.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Definition of a tissue",
-        "options": [],
-        "correctAnswer": "A tissue is a group of similar cells working together to perform the same function.",
-        "explanation": "Examples include muscle tissue and xylem tissue.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Cell", "options": [], "correctAnswer": "The basic structural and functional unit of all living things.", "explanation": "Cells build up into tissues, organs and systems. Exam Tip: The cell is where the levels of organisation begin.", "difficulty": "easy"},
+      {"questionText": "Nucleus", "options": [], "correctAnswer": "The part of the cell that contains DNA and controls all the cell's activities.", "explanation": "It is found in both plant and animal cells. Exam Tip: Think of the nucleus as the control centre or brain of the cell.", "difficulty": "easy"},
+      {"questionText": "Cytoplasm", "options": [], "correctAnswer": "The jelly-like fluid in which the organelles are suspended and where many reactions occur.", "explanation": "It fills the cell between the membrane and the nucleus. Exam Tip: The cytoplasm is the workshop of the cell.", "difficulty": "easy"},
+      {"questionText": "Cell membrane", "options": [], "correctAnswer": "The selectively permeable layer surrounding the cytoplasm that controls what enters and leaves the cell.", "explanation": "It is present in both plant and animal cells. Exam Tip: Selectively permeable tags the membrane; fully permeable tags the wall.", "difficulty": "easy"},
+      {"questionText": "Cell wall", "options": [], "correctAnswer": "A fully permeable cellulose layer outside the membrane of plant cells that gives shape and support.", "explanation": "It is found in plant cells but not animal cells. Exam Tip: The wall gives support and is fully permeable, unlike the selective membrane.", "difficulty": "easy"},
+      {"questionText": "Chloroplast", "options": [], "correctAnswer": "The plant-cell organelle containing chlorophyll where photosynthesis takes place.", "explanation": "Chloroplasts are found only in plant cells. Exam Tip: Chloro means green; chloroplasts trap light energy.", "difficulty": "easy"},
+      {"questionText": "Mitochondrion", "options": [], "correctAnswer": "The organelle where respiration occurs and energy is released, known as the powerhouse of the cell.", "explanation": "Active cells such as muscle cells contain many mitochondria. Exam Tip: More activity means more mitochondria.", "difficulty": "easy"},
+      {"questionText": "Vacuole", "options": [], "correctAnswer": "A fluid-filled space that stores cell sap; large and permanent in mature plant cells.", "explanation": "A full vacuole keeps a plant cell firm. Exam Tip: A full vacuole makes the cell turgid; loss of sap makes the plant wilt.", "difficulty": "easy"},
+      {"questionText": "Magnification rule", "options": [], "correctAnswer": "Total magnification = eyepiece magnification x objective magnification.", "explanation": "For example 10 x 40 gives x400. Exam Tip: Multiply the two lenses, never add.", "difficulty": "easy"},
+      {"questionText": "Cell to tissue to organ to system", "options": [], "correctAnswer": "The levels of organisation from simplest to most complex, starting at the cell.", "explanation": "Similar cells form tissues, tissues form organs, and organs form systems. Exam Tip: Build up from the cell; any order not starting with the cell is wrong.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A student looks at two cells under a microscope. Cell X has a cell wall, chloroplasts and one large vacuole, while Cell Y has none of these but has a membrane, cytoplasm and a nucleus. What is the best conclusion?",
+        "questionText": "A student viewed a cell under the microscope and recorded: a cell wall, a large central vacuole, chloroplasts, cytoplasm, a nucleus and a cell membrane. Which conclusion is correct?",
         "options": [
-          {
-            "id": "a",
-            "text": "Both cells are animal cells",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cell X is a plant cell and Cell Y is an animal cell",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Cell X is an animal cell and Cell Y is a plant cell",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Both cells are bacteria",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "It is an animal cell because it has a nucleus", "isCorrect": false},
+          {"id": "b", "text": "It is a plant cell because it has a cell wall, vacuole and chloroplasts", "isCorrect": true},
+          {"id": "c", "text": "It is a bacterial cell because it has a cell wall", "isCorrect": false},
+          {"id": "d", "text": "It cannot be identified from the features given", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A cell wall, chloroplasts and a large permanent vacuole are typical of plant cells (X), while their absence indicates an animal cell (Y).",
+        "explanation": "Nucleus, cytoplasm and membrane are universal, while the cell wall, large central vacuole and chloroplasts are all plant-specific, so the cell is a plant cell. Exam Tip: Option A is wrong because the nucleus is in both cell types; identify cells by their diagnostic (unique) features.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A muscle cell is described as having many more mitochondria than an ordinary skin cell. What does this suggest about the muscle cell?",
+        "questionText": "Under a microscope with a x5 eyepiece, a cell measured 8 mm across when the x10 objective was used. When the student switched to the x40 objective without changing the eyepiece, what happens to the total magnification and the apparent size of the cell?",
         "options": [
-          {
-            "id": "a",
-            "text": "It needs to make its own food by photosynthesis",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "It requires a large amount of energy for its work",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "It does not need any energy",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It stores more genetic material",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Magnification x50 to x200; the cell looks smaller", "isCorrect": false},
+          {"id": "b", "text": "Magnification x50 to x200; the cell looks 4 times larger", "isCorrect": true},
+          {"id": "c", "text": "Magnification stays x50; the cell looks the same", "isCorrect": false},
+          {"id": "d", "text": "Magnification x15 to x45; the cell looks 3 times larger", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Mitochondria release energy, so a cell with many mitochondria, like a muscle cell, has a high energy demand for its activities such as contraction.",
+        "explanation": "The first total is 5 x 10 = x50, and after switching it is 5 x 40 = x200, an increase factor of 200/50 = 4, so the cell appears 4 times larger. Exam Tip: Option A wrongly says smaller, but higher magnification always makes the specimen look bigger; compute the ratio of magnifications and multiply the lenses, never add.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A microscope has an eyepiece of magnification x10 and the student switches from the x4 objective to the x40 objective. How does the total magnification change?",
+        "questionText": "A table shows features seen in three cells. Cell X: cell wall present, chloroplast present, large vacuole present, nucleus present. Cell Y: cell wall absent, chloroplast absent, large vacuole absent (small only), nucleus present. Cell Z: cell wall present, chloroplast absent, large vacuole absent, nucleus present. Which identification of X, Y and Z is correct?",
         "options": [
-          {
-            "id": "a",
-            "text": "It decreases from 40 to 4",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "It stays the same at 50",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "It increases from 40 to 400",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "It increases from 14 to 50",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "X = animal, Y = plant, Z = bacterium", "isCorrect": false},
+          {"id": "b", "text": "X = plant (e.g. leaf), Y = animal, Z = plant root cell", "isCorrect": true},
+          {"id": "c", "text": "X = bacterium, Y = plant, Z = animal", "isCorrect": false},
+          {"id": "d", "text": "X = animal, Y = animal, Z = plant", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Total magnification is eyepiece times objective, so it changes from 10 x 4 = 40 to 10 x 40 = 400.",
+        "correctAnswer": "b",
+        "explanation": "X has a wall, chloroplasts and a large vacuole so it is a photosynthetic plant cell such as a leaf cell; Y has no wall, no chloroplast and only a small vacuole but a nucleus so it is an animal cell; Z has a wall and nucleus but no chloroplast so it is a plant cell that does not photosynthesise, such as a root cell. Exam Tip: The subtle one is Z; students assume no chloroplast means animal, but Z has a cell wall, which animals never have, and root cells lack chloroplasts because there is no light underground.",
         "difficulty": "hard"
       }
     ]

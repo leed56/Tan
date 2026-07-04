@@ -2,939 +2,371 @@
   "topicId": "form_1_biology_topic_3",
   "topicName": "Classification of Living Things",
   "order": 3,
-  "description": "This topic explores why scientists classify living things, the taxonomic hierarchy and binomial naming, the characteristics of the five kingdoms, and how to use dichotomous keys to identify organisms.",
+  "description": "An introduction to the classification of living things, covering taxonomy, the taxonomic hierarchy from kingdom to species, the species concept, binomial nomenclature and the rules of writing scientific names, natural and artificial classification, and the five kingdoms.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the main reason scientists classify living things?",
+        "questionText": "The arranging of living organisms into groups based on their similarities and differences is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "To make organisms grow faster",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To group organisms in an orderly way for easier study",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "To kill harmful organisms",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To give every organism the same name",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Adaptation", "isCorrect": false},
+          {"id": "b", "text": "Classification", "isCorrect": true},
+          {"id": "c", "text": "Reproduction", "isCorrect": false},
+          {"id": "d", "text": "Variation", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Classification arranges the huge variety of living things into orderly groups so they are easier to identify, study and compare.",
+        "explanation": "Classification sorts organisms by shared features. Exam Tip: Classification is the sorting; taxonomy is the science of doing it.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of biology that deals with classification and naming of organisms is called:",
+        "questionText": "The branch of biology concerned with the classification of organisms is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Ecology",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Genetics",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Taxonomy",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Physiology",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Ecology", "isCorrect": false},
+          {"id": "b", "text": "Taxonomy", "isCorrect": true},
+          {"id": "c", "text": "Genetics", "isCorrect": false},
+          {"id": "d", "text": "Physiology", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Taxonomy is the science of classifying and naming living organisms based on their shared characteristics.",
+        "correctAnswer": "b",
+        "explanation": "Taxonomy is the science of classifying and naming organisms. Exam Tip: Taxonomy leads to taxonomist. It gives us the ranks and scientific names.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following is the correct order of taxonomic ranks from largest to smallest?",
+        "questionText": "Which of the following is the correct sequence of classification from the largest to the smallest group?",
         "options": [
-          {
-            "id": "a",
-            "text": "Species, Genus, Family, Order, Class, Phylum, Kingdom",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Kingdom, Phylum, Class, Order, Family, Genus, Species",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Kingdom, Class, Phylum, Family, Order, Species, Genus",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Genus, Species, Family, Class, Order, Phylum, Kingdom",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Species → Genus → Family → Kingdom", "isCorrect": false},
+          {"id": "b", "text": "Kingdom → Phylum → Class → Order → Family → Genus → Species", "isCorrect": true},
+          {"id": "c", "text": "Genus → Species → Family → Order", "isCorrect": false},
+          {"id": "d", "text": "Kingdom → Species → Genus → Family", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The hierarchy descends from the broadest group (Kingdom) to the most specific (Species): Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+        "explanation": "The largest group is kingdom; each step narrows down to species. Exam Tip: Mnemonic: King Philip Came Over For Good Soup. Species is the smallest, most specific group.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The system of giving every organism a two-part scientific name is known as:",
+        "questionText": "The smallest unit of classification, containing organisms that can interbreed to produce fertile offspring, is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Binomial nomenclature",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Common naming",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Dichotomous keying",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Vernacular naming",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Genus", "isCorrect": false},
+          {"id": "b", "text": "Family", "isCorrect": false},
+          {"id": "c", "text": "Species", "isCorrect": true},
+          {"id": "d", "text": "Order", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A species is defined by members interbreeding to give fertile young. Exam Tip: A horse crossed with a donkey gives an infertile mule, so they are different species.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The system of naming organisms using two names (genus and species) is called:",
+        "options": [
+          {"id": "a", "text": "Classification", "isCorrect": false},
+          {"id": "b", "text": "Binomial nomenclature", "isCorrect": true},
+          {"id": "c", "text": "Taxonomy", "isCorrect": false},
+          {"id": "d", "text": "Variation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Bi means two and nomen means name, so it is the double-naming system. Exam Tip: Introduced by Carl Linnaeus. Binomial means two names.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the scientific name Homo sapiens, the word Homo represents the:",
+        "options": [
+          {"id": "a", "text": "Species", "isCorrect": false},
+          {"id": "b", "text": "Genus", "isCorrect": true},
+          {"id": "c", "text": "Family", "isCorrect": false},
+          {"id": "d", "text": "Kingdom", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In binomial names, the first word is the genus, and Homo comes first. Exam Tip: First word = genus (capital); second word = species (small). sapiens is the species name.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the correct way to write the scientific name of the maize plant?",
+        "options": [
+          {"id": "a", "text": "zea mays", "isCorrect": false},
+          {"id": "b", "text": "Zea Mays", "isCorrect": false},
+          {"id": "c", "text": "Zea mays", "isCorrect": true},
+          {"id": "d", "text": "ZEA MAYS", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The genus starts with a capital, the species with a small letter, and the whole name is italicised (or underlined). Exam Tip: Option B wrongly capitalises the species; option A wrongly lowercases the genus.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A classification system based on natural relationships and evolutionary origin is called:",
+        "options": [
+          {"id": "a", "text": "Artificial classification", "isCorrect": false},
+          {"id": "b", "text": "Natural classification", "isCorrect": true},
+          {"id": "c", "text": "Random classification", "isCorrect": false},
+          {"id": "d", "text": "Alphabetical classification", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Natural classification groups organisms by shared ancestry and many features. Exam Tip: Natural means many characteristics plus evolutionary links; artificial means one or few convenient features.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Grouping organisms simply by a single feature such as \"animals that live in water\" is an example of:",
+        "options": [
+          {"id": "a", "text": "Natural classification", "isCorrect": false},
+          {"id": "b", "text": "Artificial classification", "isCorrect": true},
+          {"id": "c", "text": "Binomial nomenclature", "isCorrect": false},
+          {"id": "d", "text": "Taxonomy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "One convenient feature (habitat) is used, ignoring deeper relationships. Exam Tip: \"Water animals\" would wrongly group a fish with a whale and a crocodile. Using one feature means artificial.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How many kingdoms are living things commonly divided into in the five-kingdom system?",
+        "options": [
+          {"id": "a", "text": "Two", "isCorrect": false},
+          {"id": "b", "text": "Three", "isCorrect": false},
+          {"id": "c", "text": "Five", "isCorrect": true},
+          {"id": "d", "text": "Seven", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The five kingdoms are Monera, Protista (Protoctista), Fungi, Plantae and Animalia. Exam Tip: Viruses are usually treated separately because they are not true cells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a reason for classifying living organisms?",
+        "options": [
+          {"id": "a", "text": "To make the study of organisms easier", "isCorrect": true},
+          {"id": "b", "text": "To kill harmful organisms", "isCorrect": false},
+          {"id": "c", "text": "To increase the number of species", "isCorrect": false},
+          {"id": "d", "text": "To stop reproduction", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Binomial nomenclature, introduced by Carolus Linnaeus, gives each species a two-word Latin name consisting of the genus and species names.",
+        "explanation": "Classification makes study, identification and reference easier. Exam Tip: Importance includes easier study, easier identification, showing relationships, and orderly reference.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In the scientific name Panthera leo, the word 'Panthera' represents the:",
+        "questionText": "In binomial nomenclature, the language used to write scientific names is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Species name",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Genus name",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Family name",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Kingdom name",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "In a binomial name, the first word (written with a capital letter) is the genus and the second word is the species.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which kingdom contains organisms made of a single cell that has NO true nucleus (prokaryotic)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Fungi",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Protoctista",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Monera",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Plantae",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "English", "isCorrect": false},
+          {"id": "b", "text": "Kiswahili", "isCorrect": false},
+          {"id": "c", "text": "Latin", "isCorrect": true},
+          {"id": "d", "text": "French", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Kingdom Monera includes bacteria, which are unicellular prokaryotes lacking a membrane-bound nucleus.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Mushrooms, moulds and yeasts belong to which kingdom?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Plantae",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Fungi",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Monera",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Animalia",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Fungi are eukaryotes that lack chlorophyll and feed by absorbing nutrients, often as decomposers or parasites.",
+        "explanation": "Latin (and Latinised Greek) is used worldwide. Exam Tip: Latin is a \"dead\" (unchanging) language, so names stay stable everywhere.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which feature is common to ALL members of the kingdom Plantae?",
+        "questionText": "Organisms in the same species share the:",
         "options": [
-          {
-            "id": "a",
-            "text": "They move from place to place",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "They contain chlorophyll and make their own food",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "They lack cell walls",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They feed on other organisms",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Fewest characteristics", "isCorrect": false},
+          {"id": "b", "text": "Most characteristics", "isCorrect": true},
+          {"id": "c", "text": "No characteristics", "isCorrect": false},
+          {"id": "d", "text": "Only the kingdom", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Plants are multicellular autotrophs that contain chlorophyll and manufacture their own food through photosynthesis.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A tool that uses pairs of contrasting statements to identify an unknown organism is called a:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Food chain",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Dichotomous key",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Family tree",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Taxonomic rank",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A dichotomous key offers two opposite choices at each step, leading the user step by step to the name of the organism.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Amoeba and Paramecium are best classified in which kingdom?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Monera",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Animalia",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Protoctista",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Fungi",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Amoeba and Paramecium are unicellular eukaryotes placed in kingdom Protoctista (Protista).",
+        "explanation": "The species is the smallest, most specific group, so its members are the most alike. Exam Tip: Down the hierarchy, organisms share more features and the group holds fewer organisms.",
         "difficulty": "medium"
       },
       {
-        "questionText": "How should a scientific name be written when typed in a textbook?",
+        "questionText": "A group of similar species forms a:",
         "options": [
-          {
-            "id": "a",
-            "text": "Both words in capital letters",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Genus capitalised, species in small letters, whole name in italics",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Species capitalised, genus in small letters",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Both words underlined and capitalised",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Kingdom", "isCorrect": false},
+          {"id": "b", "text": "Genus", "isCorrect": true},
+          {"id": "c", "text": "Class", "isCorrect": false},
+          {"id": "d", "text": "Phylum", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The genus begins with a capital letter and the species with a small letter; when typed the name is written in italics (or underlined when handwritten).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which kingdom contains multicellular organisms that feed on other organisms and can usually move from place to place?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Plantae",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Fungi",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Animalia",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Protoctista",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Animals are multicellular heterotrophs that lack cell walls and are usually able to move (locomotion).",
+        "explanation": "Related species are grouped into a genus. Exam Tip: The genus is the first word of the scientific name.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which language is mainly used to form the scientific names of organisms?",
+        "questionText": "Which pair of organisms is MOST closely related?",
         "options": [
-          {
-            "id": "a",
-            "text": "English",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Latin",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Swahili",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Greek only",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Two organisms in the same kingdom only", "isCorrect": false},
+          {"id": "b", "text": "Two organisms in the same species", "isCorrect": true},
+          {"id": "c", "text": "Two organisms in the same phylum only", "isCorrect": false},
+          {"id": "d", "text": "Two organisms in the same class only", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Scientific names are based mainly on Latin (and Latinised Greek) so that they are universal and understood by scientists everywhere.",
+        "explanation": "The lower the shared group, the closer the relationship, and species is the lowest. Exam Tip: Same kingdom means very distant; same species means essentially the same kind.",
         "difficulty": "medium"
-      },
-      {
-        "questionText": "Organisms that belong to the same species are able to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Live only in water",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Interbreed and produce fertile offspring",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Have completely different appearances",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Make their own food",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A species is a group of organisms with very similar features that can interbreed to produce fertile offspring.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which kingdom includes bacteria that cause diseases such as cholera?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Monera",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Fungi",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Protoctista",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Plantae",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Bacteria, including disease-causing ones like the cholera bacterium, are prokaryotes placed in kingdom Monera.",
-        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "The science of classifying and naming living organisms is called _____.",
+        "questionText": "The science of classifying and naming living organisms is called __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "taxonomy",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "anatomy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "physiology",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "ecology",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "taxonomy", "isCorrect": true},
+          {"id": "b", "text": "ecology", "isCorrect": false},
+          {"id": "c", "text": "genetics", "isCorrect": false},
+          {"id": "d", "text": "physiology", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Taxonomy deals with grouping organisms and giving them scientific names.",
+        "explanation": "Taxonomy is the branch of biology that classifies and names organisms. Exam Tip: Also called systematics; taxonomy is the standard O-level term.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The smallest unit in the taxonomic hierarchy is the _____.",
+        "questionText": "The largest group in the classification hierarchy is the __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "kingdom",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "species",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "phylum",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "family",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Species is the most specific rank, made up of organisms that can interbreed and produce fertile offspring.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The largest and broadest taxonomic group used to classify living things is the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "species",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "genus",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "kingdom",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "order",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Kingdom is the highest rank, and the five kingdoms are Monera, Protoctista, Fungi, Plantae and Animalia.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The scientist who introduced the system of binomial nomenclature was _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "Charles Darwin",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Gregor Mendel",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Robert Hooke",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Carolus Linnaeus",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Carolus Linnaeus developed the two-name system and the modern hierarchy of classification.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Single-celled organisms that have no true (membrane-bound) nucleus are placed in the kingdom _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "Monera",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Fungi",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Protista",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Plantae",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "kingdom", "isCorrect": true},
+          {"id": "b", "text": "species", "isCorrect": false},
+          {"id": "c", "text": "genus", "isCorrect": false},
+          {"id": "d", "text": "family", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Monera contains prokaryotes such as bacteria, whose genetic material is not enclosed in a nucleus.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Fungi obtain their food by _____ nutrients from dead or living material rather than by making it.",
-        "options": [
-          {
-            "id": "a",
-            "text": "producing",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "absorbing",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "synthesising",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "manufacturing",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Fungi lack chlorophyll, so they absorb digested nutrients, acting as decomposers or parasites.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Green plants make their own food by the process of _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "respiration",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "transpiration",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "photosynthesis",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "fermentation",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Photosynthesis uses chlorophyll, sunlight, water and carbon dioxide to produce food (glucose).",
+        "explanation": "The kingdom sits at the top of the hierarchy and contains the most organisms. Exam Tip: Kingdom holds the most organisms but they share the fewest features.",
         "difficulty": "easy"
       },
       {
-        "questionText": "An identification tool made of paired contrasting statements is called a _____ key.",
+        "questionText": "In the name Panthera leo, the species name is __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "botanical",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "numerical",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "alphabetical",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "dichotomous",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A dichotomous key splits choices into two at each step to lead to the organism's name.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the name Zea mays, the word 'mays' is the _____ name.",
-        "options": [
-          {
-            "id": "a",
-            "text": "species",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "genus",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "family",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "kingdom",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "leo", "isCorrect": true},
+          {"id": "b", "text": "Panthera", "isCorrect": false},
+          {"id": "c", "text": "Panthera leo", "isCorrect": false},
+          {"id": "d", "text": "Felidae", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The second word in a binomial name, written in small letters, is the species name.",
-        "difficulty": "medium"
+        "explanation": "The second word of a binomial name is the species name. Exam Tip: Panthera (genus, capital) plus leo (species, small) means lion.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Unlike plants and fungi, members of kingdom Animalia do not have a _____ around their cells.",
+        "questionText": "A system of naming organisms using two names is called __________ nomenclature.",
         "options": [
-          {
-            "id": "a",
-            "text": "nucleus",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "cell wall",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "cytoplasm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "cell membrane",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "binomial", "isCorrect": true},
+          {"id": "b", "text": "natural", "isCorrect": false},
+          {"id": "c", "text": "artificial", "isCorrect": false},
+          {"id": "d", "text": "common", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Animal cells have only a cell membrane, while plant and fungal cells also have a rigid cell wall.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "Genus plus species gives two names, which is binomial nomenclature. Exam Tip: Genus + species = two names = binomial. Devised by Linnaeus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Members of the same __________ can interbreed to produce fertile offspring.",
+        "options": [
+          {"id": "a", "text": "species", "isCorrect": true},
+          {"id": "b", "text": "genus", "isCorrect": false},
+          {"id": "c", "text": "family", "isCorrect": false},
+          {"id": "d", "text": "kingdom", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The ability to interbreed and produce fertile young defines a species. Exam Tip: This biological definition of a species is frequently examined.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A classification based on only one or a few characteristics for convenience is called __________ classification.",
+        "options": [
+          {"id": "a", "text": "artificial", "isCorrect": true},
+          {"id": "b", "text": "natural", "isCorrect": false},
+          {"id": "c", "text": "binomial", "isCorrect": false},
+          {"id": "d", "text": "evolutionary", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using only a few convenient features is artificial classification. Exam Tip: Artificial means few features; natural means many features plus evolutionary relationships.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The scientist who introduced the binomial system of naming organisms was Carl __________.",
+        "options": [
+          {"id": "a", "text": "Linnaeus", "isCorrect": true},
+          {"id": "b", "text": "Darwin", "isCorrect": false},
+          {"id": "c", "text": "Mendel", "isCorrect": false},
+          {"id": "d", "text": "Aristotle", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Carl Linnaeus devised the two-name naming system. Exam Tip: Linnaeus is the father of taxonomy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When writing a scientific name by hand, each of the two words should be __________ separately.",
+        "options": [
+          {"id": "a", "text": "underlined", "isCorrect": true},
+          {"id": "b", "text": "capitalised", "isCorrect": false},
+          {"id": "c", "text": "circled", "isCorrect": false},
+          {"id": "d", "text": "abbreviated", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Handwritten scientific names cannot be italicised, so each word is underlined instead. Exam Tip: Typed means italics; handwritten means underline.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The five kingdoms of living things are Monera, Protista, Fungi, Plantae and __________.",
+        "options": [
+          {"id": "a", "text": "Animalia", "isCorrect": true},
+          {"id": "b", "text": "Bacteria", "isCorrect": false},
+          {"id": "c", "text": "Viruses", "isCorrect": false},
+          {"id": "d", "text": "Algae", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The fifth kingdom is Animalia, which includes all animals. Exam Tip: Animalia = all animals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "As we move from kingdom down to species, the number of organisms in each group __________.",
+        "options": [
+          {"id": "a", "text": "decreases", "isCorrect": true},
+          {"id": "b", "text": "increases", "isCorrect": false},
+          {"id": "c", "text": "stays the same", "isCorrect": false},
+          {"id": "d", "text": "doubles", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Lower ranks are more specific, so each group holds fewer organisms. Exam Tip: Down the hierarchy there are fewer organisms and more shared features.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Classification helps scientists to identify and study organisms more easily.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Grouping similar organisms together makes it simpler to identify, compare and study the huge variety of living things.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A scientific name is made up of three words.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Binomial nomenclature uses exactly two words: the genus name and the species name.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The genus name is always written beginning with a capital letter.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The genus (first word) starts with a capital letter, while the species (second word) starts with a small letter.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "All organisms in kingdom Monera have a true nucleus.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Monerans (bacteria) are prokaryotes, meaning they lack a membrane-bound nucleus.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Fungi contain chlorophyll and make their own food.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Fungi lack chlorophyll; they feed by absorbing nutrients from other materials.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Members of the kingdom Plantae are able to manufacture their own food.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Plants are autotrophs that use chlorophyll to make food by photosynthesis.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Amoeba is a multicellular organism belonging to kingdom Animalia.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Amoeba is a unicellular eukaryote classified in kingdom Protoctista, not Animalia.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Scientific names are mostly based on the Latin language so that they are understood worldwide.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Using Latin makes scientific names universal and avoids confusion caused by different local names.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In a dichotomous key, each step gives the user three choices to pick from.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A dichotomous key gives exactly two contrasting choices at each step ('dichotomous' means dividing into two).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Organisms of the same species can interbreed and produce fertile offspring.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The ability to interbreed and produce fertile offspring is the key feature that defines a species.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Classification makes the study of living organisms easier.", "options": [], "correctAnswer": "true", "explanation": "Grouping organisms by shared features makes them easier to study, identify and refer to. Exam Tip: This is the headline importance of classification statement.", "difficulty": "easy"},
+      {"questionText": "In a scientific name, the first word is the species and the second is the genus.", "options": [], "correctAnswer": "false", "explanation": "The order is reversed: the genus comes first and the species second. Exam Tip: Genus (capital) comes first; species (small) second.", "difficulty": "easy"},
+      {"questionText": "Scientific names are written in Latin.", "options": [], "correctAnswer": "true", "explanation": "Scientific names use Latin (and Latinised Greek) so they are the same everywhere. Exam Tip: Using Latin keeps names the same worldwide and over time.", "difficulty": "easy"},
+      {"questionText": "The species is the largest group in classification.", "options": [], "correctAnswer": "false", "explanation": "The species is the smallest group; the kingdom is the largest. Exam Tip: Species = smallest; kingdom = largest.", "difficulty": "easy"},
+      {"questionText": "Members of the same species can interbreed and produce fertile offspring.", "options": [], "correctAnswer": "true", "explanation": "Producing fertile offspring by interbreeding is the defining feature of a species. Exam Tip: If offspring are infertile (like a mule), the parents are different species.", "difficulty": "easy"},
+      {"questionText": "Natural classification groups organisms according to their evolutionary relationships.", "options": [], "correctAnswer": "true", "explanation": "Natural classification uses many features and shared ancestry to group organisms. Exam Tip: Natural classification shows how organisms are truly related.", "difficulty": "easy"},
+      {"questionText": "In the scientific name, the genus name begins with a small (lower-case) letter.", "options": [], "correctAnswer": "false", "explanation": "The genus name always begins with a capital letter, and only the species is lower-case. Exam Tip: Capital genus, small species, for example Homo sapiens.", "difficulty": "easy"},
+      {"questionText": "A genus is made up of one or more closely related species.", "options": [], "correctAnswer": "true", "explanation": "A genus groups together species that are closely related. Exam Tip: Same genus means the same first name in the binomial.", "difficulty": "easy"},
+      {"questionText": "Artificial classification is based on many characteristics and evolutionary relationships.", "options": [], "correctAnswer": "false", "explanation": "That description fits natural classification; artificial classification uses only one or a few features. Exam Tip: The statement swaps artificial and natural. Artificial = few features.", "difficulty": "easy"},
+      {"questionText": "Viruses are usually placed in one of the five kingdoms of living things.", "options": [], "correctAnswer": "false", "explanation": "Viruses are not true cells, so they are usually classified on their own rather than in the five kingdoms. Exam Tip: Viruses are not cells and are classified separately.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of classification",
-        "options": [],
-        "correctAnswer": "Classification is the arrangement of living things into groups based on their similarities and differences.",
-        "explanation": "It makes the study of the many kinds of organisms more orderly and manageable.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The five kingdoms of living things",
-        "options": [],
-        "correctAnswer": "Monera, Protoctista, Fungi, Plantae and Animalia.",
-        "explanation": "Organisms are sorted into these five major groups based on cell type, number of cells and feeding methods.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Taxonomic hierarchy from largest to smallest",
-        "options": [],
-        "correctAnswer": "Kingdom, Phylum, Class, Order, Family, Genus, Species.",
-        "explanation": "Each rank below the kingdom contains organisms that are more closely related.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of binomial nomenclature",
-        "options": [],
-        "correctAnswer": "A naming system that gives each organism a two-part scientific name (genus and species).",
-        "explanation": "It was introduced by Carolus Linnaeus and uses Latin names.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Rules for writing scientific names",
-        "options": [],
-        "correctAnswer": "Genus begins with a capital letter, species with a small letter, and the name is italicised or underlined.",
-        "explanation": "These rules keep scientific naming consistent worldwide.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Key features of kingdom Monera",
-        "options": [],
-        "correctAnswer": "Unicellular prokaryotes with no true nucleus, e.g. bacteria.",
-        "explanation": "Their genetic material is not enclosed in a membrane-bound nucleus.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Key features of kingdom Fungi",
-        "options": [],
-        "correctAnswer": "Eukaryotes without chlorophyll that feed by absorbing nutrients, e.g. mushrooms and yeasts.",
-        "explanation": "They often act as decomposers or parasites and have cell walls.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Key features of kingdom Plantae",
-        "options": [],
-        "correctAnswer": "Multicellular autotrophs with chlorophyll and cell walls that make food by photosynthesis.",
-        "explanation": "They are usually fixed in one place and form the base of most food chains.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Key features of kingdom Animalia",
-        "options": [],
-        "correctAnswer": "Multicellular heterotrophs without cell walls that usually move and feed on other organisms.",
-        "explanation": "They depend on plants or other animals for food.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Purpose of a dichotomous key",
-        "options": [],
-        "correctAnswer": "It is used to identify an unknown organism using pairs of contrasting statements.",
-        "explanation": "At each step the user chooses between two options until the organism is named.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Classification", "options": [], "correctAnswer": "The arranging of living organisms into groups based on their similarities and differences.", "explanation": "Classification is the sorting of organisms, while taxonomy is the science of doing it. Exam Tip: Remember classification is the process, taxonomy is the study.", "difficulty": "easy"},
+      {"questionText": "Taxonomy", "options": [], "correctAnswer": "The branch of biology concerned with the classification and naming of organisms.", "explanation": "Taxonomy provides the ranks and scientific names used for all living things. Exam Tip: A person who studies taxonomy is a taxonomist.", "difficulty": "easy"},
+      {"questionText": "Taxonomic hierarchy (Kingdom to Species)", "options": [], "correctAnswer": "The ordered ranks Kingdom, Phylum, Class, Order, Family, Genus, Species, from the largest and least specific to the smallest and most specific group.", "explanation": "As you move down the ranks the groups hold fewer organisms that share more features. Exam Tip: Use the mnemonic King Philip Came Over For Good Soup.", "difficulty": "easy"},
+      {"questionText": "Species", "options": [], "correctAnswer": "The smallest unit of classification, made up of organisms that can interbreed to produce fertile offspring.", "explanation": "Members of a species are the most alike of any group in the hierarchy. Exam Tip: A horse and a donkey give an infertile mule, so they are different species.", "difficulty": "easy"},
+      {"questionText": "Genus", "options": [], "correctAnswer": "A group made up of one or more closely related species.", "explanation": "The genus is the rank just above species and forms the first word of a scientific name. Exam Tip: Same genus means the same first name in the binomial.", "difficulty": "easy"},
+      {"questionText": "Binomial nomenclature", "options": [], "correctAnswer": "The system of naming organisms using two Latin names, the genus followed by the species.", "explanation": "The word binomial means two names, genus plus species. Exam Tip: It was introduced by Carl Linnaeus.", "difficulty": "easy"},
+      {"questionText": "Rules of writing scientific names", "options": [], "correctAnswer": "The genus begins with a capital letter, the species with a small letter, and the whole name is italicised when typed or underlined when handwritten.", "explanation": "These three rules keep scientific names consistent everywhere, for example Homo sapiens. Exam Tip: Capital genus, small species, italic or underlined.", "difficulty": "easy"},
+      {"questionText": "Natural versus artificial classification", "options": [], "correctAnswer": "Natural classification groups organisms by many shared features and evolutionary relationships, while artificial classification uses only one or a few convenient features.", "explanation": "Artificial grouping can wrongly place unrelated organisms together, such as a fish with a whale. Exam Tip: Natural = many features and ancestry; artificial = few features.", "difficulty": "easy"},
+      {"questionText": "Five kingdoms", "options": [], "correctAnswer": "The five groups into which living things are commonly divided: Monera, Protista, Fungi, Plantae and Animalia.", "explanation": "This system organises all cellular life into five major kingdoms. Exam Tip: Viruses are treated separately because they are not true cells.", "difficulty": "easy"},
+      {"questionText": "Linnaeus", "options": [], "correctAnswer": "Carl Linnaeus, the scientist who introduced the binomial system of naming organisms and is known as the father of taxonomy.", "explanation": "Linnaeus standardised the use of two Latin names for every organism. Exam Tip: Link Linnaeus to binomial nomenclature in the exam.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A learner finds a single-celled organism in pond water. It has a true nucleus, can move using cilia and feeds on smaller particles. In which kingdom should it be placed?",
+        "questionText": "Two animals share every classification rank down to genus (Kingdom Animalia, Phylum Chordata, Class Mammalia, Order Carnivora, Family Felidae, Genus Panthera) but differ at species (leo vs tigris). How closely related are the two animals, and what is the highest rank at which they differ?",
         "options": [
-          {
-            "id": "a",
-            "text": "Monera",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Protoctista",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Fungi",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Animalia",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Not related; they differ at kingdom level", "isCorrect": false},
+          {"id": "b", "text": "Very closely related; they differ only at species level", "isCorrect": true},
+          {"id": "c", "text": "Distantly related; they differ at class level", "isCorrect": false},
+          {"id": "d", "text": "Identical; they belong to the same species", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A unicellular eukaryote with a true nucleus that moves and feeds (like Paramecium) belongs to kingdom Protoctista.",
+        "explanation": "They match down to genus (Panthera), and the first difference appears only at species level. Sharing every rank down to genus means they are very closely related. Exam Tip: Find the lowest shared rank, here genus. These are the lion and tiger: same genus, different species.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Two organisms share the same genus name but have different species names. What does this tell you about them?",
+        "questionText": "A student wrote four scientific names. Which one is written correctly according to the rules of binomial nomenclature?",
         "options": [
-          {
-            "id": "a",
-            "text": "They are exactly the same organism",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "They are closely related but are different species",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "They belong to different kingdoms",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They cannot be related at all",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Sharing a genus means they are closely related, but different species names show they are distinct species that normally cannot interbreed to give fertile offspring.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Using a dichotomous key, you reach a step that reads: '1a. Has wings - go to 2; 1b. Has no wings - go to 5.' An ant has no wings. What is the correct next step?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Go to step 2",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Stop and name it as an insect",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Go to step 5",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Go back to step 1a",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "canis familiaris", "isCorrect": false},
+          {"id": "b", "text": "Canis Familiaris", "isCorrect": false},
+          {"id": "c", "text": "Canis familiaris", "isCorrect": true},
+          {"id": "d", "text": "CANIS FAMILIARIS", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Because the ant has no wings, you follow statement 1b, which directs you to step 5 to continue the identification.",
+        "explanation": "The genus starts with a capital (ruling out A), the species starts with a small letter (ruling out B and D), and the whole name is italicised or underlined, so option C satisfies all the rules. Exam Tip: Three rules: (1) capital genus, (2) small species, (3) italic or underlined.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A farmer groups the organisms on his shamba as \"things that fly\" (birds, bats, butterflies, flying insects) and \"things that swim\" (fish, frogs, ducks). A biologist objects to this grouping. Why is the biologist's objection correct?",
+        "options": [
+          {"id": "a", "text": "The farmer used too many characteristics", "isCorrect": false},
+          {"id": "b", "text": "The grouping is artificial; it puts unrelated organisms together based on a single feature and ignores natural relationships", "isCorrect": true},
+          {"id": "c", "text": "The grouping is natural and therefore acceptable", "isCorrect": false},
+          {"id": "d", "text": "Flying and swimming are not real activities", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The farmer used one feature (mode of movement), placing unrelated organisms together, since a bird, a bat and a butterfly are only alike in flying. Grouping by a single convenient feature while ignoring true relationships is artificial classification. Exam Tip: Ducks appear in both groups (they fly and swim), exposing the flaw. Natural classification separates them by their many true features.",
         "difficulty": "hard"
       }
     ]
