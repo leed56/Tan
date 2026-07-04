@@ -1,940 +1,372 @@
 {
   "topicId": "form_2_physics_topic_3",
-  "topicName": "Magnetism and Electromagnetism",
+  "topicName": "Magnetism",
   "order": 3,
-  "description": "An introduction to magnets and magnetic fields, the magnetic effect of an electric current, electromagnets and their applications, the motor effect, electromagnetic induction, and the simple electric motor and generator.",
+  "description": "An introduction to magnets and their poles, the law of magnetic poles, magnetic fields and materials, magnetization and demagnetization, electromagnets, and the everyday uses of magnetism.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which of the following materials is attracted to a magnet?",
+        "questionText": "A magnet is an object that:",
         "options": [
-          {
-            "id": "a",
-            "text": "Copper",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Iron",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Aluminium",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Wood",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Attracts all materials equally", "isCorrect": false},
+          {"id": "b", "text": "Attracts magnetic materials such as iron, cobalt and nickel", "isCorrect": true},
+          {"id": "c", "text": "Repels all materials", "isCorrect": false},
+          {"id": "d", "text": "Has no effect on any material", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Iron is a ferromagnetic material and is strongly attracted to magnets, while copper, aluminium and wood are non-magnetic.",
+        "explanation": "A magnet attracts iron, cobalt and nickel (and their alloys). Exam Tip: Not ALL materials are attracted - only magnetic ones. Wood, plastic, copper are not.",
         "difficulty": "easy"
       },
       {
-        "questionText": "When two like poles of magnets are brought close together, they will:",
+        "questionText": "The two ends of a bar magnet, where the magnetic force is strongest, are called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Attract each other",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Repel each other",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Remain stationary",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Lose their magnetism",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Centres", "isCorrect": false},
+          {"id": "b", "text": "Poles", "isCorrect": true},
+          {"id": "c", "text": "Domains", "isCorrect": false},
+          {"id": "d", "text": "Fields", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The law of magnetism states that like poles repel while unlike poles attract.",
+        "explanation": "These points are the poles (north and south). Exam Tip: Every magnet has a north pole and a south pole; force is weakest in the middle.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Like magnetic poles (e.g. north-north):",
+        "options": [
+          {"id": "a", "text": "Attract each other", "isCorrect": false},
+          {"id": "b", "text": "Repel each other", "isCorrect": true},
+          {"id": "c", "text": "Have no effect on each other", "isCorrect": false},
+          {"id": "d", "text": "Merge into one pole", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Like poles push apart - they repel. Exam Tip: Like poles repel (N-N or S-S); unlike poles attract (N-S).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Unlike magnetic poles (e.g. north-south):",
+        "options": [
+          {"id": "a", "text": "Repel each other", "isCorrect": false},
+          {"id": "b", "text": "Attract each other", "isCorrect": true},
+          {"id": "c", "text": "Have no effect", "isCorrect": false},
+          {"id": "d", "text": "Cancel out completely", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Unlike poles pull together - they attract. Exam Tip: Unlike poles attract (N-S); like poles repel.",
         "difficulty": "easy"
       },
       {
         "questionText": "The region around a magnet where its magnetic force can be detected is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Magnetic pole",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Neutral point",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Magnetic field",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Domain",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Pole", "isCorrect": false},
+          {"id": "b", "text": "Magnetic field", "isCorrect": true},
+          {"id": "c", "text": "Domain", "isCorrect": false},
+          {"id": "d", "text": "Current", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "A magnetic field is the space around a magnet within which a magnetic force acts on magnetic materials.",
+        "correctAnswer": "b",
+        "explanation": "This region is the magnetic field. Exam Tip: Magnetic field lines can be shown using iron filings.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Outside a bar magnet, magnetic field lines are drawn pointing from the:",
+        "questionText": "Magnetic field lines around a bar magnet run from:",
         "options": [
-          {
-            "id": "a",
-            "text": "South pole to the north pole",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "North pole to the south pole",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Centre to both poles",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Both poles to the centre",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "South pole to north pole (outside the magnet)", "isCorrect": false},
+          {"id": "b", "text": "North pole to south pole (outside the magnet)", "isCorrect": true},
+          {"id": "c", "text": "Only inside the magnet", "isCorrect": false},
+          {"id": "d", "text": "Nowhere in particular", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "By convention, magnetic field lines outside a magnet travel from the north pole to the south pole.",
+        "explanation": "Outside the magnet, field lines leave the north and enter the south. Exam Tip: Field lines go N to S outside, and S to N inside (closed loops).",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which instrument uses a small magnetised needle to show direction by aligning with the Earth's magnetic field?",
+        "questionText": "Which of the following materials is magnetic?",
         "options": [
-          {
-            "id": "a",
-            "text": "Ammeter",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Voltmeter",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Compass",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Galvanometer",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Wood", "isCorrect": false},
+          {"id": "b", "text": "Iron", "isCorrect": true},
+          {"id": "c", "text": "Plastic", "isCorrect": false},
+          {"id": "d", "text": "Copper", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "A magnetic compass has a freely pivoting magnetised needle that aligns itself with the Earth's magnetic field.",
+        "correctAnswer": "b",
+        "explanation": "Iron is attracted by a magnet. Exam Tip: Magnetic materials: iron, cobalt, nickel (and steel).",
         "difficulty": "easy"
       },
       {
-        "questionText": "The experiment in which a compass needle moves when placed near a current-carrying wire demonstrates that:",
+        "questionText": "The process of making a magnetic material into a magnet is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "An electric current produces a magnetic field",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "A magnet produces an electric current",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Heat is produced by the wire",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The wire becomes a permanent magnet",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Demagnetization", "isCorrect": false},
+          {"id": "b", "text": "Magnetization", "isCorrect": true},
+          {"id": "c", "text": "Induction only", "isCorrect": false},
+          {"id": "d", "text": "Insulation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Making something into a magnet is magnetization. Exam Tip: Magnetization methods: stroking with a magnet, or using electric current.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process of removing the magnetism from a magnet is called:",
+        "options": [
+          {"id": "a", "text": "Magnetization", "isCorrect": false},
+          {"id": "b", "text": "Demagnetization", "isCorrect": true},
+          {"id": "c", "text": "Induction", "isCorrect": false},
+          {"id": "d", "text": "Attraction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Removing magnetism is demagnetization. Exam Tip: Demagnetization methods: hammering, heating strongly, or dropping repeatedly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A soft iron bar can be magnetized by stroking it repeatedly, in the SAME direction, with one pole of a permanent magnet. This method is called:",
+        "options": [
+          {"id": "a", "text": "Electrical method", "isCorrect": false},
+          {"id": "b", "text": "Single-stroke method", "isCorrect": true},
+          {"id": "c", "text": "Induction only", "isCorrect": false},
+          {"id": "d", "text": "Double-stroke method", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Stroking with one pole, same direction is the single-stroke (touch) method. Exam Tip: Single-stroke: one pole, same direction, lifted away and returned to start each time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Passing an electric current through a coil of wire wound around an iron core produces a(n):",
+        "options": [
+          {"id": "a", "text": "Permanent magnet", "isCorrect": false},
+          {"id": "b", "text": "Electromagnet", "isCorrect": true},
+          {"id": "c", "text": "Bar magnet only", "isCorrect": false},
+          {"id": "d", "text": "Demagnetized bar", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Current + coil + iron core produces an electromagnet. Exam Tip: Electromagnets switch on/off with current - used in cranes, bells, relays.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Materials that keep their magnetism for a long time after being magnetized, such as steel, are called:",
+        "options": [
+          {"id": "a", "text": "Soft magnetic materials", "isCorrect": false},
+          {"id": "b", "text": "Hard (permanent) magnetic materials", "isCorrect": true},
+          {"id": "c", "text": "Non-magnetic materials", "isCorrect": false},
+          {"id": "d", "text": "Insulators", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Materials that KEEP magnetism (steel) are hard/permanent magnetic materials. Exam Tip: Steel = hard, keeps magnetism. Soft iron = loses magnetism quickly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Soft iron is preferred for making the core of an electromagnet because it:",
+        "options": [
+          {"id": "a", "text": "Keeps its magnetism permanently", "isCorrect": false},
+          {"id": "b", "text": "Magnetizes and demagnetizes easily (loses magnetism quickly when current stops)", "isCorrect": true},
+          {"id": "c", "text": "Is not attracted to magnets", "isCorrect": false},
+          {"id": "d", "text": "Is very heavy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Soft iron magnetizes quickly with current and loses magnetism quickly when current stops. Exam Tip: Soft iron is ideal for electromagnets; steel is ideal for permanent magnets.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A simple test to find the north pole of an unmarked bar magnet is to:",
+        "options": [
+          {"id": "a", "text": "Heat it strongly", "isCorrect": false},
+          {"id": "b", "text": "Suspend it freely and see which end points towards geographic north", "isCorrect": true},
+          {"id": "c", "text": "Drop it on the floor", "isCorrect": false},
+          {"id": "d", "text": "Place it in water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A freely suspended magnet aligns with Earth's field; the end pointing north is the north-seeking pole. Exam Tip: This is exactly how a magnetic compass works.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a practical use of magnets?",
+        "options": [
+          {"id": "a", "text": "In a magnetic compass for direction-finding", "isCorrect": true},
+          {"id": "b", "text": "In cooking food", "isCorrect": false},
+          {"id": "c", "text": "In making paper", "isCorrect": false},
+          {"id": "d", "text": "In growing crops", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Oersted's discovery showed that an electric current flowing through a conductor produces a magnetic field around it.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An electromagnet is best described as a magnet that:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Keeps its magnetism permanently",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Is magnetic only while current flows through its coil",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Is made from a piece of steel",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Works without electricity",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "An electromagnet is a temporary magnet that is magnetic only while an electric current flows through its coil.",
+        "explanation": "Compasses use a magnetized needle to show direction. Exam Tip: Other uses: electric bells, cranes, electric motors, generators, loudspeakers.",
         "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following will increase the strength of an electromagnet?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Decreasing the current in the coil",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Reducing the number of turns of wire",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Increasing the number of turns of wire",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Using a wooden core",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Increasing the number of turns of the coil increases the strength of an electromagnet, as does increasing the current and using a soft-iron core.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The core of a strong electromagnet is usually made from:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Hard steel",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Soft iron",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Copper",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Plastic",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Soft iron is used because it magnetises strongly and loses its magnetism quickly when the current is switched off.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In an electric bell, the device that repeatedly attracts the armature to make the hammer strike the gong is the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Permanent magnet",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Electromagnet",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Battery",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Resistor",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The electromagnet in an electric bell attracts the soft-iron armature, and the make-and-break contact causes it to vibrate and ring the gong.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A relay is a device that uses a small current to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Store electrical energy",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Switch on or off a separate larger circuit",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Convert AC to DC",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Measure voltage",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A relay uses an electromagnet operated by a small current to open or close the contacts of a separate, often larger, circuit.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The turning effect produced when a current-carrying conductor is placed in a magnetic field is called the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Heating effect",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Chemical effect",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Motor effect",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Induction effect",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The motor effect is the force experienced by a current-carrying conductor placed in a magnetic field.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Producing an electric current by moving a magnet near a coil of wire is known as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Electromagnetic induction",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "The motor effect",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Magnetisation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Electrolysis",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Electromagnetic induction is the production of a voltage (and current) in a conductor due to a changing magnetic field.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A device that converts electrical energy into mechanical (rotational) energy is the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Generator",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Electric motor",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Transformer",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Battery",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "An electric motor uses the motor effect to convert electrical energy into mechanical energy of rotation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A simple generator works on the principle of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "The heating effect of current",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Electromagnetic induction",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Static electricity",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The chemical effect of current",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A generator rotates a coil in a magnetic field, inducing a current by electromagnetic induction, converting mechanical energy into electrical energy.",
-        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A magnet has two poles called the north pole and the _____ pole.",
+        "questionText": "The ends of a magnet where the magnetic force is strongest are called ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "south",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "east",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "west",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "neutral",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Every magnet has two poles: a north-seeking pole and a south-seeking pole.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Unlike magnetic poles attract while like poles _____ each other.",
-        "options": [
-          {
-            "id": "a",
-            "text": "attract",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "repel",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "neutralise",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "combine",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "domains", "isCorrect": false},
+          {"id": "b", "text": "poles", "isCorrect": true},
+          {"id": "c", "text": "fields", "isCorrect": false},
+          {"id": "d", "text": "centres", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "This is the basic law of magnetism governing the interaction between magnetic poles.",
+        "explanation": "Every magnet has a north and a south pole, and the magnetic force is strongest at these ends. Exam Tip: Every magnet has a north and a south pole.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The pattern of a magnetic field can be shown using iron _____ sprinkled on paper over a magnet.",
+        "questionText": "Like poles of a magnet ____ each other.",
         "options": [
-          {
-            "id": "a",
-            "text": "powder",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "shavings",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "filings",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "dust",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "attract", "isCorrect": false},
+          {"id": "b", "text": "neutralize", "isCorrect": false},
+          {"id": "c", "text": "repel", "isCorrect": true},
+          {"id": "d", "text": "merge with", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Iron filings line up along the magnetic field lines, revealing the shape of the field.",
+        "explanation": "Two like poles (N-N or S-S) push apart, meaning they repel. Exam Tip: N-N or S-S -> repel.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The scientist who discovered that an electric current produces a magnetic field was _____.",
+        "questionText": "Unlike poles of a magnet ____ each other.",
         "options": [
-          {
-            "id": "a",
-            "text": "Faraday",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Ampere",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Maxwell",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Oersted",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Hans Christian Oersted observed a compass needle deflect near a current-carrying wire.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A coil of wire wound into many turns, used to produce a magnetic field, is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "solenoid",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "resistor",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "capacitor",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "transformer",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "A solenoid is a long coil of wire that behaves like a bar magnet when carrying current.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The strength of an electromagnet increases when the _____ flowing through the coil is increased.",
-        "options": [
-          {
-            "id": "a",
-            "text": "voltage",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "current",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "resistance",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "frequency",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "repel", "isCorrect": false},
+          {"id": "b", "text": "attract", "isCorrect": true},
+          {"id": "c", "text": "ignore", "isCorrect": false},
+          {"id": "d", "text": "cancel", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Larger current, more turns and a soft-iron core all increase electromagnet strength.",
-        "difficulty": "medium"
+        "explanation": "Two unlike poles (N-S) pull together, meaning they attract. Exam Tip: N-S -> attract.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "In a moving-coil _____, sound is produced when a current in a coil interacts with a permanent magnet to move a cone.",
+        "questionText": "The region around a magnet where its force can be felt is called the ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "microphone",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "transformer",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "loudspeaker",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "dynamo",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "magnetic pole", "isCorrect": false},
+          {"id": "b", "text": "magnetic domain", "isCorrect": false},
+          {"id": "c", "text": "magnetic field", "isCorrect": true},
+          {"id": "d", "text": "electric field", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A loudspeaker uses the motor effect on a coil to vibrate a cone and produce sound waves.",
-        "difficulty": "medium"
+        "explanation": "The surrounding region where a magnet's force can be detected is called the magnetic field. Exam Tip: Shown using iron filings or a plotting compass.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The _____ effect describes the force on a current-carrying wire placed in a magnetic field.",
+        "questionText": "The process of making a material magnetic is called ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "dynamo",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "generator",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "transformer",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "motor",
-            "isCorrect": true
-          }
+          {"id": "a", "text": "demagnetization", "isCorrect": false},
+          {"id": "b", "text": "induction", "isCorrect": false},
+          {"id": "c", "text": "magnetization", "isCorrect": true},
+          {"id": "d", "text": "polarization", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "This force is the principle behind the operation of electric motors.",
-        "difficulty": "medium"
+        "correctAnswer": "c",
+        "explanation": "Turning a material into a magnet is called magnetization. Exam Tip: Methods: stroking or using electric current.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "When a magnet is moved in or out of a coil, a voltage is _____ in the coil.",
+        "questionText": "The process of removing magnetism from a magnet is called ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "induced",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "resisted",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "stored",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "reflected",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "A changing magnetic field through a coil induces a voltage by electromagnetic induction.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A device that converts mechanical energy into electrical energy is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "motor",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "generator",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "transformer",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "battery",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "magnetization", "isCorrect": false},
+          {"id": "b", "text": "demagnetization", "isCorrect": true},
+          {"id": "c", "text": "induction", "isCorrect": false},
+          {"id": "d", "text": "insulation", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A generator uses electromagnetic induction to produce electricity from rotational motion.",
+        "explanation": "Removing magnetism from a magnet is called demagnetization. Exam Tip: Heating, hammering or dropping demagnetizes a magnet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A temporary magnet formed by passing current through a coil around an iron core is called an ____.",
+        "options": [
+          {"id": "a", "text": "permanent magnet", "isCorrect": false},
+          {"id": "b", "text": "bar magnet", "isCorrect": false},
+          {"id": "c", "text": "electromagnet", "isCorrect": true},
+          {"id": "d", "text": "compass", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Current passed through a coil around an iron core creates a temporary magnet called an electromagnet. Exam Tip: Electromagnets work only while current flows.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Materials such as iron, cobalt and nickel that are attracted to a magnet are called ____ materials.",
+        "options": [
+          {"id": "a", "text": "non-magnetic", "isCorrect": false},
+          {"id": "b", "text": "insulating", "isCorrect": false},
+          {"id": "c", "text": "conducting", "isCorrect": false},
+          {"id": "d", "text": "magnetic", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "Iron, cobalt and nickel are examples of magnetic materials because they are attracted to a magnet. Exam Tip: Non-magnetic: wood, plastic, copper, aluminium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "____ iron is used for electromagnet cores because it magnetizes and demagnetizes quickly.",
+        "options": [
+          {"id": "a", "text": "Hard", "isCorrect": false},
+          {"id": "b", "text": "Soft", "isCorrect": true},
+          {"id": "c", "text": "Cast", "isCorrect": false},
+          {"id": "d", "text": "Stainless", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Soft iron is used for electromagnet cores because it magnetizes and demagnetizes quickly. Exam Tip: Soft iron (temporary) vs steel (permanent).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A freely suspended magnet will always come to rest pointing in the ____-south direction.",
+        "options": [
+          {"id": "a", "text": "east", "isCorrect": false},
+          {"id": "b", "text": "north", "isCorrect": true},
+          {"id": "c", "text": "west", "isCorrect": false},
+          {"id": "d", "text": "up", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A freely suspended magnet aligns with Earth's magnetic field, coming to rest pointing north-south. Exam Tip: This is the principle behind the magnetic compass.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "A magnet has its strongest pulling force at its poles.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The magnetic force is concentrated and strongest at the two poles of a magnet.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Steel is used to make permanent magnets because it keeps its magnetism for a long time.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Steel retains magnetism well, making it suitable for permanent magnets, unlike soft iron.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two unlike magnetic poles repel each other.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Unlike poles attract each other; it is like poles that repel.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An electromagnet loses most of its magnetism when the current is switched off.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Because it uses a soft-iron core, an electromagnet is a temporary magnet that loses its magnetism when current stops.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Copper wire wrapped around a soft-iron core forms a common electromagnet.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "An electromagnet is made by winding insulated copper wire around a soft-iron core.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A relay allows a small current to control a much larger current in a separate circuit.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the main purpose of a relay, using an electromagnet to operate switch contacts.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An electric motor converts electrical energy into chemical energy.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "An electric motor converts electrical energy into mechanical (rotational) energy.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Electromagnetic induction can occur even if both the magnet and the coil are completely stationary.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Induction requires a changing magnetic field, usually caused by relative movement between the magnet and the coil.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A magnetic field line never crosses another magnetic field line.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Magnetic field lines never cross because the field has only one direction at any point.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A generator and a simple electric motor have a similar basic structure of a coil between magnets.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Both use a coil rotating in a magnetic field; the motor uses current to produce motion, while the generator uses motion to produce current.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Like poles of two magnets repel each other.", "options": [], "correctAnswer": "true", "explanation": "Two like poles, whether N-N or S-S, always push apart from each other. Exam Tip: N-N and S-S both repel.", "difficulty": "easy"},
+      {"questionText": "Unlike poles of two magnets repel each other.", "options": [], "correctAnswer": "false", "explanation": "Unlike poles (N-S) pull towards each other; they attract rather than repel. Exam Tip: Unlike poles attract.", "difficulty": "easy"},
+      {"questionText": "Iron, cobalt and nickel are magnetic materials.", "options": [], "correctAnswer": "true", "explanation": "These three metals (and their alloys) are strongly attracted to magnets, making them magnetic materials. Exam Tip: These three (and their alloys) are classic magnetic materials.", "difficulty": "easy"},
+      {"questionText": "Wood and plastic are magnetic materials.", "options": [], "correctAnswer": "false", "explanation": "Wood and plastic are not attracted to magnets, so they are non-magnetic materials. Exam Tip: Only iron, cobalt, nickel (and alloys) are magnetic.", "difficulty": "easy"},
+      {"questionText": "An electromagnet is magnetic only while an electric current flows through its coil.", "options": [], "correctAnswer": "true", "explanation": "Once the current is switched off, the soft iron core loses its magnetism almost immediately. Exam Tip: This on/off feature makes electromagnets useful in cranes and bells.", "difficulty": "easy"},
+      {"questionText": "Steel loses its magnetism very quickly, making it ideal for electromagnets.", "options": [], "correctAnswer": "false", "explanation": "Steel retains its magnetism for a long time, which makes it suited to permanent magnets, not electromagnets. Exam Tip: Steel = permanent magnets; soft iron = electromagnets.", "difficulty": "easy"},
+      {"questionText": "Magnetic field lines leave the north pole and enter the south pole outside the magnet.", "options": [], "correctAnswer": "true", "explanation": "Field lines travel from the north pole to the south pole outside the magnet, forming closed loops. Exam Tip: Inside the magnet, lines continue from S back to N.", "difficulty": "easy"},
+      {"questionText": "Demagnetization can be caused by heating a magnet strongly or hammering it.", "options": [], "correctAnswer": "true", "explanation": "Heat and mechanical shocks disturb the alignment of magnetic domains, removing magnetism. Exam Tip: Heat and mechanical shock disturb magnetic domains.", "difficulty": "easy"},
+      {"questionText": "A magnetic compass works because its needle aligns with the magnetic field of the Earth.", "options": [], "correctAnswer": "true", "explanation": "The compass needle is a small magnet that turns to align with the Earth's magnetic field. Exam Tip: The compass needle points roughly north-south due to Earth's magnetic field.", "difficulty": "easy"},
+      {"questionText": "All materials in the world are attracted to a magnet.", "options": [], "correctAnswer": "false", "explanation": "Only magnetic materials such as iron, cobalt, nickel and their alloys respond to a magnet's pull. Exam Tip: Only iron, cobalt, nickel (and alloys) respond to magnets.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Law of magnetic poles",
-        "options": [],
-        "correctAnswer": "Like poles repel, unlike poles attract.",
-        "explanation": "This rule governs how two magnets interact when brought near each other.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Magnetic field",
-        "options": [],
-        "correctAnswer": "The region around a magnet where a magnetic force is felt.",
-        "explanation": "It is represented by field lines running from north to south outside the magnet.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Magnetic effect of a current",
-        "options": [],
-        "correctAnswer": "A current-carrying conductor produces a magnetic field around it.",
-        "explanation": "This was discovered by Oersted and is the basis of electromagnets.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Electromagnet",
-        "options": [],
-        "correctAnswer": "A temporary magnet made by passing current through a coil around a soft-iron core.",
-        "explanation": "It is magnetic only while the current flows.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Factors affecting electromagnet strength",
-        "options": [],
-        "correctAnswer": "Current size, number of coil turns, and the use of a soft-iron core.",
-        "explanation": "Increasing current and turns and using a soft-iron core make it stronger.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Electric bell",
-        "options": [],
-        "correctAnswer": "Uses an electromagnet and a make-and-break circuit to vibrate a hammer against a gong.",
-        "explanation": "The repeated making and breaking of the circuit produces continuous ringing.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Relay",
-        "options": [],
-        "correctAnswer": "An electromagnetic switch that lets a small current control a larger circuit.",
-        "explanation": "It is used for safety and to control high-power circuits remotely.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Motor effect",
-        "options": [],
-        "correctAnswer": "A current-carrying conductor in a magnetic field experiences a force.",
-        "explanation": "This force is used to make electric motors turn.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Electromagnetic induction",
-        "options": [],
-        "correctAnswer": "A changing magnetic field through a coil induces a voltage and current.",
-        "explanation": "It is the principle on which generators work.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Motor versus generator",
-        "options": [],
-        "correctAnswer": "A motor changes electrical energy to motion; a generator changes motion to electricity.",
-        "explanation": "They are essentially reverse processes using a coil in a magnetic field.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Magnet and its poles", "options": [], "correctAnswer": "A magnet is an object that attracts magnetic materials such as iron, cobalt and nickel; its ends, where the magnetic force is strongest, are called poles (north and south).", "explanation": "The force of a magnet is weakest at its centre and strongest at its two poles. Exam Tip: Every magnet has both a north pole and a south pole - you cannot have one without the other.", "difficulty": "easy"},
+      {"questionText": "Law of magnetic poles", "options": [], "correctAnswer": "Like poles (N-N or S-S) repel each other, while unlike poles (N-S) attract each other.", "explanation": "This rule explains all the pushing and pulling behaviour observed between magnets. Exam Tip: Same letters repel, different letters attract.", "difficulty": "easy"},
+      {"questionText": "Magnetic field", "options": [], "correctAnswer": "The region around a magnet within which its magnetic force can be detected.", "explanation": "It can be mapped using iron filings or a small plotting compass, showing field lines from north to south outside the magnet. Exam Tip: Field lines never cross and are closest together where the field is strongest.", "difficulty": "easy"},
+      {"questionText": "Magnetic materials", "options": [], "correctAnswer": "Materials such as iron, cobalt and nickel (and their alloys) that are strongly attracted to a magnet.", "explanation": "Materials like wood, plastic, copper and aluminium are non-magnetic and are not attracted. Exam Tip: Remember 'iron, cobalt, nickel' as the three classic magnetic elements.", "difficulty": "easy"},
+      {"questionText": "Magnetization", "options": [], "correctAnswer": "The process of turning a magnetic material into a magnet, for example by stroking it with a magnet or passing an electric current through it.", "explanation": "Magnetization aligns the tiny magnetic domains inside the material so they point in the same direction. Exam Tip: Common methods are the single-stroke (touch) method and the electrical method.", "difficulty": "easy"},
+      {"questionText": "Demagnetization", "options": [], "correctAnswer": "The process of removing magnetism from a magnet, caused by hammering, heating strongly, or dropping it repeatedly.", "explanation": "These actions disturb the ordered alignment of magnetic domains, so the material loses its magnetism. Exam Tip: Careless storage or rough handling can accidentally demagnetize a magnet.", "difficulty": "easy"},
+      {"questionText": "Electromagnet", "options": [], "correctAnswer": "A temporary magnet produced by passing an electric current through a coil of wire wound around a soft iron core.", "explanation": "An electromagnet is magnetic only while current flows through the coil, and loses its magnetism when the current is switched off. Exam Tip: Electromagnets are used in cranes, electric bells and relays because they can be switched on and off.", "difficulty": "easy"},
+      {"questionText": "Hard vs soft magnetic materials", "options": [], "correctAnswer": "Hard magnetic materials, such as steel, keep their magnetism for a long time (used for permanent magnets); soft magnetic materials, such as soft iron, magnetize and demagnetize easily (used for electromagnets).", "explanation": "Choosing the wrong material would make a permanent magnet fade quickly or an electromagnet fail to release its load. Exam Tip: Steel = hard/permanent; soft iron = soft/temporary.", "difficulty": "easy"},
+      {"questionText": "Compass", "options": [], "correctAnswer": "A device with a freely suspended magnetized needle that aligns with the Earth's magnetic field to point north-south, used for direction-finding.", "explanation": "Because the needle is a small magnet, it behaves exactly like a suspended bar magnet seeking the Earth's poles. Exam Tip: The north-seeking end of a compass needle points towards geographic north.", "difficulty": "easy"},
+      {"questionText": "Uses of magnets", "options": [], "correctAnswer": "Magnets are used in devices such as compasses, electric bells, cranes, electric motors, generators and loudspeakers.", "explanation": "These applications rely on either the permanent pull of a magnet or the switchable force of an electromagnet. Exam Tip: Link each use to whether it needs a permanent magnet or an electromagnet.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A student builds two electromagnets using identical batteries and the same length of wire. Electromagnet X has 50 turns around a soft-iron nail, while electromagnet Y has 100 turns around an identical nail. Which statement is correct?",
+        "questionText": "Two bar magnets, A and B, are brought close. A's north facing B's north pushes apart. A's north facing B's south pulls together. Explain using the law of magnetic poles.",
         "options": [
-          {
-            "id": "a",
-            "text": "X is stronger because fewer turns concentrate the current",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Y is stronger because more turns produce a stronger magnetic field",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Both have exactly equal strength since the battery is the same",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Neither is magnetic because soft iron cannot be magnetised",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Random behaviour with no rule", "isCorrect": false},
+          {"id": "b", "text": "Like poles (N-N) repel; unlike poles (N-S) attract - this matches the fundamental law of magnetism", "isCorrect": true},
+          {"id": "c", "text": "Both cases show attraction", "isCorrect": false},
+          {"id": "d", "text": "Both cases show repulsion", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "With the same current and core, the electromagnet with more turns produces a stronger magnetic field, so Y is stronger.",
+        "explanation": "N facing N is a like pole pairing - repel. N facing S is unlike - attract. Exam Tip: Same letters (N-N, S-S) -> repel; different letters (N-S) -> attract.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A bar magnet is pushed quickly into a coil connected to a galvanometer, then held still inside the coil. What happens to the galvanometer reading?",
+        "questionText": "A technician needs an electromagnet on a crane to lift and release scrap iron. Explain why an electromagnet (not a permanent magnet) is correct, and what core to use.",
         "options": [
-          {
-            "id": "a",
-            "text": "It shows a steady deflection the whole time",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "It deflects while the magnet moves, then returns to zero when held still",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "It shows no deflection at any time",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It deflects only when the magnet is completely still",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A permanent magnet would work just as well", "isCorrect": false},
+          {"id": "b", "text": "An electromagnet can be switched on to lift and off to release; a soft iron core should be used because it loses magnetism quickly when current stops", "isCorrect": true},
+          {"id": "c", "text": "A steel core should be used because it keeps its magnetism", "isCorrect": false},
+          {"id": "d", "text": "Electromagnets cannot lift heavy objects", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A current is induced only while the magnetic field through the coil is changing; once the magnet is held still, the field is constant and no current flows.",
+        "explanation": "The crane needs to lift AND release - a permanent magnet could never let go. An electromagnet switches with current; soft iron demagnetizes quickly for clean release. Exam Tip: A steel core would be wrong - it keeps magnetism, so the iron would never drop.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Why is a soft-iron core, rather than a steel core, preferred for the electromagnet used in an electric bell?",
+        "questionText": "A student wants to find whether an unlabelled metal bar is a magnet or plain iron, WITHOUT another magnet or compass. Describe a valid test.",
         "options": [
-          {
-            "id": "a",
-            "text": "Steel cannot conduct electricity through the coil",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Soft iron magnetises and demagnetises quickly, allowing rapid make-and-break action",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Soft iron stays permanently magnetised so the bell rings forever",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Steel is lighter and vibrates faster than soft iron",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Weigh the bar; magnets are always heavier", "isCorrect": false},
+          {"id": "b", "text": "Bring one end of the bar near the CENTRE of an iron nail (not the ends) - if it attracts strongly there too and at the nail's ends, the bar is unmagnetized iron; if attraction is strong only near the bar's own ends and weak in the middle, it is a magnet", "isCorrect": true},
+          {"id": "c", "text": "Heat the bar and see if it melts", "isCorrect": false},
+          {"id": "d", "text": "There is no way to test this", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Soft iron loses its magnetism quickly when current stops, which is essential for the rapid switching of the armature that makes a bell ring continuously.",
+        "explanation": "A magnet's pull is strongest at its poles (ends) and weakest at its centre. Unmagnetized iron attracts fairly evenly along its length. Exam Tip: Test attraction at different points along the bar - concentrated at ends = magnet; even = plain iron.",
         "difficulty": "hard"
       }
     ]

@@ -2,939 +2,371 @@
   "topicId": "form_2_physics_topic_1",
   "topicName": "Static Electricity",
   "order": 1,
-  "description": "Static electricity is the study of electric charges at rest, how objects become charged, how charges interact, and the everyday effects and applications such as the electroscope and lightning conductors.",
+  "description": "An introduction to static electricity, covering how objects become charged by friction and induction, the law of charges, conductors and insulators, and everyday applications such as capacitors and lightning conductors.",
   "packs": {
     "mcq": [
       {
-        "questionText": "When two different materials are rubbed together, objects become electrically charged because of the transfer of which particles?",
+        "questionText": "Static electricity is best described as:",
         "options": [
-          {
-            "id": "a",
-            "text": "Protons",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Neutrons",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Atoms",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Electricity that flows continuously in a wire", "isCorrect": false},
+          {"id": "b", "text": "An electric charge that stays at rest on an object", "isCorrect": true},
+          {"id": "c", "text": "A type of magnetism", "isCorrect": false},
+          {"id": "d", "text": "A form of light", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Only electrons are free to move during friction; protons and neutrons stay fixed in the nucleus.",
+        "explanation": "Static electricity is charge that builds up and stays on an object. Exam Tip: Static (charge at rest) differs from current electricity (charge flowing).",
         "difficulty": "easy"
       },
       {
-        "questionText": "According to the law of charges, two objects carrying like charges will:",
+        "questionText": "When a plastic ruler is rubbed with a cloth, it becomes charged because:",
         "options": [
-          {
-            "id": "a",
-            "text": "Attract each other",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Repel each other",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Neither attract nor repel",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Combine into one charge",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Protons move from the cloth to the ruler", "isCorrect": false},
+          {"id": "b", "text": "Electrons are transferred between the ruler and the cloth", "isCorrect": true},
+          {"id": "c", "text": "The ruler gains mass", "isCorrect": false},
+          {"id": "d", "text": "Nothing happens", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Like charges repel while unlike charges attract; this is the fundamental law of electrostatics.",
+        "explanation": "Electrons (mobile) move from one surface to the other; protons stay fixed. Exam Tip: Only electrons move in charging by friction.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A material that allows electric charges to move through it easily is called a:",
+        "questionText": "An object that gains extra electrons becomes:",
         "options": [
-          {
-            "id": "a",
-            "text": "Conductor",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Insulator",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Resistor",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Capacitor",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Conductors such as metals have free electrons that allow charge to flow through them.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following is the best example of an insulator?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Copper",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Iron",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Rubber",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Aluminium",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Rubber does not allow charges to move freely, so it is an insulator, unlike the metals listed.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An object that loses electrons during charging by friction will become:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Positively charged",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Negatively charged",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Electrically neutral",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A good conductor",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Losing electrons leaves an excess of protons, so the object carries a net positive charge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The instrument used to detect the presence of electric charge on an object is the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ammeter",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Voltmeter",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Gold-leaf electroscope",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Galvanometer",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The gold-leaf electroscope detects charge when its leaves diverge due to like charges repelling.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When a charged rod is brought near the cap of an uncharged electroscope, the gold leaf diverges. This happens because of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Charging by friction",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Charging by induction",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Charging by conduction only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Loss of all electrons",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Positively charged", "isCorrect": false},
+          {"id": "b", "text": "Negatively charged", "isCorrect": true},
+          {"id": "c", "text": "Neutral", "isCorrect": false},
+          {"id": "d", "text": "Magnetic", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The nearby charge redistributes charges in the electroscope without contact, which is induction.",
+        "explanation": "Extra electrons give the object an overall negative charge. Exam Tip: Extra electrons = negative charge.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An object that loses electrons becomes:",
+        "options": [
+          {"id": "a", "text": "Negatively charged", "isCorrect": false},
+          {"id": "b", "text": "Positively charged", "isCorrect": true},
+          {"id": "c", "text": "Neutral", "isCorrect": false},
+          {"id": "d", "text": "Non-magnetic", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Losing electrons leaves more protons than electrons, so the object becomes positively charged. Exam Tip: Losing electrons = positive charge.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two objects with the SAME type of charge will:",
+        "options": [
+          {"id": "a", "text": "Attract each other", "isCorrect": false},
+          {"id": "b", "text": "Repel each other", "isCorrect": true},
+          {"id": "c", "text": "Have no effect on each other", "isCorrect": false},
+          {"id": "d", "text": "Combine into one charge", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Like charges push apart, so they repel. Exam Tip: Like charges repel; unlike charges attract.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two objects with UNLIKE charges will:",
+        "options": [
+          {"id": "a", "text": "Repel each other", "isCorrect": false},
+          {"id": "b", "text": "Attract each other", "isCorrect": true},
+          {"id": "c", "text": "Have no effect", "isCorrect": false},
+          {"id": "d", "text": "Both become neutral instantly", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Opposite charges pull together, so they attract. Exam Tip: Unlike charges attract (+ and -).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A material through which electric charge can move easily is called a:",
+        "options": [
+          {"id": "a", "text": "Insulator", "isCorrect": false},
+          {"id": "b", "text": "Conductor", "isCorrect": true},
+          {"id": "c", "text": "Semiconductor only", "isCorrect": false},
+          {"id": "d", "text": "Magnet", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Easy movement of charge describes a conductor. Exam Tip: Conductors include metals like copper and aluminium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A material through which electric charge CANNOT move easily is called an:",
+        "options": [
+          {"id": "a", "text": "Conductor", "isCorrect": false},
+          {"id": "b", "text": "Insulator", "isCorrect": true},
+          {"id": "c", "text": "Electromagnet", "isCorrect": false},
+          {"id": "d", "text": "Alloy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Charge does not move through it easily, making it an insulator. Exam Tip: Insulators include rubber, plastic, glass, and dry wood.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A device used to store electric charge is called a:",
+        "options": [
+          {"id": "a", "text": "Resistor", "isCorrect": false},
+          {"id": "b", "text": "Capacitor", "isCorrect": true},
+          {"id": "c", "text": "Ammeter", "isCorrect": false},
+          {"id": "d", "text": "Voltmeter", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A capacitor stores charge. Exam Tip: Capacitors are used in electronic circuits and camera flashes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A lightning conductor, fixed to the top of tall buildings, works by:",
+        "options": [
+          {"id": "a", "text": "Attracting lightning and blocking it entirely", "isCorrect": false},
+          {"id": "b", "text": "Providing an easy path for lightning current to travel safely to the ground", "isCorrect": true},
+          {"id": "c", "text": "Preventing all clouds from forming", "isCorrect": false},
+          {"id": "d", "text": "Repelling lightning away from the building", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A metal conductor and cable give a safe path straight into the earth. Exam Tip: The lightning conductor channels charge to earth, protecting the building.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A glass rod rubbed with silk acquires a positive charge. This means that during rubbing the glass:",
+        "questionText": "Charging by rubbing two different materials together is called charging by:",
         "options": [
-          {
-            "id": "a",
-            "text": "Gained electrons from the silk",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Lost electrons to the silk",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Gained protons from the silk",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Lost protons to the silk",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Induction", "isCorrect": false},
+          {"id": "b", "text": "Friction", "isCorrect": true},
+          {"id": "c", "text": "Conduction", "isCorrect": false},
+          {"id": "d", "text": "Reflection", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A positive charge results from losing electrons; the silk gains those electrons and becomes negative.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why does a lightning conductor have a sharp pointed end at the top of a building?",
-        "options": [
-          {
-            "id": "a",
-            "text": "To store charge inside the building",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To concentrate charge and discharge it quietly into the air",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "To attract more rain to the building",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To insulate the building from the ground",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Charge concentrates at sharp points, allowing a steady, safe discharge that reduces the strike risk.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A positively charged rod is brought near (but not touching) a light, neutral metal sphere hanging on a thread. The sphere will first:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Be repelled by the rod",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Be attracted to the rod",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Remain completely still",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Become positively charged and fall",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Induction draws negative charge to the near side of the neutral sphere, so it is attracted to the rod.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An electroscope is already charged negatively and its leaf is diverged. When a negatively charged rod is brought near the cap, the leaf will:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Diverge further",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Collapse completely",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Stay exactly the same",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Change to a positive charge",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "The like negative charge pushes more electrons down to the leaf, increasing repulsion and divergence.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Why are fuel tankers fitted with metal chains that touch the ground while moving?",
-        "options": [
-          {
-            "id": "a",
-            "text": "To increase the speed of the tanker",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To safely conduct away static charge that builds up from friction",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "To charge the fuel for better burning",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To act as a brake on the road",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Friction builds static charge that could spark and ignite fuel; the chain earths the charge safely.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The SI unit of electric charge is the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ampere",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Volt",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Coulomb",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Ohm",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Electric charge is measured in coulombs (C), named after the scientist Charles-Augustin de Coulomb.",
+        "explanation": "Rubbing is charging by friction. Exam Tip: Rubbing a plastic ruler or balloon on hair/cloth is charging by friction.",
         "difficulty": "easy"
       },
       {
-        "questionText": "An atom that is electrically neutral contains:",
+        "questionText": "Small pieces of paper are attracted to a charged plastic comb because of:",
         "options": [
-          {
-            "id": "a",
-            "text": "More protons than electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "More electrons than protons",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Equal numbers of protons and electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Only neutrons",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "When the positive protons exactly balance the negative electrons, the atom has no net charge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A plastic comb rubbed on dry hair can pick up small pieces of paper. This is mainly because the charged comb:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Heats the paper pieces",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Induces opposite charges on the paper and attracts them",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Makes the paper magnetic",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Pushes air against the paper",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Gravity only", "isCorrect": false},
+          {"id": "b", "text": "The electrostatic force of attraction between the charged comb and the paper", "isCorrect": true},
+          {"id": "c", "text": "The comb's magnetism", "isCorrect": false},
+          {"id": "d", "text": "Wind", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The charged comb induces an opposite charge on the neutral paper, causing electrostatic attraction.",
+        "explanation": "The charged comb attracts light, uncharged paper by electrostatic force. Exam Tip: This demonstrates static electricity, not magnetism.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The charge distribution when a charged object touches a larger conductor, spreading the charge out, results in:",
+        "options": [
+          {"id": "a", "text": "An increase in total charge", "isCorrect": false},
+          {"id": "b", "text": "The charge spreading out and becoming less concentrated", "isCorrect": true},
+          {"id": "c", "text": "The charge disappearing completely", "isCorrect": false},
+          {"id": "d", "text": "The object becoming magnetic", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Total charge stays the same but spreads over a larger area, becoming less concentrated. Exam Tip: Charge is conserved - it merely redistributes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is an everyday example of static electricity?",
+        "options": [
+          {"id": "a", "text": "A light bulb glowing continuously", "isCorrect": false},
+          {"id": "b", "text": "A small shock felt after touching a metal door handle after walking on a carpet", "isCorrect": true},
+          {"id": "c", "text": "A magnet lifting nails", "isCorrect": false},
+          {"id": "d", "text": "Water boiling in a kettle", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Walking on carpet builds charge by friction; touching metal discharges it, giving a shock. Exam Tip: The bulb example is current electricity; the door-handle shock is static.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A charged rod is brought near an uncharged conductor without touching it, and the conductor becomes charged. This process is called:",
+        "options": [
+          {"id": "a", "text": "Charging by friction", "isCorrect": false},
+          {"id": "b", "text": "Charging by induction", "isCorrect": true},
+          {"id": "c", "text": "Charging by conduction", "isCorrect": false},
+          {"id": "d", "text": "Magnetization", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Charging without contact is charging by induction. Exam Tip: Induction = no contact; conduction = direct touching; friction = rubbing.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The process of producing electric charge by rubbing two different materials together is called charging by _____.",
+        "questionText": "An electric charge that remains at rest on an object (not flowing) is called ____ electricity.",
         "options": [
-          {
-            "id": "a",
-            "text": "friction",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "conduction",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "induction",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "radiation",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "static", "isCorrect": true},
+          {"id": "b", "text": "current", "isCorrect": false},
+          {"id": "c", "text": "magnetic", "isCorrect": false},
+          {"id": "d", "text": "chemical", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Rubbing transfers electrons between the materials, giving each an opposite charge.",
+        "explanation": "Static electricity is charge that builds up and stays at rest on an object, unlike current electricity which flows. Exam Tip: Static = still; current = flowing.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Charges that are alike will _____ each other.",
+        "questionText": "When two different materials are rubbed together, the particles that transfer between them are ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "attract",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "repel",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "neutralise",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "bond",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Like charges repel; this is part of the law of electric charges.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An object that gains extra electrons becomes _____ charged.",
-        "options": [
-          {
-            "id": "a",
-            "text": "positively",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "neutrally",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "negatively",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "partially",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Extra electrons give the object a net negative charge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Materials such as glass, rubber and plastic that do not allow charges to flow are called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "conductors",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "semiconductors",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "electrolytes",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "insulators",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Insulators have few free electrons, so charge cannot move through them easily.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The thin metal foil that diverges to show charge in an electroscope is usually made of _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "gold",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "copper",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "aluminium",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "silver",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "electrons", "isCorrect": true},
+          {"id": "b", "text": "protons", "isCorrect": false},
+          {"id": "c", "text": "neutrons", "isCorrect": false},
+          {"id": "d", "text": "atoms", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Gold leaf is very thin and light, so it moves easily when charged, giving a sensitive detector.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Charging a conductor without touching it, using a nearby charged body, is called charging by _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "friction",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "induction",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "contact",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "conduction",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Induction rearranges charges in a conductor due to the field of a nearby charged object.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Connecting a charged conductor to the earth so that its charge flows away is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "shielding",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "insulating",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "earthing",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "polarising",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Earthing (grounding) allows excess charge to flow safely to or from the ground.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The SI unit used to measure the quantity of electric charge is the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "ampere",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "volt",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "ohm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "coulomb",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Charge is measured in coulombs, with the symbol C.",
+        "explanation": "Only electrons are mobile and transfer between materials during friction; protons remain fixed in the nucleus. Exam Tip: Only electrons move; protons remain fixed.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A giant electric spark that occurs between charged clouds and the ground is called _____.",
+        "questionText": "An object that gains electrons becomes ____ charged.",
         "options": [
-          {
-            "id": "a",
-            "text": "lightning",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "thunder",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "arcing",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "sparking",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "negatively", "isCorrect": true},
+          {"id": "b", "text": "positively", "isCorrect": false},
+          {"id": "c", "text": "neutrally", "isCorrect": false},
+          {"id": "d", "text": "magnetically", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Lightning is a natural discharge of static electricity built up in storm clouds.",
+        "explanation": "Gaining extra electrons gives an object more negative charge than positive charge. Exam Tip: More electrons = more negative charge.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A device fixed on tall buildings to protect them from lightning strikes is called a lightning _____.",
+        "questionText": "Two objects with like charges ____ each other.",
         "options": [
-          {
-            "id": "a",
-            "text": "insulator",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "conductor",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "detector",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "capacitor",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "repel", "isCorrect": true},
+          {"id": "b", "text": "attract", "isCorrect": false},
+          {"id": "c", "text": "neutralize", "isCorrect": false},
+          {"id": "d", "text": "magnetize", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "A lightning conductor safely guides the charge from a strike into the ground.",
+        "correctAnswer": "a",
+        "explanation": "Like charges push apart because similar charges exert a repulsive force on each other. Exam Tip: Like repel; unlike attract.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A material that allows electric charge to flow through it easily is called a ____.",
+        "options": [
+          {"id": "a", "text": "conductor", "isCorrect": true},
+          {"id": "b", "text": "insulator", "isCorrect": false},
+          {"id": "c", "text": "capacitor", "isCorrect": false},
+          {"id": "d", "text": "resistor", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A conductor allows charge to move through it easily. Exam Tip: Metals are good conductors.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A material that does not allow electric charge to flow through it easily is called an ____.",
+        "options": [
+          {"id": "a", "text": "insulator", "isCorrect": true},
+          {"id": "b", "text": "conductor", "isCorrect": false},
+          {"id": "c", "text": "capacitor", "isCorrect": false},
+          {"id": "d", "text": "magnet", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An insulator resists the movement of electric charge through it. Exam Tip: Rubber and plastic are common insulators.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A device used to store electric charge is called a ____.",
+        "options": [
+          {"id": "a", "text": "capacitor", "isCorrect": true},
+          {"id": "b", "text": "resistor", "isCorrect": false},
+          {"id": "c", "text": "conductor", "isCorrect": false},
+          {"id": "d", "text": "ammeter", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A capacitor is designed specifically to store electric charge. Exam Tip: Capacitors store charge for use in electronic circuits.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A metal rod fixed to the top of a tall building to safely direct lightning to the ground is called a ____.",
+        "options": [
+          {"id": "a", "text": "lightning conductor", "isCorrect": true},
+          {"id": "b", "text": "capacitor", "isCorrect": false},
+          {"id": "c", "text": "insulating rod", "isCorrect": false},
+          {"id": "d", "text": "earth wire", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A lightning conductor provides a safe, low-resistance path for lightning current to reach the earth. Exam Tip: It gives lightning a safe path to earth.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Charging an object by rubbing it against another material is called charging by ____.",
+        "options": [
+          {"id": "a", "text": "friction", "isCorrect": true},
+          {"id": "b", "text": "induction", "isCorrect": false},
+          {"id": "c", "text": "conduction", "isCorrect": false},
+          {"id": "d", "text": "reflection", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rubbing two materials together transfers electrons, which is charging by friction. Exam Tip: Rubbing a balloon on hair is a classic example.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Charging a conductor without direct contact, by bringing a charged object nearby, is called charging by ____.",
+        "options": [
+          {"id": "a", "text": "induction", "isCorrect": true},
+          {"id": "b", "text": "friction", "isCorrect": false},
+          {"id": "c", "text": "conduction", "isCorrect": false},
+          {"id": "d", "text": "reflection", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Induction charges an object without any direct touching, using the electric field of a nearby charged object. Exam Tip: Induction needs no touching.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Unlike charges attract each other.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A positive and a negative charge always attract, according to the law of charges.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "During charging by friction, protons move from one object to another.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Only electrons move during friction; protons remain fixed in the nucleus.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Metals are generally good conductors of electricity.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Metals contain many free electrons that allow charge to move easily through them.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An electroscope can be used to tell whether an object is charged.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Divergence of the leaf indicates the presence of charge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A body that has lost electrons carries a negative charge.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Losing electrons leaves excess protons, giving a positive charge, not negative.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In charging by induction, the charged rod must touch the conductor.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Induction works without contact; the rod only needs to be brought near the conductor.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Dry air is a good insulator, which is why static charge can build up in dry weather.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Dry air resists charge flow, so charges accumulate instead of leaking away.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A lightning conductor works best when its top end is flat and rounded.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A lightning conductor needs sharp points, because charge concentrates and discharges best at points.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A neutral object can be attracted to a charged object through induction.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The charged object induces opposite charge on the near side of the neutral object, causing attraction.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two glass rods that have both been rubbed with silk will attract each other.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Both rods carry the same positive charge, so they repel rather than attract.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Static electricity is charge that stays at rest on an object rather than flowing continuously.", "options": [], "correctAnswer": "true", "explanation": "This is the definition of static electricity, in contrast with current electricity, which flows continuously. Exam Tip: Contrast with current electricity, which flows continuously.", "difficulty": "easy"},
+      {"questionText": "When materials are rubbed together, protons move from one material to the other.", "options": [], "correctAnswer": "false", "explanation": "Only electrons move during charging by friction; protons stay fixed in the nucleus. Exam Tip: Only electrons move in charging by friction.", "difficulty": "easy"},
+      {"questionText": "An object that loses electrons becomes positively charged.", "options": [], "correctAnswer": "true", "explanation": "Losing electrons leaves more protons than electrons, giving a net positive charge. Exam Tip: Losing electrons -> positive charge.", "difficulty": "easy"},
+      {"questionText": "Like electric charges attract each other.", "options": [], "correctAnswer": "false", "explanation": "Like charges repel each other; only unlike charges attract. Exam Tip: Like repel; unlike attract.", "difficulty": "easy"},
+      {"questionText": "Metals are generally good conductors of electric charge.", "options": [], "correctAnswer": "true", "explanation": "Metals have free electrons that allow charge to flow easily through them. Exam Tip: Copper and aluminium are excellent conductors.", "difficulty": "easy"},
+      {"questionText": "Rubber and plastic are good conductors of electricity.", "options": [], "correctAnswer": "false", "explanation": "Rubber and plastic do not allow charge to flow easily, so they are insulators, not conductors. Exam Tip: Rubber/plastic are insulators.", "difficulty": "easy"},
+      {"questionText": "A capacitor is a device used to store electric charge.", "options": [], "correctAnswer": "true", "explanation": "Capacitors are specifically designed to store electric charge. Exam Tip: Found in electronic devices and camera flash circuits.", "difficulty": "easy"},
+      {"questionText": "A lightning conductor prevents lightning from striking a building at all.", "options": [], "correctAnswer": "false", "explanation": "A lightning conductor does not stop the strike; it channels the current safely to earth. Exam Tip: It channels the current safely; it does not prevent the strike.", "difficulty": "easy"},
+      {"questionText": "Charging by induction requires the charged object to touch the conductor being charged.", "options": [], "correctAnswer": "false", "explanation": "Induction charges a conductor without any contact; touching describes conduction instead. Exam Tip: Induction = no touching; conduction = direct contact.", "difficulty": "easy"},
+      {"questionText": "A small electric shock after touching a metal object, after walking on a carpet, is an example of static electricity discharging.", "options": [], "correctAnswer": "true", "explanation": "Walking on a carpet builds up static charge by friction, and touching metal lets it discharge suddenly as a shock. Exam Tip: A classic everyday demonstration of static charge build-up and discharge.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Static electricity",
-        "options": [],
-        "correctAnswer": "Electric charge that stays at rest on the surface of an object.",
-        "explanation": "It builds up through friction, induction or contact and does not flow continuously.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Two types of charge",
-        "options": [],
-        "correctAnswer": "Positive charge and negative charge.",
-        "explanation": "Protons carry positive charge and electrons carry negative charge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Law of electric charges",
-        "options": [],
-        "correctAnswer": "Like charges repel and unlike charges attract.",
-        "explanation": "This rule explains how charged objects interact with each other.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Charging by friction",
-        "options": [],
-        "correctAnswer": "Rubbing two materials transfers electrons, charging them oppositely.",
-        "explanation": "The material that gains electrons becomes negative and the other becomes positive.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Conductors",
-        "options": [],
-        "correctAnswer": "Materials that allow electric charge to flow through them easily.",
-        "explanation": "Examples include copper, iron and other metals with free electrons.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Insulators",
-        "options": [],
-        "correctAnswer": "Materials that do not allow electric charge to flow easily.",
-        "explanation": "Examples include rubber, glass, plastic and dry wood.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The electroscope",
-        "options": [],
-        "correctAnswer": "A device used to detect the presence and type of electric charge.",
-        "explanation": "Its thin leaf diverges when charge is present on the cap.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Charging by induction",
-        "options": [],
-        "correctAnswer": "Charging an object without contact using a nearby charged body.",
-        "explanation": "The nearby charge rearranges charges, and earthing can leave a net charge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Lightning",
-        "options": [],
-        "correctAnswer": "A large discharge of static electricity between clouds and the ground.",
-        "explanation": "It results from huge charge build-up in storm clouds.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Lightning conductor",
-        "options": [],
-        "correctAnswer": "A pointed metal rod that safely guides lightning charge into the ground.",
-        "explanation": "It protects tall buildings by providing an easy path for the charge.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Static electricity", "options": [], "correctAnswer": "An electric charge that builds up and stays at rest on an object, rather than flowing continuously as current.", "explanation": "It arises from an imbalance of electrons and protons on an object's surface. Exam Tip: Static (at rest) contrasts with current electricity (flowing).", "difficulty": "easy"},
+      {"questionText": "Charging by friction (electron transfer)", "options": [], "correctAnswer": "Charging that occurs when two different materials are rubbed together, causing electrons to transfer from one surface to the other.", "explanation": "Only electrons move during friction; protons remain fixed in the atoms. Exam Tip: Rubbing a plastic ruler or balloon on cloth or hair is a classic example.", "difficulty": "easy"},
+      {"questionText": "Positive and negative charge", "options": [], "correctAnswer": "An object becomes positively charged when it loses electrons, and negatively charged when it gains electrons.", "explanation": "The overall charge depends on the balance between protons (positive) and electrons (negative). Exam Tip: Lose electrons = positive; gain electrons = negative.", "difficulty": "easy"},
+      {"questionText": "Law of charges", "options": [], "correctAnswer": "Like charges repel each other, while unlike charges attract each other.", "explanation": "This fundamental rule explains why charged objects push apart or pull together. Exam Tip: Like repel; unlike attract.", "difficulty": "easy"},
+      {"questionText": "Conductor", "options": [], "correctAnswer": "A material, such as a metal, through which electric charge can move easily.", "explanation": "Conductors have free electrons that allow charge to flow through them. Exam Tip: Copper and aluminium are common conductors.", "difficulty": "easy"},
+      {"questionText": "Insulator", "options": [], "correctAnswer": "A material, such as rubber, plastic or glass, through which electric charge cannot move easily.", "explanation": "Insulators hold their electrons tightly, preventing charge from flowing through. Exam Tip: Insulators are used to cover wires and handles for safety.", "difficulty": "easy"},
+      {"questionText": "Capacitor", "options": [], "correctAnswer": "A device used to store electric charge.", "explanation": "Capacitors are found in electronic circuits and devices such as camera flashes. Exam Tip: Think of a capacitor as a small, temporary charge store.", "difficulty": "easy"},
+      {"questionText": "Lightning conductor", "options": [], "correctAnswer": "A metal spike and cable fixed to the top of a tall building, connected to the earth, to give lightning a safe path to the ground.", "explanation": "It protects buildings by channelling the lightning current safely to earth instead of through the structure. Exam Tip: It channels charge to earth; it does not stop lightning striking.", "difficulty": "easy"},
+      {"questionText": "Charging by induction", "options": [], "correctAnswer": "Charging a conductor by bringing a charged object near it, without any direct contact.", "explanation": "The nearby charge causes electrons in the conductor to redistribute, charging it without touching. Exam Tip: Induction = no contact; conduction = direct touching.", "difficulty": "easy"},
+      {"questionText": "Everyday examples of static electricity", "options": [], "correctAnswer": "Common examples include a small shock after touching a metal door handle after walking on a carpet, and small pieces of paper sticking to a charged comb or ruler.", "explanation": "These effects occur because friction builds up charge, which then discharges or attracts light objects. Exam Tip: Remember that static effects are electrostatic, not magnetic.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A student charges an electroscope positively. She then slowly brings an unknown charged rod near the cap and notices that the gold leaf collapses (falls) before it can rise again. What is the charge on the unknown rod?",
+        "questionText": "A student rubs a plastic ruler with wool. The ruler attracts small pieces of paper. Explain using electron transfer.",
         "options": [
-          {
-            "id": "a",
-            "text": "Positive",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Negative",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "No charge at all",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Cannot be determined",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Protons move from the cloth to the ruler, making it negative, and this attracts the paper by magnetism", "isCorrect": false},
+          {"id": "b", "text": "Electrons transfer from the cloth to the ruler, giving the ruler a negative charge, which then attracts the light, uncharged paper by electrostatic force", "isCorrect": true},
+          {"id": "c", "text": "The ruler gains mass and therefore attracts paper by gravity", "isCorrect": false},
+          {"id": "d", "text": "Nothing is transferred; the paper moves due to wind", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A negative rod attracts the positive charge up to the cap, reducing charge on the leaf so it collapses.",
+        "explanation": "Electrons move from cloth to ruler, giving it a negative charge. This attracts uncharged paper electrostatically. Exam Tip: Only electrons move in friction charging; attraction is electrostatic, not magnetism or gravity.",
         "difficulty": "hard"
       },
       {
-        "questionText": "During a dry afternoon, a person walks across a nylon carpet and then feels a small shock when touching a metal door handle. The best explanation is that the person:",
+        "questionText": "A building has a lightning conductor: metal spike, copper cable, earthed plate. Lightning strikes the spike. Explain what happens and why the building is protected.",
         "options": [
-          {
-            "id": "a",
-            "text": "Gained heat energy from the carpet",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Built up static charge by friction, which discharged through the metal handle",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Became magnetic by walking",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Lost all protons to the carpet",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The charge disappears completely at the spike", "isCorrect": false},
+          {"id": "b", "text": "The charge travels safely down the low-resistance copper cable into the earth, instead of passing destructively through the building's structure", "isCorrect": true},
+          {"id": "c", "text": "The charge bounces back into the clouds", "isCorrect": false},
+          {"id": "d", "text": "The spike attracts the lightning but does nothing else", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Friction between shoes and carpet charges the body; the metal handle, a conductor, lets the charge discharge as a shock.",
+        "explanation": "The copper cable offers a low-resistance path from the spike to the earthed plate, so the current flows safely down rather than through the building. Exam Tip: The key idea is providing an easier, safer path for the charge - the same principle as earthing.",
         "difficulty": "hard"
       },
       {
-        "questionText": "To charge a metal sphere negatively by induction using a positively charged rod, the correct sequence of steps is:",
+        "questionText": "Two identical spheres X (+4 units) and Y (-2 units) touch and separate. Determine the charge on each afterwards and whether they attract or repel.",
         "options": [
-          {
-            "id": "a",
-            "text": "Touch the sphere with the rod, then remove the rod",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Bring the rod near, earth the sphere, remove the earth, then remove the rod",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Earth the sphere first, then bring the rod near and touch it",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Rub the sphere with the rod until it is hot",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "X = +4, Y = -2 (unchanged); they will attract", "isCorrect": false},
+          {"id": "b", "text": "X = +1, Y = +1; they will repel", "isCorrect": true},
+          {"id": "c", "text": "X = -1, Y = -1; they will repel", "isCorrect": false},
+          {"id": "d", "text": "X = +2, Y = -2; they will attract", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The positive rod attracts electrons; earthing draws more electrons in, and removing the earth before the rod traps the negative charge.",
+        "explanation": "Total charge = (+4)+(-2) = +2, shared equally between identical spheres: +1 each. Both have the same charge, so they repel. Exam Tip: For identical conductors in contact, add charges (with sign) then divide by two to share equally.",
         "difficulty": "hard"
       }
     ]
