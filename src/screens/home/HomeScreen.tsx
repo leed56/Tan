@@ -345,6 +345,7 @@ export function HomeScreen({ navigation }: Props) {
         <PremiumLockCard
           title="Unlock Everything"
           description="Get unlimited AI explanations, all 13 subjects, HOQ practice, and priority support."
+          onUpgrade={() => navigation.navigate('SubscriptionScreen')}
         />
       </View>
     </ScreenContainer>

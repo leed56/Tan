@@ -221,6 +221,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
                 <PremiumLockCard
                   title="Premium Packs Locked"
                   description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
+                  onUpgrade={() => navigation.navigate('SubscriptionScreen')}
                 />
               )}
               {premiumPacks.map((pack) => {
