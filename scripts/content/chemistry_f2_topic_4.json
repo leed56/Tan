@@ -2,939 +2,371 @@
   "topicId": "form_2_chemistry_topic_4",
   "topicName": "Chemical Bonding",
   "order": 4,
-  "description": "An introduction to why atoms combine and how ionic, covalent and metallic bonds form, including the octet rule and the properties of the compounds produced.",
+  "description": "Introduces chemical bonding, including ionic (electrovalent) and covalent bonds, the formation of cations and anions, and the properties and electrical conduction of ionic and covalent compounds.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Why do most atoms combine with other atoms to form chemical bonds?",
+        "questionText": "A chemical bond is:",
         "options": [
-          {
-            "id": "a",
-            "text": "To gain a stable electron arrangement like that of a noble gas",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "To increase the number of neutrons in the nucleus",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "To become radioactive",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To lose all of their electrons",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A force that holds atoms together in a compound", "isCorrect": true},
+          {"id": "b", "text": "A type of mixture", "isCorrect": false},
+          {"id": "c", "text": "A sub-atomic particle", "isCorrect": false},
+          {"id": "d", "text": "A unit of mass", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Atoms bond in order to attain a full, stable outer shell similar to the nearest noble gas, which lowers their energy.",
+        "explanation": "The force of attraction holding atoms together is a chemical bond. Exam Tip: Atoms bond to achieve a stable (full) outer shell, like the noble gases.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The tendency of atoms to achieve eight electrons in their outermost shell is called the:",
+        "questionText": "Atoms form chemical bonds mainly to:",
         "options": [
-          {
-            "id": "a",
-            "text": "Duplet rule",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Octet rule",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Periodic rule",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Valency rule",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Increase their mass", "isCorrect": false},
+          {"id": "b", "text": "Achieve a stable (full) outer electron shell", "isCorrect": true},
+          {"id": "c", "text": "Change colour", "isCorrect": false},
+          {"id": "d", "text": "Lose their nucleus", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The octet rule states that atoms tend to gain, lose or share electrons to obtain eight electrons in their outermost shell.",
+        "explanation": "To gain a stable outer shell (usually 8 electrons, like the noble gases). Exam Tip: The octet rule: atoms react to get 8 electrons in the outer shell.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which type of bond is formed by the complete transfer of electrons from one atom to another?",
+        "questionText": "The type of bond formed by the TRANSFER of electrons from one atom to another is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Covalent bond",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Metallic bond",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Ionic (electrovalent) bond",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Hydrogen bond",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Covalent bond", "isCorrect": false},
+          {"id": "b", "text": "Electrovalent (ionic) bond", "isCorrect": true},
+          {"id": "c", "text": "Metallic bond", "isCorrect": false},
+          {"id": "d", "text": "Hydrogen bond", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Transferring electrons forms an electrovalent (ionic) bond. Exam Tip: Ionic (electrovalent) = TRANSFER of electrons. Covalent = SHARING of electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of bond formed by the SHARING of electrons between atoms is called:",
+        "options": [
+          {"id": "a", "text": "Ionic bond", "isCorrect": false},
+          {"id": "b", "text": "Electrovalent bond", "isCorrect": false},
+          {"id": "c", "text": "Covalent bond", "isCorrect": true},
+          {"id": "d", "text": "Metallic bond", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "In ionic bonding electrons are transferred from a metal to a non-metal, forming oppositely charged ions that attract each other.",
+        "explanation": "Sharing electrons forms a covalent bond. Exam Tip: Covalent bonds form between NON-METALS (e.g. H2, O2, H2O, CO2).",
         "difficulty": "easy"
       },
       {
-        "questionText": "When sodium reacts with chlorine to form sodium chloride, the sodium atom:",
+        "questionText": "An electrovalent (ionic) bond is usually formed between:",
         "options": [
-          {
-            "id": "a",
-            "text": "Gains one electron to form Na-",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Loses one electron to form Na+",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Shares one electron with chlorine",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Loses two electrons to form Na2+",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Two non-metals", "isCorrect": false},
+          {"id": "b", "text": "A metal and a non-metal", "isCorrect": true},
+          {"id": "c", "text": "Two metals", "isCorrect": false},
+          {"id": "d", "text": "Two noble gases", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Sodium has one outer electron which it loses to chlorine, becoming a positively charged ion (Na+).",
-        "difficulty": "easy"
+        "explanation": "Metals lose electrons; non-metals gain them. Exam Tip: Metal + non-metal -> ionic bond (e.g. NaCl, MgO).",
+        "difficulty": "medium"
       },
       {
-        "questionText": "A covalent bond is best described as the:",
+        "questionText": "When a sodium atom loses one electron, it forms an ion with a charge of:",
         "options": [
-          {
-            "id": "a",
-            "text": "Transfer of electrons between two metals",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Sharing of one or more pairs of electrons between atoms",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Attraction between positive ions and free electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Loss of electrons by a non-metal",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "1-", "isCorrect": false},
+          {"id": "b", "text": "1+", "isCorrect": true},
+          {"id": "c", "text": "2+", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A covalent bond forms when two atoms, usually non-metals, share pairs of electrons to fill their outer shells.",
+        "explanation": "Losing 1 electron gives a 1+ charge. Exam Tip: Losing electrons -> positive ion (cation). Na -> Na+.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a chlorine atom gains one electron, it forms an ion with a charge of:",
+        "options": [
+          {"id": "a", "text": "1+", "isCorrect": false},
+          {"id": "b", "text": "1-", "isCorrect": true},
+          {"id": "c", "text": "2-", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gaining 1 electron gives a 1- charge. Exam Tip: Gaining electrons -> negative ion (anion). Cl -> Cl-.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A positively charged ion is called a:",
+        "options": [
+          {"id": "a", "text": "Anion", "isCorrect": false},
+          {"id": "b", "text": "Cation", "isCorrect": true},
+          {"id": "c", "text": "Radical", "isCorrect": false},
+          {"id": "d", "text": "Neutron", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A positive ion is a cation. Exam Tip: Cation = positive; anion = negative.",
         "difficulty": "easy"
       },
       {
-        "questionText": "How many pairs of electrons are shared in a molecule of methane (CH4)?",
+        "questionText": "Which of the following compounds contains a covalent bond?",
         "options": [
-          {
-            "id": "a",
-            "text": "Two pairs",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Three pairs",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Four pairs",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "One pair",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Sodium chloride (NaCl)", "isCorrect": false},
+          {"id": "b", "text": "Water (H2O)", "isCorrect": true},
+          {"id": "c", "text": "Magnesium oxide (MgO)", "isCorrect": false},
+          {"id": "d", "text": "Potassium chloride (KCl)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Water is made of the non-metals hydrogen and oxygen sharing electrons. Exam Tip: NaCl, MgO and KCl are ionic (metal + non-metal). H2O is covalent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The bond in a molecule of hydrogen (H2) is formed by:",
+        "options": [
+          {"id": "a", "text": "Transfer of electrons", "isCorrect": false},
+          {"id": "b", "text": "Sharing of one pair of electrons", "isCorrect": true},
+          {"id": "c", "text": "Losing electrons", "isCorrect": false},
+          {"id": "d", "text": "Gaining electrons", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Two hydrogen atoms share a pair of electrons - a covalent bond. Exam Tip: H2 has a single covalent bond (one shared pair).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the compound magnesium oxide (MgO), magnesium:",
+        "options": [
+          {"id": "a", "text": "Gains 2 electrons", "isCorrect": false},
+          {"id": "b", "text": "Loses 2 electrons to become Mg2+", "isCorrect": true},
+          {"id": "c", "text": "Shares electrons", "isCorrect": false},
+          {"id": "d", "text": "Gains 1 electron", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Magnesium loses its 2 outer electrons to become Mg2+; oxygen gains them. Exam Tip: Metals LOSE their outer electrons. Mg (2,8,2) -> Mg2+ (2,8).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Ionic compounds generally have:",
+        "options": [
+          {"id": "a", "text": "Low melting points", "isCorrect": false},
+          {"id": "b", "text": "High melting and boiling points", "isCorrect": true},
+          {"id": "c", "text": "No effect on electricity when molten", "isCorrect": false},
+          {"id": "d", "text": "A gaseous state at room temperature", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ionic bonds are strong forces between oppositely charged ions, needing much energy to break. Exam Tip: Ionic compounds: high melting/boiling points, solids at room temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ionic compounds conduct electricity when:",
+        "options": [
+          {"id": "a", "text": "They are solid", "isCorrect": false},
+          {"id": "b", "text": "They are molten or dissolved in water", "isCorrect": true},
+          {"id": "c", "text": "They are dry crystals", "isCorrect": false},
+          {"id": "d", "text": "They never conduct", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In the molten or dissolved state, ions are free to move and carry charge. Exam Tip: Solid ionic compounds do NOT conduct. Molten/aqueous ionic compounds DO conduct.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How many electrons are shared in a double covalent bond (as in O2)?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "8", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Carbon shares its four outer electrons with four hydrogen atoms, forming four shared pairs (four single covalent bonds).",
+        "explanation": "A double bond shares two pairs = 4 electrons. Exam Tip: Single bond = 2 electrons; double bond = 4 electrons; triple bond = 6 electrons.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is a property typical of ionic compounds?",
+        "questionText": "Which pair of atoms would form an IONIC bond?",
         "options": [
-          {
-            "id": "a",
-            "text": "They have low melting points",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "They conduct electricity when molten or dissolved in water",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "They are usually gases at room temperature",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They do not dissolve in water",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Carbon and oxygen", "isCorrect": false},
+          {"id": "b", "text": "Sodium and chlorine", "isCorrect": true},
+          {"id": "c", "text": "Hydrogen and hydrogen", "isCorrect": false},
+          {"id": "d", "text": "Nitrogen and nitrogen", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Ionic compounds conduct electricity when molten or in solution because their ions become free to move and carry charge.",
+        "explanation": "Sodium (metal) and chlorine (non-metal) transfer electrons. Exam Tip: The other pairs are non-metal + non-metal -> covalent.",
         "difficulty": "medium"
-      },
-      {
-        "questionText": "Metallic bonding is described as the attraction between:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Positive metal ions and a sea of delocalised electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Two non-metal atoms sharing electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Positive and negative ions in a lattice",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Neutral atoms held by gravity",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "In metals, positive ions are surrounded by a sea of mobile (delocalised) electrons whose attraction holds the structure together.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why do metals conduct electricity well?",
-        "options": [
-          {
-            "id": "a",
-            "text": "They contain free-moving (delocalised) electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "They contain free-moving protons",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Their ions can move easily in the solid",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They are made of covalent molecules",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "The delocalised electrons in a metal are free to move throughout the structure and carry electric current.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In the formation of magnesium oxide (MgO), how many electrons does a magnesium atom transfer?",
-        "options": [
-          {
-            "id": "a",
-            "text": "One electron",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Two electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Three electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Six electrons",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Magnesium has two outer electrons which it transfers to oxygen, forming Mg2+ and O2- ions.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which statement correctly compares ionic and covalent compounds?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ionic compounds usually have higher melting points than simple covalent compounds",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Covalent compounds always conduct electricity better than ionic compounds",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Ionic compounds are always gases while covalent compounds are solids",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Both types never dissolve in water",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Strong electrostatic forces in ionic lattices need much energy to break, giving ionic compounds high melting points compared with simple covalent substances.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "How many electrons are shared in the double bond of an oxygen molecule (O2)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Two electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Four electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Six electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "One electron",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A double bond consists of two shared pairs, which means four electrons are shared between the two oxygen atoms.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Which atom achieves a duplet (two electrons) rather than an octet when it forms bonds?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Carbon",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Oxygen",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Hydrogen",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Chlorine",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Hydrogen needs only two electrons to fill its single shell, so it follows the duplet rule rather than the octet rule.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why does solid sodium chloride NOT conduct electricity, while molten sodium chloride does?",
-        "options": [
-          {
-            "id": "a",
-            "text": "In the solid the ions are fixed in place, but in the molten state they are free to move",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "The solid contains no ions at all",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Melting changes the ions into neutral atoms",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Electrons are added during melting",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Conduction needs mobile charge carriers; in the solid lattice ions cannot move, but when molten the ions are free to carry current.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "An element with electron arrangement 2,8,7 is most likely to form a chemical bond by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Losing seven electrons",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Gaining one electron to complete its octet",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Losing one electron",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Sharing two pairs of electrons",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "With seven outer electrons the atom needs only one more to reach a stable octet, so it tends to gain one electron and become a 1- ion.",
-        "difficulty": "hard"
       }
     ],
     "fib": [
       {
-        "questionText": "The chemical bond formed when electrons are completely transferred from a metal to a non-metal is called an _____ bond.",
+        "questionText": "The force of attraction that holds atoms together in a compound is called a ____ bond.",
         "options": [
-          {
-            "id": "a",
-            "text": "ionic",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "covalent",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "metallic",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "hydrogen",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "chemical", "isCorrect": true},
+          {"id": "b", "text": "covalent", "isCorrect": false},
+          {"id": "c", "text": "ionic", "isCorrect": false},
+          {"id": "d", "text": "metallic", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Ionic (electrovalent) bonding involves the transfer of electrons, producing oppositely charged ions.",
+        "explanation": "The general term for the attractive force joining atoms in a compound is a chemical bond; covalent and ionic are specific types of it. Exam Tip: Chemical bonds form to achieve stable outer shells.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Atoms tend to gain, lose or share electrons in order to obtain a stable arrangement similar to that of a _____ gas.",
+        "questionText": "A bond formed by the transfer of electrons is called an ____ bond.",
         "options": [
-          {
-            "id": "a",
-            "text": "reactive",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "noble",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "transition",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "halogen",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Noble gases have full, stable outer shells, which other atoms try to imitate when bonding.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A bond formed by the sharing of pairs of electrons between atoms is a _____ bond.",
-        "options": [
-          {
-            "id": "a",
-            "text": "ionic",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "metallic",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "covalent",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "hydrogen",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Covalent bonding occurs mainly between non-metal atoms that share electrons.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The rule that states atoms try to attain eight electrons in their outer shell is called the _____ rule.",
-        "options": [
-          {
-            "id": "a",
-            "text": "duplet",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "valency",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "periodic",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "octet",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "The octet rule explains why many atoms gain, lose or share electrons to reach eight in the outer shell.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In sodium chloride, the sodium ion carries a charge of _____ (write the sign and number).",
-        "options": [
-          {
-            "id": "a",
-            "text": "1+",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1-",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "2+",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "2-",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "electrovalent (ionic)", "isCorrect": true},
+          {"id": "b", "text": "covalent", "isCorrect": false},
+          {"id": "c", "text": "metallic", "isCorrect": false},
+          {"id": "d", "text": "hydrogen", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Sodium loses one electron to become Na+, a single positive charge.",
-        "difficulty": "medium"
+        "explanation": "Transfer of electrons between atoms produces an electrovalent (ionic) bond, not a covalent bond which involves sharing. Exam Tip: Electrovalent = ionic = transfer of electrons.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "In metallic bonding, the metal atoms are held together by a sea of _____ electrons.",
+        "questionText": "A bond formed by the sharing of electrons is called a ____ bond.",
         "options": [
-          {
-            "id": "a",
-            "text": "shared",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "delocalised",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "transferred",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "localised",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Delocalised (free) electrons move throughout the metal and attract the positive metal ions.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Hydrogen needs only two electrons to fill its shell, so it follows the _____ rule.",
-        "options": [
-          {
-            "id": "a",
-            "text": "octet",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "noble",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "duplet",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "valency",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Hydrogen and helium are stable with two electrons, an arrangement known as the duplet.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Compounds with simple covalent molecules generally have _____ (high/low) melting points compared with ionic compounds.",
-        "options": [
-          {
-            "id": "a",
-            "text": "high",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "very high",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "moderate",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "low",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Weak forces between separate covalent molecules are easily broken, giving low melting points.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An ion that carries a negative charge is called an _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "anion",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "cation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "isotope",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "molecule",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "covalent", "isCorrect": true},
+          {"id": "b", "text": "ionic", "isCorrect": false},
+          {"id": "c", "text": "electrovalent", "isCorrect": false},
+          {"id": "d", "text": "metallic", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Atoms that gain electrons become negatively charged ions called anions.",
-        "difficulty": "medium"
+        "explanation": "Sharing electrons between atoms, usually non-metals, forms a covalent bond. Exam Tip: Covalent bonds occur between non-metals.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "In a water molecule (H2O), oxygen forms _____ covalent bonds with hydrogen atoms.",
+        "questionText": "A positively charged ion is called a ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "one",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "two",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "three",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "four",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "cation", "isCorrect": true},
+          {"id": "b", "text": "anion", "isCorrect": false},
+          {"id": "c", "text": "isotope", "isCorrect": false},
+          {"id": "d", "text": "molecule", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Oxygen shares one electron with each of two hydrogen atoms, forming two single covalent bonds.",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "An atom that loses electrons becomes positively charged and is called a cation. Exam Tip: Cation = positive; anion = negative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A negatively charged ion is called an ____.",
+        "options": [
+          {"id": "a", "text": "anion", "isCorrect": true},
+          {"id": "b", "text": "cation", "isCorrect": false},
+          {"id": "c", "text": "proton", "isCorrect": false},
+          {"id": "d", "text": "neutron", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An atom that gains electrons becomes negatively charged and is called an anion. Exam Tip: Anions form when atoms GAIN electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When atoms bond, they try to achieve a stable outer shell of ____ electrons (for most elements).",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": true},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "10", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Most atoms bond to attain a full outer shell of 8 electrons, matching the noble gas structure. Exam Tip: The octet rule: 8 outer electrons = stable.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ionic bonds are usually formed between a metal and a ____.",
+        "options": [
+          {"id": "a", "text": "non-metal", "isCorrect": true},
+          {"id": "b", "text": "metal", "isCorrect": false},
+          {"id": "c", "text": "noble gas", "isCorrect": false},
+          {"id": "d", "text": "metalloid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Metals lose electrons while non-metals gain them, so ionic bonds form between a metal and a non-metal. Exam Tip: Metal (loses electrons) + non-metal (gains electrons) = ionic bond.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Ionic compounds conduct electricity when molten or dissolved because their ____ become free to move.",
+        "options": [
+          {"id": "a", "text": "ions", "isCorrect": true},
+          {"id": "b", "text": "atoms", "isCorrect": false},
+          {"id": "c", "text": "molecules", "isCorrect": false},
+          {"id": "d", "text": "protons", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In the molten or dissolved state the ions are no longer fixed in a lattice and can move to carry charge. Exam Tip: Free ions -> conduction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Covalent bonds are formed between atoms of ____ (metals/non-metals).",
+        "options": [
+          {"id": "a", "text": "non-metals", "isCorrect": true},
+          {"id": "b", "text": "metals", "isCorrect": false},
+          {"id": "c", "text": "metalloids", "isCorrect": false},
+          {"id": "d", "text": "noble gases", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Covalent bonding involves sharing of electrons, which occurs between non-metal atoms. Exam Tip: Non-metal + non-metal = covalent bond.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A sodium atom becomes a sodium ion (Na+) by ____ one electron.",
+        "options": [
+          {"id": "a", "text": "losing", "isCorrect": true},
+          {"id": "b", "text": "gaining", "isCorrect": false},
+          {"id": "c", "text": "sharing", "isCorrect": false},
+          {"id": "d", "text": "splitting", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sodium has one outer electron which it loses to form a stable Na+ ion. Exam Tip: Metals lose electrons to form positive ions.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Atoms form chemical bonds in order to become more stable.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Bonding lets atoms achieve a stable, full outer shell and lower energy.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ionic bonding occurs mainly between two non-metal atoms.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Ionic bonding usually occurs between a metal and a non-metal; covalent bonding occurs between non-metals.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a covalent bond, electrons are shared rather than transferred.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Covalent bonding involves the sharing of electron pairs between atoms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ionic compounds conduct electricity when they are in the solid state.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Ionic solids do not conduct because the ions are fixed; they conduct only when molten or dissolved.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Metals are generally good conductors of electricity because of their free-moving electrons.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Delocalised electrons in metals move freely and carry electric current.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When sodium forms a bond with chlorine, sodium gains an electron.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Sodium loses one electron to chlorine; it is chlorine that gains an electron.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A double covalent bond involves the sharing of two pairs of electrons.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A double bond consists of two shared electron pairs, as seen in the oxygen molecule.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Ionic compounds usually have higher melting points than simple covalent compounds.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Strong electrostatic forces in ionic lattices require a lot of energy to overcome.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Hydrogen obeys the octet rule by gaining eight electrons when it bonds.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Hydrogen obeys the duplet rule, needing only two electrons to fill its single shell.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Most simple covalent compounds do not conduct electricity because they contain no free ions or electrons.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Covalent molecules are neutral and have no mobile charge carriers, so they generally do not conduct.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Atoms form bonds to achieve a stable outer electron shell.", "options": [], "correctAnswer": "true", "explanation": "Atoms bond so as to attain a full, stable outer shell, usually of 8 electrons, following the octet rule. Exam Tip: The octet rule drives bonding.", "difficulty": "easy"},
+      {"questionText": "A covalent bond is formed by the transfer of electrons.", "options": [], "correctAnswer": "false", "explanation": "A covalent bond is formed by sharing electrons, not transferring them; transfer of electrons forms an ionic bond instead. Exam Tip: Covalent = share; ionic = transfer.", "difficulty": "easy"},
+      {"questionText": "An ionic bond is usually formed between a metal and a non-metal.", "options": [], "correctAnswer": "true", "explanation": "Ionic bonds form when a metal, which loses electrons, reacts with a non-metal, which gains electrons. Exam Tip: Metal + non-metal = ionic.", "difficulty": "easy"},
+      {"questionText": "When an atom loses electrons, it becomes a negative ion.", "options": [], "correctAnswer": "false", "explanation": "Losing electrons removes negative charge, leaving the atom positively charged rather than negative. Exam Tip: Lose electrons -> positive ion; gain electrons -> negative ion.", "difficulty": "easy"},
+      {"questionText": "Water (H2O) is a covalent compound.", "options": [], "correctAnswer": "true", "explanation": "Water is formed from hydrogen and oxygen, both non-metals, which share electrons in covalent bonds. Exam Tip: H2O, CO2, CH4 are covalent; NaCl, MgO are ionic.", "difficulty": "easy"},
+      {"questionText": "Ionic compounds have low melting and boiling points.", "options": [], "correctAnswer": "false", "explanation": "Ionic compounds have strong electrostatic forces between ions, giving them high, not low, melting and boiling points. Exam Tip: Ionic compounds have HIGH melting/boiling points.", "difficulty": "easy"},
+      {"questionText": "Solid ionic compounds do not conduct electricity.", "options": [], "correctAnswer": "true", "explanation": "In solid ionic compounds the ions are fixed in a rigid lattice and cannot move to carry charge. Exam Tip: Solid ionic = no conduction; molten/dissolved ionic = conduction.", "difficulty": "easy"},
+      {"questionText": "A cation is a negatively charged ion.", "options": [], "correctAnswer": "false", "explanation": "A cation is a positively charged ion formed by losing electrons; a negatively charged ion is an anion. Exam Tip: Cation = positive; anion = negative.", "difficulty": "easy"},
+      {"questionText": "In a covalent bond, atoms share pairs of electrons.", "options": [], "correctAnswer": "true", "explanation": "In covalent bonding atoms share one or more pairs of electrons to achieve stable outer shells. Exam Tip: Single bond = 1 shared pair; double bond = 2 shared pairs.", "difficulty": "easy"},
+      {"questionText": "Magnesium oxide (MgO) is an ionic compound.", "options": [], "correctAnswer": "true", "explanation": "Magnesium oxide forms between the metal magnesium and the non-metal oxygen through electron transfer, making it ionic. Exam Tip: Metal + non-metal = ionic. MgO is a typical ionic compound.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Reason atoms form chemical bonds",
-        "options": [],
-        "correctAnswer": "To gain a stable, full outer shell like a noble gas",
-        "explanation": "Stability is achieved by completing the outermost electron shell.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The octet rule",
-        "options": [],
-        "correctAnswer": "Atoms tend to achieve eight electrons in their outer shell",
-        "explanation": "This drives the gaining, losing or sharing of electrons.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The duplet rule",
-        "options": [],
-        "correctAnswer": "Hydrogen and helium are stable with two outer electrons",
-        "explanation": "Small atoms with one shell only need two electrons to be stable.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ionic (electrovalent) bonding",
-        "options": [],
-        "correctAnswer": "Transfer of electrons from a metal to a non-metal forming ions",
-        "explanation": "Oppositely charged ions attract to form the compound, e.g. NaCl.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Covalent bonding",
-        "options": [],
-        "correctAnswer": "Sharing of electron pairs between non-metal atoms",
-        "explanation": "Examples include H2O and CH4.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Metallic bonding",
-        "options": [],
-        "correctAnswer": "Attraction between positive metal ions and delocalised electrons",
-        "explanation": "This explains why metals conduct and are malleable.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Electrical conductivity of ionic compounds",
-        "options": [],
-        "correctAnswer": "Conduct only when molten or dissolved in water",
-        "explanation": "Ions must be free to move to carry current.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Melting points of ionic compounds",
-        "options": [],
-        "correctAnswer": "Generally high due to strong electrostatic forces",
-        "explanation": "Much energy is needed to break the ionic lattice.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of simple covalent compounds",
-        "options": [],
-        "correctAnswer": "Low melting points and usually do not conduct electricity",
-        "explanation": "Weak forces between molecules and no free charges.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Cation and anion",
-        "options": [],
-        "correctAnswer": "A cation is a positive ion; an anion is a negative ion",
-        "explanation": "Cations form by losing electrons, anions by gaining electrons.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Chemical bond", "options": [], "correctAnswer": "The force of attraction that holds atoms together in a compound.", "explanation": "Chemical bonds form so atoms can achieve a stable, full outer electron shell. Exam Tip: Ask whether electrons are transferred (ionic) or shared (covalent) to identify the bond type.", "difficulty": "easy"},
+      {"questionText": "Octet rule", "options": [], "correctAnswer": "The tendency of atoms to react so as to attain 8 electrons in their outer shell, like the noble gases.", "explanation": "Achieving a stable octet is the main driving force behind chemical bonding. Exam Tip: Hydrogen and helium are exceptions, needing only 2 electrons.", "difficulty": "easy"},
+      {"questionText": "Ionic (electrovalent) bond", "options": [], "correctAnswer": "A bond formed by the complete transfer of electrons from a metal atom to a non-metal atom, producing oppositely charged ions that attract each other.", "explanation": "Example: sodium transfers an electron to chlorine to form Na+ and Cl- in NaCl. Exam Tip: Metal + non-metal = ionic bond.", "difficulty": "easy"},
+      {"questionText": "Covalent bond", "options": [], "correctAnswer": "A bond formed by the sharing of one or more pairs of electrons between two non-metal atoms.", "explanation": "Example: two hydrogen atoms share a pair of electrons to form H2. Exam Tip: Covalent bonds form only between non-metals.", "difficulty": "easy"},
+      {"questionText": "Cation", "options": [], "correctAnswer": "A positively charged ion formed when an atom loses one or more electrons.", "explanation": "Example: a sodium atom loses one electron to become Na+. Exam Tip: Cation = positive; anion = negative.", "difficulty": "easy"},
+      {"questionText": "Anion", "options": [], "correctAnswer": "A negatively charged ion formed when an atom gains one or more electrons.", "explanation": "Example: a chlorine atom gains one electron to become Cl-. Exam Tip: Anions form when non-metal atoms gain electrons.", "difficulty": "easy"},
+      {"questionText": "Properties of ionic compounds", "options": [], "correctAnswer": "High melting and boiling points, solid at room temperature, and they conduct electricity only when molten or dissolved in water.", "explanation": "These properties result from the strong electrostatic forces holding the ions in a rigid lattice. Exam Tip: Strong ionic forces mean lots of energy is needed to melt or boil them.", "difficulty": "easy"},
+      {"questionText": "Properties of covalent compounds", "options": [], "correctAnswer": "Generally low melting and boiling points, and they do not conduct electricity because they contain no free ions.", "explanation": "Covalent compounds exist as separate molecules held together by weaker intermolecular forces. Exam Tip: Non-metal + non-metal compounds are usually covalent with low melting points.", "difficulty": "easy"},
+      {"questionText": "Conduction of ionic compounds", "options": [], "correctAnswer": "Solid ionic compounds do not conduct electricity because the ions are fixed in place; molten or dissolved ionic compounds do conduct because the ions are free to move.", "explanation": "Free-moving charged ions are required to carry an electric current. Exam Tip: Remember: solid = no conduction, molten/aqueous = conducts.", "difficulty": "easy"},
+      {"questionText": "Single and double covalent bonds", "options": [], "correctAnswer": "A single covalent bond shares one pair (2 electrons); a double covalent bond shares two pairs (4 electrons), as in O2.", "explanation": "The number of shared electron pairs determines whether a bond is single, double, or triple. Exam Tip: Single = 2 electrons, double = 4 electrons, triple = 6 electrons.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "An element X has electron arrangement 2,8,2 and element Y has 2,8,7. What type of bond and formula will they most likely form?",
+        "questionText": "A sodium atom (2,8,1) reacts with a chlorine atom (2,8,7). Describe what happens to the electrons and the type of bond formed.",
         "options": [
-          {
-            "id": "a",
-            "text": "Covalent bond, formula XY",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Ionic bond, formula XY2",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Ionic bond, formula X2Y",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Metallic bond, formula XY",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Sodium shares an electron with chlorine; covalent bond", "isCorrect": false},
+          {"id": "b", "text": "Sodium transfers its 1 outer electron to chlorine, forming Na+ and Cl- held by an ionic bond", "isCorrect": true},
+          {"id": "c", "text": "Chlorine loses an electron to sodium; ionic bond", "isCorrect": false},
+          {"id": "d", "text": "No reaction occurs", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "X loses 2 electrons (X2+) and each Y gains 1 (Y-), so two Y ions balance one X ion giving the ionic formula XY2.",
+        "explanation": "Sodium transfers its outer electron to chlorine, becoming Na+ (2,8); chlorine becomes Cl- (2,8,8); opposite charges attract - ionic bond. Exam Tip: The metal with few outer electrons gives; the non-metal needing electrons takes.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Carbon dioxide (CO2) has low melting point and does not conduct electricity, while magnesium oxide (MgO) has a very high melting point and conducts when molten. What does this difference best indicate?",
+        "questionText": "Compound X: very high melting point, conducts when molten, made of a metal and a non-metal. Compound Y: low melting point, does not conduct when molten, made of two non-metals. Identify the bonding.",
         "options": [
-          {
-            "id": "a",
-            "text": "CO2 is covalent while MgO is ionic",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Both compounds are ionic",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "CO2 is metallic while MgO is covalent",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Both compounds are metallic",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "X = covalent, Y = ionic", "isCorrect": false},
+          {"id": "b", "text": "X = ionic, Y = covalent", "isCorrect": true},
+          {"id": "c", "text": "Both ionic", "isCorrect": false},
+          {"id": "d", "text": "Both covalent", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Low melting point and non-conduction point to simple covalent CO2, while a high melting point and conduction when molten point to ionic MgO.",
+        "correctAnswer": "b",
+        "explanation": "X (high m.p., conducts molten, metal+non-metal) = ionic. Y (low m.p., no conduction, non-metals) = covalent. Exam Tip: Ionic clues: high melting point, conducts when molten, metal+non-metal. Covalent clues: opposite.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Why can metals be hammered into sheets (malleable) without breaking, unlike ionic solids which shatter?",
+        "questionText": "A student claims that potassium chloride (KCl) will conduct electricity in ALL states. Evaluate this claim.",
         "options": [
-          {
-            "id": "a",
-            "text": "Metal layers can slide over each other while the sea of electrons keeps them bonded",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Metals contain no bonds at all so atoms move freely",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Metals are made of small covalent molecules that flow",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Metal ions repel each other when struck, spreading the metal out",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The claim is correct", "isCorrect": false},
+          {"id": "b", "text": "The claim is wrong: solid KCl does NOT conduct because its ions are fixed; it conducts only when molten or dissolved, where the ions are free to move", "isCorrect": true},
+          {"id": "c", "text": "KCl never conducts electricity", "isCorrect": false},
+          {"id": "d", "text": "KCl conducts only as a solid", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Layers of metal ions slide past one another while the delocalised electrons maintain the bonding, so metals deform instead of shattering, whereas in ionic solids like charges align and repel.",
+        "correctAnswer": "b",
+        "explanation": "In the solid, ions are locked in a fixed lattice - no conduction. Molten or dissolved, ions become free - conducts. Exam Tip: Conduction needs FREE-MOVING charged particles. Claiming a compound conducts in ALL states is a classic wrong claim.",
         "difficulty": "hard"
       }
     ]
