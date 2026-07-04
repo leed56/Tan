@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Animated, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Animated, Dimensions, Easing } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -14,23 +14,49 @@ export function SplashScreen({ navigation }: Props) {
   const logoScale = useRef(new Animated.Value(0.3)).current;
   const logoOpacity = useRef(new Animated.Value(0)).current;
   const taglineOpacity = useRef(new Animated.Value(0)).current;
+  const taglineY = useRef(new Animated.Value(10)).current;
   const glowOpacity = useRef(new Animated.Value(0)).current;
+  const glowPulse = useRef(new Animated.Value(1)).current;
+  const ringRotate = useRef(new Animated.Value(0)).current;
   const exitOpacity = useRef(new Animated.Value(1)).current;
 
   useEffect(() => {
+    // Ring spins continuously behind the logo for the whole splash duration —
+    // a cheap way to read as "loading" without a literal spinner.
+    Animated.loop(
+      Animated.timing(ringRotate, { toValue: 1, duration: 6000, easing: Easing.linear, useNativeDriver: true }),
+    ).start();
+
     Animated.sequence([
       Animated.parallel([
         Animated.spring(logoScale, { toValue: 1, tension: 60, friction: 8, useNativeDriver: true }),
         Animated.timing(logoOpacity, { toValue: 1, duration: 600, useNativeDriver: true }),
       ]),
       Animated.timing(glowOpacity, { toValue: 1, duration: 400, useNativeDriver: true }),
-      Animated.timing(taglineOpacity, { toValue: 1, duration: 500, useNativeDriver: true }),
-      Animated.delay(1000),
+      Animated.parallel([
+        Animated.timing(taglineOpacity, { toValue: 1, duration: 500, useNativeDriver: true }),
+        Animated.spring(taglineY, { toValue: 0, tension: 80, friction: 10, useNativeDriver: true }),
+      ]),
+      Animated.delay(800),
       Animated.timing(exitOpacity, { toValue: 0, duration: 400, useNativeDriver: true }),
     ]).start(() => {
       navigation.replace('Welcome');
     });
-  }, [navigation, logoScale, logoOpacity, taglineOpacity, glowOpacity, exitOpacity]);
+
+    // Slow breathing pulse on the glow — starts once the glow has faded in.
+    const pulseTimer = setTimeout(() => {
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(glowPulse, { toValue: 1.15, duration: 1400, easing: Easing.inOut(Easing.ease), useNativeDriver: true }),
+          Animated.timing(glowPulse, { toValue: 1, duration: 1400, easing: Easing.inOut(Easing.ease), useNativeDriver: true }),
+        ]),
+      ).start();
+    }, 900);
+
+    return () => clearTimeout(pulseTimer);
+  }, [navigation, logoScale, logoOpacity, taglineOpacity, taglineY, glowOpacity, glowPulse, ringRotate, exitOpacity]);
+
+  const ringSpin = ringRotate.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
 
   return (
     <Animated.View style={[styles.root, { opacity: exitOpacity }]}>
@@ -46,7 +72,14 @@ export function SplashScreen({ navigation }: Props) {
 
         <View style={styles.center}>
           {/* Glow behind logo */}
-          <Animated.View style={[styles.glow, { opacity: glowOpacity }]} />
+          <Animated.View
+            style={[styles.glow, { opacity: glowOpacity, transform: [{ scale: glowPulse }] }]}
+          />
+
+          {/* Spinning accent ring */}
+          <Animated.View
+            style={[styles.ring, { opacity: logoOpacity, transform: [{ rotate: ringSpin }] }]}
+          />
 
           {/* Logo */}
           <Animated.View
@@ -69,12 +102,12 @@ export function SplashScreen({ navigation }: Props) {
           </Animated.View>
 
           {/* Tagline */}
-          <Animated.View style={{ opacity: taglineOpacity }}>
+          <Animated.View style={{ opacity: taglineOpacity, transform: [{ translateY: taglineY }] }}>
             <Text style={styles.tagline}>Learn Smarter. Pass NECTA.</Text>
           </Animated.View>
 
           {/* Powered by line */}
-          <Animated.View style={[styles.poweredRow, { opacity: taglineOpacity }]}>
+          <Animated.View style={[styles.poweredRow, { opacity: taglineOpacity, transform: [{ translateY: taglineY }] }]}>
             <View style={styles.poweredDot} />
             <Text style={styles.powered}>Tanzania O-Level · Form 1–4</Text>
             <View style={styles.poweredDot} />
@@ -83,7 +116,7 @@ export function SplashScreen({ navigation }: Props) {
 
         {/* Bottom brand */}
         <Animated.View style={[styles.bottom, { opacity: taglineOpacity }]}>
-          <Text style={styles.bottomText}>Powered by AI · Made for Tanzania</Text>
+          <Text style={styles.bottomText}>Made for Tanzania</Text>
         </Animated.View>
       </LinearGradient>
     </Animated.View>
@@ -110,6 +143,16 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     backgroundColor: 'rgba(123, 111, 242, 0.25)',
     top: -40,
+  },
+  ring: {
+    position: 'absolute',
+    width: 140,
+    height: 140,
+    borderRadius: 70,
+    borderWidth: 1.5,
+    borderColor: 'rgba(247, 197, 46, 0.35)',
+    borderStyle: 'dashed',
+    top: -20,
   },
   logoContainer: {
     shadowColor: COLORS.primary,

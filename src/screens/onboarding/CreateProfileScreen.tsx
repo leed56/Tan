@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   View,
   Text,
@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  Animated,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -21,12 +22,20 @@ import { AVATARS, SUBJECTS } from '../../constants';
 
 type Props = StackScreenProps<AuthStackParamList, 'CreateProfile'>;
 
+const FORM_META: Record<FormLevel, { icon: keyof typeof Ionicons.glyphMap }> = {
+  1: { icon: 'leaf-outline' },
+  2: { icon: 'trending-up-outline' },
+  3: { icon: 'flash-outline' },
+  4: { icon: 'trophy-outline' },
+};
 const FORMS: FormLevel[] = [1, 2, 3, 4];
 
 export function CreateProfileScreen({ navigation }: Props) {
   const [name, setName] = useState('');
+  const [nameFocused, setNameFocused] = useState(false);
   const [form, setForm] = useState<FormLevel | null>(null);
   const [school, setSchool] = useState('');
+  const [schoolFocused, setSchoolFocused] = useState(false);
   const [selectedAvatar, setSelectedAvatar] = useState<AvatarId>('avatar_1');
   const [loading, setLoading] = useState(false);
 
@@ -35,6 +44,16 @@ export function CreateProfileScreen({ navigation }: Props) {
   const setUser = useAuthStore((s) => s.setUser);
 
   const canContinue = name.trim().length >= 2 && form !== null;
+
+  // Gentle entrance so the form doesn't just pop in after the Welcome screen.
+  const fade = useRef(new Animated.Value(0)).current;
+  const slide = useRef(new Animated.Value(16)).current;
+  useEffect(() => {
+    Animated.parallel([
+      Animated.timing(fade, { toValue: 1, duration: 400, useNativeDriver: true }),
+      Animated.spring(slide, { toValue: 0, tension: 70, friction: 11, useNativeDriver: true }),
+    ]).start();
+  }, [fade, slide]);
 
   const handleContinue = async () => {
     if (!canContinue || !user) return;
@@ -69,88 +88,113 @@ export function CreateProfileScreen({ navigation }: Props) {
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
           <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
         </TouchableOpacity>
-        <Text style={styles.step}>Last step</Text>
+        <View style={styles.stepPill}>
+          <Ionicons name="checkmark-circle" size={13} color={COLORS.success} />
+          <Text style={styles.step}>Last step</Text>
+        </View>
       </View>
 
-      <View style={styles.content}>
+      <Animated.View style={[styles.content, { opacity: fade, transform: [{ translateY: slide }] }]}>
         <Text style={styles.title}>Create your{'\n'}profile</Text>
         <Text style={styles.subtitle}>Help us personalize your learning journey.</Text>
 
         {/* Avatar picker */}
         <View style={styles.section}>
           <Text style={styles.label}>Choose your avatar</Text>
-          <View style={styles.avatarGrid}>
-            {AVATARS.map((av) => (
-              <TouchableOpacity
-                key={av.id}
-                onPress={() => setSelectedAvatar(av.id as AvatarId)}
-                style={[
-                  styles.avatarItem,
-                  selectedAvatar === av.id && styles.avatarSelected,
-                ]}
-              >
-                {selectedAvatar === av.id ? (
-                  <LinearGradient colors={GRADIENTS.primary} style={styles.avatarBg}>
-                    <Text style={styles.avatarEmoji}>{av.emoji}</Text>
-                  </LinearGradient>
-                ) : (
-                  <View style={styles.avatarBgPlain}>
-                    <Text style={styles.avatarEmoji}>{av.emoji}</Text>
-                  </View>
-                )}
-              </TouchableOpacity>
-            ))}
-          </View>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.avatarScroll}>
+            {AVATARS.map((av) => {
+              const isSelected = selectedAvatar === av.id;
+              return (
+                <TouchableOpacity
+                  key={av.id}
+                  onPress={() => setSelectedAvatar(av.id as AvatarId)}
+                  activeOpacity={0.85}
+                  style={styles.avatarItem}
+                >
+                  {isSelected ? (
+                    <LinearGradient colors={GRADIENTS.primary} style={[styles.avatarBg, styles.avatarSelected]}>
+                      <Text style={styles.avatarEmoji}>{av.emoji}</Text>
+                      <View style={styles.avatarCheck}>
+                        <Ionicons name="checkmark" size={12} color="#fff" />
+                      </View>
+                    </LinearGradient>
+                  ) : (
+                    <View style={styles.avatarBgPlain}>
+                      <Text style={styles.avatarEmoji}>{av.emoji}</Text>
+                    </View>
+                  )}
+                </TouchableOpacity>
+              );
+            })}
+          </ScrollView>
         </View>
 
         {/* Name */}
         <View style={styles.section}>
           <Text style={styles.label}>Your name *</Text>
-          <TextInput
-            style={styles.input}
-            value={name}
-            onChangeText={setName}
-            placeholder="e.g. Amara Diallo"
-            placeholderTextColor={COLORS.textMuted}
-            autoCapitalize="words"
-            maxLength={40}
-          />
+          <View style={[styles.inputRow, nameFocused && styles.inputRowFocused]}>
+            <Ionicons name="person-outline" size={18} color={nameFocused ? COLORS.primary : COLORS.textMuted} />
+            <TextInput
+              style={styles.input}
+              value={name}
+              onChangeText={setName}
+              onFocus={() => setNameFocused(true)}
+              onBlur={() => setNameFocused(false)}
+              placeholder="e.g. Amara Diallo"
+              placeholderTextColor={COLORS.textMuted}
+              autoCapitalize="words"
+              maxLength={40}
+            />
+          </View>
         </View>
 
         {/* Form selector */}
         <View style={styles.section}>
           <Text style={styles.label}>Form level *</Text>
           <View style={styles.formRow}>
-            {FORMS.map((f) => (
-              <TouchableOpacity
-                key={f}
-                onPress={() => setForm(f)}
-                style={[styles.formBtn, form === f && styles.formBtnActive]}
-              >
-                {form === f ? (
-                  <LinearGradient colors={GRADIENTS.primary} style={styles.formBtnGrad}>
-                    <Text style={styles.formBtnTextActive}>Form {f}</Text>
-                  </LinearGradient>
-                ) : (
-                  <Text style={styles.formBtnText}>Form {f}</Text>
-                )}
-              </TouchableOpacity>
-            ))}
+            {FORMS.map((f) => {
+              const isSelected = form === f;
+              return (
+                <TouchableOpacity
+                  key={f}
+                  onPress={() => setForm(f)}
+                  activeOpacity={0.85}
+                  style={[styles.formBtn, isSelected && styles.formBtnActive]}
+                >
+                  {isSelected ? (
+                    <LinearGradient colors={GRADIENTS.primary} style={styles.formBtnGrad}>
+                      <Ionicons name={FORM_META[f].icon} size={18} color="#fff" />
+                      <Text style={styles.formBtnTextActive}>Form {f}</Text>
+                    </LinearGradient>
+                  ) : (
+                    <>
+                      <Ionicons name={FORM_META[f].icon} size={18} color={COLORS.textMuted} />
+                      <Text style={styles.formBtnText}>Form {f}</Text>
+                    </>
+                  )}
+                </TouchableOpacity>
+              );
+            })}
           </View>
         </View>
 
         {/* School (optional) */}
         <View style={styles.section}>
           <Text style={styles.label}>School <Text style={styles.optional}>(optional)</Text></Text>
-          <TextInput
-            style={styles.input}
-            value={school}
-            onChangeText={setSchool}
-            placeholder="e.g. Azania Secondary School"
-            placeholderTextColor={COLORS.textMuted}
-            autoCapitalize="words"
-            maxLength={60}
-          />
+          <View style={[styles.inputRow, schoolFocused && styles.inputRowFocused]}>
+            <Ionicons name="school-outline" size={18} color={schoolFocused ? COLORS.primary : COLORS.textMuted} />
+            <TextInput
+              style={styles.input}
+              value={school}
+              onChangeText={setSchool}
+              onFocus={() => setSchoolFocused(true)}
+              onBlur={() => setSchoolFocused(false)}
+              placeholder="e.g. Azania Secondary School"
+              placeholderTextColor={COLORS.textMuted}
+              autoCapitalize="words"
+              maxLength={60}
+            />
+          </View>
           <Text style={styles.hint}>Used for leaderboard school rankings</Text>
         </View>
 
@@ -161,7 +205,7 @@ export function CreateProfileScreen({ navigation }: Props) {
           loading={loading}
           variant="primary"
         />
-      </View>
+      </Animated.View>
     </ScreenContainer>
   );
 }
@@ -174,7 +218,16 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.xl,
   },
   back: { padding: SPACING.sm },
-  step: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.medium },
+  stepPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: `${COLORS.success}15`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 4,
+  },
+  step: { color: COLORS.success, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
   content: { gap: SPACING.xl, paddingBottom: SPACING['2xl'] },
   title: {
     color: COLORS.textPrimary,
@@ -192,32 +245,27 @@ const styles = StyleSheet.create({
     letterSpacing: 0.8,
   },
   optional: { color: COLORS.textMuted, textTransform: 'none', fontWeight: TYPOGRAPHY.weights.regular },
-  avatarGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: SPACING.sm,
-  },
+  avatarScroll: { gap: SPACING.sm, paddingRight: SPACING.sm },
   avatarItem: {
     borderRadius: RADIUS.full,
-    overflow: 'hidden',
   },
   avatarSelected: {
     shadowColor: COLORS.primary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.5,
-    shadowRadius: 8,
+    shadowRadius: 10,
     elevation: 8,
   },
   avatarBg: {
-    width: 60,
-    height: 60,
+    width: 64,
+    height: 64,
     borderRadius: RADIUS.full,
     justifyContent: 'center',
     alignItems: 'center',
   },
   avatarBgPlain: {
-    width: 60,
-    height: 60,
+    width: 64,
+    height: 64,
     borderRadius: RADIUS.full,
     backgroundColor: COLORS.bgCard,
     borderWidth: 1.5,
@@ -225,33 +273,58 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  avatarEmoji: { fontSize: 28 },
-  input: {
+  avatarEmoji: { fontSize: 30 },
+  avatarCheck: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: COLORS.success,
+    borderWidth: 2,
+    borderColor: COLORS.bgDark,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  inputRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACING.sm,
     backgroundColor: COLORS.bgCard,
     borderRadius: RADIUS.lg,
     borderWidth: 1.5,
     borderColor: COLORS.glassBorder,
     paddingHorizontal: SPACING.base,
     height: 56,
+  },
+  inputRowFocused: {
+    borderColor: COLORS.primary,
+    backgroundColor: 'rgba(123,111,242,0.06)',
+  },
+  input: {
+    flex: 1,
     color: COLORS.textPrimary,
     fontSize: TYPOGRAPHY.sizes.base,
     fontWeight: TYPOGRAPHY.weights.medium,
+    height: '100%',
   },
   hint: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
   formRow: { flexDirection: 'row', gap: SPACING.sm },
   formBtn: {
     flex: 1,
-    height: 48,
+    height: 64,
     borderRadius: RADIUS.lg,
     borderWidth: 1.5,
     borderColor: COLORS.glassBorder,
     backgroundColor: COLORS.bgCard,
     justifyContent: 'center',
     alignItems: 'center',
+    gap: 4,
     overflow: 'hidden',
   },
   formBtnActive: { borderColor: COLORS.primary, backgroundColor: 'transparent' },
-  formBtnGrad: { width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' },
+  formBtnGrad: { width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center', gap: 4 },
   formBtnText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
   formBtnTextActive: { color: '#fff', fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.bold },
 });

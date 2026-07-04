@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import {
   View,
   Text,
@@ -6,6 +6,7 @@ import {
   ScrollView,
   Dimensions,
   TouchableOpacity,
+  Animated,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from 'react-native';
@@ -22,36 +23,80 @@ import { useAuth } from '../../hooks/useAuth';
 import { useProfileStore } from '../../store/profileStore';
 
 const { width } = Dimensions.get('window');
+const AUTO_ADVANCE_MS = 4200;
 
 type Props = StackScreenProps<AuthStackParamList, 'Welcome'>;
 
 const BENEFITS = [
   {
-    emoji: '🤖',
-    title: 'AI-Powered Learning',
-    description: 'Get instant AI explanations for every question. Understand the "why", not just the answer.',
+    icon: 'sparkles' as const,
+    title: 'Personalized Explanations',
+    description: 'Get a clear breakdown for every question. Understand the "why", not just the answer.',
     gradient: ['#7B6FF2', '#5A50CC'] as string[],
   },
   {
-    emoji: '🏆',
+    icon: 'trophy' as const,
     title: 'Gamified Progress',
     description: 'Earn XP, unlock badges, and climb the national leaderboard. Make studying addictive.',
     gradient: ['#F7C52E', '#D4A017'] as string[],
   },
   {
-    emoji: '📚',
+    icon: 'library' as const,
     title: 'Full NECTA Curriculum',
     description: `${SUBJECT_COUNT} subjects covering all Form 1–4 topics. MCQ, True/False, Fill-in-Blank, and Higher Order questions.`,
     gradient: ['#4ECDC4', '#2EAF9F'] as string[],
   },
 ];
 
+const STATS = [
+  { icon: 'book-outline' as const, value: String(SUBJECT_COUNT), label: 'Subjects' },
+  { icon: 'layers-outline' as const, value: String(FORM_COUNT), label: 'Forms' },
+  { icon: 'gift-outline' as const, value: 'Free', label: 'To Start' },
+];
+
 export function WelcomeScreen({ navigation }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [signingIn, setSigningIn] = useState(false);
   const scrollRef = useRef<ScrollView>(null);
+  const autoAdvanceTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const { enterTestMode, signInWithGoogle, error } = useAuth();
   const setProfile = useProfileStore((s) => s.setProfile);
+
+  // Staggered entrance — each section fades + slides up slightly after the
+  // last, so the screen feels composed rather than popping in all at once.
+  const heroAnim = useRef(new Animated.Value(0)).current;
+  const carouselAnim = useRef(new Animated.Value(0)).current;
+  const statsAnim = useRef(new Animated.Value(0)).current;
+  const ctaAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    const stagger = (value: Animated.Value, delay: number) =>
+      Animated.timing(value, { toValue: 1, duration: 450, delay, useNativeDriver: true });
+    Animated.stagger(90, [
+      stagger(heroAnim, 0),
+      stagger(carouselAnim, 0),
+      stagger(statsAnim, 0),
+      stagger(ctaAnim, 0),
+    ]).start();
+  }, [heroAnim, carouselAnim, statsAnim, ctaAnim]);
+
+  const restartAutoAdvance = useCallback(() => {
+    if (autoAdvanceTimer.current) clearInterval(autoAdvanceTimer.current);
+    autoAdvanceTimer.current = setInterval(() => {
+      setActiveIndex((prev) => {
+        const next = (prev + 1) % BENEFITS.length;
+        scrollRef.current?.scrollTo({ x: next * width, animated: true });
+        return next;
+      });
+    }, AUTO_ADVANCE_MS);
+  }, []);
+
+  useEffect(() => {
+    restartAutoAdvance();
+    return () => {
+      if (autoAdvanceTimer.current) clearInterval(autoAdvanceTimer.current);
+    };
+  }, [restartAutoAdvance]);
 
   // Google is the real sign-in. New users continue to Create Profile; returning
   // users (profile already hydrated by the hook) fall through to the app via
@@ -90,11 +135,13 @@ export function WelcomeScreen({ navigation }: Props) {
   const handleScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const index = Math.round(e.nativeEvent.contentOffset.x / width);
     setActiveIndex(index);
+    restartAutoAdvance();
   };
 
   const handleDotPress = (i: number) => {
     scrollRef.current?.scrollTo({ x: i * width, animated: true });
     setActiveIndex(i);
+    restartAutoAdvance();
   };
 
   return (
@@ -103,22 +150,23 @@ export function WelcomeScreen({ navigation }: Props) {
       <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       <View style={styles.container}>
         {/* Header */}
-        <View style={styles.header}>
+        <Animated.View style={[styles.header, fadeUp(heroAnim)]}>
           <View style={styles.logoMini}>
             <LinearGradient colors={GRADIENTS.primary} style={styles.logoMiniGrad}>
               <Text style={styles.logoEmoji}>🧠</Text>
             </LinearGradient>
           </View>
           <Text style={styles.brand}>Soma</Text>
-        </View>
+        </Animated.View>
 
         {/* Headline */}
-        <View style={styles.headline}>
+        <Animated.View style={[styles.headline, fadeUp(heroAnim)]}>
           <Text style={styles.headlineText}>Tanzania's Smartest{'\n'}O-Level Tutor</Text>
           <Text style={styles.subheadline}>Built for Form 1–4 students to pass NECTA</Text>
-        </View>
+        </Animated.View>
 
         {/* Benefits Carousel */}
+        <Animated.View style={fadeUp(carouselAnim)}>
         <ScrollView
           ref={scrollRef}
           horizontal
@@ -135,7 +183,9 @@ export function WelcomeScreen({ navigation }: Props) {
                 end={{ x: 1, y: 1 }}
                 style={styles.cardInner}
               >
-                <Text style={styles.cardEmoji}>{benefit.emoji}</Text>
+                <View style={styles.cardIconBg}>
+                  <Ionicons name={benefit.icon} size={30} color="#fff" />
+                </View>
                 <Text style={styles.cardTitle}>{benefit.title}</Text>
                 <Text style={styles.cardDesc}>{benefit.description}</Text>
               </LinearGradient>
@@ -151,26 +201,24 @@ export function WelcomeScreen({ navigation }: Props) {
             </TouchableOpacity>
           ))}
         </View>
+        </Animated.View>
 
         {/* Stats row */}
-        <View style={styles.statsRow}>
-          {[
-            { value: String(SUBJECT_COUNT), label: 'Subjects' },
-            { value: String(FORM_COUNT), label: 'Forms' },
-            { value: 'Free', label: 'To Start' },
-          ].map((stat, i) => (
+        <Animated.View style={[styles.statsRow, fadeUp(statsAnim)]}>
+          {STATS.map((stat, i) => (
             <React.Fragment key={stat.label}>
               {i > 0 && <View style={styles.statDivider} />}
               <View style={styles.statItem}>
+                <Ionicons name={stat.icon} size={16} color={COLORS.gold} style={styles.statIcon} />
                 <Text style={styles.statValue}>{stat.value}</Text>
                 <Text style={styles.statLabel}>{stat.label}</Text>
               </View>
             </React.Fragment>
           ))}
-        </View>
+        </Animated.View>
 
         {/* CTAs */}
-        <View style={styles.ctas}>
+        <Animated.View style={[styles.ctas, fadeUp(ctaAnim)]}>
           <AppButton
             title={signingIn ? 'Signing in…' : 'Continue with Google'}
             onPress={handleGoogle}
@@ -187,11 +235,19 @@ export function WelcomeScreen({ navigation }: Props) {
               <Text style={styles.devTestBtnText}>🧪 Enter Test Mode (no login, dev only)</Text>
             </TouchableOpacity>
           )}
-        </View>
+        </Animated.View>
       </View>
       </SafeAreaView>
     </LinearGradient>
   );
+}
+
+// Entrance transform shared by every section: fade in + settle up from 14px below.
+function fadeUp(anim: Animated.Value) {
+  return {
+    opacity: anim,
+    transform: [{ translateY: anim.interpolate({ inputRange: [0, 1], outputRange: [14, 0] }) }],
+  };
 }
 
 const styles = StyleSheet.create({
@@ -251,8 +307,20 @@ const styles = StyleSheet.create({
     gap: SPACING.md,
     minHeight: 180,
     justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.18,
+    shadowRadius: 20,
+    elevation: 10,
   },
-  cardEmoji: { fontSize: 44 },
+  cardIconBg: {
+    width: 56,
+    height: 56,
+    borderRadius: RADIUS.full,
+    backgroundColor: 'rgba(255,255,255,0.18)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   cardTitle: {
     color: '#fff',
     fontSize: TYPOGRAPHY.sizes.xl,
@@ -290,6 +358,7 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.xl,
   },
   statItem: { flex: 1, alignItems: 'center', gap: 4 },
+  statIcon: { marginBottom: 2 },
   statDivider: { width: 1, backgroundColor: COLORS.glassBorder },
   statValue: {
     color: COLORS.gold,
