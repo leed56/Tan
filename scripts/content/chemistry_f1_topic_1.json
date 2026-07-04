@@ -2,939 +2,371 @@
   "topicId": "form_1_chemistry_topic_1",
   "topicName": "Introduction to Chemistry",
   "order": 1,
-  "description": "An overview of the meaning and importance of chemistry, its branches, everyday and industrial applications, career relevance, the scientific method and basic laboratory safety conduct.",
+  "description": "An introduction to chemistry as the study of matter, its main branches, the work of a chemist, and the importance and everyday applications of chemistry in health, agriculture, industry and the environment.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which statement best describes chemistry?",
+        "questionText": "What is the meaning of the word \"Chemistry\"?",
         "options": [
-          {
-            "id": "a",
-            "text": "The study of living organisms only",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The study of the composition, properties and changes of matter",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The study of stars and planets",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The study of the past human events",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The study of living things", "isCorrect": false},
+          {"id": "b", "text": "The study of matter, its composition, properties and changes", "isCorrect": true},
+          {"id": "c", "text": "The study of stars", "isCorrect": false},
+          {"id": "d", "text": "The study of numbers", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Chemistry is the branch of science that deals with the composition, properties and the changes that matter undergoes.",
+        "explanation": "Chemistry is a physical science concerned with matter, what it is made of, how it behaves and how it changes. Exam Tip: Keywords are matter, composition, properties and change. Option A is biology.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Anything that has mass and occupies space is called:",
+        "questionText": "The branch of chemistry that deals with compounds of carbon is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Energy",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Force",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Matter",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Heat",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Inorganic chemistry", "isCorrect": false},
+          {"id": "b", "text": "Physical chemistry", "isCorrect": false},
+          {"id": "c", "text": "Organic chemistry", "isCorrect": true},
+          {"id": "d", "text": "Analytical chemistry", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Matter is defined as anything that has mass and occupies space (has volume).",
+        "explanation": "Carbon-containing compounds are studied in organic chemistry. Exam Tip: Organic = carbon compounds (fuels, plastics, food). Inorganic covers the rest.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which branch of chemistry deals mainly with carbon-containing compounds?",
+        "questionText": "The branch of chemistry that deals with substances that do NOT mainly contain carbon is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Inorganic chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Organic chemistry",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Physical chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Analytical chemistry",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Organic chemistry", "isCorrect": false},
+          {"id": "b", "text": "Inorganic chemistry", "isCorrect": true},
+          {"id": "c", "text": "Biochemistry", "isCorrect": false},
+          {"id": "d", "text": "Physical chemistry", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Organic chemistry is the study of carbon compounds, such as those found in fuels, foods and plastics.",
+        "explanation": "Metals, salts and minerals are studied in inorganic chemistry. Exam Tip: Organic and inorganic are opposites. Watch the word \"not\".",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of chemistry concerned with identifying and measuring the components present in a substance is:",
+        "questionText": "The branch of chemistry that deals with the composition of substances and the amounts present is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Analytical chemistry",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Organic chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Biochemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Industrial chemistry",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Physical chemistry", "isCorrect": false},
+          {"id": "b", "text": "Organic chemistry", "isCorrect": false},
+          {"id": "c", "text": "Analytical chemistry", "isCorrect": true},
+          {"id": "d", "text": "Biochemistry", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Finding what a substance contains and how much is analysis, which is analytical chemistry. Exam Tip: Analytical chemistry answers \"what is in it?\" and \"how much?\".",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A person who studies or works in chemistry is called a:",
+        "options": [
+          {"id": "a", "text": "Biologist", "isCorrect": false},
+          {"id": "b", "text": "Chemist", "isCorrect": true},
+          {"id": "c", "text": "Physicist", "isCorrect": false},
+          {"id": "d", "text": "Geologist", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The specialist in chemistry is a chemist. Exam Tip: chemistry-chemist, biology-biologist, physics-physicist.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an application of chemistry in agriculture?",
+        "options": [
+          {"id": "a", "text": "Building bridges", "isCorrect": false},
+          {"id": "b", "text": "Making fertilizers and pesticides", "isCorrect": true},
+          {"id": "c", "text": "Writing computer programs", "isCorrect": false},
+          {"id": "d", "text": "Composing music", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Chemistry produces fertilizers to enrich soil and pesticides to kill pests. Exam Tip: Chemistry in agriculture = fertilizers, pesticides, soil testing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of chemistry that studies the chemical processes in living organisms is:",
+        "options": [
+          {"id": "a", "text": "Biochemistry", "isCorrect": true},
+          {"id": "b", "text": "Inorganic chemistry", "isCorrect": false},
+          {"id": "c", "text": "Physical chemistry", "isCorrect": false},
+          {"id": "d", "text": "Nuclear chemistry", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Analytical chemistry deals with what substances are present (qualitative) and how much is present (quantitative) in a sample.",
+        "explanation": "Bio means life, so the chemistry of life is biochemistry. Exam Tip: Biochemistry covers digestion, respiration and enzymes.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which branch of chemistry studies the chemical processes that occur inside living things?",
+        "questionText": "Which of the following is NOT a branch of chemistry?",
         "options": [
-          {
-            "id": "a",
-            "text": "Physical chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Inorganic chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Biochemistry",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Analytical chemistry",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Organic chemistry", "isCorrect": false},
+          {"id": "b", "text": "Inorganic chemistry", "isCorrect": false},
+          {"id": "c", "text": "Astronomy", "isCorrect": true},
+          {"id": "d", "text": "Physical chemistry", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Biochemistry is the study of the chemical reactions and substances within living organisms, such as digestion and respiration.",
+        "explanation": "The branches are organic, inorganic, physical, analytical and biochemistry, while astronomy is the study of stars. Exam Tip: Anything outside the five branches is the odd one out.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A person who manufactures soap from oils and an alkali is applying chemistry mainly in:",
+        "questionText": "Soaps, detergents and cosmetics are examples of products made through:",
         "options": [
-          {
-            "id": "a",
-            "text": "Industry",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Astronomy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Sports",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Geography",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Chemistry", "isCorrect": true},
+          {"id": "b", "text": "History", "isCorrect": false},
+          {"id": "c", "text": "Geography", "isCorrect": false},
+          {"id": "d", "text": "Literature", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Soap making is an industrial chemical process, showing how chemistry is applied in manufacturing useful products.",
+        "explanation": "These manufactured substances are made by chemical processes. Exam Tip: Everyday products such as soap, medicine and plastics are chemistry in daily life.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following is the FIRST step in the scientific method?",
+        "questionText": "Chemistry contributes to the health sector mainly by:",
         "options": [
-          {
-            "id": "a",
-            "text": "Drawing a conclusion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Making an observation or identifying a problem",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Performing the experiment",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Stating the hypothesis",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Building hospitals", "isCorrect": false},
+          {"id": "b", "text": "Manufacturing medicines (drugs)", "isCorrect": true},
+          {"id": "c", "text": "Training nurses", "isCorrect": false},
+          {"id": "d", "text": "Transporting patients", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The scientific method begins with observation or identifying a problem, which leads to questions and then a hypothesis.",
+        "explanation": "Chemistry is used to manufacture medicines and drugs. Exam Tip: Chemistry in medicine = drug manufacture, disinfectants, testing reagents.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of chemistry that deals with energy changes and the rates of reactions is:",
+        "options": [
+          {"id": "a", "text": "Organic chemistry", "isCorrect": false},
+          {"id": "b", "text": "Physical chemistry", "isCorrect": true},
+          {"id": "c", "text": "Analytical chemistry", "isCorrect": false},
+          {"id": "d", "text": "Biochemistry", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Energy changes and rates of reactions are studied in physical chemistry. Exam Tip: Physical chemistry links chemistry with physics.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A reasonable, testable explanation or intelligent guess proposed before carrying out an experiment is called a:",
+        "questionText": "Which industry directly depends on chemistry to process crude materials into fuel?",
         "options": [
-          {
-            "id": "a",
-            "text": "Conclusion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Law",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Hypothesis",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Result",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "A hypothesis is a tentative, testable explanation made before experimenting that can be supported or rejected by results.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which laboratory apparatus is most suitable for accurately measuring a fixed volume of a liquid?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Beaker",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Pipette",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Test tube",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Watch glass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Music industry", "isCorrect": false},
+          {"id": "b", "text": "Petroleum (oil refining) industry", "isCorrect": true},
+          {"id": "c", "text": "Fishing industry", "isCorrect": false},
+          {"id": "d", "text": "Tailoring industry", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A pipette is designed to measure and deliver an accurate fixed volume of liquid, unlike a beaker which is only approximate.",
+        "explanation": "Turning crude oil into petrol, diesel and kerosene is a chemical process in the petroleum industry. Exam Tip: Chemistry drives petroleum, cement, fertilizer, paint and plastics industries.",
         "difficulty": "medium"
       },
       {
-        "questionText": "What does this common laboratory hazard symbol, a skull and crossbones, warn about?",
+        "questionText": "Which of the following shows the relationship between chemistry and biology?",
         "options": [
-          {
-            "id": "a",
-            "text": "Flammable substance",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Corrosive substance",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Toxic or poisonous substance",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Radioactive substance",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Studying the movement of planets", "isCorrect": false},
+          {"id": "b", "text": "Understanding digestion and respiration in the body", "isCorrect": true},
+          {"id": "c", "text": "Calculating the area of a farm", "isCorrect": false},
+          {"id": "d", "text": "Drawing a map", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "The skull and crossbones symbol warns that a substance is toxic (poisonous) and can cause death or serious harm if swallowed, inhaled or absorbed.",
+        "correctAnswer": "b",
+        "explanation": "Digestion and respiration are chemical processes inside organisms. Exam Tip: Chemistry connects to biology (life processes), physics (energy), agriculture and geography.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is the correct laboratory practice?",
+        "questionText": "One importance of studying chemistry is to:",
         "options": [
-          {
-            "id": "a",
-            "text": "Tasting chemicals to identify them",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Eating food while working at the bench",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Reading the label on a reagent bottle before use",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Pointing a heated test tube towards your neighbour",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Always read the label before using a chemical; tasting, eating in the lab and pointing heated test tubes at people are dangerous.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The application of chemistry in producing fertilizers to improve crop yields shows the importance of chemistry in:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Agriculture",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Music",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Law",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Banking",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Chemistry helps agriculture through fertilizers, pesticides and soil testing, leading to better and healthier crop production.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which career relies most directly on a strong foundation in chemistry?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Pharmacist",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Tour guide",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "News reporter",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Football coach",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "A pharmacist needs chemistry to understand drugs, their composition, doses and reactions in the body.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In an experiment to test how temperature affects the rate of dissolving sugar, the temperature of the water is the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Dependent variable",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Independent (manipulated) variable",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Conclusion",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Constant",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Learn how to drive", "isCorrect": false},
+          {"id": "b", "text": "Understand and solve problems related to matter in daily life", "isCorrect": true},
+          {"id": "c", "text": "Become a footballer", "isCorrect": false},
+          {"id": "d", "text": "Draw cartoons", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The temperature is the factor the scientist deliberately changes, so it is the independent or manipulated variable.",
-        "difficulty": "hard"
+        "explanation": "Chemistry helps us understand and solve real problems in food, water, health and the environment. Exam Tip: Importance = health, agriculture, industry, environment, daily products.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Which one of the following is NOT a branch of chemistry?",
+        "questionText": "Chemistry helps in environmental conservation by:",
         "options": [
-          {
-            "id": "a",
-            "text": "Physical chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Inorganic chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Geology",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Organic chemistry",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Increasing pollution", "isCorrect": false},
+          {"id": "b", "text": "Treating water and managing chemical waste safely", "isCorrect": true},
+          {"id": "c", "text": "Cutting down all trees", "isCorrect": false},
+          {"id": "d", "text": "Burning all rubbish carelessly", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Geology is the study of the Earth and rocks; it is a separate science, not a branch of chemistry.",
+        "correctAnswer": "b",
+        "explanation": "Chemistry provides water treatment and safe chemical-waste management. Exam Tip: Chemistry protects the environment through water purification, pollution control and waste treatment.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "Chemistry is the branch of science that studies the composition, properties and _____ of matter.",
+        "questionText": "Chemistry is the study of __________, its composition, properties and changes.",
         "options": [
-          {
-            "id": "a",
-            "text": "changes",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "colours",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "density",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "shapes",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "matter", "isCorrect": true},
+          {"id": "b", "text": "energy", "isCorrect": false},
+          {"id": "c", "text": "motion", "isCorrect": false},
+          {"id": "d", "text": "light", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Chemistry examines how matter is made up, its properties, and the changes (reactions) it undergoes.",
+        "explanation": "Matter is the core of the definition of chemistry because chemistry studies its composition, properties and changes. Exam Tip: \"Matter\" is the core of the definition of chemistry.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of chemistry that deals with compounds that do not contain carbon-hydrogen bonds, such as metals and minerals, is called _____ chemistry.",
+        "questionText": "The branch of chemistry that deals with compounds of carbon is __________ chemistry.",
         "options": [
-          {
-            "id": "a",
-            "text": "organic",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "inorganic",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "analytical",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "industrial",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Inorganic chemistry studies non-carbon-based compounds such as salts, metals and minerals.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A testable explanation that a scientist proposes before doing an experiment is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "theory",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "conclusion",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "hypothesis",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "variable",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "A hypothesis is an intelligent, testable guess that the experiment will support or reject.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The branch of chemistry that studies energy changes and the physical behaviour of matter during reactions is _____ chemistry.",
-        "options": [
-          {
-            "id": "a",
-            "text": "nuclear",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "industrial",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "environmental",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "physical",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Physical chemistry combines physics and chemistry to study energy, rates and the behaviour of matter.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Anything that has mass and occupies space is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "matter",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "energy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "force",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "mass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "organic", "isCorrect": true},
+          {"id": "b", "text": "inorganic", "isCorrect": false},
+          {"id": "c", "text": "physical", "isCorrect": false},
+          {"id": "d", "text": "analytical", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Matter is the substance that makes up all physical objects, having mass and volume.",
+        "explanation": "Organic chemistry studies carbon compounds. Exam Tip: Organic = carbon; inorganic covers everything else.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Before using any chemical in the laboratory, you should always read its _____ on the bottle.",
+        "questionText": "A person who studies chemistry is called a __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "price",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "label",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "barcode",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "weight",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Reading the label tells you the name, concentration and hazards of the chemical, preventing accidents.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The study of chemical reactions that take place inside living organisms is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "geochemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "astrochemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "biochemistry",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "electrochemistry",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Biochemistry deals with chemical processes such as respiration and digestion in living things.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A scientist who specialises in chemistry is called a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "physicist",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "biologist",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "geologist",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "chemist",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A chemist is a professional who studies and works with the composition and changes of matter.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the scientific method, the final step where you state whether your hypothesis was supported is called the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "conclusion",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "hypothesis",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "observation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "experiment",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "chemist", "isCorrect": true},
+          {"id": "b", "text": "biologist", "isCorrect": false},
+          {"id": "c", "text": "physicist", "isCorrect": false},
+          {"id": "d", "text": "scientist", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The conclusion interprets the results and states whether the hypothesis was accepted or rejected.",
-        "difficulty": "medium"
+        "explanation": "The specialist in chemistry is a chemist. Exam Tip: The \"-ist\" ending names the specialist.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Loose hair and clothing should be tied back, and a _____ coat should be worn to protect the body during practical work.",
+        "questionText": "The branch of chemistry that studies chemical processes in living things is __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "raincoat",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "laboratory",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "winter",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "duffel",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "biochemistry", "isCorrect": true},
+          {"id": "b", "text": "inorganic chemistry", "isCorrect": false},
+          {"id": "c", "text": "physical chemistry", "isCorrect": false},
+          {"id": "d", "text": "analytical chemistry", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "A laboratory coat protects clothing and skin from spills and splashes of chemicals.",
+        "correctAnswer": "a",
+        "explanation": "Biochemistry deals with the chemistry of living organisms. Exam Tip: Biochemistry covers enzymes, digestion and respiration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In agriculture, chemistry is applied to produce __________ that improve soil fertility.",
+        "options": [
+          {"id": "a", "text": "fertilizers", "isCorrect": true},
+          {"id": "b", "text": "plastics", "isCorrect": false},
+          {"id": "c", "text": "medicines", "isCorrect": false},
+          {"id": "d", "text": "fuels", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Fertilizers are made through chemistry to enrich the soil. Exam Tip: Fertilizers supply nitrogen, phosphorus and potassium.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of chemistry concerned with the composition of substances and the quantities present is __________ chemistry.",
+        "options": [
+          {"id": "a", "text": "analytical", "isCorrect": true},
+          {"id": "b", "text": "organic", "isCorrect": false},
+          {"id": "c", "text": "physical", "isCorrect": false},
+          {"id": "d", "text": "inorganic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Analytical chemistry finds what a sample contains and how much. Exam Tip: Analytical chemistry tests what a sample contains and how much.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Medicines and drugs are products of chemistry applied in the field of __________.",
+        "options": [
+          {"id": "a", "text": "medicine", "isCorrect": true},
+          {"id": "b", "text": "agriculture", "isCorrect": false},
+          {"id": "c", "text": "transport", "isCorrect": false},
+          {"id": "d", "text": "construction", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Chemistry in medicine produces drugs, disinfectants and diagnostic reagents. Exam Tip: Chemistry in medicine covers drugs, disinfectants and diagnostic reagents.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of chemistry dealing with substances that do not mainly contain carbon is __________ chemistry.",
+        "options": [
+          {"id": "a", "text": "inorganic", "isCorrect": true},
+          {"id": "b", "text": "organic", "isCorrect": false},
+          {"id": "c", "text": "physical", "isCorrect": false},
+          {"id": "d", "text": "biochemistry", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Inorganic chemistry deals with non-carbon substances such as metals and salts. Exam Tip: Inorganic = non-carbon; organic = carbon compounds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Chemistry is applied in the __________ industry to make paints, plastics and soaps.",
+        "options": [
+          {"id": "a", "text": "manufacturing", "isCorrect": true},
+          {"id": "b", "text": "fishing", "isCorrect": false},
+          {"id": "c", "text": "tailoring", "isCorrect": false},
+          {"id": "d", "text": "music", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Manufacturing industries rely on chemistry to make paints, plastics and soaps. Exam Tip: Manufacturing industries rely on chemistry.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The physical science that connects with chemistry through energy and forces is __________.",
+        "options": [
+          {"id": "a", "text": "physics", "isCorrect": true},
+          {"id": "b", "text": "biology", "isCorrect": false},
+          {"id": "c", "text": "geography", "isCorrect": false},
+          {"id": "d", "text": "astronomy", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Physical chemistry applies physics ideas such as energy and forces to chemical reactions. Exam Tip: Physical chemistry applies physics ideas to chemical reactions.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Chemistry is sometimes called the central science because it links physics with other sciences such as biology and geology.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Chemistry connects many sciences, which is why it is often referred to as the central science.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Organic chemistry is the study of compounds that contain no carbon at all.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Organic chemistry is actually the study of carbon-containing compounds; carbon-free compounds are studied in inorganic chemistry.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "It is safe to taste chemicals in the laboratory to help identify them.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Tasting chemicals is dangerous because many are poisonous or corrosive; you should never taste lab chemicals.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A hypothesis must be testable through experiments or observations.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A good hypothesis can be tested and either supported or rejected by evidence from experiments.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The manufacture of medicines, plastics and fertilizers all depends on the application of chemistry.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Chemistry is essential in producing medicines, plastics, fertilizers and many other everyday products.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Eating and drinking are allowed in the chemistry laboratory as long as you are careful.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Eating and drinking are never allowed in the laboratory because chemicals could contaminate food and cause poisoning.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Analytical chemistry can be used to find out what substances are present in a water sample.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Analytical chemistry identifies and measures the components in a sample, including testing water quality.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A hazard warning symbol showing a flame indicates that a substance is corrosive.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A flame symbol indicates a flammable substance; corrosive substances use a symbol showing damage to a hand or surface.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Studying chemistry can lead to careers such as doctor, pharmacist, engineer and food technologist.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Many careers, including medicine, pharmacy, engineering and food technology, are built on a foundation of chemistry.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the scientific method, results that do not support a hypothesis are useless and should be ignored.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Results that reject a hypothesis are still valuable; they guide scientists to refine their ideas and form new hypotheses.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Chemistry is the study of matter and the changes it undergoes.", "options": [], "correctAnswer": "true", "explanation": "This is the standard definition of chemistry as the study of matter and its changes. Exam Tip: The standard definition of chemistry.", "difficulty": "easy"},
+      {"questionText": "Organic chemistry deals with the compounds of carbon.", "options": [], "correctAnswer": "true", "explanation": "Organic chemistry studies carbon compounds. Exam Tip: Organic = carbon. Keep separate from inorganic.", "difficulty": "easy"},
+      {"questionText": "Chemistry has no importance in our daily life.", "options": [], "correctAnswer": "false", "explanation": "Chemistry is important in health, agriculture, industry and the environment, so it is very useful in daily life. Exam Tip: \"No importance\" statements are almost always false in science.", "difficulty": "easy"},
+      {"questionText": "A person who specialises in chemistry is called a chemist.", "options": [], "correctAnswer": "true", "explanation": "The specialist in chemistry is called a chemist. Exam Tip: Watch reversed pairs like \"a chemist studies biology\" (false).", "difficulty": "easy"},
+      {"questionText": "Fertilizers used in farming are products of chemistry.", "options": [], "correctAnswer": "true", "explanation": "Fertilizers are made through chemical processes and connect chemistry with agriculture. Exam Tip: Fertilizers connect chemistry with agriculture.", "difficulty": "easy"},
+      {"questionText": "Chemistry is completely unrelated to biology.", "options": [], "correctAnswer": "false", "explanation": "Biochemistry links chemistry and biology, so the two are related. Exam Tip: Biochemistry links the two; never \"completely unrelated\".", "difficulty": "easy"},
+      {"questionText": "Inorganic chemistry deals mainly with carbon compounds.", "options": [], "correctAnswer": "false", "explanation": "It is organic chemistry that deals with carbon compounds; inorganic deals with non-carbon substances. Exam Tip: The statement swaps organic and inorganic.", "difficulty": "easy"},
+      {"questionText": "Chemistry contributes to the development of modern society through industry, health and agriculture.", "options": [], "correctAnswer": "true", "explanation": "Chemistry supports modern society through industry, health, agriculture and the environment. Exam Tip: Link \"contribution to modern society\" to industry, health, agriculture, environment.", "difficulty": "easy"},
+      {"questionText": "Biochemistry is the study of the chemistry of living organisms.", "options": [], "correctAnswer": "true", "explanation": "Biochemistry studies the chemical processes in living organisms. Exam Tip: Biochemistry = digestion, respiration, enzymes.", "difficulty": "easy"},
+      {"questionText": "Analytical chemistry is used to find out what a substance is made of and how much is present.", "options": [], "correctAnswer": "true", "explanation": "Analytical chemistry identifies substances and measures their amounts. Exam Tip: Analytical chemistry answers \"what?\" and \"how much?\".", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of chemistry",
-        "options": [],
-        "correctAnswer": "Chemistry is the study of the composition, properties and changes of matter.",
-        "explanation": "This is the core definition that frames the whole subject.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of matter",
-        "options": [],
-        "correctAnswer": "Matter is anything that has mass and occupies space.",
-        "explanation": "All substances chemists study are forms of matter.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Main branches of chemistry",
-        "options": [],
-        "correctAnswer": "Organic, inorganic, physical, analytical and biochemistry.",
-        "explanation": "Chemistry is divided into these major branches according to what they study.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What organic chemistry studies",
-        "options": [],
-        "correctAnswer": "Organic chemistry is the study of carbon-containing compounds.",
-        "explanation": "Examples include fuels, foods, plastics and medicines.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Importance of chemistry in everyday life",
-        "options": [],
-        "correctAnswer": "Chemistry provides foods, medicines, cleaning products, fuels and building materials.",
-        "explanation": "It improves health, food production and the comfort of daily living.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Chemistry in industry",
-        "options": [],
-        "correctAnswer": "Chemistry is used to manufacture fertilizers, soaps, plastics, medicines, cement and fuels.",
-        "explanation": "Industrial chemistry turns raw materials into useful products on a large scale.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Careers that need chemistry",
-        "options": [],
-        "correctAnswer": "Doctor, pharmacist, chemical engineer, food technologist and laboratory technician.",
-        "explanation": "Knowing chemistry opens the door to many science-based professions.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Steps of the scientific method",
-        "options": [],
-        "correctAnswer": "Observe, ask a question, form a hypothesis, experiment, record results, and draw a conclusion.",
-        "explanation": "This logical process is how scientists investigate problems and build knowledge.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of a hypothesis",
-        "options": [],
-        "correctAnswer": "A hypothesis is a testable, intelligent guess made before an experiment.",
-        "explanation": "It is supported or rejected by the experimental results.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Basic laboratory safety rules",
-        "options": [],
-        "correctAnswer": "Wear a lab coat, read labels, never taste chemicals, do not eat in the lab, and follow hazard symbols.",
-        "explanation": "Following these rules prevents accidents and injuries during practical work.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Chemistry", "options": [], "correctAnswer": "The physical science that studies matter, its composition, properties and the changes it undergoes.", "explanation": "It is the central science that links to biology, physics and everyday life. Exam Tip: Remember the keywords matter, composition, properties and change.", "difficulty": "easy"},
+      {"questionText": "Matter", "options": [], "correctAnswer": "Anything that has mass and occupies space.", "explanation": "Matter is the substance that chemistry studies in all its forms. Exam Tip: If it has mass and takes up space, it is matter.", "difficulty": "easy"},
+      {"questionText": "Organic chemistry", "options": [], "correctAnswer": "The branch of chemistry that deals with compounds of carbon.", "explanation": "It covers fuels, plastics and food. Exam Tip: Organic = carbon compounds.", "difficulty": "easy"},
+      {"questionText": "Inorganic chemistry", "options": [], "correctAnswer": "The branch of chemistry that deals with substances that do not mainly contain carbon, such as metals and salts.", "explanation": "It is the opposite of organic chemistry. Exam Tip: Inorganic = non-carbon substances.", "difficulty": "easy"},
+      {"questionText": "Analytical chemistry", "options": [], "correctAnswer": "The branch of chemistry concerned with the composition of substances and the amounts present.", "explanation": "It answers what a sample contains and how much. Exam Tip: Analytical chemistry answers \"what?\" and \"how much?\".", "difficulty": "easy"},
+      {"questionText": "Physical chemistry", "options": [], "correctAnswer": "The branch of chemistry that deals with energy changes and the rates of reactions.", "explanation": "It links chemistry with physics. Exam Tip: Physical chemistry connects chemistry and physics.", "difficulty": "easy"},
+      {"questionText": "Biochemistry", "options": [], "correctAnswer": "The branch of chemistry that studies the chemical processes in living organisms.", "explanation": "It covers digestion, respiration and enzymes. Exam Tip: Biochemistry is the chemistry of life.", "difficulty": "easy"},
+      {"questionText": "Chemist", "options": [], "correctAnswer": "A person who studies or works in chemistry.", "explanation": "The \"-ist\" ending names the specialist. Exam Tip: chemistry-chemist, biology-biologist, physics-physicist.", "difficulty": "easy"},
+      {"questionText": "Importance of chemistry", "options": [], "correctAnswer": "The ways chemistry helps daily life through health, agriculture, industry and environmental conservation.", "explanation": "Chemistry helps us understand and solve real problems with matter. Exam Tip: Importance = health, agriculture, industry, environment, daily products.", "difficulty": "easy"},
+      {"questionText": "Fertilizers", "options": [], "correctAnswer": "Chemical products applied in agriculture to improve soil fertility.", "explanation": "They supply nutrients such as nitrogen, phosphorus and potassium. Exam Tip: Fertilizers connect chemistry with agriculture.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A farmer notices that maize on one side of the field grows taller than on the other side, even though both sides receive the same rain and sunlight. Applying the scientific method, what should the farmer do FIRST after making this observation?",
+        "questionText": "A laboratory receives a sample of drinking water and is asked to find out which harmful substances it contains and in what amounts. Which branch of chemistry is MOST directly used, and why?",
         "options": [
-          {
-            "id": "a",
-            "text": "Conclude that the seeds were different without any testing",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Form a testable hypothesis, for example that the soil on one side has more nutrients",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Harvest both sides and stop investigating",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Tell everyone the field is cursed",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Organic chemistry, because water contains carbon", "isCorrect": false},
+          {"id": "b", "text": "Analytical chemistry, because it identifies substances and measures their amounts", "isCorrect": true},
+          {"id": "c", "text": "Physical chemistry, because water flows", "isCorrect": false},
+          {"id": "d", "text": "Biochemistry, because water is alive", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "After observing, the next logical step is to propose a testable hypothesis that can be checked by experiment, such as comparing soil nutrients.",
+        "explanation": "The task is to identify the substances present and measure their quantities, which is the defining work of analytical chemistry. Exam Tip: Match the TASK to the branch. Water is not alive (rules out D).",
         "difficulty": "hard"
       },
       {
-        "questionText": "A student spills a colourless liquid that carries a hazard symbol of a hand being burned. Which action is the most appropriate and shows correct understanding of the hazard?",
+        "questionText": "Match each branch of chemistry with the correct description: (i) Organic (ii) Inorganic (iii) Physical (iv) Biochemistry; P - chemical processes in living things; Q - compounds of carbon; R - energy changes and rates of reactions; S - non-carbon substances such as metals and salts.",
         "options": [
-          {
-            "id": "a",
-            "text": "Touch it to feel whether it is dangerous",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Ignore it because it is colourless",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Treat it as corrosive, avoid skin contact, and inform the teacher to clean it safely",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Wipe it with a bare hand quickly",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "i-Q, ii-S, iii-R, iv-P", "isCorrect": true},
+          {"id": "b", "text": "i-P, ii-Q, iii-S, iv-R", "isCorrect": false},
+          {"id": "c", "text": "i-S, ii-Q, iii-P, iv-R", "isCorrect": false},
+          {"id": "d", "text": "i-R, ii-P, iii-Q, iv-S", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "The symbol of a hand being burned indicates a corrosive substance, so it must not touch skin and the teacher should be informed to handle it safely.",
+        "correctAnswer": "a",
+        "explanation": "Organic (i) matches Q carbon compounds, inorganic (ii) matches S non-carbon substances, physical (iii) matches R energy and rates, and biochemistry (iv) matches P living things. Exam Tip: Lock in the surest pairing first (organic = carbon = Q), then eliminate.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A company wants to develop a new soft drink and must check that it is safe, has the correct sugar level, and contains no harmful substances. Which combination of chemistry branches is MOST directly involved?",
+        "questionText": "A new factory in Tanzania will produce fertilizers, treat its waste water before releasing it, and run a laboratory to test product quality. Which combination BEST describes the contribution of chemistry shown here?",
         "options": [
-          {
-            "id": "a",
-            "text": "Astronomy and geology",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Analytical chemistry and biochemistry",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Only physical chemistry",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "History and law",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Only agriculture", "isCorrect": false},
+          {"id": "b", "text": "Agriculture (fertilizers), environmental conservation (water treatment) and analytical testing (quality control)", "isCorrect": true},
+          {"id": "c", "text": "Only entertainment", "isCorrect": false},
+          {"id": "d", "text": "Only transport", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Analytical chemistry measures the amounts and identifies harmful substances, while biochemistry helps assess effects on the body, making both directly relevant.",
+        "explanation": "Fertilizers show agriculture, treating waste water shows environmental conservation, and testing quality shows analytical chemistry. Exam Tip: Real scenarios show SEVERAL contributions at once. Read each activity separately.",
         "difficulty": "hard"
       }
     ]

@@ -2,939 +2,371 @@
   "topicId": "form_1_chemistry_topic_4",
   "topicName": "Matter",
   "order": 4,
-  "description": "An introduction to matter, its three states and their properties, the particle (kinetic) theory, changes of state, physical versus chemical changes, and the difference between elements, compounds and mixtures.",
+  "description": "An introduction to matter, its three states, the arrangement and behaviour of particles, changes of state, and the difference between physical and chemical changes.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which of the following is the best definition of matter?",
+        "questionText": "What is matter?",
         "options": [
-          {
-            "id": "a",
-            "text": "Anything that can be seen by the eyes",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Anything that has mass and occupies space",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Anything that can be touched by the hands",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Anything that produces heat and light",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Matter is defined as anything that has mass and occupies space (has volume), whether or not it can be seen or touched.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which one of the following is NOT a state of matter?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Solid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Liquid",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Energy",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Gas",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The three common states of matter are solid, liquid and gas. Energy is not a form of matter because it has no mass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In which state of matter are the particles packed very closely together in a fixed, regular arrangement?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Solid",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Liquid",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Gas",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Vapour",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Anything that has mass and occupies space", "isCorrect": true},
+          {"id": "b", "text": "Anything that can be seen only", "isCorrect": false},
+          {"id": "c", "text": "Only solid objects", "isCorrect": false},
+          {"id": "d", "text": "Only living things", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "In a solid the particles are very close and held in a fixed regular pattern, which gives solids a definite shape and volume.",
+        "explanation": "Matter has two defining properties: it has mass and it takes up space or volume. Exam Tip: Air has mass and occupies space, so it IS matter even though invisible. The test is mass plus space, not visibility.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Why can gases be compressed much more easily than solids and liquids?",
+        "questionText": "The three states of matter are:",
         "options": [
-          {
-            "id": "a",
-            "text": "Gas particles are lighter than solid particles",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Gas particles are smaller than solid particles",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Gas particles have large spaces between them",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Gas particles do not move at all",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Gas particles are far apart with large empty spaces between them, so they can be pushed closer together (compressed) easily.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The change of state directly from a solid to a gas without passing through the liquid state is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Melting",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Condensation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Sublimation",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Freezing",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Sublimation is the direct change of a solid into a gas (for example, dry ice or iodine) without first becoming a liquid.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is a physical change?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Burning of charcoal",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Melting of ice",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Rusting of iron",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Souring of milk",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Hot, warm and cold", "isCorrect": false},
+          {"id": "b", "text": "Solid, liquid and gas", "isCorrect": true},
+          {"id": "c", "text": "Hard, soft and rough", "isCorrect": false},
+          {"id": "d", "text": "Big, medium and small", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Melting of ice is a physical change because no new substance is formed and it can be reversed by freezing the water again.",
+        "explanation": "Matter exists in three common physical states: solid, liquid and gas. Exam Tip: They differ in how tightly particles are packed, from solid which is tightest to gas which is loosest.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following is a chemical change?",
+        "questionText": "In which state of matter are the particles packed most closely together and fixed in position?",
         "options": [
-          {
-            "id": "a",
-            "text": "Dissolving salt in water",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Boiling water",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Burning of wood",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Crushing a piece of chalk",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Gas", "isCorrect": false},
+          {"id": "b", "text": "Liquid", "isCorrect": false},
+          {"id": "c", "text": "Solid", "isCorrect": true},
+          {"id": "d", "text": "Vapour", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Burning of wood is a chemical change because new substances such as ash, smoke and gases are formed and it cannot be easily reversed.",
+        "explanation": "Closely packed, fixed particles give a definite shape, which is a solid. Exam Tip: Solid has fixed shape and volume; liquid has fixed volume but takes the shape of its container; gas has neither fixed.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The process by which a liquid changes into a gas is called:",
+        "questionText": "The change of state from solid directly to gas without passing through the liquid state is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Evaporation",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Condensation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Solidification",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Melting",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Melting", "isCorrect": false},
+          {"id": "b", "text": "Evaporation", "isCorrect": false},
+          {"id": "c", "text": "Sublimation", "isCorrect": true},
+          {"id": "d", "text": "Condensation", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Skipping the liquid state and going straight from solid to gas is sublimation. Exam Tip: Iodine and dry ice sublime. It is solid to gas directly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The change of state from liquid to solid is called:",
+        "options": [
+          {"id": "a", "text": "Melting", "isCorrect": false},
+          {"id": "b", "text": "Freezing (solidification)", "isCorrect": true},
+          {"id": "c", "text": "Boiling", "isCorrect": false},
+          {"id": "d", "text": "Condensation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A liquid becoming solid loses heat, which is freezing or solidification. Exam Tip: Freezing is the reverse of melting. Water freezes to ice at 0 C.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The change of state from liquid to gas is called:",
+        "options": [
+          {"id": "a", "text": "Freezing", "isCorrect": false},
+          {"id": "b", "text": "Condensation", "isCorrect": false},
+          {"id": "c", "text": "Evaporation (or boiling)", "isCorrect": true},
+          {"id": "d", "text": "Sublimation", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A liquid gaining heat becomes gas through evaporation, or boiling at the boiling point. Exam Tip: Evaporation happens at the surface at any temperature; boiling happens throughout the liquid at the boiling point.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The change of state from gas to liquid is called:",
+        "options": [
+          {"id": "a", "text": "Condensation", "isCorrect": true},
+          {"id": "b", "text": "Melting", "isCorrect": false},
+          {"id": "c", "text": "Sublimation", "isCorrect": false},
+          {"id": "d", "text": "Freezing", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Evaporation is the change of a liquid into a gas as particles at the surface gain enough energy to escape; it occurs at any temperature, unlike boiling which occurs throughout the liquid at the boiling point.",
+        "explanation": "A gas losing heat forms a liquid through condensation. Exam Tip: Condensation is the reverse of evaporation, such as water droplets forming on a cold glass.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A substance that is made of only one kind of atom and cannot be broken down into simpler substances is called:",
+        "questionText": "Which of the following is a PHYSICAL change?",
         "options": [
-          {
-            "id": "a",
-            "text": "A mixture",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A compound",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "An element",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "A solution",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "An element is a pure substance made of only one type of atom and cannot be broken down into simpler substances by chemical means.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is a compound?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Oxygen",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Water",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Iron",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Gold",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Burning of paper", "isCorrect": false},
+          {"id": "b", "text": "Melting of ice", "isCorrect": true},
+          {"id": "c", "text": "Rusting of iron", "isCorrect": false},
+          {"id": "d", "text": "Cooking of food", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Water is a compound because it is made of two different elements (hydrogen and oxygen) chemically combined in a fixed ratio.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which statement correctly describes the particles in a liquid according to the kinetic theory?",
-        "options": [
-          {
-            "id": "a",
-            "text": "They are far apart and move very fast in all directions",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "They are close together but can slide past one another",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "They are fixed in position and only vibrate",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They do not move at all",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "In a liquid the particles are close together but are free to move and slide over one another, so a liquid flows and takes the shape of its container.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Air, soil and sea water are all examples of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Elements",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Compounds",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Mixtures",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Pure substances",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Air, soil and sea water are mixtures because they contain two or more substances that are not chemically combined and can be separated physically.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When water vapour in the air cools and turns into liquid water droplets, the process is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Evaporation",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Condensation",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Sublimation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Melting",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Condensation is the change of a gas (water vapour) into a liquid when it loses heat and the particles move closer together.",
+        "explanation": "Melting ice gives water, the same substance, and it is reversible, so a physical change forms no new substance. Exam Tip: A physical change means no new substance is formed, such as melting, dissolving or boiling.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which property is shared by ALL three states of matter?",
+        "questionText": "Which of the following is a CHEMICAL change?",
         "options": [
-          {
-            "id": "a",
-            "text": "They have a definite shape",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "They have mass and occupy space",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "They can be compressed easily",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Their particles are fixed in position",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Melting of wax", "isCorrect": false},
+          {"id": "b", "text": "Dissolving sugar in water", "isCorrect": false},
+          {"id": "c", "text": "Burning of charcoal", "isCorrect": true},
+          {"id": "d", "text": "Evaporation of water", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Although shape and compressibility differ, all matter in any state has mass and occupies space, which is the defining property of matter.",
+        "correctAnswer": "c",
+        "explanation": "Burning charcoal produces ash and gases, which are new substances. Exam Tip: Signs of a chemical change include a new substance, colour change, gas released, heat or light given off, and being hard to reverse.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A liquid has a definite volume but no definite shape because its particles:",
+        "questionText": "Rusting of iron is an example of a chemical change because:",
         "options": [
-          {
-            "id": "a",
-            "text": "Are very far apart and move freely",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Are held tightly in fixed positions",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Are close together but free to move around",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Have no attraction between them",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The iron only changes shape", "isCorrect": false},
+          {"id": "b", "text": "A new substance (rust) is formed", "isCorrect": true},
+          {"id": "c", "text": "The iron can easily be turned back", "isCorrect": false},
+          {"id": "d", "text": "No change occurs", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "The particles of a liquid are close enough to keep a fixed volume but are free to move, so the liquid takes the shape of its container.",
+        "correctAnswer": "b",
+        "explanation": "Iron reacts with oxygen and water to form a new substance, rust, which is iron oxide. Exam Tip: Forming a new substance is the key sign of a chemical change.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which property is true of a gas?",
+        "options": [
+          {"id": "a", "text": "It has a fixed shape and fixed volume", "isCorrect": false},
+          {"id": "b", "text": "It has no fixed shape and no fixed volume", "isCorrect": true},
+          {"id": "c", "text": "It has a fixed volume but no fixed shape", "isCorrect": false},
+          {"id": "d", "text": "It cannot be compressed", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gas particles are far apart and move freely, filling any container. Exam Tip: Gas has no fixed shape or volume and is easily compressed. Liquid has fixed volume but no fixed shape. Solid has both fixed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When water is heated and turns into steam, this change is:",
+        "options": [
+          {"id": "a", "text": "A chemical change because a new substance forms", "isCorrect": false},
+          {"id": "b", "text": "A physical change because it can be reversed to water", "isCorrect": true},
+          {"id": "c", "text": "Not a change at all", "isCorrect": false},
+          {"id": "d", "text": "Burning", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Steam is still water, H2O, in gas form; cooling turns it back, so no new substance is formed. Exam Tip: State changes are physical because the substance stays chemically the same.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The process by which particles of a substance spread and mix on their own, such as perfume filling a room, is called:",
+        "options": [
+          {"id": "a", "text": "Filtration", "isCorrect": false},
+          {"id": "b", "text": "Diffusion", "isCorrect": true},
+          {"id": "c", "text": "Condensation", "isCorrect": false},
+          {"id": "d", "text": "Freezing", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Particles moving from where they are many to where they are few is diffusion. Exam Tip: Diffusion is fastest in gases and shows that matter is made of moving particles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which change of state takes place when candle wax becomes liquid as the candle burns?",
+        "options": [
+          {"id": "a", "text": "Freezing", "isCorrect": false},
+          {"id": "b", "text": "Melting", "isCorrect": true},
+          {"id": "c", "text": "Sublimation", "isCorrect": false},
+          {"id": "d", "text": "Condensation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Solid wax gains heat and becomes liquid, which is melting. Exam Tip: A candle shows BOTH the wax melting, which is physical, and the wick burning, which is chemical.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following best shows that a chemical change has occurred?",
+        "options": [
+          {"id": "a", "text": "A change in shape only", "isCorrect": false},
+          {"id": "b", "text": "Formation of a new substance with different properties", "isCorrect": true},
+          {"id": "c", "text": "A change in size only", "isCorrect": false},
+          {"id": "d", "text": "Melting of a solid", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A new substance with new properties is formed. Exam Tip: Shape and size changes are physical. A NEW substance is the mark of a chemical change.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "Anything that has mass and occupies space is called _____.",
+        "questionText": "Matter is anything that has mass and occupies __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "matter",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "energy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "force",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "volume",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "space (volume)", "isCorrect": true},
+          {"id": "b", "text": "colour", "isCorrect": false},
+          {"id": "c", "text": "energy", "isCorrect": false},
+          {"id": "d", "text": "light", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Matter is the general term for anything that has mass and takes up space.",
+        "explanation": "Matter must have mass and take up space, so it occupies space or volume. Exam Tip: Mass plus space equals matter. Both must be present.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The three common states of matter are solid, liquid and _____.",
+        "questionText": "The change of state from solid to liquid is called __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "plasma",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "gas",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "vapour",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "fluid",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Matter usually exists in three states: solid, liquid and gas.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The change of a solid into a liquid when it is heated is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "freezing",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "boiling",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "melting",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "condensation",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Melting (or fusion) is the change of state from solid to liquid as the particles gain heat energy.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The change of a liquid into a solid when it is cooled is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "melting",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "evaporation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "sublimation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "freezing",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Freezing (solidification) is the change of state from liquid to solid as particles lose heat energy.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The theory that explains the behaviour of matter in terms of tiny moving particles is called the _____ theory.",
-        "options": [
-          {
-            "id": "a",
-            "text": "kinetic",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "atomic",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "cellular",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "molecular",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "melting", "isCorrect": true},
+          {"id": "b", "text": "freezing", "isCorrect": false},
+          {"id": "c", "text": "condensation", "isCorrect": false},
+          {"id": "d", "text": "sublimation", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The kinetic (particle) theory states that all matter is made of tiny particles that are constantly moving.",
-        "difficulty": "medium"
+        "explanation": "A solid gaining heat becomes a liquid, which is melting. Exam Tip: Melting point example: ice melts at 0 C.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A change in which no new substance is formed and which can usually be reversed is called a _____ change.",
+        "questionText": "The change of state from gas to liquid is called __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "chemical",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "physical",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "nuclear",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "thermal",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "evaporation", "isCorrect": false},
+          {"id": "b", "text": "condensation", "isCorrect": true},
+          {"id": "c", "text": "melting", "isCorrect": false},
+          {"id": "d", "text": "boiling", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Physical changes, such as melting or dissolving, do not form new substances and are usually reversible.",
-        "difficulty": "medium"
+        "explanation": "A gas losing heat turns into a liquid, which is condensation. Exam Tip: Condensation forms dew and droplets on a cold surface.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A change in which one or more new substances are formed is called a _____ change.",
+        "questionText": "A change in which a new substance is formed is called a __________ change.",
         "options": [
-          {
-            "id": "a",
-            "text": "physical",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "nuclear",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "chemical",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "thermal",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "physical", "isCorrect": false},
+          {"id": "b", "text": "chemical", "isCorrect": true},
+          {"id": "c", "text": "reversible", "isCorrect": false},
+          {"id": "d", "text": "state", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Chemical changes, such as burning or rusting, form new substances and are usually difficult to reverse.",
-        "difficulty": "medium"
+        "correctAnswer": "b",
+        "explanation": "When a new substance is formed the change is chemical. Exam Tip: A chemical change gives a new substance and is usually irreversible.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A pure substance made of two or more elements chemically joined together is called a _____.",
+        "questionText": "The direct change of a solid to a gas without becoming liquid is called __________.",
         "options": [
-          {
-            "id": "a",
-            "text": "mixture",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "molecule",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "solution",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "compound",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A compound is formed when different elements combine chemically in a fixed ratio, for example water and carbon dioxide.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two or more substances that are physically combined and can be separated again form a _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "mixture",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "compound",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "element",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "molecule",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "sublimation", "isCorrect": true},
+          {"id": "b", "text": "condensation", "isCorrect": false},
+          {"id": "c", "text": "evaporation", "isCorrect": false},
+          {"id": "d", "text": "melting", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A mixture contains substances that are not chemically joined, so they can be separated by physical methods.",
-        "difficulty": "medium"
+        "explanation": "Going straight from solid to gas without a liquid stage is sublimation. Exam Tip: Iodine and dry ice sublime; the process skips the liquid stage.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The direct change of a gas into a solid without becoming a liquid is called _____.",
+        "questionText": "In a __________ change, no new substance is formed and the change can usually be reversed.",
         "options": [
-          {
-            "id": "a",
-            "text": "sublimation",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "deposition",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "condensation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "vaporisation",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "chemical", "isCorrect": false},
+          {"id": "b", "text": "physical", "isCorrect": true},
+          {"id": "c", "text": "permanent", "isCorrect": false},
+          {"id": "d", "text": "nuclear", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Deposition is the reverse of sublimation, where a gas changes straight into a solid, for example frost forming from water vapour.",
-        "difficulty": "hard"
+        "explanation": "A physical change forms no new substance and is usually reversible. Exam Tip: Melting, boiling, dissolving and magnetising are physical changes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The state of matter with a fixed volume but no fixed shape is __________.",
+        "options": [
+          {"id": "a", "text": "solid", "isCorrect": false},
+          {"id": "b", "text": "liquid", "isCorrect": true},
+          {"id": "c", "text": "gas", "isCorrect": false},
+          {"id": "d", "text": "vapour", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A liquid keeps its volume but takes the shape of its container. Exam Tip: Liquid has fixed volume but no fixed shape.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The spreading of particles from a region of high concentration to a region of low concentration is called __________.",
+        "options": [
+          {"id": "a", "text": "diffusion", "isCorrect": true},
+          {"id": "b", "text": "filtration", "isCorrect": false},
+          {"id": "c", "text": "condensation", "isCorrect": false},
+          {"id": "d", "text": "evaporation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Particles spreading from high to low concentration is diffusion. Exam Tip: Diffusion is evidence that matter is made of tiny moving particles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The burning of charcoal is an example of a __________ change.",
+        "options": [
+          {"id": "a", "text": "physical", "isCorrect": false},
+          {"id": "b", "text": "chemical", "isCorrect": true},
+          {"id": "c", "text": "reversible", "isCorrect": false},
+          {"id": "d", "text": "state", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Burning charcoal forms new substances, so it is a chemical change. Exam Tip: Burning, which is combustion, is always a chemical change.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The temperature at which a liquid changes to a gas throughout the liquid is called the __________ point.",
+        "options": [
+          {"id": "a", "text": "boiling", "isCorrect": true},
+          {"id": "b", "text": "melting", "isCorrect": false},
+          {"id": "c", "text": "freezing", "isCorrect": false},
+          {"id": "d", "text": "condensation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The temperature at which a liquid boils throughout is the boiling point. Exam Tip: Water boils at 100 C at sea level. Boiling occurs throughout while evaporation occurs only at the surface.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "All matter is made up of tiny particles that are in constant motion.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "According to the kinetic theory, matter is made of tiny particles that are always moving.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Solids can be compressed easily because their particles are far apart.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Solid particles are packed very closely with almost no spaces, so solids cannot be compressed easily.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Melting of ice is a physical change.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Melting ice only changes the state of water; no new substance is formed and it can be reversed by freezing.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Burning of paper is a reversible change.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Burning is a chemical change that forms new substances such as ash and gases and cannot be reversed.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Gases have a definite shape and a definite volume.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Gases have neither a definite shape nor a definite volume; they fill any container completely.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Water is an element.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Water is a compound because it is made of two elements, hydrogen and oxygen, chemically combined.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A mixture can be separated into its components by physical methods.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Because the substances in a mixture are not chemically joined, they can be separated by physical methods such as filtering or evaporation.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "During condensation a gas changes into a liquid.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Condensation occurs when a gas loses heat and its particles come closer together to form a liquid.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In a liquid, the particles are completely fixed in position and cannot move.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Liquid particles are close together but free to move and slide past one another, which is why liquids flow.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Heating generally makes the particles of a substance move faster and move further apart.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Heating gives particles more energy, making them move faster and increasing the spaces between them.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Matter is anything that has mass and occupies space.", "options": [], "correctAnswer": "true", "explanation": "Mass and occupying space are the two defining properties of matter. Exam Tip: Air qualifies as matter because it is invisible but has mass and takes up space.", "difficulty": "easy"},
+      {"questionText": "Melting is the change of state from liquid to solid.", "options": [], "correctAnswer": "false", "explanation": "Melting is solid to liquid; liquid to solid is freezing. Exam Tip: The statement reverses melting and freezing. Melting equals solid to liquid.", "difficulty": "easy"},
+      {"questionText": "Burning of wood is a chemical change.", "options": [], "correctAnswer": "true", "explanation": "Burning wood forms new substances such as ash and gases. Exam Tip: Combustion always forms new substances.", "difficulty": "easy"},
+      {"questionText": "In a solid, particles are far apart and move freely.", "options": [], "correctAnswer": "false", "explanation": "In a solid the particles are closely packed and only vibrate in place. Exam Tip: Far apart and free describes a gas; solids are closely packed and only vibrate.", "difficulty": "easy"},
+      {"questionText": "Physical changes can usually be reversed.", "options": [], "correctAnswer": "true", "explanation": "Physical changes form no new substance and can usually be reversed. Exam Tip: Reversible plus no new substance equals physical change.", "difficulty": "easy"},
+      {"questionText": "Sublimation is the change of a solid directly into a gas.", "options": [], "correctAnswer": "true", "explanation": "Sublimation is the direct change from solid to gas without a liquid stage. Exam Tip: Iodine and dry ice are classic examples.", "difficulty": "easy"},
+      {"questionText": "Rusting of iron is a physical change.", "options": [], "correctAnswer": "false", "explanation": "Rusting forms a new substance, so it is a chemical change. Exam Tip: Rusting is chemical because iron plus oxygen plus water gives rust.", "difficulty": "easy"},
+      {"questionText": "A gas has neither a fixed shape nor a fixed volume.", "options": [], "correctAnswer": "true", "explanation": "Gas particles move freely and fill any container, so a gas has no fixed shape or volume. Exam Tip: Gas has no fixed shape or volume and is easily compressed.", "difficulty": "easy"},
+      {"questionText": "Dissolving sugar in water is a chemical change.", "options": [], "correctAnswer": "false", "explanation": "Dissolving forms no new substance and can be reversed, so it is physical. Exam Tip: Dissolving is physical because sugar can be recovered by evaporating the water.", "difficulty": "easy"},
+      {"questionText": "Condensation and evaporation are reverse processes.", "options": [], "correctAnswer": "true", "explanation": "Evaporation is liquid to gas and condensation is gas to liquid, so they are opposite processes. Exam Tip: Evaporation is liquid to gas; condensation is gas to liquid.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of matter",
-        "options": [],
-        "correctAnswer": "Matter is anything that has mass and occupies space.",
-        "explanation": "This is the core idea of the whole topic and applies to every substance around us.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The three states of matter",
-        "options": [],
-        "correctAnswer": "Matter exists as solid, liquid and gas.",
-        "explanation": "Each state differs in the arrangement and movement of its particles.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of a solid",
-        "options": [],
-        "correctAnswer": "A solid has a definite shape and a definite volume and cannot be compressed.",
-        "explanation": "Its particles are closely packed in fixed positions and only vibrate.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of a liquid",
-        "options": [],
-        "correctAnswer": "A liquid has a definite volume but takes the shape of its container.",
-        "explanation": "Its particles are close together but free to move and slide over each other.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of a gas",
-        "options": [],
-        "correctAnswer": "A gas has no definite shape or volume and can be compressed easily.",
-        "explanation": "Its particles are far apart and move quickly in all directions.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The kinetic (particle) theory",
-        "options": [],
-        "correctAnswer": "All matter is made of tiny particles that are always moving.",
-        "explanation": "The arrangement, spacing and speed of the particles explain the properties of each state.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Physical change",
-        "options": [],
-        "correctAnswer": "A physical change forms no new substance and is usually reversible.",
-        "explanation": "Examples include melting, freezing, boiling and dissolving.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Chemical change",
-        "options": [],
-        "correctAnswer": "A chemical change forms new substances and is usually not easily reversed.",
-        "explanation": "Examples include burning, rusting and the souring of milk.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Changes of state",
-        "options": [],
-        "correctAnswer": "Melting, freezing, evaporation, condensation, sublimation and deposition are changes of state.",
-        "explanation": "They happen when matter gains or loses heat energy, changing how the particles are arranged.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Elements, compounds and mixtures",
-        "options": [],
-        "correctAnswer": "An element has one kind of atom, a compound has elements chemically joined, and a mixture has substances physically combined.",
-        "explanation": "Compounds have fixed compositions, while mixtures can be separated by physical methods.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Matter", "options": [], "correctAnswer": "Anything that has mass and occupies space (has volume).", "explanation": "Even invisible things like air are matter because they have mass and take up space. Exam Tip: The test for matter is mass plus space, not whether it can be seen.", "difficulty": "easy"},
+      {"questionText": "Three states of matter", "options": [], "correctAnswer": "The solid, liquid and gas forms in which matter can exist.", "explanation": "The three states differ mainly in how their particles are arranged and how freely they move. Exam Tip: Remember the order solid, liquid, gas from tightest to loosest packing.", "difficulty": "easy"},
+      {"questionText": "Particle arrangement", "options": [], "correctAnswer": "How particles are packed: closely packed and fixed in solids, close but moving in liquids, and far apart and free in gases.", "explanation": "The arrangement of particles explains the shape and volume of each state. Exam Tip: Solid particles only vibrate; gas particles move fast and fill the container.", "difficulty": "easy"},
+      {"questionText": "Melting", "options": [], "correctAnswer": "The change of state from solid to liquid on gaining heat.", "explanation": "At the melting point a solid absorbs heat and becomes a liquid. Exam Tip: Ice melts to water at 0 C.", "difficulty": "easy"},
+      {"questionText": "Freezing", "options": [], "correctAnswer": "The change of state from liquid to solid on losing heat.", "explanation": "Freezing, also called solidification, is the reverse of melting. Exam Tip: Water freezes to ice at 0 C.", "difficulty": "easy"},
+      {"questionText": "Evaporation and boiling", "options": [], "correctAnswer": "The change of state from liquid to gas; evaporation at the surface at any temperature and boiling throughout at the boiling point.", "explanation": "Both turn a liquid into a gas but happen in different ways. Exam Tip: Water boils at 100 C at sea level, but evaporation can occur at any temperature.", "difficulty": "easy"},
+      {"questionText": "Condensation", "options": [], "correctAnswer": "The change of state from gas to liquid on losing heat.", "explanation": "Condensation is the reverse of evaporation and forms droplets on cold surfaces. Exam Tip: Dew and misting on a cold glass are examples of condensation.", "difficulty": "easy"},
+      {"questionText": "Sublimation", "options": [], "correctAnswer": "The change of state from solid directly to gas without becoming a liquid.", "explanation": "Sublimation skips the liquid stage entirely. Exam Tip: Iodine and dry ice sublime, and it is used to purify iodine.", "difficulty": "easy"},
+      {"questionText": "Physical change", "options": [], "correctAnswer": "A change in which no new substance is formed and which can usually be reversed.", "explanation": "Only the appearance or state changes, not the substance itself. Exam Tip: Melting, boiling, dissolving and magnetising are physical changes.", "difficulty": "easy"},
+      {"questionText": "Chemical change", "options": [], "correctAnswer": "A change in which one or more new substances are formed and which is usually irreversible.", "explanation": "New substances with different properties are produced during a chemical change. Exam Tip: Signs include a new substance, colour change, gas, heat or light, and being hard to reverse.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A student leaves a small bowl of water and a similar bowl of cooking oil outside on a hot, sunny day. After several hours the water level has dropped much more than the oil level. Which conclusion best explains this observation?",
+        "questionText": "A burning candle shows two changes at the same time: the solid wax near the flame turns to liquid, and the wick burns giving light and smoke. Classify the two changes correctly.",
         "options": [
-          {
-            "id": "a",
-            "text": "Oil is not made of particles, so it cannot evaporate",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Water particles escape into the air more easily than oil particles at the same temperature",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The sun only heats water and never heats oil",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Water gained mass while oil lost mass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Both are chemical changes", "isCorrect": false},
+          {"id": "b", "text": "Melting of wax is physical; burning of the wick is chemical", "isCorrect": true},
+          {"id": "c", "text": "Both are physical changes", "isCorrect": false},
+          {"id": "d", "text": "Melting of wax is chemical; burning of the wick is physical", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Both liquids evaporate, but water evaporates faster because its particles escape into the air more easily, so its level drops more.",
+        "explanation": "The wax melting is solid to liquid, reversible and forms no new substance, so it is physical. The wick burning gives smoke and gases and is not reversible, so it is chemical. Exam Tip: A single event can contain BOTH types of change. Test each part by asking whether a new substance is formed.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A sealed syringe contains some air. When the plunger is pushed in, the air inside takes up a smaller space, but when the same is tried with a syringe full of water, the plunger hardly moves. What does this best demonstrate?",
+        "questionText": "A student is given four processes: (i) ice melting, (ii) milk turning sour, (iii) water boiling, (iv) a nail rusting. Which processes are physical and which are chemical?",
         "options": [
-          {
-            "id": "a",
-            "text": "Air has no mass while water has mass",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Gas particles have large spaces between them while liquid particles are close together",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Water particles are larger than air particles",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Air is a compound and water is an element",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Physical: (i) and (iii); Chemical: (ii) and (iv)", "isCorrect": true},
+          {"id": "b", "text": "Physical: (ii) and (iv); Chemical: (i) and (iii)", "isCorrect": false},
+          {"id": "c", "text": "All are physical", "isCorrect": false},
+          {"id": "d", "text": "All are chemical", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Gases compress because their particles have large gaps, while liquid particles are already close together and have very little space to be squeezed into.",
+        "correctAnswer": "a",
+        "explanation": "Ice melting and water boiling are state changes of water, so they are physical. Milk souring involves acids and rusting forms a new substance, so both are chemical. Exam Tip: Ask whether you can get the original back easily; yes points to physical and no points to chemical.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A student heats a blue solid in a test tube. A gas is given off, the solid turns white, and water droplets collect at the cooler top of the tube. The student cannot easily get the original blue solid back. Which statement is the most correct interpretation?",
+        "questionText": "A student places purple iodine crystals in a beaker and warms them gently. Purple vapour rises and, on touching a cool surface, purple solid forms again, with no liquid seen at any stage. Name the two changes and state whether the overall process is physical or chemical.",
         "options": [
-          {
-            "id": "a",
-            "text": "Only a physical change happened because water appeared",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A chemical change happened because a new substance was formed and it is hard to reverse",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "No change happened because the mass stayed the same",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The blue solid melted and then froze again",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Melting then freezing; chemical", "isCorrect": false},
+          {"id": "b", "text": "Sublimation then deposition; physical", "isCorrect": true},
+          {"id": "c", "text": "Evaporation then condensation; chemical", "isCorrect": false},
+          {"id": "d", "text": "Boiling then freezing; physical", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The colour change, gas given off and difficulty in reversing the process all show that a new substance formed, which indicates a chemical change.",
+        "explanation": "Solid iodine turns directly into vapour, which is sublimation, then the vapour turns back to solid on the cool surface, which is deposition. The iodine stays iodine with no new substance, so the process is physical. Exam Tip: No liquid seen at any stage rules out melting and boiling and points to sublimation and deposition. Sublimation is used to purify iodine.",
         "difficulty": "hard"
       }
     ]
