@@ -252,7 +252,13 @@ service cloud.firestore {
 
     // ── student_progress — owner-scoped (id = `${uid}_${packId}`) ─────────────
     match /student_progress/{docId} {
-      allow read: if isOwner(resource.data.userId) || isAdmin();
+      // Id-prefix read (not resource.data.userId): dereferencing resource on a
+      // NONEXISTENT doc errors — same trap already hit and fixed for
+      // daily_usage below. Nothing currently does a direct get() on this
+      // collection (the app only queries by userId), but this keeps a future
+      // direct read from reintroducing that bug.
+      allow read: if isAdmin()
+        || (isSignedIn() && docId.matches(request.auth.uid + '_.*'));
       // Bind writes to the doc-id prefix as well as the userId field: with the
       // field-only check, any signed-in user could plant a doc at another
       // user's deterministic `${uid}_${packId}` path (uids are enumerable via
