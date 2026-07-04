@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { useFocusEffect } from '@react-navigation/native';
 import {
   View,
   Text,
@@ -94,14 +93,6 @@ export function TFScreen({ navigation, route }: Props) {
       advance();
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
-
-  useFocusEffect(
-    useCallback(() => {
-      if (revealed && !showFeedback) {
-        setShowFeedback(true);
-      }
-    }, [revealed, showFeedback]),
-  );
 
   // Quitting mid-quiz abandons a session that already consumed a daily
   // attempt — confirm first, and reset the store so nothing stale leaks

@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useFocusEffect } from '@react-navigation/native';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { HomeStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
@@ -116,15 +115,6 @@ export function MCQScreen({ navigation, route }: Props) {
       advance();
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
-
-  // Restore feedback modal when returning from ExplanationScreen
-  useFocusEffect(
-    useCallback(() => {
-      if (selectedOption !== null && !showFeedback) {
-        setShowFeedback(true);
-      }
-    }, [selectedOption, showFeedback]),
-  );
 
   // Quitting mid-quiz abandons a session that already consumed a daily
   // attempt — confirm first, and reset the store so nothing stale leaks
