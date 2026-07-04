@@ -26,6 +26,7 @@ import { useMissionStore } from '../../store/missionStore';
 import { useLeaderboardStore } from '../../store/leaderboardStore';
 import { useFamilyStore } from '../../store/familyStore';
 import { useCurriculumStore } from '../../store/curriculumStore';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { DAILY_MISSIONS } from '../../utils/seedBadges';
 import { SUBJECTS, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
@@ -45,6 +46,7 @@ export function HomeScreen({ navigation }: Props) {
   const { data: leaderboardData, fetchLeaderboard } = useLeaderboardStore();
   const activeChild = useFamilyStore((s) => s.activeChild());
   const selectedFormId = useCurriculumStore((s) => s.selectedFormId);
+  const { isPremium } = useSubscriptionStore();
 
   // When "Playing as" a Family-Pack child, the hero must show THAT child's
   // aggregate stats — otherwise the greeting swaps to the child's name while
@@ -341,12 +343,15 @@ export function HomeScreen({ navigation }: Props) {
           </View>
         )}
 
-        {/* Premium Banner */}
-        <PremiumLockCard
-          title="Unlock Everything"
-          description="Get unlimited AI explanations, all 13 subjects, HOQ practice, and priority support."
-          onUpgrade={() => navigation.navigate('SubscriptionScreen')}
-        />
+        {/* Premium Banner — hidden once the user already has an active plan,
+            otherwise they land on the "Go Premium" pitch after already paying. */}
+        {!isPremium() && (
+          <PremiumLockCard
+            title="Unlock Everything"
+            description="Every chapter across all 13 subjects, Summary & HOQ practice, Exam Mode, and Advanced Analytics."
+            onUpgrade={() => navigation.navigate('SubscriptionScreen')}
+          />
+        )}
       </View>
     </ScreenContainer>
   );

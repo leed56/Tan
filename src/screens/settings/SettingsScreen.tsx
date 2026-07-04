@@ -18,6 +18,7 @@ import { useAuth } from '../../hooks/useAuth';
 import { confirmAction, notify } from '../../utils/confirm';
 import { openWhatsApp } from '../../utils/support';
 import { deleteAccount } from '../../services/deleteAccountService';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
 
@@ -30,6 +31,8 @@ export function SettingsScreen({ navigation }: Props) {
   const [leaderboardAlerts, setLeaderboardAlerts] = useState(false);
   const { logout, user } = useAuth();
   const [deleting, setDeleting] = useState(false);
+  const { isPremium } = useSubscriptionStore();
+  const premium = isPremium();
 
   const handleLogout = () => {
     // Alert.alert's buttons are ignored on React Native Web, so the confirm
@@ -150,9 +153,9 @@ export function SettingsScreen({ navigation }: Props) {
           <SettingsRow
             icon="star"
             iconColor={COLORS.gold}
-            label="Upgrade to Premium"
-            onPress={() => navigation.navigate('SubscriptionScreen')}
-            highlight
+            label={premium ? 'Manage Subscription' : 'Upgrade to Premium'}
+            onPress={() => navigation.navigate(premium ? 'SubscriptionStatus' : 'SubscriptionScreen')}
+            highlight={!premium}
           />
         </SettingsSection>
 
