@@ -41,4 +41,29 @@ for (const uid of candidates) {
   if (doc.exists) console.log(JSON.stringify(doc.data(), null, 2));
 }
 
+// Ground truth: ask Firebase Auth itself for the real UID, no transcription
+// involved, then auto-repair admin_users if it's keyed under the wrong id.
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@soma.tz';
+console.log(`\n=== Firebase Auth lookup for ${ADMIN_EMAIL} ===`);
+const authUser = await admin.auth().getUserByEmail(ADMIN_EMAIL);
+console.log(`Real Auth UID: "${authUser.uid}"  (length: ${authUser.uid.length})`);
+
+const correctDoc = await db.collection('admin_users').doc(authUser.uid).get();
+if (correctDoc.exists) {
+  console.log('\n✓ admin_users is already keyed correctly — no fix needed.');
+} else {
+  console.log('\n✗ No admin_users document at the real Auth UID — this is the bug.');
+  // Find whichever existing doc has this email and copy its data over to the
+  // correctly-keyed document, so the app's getDoc(admin_users/{uid}) finds it.
+  const byEmail = await db.collection('admin_users').where('email', '==', ADMIN_EMAIL).get();
+  if (byEmail.empty) {
+    console.log(`No admin_users document has email == "${ADMIN_EMAIL}" — nothing to copy. Create one manually at admin_users/${authUser.uid}.`);
+  } else {
+    const data = byEmail.docs[0].data();
+    await db.collection('admin_users').doc(authUser.uid).set(data);
+    console.log(`✓ Copied admin_users/${byEmail.docs[0].id} → admin_users/${authUser.uid}`);
+    console.log('You can now delete the old mis-keyed document from the Firestore console if you want (optional cleanup).');
+  }
+}
+
 process.exit(0);
