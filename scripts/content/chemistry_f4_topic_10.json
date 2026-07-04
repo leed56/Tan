@@ -1,0 +1,374 @@
+{
+  "topicId": "form_4_chemistry_topic_10",
+  "topicName": "Qualitative Analysis",
+  "order": 10,
+  "description": "This topic introduces qualitative analysis, the systematic identification of ions and substances present in an unknown sample through preliminary tests, tests in solution and confirmatory tests. It covers common tests for carbonate, sulphate, chloride and ammonium ions, and for cations such as copper(II) and iron(III), and shows how these methods are applied in real laboratory and industrial settings.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Qualitative analysis is a branch of chemistry concerned with:",
+        "options": [
+          {"id": "a", "text": "Measuring the exact quantity of a substance", "isCorrect": false},
+          {"id": "b", "text": "Identifying which substances (ions/elements) are present in a sample", "isCorrect": true},
+          {"id": "c", "text": "Only measuring temperature", "isCorrect": false},
+          {"id": "d", "text": "Growing crystals", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Qualitative analysis determines the identity of substances present, rather than their exact amount. Exam Tip: \"Qualitative\" means quality/identity, while \"quantitative\" means quantity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The initial, general observations made on an unknown sample (e.g. colour, smell, state) before specific chemical tests are called:",
+        "options": [
+          {"id": "a", "text": "Confirmatory tests", "isCorrect": false},
+          {"id": "b", "text": "Preliminary tests", "isCorrect": true},
+          {"id": "c", "text": "Tests in solution", "isCorrect": false},
+          {"id": "d", "text": "Titration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Preliminary tests gather quick, general clues about a sample before more specific chemical testing begins. Exam Tip: Preliminary tests always come first in the analysis sequence.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Tests carried out by dissolving a sample and reacting it with specific reagents to detect particular ions are called:",
+        "options": [
+          {"id": "a", "text": "Preliminary tests", "isCorrect": false},
+          {"id": "b", "text": "Tests in solution", "isCorrect": true},
+          {"id": "c", "text": "Physical tests only", "isCorrect": false},
+          {"id": "d", "text": "Combustion tests", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Tests in solution use specific reagents that react distinctively with certain ions once the sample is dissolved. Exam Tip: These tests typically follow preliminary tests and come before confirmatory tests.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A test that gives a definitive, unambiguous result confirming the presence of a specific ion is called a:",
+        "options": [
+          {"id": "a", "text": "Preliminary test", "isCorrect": false},
+          {"id": "b", "text": "Confirmatory test", "isCorrect": true},
+          {"id": "c", "text": "Random test", "isCorrect": false},
+          {"id": "d", "text": "Guessing test", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A confirmatory test removes any remaining doubt about an ion's identity. Exam Tip: Confirmatory tests are the final, most decisive step in qualitative analysis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Adding dilute hydrochloric acid to a solid sample and observing effervescence (bubbling) is a preliminary test that suggests the presence of a:",
+        "options": [
+          {"id": "a", "text": "Metal ion only", "isCorrect": false},
+          {"id": "b", "text": "Carbonate or hydrogen carbonate ion", "isCorrect": true},
+          {"id": "c", "text": "Chloride ion", "isCorrect": false},
+          {"id": "d", "text": "Sulphate ion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Carbonates and hydrogen carbonates react with dilute acids to release carbon dioxide gas. Exam Tip: Confirm the gas afterward with limewater, since CO2 turns it milky.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The confirmatory test for carbon dioxide gas is to pass it through:",
+        "options": [
+          {"id": "a", "text": "Acidified silver nitrate", "isCorrect": false},
+          {"id": "b", "text": "Limewater, which turns milky", "isCorrect": true},
+          {"id": "c", "text": "Sodium hydroxide only", "isCorrect": false},
+          {"id": "d", "text": "Iodine solution", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Carbon dioxide reacts with limewater to form an insoluble white precipitate, turning the solution milky. Exam Tip: This is a classic, reliable confirmatory test for CO2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To test for the sulphate ion (SO4^2-) in solution, a common reagent used is:",
+        "options": [
+          {"id": "a", "text": "Barium chloride solution (with dilute acid), giving a white precipitate", "isCorrect": true},
+          {"id": "b", "text": "Sodium chloride solution", "isCorrect": false},
+          {"id": "c", "text": "Limewater", "isCorrect": false},
+          {"id": "d", "text": "Iodine solution", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sulphate ions react with barium ions to form an insoluble white precipitate of barium sulphate. Exam Tip: Barium chloride or nitrate plus dilute acid is the standard sulphate confirmatory test.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "To test for chloride ions (Cl-) in solution, a common reagent used is:",
+        "options": [
+          {"id": "a", "text": "Barium chloride", "isCorrect": false},
+          {"id": "b", "text": "Acidified silver nitrate solution, giving a white precipitate", "isCorrect": true},
+          {"id": "c", "text": "Sodium hydroxide", "isCorrect": false},
+          {"id": "d", "text": "Limewater", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Chloride ions react with silver nitrate to form an insoluble white precipitate of silver chloride. Exam Tip: A white precipitate indicates chloride, a cream precipitate indicates bromide, and a yellow precipitate indicates iodide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Adding sodium hydroxide solution gradually to a solution containing an unknown metal ion, and observing a coloured precipitate, is a common way to help identify the:",
+        "options": [
+          {"id": "a", "text": "Anion present", "isCorrect": false},
+          {"id": "b", "text": "Cation (metal ion) present", "isCorrect": true},
+          {"id": "c", "text": "Gas present", "isCorrect": false},
+          {"id": "d", "text": "pH of pure water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Many metal ions form characteristically coloured hydroxide precipitates when sodium hydroxide is added. Exam Tip: Cu2+ gives a blue precipitate while Fe3+ gives a reddish-brown precipitate.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A pale blue precipitate that forms when sodium hydroxide is added to a solution suggests the presence of:",
+        "options": [
+          {"id": "a", "text": "Iron(III) ions", "isCorrect": false},
+          {"id": "b", "text": "Copper(II) ions", "isCorrect": true},
+          {"id": "c", "text": "Zinc ions", "isCorrect": false},
+          {"id": "d", "text": "Sodium ions", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Copper(II) ions react with hydroxide ions to form a characteristic pale blue precipitate. Exam Tip: A blue precipitate with NaOH is a strong clue for copper(II) ions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A reddish-brown precipitate forming when sodium hydroxide is added to a solution suggests the presence of:",
+        "options": [
+          {"id": "a", "text": "Copper(II) ions", "isCorrect": false},
+          {"id": "b", "text": "Iron(III) ions", "isCorrect": true},
+          {"id": "c", "text": "Zinc ions", "isCorrect": false},
+          {"id": "d", "text": "Chloride ions", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Iron(III) ions form a distinctive reddish-brown precipitate with sodium hydroxide. Exam Tip: Iron(II) gives a dirty green precipitate, which distinguishes Fe2+ from Fe3+.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gas produced when ammonium salts are heated with sodium hydroxide, identified by its pungent smell and by turning damp red litmus paper blue, is:",
+        "options": [
+          {"id": "a", "text": "Carbon dioxide", "isCorrect": false},
+          {"id": "b", "text": "Ammonia", "isCorrect": true},
+          {"id": "c", "text": "Chlorine", "isCorrect": false},
+          {"id": "d", "text": "Hydrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Ammonium ions react with hydroxide ions on heating to release ammonia gas. Exam Tip: Ammonia gas turning damp red litmus paper blue is the standard confirmatory test for an ammonium ion.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Testing an unknown liquid's colour, physical state and odour before applying chemical reagents is an example of:",
+        "options": [
+          {"id": "a", "text": "A confirmatory test", "isCorrect": false},
+          {"id": "b", "text": "A preliminary test", "isCorrect": true},
+          {"id": "c", "text": "A titration", "isCorrect": false},
+          {"id": "d", "text": "Electrolysis", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "These simple physical observations happen first, without adding any chemical reagents. Exam Tip: Colour, smell and physical state are quick, informative preliminary observations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Systematic qualitative analysis is important in industries and laboratories mainly because it allows:",
+        "options": [
+          {"id": "a", "text": "Estimation of exact quantities only", "isCorrect": false},
+          {"id": "b", "text": "Identification of unknown substances or contaminants in samples", "isCorrect": true},
+          {"id": "c", "text": "Measurement of temperature changes only", "isCorrect": false},
+          {"id": "d", "text": "Generation of electricity", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Identifying unknown chemical species is essential for quality control, safety testing, and diagnosing contamination. Exam Tip: Applications include water quality checks, food and drug purity, and pollutant identification.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following best describes the general order of a systematic qualitative analysis procedure?",
+        "options": [
+          {"id": "a", "text": "Confirmatory tests, then preliminary tests, then tests in solution", "isCorrect": false},
+          {"id": "b", "text": "Preliminary tests, then tests in solution, then confirmatory tests", "isCorrect": true},
+          {"id": "c", "text": "Tests in solution only, with no other steps", "isCorrect": false},
+          {"id": "d", "text": "Random order, since order does not matter", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The logical sequence narrows down possibilities progressively, from broad clues to certain proof. Exam Tip: This order, preliminary then solution tests then confirmatory, is a key structural fact to remember.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "Qualitative analysis is used to identify which ____ are present in a sample, rather than how much.",
+        "options": [
+          {"id": "a", "text": "substances (ions/elements)", "isCorrect": true},
+          {"id": "b", "text": "volumes", "isCorrect": false},
+          {"id": "c", "text": "temperatures", "isCorrect": false},
+          {"id": "d", "text": "masses only", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Qualitative analysis focuses on the identity of substances (ions or elements) present, not their exact amount. Exam Tip: Remember that quantitative analysis, not qualitative, deals with amounts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The initial, general observations made on a sample before specific chemical testing are called ____ tests.",
+        "options": [
+          {"id": "a", "text": "preliminary", "isCorrect": true},
+          {"id": "b", "text": "confirmatory", "isCorrect": false},
+          {"id": "c", "text": "titration", "isCorrect": false},
+          {"id": "d", "text": "combustion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Preliminary tests are the first, general observations carried out on an unknown sample. Exam Tip: These always occur before tests in solution and confirmatory tests.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Tests using specific reagents on a dissolved sample to detect particular ions are called tests in ____.",
+        "options": [
+          {"id": "a", "text": "solution", "isCorrect": true},
+          {"id": "b", "text": "air", "isCorrect": false},
+          {"id": "c", "text": "vacuum", "isCorrect": false},
+          {"id": "d", "text": "darkness", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Tests in solution require the sample to be dissolved so specific reagents can react with the dissolved ions. Exam Tip: This step comes between preliminary tests and confirmatory tests.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A test that gives a final, unambiguous result confirming an ion's identity is called a ____ test.",
+        "options": [
+          {"id": "a", "text": "preliminary", "isCorrect": false},
+          {"id": "b", "text": "confirmatory", "isCorrect": true},
+          {"id": "c", "text": "random", "isCorrect": false},
+          {"id": "d", "text": "rough", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A confirmatory test gives a definite, decisive result for an ion's identity. Exam Tip: This is always the final step in the analysis sequence.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gas released when a carbonate reacts with dilute acid is confirmed using ____, which turns milky.",
+        "options": [
+          {"id": "a", "text": "limewater", "isCorrect": true},
+          {"id": "b", "text": "silver nitrate", "isCorrect": false},
+          {"id": "c", "text": "barium chloride", "isCorrect": false},
+          {"id": "d", "text": "sodium hydroxide", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Carbon dioxide gas reacts with limewater to form an insoluble white precipitate, turning it milky. Exam Tip: A milky limewater result confirms carbon dioxide, and so a carbonate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The reagent used to confirm the presence of sulphate ions, giving a white precipitate insoluble in dilute acid, is ____ chloride (or nitrate).",
+        "options": [
+          {"id": "a", "text": "barium", "isCorrect": true},
+          {"id": "b", "text": "silver", "isCorrect": false},
+          {"id": "c", "text": "sodium", "isCorrect": false},
+          {"id": "d", "text": "calcium", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Barium chloride or barium nitrate reacts with sulphate ions to form insoluble barium sulphate. Exam Tip: The white precipitate must not dissolve when dilute acid is added.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The reagent used to confirm chloride ions, giving a white precipitate, is acidified ____ nitrate solution.",
+        "options": [
+          {"id": "a", "text": "silver", "isCorrect": true},
+          {"id": "b", "text": "barium", "isCorrect": false},
+          {"id": "c", "text": "sodium", "isCorrect": false},
+          {"id": "d", "text": "copper", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Acidified silver nitrate reacts with chloride ions to form insoluble silver chloride, a white precipitate. Exam Tip: The dilute nitric acid removes interference from carbonate ions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pale blue precipitate forming with sodium hydroxide suggests the presence of ____ ions.",
+        "options": [
+          {"id": "a", "text": "copper(II)", "isCorrect": true},
+          {"id": "b", "text": "iron(III)", "isCorrect": false},
+          {"id": "c", "text": "zinc", "isCorrect": false},
+          {"id": "d", "text": "sodium", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Copper(II) ions form a characteristic pale blue precipitate of copper(II) hydroxide with sodium hydroxide. Exam Tip: Colour of the precipitate is the key clue for identifying the metal ion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A reddish-brown precipitate forming with sodium hydroxide suggests the presence of ____ ions.",
+        "options": [
+          {"id": "a", "text": "iron(III)", "isCorrect": true},
+          {"id": "b", "text": "copper(II)", "isCorrect": false},
+          {"id": "c", "text": "zinc", "isCorrect": false},
+          {"id": "d", "text": "chloride", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Iron(III) ions form a reddish-brown precipitate of iron(III) hydroxide with sodium hydroxide. Exam Tip: Do not confuse this with the dirty green precipitate given by iron(II).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gas confirmed by its pungent smell and by turning damp red litmus paper blue, released from heating ammonium salts with a base, is ____.",
+        "options": [
+          {"id": "a", "text": "ammonia", "isCorrect": true},
+          {"id": "b", "text": "carbon dioxide", "isCorrect": false},
+          {"id": "c", "text": "chlorine", "isCorrect": false},
+          {"id": "d", "text": "hydrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Ammonium salts release ammonia gas when heated with a base such as sodium hydroxide. Exam Tip: Damp red litmus paper turning blue is the standard confirmatory test for ammonia.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "Qualitative analysis identifies which substances are present in a sample.", "options": [], "correctAnswer": "true", "explanation": "Qualitative analysis is concerned with the identity of substances present, not the exact quantity.", "difficulty": "easy"},
+      {"questionText": "Preliminary tests are always performed after confirmatory tests.", "options": [], "correctAnswer": "false", "explanation": "Preliminary tests are performed first, before tests in solution and confirmatory tests.", "difficulty": "easy"},
+      {"questionText": "Bubbling gas with dilute acid, followed by limewater turning milky, confirms the presence of a carbonate.", "options": [], "correctAnswer": "true", "explanation": "Effervescence with dilute acid followed by a milky limewater result shows carbon dioxide is released, confirming a carbonate.", "difficulty": "easy"},
+      {"questionText": "Barium chloride is the standard reagent used to test for chloride ions.", "options": [], "correctAnswer": "false", "explanation": "Barium chloride is the standard reagent for testing sulphate ions; acidified silver nitrate is used for chloride ions.", "difficulty": "easy"},
+      {"questionText": "A pale blue precipitate with sodium hydroxide indicates the presence of copper(II) ions.", "options": [], "correctAnswer": "true", "explanation": "Copper(II) ions react with hydroxide ions to give a characteristic pale blue precipitate.", "difficulty": "easy"},
+      {"questionText": "Iron(III) ions give a pale blue precipitate with sodium hydroxide.", "options": [], "correctAnswer": "false", "explanation": "Iron(III) ions give a reddish-brown precipitate with sodium hydroxide, not a pale blue one.", "difficulty": "easy"},
+      {"questionText": "Ammonia gas turns damp red litmus paper blue.", "options": [], "correctAnswer": "true", "explanation": "Ammonia is an alkaline gas, so it turns damp red litmus paper blue.", "difficulty": "easy"},
+      {"questionText": "Qualitative analysis has no practical use outside the school laboratory.", "options": [], "correctAnswer": "false", "explanation": "Qualitative analysis is widely used in industry, food safety and water testing to identify unknown substances or contaminants.", "difficulty": "easy"},
+      {"questionText": "Silver nitrate solution is used to test for chloride ions, giving a white precipitate.", "options": [], "correctAnswer": "true", "explanation": "Acidified silver nitrate reacts with chloride ions to form an insoluble white precipitate of silver chloride.", "difficulty": "easy"},
+      {"questionText": "The correct general order of qualitative analysis is: confirmatory tests, then preliminary tests, then tests in solution.", "options": [], "correctAnswer": "false", "explanation": "The correct order is preliminary tests, then tests in solution, then confirmatory tests.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Qualitative analysis", "options": [], "correctAnswer": "The branch of chemistry concerned with identifying which substances (ions or elements) are present in a sample, rather than measuring how much of each is present.", "explanation": "It contrasts with quantitative analysis, which measures exact amounts.", "difficulty": "easy"},
+      {"questionText": "Preliminary test", "options": [], "correctAnswer": "An initial, general observation or simple test, such as noting colour, smell, physical state, or reaction with dilute acid, carried out on a sample before specific chemical reagents are used.", "explanation": "Preliminary tests give quick, broad clues that guide the choice of later tests.", "difficulty": "easy"},
+      {"questionText": "Test in solution", "options": [], "correctAnswer": "A test carried out by dissolving a sample and reacting it with specific reagents to detect the presence of particular ions.", "explanation": "These tests narrow down the possible ions identified by the preliminary tests.", "difficulty": "easy"},
+      {"questionText": "Confirmatory test", "options": [], "correctAnswer": "A test that gives a definitive, unambiguous result, confirming beyond doubt the presence of a specific ion.", "explanation": "Confirmatory tests are the final and most decisive step in qualitative analysis.", "difficulty": "easy"},
+      {"questionText": "Precipitate", "options": [], "correctAnswer": "An insoluble solid that forms and separates out of a solution during a chemical reaction, often used to identify ions by its colour.", "explanation": "Examples include the white precipitate of silver chloride and the pale blue precipitate of copper(II) hydroxide.", "difficulty": "easy"},
+      {"questionText": "Effervescence", "options": [], "correctAnswer": "The rapid release of bubbles of gas from a liquid, such as when a carbonate reacts with a dilute acid to release carbon dioxide.", "explanation": "Effervescence with dilute acid is a preliminary clue for the presence of a carbonate or hydrogen carbonate ion.", "difficulty": "easy"},
+      {"questionText": "Cation", "options": [], "correctAnswer": "A positively charged ion, such as a metal ion, often identified by adding sodium hydroxide solution and observing a coloured precipitate.", "explanation": "Common cations tested include copper(II), iron(III) and ammonium ions.", "difficulty": "easy"},
+      {"questionText": "Anion", "options": [], "correctAnswer": "A negatively charged ion, such as chloride, sulphate or carbonate, often identified using specific precipitation or gas tests.", "explanation": "Common anion tests use reagents such as silver nitrate, barium chloride and dilute acid.", "difficulty": "easy"},
+      {"questionText": "Ammonium ion (NH4+)", "options": [], "correctAnswer": "A cation that releases ammonia gas with a pungent smell when its salts are heated with sodium hydroxide.", "explanation": "The released ammonia turns damp red litmus paper blue, confirming the ammonium ion.", "difficulty": "easy"},
+      {"questionText": "Litmus paper", "options": [], "correctAnswer": "Indicator paper used to test gases or solutions for acidity or alkalinity; damp red litmus paper turns blue in the presence of ammonia gas.", "explanation": "Litmus paper is a simple, quick tool used during confirmatory gas tests.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "A student is given an unknown white solid. She first notes it is odourless and dissolves easily in water (preliminary observation). She then adds dilute hydrochloric acid and observes vigorous bubbling; she passes the gas through limewater, which turns milky. Identify the likely anion present and explain the reasoning across the stages of analysis.",
+        "options": [
+          {"id": "a", "text": "The anion is chloride, based on the preliminary test alone", "isCorrect": false},
+          {"id": "b", "text": "The anion is likely a carbonate, since the preliminary solubility observation was followed by a solution test (bubbling with acid) and confirmed by the limewater turning milky, indicating carbon dioxide gas being released", "isCorrect": true},
+          {"id": "c", "text": "The anion is sulphate, confirmed by limewater", "isCorrect": false},
+          {"id": "d", "text": "No conclusion can be drawn from these observations", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The sequence of clues, solubility, gas released with acid, and milky limewater, together point specifically to a carbonate ion. Exam Tip: Good qualitative analysis combines evidence from all three stages, not just one test in isolation.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A laboratory technician tests an unknown blue solution with sodium hydroxide and observes a pale blue precipitate. She wants further confirmation before reporting the result. Suggest what additional test could support her identification, and explain your reasoning.",
+        "options": [
+          {"id": "a", "text": "No further test is needed since colour alone is fully conclusive", "isCorrect": false},
+          {"id": "b", "text": "She could test with excess sodium hydroxide or ammonia solution to observe whether the precipitate behaves consistently with copper(II) hydroxide, for example remaining insoluble in excess NaOH but dissolving in excess ammonia to give a deep blue solution, adding confidence to the identification", "isCorrect": true},
+          {"id": "c", "text": "She should test for chloride ions instead, which is unrelated", "isCorrect": false},
+          {"id": "d", "text": "She should discard the sample and start over", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A second distinguishing test, such as the behaviour with excess ammonia giving a deep blue complex, increases confidence before finalising an identification. Exam Tip: Relying on a single test is a common source of error; combining tests strengthens reliability.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A food safety laboratory needs to check whether a suspect sample of table salt has been adulterated with a cheaper, potentially harmful chloride-based substitute. Explain how qualitative analysis principles could help verify chloride content, and why this matters for consumer safety.",
+        "options": [
+          {"id": "a", "text": "Qualitative analysis has no role in food safety", "isCorrect": false},
+          {"id": "b", "text": "Adding acidified silver nitrate solution to a dissolved sample and observing a white precipitate would confirm the presence of chloride ions; this kind of testing helps verify that a product's composition matches what it claims to be, protecting consumers from unsafe or fraudulent substitutes", "isCorrect": true},
+          {"id": "c", "text": "The laboratory should measure only the colour of the salt, ignoring chemical tests", "isCorrect": false},
+          {"id": "d", "text": "Chloride testing is only relevant in the chemistry classroom, not real food safety", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The standard chloride confirmatory test, acidified silver nitrate giving a white precipitate, can verify chloride ions are genuinely present, supporting food safety verification work. Exam Tip: A textbook chemical test translates directly into genuine industrial quality-control applications.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
