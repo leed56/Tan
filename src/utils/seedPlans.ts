@@ -9,7 +9,7 @@ export const SEED_PLANS: SubscriptionPlan[] = [
     maxDevices: 2,
     maxProfiles: 1,
     description: 'Full premium access for one student, on up to 2 devices.',
-    features: ['summary', 'hoq', 'exam_mode', 'advanced_analytics'],
+    features: ['full_practice', 'summary', 'hoq', 'exam_mode', 'advanced_analytics'],
   },
   {
     id: 'family',
@@ -20,7 +20,7 @@ export const SEED_PLANS: SubscriptionPlan[] = [
     maxProfiles: 4,
     description: '1 primary account + 3 student profiles, on up to 5 devices — best value!',
     isPopular: true,
-    features: ['summary', 'hoq', 'exam_mode', 'advanced_analytics'],
+    features: ['full_practice', 'summary', 'hoq', 'exam_mode', 'advanced_analytics'],
   },
 ];
 
@@ -28,6 +28,11 @@ export const FEATURE_META: Record<
   string,
   { title: string; description: string; iconName: string }
 > = {
+  full_practice: {
+    title: 'Every Chapter, Every Subject',
+    description: 'Unlimited MCQ, Fill-in-the-Blank & True/False across all 13 subjects — not just chapter 1.',
+    iconName: 'infinite-outline',
+  },
   summary: {
     title: 'Topic Summaries',
     description: '10 key points per topic — a quick, focused way to revise.',

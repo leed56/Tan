@@ -23,6 +23,7 @@ const familyPlan = SEED_PLANS.find((p) => p.id === 'family')!;
 type Props = StackScreenProps<HomeStackParamList, 'LockedFeaturePreview'>;
 
 const ALL_FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',

@@ -23,6 +23,7 @@ interface Props {
 }
 
 const FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',

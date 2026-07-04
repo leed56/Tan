@@ -25,6 +25,7 @@ const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
 type Props = StackScreenProps<ProfileStackParamList, 'SubscriptionStatus'>;
 
 const ALL_FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',

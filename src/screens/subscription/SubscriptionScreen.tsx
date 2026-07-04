@@ -23,6 +23,7 @@ import type { FeatureKey, PlanId, BillingCycle } from '../../types/subscription'
 type Props = StackScreenProps<HomeStackParamList, 'SubscriptionScreen'>;
 
 const ALL_FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',

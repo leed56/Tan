@@ -1,4 +1,5 @@
 export type FeatureKey =
+  | 'full_practice'
   | 'summary'
   | 'hoq'
   | 'exam_mode'
