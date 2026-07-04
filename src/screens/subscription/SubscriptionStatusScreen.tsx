@@ -19,7 +19,6 @@ import { SEED_PLANS } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { useAuthStore } from '../../store/authStore';
 import type { FeatureKey } from '../../types/subscription';
-import { FREE_DAILY_LIMITS } from '../../types/quiz';
 
 const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? null;
 
@@ -113,7 +112,7 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
           <View style={styles.freeCard}>
             <Ionicons name="person-circle-outline" size={32} color={COLORS.textMuted} />
             <Text style={styles.freeTitle}>Free Plan</Text>
-            <Text style={styles.freeSub}>Limited to daily quiz quotas</Text>
+            <Text style={styles.freeSub}>Chapter 1 of every subject, unlimited</Text>
           </View>
         )}
 
@@ -128,21 +127,22 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
           ))}
         </View>
 
-        {/* Daily limits for free users */}
+        {/* Chapter access for free users */}
         {!premium && (
           <>
-            <Text style={styles.sectionLabel}>Free Daily Limits</Text>
+            <Text style={styles.sectionLabel}>Chapter Access</Text>
             <View style={styles.limitsCard}>
-              {[
-                { label: 'Multiple Choice', key: 'mcq' as const },
-                { label: 'Fill in the Blanks', key: 'fib' as const },
-                { label: 'True / False', key: 'tf' as const },
-              ].map((item) => (
-                <View key={item.key} style={styles.limitRow}>
-                  <Text style={styles.limitLabel}>{item.label}</Text>
-                  <Text style={styles.limitValue}>{FREE_DAILY_LIMITS[item.key]}/day</Text>
+              <View style={styles.limitRow}>
+                <Text style={styles.limitLabel}>Chapter 1 (every subject)</Text>
+                <Text style={styles.limitValue}>Unlimited</Text>
+              </View>
+              <View style={styles.limitRow}>
+                <Text style={styles.limitLabel}>Every other chapter</Text>
+                <View style={styles.limitLockedPill}>
+                  <Ionicons name="lock-closed" size={11} color={COLORS.gold} />
+                  <Text style={styles.limitLockedText}>Premium</Text>
                 </View>
-              ))}
+              </View>
               <View style={styles.limitRow}>
                 <Text style={styles.limitLabel}>Summary & Higher-Order</Text>
                 <View style={styles.limitLockedPill}>

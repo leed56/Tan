@@ -18,6 +18,7 @@ import { SkeletonList } from '../../components/ui/curriculum/SkeletonCard';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useCurriculumStore } from '../../store/curriculumStore';
 import { useProgressStore } from '../../store/progressStore';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { getPackCountForTopic } from '../../services/curriculumService';
 import type { CurriculumTopic } from '../../types/curriculum';
 
@@ -36,6 +37,8 @@ export function TopicsScreen({ navigation, route }: Props) {
   } = useCurriculumStore();
 
   const { getTopicProgress } = useProgressStore();
+  const { isPremium } = useSubscriptionStore();
+  const premiumUser = isPremium();
 
   const formId = routeFormId ?? selectedFormId;
   const topics = topicsBySubject[`${formId}::${subjectId}`] ?? [];
@@ -52,15 +55,26 @@ export function TopicsScreen({ navigation, route }: Props) {
     () =>
       topics.map((t) => {
         const packCount = getPackCountForTopic(t.id);
-        return { topic: t, packCount, progress: getTopicProgress(t.id, packCount) };
+        // Free users get the first topic (by syllabus order) in every subject
+        // for full, unlimited practice; every other topic requires Premium.
+        const isLocked = !premiumUser && t.order !== 1;
+        return { topic: t, packCount, isLocked, progress: getTopicProgress(t.id, packCount) };
       }),
-    [topics, getTopicProgress],
+    [topics, getTopicProgress, premiumUser],
   );
 
   const completedCount = enrichedTopics.filter((e) => e.progress.progressPercent === 100).length;
   const overallPct = topics.length > 0 ? Math.round((completedCount / topics.length) * 100) : 0;
 
   const handleTopicPress = useCallback((topic: CurriculumTopic) => {
+    if (!premiumUser && topic.order !== 1) {
+      navigation.navigate('LockedFeaturePreview', {
+        featureKey: 'topic_lock',
+        featureTitle: 'Chapter Locked',
+        featureDescription: `Upgrade to unlock every chapter in ${subjectName}, plus AI summaries and Higher Order Questions.`,
+      });
+      return;
+    }
     navigation.navigate('LearningPackDetail', {
       packId: topic.id,
       packTitle: topic.name,
@@ -69,7 +83,7 @@ export function TopicsScreen({ navigation, route }: Props) {
       formId,
       subjectId,
     });
-  }, [navigation, color, formId, subjectId]);
+  }, [navigation, color, formId, subjectId, premiumUser, subjectName]);
 
   if (error) {
     return (
@@ -145,6 +159,7 @@ export function TopicsScreen({ navigation, route }: Props) {
               subjectColor={color}
               packCount={item.packCount}
               progress={item.progress}
+              isLocked={item.isLocked}
               onPress={handleTopicPress}
             />
           )}

@@ -55,27 +55,6 @@ export interface QuizAnswer {
   createdAt: number;
 }
 
-export interface DailyUsage {
-  id: string;
-  userId: string;
-  date: string; // YYYY-MM-DD
-  mcqUsed: number;
-  fibUsed: number;
-  tfUsed: number;
-  summaryUsed: number;
-  hoqUsed: number;
-}
-
-export const FREE_DAILY_LIMITS: Record<QuizType, number> = {
-  mcq: 5,
-  fib: 3,
-  tf: 3,
-  // HOQ packs are always premium-gated (see LearningPackDetailScreen), so this
-  // limit is never actually enforced — premium users bypass it entirely — but
-  // a value is required for QuizCard's usage-pip math to stay type-safe.
-  hoq: 3,
-};
-
 export interface QuizSessionResult {
   correctCount: number;
   wrongCount: number;

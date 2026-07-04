@@ -9,7 +9,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
 import type { QuizType } from '../../../types/quiz';
-import { FREE_DAILY_LIMITS } from '../../../types/quiz';
 
 interface QuizCardProps {
   quizType: QuizType;
@@ -17,7 +16,6 @@ interface QuizCardProps {
   estimatedMinutes: number;
   completionXP: number;
   difficulty: 'easy' | 'medium' | 'hard';
-  remainingUses: number;
   subjectColor: string;
 }
 
@@ -52,13 +50,10 @@ export function QuizCard({
   estimatedMinutes,
   completionXP,
   difficulty,
-  remainingUses,
   subjectColor,
 }: QuizCardProps) {
   const meta = TYPE_META[quizType];
   const diffColor = DIFF_COLORS[difficulty];
-  const limit = FREE_DAILY_LIMITS[quizType];
-  const used = limit - remainingUses;
 
   return (
     <LinearGradient
@@ -87,26 +82,6 @@ export function QuizCard({
         <StatChip icon="help-circle-outline" label={`${questionCount} questions`} />
         <StatChip icon="time-outline" label={`${estimatedMinutes} min`} />
         <StatChip icon="flash-outline" label={`+${completionXP} XP`} color={COLORS.gold} />
-      </View>
-
-      {/* Daily usage indicator */}
-      <View style={styles.usageRow}>
-        <View style={styles.usageTrack}>
-          {Array.from({ length: limit }).map((_, i) => (
-            <View
-              key={i}
-              style={[
-                styles.usagePip,
-                i < used
-                  ? styles.usagePipUsed
-                  : { backgroundColor: subjectColor },
-              ]}
-            />
-          ))}
-        </View>
-        <Text style={styles.usageLabel}>
-          {remainingUses}/{limit} free uses left today
-        </Text>
       </View>
     </LinearGradient>
   );
@@ -168,13 +143,4 @@ const styles = StyleSheet.create({
     borderColor: COLORS.glassBorder,
   },
   statChipText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
-  usageRow: { flexDirection: 'row', alignItems: 'center', gap: SPACING.sm },
-  usageTrack: { flexDirection: 'row', gap: 4 },
-  usagePip: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-  },
-  usagePipUsed: { backgroundColor: COLORS.bgCardLight },
-  usageLabel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
 });
