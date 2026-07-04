@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Modal,
   View,
@@ -34,9 +34,16 @@ export function FeedbackModal({
 }: FeedbackModalProps) {
   const parsed = parseExplanation(explanation);
   const translateY = useRef(new Animated.Value(300)).current;
+  // The sheet renders right where the student just tapped an answer option.
+  // A fast tap (or a residual double-tap) can land on "Continue" the instant
+  // it appears, skipping the explanation and jumping straight to the next
+  // question. Ignore taps for a brief window after the sheet opens.
+  const [continueReady, setContinueReady] = useState(false);
 
   useEffect(() => {
     if (visible) {
+      setContinueReady(false);
+      const timer = setTimeout(() => setContinueReady(true), 500);
       Animated.spring(translateY, {
         toValue: 0,
         damping: 22,
@@ -44,10 +51,16 @@ export function FeedbackModal({
         mass: 0.9,
         useNativeDriver: true,
       }).start();
+      return () => clearTimeout(timer);
     } else {
       translateY.setValue(300);
     }
   }, [visible, translateY]);
+
+  const handleContinue = () => {
+    if (!continueReady) return;
+    onContinue();
+  };
 
   const accentColor = isCorrect ? COLORS.success : COLORS.warning;
   const gradientColors: [string, string] = isCorrect
@@ -60,7 +73,7 @@ export function FeedbackModal({
       transparent
       animationType="none"
       statusBarTranslucent
-      onRequestClose={onContinue}
+      onRequestClose={handleContinue}
     >
       <View style={styles.backdrop}>
         <Animated.View style={[styles.sheet, { transform: [{ translateY }] }]}>
@@ -110,7 +123,7 @@ export function FeedbackModal({
             </ScrollView>
 
             {/* Continue button — filled, prominent */}
-            <TouchableOpacity onPress={onContinue} activeOpacity={0.9}>
+            <TouchableOpacity onPress={handleContinue} activeOpacity={0.9}>
               <LinearGradient
                 colors={isCorrect ? ['#4ECDC4', '#3DBAB2'] : ['#FFB74D', '#F5A623']}
                 start={{ x: 0, y: 0 }}

@@ -16,8 +16,8 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
-import { createUserProfile } from '../../services/userService';
-import { AVATARS } from '../../constants';
+import { createUserProfile, updateSelectedSubjects as persistSelectedSubjects } from '../../services/userService';
+import { AVATARS, SUBJECTS } from '../../constants';
 
 type Props = StackScreenProps<AuthStackParamList, 'CreateProfile'>;
 
@@ -32,27 +32,35 @@ export function CreateProfileScreen({ navigation }: Props) {
 
   const user = useAuthStore((s) => s.user);
   const setProfile = useProfileStore((s) => s.setProfile);
+  const setUser = useAuthStore((s) => s.setUser);
 
   const canContinue = name.trim().length >= 2 && form !== null;
 
   const handleContinue = async () => {
     if (!canContinue || !user) return;
     setLoading(true);
+    // All subjects are available by default — no separate selection step.
+    // selectedSubjectIds must stay non-empty (RootNavigator treats an empty
+    // list as "onboarding incomplete"), so seed it with every subject id
+    // scoped to the student's form.
+    const selectedSubjectIds = SUBJECTS.map((s) => `form_${form}_${s.id}`);
     const profile = {
       uid: user.uid,
       name: name.trim(),
       form: form!,
       school: school.trim() || null,
       avatarId: selectedAvatar,
-      selectedSubjectIds: [],
+      selectedSubjectIds,
       createdAt: Date.now(),
       updatedAt: Date.now(),
     };
     // Persist locally (survives restart) and to Firestore users/{uid}.
     setProfile(profile);
     await createUserProfile(user, profile);
+    await persistSelectedSubjects(user.uid, selectedSubjectIds);
     setLoading(false);
-    navigation.navigate('SubjectSelection');
+    // Authenticate into the app — RootNavigator switches stacks automatically.
+    setUser(user);
   };
 
   return (
@@ -61,7 +69,7 @@ export function CreateProfileScreen({ navigation }: Props) {
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
           <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
         </TouchableOpacity>
-        <Text style={styles.step}>Step 1 of 2</Text>
+        <Text style={styles.step}>Last step</Text>
       </View>
 
       <View style={styles.content}>
@@ -147,7 +155,7 @@ export function CreateProfileScreen({ navigation }: Props) {
         </View>
 
         <AppButton
-          title="Continue"
+          title="Start Learning 🚀"
           onPress={handleContinue}
           disabled={!canContinue}
           loading={loading}

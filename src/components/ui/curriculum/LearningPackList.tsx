@@ -20,7 +20,7 @@ const PACK_TYPE_META: Record<CurriculumPackType, { label: string; icon: string; 
   mcq:     { label: 'Multiple Choice',   icon: 'radio-button-on', color: '#4A90D9' },
   tf:      { label: 'True / False',       icon: 'swap-horizontal',  color: '#F59E0B' },
   fib:     { label: 'Fill in Blank',      icon: 'create',            color: '#10B981' },
-  summary: { label: 'AI Summary',         icon: 'sparkles',          color: '#F7C52E' },
+  summary: { label: 'Summary',             icon: 'sparkles',          color: '#F7C52E' },
   hoq:     { label: 'Higher Order',       icon: 'bulb',              color: '#EC4899' },
 };
 
