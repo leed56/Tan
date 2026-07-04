@@ -1,0 +1,374 @@
+{
+  "topicId": "form_1_physics_topic_10",
+  "topicName": "Linear Motion",
+  "order": 10,
+  "description": "An introduction to motion in a straight line, covering distance and displacement, speed and velocity, acceleration, scalar and vector quantities, and interpreting distance-time and velocity-time graphs.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "The distance moved by a body in a stated direction is called:",
+        "options": [
+          {"id": "a", "text": "Speed", "isCorrect": false},
+          {"id": "b", "text": "Displacement", "isCorrect": true},
+          {"id": "c", "text": "Acceleration", "isCorrect": false},
+          {"id": "d", "text": "Time", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Distance with direction is displacement. Exam Tip: Distance = how far (no direction); displacement = how far in a given direction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The distance travelled by a body per unit time is called:",
+        "options": [
+          {"id": "a", "text": "Displacement", "isCorrect": false},
+          {"id": "b", "text": "Speed", "isCorrect": true},
+          {"id": "c", "text": "Force", "isCorrect": false},
+          {"id": "d", "text": "Acceleration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Distance / time is speed. Exam Tip: Speed = distance / time. SI unit metres per second (m/s).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of speed is:",
+        "options": [
+          {"id": "a", "text": "m/s2", "isCorrect": false},
+          {"id": "b", "text": "m/s", "isCorrect": true},
+          {"id": "c", "text": "m", "isCorrect": false},
+          {"id": "d", "text": "s", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Speed = distance (m) / time (s) = m/s. Exam Tip: m/s = speed; m/s2 = acceleration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car travels 100 metres in 20 seconds. Its speed is:",
+        "options": [
+          {"id": "a", "text": "2000 m/s", "isCorrect": false},
+          {"id": "b", "text": "5 m/s", "isCorrect": true},
+          {"id": "c", "text": "0.2 m/s", "isCorrect": false},
+          {"id": "d", "text": "120 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Speed = 100 / 20 = 5 m/s. Exam Tip: Divide distance BY time. A multiplies instead.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Speed in a stated direction is called:",
+        "options": [
+          {"id": "a", "text": "Distance", "isCorrect": false},
+          {"id": "b", "text": "Velocity", "isCorrect": true},
+          {"id": "c", "text": "Acceleration", "isCorrect": false},
+          {"id": "d", "text": "Force", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Speed with direction is velocity. Exam Tip: Speed = size only; velocity = size AND direction (a vector).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The rate of change of velocity with time is called:",
+        "options": [
+          {"id": "a", "text": "Speed", "isCorrect": false},
+          {"id": "b", "text": "Acceleration", "isCorrect": true},
+          {"id": "c", "text": "Distance", "isCorrect": false},
+          {"id": "d", "text": "Displacement", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "How fast velocity changes is acceleration. Exam Tip: Acceleration = change in velocity / time. SI unit m/s2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of acceleration is:",
+        "options": [
+          {"id": "a", "text": "m/s", "isCorrect": false},
+          {"id": "b", "text": "m/s2", "isCorrect": true},
+          {"id": "c", "text": "m", "isCorrect": false},
+          {"id": "d", "text": "km/h", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Acceleration = (m/s) / s = m/s2. Exam Tip: The squared second marks acceleration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body moving with constant (uniform) velocity has an acceleration of:",
+        "options": [
+          {"id": "a", "text": "10 m/s2", "isCorrect": false},
+          {"id": "b", "text": "Zero", "isCorrect": true},
+          {"id": "c", "text": "1 m/s2", "isCorrect": false},
+          {"id": "d", "text": "Increasing", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Uniform velocity means no change in velocity, so no acceleration. Exam Tip: Constant velocity means zero acceleration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car increases its velocity from 10 m/s to 30 m/s in 4 seconds. Its acceleration is:",
+        "options": [
+          {"id": "a", "text": "5 m/s2", "isCorrect": true},
+          {"id": "b", "text": "10 m/s2", "isCorrect": false},
+          {"id": "c", "text": "40 m/s2", "isCorrect": false},
+          {"id": "d", "text": "80 m/s2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "a = (30 - 10) / 4 = 20 / 4 = 5 m/s2. Exam Tip: Subtract the velocities FIRST, then divide by time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a body slows down, it has:",
+        "options": [
+          {"id": "a", "text": "Positive acceleration", "isCorrect": false},
+          {"id": "b", "text": "Negative acceleration (deceleration/retardation)", "isCorrect": true},
+          {"id": "c", "text": "Zero velocity always", "isCorrect": false},
+          {"id": "d", "text": "Constant speed", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A decrease in velocity is negative acceleration (deceleration). Exam Tip: Speeding up gives positive; slowing down gives negative (deceleration).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a distance-time graph, a straight horizontal line means the body is:",
+        "options": [
+          {"id": "a", "text": "Moving at constant speed", "isCorrect": false},
+          {"id": "b", "text": "At rest (stationary)", "isCorrect": true},
+          {"id": "c", "text": "Accelerating", "isCorrect": false},
+          {"id": "d", "text": "Slowing down", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A horizontal line means distance is not changing, so the body is at rest. Exam Tip: Distance-time: horizontal = at rest; sloping straight = constant speed; curve = changing speed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a distance-time graph, the speed of the body is given by the:",
+        "options": [
+          {"id": "a", "text": "Area under the graph", "isCorrect": false},
+          {"id": "b", "text": "Slope (gradient) of the graph", "isCorrect": true},
+          {"id": "c", "text": "Height of the graph", "isCorrect": false},
+          {"id": "d", "text": "Length of the axis", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Speed = distance / time = rise / run = slope (gradient). Exam Tip: Distance-time graph: gradient = speed. Steeper line = higher speed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bus travels 60 km in 2 hours. Its average speed is:",
+        "options": [
+          {"id": "a", "text": "120 km/h", "isCorrect": false},
+          {"id": "b", "text": "30 km/h", "isCorrect": true},
+          {"id": "c", "text": "62 km/h", "isCorrect": false},
+          {"id": "d", "text": "58 km/h", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Average speed = 60 / 2 = 30 km/h. Exam Tip: Average speed uses TOTAL distance / TOTAL time; keep units consistent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a vector quantity (has both size and direction)?",
+        "options": [
+          {"id": "a", "text": "Distance", "isCorrect": false},
+          {"id": "b", "text": "Speed", "isCorrect": false},
+          {"id": "c", "text": "Velocity", "isCorrect": true},
+          {"id": "d", "text": "Time", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Velocity is speed in a stated direction - a vector. Exam Tip: Vectors: displacement, velocity, acceleration, force. Scalars: distance, speed, time, mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body starts from rest. Its initial velocity is:",
+        "options": [
+          {"id": "a", "text": "10 m/s", "isCorrect": false},
+          {"id": "b", "text": "1 m/s", "isCorrect": false},
+          {"id": "c", "text": "0 m/s", "isCorrect": true},
+          {"id": "d", "text": "5 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Starts from rest means not moving, so zero velocity. Exam Tip: From rest always means initial velocity u = 0.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The length of the path travelled by a body, without regard to direction, is called ____.",
+        "options": [
+          {"id": "a", "text": "distance", "isCorrect": true},
+          {"id": "b", "text": "displacement", "isCorrect": false},
+          {"id": "c", "text": "speed", "isCorrect": false},
+          {"id": "d", "text": "velocity", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The total path length ignoring direction is distance, a scalar. Exam Tip: Distance is a scalar; displacement is the vector version.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Speed is calculated using the formula speed = distance / ____.",
+        "options": [
+          {"id": "a", "text": "time", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "force", "isCorrect": false},
+          {"id": "d", "text": "displacement", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Speed is distance divided by the time taken. Exam Tip: speed = distance / time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Speed in a stated direction is called ____.",
+        "options": [
+          {"id": "a", "text": "velocity", "isCorrect": true},
+          {"id": "b", "text": "speed", "isCorrect": false},
+          {"id": "c", "text": "acceleration", "isCorrect": false},
+          {"id": "d", "text": "distance", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Adding a direction to speed makes it velocity. Exam Tip: Velocity is a vector; speed is a scalar.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of acceleration is ____.",
+        "options": [
+          {"id": "a", "text": "m/s2", "isCorrect": true},
+          {"id": "b", "text": "m/s", "isCorrect": false},
+          {"id": "c", "text": "m", "isCorrect": false},
+          {"id": "d", "text": "km/h", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Acceleration is change of velocity (m/s) per second, giving m/s2. Exam Tip: Acceleration always carries m/s2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body moving with uniform velocity has zero ____.",
+        "options": [
+          {"id": "a", "text": "acceleration", "isCorrect": true},
+          {"id": "b", "text": "velocity", "isCorrect": false},
+          {"id": "c", "text": "speed", "isCorrect": false},
+          {"id": "d", "text": "displacement", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Uniform velocity means velocity does not change, so acceleration is zero. Exam Tip: Constant velocity means acceleration = 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient (slope) of a distance-time graph gives the ____ of the body.",
+        "options": [
+          {"id": "a", "text": "speed", "isCorrect": true},
+          {"id": "b", "text": "acceleration", "isCorrect": false},
+          {"id": "c", "text": "distance", "isCorrect": false},
+          {"id": "d", "text": "time", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The gradient is rise/run = distance/time = speed. Exam Tip: Distance-time gradient = speed; velocity-time gradient = acceleration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The formula for acceleration is a = (v - u) / ____, where v is final velocity and u is initial velocity.",
+        "options": [
+          {"id": "a", "text": "time (t)", "isCorrect": true},
+          {"id": "b", "text": "distance", "isCorrect": false},
+          {"id": "c", "text": "mass", "isCorrect": false},
+          {"id": "d", "text": "speed", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Acceleration is the change in velocity divided by the time taken. Exam Tip: a = (v - u)/t.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A quantity that has only size (magnitude) but no direction is called a ____ quantity.",
+        "options": [
+          {"id": "a", "text": "scalar", "isCorrect": true},
+          {"id": "b", "text": "vector", "isCorrect": false},
+          {"id": "c", "text": "negative", "isCorrect": false},
+          {"id": "d", "text": "uniform", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A quantity with magnitude only and no direction is a scalar. Exam Tip: Scalars: distance, speed, mass, time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car covering equal distances in equal intervals of time is said to be moving with ____ speed.",
+        "options": [
+          {"id": "a", "text": "uniform (constant)", "isCorrect": true},
+          {"id": "b", "text": "increasing", "isCorrect": false},
+          {"id": "c", "text": "decreasing", "isCorrect": false},
+          {"id": "d", "text": "zero", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Equal distances in equal times means the speed does not change, so it is uniform. Exam Tip: Uniform speed shows as a straight sloping line on a distance-time graph.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On a velocity-time graph, the gradient (slope) represents the ____.",
+        "options": [
+          {"id": "a", "text": "acceleration", "isCorrect": true},
+          {"id": "b", "text": "speed", "isCorrect": false},
+          {"id": "c", "text": "distance", "isCorrect": false},
+          {"id": "d", "text": "velocity", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The gradient is change in velocity divided by time, which is acceleration. Exam Tip: Velocity-time graph: gradient = acceleration; area under = distance.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "Distance is a scalar quantity while displacement is a vector quantity.", "options": [], "correctAnswer": "true", "explanation": "Distance has size only while displacement has size and direction. Exam Tip: The classic scalar-vector example.", "difficulty": "easy"},
+      {"questionText": "Speed is calculated by multiplying distance by time.", "options": [], "correctAnswer": "false", "explanation": "Speed is distance divided by time, not multiplied. Exam Tip: speed = distance / time (division).", "difficulty": "easy"},
+      {"questionText": "Velocity is speed in a stated direction.", "options": [], "correctAnswer": "true", "explanation": "Velocity adds a direction to speed, making it a vector. Exam Tip: Speed = scalar; velocity = vector.", "difficulty": "easy"},
+      {"questionText": "A body moving with constant velocity is accelerating.", "options": [], "correctAnswer": "false", "explanation": "Constant velocity means no change in velocity, so acceleration is zero. Exam Tip: Constant velocity means zero acceleration.", "difficulty": "easy"},
+      {"questionText": "The SI unit of acceleration is m/s2.", "options": [], "correctAnswer": "true", "explanation": "Acceleration is measured in metres per second squared. Exam Tip: m/s2 identifies acceleration; m/s identifies speed/velocity.", "difficulty": "easy"},
+      {"questionText": "On a distance-time graph, a horizontal line means the body is moving fastest.", "options": [], "correctAnswer": "false", "explanation": "A horizontal line means distance is not changing, so the body is at rest. Exam Tip: Horizontal line = at rest.", "difficulty": "easy"},
+      {"questionText": "Deceleration means the velocity of a body is decreasing.", "options": [], "correctAnswer": "true", "explanation": "Deceleration is negative acceleration, a decrease in velocity. Exam Tip: Deceleration = slowing down = negative acceleration.", "difficulty": "easy"},
+      {"questionText": "Time is a vector quantity.", "options": [], "correctAnswer": "false", "explanation": "Time has magnitude only and no direction, so it is a scalar. Exam Tip: Time, distance, speed and mass are scalars.", "difficulty": "easy"},
+      {"questionText": "The gradient of a distance-time graph gives the speed of the body.", "options": [], "correctAnswer": "true", "explanation": "The gradient equals distance divided by time, which is speed. Exam Tip: Steeper line = greater speed.", "difficulty": "easy"},
+      {"questionText": "A body that starts from rest has an initial velocity greater than zero.", "options": [], "correctAnswer": "false", "explanation": "Starting from rest means the initial velocity is zero. Exam Tip: From rest means u = 0.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Distance", "options": [], "correctAnswer": "The length of the path travelled by a body, without regard to direction.", "explanation": "Distance is a scalar quantity measured in metres. Exam Tip: Distance tells how far, with no direction.", "difficulty": "easy"},
+      {"questionText": "Displacement", "options": [], "correctAnswer": "The distance moved by a body in a stated direction.", "explanation": "Displacement is a vector quantity measured in metres. Exam Tip: Displacement is distance plus direction.", "difficulty": "easy"},
+      {"questionText": "Speed", "options": [], "correctAnswer": "The distance travelled per unit time, given by speed = distance / time.", "explanation": "Speed is a scalar measured in m/s. Exam Tip: Divide distance by time to get speed.", "difficulty": "easy"},
+      {"questionText": "Velocity", "options": [], "correctAnswer": "The speed of a body in a stated direction, that is the rate of change of displacement.", "explanation": "Velocity is a vector measured in m/s. Exam Tip: Velocity has both size and direction.", "difficulty": "easy"},
+      {"questionText": "Acceleration", "options": [], "correctAnswer": "The rate of change of velocity with time, given by a = (v - u) / t.", "explanation": "Acceleration is a vector measured in m/s2. Exam Tip: Subtract u from v first, then divide by time.", "difficulty": "easy"},
+      {"questionText": "Scalar and vector", "options": [], "correctAnswer": "A scalar has size only, while a vector has both size and direction.", "explanation": "Distance, speed, time and mass are scalars; displacement, velocity and force are vectors. Exam Tip: Ask whether direction matters to decide.", "difficulty": "easy"},
+      {"questionText": "Uniform velocity", "options": [], "correctAnswer": "Motion in which a body covers equal distances in equal intervals of time in a fixed direction, so acceleration is zero.", "explanation": "Uniform velocity gives a straight sloping line on a distance-time graph. Exam Tip: Uniform velocity means zero acceleration.", "difficulty": "easy"},
+      {"questionText": "Distance-time graph gradient", "options": [], "correctAnswer": "The gradient (slope) of a distance-time graph gives the speed of the body.", "explanation": "A steeper line means a higher speed; a horizontal line means at rest. Exam Tip: Distance-time gradient = speed.", "difficulty": "easy"},
+      {"questionText": "Velocity-time graph gradient", "options": [], "correctAnswer": "The gradient (slope) of a velocity-time graph gives the acceleration of the body.", "explanation": "The area under a velocity-time graph gives the distance travelled. Exam Tip: Velocity-time gradient = acceleration.", "difficulty": "easy"},
+      {"questionText": "Average speed", "options": [], "correctAnswer": "The total distance travelled divided by the total time taken for the whole journey.", "explanation": "Average speed uses totals, including any resting time. Exam Tip: Use TOTAL distance / TOTAL time.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "A cyclist travels 150 m east in 30 s, rests for 10 s, then travels 90 m east in 20 s. Find the average speed for the WHOLE journey.",
+        "options": [
+          {"id": "a", "text": "5 m/s", "isCorrect": false},
+          {"id": "b", "text": "4 m/s", "isCorrect": true},
+          {"id": "c", "text": "4.8 m/s", "isCorrect": false},
+          {"id": "d", "text": "8 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Total distance = 150 + 90 = 240 m. Total time = 30 + 10 + 20 = 60 s. Average speed = 240 / 60 = 4 m/s. Exam Tip: Average speed uses TOTAL distance and TOTAL time - include the rest time. Forgetting the 10 s gives 4.8 m/s (the trap).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A car accelerates uniformly from rest and reaches 24 m/s in 8 s. Find its acceleration, then how far it travels using distance = average velocity x time.",
+        "options": [
+          {"id": "a", "text": "a = 3 m/s2, distance = 96 m", "isCorrect": true},
+          {"id": "b", "text": "a = 3 m/s2, distance = 192 m", "isCorrect": false},
+          {"id": "c", "text": "a = 24 m/s2, distance = 96 m", "isCorrect": false},
+          {"id": "d", "text": "a = 3 m/s2, distance = 12 m", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "a = (24 - 0) / 8 = 3 m/s2. Average velocity = (0 + 24)/2 = 12 m/s. Distance = 12 x 8 = 96 m. Exam Tip: From rest means u = 0. Average velocity is (u + v)/2, not the final velocity.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A runner's position every 2 s: 0 s to 0 m, 2 s to 10 m, 4 s to 20 m, 6 s to 30 m, 8 s to 40 m. Describe the motion and calculate the speed.",
+        "options": [
+          {"id": "a", "text": "The runner speeds up; speed = 40 m/s", "isCorrect": false},
+          {"id": "b", "text": "The runner moves at constant speed; speed = 5 m/s", "isCorrect": true},
+          {"id": "c", "text": "The runner is at rest; speed = 0 m/s", "isCorrect": false},
+          {"id": "d", "text": "The runner slows down; speed = 2 m/s", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Each 2 s interval covers 10 m (equal distances in equal times) = constant speed. Speed = 10 / 2 = 5 m/s. Exam Tip: Equal distances in equal time = uniform speed. Compute speed from any matching interval.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

@@ -2,939 +2,371 @@
   "topicId": "form_1_physics_topic_5",
   "topicName": "Structure and Properties of Matter",
   "order": 5,
-  "description": "An introduction to the particulate nature of matter, the kinetic theory, the three states of matter, and surface properties such as cohesion, adhesion, surface tension, capillarity, diffusion and elasticity.",
+  "description": "An introduction to the particle nature of matter and the mechanical properties of materials, including elasticity, plasticity, cohesion, adhesion, surface tension, capillarity, tension and Hooke's law.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which of the following best describes the arrangement of particles in a solid?",
+        "questionText": "All matter is made up of tiny particles called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Far apart and moving randomly at high speed",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Close together in a fixed, regular pattern, only vibrating",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Close together but able to slide over one another",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Completely still with no motion at all",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Cells", "isCorrect": false},
+          {"id": "b", "text": "Atoms and molecules", "isCorrect": true},
+          {"id": "c", "text": "Organs", "isCorrect": false},
+          {"id": "d", "text": "Cans", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "In a solid, particles are packed closely in a fixed regular arrangement and can only vibrate about fixed positions, which gives solids a definite shape and volume.",
+        "explanation": "The basic particles of matter are atoms and molecules. Exam Tip: Cells are units of LIVING things. Matter is built from atoms and molecules.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The theory that explains the behaviour of matter in terms of tiny moving particles is called the:",
+        "questionText": "The property of a material that allows it to return to its original shape after a stretching force is removed is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Atomic decay theory",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Wave theory",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Kinetic theory of matter",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Quantum theory",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Plasticity", "isCorrect": false},
+          {"id": "b", "text": "Elasticity", "isCorrect": true},
+          {"id": "c", "text": "Density", "isCorrect": false},
+          {"id": "d", "text": "Hardness", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "The kinetic theory of matter states that all matter is made of tiny particles that are in continuous motion.",
+        "correctAnswer": "b",
+        "explanation": "The ability to return to shape is elasticity. Exam Tip: Elastic materials (rubber, springs) return to shape; plastic materials stay deformed.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which state of matter has a definite volume but takes the shape of its container?",
+        "questionText": "A material that does NOT return to its original shape after the force is removed is said to be:",
         "options": [
-          {
-            "id": "a",
-            "text": "Solid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Liquid",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Gas",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Plasma",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Elastic", "isCorrect": false},
+          {"id": "b", "text": "Plastic", "isCorrect": true},
+          {"id": "c", "text": "Dense", "isCorrect": false},
+          {"id": "d", "text": "Magnetic", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Liquids have a fixed volume because their particles are still close together, but they flow and take the shape of the container because the particles can slide past each other.",
+        "explanation": "A material that stays deformed is plastic. Exam Tip: Plasticine and wet clay are plastic; rubber is elastic.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The force of attraction between molecules of the same kind is called:",
+        "questionText": "The force of attraction between molecules of the SAME substance is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Adhesion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cohesion",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Gravity",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Friction",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Adhesion", "isCorrect": false},
+          {"id": "b", "text": "Cohesion", "isCorrect": true},
+          {"id": "c", "text": "Elasticity", "isCorrect": false},
+          {"id": "d", "text": "Pressure", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Cohesion is the attractive force between molecules of the same substance, for example between water molecules.",
+        "explanation": "Attraction between like molecules is cohesion. Exam Tip: Cohesion = same substance (water-water); adhesion = different substances (water-glass).",
         "difficulty": "easy"
       },
       {
-        "questionText": "Water rises up a thin glass tube because the:",
+        "questionText": "The force of attraction between molecules of DIFFERENT substances is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Cohesion between water molecules is stronger than adhesion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Adhesion between water and glass is stronger than cohesion",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Water has no weight inside the tube",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Air pushes the water down the tube",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Cohesion", "isCorrect": false},
+          {"id": "b", "text": "Adhesion", "isCorrect": true},
+          {"id": "c", "text": "Tension", "isCorrect": false},
+          {"id": "d", "text": "Density", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "In capillary rise, the adhesion between water and the glass is greater than the cohesion between water molecules, so water climbs the tube and forms a concave meniscus.",
-        "difficulty": "medium"
+        "explanation": "Attraction between unlike molecules is adhesion. Exam Tip: Adhesion makes water wet glass and ink stick to paper.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The random zig-zag movement of smoke particles seen under a microscope is known as:",
+        "questionText": "The property by which the surface of a liquid behaves like a thin stretched skin is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Diffusion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Capillarity",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Brownian motion",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Surface tension",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Capillarity", "isCorrect": false},
+          {"id": "b", "text": "Surface tension", "isCorrect": true},
+          {"id": "c", "text": "Elasticity", "isCorrect": false},
+          {"id": "d", "text": "Osmosis", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Brownian motion is the continuous random movement of small visible particles caused by collisions with invisible, fast-moving air or liquid molecules, providing evidence for the kinetic theory.",
-        "difficulty": "medium"
+        "correctAnswer": "b",
+        "explanation": "The surface acting like a stretched skin is surface tension. Exam Tip: Surface tension lets insects walk on water and forms droplets into beads.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A small needle can float on the surface of still water mainly because of:",
+        "questionText": "The rise or fall of a liquid in a narrow tube is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Surface tension",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Diffusion",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Upthrust from displaced water only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Adhesion to the air",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Surface tension", "isCorrect": false},
+          {"id": "b", "text": "Capillarity (capillary action)", "isCorrect": true},
+          {"id": "c", "text": "Adhesion", "isCorrect": false},
+          {"id": "d", "text": "Elasticity", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Liquid rising or falling in a narrow tube is capillarity. Exam Tip: Capillarity helps water rise in plant stems and oil rise in a lamp wick.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following materials is elastic?",
+        "options": [
+          {"id": "a", "text": "Wet clay", "isCorrect": false},
+          {"id": "b", "text": "Rubber band", "isCorrect": true},
+          {"id": "c", "text": "Plasticine", "isCorrect": false},
+          {"id": "d", "text": "Chewing gum", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A rubber band snaps back; clay, plasticine and gum stay deformed. Exam Tip: Rubber and springs are elastic.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a spring is stretched by a force, the force that develops inside the spring opposing the stretch is called:",
+        "options": [
+          {"id": "a", "text": "Tension", "isCorrect": true},
+          {"id": "b", "text": "Pressure", "isCorrect": false},
+          {"id": "c", "text": "Density", "isCorrect": false},
+          {"id": "d", "text": "Weight", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Surface tension creates a thin elastic-like skin on the water surface that can support the small weight of a carefully placed needle.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When a bottle of perfume is opened in one corner of a room and the smell spreads everywhere, this process is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cohesion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Diffusion",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Capillarity",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Condensation",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Diffusion is the spreading of particles from a region of high concentration to a region of low concentration due to the random motion of particles.",
+        "explanation": "The internal pulling force is tension. Exam Tip: Tension is the pulling force in a stretched string, spring or rope.",
         "difficulty": "easy"
-      },
-      {
-        "questionText": "Which change of state occurs when a gas turns directly into a solid without becoming a liquid?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Melting",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Evaporation",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Deposition",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Freezing",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Deposition (sometimes called desublimation) is the direct change of a gas into a solid without passing through the liquid state.",
-        "difficulty": "medium"
       },
       {
         "questionText": "According to Hooke's law, the extension of a spring is directly proportional to the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Length of the spring at rest",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Applied force (load), provided the elastic limit is not exceeded",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Temperature of the spring",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Thickness of the wire only",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Colour of the spring", "isCorrect": false},
+          {"id": "b", "text": "Stretching force (load) applied, within the elastic limit", "isCorrect": true},
+          {"id": "c", "text": "Length of the laboratory", "isCorrect": false},
+          {"id": "d", "text": "Time of day", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Hooke's law states that, within the elastic limit, the extension of a spring is directly proportional to the force applied to it.",
+        "explanation": "Extension is proportional to the load, provided the elastic limit is not exceeded. Exam Tip: Hooke's law: extension proportional to force (up to the elastic limit).",
         "difficulty": "medium"
       },
       {
-        "questionText": "Gases can be compressed much more easily than liquids and solids because in a gas the particles are:",
+        "questionText": "The maximum point up to which a material remains elastic is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Very heavy",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Joined together by strong bonds",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Far apart with large empty spaces between them",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Not moving",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Boiling point", "isCorrect": false},
+          {"id": "b", "text": "Elastic limit", "isCorrect": true},
+          {"id": "c", "text": "Melting point", "isCorrect": false},
+          {"id": "d", "text": "Freezing point", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Gas particles are widely separated with large spaces between them, so they can be pushed closer together (compressed) far more than the tightly packed particles of liquids and solids.",
+        "correctAnswer": "b",
+        "explanation": "The maximum point is the elastic limit. Exam Tip: Past the elastic limit the material is permanently deformed.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The point beyond which a stretched material no longer returns to its original shape when the force is removed is called the:",
+        "questionText": "Water rises up the stem of a plant mainly because of:",
         "options": [
-          {
-            "id": "a",
-            "text": "Melting point",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Elastic limit",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Boiling point",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Centre of gravity",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Elasticity", "isCorrect": false},
+          {"id": "b", "text": "Capillarity and adhesion", "isCorrect": true},
+          {"id": "c", "text": "Magnetism", "isCorrect": false},
+          {"id": "d", "text": "Combustion", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "If a material is stretched beyond its elastic limit it becomes permanently deformed and will not return to its original length.",
+        "explanation": "Capillary action, aided by adhesion, lifts water up the narrow tubes. Exam Tip: Capillarity in plants: water rises in the narrow tubes of the stem.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following provides direct evidence that liquids are made up of tiny moving particles?",
+        "questionText": "A steel needle can float on water without sinking because of:",
         "options": [
-          {
-            "id": "a",
-            "text": "A solid keeping its shape",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A stone sinking in water",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Brownian motion of pollen grains in water",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Ice being heavier than water",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Its low density", "isCorrect": false},
+          {"id": "b", "text": "Surface tension of the water", "isCorrect": true},
+          {"id": "c", "text": "Its magnetism", "isCorrect": false},
+          {"id": "d", "text": "Capillarity", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The water surface acts like a skin (surface tension) supporting the light needle. Exam Tip: Surface tension supports small light objects even when denser than water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Mercury in a narrow glass tube curves DOWNWARD in the middle (convex) because:",
+        "options": [
+          {"id": "a", "text": "Adhesion is greater than cohesion", "isCorrect": false},
+          {"id": "b", "text": "Cohesion is greater than adhesion", "isCorrect": true},
+          {"id": "c", "text": "There is no force between molecules", "isCorrect": false},
+          {"id": "d", "text": "Mercury is elastic", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In mercury, cohesion is stronger than adhesion, so it pulls together and curves down. Exam Tip: Water: adhesion > cohesion (curves up). Mercury: cohesion > adhesion (curves down).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which state of matter has particles that are very close together and only vibrate in fixed positions?",
+        "options": [
+          {"id": "a", "text": "Gas", "isCorrect": false},
+          {"id": "b", "text": "Liquid", "isCorrect": false},
+          {"id": "c", "text": "Solid", "isCorrect": true},
+          {"id": "d", "text": "Vapour", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The random jiggling (Brownian motion) of pollen grains shows they are being bumped by unseen moving water particles, supporting the particulate nature of matter.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Mercury forms a curved upward (convex) meniscus in a glass tube because the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cohesion of mercury is stronger than its adhesion to glass",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Adhesion of mercury to glass is stronger than its cohesion",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Mercury has no surface tension",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Mercury is lighter than glass",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "For mercury the cohesive forces between its own molecules are stronger than the adhesive forces to glass, so it pulls together, depresses in the tube and forms a convex meniscus.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Diffusion happens fastest in which state of matter, and why?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Solids, because particles are close together",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Liquids, because particles cannot move",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Gases, because particles move quickly and are far apart",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "It happens at the same rate in all states",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Diffusion is fastest in gases because gas particles move at high speeds and have large spaces between them, allowing them to mix quickly.",
-        "difficulty": "medium"
+        "explanation": "In a solid, particles are tightly packed and vibrate in fixed positions. Exam Tip: Solid = tightly packed fixed; liquid = close but can move; gas = far apart.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "All matter is made up of tiny particles that are in continuous _____, according to the kinetic theory.",
+        "questionText": "All matter is made up of tiny particles called atoms and ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "motion",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "rest",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "equilibrium",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "contact",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "molecules", "isCorrect": true},
+          {"id": "b", "text": "cells", "isCorrect": false},
+          {"id": "c", "text": "crystals", "isCorrect": false},
+          {"id": "d", "text": "fibres", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The key idea of the kinetic theory is that particles are always moving.",
+        "explanation": "Atoms join to form molecules, and together they are the building blocks of all matter. Exam Tip: Atoms and molecules are the building blocks of all matter.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The three common states of matter are solid, liquid and _____.",
+        "questionText": "The ability of a material to return to its original shape after the deforming force is removed is called ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "plasma",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "gas",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "vapour",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "fluid",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "plasticity", "isCorrect": false},
+          {"id": "b", "text": "elasticity", "isCorrect": true},
+          {"id": "c", "text": "density", "isCorrect": false},
+          {"id": "d", "text": "hardness", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Solids, liquids and gases differ in how their particles are arranged and how they move.",
+        "explanation": "Returning to the original shape after the force is removed defines elasticity. Exam Tip: Rubber and springs show elasticity.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The force of attraction between molecules of different substances is called _____.",
+        "questionText": "The force of attraction between molecules of the same kind is called ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "cohesion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "viscosity",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "adhesion",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "friction",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Adhesion explains why water wets glass and why ink sticks to paper.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The rise or fall of a liquid in a narrow tube is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "diffusion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "osmosis",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "viscosity",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "capillarity",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Capillarity (capillary action) results from the balance between adhesion and cohesion in a thin tube.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The property that makes the surface of a liquid behave like a stretched elastic skin is called surface _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "tension",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "pressure",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "viscosity",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "density",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "cohesion", "isCorrect": true},
+          {"id": "b", "text": "adhesion", "isCorrect": false},
+          {"id": "c", "text": "tension", "isCorrect": false},
+          {"id": "d", "text": "friction", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Surface tension is caused by the unbalanced cohesive forces on molecules at the liquid surface.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The change of state from a liquid to a gas is called _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "condensation",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "evaporation",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "freezing",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "melting",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Evaporation (or boiling) occurs when liquid particles gain enough energy to escape into the gaseous state.",
+        "explanation": "Attraction between molecules of the same kind is cohesion. Exam Tip: Cohesion holds a water drop together.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The random movement of visible particles caused by collisions with invisible particles is called _____ motion.",
+        "questionText": "The force of attraction between molecules of different kinds is called ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "random",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "molecular",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Brownian",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "thermal",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Brownian motion gives evidence that liquids and gases are made of moving particles.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Within the elastic limit, the extension of a spring is directly proportional to the applied force; this is known as _____ law.",
-        "options": [
-          {
-            "id": "a",
-            "text": "Newton's",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Boyle's",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Charles'",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Hooke's",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Hooke's law links the load on a spring to its extension.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The maximum force beyond which a material does not return to its original shape is the _____ limit.",
-        "options": [
-          {
-            "id": "a",
-            "text": "elastic",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "plastic",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "yield",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "breaking",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Stretching past the elastic limit causes permanent deformation.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Diffusion is the movement of particles from a region of high concentration to a region of _____ concentration.",
-        "options": [
-          {
-            "id": "a",
-            "text": "high",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "low",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "equal",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "medium",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "cohesion", "isCorrect": false},
+          {"id": "b", "text": "adhesion", "isCorrect": true},
+          {"id": "c", "text": "pressure", "isCorrect": false},
+          {"id": "d", "text": "elasticity", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Particles spread out until they are evenly distributed.",
+        "explanation": "Attraction between molecules of different kinds is adhesion. Exam Tip: Adhesion makes water cling to glass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The property that makes the surface of a liquid behave like a stretched elastic skin is called ____.",
+        "options": [
+          {"id": "a", "text": "capillarity", "isCorrect": false},
+          {"id": "b", "text": "surface tension", "isCorrect": true},
+          {"id": "c", "text": "adhesion", "isCorrect": false},
+          {"id": "d", "text": "osmosis", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A liquid surface behaving like a stretched skin is surface tension. Exam Tip: Surface tension forms droplets and supports small insects.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The rise or fall of a liquid in a very narrow tube is called ____.",
+        "options": [
+          {"id": "a", "text": "capillarity (capillary action)", "isCorrect": true},
+          {"id": "b", "text": "surface tension", "isCorrect": false},
+          {"id": "c", "text": "cohesion", "isCorrect": false},
+          {"id": "d", "text": "diffusion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rise or fall of a liquid in a very narrow tube is capillarity. Exam Tip: Capillarity draws oil up a lamp wick and water up plant stems.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to Hooke's law, extension is directly proportional to the applied force provided the ____ limit is not exceeded.",
+        "options": [
+          {"id": "a", "text": "elastic", "isCorrect": true},
+          {"id": "b", "text": "plastic", "isCorrect": false},
+          {"id": "c", "text": "boiling", "isCorrect": false},
+          {"id": "d", "text": "melting", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Hooke's law holds only up to the elastic limit. Exam Tip: Beyond the elastic limit the spring is permanently stretched.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The pulling force that develops in a stretched spring or string is called ____.",
+        "options": [
+          {"id": "a", "text": "tension", "isCorrect": true},
+          {"id": "b", "text": "pressure", "isCorrect": false},
+          {"id": "c", "text": "weight", "isCorrect": false},
+          {"id": "d", "text": "density", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The pulling force in a stretched spring or string is tension. Exam Tip: Tension acts along a stretched rope, string or spring.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In water, ____ is greater than cohesion, so water wets glass and rises up the tube.",
+        "options": [
+          {"id": "a", "text": "adhesion", "isCorrect": true},
+          {"id": "b", "text": "cohesion", "isCorrect": false},
+          {"id": "c", "text": "tension", "isCorrect": false},
+          {"id": "d", "text": "elasticity", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Water wets glass and rises because adhesion is greater than cohesion. Exam Tip: Water: adhesion > cohesion (wets, rises). Mercury: cohesion > adhesion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A material such as plasticine that keeps its new shape after a force is removed is described as ____.",
+        "options": [
+          {"id": "a", "text": "elastic", "isCorrect": false},
+          {"id": "b", "text": "plastic", "isCorrect": true},
+          {"id": "c", "text": "magnetic", "isCorrect": false},
+          {"id": "d", "text": "dense", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A material that keeps its new shape is plastic. Exam Tip: Plastic materials do not spring back; elastic ones do.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "In a gas, the particles are very close together and arranged in a fixed pattern.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "It is solids that have particles close together in a fixed pattern; gas particles are far apart and move randomly.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Cohesion is the force of attraction between molecules of the same substance.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Cohesion acts between like molecules, such as between water molecules.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Liquids can be compressed just as easily as gases.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Liquid particles are already close together with little space between them, so liquids are very difficult to compress compared with gases.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Surface tension is the reason some insects can walk on the surface of water.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The thin elastic-like surface film created by surface tension supports the small weight of such insects.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Diffusion occurs faster at higher temperatures.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Higher temperature gives particles more kinetic energy so they move faster and mix more quickly.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Water forms a convex (dome-shaped) meniscus in a clean glass tube.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Water forms a concave meniscus in glass because adhesion to glass is stronger than cohesion; mercury forms the convex one.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Brownian motion provides evidence that matter is made of tiny moving particles.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The random motion of visible particles is caused by collisions with unseen, fast-moving molecules.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If a spring is stretched beyond its elastic limit, it will always return exactly to its original length.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Beyond the elastic limit a material is permanently deformed and does not return to its original length.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Melting is the change of a solid into a liquid.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "When a solid is heated to its melting point its particles gain energy and the solid becomes a liquid.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Adhesion is what causes a ball of mercury to pull itself into a rounded shape.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "It is the strong cohesion between mercury molecules, not adhesion, that pulls mercury into rounded droplets.",
-        "difficulty": "hard"
-      }
+      {"questionText": "All matter is made up of tiny particles.", "options": [], "correctAnswer": "true", "explanation": "Matter is built from atoms and molecules, so this is true. Exam Tip: The particle theory explains states of matter, diffusion and expansion.", "difficulty": "easy"},
+      {"questionText": "Elasticity is the ability of a material to return to its original shape after a force is removed.", "options": [], "correctAnswer": "true", "explanation": "Returning to the original shape after the force is removed is exactly elasticity. Exam Tip: Rubber bands and springs are elastic.", "difficulty": "easy"},
+      {"questionText": "Cohesion is the attraction between molecules of different substances.", "options": [], "correctAnswer": "false", "explanation": "Cohesion is between molecules of the same substance; attraction between different substances is adhesion. Exam Tip: Cohesion = same; adhesion = different. Swapped.", "difficulty": "easy"},
+      {"questionText": "Surface tension makes the surface of a liquid behave like a stretched skin.", "options": [], "correctAnswer": "true", "explanation": "Surface tension makes the liquid surface act like a thin stretched skin. Exam Tip: Surface tension beads water into drops.", "difficulty": "easy"},
+      {"questionText": "Capillarity is the rise or fall of a liquid in a wide container.", "options": [], "correctAnswer": "false", "explanation": "Capillarity occurs in a narrow tube, not a wide container. Exam Tip: Capillarity needs a NARROW tube; the narrower, the greater the rise.", "difficulty": "easy"},
+      {"questionText": "According to Hooke's law, doubling the load on a spring doubles its extension (within the elastic limit).", "options": [], "correctAnswer": "true", "explanation": "Extension is proportional to load, so doubling the load doubles the extension within the elastic limit. Exam Tip: The proportional relationship holds only below the elastic limit.", "difficulty": "easy"},
+      {"questionText": "Beyond the elastic limit, a spring returns exactly to its original length.", "options": [], "correctAnswer": "false", "explanation": "Past the elastic limit the spring is permanently deformed and does not fully return. Exam Tip: Beyond the elastic limit it is permanently deformed.", "difficulty": "easy"},
+      {"questionText": "Adhesion is the force that makes water stick to the surface of glass.", "options": [], "correctAnswer": "true", "explanation": "Water sticking to glass is caused by adhesion between the different substances. Exam Tip: Adhesion (water-glass) makes water wet the glass.", "difficulty": "easy"},
+      {"questionText": "A rubber band is an example of a plastic material.", "options": [], "correctAnswer": "false", "explanation": "A rubber band springs back, so it is elastic, not plastic. Exam Tip: Rubber = elastic; plasticine = plastic.", "difficulty": "easy"},
+      {"questionText": "Surface tension allows some small insects to move on the surface of water.", "options": [], "correctAnswer": "true", "explanation": "Surface tension supports light insects on the water surface. Exam Tip: Pond-skaters walk on water thanks to surface tension.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Particulate nature of matter",
-        "options": [],
-        "correctAnswer": "All matter is made of tiny particles with spaces between them.",
-        "explanation": "These particles are too small to see with the naked eye.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Kinetic theory of matter",
-        "options": [],
-        "correctAnswer": "Particles of matter are always in continuous motion.",
-        "explanation": "More heat gives particles more kinetic energy and faster motion.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Arrangement of particles in the three states",
-        "options": [],
-        "correctAnswer": "Solid: fixed and tight; liquid: close but mobile; gas: far apart and fast.",
-        "explanation": "This arrangement explains the shape and volume of each state.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Cohesion and adhesion",
-        "options": [],
-        "correctAnswer": "Cohesion is attraction between like molecules; adhesion is between unlike molecules.",
-        "explanation": "Their balance explains wetting and the shape of a meniscus.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Surface tension",
-        "options": [],
-        "correctAnswer": "The surface of a liquid behaves like a stretched elastic skin.",
-        "explanation": "It is caused by unbalanced cohesive forces on surface molecules.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Capillarity",
-        "options": [],
-        "correctAnswer": "Liquids rise or fall in narrow tubes due to adhesion and cohesion.",
-        "explanation": "Water rises in glass; mercury falls in glass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Diffusion",
-        "options": [],
-        "correctAnswer": "Particles spread from high to low concentration until evenly mixed.",
-        "explanation": "It is fastest in gases and increases with temperature.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Brownian motion",
-        "options": [],
-        "correctAnswer": "Random movement of visible particles hit by invisible moving molecules.",
-        "explanation": "It is strong evidence for the kinetic theory.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Hooke's law",
-        "options": [],
-        "correctAnswer": "Extension is proportional to force within the elastic limit.",
-        "explanation": "This is the basis of how spring balances measure force.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Elastic limit",
-        "options": [],
-        "correctAnswer": "The point beyond which a material is permanently deformed.",
-        "explanation": "Below it, a material returns to its original shape; above it, it does not.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Atoms and molecules", "options": [], "correctAnswer": "The tiny particles from which all matter is made, atoms being the basic units and molecules being groups of joined atoms.", "explanation": "The particle theory of matter is built on atoms and molecules. Exam Tip: Cells belong to living things; matter is made of atoms and molecules.", "difficulty": "easy"},
+      {"questionText": "Elasticity", "options": [], "correctAnswer": "The ability of a material to return to its original shape after the deforming force is removed.", "explanation": "Elastic materials store energy and spring back. Exam Tip: Rubber and springs are classic elastic materials.", "difficulty": "easy"},
+      {"questionText": "Plasticity", "options": [], "correctAnswer": "The property of a material that keeps its new shape and does not return after the deforming force is removed.", "explanation": "Plastic materials are permanently deformed by a force. Exam Tip: Plasticine and wet clay are plastic, not elastic.", "difficulty": "easy"},
+      {"questionText": "Cohesion", "options": [], "correctAnswer": "The force of attraction between molecules of the same substance.", "explanation": "Cohesion holds a liquid together, such as water to water. Exam Tip: Cohesion = same substance; do not confuse it with adhesion.", "difficulty": "easy"},
+      {"questionText": "Adhesion", "options": [], "correctAnswer": "The force of attraction between molecules of different substances.", "explanation": "Adhesion makes one substance cling to another. Exam Tip: Adhesion makes water wet glass and ink stick to paper.", "difficulty": "easy"},
+      {"questionText": "Surface tension", "options": [], "correctAnswer": "The property by which the surface of a liquid behaves like a thin stretched elastic skin.", "explanation": "Surface tension is caused by cohesion between surface molecules. Exam Tip: Surface tension forms droplets and supports small insects and needles.", "difficulty": "easy"},
+      {"questionText": "Capillarity", "options": [], "correctAnswer": "The rise or fall of a liquid in a very narrow tube caused by adhesion and surface tension.", "explanation": "Capillary rise is greater in narrower tubes. Exam Tip: Capillarity lifts water in plant stems and oil in a lamp wick.", "difficulty": "easy"},
+      {"questionText": "Hooke's law", "options": [], "correctAnswer": "The law stating that the extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded.", "explanation": "Doubling the load doubles the extension within the elastic limit. Exam Tip: Hooke's law only holds below the elastic limit.", "difficulty": "easy"},
+      {"questionText": "Elastic limit", "options": [], "correctAnswer": "The maximum point up to which a material remains elastic and can still return to its original shape.", "explanation": "Beyond it the material is permanently deformed. Exam Tip: Past the elastic limit Hooke's law no longer applies.", "difficulty": "easy"},
+      {"questionText": "Tension", "options": [], "correctAnswer": "The pulling force that develops inside a stretched spring, string or rope, opposing the stretch.", "explanation": "Tension acts along the length of the stretched object. Exam Tip: Tension is a pulling force in a stretched string, spring or rope.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A farmer notices that water soaks upward into a dry brick wall and a cloth dipped at one end becomes wet all over. Which property of matter best explains both observations?",
+        "questionText": "A spring is loaded: 0 N gives 0 cm, 2 N gives 1 cm, 4 N gives 2 cm, 6 N gives 3 cm. What does the pattern show, and what extension would 8 N most likely produce (within the elastic limit)?",
         "options": [
-          {
-            "id": "a",
-            "text": "Brownian motion",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Capillarity due to adhesion being stronger than cohesion",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Hooke's law",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Compression of gases",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Extension is proportional to load; 8 N gives 4 cm", "isCorrect": true},
+          {"id": "b", "text": "Extension is random; 8 N gives 1 cm", "isCorrect": false},
+          {"id": "c", "text": "Extension decreases with load; 8 N gives 0 cm", "isCorrect": false},
+          {"id": "d", "text": "Extension is proportional to load; 8 N gives 8 cm", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Both the rising damp in bricks and the wetting of cloth are examples of capillary action, where water climbs the narrow spaces because adhesion to the material is stronger than cohesion of water.",
+        "correctAnswer": "a",
+        "explanation": "Each 2 N adds 1 cm, so extension = load / 2 (Hooke's law). For 8 N: 8 / 2 = 4 cm. Exam Tip: Look for a constant ratio (2 N per cm). Extend the pattern only WITHIN the elastic limit.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A spring extends by 2 cm when a load of 4 N is hung on it. Assuming the elastic limit is not exceeded, how far will it extend when a load of 10 N is used?",
+        "questionText": "Water in a glass tube curves UPWARD at the edges (concave), while mercury curves DOWNWARD (convex). Explain using cohesion and adhesion.",
         "options": [
-          {
-            "id": "a",
-            "text": "4 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5 cm",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "8 cm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "20 cm",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "For water, adhesion (water-glass) > cohesion, so it wets and rises; for mercury, cohesion > adhesion, so it does not wet and falls", "isCorrect": true},
+          {"id": "b", "text": "Both are caused by elasticity", "isCorrect": false},
+          {"id": "c", "text": "Water has cohesion > adhesion; mercury has adhesion > cohesion", "isCorrect": false},
+          {"id": "d", "text": "There are no forces involved", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "By Hooke's law extension is proportional to force; 4 N gives 2 cm, so each newton gives 0.5 cm, and 10 N gives 10 x 0.5 = 5 cm.",
+        "correctAnswer": "a",
+        "explanation": "Water: adhesion to glass wins, so it climbs and curves up (wets). Mercury: cohesion wins, so it pulls in and curves down (does not wet). Exam Tip: Adhesion wins -> wets and curves UP (water). Cohesion wins -> curves DOWN (mercury). Option C reverses them.",
         "difficulty": "hard"
       },
       {
-        "questionText": "In a classroom, hydrogen chloride gas is released at one end and ammonia gas at the other end of a long glass tube at the same time. A white ring forms closer to the hydrogen chloride end. What does this experiment best demonstrate?",
+        "questionText": "Water rises higher in a very thin straw than in a wider one. A student links this to how water reaches the top of tall plants. Which explanation is correct?",
         "options": [
-          {
-            "id": "a",
-            "text": "That heavier gas particles diffuse faster than lighter ones",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "That lighter gas particles diffuse faster than heavier ones",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "That gases do not diffuse at all",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "That surface tension pulls the gases together",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The rise is due to capillarity, which is greater in narrower tubes; the same effect helps water rise in the fine tubes of plant stems", "isCorrect": true},
+          {"id": "b", "text": "The rise is due to the weight of water, which is greater in narrow tubes", "isCorrect": false},
+          {"id": "c", "text": "The rise is due to magnetism in the water", "isCorrect": false},
+          {"id": "d", "text": "Narrow and wide tubes give the same rise", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "The lighter ammonia particles move faster and travel further before meeting the heavier hydrogen chloride particles, so the white product forms nearer the hydrogen chloride end, showing lighter particles diffuse faster.",
+        "correctAnswer": "a",
+        "explanation": "Capillary rise (adhesion + surface tension) is greater in narrower tubes; plant xylem tubes are very fine, so the same effect lifts water. Exam Tip: Capillary rise INCREASES as the tube gets narrower. Option B is the trap - water's weight opposes the rise.",
         "difficulty": "hard"
       }
     ]

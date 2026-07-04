@@ -2,939 +2,371 @@
   "topicId": "form_1_physics_topic_7",
   "topicName": "Work, Energy and Power",
   "order": 7,
-  "description": "An introduction to work as the product of force and distance, the forms and transformations of energy, kinetic and potential energy, the law of conservation of energy, power, efficiency and the basics of simple machines.",
+  "description": "An introduction to work as force acting over a distance, the different forms and transformations of energy, the conservation of energy, and power as the rate of doing work, including renewable and non-renewable energy sources.",
   "packs": {
     "mcq": [
       {
-        "questionText": "In physics, work is done only when a force causes an object to move in the direction of the force. Which quantity correctly defines work?",
+        "questionText": "In physics, work is done when:",
         "options": [
-          {
-            "id": "a",
-            "text": "Force divided by distance",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Force multiplied by distance moved in the direction of the force",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Mass multiplied by velocity",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Distance divided by time",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Work = force x distance moved in the direction of the force. It is measured in joules (J).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the SI unit of work?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Newton",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Watt",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Joule",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Pascal",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Work is measured in joules (J), where 1 joule = 1 newton x 1 metre.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A force of 20 N pushes a box a distance of 5 m along the floor in the direction of the force. How much work is done?",
-        "options": [
-          {
-            "id": "a",
-            "text": "4 J",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "25 J",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "100 J",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "15 J",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Work = force x distance = 20 N x 5 m = 100 J.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A man holds a heavy bag stationary in his hands without moving. In the physics sense, how much work is done on the bag?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Zero, because there is no movement in the direction of the force",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "A very large amount because the bag is heavy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Equal to the weight of the bag",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Equal to the mass of the bag",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A force moves a body through a distance", "isCorrect": true},
+          {"id": "b", "text": "A force is applied but nothing moves", "isCorrect": false},
+          {"id": "c", "text": "A body changes colour", "isCorrect": false},
+          {"id": "d", "text": "Time passes", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Since the distance moved in the direction of the force is zero, work done = force x 0 = 0 J.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is the correct formula for kinetic energy?",
-        "options": [
-          {
-            "id": "a",
-            "text": "KE = mgh",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "KE = mv",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "KE = 1/2 mv²",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "KE = 1/2 mh",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Kinetic energy is the energy of motion, given by KE = 1/2 mv², where m is mass and v is speed.",
+        "explanation": "Work is done only when a force moves an object through a distance in the direction of the force. Exam Tip: No movement, no work in physics - even if you feel tired holding a load still.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A ball of mass 2 kg moves with a speed of 3 m/s. What is its kinetic energy?",
+        "questionText": "Work done is calculated using the formula:",
         "options": [
-          {
-            "id": "a",
-            "text": "6 J",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "9 J",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "18 J",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "3 J",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Work = force / distance", "isCorrect": false},
+          {"id": "b", "text": "Work = force x distance", "isCorrect": true},
+          {"id": "c", "text": "Work = force + distance", "isCorrect": false},
+          {"id": "d", "text": "Work = distance / force", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "KE = 1/2 mv² = 1/2 x 2 x 3² = 1/2 x 2 x 9 = 9 J.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An object of mass 4 kg is lifted to a height of 5 m. Taking g = 10 N/kg, what is its gravitational potential energy?",
-        "options": [
-          {
-            "id": "a",
-            "text": "20 J",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "200 J",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "40 J",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "9 J",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "PE = mgh = 4 x 10 x 5 = 200 J.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which statement best expresses the law of conservation of energy?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Energy can be created but not destroyed",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Energy can be destroyed but not created",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Energy cannot be created or destroyed, but can change from one form to another",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Energy is always lost in every process",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The law of conservation of energy states that energy is neither created nor destroyed; it only changes form.",
+        "explanation": "Work = force x distance (in the direction of the force). Exam Tip: W = F x d. Multiply, do not divide.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What is the SI unit of power?",
+        "questionText": "The SI unit of work is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Joule",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Watt",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Newton",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Kilogram",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Newton", "isCorrect": false},
+          {"id": "b", "text": "Joule", "isCorrect": true},
+          {"id": "c", "text": "Watt", "isCorrect": false},
+          {"id": "d", "text": "Pascal", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Power is the rate of doing work, measured in watts (W), where 1 W = 1 J/s.",
+        "explanation": "The SI unit of work is the joule (J), which equals one newton-metre. Exam Tip: 1 joule = 1 newton x 1 metre. Joule = work/energy; watt = power.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A machine does 600 J of work in 3 seconds. What is its power?",
+        "questionText": "A force of 10 N moves a box a distance of 4 m. The work done is:",
         "options": [
-          {
-            "id": "a",
-            "text": "1800 W",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "200 W",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "300 W",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "2 W",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "2.5 J", "isCorrect": false},
+          {"id": "b", "text": "40 J", "isCorrect": true},
+          {"id": "c", "text": "14 J", "isCorrect": false},
+          {"id": "d", "text": "6 J", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Power = work / time = 600 J / 3 s = 200 W.",
+        "explanation": "Work = force x distance = 10 x 4 = 40 J. Exam Tip: Multiply force by distance. Option 2.5 divides instead.",
         "difficulty": "medium"
       },
       {
-        "questionText": "When a stone falls freely towards the ground, which energy change takes place?",
+        "questionText": "Energy is defined as:",
         "options": [
-          {
-            "id": "a",
-            "text": "Kinetic energy changes to potential energy",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Potential energy changes to kinetic energy",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Chemical energy changes to heat energy",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Sound energy changes to light energy",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "As the stone falls, its height decreases so PE decreases while its speed increases so KE increases.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is NOT a simple machine?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Lever",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Inclined plane",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Pulley",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Electric motor",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Levers, inclined planes and pulleys are simple machines; an electric motor is a complex device, not a simple machine.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The efficiency of a machine is best described as the ratio of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Work input to work output",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Work output to work input, expressed as a percentage",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Force to distance",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Power to time",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Efficiency = (useful work output / total work input) x 100%. It is always less than 100% in real machines.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why is the efficiency of every real machine always less than 100%?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Because work output is always greater than work input",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Because some energy is always lost, mainly as heat due to friction",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Because machines create extra energy",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Because power is never used",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Some input energy is always wasted, usually as heat from friction, so useful output is less than input.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The energy stored in food and fuels such as charcoal and petrol is mainly which form of energy?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Chemical energy",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Nuclear energy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Sound energy",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Kinetic energy",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The ability to do work", "isCorrect": true},
+          {"id": "b", "text": "A push or a pull", "isCorrect": false},
+          {"id": "c", "text": "The mass of a body", "isCorrect": false},
+          {"id": "d", "text": "The area of a surface", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Food and fuels store chemical energy that is released during chemical reactions such as burning or digestion.",
+        "explanation": "Energy is the capacity (ability) to do work. Exam Tip: Energy and work share the same unit, the joule.",
         "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of energy is the:",
+        "options": [
+          {"id": "a", "text": "Watt", "isCorrect": false},
+          {"id": "b", "text": "Joule", "isCorrect": true},
+          {"id": "c", "text": "Newton", "isCorrect": false},
+          {"id": "d", "text": "Pascal", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The SI unit of energy is the joule (J). Exam Tip: Energy and work both use the joule. Power uses the watt.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Energy stored in a body because of its position or state is called:",
+        "options": [
+          {"id": "a", "text": "Kinetic energy", "isCorrect": false},
+          {"id": "b", "text": "Potential energy", "isCorrect": true},
+          {"id": "c", "text": "Sound energy", "isCorrect": false},
+          {"id": "d", "text": "Light energy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Stored energy due to position is potential energy. Exam Tip: Potential = stored (raised stone, stretched spring). Kinetic = due to motion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Energy possessed by a body because of its motion is called:",
+        "options": [
+          {"id": "a", "text": "Potential energy", "isCorrect": false},
+          {"id": "b", "text": "Kinetic energy", "isCorrect": true},
+          {"id": "c", "text": "Chemical energy", "isCorrect": false},
+          {"id": "d", "text": "Nuclear energy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Energy due to movement is kinetic energy. Exam Tip: A moving car, flowing water and wind all have kinetic energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Power is defined as:",
+        "options": [
+          {"id": "a", "text": "The rate of doing work", "isCorrect": true},
+          {"id": "b", "text": "Force x distance", "isCorrect": false},
+          {"id": "c", "text": "Mass / volume", "isCorrect": false},
+          {"id": "d", "text": "Force / area", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Power = work done / time taken, which is the rate of doing work. Exam Tip: Power measures how quickly energy is used or work is done.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of power is the:",
+        "options": [
+          {"id": "a", "text": "Joule", "isCorrect": false},
+          {"id": "b", "text": "Watt", "isCorrect": true},
+          {"id": "c", "text": "Newton", "isCorrect": false},
+          {"id": "d", "text": "Pascal", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The SI unit of power is the watt (W), which equals one joule per second. Exam Tip: 1 watt = 1 joule per second. Watt = power; joule = energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 200 J of work is done in 10 seconds, the power is:",
+        "options": [
+          {"id": "a", "text": "2000 W", "isCorrect": false},
+          {"id": "b", "text": "20 W", "isCorrect": true},
+          {"id": "c", "text": "0.05 W", "isCorrect": false},
+          {"id": "d", "text": "210 W", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Power = work / time = 200 / 10 = 20 W. Exam Tip: Divide work by time. Option 2000 multiplies instead.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a renewable source of energy?",
+        "options": [
+          {"id": "a", "text": "Coal", "isCorrect": false},
+          {"id": "b", "text": "Solar energy", "isCorrect": true},
+          {"id": "c", "text": "Petrol", "isCorrect": false},
+          {"id": "d", "text": "Diesel", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Solar (sunlight) energy is renewable, while coal, petrol and diesel are fossil fuels that run out. Exam Tip: Renewable: solar, wind, hydro, geothermal. Non-renewable: coal, oil, natural gas.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a stone is thrown upwards, its kinetic energy changes into:",
+        "options": [
+          {"id": "a", "text": "Sound energy", "isCorrect": false},
+          {"id": "b", "text": "Potential energy", "isCorrect": true},
+          {"id": "c", "text": "Chemical energy", "isCorrect": false},
+          {"id": "d", "text": "Electrical energy", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "As the stone rises it slows down (loses kinetic energy) and gains height (gains potential energy). Exam Tip: Rising object: kinetic to potential. Falling object: potential to kinetic.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The law of conservation of energy states that energy can:",
+        "options": [
+          {"id": "a", "text": "Be created from nothing", "isCorrect": false},
+          {"id": "b", "text": "Be destroyed completely", "isCorrect": false},
+          {"id": "c", "text": "Neither be created nor destroyed, only changed from one form to another", "isCorrect": true},
+          {"id": "d", "text": "Only increase", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Energy is never created or destroyed; it only changes from one form to another. Exam Tip: Total energy stays constant; it just transforms.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A crane lifts a load of 500 N through a height of 3 m. The work done against gravity is:",
+        "options": [
+          {"id": "a", "text": "166.7 J", "isCorrect": false},
+          {"id": "b", "text": "1500 J", "isCorrect": true},
+          {"id": "c", "text": "503 J", "isCorrect": false},
+          {"id": "d", "text": "497 J", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Work = force x distance = 500 x 3 = 1500 J. Exam Tip: Lifting work = weight x height. Force is the load's weight (500 N).",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "Work is defined as the product of force and the _____ moved in the direction of the force.",
+        "questionText": "Work is done when a force moves a body through a ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "distance",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "time",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "speed",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "mass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "distance", "isCorrect": true},
+          {"id": "b", "text": "time", "isCorrect": false},
+          {"id": "c", "text": "colour", "isCorrect": false},
+          {"id": "d", "text": "temperature", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Work = force x distance moved in the direction of the force.",
+        "explanation": "Work requires the body to move through a distance in the direction of the force. Exam Tip: No distance moved, no work done, however large the force.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The SI unit of work and energy is the _____.",
+        "questionText": "Work done is calculated as work = force x ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "watt",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "joule",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "newton",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "pascal",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Both work and energy are measured in joules (J).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The energy possessed by a body because of its motion is called _____ energy.",
-        "options": [
-          {
-            "id": "a",
-            "text": "potential",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "chemical",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "kinetic",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "thermal",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Kinetic energy is given by KE = 1/2 mv².",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The energy possessed by a body because of its position or height above the ground is called gravitational _____ energy.",
-        "options": [
-          {
-            "id": "a",
-            "text": "kinetic",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "elastic",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "chemical",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "potential",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Gravitational potential energy is given by PE = mgh.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A force of 50 N moves an object 4 m in the direction of the force, doing _____ J of work.",
-        "options": [
-          {
-            "id": "a",
-            "text": "200",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "54",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "12.5",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "400",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "distance", "isCorrect": true},
+          {"id": "b", "text": "time", "isCorrect": false},
+          {"id": "c", "text": "mass", "isCorrect": false},
+          {"id": "d", "text": "area", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Work = 50 N x 4 m = 200 J.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An object of mass 3 kg held at a height of 2 m has a potential energy of _____ J (g = 10 N/kg).",
-        "options": [
-          {
-            "id": "a",
-            "text": "30",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "60",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "15",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "600",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "PE = mgh = 3 x 10 x 2 = 60 J.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Power is the rate of doing work, and its SI unit is the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "joule",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "newton",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "watt",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "pascal",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Power = work / time, measured in watts (W).",
+        "explanation": "The formula for work is force multiplied by the distance moved. Exam Tip: W = F x d.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The law of conservation of energy states that energy can neither be created nor _____.",
+        "questionText": "The SI unit of work and energy is the ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "stored",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "transferred",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "transformed",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "destroyed",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Energy only changes from one form to another; the total amount stays the same.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A worker does 900 J of work in 30 s, so the power developed is _____ W.",
-        "options": [
-          {
-            "id": "a",
-            "text": "30",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "27",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "900",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "870",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "joule", "isCorrect": true},
+          {"id": "b", "text": "newton", "isCorrect": false},
+          {"id": "c", "text": "watt", "isCorrect": false},
+          {"id": "d", "text": "pascal", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Power = work / time = 900 J / 30 s = 30 W.",
-        "difficulty": "medium"
+        "explanation": "Both work and energy are measured in joules because they are the same type of quantity. Exam Tip: 1 joule = 1 newton-metre.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "In machines, energy lost to overcome friction is usually changed into _____ energy.",
+        "questionText": "Energy is defined as the ability to do ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "sound",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "heat",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "light",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "electrical",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "work", "isCorrect": true},
+          {"id": "b", "text": "force", "isCorrect": false},
+          {"id": "c", "text": "power", "isCorrect": false},
+          {"id": "d", "text": "pressure", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Friction converts useful energy into wasted heat, lowering the machine's efficiency.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "Energy is the capacity to do work, which is why the two share a unit. Exam Tip: This is why energy and work share the joule.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Energy possessed by a body due to its motion is called ____ energy.",
+        "options": [
+          {"id": "a", "text": "kinetic", "isCorrect": true},
+          {"id": "b", "text": "potential", "isCorrect": false},
+          {"id": "c", "text": "chemical", "isCorrect": false},
+          {"id": "d", "text": "nuclear", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Energy due to movement is kinetic energy. Exam Tip: Kinetic = moving; potential = stored.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Energy stored in a body due to its position is called ____ energy.",
+        "options": [
+          {"id": "a", "text": "potential", "isCorrect": true},
+          {"id": "b", "text": "kinetic", "isCorrect": false},
+          {"id": "c", "text": "sound", "isCorrect": false},
+          {"id": "d", "text": "light", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Stored energy due to position or state is potential energy. Exam Tip: A raised object or stretched spring has potential energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Power is the rate of doing work, calculated as power = work / ____.",
+        "options": [
+          {"id": "a", "text": "time", "isCorrect": true},
+          {"id": "b", "text": "distance", "isCorrect": false},
+          {"id": "c", "text": "force", "isCorrect": false},
+          {"id": "d", "text": "mass", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Power is work divided by the time taken to do it. Exam Tip: P = W / t. Its unit is the watt (J/s).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of power is the ____.",
+        "options": [
+          {"id": "a", "text": "watt", "isCorrect": true},
+          {"id": "b", "text": "joule", "isCorrect": false},
+          {"id": "c", "text": "newton", "isCorrect": false},
+          {"id": "d", "text": "pascal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Power is measured in watts, one watt being one joule per second. Exam Tip: 1 watt = 1 joule per second.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The energy of moving water used to generate electricity in dams comes originally from the ____ (name one renewable source).",
+        "options": [
+          {"id": "a", "text": "Sun (solar energy)", "isCorrect": true},
+          {"id": "b", "text": "coal", "isCorrect": false},
+          {"id": "c", "text": "petrol", "isCorrect": false},
+          {"id": "d", "text": "natural gas", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Sun drives the water cycle, so hydro energy is ultimately solar and renewable. Exam Tip: Hydro, wind and solar are renewable and ultimately linked to the Sun.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The law of conservation of energy states that energy is neither created nor ____.",
+        "options": [
+          {"id": "a", "text": "destroyed", "isCorrect": true},
+          {"id": "b", "text": "stored", "isCorrect": false},
+          {"id": "c", "text": "transferred", "isCorrect": false},
+          {"id": "d", "text": "measured", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Energy can only change form; it is never created or destroyed. Exam Tip: Energy only transforms; the total remains constant.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Work is done whenever a force moves an object in the direction of the force.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Work = force x distance moved in the direction of the force, so movement is required.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If a person pushes hard against a wall that does not move, a large amount of work is done on the wall.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Since the wall does not move, the distance is zero and no work is done in the physics sense.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Kinetic energy depends on both the mass and the speed of a moving object.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "KE = 1/2 mv², so it increases with both mass and the square of speed.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Gravitational potential energy increases when an object is raised to a greater height.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "PE = mgh, so increasing the height h increases the potential energy.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Energy can be created in a machine that has very high efficiency.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Energy cannot be created; it can only be changed from one form to another.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The watt and the joule are the same unit.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The joule measures work or energy, while the watt measures power (1 W = 1 J/s).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A machine that does more work in less time has greater power.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Power = work / time, so more work in less time gives greater power.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The efficiency of a real machine can be greater than 100%.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Some energy is always lost, mostly as heat, so efficiency is always less than 100%.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When a swinging pendulum is at its highest point, its potential energy is at its maximum.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "At the highest point the pendulum is momentarily at rest, so KE is least and PE is greatest.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A pulley is an example of a simple machine.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Pulleys, levers and inclined planes are all examples of simple machines.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Work is done only when a force moves a body through a distance.", "options": [], "correctAnswer": "true", "explanation": "Work in physics requires movement through a distance in the direction of the force. Exam Tip: Holding a load still does NO work in physics.", "difficulty": "easy"},
+      {"questionText": "The SI unit of work is the newton.", "options": [], "correctAnswer": "false", "explanation": "The unit of work is the joule; the newton is the unit of force. Exam Tip: Work = joule; force = newton. Do not swap them.", "difficulty": "easy"},
+      {"questionText": "Energy is the ability to do work.", "options": [], "correctAnswer": "true", "explanation": "Energy is defined as the capacity to do work. Exam Tip: This link is why energy and work share the joule.", "difficulty": "easy"},
+      {"questionText": "A moving car has potential energy because of its motion.", "options": [], "correctAnswer": "false", "explanation": "Energy due to motion is kinetic energy, not potential energy. Exam Tip: Motion = kinetic energy, not potential.", "difficulty": "easy"},
+      {"questionText": "Power is the rate of doing work.", "options": [], "correctAnswer": "true", "explanation": "Power measures how fast work is done, equal to work divided by time. Exam Tip: Power = work / time; unit watt (J/s).", "difficulty": "easy"},
+      {"questionText": "The SI unit of power is the watt.", "options": [], "correctAnswer": "true", "explanation": "Power is measured in watts, one joule per second. Exam Tip: Watt = power; joule = energy.", "difficulty": "easy"},
+      {"questionText": "Solar energy is a non-renewable source of energy.", "options": [], "correctAnswer": "false", "explanation": "Solar energy is renewable because sunlight does not run out. Exam Tip: Solar is renewable; coal, oil and gas are non-renewable.", "difficulty": "easy"},
+      {"questionText": "When a body falls, its potential energy changes into kinetic energy.", "options": [], "correctAnswer": "true", "explanation": "As a body falls it loses height (potential) and gains speed (kinetic). Exam Tip: Falling: potential to kinetic. Rising: kinetic to potential.", "difficulty": "easy"},
+      {"questionText": "Energy can be created from nothing.", "options": [], "correctAnswer": "false", "explanation": "By the law of conservation of energy, energy cannot be created; it only changes form. Exam Tip: Energy only changes form; it cannot be made from nothing.", "difficulty": "easy"},
+      {"questionText": "Work and energy are measured in the same unit, the joule.", "options": [], "correctAnswer": "true", "explanation": "Work and energy are the same type of quantity, so both use the joule. Exam Tip: Same quantity type, same unit (joule).", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of work",
-        "options": [],
-        "correctAnswer": "Work = force x distance moved in the direction of the force",
-        "explanation": "Work is done only when a force causes movement; its unit is the joule.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "SI unit of work and energy",
-        "options": [],
-        "correctAnswer": "The joule (J)",
-        "explanation": "1 joule = 1 newton x 1 metre.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for kinetic energy",
-        "options": [],
-        "correctAnswer": "KE = 1/2 mv²",
-        "explanation": "Kinetic energy is the energy of a moving body and depends on mass and speed.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for gravitational potential energy",
-        "options": [],
-        "correctAnswer": "PE = mgh",
-        "explanation": "It depends on mass, gravitational field strength and height above the ground.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Law of conservation of energy",
-        "options": [],
-        "correctAnswer": "Energy cannot be created or destroyed, only changed from one form to another",
-        "explanation": "The total energy in an isolated system stays constant.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Definition of power",
-        "options": [],
-        "correctAnswer": "Power = work done / time taken",
-        "explanation": "Power is the rate of doing work, measured in watts (W).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "SI unit of power",
-        "options": [],
-        "correctAnswer": "The watt (W), where 1 W = 1 J/s",
-        "explanation": "A device using 1 joule of energy each second has a power of 1 watt.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of efficiency",
-        "options": [],
-        "correctAnswer": "Efficiency = (useful work output / total work input) x 100%",
-        "explanation": "It shows how much of the input energy becomes useful output; it is always below 100%.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Examples of simple machines",
-        "options": [],
-        "correctAnswer": "Lever, pulley and inclined plane",
-        "explanation": "Simple machines make work easier by changing the size or direction of a force.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Common forms of energy",
-        "options": [],
-        "correctAnswer": "Kinetic, potential, chemical, heat, light, sound and electrical energy",
-        "explanation": "Energy exists in many forms and can change from one form to another.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Work", "options": [], "correctAnswer": "The product of a force and the distance moved in the direction of the force: work = force x distance.", "explanation": "No work is done unless the body moves through a distance. Exam Tip: W = F x d; multiply, do not divide.", "difficulty": "easy"},
+      {"questionText": "Joule", "options": [], "correctAnswer": "The SI unit of work and energy, equal to one newton-metre (the work done when a force of 1 N moves a body 1 m).", "explanation": "Both work and energy are measured in joules. Exam Tip: Joule = work/energy; newton = force; watt = power.", "difficulty": "easy"},
+      {"questionText": "Energy", "options": [], "correctAnswer": "The ability or capacity to do work, measured in joules.", "explanation": "Energy exists in many forms such as kinetic, potential, heat, light and sound. Exam Tip: Energy and work share the same unit, the joule.", "difficulty": "easy"},
+      {"questionText": "Kinetic energy", "options": [], "correctAnswer": "The energy possessed by a body because of its motion.", "explanation": "A moving car, flowing water and wind all have kinetic energy. Exam Tip: Kinetic = moving; the faster it moves, the more kinetic energy.", "difficulty": "easy"},
+      {"questionText": "Potential energy", "options": [], "correctAnswer": "The energy stored in a body because of its position or state.", "explanation": "A raised stone or a stretched spring has potential energy. Exam Tip: Potential = stored; height or stretch gives potential energy.", "difficulty": "easy"},
+      {"questionText": "Power", "options": [], "correctAnswer": "The rate of doing work, calculated as power = work / time.", "explanation": "Power tells you how quickly work is done or energy is used. Exam Tip: P = W / t; divide work by time.", "difficulty": "easy"},
+      {"questionText": "Watt", "options": [], "correctAnswer": "The SI unit of power, equal to one joule per second.", "explanation": "A machine using 1 J of energy each second has a power of 1 watt. Exam Tip: 1 watt = 1 joule per second; watt = power.", "difficulty": "easy"},
+      {"questionText": "Conservation of energy", "options": [], "correctAnswer": "The law that energy can neither be created nor destroyed, only changed from one form to another.", "explanation": "The total energy in a system stays constant while forms change. Exam Tip: Total energy is constant; it only transforms.", "difficulty": "easy"},
+      {"questionText": "Energy transformation", "options": [], "correctAnswer": "The change of energy from one form into another, such as potential energy changing into kinetic energy.", "explanation": "A falling stone changes potential energy into kinetic energy. Exam Tip: Trace energy step by step; the total is conserved.", "difficulty": "easy"},
+      {"questionText": "Renewable and non-renewable sources", "options": [], "correctAnswer": "Renewable sources can be replaced naturally and do not run out (solar, wind, hydro), while non-renewable sources run out once used (coal, oil, natural gas).", "explanation": "Renewable sources are cleaner and sustainable, unlike fossil fuels. Exam Tip: Renewable: solar, wind, hydro, geothermal. Non-renewable: coal, oil, gas.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A crane lifts a load of mass 200 kg through a vertical height of 6 m in 8 seconds. Taking g = 10 N/kg, what is the power developed by the crane?",
+        "questionText": "A labourer lifts a sack weighing 250 N onto a lorry platform 2 m high in 5 seconds. Calculate the work done and the power developed.",
         "options": [
-          {
-            "id": "a",
-            "text": "1500 W",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "12000 W",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "150 W",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "96000 W",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Work = 500 J, Power = 100 W", "isCorrect": true},
+          {"id": "b", "text": "Work = 500 J, Power = 2500 W", "isCorrect": false},
+          {"id": "c", "text": "Work = 125 J, Power = 25 W", "isCorrect": false},
+          {"id": "d", "text": "Work = 1250 J, Power = 250 W", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Work = mgh = 200 x 10 x 6 = 12000 J; Power = 12000 J / 8 s = 1500 W.",
+        "explanation": "Work = force x distance = 250 x 2 = 500 J, and power = work / time = 500 / 5 = 100 W. Exam Tip: Find WORK first (force x distance), then POWER (work / time). Do not multiply by time.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A ball of mass 0.5 kg is dropped from a height of 20 m. Using conservation of energy (g = 10 N/kg), what is its speed just before it hits the ground?",
+        "questionText": "In a hydroelectric station, water stored high in a dam flows down and turns turbines that generate electricity, which lights a bulb (light and heat). Identify the MAIN energy changes in order.",
         "options": [
-          {
-            "id": "a",
-            "text": "10 m/s",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "20 m/s",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "40 m/s",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "400 m/s",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Potential energy -> kinetic energy -> electrical energy -> light (and heat) energy", "isCorrect": true},
+          {"id": "b", "text": "Kinetic -> potential -> light -> electrical", "isCorrect": false},
+          {"id": "c", "text": "Light -> electrical -> kinetic -> potential", "isCorrect": false},
+          {"id": "d", "text": "Electrical -> potential -> kinetic -> light", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "PE = KE, so mgh = 1/2 mv² gives v² = 2gh = 2 x 10 x 20 = 400, so v = 20 m/s.",
+        "correctAnswer": "a",
+        "explanation": "Water stored high has potential energy, flowing down it becomes kinetic, the turbines produce electrical energy, and the bulb gives light and heat. Exam Tip: Trace energy step by step; energy is conserved, only changing form.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A machine is supplied with 800 J of energy and produces 600 J of useful work output. What is the efficiency of the machine?",
+        "questionText": "Pump A does 6000 J of work in 30 s; Pump B does 6000 J in 20 s. Which is more powerful, and what are their powers?",
         "options": [
-          {
-            "id": "a",
-            "text": "133%",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "200 J",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "75%",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "25%",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Pump A: 200 W, Pump B: 300 W - Pump B is more powerful", "isCorrect": true},
+          {"id": "b", "text": "Pump A: 300 W, Pump B: 200 W - Pump A is more powerful", "isCorrect": false},
+          {"id": "c", "text": "Both have equal power of 6000 W", "isCorrect": false},
+          {"id": "d", "text": "Pump A: 180000 W, Pump B: 120000 W", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Efficiency = (useful output / input) x 100% = (600 / 800) x 100% = 75%.",
+        "correctAnswer": "a",
+        "explanation": "Pump A: 6000 / 30 = 200 W and Pump B: 6000 / 20 = 300 W, so Pump B does the same work in less time and is more powerful. Exam Tip: Same work in LESS time = MORE power.",
         "difficulty": "hard"
       }
     ]

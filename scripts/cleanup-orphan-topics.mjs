@@ -44,6 +44,8 @@ const ORPHAN_TOPIC_IDS = [
   'form_1_mathematics_topic_9',
   'form_2_mathematics_topic_9',
   'form_2_mathematics_topic_10',
+  // Physics F1: 'Pressure' merged into 'Force, Density and Pressure' (topic_3).
+  'form_1_physics_topic_6',
 ];
 
 admin.initializeApp({
