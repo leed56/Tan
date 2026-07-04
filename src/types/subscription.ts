@@ -2,9 +2,7 @@ export type FeatureKey =
   | 'summary'
   | 'hoq'
   | 'exam_mode'
-  | 'advanced_analytics'
-  | 'past_papers'
-  | 'ai_tutor';
+  | 'advanced_analytics';
 
 export type PlanId = 'standard' | 'family';
 

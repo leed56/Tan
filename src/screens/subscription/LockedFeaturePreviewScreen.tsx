@@ -27,8 +27,6 @@ const ALL_FEATURES: FeatureKey[] = [
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 export function LockedFeaturePreviewScreen({ navigation, route }: Props) {

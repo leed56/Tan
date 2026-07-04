@@ -65,7 +65,7 @@ export function SplashScreen({ navigation }: Props) {
 
           {/* App name */}
           <Animated.View style={{ opacity: logoOpacity }}>
-            <Text style={styles.appName}>Soma AI</Text>
+            <Text style={styles.appName}>Soma</Text>
           </Animated.View>
 
           {/* Tagline */}

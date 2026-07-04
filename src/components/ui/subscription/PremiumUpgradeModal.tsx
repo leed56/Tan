@@ -27,8 +27,6 @@ const FEATURES: FeatureKey[] = [
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 export function PremiumUpgradeModal({

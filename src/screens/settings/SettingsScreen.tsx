@@ -42,7 +42,7 @@ export function SettingsScreen({ navigation }: Props) {
     notify('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
   };
 
-  const handleWhatsApp = () => openWhatsApp('Hi Soma AI, I need help with the app.');
+  const handleWhatsApp = () => openWhatsApp('Hi Soma, I need help with the app.');
 
   const comingSoon = (feature: string) => () =>
     notify(feature, "This is on the way — we're adding it in the next update.");
@@ -103,7 +103,7 @@ export function SettingsScreen({ navigation }: Props) {
             icon="notifications"
             iconColor={COLORS.secondary}
             label="Push Notifications"
-            description="Allow Soma AI to send notifications"
+            description="Allow Soma to send notifications"
             value={notificationsEnabled}
             onToggle={() => {
               // TODO: Phase 2 — request/revoke notification permission
@@ -204,9 +204,9 @@ export function SettingsScreen({ navigation }: Props) {
 
         {/* App version */}
         <View style={styles.versionBlock}>
-          <Text style={styles.versionText}>Soma AI · Version 1.0.0 (Phase 1)</Text>
+          <Text style={styles.versionText}>Soma · Version 1.0.0 (Phase 1)</Text>
           <Text style={styles.versionSub}>Made with ❤️ for Tanzania</Text>
-          <Text style={styles.versionSub}>© 2026 Soma AI Education</Text>
+          <Text style={styles.versionSub}>© 2026 Soma Education</Text>
         </View>
       </ScrollView>
     </ScreenContainer>

@@ -8,7 +8,7 @@ const MAX_CONTENT_WIDTH = 480;
 const DESKTOP_BREAKPOINT = 560;
 
 /**
- * Soma AI is designed mobile-first with no desktop layout of its own. Without
+ * Soma is designed mobile-first with no desktop layout of its own. Without
  * this, a wide desktop browser window stretches the app's flex:1 root across
  * the full viewport, leaving content pinned to the top-left corner and the
  * rest of the screen blank — it reads as broken, not "responsive." Centering

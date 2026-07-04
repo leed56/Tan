@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================================
-#  Soma AI — one-shot GO LIVE
+#  Soma — one-shot GO LIVE
 #  Push the branch, seed all content into Firestore, remove orphan topics,
 #  build the web app, and deploy to Firebase Hosting — so you can test it.
 #

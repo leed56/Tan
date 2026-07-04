@@ -68,7 +68,7 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
         user.phoneNumber ?? null,
       );
       const message = encodeURIComponent(
-        `Hello! I'd like to subscribe to Soma AI *${planTitle}* plan (${billingCycle}) for ${price.toLocaleString()} TSH. My account ID: ${user.uid}`,
+        `Hello! I'd like to subscribe to Soma *${planTitle}* plan (${billingCycle}) for ${price.toLocaleString()} TSH. My account ID: ${user.uid}`,
       );
       const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
       if (Platform.OS === 'web') {

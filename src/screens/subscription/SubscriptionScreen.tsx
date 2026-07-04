@@ -27,8 +27,6 @@ const ALL_FEATURES: FeatureKey[] = [
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 export function SubscriptionScreen({ navigation }: Props) {
@@ -53,7 +51,7 @@ export function SubscriptionScreen({ navigation }: Props) {
   // activate the account instantly.
   const handleWhatsAppUpgrade = () =>
     openWhatsApp(
-      `Hello! I'd like to upgrade to Soma AI *${selectedPlan.title}* (${billingCycle}) for ${price.toLocaleString()} TSH.`,
+      `Hello! I'd like to upgrade to Soma *${selectedPlan.title}* (${billingCycle}) for ${price.toLocaleString()} TSH.`,
     );
 
   return (

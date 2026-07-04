@@ -9,7 +9,7 @@ export const SEED_PLANS: SubscriptionPlan[] = [
     maxDevices: 2,
     maxProfiles: 1,
     description: 'Full premium access for one student, on up to 2 devices.',
-    features: ['summary', 'hoq', 'exam_mode', 'advanced_analytics', 'past_papers', 'ai_tutor'],
+    features: ['summary', 'hoq', 'exam_mode', 'advanced_analytics'],
   },
   {
     id: 'family',
@@ -20,7 +20,7 @@ export const SEED_PLANS: SubscriptionPlan[] = [
     maxProfiles: 4,
     description: '1 primary account + 3 student profiles, on up to 5 devices — best value!',
     isPopular: true,
-    features: ['summary', 'hoq', 'exam_mode', 'advanced_analytics', 'past_papers', 'ai_tutor'],
+    features: ['summary', 'hoq', 'exam_mode', 'advanced_analytics'],
   },
 ];
 
@@ -47,16 +47,6 @@ export const FEATURE_META: Record<
     title: 'Advanced Analytics',
     description: 'Deep performance insights — identify gaps and track growth.',
     iconName: 'bar-chart-outline',
-  },
-  past_papers: {
-    title: 'Past Papers',
-    description: 'Full NECTA past paper archive with worked solutions.',
-    iconName: 'library-outline',
-  },
-  ai_tutor: {
-    title: 'AI Tutor',
-    description: 'Ask questions, get step-by-step explanations, 24/7.',
-    iconName: 'chatbubbles-outline',
   },
 };
 

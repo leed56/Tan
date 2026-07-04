@@ -30,8 +30,6 @@ const ALL_FEATURES: FeatureKey[] = [
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 function formatDate(ts: number): string {
@@ -61,7 +59,7 @@ export function SubscriptionStatusScreen({ navigation }: Props) {
   const handleCancelRequest = () => {
     if (!WHATSAPP_NUMBER) return;
     const message = encodeURIComponent(
-      `Hello! I'd like to cancel/manage my Soma AI subscription. My account ID: ${user?.uid ?? ''}`,
+      `Hello! I'd like to cancel/manage my Soma subscription. My account ID: ${user?.uid ?? ''}`,
     );
     Linking.openURL(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`);
   };

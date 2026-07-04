@@ -20,7 +20,7 @@ export interface LegalDoc {
 export const PRIVACY_POLICY: LegalDoc = {
   title: 'Privacy Policy',
   intro:
-    `Soma AI ("we", "us") helps Tanzanian Form 1–4 students prepare for NECTA exams. ` +
+    `Soma ("we", "us") helps Tanzanian Form 1–4 students prepare for NECTA exams. ` +
     `This policy explains what information we collect, how we use it, and the choices you have. ` +
     `Effective ${LEGAL_EFFECTIVE_DATE}.`,
   sections: [
@@ -53,7 +53,7 @@ export const PRIVACY_POLICY: LegalDoc = {
     {
       heading: '5. Children and parental consent',
       body:
-        'Soma AI is intended for secondary-school students. If you are under 18, a parent or guardian should review this ' +
+        'Soma is intended for secondary-school students. If you are under 18, a parent or guardian should review this ' +
         'policy and agree to it on your behalf. Parents may contact us at any time to review or remove their child’s data.',
     },
     {
@@ -78,7 +78,7 @@ export const PRIVACY_POLICY: LegalDoc = {
 export const TERMS_OF_SERVICE: LegalDoc = {
   title: 'Terms of Service',
   intro:
-    `These terms govern your use of Soma AI. By creating an account and using the app, you agree to them. ` +
+    `These terms govern your use of Soma. By creating an account and using the app, you agree to them. ` +
     `Effective ${LEGAL_EFFECTIVE_DATE}.`,
   sections: [
     {
@@ -91,7 +91,7 @@ export const TERMS_OF_SERVICE: LegalDoc = {
     {
       heading: '2. Acceptable use',
       body:
-        'Use Soma AI for your own personal study. Do not attempt to copy, resell, or redistribute the questions, ' +
+        'Use Soma for your own personal study. Do not attempt to copy, resell, or redistribute the questions, ' +
         'explanations, or other content, and do not try to bypass subscription or usage limits.',
     },
     {
@@ -111,7 +111,7 @@ export const TERMS_OF_SERVICE: LegalDoc = {
       heading: '5. Educational content',
       body:
         'Our content is aligned to the NECTA O-Level curriculum and prepared with care, but we cannot guarantee any ' +
-        'particular exam result. Soma AI is a study aid, not a substitute for your school and teachers.',
+        'particular exam result. Soma is a study aid, not a substitute for your school and teachers.',
     },
     {
       heading: '6. Cancellation and termination',

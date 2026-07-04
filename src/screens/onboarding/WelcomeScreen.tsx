@@ -109,7 +109,7 @@ export function WelcomeScreen({ navigation }: Props) {
               <Text style={styles.logoEmoji}>🧠</Text>
             </LinearGradient>
           </View>
-          <Text style={styles.brand}>Soma AI</Text>
+          <Text style={styles.brand}>Soma</Text>
         </View>
 
         {/* Headline */}

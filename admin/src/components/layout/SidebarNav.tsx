@@ -49,7 +49,7 @@ export function SidebarNav() {
           <Zap size={16} className="text-primary-foreground" />
         </div>
         <div>
-          <p className="text-sm font-bold text-foreground">Soma AI</p>
+          <p className="text-sm font-bold text-foreground">Soma</p>
           <p className="text-[10px] text-muted-foreground">Admin Panel</p>
         </div>
       </div>

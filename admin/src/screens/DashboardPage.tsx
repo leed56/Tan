@@ -43,7 +43,7 @@ const TOOLTIP_STYLE = {
 export function DashboardPage() {
   return (
     <div>
-      <PageHeader title="Dashboard" subtitle="Welcome back — here's what's happening in Soma AI" />
+      <PageHeader title="Dashboard" subtitle="Welcome back — here's what's happening in Soma" />
       <div className="p-6 space-y-6">
         <div className="grid grid-cols-4 gap-4">
           <StatCard title="Total Students" value="12,847" subtitle="+234 this week" icon={<Users size={22} />} trend={{ value: 12, label: 'vs last month' }} />
