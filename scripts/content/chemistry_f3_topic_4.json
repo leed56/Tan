@@ -2,939 +2,371 @@
   "topicId": "form_3_chemistry_topic_4",
   "topicName": "Volumetric Analysis",
   "order": 4,
-  "description": "Volumetric analysis uses titration with measured volumes of solutions of known and unknown concentration to determine the concentration or amount of a substance, applying apparatus, indicators, standard solutions and mole calculations.",
+  "description": "An introduction to volumetric analysis, covering standard solutions, key apparatus (pipette, burette, volumetric flask, conical flask), the technique of titration and the end point, calculations of concentration and mole ratios, and real-world applications in industry, medicine and agriculture.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the main purpose of volumetric analysis?",
+        "questionText": "Volumetric analysis is a technique used to determine the:",
         "options": [
-          {
-            "id": "a",
-            "text": "To measure the mass of a solid directly",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To determine the concentration of a solution by measuring volumes that react",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "To separate a mixture by distillation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To measure the temperature of a reaction",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Colour of a substance", "isCorrect": false},
+          {"id": "b", "text": "Concentration or amount of a substance in solution, using measured volumes", "isCorrect": true},
+          {"id": "c", "text": "Melting point of a solid", "isCorrect": false},
+          {"id": "d", "text": "Mass of a gas only", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Volumetric analysis (titration) finds an unknown concentration by accurately measuring the volumes of solutions that react completely with each other.",
+        "explanation": "Volumetric analysis uses precise volumes of solutions to find the concentration or amount of a substance in solution. Exam Tip: Volumetric analysis is widely used in industry (foods, drinks, medicine, agriculture) to check chemical quantities.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which apparatus is used to deliver a variable, accurately measured volume of solution during a titration?",
+        "questionText": "A solution whose exact concentration is accurately known is called a:",
         "options": [
-          {
-            "id": "a",
-            "text": "Pipette",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Conical flask",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Burette",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Measuring cylinder",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Dilute solution", "isCorrect": false},
+          {"id": "b", "text": "Standard solution", "isCorrect": true},
+          {"id": "c", "text": "Saturated solution", "isCorrect": false},
+          {"id": "d", "text": "Unknown solution", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A solution whose exact concentration is accurately known is called a standard solution. Exam Tip: A standard solution is prepared very precisely, often by weighing an exact mass and dissolving it in a known volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The apparatus used to measure an accurate, fixed volume of liquid, often used to transfer a solution into a flask, is the:",
+        "options": [
+          {"id": "a", "text": "Beaker", "isCorrect": false},
+          {"id": "b", "text": "Pipette", "isCorrect": true},
+          {"id": "c", "text": "Test tube", "isCorrect": false},
+          {"id": "d", "text": "Funnel", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A pipette delivers one accurate, fixed volume, often used to transfer a solution into a flask. Exam Tip: A pipette gives ONE fixed volume very accurately (e.g. 25.0 cm3 pipette).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The apparatus used to deliver a variable, precisely measured volume of liquid during a titration is the:",
+        "options": [
+          {"id": "a", "text": "Pipette", "isCorrect": false},
+          {"id": "b", "text": "Burette", "isCorrect": true},
+          {"id": "c", "text": "Beaker", "isCorrect": false},
+          {"id": "d", "text": "Conical flask", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A burette allows any volume to be run out and measured accurately, making it ideal for delivering a variable volume during titration. Exam Tip: Burette = variable, accurate volume (with a tap/stopcock); pipette = one fixed volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradual addition of one solution to another, from a burette, until the reaction is just complete, is called:",
+        "options": [
+          {"id": "a", "text": "Filtration", "isCorrect": false},
+          {"id": "b", "text": "Titration", "isCorrect": true},
+          {"id": "c", "text": "Evaporation", "isCorrect": false},
+          {"id": "d", "text": "Distillation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The gradual addition of one solution to another from a burette until the reaction is just complete is called titration. Exam Tip: Titration is the core technique of volumetric analysis, often between an acid and a base.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The point in a titration at which the reaction is exactly complete, often shown by a colour change of an indicator, is called the:",
+        "options": [
+          {"id": "a", "text": "Boiling point", "isCorrect": false},
+          {"id": "b", "text": "End point", "isCorrect": true},
+          {"id": "c", "text": "Melting point", "isCorrect": false},
+          {"id": "d", "text": "Starting point", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The point at which the reaction is exactly complete, often shown by a colour change of an indicator, is called the end point. Exam Tip: The end point (observed via indicator colour change) closely matches the equivalence point (exact chemical completion).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The apparatus used to hold a fixed, accurate volume of solution (e.g. 250 cm3) when preparing a standard solution is the:",
+        "options": [
+          {"id": "a", "text": "Beaker", "isCorrect": false},
+          {"id": "b", "text": "Volumetric flask", "isCorrect": true},
+          {"id": "c", "text": "Conical flask", "isCorrect": false},
+          {"id": "d", "text": "Test tube", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A volumetric flask is calibrated to hold one precise volume, such as 250 cm3, and is used when preparing a standard solution. Exam Tip: Volumetric flasks have a single mark showing the exact calibrated volume, used ONLY for making standard solutions, not for titrating.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The conical flask is commonly used in titration mainly because:",
+        "options": [
+          {"id": "a", "text": "It measures volume accurately", "isCorrect": false},
+          {"id": "b", "text": "Its shape allows easy swirling/mixing of the solution without spilling", "isCorrect": true},
+          {"id": "c", "text": "It can be heated directly", "isCorrect": false},
+          {"id": "d", "text": "It has a calibrated scale", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The conical flask's narrow neck and wide base make swirling and mixing the solution easy without spilling. Exam Tip: The conical flask does NOT measure volume accurately, it just holds the solution being titrated conveniently.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Concentration of a solution, in mol/dm3, is calculated using the formula:",
+        "options": [
+          {"id": "a", "text": "Concentration = moles x volume (dm3)", "isCorrect": false},
+          {"id": "b", "text": "Concentration = moles / volume (dm3)", "isCorrect": true},
+          {"id": "c", "text": "Concentration = volume / moles", "isCorrect": false},
+          {"id": "d", "text": "Concentration = moles + volume", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Concentration in mol/dm3 is calculated as concentration = moles of solute divided by volume of solution in dm3. Exam Tip: c = n/V. Rearranged: n = c x V.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If 0.5 mol of a substance is dissolved to make 2 dm3 of solution, its concentration is:",
+        "options": [
+          {"id": "a", "text": "1 mol/dm3", "isCorrect": false},
+          {"id": "b", "text": "4 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.25 mol/dm3", "isCorrect": true},
+          {"id": "d", "text": "2.5 mol/dm3", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A burette is graduated and fitted with a tap so it can deliver and measure variable volumes accurately, usually to the nearest 0.05 cm3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A pipette is used to measure which kind of volume?",
-        "options": [
-          {
-            "id": "a",
-            "text": "A fixed (single) accurate volume",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Any volume the user chooses, with a tap",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "An approximate volume only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The volume of a gas",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "A pipette delivers one fixed accurate volume (for example 25.0 cm3) of the solution being titrated into the conical flask.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which apparatus is used to prepare a standard solution of an exact volume?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Beaker",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Volumetric (graduated) flask",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Conical flask",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Burette",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A volumetric flask has a single calibration mark giving one exact volume, so it is used to make up standard solutions to a precise total volume.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is a standard solution?",
-        "options": [
-          {
-            "id": "a",
-            "text": "A solution whose concentration is not known",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A solution of accurately known concentration",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Any solution containing an acid",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "A solution that always turns red",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A standard solution is one whose concentration is known accurately, prepared from a primary standard or by careful standardisation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following is a good primary standard?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Sodium hydroxide",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Anhydrous sodium carbonate",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Concentrated hydrochloric acid",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Concentrated nitric acid",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Anhydrous sodium carbonate is pure, stable, non-hygroscopic and has a known formula mass, so it makes a reliable primary standard. Sodium hydroxide absorbs water and carbon dioxide and is not a primary standard.",
+        "explanation": "Concentration = moles / volume = 0.5 / 2 = 0.25 mol/dm3. Exam Tip: Divide moles by volume in dm3. Watch that the volume is in dm3, not cm3.",
         "difficulty": "medium"
       },
       {
-        "questionText": "In an acid-base titration, which indicator is suitable for a strong acid added to a weak base?",
+        "questionText": "In volumetric calculations, if the volume is given in cm3, it must first be converted to dm3 by dividing by:",
         "options": [
-          {
-            "id": "a",
-            "text": "Phenolphthalein",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Methyl orange",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Universal indicator",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "No indicator is needed",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Methyl orange changes colour in the acidic range and is suitable when titrating a strong acid against a weak base, where the end point is on the acidic side.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What colour is phenolphthalein in an alkaline solution?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Colourless",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Yellow",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Pink",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Blue",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "10", "isCorrect": false},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "1000", "isCorrect": true},
+          {"id": "d", "text": "10000", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Phenolphthalein is colourless in acid and turns pink in alkaline (basic) solution.",
+        "explanation": "Since 1 dm3 = 1000 cm3, a volume in cm3 must be divided by 1000 to convert it to dm3. Exam Tip: cm3 / 1000 = dm3. This conversion step is essential before applying c = n/V.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What is meant by the end point of a titration?",
+        "questionText": "In a titration, 25 cm3 of acid exactly neutralises 20 cm3 of a base. If the concentration of the base is known, the acid's concentration can be found using:",
         "options": [
-          {
-            "id": "a",
-            "text": "The point where the burette is empty",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The point at which the indicator changes colour",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The point where the solution boils",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The point where no acid remains in the bottle",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The end point is the moment the indicator changes colour, signalling that the reaction is complete; it is chosen to be as close as possible to the equivalence point.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "25.0 cm3 of sodium hydroxide solution requires 20.0 cm3 of 0.10 mol/dm3 hydrochloric acid to neutralise it. What is the concentration of the sodium hydroxide? (NaOH + HCl reacts 1:1)",
-        "options": [
-          {
-            "id": "a",
-            "text": "0.080 mol/dm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.125 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.10 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.050 mol/dm3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The mole ratio from the balanced equation and the volumes used", "isCorrect": true},
+          {"id": "b", "text": "Only the colour of the indicator", "isCorrect": false},
+          {"id": "c", "text": "The mass of the conical flask", "isCorrect": false},
+          {"id": "d", "text": "The temperature of the room", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Moles HCl = 0.10 x 20.0/1000 = 0.0020 mol. Ratio 1:1 so moles NaOH = 0.0020 mol. Concentration = 0.0020 / (25.0/1000) = 0.080 mol/dm3.",
+        "explanation": "The balanced equation gives the mole ratio, which combined with the known volumes and one known concentration allows the unknown concentration to be calculated. Exam Tip: Titration calculations always start from the BALANCED EQUATION, it tells you the ratio in which the two substances react.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which statement about reading a burette is correct?",
+        "questionText": "Volumetric analysis (e.g. titration) is commonly applied in the food and beverage industry to determine:",
         "options": [
-          {
-            "id": "a",
-            "text": "Read from the top of the liquid surface",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Read the bottom of the meniscus at eye level",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Read at any convenient angle",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Always start from exactly 1.00 cm3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The colour of packaging", "isCorrect": false},
+          {"id": "b", "text": "The acidity of drinks such as fruit juice or vinegar", "isCorrect": true},
+          {"id": "c", "text": "The weight of the bottle", "isCorrect": false},
+          {"id": "d", "text": "The shape of the container", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "To avoid parallax error, the bottom of the meniscus should be read with the eye level with the liquid surface.",
+        "explanation": "Titration can measure the acid content (acidity) of juices, vinegar and soft drinks in the food and beverage industry. Exam Tip: Volumetric analysis checks quality control, e.g. ensuring vinegar or juice has the correct acidity.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Why is a conical flask preferred over a beaker for the solution being titrated?",
+        "questionText": "In medicine, volumetric analysis can be used to determine the:",
         "options": [
-          {
-            "id": "a",
-            "text": "It holds more liquid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Its shape allows swirling without splashing out",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "It measures volume more accurately",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It changes colour at the end point",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Colour of tablets", "isCorrect": false},
+          {"id": "b", "text": "Exact amount of active ingredient in a medicine or antacid", "isCorrect": true},
+          {"id": "c", "text": "Shape of capsules", "isCorrect": false},
+          {"id": "d", "text": "Price of drugs", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The narrow neck of a conical flask lets the contents be swirled to mix the reactants without spilling, helping detect the end point cleanly.",
+        "explanation": "Titration can measure how much active chemical, such as the acid-neutralising ingredient in an antacid, is present in a medicine. Exam Tip: Testing antacid tablets by titration checks whether they contain the labelled amount of active ingredient.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which term describes how close repeated titration results are to one another?",
+        "questionText": "In agriculture, volumetric analysis may be used to determine the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Accuracy",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Precision",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Concentration",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Molarity",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Colour of soil", "isCorrect": false},
+          {"id": "b", "text": "Amount of a particular nutrient or chemical in fertiliser", "isCorrect": true},
+          {"id": "c", "text": "Height of crops", "isCorrect": false},
+          {"id": "d", "text": "Number of farmers", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Precision is the closeness of repeated measurements to each other, while accuracy is closeness to the true value. Good titrations aim for concordant (close) titres.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Before filling, with which liquid should a burette be rinsed?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Distilled water only",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The solution that will be put in it",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The solution in the conical flask",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Any acid available",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Rinsing the burette with the same solution it will hold prevents dilution by leftover water, which would change the concentration and cause errors.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the concentration in mol/dm3 of a solution containing 4.0 g of NaOH in 1.0 dm3 of solution? (Molar mass of NaOH = 40 g/mol)",
-        "options": [
-          {
-            "id": "a",
-            "text": "0.10 mol/dm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "1.0 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.40 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "4.0 mol/dm3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Moles = mass / molar mass = 4.0 / 40 = 0.10 mol. In 1.0 dm3 the concentration is 0.10 mol/dm3.",
-        "difficulty": "medium"
+        "explanation": "Titration can measure the amount of a particular nutrient or chemical present in a fertiliser sample. Exam Tip: Volumetric analysis supports quality control of fertilisers and other agricultural chemicals.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "The process of finding the concentration of a solution by measuring reacting volumes is called _____.",
+        "questionText": "A technique that uses measured volumes of solutions to determine concentration or amount of substance is called ____ analysis.",
         "options": [
-          {
-            "id": "a",
-            "text": "titration",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "filtration",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "distillation",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "crystallisation",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "volumetric", "isCorrect": true},
+          {"id": "b", "text": "gravimetric", "isCorrect": false},
+          {"id": "c", "text": "qualitative", "isCorrect": false},
+          {"id": "d", "text": "chromatographic", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Titration is the practical method used in volumetric analysis to determine an unknown concentration.",
+        "explanation": "Volumetric analysis uses measured volumes to determine the concentration or amount of a substance. Exam Tip: Central technique: titration.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A solution of accurately known concentration is called a _____ solution.",
+        "questionText": "A solution of accurately known concentration is called a ____ solution.",
         "options": [
-          {
-            "id": "a",
-            "text": "saturated",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "standard",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "dilute",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "molar",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A standard solution has a precisely known concentration and is used as the reference in titrations.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The apparatus used to deliver a single fixed accurate volume into the conical flask is the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "burette",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "measuring cylinder",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "pipette",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "beaker",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "A pipette delivers one fixed volume, such as 25.0 cm3, accurately.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A substance that is pure, stable and used to prepare a solution of exactly known concentration is called a _____ standard.",
-        "options": [
-          {
-            "id": "a",
-            "text": "secondary",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "stable",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "neutral",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "primary",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A primary standard such as anhydrous sodium carbonate is pure and stable, allowing a standard solution to be made directly by weighing.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The point in a titration at which the indicator changes colour is called the _____.",
-        "options": [
-          {
-            "id": "a",
-            "text": "end point",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "start point",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "neutral point",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "fixed point",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "standard", "isCorrect": true},
+          {"id": "b", "text": "dilute", "isCorrect": false},
+          {"id": "c", "text": "saturated", "isCorrect": false},
+          {"id": "d", "text": "unknown", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The end point is where the indicator changes colour, marking the completion of the reaction.",
+        "explanation": "A solution of accurately known concentration is called a standard solution. Exam Tip: Prepared using a volumetric flask and an accurately weighed mass.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In acid, phenolphthalein is _____ in colour.",
+        "questionText": "The apparatus used to deliver one fixed, accurate volume of liquid is the ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "pink",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "colourless",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "red",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "orange",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Phenolphthalein is colourless in acidic solution and pink in alkaline solution.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Methyl orange is red in acid and _____ in alkali.",
-        "options": [
-          {
-            "id": "a",
-            "text": "pink",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "colourless",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "yellow",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "blue",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Methyl orange changes from red in acid to yellow in alkaline solution.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The number of moles of solute dissolved in one cubic decimetre of solution is called the _____ of the solution.",
-        "options": [
-          {
-            "id": "a",
-            "text": "density",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "solubility",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "volume",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "molarity",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Molarity (concentration in mol/dm3) is moles of solute per cubic decimetre of solution.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "To avoid _____ error, the burette must be read with the eye level with the meniscus.",
-        "options": [
-          {
-            "id": "a",
-            "text": "parallax",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "random",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "systematic",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "zero",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "pipette", "isCorrect": true},
+          {"id": "b", "text": "burette", "isCorrect": false},
+          {"id": "c", "text": "beaker", "isCorrect": false},
+          {"id": "d", "text": "measuring cylinder", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Parallax error occurs when the scale is read from an angle; reading at eye level avoids it.",
-        "difficulty": "medium"
+        "explanation": "A pipette delivers one fixed, accurate volume of liquid. Exam Tip: E.g. a 25.0 cm3 pipette.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If 25.0 cm3 of acid needs 25.0 cm3 of 0.20 mol/dm3 base reacting in a 1:1 ratio, the concentration of the acid is _____ mol/dm3.",
+        "questionText": "The apparatus that delivers a variable, accurately measured volume of liquid during titration is the ____.",
         "options": [
-          {
-            "id": "a",
-            "text": "0.10",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "0.20",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "0.40",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.25",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "burette", "isCorrect": true},
+          {"id": "b", "text": "pipette", "isCorrect": false},
+          {"id": "c", "text": "conical flask", "isCorrect": false},
+          {"id": "d", "text": "volumetric flask", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Equal volumes reacting 1:1 means equal moles, so the acid concentration equals the base concentration, 0.20 mol/dm3.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "A burette delivers a variable, accurately measured volume of liquid during titration. Exam Tip: Read the burette scale before and after, the difference is the volume used.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradual addition of one solution to another to find the volume needed for exact reaction is called ____.",
+        "options": [
+          {"id": "a", "text": "titration", "isCorrect": true},
+          {"id": "b", "text": "filtration", "isCorrect": false},
+          {"id": "c", "text": "evaporation", "isCorrect": false},
+          {"id": "d", "text": "distillation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This gradual addition process, used to find the exact reacting volume, is called titration. Exam Tip: Central to all volumetric analysis calculations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The point in a titration where the reaction is exactly complete, shown by an indicator colour change, is called the ____ point.",
+        "options": [
+          {"id": "a", "text": "end", "isCorrect": true},
+          {"id": "b", "text": "boiling", "isCorrect": false},
+          {"id": "c", "text": "melting", "isCorrect": false},
+          {"id": "d", "text": "starting", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This point of exact completion is called the end point. Exam Tip: End point is detected by the indicator; it should closely match the true equivalence point.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The apparatus used to prepare an exact, calibrated volume of standard solution is the ____ flask.",
+        "options": [
+          {"id": "a", "text": "volumetric", "isCorrect": true},
+          {"id": "b", "text": "conical", "isCorrect": false},
+          {"id": "c", "text": "round-bottom", "isCorrect": false},
+          {"id": "d", "text": "Erlenmeyer", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A volumetric flask is used to prepare an exact, calibrated volume of standard solution. Exam Tip: Has a single calibration mark for one exact volume.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Concentration (in mol/dm3) is calculated as concentration = moles / ____ (in dm3).",
+        "options": [
+          {"id": "a", "text": "volume", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "time", "isCorrect": false},
+          {"id": "d", "text": "pressure", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Concentration equals moles divided by volume in dm3. Exam Tip: c = n/V.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To convert a volume from cm3 to dm3, you divide by ____.",
+        "options": [
+          {"id": "a", "text": "1000", "isCorrect": true},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "10000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since 1 dm3 = 1000 cm3, dividing cm3 by 1000 gives dm3. Exam Tip: 1 dm3 = 1000 cm3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Titration calculations use the mole ____ obtained from the balanced chemical equation.",
+        "options": [
+          {"id": "a", "text": "ratio", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "volume", "isCorrect": false},
+          {"id": "d", "text": "charge", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The mole ratio, obtained from the balanced equation, links the moles of the two reacting substances. Exam Tip: The mole ratio links the moles of the two reacting substances.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "A burette can deliver variable, accurately measured volumes of solution.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A burette is graduated and has a tap, allowing delivery of variable accurate volumes.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A pipette is used to measure several different volumes during a single titration.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A pipette delivers only one fixed accurate volume; the burette delivers variable volumes.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Sodium hydroxide is an excellent primary standard.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Sodium hydroxide absorbs moisture and carbon dioxide from the air, so it is not pure enough to be a primary standard.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Phenolphthalein turns pink in alkaline solution.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Phenolphthalein is colourless in acid and pink in alkali.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The equivalence point is the point where the amounts of acid and base are chemically equal according to the equation.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "At the equivalence point the reactants are present in the exact mole ratio shown by the balanced equation.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A volumetric flask should be used to deliver the acid from the burette.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A volumetric flask is used to prepare a standard solution to an exact volume, not to deliver acid; the burette delivers acid.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Rinsing the burette with distilled water just before filling it with acid has no effect on accuracy.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Leftover water dilutes the acid, changing its concentration; the burette should be rinsed with the acid it will hold.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Concordant titres are readings that agree closely with one another.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Concordant titres differ by only a small amount (usually within 0.10 cm3) and show good precision.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Accuracy means how close a measurement is to the true value.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Accuracy is closeness to the true value, while precision is closeness of repeated readings to each other.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Universal indicator is the best choice for finding a sharp end point in a titration.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Universal indicator shows a gradual range of colours and does not give a sharp single colour change, so single indicators like methyl orange or phenolphthalein are preferred.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Volumetric analysis uses measured volumes of solutions to determine concentration or amount.", "options": [], "correctAnswer": "true", "explanation": "Volumetric analysis is a key quantitative laboratory technique that uses measured volumes of solutions to determine the concentration or amount of a substance.", "difficulty": "easy"},
+      {"questionText": "A pipette is used to measure a variable volume of liquid during titration.", "options": [], "correctAnswer": "false", "explanation": "A pipette gives ONE FIXED volume; it is the burette that is used for variable, accurately measured volumes during titration.", "difficulty": "easy"},
+      {"questionText": "A burette is used to deliver a variable, accurately measured volume of liquid.", "options": [], "correctAnswer": "true", "explanation": "A burette delivers any chosen volume of liquid, read accurately from its scale, and is essential for titrations.", "difficulty": "easy"},
+      {"questionText": "The end point of a titration is always exactly the same as the equivalence point.", "options": [], "correctAnswer": "false", "explanation": "The end point (observed via indicator colour change) is designed to be very close to, but not always mathematically identical to, the true equivalence point.", "difficulty": "easy"},
+      {"questionText": "A volumetric flask is used to prepare an exact, calibrated volume of a standard solution.", "options": [], "correctAnswer": "true", "explanation": "A volumetric flask holds one precise volume, marked with a calibration line, and is used only for preparing standard solutions, not for titrating.", "difficulty": "easy"},
+      {"questionText": "Concentration is calculated by multiplying moles by volume.", "options": [], "correctAnswer": "false", "explanation": "Concentration is calculated by dividing moles by volume (c = n / V), not by multiplying them.", "difficulty": "easy"},
+      {"questionText": "To convert cm3 to dm3, you divide the volume by 1000.", "options": [], "correctAnswer": "true", "explanation": "Since 1 dm3 = 1000 cm3, converting a volume from cm3 to dm3 requires dividing by 1000.", "difficulty": "easy"},
+      {"questionText": "Titration calculations rely on the mole ratio from the balanced chemical equation.", "options": [], "correctAnswer": "true", "explanation": "The balanced chemical equation gives the mole ratio, which is the foundation of all titration calculations.", "difficulty": "easy"},
+      {"questionText": "Volumetric analysis has no practical applications outside the school laboratory.", "options": [], "correctAnswer": "false", "explanation": "Volumetric analysis is a real, widely applied industrial and medical technique, used in food and drinks, medicine, agriculture and water quality testing.", "difficulty": "easy"},
+      {"questionText": "A conical flask is chosen for titration because its shape makes swirling and mixing easy.", "options": [], "correctAnswer": "true", "explanation": "The conical flask's narrow neck and wide base allow easy, safe swirling and mixing, which is why it is used to hold the solution being titrated.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Define volumetric analysis.",
-        "options": [],
-        "correctAnswer": "It is the determination of the concentration or amount of a substance by measuring the volumes of solutions that react completely in a titration.",
-        "explanation": "Volumetric analysis relies on accurate volume measurement and a known concentration to find an unknown.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Name the four main pieces of apparatus used in titration.",
-        "options": [],
-        "correctAnswer": "Burette, pipette, conical flask and volumetric flask.",
-        "explanation": "The burette delivers variable volume, the pipette a fixed volume, the conical flask holds the titrated solution, and the volumetric flask prepares standard solutions.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "State two properties of a good primary standard.",
-        "options": [],
-        "correctAnswer": "It is very pure and chemically stable (does not absorb water or react with air) and has a known formula mass.",
-        "explanation": "These properties let a standard solution of exact concentration be made directly by weighing.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Outline the basic steps of an acid-base titration.",
-        "options": [],
-        "correctAnswer": "Pipette a fixed volume of one solution into a conical flask, add an indicator, run the other solution from the burette while swirling until the indicator just changes colour, and record the titre.",
-        "explanation": "Repeating to get concordant titres improves reliability before calculating the result.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Give the colour change of methyl orange from acid to alkali.",
-        "options": [],
-        "correctAnswer": "From red in acid to yellow in alkali (orange at the end point).",
-        "explanation": "Methyl orange is suited to titrations whose end point lies on the acidic side.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Distinguish between the end point and the equivalence point.",
-        "options": [],
-        "correctAnswer": "The equivalence point is where reactants are present in the exact mole ratio of the equation; the end point is where the indicator changes colour, ideally very close to it.",
-        "explanation": "A suitable indicator is chosen so the end point matches the equivalence point as closely as possible.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Write the relationship used to compare two reacting solutions in titration calculations.",
-        "options": [],
-        "correctAnswer": "C1V1/n1 = C2V2/n2, where C is concentration, V is volume and n is the mole ratio coefficient.",
-        "explanation": "This relates the concentrations and volumes of the two solutions through their stoichiometric ratio.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "How is the concentration of a solution in mol/dm3 calculated?",
-        "options": [],
-        "correctAnswer": "Concentration = number of moles of solute divided by the volume of solution in cubic decimetres.",
-        "explanation": "Moles can be found from concentration x volume or from mass / molar mass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "State two sources of error in titration.",
-        "options": [],
-        "correctAnswer": "Parallax error when reading the burette and overshooting the end point (adding too much titrant); also not rinsing apparatus correctly.",
-        "explanation": "Careful technique and concordant titres reduce these errors.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why is a standard solution important in volumetric analysis?",
-        "options": [],
-        "correctAnswer": "Because its concentration is known accurately, it acts as the reference for finding the unknown concentration of the other solution.",
-        "explanation": "Without a known concentration on one side, the unknown cannot be calculated.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Volumetric analysis", "options": [], "correctAnswer": "A technique that uses measured volumes of solutions to determine the concentration or amount of a substance in solution.", "explanation": "Titration is the core method used in volumetric analysis.", "difficulty": "easy"},
+      {"questionText": "Standard solution", "options": [], "correctAnswer": "A solution whose exact concentration is accurately known, usually prepared by weighing an exact mass and dissolving it in a known volume using a volumetric flask.", "explanation": "Standard solutions are essential reference solutions used in titrations.", "difficulty": "easy"},
+      {"questionText": "Pipette", "options": [], "correctAnswer": "Apparatus used to measure and transfer one accurate, fixed volume of liquid, for example 25.0 cm3.", "explanation": "A pipette always delivers the same single fixed volume, unlike a burette.", "difficulty": "easy"},
+      {"questionText": "Burette", "options": [], "correctAnswer": "Apparatus used to deliver a variable, accurately measured volume of liquid during a titration, read from a graduated scale.", "explanation": "The volume used is found by taking the difference between the initial and final burette readings.", "difficulty": "easy"},
+      {"questionText": "Titration", "options": [], "correctAnswer": "The gradual addition of one solution to another from a burette until the reaction is exactly complete.", "explanation": "Titration is commonly carried out between an acid and a base.", "difficulty": "easy"},
+      {"questionText": "End point", "options": [], "correctAnswer": "The point in a titration at which the reaction is judged to be exactly complete, usually shown by a colour change of an indicator.", "explanation": "The end point closely matches, but is not always mathematically identical to, the true equivalence point.", "difficulty": "easy"},
+      {"questionText": "Volumetric flask", "options": [], "correctAnswer": "Apparatus with a single calibration mark used to prepare an exact, fixed volume of a standard solution.", "explanation": "It is used only for preparing standard solutions, never for titrating directly.", "difficulty": "easy"},
+      {"questionText": "Conical flask", "options": [], "correctAnswer": "Apparatus with a narrow neck and wide base used to hold the solution being titrated, chosen because its shape allows easy swirling without spilling.", "explanation": "The conical flask does not measure volume accurately; it only holds the solution conveniently.", "difficulty": "easy"},
+      {"questionText": "Concentration formula", "options": [], "correctAnswer": "Concentration (mol/dm3) equals moles of solute divided by volume of solution in dm3, written c = n / V.", "explanation": "Rearranged, this gives moles = concentration x volume (n = c x V).", "difficulty": "easy"},
+      {"questionText": "cm3 to dm3 conversion", "options": [], "correctAnswer": "To convert a volume from cm3 to dm3, divide by 1000, since 1 dm3 = 1000 cm3.", "explanation": "This conversion must always be done before applying the concentration formula c = n/V.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "In a titration, 25.0 cm3 of sodium hydroxide solution is exactly neutralised by 22.5 cm3 of 0.100 mol/dm3 sulphuric acid. The equation is 2NaOH + H2SO4 -> Na2SO4 + 2H2O. What is the concentration of the sodium hydroxide?",
+        "questionText": "A student uses a pipette to place 25.0 cm3 of a sodium hydroxide solution of unknown concentration into a conical flask, adds an indicator, and titrates it with 0.1 mol/dm3 hydrochloric acid from a burette. The acid used to reach the end point is 20.0 cm3. Using NaOH + HCl -> NaCl + H2O (1:1 ratio), calculate the concentration of the sodium hydroxide.",
         "options": [
-          {
-            "id": "a",
-            "text": "0.180 mol/dm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.090 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.225 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.045 mol/dm3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "0.08 mol/dm3", "isCorrect": true},
+          {"id": "b", "text": "0.125 mol/dm3", "isCorrect": false},
+          {"id": "c", "text": "0.2 mol/dm3", "isCorrect": false},
+          {"id": "d", "text": "2.0 mol/dm3", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Moles H2SO4 = 0.100 x 22.5/1000 = 0.00225 mol. Ratio NaOH:H2SO4 = 2:1, so moles NaOH = 2 x 0.00225 = 0.00450 mol. Concentration = 0.00450 / (25.0/1000) = 0.180 mol/dm3.",
+        "explanation": "Moles of HCl used = concentration x volume (dm3) = 0.1 x (20.0/1000) = 0.002 mol. Since the ratio NaOH:HCl is 1:1, moles of NaOH = 0.002 mol. Concentration of NaOH = moles / volume (dm3) = 0.002 / (25.0/1000) = 0.08 mol/dm3. Exam Tip: Standard titration method: (1) find moles of the KNOWN solution using c x V, (2) use the mole RATIO from the equation to find moles of the unknown, (3) divide by ITS volume to get its concentration. Always convert cm3 to dm3 (÷1000) before each calculation.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A student dissolves 5.3 g of anhydrous sodium carbonate (Na2CO3, molar mass 106 g/mol) and makes the solution up to 250 cm3 in a volumetric flask. What is the concentration of this standard solution?",
+        "questionText": "A quality-control chemist at a soft drinks factory titrates 10 cm3 of a fruit juice sample against 0.05 mol/dm3 sodium hydroxide, using phenolphthalein as the indicator. It takes 15 cm3 of NaOH to reach the end point (assume a 1:1 reacting ratio with the juice's acid). Calculate the concentration of acid in the juice, and explain why this method is useful for the factory.",
         "options": [
-          {
-            "id": "a",
-            "text": "0.20 mol/dm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.050 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.10 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.50 mol/dm3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "0.075 mol/dm3; it lets the factory check whether the juice's acidity meets quality standards", "isCorrect": true},
+          {"id": "b", "text": "0.05 mol/dm3; it has no industrial use", "isCorrect": false},
+          {"id": "c", "text": "3 mol/dm3; used only for colouring", "isCorrect": false},
+          {"id": "d", "text": "1.5 mol/dm3; used only to measure volume", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Moles = 5.3 / 106 = 0.050 mol. Volume = 250 cm3 = 0.250 dm3. Concentration = 0.050 / 0.250 = 0.20 mol/dm3.",
+        "explanation": "Moles of NaOH used = 0.05 x (15/1000) = 0.00075 mol. With a 1:1 ratio, moles of acid in the juice = 0.00075 mol. Concentration of acid = moles / volume of juice (dm3) = 0.00075 / (10/1000) = 0.075 mol/dm3; this lets the factory verify the juice's acidity meets its quality standards. Exam Tip: The SAME titration method (c x V for the known, ratio, then divide by the unknown's volume) applies whether the 'unknown' is a lab chemical or a real food product. The industrial value is QUALITY CONTROL, ensuring consistent product acidity batch after batch.",
         "difficulty": "hard"
       },
       {
-        "questionText": "20.0 cm3 of 0.150 mol/dm3 sodium carbonate solution is titrated with hydrochloric acid using methyl orange. The equation is Na2CO3 + 2HCl -> 2NaCl + H2O + CO2. If 30.0 cm3 of acid is used, what is the concentration of the hydrochloric acid?",
+        "questionText": "A student needs to prepare 250 cm3 of a standard solution containing exactly 0.5 mol/dm3 of sodium carbonate (Na2CO3, molar mass = 106 g/mol). Calculate the mass of sodium carbonate the student must weigh out, and describe which apparatus is essential for this preparation.",
         "options": [
-          {
-            "id": "a",
-            "text": "0.200 mol/dm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.100 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.050 mol/dm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.300 mol/dm3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "13.25 g; a volumetric flask is essential to measure the exact 250 cm3 volume", "isCorrect": true},
+          {"id": "b", "text": "53 g; a burette is essential", "isCorrect": false},
+          {"id": "c", "text": "0.5 g; a pipette is essential", "isCorrect": false},
+          {"id": "d", "text": "106 g; a conical flask is essential", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Moles Na2CO3 = 0.150 x 20.0/1000 = 0.00300 mol. Ratio HCl:Na2CO3 = 2:1, so moles HCl = 2 x 0.00300 = 0.00600 mol. Concentration = 0.00600 / (30.0/1000) = 0.200 mol/dm3.",
+        "explanation": "Required moles = concentration x volume (dm3) = 0.5 x (250/1000) = 0.125 mol. Mass needed = moles x molar mass = 0.125 x 106 = 13.25 g. The student must weigh 13.25 g of sodium carbonate; a volumetric flask, calibrated to exactly 250 cm3, is essential to make up the solution to the precise volume. Exam Tip: Preparing a standard solution is a TWO-STEP calculation (concentration -> moles -> mass), followed by dissolving in a VOLUMETRIC FLASK (never a beaker or conical flask) to guarantee the exact final volume, this is what makes it a true 'standard' solution.",
         "difficulty": "hard"
       }
     ]
