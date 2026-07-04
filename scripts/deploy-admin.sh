@@ -8,7 +8,7 @@
 #
 #  ONE-TIME SETUP (run once, before the first deploy):
 #     firebase login
-#     firebase hosting:sites:create soma-admin --project tanza-9b182
+#     firebase hosting:sites:create soma-admin-ce547 --project tanza-9b182
 #
 #  RUN THIS ON YOUR OWN MACHINE (not in the Claude sandbox), from the repo root.
 #
@@ -52,9 +52,9 @@ say "Installing admin deps (if needed) + building"
 ( cd admin && npm run build ) || die "admin build failed"
 
 # --- 3. Deploy to its own Hosting site -----------------------------------------
-say "Deploying admin panel to Firebase Hosting (site: soma-admin)"
+say "Deploying admin panel to Firebase Hosting (site: soma-admin-ce547)"
 firebase deploy --only hosting --config admin/firebase.json --project tanza-9b182 \
-  || die "deploy failed — did you run the one-time 'firebase hosting:sites:create soma-admin --project tanza-9b182' setup yet?"
+  || die "deploy failed — did you run the one-time 'firebase hosting:sites:create soma-admin-ce547 --project tanza-9b182' setup yet?"
 
-say "Done. Admin panel: https://soma-admin.web.app"
+say "Done. Admin panel: https://soma-admin-ce547.web.app"
 echo "   First time only: create your login — see docs/ADMIN_PANEL_SETUP.md"

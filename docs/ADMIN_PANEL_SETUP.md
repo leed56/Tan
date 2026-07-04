@@ -7,16 +7,26 @@ site, separate from the student app. Do these steps once.
 
 ```bash
 firebase login
-firebase hosting:sites:create soma-admin --project tanza-9b182
+firebase hosting:sites:create <a-unique-site-id> --project tanza-9b182
 ```
+
+`soma-admin` was already taken by another Firebase project, so this repo
+uses **`soma-admin-ce547`** (set in `admin/firebase.json`'s `hosting.site`
+and echoed by `deploy-admin.sh`). If you ever need to change it, update
+both of those.
 
 ## 2. Deploy
 
-```bash
-bash scripts/deploy-admin.sh
+On Windows, `bash` on PATH can resolve to the (uninstalled) WSL stub
+instead of Git Bash — call Git Bash explicitly, same as `golive.sh`:
+
+```powershell
+& "C:\Program Files\Git\bin\bash.exe" scripts/deploy-admin.sh
 ```
 
-This builds `admin/` and deploys it to **https://soma-admin.web.app**.
+On macOS/Linux, plain `bash scripts/deploy-admin.sh` is fine.
+
+This builds `admin/` and deploys it to **https://soma-admin-ce547.web.app**.
 Re-run this script any time you change files under `admin/` — it does not
 touch the student app's hosting.
 
@@ -41,7 +51,7 @@ hand in the Firebase Console:
    | `isActive` | boolean | `true` |
    | `createdAt` | timestamp | now |
 
-4. Go to `https://soma-admin.web.app/login` and sign in with that email/password.
+4. Go to `https://soma-admin-ce547.web.app/login` and sign in with that email/password.
 
 Once you're in, **Settings → Admin Users** lets you create additional admin
 accounts (content editors, viewers) without touching Firestore directly.
