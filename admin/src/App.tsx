@@ -15,6 +15,7 @@ import { AnalyticsPage } from './screens/AnalyticsPage';
 import { ContentPage } from './screens/ContentPage';
 import { NotificationsPage } from './screens/NotificationsPage';
 import { SettingsPage } from './screens/SettingsPage';
+import { Toaster } from './components/ui/toaster';
 
 export default function App() {
   useEffect(() => {
@@ -105,6 +106,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </BrowserRouter>
+      <Toaster />
     </QueryClientProvider>
   );
 }

@@ -1,28 +1,49 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { collection, getDocs, updateDoc, doc, query, orderBy, limit } from 'firebase/firestore';
+import { collection, getDocs, updateDoc, doc, query, orderBy, limit, deleteField } from 'firebase/firestore';
 import { format } from 'date-fns';
-import { Search, Eye, Ban, CheckCircle, RefreshCw } from 'lucide-react';
+import { useForm, Controller } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
+import { Search, Eye, Ban, CheckCircle, RefreshCw, Crown, XCircle } from 'lucide-react';
 import { db } from '../lib/firebase';
 import { logAudit } from '../services/auditService';
+import { useAuthStore } from '../store/authStore';
 import { PageHeader } from '../components/shared/PageHeader';
 import { DataTable, type Column } from '../components/shared/DataTable';
 import { StatusBadge } from '../components/shared/StatusBadge';
 import { ConfirmDialog } from '../components/shared/ConfirmDialog';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
 import { Badge } from '../components/ui/badge';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '../components/ui/dialog';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '../components/ui/select';
+import { useToast } from '../components/ui/use-toast';
 import type { Student } from '../types';
 
-type StudentAction = 'suspend' | 'activate' | 'reset';
+type StudentAction = 'suspend' | 'activate' | 'reset' | 'revoke';
+
+const grantSchema = z.object({
+  planId: z.enum(['standard', 'family']),
+  billingCycle: z.enum(['monthly', 'yearly']),
+});
+type GrantValues = z.infer<typeof grantSchema>;
 
 export function StudentsPage() {
   const qc = useQueryClient();
+  const admin = useAuthStore((s) => s.user);
+  const { toast } = useToast();
   const [search, setSearch] = useState('');
   const [filterSub, setFilterSub] = useState('all');
   const [viewStudent, setViewStudent] = useState<Student | null>(null);
   const [confirmAction, setConfirmAction] = useState<{ student: Student; action: StudentAction } | null>(null);
+  const [grantStudent, setGrantStudent] = useState<Student | null>(null);
+
+  const { handleSubmit: handleGrantSubmit, control: grantControl, reset: resetGrant } = useForm<GrantValues>({
+    resolver: zodResolver(grantSchema),
+    defaultValues: { planId: 'standard', billingCycle: 'monthly' },
+  });
 
   const { data: students = [], isLoading } = useQuery({
     queryKey: ['students'],
@@ -45,12 +66,47 @@ export function StudentsPage() {
       if (action === 'suspend') updates.isSuspended = true;
       else if (action === 'activate') updates.isSuspended = false;
       else if (action === 'reset') { updates.totalXp = 0; updates.currentStreak = 0; }
+      else if (action === 'revoke') {
+        updates.subscriptionStatus = 'free';
+        updates.subscriptionPlan = deleteField();
+        updates.billingCycle = deleteField();
+        updates.subscriptionExpiry = deleteField();
+      }
       await updateDoc(doc(db, 'users', student.id), updates);
       await logAudit(action, 'students', student.id, updates);
     },
-    onSuccess: () => { qc.invalidateQueries({ queryKey: ['students'] }); setConfirmAction(null); },
+    onSuccess: (_data, { student, action }) => {
+      qc.invalidateQueries({ queryKey: ['students'] });
+      setConfirmAction(null);
+      if (action === 'revoke') toast({ title: 'Premium revoked', description: `${student.displayName || 'Student'} is now on the free plan.` });
+    },
+    onError: (err: Error) => toast({ variant: 'destructive', title: 'Action failed', description: err.message }),
   });
 
+  const grantMutation = useMutation({
+    mutationFn: async (data: GrantValues) => {
+      if (!grantStudent) return;
+      const expiry = new Date();
+      expiry.setDate(expiry.getDate() + (data.billingCycle === 'yearly' ? 365 : 30));
+      const updates = {
+        subscriptionStatus: 'active',
+        subscriptionPlan: data.planId,
+        billingCycle: data.billingCycle,
+        subscriptionExpiry: expiry,
+      };
+      await updateDoc(doc(db, 'users', grantStudent.id), updates);
+      await logAudit('grant_premium', 'students', grantStudent.id, { ...updates, grantedBy: admin?.email });
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['students'] });
+      toast({ variant: 'success', title: 'Premium granted', description: `${grantStudent?.displayName || 'Student'} is activated — takes effect instantly in the app.` });
+      setGrantStudent(null);
+      resetGrant();
+    },
+    onError: (err: Error) => toast({ variant: 'destructive', title: 'Grant failed', description: err.message }),
+  });
+
+  const canMutate = admin?.role === 'super_admin';
   const isActiveSub = (s: Student) => s.subscriptionStatus === 'active' || s.subscriptionStatus === 'premium' || s.subscriptionStatus === 'family';
 
   const filtered = students.filter((s) => {
@@ -85,11 +141,15 @@ export function StudentsPage() {
       key: 'actions', header: '', render: (r) => (
         <div className="flex gap-1 justify-end">
           <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setViewStudent(r); }}><Eye size={14} /></Button>
-          {r.isSuspended
+          {canMutate && (isActiveSub(r)
+            ? <Button size="sm" variant="ghost" title="Revoke premium" onClick={(e) => { e.stopPropagation(); setConfirmAction({ student: r, action: 'revoke' }); }}><XCircle size={14} className="text-amber-400" /></Button>
+            : <Button size="sm" variant="ghost" title="Grant premium" onClick={(e) => { e.stopPropagation(); resetGrant({ planId: 'standard', billingCycle: 'monthly' }); setGrantStudent(r); }}><Crown size={14} className="text-amber-400" /></Button>
+          )}
+          {canMutate && (r.isSuspended
             ? <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setConfirmAction({ student: r, action: 'activate' }); }}><CheckCircle size={14} className="text-emerald-400" /></Button>
             : <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setConfirmAction({ student: r, action: 'suspend' }); }}><Ban size={14} className="text-destructive" /></Button>
-          }
-          <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setConfirmAction({ student: r, action: 'reset' }); }}><RefreshCw size={14} /></Button>
+          )}
+          {canMutate && <Button size="sm" variant="ghost" onClick={(e) => { e.stopPropagation(); setConfirmAction({ student: r, action: 'reset' }); }}><RefreshCw size={14} /></Button>}
         </div>
       ),
     },
@@ -99,11 +159,13 @@ export function StudentsPage() {
     suspend: 'Suspend Student',
     activate: 'Activate Student',
     reset: 'Reset Progress',
+    revoke: 'Revoke Premium',
   };
   const actionDescriptions: Record<StudentAction, (s: Student) => string> = {
     suspend: (s) => `Suspend ${s.displayName}? They won't be able to log in.`,
     activate: (s) => `Reactivate ${s.displayName}?`,
     reset: (s) => `Reset XP and streak for ${s.displayName}? This cannot be undone.`,
+    revoke: (s) => `Revoke ${s.displayName}'s premium access? They'll immediately drop to the free plan.`,
   };
 
   return (
@@ -178,11 +240,67 @@ export function StudentsPage() {
         onOpenChange={(v) => !v && setConfirmAction(null)}
         title={confirmAction ? actionLabels[confirmAction.action] : ''}
         description={confirmAction ? actionDescriptions[confirmAction.action](confirmAction.student) : ''}
-        confirmLabel={confirmAction?.action === 'suspend' ? 'Suspend' : confirmAction?.action === 'activate' ? 'Activate' : 'Reset'}
-        variant={confirmAction?.action === 'reset' ? 'destructive' : 'default'}
+        confirmLabel={
+          confirmAction?.action === 'suspend' ? 'Suspend'
+            : confirmAction?.action === 'activate' ? 'Activate'
+            : confirmAction?.action === 'revoke' ? 'Revoke'
+            : 'Reset'
+        }
+        variant={confirmAction?.action === 'reset' || confirmAction?.action === 'revoke' ? 'destructive' : 'default'}
         onConfirm={() => confirmAction && actionMutation.mutate(confirmAction)}
         isLoading={actionMutation.isPending}
       />
+
+      <Dialog open={!!grantStudent} onOpenChange={(v) => !v && setGrantStudent(null)}>
+        <DialogContent>
+          <DialogHeader><DialogTitle>Grant Premium</DialogTitle></DialogHeader>
+          <p className="text-sm text-muted-foreground -mt-2">
+            Manually activate premium for <span className="font-medium text-foreground">{grantStudent?.displayName || 'this student'}</span> — no payment request needed. Takes effect instantly.
+          </p>
+          <form onSubmit={handleGrantSubmit((v) => grantMutation.mutate(v))} className="space-y-4">
+            <div className="grid grid-cols-2 gap-3">
+              <div className="space-y-2">
+                <Label>Plan</Label>
+                <Controller
+                  control={grantControl}
+                  name="planId"
+                  render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="standard">Standard</SelectItem>
+                        <SelectItem value="family">Family</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  )}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>Billing Cycle</Label>
+                <Controller
+                  control={grantControl}
+                  name="billingCycle"
+                  render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="monthly">Monthly (30 days)</SelectItem>
+                        <SelectItem value="yearly">Yearly (365 days)</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  )}
+                />
+              </div>
+            </div>
+            <DialogFooter>
+              <Button type="button" variant="outline" onClick={() => setGrantStudent(null)}>Cancel</Button>
+              <Button type="submit" disabled={grantMutation.isPending}>
+                {grantMutation.isPending ? 'Granting...' : 'Grant Premium'}
+              </Button>
+            </DialogFooter>
+          </form>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
