@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "The underlying reason or purpose behind why an author wrote a particular text is called the author's ________.",
-        "options": [],
-        "correctAnswer": "motive",
+        "options": [
+          {"id": "a", "text": "tone", "isCorrect": false},
+          {"id": "b", "text": "motive", "isCorrect": true},
+          {"id": "c", "text": "opinion", "isCorrect": false},
+          {"id": "d", "text": "style", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "This term describes the author's intent, such as to inform, persuade or entertain. Exam Tip: Look at tone and word choice to help identify an author's motive.",
         "difficulty": "easy"
       },
       {
         "questionText": "Presenting the key ideas of a written text aloud to an audience is called giving an oral ________ about the text.",
-        "options": [],
-        "correctAnswer": "presentation",
+        "options": [
+          {"id": "a", "text": "presentation", "isCorrect": true},
+          {"id": "b", "text": "summary", "isCorrect": false},
+          {"id": "c", "text": "critique", "isCorrect": false},
+          {"id": "d", "text": "review", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "This term describes verbally sharing a text's content and ideas with others. Exam Tip: Oral presentations of a text should highlight its main points clearly.",
         "difficulty": "easy"
       },
       {
         "questionText": "A conclusion reached using textual clues, rather than an explicitly stated fact, is called an ________.",
-        "options": [],
-        "correctAnswer": "inference",
+        "options": [
+          {"id": "a", "text": "conclusion", "isCorrect": false},
+          {"id": "b", "text": "assumption", "isCorrect": false},
+          {"id": "c", "text": "inference", "isCorrect": true},
+          {"id": "d", "text": "prediction", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "This term describes a logical conclusion drawn from indirect evidence in a text. Exam Tip: Inference = using clues to conclude something not directly stated.",
         "difficulty": "easy"
       },
       {
         "questionText": "Identifying the central point of an oral presentation is called deducing the ________ ________.",
-        "options": [],
-        "correctAnswer": "main idea",
+        "options": [
+          {"id": "a", "text": "key message", "isCorrect": false},
+          {"id": "b", "text": "central theme", "isCorrect": false},
+          {"id": "c", "text": "final conclusion", "isCorrect": false},
+          {"id": "d", "text": "main idea", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "This term describes the most important, overarching point that a presentation communicates. Exam Tip: The main idea is usually supported by every other detail in the presentation.",
         "difficulty": "medium"
       },
       {
         "questionText": "Critically assessing whether claims made in a radio broadcast are well-supported is called ________ information from oral sources.",
-        "options": [],
-        "correctAnswer": "examining",
+        "options": [
+          {"id": "a", "text": "accepting", "isCorrect": false},
+          {"id": "b", "text": "examining", "isCorrect": true},
+          {"id": "c", "text": "paraphrasing", "isCorrect": false},
+          {"id": "d", "text": "translating", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "This term describes the process of critically checking the reliability of claims in spoken sources. Exam Tip: Examining information involves questioning evidence, not simply accepting claims.",
         "difficulty": "easy"
       },
       {
         "questionText": "Using surrounding words and sentences to guess the meaning of an unfamiliar word is called ________ guessing.",
-        "options": [],
-        "correctAnswer": "contextual",
+        "options": [
+          {"id": "a", "text": "literal", "isCorrect": false},
+          {"id": "b", "text": "phonetic", "isCorrect": false},
+          {"id": "c", "text": "contextual", "isCorrect": true},
+          {"id": "d", "text": "random", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "This reading strategy uses context clues rather than a dictionary to infer word meaning. Exam Tip: Contextual guessing speeds up reading by reducing dictionary interruptions.",
         "difficulty": "easy"
       },
       {
         "questionText": "Combining ideas from several different texts to reach a broader conclusion is called ________ ideas from multiple/diverse texts.",
-        "options": [],
-        "correctAnswer": "synthesising",
+        "options": [
+          {"id": "a", "text": "synthesising", "isCorrect": true},
+          {"id": "b", "text": "comparing", "isCorrect": false},
+          {"id": "c", "text": "summarising", "isCorrect": false},
+          {"id": "d", "text": "translating", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "This term describes the process of merging information from several sources into a unified understanding. Exam Tip: Synthesis goes beyond comparison — it creates a new, combined conclusion.",
         "difficulty": "medium"
       },
       {
         "questionText": "Writing one combined summary using information gathered from several different sources is called writing a ________ text from a variety of texts.",
-        "options": [],
-        "correctAnswer": "single",
+        "options": [
+          {"id": "a", "text": "separate", "isCorrect": false},
+          {"id": "b", "text": "duplicate", "isCorrect": false},
+          {"id": "c", "text": "single", "isCorrect": true},
+          {"id": "d", "text": "translated", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "This term describes producing one unified piece of writing that draws on multiple source texts. Exam Tip: This skill requires selecting and merging key points, not simply copying each source in turn.",
         "difficulty": "medium"
       },
       {
         "questionText": "Concluding that a text's setting is rural based on repeated mentions of farms and dirt roads is an example of making an ________ about a text.",
-        "options": [],
-        "correctAnswer": "inference",
+        "options": [
+          {"id": "a", "text": "prediction", "isCorrect": false},
+          {"id": "b", "text": "inference", "isCorrect": true},
+          {"id": "c", "text": "summary", "isCorrect": false},
+          {"id": "d", "text": "opinion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "This term describes drawing a logical conclusion based on accumulated textual details. Exam Tip: Inferences about setting often rely on small, repeated clues rather than one explicit statement.",
         "difficulty": "medium"
       },
       {
         "questionText": "Connecting a text's message to a student's own personal experience is called relating the text to ________ ________.",
-        "options": [],
-        "correctAnswer": "real life",
+        "options": [
+          {"id": "a", "text": "personal experience", "isCorrect": false},
+          {"id": "b", "text": "general knowledge", "isCorrect": false},
+          {"id": "c", "text": "real life", "isCorrect": true},
+          {"id": "d", "text": "prior knowledge", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "This term describes linking abstract textual information to concrete, personal experience. Exam Tip: A deeper comprehension skill than simple recall — it requires genuine personal connection.",
         "difficulty": "easy"
       }

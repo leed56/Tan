@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "Correcting grammar and spelling errors in a classmate's homework before submission is an example of editing/proofreading in a ____ context.",
-        "options": [],
-        "correctAnswer": "school",
+        "options": [
+          {"id": "a", "text": "school", "isCorrect": true},
+          {"id": "b", "text": "outside", "isCorrect": false},
+          {"id": "c", "text": "informal", "isCorrect": false},
+          {"id": "d", "text": "large", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "This term describes the school-based setting in which this editing activity takes place. Exam Tip: School-context editing includes essays, assignments, and classroom materials.",
         "difficulty": "easy"
       },
       {
         "questionText": "Correcting errors in a local shop's printed advertisement is an example of editing/proofreading ____ school context.",
-        "options": [],
-        "correctAnswer": "outside",
+        "options": [
+          {"id": "a", "text": "outside", "isCorrect": true},
+          {"id": "b", "text": "school", "isCorrect": false},
+          {"id": "c", "text": "small", "isCorrect": false},
+          {"id": "d", "text": "formal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "This term describes applying editing skills to real-world texts beyond the classroom. Exam Tip: The same editing principles apply, just with a different (non-school) type of text and audience.",
         "difficulty": "easy"
       },
       {
         "questionText": "Quickly translating a casual conversation between two friends speaking different languages is an example of interpreting an ____ context.",
-        "options": [],
-        "correctAnswer": "informal",
+        "options": [
+          {"id": "a", "text": "large formal", "isCorrect": false},
+          {"id": "b", "text": "informal", "isCorrect": true},
+          {"id": "c", "text": "small formal", "isCorrect": false},
+          {"id": "d", "text": "school", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "This term describes a casual, everyday setting, as opposed to an official or ceremonial one. Exam Tip: Informal interpretation often happens spontaneously in daily life.",
         "difficulty": "easy"
       },
       {
         "questionText": "Interpreting during a private meeting between a doctor and patient is an example of interpreting a ____ formal setting.",
-        "options": [],
-        "correctAnswer": "small",
+        "options": [
+          {"id": "a", "text": "small", "isCorrect": true},
+          {"id": "b", "text": "large", "isCorrect": false},
+          {"id": "c", "text": "informal", "isCorrect": false},
+          {"id": "d", "text": "outside", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "This term describes an official but limited-audience setting. Exam Tip: Small formal settings include consultations, interviews, and small meetings.",
         "difficulty": "medium"
       },
       {
         "questionText": "Interpreting for a government official speaking to a large public audience at a rally is an example of interpreting a ____ formal setting.",
-        "options": [],
-        "correctAnswer": "large",
+        "options": [
+          {"id": "a", "text": "informal", "isCorrect": false},
+          {"id": "b", "text": "small", "isCorrect": false},
+          {"id": "c", "text": "large", "isCorrect": true},
+          {"id": "d", "text": "outside", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "This term describes an official setting involving a large audience. Exam Tip: Large formal settings often involve significant public occasions and many listeners.",
         "difficulty": "medium"
       },
       {
         "questionText": "Converting a short public notice about a school holiday into another language for parents is an example of translating a text ____ school.",
-        "options": [],
-        "correctAnswer": "outside",
+        "options": [
+          {"id": "a", "text": "within", "isCorrect": false},
+          {"id": "b", "text": "outside", "isCorrect": true},
+          {"id": "c", "text": "informal", "isCorrect": false},
+          {"id": "d", "text": "long", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "This term describes the setting of the translated text's intended audience, beyond the classroom. Exam Tip: Outside-school translation practice uses genuinely useful, real-world short texts.",
         "difficulty": "easy"
       },
       {
         "questionText": "Converting an entire government policy document into another language is an example of translating a variety of ____ texts.",
-        "options": [],
-        "correctAnswer": "long",
+        "options": [
+          {"id": "a", "text": "long", "isCorrect": true},
+          {"id": "b", "text": "short", "isCorrect": false},
+          {"id": "c", "text": "informal", "isCorrect": false},
+          {"id": "d", "text": "school", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "This term describes texts that are substantial in length, requiring sustained accuracy and consistency. Exam Tip: Long-text translation is more demanding than short-text translation due to its length and complexity.",
         "difficulty": "easy"
       },
       {
         "questionText": "Using specialised software to maintain terminology consistency during a translation project is called using ____ (CAT).",
-        "options": [],
-        "correctAnswer": "Computer-Assisted Tools",
+        "options": [
+          {"id": "a", "text": "Manual Translation Software", "isCorrect": false},
+          {"id": "b", "text": "Computer-Assisted Tools", "isCorrect": true},
+          {"id": "c", "text": "Computer-Generated Text", "isCorrect": false},
+          {"id": "d", "text": "Automated Writing Tools", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "This term describes software tools designed to assist human translators and editors. Exam Tip: CAT stands for Computer-Assisted Tools/Translation.",
         "difficulty": "medium"
       },
       {
         "questionText": "A single-paragraph health notice would typically be classified as a ____ text for translation purposes.",
-        "options": [],
-        "correctAnswer": "short",
+        "options": [
+          {"id": "a", "text": "long", "isCorrect": false},
+          {"id": "b", "text": "extensive", "isCorrect": false},
+          {"id": "c", "text": "short", "isCorrect": true},
+          {"id": "d", "text": "formal", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "This term describes a text that is brief and self-contained. Exam Tip: Short texts are often a manageable starting point before tackling longer documents.",
         "difficulty": "easy"
       },
       {
         "questionText": "Interpreters should remain accurate and ____, avoiding the insertion of their own personal opinions into what they interpret.",
-        "options": [],
-        "correctAnswer": "neutral",
+        "options": [
+          {"id": "a", "text": "biased", "isCorrect": false},
+          {"id": "b", "text": "casual", "isCorrect": false},
+          {"id": "c", "text": "informal", "isCorrect": false},
+          {"id": "d", "text": "neutral", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "This term describes the objective, unbiased approach expected of interpreters. Exam Tip: Neutral, faithful interpretation is essential, especially in formal settings.",
         "difficulty": "medium"
       }
