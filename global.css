@@ -1,26 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media (min-width: 768px) {
-  html,
-  body {
-    min-height: 100%;
-    background: #070b22;
-  }
-
-  #root {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    background: #070b22;
-  }
-
-  #root > div {
-    width: 100%;
-    max-width: 430px;
-    min-height: 100vh;
-    overflow: hidden;
-    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
-  }
-}
