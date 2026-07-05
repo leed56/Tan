@@ -189,8 +189,10 @@ export function WelcomeScreen({ navigation }: Props) {
       <View style={styles.auroraThree} />
 
       <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
-        <View
-          style={styles.container}
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={styles.container}
+          showsVerticalScrollIndicator={false}
           onLayout={(e) => setContainerWidth(e.nativeEvent.layout.width)}
         >
           <Animated.View style={[styles.header, fadeUp(heroAnim)]}>
@@ -340,7 +342,7 @@ export function WelcomeScreen({ navigation }: Props) {
 
             {error ? <Text style={styles.ctaError}>{error}</Text> : null}
           </Animated.View>
-        </View>
+        </ScrollView>
       </SafeAreaView>
     </LinearGradient>
   );
@@ -370,8 +372,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  container: {
+  scroll: {
     flex: 1,
+  },
+
+  container: {
+    flexGrow: 1,
     paddingHorizontal: SPACING.screenPadding,
     paddingTop: SPACING.lg,
     paddingBottom: SPACING.lg,
