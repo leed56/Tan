@@ -13,7 +13,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
 
-const { width, height } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 type Props = StackScreenProps<AuthStackParamList, 'Splash'>;
 
@@ -251,48 +251,48 @@ const styles = StyleSheet.create({
 
   auroraOne: {
     position: 'absolute',
-    width: width * 1.1,
-    height: width * 1.1,
-    borderRadius: width,
+    width: '110%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(99,102,241,0.28)',
-    top: -width * 0.45,
-    left: -width * 0.34,
+    top: '-45%',
+    left: '-34%',
   },
 
   auroraTwo: {
     position: 'absolute',
-    width: width * 0.95,
-    height: width * 0.95,
-    borderRadius: width,
+    width: '95%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(6,182,212,0.16)',
-    bottom: -width * 0.36,
-    right: -width * 0.36,
+    bottom: '-36%',
+    right: '-36%',
   },
 
   auroraThree: {
     position: 'absolute',
-    width: width * 0.75,
-    height: width * 0.75,
-    borderRadius: width,
+    width: '75%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(236,72,153,0.13)',
-    top: height * 0.28,
-    right: -width * 0.4,
+    top: '28%',
+    right: '-40%',
   },
 
   gridCircleLarge: {
     position: 'absolute',
-    width: width * 1.35,
-    height: width * 1.35,
-    borderRadius: width,
+    width: '135%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.07)',
   },
 
   gridCircleSmall: {
     position: 'absolute',
-    width: width * 0.72,
-    height: width * 0.72,
-    borderRadius: width,
+    width: '72%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.09)',
   },

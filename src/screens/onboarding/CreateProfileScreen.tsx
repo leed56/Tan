@@ -424,32 +424,32 @@ const styles = StyleSheet.create({
 
   auroraOne: {
     position: 'absolute',
-    width: width * 1.25,
-    height: width * 1.25,
-    borderRadius: width,
+    width: '125%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(99,102,241,0.24)',
-    top: -width * 0.55,
-    left: -width * 0.4,
+    top: '-55%',
+    left: '-40%',
   },
 
   auroraTwo: {
     position: 'absolute',
-    width: width * 0.95,
-    height: width * 0.95,
-    borderRadius: width,
+    width: '95%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(6,182,212,0.15)',
-    top: width * 0.45,
-    right: -width * 0.45,
+    top: '45%',
+    right: '-45%',
   },
 
   auroraThree: {
     position: 'absolute',
-    width: width * 0.9,
-    height: width * 0.9,
-    borderRadius: width,
+    width: '90%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(251,191,36,0.09)',
-    bottom: -width * 0.46,
-    left: -width * 0.34,
+    bottom: '-46%',
+    left: '-34%',
   },
 
   header: {
@@ -702,11 +702,12 @@ const styles = StyleSheet.create({
   formGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: SPACING.sm,
+    justifyContent: 'space-between',
+    rowGap: SPACING.sm,
   },
 
   formCard: {
-    width: (width - SPACING.screenPadding * 2 - SPACING.lg * 2 - SPACING.sm) / 2,
+    width: '48%',
     height: 98,
     borderRadius: 24,
     alignItems: 'center',

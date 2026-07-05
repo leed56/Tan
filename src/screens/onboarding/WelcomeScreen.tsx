@@ -21,8 +21,10 @@ import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { SUBJECT_COUNT, FORM_COUNT } from '../../constants';
 import { useAuth } from '../../hooks/useAuth';
 
-const { width, height } = Dimensions.get('window');
-const CARD_WIDTH = width - SPACING.screenPadding * 2;
+// Fallback only — Soma's web build centers content in a fixed-width "phone
+// frame" (WebPhoneFrame) on wide browsers, so the real available width comes
+// from onLayout below, not the raw window/device size.
+const { width: windowWidth } = Dimensions.get('window');
 const AUTO_ADVANCE_MS = 4200;
 
 type Props = StackScreenProps<AuthStackParamList, 'Welcome'>;
@@ -57,6 +59,7 @@ const STATS = [
 export function WelcomeScreen({ navigation }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [signingIn, setSigningIn] = useState(false);
+  const [containerWidth, setContainerWidth] = useState(windowWidth);
 
   const scrollRef = useRef<ScrollView>(null);
   const autoAdvanceTimer = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -125,11 +128,11 @@ export function WelcomeScreen({ navigation }: Props) {
     autoAdvanceTimer.current = setInterval(() => {
       setActiveIndex((prev) => {
         const next = (prev + 1) % BENEFITS.length;
-        scrollRef.current?.scrollTo({ x: next * width, animated: true });
+        scrollRef.current?.scrollTo({ x: next * containerWidth, animated: true });
         return next;
       });
     }, AUTO_ADVANCE_MS);
-  }, []);
+  }, [containerWidth]);
 
   useEffect(() => {
     restartAutoAdvance();
@@ -151,13 +154,13 @@ export function WelcomeScreen({ navigation }: Props) {
   };
 
   const handleScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const index = Math.round(e.nativeEvent.contentOffset.x / width);
+    const index = Math.round(e.nativeEvent.contentOffset.x / containerWidth);
     setActiveIndex(index);
     restartAutoAdvance();
   };
 
   const handleDotPress = (index: number) => {
-    scrollRef.current?.scrollTo({ x: index * width, animated: true });
+    scrollRef.current?.scrollTo({ x: index * containerWidth, animated: true });
     setActiveIndex(index);
     restartAutoAdvance();
   };
@@ -186,7 +189,10 @@ export function WelcomeScreen({ navigation }: Props) {
       <View style={styles.auroraThree} />
 
       <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
-        <View style={styles.container}>
+        <View
+          style={styles.container}
+          onLayout={(e) => setContainerWidth(e.nativeEvent.layout.width)}
+        >
           <Animated.View style={[styles.header, fadeUp(heroAnim)]}>
             <View style={styles.logoWrap}>
               <LinearGradient
@@ -245,7 +251,12 @@ export function WelcomeScreen({ navigation }: Props) {
               </LinearGradient>
             </Animated.View>
 
-            <Text style={styles.headline}>
+            <Text
+              style={[
+                styles.headline,
+                containerWidth < 380 && styles.headlineCompact,
+              ]}
+            >
               Master O-Level{'\n'}with confidence
             </Text>
 
@@ -278,7 +289,7 @@ export function WelcomeScreen({ navigation }: Props) {
               style={styles.carousel}
             >
               {BENEFITS.map((benefit, index) => (
-                <View key={benefit.title} style={styles.slide}>
+                <View key={benefit.title} style={[styles.slide, { width: containerWidth }]}>
                   <LinearGradient
                     colors={benefit.colors}
                     start={{ x: 0, y: 0 }}
@@ -368,32 +379,32 @@ const styles = StyleSheet.create({
 
   auroraOne: {
     position: 'absolute',
-    width: width * 1.2,
-    height: width * 1.2,
-    borderRadius: width,
+    width: '120%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(99,102,241,0.24)',
-    top: -width * 0.55,
-    left: -width * 0.38,
+    top: '-55%',
+    left: '-38%',
   },
 
   auroraTwo: {
     position: 'absolute',
-    width: width * 0.95,
-    height: width * 0.95,
-    borderRadius: width,
+    width: '95%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(6,182,212,0.16)',
-    top: height * 0.18,
-    right: -width * 0.45,
+    top: '18%',
+    right: '-45%',
   },
 
   auroraThree: {
     position: 'absolute',
-    width: width * 0.9,
-    height: width * 0.9,
-    borderRadius: width,
+    width: '90%',
+    aspectRatio: 1,
+    borderRadius: 9999,
     backgroundColor: 'rgba(251,191,36,0.1)',
-    bottom: -width * 0.45,
-    left: -width * 0.35,
+    bottom: '-45%',
+    left: '-35%',
   },
 
   header: {
@@ -545,11 +556,16 @@ const styles = StyleSheet.create({
 
   headline: {
     color: '#FFFFFF',
-    fontSize: width < 380 ? 36 : 42,
-    lineHeight: width < 380 ? 42 : 48,
+    fontSize: 42,
+    lineHeight: 48,
     fontWeight: '900',
     letterSpacing: -1.8,
     textAlign: 'center',
+  },
+
+  headlineCompact: {
+    fontSize: 36,
+    lineHeight: 42,
   },
 
   subheadline: {
@@ -603,12 +619,11 @@ const styles = StyleSheet.create({
   },
 
   slide: {
-    width,
     paddingHorizontal: SPACING.screenPadding,
   },
 
   card: {
-    width: CARD_WIDTH,
+    width: '100%',
     minHeight: 178,
     borderRadius: 32,
     padding: SPACING.lg,
