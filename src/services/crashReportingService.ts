@@ -3,14 +3,18 @@
  * Wraps Firebase Crashlytics (@react-native-firebase/crashlytics)
  * and Sentry (@sentry/react-native) — both are optional native deps.
  *
- * Install for production builds:
- *   expo install @react-native-firebase/crashlytics @sentry/react-native
+ * Native crash reporters are intentionally skipped on web so Expo web exports
+ * do not try to bundle native-only packages.
+ *
+ * Install for production native builds:
+ *   expo install @react-native-firebase/app @react-native-firebase/crashlytics @sentry/react-native
  */
 
 import { Platform } from 'react-native';
 
 const SENTRY_DSN = process.env.EXPO_PUBLIC_SENTRY_DSN ?? '';
 const APP_ENV = process.env.APP_ENV ?? 'development';
+const IS_WEB = Platform.OS === 'web';
 
 interface CrashlyticsInstance {
   setCrashlyticsCollectionEnabled(enabled: boolean): Promise<void>;
@@ -44,6 +48,7 @@ let _crashlytics: CrashlyticsInstance | null | undefined;
 let _sentry: SentryModule | null | undefined;
 
 function getCrashlytics(): CrashlyticsInstance | null {
+  if (IS_WEB) return null;
   if (_crashlytics !== undefined) return _crashlytics;
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -56,6 +61,7 @@ function getCrashlytics(): CrashlyticsInstance | null {
 }
 
 function getSentry(): SentryModule | null {
+  if (IS_WEB) return null;
   if (_sentry !== undefined) return _sentry;
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires

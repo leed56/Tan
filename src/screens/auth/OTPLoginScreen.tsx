@@ -1,213 +1,105 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';
+import React from 'react';
+import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
-import { AppButton } from '../../components/ui/AppButton';
-import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
-import { validateTanzaniaPhone } from '../../utils';
+import { COLORS, GRADIENTS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
 import { useAuth } from '../../hooks/useAuth';
-import { DEMO_PHONE } from '../../constants';
 
 type Props = StackScreenProps<AuthStackParamList, 'OTPLogin'>;
 
-const COUNTRY_CODE = '+255';
-
 export function OTPLoginScreen({ navigation }: Props) {
-  const [phone, setPhone] = useState('');
-  const { loading, sendOtp } = useAuth();
+  const { loading, loginDemo } = useAuth();
 
-  const fullPhone = `${COUNTRY_CODE}${phone.replace(/\D/g, '')}`;
-  const isValid = validateTanzaniaPhone(`255${phone.replace(/\D/g, '')}`);
-
-  const handleSend = async () => {
-    if (!isValid) {
-      Alert.alert('Invalid Number', 'Please enter a valid Tanzania mobile number.');
-      return;
+  const handleGoogle = async () => {
+    try {
+      await loginDemo();
+      navigation.navigate('CreateProfile');
+    } catch {
+      Alert.alert('Login failed', 'Please try again.');
     }
-    // TODO: Phase 2 — replace with real Firebase OTP via sendOtp()
-    await sendOtp(fullPhone);
-    navigation.navigate('OTPVerify', { phoneNumber: fullPhone });
-  };
-
-  const handleDemo = () => {
-    // DEMO LOGIN MODE — bypasses real OTP
-    // TODO: Phase 2 — remove demo mode, use real OTP only
-    setPhone('712345678');
-    navigation.navigate('OTPVerify', { phoneNumber: `${COUNTRY_CODE}712345678` });
   };
 
   return (
-    <ScreenContainer keyboardAvoiding gradient={GRADIENTS.background}>
-      {/* Back */}
-      <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
+    <ScreenContainer scrollable keyboardAvoiding gradient={GRADIENTS.background}>
+      <Pressable onPress={() => navigation.goBack()} style={styles.back} accessibilityRole="button" accessibilityLabel="Go back">
         <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
-      </TouchableOpacity>
+      </Pressable>
 
       <View style={styles.content}>
-        {/* Header */}
-        <View style={styles.header}>
-          <View style={styles.iconBg}>
-            <Ionicons name="phone-portrait" size={32} color={COLORS.primary} />
-          </View>
-          <Text style={styles.title}>Enter your{'\n'}phone number</Text>
-          <Text style={styles.subtitle}>
-            We'll send a verification code to your Tanzania number.
-          </Text>
+        <View style={styles.heroIconWrap}>
+          <LinearGradient colors={GRADIENTS.primary} style={styles.heroIcon}>
+            <Text style={styles.heroEmoji}>🧠</Text>
+          </LinearGradient>
         </View>
 
-        {/* Phone Input */}
-        <View style={styles.inputWrapper}>
-          <TouchableOpacity style={styles.countryCode}>
-            {/* TODO: Phase 2 — country selector picker */}
-            <Text style={styles.countryFlag}>🇹🇿</Text>
-            <Text style={styles.countryCodeText}>{COUNTRY_CODE}</Text>
-            <Ionicons name="chevron-down" size={14} color={COLORS.textMuted} />
-          </TouchableOpacity>
+        <View style={styles.copyBlock}>
+          <View style={styles.badge}>
+            <Ionicons name="shield-checkmark" size={15} color={COLORS.successLight} />
+            <Text style={styles.badgeText}>Secure student login</Text>
+          </View>
+          <Text style={styles.title}>Continue your learning journey.</Text>
+          <Text style={styles.subtitle}>Sign in with Google to sync progress, save your profile, and keep Soma AI personalized for you.</Text>
+        </View>
 
-          <View style={styles.divider} />
-
-          <TextInput
-            style={styles.input}
-            value={phone}
-            onChangeText={setPhone}
-            placeholder="7XX XXX XXX"
-            placeholderTextColor={COLORS.textMuted}
-            keyboardType="phone-pad"
-            maxLength={12}
-            autoFocus
-          />
-
-          {isValid && (
-            <View style={styles.validMark}>
-              <Ionicons name="checkmark-circle" size={20} color={COLORS.success} />
+        <View style={styles.card}>
+          <View style={styles.cardHeader}>
+            <View style={styles.cardIcon}><Ionicons name="logo-google" size={24} color={COLORS.textPrimary} /></View>
+            <View style={styles.cardCopy}>
+              <Text style={styles.cardTitle}>Google account</Text>
+              <Text style={styles.cardText}>Recommended for students and parents</Text>
             </View>
-          )}
-        </View>
-
-        <Text style={styles.hint}>
-          Tanzania numbers: 07xx or 06xx (10 digits)
-        </Text>
-
-        {/* Send OTP */}
-        <AppButton
-          title="Send Verification Code"
-          onPress={handleSend}
-          loading={loading}
-          disabled={!isValid}
-          variant="primary"
-        />
-
-        {/* Demo mode */}
-        <View style={styles.demoBox}>
-          <View style={styles.demoHeader}>
-            <Ionicons name="flask" size={14} color={COLORS.gold} />
-            <Text style={styles.demoTitle}>Demo Mode</Text>
           </View>
-          <Text style={styles.demoDesc}>
-            Skip OTP verification for testing. Uses demo number {DEMO_PHONE}.
-          </Text>
-          <TouchableOpacity onPress={handleDemo} style={styles.demoBtn}>
-            <Text style={styles.demoBtnText}>Use Demo Login →</Text>
-          </TouchableOpacity>
+
+          <Pressable
+            onPress={handleGoogle}
+            disabled={loading}
+            accessibilityRole="button"
+            accessibilityLabel="Continue with Google"
+            style={({ pressed }) => [styles.googleButton, pressed && styles.googleButtonPressed, loading && styles.disabled]}
+          >
+            <Ionicons name="logo-google" size={20} color={COLORS.bgDark} />
+            <Text style={styles.googleText}>{loading ? 'Signing in...' : 'Continue with Google'}</Text>
+          </Pressable>
         </View>
+
+        <View style={styles.benefits}>
+          <View style={styles.benefit}><Ionicons name="cloud-done-outline" size={18} color={COLORS.primaryLight} /><Text style={styles.benefitText}>Save progress across devices</Text></View>
+          <View style={styles.benefit}><Ionicons name="lock-closed-outline" size={18} color={COLORS.primaryLight} /><Text style={styles.benefitText}>Secure Firebase-backed account</Text></View>
+          <View style={styles.benefit}><Ionicons name="person-add-outline" size={18} color={COLORS.primaryLight} /><Text style={styles.benefitText}>Create your learning profile next</Text></View>
+        </View>
+
+        <Text style={styles.note}>Google login UI is active. This branch currently uses the existing Firebase demo session until real Google provider config is added.</Text>
       </View>
     </ScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  back: { padding: SPACING.sm, marginBottom: SPACING.base, alignSelf: 'flex-start' },
-  content: { flex: 1, gap: SPACING.base },
-  header: { gap: SPACING.md, marginBottom: SPACING.sm },
-  iconBg: {
-    width: 64,
-    height: 64,
-    borderRadius: RADIUS.lg,
-    backgroundColor: 'rgba(123, 111, 242, 0.15)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    color: COLORS.textPrimary,
-    fontSize: TYPOGRAPHY.sizes['3xl'],
-    fontWeight: TYPOGRAPHY.weights.extrabold,
-    lineHeight: TYPOGRAPHY.sizes['3xl'] * 1.2,
-  },
-  subtitle: {
-    color: COLORS.textSecondary,
-    fontSize: TYPOGRAPHY.sizes.base,
-    lineHeight: TYPOGRAPHY.sizes.base * 1.6,
-  },
-  inputWrapper: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: COLORS.bgCard,
-    borderRadius: RADIUS.lg,
-    borderWidth: 1.5,
-    borderColor: COLORS.glassBorder,
-    height: 60,
-    paddingHorizontal: SPACING.base,
-    gap: SPACING.sm,
-  },
-  countryCode: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: SPACING.xs,
-  },
-  countryFlag: { fontSize: 20 },
-  countryCodeText: {
-    color: COLORS.textPrimary,
-    fontSize: TYPOGRAPHY.sizes.base,
-    fontWeight: TYPOGRAPHY.weights.semibold,
-  },
-  divider: {
-    width: 1,
-    height: 24,
-    backgroundColor: COLORS.glassBorder,
-  },
-  input: {
-    flex: 1,
-    color: COLORS.textPrimary,
-    fontSize: TYPOGRAPHY.sizes.lg,
-    fontWeight: TYPOGRAPHY.weights.medium,
-    letterSpacing: 1,
-  },
-  validMark: {},
-  hint: {
-    color: COLORS.textMuted,
-    fontSize: TYPOGRAPHY.sizes.xs,
-    marginTop: -SPACING.xs,
-  },
-  demoBox: {
-    backgroundColor: 'rgba(247, 197, 46, 0.08)',
-    borderRadius: RADIUS.lg,
-    borderWidth: 1,
-    borderColor: 'rgba(247, 197, 46, 0.2)',
-    padding: SPACING.base,
-    gap: SPACING.sm,
-    marginTop: SPACING.sm,
-  },
-  demoHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: SPACING.xs,
-  },
-  demoTitle: {
-    color: COLORS.gold,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.bold,
-  },
-  demoDesc: {
-    color: COLORS.textMuted,
-    fontSize: TYPOGRAPHY.sizes.xs,
-    lineHeight: TYPOGRAPHY.sizes.xs * 1.6,
-  },
-  demoBtn: { alignSelf: 'flex-start' },
-  demoBtnText: {
-    color: COLORS.gold,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.semibold,
-  },
+  back: { minWidth: 44, minHeight: 44, justifyContent: 'center', alignItems: 'flex-start', marginBottom: SPACING.base },
+  content: { flex: 1, gap: SPACING.xl, paddingBottom: SPACING['2xl'] },
+  heroIconWrap: { alignItems: 'center', marginTop: SPACING.md },
+  heroIcon: { width: 96, height: 96, borderRadius: 30, alignItems: 'center', justifyContent: 'center', shadowColor: COLORS.primary, shadowOffset: { width: 0, height: 18 }, shadowOpacity: 0.36, shadowRadius: 28, elevation: 12 },
+  heroEmoji: { fontSize: 44 },
+  copyBlock: { gap: SPACING.md },
+  badge: { alignSelf: 'flex-start', minHeight: 36, flexDirection: 'row', alignItems: 'center', gap: SPACING.sm, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, borderWidth: 1, borderColor: 'rgba(126,221,215,0.22)', backgroundColor: 'rgba(78,205,196,0.1)' },
+  badgeText: { color: COLORS.successLight, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.extrabold, textTransform: 'uppercase', letterSpacing: 0.45 },
+  title: { color: COLORS.textPrimary, fontSize: 38, lineHeight: 43, fontWeight: TYPOGRAPHY.weights.extrabold, letterSpacing: -0.8 },
+  subtitle: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.md, lineHeight: TYPOGRAPHY.sizes.md * 1.55 },
+  card: { gap: SPACING.lg, padding: SPACING.lg, borderRadius: 30, borderWidth: 1, borderColor: 'rgba(255,255,255,0.14)', backgroundColor: 'rgba(255,255,255,0.07)' },
+  cardHeader: { flexDirection: 'row', alignItems: 'center', gap: SPACING.md },
+  cardIcon: { width: 52, height: 52, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255,255,255,0.12)' },
+  cardCopy: { flex: 1, minWidth: 0 },
+  cardTitle: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.lg, fontWeight: TYPOGRAPHY.weights.extrabold },
+  cardText: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.sm, marginTop: 3 },
+  googleButton: { minHeight: 60, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: SPACING.sm, borderRadius: RADIUS.xl, backgroundColor: '#fff' },
+  googleButtonPressed: { opacity: 0.86, transform: [{ scale: 0.99 }] },
+  disabled: { opacity: 0.65 },
+  googleText: { color: COLORS.bgDark, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.extrabold },
+  benefits: { gap: SPACING.sm },
+  benefit: { minHeight: 52, flexDirection: 'row', alignItems: 'center', gap: SPACING.md, paddingHorizontal: SPACING.md, borderRadius: RADIUS.lg, borderWidth: 1, borderColor: COLORS.glassBorder, backgroundColor: COLORS.glassBg },
+  benefitText: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold, flex: 1 },
+  note: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs, lineHeight: TYPOGRAPHY.sizes.xs * 1.55, textAlign: 'center' },
 });

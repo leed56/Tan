@@ -36,6 +36,7 @@ export function AppButton({
   icon,
 }: AppButtonProps) {
   const isDisabled = disabled || loading;
+  const accessibilityState = { disabled: isDisabled, busy: loading };
 
   const heightMap = { sm: 40, md: 48, lg: 56 };
   const fontSizeMap = { sm: TYPOGRAPHY.sizes.sm, md: TYPOGRAPHY.sizes.base, lg: TYPOGRAPHY.sizes.md };
@@ -48,6 +49,9 @@ export function AppButton({
         disabled={isDisabled}
         activeOpacity={0.8}
         style={[styles.wrapper, fullWidth && styles.fullWidth, style]}
+        accessibilityRole="button"
+        accessibilityLabel={title}
+        accessibilityState={accessibilityState}
       >
         <LinearGradient
           colors={isDisabled ? [COLORS.textDisabled, COLORS.textMuted] : gradientColors}
@@ -75,6 +79,9 @@ export function AppButton({
         disabled={isDisabled}
         activeOpacity={0.7}
         style={[styles.ghost, { height: heightMap[size] }, fullWidth && styles.fullWidth, style]}
+        accessibilityRole="button"
+        accessibilityLabel={title}
+        accessibilityState={accessibilityState}
       >
         {loading ? (
           <ActivityIndicator color={COLORS.primary} />
@@ -97,6 +104,9 @@ export function AppButton({
         disabled={isDisabled}
         activeOpacity={0.8}
         style={[styles.dangerBtn, { height: heightMap[size] }, fullWidth && styles.fullWidth, style]}
+        accessibilityRole="button"
+        accessibilityLabel={title}
+        accessibilityState={accessibilityState}
       >
         {loading ? (
           <ActivityIndicator color={COLORS.error} />
@@ -120,6 +130,9 @@ export function AppButton({
         isDisabled && styles.disabledOpacity,
         style,
       ]}
+      accessibilityRole="button"
+      accessibilityLabel={title}
+      accessibilityState={accessibilityState}
     >
       {loading ? (
         <ActivityIndicator color={COLORS.primary} />

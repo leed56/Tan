@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { COLORS, TYPOGRAPHY } from '../theme';
 import type {
   AppTabParamList,
@@ -140,13 +141,21 @@ const TAB_CONFIG: Record<
 };
 
 function MainTabsNavigator() {
+  const insets = useSafeAreaInsets();
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => {
         const config = TAB_CONFIG[route.name as keyof AppTabParamList];
         return {
           headerShown: false,
-          tabBarStyle: styles.tabBar,
+          tabBarStyle: [
+            styles.tabBar,
+            {
+              height: 64 + insets.bottom,
+              paddingBottom: Math.max(insets.bottom, 8),
+            },
+          ],
           tabBarActiveTintColor: COLORS.primary,
           tabBarInactiveTintColor: COLORS.textMuted,
           tabBarLabelStyle: styles.tabLabel,
@@ -190,8 +199,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#0E1330',
     borderTopColor: COLORS.glassBorder,
     borderTopWidth: 1,
-    height: 64,
-    paddingBottom: 8,
     paddingTop: 8,
   },
   tabLabel: {
