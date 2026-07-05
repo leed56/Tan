@@ -19,6 +19,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { SUBJECT_COUNT, FORM_COUNT } from '../../constants';
+import { useAuth } from '../../hooks/useAuth';
 
 type Props = StackScreenProps<AuthStackParamList, 'Welcome'>;
 type IconName = keyof typeof Ionicons.glyphMap;
@@ -188,7 +189,7 @@ const BenefitCard = memo(function BenefitCard({ item, width, marginRight, compac
   );
 });
 
-function PrimaryCTA({ onPress }: { onPress: () => void }) {
+function PrimaryCTA({ onPress, loading }: { onPress: () => void; loading?: boolean }) {
   const scale = useRef(new Animated.Value(1)).current;
   const press = (toValue: number) => Animated.spring(scale, { toValue, useNativeDriver: true, speed: 24, bounciness: 5 }).start();
 
@@ -198,15 +199,18 @@ function PrimaryCTA({ onPress }: { onPress: () => void }) {
         onPress={onPress}
         onPressIn={() => press(0.975)}
         onPressOut={() => press(1)}
+        disabled={loading}
         android_ripple={{ color: 'rgba(255,255,255,0.22)' }}
         accessibilityRole="button"
-        accessibilityLabel="Start Learning Free"
-        accessibilityHint="Opens sign in to begin learning"
+        accessibilityLabel="Continue with Google"
+        accessibilityHint="Opens Google sign in to begin learning"
         style={styles.primaryPressable}
       >
         <LinearGradient colors={['#9B8CF9', '#7B6FF2', '#4A90D9']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.primaryCta}>
-          <Text style={styles.primaryText}>Start Learning Free</Text>
-          <View style={styles.primaryIcon}><Ionicons name="arrow-forward" size={20} color={COLORS.primaryDark} /></View>
+          <Text style={styles.primaryText}>{loading ? 'Signing in…' : 'Continue with Google'}</Text>
+          <View style={styles.primaryIcon}>
+            <Ionicons name="logo-google" size={20} color={COLORS.primaryDark} />
+          </View>
         </LinearGradient>
       </Pressable>
     </Animated.View>
@@ -217,6 +221,8 @@ export function WelcomeScreen({ navigation }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<ScrollView>(null);
   const { width, height } = useWindowDimensions();
+  const { signInWithGoogle, error } = useAuth();
+  const [signingIn, setSigningIn] = useState(false);
 
   const isDesktop = width >= 900;
   const isTablet = width >= 700 && width < 900;
@@ -262,7 +268,20 @@ export function WelcomeScreen({ navigation }: Props) {
     setActiveIndex(index);
   };
 
-  const goToLogin = () => navigation.navigate('OTPLogin');
+  // Google is the only real sign-in on this branch. New users continue to
+  // Create Profile; returning users (profile hydrated by the hook) fall
+  // through to the app via RootNavigator's isOnboarded check.
+  const handleGoogle = async () => {
+    setSigningIn(true);
+    try {
+      const { isNewUser } = await signInWithGoogle();
+      if (isNewUser) navigation.navigate('CreateProfile');
+    } catch {
+      // error surfaced via the auth store; popup-close is silently ignored.
+    } finally {
+      setSigningIn(false);
+    }
+  };
 
   return (
     <LinearGradient colors={['#070B22', '#10183A', '#0A0E27', '#1A2040']} style={styles.root}>
@@ -334,10 +353,11 @@ export function WelcomeScreen({ navigation }: Props) {
             </Animated.View>
 
             <Animated.View style={[styles.ctaPanel, ctaAnim]}>
-              <PrimaryCTA onPress={goToLogin} />
-              <Pressable onPress={goToLogin} accessibilityRole="button" accessibilityLabel="Already have an account? Sign In" accessibilityHint="Opens sign in" style={({ pressed }) => [styles.secondaryCta, pressed && styles.secondaryPressed]}>
+              <PrimaryCTA onPress={handleGoogle} loading={signingIn} />
+              <Pressable onPress={handleGoogle} disabled={signingIn} accessibilityRole="button" accessibilityLabel="Already have an account? Sign In" accessibilityHint="Opens Google sign in" style={({ pressed }) => [styles.secondaryCta, pressed && styles.secondaryPressed]}>
                 <Text style={styles.secondaryMuted}>Already have an account?</Text><View style={styles.signIn}><Text style={styles.secondaryText}>Sign In</Text><Ionicons name="arrow-forward" size={16} color={COLORS.primaryLight} /></View>
               </Pressable>
+              {error ? <Text style={styles.ctaError}>{error}</Text> : null}
               <Text style={styles.ctaHint}>No payment needed to start. Upgrade later only when premium packs are useful.</Text>
             </Animated.View>
           </View>
@@ -362,7 +382,7 @@ const styles = StyleSheet.create({
   blobThree: { top: '34%', left: '44%', width: 210, height: 210 },
   header: { minHeight: 56, flexDirection: 'row', alignItems: 'center', gap: SPACING.md, marginBottom: SPACING['2xl'] },
   headerShort: { marginBottom: SPACING.lg },
-  logo: { width: 54, height: 54, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center', shadowColor: COLORS.primary, shadowOffset: { width: 0, height: 14 }, shadowOpacity: 0.34, shadowRadius: 26, elevation: 12 },
+  logo: { width: 54, height: 54, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center', shadowColor: COLORS.primary, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.34, shadowRadius: 26, elevation: 12 },
   logoText: { fontSize: 26 },
   brandWrap: { flex: 1 },
   brand: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes['2xl'], fontWeight: TYPOGRAPHY.weights.extrabold, lineHeight: TYPOGRAPHY.sizes['2xl'] * 1.08, letterSpacing: -0.3 },
@@ -455,5 +475,6 @@ const styles = StyleSheet.create({
   secondaryMuted: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.medium },
   signIn: { flexDirection: 'row', alignItems: 'center', gap: 5 },
   secondaryText: { color: COLORS.primaryLight, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.extrabold },
+  ctaError: { color: COLORS.error, textAlign: 'center', fontSize: TYPOGRAPHY.sizes.xs, paddingHorizontal: SPACING.md },
   ctaHint: { color: COLORS.textMuted, textAlign: 'center', fontSize: TYPOGRAPHY.sizes.xs, lineHeight: TYPOGRAPHY.sizes.xs * 1.55, paddingHorizontal: SPACING.md },
 });

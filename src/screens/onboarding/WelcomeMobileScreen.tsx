@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
@@ -8,6 +8,7 @@ import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { COLORS, GRADIENTS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
 import { SUBJECT_COUNT } from '../../constants';
+import { useAuth } from '../../hooks/useAuth';
 
 type Props = StackScreenProps<AuthStackParamList, 'Welcome'>;
 type IconName = keyof typeof Ionicons.glyphMap;
@@ -22,6 +23,23 @@ export function WelcomeMobileScreen({ navigation }: Props) {
   const { width } = useWindowDimensions();
   const isSmall = width < 380;
   const side = isSmall ? SPACING.base : SPACING.screenPadding;
+  const { signInWithGoogle, error } = useAuth();
+  const [signingIn, setSigningIn] = useState(false);
+
+  // Google is the only real sign-in on this branch. New users continue to
+  // Create Profile; returning users (profile hydrated by the hook) fall
+  // through to the app via RootNavigator's isOnboarded check.
+  const handleGoogle = async () => {
+    setSigningIn(true);
+    try {
+      const { isNewUser } = await signInWithGoogle();
+      if (isNewUser) navigation.navigate('CreateProfile');
+    } catch {
+      // error surfaced via the auth store; popup-close is silently ignored.
+    } finally {
+      setSigningIn(false);
+    }
+  };
 
   return (
     <LinearGradient colors={['#070B22', '#10183A', '#0A0E27']} style={styles.root}>
@@ -110,17 +128,19 @@ export function WelcomeMobileScreen({ navigation }: Props) {
               ))}
             </View>
 
-            <Pressable onPress={() => navigation.navigate('OTPLogin')} accessibilityRole="button" accessibilityLabel="Start Learning Free" style={styles.primaryButton}>
+            <Pressable onPress={handleGoogle} disabled={signingIn} accessibilityRole="button" accessibilityLabel="Continue with Google" style={styles.primaryButton}>
               <LinearGradient colors={['#9B8CF9', '#7B6FF2', '#4A90D9']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.primaryGradient}>
-                <Text style={styles.primaryText}>Start Learning Free</Text>
-                <View style={styles.arrow}><Ionicons name="arrow-forward" size={20} color={COLORS.primaryDark} /></View>
+                <Text style={styles.primaryText}>{signingIn ? 'Signing in…' : 'Continue with Google'}</Text>
+                <View style={styles.arrow}><Ionicons name="logo-google" size={20} color={COLORS.primaryDark} /></View>
               </LinearGradient>
             </Pressable>
 
-            <Pressable onPress={() => navigation.navigate('OTPLogin')} accessibilityRole="button" accessibilityLabel="Already have an account? Sign In" style={styles.secondaryButton}>
+            <Pressable onPress={handleGoogle} disabled={signingIn} accessibilityRole="button" accessibilityLabel="Already have an account? Sign In" style={styles.secondaryButton}>
               <Text style={styles.secondaryMuted}>Already have an account?</Text>
               <Text style={styles.secondaryText}> Sign In →</Text>
             </Pressable>
+
+            {error ? <Text style={styles.errorText}>{error}</Text> : null}
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -183,4 +203,5 @@ const styles = StyleSheet.create({
   secondaryButton: { minHeight: 54, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', borderRadius: RADIUS.xl, borderWidth: 1, borderColor: 'rgba(155,140,249,0.34)', backgroundColor: 'rgba(123,111,242,0.1)', paddingHorizontal: SPACING.lg },
   secondaryMuted: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.medium },
   secondaryText: { color: COLORS.primaryLight, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.extrabold },
+  errorText: { color: COLORS.error, textAlign: 'center', fontSize: TYPOGRAPHY.sizes.xs, marginTop: SPACING.md, paddingHorizontal: SPACING.md },
 });
