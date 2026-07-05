@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The Arabic term for the articles of faith is Arkan al-_____.",
-        "options": [],
-        "correctAnswer": "Iman",
+        "options": [
+          {
+            "id": "a",
+            "text": "Iman",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Islam",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Salah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Deen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Arkan al-Iman means the pillars or articles of faith, of which there are six.",
         "difficulty": "easy"
       },
       {
         "questionText": "Belief in the oneness of Allah is known as _____.",
-        "options": [],
-        "correctAnswer": "Tawheed",
+        "options": [
+          {
+            "id": "a",
+            "text": "Shirk",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tawheed",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Iman",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ihsan",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Tawheed is the central concept of Islamic belief, affirming that Allah is one and unique.",
         "difficulty": "easy"
       },
       {
         "questionText": "The holy book revealed to Prophet Isa (Jesus) is called the _____.",
-        "options": [],
-        "correctAnswer": "Injil",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tawrat",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Zabur",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Injil",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Furqan",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The Injil (Gospel) was the revealed scripture given to Prophet Isa.",
         "difficulty": "medium"
       },
       {
         "questionText": "Angels were created by Allah from _____.",
-        "options": [],
-        "correctAnswer": "light",
+        "options": [
+          {
+            "id": "a",
+            "text": "clay",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fire",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "water",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "light",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "According to Islamic teaching, angels were created from light (nur).",
         "difficulty": "medium"
       },
       {
         "questionText": "The sixth article of faith is belief in the Divine Decree, known in Arabic as _____.",
-        "options": [],
-        "correctAnswer": "Qadar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Qadar",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Qada",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Akhirah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mizan",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Qadar refers to Allah's predestination and the belief that everything happens by His knowledge and will.",
         "difficulty": "medium"
       },
       {
         "questionText": "Associating partners with Allah is the gravest sin and is called _____.",
-        "options": [],
-        "correctAnswer": "Shirk",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kufr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Shirk",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Nifaq",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Bid'ah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Shirk is the opposite of Tawheed and is considered the most serious sin in Islam.",
         "difficulty": "easy"
       },
       {
         "questionText": "The final messenger sent by Allah to all mankind was Prophet _____.",
-        "options": [],
-        "correctAnswer": "Muhammad",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ibrahim",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Isa",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Muhammad",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Musa",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Prophet Muhammad is the last of the messengers, and belief in the messengers is the fourth article of faith.",
         "difficulty": "easy"
       },
       {
         "questionText": "The category of Tawheed concerning Allah's lordship over creation is Tawheed al-_____.",
-        "options": [],
-        "correctAnswer": "Rububiyyah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uluhiyyah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Asma wa-Sifat",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ibadah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Rububiyyah",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Tawheed al-Rububiyyah affirms that Allah alone is the Creator, Sustainer, and Master of all things.",
         "difficulty": "hard"
       },
       {
         "questionText": "Belief in resurrection and the Day of Judgement is part of belief in the _____ Day.",
-        "options": [],
-        "correctAnswer": "Last",
+        "options": [
+          {
+            "id": "a",
+            "text": "Last",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "First",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Final",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Judgement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Belief in the Last Day is the fifth article of faith and includes resurrection and accountability.",
         "difficulty": "easy"
       },
       {
         "questionText": "The angel who brought revelation from Allah to the Prophets is named _____.",
-        "options": [],
-        "correctAnswer": "Jibril",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mikail",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Jibril",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Israfil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Izrail",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Jibril (Gabriel) is the angel entrusted with delivering Allah's revelation to His messengers.",
         "difficulty": "medium"
       }

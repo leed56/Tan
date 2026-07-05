@@ -412,7 +412,7 @@
           },
           {
             "id": "c",
-            "text": "Basic copper carbonate (verdigris)",
+            "text": "Basic copper carbonate",
             "isCorrect": true
           },
           {
@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A compound formed when the replaceable hydrogen of an acid is replaced by a metal or ammonium ion is called a _____.",
-        "options": [],
-        "correctAnswer": "salt",
+        "options": [
+          {
+            "id": "a",
+            "text": "salt",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "base",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "acid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "oxide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "This is the basic definition of a salt.",
         "difficulty": "easy"
       },
       {
         "questionText": "A salt in which all the replaceable hydrogen ions of the acid have been completely replaced by a metal is called a _____ salt.",
-        "options": [],
-        "correctAnswer": "normal",
+        "options": [
+          {
+            "id": "a",
+            "text": "acid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "normal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "basic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "double",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Normal salts contain no replaceable hydrogen, e.g. NaCl, Na2SO4.",
         "difficulty": "easy"
       },
       {
         "questionText": "The method used to prepare an insoluble salt by mixing two solutions is called _____.",
-        "options": [],
-        "correctAnswer": "precipitation",
+        "options": [
+          {
+            "id": "a",
+            "text": "neutralisation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "titration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "precipitation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "crystallisation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Precipitation (double decomposition) forms an insoluble salt that is then filtered off.",
         "difficulty": "medium"
       },
       {
         "questionText": "When dilute sulphuric acid reacts with magnesium, the salt formed is magnesium _____.",
-        "options": [],
-        "correctAnswer": "sulphate",
+        "options": [
+          {
+            "id": "a",
+            "text": "chloride",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "carbonate",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nitrate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sulphate",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Sulphuric acid produces sulphate salts: Mg + H2SO4 -> MgSO4 + H2.",
         "difficulty": "easy"
       },
       {
         "questionText": "The water molecules chemically combined in a fixed proportion within crystals of a salt are called water of _____.",
-        "options": [],
-        "correctAnswer": "crystallisation",
+        "options": [
+          {
+            "id": "a",
+            "text": "crystallisation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hydration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "evaporation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Hydrated salts contain water of crystallisation, e.g. CuSO4.5H2O.",
         "difficulty": "medium"
       },
       {
         "questionText": "A salt that contains no water of crystallisation is described as _____.",
-        "options": [],
-        "correctAnswer": "anhydrous",
+        "options": [
+          {
+            "id": "a",
+            "text": "hydrated",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "anhydrous",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "saturated",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "soluble",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Anhydrous salts have lost their water of crystallisation, e.g. white anhydrous copper(II) sulphate.",
         "difficulty": "medium"
       },
       {
         "questionText": "All sodium, potassium and ammonium salts are _____ in water.",
-        "options": [],
-        "correctAnswer": "soluble",
+        "options": [
+          {
+            "id": "a",
+            "text": "insoluble",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "neutral",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "soluble",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "basic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "These salts are always soluble, a key part of the solubility rules.",
         "difficulty": "easy"
       },
       {
         "questionText": "When an acid reacts with a carbonate, the three products formed are a salt, water and _____ gas.",
-        "options": [],
-        "correctAnswer": "carbon dioxide",
+        "options": [
+          {
+            "id": "a",
+            "text": "hydrogen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "oxygen",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sulphur dioxide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "carbon dioxide",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Acid + carbonate -> salt + water + carbon dioxide.",
         "difficulty": "easy"
       },
       {
         "questionText": "The process of forming pure salt crystals from a saturated salt solution by slow cooling or evaporation is called _____.",
-        "options": [],
-        "correctAnswer": "crystallisation",
+        "options": [
+          {
+            "id": "a",
+            "text": "crystallisation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "filtration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "neutralisation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "distillation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Crystallisation is used to obtain pure crystals of a soluble salt.",
         "difficulty": "medium"
       },
       {
         "questionText": "A salt that still contains replaceable hydrogen ions from the acid is called an _____ salt.",
-        "options": [],
-        "correctAnswer": "acid",
+        "options": [
+          {
+            "id": "a",
+            "text": "normal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "acid",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "basic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "double",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Acid salts, such as NaHCO3 and NaHSO4, have only partial replacement of the acid's hydrogen.",
         "difficulty": "medium"
       }

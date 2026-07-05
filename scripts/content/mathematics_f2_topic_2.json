@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_2",
-  "topicName": "Algebra",
+  "topicName": "Congruence",
   "order": 2,
-  "description": "A study of algebraic expressions, expansion, factorization, algebraic fractions, and forming and solving linear and simultaneous equations including word problems.",
+  "description": "An introduction to congruent figures and triangles, covering the SSS, SAS, ASA and RHS conditions, corresponding parts of congruent triangles, and using postulates and theorems such as the isosceles base-angles theorem to write and complete simple proofs.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Simplify the expression 5x + 3y - 2x + 4y.",
+        "questionText": "Two figures are congruent if they have:",
         "options": [
-          { "id": "a", "text": "3x + 7y", "isCorrect": true },
-          { "id": "b", "text": "7x + 7y", "isCorrect": false },
-          { "id": "c", "text": "3x + y", "isCorrect": false },
-          { "id": "d", "text": "7x + y", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Collect like terms: 5x - 2x = 3x and 3y + 4y = 7y, giving 3x + 7y.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Expand 3(2a + 5).",
-        "options": [
-          { "id": "a", "text": "6a + 5", "isCorrect": false },
-          { "id": "b", "text": "6a + 15", "isCorrect": true },
-          { "id": "c", "text": "5a + 15", "isCorrect": false },
-          { "id": "d", "text": "2a + 15", "isCorrect": false }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Multiply each term inside the bracket by 3: 3 x 2a = 6a and 3 x 5 = 15.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Factorize completely 8x + 12.",
-        "options": [
-          { "id": "a", "text": "4(2x + 3)", "isCorrect": true },
-          { "id": "b", "text": "2(4x + 12)", "isCorrect": false },
-          { "id": "c", "text": "4(2x + 12)", "isCorrect": false },
-          { "id": "d", "text": "8(x + 12)", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "The highest common factor of 8 and 12 is 4, so 8x + 12 = 4(2x + 3).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Expand (x + 4)(x + 2).",
-        "options": [
-          { "id": "a", "text": "x^2 + 6x + 6", "isCorrect": false },
-          { "id": "b", "text": "x^2 + 8x + 6", "isCorrect": false },
-          { "id": "c", "text": "x^2 + 6x + 8", "isCorrect": true },
-          { "id": "d", "text": "x^2 + 2x + 8", "isCorrect": false }
+          {"id": "a", "text": "same shape only", "isCorrect": false},
+          {"id": "b", "text": "same size only", "isCorrect": false},
+          {"id": "c", "text": "same shape and same size", "isCorrect": true},
+          {"id": "d", "text": "same colour and position", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Using FOIL: x^2 + 2x + 4x + 8 = x^2 + 6x + 8.",
+        "explanation": "Congruent figures match exactly in both shape and size, so one can be placed on the other perfectly. Exam Tip: congruent = identical twins, similar = same shape different size.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Solve the equation 4x - 7 = 13.",
+        "questionText": "Which symbol shows that triangle ABC is congruent to triangle PQR?",
         "options": [
-          { "id": "a", "text": "x = 5", "isCorrect": true },
-          { "id": "b", "text": "x = 3", "isCorrect": false },
-          { "id": "c", "text": "x = 6", "isCorrect": false },
-          { "id": "d", "text": "x = 1.5", "isCorrect": false }
+          {"id": "a", "text": "ΔABC = ΔPQR", "isCorrect": false},
+          {"id": "b", "text": "ΔABC ≅ ΔPQR", "isCorrect": true},
+          {"id": "c", "text": "ΔABC ~ ΔPQR", "isCorrect": false},
+          {"id": "d", "text": "ΔABC ≈ ΔPQR", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Add 7 to both sides: 4x = 20, then divide by 4 to get x = 5.",
+        "correctAnswer": "b",
+        "explanation": "The symbol ≅ is read as 'is congruent to' and shows both equal shape and equal size. Exam Tip: ~ means similar, ≅ means congruent.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Factorize x^2 - 9 using difference of two squares.",
+        "questionText": "In two triangles AB = PQ, BC = QR and AC = PR. Which congruence condition is this?",
         "options": [
-          { "id": "a", "text": "(x - 3)(x - 3)", "isCorrect": false },
-          { "id": "b", "text": "(x + 3)(x + 3)", "isCorrect": false },
-          { "id": "c", "text": "(x - 9)(x + 1)", "isCorrect": false },
-          { "id": "d", "text": "(x + 3)(x - 3)", "isCorrect": true }
+          {"id": "a", "text": "SAS", "isCorrect": false},
+          {"id": "b", "text": "ASA", "isCorrect": false},
+          {"id": "c", "text": "SSS", "isCorrect": true},
+          {"id": "d", "text": "RHS", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "All three pairs of sides are equal, which is the side-side-side condition. Exam Tip: three sides given points to SSS.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In two triangles AB = XY, ∠B = ∠Y and BC = YZ. Which congruence condition is this?",
+        "options": [
+          {"id": "a", "text": "SSS", "isCorrect": false},
+          {"id": "b", "text": "SAS", "isCorrect": true},
+          {"id": "c", "text": "ASA", "isCorrect": false},
+          {"id": "d", "text": "AAS", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Two sides and the angle between them are equal, which is the side-angle-side condition. Exam Tip: SAS needs the INCLUDED angle, the one between the two sides.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In two triangles ∠P = ∠L, PQ = LM and ∠Q = ∠M. Which congruence condition is this?",
+        "options": [
+          {"id": "a", "text": "SAS", "isCorrect": false},
+          {"id": "b", "text": "SSS", "isCorrect": false},
+          {"id": "c", "text": "ASA", "isCorrect": true},
+          {"id": "d", "text": "RHS", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Two angles and the side between them are equal, which is the angle-side-angle condition. Exam Tip: in ASA the side connects the two angles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two right-angled triangles have equal hypotenuses and one pair of equal sides. Which congruence condition is this?",
+        "options": [
+          {"id": "a", "text": "SSS", "isCorrect": false},
+          {"id": "b", "text": "SAS", "isCorrect": false},
+          {"id": "c", "text": "ASA", "isCorrect": false},
+          {"id": "d", "text": "RHS", "isCorrect": true}
         ],
         "correctAnswer": "d",
-        "explanation": "Since 9 = 3^2, x^2 - 9 = x^2 - 3^2 = (x + 3)(x - 3).",
+        "explanation": "Equal hypotenuses plus one equal side in right-angled triangles is the right-angle-hypotenuse-side condition. Exam Tip: RHS applies only to right-angled triangles.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Factorize the quadratic trinomial x^2 + 7x + 12.",
+        "questionText": "Which of the following is NOT sufficient to prove congruence?",
         "options": [
-          { "id": "a", "text": "(x + 3)(x + 4)", "isCorrect": true },
-          { "id": "b", "text": "(x + 2)(x + 6)", "isCorrect": false },
-          { "id": "c", "text": "(x + 1)(x + 12)", "isCorrect": false },
-          { "id": "d", "text": "(x + 5)(x + 2)", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Find two numbers multiplying to 12 and adding to 7: these are 3 and 4, so the factors are (x + 3)(x + 4).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Simplify the algebraic fraction (6x^2y) / (2xy).",
-        "options": [
-          { "id": "a", "text": "3x", "isCorrect": true },
-          { "id": "b", "text": "3xy", "isCorrect": false },
-          { "id": "c", "text": "4x", "isCorrect": false },
-          { "id": "d", "text": "3x^2", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Divide: 6/2 = 3, x^2/x = x and y/y = 1, giving 3x.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Factorize by grouping: ax + ay + bx + by.",
-        "options": [
-          { "id": "a", "text": "(a + b)(x + y)", "isCorrect": true },
-          { "id": "b", "text": "(a + x)(b + y)", "isCorrect": false },
-          { "id": "c", "text": "(a + y)(b + x)", "isCorrect": false },
-          { "id": "d", "text": "(ax + by)(a + b)", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Group as a(x + y) + b(x + y), then factor out (x + y) to get (a + b)(x + y).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Solve for x: 3(x - 2) = 2x + 4.",
-        "options": [
-          { "id": "a", "text": "x = 2", "isCorrect": false },
-          { "id": "b", "text": "x = 10", "isCorrect": true },
-          { "id": "c", "text": "x = 6", "isCorrect": false },
-          { "id": "d", "text": "x = -10", "isCorrect": false }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Expand: 3x - 6 = 2x + 4, so 3x - 2x = 4 + 6, giving x = 10.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Add the algebraic fractions: x/3 + x/4.",
-        "options": [
-          { "id": "a", "text": "2x/7", "isCorrect": false },
-          { "id": "b", "text": "x/12", "isCorrect": false },
-          { "id": "c", "text": "7x/12", "isCorrect": true },
-          { "id": "d", "text": "x^2/12", "isCorrect": false }
+          {"id": "a", "text": "SSS", "isCorrect": false},
+          {"id": "b", "text": "SAS", "isCorrect": false},
+          {"id": "c", "text": "AAA", "isCorrect": true},
+          {"id": "d", "text": "ASA", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The LCM of 3 and 4 is 12: x/3 = 4x/12 and x/4 = 3x/12, so the sum is 7x/12.",
+        "explanation": "Three equal angles fix the shape but not the size, so AAA only proves similarity. Exam Tip: AAA gives similarity only, not congruence.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Solve the simultaneous equations: x + y = 10 and x - y = 4.",
+        "questionText": "If ΔABC ≅ ΔDEF, which side corresponds to BC?",
         "options": [
-          { "id": "a", "text": "x = 7, y = 3", "isCorrect": true },
-          { "id": "b", "text": "x = 3, y = 7", "isCorrect": false },
-          { "id": "c", "text": "x = 6, y = 4", "isCorrect": false },
-          { "id": "d", "text": "x = 5, y = 5", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Adding the equations gives 2x = 14, so x = 7; then y = 10 - 7 = 3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Expand (2x - 3)^2.",
-        "options": [
-          { "id": "a", "text": "4x^2 - 9", "isCorrect": false },
-          { "id": "b", "text": "4x^2 - 12x + 9", "isCorrect": true },
-          { "id": "c", "text": "4x^2 + 12x + 9", "isCorrect": false },
-          { "id": "d", "text": "2x^2 - 12x + 9", "isCorrect": false }
+          {"id": "a", "text": "DE", "isCorrect": false},
+          {"id": "b", "text": "EF", "isCorrect": true},
+          {"id": "c", "text": "DF", "isCorrect": false},
+          {"id": "d", "text": "FE only", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Using (a - b)^2 = a^2 - 2ab + b^2: (2x)^2 - 2(2x)(3) + 3^2 = 4x^2 - 12x + 9.",
+        "explanation": "The letter order matches A-D, B-E and C-F, so BC corresponds to EF. Exam Tip: match by letter order in the congruence statement, so BC maps to EF.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A number is multiplied by 3 and then 5 is added; the result is 26. What is the number?",
+        "questionText": "ΔABC ≅ ΔPQR with ∠A = 50° and ∠B = 60°. Find ∠R.",
         "options": [
-          { "id": "a", "text": "5", "isCorrect": false },
-          { "id": "b", "text": "9", "isCorrect": false },
-          { "id": "c", "text": "7", "isCorrect": true },
-          { "id": "d", "text": "8", "isCorrect": false }
+          {"id": "a", "text": "50", "isCorrect": false},
+          {"id": "b", "text": "60", "isCorrect": false},
+          {"id": "c", "text": "70", "isCorrect": true},
+          {"id": "d", "text": "110", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Form the equation 3n + 5 = 26, so 3n = 21 and n = 7.",
+        "explanation": "The angles of a triangle sum to 180, so ∠C = 180 - 50 - 60 = 70, and ∠C corresponds to ∠R. Exam Tip: find the missing angle first, then use corresponding letters.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Factorize completely 2x^2 - 8.",
+        "questionText": "A statement accepted as true without proof is called a:",
         "options": [
-          { "id": "a", "text": "2(x^2 - 8)", "isCorrect": false },
-          { "id": "b", "text": "2(x - 2)(x - 2)", "isCorrect": false },
-          { "id": "c", "text": "(2x - 4)(x + 2)", "isCorrect": false },
-          { "id": "d", "text": "2(x - 2)(x + 2)", "isCorrect": true }
+          {"id": "a", "text": "Theorem", "isCorrect": false},
+          {"id": "b", "text": "Postulate", "isCorrect": true},
+          {"id": "c", "text": "Conclusion", "isCorrect": false},
+          {"id": "d", "text": "Corollary", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "First take out the common factor 2: 2(x^2 - 4), then use difference of two squares: 2(x - 2)(x + 2).",
-        "difficulty": "hard"
+        "correctAnswer": "b",
+        "explanation": "A postulate is a basic statement assumed true, while a theorem must be proved. Exam Tip: postulate = accepted without proof, theorem = proved.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In an isosceles triangle, the angles opposite the equal sides are:",
+        "options": [
+          {"id": "a", "text": "Complementary", "isCorrect": false},
+          {"id": "b", "text": "Supplementary", "isCorrect": false},
+          {"id": "c", "text": "Equal", "isCorrect": true},
+          {"id": "d", "text": "Right angles", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The base-angles theorem states that angles opposite equal sides are equal. Exam Tip: remember the base-angles theorem for isosceles triangles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "ΔABC ≅ ΔDEF with AB = 7, BC = 9 and DF = 12. Find AC.",
+        "options": [
+          {"id": "a", "text": "7", "isCorrect": false},
+          {"id": "b", "text": "9", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": true},
+          {"id": "d", "text": "16", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "AC corresponds to DF by letter order, so AC = 12, while AB and BC are distractors. Exam Tip: match corresponding sides before reading off the length.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "D is the midpoint of BC and AD is perpendicular to BC. ΔABD and ΔACD are congruent by:",
+        "options": [
+          {"id": "a", "text": "SSS", "isCorrect": false},
+          {"id": "b", "text": "SAS", "isCorrect": true},
+          {"id": "c", "text": "AAS", "isCorrect": false},
+          {"id": "d", "text": "RHS", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "BD = DC, AD is common, and the right angle at D lies between them, giving side-angle-side. Exam Tip: a shared side plus an included right angle points to SAS.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two triangles both have angles 40, 60 and 80 but all their side lengths differ. They are:",
+        "options": [
+          {"id": "a", "text": "Congruent by AAA", "isCorrect": false},
+          {"id": "b", "text": "Congruent by ASA", "isCorrect": false},
+          {"id": "c", "text": "Similar but not congruent", "isCorrect": true},
+          {"id": "d", "text": "Neither", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Equal angles but different sizes means the triangles are similar, not congruent. Exam Tip: same shape but different size is similar, not congruent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two triangular roof supports each measure 3 m, 4 m and 5 m. They are congruent by:",
+        "options": [
+          {"id": "a", "text": "SAS", "isCorrect": false},
+          {"id": "b", "text": "ASA", "isCorrect": false},
+          {"id": "c", "text": "SSS", "isCorrect": true},
+          {"id": "d", "text": "RHS", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "All three sides are known and equal, so the triangles are congruent by side-side-side. Exam Tip: three known sides give SSS, which is why triangles are rigid.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "When like terms 9m and 4m are combined, the result is _____.",
-        "options": [],
-        "correctAnswer": "13m",
-        "explanation": "Like terms are added directly: 9m + 4m = 13m.",
+        "questionText": "Figures with the same shape and same size are ____ figures.",
+        "options": [
+          {"id": "a", "text": "congruent", "isCorrect": true},
+          {"id": "b", "text": "similar", "isCorrect": false},
+          {"id": "c", "text": "regular", "isCorrect": false},
+          {"id": "d", "text": "symmetrical", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Matching in both shape and size is the definition of congruent figures. Exam Tip: congruent means identical in shape and size.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The expansion of 2(x + 7) is _____.",
-        "options": [],
-        "correctAnswer": "2x + 14",
-        "explanation": "Multiply each term in the bracket by 2: 2 x x = 2x and 2 x 7 = 14.",
+        "questionText": "Two sides and the included angle is abbreviated ____.",
+        "options": [
+          {"id": "a", "text": "SAS", "isCorrect": true},
+          {"id": "b", "text": "SSS", "isCorrect": false},
+          {"id": "c", "text": "ASA", "isCorrect": false},
+          {"id": "d", "text": "RHS", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Side-angle-side describes two sides with the angle between them, written SAS. Exam Tip: the middle letter A stands for the included angle.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The highest common factor of the terms in 15a + 10 is _____.",
-        "options": [],
-        "correctAnswer": "5",
-        "explanation": "5 is the largest number dividing both 15 and 10, so 15a + 10 = 5(3a + 2).",
+        "questionText": "A statement proved using postulates and reasoning is a ____.",
+        "options": [
+          {"id": "a", "text": "theorem", "isCorrect": true},
+          {"id": "b", "text": "postulate", "isCorrect": false},
+          {"id": "c", "text": "definition", "isCorrect": false},
+          {"id": "d", "text": "guess", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A theorem is a result established by proof from postulates and logical steps. Exam Tip: theorems are proved, postulates are assumed.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The solution of the equation x + 9 = 15 is x = _____.",
-        "options": [],
-        "correctAnswer": "6",
-        "explanation": "Subtract 9 from both sides: x = 15 - 9 = 6.",
+        "questionText": "If ΔABC ≅ ΔXYZ, then ∠B corresponds to ∠____.",
+        "options": [
+          {"id": "a", "text": "Y", "isCorrect": true},
+          {"id": "b", "text": "X", "isCorrect": false},
+          {"id": "c", "text": "Z", "isCorrect": false},
+          {"id": "d", "text": "A", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Following the letter order A-X, B-Y, C-Z, angle B corresponds to angle Y. Exam Tip: read corresponding parts straight from the letter order.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Factorized completely, x^2 - 25 is _____.",
-        "options": [],
-        "correctAnswer": "(x + 5)(x - 5)",
-        "explanation": "This is a difference of two squares since 25 = 5^2, giving (x + 5)(x - 5).",
-        "difficulty": "medium"
+        "questionText": "ΔPQR ≅ ΔLMN and PQ = 8 cm, therefore LM = ____ cm.",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": true},
+          {"id": "b", "text": "16", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "PQ corresponds to LM, and corresponding sides of congruent triangles are equal, so LM = 8 cm. Exam Tip: corresponding sides of congruent triangles are always equal.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The product (x - 6)(x + 6) expands to _____.",
-        "options": [],
-        "correctAnswer": "x^2 - 36",
-        "explanation": "By difference of two squares, (x - 6)(x + 6) = x^2 - 36.",
-        "difficulty": "medium"
+        "questionText": "Right-angled triangles with equal hypotenuses and one equal pair of sides are congruent by ____.",
+        "options": [
+          {"id": "a", "text": "RHS", "isCorrect": true},
+          {"id": "b", "text": "SSS", "isCorrect": false},
+          {"id": "c", "text": "ASA", "isCorrect": false},
+          {"id": "d", "text": "AAA", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The right-angle-hypotenuse-side condition applies to right-angled triangles with equal hypotenuses and one equal side. Exam Tip: RHS needs a right angle plus an equal hypotenuse.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Simplified to a single fraction, (5x)/8 - x/8 equals _____.",
-        "options": [],
-        "correctAnswer": "x/2",
-        "explanation": "Subtract the numerators over the common denominator: (5x - x)/8 = 4x/8 = x/2.",
-        "difficulty": "medium"
+        "questionText": "Two angles and the included side is the ____ condition.",
+        "options": [
+          {"id": "a", "text": "ASA", "isCorrect": true},
+          {"id": "b", "text": "SAS", "isCorrect": false},
+          {"id": "c", "text": "SSS", "isCorrect": false},
+          {"id": "d", "text": "RHS", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Angle-side-angle describes two angles with the side between them, written ASA. Exam Tip: in ASA the side is between the two angles.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The two numbers whose product is 10 and whose sum is 7 (used to factorize x^2 + 7x + 10) are _____.",
-        "options": [],
-        "correctAnswer": "2 and 5",
-        "explanation": "2 x 5 = 10 and 2 + 5 = 7, so x^2 + 7x + 10 = (x + 2)(x + 5).",
-        "difficulty": "medium"
+        "questionText": "ΔABC ≅ ΔDEF with ∠A = 35° and ∠B = 90°, then ∠F = ____°.",
+        "options": [
+          {"id": "a", "text": "55", "isCorrect": true},
+          {"id": "b", "text": "35", "isCorrect": false},
+          {"id": "c", "text": "90", "isCorrect": false},
+          {"id": "d", "text": "45", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "∠C = 180 - 35 - 90 = 55, and ∠C corresponds to ∠F, so ∠F = 55. Exam Tip: find the third angle with the 180 rule, then match letters.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If 2x + 3y = 12 and x = 3, then y = _____.",
-        "options": [],
-        "correctAnswer": "2",
-        "explanation": "Substitute x = 3: 6 + 3y = 12, so 3y = 6 and y = 2.",
-        "difficulty": "medium"
+        "questionText": "In ΔABC, if AB = AC then ∠B = ∠____.",
+        "options": [
+          {"id": "a", "text": "C", "isCorrect": true},
+          {"id": "b", "text": "A", "isCorrect": false},
+          {"id": "c", "text": "B", "isCorrect": false},
+          {"id": "d", "text": "D", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The triangle is isosceles, so the base angles opposite the equal sides are equal, giving ∠B = ∠C. Exam Tip: equal sides mean equal base angles.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The sum of a number and twice the number is 27; the number is _____.",
-        "options": [],
-        "correctAnswer": "9",
-        "explanation": "Form n + 2n = 27, so 3n = 27 and n = 9.",
-        "difficulty": "hard"
+        "questionText": "A diagonal of a parallelogram divides it into two ____ triangles.",
+        "options": [
+          {"id": "a", "text": "congruent", "isCorrect": true},
+          {"id": "b", "text": "similar", "isCorrect": false},
+          {"id": "c", "text": "equilateral", "isCorrect": false},
+          {"id": "d", "text": "right-angled", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The diagonal and the equal opposite sides make the two triangles congruent. Exam Tip: a parallelogram's diagonal always creates two congruent triangles.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "The terms 4x and 4y are like terms.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Like terms must have exactly the same variables; 4x and 4y have different variables, so they are unlike terms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Expanding 5(a - 2) gives 5a - 10.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Multiplying each term by 5: 5 x a = 5a and 5 x (-2) = -10.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The expression x^2 + 16 can be factorized as a difference of two squares.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Difference of two squares requires a subtraction (a^2 - b^2); x^2 + 16 is a sum and cannot be factorized this way.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Factorization is the reverse process of expansion.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Expansion removes brackets while factorization rewrites an expression as a product of factors, so they are opposite processes.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The solution of 2x = 18 is x = 9.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Dividing both sides by 2 gives x = 18 / 2 = 9.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The fraction (4x + 8)/4 simplifies to x + 8.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Both terms must be divided by 4: (4x + 8)/4 = x + 2, not x + 8.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The product (x + 3)(x + 5) equals x^2 + 8x + 15.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Expanding: x^2 + 5x + 3x + 15 = x^2 + 8x + 15.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A pair of simultaneous linear equations always has exactly one solution.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Simultaneous linear equations may have one solution, no solution, or infinitely many solutions depending on the lines.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "When solving an equation, whatever operation is done to one side must also be done to the other side.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This balancing rule keeps the equation true and is the basis for solving equations.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The expression 3x^2 + 6x can be factorized as 3x(x + 2).",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The common factor of 3x^2 and 6x is 3x, giving 3x(x + 2).",
-        "difficulty": "medium"
-      }
+      {"questionText": "All congruent figures are similar.", "options": [], "correctAnswer": "true", "explanation": "Congruent figures have the same shape, so they are also similar with a scale factor of 1.", "difficulty": "easy"},
+      {"questionText": "Two triangles with all three angle pairs equal must be congruent.", "options": [], "correctAnswer": "false", "explanation": "Equal angles fix only the shape, so the triangles are similar but may differ in size and need not be congruent.", "difficulty": "easy"},
+      {"questionText": "In SAS the angle must be between the two given sides.", "options": [], "correctAnswer": "true", "explanation": "SAS requires the included angle, the one lying between the two equal sides.", "difficulty": "easy"},
+      {"questionText": "A postulate must be proved before it can be used.", "options": [], "correctAnswer": "false", "explanation": "A postulate is accepted as true without proof, unlike a theorem which must be proved.", "difficulty": "easy"},
+      {"questionText": "If ΔABC ≅ ΔPQR then AB = PQ.", "options": [], "correctAnswer": "true", "explanation": "AB and PQ are corresponding sides, and corresponding sides of congruent triangles are equal.", "difficulty": "easy"},
+      {"questionText": "Two congruent triangles have equal areas.", "options": [], "correctAnswer": "true", "explanation": "Congruent triangles are identical in size, so they enclose exactly the same area.", "difficulty": "easy"},
+      {"questionText": "RHS can be applied to any type of triangle.", "options": [], "correctAnswer": "false", "explanation": "RHS requires a right angle, so it applies only to right-angled triangles.", "difficulty": "easy"},
+      {"questionText": "A common (shared) side counts as a pair of equal sides in a proof.", "options": [], "correctAnswer": "true", "explanation": "A side shared by both triangles is equal to itself, so it serves as an equal pair in the proof.", "difficulty": "easy"},
+      {"questionText": "If two triangles are congruent by ASA, their remaining corresponding sides are also equal.", "options": [], "correctAnswer": "true", "explanation": "Once triangles are congruent, all corresponding parts are equal, including the remaining sides.", "difficulty": "easy"},
+      {"questionText": "Two squares with sides 5 cm and 7 cm are congruent because both are squares.", "options": [], "correctAnswer": "false", "explanation": "They have the same shape but different sizes, so they are similar, not congruent.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "What are like terms?",
-        "options": [],
-        "correctAnswer": "Terms that have exactly the same variables raised to the same powers.",
-        "explanation": "Only like terms can be added or subtracted, for example 3x + 5x = 8x.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What does it mean to expand an algebraic expression?",
-        "options": [],
-        "correctAnswer": "To remove brackets by multiplying each term inside by the term outside.",
-        "explanation": "For example a(b + c) = ab + ac.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is factorization?",
-        "options": [],
-        "correctAnswer": "Writing an expression as a product of its factors.",
-        "explanation": "It is the reverse of expansion, for example 6x + 9 = 3(2x + 3).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the common factor method of factorization?",
-        "options": [],
-        "correctAnswer": "Taking out the highest common factor of all terms outside a bracket.",
-        "explanation": "For example 4x + 8 = 4(x + 2).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "State the difference of two squares formula.",
-        "options": [],
-        "correctAnswer": "a^2 - b^2 = (a + b)(a - b).",
-        "explanation": "It applies only when two perfect squares are subtracted.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How do you factorize a quadratic trinomial x^2 + bx + c?",
-        "options": [],
-        "correctAnswer": "Find two numbers whose product is c and whose sum is b.",
-        "explanation": "Those numbers give the factors, for example x^2 + 5x + 6 = (x + 2)(x + 3).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is factorization by grouping?",
-        "options": [],
-        "correctAnswer": "Grouping terms in pairs, factoring each pair, then taking out a common bracket.",
-        "explanation": "Used when there are four terms, for example ax + ay + bx + by = (a + b)(x + y).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How are algebraic fractions added or subtracted?",
-        "options": [],
-        "correctAnswer": "By finding a common denominator (LCM) then combining the numerators.",
-        "explanation": "For example x/2 + x/3 = 5x/6.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is a linear equation?",
-        "options": [],
-        "correctAnswer": "An equation in which the variable has a highest power of one.",
-        "explanation": "For example 2x + 3 = 11 is linear in x.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What are simultaneous equations?",
-        "options": [],
-        "correctAnswer": "Two or more equations solved together to find values satisfying all of them.",
-        "explanation": "They can be solved by substitution or elimination methods.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Congruent figures", "options": [], "correctAnswer": "Figures that have exactly the same shape and the same size, written with the symbol ≅.", "explanation": "One congruent figure can be placed on the other so they match perfectly. Exam Tip: congruent = identical twins, similar = same shape but different size.", "difficulty": "easy"},
+      {"questionText": "SSS", "options": [], "correctAnswer": "The side-side-side condition: two triangles are congruent if all three pairs of sides are equal.", "explanation": "Because three fixed side lengths determine a unique triangle, SSS guarantees congruence and gives triangles their rigidity. Exam Tip: three equal sides given points straight to SSS.", "difficulty": "easy"},
+      {"questionText": "SAS", "options": [], "correctAnswer": "The side-angle-side condition: two triangles are congruent if two sides and the angle between them are equal.", "explanation": "The angle must lie between the two given sides, which fixes the triangle exactly. Exam Tip: the A in SAS is the included angle, not just any angle.", "difficulty": "easy"},
+      {"questionText": "ASA", "options": [], "correctAnswer": "The angle-side-angle condition: two triangles are congruent if two angles and the side between them are equal.", "explanation": "The equal side must join the two equal angles, which locks the triangle's size. Exam Tip: in ASA the side connects the two angles.", "difficulty": "easy"},
+      {"questionText": "RHS", "options": [], "correctAnswer": "The right-angle-hypotenuse-side condition for right-angled triangles with equal hypotenuses and one equal side.", "explanation": "It works only when both triangles contain a right angle and their hypotenuses match. Exam Tip: RHS is for right-angled triangles only.", "difficulty": "easy"},
+      {"questionText": "Included angle", "options": [], "correctAnswer": "The angle formed between two named sides of a triangle.", "explanation": "In SAS this is the angle you must use, because it sits between the two equal sides and fixes the shape. Exam Tip: circle the two sides first, then the angle trapped between them is the included angle.", "difficulty": "easy"},
+      {"questionText": "CPCT", "options": [], "correctAnswer": "Corresponding parts of congruent triangles are equal; once triangles are proven congruent, all matching sides and angles are equal.", "explanation": "After proving congruence you may state any pair of corresponding sides or angles equal by CPCT. Exam Tip: use CPCT only after congruence has already been established.", "difficulty": "easy"},
+      {"questionText": "Postulate", "options": [], "correctAnswer": "A statement accepted as true without proof, used as a starting point for reasoning.", "explanation": "Postulates are the basic assumptions on which proofs are built, so they are never proved themselves. Exam Tip: postulate = accepted without proof, theorem = proved from postulates.", "difficulty": "easy"},
+      {"questionText": "Theorem", "options": [], "correctAnswer": "A statement that has been proved to be true using postulates, definitions and logical reasoning.", "explanation": "Unlike a postulate, a theorem requires a full proof before it can be trusted and used. Exam Tip: if it needs a proof, it is a theorem, not a postulate.", "difficulty": "easy"},
+      {"questionText": "Isosceles base-angles theorem", "options": [], "correctAnswer": "In a triangle with two equal sides, the angles opposite those equal sides are equal.", "explanation": "So if AB = AC then ∠B = ∠C, and the result also works in reverse to prove sides equal. Exam Tip: equal sides give equal base angles, and equal base angles give equal sides.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A father is three times as old as his son. In 5 years' time, the sum of their ages will be 54 years. How old is the son now?",
+        "questionText": "ABCD is a rectangle whose diagonals meet at O. Prove that ΔAOB ≅ ΔCOD and state what this tells you about O.",
         "options": [
-          { "id": "a", "text": "8 years", "isCorrect": false },
-          { "id": "b", "text": "11 years", "isCorrect": true },
-          { "id": "c", "text": "12 years", "isCorrect": false },
-          { "id": "d", "text": "33 years", "isCorrect": false }
+          {"id": "a", "text": "SSS; O is the midpoint of AC only", "isCorrect": false},
+          {"id": "b", "text": "SAS (AO = CO, ∠AOB = ∠COD vertically opposite, BO = DO); O bisects both diagonals", "isCorrect": true},
+          {"id": "c", "text": "ASA; O is closer to A", "isCorrect": false},
+          {"id": "d", "text": "RHS; the diagonals are perpendicular", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Let the son be x; father is 3x. (x + 5) + (3x + 5) = 54 gives 4x + 10 = 54, so 4x = 44 and x = 11.",
+        "explanation": "A rectangle's diagonals are equal and bisect each other, so AO = CO and BO = DO. The angles ∠AOB and ∠COD are vertically opposite and therefore equal, giving two sides and the included angle. Hence ΔAOB ≅ ΔCOD by SAS, which confirms O bisects both diagonals. Exam Tip: option D is the trap, because a rectangle's diagonals are equal but NOT perpendicular.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Solve the simultaneous equations 3x + 2y = 16 and 2x - y = 6 using the elimination method.",
+        "questionText": "In ΔPQR, PQ = PR and M is the midpoint of QR. Prove that ΔPQM ≅ ΔPRM and state the condition used and the result.",
         "options": [
-          { "id": "a", "text": "x = 4, y = 2", "isCorrect": true },
-          { "id": "b", "text": "x = 2, y = 4", "isCorrect": false },
-          { "id": "c", "text": "x = 3, y = 3.5", "isCorrect": false },
-          { "id": "d", "text": "x = 5, y = 0.5", "isCorrect": false }
+          {"id": "a", "text": "SAS; only ∠PQM = ∠PRM follows", "isCorrect": false},
+          {"id": "b", "text": "SSS; then ∠QPM = ∠RPM and ∠PMQ = ∠PMR = 90°", "isCorrect": true},
+          {"id": "c", "text": "ASA; nothing further follows", "isCorrect": false},
+          {"id": "d", "text": "RHS; because ∠PQR = ∠QRP = 60°", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Multiply the second equation by 2: 4x - 2y = 12; add to 3x + 2y = 16 to get 7x = 28, so x = 4, then y = 2x - 6 = 2.",
+        "correctAnswer": "b",
+        "explanation": "PQ = PR is given, QM = RM because M is the midpoint, and PM is common to both triangles, so all three sides match and ΔPQM ≅ ΔPRM by SSS. By CPCT the apex angles are equal, ∠QPM = ∠RPM, and the equal adjacent angles ∠PMQ and ∠PMR on the straight line QR are each 90°, so PM is perpendicular to QR. Exam Tip: this single proof gives the base-angle bisector, perpendicularity and the isosceles median all at once.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Simplify the algebraic fraction (x^2 - 9) / (x^2 + 7x + 12).",
+        "questionText": "A surveyor finds a river's width. Point A is opposite a tree T. She walks 40 m to B, then another 40 m to C, turns perpendicular and walks until B lines up with T at point D where CD = 25 m. What is the width AT?",
         "options": [
-          { "id": "a", "text": "(x - 3) / (x + 4)", "isCorrect": true },
-          { "id": "b", "text": "(x + 3) / (x + 4)", "isCorrect": false },
-          { "id": "c", "text": "(x - 3) / (x + 3)", "isCorrect": false },
-          { "id": "d", "text": "(x + 3) / (x - 4)", "isCorrect": false }
+          {"id": "a", "text": "20", "isCorrect": false},
+          {"id": "b", "text": "25", "isCorrect": true},
+          {"id": "c", "text": "40", "isCorrect": false},
+          {"id": "d", "text": "65", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Factorize: x^2 - 9 = (x + 3)(x - 3) and x^2 + 7x + 12 = (x + 3)(x + 4); cancelling (x + 3) leaves (x - 3)/(x + 4).",
+        "correctAnswer": "b",
+        "explanation": "In ΔABT and ΔCBD, AB = CB = 40 m, the right angles at A and C are equal, and ∠ABT = ∠CBD because they are vertically opposite at B, giving angle-side-angle. So ΔABT ≅ ΔCBD by ASA, and by CPCT AT = CD = 25 m. Exam Tip: spotting the vertically opposite angles at B is the key to unlocking this ASA proof.",
         "difficulty": "hard"
       }
     ]

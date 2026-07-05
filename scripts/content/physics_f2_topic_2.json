@@ -2,729 +2,371 @@
   "topicId": "form_2_physics_topic_2",
   "topicName": "Current Electricity",
   "order": 2,
-  "description": "A study of electric current, potential difference and resistance, including Ohm's law, series and parallel circuits, measuring instruments, cells and electrical safety.",
+  "description": "An introduction to electric current, voltage, resistance, Ohm's law, series and parallel circuits, and basic domestic wiring safety.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the SI unit of electric current?",
+        "questionText": "Electric current is defined as:",
         "options": [
-          {
-            "id": "a",
-            "text": "Volt",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Ampere",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Ohm",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Coulomb",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The force pushing charge through a wire", "isCorrect": false},
+          {"id": "b", "text": "The rate of flow of electric charge", "isCorrect": true},
+          {"id": "c", "text": "The energy stored in a battery", "isCorrect": false},
+          {"id": "d", "text": "The resistance of a wire", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Electric current is measured in amperes (A), named after Andre-Marie Ampere.",
+        "explanation": "Current is the rate of flow of electric charge. Exam Tip: Current (I) = charge (Q) / time (t). SI unit: ampere (A).",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which instrument is used to measure electric current in a circuit?",
+        "questionText": "The SI unit of electric current is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Voltmeter",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Thermometer",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Ammeter",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Galvanometer scale only",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Volt", "isCorrect": false},
+          {"id": "b", "text": "Ampere", "isCorrect": true},
+          {"id": "c", "text": "Ohm", "isCorrect": false},
+          {"id": "d", "text": "Watt", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The SI unit of current is the ampere. Exam Tip: Current is measured with an ammeter, in amperes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure electric current in a circuit is the:",
+        "options": [
+          {"id": "a", "text": "Voltmeter", "isCorrect": false},
+          {"id": "b", "text": "Ammeter", "isCorrect": true},
+          {"id": "c", "text": "Ohmmeter", "isCorrect": false},
+          {"id": "d", "text": "Thermometer", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An ammeter measures current. Exam Tip: Ammeter (current, series) vs voltmeter (voltage, parallel).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure potential difference (voltage) is the:",
+        "options": [
+          {"id": "a", "text": "Ammeter", "isCorrect": false},
+          {"id": "b", "text": "Voltmeter", "isCorrect": true},
+          {"id": "c", "text": "Galvanometer", "isCorrect": false},
+          {"id": "d", "text": "Barometer", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A voltmeter measures potential difference. Exam Tip: Voltmeter connected in parallel across the component.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of potential difference (voltage) is the:",
+        "options": [
+          {"id": "a", "text": "Ampere", "isCorrect": false},
+          {"id": "b", "text": "Ohm", "isCorrect": false},
+          {"id": "c", "text": "Volt", "isCorrect": true},
+          {"id": "d", "text": "Watt", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "An ammeter measures current and is always connected in series with the component.",
+        "explanation": "The SI unit of voltage is the volt. Exam Tip: Volt (V) = voltage; ampere (A) = current; ohm = resistance.",
         "difficulty": "easy"
       },
       {
-        "questionText": "How should a voltmeter be connected to measure the potential difference across a resistor?",
+        "questionText": "The opposition offered by a conductor to the flow of electric current is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "In series with the resistor",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "In parallel with the resistor",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Directly across the battery only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It does not matter how it is connected",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Voltage", "isCorrect": false},
+          {"id": "b", "text": "Resistance", "isCorrect": true},
+          {"id": "c", "text": "Current", "isCorrect": false},
+          {"id": "d", "text": "Power", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A voltmeter has very high resistance and is connected in parallel (across) the component being measured.",
+        "explanation": "Opposition to current flow is resistance. Exam Tip: Resistance (ohms) slows current, converting electrical energy to heat.",
         "difficulty": "easy"
       },
       {
-        "questionText": "According to Ohm's law, the current through a conductor is directly proportional to the voltage across it, provided what is kept constant?",
+        "questionText": "The SI unit of resistance is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Length of wire",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Temperature",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Colour of wire",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Time of day",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Volt", "isCorrect": false},
+          {"id": "b", "text": "Ampere", "isCorrect": false},
+          {"id": "c", "text": "Ohm", "isCorrect": true},
+          {"id": "d", "text": "Joule", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The SI unit of resistance is the ohm. Exam Tip: Ohm (symbol Omega), named after Georg Ohm.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to Ohm's law, at constant temperature, the current through a conductor is:",
+        "options": [
+          {"id": "a", "text": "Inversely proportional to voltage", "isCorrect": false},
+          {"id": "b", "text": "Directly proportional to the voltage across it", "isCorrect": true},
+          {"id": "c", "text": "Unrelated to voltage", "isCorrect": false},
+          {"id": "d", "text": "Equal to resistance", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Ohm's law holds when physical conditions, especially temperature, remain constant.",
+        "explanation": "V = IR, so current increases as voltage increases (constant resistance). Exam Tip: Ohm's law: V = IR. Double the voltage, double the current.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A resistor of 4 ohms carries a current of 3 A. What is the potential difference across it?",
+        "questionText": "Using Ohm's law V = IR, if a current of 2 A flows through a resistor of 5 ohms, the voltage across it is:",
         "options": [
-          {
-            "id": "a",
-            "text": "0.75 V",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "7 V",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "12 V",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "1.33 V",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "2.5 V", "isCorrect": false},
+          {"id": "b", "text": "7 V", "isCorrect": false},
+          {"id": "c", "text": "10 V", "isCorrect": true},
+          {"id": "d", "text": "3 V", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Using V = IR = 3 A x 4 ohms = 12 V.",
-        "difficulty": "easy"
+        "explanation": "V = 2 x 5 = 10 V. Exam Tip: Multiply current by resistance.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "A 12 V battery is connected across a 6 ohm resistor. What current flows through the resistor?",
+        "questionText": "If the voltage across a resistor is 12 V and the current through it is 3 A, the resistance is:",
         "options": [
-          {
-            "id": "a",
-            "text": "2 A",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.5 A",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "72 A",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "18 A",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "4 ohms", "isCorrect": true},
+          {"id": "b", "text": "36 ohms", "isCorrect": false},
+          {"id": "c", "text": "15 ohms", "isCorrect": false},
+          {"id": "d", "text": "9 ohms", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Using I = V/R = 12 V / 6 ohms = 2 A.",
+        "explanation": "R = V/I = 12/3 = 4 ohms. Exam Tip: R = V/I - a common rearrangement of V = IR.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a series circuit, the current at every point in the circuit is:",
+        "options": [
+          {"id": "a", "text": "Different at each point", "isCorrect": false},
+          {"id": "b", "text": "The same throughout", "isCorrect": true},
+          {"id": "c", "text": "Zero", "isCorrect": false},
+          {"id": "d", "text": "Doubled at each resistor", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Series circuits have one path, so the same current flows everywhere. Exam Tip: Series: same current, voltage shares between components.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A current of 2 A flows through a wire when 10 V is applied across it. What is the resistance of the wire?",
+        "questionText": "In a parallel circuit, the voltage across each branch is:",
         "options": [
-          {
-            "id": "a",
-            "text": "20 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "0.2 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "12 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "5 ohms",
-            "isCorrect": true
-          }
+          {"id": "a", "text": "Different for each branch", "isCorrect": false},
+          {"id": "b", "text": "The same as the supply voltage", "isCorrect": true},
+          {"id": "c", "text": "Always zero", "isCorrect": false},
+          {"id": "d", "text": "Added together", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "Using R = V/I = 10 V / 2 A = 5 ohms.",
+        "correctAnswer": "b",
+        "explanation": "Each parallel branch gets the full supply voltage. Exam Tip: Parallel: same voltage across each branch, current splits.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Two resistors of 3 ohms and 5 ohms are connected in series. What is their total resistance?",
+        "questionText": "A fuse in a domestic electrical circuit is used to:",
         "options": [
-          {
-            "id": "a",
-            "text": "1.875 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "8 ohms",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "15 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "2 ohms",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Increase the current when overloaded", "isCorrect": false},
+          {"id": "b", "text": "Break the circuit automatically when current is too high, preventing fire", "isCorrect": true},
+          {"id": "c", "text": "Store electric charge", "isCorrect": false},
+          {"id": "d", "text": "Measure voltage", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "In series, resistances add: R = 3 + 5 = 8 ohms.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two equal resistors of 6 ohms each are connected in parallel. What is their combined resistance?",
-        "options": [
-          {
-            "id": "a",
-            "text": "12 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "6 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3 ohms",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "0.33 ohms",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "For two equal resistors in parallel, R = 6/2 = 3 ohms.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In a series circuit, how does the current behave at different points?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It is the same at all points",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "It increases along the circuit",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "It is zero everywhere",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It splits between components",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "In a series circuit there is only one path, so the same current flows through every component.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What does EMF (electromotive force) of a cell represent?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The resistance of the cell",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The energy given to each unit of charge by the cell",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The current produced by the cell",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The temperature of the cell",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "EMF is the energy supplied per unit charge by the source, measured in volts.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is a good conductor of electricity?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Rubber",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Glass",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Copper",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Plastic",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Copper is a metal with free electrons, making it a good conductor; the others are insulators.",
+        "explanation": "A fuse melts and breaks the circuit if current exceeds a safe level. Exam Tip: A fuse is a thin wire that melts (blows) under excess current.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What is the main purpose of a fuse in an electrical circuit?",
+        "questionText": "In domestic electrical wiring, the wire connected to the earth for safety is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "To increase the current",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To store electrical energy",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "To break the circuit when current is too high",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "To measure voltage",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Live wire", "isCorrect": false},
+          {"id": "b", "text": "Neutral wire", "isCorrect": false},
+          {"id": "c", "text": "Earth wire", "isCorrect": true},
+          {"id": "d", "text": "Fuse wire", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A fuse melts and breaks the circuit when excessive current flows, protecting the appliance and preventing fire.",
-        "difficulty": "medium"
+        "explanation": "The safety wire connected to the ground is the earth wire. Exam Tip: Three wires: live (carries current), neutral (completes circuit), earth (safety).",
+        "difficulty": "easy"
       },
       {
-        "questionText": "When cells are connected in series, the total EMF is found by doing what?",
+        "questionText": "The force that drives electric charge around a complete circuit, supplied by a cell or battery, is called the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Adding the EMFs of the individual cells",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Subtracting the smallest from the largest",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Multiplying the EMFs together",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Taking the average of the EMFs",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Cells in series (same direction) have their EMFs added, giving a larger total voltage.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A lamp draws 0.5 A when connected to a 240 V supply. What is the resistance of the lamp?",
-        "options": [
-          {
-            "id": "a",
-            "text": "120 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "480 ohms",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "240.5 ohms",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.002 ohms",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Resistance", "isCorrect": false},
+          {"id": "b", "text": "Electromotive force (e.m.f.)", "isCorrect": true},
+          {"id": "c", "text": "Current", "isCorrect": false},
+          {"id": "d", "text": "Power", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Using R = V/I = 240 V / 0.5 A = 480 ohms.",
+        "explanation": "This driving force is the electromotive force (e.m.f.), measured in volts. Exam Tip: E.m.f. is the energy given to each unit of charge by the source.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The rate of flow of electric charge in a conductor is called electric _____.",
-        "options": [],
-        "correctAnswer": "current",
-        "explanation": "Electric current is the rate of flow of charge, measured in amperes.",
+        "questionText": "Electric current is the rate of flow of __________.",
+        "options": [
+          {"id": "a", "text": "charge", "isCorrect": true},
+          {"id": "b", "text": "energy", "isCorrect": false},
+          {"id": "c", "text": "voltage", "isCorrect": false},
+          {"id": "d", "text": "resistance", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Current is defined as the rate of flow of electric charge. Exam Tip: Current = charge / time.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The SI unit of potential difference (voltage) is the _____.",
-        "options": [],
-        "correctAnswer": "volt",
-        "explanation": "Potential difference is measured in volts (V).",
+        "questionText": "The SI unit of electric current is the __________.",
+        "options": [
+          {"id": "a", "text": "ampere", "isCorrect": true},
+          {"id": "b", "text": "volt", "isCorrect": false},
+          {"id": "c", "text": "ohm", "isCorrect": false},
+          {"id": "d", "text": "watt", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The ampere (A) is the SI unit of current, measured using an ammeter. Exam Tip: Symbol A. Measured with an ammeter.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The SI unit of electrical resistance is the _____.",
-        "options": [],
-        "correctAnswer": "ohm",
-        "explanation": "Resistance is measured in ohms, symbol the Greek letter omega.",
+        "questionText": "The instrument used to measure current, connected in series in a circuit, is the __________.",
+        "options": [
+          {"id": "a", "text": "ammeter", "isCorrect": true},
+          {"id": "b", "text": "voltmeter", "isCorrect": false},
+          {"id": "c", "text": "ohmmeter", "isCorrect": false},
+          {"id": "d", "text": "galvanometer", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An ammeter is connected in series to measure the current flowing through a circuit. Exam Tip: Ammeter -> series connection.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Ohm's law is written as the equation V = _____.",
-        "options": [],
-        "correctAnswer": "IR",
-        "explanation": "Voltage equals current multiplied by resistance, V = IR.",
+        "questionText": "The instrument used to measure voltage, connected in parallel across a component, is the __________.",
+        "options": [
+          {"id": "a", "text": "voltmeter", "isCorrect": true},
+          {"id": "b", "text": "ammeter", "isCorrect": false},
+          {"id": "c", "text": "ohmmeter", "isCorrect": false},
+          {"id": "d", "text": "thermometer", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A voltmeter is connected in parallel across a component to measure potential difference. Exam Tip: Voltmeter -> parallel connection.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A voltmeter is always connected in _____ with the component whose voltage is being measured.",
-        "options": [],
-        "correctAnswer": "parallel",
-        "explanation": "A high-resistance voltmeter is placed in parallel across the component.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An ammeter is always connected in _____ with the component in a circuit.",
-        "options": [],
-        "correctAnswer": "series",
-        "explanation": "A low-resistance ammeter is placed in series so all the current passes through it.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If a 9 V battery drives a current of 3 A through a resistor, the resistance is _____ ohms.",
-        "options": [],
-        "correctAnswer": "3",
-        "explanation": "R = V/I = 9 V / 3 A = 3 ohms.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two resistors of 2 ohms and 4 ohms in series give a total resistance of _____ ohms.",
-        "options": [],
-        "correctAnswer": "6",
-        "explanation": "In series resistances add: 2 + 4 = 6 ohms.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Materials such as rubber and plastic that do not allow current to flow easily are called electrical _____.",
-        "options": [],
-        "correctAnswer": "insulators",
-        "explanation": "Insulators have few free electrons and resist the flow of current.",
+        "questionText": "The opposition to the flow of current in a conductor is called __________.",
+        "options": [
+          {"id": "a", "text": "resistance", "isCorrect": true},
+          {"id": "b", "text": "current", "isCorrect": false},
+          {"id": "c", "text": "voltage", "isCorrect": false},
+          {"id": "d", "text": "power", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Resistance is the opposition a conductor offers to current flow, measured in ohms. Exam Tip: Measured in ohms.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The energy supplied to each unit of charge by a cell is called the _____ of the cell.",
-        "options": [],
-        "correctAnswer": "EMF",
-        "explanation": "Electromotive force (EMF) is the energy per unit charge given by the source, measured in volts.",
-        "difficulty": "medium"
+        "questionText": "Ohm's law is written as the equation V = __________.",
+        "options": [
+          {"id": "a", "text": "IR", "isCorrect": true},
+          {"id": "b", "text": "I/R", "isCorrect": false},
+          {"id": "c", "text": "I+R", "isCorrect": false},
+          {"id": "d", "text": "R/I", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Ohm's law states voltage equals current multiplied by resistance, V = IR. Exam Tip: V = IR (voltage = current x resistance).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a series circuit, the current is the __________ (same/different) at every point.",
+        "options": [
+          {"id": "a", "text": "same", "isCorrect": true},
+          {"id": "b", "text": "different", "isCorrect": false},
+          {"id": "c", "text": "zero", "isCorrect": false},
+          {"id": "d", "text": "doubled", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A series circuit has a single path, so the same current flows through every point. Exam Tip: Series: one path, same current throughout.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a parallel circuit, the voltage across each branch is the __________ as the supply voltage.",
+        "options": [
+          {"id": "a", "text": "same", "isCorrect": true},
+          {"id": "b", "text": "half", "isCorrect": false},
+          {"id": "c", "text": "double", "isCorrect": false},
+          {"id": "d", "text": "opposite", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Each branch in a parallel circuit is connected directly across the supply, so it receives the full supply voltage. Exam Tip: Parallel: same voltage, current splits.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A safety device that melts and breaks a circuit when the current is too high is called a __________.",
+        "options": [
+          {"id": "a", "text": "fuse", "isCorrect": true},
+          {"id": "b", "text": "switch", "isCorrect": false},
+          {"id": "c", "text": "earth wire", "isCorrect": false},
+          {"id": "d", "text": "resistor", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A fuse contains a thin wire that melts when the current exceeds a safe limit, breaking the circuit. Exam Tip: The fuse blows to protect the circuit and prevent fires.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In domestic wiring, the wire that provides a safety path to the ground is called the __________ wire.",
+        "options": [
+          {"id": "a", "text": "earth", "isCorrect": true},
+          {"id": "b", "text": "live", "isCorrect": false},
+          {"id": "c", "text": "neutral", "isCorrect": false},
+          {"id": "d", "text": "fuse", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The earth wire connects the appliance casing to the ground, providing a safe path for fault current. Exam Tip: Earth wire protects against electric shock if a fault occurs.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Electric current is measured in volts.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Electric current is measured in amperes; volts measure potential difference.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An ammeter is connected in series in a circuit.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "An ammeter is placed in series so that the full current flows through it.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a series circuit, if one bulb breaks, the other bulbs continue to glow.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "In series there is only one path, so a break stops current to all components.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "According to Ohm's law, doubling the voltage across a fixed resistor doubles the current through it.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Since I = V/R with R constant, current is directly proportional to voltage.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Connecting resistors in parallel always increases the total resistance.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Adding resistors in parallel decreases the total resistance below the smallest resistor.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Copper is a better conductor of electricity than rubber.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Copper is a metal with free electrons, while rubber is an insulator.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A fuse is designed to break the circuit when the current becomes dangerously high.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The fuse wire melts at high current, breaking the circuit and preventing damage or fire.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The voltage across each branch of a parallel circuit is the same.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Components in parallel are connected across the same two points, so they share the same voltage.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Touching electrical wires with wet hands is safe because water is an insulator.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Water conducts electricity, so wet hands greatly increase the risk of electric shock.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Connecting two identical cells in series gives a higher total EMF than a single cell.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Cells in series add their EMFs, producing a larger total voltage.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Electric current is the rate of flow of electric charge.", "options": [], "correctAnswer": "true", "explanation": "This is the definition of electric current. Exam Tip: Measured in amperes with an ammeter.", "difficulty": "easy"},
+      {"questionText": "The ammeter is connected in parallel to measure current.", "options": [], "correctAnswer": "false", "explanation": "An ammeter must be connected in series, not parallel, to measure current. Exam Tip: The ammeter is connected in series.", "difficulty": "easy"},
+      {"questionText": "The SI unit of resistance is the ohm.", "options": [], "correctAnswer": "true", "explanation": "Resistance is measured in ohms. Exam Tip: Named after Georg Simon Ohm.", "difficulty": "easy"},
+      {"questionText": "According to Ohm's law, current is inversely proportional to voltage.", "options": [], "correctAnswer": "false", "explanation": "Ohm's law states current is directly proportional to voltage at constant resistance, not inversely. Exam Tip: Current is directly proportional to voltage (constant R).", "difficulty": "easy"},
+      {"questionText": "In a series circuit, the current is the same at every point.", "options": [], "correctAnswer": "true", "explanation": "Because there is only one path for current in a series circuit, the current is identical throughout. Exam Tip: Voltage, not current, is shared in a series circuit.", "difficulty": "easy"},
+      {"questionText": "In a parallel circuit, all branches carry the same current.", "options": [], "correctAnswer": "false", "explanation": "In a parallel circuit the current splits between branches; only the voltage is the same across each branch. Exam Tip: Current splits between branches; voltage stays the same.", "difficulty": "easy"},
+      {"questionText": "A fuse protects a circuit by breaking it when the current becomes too high.", "options": [], "correctAnswer": "true", "explanation": "The fuse wire melts and breaks the circuit when current exceeds its rating. Exam Tip: This prevents overheating and electrical fires.", "difficulty": "easy"},
+      {"questionText": "The earth wire in domestic wiring carries the main current to power an appliance.", "options": [], "correctAnswer": "false", "explanation": "The live wire carries the operating current; the earth wire is only a safety path. Exam Tip: The live wire carries the current; earth is a safety wire.", "difficulty": "easy"},
+      {"questionText": "Electromotive force (e.m.f.) is supplied by a cell or battery to drive current around a circuit.", "options": [], "correctAnswer": "true", "explanation": "The e.m.f. is the energy supplied by the source to drive charge around the circuit. Exam Tip: E.m.f. is measured in volts, like potential difference.", "difficulty": "easy"},
+      {"questionText": "The voltmeter is connected in series with the component being measured.", "options": [], "correctAnswer": "false", "explanation": "A voltmeter must be connected in parallel across a component, not in series. Exam Tip: The voltmeter is connected in parallel.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of electric current",
-        "options": [],
-        "correctAnswer": "The rate of flow of electric charge, measured in amperes (A).",
-        "explanation": "Current describes how much charge passes a point per second.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Definition of potential difference",
-        "options": [],
-        "correctAnswer": "The work done to move a unit charge between two points, measured in volts (V).",
-        "explanation": "Voltage drives current around a circuit.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Definition of resistance",
-        "options": [],
-        "correctAnswer": "The opposition to the flow of current, measured in ohms.",
-        "explanation": "Higher resistance means less current for a given voltage.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ohm's law formula",
-        "options": [],
-        "correctAnswer": "V = IR, where V is voltage, I is current and R is resistance.",
-        "explanation": "It links the three key electrical quantities.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Resistors in series",
-        "options": [],
-        "correctAnswer": "Total resistance is the sum of the individual resistances.",
-        "explanation": "R_total = R1 + R2 + R3 ...",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Resistors in parallel",
-        "options": [],
-        "correctAnswer": "The total resistance is less than the smallest individual resistance.",
-        "explanation": "Parallel paths give the current more routes, lowering total resistance.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Connecting an ammeter",
-        "options": [],
-        "correctAnswer": "Connect an ammeter in series with the component.",
-        "explanation": "It has low resistance so the full current passes through it.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Connecting a voltmeter",
-        "options": [],
-        "correctAnswer": "Connect a voltmeter in parallel across the component.",
-        "explanation": "Its high resistance prevents it from drawing significant current.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of EMF of a cell",
-        "options": [],
-        "correctAnswer": "The energy supplied per unit charge by the cell, measured in volts.",
-        "explanation": "EMF is the driving force that pushes charge around a circuit.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Basic electrical safety rule",
-        "options": [],
-        "correctAnswer": "Never handle electrical wires or switches with wet hands.",
-        "explanation": "Water conducts electricity and increases the risk of electric shock.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Current", "options": [], "correctAnswer": "The rate of flow of electric charge through a conductor, measured in amperes (A).", "explanation": "Current is caused by the movement of charged particles, usually electrons, through a wire. Exam Tip: I = Q/t; use an ammeter in series to measure it.", "difficulty": "easy"},
+      {"questionText": "Ammeter", "options": [], "correctAnswer": "An instrument used to measure electric current, connected in series in a circuit.", "explanation": "Ammeters have very low resistance so they do not reduce the current they measure. Exam Tip: Always connect an ammeter in series, never in parallel.", "difficulty": "easy"},
+      {"questionText": "Voltmeter", "options": [], "correctAnswer": "An instrument used to measure potential difference (voltage), connected in parallel across a component.", "explanation": "Voltmeters have very high resistance so they draw negligible current from the circuit. Exam Tip: Always connect a voltmeter in parallel across the component.", "difficulty": "easy"},
+      {"questionText": "Resistance", "options": [], "correctAnswer": "The opposition offered by a conductor to the flow of electric current, measured in ohms.", "explanation": "Resistance converts some electrical energy into heat as current flows. Exam Tip: R = V/I.", "difficulty": "easy"},
+      {"questionText": "Ohm's law", "options": [], "correctAnswer": "The current through a conductor is directly proportional to the voltage across it at constant temperature, written V = IR.", "explanation": "Ohm's law links voltage, current and resistance, and holds only if temperature stays constant. Exam Tip: Rearrange as I = V/R or R = V/I when needed.", "difficulty": "easy"},
+      {"questionText": "Series circuit", "options": [], "correctAnswer": "A circuit in which components are connected end to end along a single path, so the same current flows through each one.", "explanation": "In a series circuit, the supply voltage is shared among the components. Exam Tip: If one component fails, the whole circuit breaks.", "difficulty": "easy"},
+      {"questionText": "Parallel circuit", "options": [], "correctAnswer": "A circuit in which components are connected across separate branches, so each branch has the full supply voltage.", "explanation": "In a parallel circuit, the total current splits between the branches according to each branch's resistance. Exam Tip: Household wiring uses parallel circuits so appliances work independently.", "difficulty": "easy"},
+      {"questionText": "Fuse", "options": [], "correctAnswer": "A safety device containing a thin wire that melts and breaks the circuit when the current exceeds a safe value.", "explanation": "Fuses are rated in amperes and chosen to match the normal operating current of an appliance. Exam Tip: A blown fuse must be replaced, not repaired, before use.", "difficulty": "easy"},
+      {"questionText": "Earth wire", "options": [], "correctAnswer": "A safety wire in domestic wiring that connects the metal casing of an appliance to the ground.", "explanation": "If a fault causes the casing to become live, the earth wire provides a low-resistance path that trips the fuse or circuit breaker. Exam Tip: The earth wire is colored green and yellow and carries no current in normal operation.", "difficulty": "easy"},
+      {"questionText": "E.m.f. (electromotive force)", "options": [], "correctAnswer": "The energy given to each unit of charge by a cell or battery to drive it around a complete circuit, measured in volts.", "explanation": "E.m.f. is the total energy supplied per unit charge, including energy lost to the internal resistance of the source. Exam Tip: E.m.f. is always slightly greater than the terminal voltage due to internal resistance.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A 12 V battery is connected to two resistors of 4 ohms and 8 ohms joined in series. What is the current flowing in the circuit?",
+        "questionText": "A resistor is connected to a 12 V battery, and an ammeter in series reads 4 A. Calculate the resistance, and state what happens to the current if resistance doubles (voltage unchanged).",
         "options": [
-          {
-            "id": "a",
-            "text": "1 A",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "3 A",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.5 A",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1.5 A",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "R = 3 ohms; doubling R halves the current to 2 A", "isCorrect": true},
+          {"id": "b", "text": "R = 48 ohms; doubling R doubles the current", "isCorrect": false},
+          {"id": "c", "text": "R = 3 ohms; doubling R doubles the current", "isCorrect": false},
+          {"id": "d", "text": "R = 16 ohms; current stays the same", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Total resistance = 4 + 8 = 12 ohms; current I = V/R = 12/12 = 1 A.",
+        "explanation": "R = V/I = 12/4 = 3 ohms. If R doubles to 6 ohms, new current = 12/6 = 2 A - half the original. Exam Tip: Current is inversely proportional to resistance (constant voltage) - double R, halve I.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Two resistors of 6 ohms and 3 ohms are connected in parallel across a 6 V battery. What is the total current drawn from the battery?",
+        "questionText": "Circuit A has two identical bulbs in SERIES; Circuit B has the same bulbs in PARALLEL, both to identical batteries. Compare brightness.",
         "options": [
-          {
-            "id": "a",
-            "text": "1 A",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2 A",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "3 A",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "0.33 A",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Bulbs in A are brighter because current is higher there", "isCorrect": false},
+          {"id": "b", "text": "Bulbs in B are brighter because each bulb gets the full battery voltage, while in A the voltage is shared between the two bulbs, giving each less voltage and a dimmer glow", "isCorrect": true},
+          {"id": "c", "text": "Both circuits give identical brightness", "isCorrect": false},
+          {"id": "d", "text": "Bulbs in A do not light at all", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Parallel resistance = (6 x 3)/(6 + 3) = 18/9 = 2 ohms; current I = V/R = 6/2 = 3 A.",
+        "correctAnswer": "b",
+        "explanation": "In series, voltage is shared between bulbs (dimmer). In parallel, each bulb gets the full supply voltage (brighter). Exam Tip: This is why household circuits use parallel wiring.",
         "difficulty": "hard"
       },
       {
-        "questionText": "In a series circuit a 10 V supply is connected to a 2 ohm and a 3 ohm resistor. What is the potential difference across the 3 ohm resistor?",
+        "questionText": "A household circuit is protected by a 13 A fuse. An iron (2000 W), kettle (2500 W), and lamp (100 W) are plugged into the same socket at 230 V mains. Using I = P/V, determine if the fuse will blow.",
         "options": [
-          {
-            "id": "a",
-            "text": "4 V",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "10 V",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "2 V",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "6 V",
-            "isCorrect": true
-          }
+          {"id": "a", "text": "Total current is about 20 A, which exceeds 13 A, so the fuse will blow, protecting the circuit from overheating", "isCorrect": true},
+          {"id": "b", "text": "Total current is only 2 A, well within the fuse rating", "isCorrect": false},
+          {"id": "c", "text": "The fuse rating does not matter", "isCorrect": false},
+          {"id": "d", "text": "Total power determines the fuse rating directly in watts", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "Total R = 5 ohms, current I = 10/5 = 2 A, so V across 3 ohms = IR = 2 x 3 = 6 V.",
+        "correctAnswer": "a",
+        "explanation": "Iron: 2000/230=8.7A; kettle: 2500/230=10.9A; lamp: 100/230=0.4A. Total = 8.7+10.9+0.4 = 20 A, exceeding 13 A. Exam Tip: Convert each appliance's power to current with I=P/V, then add currents sharing a socket. Exceeding the rating blows the fuse - a safety success.",
         "difficulty": "hard"
       }
     ]

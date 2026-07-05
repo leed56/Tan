@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_computer_studies_topic_1",
+  "topicName": "Structured Programming",
+  "order": 1,
+  "description": "An introduction to structured programming using pseudocode and flowcharts, covering data types, operators, the three control structures, arrays, subprograms, code tracing and types of programming errors.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Structured programming is a programming approach that emphasises which of the following?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Using as many GOTO jumps as possible to speed up the program",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Breaking a program into clear modules and using only sequence, selection and iteration",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Writing all instructions on a single long line without indentation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Avoiding the use of variables and constants",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Structured programming organises code into manageable modules and relies on the three basic control structures (sequence, selection, iteration) while avoiding unstructured jumps such as GOTO.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the correct order of the three basic control structures in structured programming?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sequence, selection, iteration",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Iteration, sequence, branching",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Selection, recursion, jumping",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Looping, sequence, recursion",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The three fundamental control structures of structured programming are sequence (one step after another), selection (choosing between paths) and iteration (repetition).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a flowchart, which symbol is used to represent a decision?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rectangle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Parallelogram",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Diamond (rhombus)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Oval",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A diamond (rhombus) symbol represents a decision/condition in a flowchart, a rectangle is a process, a parallelogram is input/output and an oval is start/stop.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which data type would be most appropriate to store the value true or false?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Integer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Boolean",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "String",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Real (float)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A Boolean data type holds only two logical values, true or false, which makes it ideal for storing the result of a condition.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the main difference between a variable and a constant?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A variable can change its value during execution while a constant keeps the same value",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A constant can change its value while a variable cannot",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A variable can only store numbers while a constant stores text",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "There is no difference; the terms mean the same thing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A variable is a named storage location whose value may change as the program runs, while a constant is assigned a fixed value that does not change during execution.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a relational operator?",
+        "options": [
+          {
+            "id": "a",
+            "text": "+",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": ">=",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "AND",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "MOD",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Relational (comparison) operators compare two values and include >, <, >=, <=, = and <>. The symbol + is arithmetic, AND is logical and MOD is arithmetic (remainder).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Consider the pseudocode:\nx <- 5\ny <- 3\nz <- x MOD y\nOUTPUT z\nWhat is printed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "MOD gives the remainder of integer division. 5 divided by 3 is 1 remainder 2, so z = 2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which control structure is best suited for repeating a block of code a known, fixed number of times?",
+        "options": [
+          {
+            "id": "a",
+            "text": "WHILE loop",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "FOR loop",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "IF statement",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "CASE statement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A FOR loop uses a counter and is ideal when the number of repetitions is known in advance. WHILE loops are used when the count is not known beforehand.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the key characteristic of a REPEAT...UNTIL (do-while) loop?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It never executes its body",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It always executes its body at least once before testing the condition",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It tests the condition before executing the body",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It can only be used with arrays",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A REPEAT...UNTIL loop checks its condition at the end, so the body runs at least once. A WHILE loop tests the condition first and may run zero times.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Trace the pseudocode:\nsum <- 0\nFOR i <- 1 TO 4\n    sum <- sum + i\nNEXT i\nOUTPUT sum\nWhat is the output?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "24",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The loop adds 1 + 2 + 3 + 4 = 10 to sum, so the output is 10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the array declaration marks[1..5], how many elements can the array hold?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An array indexed from 1 to 5 has elements at positions 1, 2, 3, 4 and 5, giving a total of 5 elements.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why are subprograms (procedures and functions) used in structured programming?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To make programs run without a processor",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To promote modularity and allow code to be reused",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To remove the need for any variables",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To increase the number of syntax errors",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Subprograms break a large task into smaller named units, improving modularity, readability, testing and reuse of code.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An error that allows a program to run but produces the wrong result is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Syntax error",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Logic error",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Runtime error that stops the program",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Spelling error in a comment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A logic error does not prevent the program from running but causes incorrect output because the algorithm or reasoning is flawed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Trace the pseudocode:\nn <- 1\nWHILE n < 5\n    n <- n + 2\nENDWHILE\nOUTPUT n\nWhat is the final value of n?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "n starts at 1: 1<5 so n=3; 3<5 so n=5; 5<5 is false so the loop stops. The final value is 5.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which logical operator returns true only when BOTH conditions it joins are true?",
+        "options": [
+          {
+            "id": "a",
+            "text": "OR",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "NOT",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "AND",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "XOR alone",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The AND operator yields true only if both of its operands are true; OR is true if at least one is true and NOT reverses a single value.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The programming approach that uses sequence, selection and iteration while avoiding GOTO jumps is called _____ programming.",
+        "options": [
+          {
+            "id": "a",
+            "text": "structured",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "modular",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "object-oriented",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "procedural",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Structured programming organises code using the three basic control structures and well-defined modules.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A step-by-step description of an algorithm written in plain, language-neutral statements is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "flowchart",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pseudocode",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "source code",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "comment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Pseudocode expresses the logic of an algorithm in readable, language-independent form before actual coding.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A diagram that uses standard symbols such as diamonds and rectangles to show the flow of an algorithm is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "pseudocode",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "algorithm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "flowchart",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "data flow diagram",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A flowchart is a graphical representation of an algorithm using standardised symbols connected by arrows.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A named storage location whose value can change while the program runs is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "constant",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "array",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "operator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "variable",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "A variable holds data that may be updated during program execution.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A value that is fixed and does not change during program execution is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "constant",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "variable",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "identifier",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "literal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A constant is assigned once and keeps the same value throughout the program.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The control structure that chooses between different paths based on a condition is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "iteration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "selection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "assignment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Selection (e.g. IF/ELSE, CASE) chooses which block of code to run depending on whether a condition is true or false.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A data structure that stores a fixed number of values of the same type under one name using an index is called an _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "record",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "string",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "array",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "pointer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "An array stores multiple related values accessed by an index, e.g. marks[1] to marks[5].",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The named variables listed in a subprogram's definition that receive incoming values are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "arguments",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "return values",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "variables",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "parameters",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Parameters are the named placeholders declared in a subprogram's header; the actual values supplied when it is called are the arguments.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Working through code line by line by hand to find its output is called _____ or dry-running.",
+        "options": [
+          {
+            "id": "a",
+            "text": "tracing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "compiling",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "debugging",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "linking",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Tracing (dry-running) follows the program manually, recording variable values to predict the result and find errors.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An error caused by breaking the grammar rules of the programming language is called a _____ error.",
+        "options": [
+          {
+            "id": "a",
+            "text": "logic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "syntax",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "runtime",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "semantic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A syntax error violates the language rules (e.g. a missing bracket) and prevents the program from being translated or run.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Structured programming encourages breaking a large program into smaller modules.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Modularity is a core principle of structured programming, making code easier to read, test and reuse.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A WHILE loop always executes its body at least once.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A WHILE loop tests its condition before the body runs, so it may execute zero times. The REPEAT...UNTIL loop is the one that runs at least once.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a flowchart, an oval shape is used to show the start or stop of an algorithm.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The oval (terminator) symbol marks the beginning and the end of a flowchart.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A constant can have its value changed many times while the program is running.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A constant keeps a fixed value; only variables can change during execution.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The MOD operator returns the remainder after integer division.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "MOD gives the remainder, for example 7 MOD 3 = 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A logic error will always stop the program from running.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A logic error usually lets the program run but produces incorrect output; it does not necessarily stop execution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Functions and procedures help to avoid repeating the same code in several places.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Subprograms allow a block of code to be written once and called many times, supporting reuse.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The index of an array is used to identify the position of an element.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Each element of an array is accessed by its index (position), e.g. scores[3] refers to the third element.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Top-down design means starting with fine details and combining them into one big block at the end.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Top-down design starts with the overall problem and breaks it down step by step into smaller subproblems, not the other way round.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A runtime error occurs while the program is executing, for example dividing a number by zero.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Runtime errors happen during execution when an illegal operation such as division by zero is attempted.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Name the three basic control structures used in structured programming.",
+        "options": [],
+        "correctAnswer": "Sequence, selection and iteration.",
+        "explanation": "These three structures are sufficient to express any algorithm in structured programming.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two advantages of using subprograms (procedures and functions) in a program.",
+        "options": [],
+        "correctAnswer": "They promote modularity and allow code to be reused (and make programs easier to read, test and maintain).",
+        "explanation": "Subprograms divide a task into named units that can be reused and tested independently.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the three main types of programming errors.",
+        "options": [],
+        "correctAnswer": "Syntax errors, logic errors and runtime errors.",
+        "explanation": "Syntax errors break language rules, logic errors give wrong results, and runtime errors occur during execution.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between a variable and a constant.",
+        "options": [],
+        "correctAnswer": "A variable can change its value during execution, while a constant keeps a fixed value that does not change.",
+        "explanation": "This distinction governs whether a stored value may be updated as the program runs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Give the difference between a WHILE loop and a REPEAT...UNTIL loop.",
+        "options": [],
+        "correctAnswer": "A WHILE loop tests its condition before the body runs (may run zero times), while a REPEAT...UNTIL loop tests at the end and runs the body at least once.",
+        "explanation": "The position of the condition test determines the minimum number of executions of the loop body.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the three categories of operators used in programming and give one example of each.",
+        "options": [],
+        "correctAnswer": "Arithmetic (e.g. +), relational (e.g. >), and logical (e.g. AND).",
+        "explanation": "Arithmetic operators compute, relational operators compare, and logical operators combine conditions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the purpose of dry-running (tracing) code?",
+        "options": [],
+        "correctAnswer": "To follow the code by hand, track variable values and find the output or detect logic errors before running it.",
+        "explanation": "Tracing helps confirm the algorithm works correctly and locates mistakes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define an array and give one example of when it would be useful.",
+        "options": [],
+        "correctAnswer": "An array is a structure that stores many values of the same type under one name using indexes; for example storing the marks of 40 students.",
+        "explanation": "Arrays let a program handle lists of related data efficiently with a single name and index.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What are parameters and why are they used?",
+        "options": [],
+        "correctAnswer": "Parameters are values passed into a subprogram; they allow the subprogram to work on different data, supporting reuse and flexibility.",
+        "explanation": "Passing parameters makes a subprogram general so it can be called with different inputs.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State two standard flowchart symbols and what each represents.",
+        "options": [],
+        "correctAnswer": "A rectangle represents a process and a diamond represents a decision (also: oval for start/stop, parallelogram for input/output).",
+        "explanation": "Standard symbols give flowcharts a consistent meaning that anyone can interpret.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "Trace the pseudocode and choose the output:\nA <- 2\nB <- 3\nIF A > B THEN\n    C <- A + B\nELSE\n    C <- A * B\nENDIF\nOUTPUT C\nWhat is printed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "23",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A > B is 2 > 3 which is false, so the ELSE branch runs: C = A * B = 2 * 3 = 6.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An array data[1..4] holds the values data[1]=4, data[2]=7, data[3]=2, data[4]=9. Trace:\nmax <- data[1]\nFOR i <- 2 TO 4\n    IF data[i] > max THEN\n        max <- data[i]\n    ENDIF\nNEXT i\nOUTPUT max\nWhat is the output?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "7",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "max starts at 4; 7>4 so max=7; 2>7 is false; 9>7 so max=9. The loop finds the largest value, 9.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Consider this subprogram and its call:\nFUNCTION square(n)\n    RETURN n * n\nENDFUNCTION\nx <- 3\ny <- square(x) + 1\nOUTPUT y\nWhat is printed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "10",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "square(3) returns 3 * 3 = 9, then y = 9 + 1 = 10, so the output is 10.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

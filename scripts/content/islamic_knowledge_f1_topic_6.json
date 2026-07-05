@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Prophet Muhammad (PBUH) was born in the city of _____.",
-        "options": [],
-        "correctAnswer": "Makkah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Makkah",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Madinah",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ta'if",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Jerusalem",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "He was born in Makkah around 570 CE.",
         "difficulty": "easy"
       },
       {
         "questionText": "The mother of Prophet Muhammad (PBUH) was named _____.",
-        "options": [],
-        "correctAnswer": "Aminah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Khadijah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Aminah",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Halimah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Aisha",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Aminah bint Wahb was his mother, who died when he was young.",
         "difficulty": "easy"
       },
       {
         "questionText": "Because of his honesty, the people of Makkah called him Al-_____.",
-        "options": [],
-        "correctAnswer": "Amin",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sadiq",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Karim",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Amin",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Rashid",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Al-Amin means 'the trustworthy'.",
         "difficulty": "easy"
       },
       {
         "questionText": "The first revelation came to the Prophet in the Cave of _____.",
-        "options": [],
-        "correctAnswer": "Hira",
+        "options": [
+          {
+            "id": "a",
+            "text": "Thawr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Uhud",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Safa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hira",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Cave of Hira is located on Mount Nur near Makkah.",
         "difficulty": "easy"
       },
       {
         "questionText": "The angel who brought revelation to the Prophet was _____.",
-        "options": [],
-        "correctAnswer": "Jibril",
+        "options": [
+          {
+            "id": "a",
+            "text": "Jibril",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mikail",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Israfil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Izrail",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Jibril (Gabriel) is the angel of revelation.",
         "difficulty": "easy"
       },
       {
         "questionText": "The first wife of Prophet Muhammad (PBUH) was _____.",
-        "options": [],
-        "correctAnswer": "Khadijah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Aisha",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Khadijah",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Hafsah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Aminah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Khadijah bint Khuwaylid was his first wife and the first person to believe in him.",
         "difficulty": "medium"
       },
       {
         "questionText": "The first word of the Qur'an to be revealed was _____.",
-        "options": [],
-        "correctAnswer": "Iqra",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bismillah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Alhamdulillah",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Iqra",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Tabarak",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Iqra means 'Read', from Surah Al-Alaq.",
         "difficulty": "medium"
       },
       {
         "questionText": "The migration of the Prophet from Makkah to Madinah is called the _____.",
-        "options": [],
-        "correctAnswer": "Hijrah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Isra",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mi'raj",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fath",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hijrah",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Hijrah marks the beginning of the Islamic calendar.",
         "difficulty": "medium"
       },
       {
         "questionText": "Before it was renamed Madinah, the city was known as _____.",
-        "options": [],
-        "correctAnswer": "Yathrib",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yathrib",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Ta'if",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Khaybar",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hudaybiyyah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Yathrib was the original name of Madinah before the Prophet's arrival.",
         "difficulty": "hard"
       },
       {
         "questionText": "After his grandfather died, the Prophet was raised by his uncle _____.",
-        "options": [],
-        "correctAnswer": "Abu Talib",
+        "options": [
+          {
+            "id": "a",
+            "text": "Abu Bakr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Abu Talib",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Abu Lahab",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Abu Sufyan",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Abu Talib cared for and protected the Prophet during his youth.",
         "difficulty": "medium"
       }

@@ -2,441 +2,371 @@
   "topicId": "form_3_mathematics_topic_2",
   "topicName": "Functions",
   "order": 2,
-  "description": "An introduction to functions covering domain and range, function notation, types of functions, evaluation, graphs, inverse functions, and basic composite functions.",
+  "description": "An introduction to functions and relations, evaluating and inverting functions, and analysing quadratic, absolute value and greatest-integer (floor) functions using the vertical and horizontal line tests.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which of the following relations is a function?",
+        "questionText": "f(x) = 3x − 4, find f(5).",
         "options": [
-          {"id": "a", "text": "{(1, 2), (1, 3), (2, 4)}", "isCorrect": false},
-          {"id": "b", "text": "{(1, 2), (2, 2), (3, 5)}", "isCorrect": true},
-          {"id": "c", "text": "{(0, 1), (0, 2), (0, 3)}", "isCorrect": false},
-          {"id": "d", "text": "{(2, 1), (2, 4), (3, 6)}", "isCorrect": false}
+          {"id": "a", "text": "19", "isCorrect": false},
+          {"id": "b", "text": "11", "isCorrect": true},
+          {"id": "c", "text": "1", "isCorrect": false},
+          {"id": "d", "text": "−11", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A function assigns exactly one output to each input. Only option b has no repeated input with different outputs.",
+        "explanation": "Substitute x = 5 to get 3(5) − 4 = 15 − 4 = 11. Exam Tip: option A wrongly adds 4 instead of subtracting.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If f(x) = 3x - 5, what is f(4)?",
+        "questionText": "Which relation is a function?",
         "options": [
-          {"id": "a", "text": "7", "isCorrect": true},
-          {"id": "b", "text": "12", "isCorrect": false},
-          {"id": "c", "text": "-2", "isCorrect": false},
-          {"id": "d", "text": "17", "isCorrect": false}
+          {"id": "a", "text": "{(1,2),(1,3),(2,4)}", "isCorrect": false},
+          {"id": "b", "text": "{(2,5),(3,5),(4,5)}", "isCorrect": true},
+          {"id": "c", "text": "{(5,1),(5,2),(5,3)}", "isCorrect": false},
+          {"id": "d", "text": "{(1,2),(2,3),(1,4)}", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "f(4) = 3(4) - 5 = 12 - 5 = 7.",
-        "difficulty": "easy"
+        "correctAnswer": "b",
+        "explanation": "In a function each input has exactly one output, so the first coordinates must all be different. In B the inputs 2, 3, 4 are all different, and many-to-one is allowed. Exam Tip: check the x-values for repeats.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "What is the domain of the function f(x) = 1/(x - 2)?",
+        "questionText": "f(x) = x² − 2x, find f(−3).",
         "options": [
-          {"id": "a", "text": "All real numbers", "isCorrect": false},
-          {"id": "b", "text": "All real numbers except x = 0", "isCorrect": false},
-          {"id": "c", "text": "All real numbers except x = 2", "isCorrect": true},
-          {"id": "d", "text": "All real numbers except x = -2", "isCorrect": false}
+          {"id": "a", "text": "3", "isCorrect": false},
+          {"id": "b", "text": "−15", "isCorrect": false},
+          {"id": "c", "text": "15", "isCorrect": true},
+          {"id": "d", "text": "−3", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The denominator cannot be zero, so x - 2 ≠ 0, meaning x ≠ 2.",
+        "explanation": "Substitute x = −3 to get (−3)² − 2(−3) = 9 + 6 = 15. Exam Tip: watch the double negative; −2(−3) = +6.",
         "difficulty": "medium"
       },
       {
-        "questionText": "If f(x) = x² + 1, what is f(-3)?",
+        "questionText": "A vertical line cuts x² + y² = 25 at two points, so the relation is:",
         "options": [
-          {"id": "a", "text": "-8", "isCorrect": false},
-          {"id": "b", "text": "10", "isCorrect": true},
-          {"id": "c", "text": "-10", "isCorrect": false},
-          {"id": "d", "text": "7", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "f(-3) = (-3)² + 1 = 9 + 1 = 10.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The value of |x| when x = -7 is:",
-        "options": [
-          {"id": "a", "text": "-7", "isCorrect": false},
-          {"id": "b", "text": "0", "isCorrect": false},
-          {"id": "c", "text": "7", "isCorrect": true},
-          {"id": "d", "text": "49", "isCorrect": false}
+          {"id": "a", "text": "One-to-one function", "isCorrect": false},
+          {"id": "b", "text": "Many-to-one function", "isCorrect": false},
+          {"id": "c", "text": "Not a function", "isCorrect": true},
+          {"id": "d", "text": "Linear function", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The absolute value of a number is its distance from zero, which is always non-negative, so |-7| = 7.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If f(x) = 2x + 7, find the inverse function f⁻¹(x).",
-        "options": [
-          {"id": "a", "text": "f⁻¹(x) = (x - 7)/2", "isCorrect": true},
-          {"id": "b", "text": "f⁻¹(x) = (x + 7)/2", "isCorrect": false},
-          {"id": "c", "text": "f⁻¹(x) = 2x - 7", "isCorrect": false},
-          {"id": "d", "text": "f⁻¹(x) = (x - 7)/2 + 7", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Let y = 2x + 7. Swap variables: x = 2y + 7, then solve for y: y = (x - 7)/2.",
+        "explanation": "If a vertical line meets a graph at more than one point, one input gives two outputs, so the relation fails the vertical line test and is not a function. Exam Tip: a circle is never a function.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Given f(x) = x + 3 and g(x) = 2x, what is (f∘g)(x)?",
+        "questionText": "Turning point of y = x² − 6x + 5.",
         "options": [
-          {"id": "a", "text": "2x + 6", "isCorrect": false},
-          {"id": "b", "text": "2x + 3", "isCorrect": true},
-          {"id": "c", "text": "2x²", "isCorrect": false},
-          {"id": "d", "text": "x + 6", "isCorrect": false}
+          {"id": "a", "text": "(3, 4)", "isCorrect": false},
+          {"id": "b", "text": "(3, −4)", "isCorrect": true},
+          {"id": "c", "text": "(−3, −4)", "isCorrect": false},
+          {"id": "d", "text": "(6, 5)", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "(f∘g)(x) = f(g(x)) = f(2x) = 2x + 3.",
+        "explanation": "The turning point x-value is −b/2a = 6/2 = 3, then y = 3² − 6(3) + 5 = 9 − 18 + 5 = −4, giving (3, −4). Exam Tip: find x with −b/2a first, then substitute back for y.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The range of the function f(x) = x² for all real x is:",
+        "questionText": "x-intercepts of y = x² − 4.",
         "options": [
-          {"id": "a", "text": "All real numbers", "isCorrect": false},
-          {"id": "b", "text": "y ≥ 0", "isCorrect": true},
-          {"id": "c", "text": "y > 0", "isCorrect": false},
-          {"id": "d", "text": "y ≤ 0", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Squaring any real number gives a result that is zero or positive, so the range is y ≥ 0.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which type of function is represented by f(x) = -4x + 1?",
-        "options": [
-          {"id": "a", "text": "Quadratic", "isCorrect": false},
-          {"id": "b", "text": "Absolute value", "isCorrect": false},
-          {"id": "c", "text": "Linear", "isCorrect": true},
-          {"id": "d", "text": "Constant", "isCorrect": false}
+          {"id": "a", "text": "x = 2 only", "isCorrect": false},
+          {"id": "b", "text": "x = −2 only", "isCorrect": false},
+          {"id": "c", "text": "x = 2 and x = −2", "isCorrect": true},
+          {"id": "d", "text": "x = 4 and x = −4", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A function of the form f(x) = mx + c with a non-zero coefficient of x is a linear function.",
-        "difficulty": "easy"
+        "explanation": "Set y = 0 so x² = 4, giving x = ±2, that is x = 2 and x = −2. Exam Tip: a square root always gives both a positive and a negative value; option A forgets the ±.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "If f(x) = 5x, for what value of x is f(x) = 35?",
+        "questionText": "f(x) = 2x + 7, find f⁻¹(15).",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": false},
-          {"id": "b", "text": "6", "isCorrect": false},
-          {"id": "c", "text": "7", "isCorrect": true},
+          {"id": "a", "text": "37", "isCorrect": false},
+          {"id": "b", "text": "4", "isCorrect": true},
+          {"id": "c", "text": "11", "isCorrect": false},
           {"id": "d", "text": "8", "isCorrect": false}
         ],
+        "correctAnswer": "b",
+        "explanation": "The inverse is f⁻¹(x) = (x − 7)/2, so f⁻¹(15) = (15 − 7)/2 = 8/2 = 4. Exam Tip: option A is f(15), not the inverse.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Evaluate ⌊3.7⌋ (greatest integer function).",
+        "options": [
+          {"id": "a", "text": "4", "isCorrect": false},
+          {"id": "b", "text": "3.7", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": true},
+          {"id": "d", "text": "0.7", "isCorrect": false}
+        ],
         "correctAnswer": "c",
-        "explanation": "Set 5x = 35, so x = 35/5 = 7.",
+        "explanation": "The floor function gives the greatest integer not exceeding the number, so ⌊3.7⌋ = 3. Exam Tip: floor rounds down, it does not round to the nearest whole number.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The graph of a linear function f(x) = mx + c is always a:",
+        "questionText": "Evaluate ⌊−2.4⌋.",
         "options": [
-          {"id": "a", "text": "Parabola", "isCorrect": false},
-          {"id": "b", "text": "Straight line", "isCorrect": true},
-          {"id": "c", "text": "V-shape", "isCorrect": false},
-          {"id": "d", "text": "Circle", "isCorrect": false}
+          {"id": "a", "text": "−2", "isCorrect": false},
+          {"id": "b", "text": "−3", "isCorrect": true},
+          {"id": "c", "text": "2", "isCorrect": false},
+          {"id": "d", "text": "−2.4", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A linear function produces a straight-line graph with gradient m and y-intercept c.",
+        "explanation": "The floor is the greatest integer not exceeding −2.4, which is −3 since −2 is larger than −2.4. Exam Tip: for negatives the floor moves further from zero, not toward it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "f(x) = |x − 2|, find f(−1).",
+        "options": [
+          {"id": "a", "text": "−3", "isCorrect": false},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": true},
+          {"id": "d", "text": "−1", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Substitute x = −1 to get |−1 − 2| = |−3| = 3. Exam Tip: absolute value is always positive or zero.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Given f(x) = x² - 4x, what is f(5)?",
+        "questionText": "Range of f(x) = x² + 1 for all real x.",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": true},
-          {"id": "b", "text": "9", "isCorrect": false},
-          {"id": "c", "text": "-5", "isCorrect": false},
-          {"id": "d", "text": "45", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "f(5) = 5² - 4(5) = 25 - 20 = 5.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A function uses a vertical line test on its graph. What does it mean if a vertical line cuts the graph at two points?",
-        "options": [
-          {"id": "a", "text": "The graph is a function", "isCorrect": false},
-          {"id": "b", "text": "The graph is not a function", "isCorrect": true},
-          {"id": "c", "text": "The graph has no domain", "isCorrect": false},
-          {"id": "d", "text": "The graph is linear", "isCorrect": false}
+          {"id": "a", "text": "y ≥ 0", "isCorrect": false},
+          {"id": "b", "text": "y ≥ 1", "isCorrect": true},
+          {"id": "c", "text": "y > 1", "isCorrect": false},
+          {"id": "d", "text": "All real", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "If a vertical line meets the graph more than once, one input gives more than one output, so it is not a function.",
+        "explanation": "The smallest value of x² is 0 at x = 0, so the smallest value of x² + 1 is 1, giving y ≥ 1. Exam Tip: the minimum is attained, so use ≥ not >.",
         "difficulty": "medium"
       },
       {
-        "questionText": "If g(x) = |x - 3|, what is g(1)?",
+        "questionText": "f(x) = x³, find f(−2).",
         "options": [
-          {"id": "a", "text": "-2", "isCorrect": false},
-          {"id": "b", "text": "2", "isCorrect": true},
-          {"id": "c", "text": "4", "isCorrect": false},
-          {"id": "d", "text": "1", "isCorrect": false}
+          {"id": "a", "text": "8", "isCorrect": false},
+          {"id": "b", "text": "−6", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "−8", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "Compute (−2)³ = −2 × −2 × −2 = −8. Exam Tip: an odd power keeps the sign of the base, so a negative stays negative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "f(x) = 5x − 3 and f(a) = 22, find a.",
+        "options": [
+          {"id": "a", "text": "107", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "19/5", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "g(1) = |1 - 3| = |-2| = 2.",
+        "explanation": "Set 5a − 3 = 22, so 5a = 25 and a = 5. Exam Tip: option A wrongly computes f(22) instead of solving for a.",
         "difficulty": "medium"
       },
       {
-        "questionText": "If f(x) = (x + 6)/3, then f⁻¹(x) equals:",
+        "questionText": "Minimum value of y = x² − 8x + 3.",
         "options": [
-          {"id": "a", "text": "3x - 6", "isCorrect": true},
-          {"id": "b", "text": "3x + 6", "isCorrect": false},
-          {"id": "c", "text": "(x - 6)/3", "isCorrect": false},
-          {"id": "d", "text": "3x - 18", "isCorrect": false}
+          {"id": "a", "text": "4", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "−13", "isCorrect": true},
+          {"id": "d", "text": "13", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Let y = (x + 6)/3, swap to get x = (y + 6)/3, then 3x = y + 6, so y = 3x - 6.",
-        "difficulty": "hard"
+        "correctAnswer": "c",
+        "explanation": "The minimum is at x = −b/2a = 8/2 = 4, then y = 4² − 8(4) + 3 = 16 − 32 + 3 = −13. Exam Tip: option A gives the x-value, not the minimum y-value.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which function is one-to-one?",
+        "options": [
+          {"id": "a", "text": "f(x) = x²", "isCorrect": false},
+          {"id": "b", "text": "f(x) = |x|", "isCorrect": false},
+          {"id": "c", "text": "f(x) = 2x + 1", "isCorrect": true},
+          {"id": "d", "text": "f(x) = x² + 3", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A one-to-one function passes the horizontal line test, and the non-horizontal line f(x) = 2x + 1 does, while the parabolas and |x| fail it. Exam Tip: linear graphs that are not horizontal are always one-to-one.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A relation in which each input has exactly one output is called a _____.",
-        "options": [],
-        "correctAnswer": "function",
-        "explanation": "By definition, a function maps every element of the domain to exactly one element of the range.",
+        "questionText": "If f(x) = 4x + 9, then f(0) = ____.",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": true},
+          {"id": "b", "text": "13", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substitute x = 0 to get 4(0) + 9 = 9. Exam Tip: putting in x = 0 gives the constant term.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The set of all possible input values of a function is called its _____.",
-        "options": [],
-        "correctAnswer": "domain",
-        "explanation": "The domain is the complete set of allowed input (x) values.",
+        "questionText": "If f(x) = x² + 5x, then f(2) = ____.",
+        "options": [
+          {"id": "a", "text": "14", "isCorrect": true},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "9", "isCorrect": false},
+          {"id": "d", "text": "24", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substitute x = 2 to get 2² + 5(2) = 4 + 10 = 14. Exam Tip: square first, then add the linear term.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If f(x) = 4x - 9, then f(3) = _____.",
-        "options": [],
-        "correctAnswer": "3",
-        "explanation": "f(3) = 4(3) - 9 = 12 - 9 = 3.",
+        "questionText": "Axis of symmetry of y = x² + 6x + 2 is x = ____.",
+        "options": [
+          {"id": "a", "text": "−3", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "−6", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The axis of symmetry is x = −b/2a = −6/2 = −3. Exam Tip: remember the minus sign in −b/2a.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The set of all output values of a function is called its _____.",
-        "options": [],
-        "correctAnswer": "range",
-        "explanation": "The range is the complete set of resulting output (y) values.",
+        "questionText": "If f(x) = 3x − 4, then f⁻¹(x) = ____.",
+        "options": [
+          {"id": "a", "text": "(x + 4)/3", "isCorrect": true},
+          {"id": "b", "text": "(x − 4)/3", "isCorrect": false},
+          {"id": "c", "text": "3x + 4", "isCorrect": false},
+          {"id": "d", "text": "(x + 3)/4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Let y = 3x − 4, swap to x = 3y − 4, then y = (x + 4)/3. Exam Tip: swap x and y, then solve for y.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The value of |−12| is _____.",
-        "options": [],
-        "correctAnswer": "12",
-        "explanation": "Absolute value gives the non-negative distance from zero, so |−12| = 12.",
+        "questionText": "⌊5.99⌋ = ____.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "6", "isCorrect": false},
+          {"id": "c", "text": "5.99", "isCorrect": false},
+          {"id": "d", "text": "0.99", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The floor gives the greatest integer not exceeding 5.99, which is 5. Exam Tip: floor rounds down even when very close to the next integer.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If f(x) = x² + 2x, then f(-2) = _____.",
-        "options": [],
-        "correctAnswer": "0",
-        "explanation": "f(-2) = (-2)² + 2(-2) = 4 - 4 = 0.",
-        "difficulty": "medium"
+        "questionText": "The graph of y = x² opens ____ (upward/downward).",
+        "options": [
+          {"id": "a", "text": "upward", "isCorrect": true},
+          {"id": "b", "text": "downward", "isCorrect": false},
+          {"id": "c", "text": "sideways", "isCorrect": false},
+          {"id": "d", "text": "in a straight line", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The coefficient of x² is positive (+1), so the parabola opens upward. Exam Tip: a > 0 opens up, a < 0 opens down.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If f(x) = 6x, then f⁻¹(x) = _____.",
-        "options": [],
-        "correctAnswer": "x/6",
-        "explanation": "Let y = 6x, swap to x = 6y, so y = x/6.",
-        "difficulty": "medium"
+        "questionText": "The domain of f(x) = √(x − 6) is ____.",
+        "options": [
+          {"id": "a", "text": "x ≥ 6", "isCorrect": true},
+          {"id": "b", "text": "x > 6", "isCorrect": false},
+          {"id": "c", "text": "x ≤ 6", "isCorrect": false},
+          {"id": "d", "text": "x ≥ −6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The expression under the square root must be non-negative, so x − 6 ≥ 0 gives x ≥ 6. Exam Tip: a square root needs its inside to be zero or positive.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If f(x) = x + 4 and g(x) = 3x, then (g∘f)(2) = _____.",
-        "options": [],
-        "correctAnswer": "18",
-        "explanation": "(g∘f)(2) = g(f(2)) = g(6) = 3(6) = 18.",
-        "difficulty": "medium"
+        "questionText": "If f(x) = |x|, then f(−8) = ____.",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": true},
+          {"id": "b", "text": "−8", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": false},
+          {"id": "d", "text": "16", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The absolute value of −8 is its distance from zero, which is 8. Exam Tip: absolute value is never negative.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The graph of f(x) = |x| has the shape of the letter _____.",
-        "options": [],
-        "correctAnswer": "V",
-        "explanation": "The absolute value function forms a V-shaped graph with its vertex at the origin.",
-        "difficulty": "medium"
+        "questionText": "y = x³ passes through the origin because f(0) = ____.",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": true},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "−1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substitute x = 0 to get 0³ = 0, so the curve passes through (0, 0). Exam Tip: a graph meets the origin when f(0) = 0.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "For the function f(x) = √x, the smallest value x can take is _____.",
-        "options": [],
-        "correctAnswer": "0",
-        "explanation": "The square root of a negative number is not real, so the domain requires x ≥ 0, with the smallest value being 0.",
-        "difficulty": "hard"
+        "questionText": "The ____ line test determines whether a function is one-to-one.",
+        "options": [
+          {"id": "a", "text": "horizontal", "isCorrect": true},
+          {"id": "b", "text": "vertical", "isCorrect": false},
+          {"id": "c", "text": "diagonal", "isCorrect": false},
+          {"id": "d", "text": "number", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The horizontal line test checks one-to-one: if every horizontal line meets the graph at most once, the function is one-to-one. Exam Tip: vertical test checks if it is a function, horizontal test checks one-to-one.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Every function is a relation.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A function is a special type of relation where each input has exactly one output.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Every relation is a function.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A relation may map an input to more than one output, in which case it is not a function.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The notation f(x) means f multiplied by x.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "f(x) is function notation meaning the value of the function f at x, not multiplication.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The absolute value of any real number is always non-negative.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Absolute value measures distance from zero, which can never be negative.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The graph of a quadratic function is a parabola.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A quadratic function f(x) = ax² + bx + c produces a parabolic graph.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If f(x) = 2x + 1, then f(0) = 1.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "f(0) = 2(0) + 1 = 0 + 1 = 1.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The inverse of a function reverses the effect of the original function.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "If f maps a to b, then f⁻¹ maps b back to a, undoing the original function.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Composite function (f∘g)(x) is always equal to (g∘f)(x).",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Composition of functions is generally not commutative; the order matters.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A vertical line can cut the graph of a function at most once.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the vertical line test; one input must give only one output.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "For f(x) = 3x - 2, the value of x giving f(x) = 0 is x = 2/3.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Setting 3x - 2 = 0 gives 3x = 2, so x = 2/3.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Every function is a relation.", "options": [], "correctAnswer": "true", "explanation": "A function is a special relation in which each input has exactly one output, so every function is a relation.", "difficulty": "easy"},
+      {"questionText": "The relation y² = x defines y as a function of x.", "options": [], "correctAnswer": "false", "explanation": "For a positive x there are two y-values (positive and negative roots), so it fails the vertical line test and is not a function.", "difficulty": "easy"},
+      {"questionText": "The graph of y = −x² + 4 has a maximum point.", "options": [], "correctAnswer": "true", "explanation": "The coefficient of x² is negative, so the parabola opens downward and has a maximum turning point.", "difficulty": "easy"},
+      {"questionText": "⌊−1.5⌋ = −1.", "options": [], "correctAnswer": "false", "explanation": "The floor is the greatest integer not exceeding −1.5, which is −2, not −1.", "difficulty": "easy"},
+      {"questionText": "The function f(x) = x³ is one-to-one.", "options": [], "correctAnswer": "true", "explanation": "Every horizontal line meets the cubic graph exactly once, so it passes the horizontal line test and is one-to-one.", "difficulty": "easy"},
+      {"questionText": "The turning point of y = (x − 2)² + 3 is (2, 3).", "options": [], "correctAnswer": "true", "explanation": "In vertex form y = (x − h)² + k the turning point is (h, k), so here it is (2, 3).", "difficulty": "easy"},
+      {"questionText": "|−7| = −7.", "options": [], "correctAnswer": "false", "explanation": "The absolute value of −7 is its distance from zero, which is 7, so |−7| = 7, not −7.", "difficulty": "easy"},
+      {"questionText": "If f(x) = x² with domain all reals, its inverse is also a function.", "options": [], "correctAnswer": "false", "explanation": "f(x) = x² is many-to-one over all reals, so its inverse would give two outputs for one input and is not a function.", "difficulty": "easy"},
+      {"questionText": "A vertical line can intersect the graph of a function at most once.", "options": [], "correctAnswer": "true", "explanation": "This is the vertical line test: since each input has one output, any vertical line meets the graph at most once.", "difficulty": "easy"},
+      {"questionText": "The range of f(x) = |x| is y ≥ 0.", "options": [], "correctAnswer": "true", "explanation": "Absolute value is never negative and reaches 0 at x = 0, so the output values satisfy y ≥ 0.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of a function",
-        "options": [],
-        "correctAnswer": "A function maps each input to exactly one output.",
-        "explanation": "No input may be linked to two different outputs.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Domain of a function",
-        "options": [],
-        "correctAnswer": "The set of all allowed input values.",
-        "explanation": "These are the x-values for which the function is defined.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Range of a function",
-        "options": [],
-        "correctAnswer": "The set of all output values produced.",
-        "explanation": "These are the resulting y-values of the function.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function notation f(x)",
-        "options": [],
-        "correctAnswer": "f(x) denotes the output of function f for input x.",
-        "explanation": "It is read as 'f of x' and is not multiplication.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Linear function",
-        "options": [],
-        "correctAnswer": "A function f(x) = mx + c whose graph is a straight line.",
-        "explanation": "m is the gradient and c is the y-intercept.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Quadratic function",
-        "options": [],
-        "correctAnswer": "A function f(x) = ax² + bx + c whose graph is a parabola.",
-        "explanation": "Here a is not zero.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Absolute value function",
-        "options": [],
-        "correctAnswer": "f(x) = |x| gives the non-negative distance of x from zero.",
-        "explanation": "Its graph is V-shaped with vertex at the origin.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Inverse function",
-        "options": [],
-        "correctAnswer": "f⁻¹ undoes the action of f, swapping inputs and outputs.",
-        "explanation": "Found by swapping x and y and solving for y.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Composite function",
-        "options": [],
-        "correctAnswer": "(f∘g)(x) = f(g(x)), applying g first then f.",
-        "explanation": "The output of one function becomes the input of another.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Vertical line test",
-        "options": [],
-        "correctAnswer": "A graph is a function if no vertical line meets it more than once.",
-        "explanation": "This ensures each input has only one output.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Function", "options": [], "correctAnswer": "A relation in which each input value is paired with exactly one output value.", "explanation": "For example f(x) = 2x + 1 gives one output for every input x. A relation with a repeated input mapping to different outputs is not a function. Exam Tip: check that no x-value repeats with a different y-value.", "difficulty": "easy"},
+      {"questionText": "Vertical line test", "options": [], "correctAnswer": "A graphical check where a relation is a function only if every vertical line meets the graph at most once.", "explanation": "If any vertical line crosses the graph twice, one input has two outputs, so it is not a function. A circle fails this test. Exam Tip: use it to decide if a graph is a function at all.", "difficulty": "easy"},
+      {"questionText": "One-to-one function", "options": [], "correctAnswer": "A function in which each output value comes from exactly one input value.", "explanation": "Here different inputs always give different outputs, as with f(x) = 2x + 1. Such functions have inverses that are also functions. Exam Tip: only one-to-one functions have a proper inverse function.", "difficulty": "easy"},
+      {"questionText": "Horizontal line test", "options": [], "correctAnswer": "A graphical check where a function is one-to-one only if every horizontal line meets the graph at most once.", "explanation": "If a horizontal line crosses twice, two inputs share an output, so the function is not one-to-one. A parabola fails this test. Exam Tip: this test decides one-to-one, not whether it is a function.", "difficulty": "easy"},
+      {"questionText": "Quadratic turning point (vertex)", "options": [], "correctAnswer": "The highest or lowest point of a parabola, found at x = −b/2a for y = ax² + bx + c.", "explanation": "You find x with −b/2a, then substitute back to get y. If a > 0 it is a minimum, if a < 0 it is a maximum. Exam Tip: compute x first, then substitute to get the y-value.", "difficulty": "easy"},
+      {"questionText": "Axis of symmetry", "options": [], "correctAnswer": "The vertical line x = −b/2a that divides a parabola into two mirror-image halves.", "explanation": "It passes through the turning point of the parabola. For y = x² + 6x + 2 it is x = −3. Exam Tip: the axis of symmetry always passes through the vertex.", "difficulty": "easy"},
+      {"questionText": "x-intercept (root)", "options": [], "correctAnswer": "A point where a graph crosses the x-axis, found by setting y = 0 and solving for x.", "explanation": "For y = x² − 4, setting y = 0 gives x = ±2, so the roots are 2 and −2. Exam Tip: a square root gives both a positive and a negative value.", "difficulty": "easy"},
+      {"questionText": "Inverse of a function", "options": [], "correctAnswer": "The function f⁻¹ that reverses f, obtained by swapping x and y and solving for y.", "explanation": "For f(x) = 3x − 4 the inverse is f⁻¹(x) = (x + 4)/3. It undoes the original function. Exam Tip: swap x and y, then make y the subject.", "difficulty": "easy"},
+      {"questionText": "Step/floor function", "options": [], "correctAnswer": "A function ⌊x⌋ that gives the greatest integer not exceeding x, producing a step-shaped graph.", "explanation": "For example ⌊3.7⌋ = 3 and ⌊−2.4⌋ = −3. It rounds down rather than to the nearest whole number. Exam Tip: for negatives the floor moves further from zero.", "difficulty": "easy"},
+      {"questionText": "Absolute value function", "options": [], "correctAnswer": "A function |x| that gives the distance of x from zero, so its output is never negative.", "explanation": "For example |−3| = 3 and its graph is a V shape with a minimum of 0. Exam Tip: the range of |x| is y ≥ 0.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Given f(x) = 2x - 1 and g(x) = x², find the value of (f∘g)(3) - (g∘f)(1).",
+        "questionText": "f(x) = (3x − 2)/(x + 1), find f⁻¹(x) and the excluded x.",
         "options": [
-          {"id": "a", "text": "16", "isCorrect": true},
-          {"id": "b", "text": "17", "isCorrect": false},
-          {"id": "c", "text": "14", "isCorrect": false},
-          {"id": "d", "text": "18", "isCorrect": false}
+          {"id": "a", "text": "f⁻¹(x) = (x + 2)/(3 − x), x ≠ 3", "isCorrect": true},
+          {"id": "b", "text": "f⁻¹(x) = (x + 1)/(3x − 2), x ≠ 2/3", "isCorrect": false},
+          {"id": "c", "text": "f⁻¹(x) = (x − 2)/(x + 3), x ≠ −3", "isCorrect": false},
+          {"id": "d", "text": "f⁻¹(x) = (3x − 2)/(x + 1), x ≠ −1", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "(f∘g)(3) = f(9) = 2(9) - 1 = 17; (g∘f)(1) = g(1) = (2(1)-1)² = 1; so 17 - 1 = 16.",
+        "explanation": "Let y = (3x − 2)/(x + 1), then swap to x = (3y − 2)/(y + 1). Multiply out: x(y + 1) = 3y − 2, so xy + x = 3y − 2, giving y(x − 3) = −(x + 2) and y = (x + 2)/(3 − x). The denominator is zero at x = 3, so x ≠ 3. Exam Tip: option B is the reciprocal trap; swapping is not the same as taking the reciprocal.",
         "difficulty": "hard"
       },
       {
-        "questionText": "The function f(x) = (2x - 5)/(x + 1) is defined for all real x except one value. Then f⁻¹(x) equals:",
+        "questionText": "Turning point of y = 2x² − 8x + 5 and whether it is a maximum or minimum.",
         "options": [
-          {"id": "a", "text": "(x + 5)/(2 - x)", "isCorrect": true},
-          {"id": "b", "text": "(x - 5)/(2 + x)", "isCorrect": false},
-          {"id": "c", "text": "(2 - x)/(x + 5)", "isCorrect": false},
-          {"id": "d", "text": "(5 + x)/(x - 2)", "isCorrect": false}
+          {"id": "a", "text": "(2, −3), minimum", "isCorrect": true},
+          {"id": "b", "text": "(2, 3), minimum", "isCorrect": false},
+          {"id": "c", "text": "(−2, −3), maximum", "isCorrect": false},
+          {"id": "d", "text": "(2, −3), maximum", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Let y = (2x-5)/(x+1); then y(x+1) = 2x-5, so xy + y = 2x - 5, giving x(y-2) = -5 - y, so x = (-5-y)/(y-2) = (y+5)/(2-y). Swapping gives f⁻¹(x) = (x+5)/(2-x).",
+        "explanation": "The turning point x-value is −b/2a = 8/4 = 2, then y = 2(2²) − 8(2) + 5 = 8 − 16 + 5 = −3, giving (2, −3). Since a = 2 > 0 the parabola opens upward, so it is a minimum. Exam Tip: use −b/2a with 2a = 4, and a > 0 means a minimum.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A function is defined by f(x) = |x - 2| + 3. What is the minimum value of f(x) and the value of x at which it occurs?",
+        "questionText": "Daladala fare is f(x) = 500 + 300⌊x⌋ shillings, where x is the distance in km. Neema travels 4.6 km. What is the fare?",
         "options": [
-          {"id": "a", "text": "Minimum 3 at x = 2", "isCorrect": true},
-          {"id": "b", "text": "Minimum 0 at x = 2", "isCorrect": false},
-          {"id": "c", "text": "Minimum 3 at x = -2", "isCorrect": false},
-          {"id": "d", "text": "Minimum 2 at x = 3", "isCorrect": false}
+          {"id": "a", "text": "Tsh 1,880", "isCorrect": false},
+          {"id": "b", "text": "Tsh 2,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 1,700", "isCorrect": true},
+          {"id": "d", "text": "Tsh 1,500", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "The smallest value of |x - 2| is 0, occurring when x = 2, giving f(x) = 0 + 3 = 3 as the minimum.",
+        "correctAnswer": "c",
+        "explanation": "First take the floor: ⌊4.6⌋ = 4. Then 300 × 4 = 1200, and adding the base gives 500 + 1200 = 1700, so the fare is Tsh 1,700. Exam Tip: a step function floors the distance, it does not round it.",
         "difficulty": "hard"
       }
     ]

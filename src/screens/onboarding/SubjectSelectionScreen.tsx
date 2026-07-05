@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { AppButton } from '../../components/ui/AppButton';
@@ -59,11 +60,18 @@ export function SubjectSelectionScreen({ navigation }: Props) {
 
   return (
     <LinearGradient colors={GRADIENTS.background} style={styles.root}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
-          <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
-        </TouchableOpacity>
+        {/* After an OTP-flow reset this can be the only route in the stack —
+            hide the arrow rather than render a back button that does nothing. */}
+        {navigation.canGoBack() ? (
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
+            <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
+          </TouchableOpacity>
+        ) : (
+          <View style={styles.back} />
+        )}
         <Text style={styles.step}>Step 2 of 2</Text>
       </View>
 
@@ -108,12 +116,14 @@ export function SubjectSelectionScreen({ navigation }: Props) {
           variant="primary"
         />
       </View>
+      </SafeAreaView>
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
+  safeArea: { flex: 1 },
   header: {
     flexDirection: 'row',
     alignItems: 'center',

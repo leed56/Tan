@@ -1,0 +1,494 @@
+{
+  "topicId": "form_4_biology_topic_10",
+  "topicName": "Genetics: Mendelian and Non-Mendelian Inheritance",
+  "order": 10,
+  "description": "This topic builds on the basic tenets of genetics (genes, alleles, chromosomes) with a deeper focus on monohybrid crosses and Mendel's law of segregation, then extends into non-Mendelian inheritance patterns such as incomplete dominance, where heterozygous offspring show a blended phenotype instead of the classic 3:1 ratio.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which molecule, found mainly in the nucleus, stores the coded hereditary instructions that are passed from parents to offspring?",
+        "options": [
+          {"id": "a", "text": "DNA", "isCorrect": true},
+          {"id": "b", "text": "Starch", "isCorrect": false},
+          {"id": "c", "text": "Haemoglobin", "isCorrect": false},
+          {"id": "d", "text": "Cellulose", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "DNA carries the coded genetic instructions that determine inherited traits and is passed from parents to offspring. Exam Tip: DNA is packaged into chromosomes inside the nucleus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A short stretch of DNA that provides the instructions for one specific inherited characteristic is known as a:",
+        "options": [
+          {"id": "a", "text": "Chromosome", "isCorrect": false},
+          {"id": "b", "text": "Gene", "isCorrect": true},
+          {"id": "c", "text": "Ribosome", "isCorrect": false},
+          {"id": "d", "text": "Cytoplasm", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A gene is a segment of DNA containing the instructions for one particular inherited trait. Exam Tip: many genes are strung together along a single chromosome.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Genes are carried along thread-like structures in the nucleus called:",
+        "options": [
+          {"id": "a", "text": "Chromosomes", "isCorrect": true},
+          {"id": "b", "text": "Mitochondria", "isCorrect": false},
+          {"id": "c", "text": "Vacuoles", "isCorrect": false},
+          {"id": "d", "text": "Lysosomes", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Chromosomes are organised thread-like structures of DNA that package and carry an organism's genes. Exam Tip: human body cells normally contain 46 chromosomes in 23 pairs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Tallness and shortness in pea plants are controlled by two alternative forms of the same gene. What term describes these alternative forms?",
+        "options": [
+          {"id": "a", "text": "Alleles", "isCorrect": true},
+          {"id": "b", "text": "Genotypes", "isCorrect": false},
+          {"id": "c", "text": "Phenotypes", "isCorrect": false},
+          {"id": "d", "text": "Gametes", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Alleles are alternative versions of the same gene that can produce different forms of a trait. Exam Tip: an organism normally carries two alleles for each gene, one from each parent.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An allele that produces its effect in the phenotype whenever it is present, even as a single copy, is termed:",
+        "options": [
+          {"id": "a", "text": "Recessive", "isCorrect": false},
+          {"id": "b", "text": "Dominant", "isCorrect": true},
+          {"id": "c", "text": "Hybrid", "isCorrect": false},
+          {"id": "d", "text": "Latent", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A dominant allele masks the effect of a recessive allele whenever both are present together. Exam Tip: dominant alleles are usually written with a capital letter, e.g. T.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An allele that only shows its effect in the phenotype when no dominant allele is present is termed:",
+        "options": [
+          {"id": "a", "text": "Dominant", "isCorrect": false},
+          {"id": "b", "text": "Recessive", "isCorrect": true},
+          {"id": "c", "text": "Heterozygous", "isCorrect": false},
+          {"id": "d", "text": "Mutant", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A recessive allele is masked whenever a dominant allele is present, so it only appears in the phenotype when two recessive copies are present together. Exam Tip: recessive traits need two copies of the recessive allele to show.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pea plant with the genotype tt, carrying two identical recessive alleles, is described as:",
+        "options": [
+          {"id": "a", "text": "Heterozygous", "isCorrect": false},
+          {"id": "b", "text": "Homozygous", "isCorrect": true},
+          {"id": "c", "text": "Hybrid", "isCorrect": false},
+          {"id": "d", "text": "Codominant", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Homozygous describes an organism carrying two identical alleles for a gene, such as tt. Exam Tip: homo- means same, hetero- means different.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pea plant with the genotype Tt, carrying one dominant and one recessive allele, is described as:",
+        "options": [
+          {"id": "a", "text": "Homozygous", "isCorrect": false},
+          {"id": "b", "text": "Heterozygous", "isCorrect": true},
+          {"id": "c", "text": "Haploid", "isCorrect": false},
+          {"id": "d", "text": "Diploid", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Heterozygous describes an organism carrying two different alleles for the same gene. Exam Tip: a heterozygous organism (Tt) shows the dominant trait but still carries the hidden recessive allele.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A genetic cross set up to study how a single characteristic, such as flower colour alone, is inherited is called a:",
+        "options": [
+          {"id": "a", "text": "Dihybrid cross", "isCorrect": false},
+          {"id": "b", "text": "Monohybrid cross", "isCorrect": true},
+          {"id": "c", "text": "Trihybrid cross", "isCorrect": false},
+          {"id": "d", "text": "No cross at all", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A monohybrid cross follows the inheritance of just one gene or trait between parents. Exam Tip: mono- means one; a dihybrid cross follows two traits at once.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two heterozygous tall pea plants (Tt x Tt) are crossed and produce 100 offspring. Approximately how many would be expected to show the short phenotype?",
+        "options": [
+          {"id": "a", "text": "25", "isCorrect": true},
+          {"id": "b", "text": "50", "isCorrect": false},
+          {"id": "c", "text": "75", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Tt x Tt produces genotypes TT, Tt, Tt, tt in a 1:2:1 ratio, so only the 1 in 4 tt offspring (about 25 of 100) are short. Exam Tip: the Mendelian 3:1 phenotype ratio means 1/4 of offspring show the recessive trait.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "According to Mendel's law of segregation, what happens to the two alleles of a gene when gametes are formed during meiosis?",
+        "options": [
+          {"id": "a", "text": "They duplicate so each gamete carries two alleles", "isCorrect": false},
+          {"id": "b", "text": "They fuse together into a single new allele", "isCorrect": false},
+          {"id": "c", "text": "They separate so that each gamete receives only one allele of the pair", "isCorrect": true},
+          {"id": "d", "text": "They remain paired together inside one gamete", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The law of segregation states that the paired alleles for a gene separate during meiosis so that each gamete carries only one allele, which is restored to a pair at fertilisation. Exam Tip: segregation happens during meiosis, not mitosis.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A pattern of inheritance that does not produce the classic 3:1 phenotype ratio, because neither allele completely masks the other, is best described as:",
+        "options": [
+          {"id": "a", "text": "Mendelian inheritance", "isCorrect": false},
+          {"id": "b", "text": "Non-Mendelian inheritance", "isCorrect": true},
+          {"id": "c", "text": "Asexual inheritance", "isCorrect": false},
+          {"id": "d", "text": "Mitotic inheritance", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Non-Mendelian inheritance covers patterns such as incomplete dominance and codominance, which do not follow simple dominant/recessive 3:1 ratios. Exam Tip: whenever a cross gives a blended or in-between offspring trait, suspect non-Mendelian inheritance.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In snapdragons, crossing a red-flowered plant with a white-flowered plant produces offspring that are ALL pink-flowered, rather than all red. What does this demonstrate?",
+        "options": [
+          {"id": "a", "text": "Red is completely dominant over white", "isCorrect": false},
+          {"id": "b", "text": "White is completely dominant over red", "isCorrect": false},
+          {"id": "c", "text": "Incomplete dominance, where the heterozygous phenotype blends the effects of both alleles", "isCorrect": true},
+          {"id": "d", "text": "A chromosomal mutation occurred in every offspring", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Because neither the red nor the white allele is fully dominant, the heterozygous offspring display an intermediate, blended colour (pink) instead of one parent colour appearing fully. Exam Tip: an in-between or blended phenotype in the offspring is the classic sign of incomplete dominance.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two pink-flowered snapdragons (heterozygotes from an incomplete dominance cross) are crossed together. What phenotype ratio is expected among their offspring?",
+        "options": [
+          {"id": "a", "text": "3 pink : 1 white", "isCorrect": false},
+          {"id": "b", "text": "3 red : 1 white", "isCorrect": false},
+          {"id": "c", "text": "1 red : 2 pink : 1 white", "isCorrect": true},
+          {"id": "d", "text": "All offspring will be pink", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The genotype ratio from crossing two heterozygotes is still 1:2:1, but because incomplete dominance gives the heterozygote its own distinct blended phenotype, the phenotype ratio matches the genotype ratio: 1 red : 2 pink : 1 white. Exam Tip: in incomplete dominance the phenotype ratio equals the genotype ratio, unlike the 3:1 seen in complete dominance.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The complete set of alleles that an organism carries for a particular gene, such as Tt or RR, is called its:",
+        "options": [
+          {"id": "a", "text": "Phenotype", "isCorrect": false},
+          {"id": "b", "text": "Genotype", "isCorrect": true},
+          {"id": "c", "text": "Karyotype", "isCorrect": false},
+          {"id": "d", "text": "Ecotype", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Genotype describes the actual alleles an organism carries for a gene, while phenotype describes the resulting observable trait. Exam Tip: genotype is written in letters (e.g. Tt); phenotype is described in words (e.g. tall).",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The molecule that carries genetic information in living organisms is __________.",
+        "options": [
+          {"id": "a", "text": "DNA", "isCorrect": true},
+          {"id": "b", "text": "RNA", "isCorrect": false},
+          {"id": "c", "text": "protein", "isCorrect": false},
+          {"id": "d", "text": "lipid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "DNA is the molecule that stores and transmits the genetic instructions of an organism. Exam Tip: DNA is located mainly in the nucleus, packaged into chromosomes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A section of DNA that codes for a particular trait is called a __________.",
+        "options": [
+          {"id": "a", "text": "gene", "isCorrect": true},
+          {"id": "b", "text": "chromosome", "isCorrect": false},
+          {"id": "c", "text": "nucleus", "isCorrect": false},
+          {"id": "d", "text": "cell membrane", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A gene is a segment of DNA that carries the instructions for one inherited characteristic. Exam Tip: many genes together make up a chromosome.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Different forms of the same gene are called __________.",
+        "options": [
+          {"id": "a", "text": "alleles", "isCorrect": true},
+          {"id": "b", "text": "genes", "isCorrect": false},
+          {"id": "c", "text": "gametes", "isCorrect": false},
+          {"id": "d", "text": "zygotes", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Alleles are the different possible versions of a single gene. Exam Tip: an organism usually inherits one allele from each parent.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An allele that is expressed even when only one copy is present is called __________.",
+        "options": [
+          {"id": "a", "text": "dominant", "isCorrect": true},
+          {"id": "b", "text": "recessive", "isCorrect": false},
+          {"id": "c", "text": "hybrid", "isCorrect": false},
+          {"id": "d", "text": "neutral", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A dominant allele always shows its effect, masking any recessive allele present with it. Exam Tip: dominant alleles are shown with a capital letter.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An allele whose effect is hidden when a dominant allele is present is called __________.",
+        "options": [
+          {"id": "a", "text": "recessive", "isCorrect": true},
+          {"id": "b", "text": "dominant", "isCorrect": false},
+          {"id": "c", "text": "homozygous", "isCorrect": false},
+          {"id": "d", "text": "heterozygous", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A recessive allele's effect is only seen when no dominant allele is present. Exam Tip: recessive alleles are shown with a lower-case letter.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An organism with two identical alleles for a gene is described as __________.",
+        "options": [
+          {"id": "a", "text": "homozygous", "isCorrect": true},
+          {"id": "b", "text": "heterozygous", "isCorrect": false},
+          {"id": "c", "text": "haploid", "isCorrect": false},
+          {"id": "d", "text": "diploid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Homozygous means having two copies of the same allele, such as TT or tt. Exam Tip: homo- means same.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An organism with two different alleles for a gene is described as __________.",
+        "options": [
+          {"id": "a", "text": "heterozygous", "isCorrect": true},
+          {"id": "b", "text": "homozygous", "isCorrect": false},
+          {"id": "c", "text": "hybridised", "isCorrect": false},
+          {"id": "d", "text": "mutated", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Heterozygous means having one dominant and one recessive allele for the same gene, such as Tt. Exam Tip: hetero- means different.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A genetic cross studying the inheritance of only one trait is called a __________ cross.",
+        "options": [
+          {"id": "a", "text": "monohybrid", "isCorrect": true},
+          {"id": "b", "text": "dihybrid", "isCorrect": false},
+          {"id": "c", "text": "trihybrid", "isCorrect": false},
+          {"id": "d", "text": "test", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A monohybrid cross tracks the inheritance of a single gene between two parents. Exam Tip: mono- means one trait only.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The actual genetic (allele) make-up of an organism is called its __________.",
+        "options": [
+          {"id": "a", "text": "genotype", "isCorrect": true},
+          {"id": "b", "text": "phenotype", "isCorrect": false},
+          {"id": "c", "text": "karyotype", "isCorrect": false},
+          {"id": "d", "text": "ecotype", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Genotype is the term for the specific alleles an organism carries for a gene. Exam Tip: genotype (alleles) produces the phenotype (appearance).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Differences in characteristics among individuals of the same species are collectively called __________.",
+        "options": [
+          {"id": "a", "text": "variation", "isCorrect": true},
+          {"id": "b", "text": "heredity", "isCorrect": false},
+          {"id": "c", "text": "mutation only", "isCorrect": false},
+          {"id": "d", "text": "reproduction", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Variation describes the natural range of differences found among individuals of the same species. Exam Tip: variation can be genetic, environmental, or a mix of both.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "DNA carries the genetic information of an organism.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "DNA is the molecule that stores and passes on hereditary instructions from parents to offspring.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A gene and a chromosome mean exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A chromosome is a structure made of DNA that carries many genes strung together; a gene is just one segment coding for one trait.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A dominant allele's effect is expressed even when only one copy is present.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A single copy of a dominant allele is enough to mask any recessive allele and show its own effect in the phenotype.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A homozygous organism has two different alleles for a gene.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A homozygous organism has two identical alleles for a gene; two different alleles describe a heterozygous organism.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A monohybrid cross between two heterozygous parents (Tt x Tt) typically gives a 3:1 phenotype ratio.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Tt x Tt produces genotypes TT, Tt, Tt and tt, and since T is dominant this gives a 3 dominant : 1 recessive phenotype ratio.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mendel's law of segregation states that both alleles for a gene always stay together in the same gamete.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The law of segregation states the opposite: the two alleles separate during gamete formation so each gamete gets only one allele.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Non-Mendelian inheritance includes patterns like incomplete dominance, which do not follow the simple 3:1 ratio.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Incomplete dominance produces a blended heterozygous phenotype, so crosses give ratios such as 1:2:1 rather than the Mendelian 3:1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Genetic variation cannot be passed from parents to offspring.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Genetic variation is coded in the DNA and alleles an organism carries, so it can be inherited by offspring.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Genotype refers to the genetic make-up of an organism, while phenotype refers to its observable characteristics.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Genotype is the set of alleles carried by an organism, and phenotype is the physical trait produced by that genotype.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In incomplete dominance, the heterozygous offspring show a phenotype that blends the traits of both parents.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Because neither allele is fully dominant in incomplete dominance, the heterozygote displays an intermediate phenotype, such as pink flowers from red and white parents.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Gene",
+        "options": [],
+        "correctAnswer": "A section of DNA that carries the coded instructions for one particular inherited characteristic.",
+        "explanation": "Genes are found at specific locations (loci) along chromosomes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Allele",
+        "options": [],
+        "correctAnswer": "One of the alternative forms of a gene, occupying the same position on a chromosome, that can produce different versions of a trait.",
+        "explanation": "An organism normally carries two alleles for each gene, one inherited from each parent.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mendel's law of segregation",
+        "options": [],
+        "correctAnswer": "The two alleles of a gene separate from each other during gamete formation (meiosis), so each gamete carries only one allele of the pair.",
+        "explanation": "At fertilisation, the offspring receives one allele from each parent, restoring the paired condition.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Monohybrid cross",
+        "options": [],
+        "correctAnswer": "A genetic cross that studies how a single characteristic, controlled by one gene, is inherited between parents.",
+        "explanation": "A classic example is Mendel's cross of tall and short pea plants for the height gene alone.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Homozygous",
+        "options": [],
+        "correctAnswer": "Describes an organism carrying two identical alleles for a gene, such as TT or tt.",
+        "explanation": "Homozygous organisms breed true for that trait because they can only pass on one type of allele.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Heterozygous",
+        "options": [],
+        "correctAnswer": "Describes an organism carrying two different alleles for a gene, such as Tt.",
+        "explanation": "A heterozygous organism shows the dominant trait but still carries the recessive allele, which can be passed to offspring.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Incomplete dominance",
+        "options": [],
+        "correctAnswer": "A non-Mendelian pattern of inheritance in which neither allele is fully dominant, so the heterozygous offspring shows a blended, intermediate phenotype.",
+        "explanation": "For example, crossing red and white snapdragons produces pink flowers, not a 3:1 red-to-white ratio.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Non-Mendelian inheritance",
+        "options": [],
+        "correctAnswer": "Any pattern of inheritance, such as incomplete dominance or codominance, that does not follow the simple dominant/recessive rules and 3:1 ratio described by Mendel.",
+        "explanation": "These patterns arise because alleles interact in ways other than one being completely dominant over the other.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Genotype",
+        "options": [],
+        "correctAnswer": "The specific combination of alleles an organism carries for a particular gene, written in letters such as Tt or RR.",
+        "explanation": "The genotype, together with the environment, produces the organism's phenotype.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Phenotype",
+        "options": [],
+        "correctAnswer": "The observable physical characteristic or appearance of an organism that results from its genotype.",
+        "explanation": "For example, TT and Tt genotypes can both give the same tall phenotype when T is completely dominant, but under incomplete dominance each genotype gives its own distinct phenotype.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "In pea plants, tallness (T) is dominant over shortness (t). Two heterozygous tall plants (Tt x Tt) are crossed. What are the expected genotype and phenotype ratios of their offspring?",
+        "options": [
+          {"id": "a", "text": "Genotype ratio 1 TT : 2 Tt : 1 tt; phenotype ratio 3 tall : 1 short", "isCorrect": true},
+          {"id": "b", "text": "Genotype ratio 1:1; phenotype ratio 1:1", "isCorrect": false},
+          {"id": "c", "text": "All offspring will be short", "isCorrect": false},
+          {"id": "d", "text": "All offspring will be TT", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Crossing Tt x Tt gives TT, Tt, Tt, tt in a 1:2:1 genotype ratio, and since T is completely dominant both TT and Tt plants appear tall, giving a 3 tall : 1 short phenotype ratio. Exam Tip: memorise both the 1:2:1 genotype ratio and the 3:1 phenotype ratio for a monohybrid cross of two heterozygotes.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A farmer notices that crossing a red-flowered plant with a white-flowered plant of the same species consistently produces ALL pink-flowered offspring, rather than the expected 3:1 red-to-white ratio. Which genetics concept, other than simple dominance, explains this observation?",
+        "options": [
+          {"id": "a", "text": "This is standard Mendelian dominance with red fully dominant", "isCorrect": false},
+          {"id": "b", "text": "This is non-Mendelian inheritance (incomplete dominance), where neither allele is fully dominant, so heterozygous offspring show a blended phenotype: pink", "isCorrect": true},
+          {"id": "c", "text": "White must be dominant over red in all cases", "isCorrect": false},
+          {"id": "d", "text": "This result is impossible and must be an error", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because neither allele is fully dominant, the heterozygous offspring display an intermediate blended phenotype instead of one parent colour fully appearing, which is the hallmark of incomplete dominance. Exam Tip: whenever offspring show an in-between trait rather than a 3:1 ratio, suspect incomplete dominance.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two siblings raised in the same household with the same diet have noticeably different heights and skin tones. How can BOTH genetic and environmental variation account for these differences?",
+        "options": [
+          {"id": "a", "text": "Only genetics can explain any differences between siblings", "isCorrect": false},
+          {"id": "b", "text": "Both genetic variation (each sibling inherits a different combination of alleles from their parents) and environmental factors (such as differences in individual health, sun exposure, or nutrition uptake) can contribute to visible differences, even among siblings raised together", "isCorrect": true},
+          {"id": "c", "text": "Only environment can explain any differences between siblings", "isCorrect": false},
+          {"id": "d", "text": "Siblings must always be identical unless something is wrong", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Except for identical twins, siblings inherit different combinations of alleles from their parents during gamete formation and fertilisation, and their environmental exposure can further add to the visible differences. Exam Tip: real-world variation is rarely explained by genetics alone or environment alone.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

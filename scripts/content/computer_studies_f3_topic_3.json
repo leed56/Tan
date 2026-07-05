@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_computer_studies_topic_3",
+  "topicName": "Introduction to Programming",
+  "order": 3,
+  "description": "An introduction to computer programming covering programming languages, translators, source and object code, basic concepts such as variables, data types and operators, control structures, the steps of writing and running a program, and common programming errors.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is a computer program?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A set of instructions that tells a computer what to do",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A physical part of the computer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The screen that displays results",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A type of computer memory",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A computer program is a set of instructions written in a programming language that directs the computer to perform a specific task.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Programming is best defined as the process of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Assembling computer hardware components",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Writing instructions to solve a problem using a computer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Typing documents on a computer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Connecting a computer to the internet",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Programming is the activity of writing, testing and maintaining the instructions (code) that make a computer solve a problem.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a low-level programming language?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Python",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Java",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Assembly language",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Visual Basic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Assembly language is a low-level language that is close to machine code, while Python, Java and Visual Basic are high-level languages.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Machine language is written using:",
+        "options": [
+          {
+            "id": "a",
+            "text": "English-like words",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Only 0s and 1s (binary)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Short mnemonics like ADD and MOV",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Flowchart symbols",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Machine language is the only language the computer understands directly and is made up entirely of binary digits, 0s and 1s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which translator converts assembly language into machine code?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Compiler",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Interpreter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Assembler",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Editor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "An assembler is the translator that converts assembly language instructions into machine code.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the main difference between a compiler and an interpreter?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A compiler translates the whole program at once, while an interpreter translates and runs it line by line",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A compiler only works with low-level languages",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "An interpreter cannot find errors in a program",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A compiler runs programs without translating them",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A compiler translates the entire source code into object code before running, whereas an interpreter translates and executes the program one statement at a time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Source code is best described as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The binary code the computer runs directly",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The program written by the programmer in a programming language",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The output produced by a program",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A type of computer hardware",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Source code is the human-readable program written in a programming language before it is translated into object code.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A named storage location whose value can change during program execution is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Constant",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Variable",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Operator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Keyword",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A variable is a named memory location that holds a value which can be changed while the program runs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which data type would best store the value TRUE or FALSE?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Integer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "String",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Boolean",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Real",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A Boolean data type stores only one of two logical values: true or false.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a relational operator?",
+        "options": [
+          {
+            "id": "a",
+            "text": "+",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": ">",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "AND",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "*",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The greater-than sign (>) is a relational (comparison) operator. The plus and asterisk are arithmetic operators and AND is a logical operator.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which control structure repeats a block of instructions several times?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Selection",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Iteration",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Declaration",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Iteration (looping) repeats a set of instructions as long as a condition is met.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An IF...THEN statement in a program is an example of which control structure?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sequence",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Selection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Iteration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Output",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Selection allows a program to choose between different paths based on a condition, as done by an IF statement.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A mistake that breaks the rules (grammar) of a programming language is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Logic error",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Runtime error",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Syntax error",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Hardware error",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A syntax error occurs when the code violates the grammar rules of the programming language, such as a missing keyword or punctuation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The process of finding and removing errors from a program is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Compiling",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Debugging",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Editing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Formatting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Debugging is the process of locating and correcting errors (bugs) in a program.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which data type is most suitable for storing a person's name?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Integer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Boolean",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "String",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Real",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A string data type stores a sequence of characters such as letters, making it suitable for names and text.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A _____ is a set of instructions that directs a computer to perform a task.",
+        "options": [
+          {
+            "id": "a",
+            "text": "program",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "compiler",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "algorithm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "database",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A computer program is a set of instructions that tells the computer what to do.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The only language a computer understands directly is _____ language.",
+        "options": [
+          {
+            "id": "a",
+            "text": "assembly",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "machine",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "high-level",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "natural",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Machine language, made of binary 0s and 1s, is the only language the processor executes directly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A translator that converts an entire program into object code at once is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "interpreter",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "assembler",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "compiler",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "linker",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A compiler translates the whole source program into object code before it is run.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A translator that converts and executes a program line by line is called an _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "assembler",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "compiler",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "editor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "interpreter",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "An interpreter translates and runs a program one statement at a time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The machine-readable code produced after translating source code is called _____ code.",
+        "options": [
+          {
+            "id": "a",
+            "text": "object",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "source",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "binary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "pseudo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Object code is the translated, machine-readable form of the source code.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A storage location whose value cannot change during program execution is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "variable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "constant",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "operator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "function",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A constant holds a fixed value that stays the same throughout the program.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The data type used to store whole numbers is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "character",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "boolean",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "integer",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "real",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "An integer data type stores whole numbers with no fractional part.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Operators such as AND, OR and NOT are known as _____ operators.",
+        "options": [
+          {
+            "id": "a",
+            "text": "arithmetic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "relational",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "assignment",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "logical",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "AND, OR and NOT are logical operators used to combine or negate conditions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The control structure that runs instructions one after another in order is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "sequence",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "selection",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "iteration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "recursion",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "In a sequence structure, statements are carried out in the order they are written.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An error that produces wrong results even though the program runs is called a _____ error.",
+        "options": [
+          {
+            "id": "a",
+            "text": "syntax",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "logic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "runtime",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "linker",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A logic error does not stop the program but causes it to give incorrect output.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "High-level languages are easier for humans to read and write than machine language.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "High-level languages use English-like words and are closer to human language, making them easier to understand than binary machine code.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A computer can run high-level language source code directly without any translation.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "High-level source code must first be translated into machine code by a compiler or interpreter before the computer can run it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An interpreter translates the whole program at once before running it.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An interpreter translates and executes a program line by line, not all at once; it is the compiler that translates the whole program first.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Assembly language uses short mnemonics such as ADD and MOV instead of binary.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Assembly language uses mnemonic codes that represent machine instructions, making it more readable than pure binary.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A variable can hold different values at different times during program execution.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Unlike a constant, a variable's stored value can be changed while the program runs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The real (float) data type is used to store numbers with decimal points.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The real or floating-point data type stores numbers that have a fractional part, such as 3.14.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A syntax error always causes the program to give the wrong answer but still run successfully.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A syntax error prevents the program from being translated or run at all; it is a logic error that produces wrong answers while the program runs.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Input statements are used to receive data into a program from the user.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Input statements collect data, for example from the keyboard, so the program can process it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Writing clear comments and using meaningful variable names is a good programming practice.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Comments and meaningful names make a program easier to read, understand and maintain.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A runtime error occurs only after a program has finished running successfully.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A runtime error happens while the program is running, for example dividing by zero, causing it to stop or crash.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State the difference between low-level and high-level programming languages.",
+        "options": [],
+        "correctAnswer": "Low-level languages are close to machine code and hard for humans to read, while high-level languages are English-like and easier to read and write.",
+        "explanation": "Low-level languages (machine and assembly) are machine-oriented, whereas high-level languages are human-oriented and need a translator.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two examples of high-level programming languages.",
+        "options": [],
+        "correctAnswer": "Examples include Python, Java, C, Pascal, Visual Basic and BASIC.",
+        "explanation": "High-level languages use English-like syntax; any two such as Python and Java are acceptable.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the three types of language translators.",
+        "options": [],
+        "correctAnswer": "Assembler, compiler and interpreter.",
+        "explanation": "An assembler converts assembly code, while compilers and interpreters convert high-level code into machine code.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between source code and object code.",
+        "options": [],
+        "correctAnswer": "Source code is the program written by the programmer in a programming language, while object code is the machine-readable code produced after translation.",
+        "explanation": "Source code is human-readable; object code is the translated machine form the computer can run.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the three main program control structures.",
+        "options": [],
+        "correctAnswer": "Sequence, selection and iteration (looping).",
+        "explanation": "These three structures control the order in which program statements are carried out.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name three data types commonly used in programming.",
+        "options": [],
+        "correctAnswer": "Integer, real (float), character, string and boolean are common data types; any three are acceptable.",
+        "explanation": "Each data type defines the kind of values a variable can store and how they are handled.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the three categories of operators used in programming.",
+        "options": [],
+        "correctAnswer": "Arithmetic, relational (comparison) and logical operators.",
+        "explanation": "Arithmetic operators do calculations, relational operators compare values, and logical operators combine conditions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Outline the main steps of writing and running a program.",
+        "options": [],
+        "correctAnswer": "Write the code, edit it, translate or compile it, run it, then debug to remove errors.",
+        "explanation": "These steps move a program from writing through translation and execution to correcting any errors found.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the three common types of program errors.",
+        "options": [],
+        "correctAnswer": "Syntax errors, logic errors and runtime errors.",
+        "explanation": "Syntax errors break language rules, logic errors give wrong results, and runtime errors occur while the program runs.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two good programming practices a programmer should follow.",
+        "options": [],
+        "correctAnswer": "Use meaningful variable names and add clear comments; other examples include proper indentation and testing the program.",
+        "explanation": "Good practices make programs easier to read, understand, test and maintain.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A student writes a program to find the average of two numbers but uses the formula average = a + b / 2 instead of (a + b) / 2. The program runs but gives a wrong answer. What type of error is this?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Syntax error",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Logic error",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Runtime error",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hardware error",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The program runs without crashing but produces an incorrect result because the formula is wrong, which is a logic error.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A program reads a divisor from the user and divides a number by it. When the user enters 0, the program suddenly stops and shows an error while running. This is an example of a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Syntax error caught before running",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Logic error that gives a wrong answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Runtime error that occurs during execution",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Translation error in the compiler",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Dividing by zero is a fault that appears only while the program is running, making it a runtime error.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A developer wants to distribute one program to many users who should not be able to see or change the original code, and the program should start quickly without translating again each time. Which translator approach best fits this need?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Use an interpreter so the source code runs line by line each time",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Use a compiler to translate the source into object code once and share the object code",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Distribute the assembly mnemonics to the users",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Share the machine language manually typed in binary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A compiler produces object code once; sharing only the object code hides the source and lets the program run without re-translation, unlike an interpreter that needs the source each time.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

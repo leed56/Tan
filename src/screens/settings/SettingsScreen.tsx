@@ -6,7 +6,6 @@ import {
   ScrollView,
   Switch,
   TouchableOpacity,
-  Alert,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -16,51 +15,61 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useAppThemeStore } from '../../store/appThemeStore';
 import { useAuth } from '../../hooks/useAuth';
+import { confirmAction, notify } from '../../utils/confirm';
+import { openWhatsApp } from '../../utils/support';
+import { deleteAccount } from '../../services/deleteAccountService';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
 
 type Props = StackScreenProps<ProfileStackParamList, 'Settings'>;
+
+const WHATSAPP_GREEN = '#25D366';
 
 export function SettingsScreen({ navigation }: Props) {
   const { isDark, toggle } = useAppThemeStore();
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [studyReminders, setStudyReminders] = useState(true);
   const [leaderboardAlerts, setLeaderboardAlerts] = useState(false);
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
+  const [deleting, setDeleting] = useState(false);
+  const { isPremium } = useSubscriptionStore();
+  const premium = isPremium();
 
   const handleLogout = () => {
-    Alert.alert(
-      'Log Out',
-      'Are you sure you want to log out?',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Log Out',
-          style: 'destructive',
-          onPress: logout,
-        },
-      ],
-    );
+    // Alert.alert's buttons are ignored on React Native Web, so the confirm
+    // never fired there — confirmAction uses window.confirm on web.
+    confirmAction('Log Out', 'Are you sure you want to log out?', 'Log Out', logout);
   };
 
   const handleSupport = () => {
     // TODO: Phase 2 — open in-app support chat or email link
-    Alert.alert('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
+    notify('Support', 'support@somaaiedu.com\n\nWe respond within 24 hours.');
   };
 
+  const handleWhatsApp = () => openWhatsApp('Hi Soma, I need help with the app.');
+
+  const comingSoon = (feature: string) => () =>
+    notify(feature, "This is on the way — we're adding it in the next update.");
+
   const handleDeleteAccount = () => {
-    Alert.alert(
+    confirmAction(
       'Delete Account',
-      'This will permanently delete all your data. This cannot be undone.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Delete',
-          style: 'destructive',
-          onPress: () => {
-            // TODO: Phase 2 — delete Firestore user data, revoke Firebase auth
-            logout();
-          },
-        },
-      ],
+      'This permanently deletes your account and all your data — progress, XP, badges, and family profiles. This cannot be undone.',
+      'Delete',
+      async () => {
+        setDeleting(true);
+        try {
+          if (user?.uid) await deleteAccount(user.uid);
+          // Clears local stores and returns to the Welcome screen.
+          logout();
+        } catch {
+          notify(
+            'Could not delete account',
+            'Please sign in again and retry from Settings, or contact support on WhatsApp.',
+          );
+        } finally {
+          setDeleting(false);
+        }
+      },
     );
   };
 
@@ -97,7 +106,7 @@ export function SettingsScreen({ navigation }: Props) {
             icon="notifications"
             iconColor={COLORS.secondary}
             label="Push Notifications"
-            description="Allow Soma AI to send notifications"
+            description="Allow Soma to send notifications"
             value={notificationsEnabled}
             onToggle={() => {
               // TODO: Phase 2 — request/revoke notification permission
@@ -133,38 +142,37 @@ export function SettingsScreen({ navigation }: Props) {
             icon="shield-checkmark"
             iconColor={COLORS.success}
             label="Privacy Policy"
-            onPress={() => {
-              // TODO: Phase 2 — open WebView with privacy policy URL
-            }}
+            onPress={() => navigation.navigate('Legal', { doc: 'privacy' })}
           />
           <SettingsRow
             icon="document-text"
             iconColor={COLORS.secondary}
             label="Terms of Service"
-            onPress={() => {
-              // TODO: Phase 2 — open WebView with ToS URL
-            }}
+            onPress={() => navigation.navigate('Legal', { doc: 'terms' })}
           />
           <SettingsRow
             icon="star"
             iconColor={COLORS.gold}
-            label="Upgrade to Premium"
-            onPress={() => {
-              // TODO: Phase 2 — navigate to subscription screen
-            }}
-            highlight
+            label={premium ? 'Manage Subscription' : 'Upgrade to Premium'}
+            onPress={() => navigation.navigate(premium ? 'SubscriptionStatus' : 'SubscriptionScreen')}
+            highlight={!premium}
           />
         </SettingsSection>
 
         {/* Support */}
         <SettingsSection title="Support">
           <SettingsRow
+            icon="logo-whatsapp"
+            iconColor={WHATSAPP_GREEN}
+            label="WhatsApp Support"
+            description="Chat with our team — fastest reply"
+            onPress={handleWhatsApp}
+          />
+          <SettingsRow
             icon="help-circle"
             iconColor={COLORS.primary}
             label="Help & FAQ"
-            onPress={() => {
-              // TODO: Phase 2 — open FAQ screen
-            }}
+            onPress={comingSoon('Help & FAQ')}
           />
           <SettingsRow
             icon="chatbubble-ellipses"
@@ -176,9 +184,7 @@ export function SettingsScreen({ navigation }: Props) {
             icon="star-half"
             iconColor={COLORS.gold}
             label="Rate the App"
-            onPress={() => {
-              // TODO: Phase 2 — open app store rating
-            }}
+            onPress={comingSoon('Rate the App')}
           />
         </SettingsSection>
 
@@ -191,8 +197,9 @@ export function SettingsScreen({ navigation }: Props) {
             size="md"
           />
           <AppButton
-            title="Delete Account"
+            title={deleting ? 'Deleting…' : 'Delete Account'}
             onPress={handleDeleteAccount}
+            loading={deleting}
             variant="danger"
             size="md"
           />
@@ -200,9 +207,9 @@ export function SettingsScreen({ navigation }: Props) {
 
         {/* App version */}
         <View style={styles.versionBlock}>
-          <Text style={styles.versionText}>Soma AI · Version 1.0.0 (Phase 1)</Text>
+          <Text style={styles.versionText}>Soma · Version 1.0.0 (Phase 1)</Text>
           <Text style={styles.versionSub}>Made with ❤️ for Tanzania</Text>
-          <Text style={styles.versionSub}>© 2025 Soma AI Education</Text>
+          <Text style={styles.versionSub}>© 2026 Soma Education</Text>
         </View>
       </ScrollView>
     </ScreenContainer>
@@ -259,12 +266,14 @@ function SettingsRow({
   icon,
   iconColor,
   label,
+  description,
   onPress,
   highlight = false,
 }: {
   icon: string;
   iconColor: string;
   label: string;
+  description?: string;
   onPress: () => void;
   highlight?: boolean;
 }) {
@@ -273,9 +282,10 @@ function SettingsRow({
       <View style={[sStyles.iconBox, { backgroundColor: `${iconColor}20` }]}>
         <Ionicons name={icon as keyof typeof Ionicons.glyphMap} size={18} color={iconColor} />
       </View>
-      <Text style={[sStyles.rowLabel, sStyles.rowFlex, highlight && { color: COLORS.gold }]}>
-        {label}
-      </Text>
+      <View style={sStyles.rowContent}>
+        <Text style={[sStyles.rowLabel, highlight && { color: COLORS.gold }]}>{label}</Text>
+        {description ? <Text style={sStyles.rowDesc}>{description}</Text> : null}
+      </View>
       <Ionicons name="chevron-forward" size={16} color={COLORS.textMuted} />
     </TouchableOpacity>
   );

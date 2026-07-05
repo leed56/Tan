@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_physics_topic_6",
-  "topicName": "Reflection of Light and Curved Mirrors",
+  "topicName": "Light",
   "order": 6,
-  "description": "A study of how light reflects from plane and curved mirrors, the laws of reflection, image formation, and the everyday uses of concave and convex mirrors.",
+  "description": "Explains the nature and behaviour of light, including luminous and non-luminous objects, transparent, translucent and opaque materials, reflection, refraction and dispersion, mirrors, and optical instruments such as microscopes, telescopes, cameras and periscopes.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What does the law of reflection state about the angle of incidence and the angle of reflection?",
+        "questionText": "An object that produces its own light is called a:",
         "options": [
-          {"id": "a", "text": "They are always equal to each other", "isCorrect": true},
-          {"id": "b", "text": "The angle of incidence is always larger", "isCorrect": false},
-          {"id": "c", "text": "The angle of reflection is always larger", "isCorrect": false},
-          {"id": "d", "text": "Their sum is always 90 degrees", "isCorrect": false}
+          {"id": "a", "text": "Luminous object", "isCorrect": true},
+          {"id": "b", "text": "Non-luminous object", "isCorrect": false},
+          {"id": "c", "text": "Transparent object", "isCorrect": false},
+          {"id": "d", "text": "Opaque object", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The first law of reflection states that the angle of incidence is equal to the angle of reflection.",
+        "explanation": "An object producing its own light is called a luminous object. Exam Tip: The Sun and a candle flame are luminous. The Moon is non-luminous - it reflects sunlight.",
         "difficulty": "easy"
       },
       {
-        "questionText": "From which point on a reflecting surface are the angles of incidence and reflection measured?",
+        "questionText": "Light travels in:",
         "options": [
-          {"id": "a", "text": "From the reflecting surface itself", "isCorrect": false},
-          {"id": "b", "text": "From the normal at the point of incidence", "isCorrect": true},
-          {"id": "c", "text": "From the edge of the mirror", "isCorrect": false},
-          {"id": "d", "text": "From the principal axis", "isCorrect": false}
+          {"id": "a", "text": "Curved paths", "isCorrect": false},
+          {"id": "b", "text": "Straight lines", "isCorrect": true},
+          {"id": "c", "text": "Circles", "isCorrect": false},
+          {"id": "d", "text": "Zig-zags", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Both angles are measured from the normal, which is the line drawn perpendicular to the surface at the point where the ray strikes.",
+        "explanation": "Light travels in straight lines, known as rectilinear propagation. Exam Tip: This straight-line travel explains shadows, eclipses and pinhole cameras.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which type of reflection occurs when parallel rays strike a smooth, polished surface such as a plane mirror?",
+        "questionText": "A material that allows light to pass through it clearly, so objects can be seen distinctly, is called:",
         "options": [
-          {"id": "a", "text": "Diffuse reflection", "isCorrect": false},
-          {"id": "b", "text": "Irregular reflection", "isCorrect": false},
-          {"id": "c", "text": "Regular reflection", "isCorrect": true},
-          {"id": "d", "text": "Scattered reflection", "isCorrect": false}
+          {"id": "a", "text": "Opaque", "isCorrect": false},
+          {"id": "b", "text": "Transparent", "isCorrect": true},
+          {"id": "c", "text": "Translucent", "isCorrect": false},
+          {"id": "d", "text": "Luminous", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Clear glass and water let light through with a clear view, making them transparent. Exam Tip: Transparent = clear view; translucent = blurry view; opaque = no light through.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A material that does NOT allow any light to pass through it is called:",
+        "options": [
+          {"id": "a", "text": "Transparent", "isCorrect": false},
+          {"id": "b", "text": "Translucent", "isCorrect": false},
+          {"id": "c", "text": "Opaque", "isCorrect": true},
+          {"id": "d", "text": "Luminous", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Regular reflection happens on smooth surfaces, where parallel incident rays remain parallel after reflection.",
+        "explanation": "No light passes through an opaque material at all. Exam Tip: Opaque materials (wood, metal, brick) block all light and cast sharp shadows.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Why can you see your face in a smooth mirror but not on a rough wall painted the same colour?",
+        "questionText": "The bouncing back of light when it hits a surface is called:",
         "options": [
-          {"id": "a", "text": "The wall absorbs all light", "isCorrect": false},
-          {"id": "b", "text": "The rough wall causes diffuse reflection, scattering rays in many directions", "isCorrect": true},
-          {"id": "c", "text": "The wall does not reflect any light at all", "isCorrect": false},
-          {"id": "d", "text": "The mirror does not obey the laws of reflection", "isCorrect": false}
+          {"id": "a", "text": "Refraction", "isCorrect": false},
+          {"id": "b", "text": "Reflection", "isCorrect": true},
+          {"id": "c", "text": "Dispersion", "isCorrect": false},
+          {"id": "d", "text": "Absorption", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A rough surface scatters reflected rays in many directions (diffuse reflection), so no clear image forms.",
-        "difficulty": "medium"
+        "explanation": "Light bouncing back off a surface is called reflection. Exam Tip: Reflection lets us see objects and is the basis of how mirrors work.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following is NOT a property of an image formed by a plane mirror?",
+        "questionText": "The bending of light as it passes from one transparent medium into another (e.g. from air into water) is called:",
         "options": [
-          {"id": "a", "text": "It is virtual", "isCorrect": false},
-          {"id": "b", "text": "It is the same size as the object", "isCorrect": false},
-          {"id": "c", "text": "It is laterally inverted", "isCorrect": false},
-          {"id": "d", "text": "It is always smaller than the object", "isCorrect": true}
-        ],
-        "correctAnswer": "d",
-        "explanation": "A plane mirror image is virtual, upright, the same size as the object, and laterally inverted; it is never smaller.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An object is placed 8 cm in front of a plane mirror. How far is the image behind the mirror?",
-        "options": [
-          {"id": "a", "text": "4 cm", "isCorrect": false},
-          {"id": "b", "text": "8 cm", "isCorrect": true},
-          {"id": "c", "text": "16 cm", "isCorrect": false},
-          {"id": "d", "text": "0 cm", "isCorrect": false}
+          {"id": "a", "text": "Reflection", "isCorrect": false},
+          {"id": "b", "text": "Refraction", "isCorrect": true},
+          {"id": "c", "text": "Dispersion", "isCorrect": false},
+          {"id": "d", "text": "Diffusion", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "In a plane mirror the image distance behind the mirror equals the object distance in front, so the image is 8 cm behind.",
+        "explanation": "The bending of light as it passes between two transparent media is called refraction. Exam Tip: Refraction makes a straw look bent in a glass of water.",
         "difficulty": "medium"
       },
       {
-        "questionText": "What is the term for the point on the principal axis through which all rays parallel to the axis pass after reflection from a concave mirror?",
+        "questionText": "The splitting of white light into its component colours, as seen in a rainbow, is called:",
         "options": [
-          {"id": "a", "text": "Centre of curvature", "isCorrect": false},
-          {"id": "b", "text": "Pole", "isCorrect": false},
-          {"id": "c", "text": "Focal point", "isCorrect": true},
-          {"id": "d", "text": "Vertex", "isCorrect": false}
+          {"id": "a", "text": "Reflection", "isCorrect": false},
+          {"id": "b", "text": "Refraction", "isCorrect": false},
+          {"id": "c", "text": "Dispersion", "isCorrect": true},
+          {"id": "d", "text": "Absorption", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The focal point (principal focus) is where rays parallel to the principal axis converge after reflection from a concave mirror.",
-        "difficulty": "easy"
+        "explanation": "Splitting white light into its component colours is called dispersion. Exam Tip: A prism disperses white light into a spectrum: ROYGBIV.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "Which mirror is also known as a converging mirror?",
+        "questionText": "In a plane mirror, the image formed is:",
+        "options": [
+          {"id": "a", "text": "Real and inverted", "isCorrect": false},
+          {"id": "b", "text": "Virtual, upright and the same size as the object", "isCorrect": true},
+          {"id": "c", "text": "Real and magnified", "isCorrect": false},
+          {"id": "d", "text": "Virtual and smaller", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A plane mirror forms an image that is virtual (cannot be caught on a screen), upright, and the same size as the object. Exam Tip: Plane mirror image: virtual, upright, laterally inverted, same size, same distance behind as object in front.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A curved mirror that curves inward, like the inside of a spoon, is called a:",
         "options": [
           {"id": "a", "text": "Convex mirror", "isCorrect": false},
           {"id": "b", "text": "Concave mirror", "isCorrect": true},
           {"id": "c", "text": "Plane mirror", "isCorrect": false},
-          {"id": "d", "text": "Flat mirror", "isCorrect": false}
+          {"id": "d", "text": "Plain glass", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A concave mirror brings parallel rays together at a focus, so it is called a converging mirror.",
+        "explanation": "A mirror that curves inward, like the inside of a spoon, is a concave mirror. Exam Tip: \"Concave = cave\" (curves inward). Used in torches, headlights, shaving mirrors.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What is the relationship between the radius of curvature (R) and the focal length (f) of a curved mirror?",
+        "questionText": "A curved mirror that curves outward, like the back of a spoon, is called a:",
         "options": [
-          {"id": "a", "text": "R = f", "isCorrect": false},
-          {"id": "b", "text": "R = 2f", "isCorrect": true},
-          {"id": "c", "text": "f = 2R", "isCorrect": false},
-          {"id": "d", "text": "R = 4f", "isCorrect": false}
+          {"id": "a", "text": "Concave mirror", "isCorrect": false},
+          {"id": "b", "text": "Convex mirror", "isCorrect": true},
+          {"id": "c", "text": "Plane mirror", "isCorrect": false},
+          {"id": "d", "text": "Prism", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "For a curved mirror the radius of curvature is twice the focal length, so R = 2f.",
-        "difficulty": "medium"
+        "explanation": "A mirror that curves outward, like the back of a spoon, is a convex mirror. Exam Tip: Convex mirrors give a wide field of view - used as car side mirrors.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A concave mirror has a radius of curvature of 30 cm. What is its focal length?",
+        "questionText": "Which optical instrument uses lenses to magnify very small objects such as cells?",
         "options": [
-          {"id": "a", "text": "60 cm", "isCorrect": false},
-          {"id": "b", "text": "30 cm", "isCorrect": false},
-          {"id": "c", "text": "15 cm", "isCorrect": true},
-          {"id": "d", "text": "7.5 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "Since f = R/2, the focal length is 30/2 = 15 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What kind of image does a convex mirror always form of a real object?",
-        "options": [
-          {"id": "a", "text": "Real, inverted and magnified", "isCorrect": false},
-          {"id": "b", "text": "Virtual, upright and diminished", "isCorrect": true},
-          {"id": "c", "text": "Real, upright and the same size", "isCorrect": false},
-          {"id": "d", "text": "Virtual, inverted and magnified", "isCorrect": false}
+          {"id": "a", "text": "Telescope", "isCorrect": false},
+          {"id": "b", "text": "Microscope", "isCorrect": true},
+          {"id": "c", "text": "Periscope", "isCorrect": false},
+          {"id": "d", "text": "Camera", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A convex (diverging) mirror always forms a virtual, upright and diminished image of a real object.",
+        "explanation": "A microscope uses lenses to magnify very small, nearby objects such as cells. Exam Tip: Microscope = small, near objects; telescope = distant, large objects.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Why are convex mirrors used as driving (rear-view) and shop security mirrors?",
+        "questionText": "Which optical instrument is used to view distant objects such as stars and planets?",
         "options": [
-          {"id": "a", "text": "They magnify objects so they look closer", "isCorrect": false},
-          {"id": "b", "text": "They give a wide field of view", "isCorrect": true},
-          {"id": "c", "text": "They form real images on a screen", "isCorrect": false},
-          {"id": "d", "text": "They invert the image for safety", "isCorrect": false}
+          {"id": "a", "text": "Microscope", "isCorrect": false},
+          {"id": "b", "text": "Telescope", "isCorrect": true},
+          {"id": "c", "text": "Magnifying glass", "isCorrect": false},
+          {"id": "d", "text": "Periscope", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Convex mirrors diverge reflected rays, allowing a wider area to be seen in a small mirror.",
+        "explanation": "A telescope collects light from far away and magnifies distant objects such as stars and planets. Exam Tip: Telescope = far away; microscope = very close and small.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Where must an object be placed in front of a concave mirror to produce a magnified, upright, virtual image (as in a shaving or make-up mirror)?",
+        "questionText": "A camera forms an image on its film or sensor that is:",
         "options": [
-          {"id": "a", "text": "Beyond the centre of curvature", "isCorrect": false},
-          {"id": "b", "text": "At the centre of curvature", "isCorrect": false},
-          {"id": "c", "text": "Between the focal point and the mirror", "isCorrect": true},
-          {"id": "d", "text": "At the focal point", "isCorrect": false}
+          {"id": "a", "text": "Virtual and upright", "isCorrect": false},
+          {"id": "b", "text": "Real and inverted", "isCorrect": true},
+          {"id": "c", "text": "Virtual and magnified", "isCorrect": false},
+          {"id": "d", "text": "Not formed at all", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "When the object is closer than the focal point, a concave mirror produces an enlarged, upright, virtual image.",
-        "difficulty": "hard"
+        "correctAnswer": "b",
+        "explanation": "A camera lens focuses light to form a real (capturable), upside-down image on the film or sensor. Exam Tip: A real image can be formed on a screen; a virtual image cannot.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "An object is placed exactly at the centre of curvature of a concave mirror. What is the nature of the image formed?",
+        "questionText": "White light is composed of:",
         "options": [
-          {"id": "a", "text": "Real, inverted and the same size as the object, at the centre of curvature", "isCorrect": true},
-          {"id": "b", "text": "Virtual, upright and magnified", "isCorrect": false},
-          {"id": "c", "text": "Real, inverted and diminished at the focal point", "isCorrect": false},
-          {"id": "d", "text": "Virtual, upright and the same size behind the mirror", "isCorrect": false}
+          {"id": "a", "text": "One colour only", "isCorrect": false},
+          {"id": "b", "text": "Seven colours combined", "isCorrect": true},
+          {"id": "c", "text": "No colour at all", "isCorrect": false},
+          {"id": "d", "text": "Black and white only", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "With the object at C, the image is real, inverted, the same size as the object and also located at C.",
-        "difficulty": "hard"
+        "correctAnswer": "b",
+        "explanation": "White light is a mixture of seven colours, as shown when it passes through a prism. Exam Tip: ROYGBIV: red, orange, yellow, green, blue, indigo, violet.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Why is a concave reflector placed behind the bulb in a car headlamp or torch?",
+        "questionText": "A periscope, used to see over obstacles (e.g. in a submarine), works using two:",
         "options": [
-          {"id": "a", "text": "To scatter the light over a wide area", "isCorrect": false},
-          {"id": "b", "text": "To absorb excess heat from the bulb", "isCorrect": false},
-          {"id": "c", "text": "To reflect light into a strong parallel beam when the bulb is at the focus", "isCorrect": true},
-          {"id": "d", "text": "To form a magnified image of the bulb", "isCorrect": false}
+          {"id": "a", "text": "Convex lenses", "isCorrect": false},
+          {"id": "b", "text": "Plane mirrors", "isCorrect": true},
+          {"id": "c", "text": "Prisms only for colour", "isCorrect": false},
+          {"id": "d", "text": "Concave mirrors", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "When the light source is at the focal point of a concave mirror, the reflected rays emerge parallel, giving a powerful beam.",
-        "difficulty": "hard"
+        "correctAnswer": "b",
+        "explanation": "A periscope uses two plane mirrors set at 45 degrees to reflect light twice, allowing a view over obstacles. Exam Tip: Two plane mirrors at 45 degrees let you see over a wall or above water level.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The line drawn perpendicular to a mirror at the point where a ray strikes is called the _____.",
-        "options": [],
-        "correctAnswer": "normal",
-        "explanation": "Angles of incidence and reflection are always measured from the normal.",
+        "questionText": "An object that produces its own light is called a ____ object.",
+        "options": [
+          {"id": "a", "text": "luminous", "isCorrect": true},
+          {"id": "b", "text": "non-luminous", "isCorrect": false},
+          {"id": "c", "text": "transparent", "isCorrect": false},
+          {"id": "d", "text": "opaque", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An object producing its own light is luminous, unlike a non-luminous object which only reflects light. Exam Tip: The Sun and a burning candle are luminous; the Moon is not.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Reflection from a rough or uneven surface that scatters light in many directions is called _____ reflection.",
-        "options": [],
-        "correctAnswer": "diffuse",
-        "explanation": "Diffuse reflection occurs on rough surfaces and does not form a clear image.",
+        "questionText": "Light travels in ____ lines.",
+        "options": [
+          {"id": "a", "text": "straight", "isCorrect": true},
+          {"id": "b", "text": "curved", "isCorrect": false},
+          {"id": "c", "text": "circular", "isCorrect": false},
+          {"id": "d", "text": "zig-zag", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Light travels in straight lines, called rectilinear propagation. Exam Tip: Rectilinear propagation of light - explains shadow formation.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The image formed in a plane mirror is _____ inverted, meaning left and right appear swapped.",
-        "options": [],
-        "correctAnswer": "laterally",
-        "explanation": "Lateral inversion is why text appears reversed in a plane mirror.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An image that cannot be caught on a screen because the rays only appear to meet is called a _____ image.",
-        "options": [],
-        "correctAnswer": "virtual",
-        "explanation": "Plane and convex mirrors form virtual images; concave mirrors can form real or virtual images.",
+        "questionText": "A material that allows a clear view of objects through it is called ____.",
+        "options": [
+          {"id": "a", "text": "transparent", "isCorrect": true},
+          {"id": "b", "text": "translucent", "isCorrect": false},
+          {"id": "c", "text": "opaque", "isCorrect": false},
+          {"id": "d", "text": "luminous", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A material giving a clear view of objects through it is transparent. Exam Tip: Clear glass and clean water are transparent.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A mirror that curves inwards, like the inside of a spoon, is called a _____ mirror.",
-        "options": [],
-        "correctAnswer": "concave",
-        "explanation": "A concave mirror has a reflecting surface that curves inward and converges light.",
+        "questionText": "The bouncing back of light from a surface is called ____.",
+        "options": [
+          {"id": "a", "text": "reflection", "isCorrect": true},
+          {"id": "b", "text": "refraction", "isCorrect": false},
+          {"id": "c", "text": "dispersion", "isCorrect": false},
+          {"id": "d", "text": "absorption", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Light bouncing back from a surface is reflection. Exam Tip: Reflection lets mirrors and shiny surfaces show images.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A mirror that bulges outwards and diverges light is called a _____ mirror.",
-        "options": [],
-        "correctAnswer": "convex",
-        "explanation": "A convex mirror spreads reflected rays apart and always forms small, upright virtual images.",
+        "questionText": "The bending of light as it passes from one medium to another is called ____.",
+        "options": [
+          {"id": "a", "text": "refraction", "isCorrect": true},
+          {"id": "b", "text": "reflection", "isCorrect": false},
+          {"id": "c", "text": "dispersion", "isCorrect": false},
+          {"id": "d", "text": "diffusion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The bending of light as it passes between two media is refraction. Exam Tip: Refraction makes objects in water appear displaced.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The centre of the sphere of which a curved mirror forms part is called the centre of _____.",
-        "options": [],
-        "correctAnswer": "curvature",
-        "explanation": "The centre of curvature (C) lies on the principal axis at a distance equal to the radius of curvature.",
-        "difficulty": "medium"
+        "questionText": "The splitting of white light into its component colours is called ____.",
+        "options": [
+          {"id": "a", "text": "dispersion", "isCorrect": true},
+          {"id": "b", "text": "refraction", "isCorrect": false},
+          {"id": "c", "text": "reflection", "isCorrect": false},
+          {"id": "d", "text": "absorption", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Splitting white light into its component colours is dispersion. Exam Tip: A prism disperses white light into a spectrum.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The imaginary straight line passing through the pole and the centre of curvature of a curved mirror is the _____ axis.",
-        "options": [],
-        "correctAnswer": "principal",
-        "explanation": "The principal axis is the main reference line for tracing rays in curved mirrors.",
-        "difficulty": "medium"
+        "questionText": "A mirror that curves inward like the inside of a spoon is called a ____ mirror.",
+        "options": [
+          {"id": "a", "text": "concave", "isCorrect": true},
+          {"id": "b", "text": "convex", "isCorrect": false},
+          {"id": "c", "text": "plane", "isCorrect": false},
+          {"id": "d", "text": "prism", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A mirror curving inward like the inside of a spoon is a concave mirror. Exam Tip: Concave mirrors are used in torches and headlights to focus light.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The distance between the pole of a curved mirror and its focal point is called the _____ length.",
-        "options": [],
-        "correctAnswer": "focal",
-        "explanation": "The focal length (f) equals half the radius of curvature.",
-        "difficulty": "medium"
+        "questionText": "A mirror that curves outward like the back of a spoon is called a ____ mirror.",
+        "options": [
+          {"id": "a", "text": "convex", "isCorrect": true},
+          {"id": "b", "text": "concave", "isCorrect": false},
+          {"id": "c", "text": "plane", "isCorrect": false},
+          {"id": "d", "text": "prism", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A mirror curving outward like the back of a spoon is a convex mirror. Exam Tip: Convex mirrors give a wide field of view (car mirrors).",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Because it makes a small mirror show a large area, the convex mirror is used as a _____ mirror in cars to see traffic behind.",
-        "options": [],
-        "correctAnswer": "rear-view",
-        "explanation": "Convex mirrors give a wide field of view, useful for rear-view and security mirrors.",
-        "difficulty": "hard"
+        "questionText": "The image formed in a plane mirror is ____ (real/virtual).",
+        "options": [
+          {"id": "a", "text": "virtual", "isCorrect": true},
+          {"id": "b", "text": "real", "isCorrect": false},
+          {"id": "c", "text": "magnified", "isCorrect": false},
+          {"id": "d", "text": "inverted", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A plane mirror forms a virtual image that cannot be caught on a screen. Exam Tip: Virtual images cannot be projected on a screen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The optical instrument used to magnify very small, nearby objects such as cells is the ____.",
+        "options": [
+          {"id": "a", "text": "microscope", "isCorrect": true},
+          {"id": "b", "text": "telescope", "isCorrect": false},
+          {"id": "c", "text": "periscope", "isCorrect": false},
+          {"id": "d", "text": "camera", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The microscope uses lenses to magnify very small, nearby objects such as cells. Exam Tip: Microscope for small/near; telescope for large/distant.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "The angle of incidence is always equal to the angle of reflection.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the first law of reflection and applies to all reflecting surfaces.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The incident ray, the reflected ray and the normal all lie in the same plane.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the second law of reflection.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A plane mirror produces a real image that can be formed on a screen.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A plane mirror forms a virtual image, which cannot be captured on a screen.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The image in a plane mirror is the same size as the object.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Plane mirror images are upright, virtual, laterally inverted and of equal size to the object.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A convex mirror can form a magnified real image of a distant object.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A convex mirror always forms a virtual, upright and diminished image of a real object.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A concave mirror can produce either a real or a virtual image depending on the object's position.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A concave mirror gives a virtual image when the object is inside the focus and a real image otherwise.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The focal length of a curved mirror is twice its radius of curvature.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "It is the opposite: the radius of curvature is twice the focal length, R = 2f.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Diffuse reflection is the reason we can see objects that are not light sources from many angles.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Rough surfaces scatter light in many directions, allowing us to see them from different positions.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Convex mirrors are used in car headlamps to produce a strong parallel beam of light.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Concave mirrors are used in headlamps; placing the bulb at the focus produces a parallel beam.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "When an object is placed at the focal point of a concave mirror, the reflected rays emerge parallel and no clear image is formed at a finite distance.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Rays from an object at the focus reflect parallel, so the image is said to be formed at infinity.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Light travels in straight lines.", "options": [], "correctAnswer": "true", "explanation": "Light travels in straight lines, a property called rectilinear propagation. Exam Tip: This explains sharp shadows from opaque objects.", "difficulty": "easy"},
+      {"questionText": "An opaque object allows all light to pass through it.", "options": [], "correctAnswer": "false", "explanation": "An opaque object allows no light to pass through it at all. Exam Tip: Opaque = no light through.", "difficulty": "easy"},
+      {"questionText": "Reflection is the bouncing back of light from a surface.", "options": [], "correctAnswer": "true", "explanation": "This is the correct definition of reflection. Exam Tip: Mirrors and shiny surfaces reflect light well.", "difficulty": "easy"},
+      {"questionText": "Refraction is the splitting of white light into its component colours.", "options": [], "correctAnswer": "false", "explanation": "Refraction is the bending of light between media; dispersion is the splitting into colours. Exam Tip: Refraction = bending; dispersion = splitting into colours.", "difficulty": "easy"},
+      {"questionText": "The image in a plane mirror is the same size as the object.", "options": [], "correctAnswer": "true", "explanation": "A plane mirror image is always the same size as the object. Exam Tip: The image is also as far behind the mirror as the object is in front.", "difficulty": "easy"},
+      {"questionText": "A concave mirror curves outward like the back of a spoon.", "options": [], "correctAnswer": "false", "explanation": "A concave mirror curves inward; it is the convex mirror that curves outward. Exam Tip: Concave = inward; convex = outward.", "difficulty": "easy"},
+      {"questionText": "White light is made up of seven colours.", "options": [], "correctAnswer": "true", "explanation": "White light is a mixture of seven colours revealed by a prism. Exam Tip: A prism separates white light into these seven colours.", "difficulty": "easy"},
+      {"questionText": "A telescope is used to view very small, nearby objects such as cells.", "options": [], "correctAnswer": "false", "explanation": "A telescope views distant objects, while a microscope views small, nearby objects. Exam Tip: Telescope = far; microscope = small/near.", "difficulty": "easy"},
+      {"questionText": "A camera forms a real, inverted image on its film or sensor.", "options": [], "correctAnswer": "true", "explanation": "The camera lens focuses light rays to form a real, inverted image. Exam Tip: The camera lens focuses light rays to form this real image.", "difficulty": "easy"},
+      {"questionText": "A periscope uses two plane mirrors to allow viewing over an obstacle.", "options": [], "correctAnswer": "true", "explanation": "A periscope uses two plane mirrors set at 45 degrees to redirect light over an obstacle. Exam Tip: Submarines use periscopes built this way.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Laws of reflection",
-        "options": [],
-        "correctAnswer": "The angle of incidence equals the angle of reflection, and the incident ray, reflected ray and normal lie in one plane.",
-        "explanation": "These two laws govern how all light reflects from surfaces.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Regular vs diffuse reflection",
-        "options": [],
-        "correctAnswer": "Smooth surfaces give regular reflection and clear images; rough surfaces give diffuse reflection and scattered light.",
-        "explanation": "Both still obey the laws of reflection at each point.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of a plane mirror image",
-        "options": [],
-        "correctAnswer": "Virtual, upright, same size as the object, laterally inverted, and as far behind the mirror as the object is in front.",
-        "explanation": "These four features describe every plane mirror image.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Concave mirror",
-        "options": [],
-        "correctAnswer": "A converging mirror that curves inward and can form real or virtual images depending on object position.",
-        "explanation": "Used in shaving mirrors, headlamps and telescopes.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Convex mirror",
-        "options": [],
-        "correctAnswer": "A diverging mirror that curves outward and always forms a virtual, upright, diminished image.",
-        "explanation": "Gives a wide field of view, used as rear-view and security mirrors.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Centre of curvature",
-        "options": [],
-        "correctAnswer": "The centre of the sphere of which the mirror is a part, lying on the principal axis at distance R.",
-        "explanation": "A ray through C strikes the mirror normally and reflects back on itself.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Focal point",
-        "options": [],
-        "correctAnswer": "The point where rays parallel to the principal axis converge (or appear to diverge from) after reflection.",
-        "explanation": "It lies halfway between the pole and centre of curvature.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Principal axis",
-        "options": [],
-        "correctAnswer": "The straight line through the pole and the centre of curvature of a curved mirror.",
-        "explanation": "It is the reference line used for ray diagrams.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Relationship between R and f",
-        "options": [],
-        "correctAnswer": "The radius of curvature is twice the focal length: R = 2f, so f = R/2.",
-        "explanation": "This lets you find one value from the other.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Uses of curved mirrors",
-        "options": [],
-        "correctAnswer": "Concave mirrors are used in headlamps, torches and shaving mirrors; convex mirrors in rear-view and security mirrors.",
-        "explanation": "The choice depends on whether converging or a wide view is needed.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Luminous vs non-luminous objects", "options": [], "correctAnswer": "A luminous object produces its own light (e.g. the Sun, a candle), while a non-luminous object does not produce light but can be seen because it reflects light from a luminous source (e.g. the Moon).", "explanation": "This distinction explains why some objects glow on their own and others only appear lit because they reflect light. Exam Tip: The Moon is a classic non-luminous object - it only shines because it reflects sunlight.", "difficulty": "easy"},
+      {"questionText": "Transparent, translucent and opaque materials", "options": [], "correctAnswer": "Transparent materials let light through clearly (clear glass, water); translucent materials let some light through but scatter it so objects appear blurry (frosted glass); opaque materials block all light (wood, metal).", "explanation": "The three terms describe how much light passes through a material and how clearly objects can be seen through it. Exam Tip: Transparent = clear view; translucent = blurry view; opaque = no light through.", "difficulty": "easy"},
+      {"questionText": "Reflection", "options": [], "correctAnswer": "The bouncing back of light when it strikes a surface, without the light passing into the material.", "explanation": "Reflection is what allows mirrors and shiny surfaces to form images that we can see. Exam Tip: Reflection lets us see objects and is the basis of how mirrors work.", "difficulty": "easy"},
+      {"questionText": "Refraction", "options": [], "correctAnswer": "The bending of light as it passes from one transparent medium into another of different density, such as from air into water.", "explanation": "Refraction occurs because light changes speed when it enters a different medium, causing it to bend. Exam Tip: Refraction makes a straw look bent in a glass of water.", "difficulty": "easy"},
+      {"questionText": "Dispersion", "options": [], "correctAnswer": "The splitting of white light into its seven component colours (red, orange, yellow, green, blue, indigo, violet) as it passes through a prism.", "explanation": "Dispersion happens because each colour of light bends by a slightly different amount when refracted. Exam Tip: Remember the spectrum with ROYGBIV, as seen in a rainbow.", "difficulty": "easy"},
+      {"questionText": "Plane mirror image", "options": [], "correctAnswer": "A virtual, upright image that is the same size as the object and appears as far behind the mirror as the object is in front of it, but laterally inverted.", "explanation": "Because the image cannot be projected on a screen, it is called virtual rather than real. Exam Tip: Plane mirror image: virtual, upright, laterally inverted, same size, same distance behind as object in front.", "difficulty": "easy"},
+      {"questionText": "Concave mirror vs convex mirror", "options": [], "correctAnswer": "A concave mirror curves inward like the inside of a spoon and can magnify or focus light (used in torches and shaving mirrors); a convex mirror curves outward like the back of a spoon and gives a wide field of view with a smaller image (used in car side mirrors).", "explanation": "The direction of curvature determines whether the mirror focuses light inward or spreads the view outward. Exam Tip: \"Concave = cave\" (curves inward, can magnify); convex curves outward and gives a wide view.", "difficulty": "easy"},
+      {"questionText": "Microscope vs telescope", "options": [], "correctAnswer": "A microscope uses lenses to magnify very small, nearby objects such as cells, while a telescope uses lenses (or mirrors) to magnify distant objects such as stars and planets.", "explanation": "Both instruments use lenses to magnify, but they are designed for opposite distance ranges. Exam Tip: Microscope = small, near objects; telescope = distant, large objects.", "difficulty": "easy"},
+      {"questionText": "Camera image", "options": [], "correctAnswer": "A real, inverted (upside-down) image formed on the film or sensor when the camera lens focuses light from an object.", "explanation": "Because the image can be captured on the film or sensor, it is real rather than virtual. Exam Tip: A real image can be formed on a screen or sensor; a virtual image cannot.", "difficulty": "easy"},
+      {"questionText": "Periscope", "options": [], "correctAnswer": "An optical device, such as one used in a submarine, that uses two plane mirrors set at 45 degrees to reflect light twice so a viewer can see over or around an obstacle.", "explanation": "The two mirrors redirect the light path so the eye can see objects that would otherwise be blocked from view. Exam Tip: Two plane mirrors at 45 degrees let you see over a wall or above water level.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A concave mirror of focal length 10 cm is used to form an image of an object placed 30 cm in front of it. Using the mirror formula 1/f = 1/u + 1/v, what is the image distance?",
+        "questionText": "A student shines white light through a glass prism and observes a band of colours: red, orange, yellow, green, blue, indigo, violet. Explain and name the phenomenon.",
         "options": [
-          {"id": "a", "text": "7.5 cm", "isCorrect": false},
-          {"id": "b", "text": "15 cm", "isCorrect": true},
-          {"id": "c", "text": "20 cm", "isCorrect": false},
-          {"id": "d", "text": "40 cm", "isCorrect": false}
+          {"id": "a", "text": "The light was reflected; this is reflection", "isCorrect": false},
+          {"id": "b", "text": "The prism split the white light into its component colours; this is dispersion", "isCorrect": true},
+          {"id": "c", "text": "The light was absorbed completely; nothing is seen", "isCorrect": false},
+          {"id": "d", "text": "The prism created new colours from nothing", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "1/v = 1/f - 1/u = 1/10 - 1/30 = 2/30, so v = 15 cm; the real image forms 15 cm in front of the mirror.",
+        "explanation": "White light bends by different amounts for each colour as it passes through the prism, separating into a band of colours - this is dispersion. Exam Tip: This is exactly how a rainbow forms - raindrops act like tiny prisms.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A 4 cm tall object is placed at the centre of curvature of a concave mirror of focal length 12 cm. What is the height and nature of the image?",
+        "questionText": "Mirror P gives an upright, reduced image and a wide field of view (car side mirror). Mirror Q gives an enlarged, upright image when the object is close (shaving/make-up). Identify P and Q.",
         "options": [
-          {"id": "a", "text": "4 cm tall, real and inverted", "isCorrect": true},
-          {"id": "b", "text": "2 cm tall, virtual and upright", "isCorrect": false},
-          {"id": "c", "text": "8 cm tall, real and inverted", "isCorrect": false},
-          {"id": "d", "text": "4 cm tall, virtual and upright", "isCorrect": false}
+          {"id": "a", "text": "P = concave, Q = convex", "isCorrect": false},
+          {"id": "b", "text": "P = convex, Q = concave", "isCorrect": true},
+          {"id": "c", "text": "Both are plane mirrors", "isCorrect": false},
+          {"id": "d", "text": "P = plane, Q = convex", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "At the centre of curvature (R = 2f = 24 cm) the magnification is 1, so the image is the same size (4 cm), real and inverted.",
+        "correctAnswer": "b",
+        "explanation": "A wide field of view with a reduced image identifies mirror P as convex, while an enlarged image at close range identifies mirror Q as concave. Exam Tip: Convex mirrors always shrink but show a wide view. Concave mirrors magnify when close.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Two plane mirrors are placed at right angles (90 degrees) to each other. How many images of a single object placed between them are formed?",
+        "questionText": "A pencil in a glass of water appears bent and shorter when viewed from the side. Explain using a property of light.",
         "options": [
-          {"id": "a", "text": "1", "isCorrect": false},
-          {"id": "b", "text": "2", "isCorrect": false},
-          {"id": "c", "text": "3", "isCorrect": true},
-          {"id": "d", "text": "Infinite", "isCorrect": false}
+          {"id": "a", "text": "The pencil physically bends in water", "isCorrect": false},
+          {"id": "b", "text": "Light from the pencil refracts (bends) as it passes from water into air, making the pencil appear bent and displaced (shorter) to the eye", "isCorrect": true},
+          {"id": "c", "text": "The water reflects the pencil only", "isCorrect": false},
+          {"id": "d", "text": "Light does not travel through water", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "The number of images is (360/angle) - 1 = (360/90) - 1 = 3.",
+        "correctAnswer": "b",
+        "explanation": "The pencil does not physically bend; light travelling from the water into air refracts, displacing the apparent position of the submerged part and making the pencil look bent and shorter. Exam Tip: The pencil is straight in reality; what \"bends\" is the light reaching your eye, not the pencil.",
         "difficulty": "hard"
       }
     ]

@@ -429,71 +429,121 @@
     "fib": [
       {
         "questionText": "The exchange of information, ideas and messages between people is called _____.",
-        "options": [],
-        "correctAnswer": "communication",
+        "options": [
+          {"id": "a", "text": "communication", "isCorrect": true},
+          {"id": "b", "text": "transportation", "isCorrect": false},
+          {"id": "c", "text": "negotiation", "isCorrect": false},
+          {"id": "d", "text": "transaction", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Communication is the passing of information from one person to another.",
         "difficulty": "easy"
       },
       {
         "questionText": "The person who receives and interprets the message is known as the _____.",
-        "options": [],
-        "correctAnswer": "receiver",
+        "options": [
+          {"id": "a", "text": "sender", "isCorrect": false},
+          {"id": "b", "text": "receiver", "isCorrect": true},
+          {"id": "c", "text": "encoder", "isCorrect": false},
+          {"id": "d", "text": "messenger", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "The receiver decodes and understands the message sent by the sender.",
         "difficulty": "easy"
       },
       {
         "questionText": "Turning the received message back into meaning by the receiver is called _____.",
-        "options": [],
-        "correctAnswer": "decoding",
+        "options": [
+          {"id": "a", "text": "encoding", "isCorrect": false},
+          {"id": "b", "text": "feedback", "isCorrect": false},
+          {"id": "c", "text": "decoding", "isCorrect": true},
+          {"id": "d", "text": "transmitting", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Decoding is the process by which the receiver interprets the encoded message.",
         "difficulty": "medium"
       },
       {
         "questionText": "Sending letters and parcels through the post office is known as _____ communication.",
-        "options": [],
-        "correctAnswer": "postal",
+        "options": [
+          {"id": "a", "text": "oral", "isCorrect": false},
+          {"id": "b", "text": "visual", "isCorrect": false},
+          {"id": "c", "text": "written", "isCorrect": false},
+          {"id": "d", "text": "postal", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "Postal communication uses the post office to deliver mail and parcels.",
         "difficulty": "easy"
       },
       {
         "questionText": "Communication that uses spoken words is called _____ communication.",
-        "options": [],
-        "correctAnswer": "oral",
+        "options": [
+          {"id": "a", "text": "oral", "isCorrect": true},
+          {"id": "b", "text": "written", "isCorrect": false},
+          {"id": "c", "text": "visual", "isCorrect": false},
+          {"id": "d", "text": "postal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Oral or verbal communication involves speaking, as in face-to-face talks or phone calls.",
         "difficulty": "easy"
       },
       {
         "questionText": "Anything that blocks or distorts the message between sender and receiver is called a _____.",
-        "options": [],
-        "correctAnswer": "barrier",
+        "options": [
+          {"id": "a", "text": "channel", "isCorrect": false},
+          {"id": "b", "text": "barrier", "isCorrect": true},
+          {"id": "c", "text": "medium", "isCorrect": false},
+          {"id": "d", "text": "feedback", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Barriers prevent effective communication from taking place.",
         "difficulty": "medium"
       },
       {
         "questionText": "A message sent electronically over the internet to another person's address is called an _____.",
-        "options": [],
-        "correctAnswer": "email",
+        "options": [
+          {"id": "a", "text": "invoice", "isCorrect": false},
+          {"id": "b", "text": "memo", "isCorrect": false},
+          {"id": "c", "text": "email", "isCorrect": true},
+          {"id": "d", "text": "telegram", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "Email is electronic mail sent through the internet.",
         "difficulty": "easy"
       },
       {
         "questionText": "The route or method through which a message travels from sender to receiver is the _____.",
-        "options": [],
-        "correctAnswer": "channel",
+        "options": [
+          {"id": "a", "text": "sender", "isCorrect": false},
+          {"id": "b", "text": "receiver", "isCorrect": false},
+          {"id": "c", "text": "barrier", "isCorrect": false},
+          {"id": "d", "text": "channel", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "The channel, also called the medium, carries the message between the parties.",
         "difficulty": "medium"
       },
       {
         "questionText": "A service that collects and delivers parcels and documents door-to-door is called a _____ service.",
-        "options": [],
-        "correctAnswer": "courier",
+        "options": [
+          {"id": "a", "text": "courier", "isCorrect": true},
+          {"id": "b", "text": "postal", "isCorrect": false},
+          {"id": "c", "text": "telephone", "isCorrect": false},
+          {"id": "d", "text": "telegraph", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Courier services provide fast, safe door-to-door delivery of items.",
         "difficulty": "medium"
       },
       {
         "questionText": "The short form ICT stands for Information and _____ Technology.",
-        "options": [],
-        "correctAnswer": "Communication",
+        "options": [
+          {"id": "a", "text": "Computer", "isCorrect": false},
+          {"id": "b", "text": "Communication", "isCorrect": true},
+          {"id": "c", "text": "Computing", "isCorrect": false},
+          {"id": "d", "text": "Connection", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "ICT means Information and Communication Technology.",
         "difficulty": "easy"
       }

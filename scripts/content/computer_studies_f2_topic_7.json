@@ -8,10 +8,26 @@
       {
         "questionText": "What is a computer network?",
         "options": [
-          {"id": "a", "text": "A single computer used by one person at a time", "isCorrect": false},
-          {"id": "b", "text": "Two or more computers connected together to share data and resources", "isCorrect": true},
-          {"id": "c", "text": "A program that protects a computer from viruses", "isCorrect": false},
-          {"id": "d", "text": "A device used only for printing documents", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A single computer used by one person at a time",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Two or more computers connected together to share data and resources",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A program that protects a computer from viruses",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A device used only for printing documents",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A computer network is a group of two or more computers linked together so they can communicate and share data and resources.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which type of network covers the smallest geographical area, such as a single school computer lab?",
         "options": [
-          {"id": "a", "text": "WAN", "isCorrect": false},
-          {"id": "b", "text": "MAN", "isCorrect": false},
-          {"id": "c", "text": "LAN", "isCorrect": true},
-          {"id": "d", "text": "Internet", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "WAN",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "MAN",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "LAN",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Internet",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A LAN (Local Area Network) connects computers within a small area such as one building, office, or computer lab.",
@@ -32,10 +64,26 @@
       {
         "questionText": "What does the abbreviation WAN stand for?",
         "options": [
-          {"id": "a", "text": "Wireless Area Network", "isCorrect": false},
-          {"id": "b", "text": "Wide Area Network", "isCorrect": true},
-          {"id": "c", "text": "Working Access Node", "isCorrect": false},
-          {"id": "d", "text": "Web Application Network", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Wireless Area Network",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Wide Area Network",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Working Access Node",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Web Application Network",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "WAN stands for Wide Area Network, which covers a very large geographical area such as countries or continents.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which network device connects two or more different networks together and directs data between them?",
         "options": [
-          {"id": "a", "text": "Router", "isCorrect": true},
-          {"id": "b", "text": "Monitor", "isCorrect": false},
-          {"id": "c", "text": "Keyboard", "isCorrect": false},
-          {"id": "d", "text": "Speaker", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Router",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Monitor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Keyboard",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Speaker",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A router connects different networks and chooses the best path to forward data between them, for example linking a home network to the internet.",
@@ -56,10 +120,26 @@
       {
         "questionText": "What is the main job of a switch in a network?",
         "options": [
-          {"id": "a", "text": "To turn the computer on and off", "isCorrect": false},
-          {"id": "b", "text": "To connect several devices within the same network and forward data to the correct device", "isCorrect": true},
-          {"id": "c", "text": "To store all files permanently", "isCorrect": false},
-          {"id": "d", "text": "To convert digital signals into sound", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "To turn the computer on and off",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To connect several devices within the same network and forward data to the correct device",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To store all files permanently",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To convert digital signals into sound",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A switch links multiple devices in the same network and sends data only to the specific device it is intended for.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which device converts digital signals from a computer into a form suitable for transmission over telephone or cable lines and back again?",
         "options": [
-          {"id": "a", "text": "Switch", "isCorrect": false},
-          {"id": "b", "text": "Access point", "isCorrect": false},
-          {"id": "c", "text": "Modem", "isCorrect": true},
-          {"id": "d", "text": "Printer", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Switch",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Access point",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Modem",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Printer",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A modem (modulator-demodulator) changes digital data into signals that can travel over communication lines and converts them back at the other end.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Which device allows wireless devices such as laptops and phones to connect to a wired network?",
         "options": [
-          {"id": "a", "text": "Access point", "isCorrect": true},
-          {"id": "b", "text": "Scanner", "isCorrect": false},
-          {"id": "c", "text": "Hard disk", "isCorrect": false},
-          {"id": "d", "text": "Projector", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Access point",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Scanner",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Projector",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A wireless access point lets Wi-Fi enabled devices join a wired network without using cables.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Which of the following is an example of a wired transmission medium?",
         "options": [
-          {"id": "a", "text": "Radio waves", "isCorrect": false},
-          {"id": "b", "text": "Infrared", "isCorrect": false},
-          {"id": "c", "text": "Twisted pair cable", "isCorrect": true},
-          {"id": "d", "text": "Microwaves", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Radio waves",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Infrared",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Twisted pair cable",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Microwaves",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Twisted pair cable is a physical (wired) medium, while radio waves, infrared, and microwaves are wireless media.",
@@ -104,10 +232,26 @@
       {
         "questionText": "In which network topology are all computers connected to a single central device such as a switch?",
         "options": [
-          {"id": "a", "text": "Bus topology", "isCorrect": false},
-          {"id": "b", "text": "Star topology", "isCorrect": true},
-          {"id": "c", "text": "Ring topology", "isCorrect": false},
-          {"id": "d", "text": "Mesh topology", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Bus topology",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Star topology",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Ring topology",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mesh topology",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "In a star topology, every computer connects to one central device, and all data passes through that central point.",
@@ -116,10 +260,26 @@
       {
         "questionText": "In a bus topology, all the computers are connected to which of the following?",
         "options": [
-          {"id": "a", "text": "A single main cable called the backbone", "isCorrect": true},
-          {"id": "b", "text": "A circle of cables with no ends", "isCorrect": false},
-          {"id": "c", "text": "One central switch only", "isCorrect": false},
-          {"id": "d", "text": "Separate cables to every other computer", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A single main cable called the backbone",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A circle of cables with no ends",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "One central switch only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Separate cables to every other computer",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A bus topology connects all computers to one shared main cable known as the backbone.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Which statement best describes a ring topology?",
         "options": [
-          {"id": "a", "text": "Each computer connects to a central hub", "isCorrect": false},
-          {"id": "b", "text": "Each computer connects to the next, forming a closed loop", "isCorrect": true},
-          {"id": "c", "text": "All computers share one straight cable", "isCorrect": false},
-          {"id": "d", "text": "Computers are not connected to each other at all", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Each computer connects to a central hub",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Each computer connects to the next, forming a closed loop",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "All computers share one straight cable",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Computers are not connected to each other at all",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "In a ring topology, each computer is connected to two others so that the whole network forms a closed circle through which data travels.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Which of the following is an advantage of using a computer network?",
         "options": [
-          {"id": "a", "text": "It makes sharing files and printers easier", "isCorrect": true},
-          {"id": "b", "text": "It removes the need for any software", "isCorrect": false},
-          {"id": "c", "text": "It makes every computer slower", "isCorrect": false},
-          {"id": "d", "text": "It prevents users from communicating", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It makes sharing files and printers easier",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "It removes the need for any software",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It makes every computer slower",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It prevents users from communicating",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Networks allow users to share resources such as files, printers, and an internet connection easily.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Which of the following is a disadvantage of computer networks?",
         "options": [
-          {"id": "a", "text": "Users can share data quickly", "isCorrect": false},
-          {"id": "b", "text": "If the network fails, many users may be unable to work", "isCorrect": true},
-          {"id": "c", "text": "Resources can be shared to save money", "isCorrect": false},
-          {"id": "d", "text": "Communication becomes easier", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Users can share data quickly",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "If the network fails, many users may be unable to work",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Resources can be shared to save money",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Communication becomes easier",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A disadvantage of networks is that a failure of the network or central device can stop many users from working.",
@@ -164,10 +372,26 @@
       {
         "questionText": "A network that connects computers across a whole city, larger than a LAN but smaller than a WAN, is called a:",
         "options": [
-          {"id": "a", "text": "MAN", "isCorrect": true},
-          {"id": "b", "text": "PAN", "isCorrect": false},
-          {"id": "c", "text": "LAN", "isCorrect": false},
-          {"id": "d", "text": "VPN", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "MAN",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "PAN",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "LAN",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "VPN",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A MAN (Metropolitan Area Network) covers a city or a large town, sitting between the size of a LAN and a WAN.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Why is sharing a single printer over a network useful in a school office?",
         "options": [
-          {"id": "a", "text": "It means each computer must have its own printer", "isCorrect": false},
-          {"id": "b", "text": "Many computers can use one printer, which saves money on equipment", "isCorrect": true},
-          {"id": "c", "text": "It stops anyone from printing documents", "isCorrect": false},
-          {"id": "d", "text": "It makes the printer work without electricity", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "It means each computer must have its own printer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Many computers can use one printer, which saves money on equipment",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It stops anyone from printing documents",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It makes the printer work without electricity",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Sharing one printer among many networked computers reduces the cost of buying a separate printer for each machine.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A network that connects computers within a small area such as one building is called a _____.",
-        "options": [],
-        "correctAnswer": "LAN",
+        "options": [
+          {
+            "id": "a",
+            "text": "LAN",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "WAN",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "MAN",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "PAN",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "LAN stands for Local Area Network and covers a small area like a building or computer lab.",
         "difficulty": "easy"
       },
       {
         "questionText": "The device that joins two or more different networks and directs data between them is called a _____.",
-        "options": [],
-        "correctAnswer": "router",
+        "options": [
+          {
+            "id": "a",
+            "text": "switch",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "router",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hub",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bridge",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A router forwards data between separate networks, such as a home network and the internet.",
         "difficulty": "easy"
       },
       {
         "questionText": "A _____ converts digital signals into a form that can travel over telephone lines and converts them back again.",
-        "options": [],
-        "correctAnswer": "modem",
+        "options": [
+          {
+            "id": "a",
+            "text": "router",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "switch",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "modem",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "hub",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A modem modulates and demodulates signals so data can travel over communication lines.",
         "difficulty": "medium"
       },
       {
         "questionText": "In a _____ topology, all computers are connected to one central device.",
-        "options": [],
-        "correctAnswer": "star",
+        "options": [
+          {
+            "id": "a",
+            "text": "bus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ring",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mesh",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "star",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Star topology connects every computer to a single central device such as a switch.",
         "difficulty": "medium"
       },
       {
         "questionText": "In a bus topology, all computers are connected to a single main cable called the _____.",
-        "options": [],
-        "correctAnswer": "backbone",
+        "options": [
+          {
+            "id": "a",
+            "text": "backbone",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "terminator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "node",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hub",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The backbone is the shared main cable that all devices connect to in a bus topology.",
         "difficulty": "medium"
       },
       {
         "questionText": "Transmission media that do not use cables, such as radio waves and infrared, are called _____ media.",
-        "options": [],
-        "correctAnswer": "wireless",
+        "options": [
+          {
+            "id": "a",
+            "text": "wired",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "wireless",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "guided",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bounded",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Wireless media send data through the air using signals like radio waves rather than physical cables.",
         "difficulty": "easy"
       },
       {
         "questionText": "A network that covers a very large area such as a whole country or the world is called a _____.",
-        "options": [],
-        "correctAnswer": "WAN",
+        "options": [
+          {
+            "id": "a",
+            "text": "LAN",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "MAN",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "WAN",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "PAN",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "WAN stands for Wide Area Network and connects computers over very large distances.",
         "difficulty": "easy"
       },
       {
         "questionText": "A wireless _____ allows Wi-Fi devices such as laptops and phones to connect to a wired network.",
-        "options": [],
-        "correctAnswer": "access point",
+        "options": [
+          {
+            "id": "a",
+            "text": "base station",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "network hub",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "repeater node",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "access point",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "An access point provides a wireless connection point that links Wi-Fi devices to a wired network.",
         "difficulty": "medium"
       },
       {
         "questionText": "When several computers use one printer through a network, we say they are _____ that resource.",
-        "options": [],
-        "correctAnswer": "sharing",
+        "options": [
+          {
+            "id": "a",
+            "text": "sharing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "connecting",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "linking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "networking",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Sharing resources means several users can use the same device or files over the network.",
         "difficulty": "easy"
       },
       {
         "questionText": "A network device that connects several computers in the same network and forwards data only to the correct device is called a _____.",
-        "options": [],
-        "correctAnswer": "switch",
+        "options": [
+          {
+            "id": "a",
+            "text": "router",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "switch",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "modem",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bridge",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A switch sends data only to the intended device within the same local network.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A company has offices in Dar es Salaam, Mwanza, and Arusha, all connected so staff can share files across the cities and countrywide. Which combination of network types best describes this setup?",
         "options": [
-          {"id": "a", "text": "Only a LAN in each office with no connection between cities", "isCorrect": false},
-          {"id": "b", "text": "A LAN within each office, joined together by a WAN across the cities", "isCorrect": true},
-          {"id": "c", "text": "A single ring topology cable connecting all three cities directly", "isCorrect": false},
-          {"id": "d", "text": "A MAN that covers all of Tanzania", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Only a LAN in each office with no connection between cities",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A LAN within each office, joined together by a WAN across the cities",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A single ring topology cable connecting all three cities directly",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A MAN that covers all of Tanzania",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Each office uses a LAN for its local computers, and these LANs are linked over long distances by a WAN.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A school sets up a network where every computer connects to one central switch. One day a single computer's cable is cut, but all other computers keep working. Which topology is in use and why does the rest of the network stay up?",
         "options": [
-          {"id": "a", "text": "Bus topology, because the backbone cable is shared", "isCorrect": false},
-          {"id": "b", "text": "Ring topology, because data flows in a loop", "isCorrect": false},
-          {"id": "c", "text": "Star topology, because each computer has its own separate link to the central device", "isCorrect": true},
-          {"id": "d", "text": "Mesh topology, because every computer connects to every other", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Bus topology, because the backbone cable is shared",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ring topology, because data flows in a loop",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Star topology, because each computer has its own separate link to the central device",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Mesh topology, because every computer connects to every other",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "In a star topology each computer has its own cable to the central device, so one broken cable affects only that computer, not the whole network.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A home user wants to connect several laptops and phones to the internet without running cables to each device. Which set of devices is most appropriate?",
         "options": [
-          {"id": "a", "text": "A modem to reach the internet and a wireless access point so devices connect over Wi-Fi", "isCorrect": true},
-          {"id": "b", "text": "Only a printer connected to each laptop", "isCorrect": false},
-          {"id": "c", "text": "A scanner and a projector for all the devices", "isCorrect": false},
-          {"id": "d", "text": "A separate twisted pair cable running to every phone", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A modem to reach the internet and a wireless access point so devices connect over Wi-Fi",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Only a printer connected to each laptop",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A scanner and a projector for all the devices",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A separate twisted pair cable running to every phone",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A modem provides the internet link, and a wireless access point lets the laptops and phones connect without cables.",

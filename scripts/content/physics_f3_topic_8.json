@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_physics_topic_8",
+  "topicName": "Magnetic Effect of an Electric Current",
+  "order": 8,
+  "description": "This topic explains how an electric current produces a magnetic field, the field patterns around wires, loops and solenoids, the electromagnet and its uses, the motor effect, and the working of a simple direct-current electric motor.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Who first discovered that an electric current produces a magnetic field?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Michael Faraday",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hans Christian Oersted",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Andre-Marie Ampere",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Isaac Newton",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Oersted noticed that a compass needle was deflected when placed near a wire carrying current, showing that a current produces a magnetic field.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a compass is placed near a wire carrying a current, the compass needle is observed to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "remain still",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "melt",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "be deflected",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "point downwards into the ground",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The magnetic field produced by the current acts on the compass needle, causing it to deflect from its normal north-south direction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnetic field lines around a long straight current-carrying wire are:",
+        "options": [
+          {
+            "id": "a",
+            "text": "straight lines parallel to the wire",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "concentric circles around the wire",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "wavy lines along the wire",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "non-existent",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Around a straight wire the field forms concentric (circular) loops centred on the wire, lying in planes perpendicular to the wire.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which rule is used to find the direction of the magnetic field around a straight current-carrying wire?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fleming's left-hand rule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Fleming's right-hand rule",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Right-hand grip rule",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Lenz's rule",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "In the right-hand grip rule the thumb points in the direction of the current and the curled fingers show the direction of the magnetic field.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A coil of many turns of insulated wire wound in the form of a long cylinder is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "solenoid",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "resistor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "capacitor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transformer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A solenoid is a long cylindrical coil of wire; when current flows through it, it behaves like a bar magnet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnetic field inside a current-carrying solenoid is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "zero everywhere",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "strong and almost uniform",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "circular around each turn only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "always pointing outward radially",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Inside a solenoid the fields of the turns add up to give a strong, nearly uniform field similar to that inside a bar magnet.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An electromagnet is made by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "rubbing a steel bar with a permanent magnet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "passing current through a coil wound on a soft-iron core",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "heating an iron bar strongly",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cooling copper wire",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An electromagnet is a coil wound on a soft-iron core; it becomes magnetic only while current flows through the coil.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following will NOT increase the strength of an electromagnet?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increasing the number of turns of the coil",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Increasing the current through the coil",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Using a soft-iron core instead of air",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Reducing the current in the coil",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Strength increases with more turns, larger current and a soft-iron core. Reducing the current weakens the electromagnet.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A soft-iron core is preferred in an electromagnet because it:",
+        "options": [
+          {
+            "id": "a",
+            "text": "stays magnetised permanently after the current is switched off",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "is magnetised easily and loses magnetism quickly when current stops",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "conducts electricity better than copper",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "does not become magnetic at all",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Soft iron is easily magnetised and demagnetised, so the electromagnet works only while current flows, which is what is needed for devices like bells and relays.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which device uses an electromagnet to switch on a separate, more powerful circuit using a small current?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Relay",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Resistor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Fuse",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Voltmeter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A relay uses a small current in its electromagnet to close (or open) contacts that control a separate, larger circuit.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The turning effect (force) on a current-carrying conductor placed in a magnetic field is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "induction effect",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "motor effect",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "heating effect",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chemical effect",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "When a current-carrying conductor lies in a magnetic field it experiences a force; this is the motor effect, used in electric motors.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which rule is used to find the direction of the force on a current-carrying conductor in a magnetic field?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fleming's left-hand rule",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Fleming's right-hand rule",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Right-hand grip rule",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Newton's first rule",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Fleming's left-hand rule: thumb = thrust (force/motion), first finger = field, second finger = current.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In Fleming's left-hand rule, the first (fore) finger points in the direction of the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "force",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "current",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "magnetic field",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "voltage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The first finger represents the Field, the second finger the Current, and the thumb the Thrust (force).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a simple d.c. motor, the device that reverses the current direction in the coil every half turn is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "armature",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "split-ring commutator",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "field magnet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "carbon brush only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The split-ring commutator reverses the current in the coil every half turn so that the coil keeps rotating in the same direction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following converts electrical energy into mechanical (rotational) energy?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Electric generator",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Electric motor",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Transformer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Battery",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An electric motor uses the motor effect to turn electrical energy into mechanical energy of rotation.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The discovery that a current produces a magnetic field was made by the scientist named _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Oersted",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Faraday",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Ampere",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Maxwell",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Hans Christian Oersted observed a compass needle deflecting near a current-carrying wire.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnetic field lines around a straight current-carrying wire form _____ circles around the wire.",
+        "options": [
+          {
+            "id": "a",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "concentric",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "radial",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "elliptical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The field lines are concentric circles centred on the wire and perpendicular to it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The rule in which the thumb points along the current and the fingers curl in the direction of the field is the right-hand _____ rule.",
+        "options": [
+          {
+            "id": "a",
+            "text": "slap",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "palm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "grip",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "screw",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The right-hand grip rule gives the direction of the magnetic field around a straight wire.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A long cylindrical coil that behaves like a bar magnet when carrying current is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "electromagnet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "commutator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "galvanometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solenoid",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "A solenoid produces a strong, almost uniform field inside it, like a bar magnet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The core used in an electromagnet is made of _____ iron because it is easily magnetised and demagnetised.",
+        "options": [
+          {
+            "id": "a",
+            "text": "soft",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hard",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cast",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "wrought",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Soft iron gains and loses magnetism easily, making it ideal for an electromagnet core.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The strength of an electromagnet increases when the number of _____ in the coil is increased.",
+        "options": [
+          {
+            "id": "a",
+            "text": "coils",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "turns",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cores",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "magnets",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "More turns of wire produce a stronger magnetic field for the same current.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The force experienced by a current-carrying conductor placed in a magnetic field is known as the _____ effect.",
+        "options": [
+          {
+            "id": "a",
+            "text": "dynamo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "generator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "motor",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "induction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "This force is the basis of how electric motors work.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The direction of the force on a current-carrying conductor in a magnetic field is found using Fleming's _____-hand rule.",
+        "options": [
+          {
+            "id": "a",
+            "text": "right",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "palm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "grip",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "left",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Fleming's left-hand rule relates field, current and force directions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a simple d.c. motor, the _____ commutator reverses the current in the coil every half turn.",
+        "options": [
+          {
+            "id": "a",
+            "text": "split-ring",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "slip-ring",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "plain",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "carbon",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The split-ring commutator keeps the coil rotating in one direction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An electric motor changes electrical energy into _____ energy.",
+        "options": [
+          {
+            "id": "a",
+            "text": "thermal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mechanical",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "chemical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sound",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A motor converts electrical energy into mechanical (rotational) energy.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A steady electric current flowing in a wire produces a magnetic field around it.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the magnetic effect of a current, first shown by Oersted.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnetic field around a straight current-carrying wire is made of straight lines parallel to the wire.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The field lines are concentric circles around the wire, not straight parallel lines.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Reversing the direction of the current reverses the direction of the magnetic field it produces.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The field direction depends on the current direction, as shown by the right-hand grip rule.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A current-carrying solenoid has a north pole and a south pole like a bar magnet.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A solenoid behaves like a bar magnet, with distinct north and south poles at its ends.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An electromagnet keeps its magnetism permanently even after the current is switched off.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An electromagnet with a soft-iron core loses almost all its magnetism when the current stops.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Increasing the current in the coil of an electromagnet increases its strength.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A larger current produces a stronger magnetic field, so the electromagnet becomes stronger.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An electric bell uses an electromagnet to make the hammer strike the gong repeatedly.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "In an electric bell the electromagnet attracts an armature that breaks the circuit, so the hammer strikes and resets repeatedly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Fleming's right-hand rule is used to find the direction of the force on a current-carrying conductor in a magnetic field.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Fleming's left-hand rule is used for the force in a motor; the right-hand rule is used for generators.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A current-carrying conductor placed parallel to a magnetic field experiences the maximum force.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The force is maximum when the conductor is at right angles to the field; when parallel, the force is zero.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A split-ring commutator allows the coil of a d.c. motor to keep turning in the same direction.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By reversing the current every half turn, the commutator keeps the turning force acting in one rotational direction.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State what Oersted's experiment showed.",
+        "options": [],
+        "correctAnswer": "It showed that an electric current produces a magnetic field, because a compass needle near a current-carrying wire is deflected.",
+        "explanation": "This was the first evidence linking electricity and magnetism.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Describe the shape of the magnetic field around a long straight current-carrying wire.",
+        "options": [],
+        "correctAnswer": "Concentric circles around the wire, lying in planes at right angles to the wire.",
+        "explanation": "The field is strongest near the wire and weakens with distance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the right-hand grip rule.",
+        "options": [],
+        "correctAnswer": "If the right hand grips the wire with the thumb pointing in the direction of the current, the curled fingers show the direction of the magnetic field.",
+        "explanation": "It gives the field direction around a straight wire.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How does a current-carrying solenoid behave magnetically?",
+        "options": [],
+        "correctAnswer": "It behaves like a bar magnet, with a north pole at one end and a south pole at the other and a strong, nearly uniform field inside.",
+        "explanation": "The fields of all the turns add together inside the solenoid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List three factors that increase the strength of an electromagnet.",
+        "options": [],
+        "correctAnswer": "Increasing the number of turns of the coil, increasing the current, and using a soft-iron core.",
+        "explanation": "These factors increase the magnetic field produced by the electromagnet.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is soft iron used as the core of an electromagnet?",
+        "options": [],
+        "correctAnswer": "Because it is magnetised easily and loses its magnetism quickly when the current is switched off.",
+        "explanation": "This makes the electromagnet act only while current flows, which suits devices like bells and relays.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give four uses of electromagnets.",
+        "options": [],
+        "correctAnswer": "Electric bell, relay, magnetic crane for lifting scrap iron, and loudspeaker (also telephone earpiece).",
+        "explanation": "Electromagnets are widely used because their magnetism can be switched on and off.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State Fleming's left-hand rule.",
+        "options": [],
+        "correctAnswer": "Hold the thumb, first finger and second finger of the left hand at right angles: first finger points along the field, second finger along the current, and the thumb gives the direction of the force (motion).",
+        "explanation": "It gives the direction of the force on a current-carrying conductor in a magnetic field.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the function of the split-ring commutator in a d.c. motor?",
+        "options": [],
+        "correctAnswer": "It reverses the direction of the current in the coil every half turn so the coil keeps rotating in the same direction.",
+        "explanation": "Without it the coil would oscillate and stop instead of rotating continuously.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Explain the energy change that takes place in an electric motor.",
+        "options": [],
+        "correctAnswer": "It converts electrical energy into mechanical (rotational) energy.",
+        "explanation": "The motor effect produces a turning force that rotates the coil.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A scrapyard uses a large electromagnet on a crane to lift heavy iron objects. When the operator wants to drop a load of iron at a new place, what should be done?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increase the current in the electromagnet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Switch off the current to the electromagnet",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Add more turns to the coil",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Replace the soft-iron core with steel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because the core is soft iron, switching off the current removes the magnetism almost completely, so the iron load is released.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In a simple d.c. motor the coil starts rotating but stops after exactly half a turn and does not continue. Which fault most likely causes this?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The magnetic field is too strong",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The split-ring commutator is faulty and does not reverse the current",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The current is too small",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The coil has too many turns",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "If the commutator does not reverse the current after a half turn, the turning force reverses and the coil cannot keep rotating in one direction.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A straight wire carrying current passes horizontally from west to east between the poles of a magnet, with the magnetic field pointing from north to south (horizontally). Using Fleming's left-hand rule, in which direction does the force on the wire act?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vertically upwards",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Vertically downwards",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Towards the east",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Towards the west",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "By Fleming's left-hand rule, the first finger points north-to-south (field) and the second finger points west-to-east (current); the thumb then points vertically downwards, giving the direction of the force on the wire.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

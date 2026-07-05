@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_physics_topic_6",
+  "topicName": "Electronics",
+  "order": 6,
+  "description": "This topic introduces conductors, insulators and semiconductors, doping, the p-n junction diode and rectification, transistors, thermionic emission, the cathode-ray tube and logic gates with their applications in daily life.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following materials is classified as a semiconductor?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Copper",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Silicon",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Rubber",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Glass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Silicon (and germanium) are semiconductors: their conductivity lies between that of conductors like copper and insulators like rubber or glass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A conductor differs from an insulator mainly because a conductor has",
+        "options": [
+          {
+            "id": "a",
+            "text": "many free electrons that can move easily",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "no electrons at all",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "only positive charges",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "a very high melting point",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Conductors contain many free (delocalised) electrons that drift easily when a voltage is applied, while insulators have very few free electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a pure semiconductor is doped with a pentavalent (5-valence) impurity such as phosphorus, the result is",
+        "options": [
+          {
+            "id": "a",
+            "text": "a p-type semiconductor",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "an n-type semiconductor",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "a perfect insulator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "a pure conductor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A pentavalent impurity donates extra free electrons, making the majority charge carriers electrons (negative), so the material becomes n-type.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a p-type semiconductor the majority charge carriers are",
+        "options": [
+          {
+            "id": "a",
+            "text": "free electrons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "protons",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "holes",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "neutrons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A trivalent impurity creates vacancies (holes). Holes act as positive carriers and are the majority carriers in a p-type semiconductor.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A p-n junction diode allows current to flow easily when it is",
+        "options": [
+          {
+            "id": "a",
+            "text": "forward biased",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "reverse biased",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "unconnected",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "heated strongly",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "In forward bias the p-side is connected to the positive terminal and the n-side to the negative terminal, narrowing the depletion layer so current flows.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When a diode is reverse biased, the current that flows is",
+        "options": [
+          {
+            "id": "a",
+            "text": "very large",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "almost zero",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "equal to the forward current",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "alternating",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In reverse bias the depletion layer widens and the junction blocks current, so only a very small leakage current flows; it is taken as almost zero.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The main use of a diode in a power supply circuit is to act as a",
+        "options": [
+          {
+            "id": "a",
+            "text": "transformer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "rectifier",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "resistor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "capacitor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A diode conducts in only one direction, so it converts alternating current (a.c.) into direct current (d.c.); this process is called rectification.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many diodes are normally used to build a full-wave bridge rectifier?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A bridge rectifier uses four diodes arranged so that both halves of the a.c. cycle are passed to the load in the same direction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A transistor is mainly used in electronic circuits as a",
+        "options": [
+          {
+            "id": "a",
+            "text": "switch and amplifier",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "battery",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fuse",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "magnet",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A transistor can switch current on or off and can amplify a small input signal into a larger output signal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The three terminals of a bipolar transistor are called the",
+        "options": [
+          {
+            "id": "a",
+            "text": "anode, cathode and grid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "emitter, base and collector",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "source, drain and gate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "positive, negative and neutral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A bipolar junction transistor (npn or pnp) has three regions and terminals: the emitter, the base and the collector.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Thermionic emission is the release of electrons from a metal surface caused by",
+        "options": [
+          {
+            "id": "a",
+            "text": "strong magnetic fields",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "heating the metal to a high temperature",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "cooling the metal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shining ordinary light on it",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "When a metal (cathode) is heated strongly, its electrons gain enough energy to escape from the surface; this is thermionic emission.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a cathode-ray tube, the electron beam is made to glow on the screen because the screen is coated with a",
+        "options": [
+          {
+            "id": "a",
+            "text": "magnetic material",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fluorescent material",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "good conductor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "transparent plastic only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The inside of the screen is coated with a fluorescent (phosphor) material that emits light when struck by the fast-moving electrons.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The output of a NOT gate is",
+        "options": [
+          {
+            "id": "a",
+            "text": "always 1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "the opposite of its input",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "the same as its input",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "always 0",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A NOT gate (inverter) gives an output that is the logical inverse of the input: input 0 gives output 1, and input 1 gives output 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An AND gate has two inputs A and B. The output is 1 (HIGH) only when",
+        "options": [
+          {
+            "id": "a",
+            "text": "at least one input is 1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "both inputs are 1",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "both inputs are 0",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "the inputs are different",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An AND gate outputs 1 only when every input is 1; if any input is 0 the output is 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A NAND gate is best described as",
+        "options": [
+          {
+            "id": "a",
+            "text": "an AND gate followed by a NOT gate",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "an OR gate followed by a NOT gate",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "two NOT gates joined together",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "the same as an AND gate",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "NAND means NOT-AND: it gives the AND result inverted, so its output is 0 only when all inputs are 1 and 1 otherwise.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A material whose ability to conduct electricity lies between that of a conductor and an insulator is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "semiconductor",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "conductor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "insulator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "superconductor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Semiconductors such as silicon and germanium conduct better than insulators but worse than metals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process of adding a small amount of impurity to a pure semiconductor to change its conductivity is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "etching",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "doping",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "biasing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rectifying",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Doping adds impurity atoms to a pure (intrinsic) semiconductor to produce n-type or p-type material.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a p-type semiconductor the majority charge carriers are _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "electrons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ions",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "holes",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "protons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Trivalent impurities create holes, which act as positive charge carriers and are the majority carriers in p-type material.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A p-n junction diode conducts current easily only when it is _____ biased.",
+        "options": [
+          {
+            "id": "a",
+            "text": "reverse",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "zero",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "negatively",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "forward",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Forward bias narrows the depletion layer and allows current to flow; reverse bias blocks it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process of changing alternating current (a.c.) into direct current (d.c.) using a diode is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "rectification",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "amplification",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "modulation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "oscillation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Because a diode conducts in only one direction, it rectifies a.c. into d.c.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The two common semiconductor materials used to make diodes and transistors are germanium and _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "copper",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "silicon",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "carbon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "aluminium",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Silicon and germanium are the two main semiconductor elements; silicon is the most widely used today.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The middle, very thin region of a bipolar transistor is called the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "emitter",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "collector",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "base",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "junction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A transistor has three regions: emitter, base and collector. The base is the thin middle region that controls the current.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The emission of electrons from a hot metal surface is known as _____ emission.",
+        "options": [
+          {
+            "id": "a",
+            "text": "photoelectric",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "field",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "thermionic",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Heating a metal gives its electrons enough energy to escape; this is thermionic emission, used in cathode-ray tubes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A logic gate whose output is always the inverse (opposite) of its single input is the _____ gate.",
+        "options": [
+          {
+            "id": "a",
+            "text": "NOT",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "OR",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "AND",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "NOR",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The NOT gate, or inverter, gives output 1 for input 0 and output 0 for input 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For a two-input OR gate, the output is 0 only when both inputs are equal to _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An OR gate outputs 1 if at least one input is 1; it gives 0 only when both inputs are 0.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Copper is a good conductor of electricity.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Copper has many free electrons and is one of the best common conductors, widely used in wires.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A pure semiconductor at room temperature conducts electricity better than copper.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A pure (intrinsic) semiconductor conducts far worse than copper; its conductivity lies between conductors and insulators.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Doping a semiconductor with a trivalent impurity produces a p-type semiconductor.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A trivalent (3-valence) impurity creates holes, giving a p-type semiconductor.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A diode conducts current equally well in both directions.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A diode conducts easily in forward bias but blocks current in reverse bias, so it conducts in only one direction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A full-wave rectifier uses both halves of the a.c. cycle, while a half-wave rectifier uses only one half.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Half-wave rectification passes only one half of each cycle; full-wave rectification passes both halves, giving smoother d.c.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A transistor can be used as an electronic switch.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A small base current can switch the transistor on or off, allowing it to act as a fast switch.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Thermionic emission occurs when a metal is cooled to a very low temperature.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Thermionic emission happens when a metal is heated strongly, not cooled, so its electrons can escape the surface.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a cathode-ray oscilloscope, electric or magnetic fields are used to deflect the electron beam.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Deflecting plates (or coils) apply fields that move the electron beam so the trace can be positioned on the screen.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A two-input AND gate gives an output of 1 when only one of its inputs is 1.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An AND gate gives output 1 only when both inputs are 1; with one input 1 and the other 0 the output is 0.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A NOR gate gives an output of 1 only when all its inputs are 0.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "NOR is NOT-OR. The OR output is 0 only when all inputs are 0, so the inverted (NOR) output is 1 only in that case.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Explain the difference between conductors, insulators and semiconductors.",
+        "options": [],
+        "correctAnswer": "Conductors (e.g. copper) have many free electrons and allow current to flow easily; insulators (e.g. rubber, glass) have very few free electrons and hardly allow current; semiconductors (e.g. silicon, germanium) lie in between, conducting better than insulators but worse than conductors.",
+        "explanation": "The amount of conduction depends on how many free charge carriers a material has, which separates conductors, insulators and semiconductors.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Describe how n-type and p-type semiconductors are formed by doping.",
+        "options": [],
+        "correctAnswer": "Doping adds impurity atoms to a pure semiconductor. Adding a pentavalent impurity (e.g. phosphorus) donates extra free electrons, giving an n-type semiconductor. Adding a trivalent impurity (e.g. boron) creates holes, giving a p-type semiconductor.",
+        "explanation": "The type of impurity decides whether the majority carriers are electrons (n-type) or holes (p-type).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain what is meant by forward bias and reverse bias of a p-n junction diode.",
+        "options": [],
+        "correctAnswer": "In forward bias the p-side is connected to the positive terminal and the n-side to the negative terminal; the depletion layer narrows and current flows easily. In reverse bias the connections are swapped; the depletion layer widens and almost no current flows.",
+        "explanation": "The direction of the applied voltage controls the width of the depletion layer and therefore whether the diode conducts.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how a single diode produces half-wave rectification.",
+        "options": [],
+        "correctAnswer": "A single diode connected in series with the load conducts only during the half of the a.c. cycle when it is forward biased, and blocks the other half. The load therefore receives current in only one direction, producing pulsating direct current; this is half-wave rectification.",
+        "explanation": "Because a diode passes only one polarity, half of each a.c. cycle is removed, leaving one-directional output.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the difference between half-wave and full-wave rectification.",
+        "options": [],
+        "correctAnswer": "Half-wave rectification uses one diode and passes only one half of each a.c. cycle, wasting the other half. Full-wave rectification (e.g. a bridge of four diodes) passes both halves of the cycle in the same direction, giving a steadier and more efficient direct current.",
+        "explanation": "Full-wave rectification makes use of both halves of the input, so the output d.c. is smoother than half-wave output.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the two main uses of a transistor and briefly explain each.",
+        "options": [],
+        "correctAnswer": "A transistor is used as a switch and as an amplifier. As a switch, a small base current turns the larger collector current on or off. As an amplifier, a small varying input signal at the base produces a larger copy of the signal at the output.",
+        "explanation": "Both uses rely on a small base current controlling a much larger collector current.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain what thermionic emission is and where it is used.",
+        "options": [],
+        "correctAnswer": "Thermionic emission is the release of electrons from the surface of a metal when it is heated to a high temperature, because the electrons gain enough energy to escape. It is used to produce the electron beam in cathode-ray tubes and oscilloscopes.",
+        "explanation": "Heating supplies energy to electrons so they can leave the metal; this provides the electrons needed in a CRT.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe the basic working idea of a cathode-ray tube (CRT).",
+        "options": [],
+        "correctAnswer": "An electron gun produces electrons by thermionic emission and accelerates them into a fast beam. Deflecting plates (or coils) use electric or magnetic fields to steer the beam, which then strikes a fluorescent screen and makes it glow, forming a visible spot or trace.",
+        "explanation": "A CRT works by producing, accelerating, deflecting and finally displaying an electron beam on a fluorescent screen.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write the truth table for a two-input OR gate with inputs A and B.",
+        "options": [],
+        "correctAnswer": "A=0,B=0 gives output 0; A=0,B=1 gives output 1; A=1,B=0 gives output 1; A=1,B=1 gives output 1. The output is 1 whenever at least one input is 1.",
+        "explanation": "An OR gate outputs 1 if any input is 1 and outputs 0 only when all inputs are 0.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give four applications of electronics in daily life.",
+        "options": [],
+        "correctAnswer": "Examples include: radios and televisions; mobile phones and computers; battery chargers and power supplies that use rectifiers; calculators, digital watches and remote controls; and control systems such as automatic lighting and alarms.",
+        "explanation": "Electronic components like diodes, transistors and logic gates are used in many everyday devices for communication, computing, control and power supply.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "Two switches X and Y control a lamp through a logic gate. The lamp comes ON (output 1) only when BOTH switches are ON (X=1 AND Y=1). For the inputs X=1, Y=0, what is the output of this gate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 (lamp ON)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0 (lamp OFF)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It depends on the supply voltage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Both 0 and 1 at once",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The gate described is an AND gate, which outputs 1 only when both inputs are 1. With X=1 and Y=0 the output is 0, so the lamp is OFF.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An AND gate has inputs A and B. Its output is then fed into a NOT gate. If A=1 and B=1, what is the final output after the NOT gate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Undefined",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Both A and B",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "With A=1 and B=1 the AND gate outputs 1. The NOT gate inverts this to 0. (An AND followed by a NOT is a NAND gate, whose output is 0 when both inputs are 1.)",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A two-input NOR gate receives inputs P and Q. For which one of the following input combinations is the NOR output equal to 1?",
+        "options": [
+          {
+            "id": "a",
+            "text": "P=0, Q=0",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "P=1, Q=0",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "P=0, Q=1",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "P=1, Q=1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A NOR gate is NOT-OR. The OR output is 0 only when both inputs are 0, so the inverted NOR output is 1 only when P=0 and Q=0. All other combinations give 0.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

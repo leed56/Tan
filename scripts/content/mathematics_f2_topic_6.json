@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_6",
-  "topicName": "Similarity",
+  "topicName": "Logarithms",
   "order": 6,
-  "description": "This topic covers similar figures and triangles, conditions for similarity, ratios of corresponding sides, scale factor, ratios of areas and volumes of similar figures, and their applications.",
+  "description": "An introduction to standard form (scientific notation) and logarithms, including the laws of logarithms, the special values log base a of a and log base a of 1, and using characteristics, mantissas and antilogarithms to simplify calculations.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Two figures are said to be similar if they have the same shape and their corresponding sides are:",
+        "questionText": "Write 45,000 in standard form.",
         "options": [
-          {"id": "a", "text": "equal in length", "isCorrect": false},
-          {"id": "b", "text": "proportional", "isCorrect": true},
-          {"id": "c", "text": "perpendicular", "isCorrect": false},
-          {"id": "d", "text": "parallel", "isCorrect": false}
+          {"id": "a", "text": "4.5×10^3", "isCorrect": false},
+          {"id": "b", "text": "4.5×10^4", "isCorrect": true},
+          {"id": "c", "text": "45×10^3", "isCorrect": false},
+          {"id": "d", "text": "0.45×10^5", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Similar figures have the same shape with equal corresponding angles and proportional corresponding sides.",
+        "explanation": "Move the decimal point so the first number is between 1 and 10, giving 4.5, and count 4 places, so 45,000 = 4.5×10^4. Exam Tip: the first factor must satisfy 1 ≤ A < 10.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Two triangles are similar. The sides of the first are 3 cm, 4 cm and 5 cm, and the shortest side of the second is 9 cm. What is the longest side of the second triangle?",
+        "questionText": "Write 0.00072 in standard form.",
         "options": [
-          {"id": "a", "text": "12 cm", "isCorrect": false},
-          {"id": "b", "text": "15 cm", "isCorrect": true},
-          {"id": "c", "text": "10 cm", "isCorrect": false},
-          {"id": "d", "text": "18 cm", "isCorrect": false}
+          {"id": "a", "text": "7.2×10^4", "isCorrect": false},
+          {"id": "b", "text": "7.2×10^(−3)", "isCorrect": false},
+          {"id": "c", "text": "7.2×10^(−4)", "isCorrect": true},
+          {"id": "d", "text": "72×10^(−5)", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Move the decimal point right until you get 7.2, which takes 4 places, so the power is negative: 0.00072 = 7.2×10^(−4). Exam Tip: numbers smaller than 1 always give a negative power of 10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The value of log base 2 of 8 is:",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "4", "isCorrect": false},
+          {"id": "d", "text": "16", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The scale factor is 9/3 = 3, so the longest side is 5 x 3 = 15 cm.",
+        "explanation": "log base 2 of 8 asks for the power of 2 that gives 8, and since 2^3 = 8 the answer is 3. Exam Tip: a logarithm is just an exponent; ask what power gives the number.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following is a sufficient condition for two triangles to be similar?",
+        "questionText": "The value of log base 10 of 1000 is:",
         "options": [
-          {"id": "a", "text": "Three angles of one are equal to three angles of the other (AAA)", "isCorrect": true},
-          {"id": "b", "text": "They have the same perimeter", "isCorrect": false},
-          {"id": "c", "text": "They have the same area", "isCorrect": false},
-          {"id": "d", "text": "One side of each is equal", "isCorrect": false}
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "If the three angles of one triangle equal the three angles of another (AAA), the triangles are similar.",
+        "correctAnswer": "b",
+        "explanation": "log base 10 of 1000 asks for the power of 10 that gives 1000, and since 10^3 = 1000 the answer is 3. Exam Tip: for base 10, the logarithm counts the number of zeros in the power of ten.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The ratio of corresponding sides of two similar triangles is 2:3. What is the ratio of their areas?",
+        "questionText": "If log base 5 of x = 2, then x =",
         "options": [
-          {"id": "a", "text": "2:3", "isCorrect": false},
-          {"id": "b", "text": "4:6", "isCorrect": false},
-          {"id": "c", "text": "4:9", "isCorrect": true},
-          {"id": "d", "text": "8:27", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "The ratio of areas of similar figures equals the square of the ratio of sides: 2^2 : 3^2 = 4:9.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two similar solids have corresponding edges in the ratio 1:4. What is the ratio of their volumes?",
-        "options": [
-          {"id": "a", "text": "1:4", "isCorrect": false},
-          {"id": "b", "text": "1:16", "isCorrect": false},
-          {"id": "c", "text": "1:64", "isCorrect": true},
-          {"id": "d", "text": "1:12", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "The ratio of volumes of similar solids equals the cube of the ratio of edges: 1^3 : 4^3 = 1:64.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "In two similar triangles, the area of the smaller is 16 cm^2 and the area of the larger is 36 cm^2. What is the ratio of their corresponding sides?",
-        "options": [
-          {"id": "a", "text": "16:36", "isCorrect": false},
-          {"id": "b", "text": "4:6", "isCorrect": false},
-          {"id": "c", "text": "2:3", "isCorrect": true},
-          {"id": "d", "text": "4:9", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "The ratio of sides is the square root of the ratio of areas: sqrt(16/36) = 4/6 = 2/3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A photograph 8 cm wide and 12 cm long is enlarged so that its width becomes 20 cm. What is the new length?",
-        "options": [
-          {"id": "a", "text": "24 cm", "isCorrect": false},
-          {"id": "b", "text": "30 cm", "isCorrect": true},
-          {"id": "c", "text": "32 cm", "isCorrect": false},
-          {"id": "d", "text": "28 cm", "isCorrect": false}
+          {"id": "a", "text": "10", "isCorrect": false},
+          {"id": "b", "text": "25", "isCorrect": true},
+          {"id": "c", "text": "32", "isCorrect": false},
+          {"id": "d", "text": "7", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The scale factor is 20/8 = 2.5, so the new length is 12 x 2.5 = 30 cm.",
+        "explanation": "Rewriting log base 5 of x = 2 in exponent form gives x = 5^2 = 25. Exam Tip: log base a of x = b means x = a^b.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which statement about congruent and similar figures is correct?",
+        "questionText": "The value of log base 7 of 7 is:",
         "options": [
-          {"id": "a", "text": "All similar figures are congruent", "isCorrect": false},
-          {"id": "b", "text": "All congruent figures are similar", "isCorrect": true},
-          {"id": "c", "text": "Congruent figures have proportional but unequal sides", "isCorrect": false},
-          {"id": "d", "text": "Similar figures always have equal areas", "isCorrect": false}
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "1", "isCorrect": true},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "49", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Congruent figures are similar with a scale factor of 1, but similar figures are not always congruent.",
-        "difficulty": "medium"
+        "explanation": "The power of 7 that gives 7 is 1, since 7^1 = 7, so log base 7 of 7 = 1. Exam Tip: log base a of a always equals 1.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "In triangle ABC, a line DE is drawn parallel to BC cutting AB at D and AC at E. If AD = 4 cm, DB = 6 cm and AE = 6 cm, find EC.",
+        "questionText": "The value of log base 10 of 1 is:",
         "options": [
-          {"id": "a", "text": "4 cm", "isCorrect": false},
-          {"id": "b", "text": "9 cm", "isCorrect": true},
-          {"id": "c", "text": "8 cm", "isCorrect": false},
-          {"id": "d", "text": "10 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "By the basic proportionality theorem, AD/DB = AE/EC, so 4/6 = 6/EC, giving EC = 36/4 = 9 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two similar cylinders have radii 3 cm and 5 cm. What is the ratio of their curved surface areas?",
-        "options": [
-          {"id": "a", "text": "3:5", "isCorrect": false},
-          {"id": "b", "text": "9:25", "isCorrect": true},
-          {"id": "c", "text": "27:125", "isCorrect": false},
-          {"id": "d", "text": "6:10", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Surface area ratio equals the square of the linear ratio: 3^2 : 5^2 = 9:25.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The condition for similarity where two sides of one triangle are proportional to two sides of another and the included angles are equal is called:",
-        "options": [
-          {"id": "a", "text": "AAA", "isCorrect": false},
-          {"id": "b", "text": "SAS (similarity)", "isCorrect": true},
-          {"id": "c", "text": "SSS (similarity)", "isCorrect": false},
-          {"id": "d", "text": "RHS", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "The SAS similarity condition requires two pairs of proportional sides with equal included angles.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A model of a building is made to a scale of 1:50. If the real building is 75 m tall, how tall is the model?",
-        "options": [
-          {"id": "a", "text": "1.5 m", "isCorrect": true},
-          {"id": "b", "text": "1.5 cm", "isCorrect": false},
-          {"id": "c", "text": "15 m", "isCorrect": false},
-          {"id": "d", "text": "0.75 m", "isCorrect": false}
+          {"id": "a", "text": "0", "isCorrect": true},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "Undefined", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Model height = 75 m / 50 = 1.5 m.",
-        "difficulty": "medium"
+        "explanation": "The power of 10 that gives 1 is 0, since 10^0 = 1, so log base 10 of 1 = 0. Exam Tip: log base a of 1 always equals 0.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Two similar triangles have areas 50 cm^2 and 200 cm^2. If a side of the smaller is 5 cm, the corresponding side of the larger is:",
+        "questionText": "Using the laws of logarithms, log 6 can be written in terms of log 2 and log 3 as:",
         "options": [
-          {"id": "a", "text": "10 cm", "isCorrect": true},
-          {"id": "b", "text": "20 cm", "isCorrect": false},
-          {"id": "c", "text": "15 cm", "isCorrect": false},
-          {"id": "d", "text": "12.5 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Side ratio = sqrt(200/50) = sqrt(4) = 2, so the larger side is 5 x 2 = 10 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A vertical stick 2 m long casts a shadow 3 m long at the same time a flagpole casts a shadow 18 m long. How tall is the flagpole?",
-        "options": [
-          {"id": "a", "text": "27 m", "isCorrect": false},
-          {"id": "b", "text": "12 m", "isCorrect": true},
-          {"id": "c", "text": "9 m", "isCorrect": false},
-          {"id": "d", "text": "24 m", "isCorrect": false}
+          {"id": "a", "text": "log2×log3", "isCorrect": false},
+          {"id": "b", "text": "log2+log3", "isCorrect": true},
+          {"id": "c", "text": "log2−log3", "isCorrect": false},
+          {"id": "d", "text": "log5", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "By similar triangles, height/shadow is constant: 2/3 = h/18, so h = 36/3 = 12 m.",
+        "explanation": "By the product law, the log of a product equals the sum of the logs, and since 6 = 2×3, log 6 = log 2 + log 3. Exam Tip: log(a×b) = log a + log b.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Two similar water tanks have volumes 27 litres and 216 litres. What is the ratio of their heights?",
+        "questionText": "The value of log 20 − log 4 is:",
         "options": [
-          {"id": "a", "text": "1:8", "isCorrect": false},
-          {"id": "b", "text": "1:2", "isCorrect": true},
-          {"id": "c", "text": "1:3", "isCorrect": false},
-          {"id": "d", "text": "3:8", "isCorrect": false}
+          {"id": "a", "text": "log16", "isCorrect": false},
+          {"id": "b", "text": "log80", "isCorrect": false},
+          {"id": "c", "text": "log5", "isCorrect": true},
+          {"id": "d", "text": "5", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "By the quotient law, log a − log b = log(a/b), so log 20 − log 4 = log(20/4) = log 5. Exam Tip: subtracting logs means dividing the numbers, not the logs.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Using the power law, log 8 can be written in terms of log 2 as:",
+        "options": [
+          {"id": "a", "text": "4log2", "isCorrect": false},
+          {"id": "b", "text": "3log2", "isCorrect": true},
+          {"id": "c", "text": "8log2", "isCorrect": false},
+          {"id": "d", "text": "log2+3", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Height ratio = cube root of volume ratio = cube root of (27/216) = 3/6 = 1/2.",
-        "difficulty": "hard"
+        "explanation": "Since 8 = 2^3, the power law lets the exponent come to the front, giving log 8 = log(2^3) = 3 log 2. Exam Tip: log(a^n) = n log a.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Given log2 = 0.3010 and log3 = 0.4771, find log 12.",
+        "options": [
+          {"id": "a", "text": "0.7781", "isCorrect": false},
+          {"id": "b", "text": "1.0791", "isCorrect": true},
+          {"id": "c", "text": "1.0792", "isCorrect": false},
+          {"id": "d", "text": "0.9542", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since 12 = 2^2×3, log 12 = 2 log 2 + log 3 = 0.6020 + 0.4771 = 1.0791. Exam Tip: break the number into prime factors first, then apply the product and power laws.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If log x = 2.5378, the characteristic is:",
+        "options": [
+          {"id": "a", "text": "0.5378", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": true},
+          {"id": "c", "text": "5", "isCorrect": false},
+          {"id": "d", "text": "25", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The characteristic is the whole number part of the logarithm, which here is 2, while 0.5378 is the mantissa. Exam Tip: characteristic = whole number part, mantissa = decimal part.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The antilogarithm of 3 (base 10) is:",
+        "options": [
+          {"id": "a", "text": "30", "isCorrect": false},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "1000", "isCorrect": true},
+          {"id": "d", "text": "3", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The antilogarithm reverses the logarithm, so the antilog of 3 is 10^3 = 1000. Exam Tip: antilog of x means 10^x for base 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "To compute 46.8×21.5 using logarithms, the correct procedure is:",
+        "options": [
+          {"id": "a", "text": "log46.8×log21.5 then antilog", "isCorrect": false},
+          {"id": "b", "text": "log46.8+log21.5 then antilog", "isCorrect": true},
+          {"id": "c", "text": "log46.8−log21.5 then antilog", "isCorrect": false},
+          {"id": "d", "text": "antilog46.8+antilog21.5", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Logarithms turn multiplication into addition, so you add log 46.8 and log 21.5, then take the antilog of the sum. Exam Tip: multiply by adding logs, divide by subtracting logs, then antilog the result.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write 150,000,000 km in standard form.",
+        "options": [
+          {"id": "a", "text": "1.5×10^7", "isCorrect": false},
+          {"id": "b", "text": "1.5×10^8", "isCorrect": true},
+          {"id": "c", "text": "15×10^7", "isCorrect": false},
+          {"id": "d", "text": "1.5×10^9", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moving the decimal point to get 1.5 requires counting 8 places, so 150,000,000 = 1.5×10^8. Exam Tip: count the digits after the first one to find the power of 10.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "The number you multiply each side of a figure by to get a similar figure is called the _____.",
-        "options": [],
-        "correctAnswer": "scale factor",
-        "explanation": "The scale factor is the ratio of corresponding lengths in similar figures.",
+        "questionText": "3,600 in standard form is ____.",
+        "options": [
+          {"id": "a", "text": "3.6×10^3", "isCorrect": true},
+          {"id": "b", "text": "36×10^2", "isCorrect": false},
+          {"id": "c", "text": "3.6×10^4", "isCorrect": false},
+          {"id": "d", "text": "0.36×10^4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Move the decimal to get 3.6, counting 3 places, so 3,600 = 3.6×10^3. Exam Tip: the first factor must be between 1 and 10.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In similar figures, corresponding angles are always _____.",
-        "options": [],
-        "correctAnswer": "equal",
-        "explanation": "Equal corresponding angles is a key property of similar figures.",
+        "questionText": "0.0052 in standard form is ____.",
+        "options": [
+          {"id": "a", "text": "5.2×10^(−3)", "isCorrect": true},
+          {"id": "b", "text": "5.2×10^(−2)", "isCorrect": false},
+          {"id": "c", "text": "5.2×10^3", "isCorrect": false},
+          {"id": "d", "text": "52×10^(−4)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Move the decimal right to get 5.2, which takes 3 places, so the power is negative: 0.0052 = 5.2×10^(−3). Exam Tip: numbers less than 1 give a negative power.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Two similar triangles have sides in the ratio 5:8. The ratio of their areas is _____.",
-        "options": [],
-        "correctAnswer": "25:64",
-        "explanation": "Area ratio is the square of the side ratio: 5^2 : 8^2 = 25:64.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two similar solids have heights in the ratio 2:5. The ratio of their volumes is _____.",
-        "options": [],
-        "correctAnswer": "8:125",
-        "explanation": "Volume ratio is the cube of the linear ratio: 2^3 : 5^3 = 8:125.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If a triangle with sides 6, 8, 10 is similar to one with smallest side 9, the longest side of the second triangle is _____ cm.",
-        "options": [],
-        "correctAnswer": "15",
-        "explanation": "Scale factor = 9/6 = 1.5, so 10 x 1.5 = 15 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "On a map with scale 1:100000, two towns are 7 cm apart. The actual distance between them is _____ km.",
-        "options": [],
-        "correctAnswer": "7",
-        "explanation": "7 cm x 100000 = 700000 cm = 7000 m = 7 km.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two similar circles (or any similar figures) have areas in the ratio 9:16. The ratio of their corresponding lengths is _____.",
-        "options": [],
-        "correctAnswer": "3:4",
-        "explanation": "Length ratio = sqrt(9):sqrt(16) = 3:4.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A figure that has been enlarged with a scale factor greater than 1 becomes _____ than the original.",
-        "options": [],
-        "correctAnswer": "larger",
-        "explanation": "A scale factor greater than 1 produces an enlargement.",
+        "questionText": "In exponent form, log base 3 of 81 = 4 is written as ____.",
+        "options": [
+          {"id": "a", "text": "3^4=81", "isCorrect": true},
+          {"id": "b", "text": "4^3=81", "isCorrect": false},
+          {"id": "c", "text": "81^3=4", "isCorrect": false},
+          {"id": "d", "text": "3^81=4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "log base a of x = b converts to a^b = x, so log base 3 of 81 = 4 becomes 3^4 = 81. Exam Tip: the base stays the base, and the log becomes the exponent.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Two similar cones have base radii 4 cm and 6 cm. The ratio of their volumes is _____.",
-        "options": [],
-        "correctAnswer": "8:27",
-        "explanation": "Volume ratio is the cube of the linear ratio: 4^3 : 6^3 = 64:216 = 8:27.",
-        "difficulty": "hard"
+        "questionText": "log base 4 of 64 = ____.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": false},
+          {"id": "d", "text": "16", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The power of 4 that gives 64 is 3, since 4^3 = 64, so log base 4 of 64 = 3. Exam Tip: ask what power of the base gives the number.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "In triangle PQR, ST is parallel to QR with S on PQ and T on PR. If PS = 3, SQ = 5 and PT = 4.5, then TR = _____.",
-        "options": [],
-        "correctAnswer": "7.5",
-        "explanation": "PS/SQ = PT/TR, so 3/5 = 4.5/TR, giving TR = (4.5 x 5)/3 = 7.5.",
-        "difficulty": "hard"
+        "questionText": "log base a of 1 = ____ for any valid base a.",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": true},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "a", "isCorrect": false},
+          {"id": "d", "text": "undefined", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Any base raised to the power 0 gives 1, so log base a of 1 = 0. Exam Tip: log base a of 1 is always 0, no matter the base.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "log 5 + log 2 = log ____.",
+        "options": [
+          {"id": "a", "text": "10", "isCorrect": true},
+          {"id": "b", "text": "7", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "25", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "By the product law, log 5 + log 2 = log(5×2) = log 10, which has value 1 in base 10. Exam Tip: adding logs means multiplying the numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "log 36 = ____ log 6.",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "36", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since 36 = 6^2, the power law gives log 36 = log(6^2) = 2 log 6. Exam Tip: use log(a^n) = n log a when the number is a perfect power.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If log x = 1.4771 and log 3 = 0.4771, then x = ____.",
+        "options": [
+          {"id": "a", "text": "30", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "300", "isCorrect": false},
+          {"id": "d", "text": "13", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "log x = 1 + 0.4771 = log 10 + log 3 = log 30, so x = 30. Exam Tip: a characteristic of 1 multiplies the base number by 10.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mantissa of log x = 3.6021 is ____.",
+        "options": [
+          {"id": "a", "text": "0.6021", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "6021", "isCorrect": false},
+          {"id": "d", "text": "3.6021", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The mantissa is the decimal part of the logarithm, which here is 0.6021, while 3 is the characteristic. Exam Tip: mantissa = decimal part, characteristic = whole number part.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "antilog 2 = ____.",
+        "options": [
+          {"id": "a", "text": "100", "isCorrect": true},
+          {"id": "b", "text": "20", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "1000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The antilogarithm of 2 in base 10 is 10^2 = 100. Exam Tip: antilog of x means 10^x.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "All squares are similar to one another.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "All squares have equal angles (90 degrees) and proportional sides, so they are always similar.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "All rectangles are similar to one another.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Rectangles have equal angles but their side ratios can differ, so they are not always similar.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "If two triangles are similar, their corresponding sides are proportional.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Proportional corresponding sides is a defining property of similar triangles.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The ratio of areas of two similar figures equals the ratio of their corresponding sides.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The ratio of areas equals the square of the ratio of corresponding sides.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two congruent triangles are also similar.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Congruent triangles are similar with a scale factor of 1.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If two triangles have all three pairs of corresponding angles equal, they must be similar.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Equal corresponding angles (AAA) guarantees similarity of triangles.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The ratio of volumes of two similar solids equals the square of the ratio of their corresponding edges.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The ratio of volumes equals the cube of the ratio of corresponding edges.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "All circles are similar to each other.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Every circle has the same shape, so all circles are similar.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If the scale factor between two similar figures is 1, the figures are congruent.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A scale factor of 1 means corresponding sides are equal, so the figures are congruent.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Two equilateral triangles of different sizes are always similar.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "All equilateral triangles have 60-degree angles and proportional sides, so they are always similar.",
-        "difficulty": "easy"
-      }
+      {"questionText": "In standard form A×10^n, the value of A must satisfy 1 ≤ A < 10.", "options": [], "correctAnswer": "true", "explanation": "By definition, standard form requires the first factor A to be at least 1 and less than 10, with the power of 10 handling the size.", "difficulty": "easy"},
+      {"questionText": "log(a+b) = log a + log b.", "options": [], "correctAnswer": "false", "explanation": "The product law is log(a×b) = log a + log b; there is no simple rule for the logarithm of a sum, so log(a+b) does not equal log a + log b.", "difficulty": "easy"},
+      {"questionText": "log 100 = 2 (base 10).", "options": [], "correctAnswer": "true", "explanation": "Since 10^2 = 100, the power of 10 that gives 100 is 2, so log base 10 of 100 = 2.", "difficulty": "easy"},
+      {"questionText": "The logarithm of a negative number is not defined (for real numbers).", "options": [], "correctAnswer": "true", "explanation": "A positive base raised to any real power is always positive, so no exponent can give a negative number, meaning the logarithm of a negative number is undefined in the real numbers.", "difficulty": "easy"},
+      {"questionText": "log 1000 − log 10 = log 100.", "options": [], "correctAnswer": "true", "explanation": "By the quotient law, log 1000 − log 10 = log(1000/10) = log 100, which is true.", "difficulty": "easy"},
+      {"questionText": "2 log 5 = log 25.", "options": [], "correctAnswer": "true", "explanation": "By the power law, 2 log 5 = log(5^2) = log 25, so the statement is true.", "difficulty": "easy"},
+      {"questionText": "The antilogarithm of a logarithm returns the original number.", "options": [], "correctAnswer": "true", "explanation": "The antilogarithm is the inverse of the logarithm, so taking the antilog of log x gives back x.", "difficulty": "easy"},
+      {"questionText": "log 50 = log 5 × log 10.", "options": [], "correctAnswer": "false", "explanation": "The product law gives log(5×10) = log 5 + log 10, using addition, not multiplication, so this statement is false.", "difficulty": "easy"},
+      {"questionText": "The characteristic of log 456 is 2.", "options": [], "correctAnswer": "true", "explanation": "The number 456 lies between 100 and 1000, so its logarithm is between 2 and 3, giving a characteristic of 2.", "difficulty": "easy"},
+      {"questionText": "Logarithms were historically used to simplify long multiplication and division.", "options": [], "correctAnswer": "true", "explanation": "Before calculators, logarithms turned multiplication into addition and division into subtraction, making long calculations much easier.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of similar figures",
-        "options": [],
-        "correctAnswer": "Figures with the same shape, equal corresponding angles and proportional corresponding sides.",
-        "explanation": "Similarity preserves shape but not necessarily size.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Conditions for similar triangles",
-        "options": [],
-        "correctAnswer": "AAA, SSS (proportional sides) and SAS (two proportional sides with equal included angle).",
-        "explanation": "Any one of these conditions proves two triangles are similar.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of scale factor",
-        "options": [],
-        "correctAnswer": "The ratio of a length in the image to the corresponding length in the original figure.",
-        "explanation": "A scale factor above 1 enlarges and below 1 reduces a figure.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ratio of areas of similar figures",
-        "options": [],
-        "correctAnswer": "Equal to the square of the ratio of corresponding sides.",
-        "explanation": "If sides are in ratio a:b, areas are in ratio a^2:b^2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ratio of volumes of similar solids",
-        "options": [],
-        "correctAnswer": "Equal to the cube of the ratio of corresponding edges.",
-        "explanation": "If edges are in ratio a:b, volumes are in ratio a^3:b^3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Basic proportionality (intercept) theorem",
-        "options": [],
-        "correctAnswer": "A line parallel to one side of a triangle divides the other two sides proportionally.",
-        "explanation": "This creates a smaller triangle similar to the original.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Relationship between congruence and similarity",
-        "options": [],
-        "correctAnswer": "Congruent figures are similar with scale factor 1; similar figures need not be congruent.",
-        "explanation": "Congruence is a special case of similarity.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Finding a length ratio from an area ratio",
-        "options": [],
-        "correctAnswer": "Take the square root of the area ratio.",
-        "explanation": "If areas are a^2:b^2, lengths are a:b.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Finding a length ratio from a volume ratio",
-        "options": [],
-        "correctAnswer": "Take the cube root of the volume ratio.",
-        "explanation": "If volumes are a^3:b^3, lengths are a:b.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Application of similarity",
-        "options": [],
-        "correctAnswer": "Used in maps, scale models, and measuring heights using shadows and similar triangles.",
-        "explanation": "Similarity lets us calculate unknown real lengths from scaled measurements.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Standard form (scientific notation)", "options": [], "correctAnswer": "A way of writing numbers as A×10^n, where 1 ≤ A < 10 and n is an integer.", "explanation": "It expresses very large or very small numbers compactly, for example 45,000 = 4.5×10^4. Exam Tip: always check that the first factor is between 1 and 10.", "difficulty": "easy"},
+      {"questionText": "Logarithm", "options": [], "correctAnswer": "An exponent; the power to which a base must be raised to give a certain number.", "explanation": "For example log base 2 of 8 = 3 because 2^3 = 8, so a logarithm simply answers what power gives the number. Exam Tip: log base a of x = b means a^b = x.", "difficulty": "easy"},
+      {"questionText": "Product law of logarithms", "options": [], "correctAnswer": "log(a×b) = log a + log b; the log of a product is the sum of the logs.", "explanation": "This law turns multiplication into addition, so log 6 = log 2 + log 3. Exam Tip: multiply the numbers, add the logs.", "difficulty": "easy"},
+      {"questionText": "Quotient law of logarithms", "options": [], "correctAnswer": "log(a/b) = log a − log b; the log of a quotient is the difference of the logs.", "explanation": "This law turns division into subtraction, so log 20 − log 4 = log 5. Exam Tip: divide the numbers, subtract the logs.", "difficulty": "easy"},
+      {"questionText": "Power law of logarithms", "options": [], "correctAnswer": "log(a^n) = n log a; the exponent of the number moves to the front of the log.", "explanation": "This law lets you bring powers down, so log 8 = log(2^3) = 3 log 2. Exam Tip: rewrite the number as a power first, then bring the exponent forward.", "difficulty": "easy"},
+      {"questionText": "log base a of a = 1", "options": [], "correctAnswer": "The logarithm of the base itself is always 1, since a^1 = a.", "explanation": "For any valid base a, raising it to the power 1 gives a, so log base a of a = 1. Exam Tip: whenever the number matches the base, the answer is 1.", "difficulty": "easy"},
+      {"questionText": "log base a of 1 = 0", "options": [], "correctAnswer": "The logarithm of 1 is always 0, since a^0 = 1 for any base.", "explanation": "Because any base raised to the power 0 equals 1, log base a of 1 = 0. Exam Tip: the log of 1 is always 0, regardless of the base.", "difficulty": "easy"},
+      {"questionText": "Characteristic", "options": [], "correctAnswer": "The whole number part of a logarithm.", "explanation": "In log x = 2.5378 the characteristic is 2, and it tells you the size of the number. Exam Tip: the characteristic is one less than the number of digits before the decimal point.", "difficulty": "easy"},
+      {"questionText": "Mantissa", "options": [], "correctAnswer": "The decimal (fractional) part of a logarithm.", "explanation": "In log x = 2.5378 the mantissa is 0.5378, and it is read from log tables. Exam Tip: the mantissa depends only on the digits, not on where the decimal point sits.", "difficulty": "easy"},
+      {"questionText": "Antilogarithm", "options": [], "correctAnswer": "The inverse of a logarithm; the number whose logarithm is a given value.", "explanation": "The antilog of 3 in base 10 is 10^3 = 1000, recovering the original number. Exam Tip: to find the antilog, raise the base to the power of the logarithm.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A cone is cut parallel to its base halfway up its height, forming a smaller cone on top. If the volume of the whole cone is 240 cm^3, what is the volume of the small top cone?",
+        "questionText": "Given log2 = 0.3010 and log3 = 0.4771, evaluate log 7.2.",
         "options": [
-          {"id": "a", "text": "120 cm^3", "isCorrect": false},
-          {"id": "b", "text": "60 cm^3", "isCorrect": false},
-          {"id": "c", "text": "30 cm^3", "isCorrect": true},
-          {"id": "d", "text": "80 cm^3", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "The small cone is similar with linear ratio 1:2, so volume ratio is 1:8; thus 240 / 8 = 30 cm^3.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Two similar jugs have heights 12 cm and 18 cm. If the smaller jug holds 800 ml, how much does the larger jug hold?",
-        "options": [
-          {"id": "a", "text": "1200 ml", "isCorrect": false},
-          {"id": "b", "text": "1800 ml", "isCorrect": false},
-          {"id": "c", "text": "2700 ml", "isCorrect": true},
-          {"id": "d", "text": "1620 ml", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "Linear ratio 12:18 = 2:3, so volume ratio is 8:27; larger = 800 x (27/8) = 2700 ml.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "In triangle ABC, a line DE parallel to BC divides it so that triangle ADE has area 9 cm^2 and the trapezium DBCE has area 16 cm^2. What is the ratio AD:DB?",
-        "options": [
-          {"id": "a", "text": "3:2", "isCorrect": true},
-          {"id": "b", "text": "9:16", "isCorrect": false},
-          {"id": "c", "text": "3:5", "isCorrect": false},
-          {"id": "d", "text": "9:25", "isCorrect": false}
+          {"id": "a", "text": "0.8573", "isCorrect": true},
+          {"id": "b", "text": "0.8451", "isCorrect": false},
+          {"id": "c", "text": "1.8573", "isCorrect": false},
+          {"id": "d", "text": "0.7781", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Area of ABC = 9 + 16 = 25, so ADE:ABC = 9:25, giving AD:AB = 3:5; thus AD:DB = 3:(5-3) = 3:2.",
+        "explanation": "Write 7.2 as 72/10 = (2^3×3^2)/10, so log 7.2 = 3 log 2 + 2 log 3 − log 10 = 0.9030 + 0.9542 − 1 = 0.8572, which rounds to 0.8573. Exam Tip: write 7.2 as 72/10, then break 72 into prime factors before applying the laws.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Solve log base 2 of (x−3) = 4. What is x?",
+        "options": [
+          {"id": "a", "text": "x=8", "isCorrect": false},
+          {"id": "b", "text": "x=11", "isCorrect": false},
+          {"id": "c", "text": "x=16", "isCorrect": false},
+          {"id": "d", "text": "x=19", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "Converting to exponent form gives x − 3 = 2^4 = 16, so x = 16 + 3 = 19. Exam Tip: option C (16) forgets to add the 3 back after solving x − 3 = 16.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "N = 10^4 × 10^(0.2t); find t when N = 10^6.",
+        "options": [
+          {"id": "a", "text": "t=2", "isCorrect": false},
+          {"id": "b", "text": "t=5", "isCorrect": false},
+          {"id": "c", "text": "t=10", "isCorrect": true},
+          {"id": "d", "text": "t=20", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Combining powers gives N = 10^(4+0.2t), and setting this equal to 10^6 means 6 = 4 + 0.2t, so 0.2t = 2 and t = 10. Exam Tip: taking log base 10 of both sides brings the exponent down so you can equate the powers.",
         "difficulty": "hard"
       }
     ]

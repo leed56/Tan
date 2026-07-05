@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "_____ is any mental or physical effort done to produce goods or services.",
-        "options": [],
-        "correctAnswer": "Work",
+        "options": [
+          {
+            "id": "a",
+            "text": "Work",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Leisure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Profit",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Capital",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Work is the application of mental or physical effort to produce goods or services that satisfy human needs.",
         "difficulty": "easy"
       },
       {
         "questionText": "The ability to depend on one's own efforts and resources to meet needs is called _____.",
-        "options": [],
-        "correctAnswer": "self-reliance",
+        "options": [
+          {
+            "id": "a",
+            "text": "dependence",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "self-reliance",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "unemployment",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ownership",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Self-reliance means using one's own abilities and resources instead of depending on others.",
         "difficulty": "easy"
       },
       {
         "questionText": "A person who creates his or her own job and works for themselves is described as being in _____.",
-        "options": [],
-        "correctAnswer": "self-employment",
+        "options": [
+          {
+            "id": "a",
+            "text": "retirement",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "apprenticeship",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "self-employment",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "partnership",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Self-employment means working for oneself by running one's own income-generating activity.",
         "difficulty": "easy"
       },
       {
         "questionText": "A person who starts a business and takes risks to make a profit is called an _____.",
-        "options": [],
-        "correctAnswer": "entrepreneur",
+        "options": [
+          {
+            "id": "a",
+            "text": "employee",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "consumer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "supplier",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "entrepreneur",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "An entrepreneur identifies opportunities, takes risks, and organises resources to run a business for profit.",
         "difficulty": "easy"
       },
       {
         "questionText": "The money and resources used to start and run a business are known as _____.",
-        "options": [],
-        "correctAnswer": "capital",
+        "options": [
+          {
+            "id": "a",
+            "text": "capital",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "profit",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "salary",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "interest",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Capital includes the funds, tools, and materials required to establish and operate a business.",
         "difficulty": "medium"
       },
       {
         "questionText": "Work that requires special training or expertise is called _____ work.",
-        "options": [],
-        "correctAnswer": "skilled",
+        "options": [
+          {
+            "id": "a",
+            "text": "casual",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "skilled",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "manual",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "voluntary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Skilled work needs special training or qualifications, unlike unskilled work which requires little training.",
         "difficulty": "medium"
       },
       {
         "questionText": "The respect and pride that every honest work gives to a person is called the _____ of work.",
-        "options": [],
-        "correctAnswer": "dignity",
+        "options": [
+          {
+            "id": "a",
+            "text": "burden",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "leisure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dignity",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "salary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The dignity of work means all honest labour is worthy of respect and gives a person value.",
         "difficulty": "medium"
       },
       {
         "questionText": "Using time and resources carefully to avoid waste is known as good _____ of resources.",
-        "options": [],
-        "correctAnswer": "management",
+        "options": [
+          {
+            "id": "a",
+            "text": "collection",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "production",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "consumption",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "management",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Good management of time and resources ensures efficiency and helps achieve goals without waste.",
         "difficulty": "medium"
       },
       {
         "questionText": "Employment that is officially registered and operates with contracts and regulations is called _____ employment.",
-        "options": [],
-        "correctAnswer": "formal",
+        "options": [
+          {
+            "id": "a",
+            "text": "formal",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "casual",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "seasonal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "temporary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Formal employment is officially recognised, regulated, and usually involves written contracts.",
         "difficulty": "hard"
       },
       {
         "questionText": "The financial gain a business earns after deducting its costs is called _____.",
-        "options": [],
-        "correctAnswer": "profit",
+        "options": [
+          {
+            "id": "a",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "profit",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "wage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "loss",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Profit is the money remaining after a business subtracts its expenses from its total income.",
         "difficulty": "medium"
       }

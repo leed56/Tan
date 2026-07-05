@@ -66,10 +66,36 @@ quizzes into Firestore project **`tanza-9b182`**, one unit at a time.
 
 ### Form 3
 - [x] 26. Mathematics — Form 3 ✅ (8 topics, 40 packs, 304 questions — seeded to tanza-9b182)
-- [ ] 27–38. Biology, Chemistry, Physics, English, Kiswahili, Geography, History, Civics, Commerce, Agriculture, Computer Studies, Islamic Knowledge — Form 3
+- [x] 27. Biology — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs biology_f3` once credentials are available)
+- [x] 28. Chemistry — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs chemistry_f3` once credentials are available)
+- [x] 29. Physics — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs physics_f3` once credentials are available)
+- [x] 30. English — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs english_f3` once credentials are available)
+- [x] 31. Kiswahili — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs kiswahili_f3` once credentials are available)
+- [x] 32. Geography — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs geography_f3` once credentials are available)
+- [x] 33. History — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs history_f3` once credentials are available)
+- [x] 34. Civics — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs civics_f3` once credentials are available)
+- [x] 35. Commerce — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs commerce_f3` once credentials are available)
+- [x] 36. Agriculture — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs agriculture_f3` once credentials are available)
+- [x] 37. Computer Studies — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs computer_studies_f3` once credentials are available)
+- [x] 38. Islamic Knowledge — Form 3 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs islamic_knowledge_f3` once credentials are available)
+- ✅ **FORM 3 COMPLETE — all 13 subjects authored** (104 topic files, ~4,992 items; content authored, seed to tanza-9b182 with `seed-content.mjs _f3` once credentials are available)
 
 ### Form 4
-- [ ] 39–51. All 13 subjects — Form 4
+- [x] 39. Mathematics — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs mathematics_f4` once credentials are available)
+- [x] 40. Biology — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs biology_f4` once credentials are available)
+- [x] 41. Chemistry — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs chemistry_f4` once credentials are available)
+- [x] 42. Physics — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs physics_f4` once credentials are available)
+- [x] 43. English — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs english_f4` once credentials are available)
+- [x] 44. Kiswahili — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs kiswahili_f4` once credentials are available)
+- [x] 45. Geography — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs geography_f4` once credentials are available)
+- [x] 46. History — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs history_f4` once credentials are available)
+- [x] 47. Civics — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs civics_f4` once credentials are available)
+- [x] 48. Commerce — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs commerce_f4` once credentials are available)
+- [x] 49. Agriculture — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs agriculture_f4` once credentials are available)
+- [x] 50. Computer Studies — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs computer_studies_f4` once credentials are available)
+- [x] 51. Islamic Knowledge — Form 4 ✅ (8 topics, 40 packs, 304 questions + 80 summaries — content authored; seed to tanza-9b182 with `seed-content.mjs islamic_knowledge_f4` once credentials are available)
+- ✅ **FORM 4 COMPLETE — all 13 subjects authored** (104 topic files, ~4,992 items)
+- 🎉 **CURRICULUM COMPLETE — Forms 1–4, all 13 subjects.** Authored content in `scripts/content/` totals 408 topic files / ~19,584 items. Seed everything to tanza-9b182 with `seed-content.mjs` (all files) once credentials are available.
 
 ## Content integrity
 - Questions are **authored original**, aligned to the public syllabus topic

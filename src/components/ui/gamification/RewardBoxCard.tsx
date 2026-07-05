@@ -55,10 +55,13 @@ export function RewardBoxCard({ box, onOpen }: Props) {
           </LinearGradient>
         </TouchableOpacity>
       ) : (
-        <View style={styles.lockedBtn}>
-          <Ionicons name="lock-closed-outline" size={14} color={COLORS.textMuted} />
-          <Text style={styles.lockedBtnText}>Locked</Text>
-        </View>
+        <>
+          <View style={styles.lockedBtn}>
+            <Ionicons name="lock-closed-outline" size={14} color={COLORS.textMuted} />
+            <Text style={styles.lockedBtnText}>Locked</Text>
+          </View>
+          {box.unlockHint && <Text style={styles.unlockHint}>{box.unlockHint}</Text>}
+        </>
       )}
     </LinearGradient>
   );
@@ -101,4 +104,5 @@ const styles = StyleSheet.create({
     borderRadius: RADIUS.md, paddingVertical: SPACING.sm, paddingHorizontal: SPACING.md,
   },
   lockedBtnText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
+  unlockHint: { color: COLORS.textMuted, fontSize: 10, textAlign: 'center' },
 });

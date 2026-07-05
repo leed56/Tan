@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_physics_topic_2",
+  "topicName": "Newton's Laws of Motion and Momentum",
+  "order": 2,
+  "description": "This topic explains Newton's three laws of motion, the difference between mass and weight, linear momentum, impulse, and the principle of conservation of momentum with everyday applications.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Newton's first law of motion is also known as the law of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Inertia",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Gravitation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Acceleration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Conservation of energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Newton's first law states that a body remains at rest or in uniform motion unless acted upon by an external force, which is the property called inertia.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A net force of 20 N acts on a body of mass 4 kg. What is its acceleration?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5 m/s^2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "80 m/s^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.2 m/s^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "24 m/s^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using F = ma, a = F/m = 20/4 = 5 m/s^2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which equation correctly represents Newton's second law of motion?",
+        "options": [
+          {
+            "id": "a",
+            "text": "F = ma",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "F = m/a",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "F = a/m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "F = m + a",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Newton's second law states that force equals the rate of change of momentum, which for constant mass gives F = ma.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The weight of a body of mass 6 kg on Earth (g = 10 m/s^2) is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "60 N",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6 N",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.6 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Weight W = mg = 6 x 10 = 60 N.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The momentum of a body of mass 2 kg moving at 5 m/s is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "10 kg m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2.5 kg m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7 kg m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.4 kg m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Momentum p = mv = 2 x 5 = 10 kg m/s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which statement best expresses Newton's third law of motion?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To every action there is an equal and opposite reaction",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Force is proportional to mass only",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A body always stays at rest",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Momentum is always lost in collisions",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Newton's third law states that for every action force there is an equal and opposite reaction force acting on a different body.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of linear momentum is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "kg m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "N/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kg/m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "m/s^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Momentum is mass times velocity, so its unit is kg m/s, which is equivalent to N s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A force of 12 N gives a body an acceleration of 3 m/s^2. What is the mass of the body?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4 kg",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "36 kg",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9 kg",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.25 kg",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "From F = ma, m = F/a = 12/3 = 4 kg.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The recoil of a gun when a bullet is fired is best explained by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Conservation of momentum",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Conservation of mass",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Newton's first law only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The law of inertia alone",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The total momentum before firing is zero, so the forward momentum of the bullet equals the backward momentum of the gun, illustrating conservation of momentum.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An impulse of 30 N s acts on a body. The change in momentum produced is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "30 kg m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "3 kg m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "300 kg m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0 kg m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Impulse equals change in momentum, so a 30 N s impulse produces a change in momentum of 30 kg m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A passenger lurches forward when a moving bus stops suddenly. This is because of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Inertia of motion",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Action and reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Increased weight",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Loss of momentum of the bus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The passenger's body tends to continue moving forward due to inertia of motion when the bus suddenly stops.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A body of mass 5 kg moving at 4 m/s collides and sticks to a stationary body of mass 3 kg. The common velocity after collision is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "2.5 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "4 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1.5 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "By conservation of momentum: 5 x 4 + 3 x 0 = (5 + 3)v, so 20 = 8v, giving v = 2.5 m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a correct difference between mass and weight?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mass is constant everywhere but weight changes with location",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mass is measured in newtons",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Weight is constant everywhere",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Weight is a scalar while mass is a vector",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Mass is the amount of matter and is constant, measured in kg. Weight is the gravitational force on the body (W = mg) and varies with g, measured in newtons.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A constant force acts on a 2 kg body for 4 s, changing its velocity from 3 m/s to 11 m/s. The size of the force is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "4 N",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "8 N",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Change in momentum = m(v - u) = 2(11 - 3) = 16 kg m/s. Force = change in momentum / time = 16/4 = 4 N.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A seat belt reduces injury during a sudden stop mainly because it:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increases the time over which the body stops, reducing the force",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Increases the momentum of the passenger",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Removes the inertia of the passenger",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Increases the acceleration of the passenger",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since force = change in momentum / time, increasing the stopping time reduces the force exerted on the passenger, lowering the chance of injury.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The tendency of a body to resist any change in its state of rest or motion is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "inertia",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "momentum",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "friction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Inertia is the property described by Newton's first law of motion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The product of the mass and velocity of a body is called its linear _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "impulse",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "momentum",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "inertia",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weight",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Linear momentum p = mv.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of force is the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "joule",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "watt",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "newton",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "pascal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Force is measured in newtons (N), where 1 N = 1 kg m/s^2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The weight of a body is given by the formula W = _____ (in terms of mass and gravity).",
+        "options": [
+          {
+            "id": "a",
+            "text": "m/g",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "g/m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "m+g",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mg",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Weight equals mass multiplied by acceleration due to gravity, W = mg.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The product of force and the time for which it acts is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "impulse",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "power",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "work",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "momentum",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Impulse = Ft, and it equals the change in momentum.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The momentum of a 3 kg body moving at 6 m/s is _____ kg m/s.",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "18",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "36",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "p = mv = 3 x 6 = 18 kg m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Using F = ma, a force of 50 N on a 10 kg mass gives an acceleration of _____ m/s^2.",
+        "options": [
+          {
+            "id": "a",
+            "text": "500",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "0.2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "60",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "a = F/m = 50/10 = 5 m/s^2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the absence of external forces, the total momentum of a system is _____ (changed/conserved).",
+        "options": [
+          {
+            "id": "a",
+            "text": "changed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "doubled",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reversed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "conserved",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "The principle of conservation of linear momentum states that total momentum remains constant if no external force acts.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A collision in which the colliding bodies stick together and move with a common velocity is called a perfectly _____ collision.",
+        "options": [
+          {
+            "id": "a",
+            "text": "inelastic",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "elastic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "oblique",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "glancing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "In a perfectly inelastic collision the bodies move together after impact and kinetic energy is not conserved.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A force of 8 N acting on a body for 5 s produces a change in momentum of _____ kg m/s.",
+        "options": [
+          {
+            "id": "a",
+            "text": "13",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "40",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1.6",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Impulse = Ft = 8 x 5 = 40 N s = 40 kg m/s change in momentum.",
+        "difficulty": "hard"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Mass and weight are exactly the same physical quantity.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Mass is the amount of matter (kg) while weight is the gravitational force on the body (N); they are different quantities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Newton's first law of motion is also called the law of inertia.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "It describes inertia, the tendency of a body to keep its state of rest or uniform motion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of momentum is kg m/s.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Momentum = mass x velocity, so its unit is kg m/s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Impulse is equal to the change in momentum of a body.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Impulse = Ft = change in momentum, from Newton's second law.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Action and reaction forces act on the same body.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Action and reaction forces are equal and opposite but act on two different bodies.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When no external force acts on a system, its total momentum is conserved.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the principle of conservation of linear momentum.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The weight of a 4 kg body using g = 10 m/s^2 is 40 N.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "W = mg = 4 x 10 = 40 N.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A larger force is needed to give the same acceleration to a body of larger mass.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "From F = ma, for the same acceleration a greater mass requires a greater force.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a perfectly inelastic collision, kinetic energy is always conserved.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Momentum is conserved in all collisions, but kinetic energy is not conserved in inelastic collisions.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The forward thrust of a rocket is produced by the high-speed gases it ejects backwards.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By Newton's third law and conservation of momentum, expelling gases backwards pushes the rocket forwards.",
+        "difficulty": "hard"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State Newton's first law of motion.",
+        "options": [],
+        "correctAnswer": "A body continues in its state of rest or of uniform motion in a straight line unless an external force acts on it.",
+        "explanation": "This law introduces the idea of inertia.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State Newton's second law of motion.",
+        "options": [],
+        "correctAnswer": "The rate of change of momentum of a body is directly proportional to the applied force and takes place in the direction of the force, giving F = ma.",
+        "explanation": "This law relates force, mass and acceleration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State Newton's third law of motion.",
+        "options": [],
+        "correctAnswer": "For every action there is an equal and opposite reaction.",
+        "explanation": "Action and reaction act on two different bodies.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define linear momentum and give its formula.",
+        "options": [],
+        "correctAnswer": "Linear momentum is the product of the mass and velocity of a body, given by p = mv, measured in kg m/s.",
+        "explanation": "Momentum is a vector quantity in the direction of velocity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distinguish between mass and weight.",
+        "options": [],
+        "correctAnswer": "Mass is the amount of matter in a body measured in kilograms and is constant, while weight is the gravitational force on the body measured in newtons and varies with gravity (W = mg).",
+        "explanation": "Mass is a scalar; weight is a force (vector).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define impulse and state its relationship with momentum.",
+        "options": [],
+        "correctAnswer": "Impulse is the product of force and the time for which it acts (Ft), and it is equal to the change in momentum of the body.",
+        "explanation": "Impulse = Ft = change in momentum, measured in N s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the principle of conservation of linear momentum.",
+        "options": [],
+        "correctAnswer": "When no external force acts on a system of bodies, the total momentum before interaction equals the total momentum after interaction.",
+        "explanation": "Total momentum is conserved in collisions and explosions.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Differentiate between elastic and inelastic collisions.",
+        "options": [],
+        "correctAnswer": "In an elastic collision both momentum and kinetic energy are conserved, while in an inelastic collision momentum is conserved but kinetic energy is not.",
+        "explanation": "In a perfectly inelastic collision the bodies stick together after impact.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how a seat belt helps protect a passenger during a sudden stop.",
+        "options": [],
+        "correctAnswer": "A seat belt increases the time taken for the passenger to stop, and since force equals change in momentum divided by time, a longer time reduces the force on the body and lowers the risk of injury.",
+        "explanation": "This applies the impulse-momentum relationship to safety.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Explain, using momentum, how a rocket is propelled forward.",
+        "options": [],
+        "correctAnswer": "A rocket burns fuel and ejects hot gases backwards at high speed; by conservation of momentum the rocket gains an equal forward momentum, so it moves forward.",
+        "explanation": "This is an application of conservation of momentum and Newton's third law.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A 1000 kg car moving at 20 m/s collides with a stationary 1500 kg car and they move together after impact. Find their common velocity.",
+        "options": [
+          {
+            "id": "a",
+            "text": "8 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "20 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "13.3 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "By conservation of momentum: 1000 x 20 + 1500 x 0 = (1000 + 1500)v, so 20000 = 2500v, giving v = 8 m/s.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A bullet of mass 0.02 kg is fired from a 4 kg gun with a muzzle velocity of 400 m/s. Find the recoil velocity of the gun.",
+        "options": [
+          {
+            "id": "a",
+            "text": "2 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "8 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "0.5 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "400 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Total momentum before = 0. So 0.02 x 400 = 4 x v, giving 8 = 4v, so v = 2 m/s in the opposite direction.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A ball of mass 0.5 kg moving at 8 m/s strikes a wall and rebounds at 6 m/s in the opposite direction. If the contact time is 0.1 s, find the average force exerted by the wall on the ball.",
+        "options": [
+          {
+            "id": "a",
+            "text": "70 N",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "10 N",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "35 N",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "7 N",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Taking the rebound direction as positive: change in momentum = m(v - u) = 0.5(6 - (-8)) = 0.5 x 14 = 7 kg m/s. Force = change in momentum / time = 7/0.1 = 70 N.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

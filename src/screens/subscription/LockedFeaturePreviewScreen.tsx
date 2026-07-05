@@ -14,18 +14,20 @@ import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { AppButton } from '../../components/ui/AppButton';
 import { FeatureRow } from '../../components/ui/subscription/FeatureRow';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
-import { FEATURE_META } from '../../utils/seedPlans';
+import { FEATURE_META, SEED_PLANS } from '../../utils/seedPlans';
 import type { FeatureKey } from '../../types/subscription';
+
+const standardPlan = SEED_PLANS.find((p) => p.id === 'standard')!;
+const familyPlan = SEED_PLANS.find((p) => p.id === 'family')!;
 
 type Props = StackScreenProps<HomeStackParamList, 'LockedFeaturePreview'>;
 
 const ALL_FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 export function LockedFeaturePreviewScreen({ navigation, route }: Props) {
@@ -95,16 +97,16 @@ export function LockedFeaturePreviewScreen({ navigation, route }: Props) {
         {/* Plans summary */}
         <View style={styles.planRow}>
           <View style={styles.planChip}>
-            <Text style={styles.planChipTitle}>Single User</Text>
-            <Text style={styles.planChipPrice}>5,000 TSH/mo</Text>
+            <Text style={styles.planChipTitle}>{standardPlan.title}</Text>
+            <Text style={styles.planChipPrice}>{standardPlan.priceMonthly.toLocaleString()} TSH/mo</Text>
           </View>
           <View style={[styles.planChip, styles.planChipPopular]}>
             <LinearGradient colors={GRADIENTS.gold} style={styles.planChipBadge}>
               <Text style={styles.planChipBadgeText}>BEST</Text>
             </LinearGradient>
-            <Text style={styles.planChipTitle}>Family Pack</Text>
-            <Text style={styles.planChipPrice}>8,000 TSH/mo</Text>
-            <Text style={styles.planChipSub}>Up to 4 profiles</Text>
+            <Text style={styles.planChipTitle}>{familyPlan.title}</Text>
+            <Text style={styles.planChipPrice}>{familyPlan.priceMonthly.toLocaleString()} TSH/mo</Text>
+            <Text style={styles.planChipSub}>1 primary + 3 profiles</Text>
           </View>
         </View>
 
@@ -112,7 +114,7 @@ export function LockedFeaturePreviewScreen({ navigation, route }: Props) {
           title="Upgrade to Premium"
           onPress={() => navigation.navigate('SubscriptionScreen')}
           variant="primary"
-          icon="flash"
+          icon={<Ionicons name="flash" size={18} color={COLORS.textPrimary} />}
         />
 
         <TouchableOpacity

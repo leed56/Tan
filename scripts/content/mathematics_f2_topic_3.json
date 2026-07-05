@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_3",
-  "topicName": "Quadratic Equations",
+  "topicName": "Similarity",
   "order": 3,
-  "description": "Solving quadratic equations by factorization, completing the square and the quadratic formula, determining the nature of roots, forming quadratic equations and applying them to word problems.",
+  "description": "An introduction to similar figures and their properties, including scale factor, AA similarity, proportional corresponding sides, the link between area ratio and the square of the scale factor, and using similar triangles for indirect measurement.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Solve by factorization: x^2 + 5x + 6 = 0.",
+        "questionText": "Two figures are similar if they have:",
         "options": [
-          {"id": "a", "text": "x = -2 or x = -3", "isCorrect": true},
-          {"id": "b", "text": "x = 2 or x = 3", "isCorrect": false},
-          {"id": "c", "text": "x = -1 or x = -6", "isCorrect": false},
-          {"id": "d", "text": "x = 1 or x = 6", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "x^2 + 5x + 6 = (x + 2)(x + 3) = 0, so x = -2 or x = -3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Solve by factorization: x^2 - 7x + 12 = 0.",
-        "options": [
-          {"id": "a", "text": "x = -3 or x = -4", "isCorrect": false},
-          {"id": "b", "text": "x = 3 or x = 4", "isCorrect": true},
-          {"id": "c", "text": "x = 2 or x = 6", "isCorrect": false},
-          {"id": "d", "text": "x = -2 or x = -6", "isCorrect": false}
+          {"id": "a", "text": "the same size only", "isCorrect": false},
+          {"id": "b", "text": "the same shape with corresponding sides in the same ratio", "isCorrect": true},
+          {"id": "c", "text": "the same area", "isCorrect": false},
+          {"id": "d", "text": "the same perimeter", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "x^2 - 7x + 12 = (x - 3)(x - 4) = 0, so x = 3 or x = 4.",
+        "explanation": "Similar figures have exactly the same shape but can be any size, with corresponding sides in the same ratio. Exam Tip: similar means same shape, any size.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Solve: x^2 - 9 = 0.",
+        "questionText": "Which statement correctly shows that triangle ABC is similar to triangle PQR?",
         "options": [
-          {"id": "a", "text": "x = 3 only", "isCorrect": false},
-          {"id": "b", "text": "x = -3 only", "isCorrect": false},
-          {"id": "c", "text": "x = 3 or x = -3", "isCorrect": true},
-          {"id": "d", "text": "x = 9 or x = -9", "isCorrect": false}
+          {"id": "a", "text": "triangle ABC is congruent to triangle PQR", "isCorrect": false},
+          {"id": "b", "text": "triangle ABC equals triangle PQR", "isCorrect": false},
+          {"id": "c", "text": "triangle ABC is similar to triangle PQR", "isCorrect": true},
+          {"id": "d", "text": "triangle ABC is not equal to triangle PQR", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "x^2 - 9 = (x - 3)(x + 3) = 0, a difference of two squares, giving x = 3 or x = -3.",
+        "explanation": "Similarity is stated by saying one triangle is similar to the other, not congruent, equal or unequal. Exam Tip: keep the letters in matching order so corresponding vertices line up.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What are the roots of x^2 - 4x = 0?",
+        "questionText": "Triangle ABC is similar to triangle PQR with AB = 4 and PQ = 12. What is the scale factor from ABC to PQR?",
         "options": [
-          {"id": "a", "text": "x = 0 or x = 4", "isCorrect": true},
-          {"id": "b", "text": "x = 0 or x = -4", "isCorrect": false},
-          {"id": "c", "text": "x = 4 only", "isCorrect": false},
-          {"id": "d", "text": "x = 2 or x = -2", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Factor out x: x(x - 4) = 0, so x = 0 or x = 4.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the quadratic formula x = (-b ± √(b^2 - 4ac)) / 2a, the expression b^2 - 4ac is called the:",
-        "options": [
-          {"id": "a", "text": "coefficient", "isCorrect": false},
-          {"id": "b", "text": "discriminant", "isCorrect": true},
-          {"id": "c", "text": "constant term", "isCorrect": false},
-          {"id": "d", "text": "root", "isCorrect": false}
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "4", "isCorrect": false},
+          {"id": "d", "text": "8", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "b^2 - 4ac is the discriminant; its sign determines the nature of the roots.",
+        "explanation": "The scale factor is the new length divided by the matching old length, so 12 divided by 4 = 3. Exam Tip: divide the image length by the matching original length.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Solve by the quadratic formula: x^2 - 5x + 6 = 0.",
+        "questionText": "Triangle ABC is similar to triangle XYZ with AB = 6, BC = 9 and XY = 10. Find YZ.",
         "options": [
-          {"id": "a", "text": "x = 2 or x = 3", "isCorrect": true},
-          {"id": "b", "text": "x = -2 or x = -3", "isCorrect": false},
-          {"id": "c", "text": "x = 1 or x = 6", "isCorrect": false},
-          {"id": "d", "text": "x = 5 or x = 6", "isCorrect": false}
+          {"id": "a", "text": "12", "isCorrect": false},
+          {"id": "b", "text": "13", "isCorrect": false},
+          {"id": "c", "text": "15", "isCorrect": true},
+          {"id": "d", "text": "18", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Here a=1, b=-5, c=6, so x = (5 ± √(25-24))/2 = (5 ± 1)/2 = 3 or 2.",
+        "correctAnswer": "c",
+        "explanation": "Corresponding sides are proportional, so AB to XY = BC to YZ gives 6 to 10 = 9 to YZ, and YZ = 9 times 10 divided by 6 = 15. Exam Tip: pair matching sides, then cross multiply.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Solve: 2x^2 - 3x - 2 = 0.",
+        "questionText": "Two triangles each have angles of 50, 60 and 70 degrees. The triangles are:",
         "options": [
-          {"id": "a", "text": "x = 2 or x = -1/2", "isCorrect": true},
-          {"id": "b", "text": "x = -2 or x = 1/2", "isCorrect": false},
-          {"id": "c", "text": "x = 1 or x = -2", "isCorrect": false},
-          {"id": "d", "text": "x = 2 or x = 1/2", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "2x^2 - 3x - 2 = (2x + 1)(x - 2) = 0, so x = -1/2 or x = 2.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "For the equation x^2 + 6x + 9 = 0, the roots are:",
-        "options": [
-          {"id": "a", "text": "real and distinct", "isCorrect": false},
-          {"id": "b", "text": "real and equal", "isCorrect": true},
-          {"id": "c", "text": "not real", "isCorrect": false},
-          {"id": "d", "text": "one zero and one positive", "isCorrect": false}
+          {"id": "a", "text": "Congruent", "isCorrect": false},
+          {"id": "b", "text": "Similar", "isCorrect": true},
+          {"id": "c", "text": "Neither", "isCorrect": false},
+          {"id": "d", "text": "Equal in area", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The discriminant is 6^2 - 4(1)(9) = 36 - 36 = 0, so the roots are real and equal (x = -3).",
+        "explanation": "Three pairs of equal angles satisfy the AAA rule, which proves the triangles are similar even though their sizes may differ. Exam Tip: equal angles prove similarity, not congruence.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In similar triangles, corresponding angles are:",
+        "options": [
+          {"id": "a", "text": "Proportional", "isCorrect": false},
+          {"id": "b", "text": "Supplementary", "isCorrect": false},
+          {"id": "c", "text": "Equal", "isCorrect": true},
+          {"id": "d", "text": "Complementary", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "In similar figures the sides are proportional but the corresponding angles are always equal. Exam Tip: sides scale, angles stay the same.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Triangle PQR is similar to triangle LMN with scale factor 2. If angle P = 40 degrees, then angle L = ?",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": false},
+          {"id": "b", "text": "40", "isCorrect": true},
+          {"id": "c", "text": "80", "isCorrect": false},
+          {"id": "d", "text": "140", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A scale factor changes lengths but never changes angles, so angle L stays equal to angle P at 40 degrees. Exam Tip: the scale factor does not affect angles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A triangle with sides 3, 4, 5 is similar to a triangle with sides 9, 12, x. Find x.",
+        "options": [
+          {"id": "a", "text": "10", "isCorrect": false},
+          {"id": "b", "text": "13", "isCorrect": false},
+          {"id": "c", "text": "15", "isCorrect": true},
+          {"id": "d", "text": "20", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The scale factor is 9 divided by 3 = 3, so the side matching 5 is 5 times 3 = 15. Exam Tip: find the scale factor from a known pair, then apply it.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which value completes the square for x^2 + 8x + ___ to form a perfect square?",
+        "questionText": "In a triangle, DE is parallel to BC with D on AB and E on AC. Triangle ADE is similar to triangle ABC because:",
         "options": [
-          {"id": "a", "text": "4", "isCorrect": false},
-          {"id": "b", "text": "8", "isCorrect": false},
-          {"id": "c", "text": "16", "isCorrect": true},
+          {"id": "a", "text": "they share side DE", "isCorrect": false},
+          {"id": "b", "text": "corresponding angles formed by the parallel lines are equal", "isCorrect": true},
+          {"id": "c", "text": "they have equal areas", "isCorrect": false},
+          {"id": "d", "text": "AD = DB", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because DE is parallel to BC, the parallel lines create equal corresponding angles, so the AAA rule makes the triangles similar. Exam Tip: a line parallel to one side creates a smaller similar triangle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the figure where DE is parallel to BC, AD = 4, DB = 6 and DE = 6. Find BC.",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": false},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "15", "isCorrect": true},
+          {"id": "d", "text": "10", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "AB = AD + DB = 10, so AD to AB = 4 to 10 = 2 to 5, and DE to BC follows the same ratio, giving 6 divided by BC = 2 to 5 so BC = 15. Exam Tip: use the whole side AB, not just AD, in the ratio.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two similar polygons have sides in the ratio 2 to 5. What is the ratio of their perimeters?",
+        "options": [
+          {"id": "a", "text": "2 to 5", "isCorrect": true},
+          {"id": "b", "text": "4 to 25", "isCorrect": false},
+          {"id": "c", "text": "5 to 2", "isCorrect": false},
+          {"id": "d", "text": "4 to 10", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Perimeter is a sum of lengths, so it scales by the same ratio as the sides, which is 2 to 5. Exam Tip: perimeters share the side ratio, areas use its square.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two similar triangles have sides in the ratio 3 to 4. What is the ratio of their areas?",
+        "options": [
+          {"id": "a", "text": "3 to 4", "isCorrect": false},
+          {"id": "b", "text": "6 to 8", "isCorrect": false},
+          {"id": "c", "text": "9 to 16", "isCorrect": true},
+          {"id": "d", "text": "27 to 64", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The area ratio equals the square of the side ratio, so 3 to 4 becomes 9 to 16. Exam Tip: square each part of the side ratio to get the area ratio.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A stick 1.5 m tall casts a 2 m shadow. At the same time a flagpole casts a 12 m shadow. Find the height of the flagpole.",
+        "options": [
+          {"id": "a", "text": "8", "isCorrect": false},
+          {"id": "b", "text": "9", "isCorrect": true},
+          {"id": "c", "text": "16", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The stick and flagpole form similar triangles, so 1.5 divided by 2 = h divided by 12, giving h = 1.5 times 12 divided by 2 = 9 m. Exam Tip: set height over shadow equal for both objects.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Triangle ABC is similar to triangle ADE. The area of triangle ADE is 8 and the scale factor from ADE to ABC is 3. Find the area of triangle ABC.",
+        "options": [
+          {"id": "a", "text": "24", "isCorrect": false},
+          {"id": "b", "text": "48", "isCorrect": false},
+          {"id": "c", "text": "72", "isCorrect": true},
           {"id": "d", "text": "64", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Take half of 8 (which is 4) and square it: 4^2 = 16, giving (x + 4)^2.",
+        "explanation": "Area scales by the square of the scale factor, so area of ABC = 8 times 3 squared = 8 times 9 = 72. Exam Tip: multiply by the scale factor squared, not the scale factor itself.",
         "difficulty": "medium"
       },
       {
-        "questionText": "A quadratic equation whose roots are 4 and -1 is:",
+        "questionText": "A photo 10 wide and 15 long is enlarged so that the width becomes 25. Find the new length.",
         "options": [
-          {"id": "a", "text": "x^2 - 3x - 4 = 0", "isCorrect": true},
-          {"id": "b", "text": "x^2 + 3x - 4 = 0", "isCorrect": false},
-          {"id": "c", "text": "x^2 - 3x + 4 = 0", "isCorrect": false},
-          {"id": "d", "text": "x^2 + 5x + 4 = 0", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Sum = 4 + (-1) = 3, product = 4 × (-1) = -4, so x^2 - (sum)x + product = x^2 - 3x - 4 = 0.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The sum and product of the roots of x^2 - 7x + 10 = 0 are respectively:",
-        "options": [
-          {"id": "a", "text": "7 and 10", "isCorrect": true},
-          {"id": "b", "text": "-7 and 10", "isCorrect": false},
-          {"id": "c", "text": "7 and -10", "isCorrect": false},
-          {"id": "d", "text": "10 and 7", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "For ax^2 + bx + c = 0, sum of roots = -b/a = 7 and product = c/a = 10.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Solve: 3x^2 - 12 = 0.",
-        "options": [
-          {"id": "a", "text": "x = ±4", "isCorrect": false},
-          {"id": "b", "text": "x = ±2", "isCorrect": true},
-          {"id": "c", "text": "x = ±√12", "isCorrect": false},
-          {"id": "d", "text": "x = 0 or x = 4", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "3x^2 = 12, so x^2 = 4, giving x = ±2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How many real roots does x^2 + x + 1 = 0 have?",
-        "options": [
-          {"id": "a", "text": "Two distinct real roots", "isCorrect": false},
-          {"id": "b", "text": "One repeated real root", "isCorrect": false},
-          {"id": "c", "text": "No real roots", "isCorrect": true},
-          {"id": "d", "text": "Three real roots", "isCorrect": false}
+          {"id": "a", "text": "30", "isCorrect": false},
+          {"id": "b", "text": "35", "isCorrect": false},
+          {"id": "c", "text": "37.5", "isCorrect": true},
+          {"id": "d", "text": "40", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The discriminant is 1^2 - 4(1)(1) = 1 - 4 = -3 < 0, so there are no real roots.",
+        "explanation": "The scale factor is 25 divided by 10 = 2.5, so the new length is 15 times 2.5 = 37.5. Exam Tip: find the scale factor from the width, then apply it to the length.",
         "difficulty": "medium"
-      },
-      {
-        "questionText": "The product of two consecutive positive integers is 56. The smaller integer is:",
-        "options": [
-          {"id": "a", "text": "6", "isCorrect": false},
-          {"id": "b", "text": "7", "isCorrect": true},
-          {"id": "c", "text": "8", "isCorrect": false},
-          {"id": "d", "text": "9", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Let the integers be n and n+1: n(n+1) = 56 gives n^2 + n - 56 = 0 = (n+8)(n-7), so n = 7.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Solve: (x - 2)(x + 5) = 0.",
-        "options": [
-          {"id": "a", "text": "x = 2 or x = 5", "isCorrect": false},
-          {"id": "b", "text": "x = -2 or x = -5", "isCorrect": false},
-          {"id": "c", "text": "x = 2 or x = -5", "isCorrect": true},
-          {"id": "d", "text": "x = -2 or x = 5", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "By the zero-product property, x - 2 = 0 or x + 5 = 0, so x = 2 or x = -5.",
-        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "A polynomial equation of degree 2 is called a _____ equation.",
-        "options": [],
-        "correctAnswer": "quadratic",
-        "explanation": "The highest power of the variable in a quadratic equation is 2.",
+        "questionText": "Figures that have the same shape but not necessarily the same size are ____.",
+        "options": [
+          {"id": "a", "text": "similar", "isCorrect": true},
+          {"id": "b", "text": "congruent", "isCorrect": false},
+          {"id": "c", "text": "equal", "isCorrect": false},
+          {"id": "d", "text": "identical", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Same shape with possibly different size is the definition of similar figures. Exam Tip: same shape, any size means similar.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In the general quadratic equation ax^2 + bx + c = 0, the coefficient a must not be equal to _____.",
-        "options": [],
-        "correctAnswer": "0",
-        "explanation": "If a = 0 the equation becomes linear, not quadratic.",
+        "questionText": "In similar triangles, corresponding sides are ____.",
+        "options": [
+          {"id": "a", "text": "proportional", "isCorrect": true},
+          {"id": "b", "text": "equal", "isCorrect": false},
+          {"id": "c", "text": "perpendicular", "isCorrect": false},
+          {"id": "d", "text": "parallel", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Corresponding sides of similar triangles share one common ratio, so they are proportional. Exam Tip: sides are proportional, angles are equal.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The two solutions of a quadratic equation are also called its _____.",
-        "options": [],
-        "correctAnswer": "roots",
-        "explanation": "The values of x that satisfy the equation are called roots (or solutions).",
+        "questionText": "Triangle ABC is similar to triangle PQR with AB = 5 and PQ = 15. The scale factor from ABC to PQR is ____.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "5", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "15", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The scale factor is 15 divided by 5 = 3. Exam Tip: divide the new length by the matching old length.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The roots of the equation x^2 - 16 = 0 are x = _____ (give both values).",
-        "options": [],
-        "correctAnswer": "4 and -4",
-        "explanation": "x^2 = 16 so x = ±4.",
+        "questionText": "Two similar triangles have sides in the ratio 1 to 4. Their areas are in the ratio ____.",
+        "options": [
+          {"id": "a", "text": "1 to 16", "isCorrect": true},
+          {"id": "b", "text": "1 to 4", "isCorrect": false},
+          {"id": "c", "text": "1 to 8", "isCorrect": false},
+          {"id": "d", "text": "4 to 1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The area ratio is the square of the side ratio, so 1 to 4 becomes 1 to 16. Exam Tip: square each part of the side ratio for the area ratio.",
         "difficulty": "easy"
       },
       {
-        "questionText": "To complete the square for x^2 - 10x, the number that must be added is _____.",
-        "options": [],
-        "correctAnswer": "25",
-        "explanation": "Half of -10 is -5 and (-5)^2 = 25, giving (x - 5)^2.",
-        "difficulty": "medium"
+        "questionText": "Triangle ABC is similar to triangle DEF with angle A = 65 degrees. Then angle D = ____ degrees.",
+        "options": [
+          {"id": "a", "text": "65", "isCorrect": true},
+          {"id": "b", "text": "25", "isCorrect": false},
+          {"id": "c", "text": "90", "isCorrect": false},
+          {"id": "d", "text": "130", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Corresponding angles in similar triangles are equal, so angle D = angle A = 65 degrees. Exam Tip: matching angles stay equal under similarity.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "For ax^2 + bx + c = 0, the sum of the roots equals _____ (in terms of a and b).",
-        "options": [],
-        "correctAnswer": "-b/a",
-        "explanation": "The sum of the roots of a quadratic equation is -b/a.",
-        "difficulty": "medium"
+        "questionText": "A map drawn to scale is an everyday example of ____ figures.",
+        "options": [
+          {"id": "a", "text": "similar", "isCorrect": true},
+          {"id": "b", "text": "congruent", "isCorrect": false},
+          {"id": "c", "text": "equal", "isCorrect": false},
+          {"id": "d", "text": "irregular", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A scale map keeps the same shape as the real area at a reduced size, which makes it a similar figure. Exam Tip: scale drawings, maps and photos are all similar figures.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "For ax^2 + bx + c = 0, the product of the roots equals _____ (in terms of a and c).",
-        "options": [],
-        "correctAnswer": "c/a",
-        "explanation": "The product of the roots of a quadratic equation is c/a.",
-        "difficulty": "medium"
+        "questionText": "Triangle PQR is similar to triangle PST with ST parallel to QR, PS = 3 and PQ = 9. The ratio PS to PQ is ____.",
+        "options": [
+          {"id": "a", "text": "1 to 3", "isCorrect": true},
+          {"id": "b", "text": "3 to 1", "isCorrect": false},
+          {"id": "c", "text": "1 to 9", "isCorrect": false},
+          {"id": "d", "text": "2 to 3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "PS to PQ = 3 to 9, which simplifies to 1 to 3. Exam Tip: always simplify the ratio to its lowest terms.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If the discriminant b^2 - 4ac is greater than 0, the equation has _____ real roots.",
-        "options": [],
-        "correctAnswer": "two distinct",
-        "explanation": "A positive discriminant gives two different real roots.",
-        "difficulty": "medium"
+        "questionText": "Two similar triangles have areas 25 and 100. Their sides are in the ratio ____.",
+        "options": [
+          {"id": "a", "text": "1 to 2", "isCorrect": true},
+          {"id": "b", "text": "1 to 4", "isCorrect": false},
+          {"id": "c", "text": "1 to 5", "isCorrect": false},
+          {"id": "d", "text": "25 to 100", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The area ratio 25 to 100 is 1 to 4, and the side ratio is the square root of that, giving 1 to 2. Exam Tip: take the square root of the area ratio to get the side ratio.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The smaller root of x^2 + 2x - 15 = 0 is x = _____.",
-        "options": [],
-        "correctAnswer": "-5",
-        "explanation": "x^2 + 2x - 15 = (x + 5)(x - 3) = 0, so x = -5 or x = 3; the smaller is -5.",
-        "difficulty": "medium"
+        "questionText": "A tree of height h casts a 10 m shadow while a 2 m pole casts a 4 m shadow. Then h = ____ m.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "8", "isCorrect": false},
+          {"id": "c", "text": "20", "isCorrect": false},
+          {"id": "d", "text": "2.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using similar triangles, h divided by 10 = 2 divided by 4, so h = 10 times 2 divided by 4 = 5 m. Exam Tip: keep height over shadow equal for both objects.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A quadratic equation with roots 0 and 6 is x^2 - 6x = _____.",
-        "options": [],
-        "correctAnswer": "0",
-        "explanation": "Sum = 6, product = 0, so x^2 - 6x + 0 = 0, i.e. x^2 - 6x = 0.",
-        "difficulty": "medium"
+        "questionText": "If the scale factor between two similar figures is 1, the figures are ____.",
+        "options": [
+          {"id": "a", "text": "congruent", "isCorrect": true},
+          {"id": "b", "text": "similar only", "isCorrect": false},
+          {"id": "c", "text": "enlarged", "isCorrect": false},
+          {"id": "d", "text": "proportional", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A scale factor of 1 means the figures are the same shape and same size, which is congruence. Exam Tip: congruence is similarity with a scale factor of 1.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Every quadratic equation has at most two roots.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A degree-2 polynomial equation can have at most two solutions.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The equation 3x + 7 = 0 is a quadratic equation.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "It is linear because the highest power of x is 1, not 2.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If the discriminant b^2 - 4ac is equal to 0, the quadratic equation has two equal real roots.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A zero discriminant gives one repeated (equal) real root.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A quadratic equation with a negative discriminant has two distinct real roots.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A negative discriminant means the equation has no real roots.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The expression x^2 + 4x + 4 is a perfect square.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "x^2 + 4x + 4 = (x + 2)^2, which is a perfect square trinomial.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The roots of x^2 - 5x + 6 = 0 are 2 and 3.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "x^2 - 5x + 6 = (x - 2)(x - 3) = 0, so the roots are 2 and 3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The quadratic formula can be used to solve any quadratic equation.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The quadratic formula works for all quadratic equations, whether or not they factorize easily.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In the equation 2x^2 - 8 = 0, the constant term c is -8.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Comparing with ax^2 + bx + c = 0, a = 2, b = 0 and c = -8.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If a quadratic equation has roots 5 and -2, then the equation is x^2 - 3x - 10 = 0.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Sum = 3, product = -10, so x^2 - 3x - 10 = 0.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Completing the square turns ax^2 + bx + c into the form a(x + h)^2 + k.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Completing the square rewrites a quadratic expression as a perfect square plus a constant.",
-        "difficulty": "medium"
-      }
+      {"questionText": "All equilateral triangles are similar to each other.", "options": [], "correctAnswer": "true", "explanation": "Every equilateral triangle has three 60 degree angles, so they all satisfy the AAA rule and are similar.", "difficulty": "easy"},
+      {"questionText": "All rectangles are similar to each other.", "options": [], "correctAnswer": "false", "explanation": "Rectangles all have right angles, but their length to width ratios can differ, so they are not always similar.", "difficulty": "easy"},
+      {"questionText": "If two triangles are similar, their corresponding sides are equal.", "options": [], "correctAnswer": "false", "explanation": "In similar triangles corresponding sides are proportional, not equal; they are equal only when the triangles are congruent.", "difficulty": "easy"},
+      {"questionText": "Two triangles are similar if two angles of one equal two angles of the other.", "options": [], "correctAnswer": "true", "explanation": "If two angles match, the third must also match, so by the AA rule the triangles are similar.", "difficulty": "easy"},
+      {"questionText": "The ratio of the areas of two similar triangles equals the ratio of their corresponding sides.", "options": [], "correctAnswer": "false", "explanation": "The area ratio equals the square of the side ratio, not the side ratio itself.", "difficulty": "easy"},
+      {"questionText": "Congruent triangles are always similar.", "options": [], "correctAnswer": "true", "explanation": "Congruent triangles are similar with a scale factor of 1, having equal angles and matching side ratios.", "difficulty": "easy"},
+      {"questionText": "A line parallel to one side of a triangle divides the other two sides proportionally.", "options": [], "correctAnswer": "true", "explanation": "This is the basic proportionality theorem, also known as Thales theorem.", "difficulty": "easy"},
+      {"questionText": "Enlarging a figure by a scale factor of 2 doubles its area.", "options": [], "correctAnswer": "false", "explanation": "Area scales by the square of the scale factor, so a factor of 2 multiplies the area by 4, not 2.", "difficulty": "easy"},
+      {"questionText": "If triangle ABC is similar to triangle PQR then AB to PQ = BC to QR = AC to PR.", "options": [], "correctAnswer": "true", "explanation": "Corresponding sides of similar triangles are all in the same ratio, so these three ratios are equal.", "difficulty": "easy"},
+      {"questionText": "Similar figures always have equal perimeters.", "options": [], "correctAnswer": "false", "explanation": "Similar figures have perimeters in the same ratio as their sides; they are equal only when the scale factor is 1.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Standard form of a quadratic equation",
-        "options": [],
-        "correctAnswer": "ax^2 + bx + c = 0, where a ≠ 0",
-        "explanation": "This is the general form, with a, b and c constants and a not zero.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The quadratic formula",
-        "options": [],
-        "correctAnswer": "x = (-b ± √(b^2 - 4ac)) / 2a",
-        "explanation": "It gives the roots of any quadratic equation ax^2 + bx + c = 0.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Zero-product property used in factorization",
-        "options": [],
-        "correctAnswer": "If PQ = 0 then P = 0 or Q = 0",
-        "explanation": "This lets us set each factor to zero to find the roots.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of the discriminant",
-        "options": [],
-        "correctAnswer": "b^2 - 4ac, which determines the nature of the roots",
-        "explanation": "Positive gives two real roots, zero gives equal roots, negative gives no real roots.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Sum of the roots of a quadratic equation",
-        "options": [],
-        "correctAnswer": "-b/a",
-        "explanation": "The roots of ax^2 + bx + c = 0 add up to -b/a.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Product of the roots of a quadratic equation",
-        "options": [],
-        "correctAnswer": "c/a",
-        "explanation": "The roots of ax^2 + bx + c = 0 multiply to c/a.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Forming a quadratic equation from its roots",
-        "options": [],
-        "correctAnswer": "x^2 - (sum of roots)x + (product of roots) = 0",
-        "explanation": "Given the roots, substitute their sum and product into this formula.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Steps to complete the square for x^2 + bx",
-        "options": [],
-        "correctAnswer": "Add (b/2)^2 to make (x + b/2)^2",
-        "explanation": "Half the coefficient of x, square it, and add to form a perfect square.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Three methods of solving quadratic equations",
-        "options": [],
-        "correctAnswer": "Factorization, completing the square, and the quadratic formula",
-        "explanation": "These are the standard Form-2 methods for solving quadratics.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Condition for a quadratic equation to have real and equal roots",
-        "options": [],
-        "correctAnswer": "Discriminant b^2 - 4ac = 0",
-        "explanation": "When the discriminant is zero the two roots coincide into one value.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Similar figures", "options": [], "correctAnswer": "Figures that have the same shape but not necessarily the same size, with equal corresponding angles and proportional corresponding sides.", "explanation": "Similarity is written by saying one figure is similar to another, keeping matching vertices in order. Exam Tip: same shape, any size means similar.", "difficulty": "easy"},
+      {"questionText": "Scale factor", "options": [], "correctAnswer": "The number showing how many times larger or smaller one similar figure is than another, found by dividing an image length by the matching original length.", "explanation": "For example if AB = 4 and PQ = 12 then the scale factor is 12 divided by 4 = 3. Exam Tip: always divide the new length by the matching old length.", "difficulty": "easy"},
+      {"questionText": "AA (or AAA) similarity", "options": [], "correctAnswer": "A rule stating that if two angles of one triangle equal two angles of another, the triangles are similar.", "explanation": "Since angles in a triangle add to 180 degrees, matching two angles forces the third to match as well. Exam Tip: two equal angles are enough to prove similarity.", "difficulty": "easy"},
+      {"questionText": "Corresponding sides proportional", "options": [], "correctAnswer": "In similar figures the matching sides are in the same ratio, sharing one common scale factor.", "explanation": "For similar triangles AB to PQ = BC to QR = AC to PR. Exam Tip: pair sides that lie between the same matching vertices.", "difficulty": "easy"},
+      {"questionText": "Area ratio of similar figures", "options": [], "correctAnswer": "The ratio of the areas of two similar figures equals the square of their scale factor or side ratio.", "explanation": "If the sides are in the ratio 3 to 4 then the areas are in the ratio 9 to 16. Exam Tip: square the side ratio to get the area ratio.", "difficulty": "easy"},
+      {"questionText": "Basic proportionality theorem", "options": [], "correctAnswer": "A line drawn parallel to one side of a triangle divides the other two sides in the same ratio.", "explanation": "Also called Thales theorem, it forms a smaller triangle similar to the whole triangle. Exam Tip: a parallel line inside a triangle sets up proportional segments.", "difficulty": "easy"},
+      {"questionText": "Congruent figures", "options": [], "correctAnswer": "Similar figures with a scale factor of 1, so they have the same shape and the same size.", "explanation": "Congruent figures have equal corresponding angles and equal, not just proportional, corresponding sides. Exam Tip: congruence is similarity where the scale factor equals 1.", "difficulty": "easy"},
+      {"questionText": "Enlargement", "options": [], "correctAnswer": "A transformation that changes the size of a figure by a scale factor while keeping its shape, producing a similar figure.", "explanation": "A scale factor above 1 makes a figure bigger, while a factor between 0 and 1 makes it smaller. Exam Tip: enlargement changes only size, keeping shape and angles the same.", "difficulty": "easy"},
+      {"questionText": "Indirect measurement using shadows", "options": [], "correctAnswer": "A method that uses the similar triangles formed by objects and their shadows to find an unknown height.", "explanation": "For example 1.5 divided by 2 = h divided by 12 gives a flagpole height of 9 m. Exam Tip: set each object's height over its shadow equal to the other.", "difficulty": "easy"},
+      {"questionText": "Maps and photographs", "options": [], "correctAnswer": "Everyday examples of similar figures that show the same shape as the real object at a reduced or enlarged scale.", "explanation": "Enlarging a photo keeps its proportions, so a 10 by 15 photo widened to 25 becomes 37.5 long. Exam Tip: scale drawings keep all lengths in the same ratio.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "The length of a rectangle is 3 cm more than its width. If the area is 40 cm^2, what is the width?",
+        "questionText": "In triangle ABC, D lies on AB and E lies on AC with DE parallel to BC. Given AD = 6, DB = 4 and the area of triangle ADE = 27, find the area of triangle ABC.",
         "options": [
-          {"id": "a", "text": "5 cm", "isCorrect": true},
-          {"id": "b", "text": "8 cm", "isCorrect": false},
-          {"id": "c", "text": "4 cm", "isCorrect": false},
-          {"id": "d", "text": "10 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Let width = w; then w(w + 3) = 40, so w^2 + 3w - 40 = (w + 8)(w - 5) = 0, giving w = 5 cm (positive value).",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "For what value of k does the equation x^2 - 6x + k = 0 have two equal roots?",
-        "options": [
-          {"id": "a", "text": "k = 6", "isCorrect": false},
-          {"id": "b", "text": "k = 9", "isCorrect": true},
-          {"id": "c", "text": "k = -9", "isCorrect": false},
-          {"id": "d", "text": "k = 3", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Equal roots require discriminant = 0: (-6)^2 - 4(1)k = 36 - 4k = 0, so k = 9.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A positive number added to its square gives 72. What is the number?",
-        "options": [
-          {"id": "a", "text": "9", "isCorrect": false},
-          {"id": "b", "text": "6", "isCorrect": false},
-          {"id": "c", "text": "8", "isCorrect": true},
-          {"id": "d", "text": "12", "isCorrect": false}
+          {"id": "a", "text": "45", "isCorrect": false},
+          {"id": "b", "text": "60", "isCorrect": false},
+          {"id": "c", "text": "75", "isCorrect": true},
+          {"id": "d", "text": "108", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Let the number be n: n + n^2 = 72, so n^2 + n - 72 = (n + 9)(n - 8) = 0, giving the positive value n = 8.",
+        "explanation": "Since DE is parallel to BC, triangle ADE is similar to triangle ABC. AB = AD + DB = 6 + 4 = 10, so the side ratio is AD to AB = 6 to 10 = 3 to 5. The area ratio is the square of that, 9 to 25, so area of ABC = 27 times 25 divided by 9 = 75. Exam Tip: option A forgets to square the ratio and option D wrongly uses AD to DB, so always square the side ratio for areas.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A slide 3 cm by 2 cm is projected so that the image is 1.2 m wide. Find the scale factor and the area of the image.",
+        "options": [
+          {"id": "a", "text": "scale factor 40, area 0.96 square metres", "isCorrect": true},
+          {"id": "b", "text": "scale factor 40, area 1.2 square metres", "isCorrect": false},
+          {"id": "c", "text": "scale factor 60, area 0.96 square metres", "isCorrect": false},
+          {"id": "d", "text": "scale factor 40, area 9.6 square metres", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Convert 1.2 m to 120 cm first, so the scale factor is 120 divided by 3 = 40. The image height is 2 times 40 = 80 cm = 0.8 m, and the width is 1.2 m, so the area is 1.2 times 0.8 = 0.96 square metres. Exam Tip: convert all lengths to the same unit before finding the scale factor.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A rod 2 m tall is placed so that a viewer 3 m from the rod sees its top aligned with the top of a tower 45 m away. Find the height of the tower.",
+        "options": [
+          {"id": "a", "text": "25", "isCorrect": false},
+          {"id": "b", "text": "30", "isCorrect": true},
+          {"id": "c", "text": "36", "isCorrect": false},
+          {"id": "d", "text": "90", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The rod and the tower form similar triangles from the viewing point, so 2 divided by 3 = h divided by 45, giving h = 2 times 45 divided by 3 = 30 m. Exam Tip: option D forgets to divide by the near distance, so keep the small triangle's ratio equal to the large triangle's ratio.",
         "difficulty": "hard"
       }
     ]

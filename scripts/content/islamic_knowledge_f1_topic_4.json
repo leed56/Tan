@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The prayer performed in the middle of the afternoon is called _____.",
-        "options": [],
-        "correctAnswer": "Asr",
+        "options": [
+          {
+            "id": "a",
+            "text": "Asr",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Dhuhr",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Maghrib",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Fajr",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Asr is the afternoon prayer, performed after Dhuhr and before sunset, and contains four rakaa.",
         "difficulty": "easy"
       },
       {
         "questionText": "The night prayer, which is the last of the five daily prayers, is called _____.",
-        "options": [],
-        "correctAnswer": "Isha",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fajr",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Isha",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Maghrib",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Dhuhr",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Isha is the night prayer, consisting of four rakaa.",
         "difficulty": "easy"
       },
       {
         "questionText": "Both the Asr and the Isha prayers consist of _____ rakaa each.",
-        "options": [],
-        "correctAnswer": "four",
+        "options": [
+          {
+            "id": "a",
+            "text": "two",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "three",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "four",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "five",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Asr, Dhuhr and Isha each have four obligatory rakaa.",
         "difficulty": "medium"
       },
       {
         "questionText": "The act of washing specific body parts with water to be ready for prayer is called _____.",
-        "options": [],
-        "correctAnswer": "wudhu",
+        "options": [
+          {
+            "id": "a",
+            "text": "ghusl",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "tayammum",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "istinja",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "wudhu",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Wudhu is the ritual ablution and a prerequisite for the validity of Salah.",
         "difficulty": "easy"
       },
       {
         "questionText": "When water is unavailable or harmful, a Muslim may purify himself using clean earth in an act called _____.",
-        "options": [],
-        "correctAnswer": "tayammum",
+        "options": [
+          {
+            "id": "a",
+            "text": "tayammum",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "wudhu",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ghusl",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "istinja",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Tayammum is dry ablution using clean earth, permitted when water cannot be used.",
         "difficulty": "medium"
       },
       {
         "questionText": "Muslims face the direction of the Ka'bah during prayer, which is known as the _____.",
-        "options": [],
-        "correctAnswer": "Qiblah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mihrab",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Qiblah",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Sutrah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Minbar",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The Qiblah is the direction towards the Ka'bah in Makkah that all Muslims face when praying.",
         "difficulty": "easy"
       },
       {
         "questionText": "The bowing position in prayer, in which the back is bent and hands placed on the knees, is called _____.",
-        "options": [],
-        "correctAnswer": "rukoo",
+        "options": [
+          {
+            "id": "a",
+            "text": "sujood",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "qiyam",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rukoo",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "julus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Rukoo is the bowing pillar of the prayer performed after recitation.",
         "difficulty": "medium"
       },
       {
         "questionText": "Placing the forehead on the ground in worship is called _____.",
-        "options": [],
-        "correctAnswer": "sujood",
+        "options": [
+          {
+            "id": "a",
+            "text": "rukoo",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "qiyam",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "julus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sujood",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Sujood (prostration) is a pillar of Salah in which the forehead, nose, palms, knees and toes touch the ground.",
         "difficulty": "medium"
       },
       {
         "questionText": "The prayer is ended by turning the head and saying the greeting of peace, known as the _____.",
-        "options": [],
-        "correctAnswer": "tasleem",
+        "options": [
+          {
+            "id": "a",
+            "text": "tasleem",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "takbir",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tashahhud",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "qunut",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The tasleem is the final pillar, saying 'Assalamu alaikum wa rahmatullah' to the right and left.",
         "difficulty": "medium"
       },
       {
         "questionText": "Speaking unnecessary words to another person during prayer will _____ the Salah.",
-        "options": [],
-        "correctAnswer": "nullify",
+        "options": [
+          {
+            "id": "a",
+            "text": "complete",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "nullify",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "lengthen",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "strengthen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Deliberately speaking to people during the prayer is one of the things that nullify (break) Salah.",
         "difficulty": "medium"
       }

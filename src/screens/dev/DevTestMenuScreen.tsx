@@ -1,0 +1,289 @@
+/**
+ * Dev Test Menu — __DEV__-only screen that links directly to every screen in
+ * the app, so the whole feature set can be clicked through without walking
+ * the normal navigation flow each time. Never bundled into production
+ * builds (gated by React Native's `__DEV__` at the entry points that link
+ * here — see WelcomeScreen's "Enter Test Mode" button and the floating
+ * button in AppNavigator).
+ */
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
+import { ScreenContainer } from '../../components/ui/ScreenContainer';
+import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
+
+// Real-shaped sample ids (matches the seeded-content ID convention:
+// form_{n}_{subject}_topic_{k} / ..._pack_{p}) so screens that fetch by id
+// resolve against real data when Firestore is reachable, and fail gracefully
+// (empty state, not a crash) when it isn't.
+const SAMPLE = {
+  formId: 'form_1',
+  // Firestore/local-seed convention (see scripts/seed-content.mjs) is
+  // `${formId}_${bareSubjectId}` — used wherever subjectId feeds a query
+  // (Topics, LearningPackDetail). Quiz screens' own fetch only keys off
+  // learningPackId, so they keep the bare id for gamification's subjectKey.
+  subjectId: 'form_1_mathematics',
+  bareSubjectId: 'mathematics',
+  topicId: 'form_1_mathematics_topic_1',
+  packId: 'form_1_mathematics_topic_1_pack_1',
+  subjectColor: COLORS.subjects.mathematics,
+};
+
+interface Entry {
+  label: string;
+  icon: keyof typeof Ionicons.glyphMap;
+  onPress: (nav: any) => void;
+}
+
+interface Section {
+  title: string;
+  entries: Entry[];
+}
+
+const quizParams = {
+  packId: SAMPLE.packId,
+  packTitle: 'Numbers and Numeration — MCQ Quiz',
+  topicId: SAMPLE.topicId,
+  subjectColor: SAMPLE.subjectColor,
+  formId: SAMPLE.formId,
+  subjectId: SAMPLE.bareSubjectId,
+};
+
+const SECTIONS: Section[] = [
+  {
+    title: 'Home & Curriculum',
+    entries: [
+      { label: 'Home', icon: 'home-outline', onPress: (nav) => nav.navigate('Home') },
+      { label: 'Subjects', icon: 'book-outline', onPress: (nav) => nav.getParent()?.navigate('SubjectsTab', { screen: 'Subjects' }) },
+      {
+        label: 'Topics list',
+        icon: 'list-outline',
+        onPress: (nav) => nav.navigate('Topics', { subjectId: SAMPLE.subjectId, subjectName: 'Mathematics', color: SAMPLE.subjectColor, formId: SAMPLE.formId }),
+      },
+      {
+        label: 'Learning pack detail',
+        icon: 'layers-outline',
+        onPress: (nav) => nav.navigate('LearningPackDetail', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor, formId: SAMPLE.formId, subjectId: SAMPLE.subjectId }),
+      },
+      { label: 'Pack completion', icon: 'checkmark-done-outline', onPress: (nav) => nav.navigate('PackCompletion', { xpEarned: 30, packTitle: 'Numbers and Numeration' }) },
+    ],
+  },
+  {
+    title: 'Quiz Types',
+    entries: [
+      { label: 'Quiz intro', icon: 'play-circle-outline', onPress: (nav) => nav.navigate('QuizIntro', { ...quizParams, quizType: 'mcq' }) },
+      { label: 'MCQ quiz', icon: 'checkbox-outline', onPress: (nav) => nav.navigate('MCQQuiz', quizParams) },
+      { label: 'Fill-in-blank quiz', icon: 'create-outline', onPress: (nav) => nav.navigate('FIBQuiz', quizParams) },
+      { label: 'True / False quiz', icon: 'swap-horizontal-outline', onPress: (nav) => nav.navigate('TFQuiz', quizParams) },
+      { label: 'Higher-order quiz', icon: 'bulb-outline', onPress: (nav) => nav.navigate('HOQQuiz', quizParams) },
+      {
+        label: 'Summary pack',
+        icon: 'document-text-outline',
+        onPress: (nav) => nav.navigate('SummaryPack', { ...quizParams, completionXP: 12, summaryPoints: [{ point: 'Sample point', detail: 'Sample detail text for preview.' }] }),
+      },
+      {
+        label: 'Quiz result',
+        icon: 'trophy-outline',
+        onPress: (nav) => nav.navigate('QuizResult', { ...quizParams, quizType: 'mcq', xpEarned: 30, scorePercent: 80, correctCount: 8, wrongCount: 2, totalQuestions: 10 }),
+      },
+    ],
+  },
+  {
+    title: 'Subscription & Family',
+    entries: [
+      { label: 'Subscription plans', icon: 'flash-outline', onPress: (nav) => nav.navigate('SubscriptionScreen') },
+      { label: 'Subscription status', icon: 'ribbon-outline', onPress: (nav) => nav.navigate('SubscriptionStatus') },
+      {
+        label: 'Payment method (Standard/mo)',
+        icon: 'card-outline',
+        onPress: (nav) => nav.navigate('PaymentMethodScreen', { planId: 'standard', planTitle: 'Standard', billingCycle: 'monthly', price: 4999 }),
+      },
+      {
+        label: 'Payment method (Family/yr)',
+        icon: 'card-outline',
+        onPress: (nav) => nav.navigate('PaymentMethodScreen', { planId: 'family', planTitle: 'Family Pack', billingCycle: 'yearly', price: 60000 }),
+      },
+      {
+        label: 'Locked feature preview',
+        icon: 'lock-closed-outline',
+        onPress: (nav) => nav.navigate('LockedFeaturePreview', { featureKey: 'summary', featureTitle: 'Topic Summaries', featureDescription: '10 key points per topic — a quick, focused way to revise.' }),
+      },
+      { label: 'Family Hub', icon: 'people-outline', onPress: (nav) => nav.getParent()?.navigate('ProfileTab', { screen: 'FamilyProfiles' }) },
+      { label: 'Manage devices', icon: 'phone-portrait-outline', onPress: (nav) => nav.getParent()?.navigate('ProfileTab', { screen: 'ManageDevices' }) },
+    ],
+  },
+  {
+    title: 'Gamification',
+    entries: [
+      { label: 'Gamification profile', icon: 'person-circle-outline', onPress: (nav) => nav.navigate('GamificationProfile') },
+      { label: 'Daily missions', icon: 'flag-outline', onPress: (nav) => nav.navigate('DailyMissions') },
+      { label: 'Rewards', icon: 'gift-outline', onPress: (nav) => nav.navigate('Rewards') },
+      { label: 'Badges', icon: 'medal-outline', onPress: (nav) => nav.navigate('Badges') },
+      { label: 'Achievements', icon: 'star-outline', onPress: (nav) => nav.navigate('Achievements') },
+      { label: 'Weekly leaderboard', icon: 'podium-outline', onPress: (nav) => nav.navigate('WeeklyLeaderboard') },
+      { label: 'Monthly leaderboard', icon: 'calendar-outline', onPress: (nav) => nav.navigate('MonthlyLeaderboard') },
+      { label: 'Leaderboard tab', icon: 'trophy-outline', onPress: (nav) => nav.getParent()?.navigate('LeaderboardTab') },
+      { label: 'Analytics tab', icon: 'bar-chart-outline', onPress: (nav) => nav.getParent()?.navigate('AnalyticsTab') },
+    ],
+  },
+  {
+    title: 'AI Explanations',
+    entries: [
+      {
+        label: 'Explanation screen',
+        icon: 'chatbubbles-outline',
+        onPress: (nav) => nav.navigate('ExplanationScreen', {
+          questionId: 'sample_q1',
+          questionText: 'What is 7 x 8?',
+          quizType: 'mcq',
+          subjectId: SAMPLE.bareSubjectId,
+          formId: SAMPLE.formId,
+          correctAnswer: 'b',
+          options: [{ id: 'a', text: '54' }, { id: 'b', text: '56' }, { id: 'c', text: '58' }, { id: 'd', text: '64' }],
+          packTitle: 'Numbers and Numeration',
+          subjectColor: SAMPLE.subjectColor,
+          fallbackExplanation: 'Sample fallback explanation text.',
+        }),
+      },
+      {
+        label: 'Pack review (all answers)',
+        icon: 'reader-outline',
+        onPress: (nav) => nav.navigate('LearningPackReview', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', subjectId: SAMPLE.bareSubjectId, formId: SAMPLE.formId, topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor }),
+      },
+      {
+        label: 'Wrong answers review',
+        icon: 'close-circle-outline',
+        onPress: (nav) => nav.navigate('WrongAnswerReview', { packId: SAMPLE.packId, packTitle: 'Numbers and Numeration', subjectId: SAMPLE.bareSubjectId, formId: SAMPLE.formId, topicId: SAMPLE.topicId, subjectColor: SAMPLE.subjectColor }),
+      },
+      {
+        label: 'Explanation feedback',
+        icon: 'thumbs-up-outline',
+        onPress: (nav) => nav.navigate('ExplanationFeedback', { questionId: 'sample_q1', explanationId: 'sample_exp1', packTitle: 'Numbers and Numeration' }),
+      },
+    ],
+  },
+  {
+    title: 'Profile & Settings',
+    entries: [
+      { label: 'Profile', icon: 'person-outline', onPress: (nav) => nav.getParent()?.navigate('ProfileTab', { screen: 'Profile' }) },
+      { label: 'Edit profile', icon: 'create-outline', onPress: (nav) => nav.getParent()?.navigate('ProfileTab', { screen: 'EditProfile' }) },
+      { label: 'Settings', icon: 'settings-outline', onPress: (nav) => nav.getParent()?.navigate('ProfileTab', { screen: 'Settings' }) },
+    ],
+  },
+];
+
+export function DevTestMenuScreen() {
+  const navigation = useNavigation<any>();
+
+  return (
+    <ScreenContainer padded={false}>
+      <LinearGradient colors={[`${COLORS.gold}20`, COLORS.bgDark]} style={styles.header}>
+        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
+          <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
+        </TouchableOpacity>
+        <View style={styles.badge}>
+          <Ionicons name="flask" size={12} color={COLORS.gold} />
+          <Text style={styles.badgeText}>DEV ONLY</Text>
+        </View>
+        <Text style={styles.title}>Test Menu</Text>
+        <Text style={styles.subtitle}>Jump straight to any screen in the app.</Text>
+      </LinearGradient>
+
+      <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
+        {SECTIONS.map((section) => (
+          <View key={section.title} style={styles.section}>
+            <Text style={styles.sectionTitle}>{section.title}</Text>
+            <View style={styles.card}>
+              {section.entries.map((entry, i) => (
+                <React.Fragment key={entry.label}>
+                  <TouchableOpacity
+                    style={styles.row}
+                    activeOpacity={0.7}
+                    onPress={() => {
+                      try {
+                        entry.onPress(navigation);
+                      } catch {
+                        // Swallow — a bad dummy param shouldn't crash the menu itself.
+                      }
+                    }}
+                  >
+                    <View style={styles.rowIcon}>
+                      <Ionicons name={entry.icon} size={16} color={COLORS.primary} />
+                    </View>
+                    <Text style={styles.rowLabel}>{entry.label}</Text>
+                    <Ionicons name="chevron-forward" size={16} color={COLORS.textMuted} />
+                  </TouchableOpacity>
+                  {i < section.entries.length - 1 && <View style={styles.divider} />}
+                </React.Fragment>
+              ))}
+            </View>
+          </View>
+        ))}
+      </ScrollView>
+    </ScreenContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  header: {
+    paddingTop: SPACING['2xl'],
+    paddingHorizontal: SPACING.screenPadding,
+    paddingBottom: SPACING.xl,
+    gap: SPACING.sm,
+  },
+  back: { alignSelf: 'flex-start', padding: SPACING.xs, marginBottom: SPACING.sm },
+  badge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    alignSelf: 'flex-start',
+    backgroundColor: `${COLORS.gold}20`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 3,
+    borderWidth: 1,
+    borderColor: `${COLORS.gold}40`,
+  },
+  badgeText: { color: COLORS.gold, fontSize: 10, fontWeight: TYPOGRAPHY.weights.bold },
+  title: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes['2xl'], fontWeight: TYPOGRAPHY.weights.extrabold },
+  subtitle: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.sm },
+  body: {
+    paddingHorizontal: SPACING.screenPadding,
+    paddingTop: SPACING.base,
+    paddingBottom: SPACING['3xl'],
+    gap: SPACING.lg,
+  },
+  section: { gap: SPACING.xs },
+  sectionTitle: {
+    color: COLORS.textSecondary,
+    fontSize: TYPOGRAPHY.sizes.sm,
+    fontWeight: TYPOGRAPHY.weights.semibold,
+    textTransform: 'uppercase',
+    letterSpacing: 0.8,
+  },
+  card: {
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.xl,
+    borderWidth: 1,
+    borderColor: COLORS.glassBorder,
+    paddingHorizontal: SPACING.base,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACING.sm,
+    paddingVertical: SPACING.md,
+  },
+  rowIcon: {
+    width: 32,
+    height: 32,
+    borderRadius: RADIUS.md,
+    backgroundColor: `${COLORS.primary}15`,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  rowLabel: { flex: 1, color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.medium },
+  divider: { height: 1, backgroundColor: COLORS.glassBorder, marginLeft: 44 },
+});

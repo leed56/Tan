@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The upward force exerted by a fluid on an immersed object is called _____.",
-        "options": [],
-        "correctAnswer": "upthrust",
+        "options": [
+          {
+            "id": "a",
+            "text": "upthrust",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "friction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tension",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "gravity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Upthrust, also called buoyant force, acts vertically upward on objects in a fluid.",
         "difficulty": "easy"
       },
       {
         "questionText": "Archimedes' principle states that the upthrust equals the weight of the fluid _____.",
-        "options": [],
-        "correctAnswer": "displaced",
+        "options": [
+          {
+            "id": "a",
+            "text": "immersed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "displaced",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "contained",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "remaining",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The volume of fluid pushed aside by the object determines the upthrust.",
         "difficulty": "easy"
       },
       {
         "questionText": "The law of _____ states that a floating body displaces its own weight of the fluid in which it floats.",
-        "options": [],
-        "correctAnswer": "flotation",
+        "options": [
+          {
+            "id": "a",
+            "text": "inertia",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "gravitation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "flotation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "conservation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "This law explains why ships and other floating bodies stay afloat.",
         "difficulty": "easy"
       },
       {
         "questionText": "An instrument that uses the law of flotation to measure the relative density of a liquid is called a _____.",
-        "options": [],
-        "correctAnswer": "hydrometer",
+        "options": [
+          {
+            "id": "a",
+            "text": "barometer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "manometer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "thermometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hydrometer",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A hydrometer floats deeper in less dense liquids and higher in denser liquids.",
         "difficulty": "medium"
       },
       {
         "questionText": "Relative density has no units because it is a _____ of two densities.",
-        "options": [],
-        "correctAnswer": "ratio",
+        "options": [
+          {
+            "id": "a",
+            "text": "ratio",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sum",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "product",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "difference",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Dividing two quantities with the same units gives a pure number with no units.",
         "difficulty": "easy"
       },
       {
         "questionText": "If an object weighs 12 N in air and 9 N in water, the upthrust on it is _____ N.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "21",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Upthrust = 12 N - 9 N = 3 N.",
         "difficulty": "easy"
       },
       {
         "questionText": "An object will float if its density is _____ than the density of the fluid.",
-        "options": [],
-        "correctAnswer": "less",
+        "options": [
+          {
+            "id": "a",
+            "text": "greater",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "equal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "less",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "heavier",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A less dense object weighs less than the fluid it can displace, so it floats.",
         "difficulty": "easy"
       },
       {
         "questionText": "The upthrust on a fully immersed object can be calculated using the formula upthrust = ρVg, where ρ is the _____ of the fluid.",
-        "options": [],
-        "correctAnswer": "density",
+        "options": [
+          {
+            "id": "a",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pressure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "viscosity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "density",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Here V is the volume of fluid displaced and g is the gravitational field strength.",
         "difficulty": "medium"
       },
       {
         "questionText": "A submarine controls its depth by changing the amount of water in its _____ tanks.",
-        "options": [],
-        "correctAnswer": "ballast",
+        "options": [
+          {
+            "id": "a",
+            "text": "ballast",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "fuel",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "air",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "engine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Adding water increases weight to dive; removing water reduces weight to rise.",
         "difficulty": "medium"
       },
       {
         "questionText": "The relative density of water is exactly _____.",
-        "options": [],
-        "correctAnswer": "1",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Since relative density compares a substance to water, water's relative density is 1.",
         "difficulty": "easy"
       }

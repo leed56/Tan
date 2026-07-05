@@ -1,0 +1,374 @@
+{
+  "topicId": "form_4_mathematics_topic_4",
+  "topicName": "Probability",
+  "order": 4,
+  "description": "An introduction to probability including sample spaces, the probability of single and combined events, complements, mutually exclusive and independent events, and drawing with and without replacement using tree diagrams.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "A fair die is thrown once. What is the probability of getting a 4?",
+        "options": [
+          {"id": "a", "text": "4/6", "isCorrect": false},
+          {"id": "b", "text": "1/4", "isCorrect": false},
+          {"id": "c", "text": "1/6", "isCorrect": true},
+          {"id": "d", "text": "1/2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "There is one favourable outcome (the 4) out of six equally likely outcomes, so P = 1/6. Exam Tip: probability = favourable outcomes over total outcomes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A fair die is thrown once. What is the probability of getting an even number?",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "1/3", "isCorrect": false},
+          {"id": "c", "text": "2/3", "isCorrect": false},
+          {"id": "d", "text": "1/6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The even numbers are 2, 4 and 6, giving 3 favourable outcomes out of 6, so P = 3/6 = 1/2. Exam Tip: count the favourable outcomes then simplify the fraction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A card is drawn from a standard pack of 52. What is the probability of getting a king?",
+        "options": [
+          {"id": "a", "text": "1/52", "isCorrect": false},
+          {"id": "b", "text": "1/13", "isCorrect": true},
+          {"id": "c", "text": "4/13", "isCorrect": false},
+          {"id": "d", "text": "1/4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "There are 4 kings in 52 cards, so P = 4/52 = 1/13. Exam Tip: there are 4 of each rank in a pack, so divide by 52 then simplify.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bag contains 3 red balls and 5 blue balls. What is the probability of drawing a red ball?",
+        "options": [
+          {"id": "a", "text": "3/5", "isCorrect": false},
+          {"id": "b", "text": "5/8", "isCorrect": false},
+          {"id": "c", "text": "1/3", "isCorrect": false},
+          {"id": "d", "text": "3/8", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "There are 3 red balls out of a total of 3 + 5 = 8 balls, so P(red) = 3/8. Exam Tip: the total is the sum of all items, not just the other colour.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The probability that it will rain tomorrow is 0.3. What is the probability that it will not rain?",
+        "options": [
+          {"id": "a", "text": "0.3", "isCorrect": false},
+          {"id": "b", "text": "0.7", "isCorrect": true},
+          {"id": "c", "text": "0.4", "isCorrect": false},
+          {"id": "d", "text": "1.3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The complement rule gives P(not rain) = 1 - 0.3 = 0.7. Exam Tip: the probabilities of an event and its complement always add to 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two fair coins are tossed together. What is the probability of getting two heads?",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "1/3", "isCorrect": false},
+          {"id": "c", "text": "1/4", "isCorrect": true},
+          {"id": "d", "text": "2/4", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The sample space is HH, HT, TH, TT, so two heads is 1 outcome out of 4, giving P = 1/4. Exam Tip: list the sample space for two coins to count outcomes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A and B are mutually exclusive events with P(A) = 0.3 and P(B) = 0.4. What is P(A or B)?",
+        "options": [
+          {"id": "a", "text": "0.12", "isCorrect": false},
+          {"id": "b", "text": "0.7", "isCorrect": true},
+          {"id": "c", "text": "0.1", "isCorrect": false},
+          {"id": "d", "text": "0.35", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "For mutually exclusive events P(A or B) = P(A) + P(B) = 0.3 + 0.4 = 0.7. Exam Tip: 'or' with mutually exclusive events means add the probabilities.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A and B are independent events with P(A) = 0.5 and P(B) = 0.4. What is P(A and B)?",
+        "options": [
+          {"id": "a", "text": "0.9", "isCorrect": false},
+          {"id": "b", "text": "0.1", "isCorrect": false},
+          {"id": "c", "text": "0.2", "isCorrect": true},
+          {"id": "d", "text": "0.45", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "For independent events P(A and B) = P(A) x P(B) = 0.5 x 0.4 = 0.2. Exam Tip: 'and' with independent events means multiply the probabilities.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A fair die is thrown once. What is the probability of getting a number greater than 4?",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "1/3", "isCorrect": true},
+          {"id": "c", "text": "2/3", "isCorrect": false},
+          {"id": "d", "text": "1/6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Numbers greater than 4 are 5 and 6, giving 2 outcomes out of 6, so P = 2/6 = 1/3. Exam Tip: 'greater than 4' does not include 4 itself.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the probability of an impossible event?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "0.5", "isCorrect": false},
+          {"id": "c", "text": "-1", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "An impossible event can never happen, so its probability is 0. Exam Tip: all probabilities lie between 0 (impossible) and 1 (certain).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bag has 4 red and 6 black balls. Two balls are drawn without replacement. What is the probability that both are red?",
+        "options": [
+          {"id": "a", "text": "4/25", "isCorrect": false},
+          {"id": "b", "text": "2/15", "isCorrect": true},
+          {"id": "c", "text": "16/100", "isCorrect": false},
+          {"id": "d", "text": "12/90", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Without replacement, P(both red) = (4/10) x (3/9) = 12/90 = 2/15, since one red ball is removed before the second draw. Exam Tip: without replacement, reduce both the top and bottom for the second draw.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A bag has 4 red and 6 black balls. Two balls are drawn with replacement. What is the probability that both are red?",
+        "options": [
+          {"id": "a", "text": "2/15", "isCorrect": false},
+          {"id": "b", "text": "4/25", "isCorrect": true},
+          {"id": "c", "text": "8/10", "isCorrect": false},
+          {"id": "d", "text": "1/5", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "With replacement the total stays the same, so P(both red) = (4/10) x (4/10) = 16/100 = 4/25. Exam Tip: with replacement the probability is the same for each draw.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two fair dice are thrown together. What is the probability that the sum is 7?",
+        "options": [
+          {"id": "a", "text": "1/12", "isCorrect": false},
+          {"id": "b", "text": "7/36", "isCorrect": false},
+          {"id": "c", "text": "1/6", "isCorrect": true},
+          {"id": "d", "text": "1/36", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "There are 6 ways to get a sum of 7 out of 36 outcomes, so P = 6/36 = 1/6. Exam Tip: two dice give 36 equally likely outcomes; count the pairs that work.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a possible value for a probability?",
+        "options": [
+          {"id": "a", "text": "1.2", "isCorrect": false},
+          {"id": "b", "text": "-0.3", "isCorrect": false},
+          {"id": "c", "text": "0.65", "isCorrect": true},
+          {"id": "d", "text": "7/5", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A probability must lie between 0 and 1 inclusive, and only 0.65 satisfies this. Exam Tip: any value below 0 or above 1 cannot be a probability.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bag contains red and blue pens. If P(blue) = 5/8, what is P(red)?",
+        "options": [
+          {"id": "a", "text": "5/8", "isCorrect": false},
+          {"id": "b", "text": "3/8", "isCorrect": true},
+          {"id": "c", "text": "1/8", "isCorrect": false},
+          {"id": "d", "text": "8/5", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since there are only two colours, P(red) = 1 - P(blue) = 1 - 5/8 = 3/8. Exam Tip: with only two outcomes, one probability is 1 minus the other.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The probability of a certain event is ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "0.5", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A certain event is sure to happen, so its probability is 1. Exam Tip: 1 means certain and 0 means impossible.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The sum of the probabilities of all possible outcomes of an experiment is ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "2", "isCorrect": false},
+          {"id": "d", "text": "0.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "All the outcomes together cover everything that can happen, so their probabilities add to 1. Exam Tip: if probabilities do not add to 1, an outcome is missing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A fair die is thrown once. P(odd number) = ____.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "1/3", "isCorrect": false},
+          {"id": "c", "text": "1/6", "isCorrect": false},
+          {"id": "d", "text": "2/3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The odd numbers are 1, 3 and 5, giving 3 out of 6, so P = 3/6 = 1/2. Exam Tip: half of the numbers on a die are odd.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If P(A) is the probability of event A, then P(A') = ____.",
+        "options": [
+          {"id": "a", "text": "1 - P(A)", "isCorrect": true},
+          {"id": "b", "text": "P(A) - 1", "isCorrect": false},
+          {"id": "c", "text": "1 + P(A)", "isCorrect": false},
+          {"id": "d", "text": "P(A)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A' is the complement of A, so P(A') = 1 - P(A). Exam Tip: the complement is everything except the event itself.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The sample space for tossing one coin is ____.",
+        "options": [
+          {"id": "a", "text": "{H, T}", "isCorrect": true},
+          {"id": "b", "text": "{H}", "isCorrect": false},
+          {"id": "c", "text": "{H, H, T, T}", "isCorrect": false},
+          {"id": "d", "text": "{1, 2}", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Tossing one coin can give heads or tails, so the sample space is {H, T}. Exam Tip: the sample space lists every possible outcome once.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A letter is chosen at random from the word MAMA. P(letter M) = ____.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "1/4", "isCorrect": false},
+          {"id": "c", "text": "2/3", "isCorrect": false},
+          {"id": "d", "text": "1/3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "MAMA has 4 letters, 2 of which are M, so P = 2/4 = 1/2. Exam Tip: count how many times the target letter appears out of the total letters.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two events which cannot occur at the same time are called ____ events.",
+        "options": [
+          {"id": "a", "text": "mutually exclusive", "isCorrect": true},
+          {"id": "b", "text": "independent", "isCorrect": false},
+          {"id": "c", "text": "certain", "isCorrect": false},
+          {"id": "d", "text": "complementary", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Mutually exclusive events have no outcomes in common and cannot both happen at once. Exam Tip: for mutually exclusive events you add probabilities for 'or'.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For two independent events A and B, P(A and B) = ____.",
+        "options": [
+          {"id": "a", "text": "P(A) x P(B)", "isCorrect": true},
+          {"id": "b", "text": "P(A) + P(B)", "isCorrect": false},
+          {"id": "c", "text": "P(A) - P(B)", "isCorrect": false},
+          {"id": "d", "text": "P(A) / P(B)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "For independent events the outcome of one does not affect the other, so P(A and B) = P(A) x P(B). Exam Tip: 'and' with independent events means multiply.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A fair die is thrown once. P(a number less than or equal to 6) = ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "5/6", "isCorrect": false},
+          {"id": "c", "text": "1/6", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Every number on a die is 6 or less, so all 6 outcomes qualify and P = 6/6 = 1. Exam Tip: if every outcome fits, the event is certain with probability 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A card is drawn from a pack of 52. P(a red card) = ____.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "1/4", "isCorrect": false},
+          {"id": "c", "text": "1/13", "isCorrect": false},
+          {"id": "d", "text": "1/26", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Half the pack is red (26 cards), so P = 26/52 = 1/2. Exam Tip: hearts and diamonds are red, giving 26 red cards.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "The probability of an event can be greater than 1.", "options": [], "correctAnswer": "false", "explanation": "Every probability lies between 0 and 1 inclusive, so it can never exceed 1.", "difficulty": "easy"},
+      {"questionText": "P(A) + P(A') = 1 for any event A.", "options": [], "correctAnswer": "true", "explanation": "An event and its complement together cover all outcomes, so their probabilities add to 1.", "difficulty": "easy"},
+      {"questionText": "The outcomes of two successive tosses of a fair coin are independent.", "options": [], "correctAnswer": "true", "explanation": "The result of one toss does not affect the next, so the tosses are independent events.", "difficulty": "easy"},
+      {"questionText": "An event with probability 0 is impossible.", "options": [], "correctAnswer": "true", "explanation": "A probability of 0 means the event can never occur, which is the definition of impossible.", "difficulty": "easy"},
+      {"questionText": "Drawing objects without replacement changes the probabilities for later draws.", "options": [], "correctAnswer": "true", "explanation": "Removing an object reduces the total and possibly the favourable count, so later probabilities change.", "difficulty": "easy"},
+      {"questionText": "When two dice are thrown together, the sample space has 36 outcomes.", "options": [], "correctAnswer": "true", "explanation": "Each die has 6 faces, so together they give 6 x 6 = 36 equally likely outcomes.", "difficulty": "easy"},
+      {"questionText": "P(drawing an ace or a king from a pack of 52) = 8/52.", "options": [], "correctAnswer": "true", "explanation": "There are 4 aces and 4 kings, and these are mutually exclusive, so P = 4/52 + 4/52 = 8/52.", "difficulty": "easy"},
+      {"questionText": "Experimental probability is always exactly equal to theoretical probability.", "options": [], "correctAnswer": "false", "explanation": "Experimental probability comes from trials and only approaches the theoretical value as the number of trials grows.", "difficulty": "easy"},
+      {"questionText": "In a tree diagram, probabilities along a branch path are multiplied.", "options": [], "correctAnswer": "true", "explanation": "Following one path is a sequence of 'and' events, so the branch probabilities are multiplied together.", "difficulty": "easy"},
+      {"questionText": "When two ordinary dice are thrown, P(sum = 13) = 1/36.", "options": [], "correctAnswer": "false", "explanation": "The largest possible sum is 6 + 6 = 12, so a sum of 13 is impossible and its probability is 0.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Probability of an event", "options": [], "correctAnswer": "The number of favourable outcomes divided by the total number of possible outcomes.", "explanation": "For equally likely outcomes, P(event) = favourable/total, for example P(a 4 on a die) = 1/6. Exam Tip: always simplify the final fraction.", "difficulty": "easy"},
+      {"questionText": "Sample space", "options": [], "correctAnswer": "The set of all possible outcomes of an experiment.", "explanation": "For one coin the sample space is {H, T} and for one die it is {1, 2, 3, 4, 5, 6}. Exam Tip: listing the sample space makes counting outcomes easier.", "difficulty": "easy"},
+      {"questionText": "Complement of an event", "options": [], "correctAnswer": "All the outcomes that are not in the event, with probability 1 - P(A).", "explanation": "If P(rain) = 0.3 then P(no rain) = 1 - 0.3 = 0.7, since an event and its complement add to 1. Exam Tip: use the complement when 'at least one' or 'not' appears.", "difficulty": "easy"},
+      {"questionText": "Mutually exclusive events", "options": [], "correctAnswer": "Events that cannot happen at the same time, so P(A or B) = P(A) + P(B).", "explanation": "Getting a head and a tail on one coin toss cannot both happen, so their probabilities are added for 'or'. Exam Tip: add probabilities only when events cannot overlap.", "difficulty": "easy"},
+      {"questionText": "Independent events", "options": [], "correctAnswer": "Events where one outcome does not affect the other, so P(A and B) = P(A) x P(B).", "explanation": "Two coin tosses are independent, so P(two heads) = 1/2 x 1/2 = 1/4. Exam Tip: multiply probabilities for independent 'and' events.", "difficulty": "easy"},
+      {"questionText": "With replacement", "options": [], "correctAnswer": "Drawing where each item is returned before the next draw, so the total and probabilities stay the same.", "explanation": "Drawing 2 red from 4 red in 10 gives (4/10) x (4/10) because the ball is put back. Exam Tip: with replacement, the denominator does not change.", "difficulty": "easy"},
+      {"questionText": "Without replacement", "options": [], "correctAnswer": "Drawing where an item is not returned, so the total and probabilities change for later draws.", "explanation": "Drawing 2 red from 4 red in 10 gives (4/10) x (3/9) since one red is removed. Exam Tip: without replacement, reduce both top and bottom for the next draw.", "difficulty": "easy"},
+      {"questionText": "Certain event", "options": [], "correctAnswer": "An event that is sure to happen, with probability equal to 1.", "explanation": "Getting a number from 1 to 6 on a die is certain, so its probability is 6/6 = 1. Exam Tip: probability 1 means the event always occurs.", "difficulty": "easy"},
+      {"questionText": "Impossible event", "options": [], "correctAnswer": "An event that can never happen, with probability equal to 0.", "explanation": "Getting a 7 on an ordinary die is impossible, so its probability is 0. Exam Tip: probability 0 means the event never occurs.", "difficulty": "easy"},
+      {"questionText": "Tree diagram", "options": [], "correctAnswer": "A branching diagram showing the outcomes and probabilities of combined events.", "explanation": "You multiply along the branches of one path and add the results of different paths for the final answer. Exam Tip: multiply along branches, then add across separate paths.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "A bag contains 5 red and 3 green balls. Two balls are drawn without replacement. What is the probability that they are of different colours?",
+        "options": [
+          {"id": "a", "text": "15/56", "isCorrect": false},
+          {"id": "b", "text": "15/28", "isCorrect": true},
+          {"id": "c", "text": "15/32", "isCorrect": false},
+          {"id": "d", "text": "8/15", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Different colours means red then green or green then red: (5/8)(3/7) + (3/8)(5/7) = 15/56 + 15/56 = 30/56 = 15/28. Exam Tip: 'different colours' has two orders, so work out each path and add them.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The probability of passing Maths is 0.7 and passing English is 0.6, and the results are independent. What is the probability of passing at least one subject?",
+        "options": [
+          {"id": "a", "text": "1.3", "isCorrect": false},
+          {"id": "b", "text": "0.42", "isCorrect": false},
+          {"id": "c", "text": "0.88", "isCorrect": true},
+          {"id": "d", "text": "0.58", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Use the complement of failing both: P(at least one) = 1 - (0.3)(0.4) = 1 - 0.12 = 0.88. Exam Tip: for 'at least one', it is quicker to subtract the probability of none from 1.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student is on time with probability 0.8 each day, independently, over two days. What is the probability of being on time on exactly one of the two days?",
+        "options": [
+          {"id": "a", "text": "0.16", "isCorrect": false},
+          {"id": "b", "text": "0.64", "isCorrect": false},
+          {"id": "c", "text": "0.32", "isCorrect": true},
+          {"id": "d", "text": "0.20", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Exactly one day means on-time then late or late then on-time: (0.8)(0.2) + (0.2)(0.8) = 0.16 + 0.16 = 0.32. Exam Tip: 'exactly one' has two symmetric paths, so add both.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

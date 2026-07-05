@@ -10,6 +10,7 @@ interface TopicCardProps {
   subjectColor: string;
   progress?: TopicProgressSummary;
   packCount?: number;
+  isLocked?: boolean;
   onPress: (topic: CurriculumTopic) => void;
 }
 
@@ -18,6 +19,7 @@ export function TopicCard({
   subjectColor,
   progress,
   packCount = 0,
+  isLocked = false,
   onPress,
 }: TopicCardProps) {
   const pct = progress?.progressPercent ?? 0;
@@ -30,11 +32,13 @@ export function TopicCard({
     <TouchableOpacity
       onPress={() => onPress(topic)}
       activeOpacity={0.8}
-      style={[styles.card, isDone && styles.doneCard]}
+      style={[styles.card, isDone && styles.doneCard, isLocked && styles.lockedCard]}
     >
       {/* Status icon */}
       <View style={[styles.statusIcon, isDone && { backgroundColor: `${subjectColor}25` }]}>
-        {isDone ? (
+        {isLocked ? (
+          <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
+        ) : isDone ? (
           <Ionicons name="checkmark-circle" size={24} color={subjectColor} />
         ) : isStarted ? (
           <Ionicons name="play-circle" size={24} color={subjectColor} />
@@ -47,7 +51,13 @@ export function TopicCard({
         {/* Title row */}
         <View style={styles.titleRow}>
           <Text style={styles.title}>{topic.name}</Text>
-          <DifficultyBadge difficulty={topic.difficulty} />
+          {isLocked ? (
+            <View style={styles.premiumChip}>
+              <Text style={styles.premiumChipText}>Premium</Text>
+            </View>
+          ) : (
+            <DifficultyBadge difficulty={topic.difficulty} />
+          )}
         </View>
 
         <Text style={styles.desc} numberOfLines={2}>{topic.description}</Text>
@@ -62,7 +72,7 @@ export function TopicCard({
             <Ionicons name="time-outline" size={12} color={COLORS.textMuted} />
             <Text style={styles.metaText}>{topic.estimatedMinutes} min</Text>
           </View>
-          {total > 0 && (
+          {!isLocked && total > 0 && (
             <Text style={[styles.progressText, { color: isDone ? subjectColor : COLORS.textMuted }]}>
               {completed}/{total} done
             </Text>
@@ -70,7 +80,7 @@ export function TopicCard({
         </View>
 
         {/* Progress bar */}
-        {pct > 0 && (
+        {!isLocked && pct > 0 && (
           <View style={styles.progressTrack}>
             <View
               style={[
@@ -101,6 +111,20 @@ const styles = StyleSheet.create({
   doneCard: {
     borderColor: `${COLORS.success}40`,
     backgroundColor: 'rgba(78,205,196,0.04)',
+  },
+  lockedCard: {
+    opacity: 0.6,
+  },
+  premiumChip: {
+    backgroundColor: `${COLORS.gold}20`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 2,
+  },
+  premiumChipText: {
+    color: COLORS.gold,
+    fontSize: TYPOGRAPHY.sizes.xs,
+    fontWeight: TYPOGRAPHY.weights.bold,
   },
   statusIcon: {
     width: 44,

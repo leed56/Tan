@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_computer_studies_topic_7",
+  "topicName": "System Analysis and Design",
+  "order": 7,
+  "description": "This topic explains what a system and an information system are, the role of a system analyst, and the stages of the System Development Life Cycle used to study, design, build, implement, and maintain computer-based systems.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is a system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A single computer program used by one person",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A collection of related parts that work together to achieve a common goal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A type of computer hardware only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A list of instructions stored on a disk",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A system is a set of related components that interact and work together to achieve a particular objective.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which best describes an information system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A system that collects, processes, stores, and distributes information",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A system made only of cables and wires",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A printer connected to a computer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A folder of paper documents in an office",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "An information system gathers data, processes it into information, stores it, and distributes it to users to support decision making.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does system analysis mean?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Building the hardware of a computer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The study of an existing system to find out how it works and how it can be improved",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Selling computers to customers",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Typing data into a computer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "System analysis is the detailed study of a current system to understand its operation, problems, and requirements for improvement.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Who is responsible for studying and designing information systems in an organisation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A data entry clerk",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A hardware technician",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A system analyst",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "A network cable installer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A system analyst investigates user needs, analyses the existing system, and designs a new or improved system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does the abbreviation SDLC stand for?",
+        "options": [
+          {
+            "id": "a",
+            "text": "System Data Logic Control",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Software Design Language Code",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "System Development Life Cycle",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Standard Database Loading Cycle",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "SDLC stands for System Development Life Cycle, the set of stages followed when developing an information system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which stage of the SDLC usually comes first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Problem identification or preliminary study",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "System maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Coding",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Implementation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Development begins with identifying the problem or carrying out a preliminary study before any other work is done.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the main purpose of a feasibility study?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To write the program code",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To decide whether the proposed system is worth developing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To train the users of the system",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To repair faults after the system is in use",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A feasibility study checks whether the proposed system is practical and worthwhile in terms of technical, economic, and operational factors.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a fact-finding method used during requirements analysis?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Soldering circuit boards",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Conducting interviews",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Formatting a hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Compiling source code",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Interviews are a common fact-finding method where the analyst asks users questions to gather requirements.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A questionnaire is most useful when the analyst needs to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Collect information from many people quickly",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Watch how a single worker performs a task",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Read old reports and records",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Test the finished program",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A questionnaire uses a set of written questions and is efficient for gathering responses from a large number of people.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During which changeover method does the old and new system run at the same time?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Direct changeover",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Parallel changeover",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Phased changeover",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Pilot changeover",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In parallel changeover both the old and new systems operate together for a period so results can be compared before the old one is dropped.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the main aim of testing a system before it is used?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To find and remove errors so the system works correctly",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "To delete the old system",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "To increase the price of the system",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To draw the data flow diagrams",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Testing checks the system against requirements to detect and correct errors before it goes into real use.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of documentation is written mainly for the people who will operate the system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Technical documentation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "User documentation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Feasibility documentation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hardware documentation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "User documentation, such as a user manual, explains how to use the system in simple language for ordinary users.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Economic feasibility is mainly concerned with:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether the right technology is available",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Whether the benefits of the system are worth its costs",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Whether users will accept the system",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Whether the colours of the screen are attractive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Economic feasibility compares the costs of developing and running the system with the expected financial benefits.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What happens during the maintenance stage of the SDLC?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The system is studied for the first time",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The system is corrected, updated, and improved while in use",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The problem is first identified",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The feasibility study is carried out",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Maintenance keeps the working system running well by fixing faults and making improvements after implementation.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a common reason why a new system may fail?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Poor planning and inadequate user requirements",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Correct testing of all functions",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Proper training of users",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Clear and complete documentation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Systems often fail because of poor planning, unclear requirements, lack of user involvement, or insufficient testing and training.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A _____ is a set of related parts that work together to achieve a common goal.",
+        "options": [
+          {
+            "id": "a",
+            "text": "system",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "program",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "network",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "database",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A system is made up of related components that interact to reach a shared objective.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An information system collects data and processes it into useful _____ for users.",
+        "options": [
+          {
+            "id": "a",
+            "text": "data",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "information",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "knowledge",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "feedback",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An information system turns raw data into meaningful information used for decision making.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The person who studies and designs information systems is called a system _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "programmer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "operator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "analyst",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "designer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The system analyst investigates needs and designs the new or improved system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The abbreviation SDLC stands for System Development Life _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Circle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Course",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Chart",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cycle",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "SDLC means System Development Life Cycle, the stages used to build a system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A _____ study is carried out to decide whether a proposed system is worth developing.",
+        "options": [
+          {
+            "id": "a",
+            "text": "feasibility",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pilot",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "maintenance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The feasibility study examines whether the system is technically, economically, and operationally practical.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Watching how workers perform their tasks to gather facts is a method called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "interview",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "observation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "questionnaire",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sampling",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Observation is a fact-finding method where the analyst watches activities directly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In _____ changeover, the old system is completely replaced by the new one at once.",
+        "options": [
+          {
+            "id": "a",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "phased",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "direct",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "pilot",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Direct changeover stops the old system and starts the new one immediately, which is risky if errors occur.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Trying out a new system in one branch or department before using it everywhere is called _____ changeover.",
+        "options": [
+          {
+            "id": "a",
+            "text": "direct",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "phased",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "parallel",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "pilot",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Pilot changeover introduces the new system in one part of the organisation first to reduce risk.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Documentation that explains how the system was built, for programmers and analysts, is called _____ documentation.",
+        "options": [
+          {
+            "id": "a",
+            "text": "technical",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "user",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "system",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "operational",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Technical documentation describes the design and code so it can be maintained by technical staff.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Fixing errors and making improvements to a system after it is in use is known as system _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "analysis",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "maintenance",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "design",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "implementation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Maintenance keeps the live system working correctly and up to date.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A system is made up of related parts that work together towards a common goal.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the correct definition of a system.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An information system only stores data and never processes it.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An information system collects, processes, stores, and distributes information; processing is a key part.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "System analysis involves studying an existing system to understand and improve it.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Analysis is the detailed study of how a current system works and how it can be improved.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A system analyst mainly repairs broken computer hardware.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A system analyst studies needs and designs systems; hardware repair is done by technicians.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The feasibility study is done to decide whether a proposed system should be developed.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The feasibility study checks if the system is worthwhile before development continues.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Interviews, questionnaires, observation, and document review are all fact-finding methods.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "These are the main methods used to gather facts during requirements analysis.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In parallel changeover the old system is switched off before the new system starts.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "In parallel changeover both systems run together for a time; that statement describes direct changeover.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Testing is done to find and remove errors before the system is put into use.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Testing checks the system against requirements to detect and correct errors.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "User documentation is written in technical language for programmers only.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "User documentation is written in simple language for ordinary users; technical documentation is for programmers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Operational feasibility considers whether the users and the organisation will accept and use the system.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Operational feasibility checks how well the system will fit into and be accepted by the organisation.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define a system in one sentence.",
+        "options": [],
+        "correctAnswer": "A system is a collection of related parts that work together to achieve a common goal.",
+        "explanation": "A system has interacting components and a shared objective.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is an information system?",
+        "options": [],
+        "correctAnswer": "An information system is a system that collects, processes, stores, and distributes information to support decision making.",
+        "explanation": "It turns data into useful information for its users.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the role of a system analyst.",
+        "options": [],
+        "correctAnswer": "A system analyst studies the existing system, gathers user requirements, and designs a new or improved system.",
+        "explanation": "The analyst bridges user needs and the technical solution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the main stages of the System Development Life Cycle (SDLC).",
+        "options": [],
+        "correctAnswer": "Problem identification, feasibility study, requirements analysis, system design, coding, testing, implementation, and maintenance.",
+        "explanation": "These ordered stages guide the development of an information system.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the three types of feasibility studied before developing a system.",
+        "options": [],
+        "correctAnswer": "Technical feasibility, economic feasibility, and operational feasibility.",
+        "explanation": "These check whether the system is possible, affordable, and acceptable.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List four fact-finding methods used during requirements analysis.",
+        "options": [],
+        "correctAnswer": "Interviews, questionnaires, observation, and document review.",
+        "explanation": "These methods help the analyst gather accurate information about user needs.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the four common system changeover methods.",
+        "options": [],
+        "correctAnswer": "Direct, parallel, phased, and pilot changeover.",
+        "explanation": "Each method differs in how the new system replaces the old one.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distinguish between user documentation and technical documentation.",
+        "options": [],
+        "correctAnswer": "User documentation explains how to use the system in simple language for users, while technical documentation describes the design and code for programmers and analysts.",
+        "explanation": "They target different audiences and purposes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is system maintenance important after implementation?",
+        "options": [],
+        "correctAnswer": "Maintenance corrects errors, updates the system, and makes improvements so it keeps working well and meeting user needs.",
+        "explanation": "Systems must adapt to faults and changing requirements over time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two reasons why a new system may fail.",
+        "options": [],
+        "correctAnswer": "Poor planning or unclear requirements, and lack of user involvement or inadequate testing and training.",
+        "explanation": "Failures often come from weak analysis, planning, and preparation of users.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A school wants to replace its manual student records with a new computer system but is worried about losing important data if the new system has hidden errors. Which changeover method is the safest choice and why?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Direct changeover, because it is the fastest",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Parallel changeover, because the old system keeps running so results can be compared and used as backup",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Phased changeover, because only screens are changed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "No changeover is needed, the old system can simply be deleted",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Parallel changeover runs both systems together, so if the new system fails the old one is still available, protecting the data.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An analyst must gather detailed opinions from a few senior managers and also collect quick answers from hundreds of junior staff. Which combination of fact-finding methods is most suitable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Interviews for the managers and questionnaires for the junior staff",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Questionnaires for the managers and interviews for all junior staff",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Observation only for everyone",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Document review only, with no contact with people",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Interviews give deep responses from a few people, while questionnaires efficiently collect answers from large numbers, so the combination fits both needs.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A company has the money and skilled staff for a new system, and the technology exists, but most workers refuse to use it and prefer the old way. Which feasibility was most likely overlooked?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Technical feasibility",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Economic feasibility",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Operational feasibility",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Schedule feasibility",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Operational feasibility checks whether users will accept and use the system; here the technology and money were fine but user acceptance was not considered.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

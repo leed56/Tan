@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   TextInput,
   Linking,
-  Alert,
+  Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -17,66 +17,104 @@ import { ScreenContainer } from '../../components/ui/ScreenContainer';
 import { AppButton } from '../../components/ui/AppButton';
 import { PaymentMethodCard } from '../../components/ui/subscription/PaymentMethodCard';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
-import type { PaymentProvider } from '../../types/subscription';
+import type { PaymentProvider, PlanId, BillingCycle } from '../../types/subscription';
 import { PAYMENT_META } from '../../utils/seedPlans';
-import { createPaymentRequest, activateSubscription } from '../../services/subscriptionService';
-import { useSubscriptionStore } from '../../store/subscriptionStore';
+import { createPaymentRequest } from '../../services/subscriptionService';
 import { useAuthStore } from '../../store/authStore';
+import { notify } from '../../utils/confirm';
+import { SUPPORT_WHATSAPP_NUMBER } from '../../utils/support';
 
 type Props = StackScreenProps<HomeStackParamList, 'PaymentMethodScreen'>;
 
-const PROVIDERS: PaymentProvider[] = [
-  'google_play',
-  'airtel',
-  'mpesa',
-  'tigo',
-  'halopesa',
-  'ttcl',
-  'whatsapp',
-];
+// Real Play/App Store billing isn't wired up yet, so every payment method —
+// mobile money and WhatsApp alike — routes through admin manual verification.
+const ANDROID_PROVIDERS: PaymentProvider[] = ['mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl', 'whatsapp'];
 
-const WHATSAPP_NUMBER = process.env.EXPO_PUBLIC_SUPPORT_WHATSAPP_NUMBER ?? '+255700000000';
+// Shared support line (baked-in default, env-overridable) so subscription
+// activation reaches the same WhatsApp number as the rest of the app.
+const WHATSAPP_NUMBER = SUPPORT_WHATSAPP_NUMBER;
 
 export function PaymentMethodScreen({ navigation, route }: Props) {
-  const { planId, planTitle, priceMonthly } = route.params;
-  const [selectedProvider, setSelectedProvider] = useState<PaymentProvider>('mpesa');
+  const { planId, planTitle, billingCycle, price } = route.params;
+  const isApple = Platform.OS === 'ios';
+  const [selectedProvider, setSelectedProvider] = useState<PaymentProvider>(
+    isApple ? 'whatsapp' : 'mpesa',
+  );
   const [phone, setPhone] = useState('');
   const [processing, setProcessing] = useState(false);
 
   const user = useAuthStore((s) => s.user);
-  const { setSubscription } = useSubscriptionStore();
 
   const meta = PAYMENT_META[selectedProvider];
-  const needsPhone = meta?.requiresPhone ?? false;
+  const needsPhone = !isApple && (meta?.requiresPhone ?? false);
+  const cycleLabel = billingCycle === 'yearly' ? 'year' : 'month';
+
+  const submitAndOpenWhatsApp = async () => {
+    if (!user?.uid) return;
+    if (!WHATSAPP_NUMBER) {
+      notify(
+        'Support unavailable',
+        'WhatsApp support is not configured yet. Please try again later.',
+      );
+      return;
+    }
+    setProcessing(true);
+    try {
+      await createPaymentRequest(
+        user.uid,
+        planId as PlanId,
+        billingCycle as BillingCycle,
+        'whatsapp',
+        user.phoneNumber ?? null,
+      );
+      const message = encodeURIComponent(
+        `Hello! I'd like to subscribe to Soma *${planTitle}* plan (${billingCycle}) for ${price.toLocaleString()} TSH. My account ID: ${user.uid}`,
+      );
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+      if (Platform.OS === 'web') {
+        if (typeof window !== 'undefined') window.open(waUrl, '_blank', 'noopener,noreferrer');
+      } else {
+        await Linking.openURL(waUrl);
+      }
+      notify(
+        'Chat sent to WhatsApp',
+        'Complete payment with our support team. Once confirmed, your account activates instantly — no need to reopen the app.',
+        () => navigation.navigate('SubscriptionStatus'),
+      );
+    } catch {
+      notify('Something went wrong', 'Your request was not submitted. Please try again.');
+    } finally {
+      setProcessing(false);
+    }
+  };
 
   const handlePay = async () => {
     if (!user?.uid) return;
-    if (needsPhone && phone.trim().length < 9) {
-      Alert.alert('Phone required', 'Please enter a valid phone number.');
+    if (selectedProvider === 'whatsapp') {
+      await submitAndOpenWhatsApp();
       return;
     }
-
-    if (selectedProvider === 'whatsapp') {
-      const message = encodeURIComponent(
-        `Hello! I'd like to subscribe to Soma AI *${planTitle}* plan for ${priceMonthly.toLocaleString()} TSH/month. My account ID: ${user.uid}`,
-      );
-      await Linking.openURL(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`);
+    if (needsPhone && phone.trim().length < 9) {
+      notify('Phone required', 'Please enter a valid phone number.');
       return;
     }
 
     setProcessing(true);
     try {
-      await createPaymentRequest(user.uid, planId as any, selectedProvider, needsPhone ? phone : null);
-      // In production this would wait for a webhook/callback. For now simulate success.
-      const sub = await activateSubscription(user.uid, planId as any, selectedProvider);
-      setSubscription(sub);
-      Alert.alert(
+      await createPaymentRequest(
+        user.uid,
+        planId as PlanId,
+        billingCycle as BillingCycle,
+        selectedProvider,
+        needsPhone ? phone : (user.phoneNumber ?? null),
+      );
+      notify(
         'Payment submitted!',
-        'Your subscription is now active. Enjoy premium access!',
-        [{ text: 'Continue', onPress: () => navigation.navigate('SubscriptionStatus') }],
+        'We’ve received your request. Our team verifies mobile money payments and activates your subscription — usually within minutes. You’ll see it unlock automatically, right here in the app.',
+        () => navigation.navigate('SubscriptionStatus'),
       );
     } catch {
-      Alert.alert('Payment failed', 'Please try again or contact support.');
+      notify('Something went wrong', 'Please try again or contact support on WhatsApp.');
     } finally {
       setProcessing(false);
     }
@@ -92,7 +130,7 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
         <Text style={styles.headerLabel}>Payment</Text>
         <Text style={styles.headerTitle}>{planTitle}</Text>
         <View style={styles.pricePill}>
-          <Text style={styles.priceText}>{priceMonthly.toLocaleString()} TSH / month</Text>
+          <Text style={styles.priceText}>{price.toLocaleString()} TSH / {cycleLabel}</Text>
         </View>
       </LinearGradient>
 
@@ -101,61 +139,90 @@ export function PaymentMethodScreen({ navigation, route }: Props) {
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={styles.sectionLabel}>Select payment method</Text>
-
-        {PROVIDERS.map((p) => (
-          <PaymentMethodCard
-            key={p}
-            provider={p}
-            isSelected={selectedProvider === p}
-            onSelect={setSelectedProvider}
-          />
-        ))}
-
-        {/* Phone input for mobile money */}
-        {needsPhone && (
-          <View style={styles.phoneCard}>
-            <Text style={styles.phoneLabel}>Mobile number</Text>
-            <View style={styles.phoneRow}>
-              <View style={styles.countryCode}>
-                <Text style={styles.countryText}>+255</Text>
-              </View>
-              <TextInput
-                style={styles.phoneInput}
-                placeholder="7XX XXX XXX"
-                placeholderTextColor={COLORS.textMuted}
-                value={phone}
-                onChangeText={setPhone}
-                keyboardType="phone-pad"
-                maxLength={10}
-              />
+        {isApple ? (
+          <>
+            <View style={styles.appleCard}>
+              <Ionicons name="logo-apple" size={28} color={COLORS.textPrimary} />
+              <Text style={styles.appleTitle}>Apple device support</Text>
+              <Text style={styles.appleBody}>
+                To keep pricing fair for everyone, iPhone/iPad subscriptions are
+                activated through our WhatsApp support team rather than the App
+                Store. Tap below to chat with us and complete payment securely.
+              </Text>
             </View>
-          </View>
-        )}
+            <AppButton
+              title={processing ? 'Opening WhatsApp...' : 'Chat on WhatsApp'}
+              onPress={handlePay}
+              loading={processing}
+              variant="primary"
+              icon={<Ionicons name="logo-whatsapp" size={18} color="#fff" />}
+            />
+          </>
+        ) : (
+          <>
+            <Text style={styles.sectionLabel}>Select payment method</Text>
 
-        {/* WhatsApp note */}
-        {selectedProvider === 'whatsapp' && (
-          <View style={styles.whatsappNote}>
-            <Ionicons name="information-circle-outline" size={16} color={COLORS.primary} />
-            <Text style={styles.whatsappText}>
-              Tapping below will open WhatsApp with a pre-filled message to our support team.
-            </Text>
-          </View>
-        )}
+            {ANDROID_PROVIDERS.map((p) => (
+              <PaymentMethodCard
+                key={p}
+                provider={p}
+                isSelected={selectedProvider === p}
+                onSelect={setSelectedProvider}
+              />
+            ))}
 
-        <AppButton
-          title={
-            processing
-              ? 'Processing...'
-              : selectedProvider === 'whatsapp'
-              ? 'Open WhatsApp'
-              : `Pay ${priceMonthly.toLocaleString()} TSH`
-          }
-          onPress={handlePay}
-          loading={processing}
-          variant="primary"
-          icon={selectedProvider === 'whatsapp' ? 'logo-whatsapp' : 'card-outline'}
-        />
+            {/* Phone input for mobile money */}
+            {needsPhone && (
+              <View style={styles.phoneCard}>
+                <Text style={styles.phoneLabel}>Mobile number</Text>
+                <View style={styles.phoneRow}>
+                  <View style={styles.countryCode}>
+                    <Text style={styles.countryText}>+255</Text>
+                  </View>
+                  <TextInput
+                    style={styles.phoneInput}
+                    placeholder="7XX XXX XXX"
+                    placeholderTextColor={COLORS.textMuted}
+                    value={phone}
+                    onChangeText={setPhone}
+                    keyboardType="phone-pad"
+                    maxLength={10}
+                  />
+                </View>
+              </View>
+            )}
+
+            {/* Manual-verification note */}
+            <View style={styles.whatsappNote}>
+              <Ionicons name="information-circle-outline" size={16} color={COLORS.primary} />
+              <Text style={styles.whatsappText}>
+                {selectedProvider === 'whatsapp'
+                  ? 'Tapping below will open WhatsApp with a pre-filled message to our support team.'
+                  : 'Our team verifies mobile money payments manually — your subscription activates automatically the moment it’s confirmed.'}
+              </Text>
+            </View>
+
+            <AppButton
+              title={
+                processing
+                  ? 'Processing...'
+                  : selectedProvider === 'whatsapp'
+                  ? 'Open WhatsApp'
+                  : `Submit — ${price.toLocaleString()} TSH`
+              }
+              onPress={handlePay}
+              loading={processing}
+              variant="primary"
+              icon={
+                <Ionicons
+                  name={selectedProvider === 'whatsapp' ? 'logo-whatsapp' : 'card-outline'}
+                  size={18}
+                  color="#fff"
+                />
+              }
+            />
+          </>
+        )}
 
         <Text style={styles.secureNote}>
           <Ionicons name="shield-checkmark-outline" size={12} color={COLORS.textMuted} />
@@ -203,6 +270,22 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 0.8,
     marginBottom: SPACING.xs,
+  },
+  appleCard: {
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.xl,
+    padding: SPACING.lg,
+    borderWidth: 1,
+    borderColor: COLORS.glassBorder,
+    alignItems: 'center',
+    gap: SPACING.sm,
+  },
+  appleTitle: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.lg, fontWeight: TYPOGRAPHY.weights.bold },
+  appleBody: {
+    color: COLORS.textSecondary,
+    fontSize: TYPOGRAPHY.sizes.sm,
+    textAlign: 'center',
+    lineHeight: TYPOGRAPHY.sizes.sm * 1.6,
   },
   phoneCard: {
     backgroundColor: COLORS.bgCard,

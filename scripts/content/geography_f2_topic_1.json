@@ -8,10 +8,26 @@
       {
         "questionText": "Which type of map is most suitable for showing the distribution of population in different regions of a country?",
         "options": [
-          {"id": "a", "text": "Topographical map", "isCorrect": false},
-          {"id": "b", "text": "Statistical (distribution) map", "isCorrect": true},
-          {"id": "c", "text": "Sketch map", "isCorrect": false},
-          {"id": "d", "text": "Mobility map", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Topographical map",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Statistical (distribution) map",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Sketch map",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Mobility map",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Statistical or distribution maps are designed to show how features such as population, rainfall or crops are spread over an area.",
@@ -20,10 +36,26 @@
       {
         "questionText": "A scale written as '1 cm represents 1 km' is an example of which type of scale?",
         "options": [
-          {"id": "a", "text": "Linear scale", "isCorrect": false},
-          {"id": "b", "text": "Representative fraction", "isCorrect": false},
-          {"id": "c", "text": "Statement scale", "isCorrect": true},
-          {"id": "d", "text": "Diagonal scale", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Linear scale",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Representative fraction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Statement scale",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Diagonal scale",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "A statement scale expresses the relationship between map distance and ground distance in words.",
@@ -32,10 +64,26 @@
       {
         "questionText": "Which of the following is NOT considered an essential element of a good map?",
         "options": [
-          {"id": "a", "text": "Title", "isCorrect": false},
-          {"id": "b", "text": "Scale", "isCorrect": false},
-          {"id": "c", "text": "Key (legend)", "isCorrect": false},
-          {"id": "d", "text": "The cartographer's home address", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Title",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Scale",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Key (legend)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The cartographer's home address",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Essential map elements include a title, scale, key, compass direction and margin; the cartographer's address is not required.",
@@ -44,10 +92,26 @@
       {
         "questionText": "On a map with a representative fraction of 1:50,000, what actual ground distance does 4 cm on the map represent?",
         "options": [
-          {"id": "a", "text": "200 metres", "isCorrect": false},
-          {"id": "b", "text": "2 kilometres", "isCorrect": true},
-          {"id": "c", "text": "20 kilometres", "isCorrect": false},
-          {"id": "d", "text": "200 kilometres", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "200 metres",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 kilometres",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "20 kilometres",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "200 kilometres",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "4 cm x 50,000 = 200,000 cm, and 200,000 cm divided by 100,000 equals 2 km.",
@@ -56,10 +120,26 @@
       {
         "questionText": "A grid reference given with six figures, such as 458231, locates a point to the nearest:",
         "options": [
-          {"id": "a", "text": "100 metres within a grid square", "isCorrect": true},
-          {"id": "b", "text": "1 kilometre grid square", "isCorrect": false},
-          {"id": "c", "text": "10 kilometres", "isCorrect": false},
-          {"id": "d", "text": "1 metre", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "100 metres within a grid square",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1 kilometre grid square",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10 kilometres",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1 metre",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "A six-figure grid reference divides each grid square into tenths, locating a point to within 100 metres.",
@@ -68,10 +148,26 @@
       {
         "questionText": "When reading a grid reference, the correct order of reading the grid lines is:",
         "options": [
-          {"id": "a", "text": "Northings first, then eastings", "isCorrect": false},
-          {"id": "b", "text": "Eastings first, then northings", "isCorrect": true},
-          {"id": "c", "text": "From the top of the map downwards", "isCorrect": false},
-          {"id": "d", "text": "In any order the reader prefers", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Northings first, then eastings",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Eastings first, then northings",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "From the top of the map downwards",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "In any order the reader prefers",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The rule is to read along the bottom (eastings) before reading upwards (northings), often remembered as 'along the corridor, then up the stairs'.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Contour lines that are spaced very close together on a map indicate:",
         "options": [
-          {"id": "a", "text": "A gentle slope", "isCorrect": false},
-          {"id": "b", "text": "A flat plain", "isCorrect": false},
-          {"id": "c", "text": "A steep slope", "isCorrect": true},
-          {"id": "d", "text": "A valley bottom only", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A gentle slope",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A flat plain",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A steep slope",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "A valley bottom only",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Closely spaced contours mean the land rises sharply over a short horizontal distance, showing a steep slope.",
@@ -92,10 +204,26 @@
       {
         "questionText": "What is the compass bearing of due West measured clockwise from North?",
         "options": [
-          {"id": "a", "text": "090 degrees", "isCorrect": false},
-          {"id": "b", "text": "180 degrees", "isCorrect": false},
-          {"id": "c", "text": "270 degrees", "isCorrect": true},
-          {"id": "d", "text": "360 degrees", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "090 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "180 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "270 degrees",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "360 degrees",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Bearings are measured clockwise from North, so West lies at 270 degrees.",
@@ -104,10 +232,26 @@
       {
         "questionText": "A small triangle with a height value beside it on a topographical map represents a:",
         "options": [
-          {"id": "a", "text": "Spot height", "isCorrect": false},
-          {"id": "b", "text": "Trigonometrical station", "isCorrect": true},
-          {"id": "c", "text": "Bench mark", "isCorrect": false},
-          {"id": "d", "text": "Contour line", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Spot height",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Trigonometrical station",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Bench mark",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Contour line",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A triangle with a height figure marks a trigonometrical (survey) station whose altitude has been accurately measured.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Which method is best for measuring the length of a winding road or river on a map?",
         "options": [
-          {"id": "a", "text": "A straight ruler only", "isCorrect": false},
-          {"id": "b", "text": "A piece of thread or the edge of a paper marked along the curve", "isCorrect": true},
-          {"id": "c", "text": "Counting the grid squares the feature passes through", "isCorrect": false},
-          {"id": "d", "text": "Estimating by eye", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A straight ruler only",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A piece of thread or the edge of a paper marked along the curve",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Counting the grid squares the feature passes through",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Estimating by eye",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A thread or paper edge can follow the bends of the feature and is then straightened and measured against the linear scale.",
@@ -128,10 +288,26 @@
       {
         "questionText": "On most topographical maps, a river is shown by a conventional symbol of a:",
         "options": [
-          {"id": "a", "text": "Red dashed line", "isCorrect": false},
-          {"id": "b", "text": "Blue line", "isCorrect": true},
-          {"id": "c", "text": "Black dotted line", "isCorrect": false},
-          {"id": "d", "text": "Brown line", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Red dashed line",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Blue line",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Black dotted line",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Brown line",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Water features such as rivers and lakes are conventionally shown in blue.",
@@ -140,10 +316,26 @@
       {
         "questionText": "If a square on a map measures 1:50,000 and one grid square is 2 cm by 2 cm, what ground area does one grid square represent?",
         "options": [
-          {"id": "a", "text": "1 square kilometre", "isCorrect": true},
-          {"id": "b", "text": "2 square kilometres", "isCorrect": false},
-          {"id": "c", "text": "4 square kilometres", "isCorrect": false},
-          {"id": "d", "text": "0.5 square kilometres", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "1 square kilometre",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2 square kilometres",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "4 square kilometres",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.5 square kilometres",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Each 2 cm side equals 1 km on the ground, so the square is 1 km by 1 km, giving an area of 1 square kilometre.",
@@ -152,10 +344,26 @@
       {
         "questionText": "Contour lines that form a V-shape pointing uphill (towards higher ground) usually indicate the presence of a:",
         "options": [
-          {"id": "a", "text": "Ridge", "isCorrect": false},
-          {"id": "b", "text": "Valley", "isCorrect": true},
-          {"id": "c", "text": "Plateau", "isCorrect": false},
-          {"id": "d", "text": "Cliff", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Ridge",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Valley",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Plateau",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cliff",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Where contours form a V pointing up-slope, they mark a valley, often containing a river flowing in the opposite direction to the V.",
@@ -164,10 +372,26 @@
       {
         "questionText": "The space at the edge of a map that contains the title, scale and key is called the:",
         "options": [
-          {"id": "a", "text": "Grid", "isCorrect": false},
-          {"id": "b", "text": "Frame or margin", "isCorrect": true},
-          {"id": "c", "text": "Legend", "isCorrect": false},
-          {"id": "d", "text": "Inset", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Grid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Frame or margin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Legend",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Inset",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The margin or frame is the border area of a map where supporting information is placed.",
@@ -176,10 +400,26 @@
       {
         "questionText": "A representative fraction has the advantage over a statement scale because it:",
         "options": [
-          {"id": "a", "text": "Can only be used with metric units", "isCorrect": false},
-          {"id": "b", "text": "Remains the same in any system of measurement units", "isCorrect": true},
-          {"id": "c", "text": "Cannot be reduced or enlarged", "isCorrect": false},
-          {"id": "d", "text": "Shows direction as well as distance", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Can only be used with metric units",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Remains the same in any system of measurement units",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Cannot be reduced or enlarged",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Shows direction as well as distance",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Because an RF is a pure ratio with no units, it is valid whether one uses centimetres, inches or any other unit.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "A scale shown as a divided line marked with distances on the ground is called a _____ scale.",
-        "options": [],
-        "correctAnswer": "linear",
+        "options": [
+          {
+            "id": "a",
+            "text": "linear",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "statement",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "comparative",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "diagonal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A linear (bar) scale is a graduated line used to measure distances directly on a map.",
         "difficulty": "easy"
       },
       {
         "questionText": "The vertical lines on a map grid that are numbered along the top and bottom are called _____.",
-        "options": [],
-        "correctAnswer": "eastings",
+        "options": [
+          {
+            "id": "a",
+            "text": "northings",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "eastings",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "gridlines",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "meridians",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Eastings run vertically and increase in value towards the east.",
         "difficulty": "easy"
       },
       {
         "questionText": "The horizontal lines on a map grid that are numbered along the sides are called _____.",
-        "options": [],
-        "correctAnswer": "northings",
+        "options": [
+          {
+            "id": "a",
+            "text": "eastings",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "parallels",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "northings",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "gridlines",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Northings run horizontally and increase in value towards the north.",
         "difficulty": "easy"
       },
       {
         "questionText": "Lines drawn on a map joining all places of equal height above sea level are called _____.",
-        "options": [],
-        "correctAnswer": "contours",
+        "options": [
+          {
+            "id": "a",
+            "text": "isobars",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "isohyets",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "isotherms",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "contours",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Contour lines connect points of the same elevation and show the shape of the land.",
         "difficulty": "easy"
       },
       {
         "questionText": "The constant difference in height between one contour line and the next is known as the contour _____.",
-        "options": [],
-        "correctAnswer": "interval",
+        "options": [
+          {
+            "id": "a",
+            "text": "interval",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "gradient",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "datum",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "amplitude",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The contour interval is the vertical distance between successive contour lines.",
         "difficulty": "medium"
       },
       {
         "questionText": "Directions are measured in degrees clockwise from North as an angle called a _____.",
-        "options": [],
-        "correctAnswer": "bearing",
+        "options": [
+          {
+            "id": "a",
+            "text": "azimuth",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bearing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "heading",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "deviation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A bearing is the angle measured clockwise from the north line to a given direction.",
         "difficulty": "medium"
       },
       {
         "questionText": "A point on a map marked with an exact height value but no triangle is called a _____ height.",
-        "options": [],
-        "correctAnswer": "spot",
+        "options": [
+          {
+            "id": "a",
+            "text": "bench",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "trig",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "spot",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "summit",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A spot height shows the exact altitude of a particular point on the ground.",
         "difficulty": "medium"
       },
       {
         "questionText": "On a map with a representative fraction of 1:100,000, a distance of 3 cm on the map represents _____ kilometres on the ground.",
-        "options": [],
-        "correctAnswer": "3",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "300",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "3 cm x 100,000 = 300,000 cm = 3 km.",
         "difficulty": "medium"
       },
       {
         "questionText": "The list that explains the meaning of the symbols used on a map is called the _____.",
-        "options": [],
-        "correctAnswer": "key",
+        "options": [
+          {
+            "id": "a",
+            "text": "key",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "title",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "margin",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "scale",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The key, also called the legend, explains the conventional signs and symbols on a map.",
         "difficulty": "easy"
       },
       {
         "questionText": "When contour lines are widely spaced apart, they indicate a _____ slope.",
-        "options": [],
-        "correctAnswer": "gentle",
+        "options": [
+          {
+            "id": "a",
+            "text": "steep",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "gentle",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "concave",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "convex",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Widely spaced contours show that the land rises gradually, meaning a gentle slope.",
         "difficulty": "easy"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A road on a 1:50,000 map measures 12.5 cm when followed with a thread. What is its true length on the ground?",
         "options": [
-          {"id": "a", "text": "2.5 km", "isCorrect": false},
-          {"id": "b", "text": "6.25 km", "isCorrect": true},
-          {"id": "c", "text": "12.5 km", "isCorrect": false},
-          {"id": "d", "text": "62.5 km", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "2.5 km",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "6.25 km",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "12.5 km",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "62.5 km",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "12.5 cm x 50,000 = 625,000 cm; dividing by 100,000 gives 6.25 km.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A point P is located at six-figure reference 345678 and a point Q at 345698. In which direction does Q lie from P?",
         "options": [
-          {"id": "a", "text": "Due East", "isCorrect": false},
-          {"id": "b", "text": "Due North", "isCorrect": true},
-          {"id": "c", "text": "Due South", "isCorrect": false},
-          {"id": "d", "text": "Due West", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Due East",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Due North",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Due South",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Due West",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "The eastings (345) are identical while the northings increase from 678 to 698, so Q is directly north of P.",
@@ -430,10 +912,26 @@
       {
         "questionText": "On a map, contours form concentric circles with the highest value in the centre, and a river flows outward in several directions from near that centre. This pattern best describes which combination of relief and drainage?",
         "options": [
-          {"id": "a", "text": "A flat plain with a single straight river", "isCorrect": false},
-          {"id": "b", "text": "A conical hill with a radial drainage pattern", "isCorrect": true},
-          {"id": "c", "text": "A valley with a trellis drainage pattern", "isCorrect": false},
-          {"id": "d", "text": "A plateau with no drainage", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "A flat plain with a single straight river",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A conical hill with a radial drainage pattern",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A valley with a trellis drainage pattern",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A plateau with no drainage",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Concentric closed contours rising to a central high point indicate a conical hill, and rivers flowing outward from the summit form a radial drainage pattern.",

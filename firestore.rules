@@ -50,9 +50,16 @@ service cloud.firestore {
         && request.resource.data.subscriptionStatus == 'free'
         && request.resource.data.role == 'student';
       allow update: if (isOwner(userId)
-        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'createdAt', 'phoneNumber']))
+        && notUpdating(['role', 'subscriptionStatus', 'subscriptionExpiry', 'subscriptionPlan', 'billingCycle', 'createdAt', 'phoneNumber']))
         || isAdmin();
-      allow delete: if isSuperAdmin();
+      // Owners may delete their own account (Settings → Delete Account); admins
+      // retain deletion for moderation.
+      allow delete: if isOwner(userId) || isSuperAdmin();
+    }
+
+    // ── users/{userId}/devices — device-limit registration ────────────────────
+    match /users/{userId}/devices/{deviceId} {
+      allow read, write: if isOwner(userId) || isAdmin();
     }
 
     // ── quiz_progress ─────────────────────────────────────────────────────────
@@ -132,27 +139,34 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
-    // ── payment_requests ──────────────────────────────────────────────────────
+    // ── payment_requests — manual WhatsApp/mobile-money verification queue ────
     match /payment_requests/{requestId} {
       allow read: if isOwner(resource.data.userId) || isAdmin();
       allow create: if isSignedIn()
         && request.resource.data.userId == request.auth.uid
         && request.resource.data.status == 'pending'
-        && request.resource.data.amount in [5000, 8000]
+        // Amount must match the exact plan+cycle combination — validating the
+        // three fields independently let a client submit planId 'family' /
+        // yearly with the standard-monthly amount and get the bigger plan
+        // activated for the smaller price on admin approval.
+        && ((request.resource.data.planId == 'standard'
+              && request.resource.data.billingCycle == 'monthly'
+              && request.resource.data.amount == 4999)
+            || (request.resource.data.planId == 'standard'
+              && request.resource.data.billingCycle == 'yearly'
+              && request.resource.data.amount == 40000)
+            || (request.resource.data.planId == 'family'
+              && request.resource.data.billingCycle == 'monthly'
+              && request.resource.data.amount == 7999)
+            || (request.resource.data.planId == 'family'
+              && request.resource.data.billingCycle == 'yearly'
+              && request.resource.data.amount == 60000))
         && request.resource.data.provider in [
-             'mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl',
-             'google_play', 'apple_iap', 'azampay', 'selcom', 'bank_transfer'
+             'mpesa', 'tigo', 'airtel', 'halopesa', 'ttcl', 'google_play', 'whatsapp'
            ];
       allow update: if isAdmin()
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['status', 'verifiedAt', 'verifiedBy', 'rejectionReason']);
-      allow delete: if isSuperAdmin();
-    }
-
-    // ── subscriptions ─────────────────────────────────────────────────────────
-    match /subscriptions/{subId} {
-      allow read: if isOwner(resource.data.userId) || isAdmin();
-      allow create, update: if isAdmin();
       allow delete: if isSuperAdmin();
     }
 
@@ -195,6 +209,14 @@ service cloud.firestore {
       allow create, update, delete: if isSuperAdmin();
     }
 
+    // ── notifications_sent — admin broadcast log ──────────────────────────────
+    // The admin panel writes/reads this collection; without a block the
+    // catch-all denied it entirely (Send did nothing, history never loaded).
+    match /notifications_sent/{notifId} {
+      allow read, create: if isAdmin();
+      allow update, delete: if false;
+    }
+
     // ── admin_audit_logs — append-only via admin ──────────────────────────────
     match /admin_audit_logs/{logId} {
       allow read: if isAdmin();
@@ -230,9 +252,20 @@ service cloud.firestore {
 
     // ── student_progress — owner-scoped (id = `${uid}_${packId}`) ─────────────
     match /student_progress/{docId} {
-      allow read: if isOwner(resource.data.userId) || isAdmin();
+      // Id-prefix read (not resource.data.userId): dereferencing resource on a
+      // NONEXISTENT doc errors — same trap already hit and fixed for
+      // daily_usage below. Nothing currently does a direct get() on this
+      // collection (the app only queries by userId), but this keeps a future
+      // direct read from reintroducing that bug.
+      allow read: if isAdmin()
+        || (isSignedIn() && docId.matches(request.auth.uid + '_.*'));
+      // Bind writes to the doc-id prefix as well as the userId field: with the
+      // field-only check, any signed-in user could plant a doc at another
+      // user's deterministic `${uid}_${packId}` path (uids are enumerable via
+      // the public leaderboard), locking the victim out of their own record.
       allow create, update: if isSignedIn()
-        && request.resource.data.userId == request.auth.uid;
+        && request.resource.data.userId == request.auth.uid
+        && docId.matches(request.auth.uid + '_.*');
       allow delete: if isAdmin();
     }
 
@@ -254,9 +287,14 @@ service cloud.firestore {
 
     // ── daily_usage — owner-scoped (id = `${uid}_${date}`) ────────────────────
     match /daily_usage/{docId} {
-      allow read: if isOwner(resource.data.userId) || isAdmin();
+      // Id-prefix read (not resource.data.userId): dereferencing resource on a
+      // NONEXISTENT doc errors, which denied the app's very first read of the
+      // day. Same prefix binding on writes as student_progress (see above).
+      allow read: if isAdmin()
+        || (isSignedIn() && docId.matches(request.auth.uid + '_.*'));
       allow create, update: if isSignedIn()
-        && request.resource.data.userId == request.auth.uid;
+        && request.resource.data.userId == request.auth.uid
+        && docId.matches(request.auth.uid + '_.*');
     }
 
     // ── user_daily_missions — owner-scoped per-user mission progress ──────────
@@ -280,12 +318,14 @@ service cloud.firestore {
       allow write: if isOwner(userId);
     }
 
-    // ── family_profiles — owner-scoped (premium feature) ──────────────────────
-    match /family_profiles/{profileId} {
-      allow read: if isOwner(resource.data.familyOwnerId) || isAdmin();
-      allow create, update: if isSignedIn()
-        && request.resource.data.familyOwnerId == request.auth.uid;
-      allow delete: if isOwner(resource.data.familyOwnerId) || isAdmin();
+    // ── family_children — Family Pack student profiles (owner-scoped) ─────────
+    // No separate login: owned by the paying parent's real auth.uid (rootUid),
+    // never the (locally synthetic) profile being played as.
+    match /family_children/{childId} {
+      allow read: if isOwner(resource.data.rootUid) || isAdmin();
+      allow create: if isSignedIn() && request.resource.data.rootUid == request.auth.uid;
+      allow update: if isOwner(resource.data.rootUid) || isAdmin();
+      allow delete: if isOwner(resource.data.rootUid) || isAdmin();
     }
 
     // ── deny everything else ──────────────────────────────────────────────────

@@ -1,206 +1,173 @@
 import {
   doc,
-  getDoc,
-  setDoc,
-  collection,
   addDoc,
-  query,
-  where,
-  getDocs,
+  onSnapshot,
+  collection,
+  Timestamp,
 } from 'firebase/firestore';
-import { firestore, COLLECTIONS } from './firebaseConfig';
+import { firestore, COLLECTIONS, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
 import type {
   UserSubscription,
   PaymentRequest,
   PaymentProvider,
-  FamilyProfile,
   PlanId,
-  FeatureKey,
+  BillingCycle,
 } from '../types/subscription';
 import { SEED_PLANS } from '../utils/seedPlans';
 
-// ─── Demo helper ──────────────────────────────────────────────────────────────
+// ─── Demo helper (dev only — "Try Demo Premium" button) ───────────────────────
 
 let _demoActive = false;
-let _demoPlanId: PlanId = 'single';
+let _demoPlanId: PlanId = 'standard';
 
-export function activateDemoPremium(planId: PlanId = 'single'): UserSubscription {
+export function activateDemoPremium(planId: PlanId = 'standard'): UserSubscription {
   _demoActive = true;
   _demoPlanId = planId;
-  const now = Date.now();
-  return buildDemoSubscription(planId, now);
+  return buildDemoSubscription(planId);
 }
 
 export function isDemoActive(): boolean {
   return _demoActive;
 }
 
-function buildDemoSubscription(planId: PlanId, now: number): UserSubscription {
+// Module-level, not store state — subscriptionStore.clear() can't reach this
+// on its own, so logout must call it explicitly or a demo-premium flag
+// survives into the next account signed in on the same device/session.
+export function resetDemoPremium(): void {
+  _demoActive = false;
+  _demoPlanId = 'standard';
+}
+
+function buildDemoSubscription(planId: PlanId): UserSubscription {
   return {
-    id: 'demo_subscription',
     userId: 'demo_user',
-    planId,
     status: 'demo',
-    startedAt: now,
-    expiresAt: now + 30 * 24 * 60 * 60 * 1000,
-    paymentProvider: null,
-    familyOwnerId: null,
-    autoRenew: false,
-    createdAt: now,
-    updatedAt: now,
+    planId,
+    billingCycle: 'monthly',
+    expiresAt: Date.now() + 30 * 24 * 60 * 60 * 1000,
   };
 }
 
-// ─── Core subscription queries ────────────────────────────────────────────────
-
-export async function getUserSubscription(userId: string): Promise<UserSubscription | null> {
-  if (_demoActive) return buildDemoSubscription(_demoPlanId, Date.now());
-
-  if (!isFirebaseConfigured()) return null;
-  try {
-    const ref = doc(firestore, COLLECTIONS.subscriptions, userId);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) return null;
-    return snap.data() as UserSubscription;
-  } catch {
-    return null;
-  }
+function freeSubscription(userId: string): UserSubscription {
+  return { userId, status: 'free', planId: null, billingCycle: null, expiresAt: null };
 }
 
-export async function isPremiumUser(userId: string): Promise<boolean> {
-  if (_demoActive) return true;
-  const sub = await getUserSubscription(userId);
-  if (!sub) return false;
-  const isActive = sub.status === 'active' || sub.status === 'demo';
-  const notExpired = sub.expiresAt > Date.now();
-  return isActive && notExpired;
+function toMillis(value: unknown): number | null {
+  if (value instanceof Timestamp) return value.toMillis();
+  if (typeof value === 'number') return value;
+  return null;
 }
 
-export async function canAccessFeature(
+/**
+ * The single canonical read path for subscription state: `users/{uid}`.
+ * Admin activation (from the admin panel) writes directly to this doc, so a
+ * real-time listener here is what makes activation reflect instantly in the
+ * app — no polling, no manual refresh.
+ */
+export function subscribeToSubscription(
   userId: string,
-  featureKey: FeatureKey,
-): Promise<boolean> {
-  const isPremium = await isPremiumUser(userId);
-  if (!isPremium) return false;
-  const sub = await getUserSubscription(userId);
-  if (!sub) return false;
-  const plan = SEED_PLANS.find((p) => p.id === sub.planId);
-  return plan?.features.includes(featureKey) ?? false;
+  callback: (sub: UserSubscription) => void,
+): () => void {
+  if (_demoActive) {
+    callback(buildDemoSubscription(_demoPlanId));
+    return () => {};
+  }
+  if (!isFirebaseConfigured()) {
+    callback(freeSubscription(userId));
+    return () => {};
+  }
+
+  // Deferred start: this is called from App.tsx as soon as the persisted
+  // auth store rehydrates — often before the startup anonymous sign-in has a
+  // token. A Firestore listener that errors once (permission-denied) is
+  // terminated permanently by the SDK, which would leave a paying user stuck
+  // on "free" for the whole session with admin activation never arriving.
+  let cancelled = false;
+  let unsubscribe: (() => void) | null = null;
+
+  (async () => {
+    await waitForAuthReady();
+    if (cancelled) return;
+    const ref = doc(firestore, COLLECTIONS.users, userId);
+    unsubscribe = onSnapshot(
+      ref,
+      (snap) => {
+        const data = snap.data();
+        if (!data) {
+          callback(freeSubscription(userId));
+          return;
+        }
+        const expiresAt = toMillis(data.subscriptionExpiry);
+        const active = data.subscriptionStatus === 'active';
+        const status: UserSubscription['status'] =
+          active && expiresAt !== null && expiresAt > Date.now()
+            ? 'active'
+            : active
+            ? 'expired'
+            : 'free';
+        callback({
+          userId,
+          status,
+          planId: (data.subscriptionPlan as PlanId | undefined) ?? null,
+          billingCycle: (data.billingCycle as BillingCycle | undefined) ?? null,
+          expiresAt,
+        });
+      },
+      () => callback(freeSubscription(userId)),
+    );
+  })();
+
+  return () => {
+    cancelled = true;
+    unsubscribe?.();
+  };
 }
 
-// ─── Payment request creation ─────────────────────────────────────────────────
+// ─── Payment requests ──────────────────────────────────────────────────────
+// Every payment method — including WhatsApp — creates a payment_requests doc
+// so the admin panel has full visibility. Activation ONLY happens when an
+// admin verifies the request from the admin panel (writes users/{uid}
+// directly); there is no client-side self-activation path.
+
+export function planAmount(planId: PlanId, billingCycle: BillingCycle): number {
+  const plan = SEED_PLANS.find((p) => p.id === planId);
+  if (!plan) throw new Error('Invalid plan');
+  return billingCycle === 'yearly' ? plan.priceYearly : plan.priceMonthly;
+}
 
 export async function createPaymentRequest(
   userId: string,
   planId: PlanId,
+  billingCycle: BillingCycle,
   provider: PaymentProvider,
-  phoneNumber: string | null,
+  studentPhone: string | null,
+  transactionRef: string | null = null,
 ): Promise<PaymentRequest> {
-  const plan = SEED_PLANS.find((p) => p.id === planId);
-  if (!plan) throw new Error('Invalid plan');
-
   const payload: Omit<PaymentRequest, 'id'> = {
     userId,
+    studentPhone,
     planId,
+    billingCycle,
     provider,
-    amount: plan.priceMonthly,
-    phoneNumber,
+    amount: planAmount(planId, billingCycle),
+    transactionRef,
     status: 'pending',
-    referenceCode: null,
-    createdAt: Date.now(),
-    updatedAt: Date.now(),
+    submittedAt: Date.now(),
+    verifiedAt: null,
+    verifiedBy: null,
+    rejectionReason: null,
   };
 
   if (!isFirebaseConfigured()) {
     return { id: `local_${Date.now()}`, ...payload };
   }
 
-  try {
-    const ref = await addDoc(
-      collection(firestore, COLLECTIONS.paymentRequests),
-      payload,
-    );
-    return { id: ref.id, ...payload };
-  } catch {
-    return { id: `local_${Date.now()}`, ...payload };
-  }
-}
-
-// ─── Activate subscription after payment ─────────────────────────────────────
-
-export async function activateSubscription(
-  userId: string,
-  planId: PlanId,
-  provider: PaymentProvider,
-): Promise<UserSubscription> {
-  const now = Date.now();
-  const sub: UserSubscription = {
-    id: userId,
-    userId,
-    planId,
-    status: 'active',
-    startedAt: now,
-    expiresAt: now + 30 * 24 * 60 * 60 * 1000,
-    paymentProvider: provider,
-    familyOwnerId: null,
-    autoRenew: false,
-    createdAt: now,
-    updatedAt: now,
-  };
-
-  if (isFirebaseConfigured()) {
-    await setDoc(doc(firestore, COLLECTIONS.subscriptions, userId), sub).catch(() => {});
-  }
-
-  return sub;
-}
-
-// ─── Family profiles ──────────────────────────────────────────────────────────
-
-export async function getFamilyProfiles(ownerId: string): Promise<FamilyProfile[]> {
-  if (!isFirebaseConfigured()) return [];
-  try {
-    const q = query(
-      collection(firestore, COLLECTIONS.familyProfiles),
-      where('familyOwnerId', '==', ownerId),
-    );
-    const snap = await getDocs(q);
-    return snap.docs.map((d) => ({ id: d.id, ...d.data() } as FamilyProfile));
-  } catch {
-    return [];
-  }
-}
-
-export async function addFamilyMember(
-  ownerId: string,
-  memberName: string,
-  memberPhone: string | null,
-  memberForm: number | null,
-): Promise<FamilyProfile> {
-  const now = Date.now();
-  const profile: Omit<FamilyProfile, 'id'> = {
-    familyOwnerId: ownerId,
-    memberId: null,
-    memberName,
-    memberPhone,
-    memberForm,
-    inviteCode: Math.random().toString(36).slice(2, 8).toUpperCase(),
-    joinedAt: null,
-    createdAt: now,
-  };
-
-  if (!isFirebaseConfigured()) {
-    return { id: `local_${Date.now()}`, ...profile };
-  }
-
-  try {
-    const ref = await addDoc(collection(firestore, COLLECTIONS.familyProfiles), profile);
-    return { id: ref.id, ...profile };
-  } catch {
-    return { id: `local_${Date.now()}`, ...profile };
-  }
+  // No catch: if this write fails the admin panel never sees the request, so
+  // fabricating a local "success" here made the UI tell students their
+  // payment was submitted while nothing was recorded — they'd send mobile
+  // money with no request to verify against. Let the screen show its error.
+  await waitForAuthReady();
+  const ref = await addDoc(collection(firestore, COLLECTIONS.paymentRequests), payload);
+  return { id: ref.id, ...payload };
 }

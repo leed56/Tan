@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Animated, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -16,7 +17,7 @@ import { BadgeUnlockModal } from '../../components/ui/gamification/BadgeUnlockMo
 type Props = StackScreenProps<HomeStackParamList, 'PackCompletion'>;
 
 export function PackCompletionScreen({ navigation, route }: Props) {
-  const { xpEarned, packTitle, streakDays } = route.params;
+  const { xpEarned, packTitle } = route.params;
   const { xp, level, streak, addXp, addCoins, pendingLevelUp, pendingBadges, dismissLevelUp, dismissBadge } = useGamificationStore();
 
   const scaleAnim = useRef(new Animated.Value(0)).current;
@@ -24,7 +25,9 @@ export function PackCompletionScreen({ navigation, route }: Props) {
   const confettiAnim = useRef(new Animated.Value(0)).current;
 
   const message = getRandomMotivation(MOTIVATIONAL_MESSAGES);
-  const levelProgress = getXpProgressPercent(xp + xpEarned);
+  // addXp below already applies xpEarned to the store before first paint, so
+  // progress reads the store value as-is (adding again double-counted it).
+  const levelProgress = getXpProgressPercent(xp);
 
   useEffect(() => {
     addXp(xpEarned);
@@ -44,6 +47,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
 
   return (
     <LinearGradient colors={GRADIENTS.background} style={styles.root}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       <ConfettiOverlay visible />
       {/* Close button */}
       <TouchableOpacity
@@ -97,7 +101,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
             style={styles.statCard}
           >
             <Text style={styles.statEmoji}>🔥</Text>
-            <Text style={[styles.statValue, { color: '#FF8C42' }]}>{streakDays}</Text>
+            <Text style={[styles.statValue, { color: '#FF8C42' }]}>{streak}</Text>
             <Text style={styles.statLabel}>Day Streak</Text>
           </LinearGradient>
 
@@ -135,16 +139,10 @@ export function PackCompletionScreen({ navigation, route }: Props) {
             onPress={() => navigation.popToTop()}
             variant="primary"
           />
-          <AppButton
-            title="Share my achievement"
-            onPress={() => {
-              // TODO: Phase 2 — implement share sheet
-            }}
-            variant="secondary"
-            icon={<Ionicons name="share-social-outline" size={18} color={COLORS.primary} />}
-          />
+          {/* TODO: Phase 2 — share sheet. Button hidden until it does something. */}
         </Animated.View>
       </View>
+      </SafeAreaView>
 
       <LevelUpModal
         visible={pendingLevelUp !== null}
@@ -162,6 +160,7 @@ export function PackCompletionScreen({ navigation, route }: Props) {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
+  safeArea: { flex: 1 },
   closeBtn: {
     position: 'absolute',
     top: SPACING['3xl'],

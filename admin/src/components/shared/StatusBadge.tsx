@@ -15,6 +15,7 @@ const STATUS_MAP: Record<string, { label: string; variant: BadgeVariant }> = {
   suspended: { label: 'Suspended', variant: 'destructive' },
   free: { label: 'Free', variant: 'secondary' },
   premium: { label: 'Premium', variant: 'success' },
+  standard: { label: 'Standard', variant: 'success' },
   family: { label: 'Family', variant: 'info' },
   enabled: { label: 'Enabled', variant: 'success' },
   disabled: { label: 'Disabled', variant: 'secondary' },

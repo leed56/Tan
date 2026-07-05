@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_biology_topic_6",
+  "topicName": "Immunity and the Body's Defence Against Disease",
+  "order": 6,
+  "description": "This topic explains health and disease, the pathogens that cause infections and how they spread, the body's natural defences and white blood cells, antigens and antibodies, the types of immunity, vaccination and its importance in Tanzania, and ways to prevent the spread of disease.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following best describes the meaning of health?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A complete state of physical, mental and social well-being and not merely the absence of disease",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Simply having no germs in the body at all",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Being physically strong enough to do heavy work",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Having taken all available vaccines",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Health is a state of complete physical, mental and social well-being, not just the absence of disease or infirmity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A disease that can be passed from one person to another is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Communicable disease",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Deficiency disease",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Degenerative disease",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hereditary disease",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Communicable (infectious) diseases are caused by pathogens and can spread from one host to another.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a non-communicable disease?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cholera",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Diabetes",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Measles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Tuberculosis",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Diabetes is non-communicable; it is not caused by a pathogen and cannot spread between people, unlike cholera, measles and tuberculosis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which group of pathogens causes malaria?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bacteria",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Viruses",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Protozoa",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Fungi",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Malaria is caused by the protozoan parasite Plasmodium, which is transmitted by the female Anopheles mosquito.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Cholera and typhoid are mainly spread through:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Contaminated water and food",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mosquito bites",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Inhaling droplets from the air",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sexual contact",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Cholera and typhoid are water-borne and food-borne diseases caused by bacteria found in faecally contaminated water or food.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is the body's FIRST line of defence against pathogens?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Production of antibodies by lymphocytes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Intact skin acting as a barrier",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Engulfing of microbes by phagocytes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Memory cells after vaccination",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The skin is part of the first line of defence, forming a physical barrier that prevents pathogens from entering the body.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The acid in the stomach helps to defend the body by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Producing antibodies against pathogens",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Killing many pathogens that are swallowed with food",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Trapping pathogens in mucus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Engulfing pathogens in the blood",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Hydrochloric acid in the stomach is strongly acidic and destroys most pathogens that enter with food and drink.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which type of white blood cell engulfs and digests pathogens?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lymphocyte",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Phagocyte",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Erythrocyte",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Platelet",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Phagocytes carry out phagocytosis, engulfing and digesting pathogens; this process is called phagocytosis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Antibodies are produced by which type of white blood cell?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Phagocytes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Lymphocytes",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Red blood cells",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Platelets",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Lymphocytes produce antibodies, which are proteins that bind to specific antigens to help destroy pathogens.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An antigen is best defined as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "A protein made by the body to kill bacteria",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A foreign substance that triggers the production of antibodies",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A cell that engulfs pathogens",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A type of vaccine given to children",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An antigen is any foreign substance (often a molecule on a pathogen) that stimulates the immune system to produce antibodies.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Immunity gained after a person recovers from an infection such as measles is an example of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Natural active immunity",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Natural passive immunity",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Artificial active immunity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Artificial passive immunity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "When the body makes its own antibodies after a natural infection, this is natural active immunity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The antibodies a baby receives from its mother through breast milk provide:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Natural active immunity",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Natural passive immunity",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Artificial active immunity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "No immunity at all",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Receiving ready-made antibodies from the mother (across the placenta or in breast milk) is natural passive immunity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A vaccine usually contains:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ready-made antibodies against a disease",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Weakened, dead or harmless parts of a pathogen",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Strong, fully active pathogens",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Antibiotics that kill bacteria",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A vaccine contains weakened, killed or harmless parts of a pathogen (antigens) that stimulate the body to make antibodies and memory cells without causing the disease.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In Tanzania, the BCG vaccine given to newborns protects mainly against:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tuberculosis",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Malaria",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Cholera",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "HIV/AIDS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The BCG vaccine, given at birth in Tanzania's immunisation programme, protects against tuberculosis.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is the BEST way to prevent the spread of water-borne diseases like cholera?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sleeping under a treated mosquito net",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Boiling or treating drinking water and using clean toilets",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Taking antibiotics every day",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Avoiding crowded places only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Cholera spreads through faecally contaminated water and food, so boiling/treating water, safe sanitation and hygiene are the best prevention.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A disease that is caused by a pathogen and can be passed from one person to another is called a _____ disease.",
+        "options": [
+          {
+            "id": "a",
+            "text": "communicable",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "hereditary",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "deficiency",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "degenerative",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Communicable (infectious) diseases are caused by pathogens and can spread from person to person.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A microorganism that causes disease is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "antigen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pathogen",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "antibody",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "vaccine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Pathogens include certain bacteria, viruses, fungi and protozoa that cause disease.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Malaria is caused by a protozoan called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trypanosoma",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Entamoeba",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Plasmodium",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Salmonella",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The protozoan Plasmodium causes malaria and is spread by the female Anopheles mosquito.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The white blood cells that engulf and digest pathogens are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "platelets",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "erythrocytes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "antibodies",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "phagocytes",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Phagocytes destroy pathogens by engulfing them in a process called phagocytosis.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The white blood cells that produce antibodies are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "lymphocytes",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "phagocytes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "platelets",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "erythrocytes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Lymphocytes make antibodies that bind to specific antigens.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A protein produced by lymphocytes that binds to a specific antigen is called an _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "antigen",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "antibody",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "antibiotic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "interferon",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Antibodies are proteins that recognise and bind to specific antigens, helping to destroy pathogens.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A foreign substance that triggers the production of antibodies is called an _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "antibody",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "antibiotic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "antigen",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "antitoxin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "An antigen is a foreign molecule that stimulates an immune response and antibody production.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The deliberate introduction of a vaccine into the body to produce immunity is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "sterilisation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "incubation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "contamination",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "vaccination",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Vaccination (immunisation) introduces antigens that make the body produce antibodies and memory cells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Tiny hair-like structures that sweep mucus and trapped pathogens out of the airways are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "cilia",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "villi",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alveoli",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nephrons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Cilia in the airways move mucus carrying trapped pathogens away from the lungs as part of the first line of defence.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Diseases such as cholera and typhoid that spread through dirty water are described as _____-borne diseases.",
+        "options": [
+          {
+            "id": "a",
+            "text": "air",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "water",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "food",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "vector",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Water-borne diseases spread through water contaminated with pathogens, often from faeces.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "All microorganisms are harmful and cause disease.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Only some microorganisms (pathogens) cause disease; many bacteria and other microbes are harmless or even useful to the body.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Tuberculosis is a communicable disease caused by bacteria.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Tuberculosis is caused by the bacterium Mycobacterium tuberculosis and spreads through airborne droplets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The skin acts as a physical barrier that prevents many pathogens from entering the body.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Intact skin is part of the first line of defence, forming a barrier against pathogens.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Antibodies are produced by phagocytes.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Antibodies are produced by lymphocytes, not phagocytes. Phagocytes engulf pathogens.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An antibody is specific to a particular antigen.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Each antibody is shaped to bind to one specific antigen, like a lock and key.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Passive immunity gives long-lasting protection because the body makes its own memory cells.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Passive immunity uses ready-made antibodies and is short-lived; only active immunity produces memory cells for long-lasting protection.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Vaccines work by stimulating the body to produce antibodies and memory cells without causing the disease.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Vaccines contain antigens that trigger an immune response and memory, giving protection against future infection.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Mosquitoes that spread malaria are examples of vectors.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A vector is an organism that carries and transmits a pathogen; the female Anopheles mosquito is the vector for malaria.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Immunisation programmes in Tanzania help to reduce childhood deaths from diseases such as measles and polio.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Tanzania's national immunisation programme protects children against vaccine-preventable diseases, lowering illness and death.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Washing hands with soap before eating has no effect on the spread of disease.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Hand washing with soap removes pathogens and is one of the most effective ways to prevent the spread of disease.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Distinguish between communicable and non-communicable diseases, giving one example of each.",
+        "options": [],
+        "correctAnswer": "Communicable (infectious) diseases are caused by pathogens and can spread from one person to another, for example cholera or measles. Non-communicable diseases are not caused by pathogens and cannot spread between people, for example diabetes or high blood pressure.",
+        "explanation": "The key difference is whether the disease is caused by a pathogen and can be transmitted between hosts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the four main groups of pathogens and give one disease caused by each.",
+        "options": [],
+        "correctAnswer": "Bacteria cause diseases such as cholera or tuberculosis; viruses cause diseases such as measles or HIV/AIDS; fungi cause diseases such as ringworm or athlete's foot; and protozoa cause diseases such as malaria or amoebic dysentery.",
+        "explanation": "Pathogens are grouped into bacteria, viruses, fungi and protozoa, each causing characteristic diseases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe five ways in which communicable diseases can be spread.",
+        "options": [],
+        "correctAnswer": "Diseases can be spread through the air (droplets when coughing or sneezing), through contaminated water, through contaminated food, by vectors such as mosquitoes and houseflies, and by direct contact with an infected person or surfaces.",
+        "explanation": "Common routes of transmission are air, water, food, vectors and direct or indirect contact.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe the body's first line of defence against pathogens.",
+        "options": [],
+        "correctAnswer": "The first line of defence includes the skin acting as a physical barrier, mucus in the airways trapping pathogens, cilia sweeping mucus and pathogens out of the airways, stomach acid killing swallowed pathogens, and tears and saliva containing substances that destroy microbes.",
+        "explanation": "The first line of defence is non-specific and stops pathogens before they enter the body tissues.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the roles of phagocytes and lymphocytes in defending the body.",
+        "options": [],
+        "correctAnswer": "Phagocytes engulf and digest pathogens in a process called phagocytosis, destroying them directly. Lymphocytes produce antibodies that bind to specific antigens on pathogens, helping to destroy them and forming memory cells for future protection.",
+        "explanation": "Phagocytes provide non-specific defence by engulfing pathogens, while lymphocytes provide specific defence through antibodies.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the meaning of an antigen and an antibody and how they are related.",
+        "options": [],
+        "correctAnswer": "An antigen is a foreign substance, often found on the surface of a pathogen, that triggers an immune response. An antibody is a protein produced by lymphocytes that binds specifically to that antigen. Each antibody fits one particular antigen, helping to destroy the pathogen.",
+        "explanation": "Antigens stimulate the production of antibodies, and each antibody is specific to its antigen.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Distinguish between active and passive immunity.",
+        "options": [],
+        "correctAnswer": "Active immunity is when the body makes its own antibodies after exposure to an antigen, through infection or vaccination, and it is long-lasting because memory cells are formed. Passive immunity is when ready-made antibodies are received from another source, such as from the mother or an injection, and it is short-lived because no memory cells are formed.",
+        "explanation": "Active immunity involves the body producing its own antibodies; passive immunity involves receiving antibodies made elsewhere.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Explain how a vaccine produces immunity in the body.",
+        "options": [],
+        "correctAnswer": "A vaccine contains weakened, dead or harmless parts of a pathogen, which act as antigens. When introduced into the body, these antigens stimulate lymphocytes to produce antibodies and memory cells without causing the disease. If the real pathogen later enters the body, the memory cells respond quickly to produce many antibodies, preventing illness.",
+        "explanation": "Vaccines safely expose the body to antigens so it can build antibodies and memory for rapid future protection.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give three reasons why immunisation programmes are important in Tanzania.",
+        "options": [],
+        "correctAnswer": "Immunisation programmes protect children against dangerous vaccine-preventable diseases such as measles, polio, tuberculosis and whooping cough; they reduce illness, disability and death especially among young children; and they help control or eliminate diseases in the community, lowering health costs and improving national development.",
+        "explanation": "Immunisation reduces disease burden, saves lives and supports community-wide (herd) protection.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe five ways of preventing the spread of disease and maintaining good health.",
+        "options": [],
+        "correctAnswer": "Wash hands with soap and clean water, especially before eating and after using the toilet; drink boiled or treated water and eat properly cooked, clean food; use proper sanitation such as clean toilets and safe disposal of waste; control vectors by using treated mosquito nets and clearing stagnant water; and get vaccinated, eat a balanced diet and keep the environment clean.",
+        "explanation": "Good hygiene, safe water and food, sanitation, vector control and immunisation all help prevent disease and maintain health.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A child who recovered from measles last year does not catch it again during a new outbreak, while an unvaccinated younger sibling becomes ill. Which statement BEST explains this difference?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The older child has memory lymphocytes from the previous infection that quickly produce antibodies",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The older child no longer has any antigens in the body so cannot be infected",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The younger sibling has more phagocytes and therefore gets sick faster",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The older child received passive immunity from the new outbreak",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "After recovering, the older child has active immunity with memory cells that rapidly produce antibodies on re-exposure, while the unvaccinated sibling has no such protection.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A patient bitten by a snake is given an injection of ready-made antibodies (antivenom) rather than a vaccine. Why is a vaccine NOT suitable in this emergency?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vaccines only work against bacteria, not venom",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A vaccine would take too long to make the body produce its own antibodies, while antivenom gives immediate protection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Vaccines destroy the patient's phagocytes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Antivenom provides long-lasting active immunity that a vaccine cannot",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Antivenom is artificial passive immunity giving instant, ready-made antibodies; a vaccine relies on the body making its own antibodies, which takes days the patient does not have.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In a village, many children are vaccinated against measles, and even a few unvaccinated children rarely catch the disease. Which concept BEST explains why the unvaccinated children are protected?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Herd immunity, because widespread vaccination reduces spread and protects those not vaccinated",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The unvaccinated children naturally have stronger stomach acid",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Measles antibodies pass through the air from vaccinated to unvaccinated children",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Vaccination cures any child who already has measles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "When most of the population is immune, the pathogen cannot spread easily, so even unvaccinated individuals are indirectly protected; this is herd immunity.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

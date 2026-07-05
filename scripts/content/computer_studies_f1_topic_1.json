@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A computer is an electronic device that processes _____ to produce information.",
-        "options": [],
-        "correctAnswer": "data",
+        "options": [
+          {
+            "id": "a",
+            "text": "data",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "programs",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hardware",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "commands",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A computer takes in data and processes it into useful information.",
         "difficulty": "easy"
       },
       {
         "questionText": "The characteristic that allows a computer to work for many hours without getting tired is called _____.",
-        "options": [],
-        "correctAnswer": "diligence",
+        "options": [
+          {
+            "id": "a",
+            "text": "versatility",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "diligence",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "storage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reliability",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Diligence means the computer can repeat tasks without fatigue or boredom.",
         "difficulty": "easy"
       },
       {
         "questionText": "Processed data that is meaningful and useful to the user is called _____.",
-        "options": [],
-        "correctAnswer": "information",
+        "options": [
+          {
+            "id": "a",
+            "text": "signals",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "instructions",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "information",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "queries",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Information is the meaningful result obtained after processing data.",
         "difficulty": "easy"
       },
       {
         "questionText": "The first stage of the information processing cycle, where data is fed into the computer, is called _____.",
-        "options": [],
-        "correctAnswer": "input",
+        "options": [
+          {
+            "id": "a",
+            "text": "output",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "storage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "processing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "input",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Input is the stage where data enters the computer through devices like a keyboard or mouse.",
         "difficulty": "easy"
       },
       {
         "questionText": "The characteristic of a computer that means it produces error-free results when given correct data is _____.",
-        "options": [],
-        "correctAnswer": "accuracy",
+        "options": [
+          {
+            "id": "a",
+            "text": "accuracy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "speed",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "diligence",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "versatility",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Accuracy ensures correct results provided the input and instructions are correct.",
         "difficulty": "easy"
       },
       {
         "questionText": "First generation computers used _____ as their main electronic component.",
-        "options": [],
-        "correctAnswer": "vacuum tubes",
+        "options": [
+          {
+            "id": "a",
+            "text": "transistors",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vacuum tubes",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "integrated circuits",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "microprocessors",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Vacuum tubes were used in first generation computers but were large and produced much heat.",
         "difficulty": "hard"
       },
       {
         "questionText": "Keeping data and information for future use in a computer is known as _____.",
-        "options": [],
-        "correctAnswer": "storage",
+        "options": [
+          {
+            "id": "a",
+            "text": "input",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "output",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "storage",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "processing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Storage allows data and information to be saved and retrieved later.",
         "difficulty": "easy"
       },
       {
         "questionText": "Because a computer cannot work on its own and needs human instructions, we say it has no _____ of its own.",
-        "options": [],
-        "correctAnswer": "intelligence",
+        "options": [
+          {
+            "id": "a",
+            "text": "memory",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "power",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "capacity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "intelligence",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A computer lacks natural intelligence and depends entirely on human instructions.",
         "difficulty": "medium"
       },
       {
         "questionText": "A single chip that contains thousands of circuits and acts as the brain of modern computers is called a _____.",
-        "options": [],
-        "correctAnswer": "microprocessor",
+        "options": [
+          {
+            "id": "a",
+            "text": "microprocessor",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "motherboard",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "monitor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The microprocessor made computers smaller and more powerful from the fourth generation onwards.",
         "difficulty": "hard"
       },
       {
         "questionText": "The use of computers in banks to manage accounts and process transactions is an application of computers in the _____ sector.",
-        "options": [],
-        "correctAnswer": "banking",
+        "options": [
+          {
+            "id": "a",
+            "text": "farming",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "banking",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "mining",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fishing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Banks rely on computers to handle accounts, transactions and customer records.",
         "difficulty": "medium"
       }

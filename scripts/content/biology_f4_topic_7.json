@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_biology_topic_7",
+  "topicName": "HIV/AIDS and Sexually Transmitted Infections",
+  "order": 7,
+  "description": "This topic explains the meaning of HIV and AIDS, how the virus affects the immune system, its modes of transmission, prevention and control, the role of VCT and ARVs, care and support for people living with HIV, and other common sexually transmitted infections relevant to Tanzanian youth.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What does the abbreviation HIV stand for?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Human Immunodeficiency Virus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Highly Infectious Virus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Human Immune Vaccine",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hereditary Immune Virus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "HIV stands for Human Immunodeficiency Virus, the virus that weakens the body's immune system and can lead to AIDS.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does the abbreviation AIDS stand for?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acute Infectious Disease Syndrome",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Acquired Immune Deficiency Syndrome",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Active Immunity Defence System",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Acquired Infection Disease Sickness",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "AIDS stands for Acquired Immune Deficiency Syndrome, the advanced stage of HIV infection in which the immune system is severely weakened.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which cells of the immune system are mainly attacked by HIV?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Red blood cells",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Platelets",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "CD4 white blood cells (T-helper lymphocytes)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Nerve cells",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "HIV mainly attacks and destroys CD4 white blood cells (T-helper lymphocytes), which coordinate the body's immune defence.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is the correct relationship between HIV and AIDS?",
+        "options": [
+          {
+            "id": "a",
+            "text": "HIV is the disease while AIDS is the virus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "HIV is the virus while AIDS is the advanced condition it can cause",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "HIV and AIDS are two completely unrelated diseases",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "AIDS always appears immediately after HIV infection",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "HIV is the virus that infects a person, while AIDS is the late stage of the infection when the immune system has been badly damaged.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a common mode of HIV transmission?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sharing food with an infected person",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Unprotected sexual intercourse with an infected person",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mosquito bites",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Shaking hands",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Unprotected sexual intercourse with an infected person is one of the main ways HIV is transmitted because the virus is present in sexual fluids.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How can HIV be transmitted from one person to another through sharp objects?",
+        "options": [
+          {
+            "id": "a",
+            "text": "By sharing unsterilized razor blades, needles or knives contaminated with infected blood",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "By looking at a sharp object used by an infected person",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "By touching a clean new needle",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "By storing sharp objects in the same drawer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sharing unsterilized sharp objects such as razor blades, needles or knives that carry infected blood can transmit HIV from one person to another.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following describes mother-to-child transmission of HIV?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Transmission only through hugging the baby",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Transmission during pregnancy, childbirth or breastfeeding",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Transmission by talking to the baby",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Transmission through the mother's saliva only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An HIV-positive mother can pass the virus to her baby during pregnancy, during childbirth, or through breastfeeding.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is NOT a way of transmitting HIV?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blood transfusion with infected blood",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sharing a meal or cup with an infected person",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Unprotected sex",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sharing contaminated needles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "HIV is not spread through ordinary social contact such as sharing food, cups or plates, because the virus is not transmitted by saliva in this way.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why does a person with AIDS often suffer from many other infections such as tuberculosis?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because the immune system is too strong",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Because the weakened immune system can no longer fight off germs effectively",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Because ARVs cause the infections",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because the person eats too much food",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In AIDS the immune system is severely weakened, so the body cannot defend itself, allowing opportunistic infections such as tuberculosis to develop.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What does VCT stand for in HIV control programmes?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Voluntary Counselling and Testing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Virus Control Treatment",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Vaccine and Care Therapy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Voluntary Care and Treatment",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "VCT stands for Voluntary Counselling and Testing, a service where a person freely chooses to be counselled and tested for HIV.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the main role of antiretroviral drugs (ARVs) in HIV management?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They completely cure HIV",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "They slow down the multiplication of the virus and keep the person healthier for longer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "They make a person immune so they cannot infect others at all instantly",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "They replace the destroyed white blood cells",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "ARVs do not cure HIV but they slow the multiplication of the virus, allowing the immune system to recover and helping the person live a longer, healthier life.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which combination best describes the 'ABC' approach to HIV prevention?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Abstinence, Being faithful, Condom use",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Antibiotics, Blood, Care",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Abstinence, Blood, Counselling",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Avoidance, Bathing, Cleanliness",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The ABC approach stands for Abstinence, Being faithful to one uninfected partner, and correct Condom use.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a common sexually transmitted infection caused by bacteria?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Malaria",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Gonorrhoea",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Measles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cholera",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gonorrhoea is a sexually transmitted infection caused by bacteria and can be treated with appropriate antibiotics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does PMTCT aim to prevent?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Transmission of HIV through blood transfusion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Transmission of HIV from an infected mother to her child",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Transmission of malaria between people",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Transmission of HIV through sharp objects",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "PMTCT stands for Prevention of Mother-To-Child Transmission and aims to stop an HIV-positive mother from passing the virus to her baby.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is stigma and discrimination against people living with HIV harmful in the fight against AIDS?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It encourages more people to test for HIV",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It discourages people from testing, disclosing their status and seeking treatment",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It has no effect on HIV control",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It speeds up the discovery of a cure",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Stigma and discrimination make people fear being judged, so they avoid testing, hiding their status and treatment, which helps the virus spread further.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The virus that causes AIDS is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "HIV",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "HBV",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "HPV",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TB",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "HIV (Human Immunodeficiency Virus) is the virus that infects the body and can eventually cause AIDS.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The advanced stage of HIV infection in which the immune system is severely weakened is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "HIV",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "AIDS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "STI",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "TB",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "AIDS (Acquired Immune Deficiency Syndrome) is the late stage of HIV infection.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "HIV mainly destroys the white blood cells known as _____ lymphocytes.",
+        "options": [
+          {
+            "id": "a",
+            "text": "CD8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "B",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "CD4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "T",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "HIV mainly attacks CD4 (T-helper) lymphocytes, weakening the immune system's ability to fight infections.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Passing HIV from an infected pregnant woman to her unborn or newborn baby is called _____ transmission.",
+        "options": [
+          {
+            "id": "a",
+            "text": "sexual",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "blood",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "horizontal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mother-to-child",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Mother-to-child transmission can occur during pregnancy, childbirth or breastfeeding.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Avoiding sexual intercourse completely as a method of HIV prevention is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "abstinence",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "faithfulness",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "monogamy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "screening",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Abstinence means not engaging in sexual intercourse and is the surest way to avoid sexually transmitted HIV.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The drugs used to slow the multiplication of HIV in the body are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "antibiotics",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "antiretroviral drugs",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "analgesics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "antifungals",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Antiretroviral drugs (ARVs) slow the virus and help an infected person stay healthier for longer.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The service where a person freely chooses to be counselled and tested for HIV is abbreviated as _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "PMTCT",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ART",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "VCT",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "STI",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "VCT stands for Voluntary Counselling and Testing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Using a correctly worn _____ during sexual intercourse helps prevent the transmission of HIV and other STIs.",
+        "options": [
+          {
+            "id": "a",
+            "text": "mask",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "glove",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "bandage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "condom",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "A condom acts as a barrier that prevents the exchange of body fluids that carry HIV and other STIs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A sexually transmitted infection caused by bacteria and showing painful urination and discharge is _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "gonorrhoea",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "syphilis",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "candidiasis",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "trichomoniasis",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Gonorrhoea is a bacterial STI whose symptoms include painful urination and abnormal discharge.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Blood that is screened to make sure it is free from HIV before transfusion is called _____ blood.",
+        "options": [
+          {
+            "id": "a",
+            "text": "clean",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "safe",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sterile",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "screened",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Screening blood before transfusion ensures it is safe and free of HIV, preventing transmission to patients.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "HIV and AIDS mean exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "HIV is the virus, while AIDS is the advanced condition caused by HIV; they are not the same.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "HIV weakens the body by attacking and destroying CD4 white blood cells.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "HIV attacks CD4 lymphocytes, weakening the immune system's ability to fight infections.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "HIV can be spread by mosquito bites.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "HIV is not transmitted by mosquitoes; it spreads mainly through infected body fluids in specific ways.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Sharing unsterilized razor blades or needles can transmit HIV.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Sharp objects contaminated with infected blood can transmit HIV when shared.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Hugging or shaking hands with a person living with HIV will infect you.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "HIV is not spread through ordinary social contact such as hugging or shaking hands.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Antiretroviral drugs completely cure HIV.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "ARVs do not cure HIV; they only slow the virus and help the person stay healthier for longer.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An HIV-positive mother can pass the virus to her baby through breastfeeding.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Mother-to-child transmission can occur during breastfeeding as well as during pregnancy and childbirth.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Voluntary Counselling and Testing helps people know their HIV status and make informed decisions.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "VCT allows people to know their status, receive advice and seek treatment or take preventive steps.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gonorrhoea and syphilis are examples of sexually transmitted infections.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Both gonorrhoea and syphilis are STIs that spread mainly through unprotected sexual contact.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Showing stigma and discrimination towards people living with HIV helps to control the spread of the disease.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Stigma and discrimination discourage testing and treatment, which actually helps HIV spread; care and support are encouraged instead.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Explain the difference between HIV and AIDS.",
+        "options": [],
+        "correctAnswer": "HIV is the Human Immunodeficiency Virus that infects and weakens the body's immune system, while AIDS (Acquired Immune Deficiency Syndrome) is the advanced stage of HIV infection in which the immune system is so weakened that the body can no longer fight off other infections.",
+        "explanation": "A person can live with HIV for years before it develops into AIDS, especially if they take ARVs; HIV is the cause and AIDS is the late-stage condition.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Describe how HIV affects the immune system.",
+        "options": [],
+        "correctAnswer": "HIV enters the body and attacks the CD4 white blood cells (T-helper lymphocytes), which normally coordinate the immune response. As the virus multiplies it destroys these cells, gradually reducing their number so the immune system becomes too weak to fight germs, leaving the body open to many infections.",
+        "explanation": "The loss of CD4 cells is why people with advanced HIV suffer from opportunistic infections such as tuberculosis and pneumonia.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the main modes of transmission of HIV.",
+        "options": [],
+        "correctAnswer": "HIV is transmitted through unprotected sexual intercourse with an infected person, transfusion of infected blood, sharing unsterilized sharp objects such as needles and razor blades, and from an infected mother to her child during pregnancy, childbirth or breastfeeding.",
+        "explanation": "All these routes involve the exchange of infected body fluids such as blood, sexual fluids or breast milk.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List ways in which HIV is NOT transmitted.",
+        "options": [],
+        "correctAnswer": "HIV is not transmitted through hugging, shaking hands, sharing food, cups, plates or toilets, mosquito or insect bites, coughing or sneezing, or by ordinary social contact at home or school.",
+        "explanation": "Knowing how HIV is not spread helps remove myths and reduces stigma against people living with HIV.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Outline measures used to prevent and control the spread of HIV.",
+        "options": [],
+        "correctAnswer": "Prevention measures include abstaining from sex, being faithful to one uninfected partner, correct and consistent use of condoms, getting tested through VCT, avoiding sharing sharp objects, using safe screened blood for transfusion, and preventing mother-to-child transmission (PMTCT).",
+        "explanation": "These measures break the routes of transmission and form the basis of national HIV control programmes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the meaning and importance of Voluntary Counselling and Testing (VCT).",
+        "options": [],
+        "correctAnswer": "VCT is a service in which a person freely chooses to be counselled and tested for HIV. It is important because it helps people know their HIV status, receive advice on prevention and care, start treatment early if positive, and make responsible decisions to protect themselves and others.",
+        "explanation": "Knowing one's status through VCT is a key step in both preventing transmission and accessing timely treatment.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe the role of antiretroviral drugs (ARVs) in managing HIV.",
+        "options": [],
+        "correctAnswer": "ARVs are medicines that slow down the multiplication of HIV in the body. They do not cure the infection, but they allow the immune system to recover and stay stronger, reduce the amount of virus in the body, prevent opportunistic infections, and help an infected person live a longer and healthier life.",
+        "explanation": "Taking ARVs correctly and consistently also lowers the chance of transmitting the virus to others.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain why care, support and avoidance of stigma are important for people living with HIV.",
+        "options": [],
+        "correctAnswer": "People living with HIV need good nutrition, medical care, ARVs, and emotional and social support to live healthy lives. Avoiding stigma and discrimination is important because it encourages people to test, disclose their status and seek treatment, helps them feel accepted, and supports the wider effort to control the spread of HIV.",
+        "explanation": "Treating people living with HIV with respect protects both their wellbeing and public health.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Name two other common sexually transmitted infections and how they can be prevented.",
+        "options": [],
+        "correctAnswer": "Two common sexually transmitted infections are gonorrhoea and syphilis, both caused by bacteria. They can be prevented by abstaining from sex, being faithful to one uninfected partner, using condoms correctly, avoiding unprotected sex with infected people, and seeking early treatment when symptoms appear.",
+        "explanation": "Many STIs share the same prevention methods as HIV because they spread mainly through unprotected sexual contact.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain why HIV/AIDS education is especially relevant to Tanzanian youth.",
+        "options": [],
+        "correctAnswer": "HIV/AIDS education is important for Tanzanian youth because young people are among those most at risk of new infections. Knowing how HIV spreads and how to prevent it helps them make responsible choices such as abstinence, faithfulness and condom use, encourages them to use VCT services, reduces stigma, and protects their health, education and future.",
+        "explanation": "Empowering youth with correct information reduces new infections and supports national goals of controlling the epidemic.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A family shares a household with a relative who is living with HIV. They are afraid of becoming infected through daily activities. Which advice is biologically correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They should stop eating from the same plates and never touch the relative",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "They can safely share meals, hug and live together, but should avoid sharing sharp objects like razor blades",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "They must isolate the relative completely in a separate house",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "They should all start taking ARVs as a precaution",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "HIV is not spread through ordinary social contact such as sharing food or hugging, so the family can live together safely, but they should avoid sharing sharp objects that may carry infected blood.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An HIV-positive pregnant woman attends an antenatal clinic. Which combination of actions best reduces the risk of her baby being infected?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Avoiding the clinic and giving birth at home",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Taking ARVs as prescribed, delivering under medical supervision and following PMTCT feeding advice",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Stopping all medicines during pregnancy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Relying only on a healthy diet without any medical care",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "PMTCT programmes use ARVs during pregnancy, supervised delivery and safe feeding guidance to greatly reduce the chance of mother-to-child transmission.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two students argue about HIV testing. One says testing is only for sick people, the other says everyone who is sexually active should consider VCT. Using biological reasoning, which view is more correct and why?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Testing is only for sick people because HIV always shows symptoms early",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Everyone sexually active should consider VCT because a person can have HIV for years without symptoms and still transmit it",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Testing is unnecessary because ARVs cure HIV",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Only married people need testing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "HIV can remain in the body for years without obvious symptoms while still being transmissible, so VCT is valuable for anyone at risk, not only those who appear sick.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

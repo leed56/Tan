@@ -8,10 +8,26 @@
       {
         "questionText": "What does the term 'storage' mean in a computer system?",
         "options": [
-          {"id": "a", "text": "The process of holding data and instructions for later use", "isCorrect": true},
-          {"id": "b", "text": "The process of typing text into a keyboard", "isCorrect": false},
-          {"id": "c", "text": "The process of printing documents on paper", "isCorrect": false},
-          {"id": "d", "text": "The process of switching the computer on and off", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "The process of holding data and instructions for later use",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The process of typing text into a keyboard",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The process of printing documents on paper",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The process of switching the computer on and off",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Storage refers to keeping data and instructions in the computer so they can be retrieved and used when needed.",
@@ -20,10 +36,26 @@
       {
         "questionText": "Which of the following is an example of primary storage?",
         "options": [
-          {"id": "a", "text": "Hard disk", "isCorrect": false},
-          {"id": "b", "text": "RAM", "isCorrect": true},
-          {"id": "c", "text": "Flash disk", "isCorrect": false},
-          {"id": "d", "text": "DVD", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "RAM",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Flash disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "DVD",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "RAM (Random Access Memory) is primary storage that the CPU uses directly while a program is running.",
@@ -32,10 +64,26 @@
       {
         "questionText": "How many bits make up one byte?",
         "options": [
-          {"id": "a", "text": "4 bits", "isCorrect": false},
-          {"id": "b", "text": "8 bits", "isCorrect": true},
-          {"id": "c", "text": "16 bits", "isCorrect": false},
-          {"id": "d", "text": "1024 bits", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "4 bits",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8 bits",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "16 bits",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1024 bits",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "One byte is made up of 8 bits, and a byte usually represents a single character.",
@@ -44,10 +92,26 @@
       {
         "questionText": "Which type of memory loses its contents when the computer is switched off?",
         "options": [
-          {"id": "a", "text": "ROM", "isCorrect": false},
-          {"id": "b", "text": "Hard disk", "isCorrect": false},
-          {"id": "c", "text": "Volatile memory", "isCorrect": true},
-          {"id": "d", "text": "Flash disk", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "ROM",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Volatile memory",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Flash disk",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Volatile memory, such as RAM, loses all stored data once the power is turned off.",
@@ -56,10 +120,26 @@
       {
         "questionText": "Which storage device uses laser light to read and write data?",
         "options": [
-          {"id": "a", "text": "Flash disk", "isCorrect": false},
-          {"id": "b", "text": "CD/DVD", "isCorrect": true},
-          {"id": "c", "text": "Hard disk", "isCorrect": false},
-          {"id": "d", "text": "Memory card", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Flash disk",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "CD/DVD",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Memory card",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Optical discs such as CDs and DVDs are read and written using a laser beam.",
@@ -68,10 +148,26 @@
       {
         "questionText": "Which storage option keeps your files on remote internet servers so you can access them from anywhere?",
         "options": [
-          {"id": "a", "text": "Cloud storage", "isCorrect": true},
-          {"id": "b", "text": "Hard disk", "isCorrect": false},
-          {"id": "c", "text": "Memory card", "isCorrect": false},
-          {"id": "d", "text": "RAM", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Cloud storage",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Memory card",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "RAM",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Cloud storage saves data on servers reached over the internet, allowing access from any connected device.",
@@ -80,10 +176,26 @@
       {
         "questionText": "Which unit of storage is the largest among those listed below?",
         "options": [
-          {"id": "a", "text": "Kilobyte (KB)", "isCorrect": false},
-          {"id": "b", "text": "Megabyte (MB)", "isCorrect": false},
-          {"id": "c", "text": "Gigabyte (GB)", "isCorrect": false},
-          {"id": "d", "text": "Terabyte (TB)", "isCorrect": true}
+          {
+            "id": "a",
+            "text": "Kilobyte (KB)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Megabyte (MB)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Gigabyte (GB)",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Terabyte (TB)",
+            "isCorrect": true
+          }
         ],
         "correctAnswer": "d",
         "explanation": "Among KB, MB, GB and TB, the terabyte is the largest unit of storage.",
@@ -92,10 +204,26 @@
       {
         "questionText": "Approximately how many kilobytes are there in one megabyte?",
         "options": [
-          {"id": "a", "text": "8", "isCorrect": false},
-          {"id": "b", "text": "100", "isCorrect": false},
-          {"id": "c", "text": "1024", "isCorrect": true},
-          {"id": "d", "text": "1000000", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1024",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1000000",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "One megabyte equals 1024 kilobytes, since each higher unit is 1024 times the previous one.",
@@ -104,10 +232,26 @@
       {
         "questionText": "Which of the following is a small, portable storage device that plugs into a USB port?",
         "options": [
-          {"id": "a", "text": "Hard disk", "isCorrect": false},
-          {"id": "b", "text": "Flash disk", "isCorrect": true},
-          {"id": "c", "text": "CD", "isCorrect": false},
-          {"id": "d", "text": "RAM", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Flash disk",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "CD",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "RAM",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "A flash disk (USB flash drive) is a small portable device that connects through a USB port to store data.",
@@ -116,10 +260,26 @@
       {
         "questionText": "Which type of storage is commonly used inside cameras and mobile phones?",
         "options": [
-          {"id": "a", "text": "Memory card", "isCorrect": true},
-          {"id": "b", "text": "DVD", "isCorrect": false},
-          {"id": "c", "text": "ROM", "isCorrect": false},
-          {"id": "d", "text": "Cloud", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Memory card",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "DVD",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ROM",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cloud",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Memory cards are small flash storage devices widely used in cameras and mobile phones.",
@@ -128,10 +288,26 @@
       {
         "questionText": "Why is secondary storage needed in addition to primary storage?",
         "options": [
-          {"id": "a", "text": "Because secondary storage works faster than the CPU", "isCorrect": false},
-          {"id": "b", "text": "Because it keeps data permanently even when the power is off", "isCorrect": true},
-          {"id": "c", "text": "Because it replaces the need for a processor", "isCorrect": false},
-          {"id": "d", "text": "Because it cannot store any files", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Because secondary storage works faster than the CPU",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Because it keeps data permanently even when the power is off",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Because it replaces the need for a processor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because it cannot store any files",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Secondary storage is non-volatile, so it keeps data permanently for later use, unlike volatile primary memory.",
@@ -140,10 +316,26 @@
       {
         "questionText": "Which of the following best describes ROM?",
         "options": [
-          {"id": "a", "text": "Memory that the user can easily change all the time", "isCorrect": false},
-          {"id": "b", "text": "Non-volatile memory that mainly stores start-up instructions", "isCorrect": true},
-          {"id": "c", "text": "A removable storage device for photos", "isCorrect": false},
-          {"id": "d", "text": "An optical disc read by a laser", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Memory that the user can easily change all the time",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Non-volatile memory that mainly stores start-up instructions",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A removable storage device for photos",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "An optical disc read by a laser",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "ROM (Read Only Memory) is non-volatile and usually holds the instructions a computer needs to start up.",
@@ -152,10 +344,26 @@
       {
         "questionText": "A student needs to store a 50 GB collection of videos for many years. Which storage is most appropriate?",
         "options": [
-          {"id": "a", "text": "RAM", "isCorrect": false},
-          {"id": "b", "text": "An external hard disk", "isCorrect": true},
-          {"id": "c", "text": "A single CD", "isCorrect": false},
-          {"id": "d", "text": "ROM", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "RAM",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "An external hard disk",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A single CD",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ROM",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "An external hard disk offers large capacity and permanent storage, suitable for keeping many gigabytes of videos.",
@@ -164,10 +372,26 @@
       {
         "questionText": "Which of the following is a good practice for caring for storage media?",
         "options": [
-          {"id": "a", "text": "Removing a flash disk while files are still being copied", "isCorrect": false},
-          {"id": "b", "text": "Keeping CDs in direct sunlight for a long time", "isCorrect": false},
-          {"id": "c", "text": "Safely ejecting a flash disk before removing it", "isCorrect": true},
-          {"id": "d", "text": "Touching the shiny data surface of a CD with dirty fingers", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Removing a flash disk while files are still being copied",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Keeping CDs in direct sunlight for a long time",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Safely ejecting a flash disk before removing it",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Touching the shiny data surface of a CD with dirty fingers",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Safely ejecting a device before removal prevents data loss and damage to the files and the device.",
@@ -176,10 +400,26 @@
       {
         "questionText": "Which statement correctly compares primary and secondary storage?",
         "options": [
-          {"id": "a", "text": "Primary storage is usually faster but smaller than secondary storage", "isCorrect": true},
-          {"id": "b", "text": "Secondary storage is always faster than primary storage", "isCorrect": false},
-          {"id": "c", "text": "Primary storage keeps data permanently after power off", "isCorrect": false},
-          {"id": "d", "text": "Secondary storage is used directly by the CPU during processing", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Primary storage is usually faster but smaller than secondary storage",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Secondary storage is always faster than primary storage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Primary storage keeps data permanently after power off",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Secondary storage is used directly by the CPU during processing",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "a",
         "explanation": "Primary storage like RAM is faster and used directly by the CPU but has smaller capacity than secondary storage.",
@@ -189,71 +429,281 @@
     "fib": [
       {
         "questionText": "The smallest unit of data storage in a computer is called a _____.",
-        "options": [],
-        "correctAnswer": "bit",
+        "options": [
+          {
+            "id": "a",
+            "text": "bit",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "byte",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nibble",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "word",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A bit is the smallest unit of storage and holds either a 0 or a 1.",
         "difficulty": "easy"
       },
       {
         "questionText": "One byte is made up of eight _____.",
-        "options": [],
-        "correctAnswer": "bits",
+        "options": [
+          {
+            "id": "a",
+            "text": "bytes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bits",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "nibbles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "words",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Eight bits combine to form one byte, which usually represents one character.",
         "difficulty": "easy"
       },
       {
         "questionText": "Memory that loses its contents when power is turned off is described as _____ memory.",
-        "options": [],
-        "correctAnswer": "volatile",
+        "options": [
+          {
+            "id": "a",
+            "text": "non-volatile",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "permanent",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "volatile",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "optical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Volatile memory such as RAM needs constant power to keep its data.",
         "difficulty": "medium"
       },
       {
         "questionText": "The type of storage that holds data permanently even without power is called _____ storage.",
-        "options": [],
-        "correctAnswer": "secondary",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cache",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "register",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "secondary",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Secondary storage, such as a hard disk, keeps data permanently for later use.",
         "difficulty": "medium"
       },
       {
         "questionText": "A storage service that keeps files on remote internet servers is known as _____ storage.",
-        "options": [],
-        "correctAnswer": "cloud",
+        "options": [
+          {
+            "id": "a",
+            "text": "cloud",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "optical",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "magnetic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solid-state",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Cloud storage saves data on internet-based servers accessible from any connected device.",
         "difficulty": "easy"
       },
       {
         "questionText": "The main internal device for storing large amounts of data permanently in a desktop computer is the _____.",
-        "options": [],
-        "correctAnswer": "hard disk",
+        "options": [
+          {
+            "id": "a",
+            "text": "flash drive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hard disk",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "memory card",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "optical disc",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The hard disk is the main internal secondary storage device with large capacity.",
         "difficulty": "easy"
       },
       {
         "questionText": "1024 megabytes are approximately equal to one _____.",
-        "options": [],
-        "correctAnswer": "gigabyte",
+        "options": [
+          {
+            "id": "a",
+            "text": "kilobyte",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "terabyte",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "gigabyte",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "petabyte",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "One gigabyte equals 1024 megabytes in the binary system of measurement.",
         "difficulty": "medium"
       },
       {
         "questionText": "CDs and DVDs are examples of _____ storage media because they use laser light.",
-        "options": [],
-        "correctAnswer": "optical",
+        "options": [
+          {
+            "id": "a",
+            "text": "magnetic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "electronic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mechanical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "optical",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Optical storage media are read and written using a laser beam.",
         "difficulty": "medium"
       },
       {
         "questionText": "The memory inside a computer that the CPU uses directly while running programs is called _____.",
-        "options": [],
-        "correctAnswer": "RAM",
+        "options": [
+          {
+            "id": "a",
+            "text": "RAM",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ROM",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cache",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hard disk",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "RAM (Random Access Memory) temporarily holds data and programs the CPU is currently using.",
         "difficulty": "easy"
       },
       {
         "questionText": "Choosing storage according to how much data it can hold means considering its storage _____.",
-        "options": [],
-        "correctAnswer": "capacity",
+        "options": [
+          {
+            "id": "a",
+            "text": "speed",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "capacity",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "durability",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "portability",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Storage capacity tells how much data a device can hold and helps in choosing suitable storage.",
         "difficulty": "medium"
       }
@@ -406,10 +856,26 @@
       {
         "questionText": "A photographer is taking pictures in a remote village with no internet for a whole week and must keep thousands of large photos until returning to town. Which storage choice is most suitable during the trip?",
         "options": [
-          {"id": "a", "text": "Cloud storage, because it can be accessed anywhere", "isCorrect": false},
-          {"id": "b", "text": "High-capacity memory cards and a portable hard disk", "isCorrect": true},
-          {"id": "c", "text": "The camera's RAM, because it is very fast", "isCorrect": false},
-          {"id": "d", "text": "A single CD, because it is cheap", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Cloud storage, because it can be accessed anywhere",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "High-capacity memory cards and a portable hard disk",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The camera's RAM, because it is very fast",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A single CD, because it is cheap",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Without internet, cloud storage is not usable; large-capacity memory cards plus a portable hard disk give enough permanent offline storage.",
@@ -418,10 +884,26 @@
       {
         "questionText": "A computer has 4 GB of RAM and a 500 GB hard disk. When a program is closed and the computer is shut down, why do unsaved changes disappear while saved files remain?",
         "options": [
-          {"id": "a", "text": "Because the hard disk is volatile and RAM is non-volatile", "isCorrect": false},
-          {"id": "b", "text": "Because RAM is volatile while the hard disk is non-volatile", "isCorrect": true},
-          {"id": "c", "text": "Because both RAM and the hard disk lose data at shutdown", "isCorrect": false},
-          {"id": "d", "text": "Because the program deletes all files when it closes", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Because the hard disk is volatile and RAM is non-volatile",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Because RAM is volatile while the hard disk is non-volatile",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Because both RAM and the hard disk lose data at shutdown",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because the program deletes all files when it closes",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "b",
         "explanation": "Unsaved work sits in volatile RAM and is lost at shutdown, while saved files are written to the non-volatile hard disk and remain.",
@@ -430,10 +912,26 @@
       {
         "questionText": "A school must back up 2 TB of student records every day, keep the data for years, and allow staff in different branches to view it. Which combination best meets all these needs?",
         "options": [
-          {"id": "a", "text": "Several flash disks shared by hand between branches", "isCorrect": false},
-          {"id": "b", "text": "Only the RAM of the main school computer", "isCorrect": false},
-          {"id": "c", "text": "Large hard disks for local backup together with cloud storage for sharing", "isCorrect": true},
-          {"id": "d", "text": "A collection of CDs stored in one office", "isCorrect": false}
+          {
+            "id": "a",
+            "text": "Several flash disks shared by hand between branches",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Only the RAM of the main school computer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Large hard disks for local backup together with cloud storage for sharing",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "A collection of CDs stored in one office",
+            "isCorrect": false
+          }
         ],
         "correctAnswer": "c",
         "explanation": "Large hard disks give reliable high-capacity local backups while cloud storage allows long-term keeping and access from different branches.",

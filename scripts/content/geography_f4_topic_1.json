@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_geography_topic_1",
+  "topicName": "Simple Surveying and Mapping",
+  "order": 1,
+  "description": "An introduction to basic surveying methods, equipment, bearings, booking of field data and the drawing of accurate plans and maps to scale.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the main purpose of surveying?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To determine the relative positions of points on or near the earth's surface",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "To predict the weather of a given area",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "To count the population of a country",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To study the movement of ocean currents",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Surveying is the science of measuring and determining the relative positions, distances and elevations of points on, above or below the earth's surface.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of survey uses a chain or tape to measure distances along straight lines?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Prismatic compass survey",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Chain (tape) survey",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Plane table survey",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Levelling",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Chain or tape surveying measures horizontal distances directly using a chain or tape and is suitable for small, fairly level areas.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which instrument is used to measure horizontal angles or bearings in a compass survey?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dumpy level",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Plane table",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Prismatic compass",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ranging rod",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The prismatic compass measures the magnetic bearing of a line, which is the horizontal angle measured clockwise from magnetic north.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a whole-circle bearing system, bearings are measured from north in which direction and through how many degrees?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Anticlockwise, through 180 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Clockwise, through 360 degrees",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Clockwise, through 90 degrees only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Anticlockwise, through 360 degrees",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Whole-circle bearings are measured clockwise from north and range from 0 to 360 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A line has a whole-circle bearing of 135 degrees. What is its reduced (quadrant) bearing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "N 45 degrees E",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "S 45 degrees E",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "S 45 degrees W",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "N 45 degrees W",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "135 degrees lies in the south-east quadrant. The quadrant bearing is S (180 - 135) E = S 45 degrees E.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which equipment is used to keep the survey line straight over long distances during chain surveying?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ranging rods",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Spirit level",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Plumb bob",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Theodolite",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Ranging rods (ranging poles) are placed in line and sighted to keep the chain line straight between stations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An offset in chain surveying is best described as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The total length of the main chain line",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A short measurement taken perpendicular to the chain line to locate a feature",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The angle between two survey lines",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The difference in height between two points",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An offset is a short distance measured at right angles to the chain line to fix the position of nearby detail such as a tree, building or path.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which surveying method is used to determine differences in height (elevation) between points?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chain survey",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Prismatic compass survey",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Levelling",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Plane table survey",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Levelling uses a level and a staff to find differences in elevation between points relative to a datum or bench mark.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In plane table surveying, the drawing is made:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Back in the office after returning from the field",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Directly in the field as observations are taken",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Only from satellite photographs",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Using a computer in the laboratory",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A key feature of plane table surveying is that the plotting of the map is done directly in the field, so the surveyor can compare the plan with the actual ground.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The instrument used together with the plane table to sight objects and draw direction lines is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alidade",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Arrow (marking pin)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Gunter's chain",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Clinometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The alidade is a sighting ruler used on the plane table to draw rays in the direction of observed objects.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a personal error in surveying?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A faulty or stretched chain",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Wrong reading of the staff or scale by the observer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Temperature changes affecting the tape",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Strong wind blowing the ranging rod",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Personal (human) errors arise from the carelessness or limitations of the observer, such as misreading the staff. Faulty equipment is an instrumental error and temperature/wind are natural errors.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If the bearing of line AB is 60 degrees, what is the back bearing of line BA?",
+        "options": [
+          {
+            "id": "a",
+            "text": "120 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "300 degrees",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "240 degrees",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "30 degrees",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since the forward bearing is less than 180 degrees, add 180: 60 + 180 = 240 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a map drawn to a scale of 1:50,000, a distance of 4 cm on the map represents what actual ground distance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.5 km",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 km",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "5 km",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20 km",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "4 cm x 50,000 = 200,000 cm = 2,000 m = 2 km.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following best states the difference between surveying and mapping?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Surveying is collecting field measurements while mapping is representing them on paper to scale",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Surveying is drawing maps while mapping is measuring the ground",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Both mean exactly the same thing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Surveying is done only by computers while mapping is done by hand",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Surveying is the process of measuring and collecting data about the earth's surface, while mapping is the drawing or representation of that data on a flat surface to scale.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Recording survey measurements neatly in a field book during fieldwork is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Plotting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Ranging",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Booking",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Chaining",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Booking is the systematic recording of measurements (chainages, offsets, bearings) in a field book for later plotting.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The horizontal angle measured clockwise from magnetic north to a line is called the _____ of the line.",
+        "options": [
+          {
+            "id": "a",
+            "text": "bearing",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "azimuth",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "declination",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dip",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A bearing is the clockwise horizontal angle from north (true or magnetic) to a survey line.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A short measurement taken at right angles from the chain line to locate a feature is called an _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "tie",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "offset",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "base",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "traverse",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Offsets fix the position of detail lying off the main chain line.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The sighting ruler used on a plane table to draw direction rays to observed objects is called the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "trough",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "telescope",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alidade",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "spirit level",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The alidade is the essential sighting and drawing instrument used with a plane table.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The type of survey used to find differences in height between points is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "traversing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "triangulation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "chaining",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "levelling",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Levelling determines elevations of points relative to a datum or bench mark.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Whole-circle bearings are measured clockwise from north and range from 0 degrees to _____ degrees.",
+        "options": [
+          {
+            "id": "a",
+            "text": "360",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "180",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "270",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "400",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The whole-circle system covers the complete circle, from 0 to 360 degrees.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure magnetic bearings of survey lines is the prismatic _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "theodolite",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "compass",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "clinometer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sextant",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The prismatic compass reads the magnetic bearing of a line directly.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Tall poles painted in red and white bands and used to mark or keep survey lines straight are called ranging _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "arrows",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pegs",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rods",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "stakes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Ranging rods (or ranging poles) are sighted to keep the chain line straight.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A line of known elevation used as a reference point in levelling is called a bench _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "line",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "peg",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "station",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mark",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "A bench mark is a fixed point of known height above the datum used as a reference in levelling.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If a line has a forward bearing of 200 degrees, its back bearing is _____ degrees.",
+        "options": [
+          {
+            "id": "a",
+            "text": "20",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "180",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "380",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "160",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since the forward bearing is more than 180 degrees, subtract 180: 200 - 180 = 20 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Errors caused by the carelessness or mistakes of the observer, such as misreading the staff, are known as _____ errors.",
+        "options": [
+          {
+            "id": "a",
+            "text": "instrumental",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "personal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "natural",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "systematic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Personal (or human) errors result from the limitations and mistakes of the person taking the readings.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Surveying involves measuring the relative positions of points on the earth's surface.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the basic definition of surveying.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In plane table surveying the map is plotted directly in the field.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A major advantage of the plane table is that plotting is done in the field where the ground can be seen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A whole-circle bearing of 270 degrees points exactly towards the east.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "270 degrees points towards the west; east is 90 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Offsets are measured at right angles to the chain line.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Offsets are perpendicular measurements from the chain line to nearby features.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Levelling is used mainly to measure horizontal angles between survey lines.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Levelling measures differences in height, not horizontal angles; angles are measured with a compass or theodolite.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Booking means recording the survey measurements in a field book.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Booking is the systematic recording of field measurements for later plotting.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The back bearing of a line with a forward bearing of 90 degrees is 270 degrees.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Since 90 is less than 180, add 180: 90 + 180 = 270 degrees.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Surveying and mapping mean exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Surveying is the measurement and collection of field data, while mapping is the representation of that data on paper to scale.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A faulty or stretched chain causes an instrumental error in surveying.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Errors arising from defective instruments such as a stretched chain are classed as instrumental errors.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The reduced (quadrant) bearing system measures angles from 0 to 90 degrees within each quadrant.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Quadrant bearings are measured from north or south, eastward or westward, and never exceed 90 degrees.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define surveying and state one reason why it is important.",
+        "options": [],
+        "correctAnswer": "Surveying is the science and art of measuring and determining the relative positions, distances and heights of points on or near the earth's surface. It is important because it provides accurate data for drawing maps and plans used in planning roads, buildings and land use.",
+        "explanation": "The answer should give both a clear definition and at least one valid use of surveying data.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List four common types of simple surveying.",
+        "options": [],
+        "correctAnswer": "Chain (tape) survey, prismatic compass survey, plane table survey and levelling.",
+        "explanation": "These are the four basic methods of simple surveying covered at this level.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Mention three pieces of equipment used in chain surveying.",
+        "options": [],
+        "correctAnswer": "Chain or tape, ranging rods, arrows (marking pins), and a field book; any three are acceptable.",
+        "explanation": "Chain surveying equipment includes the chain/tape for measuring, ranging rods for alignment and arrows for marking chain lengths.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between a whole-circle bearing and a reduced (quadrant) bearing.",
+        "options": [],
+        "correctAnswer": "A whole-circle bearing is measured clockwise from north and ranges from 0 to 360 degrees, while a reduced (quadrant) bearing is measured from north or south towards east or west and ranges only from 0 to 90 degrees.",
+        "explanation": "The key contrast is the reference direction and the range of values used.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how an offset is measured and what it is used for.",
+        "options": [],
+        "correctAnswer": "An offset is measured by taking a short distance at right angles from the chain line to a nearby feature; it is used to fix the position of detail such as trees, paths or buildings that lie off the main line.",
+        "explanation": "Answer must mention the perpendicular measurement and its purpose of locating detail.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State three sources of error in surveying.",
+        "options": [],
+        "correctAnswer": "Instrumental errors (faulty equipment), personal errors (mistakes by the observer) and natural errors (caused by weather such as temperature, wind or humidity).",
+        "explanation": "Errors are usually grouped into instrumental, personal and natural categories.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain why plotting in the field is an advantage of plane table surveying.",
+        "options": [],
+        "correctAnswer": "Because the surveyor draws the map directly in the field, mistakes and missing detail can be noticed and corrected immediately while the ground is still in view.",
+        "explanation": "The advantage lies in being able to compare the plan with the actual ground and correct errors at once.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how levelling is used to find the difference in height between two points.",
+        "options": [],
+        "correctAnswer": "A level is set up between the two points and a graduated staff is read at each point; the difference between the back-sight reading and the fore-sight reading gives the difference in height between the two points.",
+        "explanation": "The difference in staff readings, relative to the line of collimation, gives the change in elevation.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "State three ways of reducing or treating errors in surveying.",
+        "options": [],
+        "correctAnswer": "Use well-tested and correct instruments, take repeated readings and find the average, work carefully and check the work, and apply corrections for known factors such as temperature; any three are acceptable.",
+        "explanation": "Errors are reduced through good instruments, repetition and averaging, careful observation and applying corrections.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe the steps in drawing a plan to scale from chain survey field data.",
+        "options": [],
+        "correctAnswer": "Choose a suitable scale, draw the main chain line to scale, mark the chainages along the line, plot the offsets at their correct distances and at right angles, join the points to show the features, then add a title, scale and north direction.",
+        "explanation": "A complete answer covers choosing a scale, plotting the chain line and offsets, joining detail and adding map essentials.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A survey line has a whole-circle bearing of 245 degrees. What is its reduced (quadrant) bearing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "S 65 degrees W",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "N 65 degrees W",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "S 65 degrees E",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "S 25 degrees W",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "245 degrees lies in the south-west quadrant (180 to 270). Quadrant bearing = S (245 - 180) W = S 65 degrees W.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In levelling, the back-sight reading on point A is 1.85 m and the fore-sight reading on point B is 0.60 m. What is the difference in height, and which point is higher?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1.25 m, with B higher than A",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1.25 m, with A higher than B",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2.45 m, with B higher than A",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "0.60 m, with A higher than B",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Difference = back-sight - fore-sight = 1.85 - 0.60 = 1.25 m. Because the fore-sight reading is smaller, point B is higher than point A by 1.25 m (a rise).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A straight road is 6 km long on the ground. How long will it appear on a map drawn to a scale of 1:50,000?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12 cm",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3 cm",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.2 cm",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "6 km = 600,000 cm. Map distance = 600,000 / 50,000 = 12 cm.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

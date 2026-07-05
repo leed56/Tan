@@ -1,0 +1,494 @@
+{
+  "topicId": "form_1_mathematics_topic_6",
+  "topicName": "Coordinate Geometry",
+  "order": 6,
+  "description": "Introduces the Cartesian plane, plotting and reading points, quadrants, and the gradient and equation of a straight line in both y = mx + c and general ax + by + c = 0 forms.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What are the coordinates of the origin on the Cartesian plane?",
+        "options": [
+          {"id": "a", "text": "(1, 1)", "isCorrect": false},
+          {"id": "b", "text": "(0, 0)", "isCorrect": true},
+          {"id": "c", "text": "(0, 1)", "isCorrect": false},
+          {"id": "d", "text": "(1, 0)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The origin is the point where the x-axis and y-axis cross, and at that point both the x-value and the y-value are zero, so the origin is (0, 0). Exam Tip: the origin is the starting point for all coordinates — do not confuse it with (1, 1); both coordinates are zero.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In which quadrant does the point (3, −2) lie?",
+        "options": [
+          {"id": "a", "text": "First quadrant", "isCorrect": false},
+          {"id": "b", "text": "Second quadrant", "isCorrect": false},
+          {"id": "c", "text": "Third quadrant", "isCorrect": false},
+          {"id": "d", "text": "Fourth quadrant", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "The x-coordinate +3 is positive (right of the origin) and the y-coordinate −2 is negative (below the origin); right and below is the fourth quadrant. Exam Tip: quadrant signs go anticlockwise from top-right — I (+,+), II (−,+), III (−,−), IV (+,−). Match BOTH signs before deciding.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A point that lies on the x-axis always has its y-coordinate equal to:",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "The x-value", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": true},
+          {"id": "d", "text": "−1", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The x-axis is the horizontal line through the origin, so every point on it has no vertical distance from the origin and its y-coordinate is 0, e.g. (4, 0) or (−3, 0). Exam Tip: on the x-axis y = 0; on the y-axis x = 0 — this is the key to finding intercepts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What are the coordinates of a point found by moving 5 units to the right of the origin and 3 units up?",
+        "options": [
+          {"id": "a", "text": "(3, 5)", "isCorrect": false},
+          {"id": "b", "text": "(5, 3)", "isCorrect": true},
+          {"id": "c", "text": "(−5, 3)", "isCorrect": false},
+          {"id": "d", "text": "(5, −3)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Movement to the right along the x-axis gives x = +5 and movement up along the y-axis gives y = +3, so the point is (5, 3). Exam Tip: coordinates are always written as (x, y) — the right/left value first, the up/down value second; (3, 5) reverses them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In which quadrant are BOTH coordinates of a point negative?",
+        "options": [
+          {"id": "a", "text": "First", "isCorrect": false},
+          {"id": "b", "text": "Second", "isCorrect": false},
+          {"id": "c", "text": "Third", "isCorrect": true},
+          {"id": "d", "text": "Fourth", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Both negative means x is negative (to the left) and y is negative (below the origin); left and below is the third quadrant. Exam Tip: third quadrant = (−, −) — remember the anticlockwise order I(+,+), II(−,+), III(−,−), IV(+,−).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the gradient of the straight line passing through the points (1, 2) and (3, 8).",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gradient m = (y₂ − y₁)/(x₂ − x₁) = (8 − 2)/(3 − 1) = 6/2 = 3. Exam Tip: keep the same point first in both the top and bottom subtractions; swapping the order in only one place flips the sign.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the gradient of a horizontal line?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "0", "isCorrect": true},
+          {"id": "c", "text": "Undefined", "isCorrect": false},
+          {"id": "d", "text": "−1", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A horizontal line has no rise — the y-values stay the same — so gradient = change in y ÷ change in x = 0 ÷ (a number) = 0. Exam Tip: horizontal line → gradient 0; a vertical line is different — its gradient is undefined (dividing by zero).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the gradient of the line whose equation is y = 4x − 7.",
+        "options": [
+          {"id": "a", "text": "−7", "isCorrect": false},
+          {"id": "b", "text": "4", "isCorrect": true},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "−4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Comparing with the standard form y = mx + c, the coefficient of x is the gradient, so m = 4. Exam Tip: in y = mx + c, m is the gradient and c is the y-intercept; here −7 is the intercept, not the gradient.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A straight line that rises from left to right has a gradient that is:",
+        "options": [
+          {"id": "a", "text": "Negative", "isCorrect": false},
+          {"id": "b", "text": "Zero", "isCorrect": false},
+          {"id": "c", "text": "Positive", "isCorrect": true},
+          {"id": "d", "text": "Undefined", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Rising from left to right means y increases as x increases, so both changes have the same sign and their ratio is positive. Exam Tip: rising line → positive gradient; falling line → negative gradient — read the graph from left to right, like text.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two parallel lines always have:",
+        "options": [
+          {"id": "a", "text": "Equal gradients", "isCorrect": true},
+          {"id": "b", "text": "Different gradients", "isCorrect": false},
+          {"id": "c", "text": "Zero gradient", "isCorrect": false},
+          {"id": "d", "text": "Undefined gradients", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Parallel lines never meet and rise at the same rate, and the same rate of rise means the same gradient. Exam Tip: parallel ⇒ equal gradients (but different y-intercepts, otherwise they would be the same line).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the y-intercept of the line y = 2x + 5?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "−5", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In y = mx + c the value c is the y-intercept, and here c = 5, so the line crosses the y-axis at (0, 5). Exam Tip: the y-intercept is where x = 0 — substitute x = 0: y = 2(0) + 5 = 5, the same value as c.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the equation of a straight line with gradient 3 and y-intercept −2.",
+        "options": [
+          {"id": "a", "text": "y = −2x + 3", "isCorrect": false},
+          {"id": "b", "text": "y = 3x − 2", "isCorrect": true},
+          {"id": "c", "text": "y = 3x + 2", "isCorrect": false},
+          {"id": "d", "text": "y = 2x − 3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Using y = mx + c with m = 3 and c = −2 gives y = 3x − 2. Exam Tip: the gradient multiplies x and the intercept stands alone; y = −2x + 3 swaps the roles of m and c.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the gradient of the line 2x + 3y = 6.",
+        "options": [
+          {"id": "a", "text": "2/3", "isCorrect": false},
+          {"id": "b", "text": "−2/3", "isCorrect": true},
+          {"id": "c", "text": "3/2", "isCorrect": false},
+          {"id": "d", "text": "−3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rearranging into y = mx + c: 3y = −2x + 6, then dividing every term by 3 gives y = (−2/3)x + 2, so the gradient is −2/3. Exam Tip: for ax + by + c = 0 the gradient = −a/b; watch the negative sign when moving the x-term across.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the x-intercept of the line y = 2x − 8.",
+        "options": [
+          {"id": "a", "text": "(0, −8)", "isCorrect": false},
+          {"id": "b", "text": "(4, 0)", "isCorrect": true},
+          {"id": "c", "text": "(8, 0)", "isCorrect": false},
+          {"id": "d", "text": "(−4, 0)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "At the x-intercept y = 0, so 0 = 2x − 8 gives 2x = 8 and x = 4, the point (4, 0). Exam Tip: x-intercept set y = 0, y-intercept set x = 0; (0, −8) is the y-intercept — the reverse substitution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Does the point (2, 7) lie on the line y = 3x + 1?",
+        "options": [
+          {"id": "a", "text": "Yes, because 7 = 3(2) + 1", "isCorrect": true},
+          {"id": "b", "text": "No, because 7 ≠ 3(2) + 1", "isCorrect": false},
+          {"id": "c", "text": "Yes, because 2 = 3(7) + 1", "isCorrect": false},
+          {"id": "d", "text": "Cannot be determined", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substituting the point's x-value into the equation gives y = 3(2) + 1 = 6 + 1 = 7, which matches the point's y-value, so the point lies on the line. Exam Tip: lies on the line means the coordinates satisfy the equation — always substitute the x-value and check whether you get the correct y.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The point where the x-axis and the y-axis meet is called the __________.",
+        "options": [
+          {"id": "a", "text": "origin", "isCorrect": true},
+          {"id": "b", "text": "x-axis", "isCorrect": false},
+          {"id": "c", "text": "y-intercept", "isCorrect": false},
+          {"id": "d", "text": "quadrant", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The two axes cross at one central reference point with coordinates (0, 0), called the origin. Exam Tip: all measurements on the Cartesian plane start from the origin.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The horizontal number line on the Cartesian plane is called the __________.",
+        "options": [
+          {"id": "a", "text": "x-axis", "isCorrect": true},
+          {"id": "b", "text": "y-axis", "isCorrect": false},
+          {"id": "c", "text": "origin", "isCorrect": false},
+          {"id": "d", "text": "gradient", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "There are two axes; the horizontal one carries the x-values, so it is the x-axis. Exam Tip: horizontal = x-axis, vertical = y-axis — the letter tells you which value it measures.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The position of a point on the Cartesian plane is written in the form __________.",
+        "options": [
+          {"id": "a", "text": "(x, y)", "isCorrect": true},
+          {"id": "b", "text": "(y, x)", "isCorrect": false},
+          {"id": "c", "text": "(x + y)", "isCorrect": false},
+          {"id": "d", "text": "(0, 0)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A point needs a horizontal and a vertical value, written together with x first as (x, y). Exam Tip: order matters — (x, y), never (y, x); the x-value (right/left) always comes first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient of a line joining (x₁, y₁) and (x₂, y₂) is given by the formula m = __________.",
+        "options": [
+          {"id": "a", "text": "(y₂ − y₁)/(x₂ − x₁)", "isCorrect": true},
+          {"id": "b", "text": "(x₂ − x₁)/(y₂ − y₁)", "isCorrect": false},
+          {"id": "c", "text": "(y₁ − y₂)/(x₂ − x₁)", "isCorrect": false},
+          {"id": "d", "text": "(y₂ + y₁)/(x₂ + x₁)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Gradient measures rise over run, where rise = y₂ − y₁ and run = x₂ − x₁, so m = (y₂ − y₁)/(x₂ − x₁). Exam Tip: the y-differences go on top — memory hook: 'y is high', so y is on top of the fraction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The gradient of the line y = 3x + 2 is __________.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "5", "isCorrect": false},
+          {"id": "d", "text": "x", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The equation is already in the form y = mx + c, and the number multiplying x is the gradient, so m = 3. Exam Tip: +2 is the y-intercept, not part of the gradient.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The y-intercept of the line y = 2x − 5 is __________.",
+        "options": [
+          {"id": "a", "text": "−5", "isCorrect": true},
+          {"id": "b", "text": "5", "isCorrect": false},
+          {"id": "c", "text": "2", "isCorrect": false},
+          {"id": "d", "text": "−2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In y = mx + c, c is the y-intercept, and here c = −5. Exam Tip: keep the minus sign — the line crosses the y-axis below the origin, at (0, −5).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient of a vertical line is __________.",
+        "options": [
+          {"id": "a", "text": "undefined", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": false},
+          {"id": "d", "text": "−1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A vertical line has no horizontal change (run = 0), so gradient = rise ÷ 0, which has no value and is undefined. Exam Tip: write 'undefined', never '0' — zero gradient belongs to horizontal lines; vertical lines are undefined.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A straight line written in the form ax + by + c = 0 is said to be in its __________ form.",
+        "options": [
+          {"id": "a", "text": "general", "isCorrect": true},
+          {"id": "b", "text": "slope-intercept", "isCorrect": false},
+          {"id": "c", "text": "quadratic", "isCorrect": false},
+          {"id": "d", "text": "point-gradient", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This form keeps all terms on one side equal to zero, the standard way of stating a line without isolating y, called the general (standard) form. Exam Tip: to find the gradient from ax + by + c = 0, rearrange to y = mx + c, or use m = −a/b directly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the coordinates (x, y), the first number (x) is called the __________.",
+        "options": [
+          {"id": "a", "text": "x-coordinate (abscissa)", "isCorrect": true},
+          {"id": "b", "text": "y-coordinate (ordinate)", "isCorrect": false},
+          {"id": "c", "text": "origin", "isCorrect": false},
+          {"id": "d", "text": "gradient", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The horizontal value comes first and is the x-coordinate, also called the abscissa. Exam Tip: x-coordinate = abscissa, y-coordinate = ordinate — either the plain name or the technical term is accepted.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A line with an equation of the form x = 4 is a __________ line, parallel to the y-axis.",
+        "options": [
+          {"id": "a", "text": "vertical", "isCorrect": true},
+          {"id": "b", "text": "horizontal", "isCorrect": false},
+          {"id": "c", "text": "diagonal", "isCorrect": false},
+          {"id": "d", "text": "curved", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Every point on x = 4 has x = 4 with any y-value, e.g. (4, 0), (4, 1), (4, 2), so the points stack vertically to form a vertical line. Exam Tip: x = constant → vertical (parallel to the y-axis); y = constant → horizontal (parallel to the x-axis).",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The coordinates of the origin are (0, 0).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The origin is where the axes cross and both values there are zero, so it is (0, 0). Exam Tip: the origin is the fixed reference point of the whole plane.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The point (0, 5) lies on the x-axis.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A point on the x-axis has y = 0, but here x = 0 and y = 5, so the point is on the y-axis, not the x-axis. Exam Tip: (0, 5) sits on the y-axis; on the x-axis the second number is 0, e.g. (5, 0).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient of a horizontal line is zero.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A horizontal line has no rise, so gradient = 0 ÷ run = 0. Exam Tip: horizontal → 0, vertical → undefined; keep the two apart.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Parallel lines have equal gradients.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Parallel lines rise at the same rate, and the same rate of rise means the same gradient. Exam Tip: equal gradients but different intercepts — otherwise they would be the very same line.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the equation y = mx + c, the letter m represents the y-intercept.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "In y = mx + c, m multiplies x and is the gradient, while c is the y-intercept. Exam Tip: a very common swap — m = gradient (slope), c = y-intercept (crossing point on the y-axis).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A point with both coordinates negative lies in the third quadrant.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Both negative means (−, −), which is left of the origin and below it — the third quadrant. Exam Tip: III = (−, −); quick check with a point like (−2, −3).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient of the line joining (2, 3) and (4, 7) is 2.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "m = (7 − 3)/(4 − 2) = 4/2 = 2, so the statement is correct. Exam Tip: verify by keeping the point order consistent in numerator and denominator.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The line y = 5 is a horizontal line.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Every point on y = 5 has y = 5 with any x-value, e.g. (0, 5), (1, 5), (2, 5), so the points lie in a horizontal row. Exam Tip: y = constant → horizontal, x = constant → vertical; the variable that is fixed tells you the direction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the coordinate (x, y), the first number written is the y-coordinate.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Coordinates are written (x, y), so the first number is the x-coordinate, not the y. Exam Tip: x first, y second — always; reversing them plots the point in the wrong place.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradient of a vertical line is undefined.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A vertical line has run = 0, and dividing the rise by zero has no meaning, so the gradient is undefined. Exam Tip: undefined for vertical, zero for horizontal — these two special cases appear in nearly every gradient question.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Cartesian plane",
+        "options": [],
+        "correctAnswer": "A flat surface formed by two perpendicular number lines, the horizontal x-axis and the vertical y-axis, used to locate points by their coordinates.",
+        "explanation": "Points are fixed by how far they lie along the x-axis and the y-axis from the origin. Exam Tip: the two axes divide the plane into four quadrants.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Origin",
+        "options": [],
+        "correctAnswer": "The point (0, 0) where the x-axis and y-axis intersect; the reference point from which all coordinates are measured.",
+        "explanation": "Both coordinates of the origin are zero. Exam Tip: every coordinate describes a movement starting from the origin.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Coordinates (x, y)",
+        "options": [],
+        "correctAnswer": "An ordered pair giving a point's horizontal position (x) first and its vertical position (y) second.",
+        "explanation": "The order is fixed: x before y. Exam Tip: (3, 5) and (5, 3) are different points — never swap them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The four quadrants",
+        "options": [],
+        "correctAnswer": "The four regions of the plane: I (+, +), II (−, +), III (−, −), IV (+, −), numbered anticlockwise from the top-right.",
+        "explanation": "The signs of x and y decide the quadrant. Exam Tip: match both signs — a single sign is not enough.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gradient (slope)",
+        "options": [],
+        "correctAnswer": "The steepness of a line, m = (y₂ − y₁)/(x₂ − x₁), the change in y divided by the change in x.",
+        "explanation": "Rise over run measures how fast y changes with x. Exam Tip: keep the same point first on top and bottom to avoid a sign error.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Positive and negative gradient",
+        "options": [],
+        "correctAnswer": "A line rising from left to right has a positive gradient; a line falling from left to right has a negative gradient.",
+        "explanation": "The direction of the line gives the sign of the gradient. Exam Tip: read the graph left to right, like text.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Zero and undefined gradient",
+        "options": [],
+        "correctAnswer": "A horizontal line has gradient 0; a vertical line has an undefined gradient (its run is zero).",
+        "explanation": "Horizontal has no rise, vertical has no run. Exam Tip: 0 for horizontal, undefined for vertical — do not mix them up.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Equation y = mx + c",
+        "options": [],
+        "correctAnswer": "The slope-intercept form of a straight line, where m is the gradient and c is the y-intercept.",
+        "explanation": "m tells the steepness and c tells where the line meets the y-axis. Exam Tip: read m and c straight off once y is by itself.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "General form ax + by + c = 0",
+        "options": [],
+        "correctAnswer": "A straight line with all terms on one side equal to zero; its gradient is −a/b.",
+        "explanation": "Rearrange to y = mx + c to read the gradient and intercept. Exam Tip: gradient = −a/b lets you find m without full rearranging.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "x-intercept and y-intercept",
+        "options": [],
+        "correctAnswer": "The x-intercept is where the line crosses the x-axis (set y = 0); the y-intercept is where it crosses the y-axis (set x = 0).",
+        "explanation": "Each intercept is found by setting the other variable to zero. Exam Tip: y = 0 for the x-intercept, x = 0 for the y-intercept.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "Find the equation of the straight line passing through the points A(1, 3) and B(3, 9).",
+        "options": [
+          {"id": "a", "text": "y = 3x", "isCorrect": true},
+          {"id": "b", "text": "y = 2x + 1", "isCorrect": false},
+          {"id": "c", "text": "y = 3x − 1", "isCorrect": false},
+          {"id": "d", "text": "y = 2x + 3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "First find the gradient m = (9 − 3)/(3 − 1) = 6/2 = 3, then use y = mx + c with point A(1, 3): 3 = 3(1) + c gives c = 0, so y = 3x, which also checks with B(3, 9) since 3(3) = 9. Exam Tip: find the gradient first, then use one point to find c, and always confirm with the second point — since it was not used to find c, it gives an independent check.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A straight line has the equation 3x − y + 2 = 0. Find its gradient and its y-intercept.",
+        "options": [
+          {"id": "a", "text": "Gradient = 3, y-intercept = 2", "isCorrect": true},
+          {"id": "b", "text": "Gradient = −3, y-intercept = 2", "isCorrect": false},
+          {"id": "c", "text": "Gradient = 3, y-intercept = −2", "isCorrect": false},
+          {"id": "d", "text": "Gradient = −3, y-intercept = −2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rearrange 3x − y + 2 = 0 into y = mx + c by making y the subject: y = 3x + 2, then compare to read the coefficient of x (3) and the constant (2), so gradient = 3 and y-intercept = 2. Exam Tip: isolate y completely, then read off m and c, watching signs — −y + 2 = −3x becomes y = 3x + 2, not y = −3x − 2; a sign slip changes both answers at once.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A taxi in Dar es Salaam charges a fixed starting fee plus a fee per kilometre. The total fare (in Tsh) is given by y = 500x + 1,000, where x is the distance in kilometres. What does the number 500 represent, and what is the fare for a 6 km trip?",
+        "options": [
+          {"id": "a", "text": "500 is the starting fee; fare = Tsh 3,000", "isCorrect": false},
+          {"id": "b", "text": "500 is the charge per kilometre; fare = Tsh 4,000", "isCorrect": true},
+          {"id": "c", "text": "500 is the starting fee; fare = Tsh 4,000", "isCorrect": false},
+          {"id": "d", "text": "500 is the charge per kilometre; fare = Tsh 3,500", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Comparing y = 500x + 1,000 with y = mx + c gives m = 500 and c = 1,000, so 500 (the gradient, multiplying x) is the charge per kilometre and 1,000 is the fixed starting fee; for 6 km, y = 500(6) + 1,000 = 3,000 + 1,000 = Tsh 4,000. Exam Tip: in real-life linear models the gradient is the rate (cost per unit) and the y-intercept is the fixed starting amount — match m to 'per' and c to 'fixed'.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

@@ -18,6 +18,7 @@ import { useGamificationStore } from '../../store/gamificationStore';
 import { useAuthStore } from '../../store/authStore';
 import { useProfileStore } from '../../store/profileStore';
 import { useMissionStore } from '../../store/missionStore';
+import { useFamilyStore } from '../../store/familyStore';
 import { updateLeaderboardScore } from '../../services/leaderboardService';
 import { XPAnimationOverlay } from '../../components/ui/gamification/XPAnimationOverlay';
 import { LevelUpModal } from '../../components/ui/gamification/LevelUpModal';
@@ -29,6 +30,7 @@ const TYPE_LABEL: Record<string, string> = {
   mcq: 'Multiple Choice',
   fib: 'Fill in the Blanks',
   tf: 'True / False',
+  hoq: 'Higher Order Questions',
 };
 
 export function QuizResultScreen({ navigation, route }: Props) {
@@ -51,13 +53,27 @@ export function QuizResultScreen({ navigation, route }: Props) {
   const uid = useAuthStore((s) => s.user?.uid);
   const profile = useProfileStore((s) => s.profile);
   const updateMissionProgress = useMissionStore((s) => s.updateProgress);
+  const activeChild = useFamilyStore((s) => s.activeChild());
+  const creditChildXp = useFamilyStore((s) => s.creditXp);
   const [showXpAnim, setShowXpAnim] = useState(xpEarned > 0);
 
   // On quiz completion: advance the daily streak, evaluate badge unlocks, persist
   // the gamification profile, update the leaderboard, and advance daily missions.
+  // When a Family-plan child profile is active ("Playing as"), XP routes to
+  // that child's own aggregate record instead — so switching profiles never
+  // mixes progress between family members.
   useEffect(() => {
-    checkBadges({ quizScorePercent: scorePercent, subjectKey: subjectId });
+    if (activeChild) {
+      if (xpEarned > 0) creditChildXp(xpEarned).catch(() => {});
+      return;
+    }
     if (uid) {
+      checkBadges(uid, {
+        quizScorePercent: scorePercent,
+        subjectKey: subjectId,
+        totalQuestions,
+        correctCount,
+      });
       checkStreak(uid).catch(() => {});
       persistProfile(uid).catch(() => {});
       if (xpEarned > 0 && profile) {
@@ -78,27 +94,28 @@ export function QuizResultScreen({ navigation, route }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // The stack here is LearningPackDetail → QuizIntro → QuizResult (the quiz
+  // screen replaced itself with this result). Pop back to the screens that
+  // already exist instead of pushing/replacing duplicates — replace()
+  // stacked a second identical QuizIntro, and navigate() to
+  // LearningPackDetail overwrote its params so the header showed the quiz
+  // title instead of the topic name.
   const handleRetry = () => {
-    navigation.replace('QuizIntro', {
-      packId,
-      packTitle,
-      topicId,
-      subjectColor,
-      formId,
-      subjectId,
-      quizType,
-    });
+    if (navigation.canGoBack()) {
+      navigation.goBack();
+    } else {
+      navigation.replace('QuizIntro', { packId, packTitle, topicId, subjectColor, formId, subjectId, quizType });
+    }
   };
 
   const handleBackToPacks = () => {
-    navigation.navigate('LearningPackDetail', {
-      packId,
-      packTitle,
-      topicId,
-      subjectColor,
-      formId,
-      subjectId,
-    });
+    const state = navigation.getState();
+    const hasLPD = state.routes.some((r) => r.name === 'LearningPackDetail');
+    if (hasLPD) {
+      navigation.pop(2);
+    } else {
+      navigation.navigate('LearningPackDetail', { packId, packTitle, topicId, subjectColor, formId, subjectId });
+    }
   };
 
   return (
@@ -162,20 +179,20 @@ export function QuizResultScreen({ navigation, route }: Props) {
                 subjectId,
               })}
               variant="secondary"
-              icon="bulb-outline"
+              icon={<Ionicons name="bulb-outline" size={18} color={COLORS.primary} />}
             />
           )}
           <AppButton
             title="Retry Quiz"
             onPress={handleRetry}
             variant="secondary"
-            icon="refresh"
+            icon={<Ionicons name="refresh" size={18} color={COLORS.primary} />}
           />
           <AppButton
             title="Back to Packs"
             onPress={handleBackToPacks}
             variant="primary"
-            icon="arrow-back"
+            icon={<Ionicons name="arrow-back" size={18} color={COLORS.textPrimary} />}
           />
         </View>
 

@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The branch of commerce that deals with the actual buying and selling of goods is called _____.",
-        "options": [],
-        "correctAnswer": "trade",
+        "options": [
+          {
+            "id": "a",
+            "text": "trade",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "barter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "production",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "consumption",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Trade is the buying and selling of goods and services, and it is one of the two branches of commerce.",
         "difficulty": "easy"
       },
       {
         "questionText": "Services that support and make trade easier, such as transport and banking, are known as _____.",
-        "options": [],
-        "correctAnswer": "aids to trade",
+        "options": [
+          {
+            "id": "a",
+            "text": "branches of trade",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "aids to trade",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "channels of trade",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "terms of trade",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Aids to trade are the supporting services that help trade to take place smoothly.",
         "difficulty": "easy"
       },
       {
         "questionText": "The direct exchange of goods for goods without using money is called _____ trade.",
-        "options": [],
-        "correctAnswer": "barter",
+        "options": [
+          {
+            "id": "a",
+            "text": "credit",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "wholesale",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "barter",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "retail",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Barter trade is the oldest form of trade where goods are exchanged for other goods.",
         "difficulty": "easy"
       },
       {
         "questionText": "Trade carried out between two or more different countries is called _____ trade.",
-        "options": [],
-        "correctAnswer": "international",
+        "options": [
+          {
+            "id": "a",
+            "text": "home",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "wholesale",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "retail",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "international",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "International (foreign) trade takes place across national borders, for example importing and exporting.",
         "difficulty": "easy"
       },
       {
         "questionText": "The aid to trade that gives information to consumers about products and persuades them to buy is _____.",
-        "options": [],
-        "correctAnswer": "advertising",
+        "options": [
+          {
+            "id": "a",
+            "text": "advertising",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "banking",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "insurance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "warehousing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Advertising informs and persuades customers, helping to increase the sale of goods.",
         "difficulty": "medium"
       },
       {
         "questionText": "Occupations such as mining, fishing and farming that obtain raw materials from nature belong to the _____ industry.",
-        "options": [],
-        "correctAnswer": "extractive",
+        "options": [
+          {
+            "id": "a",
+            "text": "manufacturing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "extractive",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "constructive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "commercial",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Extractive industries take or extract raw materials directly from the earth, water or air.",
         "difficulty": "medium"
       },
       {
         "questionText": "The aid to trade that provides loans and a safe place to keep money is _____.",
-        "options": [],
-        "correctAnswer": "banking",
+        "options": [
+          {
+            "id": "a",
+            "text": "advertising",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "transport",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "banking",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "warehousing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Banking keeps money safe and provides loans and other financial services that support trade.",
         "difficulty": "easy"
       },
       {
         "questionText": "All the activities involved in producing, distributing and selling goods and services for profit are together known as _____.",
-        "options": [],
-        "correctAnswer": "business",
+        "options": [
+          {
+            "id": "a",
+            "text": "commerce",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "industry",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "occupation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "business",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Business is a wide term covering all activities aimed at earning a profit, including production and commerce.",
         "difficulty": "medium"
       },
       {
         "questionText": "Personal services given directly to people, such as those of a teacher or a nurse, are called _____ services.",
-        "options": [],
-        "correctAnswer": "direct",
+        "options": [
+          {
+            "id": "a",
+            "text": "direct",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "indirect",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "commercial",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "extractive",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Direct services are personal services provided straight to individuals.",
         "difficulty": "medium"
       },
       {
         "questionText": "The aid to trade that involves the sending and receiving of messages and information is called _____.",
-        "options": [],
-        "correctAnswer": "communication",
+        "options": [
+          {
+            "id": "a",
+            "text": "transport",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "communication",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "insurance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "warehousing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Communication allows traders to pass information about goods, prices and orders, helping trade to take place.",
         "difficulty": "medium"
       }

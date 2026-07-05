@@ -7,12 +7,15 @@ import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 interface ErrorStateProps {
   message?: string;
   onRetry?: () => void;
+  /** Button label — pass "Go Back" when onRetry navigates away instead of retrying. */
+  retryLabel?: string;
   fullScreen?: boolean;
 }
 
 export function ErrorState({
   message = 'Something went wrong. Please try again.',
   onRetry,
+  retryLabel = 'Try Again',
   fullScreen = false,
 }: ErrorStateProps) {
   return (
@@ -24,7 +27,7 @@ export function ErrorState({
       <Text style={styles.message}>{message}</Text>
       {onRetry && (
         <View style={styles.action}>
-          <AppButton title="Try Again" onPress={onRetry} fullWidth={false} size="md" />
+          <AppButton title={retryLabel} onPress={onRetry} fullWidth={false} size="md" />
         </View>
       )}
     </View>

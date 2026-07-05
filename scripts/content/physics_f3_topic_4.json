@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_physics_topic_4",
+  "topicName": "Measurement of Thermal Energy",
+  "order": 4,
+  "description": "This topic explains heat as a form of energy, how it differs from temperature, and how to measure thermal energy using specific heat capacity (Q = mcΔT), latent heat (Q = mL), and the method of mixtures based on conservation of heat.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which quantity measures the total thermal energy of all the particles in a body?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Heat",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Pressure",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Density",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Heat is the total thermal energy of the particles, while temperature only measures their average kinetic energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the SI unit of heat (thermal energy)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kelvin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Watt",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Joule",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Newton",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Heat is a form of energy, so it is measured in joules (J), the SI unit of energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The specific heat capacity of a substance is the heat needed to raise the temperature of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "any mass by 1 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1 kg of the substance by 1 °C",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1 kg of the substance by 100 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1 g of the substance by 1 K",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Specific heat capacity is the heat required to raise the temperature of 1 kg of a substance by 1 °C (or 1 K).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the SI unit of specific heat capacity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "J/°C",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "J/kg",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "J/(kg·°C)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "J·kg·°C",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "From Q = mcΔT, c = Q/(mΔT), so the unit is joule per kilogram per degree Celsius, J/(kg·°C).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which formula is used to calculate the heat needed to change the temperature of a substance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Q = mL",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Q = mcΔT",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Q = mgh",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Q = Pt",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Q = mcΔT relates heat to mass (m), specific heat capacity (c) and temperature change (ΔT).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The heat capacity of a body is defined as the heat required to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "melt the whole body",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "raise the temperature of the whole body by 1 °C",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "raise the temperature of 1 kg by 1 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "boil the whole body",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Heat capacity = mc, the heat needed to raise the temperature of the entire body by 1 °C, measured in J/°C.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How much heat is needed to raise the temperature of 2 kg of water by 10 °C? (c of water = 4200 J/kg°C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "8400 J",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "42000 J",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "84000 J",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "21000 J",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Q = mcΔT = 2 × 4200 × 10 = 84000 J.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Latent heat is the heat absorbed or released when a substance:",
+        "options": [
+          {
+            "id": "a",
+            "text": "changes temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "changes state at constant temperature",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "expands when heated",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "conducts heat",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Latent heat is the hidden heat that causes a change of state (melting, boiling) without any change in temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which formula gives the heat needed to change the state of a substance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Q = mcΔT",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Q = mL",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Q = mvΔT",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Q = cL",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Q = mL, where m is mass and L is the specific latent heat of the substance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Specific latent heat of fusion is the heat needed to change 1 kg of a substance from:",
+        "options": [
+          {
+            "id": "a",
+            "text": "liquid to gas at boiling point",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "solid to liquid at its melting point",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "gas to liquid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solid to gas directly",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Fusion means melting, so the latent heat of fusion changes 1 kg from solid to liquid at the melting point without a temperature change.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During melting of ice at 0 °C, the temperature of the mixture remains constant because the absorbed heat is used to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "raise the average kinetic energy of particles",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "break the bonds between particles",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "increase the pressure",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "create new molecules",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The latent heat goes into weakening and breaking the forces between particles, not into raising their kinetic energy, so temperature stays constant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The principle of the method of mixtures states that, ignoring losses to the surroundings:",
+        "options": [
+          {
+            "id": "a",
+            "text": "heat lost by hot body = heat gained by cold body",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "temperature lost = temperature gained",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mass lost = mass gained",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "heat lost is greater than heat gained",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "By conservation of energy, the heat lost by the hotter body equals the heat gained by the cooler body when they reach a common temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An instrument commonly used in the method of mixtures to measure heat is the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "barometer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hydrometer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "calorimeter",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "manometer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A calorimeter is a well-insulated metal can used to measure heat exchanges in experiments such as the method of mixtures.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why does the latent heat of vaporisation of water (2,260,000 J/kg) being large make steam dangerous?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Steam is colder than boiling water",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Steam releases a large amount of heat when it condenses on the skin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Steam has no heat energy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Steam rises upwards",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "When steam at 100 °C condenses on the skin it releases a large amount of latent heat, causing more severe burns than the same mass of boiling water.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Which statement about heat and temperature is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A large cold body can have more heat than a small hot body",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A body with higher temperature always has more heat",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Heat and temperature are the same quantity",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Temperature is measured in joules",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Heat depends on mass and temperature; a large body at a lower temperature can store more total thermal energy than a small body at a higher temperature.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The average kinetic energy of the particles of a body is measured by its _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "temperature",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "heat",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pressure",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "volume",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Temperature measures the average kinetic energy of particles, whereas heat is the total thermal energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of thermal energy (heat) is the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "calorie",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "joule",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "watt",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "kelvin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Heat is energy, so it is measured in joules (J).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The equation Q = mcΔT is used to find the heat that causes a change in _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "pressure",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "temperature",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "mass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Q = mcΔT applies when heat changes a body's temperature, not when it changes state.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The specific heat capacity of water is about _____ J/kg°C.",
+        "options": [
+          {
+            "id": "a",
+            "text": "2100",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "420",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4200",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Water has a high specific heat capacity of approximately 4200 J/kg°C.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The heat absorbed or released during a change of state without a temperature change is called _____ heat.",
+        "options": [
+          {
+            "id": "a",
+            "text": "latent",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sensible",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "specific",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "internal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Latent (hidden) heat causes a change of state at constant temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The latent heat involved when a solid melts into a liquid is the specific latent heat of _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "vaporisation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "fusion",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sublimation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "condensation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Fusion refers to melting, the change from solid to liquid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The latent heat involved when a liquid turns into a gas at its boiling point is the specific latent heat of _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "fusion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sublimation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "vaporisation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "melting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Vaporisation is the change from liquid to gas at the boiling point.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the method of mixtures, heat lost by the hot body equals heat _____ by the cold body.",
+        "options": [
+          {
+            "id": "a",
+            "text": "lost",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "absorbed",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "stored",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "gained",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "By conservation of energy, heat lost = heat gained when no heat escapes to the surroundings.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The product of mass and specific heat capacity (mc) of a body is called its _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "heat capacity",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "latent heat",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "thermal energy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "temperature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Heat capacity = mc and is measured in J/°C.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The heat needed to raise the temperature of 0.5 kg of water by 4 °C is _____ J. (c = 4200 J/kg°C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "4200",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8400",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "2100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "16800",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Q = mcΔT = 0.5 × 4200 × 4 = 8400 J.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Heat and temperature mean exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Heat is total thermal energy; temperature is the average kinetic energy of particles. They are different quantities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Heat always flows from a body at higher temperature to a body at lower temperature.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Thermal energy naturally moves from hot to cold until both reach the same temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Water has a low specific heat capacity compared with most common substances.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Water has an unusually high specific heat capacity (about 4200 J/kg°C), which is why it heats and cools slowly.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During boiling, the temperature of a pure liquid stays constant even though heat is still being supplied.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "The supplied heat is used as latent heat to change the liquid into gas, so the temperature does not rise.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The formula Q = mL is used to calculate the heat that changes a substance's temperature.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Q = mL is for changes of state; Q = mcΔT is used for temperature changes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The specific latent heat of vaporisation of water is greater than its specific latent heat of fusion.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "More energy is needed to fully separate molecules into a gas (about 2,260,000 J/kg) than to melt ice (about 334,000 J/kg).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In a well-insulated calorimeter experiment, heat lost by the hot object equals heat gained by the cold object.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the principle of conservation of heat used in the method of mixtures.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body at a high temperature always contains more heat energy than a body at a low temperature.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Total heat depends on mass as well as temperature, so a large cold body can hold more heat than a small hot one.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Heat capacity is measured in joules per degree Celsius (J/°C).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Heat capacity = mc, so its unit is J/°C, while specific heat capacity is J/(kg·°C).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A calorimeter is usually insulated to reduce heat loss to the surroundings.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Insulation keeps experimental results accurate by minimising unwanted heat exchange with the environment.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State the difference between heat and temperature.",
+        "options": [],
+        "correctAnswer": "Heat is the total thermal energy of all particles in a body, while temperature is the measure of the average kinetic energy of the particles.",
+        "explanation": "Heat depends on mass and temperature; temperature does not depend on the amount of substance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define specific heat capacity and give its SI unit.",
+        "options": [],
+        "correctAnswer": "It is the heat needed to raise the temperature of 1 kg of a substance by 1 °C; its unit is J/(kg·°C).",
+        "explanation": "From Q = mcΔT, the specific heat capacity c is the heat per kilogram per degree.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write the formula used to calculate the heat needed to change the temperature of a substance and name each term.",
+        "options": [],
+        "correctAnswer": "Q = mcΔT, where Q is heat, m is mass, c is specific heat capacity and ΔT is the temperature change.",
+        "explanation": "This formula links heat to mass, the material's specific heat capacity, and the temperature rise or fall.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define specific latent heat of fusion.",
+        "options": [],
+        "correctAnswer": "It is the heat needed to change 1 kg of a solid into a liquid at its melting point without any change in temperature.",
+        "explanation": "The energy breaks the bonds holding the solid together, so the temperature stays constant during melting.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define specific latent heat of vaporisation.",
+        "options": [],
+        "correctAnswer": "It is the heat needed to change 1 kg of a liquid into a gas at its boiling point without any change in temperature.",
+        "explanation": "This heat separates the liquid molecules completely so they form a gas.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the principle of conservation of heat used in the method of mixtures.",
+        "options": [],
+        "correctAnswer": "When two bodies are mixed and no heat escapes, the heat lost by the hot body equals the heat gained by the cold body.",
+        "explanation": "This follows from the law of conservation of energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain why temperature remains constant while a pure substance is melting or boiling.",
+        "options": [],
+        "correctAnswer": "Because the supplied heat is used as latent heat to break the bonds between particles and change the state, not to increase their kinetic energy.",
+        "explanation": "Since average kinetic energy stays the same, the temperature does not change during the state change.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give the formula for the heat needed to change the state of a substance and name its terms.",
+        "options": [],
+        "correctAnswer": "Q = mL, where Q is heat, m is mass and L is the specific latent heat.",
+        "explanation": "This is used for melting, freezing, boiling and condensing at constant temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two everyday applications of the high specific heat capacity of water.",
+        "options": [],
+        "correctAnswer": "It is used as a coolant in car engines, and it helps regulate climate near large lakes and the sea.",
+        "explanation": "Because water absorbs much heat for a small temperature rise, it cools engines well and moderates surrounding temperatures.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Calculate the heat needed to melt 0.2 kg of ice at 0 °C. (Specific latent heat of fusion of ice = 334000 J/kg)",
+        "options": [],
+        "correctAnswer": "66800 J",
+        "explanation": "Q = mL = 0.2 × 334000 = 66800 J.",
+        "difficulty": "hard"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A heater supplies 504000 J of heat to 3 kg of water. If the specific heat capacity of water is 4200 J/kg°C, what is the rise in temperature?",
+        "options": [
+          {
+            "id": "a",
+            "text": "20 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "30 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "40 °C",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "50 °C",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "ΔT = Q/(mc) = 504000/(3 × 4200) = 504000/12600 = 40 °C.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "0.5 kg of water at 80 °C is mixed with 0.5 kg of water at 20 °C in an insulated container. What is the final temperature of the mixture? (Assume no heat loss)",
+        "options": [
+          {
+            "id": "a",
+            "text": "40 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "50 °C",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "60 °C",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100 °C",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Heat lost = heat gained: 0.5×c×(80−T) = 0.5×c×(T−20). Solving gives 80−T = T−20, so 2T = 100 and T = 50 °C.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "How much total heat is needed to change 0.1 kg of ice at 0 °C completely into water at 50 °C? (Latent heat of fusion = 334000 J/kg, c of water = 4200 J/kg°C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "21000 J",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "33400 J",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "54400 J",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "75400 J",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Melt the ice: Q1 = mL = 0.1×334000 = 33400 J. Heat the water: Q2 = mcΔT = 0.1×4200×50 = 21000 J. Total = 33400 + 21000 = 54400 J.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

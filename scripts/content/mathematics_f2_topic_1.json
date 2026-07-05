@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_1",
-  "topicName": "Exponents and Radicals",
+  "topicName": "Rates and Variations",
   "order": 1,
-  "description": "A study of the laws of indices including positive, negative, zero and fractional exponents, together with radicals (surds), their operations and rationalizing the denominator.",
+  "description": "An introduction to rates and unit rates, average speed and currency exchange, and to direct and inverse variation, including finding the constant of variation and solving real-life problems.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Simplify 2^3 multiplied by 2^4.",
+        "questionText": "A car covers 240 km in 3 hours. What is its average speed?",
         "options": [
-          { "id": "a", "text": "2^7", "isCorrect": true },
-          { "id": "b", "text": "2^12", "isCorrect": false },
-          { "id": "c", "text": "4^7", "isCorrect": false },
-          { "id": "d", "text": "2^1", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "When multiplying powers with the same base, add the exponents: 3 + 4 = 7, so 2^3 x 2^4 = 2^7.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the value of 5^0?",
-        "options": [
-          { "id": "a", "text": "0", "isCorrect": false },
-          { "id": "b", "text": "1", "isCorrect": true },
-          { "id": "c", "text": "5", "isCorrect": false },
-          { "id": "d", "text": "Undefined", "isCorrect": false }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Any non-zero number raised to the power of zero equals 1, so 5^0 = 1.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Simplify x^8 divided by x^3.",
-        "options": [
-          { "id": "a", "text": "x^11", "isCorrect": false },
-          { "id": "b", "text": "x^24", "isCorrect": false },
-          { "id": "c", "text": "x^5", "isCorrect": true },
-          { "id": "d", "text": "x^2", "isCorrect": false }
+          {"id": "a", "text": "60 km/h", "isCorrect": false},
+          {"id": "b", "text": "72 km/h", "isCorrect": false},
+          {"id": "c", "text": "80 km/h", "isCorrect": true},
+          {"id": "d", "text": "90 km/h", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "When dividing powers with the same base, subtract the exponents: 8 - 3 = 5, so x^8 / x^3 = x^5.",
+        "explanation": "Average speed is distance divided by time, so 240 km / 3 h = 80 km/h. A rate compares two different quantities. Exam Tip: a rate compares two different quantities; write the units.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Express 3^(-2) as a fraction.",
+        "questionText": "A worker is paid Tsh 36,000 for 8 hours. What is the rate per hour?",
         "options": [
-          { "id": "a", "text": "-9", "isCorrect": false },
-          { "id": "b", "text": "-6", "isCorrect": false },
-          { "id": "c", "text": "1/9", "isCorrect": true },
-          { "id": "d", "text": "1/6", "isCorrect": false }
+          {"id": "a", "text": "3,600", "isCorrect": false},
+          {"id": "b", "text": "4,000", "isCorrect": false},
+          {"id": "c", "text": "4,500", "isCorrect": true},
+          {"id": "d", "text": "5,000", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A negative exponent means the reciprocal: 3^(-2) = 1/3^2 = 1/9.",
+        "explanation": "The rate per hour is the total pay divided by the hours, so Tsh 36,000 / 8 = Tsh 4,500 per hour. Exam Tip: the word per signals division.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Simplify (2^3)^2.",
+        "questionText": "A tap fills a 90-litre tank in 6 minutes. What is the rate in L/min?",
         "options": [
-          { "id": "a", "text": "2^5", "isCorrect": false },
-          { "id": "b", "text": "2^6", "isCorrect": true },
-          { "id": "c", "text": "2^9", "isCorrect": false },
-          { "id": "d", "text": "2^1", "isCorrect": false }
+          {"id": "a", "text": "12", "isCorrect": false},
+          {"id": "b", "text": "15", "isCorrect": true},
+          {"id": "c", "text": "18", "isCorrect": false},
+          {"id": "d", "text": "540", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "When raising a power to another power, multiply the exponents: 3 x 2 = 6, so (2^3)^2 = 2^6.",
+        "explanation": "The rate is volume divided by time, so 90 L / 6 min = 15 L/min. Option D comes from multiplying instead of dividing. Exam Tip: option D comes from multiplying instead of dividing; check the size.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Evaluate 16^(1/2).",
+        "questionText": "If 1 USD = Tsh 2,500, how many shillings is 40 USD?",
         "options": [
-          { "id": "a", "text": "8", "isCorrect": false },
-          { "id": "b", "text": "32", "isCorrect": false },
-          { "id": "c", "text": "256", "isCorrect": false },
-          { "id": "d", "text": "4", "isCorrect": true }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A power of 1/2 means the square root, so 16^(1/2) = sqrt(16) = 4.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Simplify the surd sqrt(50).",
-        "options": [
-          { "id": "a", "text": "5 sqrt(2)", "isCorrect": true },
-          { "id": "b", "text": "2 sqrt(5)", "isCorrect": false },
-          { "id": "c", "text": "25 sqrt(2)", "isCorrect": false },
-          { "id": "d", "text": "10 sqrt(5)", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Write 50 as 25 x 2, then sqrt(50) = sqrt(25) x sqrt(2) = 5 sqrt(2).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Evaluate 27^(2/3).",
-        "options": [
-          { "id": "a", "text": "6", "isCorrect": false },
-          { "id": "b", "text": "9", "isCorrect": true },
-          { "id": "c", "text": "18", "isCorrect": false },
-          { "id": "d", "text": "729", "isCorrect": false }
+          {"id": "a", "text": "62,500", "isCorrect": false},
+          {"id": "b", "text": "100,000", "isCorrect": true},
+          {"id": "c", "text": "10,000", "isCorrect": false},
+          {"id": "d", "text": "1,000,000", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "27^(2/3) = (cube root of 27)^2 = 3^2 = 9.",
-        "difficulty": "medium"
+        "explanation": "To change dollars to shillings you multiply by the rate, so 40 x 2,500 = Tsh 100,000. Exam Tip: converting a stronger currency to shillings means multiply.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Simplify 2 sqrt(3) + 5 sqrt(3).",
+        "questionText": "If 1 USD = Tsh 2,500, how many dollars is Tsh 375,000?",
         "options": [
-          { "id": "a", "text": "7 sqrt(6)", "isCorrect": false },
-          { "id": "b", "text": "10 sqrt(3)", "isCorrect": false },
-          { "id": "c", "text": "7 sqrt(3)", "isCorrect": true },
-          { "id": "d", "text": "7 sqrt(9)", "isCorrect": false }
+          {"id": "a", "text": "15", "isCorrect": false},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "150", "isCorrect": true},
+          {"id": "d", "text": "1,500", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Like surds are added by adding their coefficients: (2 + 5) sqrt(3) = 7 sqrt(3).",
+        "explanation": "To change shillings to dollars you divide by the rate, so 375,000 / 2,500 = 150 USD. Cancelling zeros makes this 3,750 / 25 = 150. Exam Tip: shillings to dollars means divide; cancel zeros.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Rationalize the denominator of 1/sqrt(5).",
+        "questionText": "If 1 Ksh = Tsh 18, how many shillings is Ksh 4,500?",
         "options": [
-          { "id": "a", "text": "sqrt(5)/5", "isCorrect": true },
-          { "id": "b", "text": "5/sqrt(5)", "isCorrect": false },
-          { "id": "c", "text": "sqrt(5)", "isCorrect": false },
-          { "id": "d", "text": "1/5", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Multiply numerator and denominator by sqrt(5): (1 x sqrt(5))/(sqrt(5) x sqrt(5)) = sqrt(5)/5.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Simplify sqrt(3) multiplied by sqrt(12).",
-        "options": [
-          { "id": "a", "text": "sqrt(15)", "isCorrect": false },
-          { "id": "b", "text": "6", "isCorrect": true },
-          { "id": "c", "text": "36", "isCorrect": false },
-          { "id": "d", "text": "3 sqrt(12)", "isCorrect": false }
-        ],
-        "correctAnswer": "b",
-        "explanation": "sqrt(3) x sqrt(12) = sqrt(3 x 12) = sqrt(36) = 6.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Express 0.0007 in standard form (scientific notation).",
-        "options": [
-          { "id": "a", "text": "7 x 10^(-3)", "isCorrect": false },
-          { "id": "b", "text": "7 x 10^4", "isCorrect": false },
-          { "id": "c", "text": "7 x 10^(-4)", "isCorrect": true },
-          { "id": "d", "text": "0.7 x 10^(-3)", "isCorrect": false }
+          {"id": "a", "text": "250", "isCorrect": false},
+          {"id": "b", "text": "8,100", "isCorrect": false},
+          {"id": "c", "text": "81,000", "isCorrect": true},
+          {"id": "d", "text": "810,000", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Moving the decimal point 4 places to the right gives 7, so 0.0007 = 7 x 10^(-4).",
+        "explanation": "Multiply the amount by the rate, so 4,500 x 18 = Tsh 81,000. Estimating 4,500 x 20 = 90,000 confirms 81,000 fits. Exam Tip: estimate 4,500 x 20 = 90,000 so 81,000 fits.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Evaluate (1/4)^(-3/2).",
+        "questionText": "y varies directly as x, and y = 12 when x = 4. Find y when x = 7.",
         "options": [
-          { "id": "a", "text": "8", "isCorrect": true },
-          { "id": "b", "text": "1/8", "isCorrect": false },
-          { "id": "c", "text": "-8", "isCorrect": false },
-          { "id": "d", "text": "64", "isCorrect": false }
+          {"id": "a", "text": "15", "isCorrect": false},
+          {"id": "b", "text": "19", "isCorrect": false},
+          {"id": "c", "text": "21", "isCorrect": true},
+          {"id": "d", "text": "28", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "(1/4)^(-3/2) = 4^(3/2) = (sqrt(4))^3 = 2^3 = 8.",
-        "difficulty": "hard"
+        "correctAnswer": "c",
+        "explanation": "First find k = y/x = 12/4 = 3, so y = 3x. When x = 7, y = 3 x 7 = 21. Exam Tip: find k first, here k = y/x = 3.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "Rationalize the denominator of 6/(sqrt(7) - sqrt(5)).",
+        "questionText": "y varies directly as x, and y = 20 when x = 5. What is the constant k?",
         "options": [
-          { "id": "a", "text": "3(sqrt(7) - sqrt(5))", "isCorrect": false },
-          { "id": "b", "text": "3(sqrt(7) + sqrt(5))", "isCorrect": true },
-          { "id": "c", "text": "6(sqrt(7) + sqrt(5))", "isCorrect": false },
-          { "id": "d", "text": "sqrt(7) + sqrt(5)", "isCorrect": false }
+          {"id": "a", "text": "4", "isCorrect": true},
+          {"id": "b", "text": "15", "isCorrect": false},
+          {"id": "c", "text": "25", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In direct variation the constant is k = y/x = 20/5 = 4. Exam Tip: k = y/x.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "y varies inversely as x, and y = 8 when x = 3. Find y when x = 6.",
+        "options": [
+          {"id": "a", "text": "4", "isCorrect": true},
+          {"id": "b", "text": "16", "isCorrect": false},
+          {"id": "c", "text": "2", "isCorrect": false},
+          {"id": "d", "text": "24", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In inverse variation the product xy is constant, so k = 8 x 3 = 24. When x is doubled from 3 to 6, y is halved, giving 24/6 = 4. Exam Tip: the product xy is constant, so if x is doubled then y is halved.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "y varies inversely as x. Which equation represents this?",
+        "options": [
+          {"id": "a", "text": "y = kx", "isCorrect": false},
+          {"id": "b", "text": "y = k/x", "isCorrect": true},
+          {"id": "c", "text": "y = x/k", "isCorrect": false},
+          {"id": "d", "text": "y = k + x", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Multiply by the conjugate (sqrt(7) + sqrt(5)): denominator becomes 7 - 5 = 2, giving 6(sqrt(7) + sqrt(5))/2 = 3(sqrt(7) + sqrt(5)).",
-        "difficulty": "hard"
+        "explanation": "Inverse variation means y = k/x, while direct variation is y = kx. Exam Tip: direct is y = kx, inverse is y = k/x.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Simplify (a^2 b^3)^2 x (a b^2)^(-1).",
+        "questionText": "Cost C varies directly as litres n. If 12 L cost Tsh 42,000, what is the cost of 20 L?",
         "options": [
-          { "id": "a", "text": "a^3 b^4", "isCorrect": true },
-          { "id": "b", "text": "a^5 b^8", "isCorrect": false },
-          { "id": "c", "text": "a^3 b^8", "isCorrect": false },
-          { "id": "d", "text": "a^4 b^4", "isCorrect": false }
+          {"id": "a", "text": "50,400", "isCorrect": false},
+          {"id": "b", "text": "70,000", "isCorrect": true},
+          {"id": "c", "text": "84,000", "isCorrect": false},
+          {"id": "d", "text": "60,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The price per litre is k = 42,000/12 = 3,500, so the cost of 20 L is 3,500 x 20 = Tsh 70,000. Exam Tip: k = price per litre = 3,500, then multiply by 20.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "9 workers dig a trench in 20 days. How many days do 12 workers take?",
+        "options": [
+          {"id": "a", "text": "15", "isCorrect": true},
+          {"id": "b", "text": "27", "isCorrect": false},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "(a^2 b^3)^2 = a^4 b^6 and (a b^2)^(-1) = a^(-1) b^(-2); multiplying gives a^(4-1) b^(6-2) = a^3 b^4.",
-        "difficulty": "hard"
+        "explanation": "This is inverse variation, so the total work is 9 x 20 = 180 worker-days. Dividing by 12 workers gives 180/12 = 15 days. Exam Tip: this is inverse variation; total is 180 worker-days divided by 12.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "y varies directly as the square of x, and y = 18 when x = 3. Find y when x = 5.",
+        "options": [
+          {"id": "a", "text": "30", "isCorrect": false},
+          {"id": "b", "text": "50", "isCorrect": true},
+          {"id": "c", "text": "45", "isCorrect": false},
+          {"id": "d", "text": "90", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Here y = kx², so 18 = k x 9 giving k = 2. When x = 5, y = 2 x 25 = 50. Exam Tip: y = kx²; k = 2 so 2 x 25 = 50.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Time t varies inversely as speed s. A journey takes 6 hours at 60 km/h. How long does it take at 90 km/h?",
+        "options": [
+          {"id": "a", "text": "9", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": false},
+          {"id": "c", "text": "4", "isCorrect": true},
+          {"id": "d", "text": "3", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The constant is k = t x s = 6 x 60 = 360, which is the distance. At 90 km/h the time is 360/90 = 4 hours. Exam Tip: k = t x s = 360 (the distance), so 360 divided by 90 = 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A tourist exchanges 200 USD at 1 USD = Tsh 2,480 with a flat commission of Tsh 6,000. How many shillings are received?",
+        "options": [
+          {"id": "a", "text": "496,000", "isCorrect": false},
+          {"id": "b", "text": "490,000", "isCorrect": true},
+          {"id": "c", "text": "502,000", "isCorrect": false},
+          {"id": "d", "text": "488,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "First 200 x 2,480 = Tsh 496,000, then subtract the flat commission of Tsh 6,000 to get 490,000. Option A ignores the commission. Exam Tip: option A is without commission; re-read for extra charges.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The result of 7^2 multiplied by 7^5 is 7 raised to the power _____.",
-        "options": [],
-        "correctAnswer": "7",
-        "explanation": "Add the exponents when bases are the same: 2 + 5 = 7.",
+        "questionText": "A cyclist travels 45 km in 3 hours. Rate = ______ km/h.",
+        "options": [
+          {"id": "a", "text": "15", "isCorrect": true},
+          {"id": "b", "text": "48", "isCorrect": false},
+          {"id": "c", "text": "135", "isCorrect": false},
+          {"id": "d", "text": "12", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The rate is distance divided by time, so 45 / 3 = 15 km/h. Exam Tip: a rate uses per, which means divide.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Any non-zero number raised to the power zero equals _____.",
-        "options": [],
-        "correctAnswer": "1",
-        "explanation": "By the zero index law, a^0 = 1 for any non-zero a.",
+        "questionText": "5 kg of sugar costs Tsh 14,000. Price per kg = Tsh ______.",
+        "options": [
+          {"id": "a", "text": "2,800", "isCorrect": true},
+          {"id": "b", "text": "3,500", "isCorrect": false},
+          {"id": "c", "text": "70,000", "isCorrect": false},
+          {"id": "d", "text": "2,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The price per kg is total cost divided by mass, so 14,000 / 5 = Tsh 2,800. Exam Tip: per kg means divide by the number of kilograms.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Written as a fraction, 2^(-3) equals _____.",
-        "options": [],
-        "correctAnswer": "1/8",
-        "explanation": "2^(-3) = 1/2^3 = 1/8.",
+        "questionText": "If 1 Euro = Tsh 2,700, then 15 Euros = Tsh ______.",
+        "options": [
+          {"id": "a", "text": "40,500", "isCorrect": true},
+          {"id": "b", "text": "18,000", "isCorrect": false},
+          {"id": "c", "text": "27,000", "isCorrect": false},
+          {"id": "d", "text": "45,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "To change Euros to shillings you multiply by the rate, so 15 x 2,700 = Tsh 40,500. Exam Tip: converting to shillings means multiply.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The value of 81^(1/2) is _____.",
-        "options": [],
-        "correctAnswer": "9",
-        "explanation": "81^(1/2) is the square root of 81, which is 9.",
+        "questionText": "If 1 USD = Tsh 2,500, then Tsh 50,000 = ______ USD.",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": true},
+          {"id": "b", "text": "25", "isCorrect": false},
+          {"id": "c", "text": "125", "isCorrect": false},
+          {"id": "d", "text": "2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "To change shillings to dollars you divide by the rate, so 50,000 / 2,500 = 20 USD. Exam Tip: shillings to dollars means divide.",
         "difficulty": "easy"
       },
       {
-        "questionText": "When sqrt(18) is written in its simplest surd form it equals _____ sqrt(2).",
-        "options": [],
-        "correctAnswer": "3",
-        "explanation": "sqrt(18) = sqrt(9 x 2) = 3 sqrt(2), so the coefficient is 3.",
-        "difficulty": "medium"
+        "questionText": "y varies directly as x with k = 6. When x = 9, y = ______.",
+        "options": [
+          {"id": "a", "text": "54", "isCorrect": true},
+          {"id": "b", "text": "15", "isCorrect": false},
+          {"id": "c", "text": "1.5", "isCorrect": false},
+          {"id": "d", "text": "63", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Direct variation is y = kx, so y = 6 x 9 = 54. Exam Tip: for direct variation multiply k by x.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The value of 8^(2/3) is _____.",
-        "options": [],
-        "correctAnswer": "4",
-        "explanation": "8^(2/3) = (cube root of 8)^2 = 2^2 = 4.",
-        "difficulty": "medium"
+        "questionText": "y varies inversely as x, and y = 10 when x = 4. Constant k = ______.",
+        "options": [
+          {"id": "a", "text": "40", "isCorrect": true},
+          {"id": "b", "text": "2.5", "isCorrect": false},
+          {"id": "c", "text": "14", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In inverse variation the constant is the product, so k = x x y = 4 x 10 = 40. Exam Tip: for inverse variation k = x times y.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The product sqrt(2) multiplied by sqrt(8) equals _____.",
-        "options": [],
-        "correctAnswer": "4",
-        "explanation": "sqrt(2) x sqrt(8) = sqrt(16) = 4.",
-        "difficulty": "medium"
+        "questionText": "y varies inversely as x with k = 36. When x = 12, y = ______.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "48", "isCorrect": false},
+          {"id": "c", "text": "432", "isCorrect": false},
+          {"id": "d", "text": "24", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Inverse variation is y = k/x, so y = 36 / 12 = 3. Exam Tip: for inverse variation divide k by x.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "After rationalizing, 3/sqrt(3) simplifies to _____.",
-        "options": [],
-        "correctAnswer": "sqrt(3)",
-        "explanation": "3/sqrt(3) = (3 sqrt(3))/3 = sqrt(3).",
-        "difficulty": "medium"
+        "questionText": "8 machines complete an order in 15 days. 10 machines take ______ days.",
+        "options": [
+          {"id": "a", "text": "12", "isCorrect": true},
+          {"id": "b", "text": "18", "isCorrect": false},
+          {"id": "c", "text": "19", "isCorrect": false},
+          {"id": "d", "text": "13", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The total work is 8 x 15 = 120 machine-days, so 10 machines take 120 / 10 = 12 days. Exam Tip: more machines means fewer days, so this is inverse variation.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Simplified, 4 sqrt(5) - sqrt(5) equals _____ sqrt(5).",
-        "options": [],
-        "correctAnswer": "3",
-        "explanation": "Subtract like surds: (4 - 1) sqrt(5) = 3 sqrt(5).",
-        "difficulty": "medium"
+        "questionText": "y varies directly as the square of x with k = 3. When x = 4, y = ______.",
+        "options": [
+          {"id": "a", "text": "48", "isCorrect": true},
+          {"id": "b", "text": "24", "isCorrect": false},
+          {"id": "c", "text": "144", "isCorrect": false},
+          {"id": "d", "text": "36", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Here y = kx², so y = 3 x 4² = 3 x 16 = 48. Exam Tip: square x first, then multiply by k.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Expressed in standard form, the number 45000 equals 4.5 x 10 raised to the power _____.",
-        "options": [],
-        "correctAnswer": "4",
-        "explanation": "45000 = 4.5 x 10^4 because the decimal point moves 4 places.",
-        "difficulty": "hard"
+        "questionText": "A pump empties at 25 L/min. Time to empty 600 litres = ______ minutes.",
+        "options": [
+          {"id": "a", "text": "24", "isCorrect": true},
+          {"id": "b", "text": "15,000", "isCorrect": false},
+          {"id": "c", "text": "30", "isCorrect": false},
+          {"id": "d", "text": "20", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Time is volume divided by rate, so 600 / 25 = 24 minutes. Exam Tip: divide the total volume by the rate to find the time.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "When multiplying powers with the same base, you add the exponents.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The first law of indices states that a^m x a^n = a^(m+n).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The expression 10^0 is equal to 0.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Any non-zero number to the power zero is 1, so 10^0 = 1, not 0.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A negative exponent means the number is negative, for example 2^(-2) = -4.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A negative exponent gives a reciprocal, not a negative number: 2^(-2) = 1/4.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The expression x^(1/2) is the same as the square root of x.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A fractional index of 1/2 represents the square root, so x^(1/2) = sqrt(x).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The surd sqrt(2) + sqrt(3) can be simplified to sqrt(5).",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Unlike surds cannot be combined; sqrt(2) + sqrt(3) is not equal to sqrt(5).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The product sqrt(a) multiplied by sqrt(b) equals sqrt(ab) for positive a and b.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the multiplication rule for surds: sqrt(a) x sqrt(b) = sqrt(ab).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Rationalizing a denominator means removing the surd (radical) from the denominator.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Rationalizing makes the denominator a rational number, free of surds.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The value of 25^(3/2) is 125.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "25^(3/2) = (sqrt(25))^3 = 5^3 = 125.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The expression (a^m)^n is equal to a^(m+n).",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "When raising a power to a power you multiply the exponents: (a^m)^n = a^(mn).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The conjugate of (sqrt(3) + 2) is (sqrt(3) - 2).",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The conjugate is formed by changing the sign between the terms, so it is sqrt(3) - 2.",
-        "difficulty": "hard"
-      }
+      {"questionText": "A rate compares two quantities of different kinds, such as distance and time.", "options": [], "correctAnswer": "true", "explanation": "A rate compares two quantities of different kinds, for example distance in km against time in hours to give km/h.", "difficulty": "easy"},
+      {"questionText": "In direct variation, when x doubles, y also doubles.", "options": [], "correctAnswer": "true", "explanation": "In direct variation y = kx, so if x doubles then y doubles as well because they change in the same ratio.", "difficulty": "easy"},
+      {"questionText": "In inverse variation, when x doubles, y also doubles.", "options": [], "correctAnswer": "false", "explanation": "In inverse variation y = k/x, so when x doubles y is halved, not doubled.", "difficulty": "easy"},
+      {"questionText": "If y = 5x, then y varies directly as x with constant 5.", "options": [], "correctAnswer": "true", "explanation": "The form y = kx is direct variation, so y = 5x means y varies directly as x with constant k = 5.", "difficulty": "easy"},
+      {"questionText": "Converting Tsh to USD requires multiplying by the exchange rate (Tsh per USD).", "options": [], "correctAnswer": "false", "explanation": "To change shillings to dollars you divide by the exchange rate, not multiply; multiplying converts dollars to shillings.", "difficulty": "easy"},
+      {"questionText": "If 4 taps fill a tank in 10 hours, then 8 taps fill it in 5 hours.", "options": [], "correctAnswer": "true", "explanation": "The total work is 4 x 10 = 40 tap-hours, so 8 taps take 40/8 = 5 hours, which is inverse variation.", "difficulty": "easy"},
+      {"questionText": "The graph of a direct variation y = kx is a straight line passing through the origin.", "options": [], "correctAnswer": "true", "explanation": "For y = kx, when x = 0 then y = 0, so the straight-line graph always passes through the origin.", "difficulty": "easy"},
+      {"questionText": "In y = k/x, the product x times y is constant.", "options": [], "correctAnswer": "true", "explanation": "Rearranging y = k/x gives xy = k, so the product of x and y stays constant.", "difficulty": "easy"},
+      {"questionText": "A speed of 72 km/h is the same as 20 metres per second.", "options": [], "correctAnswer": "true", "explanation": "To convert km/h to m/s you divide by 3.6, so 72 / 3.6 = 20 m/s.", "difficulty": "easy"},
+      {"questionText": "If y varies directly as x, the ratio y/x changes as x changes.", "options": [], "correctAnswer": "false", "explanation": "In direct variation y/x = k, which is constant, so the ratio does not change as x changes.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "First law of indices (multiplication).",
-        "options": [],
-        "correctAnswer": "a^m x a^n = a^(m+n)",
-        "explanation": "Powers with the same base are multiplied by adding the exponents.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Second law of indices (division).",
-        "options": [],
-        "correctAnswer": "a^m / a^n = a^(m-n)",
-        "explanation": "Powers with the same base are divided by subtracting the exponents.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Power of a power law.",
-        "options": [],
-        "correctAnswer": "(a^m)^n = a^(mn)",
-        "explanation": "Raising a power to another power multiplies the exponents.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Zero index rule.",
-        "options": [],
-        "correctAnswer": "a^0 = 1 (a not equal to 0)",
-        "explanation": "Any non-zero base raised to power zero equals one.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Negative index rule.",
-        "options": [],
-        "correctAnswer": "a^(-n) = 1/a^n",
-        "explanation": "A negative exponent equals the reciprocal of the positive power.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Fractional index meaning.",
-        "options": [],
-        "correctAnswer": "a^(m/n) = n-th root of (a^m)",
-        "explanation": "The denominator gives the root and the numerator gives the power.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is a surd?",
-        "options": [],
-        "correctAnswer": "An irrational root that cannot be simplified to a rational number",
-        "explanation": "For example sqrt(2) and sqrt(3) are surds because their values are non-terminating, non-repeating decimals.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Multiplication rule for surds.",
-        "options": [],
-        "correctAnswer": "sqrt(a) x sqrt(b) = sqrt(ab)",
-        "explanation": "The product of two square roots is the square root of the product.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How to rationalize a denominator of the form 1/sqrt(a).",
-        "options": [],
-        "correctAnswer": "Multiply numerator and denominator by sqrt(a)",
-        "explanation": "This removes the surd from the denominator, giving sqrt(a)/a.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How to rationalize a denominator containing two terms like 1/(a + sqrt(b)).",
-        "options": [],
-        "correctAnswer": "Multiply by the conjugate (a - sqrt(b))",
-        "explanation": "Using the conjugate applies the difference of two squares to clear the surd.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Rate", "options": [], "correctAnswer": "A comparison of two quantities of different kinds, such as distance per time or cost per item.", "explanation": "Rates are written with units like km/h or Tsh per kg to show what is being compared.", "difficulty": "easy"},
+      {"questionText": "Unit rate", "options": [], "correctAnswer": "A rate expressed as a quantity per one unit of another, such as price for one kilogram.", "explanation": "A unit rate is found by dividing so the second quantity equals one, for example Tsh per single litre.", "difficulty": "easy"},
+      {"questionText": "Average speed", "options": [], "correctAnswer": "The total distance travelled divided by the total time taken, usually measured in km/h.", "explanation": "For example 240 km in 3 hours gives an average speed of 80 km/h.", "difficulty": "easy"},
+      {"questionText": "Exchange rate", "options": [], "correctAnswer": "The value of one currency expressed in terms of another, such as 1 USD = Tsh 2,500.", "explanation": "The exchange rate is used to convert an amount of money from one currency into another.", "difficulty": "easy"},
+      {"questionText": "Currency conversion", "options": [], "correctAnswer": "Changing an amount of money from one currency into another using the exchange rate.", "explanation": "Multiply to convert a foreign currency into shillings and divide to convert shillings back.", "difficulty": "easy"},
+      {"questionText": "Direct variation", "options": [], "correctAnswer": "A relationship where y = kx, so y increases when x increases in the same ratio.", "explanation": "For example the cost of fuel varies directly as the number of litres bought.", "difficulty": "easy"},
+      {"questionText": "Inverse variation", "options": [], "correctAnswer": "A relationship where y = k/x, so y decreases when x increases and their product stays constant.", "explanation": "For example the number of days to finish a job decreases as more workers are added.", "difficulty": "easy"},
+      {"questionText": "Constant of variation (k)", "options": [], "correctAnswer": "The fixed number linking the variables, found as k = y/x for direct variation or k = xy for inverse variation.", "explanation": "Once k is known you can find any unknown value in the relationship.", "difficulty": "easy"},
+      {"questionText": "Direct-variation graph (straight line through the origin)", "options": [], "correctAnswer": "The graph of y = kx, which is a straight line passing through the origin with gradient k.", "explanation": "Because y = 0 when x = 0, the line always starts at the point (0, 0).", "difficulty": "easy"},
+      {"questionText": "Converting km/h to m/s (divide by 3.6)", "options": [], "correctAnswer": "To change a speed in km/h to m/s you divide by 3.6, since 1 km/h equals 1000 m per 3600 s.", "explanation": "For example 72 km/h divided by 3.6 gives 20 m/s.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Solve for x in the equation 2^(x+1) = 32.",
+        "questionText": "y varies directly as the square of x. When x = 2, y = 12. Find y when x = 5.",
         "options": [
-          { "id": "a", "text": "x = 3", "isCorrect": false },
-          { "id": "b", "text": "x = 4", "isCorrect": true },
-          { "id": "c", "text": "x = 5", "isCorrect": false },
-          { "id": "d", "text": "x = 6", "isCorrect": false }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Write 32 as 2^5, so 2^(x+1) = 2^5 gives x + 1 = 5, hence x = 4.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Simplify (sqrt(5) + sqrt(2))(sqrt(5) - sqrt(2)).",
-        "options": [
-          { "id": "a", "text": "3", "isCorrect": true },
-          { "id": "b", "text": "7", "isCorrect": false },
-          { "id": "c", "text": "sqrt(10)", "isCorrect": false },
-          { "id": "d", "text": "2 sqrt(10)", "isCorrect": false }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Using the difference of two squares: (sqrt(5))^2 - (sqrt(2))^2 = 5 - 2 = 3.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Given that 9^(2x) = 27, find the value of x.",
-        "options": [
-          { "id": "a", "text": "x = 1/2", "isCorrect": false },
-          { "id": "b", "text": "x = 2/3", "isCorrect": false },
-          { "id": "c", "text": "x = 3/4", "isCorrect": true },
-          { "id": "d", "text": "x = 3/2", "isCorrect": false }
+          {"id": "a", "text": "30", "isCorrect": false},
+          {"id": "b", "text": "60", "isCorrect": false},
+          {"id": "c", "text": "75", "isCorrect": true},
+          {"id": "d", "text": "120", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Write both sides with base 3: (3^2)^(2x) = 3^3 gives 3^(4x) = 3^3, so 4x = 3 and x = 3/4.",
+        "explanation": "Use y = kx²; substituting gives 12 = k x 4 so k = 3, then y = 3 x 25 = 75. Option A wrongly uses y = kx instead of kx², and option D squares at the wrong stage. Exam Tip: option A uses y = kx not kx²; option D squares at the wrong stage.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Food feeds 800 people for 45 days. After 15 days, 200 more people arrive. How many more days will the remaining food last?",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": false},
+          {"id": "b", "text": "24", "isCorrect": true},
+          {"id": "c", "text": "30", "isCorrect": false},
+          {"id": "d", "text": "36", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The total food is 800 x 45 = 36,000 person-days, and after 15 days 800 x 15 = 12,000 has been used, leaving 24,000. With the new population of 1,000 people, the food lasts 24,000 / 1,000 = 24 days. Exam Tip: subtract the 15 days already used before dividing.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A trader buys goods worth 600 USD at 1 USD = Tsh 2,400 and pays in shillings, then sells them for Tsh 1,800,000. What is the profit?",
+        "options": [
+          {"id": "a", "text": "Tsh 300,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 360,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 1,440,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 460,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The cost in shillings is 600 x 2,400 = Tsh 1,440,000, so the profit is 1,800,000 - 1,440,000 = Tsh 360,000. Option C is the cost, not the profit. Exam Tip: option C is the cost not the profit.",
         "difficulty": "hard"
       }
     ]

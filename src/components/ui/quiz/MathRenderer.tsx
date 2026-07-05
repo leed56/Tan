@@ -17,29 +17,120 @@ interface MathRendererProps {
 
 type Segment = { type: 'text' | 'inline' | 'block'; content: string };
 
-function parseSegments(raw: string): Segment[] {
+// Authored content carries JSON-escaping artifacts and markdown the app never
+// renders: literal \n sequences shown as text, \" escaped quotes, and
+// **bold**/*italic* asterisks. Strip them before display. The \n replacement
+// skips lowercase letters so LaTeX commands like \neq survive.
+export function normalizeContentText(raw: string): string {
+  return raw
+    .replace(/\\n(?![a-z])/g, '\n')
+    .replace(/\\"/g, '"')
+    .replace(/\\'/g, "'")
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/(^|[\s(])\*(\S(?:[^*\n]*\S)?)\*(?=$|[\s).,;:!?])/g, '$1$2');
+}
+
+// Content authors often wrap ordinary words in LaTeX text commands
+// ("\( \text{Mathema} \)") — unwrap them so readers see the word, not markup.
+const unwrapTextCommands = (s: string) =>
+  s.replace(/\\text(?:bf|it|rm|sf|tt)?\s*\{([^{}]*)\}/g, '$1');
+
+// After unwrapping, content with no math syntax left (just words/punctuation)
+// reads as prose — rendering it in the monospace math chip would be noise.
+const isProse = (s: string) => /[A-Za-z]/.test(s) && !/[\\^_{}=<>+|~]|\d\s*[*/]/.test(s);
+
+const SUPERSCRIPTS: Record<string, string> = {
+  '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
+  '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻',
+};
+const toSuperscript = (s: string) => s.split('').map((c) => SUPERSCRIPTS[c] ?? c).join('');
+const SUBSCRIPTS: Record<string, string> = {
+  '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄',
+  '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉',
+};
+const toSubscript = (s: string) => s.split('').map((c) => SUBSCRIPTS[c] ?? c).join('');
+
+// LaTeX operator commands → the symbol students should see.
+const LATEX_SYMBOLS: Array<[RegExp, string]> = [
+  [/\\times\b/g, '×'],
+  [/\\div\b/g, '÷'],
+  [/\\pm\b/g, '±'],
+  [/\\cdot\b/g, '·'],
+  [/\\(?:rightarrow|to)\b/g, '→'],
+  [/\\leq\b/g, '≤'],
+  [/\\geq\b/g, '≥'],
+  [/\\neq\b/g, '≠'],
+  [/\\approx\b/g, '≈'],
+  [/\\degree\b|\^\{?\\circ\}?/g, '°'],
+  [/\\%/g, '%'],
+  [/\\,|\\;|\\!|\\ /g, ' '],
+  [/\\left|\\right/g, ''],
+];
+
+// Question authors write math in plain ASCII ("sqrt(50)", "2^3") as often as
+// in LaTeX ("\sqrt{50}", "\frac{P R T}{100}") — render all of it as real math
+// symbols. Simple radicands drop their parentheses; compound ones keep them.
+const prettifyMath = (s: string) => {
+  let out = s;
+  for (const [re, sym] of LATEX_SYMBOLS) out = out.replace(re, sym);
+  out = out
+    // \frac{a}{b} → a/b, wrapping compound numerators/denominators in parens
+    .replace(/\\[dt]?frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, (_, num, den) => {
+      const wrap = (x: string) => (/^[A-Za-z0-9.°%]+$/.test(x.trim()) ? x.trim() : `(${x.trim()})`);
+      return `${wrap(num)}/${wrap(den)}`;
+    })
+    .replace(/\\sqrt\s*\{([^{}]*)\}|\bsqrt\s*\(([^()]*)\)/g, (_, a, b) => {
+      const x = (a ?? b).trim();
+      return '√' + (/^[A-Za-z0-9.]+$/.test(x) ? x : `(${x})`);
+    })
+    // exponents: x^2, x^{12} → superscripts
+    .replace(/\^\{(-?\d+)\}/g, (_, exp) => toSuperscript(exp))
+    .replace(/\^(-?\d+)\b/g, (_, exp) => toSuperscript(exp))
+    // subscripts: x_1, H_{2}O → x₁, H₂O
+    .replace(/_\{(\d+)\}/g, (_, sub) => toSubscript(sub))
+    .replace(/([A-Za-z])_(\d+)/g, (_, ch, sub) => ch + toSubscript(sub));
+  return out;
+};
+
+/** Strip \( \) / \[ \] delimiters and \text{...} wrappers for contexts that
+ *  need a plain string (e.g. "Correct answer: …" labels). */
+export function stripMathMarkup(raw: string): string {
+  return prettifyMath(unwrapTextCommands(normalizeContentText(raw).replace(/\\[[\]()]/g, '')))
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .trim();
+}
+
+function parseSegments(input: string): Segment[] {
+  const raw = normalizeContentText(input);
   const segments: Segment[] = [];
   // Match \[ … \] first (block), then \( … \) (inline)
   const pattern = /\\\[(.+?)\\\]|\\\((.+?)\\\)/gs;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
+  const pushText = (content: string) => segments.push({ type: 'text', content: prettifyMath(content) });
+  const pushMath = (type: 'block' | 'inline', rawContent: string) => {
+    const content = prettifyMath(unwrapTextCommands(rawContent).trim());
+    segments.push(isProse(content) ? { type: 'text', content } : { type, content });
+  };
+
   while ((match = pattern.exec(raw)) !== null) {
     if (match.index > lastIndex) {
-      segments.push({ type: 'text', content: raw.slice(lastIndex, match.index) });
+      pushText(raw.slice(lastIndex, match.index));
     }
     if (match[1] !== undefined) {
-      segments.push({ type: 'block', content: match[1].trim() });
+      pushMath('block', match[1]);
     } else if (match[2] !== undefined) {
-      segments.push({ type: 'inline', content: match[2].trim() });
+      pushMath('inline', match[2]);
     }
     lastIndex = pattern.lastIndex;
   }
 
   if (lastIndex < raw.length) {
-    segments.push({ type: 'text', content: raw.slice(lastIndex) });
+    pushText(raw.slice(lastIndex));
   }
-  return segments.length > 0 ? segments : [{ type: 'text', content: raw }];
+  return segments.length > 0 ? segments : [{ type: 'text', content: prettifyMath(raw) }];
 }
 
 export function MathRenderer({ text, style, displayMode = false }: MathRendererProps) {

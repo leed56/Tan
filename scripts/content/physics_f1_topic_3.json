@@ -1,730 +1,372 @@
 {
   "topicId": "form_1_physics_topic_3",
-  "topicName": "Force",
+  "topicName": "Force, Density and Pressure",
   "order": 3,
-  "description": "An introduction to force, its SI unit, types of forces, their effects, balanced and unbalanced forces, and the difference between mass and weight.",
+  "description": "An introduction to force and its effects, the meaning and calculation of density, floating and sinking, pressure in solids and liquids, and the relationship between mass and weight.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the SI unit of force?",
+        "questionText": "A force is best described as:",
         "options": [
-          {
-            "id": "a",
-            "text": "Kilogram",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Newton",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Joule",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Pascal",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Force is measured in newtons (N), named after Sir Isaac Newton.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A force is best defined as a:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Push or pull acting on a body",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Quantity of matter in a body",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Rate of doing work",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Distance moved by a body",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A push or a pull", "isCorrect": true},
+          {"id": "b", "text": "A type of energy", "isCorrect": false},
+          {"id": "c", "text": "A unit of length", "isCorrect": false},
+          {"id": "d", "text": "A colour", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A force is a push or a pull that one body exerts on another.",
+        "explanation": "A force acts on a body as a push or a pull, changing its motion or shape. Exam Tip: Force can start, stop, speed up, slow down, turn or change the shape of an object.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which type of force pulls objects towards the centre of the Earth?",
+        "questionText": "The SI unit of force is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Magnetic force",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Frictional force",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Gravitational force",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Tension",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Gravitational force is the pull of the Earth on objects, giving them weight.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The force that opposes the motion of two surfaces sliding over each other is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Upthrust",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Friction",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Tension",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Normal reaction",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Kilogram", "isCorrect": false},
+          {"id": "b", "text": "Newton", "isCorrect": true},
+          {"id": "c", "text": "Joule", "isCorrect": false},
+          {"id": "d", "text": "Pascal", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Friction is a force that opposes relative motion between surfaces in contact.",
+        "explanation": "The SI unit of force is the newton (N). Exam Tip: newton (N) = force; joule (J) = energy/work; pascal (Pa) = pressure.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The upward force exerted by a liquid on an object placed in it is called:",
+        "questionText": "Which of the following is an effect of a force?",
         "options": [
-          {
-            "id": "a",
-            "text": "Tension",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Friction",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Upthrust",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Weight",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Upthrust (buoyant force) acts upward on an object immersed in a fluid.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is NOT an effect of a force?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Changing the shape of a body",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Changing the speed of a moving body",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Changing the direction of motion",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Changing the colour of a body",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "A force can change shape, speed or direction, but it does not change colour.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When two or more forces acting on a body cancel out and produce no change in motion, the forces are said to be:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Unbalanced",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Balanced",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Frictional",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Magnetic",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Changing the colour of a body", "isCorrect": false},
+          {"id": "b", "text": "Changing the speed or shape of a body", "isCorrect": true},
+          {"id": "c", "text": "Changing the taste of a body", "isCorrect": false},
+          {"id": "d", "text": "Changing the smell of a body", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Balanced forces have a zero resultant, so the body stays at rest or moves at constant velocity.",
-        "difficulty": "medium"
+        "explanation": "A force can change a body's speed, direction or shape. Exam Tip: Effects include start/stop motion, change speed, direction and shape, not colour, taste or smell.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The pulling force transmitted through a stretched string or rope is called:",
+        "questionText": "The density of a substance is defined as:",
         "options": [
-          {
-            "id": "a",
-            "text": "Tension",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Upthrust",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Normal reaction",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Friction",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Mass x volume", "isCorrect": false},
+          {"id": "b", "text": "Mass / volume", "isCorrect": true},
+          {"id": "c", "text": "Volume / mass", "isCorrect": false},
+          {"id": "d", "text": "Mass + volume", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Density is defined as mass divided by volume. Exam Tip: density = mass / volume; option c is upside down.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of density is:",
+        "options": [
+          {"id": "a", "text": "kg", "isCorrect": false},
+          {"id": "b", "text": "kg/m3", "isCorrect": true},
+          {"id": "c", "text": "m3", "isCorrect": false},
+          {"id": "d", "text": "N", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Density = mass (kg) / volume (m3) = kg/m3. Exam Tip: use kg/m3 (or g/cm3); note the per cubic metre.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A block has a mass of 300 g and a volume of 100 cm3. Its density is:",
+        "options": [
+          {"id": "a", "text": "3 g/cm3", "isCorrect": true},
+          {"id": "b", "text": "30000 g/cm3", "isCorrect": false},
+          {"id": "c", "text": "0.33 g/cm3", "isCorrect": false},
+          {"id": "d", "text": "200 g/cm3", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Tension is the force carried along a string, rope or cable when it is pulled tight.",
+        "explanation": "Density = 300 / 100 = 3 g/cm3. Exam Tip: keep units consistent (g and cm3 give g/cm3); option c divides the wrong way.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object floats in water if its density is:",
+        "options": [
+          {"id": "a", "text": "Greater than that of water", "isCorrect": false},
+          {"id": "b", "text": "Less than that of water", "isCorrect": true},
+          {"id": "c", "text": "Equal to zero", "isCorrect": false},
+          {"id": "d", "text": "The same as its mass", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An object less dense than water floats. Exam Tip: less dense than the liquid floats, more dense sinks; water = 1 g/cm3.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which instrument is commonly used to measure force in the laboratory?",
+        "questionText": "An object sinks in water if its density is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Beam balance",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Measuring cylinder",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Spring balance",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Stopwatch",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "A spring balance measures force (such as weight) using the extension of a spring.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The weight of a body of mass 5 kg, taking g = 10 N/kg, is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "0.5 N",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "5 N",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "50 N",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "500 N",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Using W = mg = 5 kg x 10 N/kg = 50 N.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which statement about mass is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Mass changes from place to place",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Mass is measured in newtons",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Mass is the quantity of matter in a body and stays constant",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Mass is a force",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Mass is the amount of matter in a body, measured in kilograms, and does not change with location.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A magnet attracting an iron nail is an example of which type of force?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Gravitational force",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Magnetic force",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Frictional force",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Upthrust",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Less than that of water", "isCorrect": false},
+          {"id": "b", "text": "Greater than that of water", "isCorrect": true},
+          {"id": "c", "text": "Zero", "isCorrect": false},
+          {"id": "d", "text": "Equal to that of air", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Magnetic force is the attraction or repulsion exerted by a magnet on magnetic materials.",
+        "explanation": "An object denser than water sinks. Exam Tip: denser than water (greater than 1 g/cm3) sinks; a stone sinks while dry wood floats.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A book resting on a table experiences an upward force from the table surface. This force is called the:",
+        "questionText": "Pressure is defined as:",
         "options": [
-          {
-            "id": "a",
-            "text": "Tension",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Upthrust",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Normal reaction",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Weight",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The normal reaction is the force a surface exerts perpendicular to itself on an object resting on it.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When the forces acting on a body are unbalanced, the body will:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Remain at rest",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Move with a change in its motion (accelerate)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Move at constant velocity forever",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Lose all its mass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Force x area", "isCorrect": false},
+          {"id": "b", "text": "Force / area", "isCorrect": true},
+          {"id": "c", "text": "Area / force", "isCorrect": false},
+          {"id": "d", "text": "Mass / area", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Unbalanced forces have a non-zero resultant, which changes the body's speed or direction.",
+        "explanation": "Pressure is defined as force divided by area. Exam Tip: pressure = force / area; more area spreads the force, giving less pressure.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of pressure is the:",
+        "options": [
+          {"id": "a", "text": "Newton", "isCorrect": false},
+          {"id": "b", "text": "Pascal", "isCorrect": true},
+          {"id": "c", "text": "Joule", "isCorrect": false},
+          {"id": "d", "text": "Watt", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The SI unit of pressure is the pascal (Pa), equal to one newton per square metre. Exam Tip: 1 Pa = 1 N/m2; pascal = pressure, newton = force.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A force of 20 N acts on an area of 4 m2. The pressure produced is:",
+        "options": [
+          {"id": "a", "text": "80 Pa", "isCorrect": false},
+          {"id": "b", "text": "5 Pa", "isCorrect": true},
+          {"id": "c", "text": "24 Pa", "isCorrect": false},
+          {"id": "d", "text": "16 Pa", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Pressure = 20 / 4 = 5 Pa. Exam Tip: divide force by area; option a multiplies instead.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is a way of reducing friction between moving parts of a machine?",
+        "questionText": "A sharp knife cuts more easily than a blunt one because a sharp edge has:",
         "options": [
-          {
-            "id": "a",
-            "text": "Adding more weight on top",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Using rough surfaces",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Applying oil or grease (lubrication)",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Removing all the ball bearings",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A larger area, giving less pressure", "isCorrect": false},
+          {"id": "b", "text": "A smaller area, giving greater pressure", "isCorrect": true},
+          {"id": "c", "text": "More force always", "isCorrect": false},
+          {"id": "d", "text": "No effect on pressure", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Lubricants such as oil and grease form a thin layer that reduces friction between surfaces.",
+        "correctAnswer": "b",
+        "explanation": "A smaller area gives greater pressure for the same force. Exam Tip: small area = high pressure (knives, nails, pins); large area = low pressure.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why do heavy tractors have wide tyres?",
+        "options": [
+          {"id": "a", "text": "To increase the pressure on the soil", "isCorrect": false},
+          {"id": "b", "text": "To reduce the pressure on the soil so they do not sink", "isCorrect": true},
+          {"id": "c", "text": "To make them heavier", "isCorrect": false},
+          {"id": "d", "text": "To use more rubber", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Wide tyres have a large area, spreading the weight and reducing pressure. Exam Tip: large area = low pressure, which stops heavy vehicles sinking into soft ground.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The pressure in a liquid increases with:",
+        "options": [
+          {"id": "a", "text": "Decreasing depth", "isCorrect": false},
+          {"id": "b", "text": "Increasing depth", "isCorrect": true},
+          {"id": "c", "text": "The colour of the liquid", "isCorrect": false},
+          {"id": "d", "text": "The shape of the container only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Deeper liquid has more weight above it, so pressure increases with depth. Exam Tip: liquid pressure increases with depth and density; a dam is thicker at the bottom.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mass of a body is 5 kg and its weight on Earth (g = 10 N/kg) is:",
+        "options": [
+          {"id": "a", "text": "0.5 N", "isCorrect": false},
+          {"id": "b", "text": "50 N", "isCorrect": true},
+          {"id": "c", "text": "5 N", "isCorrect": false},
+          {"id": "d", "text": "15 N", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Weight = mass x g = 5 x 10 = 50 N. Exam Tip: weight (N) = mass (kg) x g (10 N/kg); mass is in kg while weight is a force in newtons.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A force is a push or a _____ acting on a body.",
-        "options": [],
-        "correctAnswer": "pull",
-        "explanation": "A force is defined as a push or a pull exerted on a body.",
+        "questionText": "A push or a pull acting on a body is called a ____.",
+        "options": [
+          {"id": "a", "text": "force", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "volume", "isCorrect": false},
+          {"id": "d", "text": "density", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A force is any push or pull that acts on a body. Exam Tip: Force changes motion or shape; its unit is the newton.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The SI unit of force is the _____.",
-        "options": [],
-        "correctAnswer": "newton",
-        "explanation": "Force is measured in newtons (N).",
+        "questionText": "The SI unit of force is the ____.",
+        "options": [
+          {"id": "a", "text": "newton", "isCorrect": true},
+          {"id": "b", "text": "joule", "isCorrect": false},
+          {"id": "c", "text": "pascal", "isCorrect": false},
+          {"id": "d", "text": "kilogram", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Force is measured in newtons. Exam Tip: Named after Isaac Newton; symbol N.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The force of attraction of the Earth on a body is called _____ force.",
-        "options": [],
-        "correctAnswer": "gravitational",
-        "explanation": "Gravitational force pulls bodies towards the centre of the Earth.",
+        "questionText": "Density is calculated using the formula density = mass / ____.",
+        "options": [
+          {"id": "a", "text": "volume", "isCorrect": true},
+          {"id": "b", "text": "area", "isCorrect": false},
+          {"id": "c", "text": "weight", "isCorrect": false},
+          {"id": "d", "text": "force", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Density equals mass divided by volume. Exam Tip: density = mass / volume; rearranged, mass = density x volume.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The force that opposes motion between two surfaces in contact is called _____.",
-        "options": [],
-        "correctAnswer": "friction",
-        "explanation": "Friction acts opposite to the direction of relative motion of surfaces.",
+        "questionText": "An object will float in a liquid if its density is ____ than that of the liquid.",
+        "options": [
+          {"id": "a", "text": "less", "isCorrect": true},
+          {"id": "b", "text": "greater", "isCorrect": false},
+          {"id": "c", "text": "equal", "isCorrect": false},
+          {"id": "d", "text": "double", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A body less dense than the liquid floats. Exam Tip: Less dense floats; more dense sinks.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The upward force that a liquid exerts on an object placed in it is called _____.",
-        "options": [],
-        "correctAnswer": "upthrust",
-        "explanation": "Upthrust is the buoyant force acting upward on an immersed object.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The weight of a body is calculated using the formula W = m _____.",
-        "options": [],
-        "correctAnswer": "g",
-        "explanation": "Weight equals mass times gravitational field strength, W = mg.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The quantity of matter contained in a body is called its _____.",
-        "options": [],
-        "correctAnswer": "mass",
-        "explanation": "Mass is the amount of matter in a body, measured in kilograms.",
+        "questionText": "Pressure is calculated using the formula pressure = force / ____.",
+        "options": [
+          {"id": "a", "text": "area", "isCorrect": true},
+          {"id": "b", "text": "volume", "isCorrect": false},
+          {"id": "c", "text": "mass", "isCorrect": false},
+          {"id": "d", "text": "depth", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Pressure equals force divided by area. Exam Tip: P = F/A; its unit is the pascal (N/m2).",
         "difficulty": "easy"
       },
       {
-        "questionText": "A body of mass 2 kg has a weight of _____ N when g = 10 N/kg.",
-        "options": [],
-        "correctAnswer": "20",
-        "explanation": "W = mg = 2 kg x 10 N/kg = 20 N.",
-        "difficulty": "medium"
+        "questionText": "The SI unit of pressure is the ____.",
+        "options": [
+          {"id": "a", "text": "pascal", "isCorrect": true},
+          {"id": "b", "text": "newton", "isCorrect": false},
+          {"id": "c", "text": "joule", "isCorrect": false},
+          {"id": "d", "text": "watt", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Pressure is measured in pascals. Exam Tip: 1 pascal = 1 newton per square metre.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "When the resultant of all forces on a body is zero, the forces are said to be _____.",
-        "options": [],
-        "correctAnswer": "balanced",
-        "explanation": "Balanced forces produce no change in the motion of a body.",
-        "difficulty": "medium"
+        "questionText": "The density of pure water is 1 g/cm3 or ____ kg/m3.",
+        "options": [
+          {"id": "a", "text": "1000", "isCorrect": true},
+          {"id": "b", "text": "100", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "1 g/cm3 is equal to 1000 kg/m3. Exam Tip: Water's density (1000 kg/m3) is the benchmark for floating and sinking.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The pulling force in a stretched rope or string is called _____.",
-        "options": [],
-        "correctAnswer": "tension",
-        "explanation": "Tension is the force transmitted along a taut rope or string.",
+        "questionText": "The pull of gravity on a body is called its ____.",
+        "options": [
+          {"id": "a", "text": "weight", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "density", "isCorrect": false},
+          {"id": "d", "text": "volume", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Weight is the pull of gravity on a body. Exam Tip: Weight = mass x g; weight is a force while mass is in kilograms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For the same force, a ____ area of contact produces a greater pressure.",
+        "options": [
+          {"id": "a", "text": "smaller", "isCorrect": true},
+          {"id": "b", "text": "larger", "isCorrect": false},
+          {"id": "c", "text": "wider", "isCorrect": false},
+          {"id": "d", "text": "flatter", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A smaller contact area concentrates the same force, giving greater pressure. Exam Tip: Small area = high pressure (knife edge, nail tip).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Pressure in a liquid increases as the ____ increases.",
+        "options": [
+          {"id": "a", "text": "depth", "isCorrect": true},
+          {"id": "b", "text": "colour", "isCorrect": false},
+          {"id": "c", "text": "width", "isCorrect": false},
+          {"id": "d", "text": "temperature", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The deeper you go, the greater the weight of liquid above, so pressure rises. Exam Tip: Liquid pressure depends on depth and density, not container shape.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Force is a push or a pull acting on a body.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "This is the basic definition of a force.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The SI unit of force is the kilogram.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The SI unit of force is the newton; the kilogram is the unit of mass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Friction always acts in the same direction as the motion of a body.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Friction acts opposite to the direction of motion, opposing it.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Weight is the force of gravity acting on a body.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Weight is the gravitational pull on a body, given by W = mg.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The mass of a body changes when it is taken from the Earth to the Moon.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Mass is constant everywhere; only weight changes because gravity differs.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Balanced forces acting on a stationary body keep it at rest.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "When forces are balanced the resultant is zero, so a body at rest stays at rest.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A force can change the shape of a body.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Forces can deform bodies, for example stretching a spring or squashing clay.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Lubrication increases friction between moving surfaces.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Lubrication reduces friction by separating the surfaces with a film of oil.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Upthrust acts in a downward direction on an object floating in water.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Upthrust acts upward, opposing the weight of the object.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Unbalanced forces can change the speed or direction of a moving body.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "An unbalanced force has a non-zero resultant, which causes acceleration.",
-        "difficulty": "medium"
-      }
+      {"questionText": "A force can change the shape, speed or direction of a body.", "options": [], "correctAnswer": "true", "explanation": "Changing shape, speed and direction are exactly the effects a force can produce. Exam Tip: These effects define what a force does.", "difficulty": "easy"},
+      {"questionText": "The SI unit of force is the joule.", "options": [], "correctAnswer": "false", "explanation": "Force is measured in newtons; the joule is the unit of energy. Exam Tip: Force = newton; energy = joule. The two are often swapped.", "difficulty": "easy"},
+      {"questionText": "Density is mass divided by volume.", "options": [], "correctAnswer": "true", "explanation": "Density is defined as mass divided by volume. Exam Tip: density = mass / volume.", "difficulty": "easy"},
+      {"questionText": "An object denser than water will float on water.", "options": [], "correctAnswer": "false", "explanation": "A body more dense than the liquid sinks rather than floats. Exam Tip: More dense than the liquid sinks.", "difficulty": "easy"},
+      {"questionText": "Pressure is force divided by area.", "options": [], "correctAnswer": "true", "explanation": "Pressure is defined as force divided by area. Exam Tip: pressure = force / area; unit pascal (N/m2).", "difficulty": "easy"},
+      {"questionText": "A sharp needle produces less pressure than a blunt one for the same force.", "options": [], "correctAnswer": "false", "explanation": "A sharp point has a very small area, so it produces greater pressure, not less. Exam Tip: Sharp point = small area = high pressure.", "difficulty": "easy"},
+      {"questionText": "Pressure in a liquid increases with depth.", "options": [], "correctAnswer": "true", "explanation": "The deeper the point, the greater the weight of liquid above and the higher the pressure. Exam Tip: Dams are thicker at the base because pressure is greatest at the bottom.", "difficulty": "easy"},
+      {"questionText": "The weight of a body is the same as its mass.", "options": [], "correctAnswer": "false", "explanation": "Mass measures the amount of matter in kilograms, while weight is the gravitational force in newtons. Exam Tip: Mass is in kg; weight is a force in newtons (weight = mass x g).", "difficulty": "easy"},
+      {"questionText": "Wide tyres reduce the pressure a vehicle exerts on the ground.", "options": [], "correctAnswer": "true", "explanation": "Wide tyres spread the weight over a larger area, lowering the pressure. Exam Tip: Large area = low pressure.", "difficulty": "easy"},
+      {"questionText": "The SI unit of density is kg/m3.", "options": [], "correctAnswer": "true", "explanation": "Density in SI units is kilograms per cubic metre. Exam Tip: kg/m3 (SI) or g/cm3; 1 g/cm3 = 1000 kg/m3.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Definition of force",
-        "options": [],
-        "correctAnswer": "A force is a push or a pull acting on a body.",
-        "explanation": "Force can start, stop or change the motion or shape of a body.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "SI unit of force",
-        "options": [],
-        "correctAnswer": "The newton (N).",
-        "explanation": "Force is measured in newtons using a spring balance.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Effects of a force",
-        "options": [],
-        "correctAnswer": "A force can change the shape, speed or direction of a body.",
-        "explanation": "It can also start a body moving or bring a moving body to rest.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Gravitational force",
-        "options": [],
-        "correctAnswer": "The pull of the Earth on a body, giving it weight.",
-        "explanation": "It always acts towards the centre of the Earth.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Friction",
-        "options": [],
-        "correctAnswer": "A force that opposes motion between surfaces in contact.",
-        "explanation": "It can be reduced by lubrication, smoothing or using ball bearings.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Upthrust",
-        "options": [],
-        "correctAnswer": "The upward force a fluid exerts on an object placed in it.",
-        "explanation": "Upthrust makes objects feel lighter in water and can cause floating.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Mass versus weight",
-        "options": [],
-        "correctAnswer": "Mass is the matter in a body (kg); weight is the force of gravity on it (N).",
-        "explanation": "Mass is constant, but weight varies with gravitational field strength.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for weight",
-        "options": [],
-        "correctAnswer": "W = mg, where g is about 10 N/kg on Earth.",
-        "explanation": "Weight in newtons equals mass in kilograms times g.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Balanced and unbalanced forces",
-        "options": [],
-        "correctAnswer": "Balanced forces give zero resultant; unbalanced forces give a non-zero resultant.",
-        "explanation": "Balanced forces cause no change in motion; unbalanced forces cause acceleration.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Types of forces",
-        "options": [],
-        "correctAnswer": "Gravitational, magnetic, frictional, tension, normal reaction and upthrust.",
-        "explanation": "These are common forces studied at Form 1 level.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Force", "options": [], "correctAnswer": "A push or a pull that acts on a body and can change its motion or shape.", "explanation": "A force can start, stop, speed up, slow down, turn or deform an object. Exam Tip: List the effects of a force clearly in exams.", "difficulty": "easy"},
+      {"questionText": "Newton", "options": [], "correctAnswer": "The SI unit of force, symbol N, named after Isaac Newton.", "explanation": "One newton is the force needed to accelerate 1 kg at 1 m/s2. Exam Tip: newton = force; do not confuse with joule (energy) or pascal (pressure).", "difficulty": "easy"},
+      {"questionText": "Effects of force", "options": [], "correctAnswer": "A force can start or stop motion, change speed or direction, and change the shape of a body.", "explanation": "These are the standard effects of a force and do not include colour, taste or smell. Exam Tip: Remember start/stop, change speed/direction, change shape.", "difficulty": "easy"},
+      {"questionText": "Density = mass / volume", "options": [], "correctAnswer": "Density is the mass of a substance divided by its volume.", "explanation": "It tells how much matter is packed into a given space. Exam Tip: Rearranged, mass = density x volume and volume = mass / density.", "difficulty": "easy"},
+      {"questionText": "kg/m3", "options": [], "correctAnswer": "The SI unit of density, kilograms per cubic metre.", "explanation": "Density can also be given in g/cm3, where 1 g/cm3 = 1000 kg/m3. Exam Tip: Keep mass and volume units consistent when calculating.", "difficulty": "easy"},
+      {"questionText": "Floating and sinking", "options": [], "correctAnswer": "An object floats if it is less dense than the liquid and sinks if it is more dense than the liquid.", "explanation": "Water has a density of 1 g/cm3 (1000 kg/m3), the benchmark for comparison. Exam Tip: Compare the object's density with the liquid's density.", "difficulty": "easy"},
+      {"questionText": "Pressure = force / area", "options": [], "correctAnswer": "Pressure is the force acting per unit area.", "explanation": "For the same force, a smaller area gives greater pressure. Exam Tip: P = F/A; spreading the force over more area lowers pressure.", "difficulty": "easy"},
+      {"questionText": "Pascal", "options": [], "correctAnswer": "The SI unit of pressure, equal to one newton per square metre (N/m2).", "explanation": "1 Pa = 1 N/m2. Exam Tip: pascal = pressure; do not confuse it with the newton.", "difficulty": "easy"},
+      {"questionText": "Weight = mass x g", "options": [], "correctAnswer": "Weight is the pull of gravity on a body, equal to mass multiplied by gravitational field strength g.", "explanation": "On Earth g is about 10 N/kg, so a 5 kg body weighs about 50 N. Exam Tip: Weight is a force in newtons; mass is in kilograms.", "difficulty": "easy"},
+      {"questionText": "Liquid pressure and depth", "options": [], "correctAnswer": "Pressure in a liquid increases with depth and with the density of the liquid.", "explanation": "Deeper points carry more weight of liquid above them, so pressure is greatest at the bottom. Exam Tip: A dam is built thicker at its base for this reason.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "An astronaut has a mass of 70 kg. Taking g = 10 N/kg on Earth and g = 1.6 N/kg on the Moon, what is the difference between the astronaut's weight on Earth and on the Moon?",
+        "questionText": "A rectangular metal block has a mass of 240 g and measures 4 cm x 3 cm x 2 cm. Calculate its density and state whether it floats or sinks in water (water = 1 g/cm3).",
         "options": [
-          {
-            "id": "a",
-            "text": "112 N",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "588 N",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "700 N",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "812 N",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Earth weight = 70 x 10 = 700 N; Moon weight = 70 x 1.6 = 112 N; difference = 700 - 112 = 588 N.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A box is pushed along the floor with a force of 50 N to the right, while friction of 20 N acts on it. What is the resultant force and its direction?",
-        "options": [
-          {
-            "id": "a",
-            "text": "70 N to the right",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "30 N to the left",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "30 N to the right",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "0 N (balanced)",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The forces are unbalanced; resultant = 50 N - 20 N = 30 N acting to the right, in the direction of the push.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A stone weighs 30 N in air but appears to weigh 18 N when fully immersed in water. What is the upthrust acting on the stone?",
-        "options": [
-          {
-            "id": "a",
-            "text": "12 N",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "18 N",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "30 N",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "48 N",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "10 g/cm3, it sinks", "isCorrect": true},
+          {"id": "b", "text": "10 g/cm3, it floats", "isCorrect": false},
+          {"id": "c", "text": "0.1 g/cm3, it sinks", "isCorrect": false},
+          {"id": "d", "text": "24 g/cm3, it floats", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Upthrust = weight in air - apparent weight in water = 30 N - 18 N = 12 N.",
+        "explanation": "Volume = 4 x 3 x 2 = 24 cm3, so density = 240 / 24 = 10 g/cm3. Being denser than water, the block sinks. Exam Tip: Find the volume first, then divide mass by volume, then compare with water.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A brick of weight 40 N rests on its largest face (contact area 0.02 m2) and then on its smallest face (contact area 0.005 m2). Compare the pressure in the two positions.",
+        "options": [
+          {"id": "a", "text": "Largest face: 2000 Pa; smallest face: 8000 Pa - pressure is greater on the smaller face", "isCorrect": true},
+          {"id": "b", "text": "Largest face: 8000 Pa; smallest face: 2000 Pa", "isCorrect": false},
+          {"id": "c", "text": "Both give 40 Pa", "isCorrect": false},
+          {"id": "d", "text": "Largest face: 2000 Pa; smallest face: 2000 Pa", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "On the largest face, pressure = 40 / 0.02 = 2000 Pa; on the smallest face, pressure = 40 / 0.005 = 8000 Pa, so the smaller area gives greater pressure. Exam Tip: The same weight on a smaller area gives greater pressure (P = F/A).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Oil has density 0.8 g/cm3 and water 1.0 g/cm3. A cork (0.24 g/cm3) and a metal nut (8 g/cm3) are dropped into a glass containing both liquids. Predict the arrangement from top to bottom.",
+        "options": [
+          {"id": "a", "text": "Cork floats on top, oil layer, then water, metal nut at the bottom", "isCorrect": true},
+          {"id": "b", "text": "Metal nut on top, water, oil, cork at the bottom", "isCorrect": false},
+          {"id": "c", "text": "Everything mixes evenly", "isCorrect": false},
+          {"id": "d", "text": "Cork sinks, metal floats", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Ordering the densities gives cork 0.24 < oil 0.8 < water 1.0 < metal 8, so the least dense floats highest and the most dense sinks lowest. Exam Tip: Arrange by density - least dense on top, most dense at the bottom.",
         "difficulty": "hard"
       }
     ]

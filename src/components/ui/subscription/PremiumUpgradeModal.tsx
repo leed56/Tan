@@ -23,12 +23,11 @@ interface Props {
 }
 
 const FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 export function PremiumUpgradeModal({
@@ -147,7 +146,7 @@ export function PremiumUpgradeModal({
           ))}
 
           <Text style={styles.footer}>
-            Cancel anytime. Mobile money, Google Play & WhatsApp payments accepted.
+            Cancel anytime. Mobile money & WhatsApp payments accepted.
           </Text>
         </ScrollView>
       </View>
@@ -158,9 +157,13 @@ export function PremiumUpgradeModal({
 const styles = StyleSheet.create({
   backdrop: {
     flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0.6)',
   },
   sheet: {
+    width: '100%',
+    maxWidth: 480,
     backgroundColor: COLORS.bgMid,
     borderTopLeftRadius: RADIUS['2xl'],
     borderTopRightRadius: RADIUS['2xl'],

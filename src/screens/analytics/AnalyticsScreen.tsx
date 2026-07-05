@@ -1,24 +1,71 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import Svg, { Rect, G } from 'react-native-svg';
+import { BarChart } from 'react-native-gifted-charts';
 import { ScreenContainer } from '../../components/ui/ScreenContainer';
+import { LoadingState } from '../../components/ui/LoadingState';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
-import { DEMO_ANALYTICS } from '../../services/analyticsService';
-import type { SubjectMastery } from '../../types';
+import { getUserAnalytics, DEMO_ANALYTICS, type AnalyticsPeriod } from '../../services/analyticsService';
+import { useAuthStore } from '../../store/authStore';
+import type { AnalyticsSummary, SubjectMastery } from '../../types';
 
-const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+type Period = AnalyticsPeriod;
 const BAR_MAX_HEIGHT = 80;
 
-type Period = '7d' | '30d' | '3m';
+// Bar labels — real weekday letters ending today for the 7-day view; the
+// longer views just mark the two ends of the window to avoid a cluttered axis.
+function getBarLabels(period: Period, count: number): string[] {
+  if (period === '7d') {
+    const letters = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+    return Array.from({ length: count }, (_, i) => {
+      const d = new Date();
+      d.setDate(d.getDate() - (count - 1 - i));
+      return letters[d.getDay()];
+    });
+  }
+  const spanLabel = period === '30d' ? '30d ago' : '90d ago';
+  return Array.from({ length: count }, (_, i) => {
+    if (i === 0) return spanLabel;
+    if (i === count - 1) return 'Today';
+    return '';
+  });
+}
 
 export function AnalyticsScreen() {
   const [period, setPeriod] = useState<Period>('7d');
-  // TODO: Phase 2 — fetch real analytics from Firestore by period
-  const data = DEMO_ANALYTICS;
+  const [data, setData] = useState<AnalyticsSummary>(DEMO_ANALYTICS);
+  const [loading, setLoading] = useState(true);
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
+  // True when the service fell back to DEMO_ANALYTICS (offline/unconfigured/
+  // query failure) — shown as a banner so sample stats aren't mistaken for real ones.
+  const [isDemoData, setIsDemoData] = useState(false);
+  const uid = useAuthStore((s) => s.user?.uid);
+
+  const load = useCallback(async () => {
+    if (!uid) {
+      setLoading(false);
+      return;
+    }
+    setLoading(true);
+    const result = await getUserAnalytics(uid, period);
+    setData(result);
+    setIsDemoData(result === DEMO_ANALYTICS);
+    setLoading(false);
+    setHasLoadedOnce(true);
+  }, [uid, period]);
+
+  useEffect(() => {
+    load();
+  }, [load]);
 
   const maxActivity = Math.max(...data.weeklyActivity, 1);
+  const barLabels = getBarLabels(period, data.weeklyActivity.length);
+  const barData = data.weeklyActivity.map((val, i) => ({
+    value: val,
+    label: barLabels[i],
+    frontColor: i === data.weeklyActivity.length - 1 ? COLORS.primary : `${COLORS.primary}50`,
+  }));
 
   const periods: { label: string; value: Period }[] = [
     { label: '7 Days', value: '7d' },
@@ -34,10 +81,25 @@ export function AnalyticsScreen() {
         <Text style={styles.subtitle}>Your learning insights</Text>
       </LinearGradient>
 
+      {loading && !hasLoadedOnce ? (
+        <LoadingState />
+      ) : (
       <ScrollView
         contentContainerStyle={styles.body}
         showsVerticalScrollIndicator={false}
       >
+        {isDemoData && (
+          <View style={styles.demoBanner}>
+            <Ionicons name="cloud-offline-outline" size={14} color={COLORS.warning} />
+            <Text style={styles.demoBannerText}>
+              Sample data — your real stats will appear when you're back online.
+            </Text>
+            <TouchableOpacity onPress={load}>
+              <Text style={styles.demoRetry}>Retry</Text>
+            </TouchableOpacity>
+          </View>
+        )}
+
         {/* Summary stats */}
         <View style={styles.statsGrid}>
           <StatCard
@@ -102,7 +164,7 @@ export function AnalyticsScreen() {
         {/* Activity chart */}
         <View style={styles.card}>
           <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Weekly Activity</Text>
+            <Text style={styles.sectionTitle}>Activity</Text>
             <View style={styles.periodPills}>
               {periods.map((p) => (
                 <TouchableOpacity
@@ -118,40 +180,25 @@ export function AnalyticsScreen() {
             </View>
           </View>
 
-          {/* Bar chart — placeholder, real chart in Phase 2 */}
-          {/* TODO: Phase 2 — replace with react-native-gifted-charts or Victory Native */}
           <View style={styles.chart}>
-            <Svg width="100%" height={BAR_MAX_HEIGHT + 24}>
-              <G>
-                {data.weeklyActivity.map((val, i) => {
-                  const barH = Math.max(4, (val / maxActivity) * BAR_MAX_HEIGHT);
-                  const barW = 28;
-                  const gap = 12;
-                  const totalW = data.weeklyActivity.length * (barW + gap) - gap;
-                  const startX = (300 - totalW) / 2;
-                  const x = startX + i * (barW + gap);
-                  return (
-                    <Rect
-                      key={i}
-                      x={x}
-                      y={BAR_MAX_HEIGHT - barH}
-                      width={barW}
-                      height={barH}
-                      rx={6}
-                      fill={i === 6 ? COLORS.primary : `${COLORS.primary}50`}
-                    />
-                  );
-                })}
-              </G>
-            </Svg>
-
-            <View style={styles.chartLabels}>
-              {DAYS.map((d, i) => (
-                <Text key={i} style={[styles.chartLabel, i === 6 && { color: COLORS.primary }]}>
-                  {d}
-                </Text>
-              ))}
-            </View>
+            <BarChart
+              data={barData}
+              barWidth={period === '7d' ? 22 : 14}
+              spacing={period === '7d' ? 16 : 8}
+              roundedTop
+              roundedBottom
+              hideRules
+              hideYAxisText
+              yAxisThickness={0}
+              xAxisThickness={0}
+              xAxisLabelTextStyle={styles.chartLabel}
+              noOfSections={3}
+              maxValue={maxActivity}
+              height={BAR_MAX_HEIGHT}
+              initialSpacing={8}
+              endSpacing={8}
+              disablePress
+            />
           </View>
         </View>
 
@@ -175,7 +222,8 @@ export function AnalyticsScreen() {
           ))}
         </View>
 
-        {/* AI insight placeholder */}
+        {/* AI insight placeholder — not wired to Gemini yet, so this stays an
+            honest "coming soon" rather than a fabricated personalized insight. */}
         <LinearGradient
           colors={['rgba(123,111,242,0.15)', 'rgba(123,111,242,0.05)']}
           style={styles.aiCard}
@@ -183,20 +231,17 @@ export function AnalyticsScreen() {
           <View style={styles.aiHeader}>
             <Text style={styles.aiIcon}>🤖</Text>
             <Text style={styles.aiTitle}>AI Learning Insight</Text>
-            {/* TODO: Phase 2 — generate personalized insight from Gemini */}
             <View style={styles.comingSoon}>
-              <Text style={styles.comingSoonText}>Phase 2</Text>
+              <Text style={styles.comingSoonText}>Coming Soon</Text>
             </View>
           </View>
           <Text style={styles.aiBody}>
-            Based on your performance, you're excelling at Mathematics but Chemistry needs
-            attention. Try 2 Chemistry packs today to boost your mastery above 50%.
-          </Text>
-          <Text style={styles.aiDisclaimer}>
-            ✦ AI-generated insights coming in Phase 2
+            Personalized study tips based on your accuracy and subject mastery will appear
+            here once AI insights are enabled.
           </Text>
         </LinearGradient>
       </ScrollView>
+      )}
     </ScreenContainer>
   );
 }
@@ -248,6 +293,14 @@ function MasteryRow({ mastery, isStrength }: { mastery: SubjectMastery; isStreng
 }
 
 const styles = StyleSheet.create({
+  demoBanner: {
+    flexDirection: 'row', alignItems: 'center', gap: 8,
+    backgroundColor: 'rgba(255,169,77,0.1)',
+    borderRadius: 10, borderWidth: 1, borderColor: 'rgba(255,169,77,0.3)',
+    paddingHorizontal: 12, paddingVertical: 8,
+  },
+  demoBannerText: { flex: 1, color: COLORS.warning, fontSize: TYPOGRAPHY.sizes.xs },
+  demoRetry: { color: COLORS.primary, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.bold },
   header: {
     paddingTop: SPACING.base,
     paddingHorizontal: SPACING.screenPadding,

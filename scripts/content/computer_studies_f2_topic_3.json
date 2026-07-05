@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "An organised collection of related data stored in a computer is called a _____.",
-        "options": [],
-        "correctAnswer": "database",
+        "options": [
+          {
+            "id": "a",
+            "text": "database",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "spreadsheet",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "directory",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "worksheet",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A database stores related data in an organised way for easy access and management.",
         "difficulty": "easy"
       },
       {
         "questionText": "The software used to create, manage and control a database is known as a _____.",
-        "options": [],
-        "correctAnswer": "DBMS",
+        "options": [
+          {
+            "id": "a",
+            "text": "URL",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "DBMS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ISP",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "GUI",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A Database Management System (DBMS) is the program that handles the creation and control of databases.",
         "difficulty": "easy"
       },
       {
         "questionText": "A single column in a table that holds one category of information is called a _____.",
-        "options": [],
-        "correctAnswer": "field",
+        "options": [
+          {
+            "id": "a",
+            "text": "record",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "table",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "field",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "query",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A field stores one specific type of data, such as 'Name' or 'Age', for every record.",
         "difficulty": "easy"
       },
       {
         "questionText": "A complete set of related fields about one item, shown as one row, is called a _____.",
-        "options": [],
-        "correctAnswer": "record",
+        "options": [
+          {
+            "id": "a",
+            "text": "field",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "query",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "form",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "record",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A record holds all the field values for a single item, usually as one row in the table.",
         "difficulty": "easy"
       },
       {
         "questionText": "A field that uniquely identifies each record in a table is known as the _____.",
-        "options": [],
-        "correctAnswer": "primary key",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary key",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "foreign key",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "index key",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sort key",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The primary key ensures that every record can be told apart because its value is unique.",
         "difficulty": "medium"
       },
       {
         "questionText": "A database object used to search for records that meet certain conditions is called a _____.",
-        "options": [],
-        "correctAnswer": "query",
+        "options": [
+          {
+            "id": "a",
+            "text": "form",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "query",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "report",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "macro",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A query retrieves only the records that match the conditions you set.",
         "difficulty": "medium"
       },
       {
         "questionText": "A database object that gives a friendly screen layout for entering data one record at a time is called a _____.",
-        "options": [],
-        "correctAnswer": "form",
+        "options": [
+          {
+            "id": "a",
+            "text": "query",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "report",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "form",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "macro",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A form makes data entry and viewing easier by showing one record in a clear layout.",
         "difficulty": "medium"
       },
       {
         "questionText": "A database object used to present data in a neat, printable format is called a _____.",
-        "options": [],
-        "correctAnswer": "report",
+        "options": [
+          {
+            "id": "a",
+            "text": "query",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "form",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "macro",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "report",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A report formats data so it can be printed or presented professionally.",
         "difficulty": "medium"
       },
       {
         "questionText": "The data type used to store monetary amounts such as prices is called _____.",
-        "options": [],
-        "correctAnswer": "currency",
+        "options": [
+          {
+            "id": "a",
+            "text": "currency",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "number",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "text",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "date/time",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Currency data type formats numbers as money, often including a currency symbol.",
         "difficulty": "medium"
       },
       {
         "questionText": "A popular Microsoft DBMS used to create databases on desktop computers is Microsoft _____.",
-        "options": [],
-        "correctAnswer": "Access",
+        "options": [
+          {
+            "id": "a",
+            "text": "Excel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Access",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Word",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Outlook",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Microsoft Access is a widely used desktop database management system.",
         "difficulty": "easy"
       }

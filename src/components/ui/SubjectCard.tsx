@@ -26,11 +26,6 @@ export function SubjectCard({ subject, onPress, isSelected = false, showProgress
         style={styles.iconBox}
       >
         <Ionicons name={subject.iconName as keyof typeof Ionicons.glyphMap} size={28} color="#fff" />
-        {subject.isPremium && (
-          <View style={styles.premiumBadge}>
-            <Ionicons name="lock-closed" size={10} color={COLORS.gold} />
-          </View>
-        )}
       </LinearGradient>
 
       <View style={styles.content}>
@@ -84,19 +79,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-  },
-  premiumBadge: {
-    position: 'absolute',
-    top: -4,
-    right: -4,
-    width: 18,
-    height: 18,
-    borderRadius: RADIUS.full,
-    backgroundColor: COLORS.bgDark,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: COLORS.gold,
   },
   content: { flex: 1, gap: SPACING.xs },
   name: {

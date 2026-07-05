@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_chemistry_topic_2",
+  "topicName": "Energy Changes in Chemical Reactions (Thermochemistry)",
+  "order": 2,
+  "description": "This topic explains how chemical reactions release or absorb heat energy, covering exothermic and endothermic changes, enthalpy and energy profiles, bond energies, types of heat of reaction, and simple calculations using Q = mc(delta T).",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "A reaction that releases heat energy to its surroundings is described as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "endothermic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "exothermic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "reversible",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "neutral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An exothermic reaction gives out heat to the surroundings, so the temperature of the surroundings rises.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In an endothermic reaction, the value of the enthalpy change (delta H) is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "positive",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "negative",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "always zero",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "equal to the activation energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Endothermic reactions absorb heat, so the products have more energy than the reactants and delta H is positive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is an everyday example of an exothermic process?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Melting of ice",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Photosynthesis in green plants",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Burning of charcoal",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Dissolving ammonium nitrate in water",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Combustion of charcoal releases heat and light, making it an exothermic reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "During a chemical reaction, breaking of chemical bonds in the reactants:",
+        "options": [
+          {
+            "id": "a",
+            "text": "releases energy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "absorbs energy",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "neither absorbs nor releases energy",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "destroys energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Bond breaking requires energy to be supplied, so it is an endothermic step that absorbs energy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The minimum amount of energy that colliding particles must have for a reaction to occur is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "enthalpy change",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "heat of solution",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "activation energy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "bond energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Activation energy is the minimum energy the reacting particles need to start a chemical reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In an energy profile diagram of an exothermic reaction, the energy of the products is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "higher than that of the reactants",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "lower than that of the reactants",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "equal to that of the reactants",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "always equal to the activation energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In exothermic reactions energy is given out, so products end up at a lower energy level than the reactants.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The heat change when one mole of a substance is completely burned in oxygen is called the heat of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "neutralisation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "solution",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "combustion",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "formation only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Heat of combustion is the heat released when one mole of a substance burns completely in excess oxygen.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The heat of neutralisation is defined as the heat change when:",
+        "options": [
+          {
+            "id": "a",
+            "text": "one mole of water is formed from an acid and a base",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "one mole of a salt dissolves in water",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "one mole of a fuel burns in air",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "one mole of a gas is liquefied",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Heat of neutralisation is the heat released when one mole of water is formed in the reaction between an acid and an alkali.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which equation is used to calculate the quantity of heat (Q) gained or lost by a substance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Q = m / (c x delta T)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Q = mc(delta T)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Q = c(delta T) / m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Q = m + c + delta T",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The heat absorbed or released is Q = mc(delta T), where m is mass, c is specific heat capacity and delta T is the temperature change.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Calculate the heat absorbed when 200 g of water is heated and its temperature rises by 10 degrees Celsius. (Specific heat capacity of water = 4.2 J/g degrees C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "840 J",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4200 J",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "8400 J",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "84000 J",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Q = mc(delta T) = 200 x 4.2 x 10 = 8400 J.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When ammonium nitrate dissolves in water the temperature of the solution falls. This shows that dissolving ammonium nitrate is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "exothermic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "endothermic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "a combustion reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "a neutralisation reaction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A temperature fall means heat is absorbed from the surroundings, so the process is endothermic with a positive delta H.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For an exothermic reaction, the correct relationship between the energy of bond breaking and bond making is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Energy absorbed in breaking bonds is greater than energy released in making bonds",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Energy released in making bonds is greater than energy absorbed in breaking bonds",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "No bonds are broken or made",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Energy absorbed equals energy released",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "If more energy is released when new bonds form than is absorbed when old bonds break, the reaction releases net heat and is exothermic.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The heat change when one mole of a substance dissolves in a large amount of water is the heat of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "combustion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "neutralisation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solution",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "vaporisation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Heat of solution is the heat absorbed or released when one mole of a substance dissolves in water to form a dilute solution.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is NOT a fuel that releases energy on combustion?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Charcoal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Natural gas (methane)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Petrol",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Carbon dioxide",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Carbon dioxide is a product of combustion and does not burn; the others are common fuels that release energy when burned.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a reaction profile diagram, the difference in energy between the reactants and the highest point of the curve represents the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "enthalpy change",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "activation energy",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "heat of solution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "specific heat capacity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The highest point of the curve is the energy of the activated complex; the energy gap from the reactants up to it is the activation energy.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A reaction that absorbs heat from the surroundings is called an _____ reaction.",
+        "options": [
+          {
+            "id": "a",
+            "text": "endothermic",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "exothermic",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "spontaneous",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reversible",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Endothermic reactions take in heat, causing the temperature of the surroundings to fall.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The symbol used to represent enthalpy change is _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "delta S",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "delta H",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "delta G",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "delta T",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Enthalpy change is written as delta H and is measured in kilojoules per mole (kJ/mol).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For an exothermic reaction the sign of delta H is _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "positive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "zero",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "negative",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "constant",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Exothermic reactions release energy, so the products have less energy than the reactants and delta H is negative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Breaking of chemical bonds _____ energy, while making of new bonds releases energy.",
+        "options": [
+          {
+            "id": "a",
+            "text": "releases",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "stores",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "conserves",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "absorbs",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Energy must be supplied to break bonds (endothermic), whereas forming bonds gives out energy (exothermic).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The minimum energy needed for a reaction to start is called the _____ energy.",
+        "options": [
+          {
+            "id": "a",
+            "text": "activation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "bond",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kinetic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ionisation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Activation energy is the energy barrier that reacting particles must overcome for a reaction to take place.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The heat released when one mole of a fuel is completely burned in oxygen is the heat of _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "formation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "combustion",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "solution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fusion",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Heat of combustion measures the energy released when one mole of a substance burns completely in excess oxygen.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the equation Q = mc(delta T), the symbol c stands for the _____ of the substance.",
+        "options": [
+          {
+            "id": "a",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "density",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "specific heat capacity",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "molar mass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "c is the specific heat capacity, the heat needed to raise the temperature of 1 g of a substance by 1 degree Celsius.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The heat change that occurs when an acid reacts with a base to form one mole of water is called the heat of _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "combustion",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "formation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "solution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "neutralisation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Heat of neutralisation is the heat released per mole of water formed in an acid-base reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Calculate Q for 50 g of water whose temperature rises by 20 degrees Celsius. Q = _____ J. (Specific heat capacity of water = 4.2 J/g degrees C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "4200",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "210",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "840",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Q = mc(delta T) = 50 x 4.2 x 20 = 4200 J.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On an energy profile diagram for an endothermic reaction, the products lie at a _____ energy level than the reactants.",
+        "options": [
+          {
+            "id": "a",
+            "text": "lower",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "higher",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "equal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "negative",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because energy is absorbed, the products of an endothermic reaction have more stored energy than the reactants.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "In an exothermic reaction, the temperature of the surroundings increases.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Exothermic reactions release heat to the surroundings, raising their temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A positive value of delta H indicates an exothermic reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A positive delta H indicates an endothermic reaction; exothermic reactions have a negative delta H.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Energy is absorbed when chemical bonds are broken.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Bond breaking is an endothermic process that requires energy input.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Photosynthesis is an example of an exothermic process.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Photosynthesis absorbs light energy to make glucose, so it is an endothermic process.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Activation energy is the minimum energy required for reacting particles to react.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Particles must possess at least the activation energy for a successful reaction to occur.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The heat of combustion is the heat absorbed when one mole of a substance burns in oxygen.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Combustion is exothermic, so heat of combustion is the heat released, not absorbed, when one mole burns.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the formula Q = mc(delta T), delta T is the change in temperature.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "delta T represents the difference between the final and initial temperatures of the substance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Burning of fuels such as kerosene and natural gas is an endothermic reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Combustion of fuels releases heat and light, so it is exothermic.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In an exothermic reaction, the products have lower energy than the reactants.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Energy is released, so the products end at a lower energy level than the reactants on the profile diagram.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The dissolving of some salts in water can cause the temperature of the solution to fall.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Endothermic dissolving, such as ammonium nitrate in water, absorbs heat and lowers the temperature.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Distinguish between an exothermic and an endothermic reaction.",
+        "options": [],
+        "correctAnswer": "An exothermic reaction releases heat to the surroundings (temperature rises, delta H negative), while an endothermic reaction absorbs heat from the surroundings (temperature falls, delta H positive).",
+        "explanation": "The key difference is the direction of heat flow and the sign of the enthalpy change.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is meant by enthalpy change (delta H) of a reaction?",
+        "options": [],
+        "correctAnswer": "Enthalpy change is the heat energy absorbed or released during a chemical reaction at constant pressure, measured in kJ/mol. It is negative for exothermic and positive for endothermic reactions.",
+        "explanation": "delta H expresses the energy difference between products and reactants.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain why bond breaking is endothermic while bond making is exothermic.",
+        "options": [],
+        "correctAnswer": "Breaking bonds requires energy to be supplied to pull atoms apart, so it absorbs energy (endothermic), while forming new bonds releases energy as atoms come together (exothermic).",
+        "explanation": "The overall delta H depends on the balance between energy absorbed in breaking and released in making bonds.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how a reaction profile diagram shows activation energy and enthalpy change.",
+        "options": [],
+        "correctAnswer": "The activation energy is the height from the reactant energy level up to the peak (activated complex), while the enthalpy change is the vertical difference between the energy levels of the reactants and the products.",
+        "explanation": "Profile diagrams visually represent the energy barrier and the net energy change of a reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define the heat of combustion.",
+        "options": [],
+        "correctAnswer": "The heat of combustion is the amount of heat energy released when one mole of a substance is completely burned in excess oxygen.",
+        "explanation": "It is always an exothermic quantity with a negative delta H.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define the heat of neutralisation.",
+        "options": [],
+        "correctAnswer": "The heat of neutralisation is the heat energy released when one mole of water is formed during the reaction between an acid and a base (alkali).",
+        "explanation": "Neutralisation is exothermic and the heat is given per mole of water produced.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define the heat of solution.",
+        "options": [],
+        "correctAnswer": "The heat of solution is the heat energy absorbed or released when one mole of a substance dissolves completely in a large amount of water to form a dilute solution.",
+        "explanation": "It can be exothermic or endothermic depending on the substance dissolved.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the formula used to calculate heat energy and explain each symbol.",
+        "options": [],
+        "correctAnswer": "Q = mc(delta T), where Q is the heat energy in joules, m is the mass in grams, c is the specific heat capacity in J/g degrees C, and delta T is the change in temperature in degrees Celsius.",
+        "explanation": "This formula links heat energy to mass, the nature of the substance, and the temperature change.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how the heat released by a fuel can be used to find its molar heat of combustion.",
+        "options": [],
+        "correctAnswer": "Use Q = mc(delta T) to calculate the heat absorbed by the water, then divide this heat by the number of moles of fuel burned to obtain the molar heat of combustion in kJ/mol.",
+        "explanation": "Calorimetry assumes the heat released by the fuel is transferred to the water being heated.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Give two everyday examples each of exothermic and endothermic processes.",
+        "options": [],
+        "correctAnswer": "Exothermic: burning of charcoal and neutralisation of an acid by a base. Endothermic: photosynthesis and dissolving ammonium nitrate in water.",
+        "explanation": "Recognising real-life examples helps relate thermochemistry to daily experiences.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "When 1 g of a fuel was burned, all the heat released was used to warm 100 g of water, raising its temperature from 25 degrees C to 65 degrees C. Calculate the heat released by the fuel. (Specific heat capacity of water = 4.2 J/g degrees C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "4200 J",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "16800 J",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "8400 J",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2730 J",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "delta T = 65 - 25 = 40 degrees C. Q = mc(delta T) = 100 x 4.2 x 40 = 16800 J.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Burning 0.2 mol of methane warmed 500 g of water from 20 degrees C to 60 degrees C. Calculate the molar heat of combustion of methane. (Specific heat capacity of water = 4.2 J/g degrees C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "84 kJ/mol",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "168 kJ/mol",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "420 kJ/mol",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "840 kJ/mol",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Q = mc(delta T) = 500 x 4.2 x 40 = 84000 J = 84 kJ. Molar heat = 84 kJ / 0.2 mol = 420 kJ/mol.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In a neutralisation experiment, mixing acid and alkali warmed 200 g of solution by 8 degrees C. If 0.05 mol of water was formed, calculate the heat of neutralisation. (Assume specific heat capacity of the solution = 4.2 J/g degrees C)",
+        "options": [
+          {
+            "id": "a",
+            "text": "67.2 kJ/mol",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "134.4 kJ/mol",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "6720 kJ/mol",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "33.6 kJ/mol",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Q = mc(delta T) = 200 x 4.2 x 8 = 6720 J = 6.72 kJ. Heat of neutralisation = 6.72 kJ / 0.05 mol = 134.4 kJ/mol.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

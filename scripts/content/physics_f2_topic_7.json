@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The bending of light as it travels from one transparent medium to another is called _____.",
-        "options": [],
-        "correctAnswer": "refraction",
+        "options": [
+          {
+            "id": "a",
+            "text": "refraction",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "reflection",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "diffraction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dispersion",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Refraction occurs because light changes speed when entering a new medium.",
         "difficulty": "easy"
       },
       {
         "questionText": "The imaginary line drawn perpendicular to the surface at the point where light strikes is called the _____.",
-        "options": [],
-        "correctAnswer": "normal",
+        "options": [
+          {
+            "id": "a",
+            "text": "tangent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "normal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "axis",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "boundary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Angles of incidence and refraction are always measured from the normal.",
         "difficulty": "easy"
       },
       {
         "questionText": "When light moves from a less dense to a denser medium, it bends _____ the normal.",
-        "options": [],
-        "correctAnswer": "towards",
+        "options": [
+          {
+            "id": "a",
+            "text": "away from",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "along",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "towards",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "parallel to",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Light slows down in the denser medium, causing it to bend towards the normal.",
         "difficulty": "easy"
       },
       {
         "questionText": "The constant ratio sin i / sin r for a given pair of media is known as the _____ of the second medium.",
-        "options": [],
-        "correctAnswer": "refractive index",
+        "options": [
+          {
+            "id": "a",
+            "text": "focal length",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "critical angle",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "optical density",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "refractive index",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "This relationship is expressed by Snell's law.",
         "difficulty": "medium"
       },
       {
         "questionText": "The law stating that sin i / sin r is constant is named after the scientist _____.",
-        "options": [],
-        "correctAnswer": "Snell",
+        "options": [
+          {
+            "id": "a",
+            "text": "Snell",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Newton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Huygens",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Fresnel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Snell's law is the second law of refraction.",
         "difficulty": "medium"
       },
       {
         "questionText": "The smallest angle of incidence in a denser medium for which total internal reflection just begins is called the _____ angle.",
-        "options": [],
-        "correctAnswer": "critical",
+        "options": [
+          {
+            "id": "a",
+            "text": "incident",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "critical",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "refracted",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reflected",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "At the critical angle the refracted ray grazes the surface at 90 degrees.",
         "difficulty": "medium"
       },
       {
         "questionText": "Optical fibres carry light signals over long distances using the principle of total internal _____.",
-        "options": [],
-        "correctAnswer": "reflection",
+        "options": [
+          {
+            "id": "a",
+            "text": "refraction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "absorption",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reflection",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "diffraction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Light bounces repeatedly inside the fibre by total internal reflection without escaping.",
         "difficulty": "medium"
       },
       {
         "questionText": "A convex lens is also called a _____ lens because it brings parallel rays together.",
-        "options": [],
-        "correctAnswer": "converging",
+        "options": [
+          {
+            "id": "a",
+            "text": "diverging",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "scattering",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reflecting",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "converging",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Convex lenses cause rays to converge to the principal focus.",
         "difficulty": "easy"
       },
       {
         "questionText": "The distance from the optical centre of a lens to its principal focus is called the _____ length.",
-        "options": [],
-        "correctAnswer": "focal",
+        "options": [
+          {
+            "id": "a",
+            "text": "focal",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "object",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "image",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "radial",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A shorter focal length means the lens is more powerful at bending light.",
         "difficulty": "medium"
       },
       {
         "questionText": "An image that cannot be formed on a screen because the rays only appear to come from it is described as a _____ image.",
-        "options": [],
-        "correctAnswer": "virtual",
+        "options": [
+          {
+            "id": "a",
+            "text": "real",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "virtual",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "inverted",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "diminished",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Virtual images, such as those from a magnifying glass, are seen by the eye but cannot be projected.",
         "difficulty": "medium"
       }

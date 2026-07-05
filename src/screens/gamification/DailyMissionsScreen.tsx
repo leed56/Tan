@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -35,6 +35,8 @@ export function DailyMissionsScreen({ navigation }: Props) {
   const completed = completedCount();
   const total = DAILY_MISSIONS.length;
   const allDone = completed === total;
+  const totalXp = DAILY_MISSIONS.reduce((sum, m) => sum + m.xpReward, 0);
+  const totalCoins = DAILY_MISSIONS.reduce((sum, m) => sum + m.coinsReward, 0);
 
   // Midnight reset countdown
   const now = new Date();
@@ -64,6 +66,13 @@ export function DailyMissionsScreen({ navigation }: Props) {
       </LinearGradient>
 
       <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
+        {loading && missions.length === 0 && (
+          <View style={styles.loadingRow}>
+            <ActivityIndicator color={COLORS.primary} />
+            <Text style={styles.loadingText}>Loading today's missions...</Text>
+          </View>
+        )}
+
         {allDone && (
           <LinearGradient colors={[`${COLORS.success}20`, COLORS.bgDark]} style={styles.allDoneBanner}>
             <Text style={styles.allDoneText}>🎉 All missions complete! Come back tomorrow.</Text>
@@ -90,10 +99,10 @@ export function DailyMissionsScreen({ navigation }: Props) {
           <Text style={styles.totalLabel}>Total daily rewards</Text>
           <View style={styles.totalRow}>
             <View style={styles.totalChip}>
-              <Text style={styles.totalChipText}>⚡ 150 XP</Text>
+              <Text style={styles.totalChipText}>⚡ {totalXp} XP</Text>
             </View>
             <View style={styles.totalChip}>
-              <Text style={styles.totalChipText}>🪙 40 Coins</Text>
+              <Text style={styles.totalChipText}>🪙 {totalCoins} Coins</Text>
             </View>
           </View>
         </View>
@@ -117,6 +126,8 @@ const styles = StyleSheet.create({
   },
   metaText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
   body: { paddingHorizontal: SPACING.screenPadding, paddingTop: SPACING.base, paddingBottom: SPACING['3xl'], gap: SPACING.md },
+  loadingRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: SPACING.sm, paddingVertical: SPACING.xl },
+  loadingText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
   allDoneBanner: {
     borderRadius: RADIUS.xl, padding: SPACING.base,
     alignItems: 'center',

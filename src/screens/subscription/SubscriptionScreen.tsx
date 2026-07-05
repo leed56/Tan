@@ -17,38 +17,43 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS, GRADIENTS } from '../../theme';
 import { SEED_PLANS, FEATURE_META } from '../../utils/seedPlans';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
-import type { FeatureKey, PlanId } from '../../types/subscription';
+import { openWhatsApp } from '../../utils/support';
+import type { FeatureKey, PlanId, BillingCycle } from '../../types/subscription';
 
 type Props = StackScreenProps<HomeStackParamList, 'SubscriptionScreen'>;
 
 const ALL_FEATURES: FeatureKey[] = [
+  'full_practice',
   'summary',
   'hoq',
   'exam_mode',
   'advanced_analytics',
-  'past_papers',
-  'ai_tutor',
 ];
 
 export function SubscriptionScreen({ navigation }: Props) {
   const { isPremium, subscription, enableDemo } = useSubscriptionStore();
   const [selectedPlanId, setSelectedPlanId] = useState<PlanId>('family');
+  const [billingCycle, setBillingCycle] = useState<BillingCycle>('monthly');
 
   const alreadyPremium = isPremium();
   const selectedPlan = SEED_PLANS.find((p) => p.id === selectedPlanId)!;
-
-  const handleContinue = () => {
-    navigation.navigate('PaymentMethodScreen', {
-      planId: selectedPlanId,
-      planTitle: selectedPlan.title,
-      priceMonthly: selectedPlan.priceMonthly,
-    });
-  };
+  const price = billingCycle === 'yearly' ? selectedPlan.priceYearly : selectedPlan.priceMonthly;
+  const yearlySavingsPct = Math.round(
+    100 - (selectedPlan.priceYearly / (selectedPlan.priceMonthly * 12)) * 100,
+  );
 
   const handleDemo = () => {
     enableDemo(selectedPlanId);
     navigation.goBack();
   };
+
+  // WhatsApp is currently the sole upgrade route (mobile money paused). Opens a
+  // chat pre-filled with the chosen plan so support can confirm payment and
+  // activate the account instantly.
+  const handleWhatsAppUpgrade = () =>
+    openWhatsApp(
+      `Hello! I'd like to upgrade to Soma *${selectedPlan.title}* (${billingCycle}) for ${price.toLocaleString()} TSH.`,
+    );
 
   return (
     <ScreenContainer padded={false}>
@@ -75,7 +80,7 @@ export function SubscriptionScreen({ navigation }: Props) {
           <View style={styles.activeBanner}>
             <Ionicons name="checkmark-circle" size={16} color={COLORS.success} />
             <Text style={styles.activeBannerText}>
-              Premium active · {subscription?.planId === 'family' ? 'Family Pack' : 'Single User'}
+              Premium active · {subscription?.planId === 'family' ? 'Family Pack' : 'Standard'}
             </Text>
           </View>
         )}
@@ -96,6 +101,28 @@ export function SubscriptionScreen({ navigation }: Props) {
           ))}
         </View>
 
+        {/* Billing cycle toggle */}
+        <Text style={styles.sectionLabel}>Billing Cycle</Text>
+        <View style={styles.cycleToggle}>
+          {(['monthly', 'yearly'] as BillingCycle[]).map((cycle) => (
+            <TouchableOpacity
+              key={cycle}
+              style={[styles.cycleOption, billingCycle === cycle && styles.cycleOptionActive]}
+              onPress={() => setBillingCycle(cycle)}
+              activeOpacity={0.8}
+            >
+              <Text style={[styles.cycleText, billingCycle === cycle && styles.cycleTextActive]}>
+                {cycle === 'monthly' ? 'Monthly' : 'Yearly'}
+              </Text>
+              {cycle === 'yearly' && (
+                <View style={styles.saveBadge}>
+                  <Text style={styles.saveBadgeText}>Save {yearlySavingsPct}%</Text>
+                </View>
+              )}
+            </TouchableOpacity>
+          ))}
+        </View>
+
         {/* Plan cards */}
         <Text style={styles.sectionLabel}>Choose a Plan</Text>
         {SEED_PLANS.map((plan) => (
@@ -103,25 +130,32 @@ export function SubscriptionScreen({ navigation }: Props) {
             key={plan.id}
             plan={plan}
             isSelected={selectedPlanId === plan.id}
+            billingCycle={billingCycle}
             onSelect={(id) => setSelectedPlanId(id as PlanId)}
           />
         ))}
 
-        {/* CTA */}
+        {/* WhatsApp is the only upgrade route for now — mobile money & Google
+            Play are paused. Our team confirms payment on chat and activates the
+            account instantly. */}
         <AppButton
-          title={`Subscribe · ${selectedPlan.priceMonthly.toLocaleString()} TSH/mo`}
-          onPress={handleContinue}
+          title={`Upgrade on WhatsApp · ${price.toLocaleString()} TSH/${billingCycle === 'yearly' ? 'yr' : 'mo'}`}
+          onPress={handleWhatsAppUpgrade}
           variant="primary"
-          icon="arrow-forward"
+          icon={<Ionicons name="logo-whatsapp" size={18} color={COLORS.textPrimary} />}
         />
 
-        {/* Demo mode */}
-        <TouchableOpacity onPress={handleDemo} style={styles.demoBtn}>
-          <Text style={styles.demoBtnText}>Try Demo Premium (dev only)</Text>
-        </TouchableOpacity>
+        {/* Demo mode — dev builds only; in release this granted full premium
+            (unlimited quizzes, HOQ, summaries) to any free user in one tap. */}
+        {__DEV__ && (
+          <TouchableOpacity onPress={handleDemo} style={styles.demoBtn}>
+            <Text style={styles.demoBtnText}>Try Demo Premium (dev only)</Text>
+          </TouchableOpacity>
+        )}
 
         <Text style={styles.footer}>
-          Cancel anytime. Payments via mobile money, Google Play, or WhatsApp.
+          Cancel anytime. Upgrade via WhatsApp — our support team activates your
+          account instantly.
         </Text>
       </ScrollView>
     </ScreenContainer>
@@ -199,6 +233,34 @@ const styles = StyleSheet.create({
     borderColor: COLORS.glassBorder,
   },
   divider: { height: 1, backgroundColor: COLORS.glassBorder, marginLeft: 52 },
+  cycleToggle: {
+    flexDirection: 'row',
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.glassBorder,
+    padding: 4,
+    gap: 4,
+  },
+  cycleOption: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    paddingVertical: SPACING.sm,
+    borderRadius: RADIUS.full,
+  },
+  cycleOptionActive: { backgroundColor: `${COLORS.primary}20` },
+  cycleText: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
+  cycleTextActive: { color: COLORS.primary },
+  saveBadge: {
+    backgroundColor: `${COLORS.gold}20`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.xs,
+    paddingVertical: 2,
+  },
+  saveBadgeText: { color: COLORS.gold, fontSize: 10, fontWeight: TYPOGRAPHY.weights.bold },
   demoBtn: {
     alignItems: 'center',
     paddingVertical: SPACING.sm,

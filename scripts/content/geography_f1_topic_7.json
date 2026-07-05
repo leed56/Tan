@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "All the living and non-living things that surround and affect an organism are together called the _____.",
-        "options": [],
-        "correctAnswer": "environment",
+        "options": [
+          {
+            "id": "a",
+            "text": "environment",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ecosystem",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "atmosphere",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "habitat",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The environment is made up of both biotic (living) and abiotic (non-living) components.",
         "difficulty": "easy"
       },
       {
         "questionText": "The living parts of the environment, such as plants and animals, are known as the _____ components.",
-        "options": [],
-        "correctAnswer": "biotic",
+        "options": [
+          {
+            "id": "a",
+            "text": "abiotic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "biotic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "physical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chemical",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Biotic components are the living organisms within an ecosystem.",
         "difficulty": "medium"
       },
       {
         "questionText": "The clearing of forests by cutting down trees without replacing them is called _____.",
-        "options": [],
-        "correctAnswer": "deforestation",
+        "options": [
+          {
+            "id": "a",
+            "text": "afforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "reforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "deforestation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "overgrazing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Deforestation reduces forest cover and leads to soil erosion and loss of habitats.",
         "difficulty": "easy"
       },
       {
         "questionText": "The process by which fertile land turns into dry, unproductive desert-like land is called _____.",
-        "options": [],
-        "correctAnswer": "desertification",
+        "options": [
+          {
+            "id": "a",
+            "text": "deforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "erosion",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "pollution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "desertification",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Desertification is caused by factors such as drought, deforestation and overgrazing.",
         "difficulty": "medium"
       },
       {
         "questionText": "The washing or blowing away of the top fertile layer of soil is known as soil _____.",
-        "options": [],
-        "correctAnswer": "erosion",
+        "options": [
+          {
+            "id": "a",
+            "text": "erosion",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "leaching",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "deposition",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "weathering",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Soil erosion removes the most fertile part of the soil and lowers crop yields.",
         "difficulty": "easy"
       },
       {
         "questionText": "Adding harmful substances such as smoke, chemicals or waste into the air, water or land is called _____.",
-        "options": [],
-        "correctAnswer": "pollution",
+        "options": [
+          {
+            "id": "a",
+            "text": "contamination",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pollution",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "erosion",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "degradation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Pollution makes the environment dirty and dangerous to living things.",
         "difficulty": "easy"
       },
       {
         "questionText": "Planting trees in an area that never had a forest before is called _____.",
-        "options": [],
-        "correctAnswer": "afforestation",
+        "options": [
+          {
+            "id": "a",
+            "text": "reforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "deforestation",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "afforestation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "overgrazing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Afforestation creates new forest cover and helps fight desertification.",
         "difficulty": "medium"
       },
       {
         "questionText": "Steps cut across a steep slope to slow down running water and reduce soil erosion are called _____.",
-        "options": [],
-        "correctAnswer": "terraces",
+        "options": [
+          {
+            "id": "a",
+            "text": "contours",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ridges",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "furrows",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "terraces",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Terracing is an important soil conservation method on hilly land.",
         "difficulty": "medium"
       },
       {
         "questionText": "The protection and wise use of natural resources so that they last for the future is called environmental _____.",
-        "options": [],
-        "correctAnswer": "conservation",
+        "options": [
+          {
+            "id": "a",
+            "text": "conservation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pollution",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "degradation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "exploitation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Conservation ensures resources remain available for present and future generations.",
         "difficulty": "easy"
       },
       {
         "questionText": "Keeping too many animals on a small area of land until the grass is destroyed is called _____.",
-        "options": [],
-        "correctAnswer": "overgrazing",
+        "options": [
+          {
+            "id": "a",
+            "text": "overstocking",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "overgrazing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "overfishing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "overcropping",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Overgrazing exposes the soil and contributes to erosion and desertification.",
         "difficulty": "medium"
       }

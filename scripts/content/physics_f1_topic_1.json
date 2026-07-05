@@ -2,729 +2,371 @@
   "topicId": "form_1_physics_topic_1",
   "topicName": "Introduction to Physics",
   "order": 1,
-  "description": "An introduction to the meaning and importance of physics, its branches, its links to other subjects and technology, and the careers it opens.",
+  "description": "An introduction to physics as the study of matter, energy and their interactions, its main branches, the people who practise it, and its everyday applications in medicine, communication, transport and energy.",
   "packs": {
     "mcq": [
       {
-        "questionText": "What is the best meaning of the word physics?",
+        "questionText": "What is the meaning of Physics?",
         "options": [
-          {
-            "id": "a",
-            "text": "The study of living things and their habits",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The study of matter, energy and how they interact",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "The study of chemical reactions only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The study of human behaviour",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The study of living things", "isCorrect": false},
+          {"id": "b", "text": "The study of matter, energy and their interactions", "isCorrect": true},
+          {"id": "c", "text": "The study of money", "isCorrect": false},
+          {"id": "d", "text": "The study of maps", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Physics is the branch of science that deals with matter, energy and the way they affect each other.",
+        "explanation": "Physics studies matter, energy and how they interact. Exam Tip: Keywords are matter, energy, interactions. Distinguish it from chemistry (matter and its changes) and biology (living things).",
         "difficulty": "easy"
       },
       {
-        "questionText": "Physics is best described as a branch of which wider field?",
+        "questionText": "The branch of physics that deals with motion and forces is called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Arts",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Commerce",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Science",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Languages",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Optics", "isCorrect": false},
+          {"id": "b", "text": "Mechanics", "isCorrect": true},
+          {"id": "c", "text": "Acoustics", "isCorrect": false},
+          {"id": "d", "text": "Electricity", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Motion and forces are studied in mechanics. Exam Tip: Mechanics covers motion, forces, work, energy and machines.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of physics that deals with light is called:",
+        "options": [
+          {"id": "a", "text": "Acoustics", "isCorrect": false},
+          {"id": "b", "text": "Optics", "isCorrect": true},
+          {"id": "c", "text": "Mechanics", "isCorrect": false},
+          {"id": "d", "text": "Thermodynamics", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The study of light is optics. Exam Tip: Optics is light while acoustics is sound.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of physics that deals with heat is called:",
+        "options": [
+          {"id": "a", "text": "Optics", "isCorrect": false},
+          {"id": "b", "text": "Thermodynamics", "isCorrect": true},
+          {"id": "c", "text": "Mechanics", "isCorrect": false},
+          {"id": "d", "text": "Acoustics", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Thermo means heat, so the study of heat is thermodynamics. Exam Tip: The prefix thermo always signals heat.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of physics that deals with sound is called:",
+        "options": [
+          {"id": "a", "text": "Optics", "isCorrect": false},
+          {"id": "b", "text": "Acoustics", "isCorrect": true},
+          {"id": "c", "text": "Electricity", "isCorrect": false},
+          {"id": "d", "text": "Mechanics", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The study of sound is acoustics. Exam Tip: A hall designed for good sound is said to have good acoustics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A person who studies or works in physics is called a:",
+        "options": [
+          {"id": "a", "text": "Chemist", "isCorrect": false},
+          {"id": "b", "text": "Physicist", "isCorrect": true},
+          {"id": "c", "text": "Biologist", "isCorrect": false},
+          {"id": "d", "text": "Geologist", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Physics gives us the word physicist. Exam Tip: Match the subject to the specialist: physics-physicist, chemistry-chemist, biology-biologist.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The use of X-rays to see broken bones in hospitals is an application of physics in the field of:",
+        "options": [
+          {"id": "a", "text": "Agriculture", "isCorrect": false},
+          {"id": "b", "text": "Medicine", "isCorrect": true},
+          {"id": "c", "text": "Music", "isCorrect": false},
+          {"id": "d", "text": "Sports", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "X-rays image the body to diagnose injury, which is the field of medicine. Exam Tip: Physics in medicine includes X-rays, ultrasound, lasers and radiotherapy.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is NOT a branch of physics?",
+        "options": [
+          {"id": "a", "text": "Mechanics", "isCorrect": false},
+          {"id": "b", "text": "Optics", "isCorrect": false},
+          {"id": "c", "text": "Botany", "isCorrect": true},
+          {"id": "d", "text": "Electricity", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Physics is one of the natural sciences, alongside chemistry and biology.",
+        "explanation": "Botany is the study of plants, which is a branch of biology. Exam Tip: Anything about living things is not a branch of physics.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Mobile phones, radios and televisions are products of physics applied in:",
+        "options": [
+          {"id": "a", "text": "Cooking", "isCorrect": false},
+          {"id": "b", "text": "Communication", "isCorrect": true},
+          {"id": "c", "text": "Farming", "isCorrect": false},
+          {"id": "d", "text": "Painting", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "These devices send and receive information, which is communication. Exam Tip: Physics drives communication technology through radio waves, satellites and fibre optics.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The branch of physics that deals with electric charges and currents is:",
+        "options": [
+          {"id": "a", "text": "Optics", "isCorrect": false},
+          {"id": "b", "text": "Electricity", "isCorrect": true},
+          {"id": "c", "text": "Mechanics", "isCorrect": false},
+          {"id": "d", "text": "Acoustics", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Electric charges and currents are studied in electricity. Exam Tip: Electricity and magnetism are closely linked in electromagnetism.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which branch of physics deals with the study of heat and temperature?",
+        "questionText": "How does physics contribute to transport?",
         "options": [
-          {
-            "id": "a",
-            "text": "Optics",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Thermodynamics (heat)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Mechanics",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Acoustics",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "By writing songs", "isCorrect": false},
+          {"id": "b", "text": "By designing engines, vehicles and aeroplanes", "isCorrect": true},
+          {"id": "c", "text": "By cooking food", "isCorrect": false},
+          {"id": "d", "text": "By growing crops", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Thermodynamics, also called heat physics, studies heat, temperature and the transfer of thermal energy.",
+        "explanation": "Physics principles of motion, force and energy are used to design engines, cars and planes. Exam Tip: Physics in transport means motion, forces and energy applied to vehicles.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The branch of physics that studies light is called?",
+        "questionText": "The branch of physics that deals with the structure of the atom and its nucleus is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Optics",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Electronics",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Mechanics",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Magnetism",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Mechanics", "isCorrect": false},
+          {"id": "b", "text": "Atomic (nuclear) physics", "isCorrect": true},
+          {"id": "c", "text": "Optics", "isCorrect": false},
+          {"id": "d", "text": "Acoustics", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Optics is the study of light, including reflection, refraction and how lenses and mirrors work.",
+        "correctAnswer": "b",
+        "explanation": "The atom and its nucleus are studied in atomic, or nuclear, physics. Exam Tip: Nuclear physics gives us nuclear energy and medical radiation treatment.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which branch of physics is concerned with the motion of objects and the forces acting on them?",
+        "questionText": "Which of the following shows the relationship between physics and engineering?",
         "options": [
-          {
-            "id": "a",
-            "text": "Acoustics",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Optics",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Mechanics",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Electricity",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Mechanics deals with motion, forces, energy and the equilibrium of bodies.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The study of sound is a branch of physics known as?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Acoustics",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Optics",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Thermodynamics",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Atomic physics",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Acoustics is the branch of physics that deals with the production, transmission and properties of sound.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is an application of physics in the home?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cooking food using a charcoal stove",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Using an electric iron to press clothes",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Writing a letter with a pen",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Counting money",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Studying the life cycle of a frog", "isCorrect": false},
+          {"id": "b", "text": "Using physics principles to build bridges and machines", "isCorrect": true},
+          {"id": "c", "text": "Naming the parts of a plant", "isCorrect": false},
+          {"id": "d", "text": "Writing a poem", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "An electric iron uses electrical energy converted into heat, which is an everyday application of physics.",
+        "explanation": "Engineering applies physics such as forces, materials and energy to build structures and machines. Exam Tip: Physics is the foundation of engineering, technology and architecture.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Physics is closely related to mathematics mainly because?",
+        "questionText": "One importance of studying physics is that it:",
         "options": [
-          {
-            "id": "a",
-            "text": "Mathematics is used to measure and calculate physical quantities",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Mathematics has no formulas",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Physics never uses numbers",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They are studied in different schools",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Helps us understand and explain natural phenomena", "isCorrect": true},
+          {"id": "b", "text": "Teaches us to cook only", "isCorrect": false},
+          {"id": "c", "text": "Has no use in real life", "isCorrect": false},
+          {"id": "d", "text": "Is only about numbers", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Physics uses mathematics to express laws, perform calculations and analyse measurements.",
+        "explanation": "Physics explains natural phenomena and develops technology. Exam Tip: Its importance covers understanding nature, technology, medicine, transport, communication and energy.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which career is most directly based on knowledge of physics?",
+        "questionText": "The generation of electricity at hydro-power stations is an application of physics that provides society with:",
         "options": [
-          {
-            "id": "a",
-            "text": "Engineer",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Lawyer",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Historian",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Translator",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Engineering relies heavily on physics to design machines, structures and electrical systems.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "How does physics relate to technology?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Physics and technology are completely unrelated",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Technology applies the discoveries of physics to make useful devices",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Technology destroys the laws of physics",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Physics copies technology without changing it",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Food", "isCorrect": false},
+          {"id": "b", "text": "Energy (electric power)", "isCorrect": true},
+          {"id": "c", "text": "Clothes", "isCorrect": false},
+          {"id": "d", "text": "Water for drinking only", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Technology uses the principles discovered in physics to invent and improve machines and devices.",
+        "explanation": "A power station produces electricity, which is a form of energy. Exam Tip: Physics contributes to energy production through hydro, solar, wind and nuclear sources.",
         "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following shows physics applied in communication?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Mobile phones sending signals by radio waves",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Drinking clean water",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Eating fruit",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Sleeping at night",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Mobile phones rely on electromagnetic (radio) waves, a topic studied in physics.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A doctor using an X-ray machine to view a broken bone is benefiting from physics through which field?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Agriculture",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Medical physics",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Astronomy",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Geography",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Medical physics applies physics, such as X-rays and ultrasound, to diagnose and treat illness.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The branch of physics that studies electricity and magnetism is called?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Electromagnetism",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Optics",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Acoustics",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Mechanics",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Electromagnetism studies electric charges, currents, magnets and the link between them.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why is the study of physics important to a nation like Tanzania?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It helps develop industry, energy and technology for progress",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "It only helps people pass exams",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "It has no use outside the classroom",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "It replaces the need for any other subject",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Physics supports industrial growth, electricity generation and modern technology that drive national development.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which set lists three natural sciences that physics works closely with?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Chemistry, biology and geography",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "History, music and art",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Kiswahili, English and French",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Cookery, sports and drama",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Physics is closely linked with other sciences such as chemistry, biology and geography.",
-        "difficulty": "hard"
       }
     ],
     "fib": [
       {
-        "questionText": "Physics is the study of matter and _____.",
-        "options": [],
-        "correctAnswer": "energy",
-        "explanation": "Physics deals with matter, energy and how they interact.",
+        "questionText": "Physics is the study of matter, ____ and their interactions.",
+        "options": [
+          {"id": "a", "text": "energy", "isCorrect": true},
+          {"id": "b", "text": "force", "isCorrect": false},
+          {"id": "c", "text": "light", "isCorrect": false},
+          {"id": "d", "text": "money", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Matter plus energy plus their interactions is the definition of physics. Exam Tip: Matter + energy + interactions equals the definition of physics.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of physics that deals with light is called _____.",
-        "options": [],
-        "correctAnswer": "optics",
-        "explanation": "Optics studies light and how it behaves with mirrors and lenses.",
+        "questionText": "The branch of physics that deals with motion and forces is called ____.",
+        "options": [
+          {"id": "a", "text": "mechanics", "isCorrect": true},
+          {"id": "b", "text": "optics", "isCorrect": false},
+          {"id": "c", "text": "acoustics", "isCorrect": false},
+          {"id": "d", "text": "electricity", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Motion and forces belong to mechanics. Exam Tip: Mechanics is the largest branch studied at O-level.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of physics that deals with motion and forces is called _____.",
-        "options": [],
-        "correctAnswer": "mechanics",
-        "explanation": "Mechanics studies the motion of objects and the forces acting on them.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The study of sound in physics is known as _____.",
-        "options": [],
-        "correctAnswer": "acoustics",
-        "explanation": "Acoustics is the branch of physics that deals with sound.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The subject that physics depends on most for calculations is _____.",
-        "options": [],
-        "correctAnswer": "mathematics",
-        "explanation": "Mathematics provides the tools for measuring and calculating physical quantities.",
+        "questionText": "A person who studies physics is called a ____.",
+        "options": [
+          {"id": "a", "text": "physicist", "isCorrect": true},
+          {"id": "b", "text": "chemist", "isCorrect": false},
+          {"id": "c", "text": "biologist", "isCorrect": false},
+          {"id": "d", "text": "geologist", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The specialist in physics is a physicist. Exam Tip: The -ist ending names the specialist.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The application of the discoveries of physics to make useful devices is called _____.",
-        "options": [],
-        "correctAnswer": "technology",
-        "explanation": "Technology turns physics principles into practical machines and tools.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A person who designs machines, roads and bridges using physics is called an _____.",
-        "options": [],
-        "correctAnswer": "engineer",
-        "explanation": "Engineering is a major career that applies physics to design and build things.",
+        "questionText": "The branch of physics that deals with the study of light is called ____.",
+        "options": [
+          {"id": "a", "text": "optics", "isCorrect": true},
+          {"id": "b", "text": "acoustics", "isCorrect": false},
+          {"id": "c", "text": "mechanics", "isCorrect": false},
+          {"id": "d", "text": "thermodynamics", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The study of light is optics. Exam Tip: Optics covers reflection, refraction, lenses and mirrors.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of physics that studies heat and temperature is called _____.",
-        "options": [],
-        "correctAnswer": "thermodynamics",
-        "explanation": "Thermodynamics, or heat physics, deals with heat and temperature.",
-        "difficulty": "hard"
+        "questionText": "In hospitals, physics is applied through the use of ____ to take images of bones inside the body.",
+        "options": [
+          {"id": "a", "text": "X-rays", "isCorrect": true},
+          {"id": "b", "text": "sound waves", "isCorrect": false},
+          {"id": "c", "text": "magnets", "isCorrect": false},
+          {"id": "d", "text": "mirrors", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "X-rays pass through the body to image bones. Exam Tip: X-rays, ultrasound and radiotherapy are physics applications in medicine.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The use of X-rays and ultrasound in hospitals is an example of physics applied in the field of _____.",
-        "options": [],
-        "correctAnswer": "medicine",
-        "explanation": "Medical physics applies physics to diagnose and treat diseases.",
-        "difficulty": "hard"
+        "questionText": "The branch of physics that deals with sound is called ____.",
+        "options": [
+          {"id": "a", "text": "acoustics", "isCorrect": true},
+          {"id": "b", "text": "optics", "isCorrect": false},
+          {"id": "c", "text": "electricity", "isCorrect": false},
+          {"id": "d", "text": "mechanics", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The study of sound is acoustics. Exam Tip: Acoustics is used to design concert halls and speakers.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The branch of physics that studies electricity and magnetism together is called _____.",
-        "options": [],
-        "correctAnswer": "electromagnetism",
-        "explanation": "Electromagnetism links the study of electric charges and magnets.",
-        "difficulty": "medium"
+        "questionText": "The branch of physics that deals with heat and temperature is called ____.",
+        "options": [
+          {"id": "a", "text": "thermodynamics", "isCorrect": true},
+          {"id": "b", "text": "mechanics", "isCorrect": false},
+          {"id": "c", "text": "optics", "isCorrect": false},
+          {"id": "d", "text": "acoustics", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Heat and temperature belong to thermodynamics. Exam Tip: Heat is studied in more detail in Form Four.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The study of electric charges and the currents they produce is a branch of physics called ____.",
+        "options": [
+          {"id": "a", "text": "electricity", "isCorrect": true},
+          {"id": "b", "text": "magnetism", "isCorrect": false},
+          {"id": "c", "text": "mechanics", "isCorrect": false},
+          {"id": "d", "text": "optics", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Electric charges and currents are studied in electricity. Exam Tip: Electricity powers lighting, machines and electronics.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Physics is applied in the field of ____ to design vehicles, aeroplanes and engines.",
+        "options": [
+          {"id": "a", "text": "transport", "isCorrect": true},
+          {"id": "b", "text": "agriculture", "isCorrect": false},
+          {"id": "c", "text": "medicine", "isCorrect": false},
+          {"id": "d", "text": "music", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Vehicles, aeroplanes and engines are part of transport. Exam Tip: Motion, force and energy make transport possible.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of physics dealing with the atom and its nucleus is called ____ physics.",
+        "options": [
+          {"id": "a", "text": "atomic", "isCorrect": true},
+          {"id": "b", "text": "mechanical", "isCorrect": false},
+          {"id": "c", "text": "optical", "isCorrect": false},
+          {"id": "d", "text": "chemical", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The atom and its nucleus belong to atomic, or nuclear, physics. Exam Tip: Nuclear physics gives nuclear power and cancer treatment.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Physics is the study of matter and energy.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "By definition, physics studies matter, energy and their interactions.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Optics is the branch of physics that deals with sound.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Optics deals with light; sound is studied in acoustics.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Physics is one of the natural sciences.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Physics, chemistry and biology are the main natural sciences.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Physics has no connection with mathematics.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Physics relies on mathematics for measurement and calculation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Technology applies the discoveries of physics to make useful devices.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Technology puts physics principles into practical use.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Engineering is a career that does not use physics at all.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Engineering depends heavily on physics to design structures and machines.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Mechanics is the branch of physics concerned with motion and forces.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Mechanics studies how objects move and the forces that act on them.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Studying physics can only help people who want to become teachers.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Physics opens many careers such as engineering, medicine, aviation and research.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Knowledge of physics helps in understanding how household appliances such as fans and irons work.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Many home appliances are built on physics principles like heat and electricity.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Thermodynamics is the branch of physics that deals with heat and temperature.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Thermodynamics, or heat physics, studies heat and temperature changes.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Physics is the study of matter, energy and their interactions.", "options": [], "correctAnswer": "true", "explanation": "This is the standard definition of physics. Exam Tip: Memorise this definition.", "difficulty": "easy"},
+      {"questionText": "Optics is the branch of physics that deals with sound.", "options": [], "correctAnswer": "false", "explanation": "Optics deals with light, while sound is dealt with by acoustics. Exam Tip: Optics is light and acoustics is sound.", "difficulty": "easy"},
+      {"questionText": "Physics has no application in daily life.", "options": [], "correctAnswer": "false", "explanation": "Physics is applied in medicine, transport, communication and energy every day. Exam Tip: Statements claiming no application are almost always false.", "difficulty": "easy"},
+      {"questionText": "A person who specialises in physics is called a physicist.", "options": [], "correctAnswer": "true", "explanation": "The specialist in physics is a physicist. Exam Tip: Watch out for reversed pairs of terms.", "difficulty": "easy"},
+      {"questionText": "Mechanics is the branch of physics that deals with motion and forces.", "options": [], "correctAnswer": "true", "explanation": "Mechanics studies motion, forces, work and energy. Exam Tip: Mechanics is a major part of the Form One syllabus.", "difficulty": "easy"},
+      {"questionText": "Physics is completely unrelated to technology.", "options": [], "correctAnswer": "false", "explanation": "Physics is the foundation of modern technology. Exam Tip: Physics underlies devices, machines and communication technology.", "difficulty": "easy"},
+      {"questionText": "X-rays used in hospitals are an application of physics in medicine.", "options": [], "correctAnswer": "true", "explanation": "X-rays are a physics-based tool used to diagnose patients. Exam Tip: Medical physics includes X-rays, ultrasound, lasers and radiotherapy.", "difficulty": "easy"},
+      {"questionText": "Acoustics is the study of light.", "options": [], "correctAnswer": "false", "explanation": "Acoustics is the study of sound, while light is studied in optics. Exam Tip: Acoustics is sound and optics is light.", "difficulty": "easy"},
+      {"questionText": "Physics contributes to communication and transport in modern society.", "options": [], "correctAnswer": "true", "explanation": "Physics makes radios, phones, vehicles and aeroplanes possible. Exam Tip: Remember communication, transport, energy, medicine and industry.", "difficulty": "easy"},
+      {"questionText": "Electricity is one of the branches of physics.", "options": [], "correctAnswer": "true", "explanation": "Electricity is a recognised branch of physics. Exam Tip: The branches include mechanics, heat, light, sound, electricity, magnetism and atomic physics.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Meaning of physics",
-        "options": [],
-        "correctAnswer": "Physics is the science of matter, energy and their interactions.",
-        "explanation": "It is one of the natural sciences.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Branch: Mechanics",
-        "options": [],
-        "correctAnswer": "Mechanics studies motion and forces.",
-        "explanation": "It includes the motion and equilibrium of bodies.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Branch: Optics",
-        "options": [],
-        "correctAnswer": "Optics studies light.",
-        "explanation": "It covers reflection, refraction, mirrors and lenses.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Branch: Acoustics",
-        "options": [],
-        "correctAnswer": "Acoustics studies sound.",
-        "explanation": "It deals with how sound is produced and travels.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Branch: Thermodynamics",
-        "options": [],
-        "correctAnswer": "Thermodynamics studies heat and temperature.",
-        "explanation": "Also called heat physics.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Branch: Electromagnetism",
-        "options": [],
-        "correctAnswer": "Electromagnetism studies electricity and magnetism.",
-        "explanation": "It links electric currents and magnets.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Physics and mathematics",
-        "options": [],
-        "correctAnswer": "Mathematics is the main tool used for calculations in physics.",
-        "explanation": "Laws of physics are written using mathematics.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Physics and technology",
-        "options": [],
-        "correctAnswer": "Technology applies physics to make useful devices.",
-        "explanation": "Phones, engines and computers come from physics.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Careers from physics",
-        "options": [],
-        "correctAnswer": "Physics leads to careers like engineering, medicine, aviation and research.",
-        "explanation": "Many technical jobs require physics.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Importance of physics in daily life",
-        "options": [],
-        "correctAnswer": "Physics helps us understand and use everyday tools, energy and machines.",
-        "explanation": "It supports industry and national development.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Physics", "options": [], "correctAnswer": "The study of matter, energy and their interactions.", "explanation": "Physics differs from chemistry, which studies matter and its changes, and biology, which studies living things. Exam Tip: Learn the keywords matter, energy and interactions.", "difficulty": "easy"},
+      {"questionText": "Matter and energy", "options": [], "correctAnswer": "Matter is anything that has mass and occupies space, while energy is the capacity to do work.", "explanation": "Matter and energy are the two central quantities that physics investigates. Exam Tip: Matter has mass and volume, and energy makes things happen.", "difficulty": "easy"},
+      {"questionText": "Mechanics", "options": [], "correctAnswer": "The branch of physics that deals with motion, forces, work and energy.", "explanation": "Mechanics is the largest branch studied at O-level. Exam Tip: Think motion and forces whenever you see mechanics.", "difficulty": "easy"},
+      {"questionText": "Optics", "options": [], "correctAnswer": "The branch of physics that deals with light, including reflection, refraction, lenses and mirrors.", "explanation": "Optics explains how we see and how mirrors and lenses work. Exam Tip: Optics is light, so do not confuse it with acoustics.", "difficulty": "easy"},
+      {"questionText": "Acoustics", "options": [], "correctAnswer": "The branch of physics that deals with sound.", "explanation": "Acoustics is used to design concert halls and speakers. Exam Tip: A room with good sound is said to have good acoustics.", "difficulty": "easy"},
+      {"questionText": "Thermodynamics", "options": [], "correctAnswer": "The branch of physics that deals with heat and temperature.", "explanation": "Thermodynamics explains how heat flows and how engines work. Exam Tip: The prefix thermo always signals heat.", "difficulty": "easy"},
+      {"questionText": "Electricity", "options": [], "correctAnswer": "The branch of physics that deals with electric charges and the currents they produce.", "explanation": "Electricity powers lighting, machines and electronics. Exam Tip: Electricity and magnetism combine in electromagnetism.", "difficulty": "easy"},
+      {"questionText": "Atomic physics", "options": [], "correctAnswer": "The branch of physics that deals with the structure of the atom and its nucleus.", "explanation": "Atomic, or nuclear, physics gives us nuclear power and cancer treatment. Exam Tip: Think atom and nucleus when you see atomic physics.", "difficulty": "easy"},
+      {"questionText": "Physicist", "options": [], "correctAnswer": "A person who studies or works in physics.", "explanation": "The -ist ending names the specialist in a subject. Exam Tip: physics-physicist, chemistry-chemist, biology-biologist.", "difficulty": "easy"},
+      {"questionText": "Applications of physics", "options": [], "correctAnswer": "The use of physics in real life, such as in medicine, communication, transport and energy production.", "explanation": "Physics is the foundation of technology used in everyday society. Exam Tip: Remember medicine, communication, transport and energy as key application areas.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A student notices that a metal spoon left in hot tea becomes warm at the handle. Which branch of physics best explains this observation?",
+        "questionText": "Match each branch of physics with the phenomenon it studies: (i) Mechanics (ii) Optics (iii) Acoustics (iv) Electricity; P a torch producing light; Q a moving football; R current flowing in a wire; S an echo in a valley.",
         "options": [
-          {
-            "id": "a",
-            "text": "Optics",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Thermodynamics (heat)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Acoustics",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Magnetism",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "i-Q, ii-P, iii-S, iv-R", "isCorrect": true},
+          {"id": "b", "text": "i-P, ii-Q, iii-R, iv-S", "isCorrect": false},
+          {"id": "c", "text": "i-R, ii-S, iii-P, iv-Q", "isCorrect": false},
+          {"id": "d", "text": "i-S, ii-R, iii-Q, iv-P", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Heat is conducted along the spoon, which is explained by thermodynamics, the study of heat transfer.",
+        "correctAnswer": "a",
+        "explanation": "Mechanics is motion so it pairs with the football (Q), optics is light so it pairs with the torch (P), acoustics is sound so it pairs with the echo (S), and electricity is current in the wire (R). Exam Tip: Pair the ones you are surest of first, then eliminate the rest.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A village wants to generate its own electricity from a flowing river to run lights and a maize mill. Which combination of physics knowledge is MOST useful for this project?",
+        "questionText": "A hospital uses machines that produce X-ray images, laser beams for surgery, and radiation to treat cancer. Which statement BEST describes what this shows?",
         "options": [
-          {
-            "id": "a",
-            "text": "Acoustics and optics only",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Mechanics (water motion) and electromagnetism (generating current)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Sound and light only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "History and geography",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Physics has no role in hospitals", "isCorrect": false},
+          {"id": "b", "text": "Physics is applied in medicine to diagnose and treat patients", "isCorrect": true},
+          {"id": "c", "text": "These machines use biology only", "isCorrect": false},
+          {"id": "d", "text": "These are examples of chemistry only", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Moving water (mechanics) turns a generator that uses electromagnetism to produce electricity, so both branches are essential.",
+        "explanation": "X-rays, lasers and radiation are physics-based and are used to diagnose and treat patients, so this is physics applied in medicine. Exam Tip: Imaging means diagnosis and radiation or laser means treatment, and the field is medicine.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A doctor uses an ultrasound scan to check an unborn baby without surgery. This shows that physics is important to society mainly because it?",
+        "questionText": "A new town: engineers build a bridge, install electric power lines, set up a mobile phone network, and design the road for vehicles. Which combination correctly links each activity to its physics branch?",
         "options": [
-          {
-            "id": "a",
-            "text": "Makes hospitals more expensive",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Provides safe technology that improves health care",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Removes the need for doctors",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Has no effect on people's lives",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Bridge-mechanics, power lines-electricity, phone network-electricity/communication, road for vehicles-mechanics", "isCorrect": true},
+          {"id": "b", "text": "Bridge-optics, power lines-acoustics, phone network-mechanics, road-optics", "isCorrect": false},
+          {"id": "c", "text": "All use acoustics only", "isCorrect": false},
+          {"id": "d", "text": "None of them uses physics", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Ultrasound is a physics-based medical tool that allows safe, non-surgical examination, showing how physics improves health care.",
+        "correctAnswer": "a",
+        "explanation": "A bridge bears forces (mechanics), power lines carry current (electricity), the phone network uses electromagnetic waves (electricity and communication), and the road carries moving vehicles (mechanics). Exam Tip: A real project uses several branches at once, with structures and vehicles using mechanics and power and signals using electricity.",
         "difficulty": "hard"
       }
     ]

@@ -9,13 +9,28 @@ import {
 } from 'firebase/firestore';
 import { getStorage, FirebaseStorage } from 'firebase/storage';
 
+// `isFirebaseConfigured()` (checked by every service before touching
+// Firestore/Auth/Storage) reads this exact env var, so leaving it unset is
+// the supported way to run the app fully offline against local seed data —
+// e.g. for local dev/testing without real credentials. But the Firebase SDK
+// itself validates `apiKey`'s format at `getAuth()`/`initializeApp()` time and
+// throws synchronously on an empty string, which would crash the whole app
+// before a single screen renders. Substitute a syntactically-valid dummy
+// config in that case so the SDK objects construct cleanly; every real
+// network call downstream still stays gated on the real env var below.
+// Treat .env.example's placeholder values ("your_project_id" etc.) the same as
+// no credentials — a copied-but-unedited .env would otherwise pass this check
+// and point every request at a nonexistent project.
+const _envProjectId = process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '';
+const hasRealCredentials = _envProjectId.length > 0 && !_envProjectId.startsWith('your_');
+
 const firebaseConfig = {
-  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY ?? '',
-  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN ?? '',
-  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '',
-  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET ?? '',
-  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID ?? '',
-  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID ?? '',
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || 'demo-api-key',
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || 'demo.firebaseapp.com',
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID || 'demo-project',
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET || 'demo.appspot.com',
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '000000000000',
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || '1:000000000000:web:0000000000000000000000',
   measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID ?? '',
 };
 
@@ -42,13 +57,79 @@ storage = getStorage(app);
 // `isSignedIn()` security rules. The phone/OTP flow is still demo-only, so until
 // real auth is wired we sign in anonymously; otherwise every curriculum read is
 // permission-denied and the app silently falls back to local seed data.
-if (firebaseConfig.projectId) {
+// Gated on the real env var, not `firebaseConfig.projectId` (which is always
+// truthy now thanks to the dummy fallback above).
+// Resolves once a real auth session exists. Data fetches must await this —
+// at cold start the anonymous sign-in and the first screen's Firestore reads
+// race, and a query that fires before the token exists is rejected by the
+// `isSignedIn()` rules, silently falling back to (and caching) seed data even
+// though the project, credentials, and content are all fine.
+let _authReadyResolve: (() => void) | null = null;
+const _authReady = new Promise<void>((resolve) => {
+  _authReadyResolve = resolve;
+});
+
+if (hasRealCredentials) {
   onAuthStateChanged(auth, (user) => {
-    if (!user) signInAnonymously(auth).catch(() => {});
+    if (user) {
+      _authReadyResolve?.();
+      _authReadyResolve = null;
+    } else {
+      signInAnonymously(auth).catch(() => {});
+    }
   });
 }
 
+/**
+ * Await before any Firestore read/write that runs near app start. Resolves
+ * immediately when Firebase isn't configured or a user already exists;
+ * otherwise waits for the startup sign-in, capped by `timeoutMs` so a broken
+ * auth config degrades to the seed fallback instead of hanging forever.
+ */
+export function waitForAuthReady(timeoutMs = 8000): Promise<void> {
+  if (!hasRealCredentials || auth.currentUser) return Promise.resolve();
+  return Promise.race([
+    _authReady,
+    new Promise<void>((resolve) => setTimeout(resolve, timeoutMs)),
+  ]);
+}
+
+// One-time startup diagnostic so it's unambiguous which data source the app is
+// using. Without a real EXPO_PUBLIC_FIREBASE_PROJECT_ID (e.g. a fresh clone
+// with no .env — .env is gitignored) every service silently falls back to the
+// local seed dataset, which reads as "mock data / only 4 topics" with no error.
+if (hasRealCredentials) {
+  console.log(
+    `%c[Soma] LIVE MODE — Firestore project "${firebaseConfig.projectId}". Real curriculum will load if it's been seeded there.`,
+    'color:#4ECDC4;font-weight:bold',
+  );
+} else if (_envProjectId.startsWith('your_')) {
+  console.warn(
+    '%c[Soma] OFFLINE SEED MODE — .env still contains the PLACEHOLDER values from .env.example ' +
+      `(projectId "${_envProjectId}"). Edit .env with your real Firebase keys, save, and restart with \`expo start -c\`.`,
+    'color:#F7C52E;font-weight:bold',
+  );
+} else {
+  console.warn(
+    '%c[Soma] OFFLINE SEED MODE — no EXPO_PUBLIC_FIREBASE_PROJECT_ID found. ' +
+      'The app is showing LOCAL SEED DATA (this is why you see only the demo topics/questions). ' +
+      'Create a .env from .env.example with your Firebase keys and restart with `expo start -c` to load real data.',
+    'color:#F7C52E;font-weight:bold',
+  );
+}
+
 export { app, auth, firestore, storage };
+
+/**
+ * Single source of truth for "should services hit the real Firebase network."
+ * False when EXPO_PUBLIC_FIREBASE_PROJECT_ID is unset OR still holds the
+ * .env.example placeholder — either way real queries can't succeed, so
+ * services should use the local seed fallback immediately instead of timing
+ * out against a nonexistent project first.
+ */
+export function isFirebaseConfigured(): boolean {
+  return hasRealCredentials;
+}
 
 // ─── Firestore Collection Keys ─────────────────────────────────────────────
 export const COLLECTIONS = {
@@ -75,7 +156,8 @@ export const COLLECTIONS = {
   // Phase 4 — subscription & payments
   subscriptionPlans: 'subscription_plans',
   paymentRequests: 'payment_requests',
-  familyProfiles: 'family_profiles',
+  familyChildren: 'family_children',
+  devices: 'devices',
   premiumUnlockEvents: 'premium_unlock_events',
   // Phase 5 — gamification
   gamificationProfiles: 'gamification_profiles',

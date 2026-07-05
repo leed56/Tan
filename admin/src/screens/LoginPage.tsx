@@ -40,7 +40,7 @@ export function LoginPage() {
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10">
             <Zap size={32} className="text-primary" />
           </div>
-          <h2 className="mt-4 text-2xl font-bold text-foreground">Soma AI Admin</h2>
+          <h2 className="mt-4 text-2xl font-bold text-foreground">Soma Admin</h2>
           <p className="mt-1 text-sm text-muted-foreground">Sign in to your admin account</p>
         </div>
 
@@ -64,7 +64,7 @@ export function LoginPage() {
         </form>
 
         <p className="text-center text-xs text-muted-foreground">
-          Soma AI Admin Panel — restricted access only
+          Soma Admin Panel — restricted access only
         </p>
       </div>
     </div>

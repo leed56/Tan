@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The instrument that burns gas to produce a flame for heating in the laboratory is called the _____.",
-        "options": [],
-        "correctAnswer": "Bunsen burner",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bunsen burner",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "measuring cylinder",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "evaporating dish",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "conical flask",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Bunsen burner is the main heating apparatus in a chemistry laboratory.",
         "difficulty": "easy"
       },
       {
         "questionText": "When the air hole is open, the Bunsen burner produces a hot _____ coloured non-luminous flame.",
-        "options": [],
-        "correctAnswer": "blue",
+        "options": [
+          {
+            "id": "a",
+            "text": "yellow",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "blue",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "orange",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "green",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Plenty of air gives complete combustion, producing a clean, hot blue flame.",
         "difficulty": "easy"
       },
       {
         "questionText": "A flame that gives out light and appears yellow is described as a _____ flame.",
-        "options": [],
-        "correctAnswer": "luminous",
+        "options": [
+          {
+            "id": "a",
+            "text": "smoky",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "roaring",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "luminous",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "striking",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A luminous flame glows yellow because of incompletely burnt carbon particles.",
         "difficulty": "easy"
       },
       {
         "questionText": "The _____ controls how much air mixes with the gas in a Bunsen burner.",
-        "options": [],
-        "correctAnswer": "air hole",
+        "options": [
+          {
+            "id": "a",
+            "text": "chimney",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "collar",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "base",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "air hole",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Opening or closing the air hole changes the flame from yellow to blue.",
         "difficulty": "easy"
       },
       {
         "questionText": "A flat metal mesh placed on a tripod stand to spread heat evenly under a beaker is called a _____.",
-        "options": [],
-        "correctAnswer": "wire gauze",
+        "options": [
+          {
+            "id": "a",
+            "text": "wire gauze",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "clay triangle",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "watch glass",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "filter funnel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Wire gauze distributes heat and prevents the glass from cracking.",
         "difficulty": "medium"
       },
       {
         "questionText": "The hottest part of a non-luminous flame is found just above the tip of the inner _____.",
-        "options": [],
-        "correctAnswer": "cone",
+        "options": [
+          {
+            "id": "a",
+            "text": "barrel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "cone",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "chimney",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "collar",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Just above the inner cone, combustion is complete and the temperature is highest.",
         "difficulty": "medium"
       },
       {
         "questionText": "A lamp that burns methylated spirit through a wick to provide heat is known as a _____.",
-        "options": [],
-        "correctAnswer": "spirit lamp",
+        "options": [
+          {
+            "id": "a",
+            "text": "heating mantle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hot plate",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "spirit lamp",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "kiln",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A spirit lamp is an alternative heat source when no gas supply is available.",
         "difficulty": "medium"
       },
       {
         "questionText": "The luminous yellow flame is kept when the burner is not heating and is therefore called the _____ flame.",
-        "options": [],
-        "correctAnswer": "safety",
+        "options": [
+          {
+            "id": "a",
+            "text": "roaring",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "smoky",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "striking",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "safety",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The safety flame is visible and cooler, making it safer to leave the burner unattended.",
         "difficulty": "medium"
       },
       {
         "questionText": "Incomplete combustion in a luminous flame deposits black _____ on the bottom of heated apparatus.",
-        "options": [],
-        "correctAnswer": "soot",
+        "options": [
+          {
+            "id": "a",
+            "text": "soot",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ash",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "tar",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rust",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The unburnt carbon settles as soot, which is why the luminous flame is avoided for heating.",
         "difficulty": "medium"
       },
       {
         "questionText": "When heating a liquid in a test tube, the mouth of the tube must always point _____ from people.",
-        "options": [],
-        "correctAnswer": "away",
+        "options": [
+          {
+            "id": "a",
+            "text": "towards",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "away",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "down",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "across",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Pointing the tube away prevents injury if the hot liquid spurts out.",
         "difficulty": "easy"
       }

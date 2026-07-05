@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Objects that produce their own light are called _____ objects.",
-        "options": [],
-        "correctAnswer": "luminous",
+        "options": [
+          {
+            "id": "a",
+            "text": "luminous",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "opaque",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "transparent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "translucent",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Luminous objects, such as the Sun, candles and lamps, give out their own light.",
         "difficulty": "easy"
       },
       {
         "questionText": "An object that does not allow any light to pass through it is said to be _____.",
-        "options": [],
-        "correctAnswer": "opaque",
+        "options": [
+          {
+            "id": "a",
+            "text": "transparent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "opaque",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "translucent",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "luminous",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Opaque objects, such as wood and metal, block light completely and form shadows.",
         "difficulty": "easy"
       },
       {
         "questionText": "Light travels in straight lines, a property known as the _____ propagation of light.",
-        "options": [],
-        "correctAnswer": "rectilinear",
+        "options": [
+          {
+            "id": "a",
+            "text": "lateral",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "uniform",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rectilinear",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "linear",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Rectilinear propagation explains the formation of sharp shadows.",
         "difficulty": "medium"
       },
       {
         "questionText": "The completely dark central part of a shadow is called the _____.",
-        "options": [],
-        "correctAnswer": "umbra",
+        "options": [
+          {
+            "id": "a",
+            "text": "penumbra",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "eclipse",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "shadow",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "umbra",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The umbra is the region where light is totally blocked by the opaque object.",
         "difficulty": "medium"
       },
       {
         "questionText": "An eclipse of the Moon occurs when the _____ comes between the Sun and the Moon.",
-        "options": [],
-        "correctAnswer": "Earth",
+        "options": [
+          {
+            "id": "a",
+            "text": "Earth",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Sun",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Moon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "star",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "During a lunar eclipse the Earth's shadow falls on the Moon, blocking the Sun's light.",
         "difficulty": "medium"
       },
       {
         "questionText": "The line drawn perpendicular to a reflecting surface at the point of incidence is called the _____.",
-        "options": [],
-        "correctAnswer": "normal",
+        "options": [
+          {
+            "id": "a",
+            "text": "incident ray",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "normal",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "reflected ray",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reflecting surface",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Angles of incidence and reflection are both measured from the normal.",
         "difficulty": "medium"
       },
       {
         "questionText": "According to the first law of reflection, the angle of incidence is equal to the angle of _____.",
-        "options": [],
-        "correctAnswer": "reflection",
+        "options": [
+          {
+            "id": "a",
+            "text": "incidence",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "refraction",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "reflection",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "deviation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The angle of incidence always equals the angle of reflection in plane mirrors.",
         "difficulty": "easy"
       },
       {
         "questionText": "Reflection from a smooth polished surface that produces a clear image is called _____ reflection.",
-        "options": [],
-        "correctAnswer": "regular",
+        "options": [
+          {
+            "id": "a",
+            "text": "diffuse",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "irregular",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "total",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "regular",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Regular reflection keeps parallel rays parallel, forming clear images.",
         "difficulty": "medium"
       },
       {
         "questionText": "The image formed by a plane mirror cannot be caught on a screen, so it is called a _____ image.",
-        "options": [],
-        "correctAnswer": "virtual",
+        "options": [
+          {
+            "id": "a",
+            "text": "virtual",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "real",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "inverted",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "magnified",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A virtual image only appears to be behind the mirror and cannot be projected on a screen.",
         "difficulty": "medium"
       },
       {
         "questionText": "The left-to-right reversal of an image seen in a plane mirror is called lateral _____.",
-        "options": [],
-        "correctAnswer": "inversion",
+        "options": [
+          {
+            "id": "a",
+            "text": "reflection",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "inversion",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "refraction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dispersion",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Lateral inversion makes the right side of an object appear on the left in the mirror image.",
         "difficulty": "hard"
       }

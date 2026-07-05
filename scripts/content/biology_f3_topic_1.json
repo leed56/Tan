@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_biology_topic_1",
+  "topicName": "Classification of Living Things",
+  "order": 1,
+  "description": "This topic explains the meaning, importance and principles of classifying living things, including the taxonomic hierarchy, binomial nomenclature, the five-kingdom system, and the construction and use of dichotomous keys.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the meaning of classification in biology?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The killing of harmful organisms",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The arranging of living things into groups based on their similarities and differences",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The naming of new diseases",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The counting of all animals in a forest",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Classification is the process of arranging living organisms into groups according to their shared characteristics and differences.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which branch of biology deals with the classification and naming of living organisms?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ecology",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Genetics",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Taxonomy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Physiology",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Taxonomy is the branch of biology concerned with the identification, naming and classification of organisms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is NOT a reason why scientists classify living things?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To make the study of organisms easier",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To show relationships among organisms",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "To create confusion among scientists",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "To give organisms universal names",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Classification is done to simplify study, show relationships and provide universal names; it is meant to reduce, not create, confusion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the smallest unit of classification?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kingdom",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Genus",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Species",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Family",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Species is the smallest and most specific unit in the taxonomic hierarchy; members of a species can interbreed to produce fertile offspring.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following shows the taxonomic hierarchy from the largest to the smallest group?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Species, Genus, Family, Order, Class, Phylum, Kingdom",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Kingdom, Phylum, Class, Order, Family, Genus, Species",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Kingdom, Class, Phylum, Family, Order, Species, Genus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Genus, Species, Kingdom, Phylum, Class, Order, Family",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The correct order from largest to smallest is Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The system of giving each organism two names is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Common naming",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Binomial nomenclature",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Dichotomous naming",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Vernacular naming",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Binomial nomenclature is the system, introduced by Carolus Linnaeus, of giving each organism a two-part scientific name consisting of the genus and species.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the scientific name Panthera leo, what does the word 'Panthera' represent?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The species name",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The genus name",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The family name",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The kingdom name",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In binomial nomenclature the first name is the genus (Panthera) and is written with a capital letter, while the second name (leo) is the species.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How should a scientific name be written correctly?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Both names with capital letters",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Genus with a capital letter and species with a small letter, both italicised or underlined",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Both names with small letters and not underlined",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Species with a capital letter and genus with a small letter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The rules state that the genus begins with a capital letter, the species with a small letter, and the whole name is written in italics or underlined when handwritten.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which kingdom contains organisms that are prokaryotic (have no true nucleus)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Plantae",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Monera",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Animalia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Kingdom Monera consists of prokaryotic organisms such as bacteria, whose cells lack a true membrane-bound nucleus.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "To which kingdom do mushrooms, moulds and yeasts belong?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Plantae",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Fungi",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Protoctista",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Monera",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Mushrooms, moulds and yeasts are members of Kingdom Fungi; they feed by absorption and have cell walls made of chitin.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which kingdom includes single-celled organisms like Amoeba and Paramecium?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Monera",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Protoctista",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Animalia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Amoeba and Paramecium are eukaryotic single-celled organisms placed in Kingdom Protoctista (Protista).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A key used to identify organisms by offering two opposite choices at each step is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Numbered key",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Dichotomous key",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Branching map",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Taxonomic chart",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A dichotomous key gives two contrasting statements at each stage, and the user chooses one to gradually identify the organism.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Members of the same species are best defined as organisms that can:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Live in the same place",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Interbreed to produce fertile offspring",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Eat the same type of food",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Have the same colour",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A species is a group of organisms that can interbreed to produce fertile offspring (offspring that can also reproduce).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which classification system groups organisms according to their natural evolutionary relationships?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Artificial classification",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Natural classification",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Random classification",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Alphabetical classification",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Natural classification groups organisms based on many shared natural characteristics and evolutionary relationships, while artificial classification uses one or a few convenient features.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Who is regarded as the father of modern classification (taxonomy)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Charles Darwin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Gregor Mendel",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Carolus Linnaeus",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Robert Hooke",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Carolus Linnaeus developed the binomial system of naming and is regarded as the father of modern taxonomy.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The branch of biology that deals with the classification and naming of organisms is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "taxonomy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ecology",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "genetics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "physiology",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Taxonomy is the science of identifying, naming and classifying living things.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The smallest unit in the taxonomic hierarchy is the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "genus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "species",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "family",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "order",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Species is the most specific group; its members can interbreed to produce fertile offspring.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The largest unit in the taxonomic hierarchy is the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "phylum",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "class",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kingdom",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "genus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Kingdom is the broadest level of classification, containing many phyla.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The two-name system of naming organisms is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "common naming",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vernacular naming",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dichotomous naming",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "binomial nomenclature",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Binomial nomenclature gives each organism a scientific name made up of the genus and the species.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a scientific name, the first word (genus) must always begin with a _____ letter.",
+        "options": [
+          {
+            "id": "a",
+            "text": "capital",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "small",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "italic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "bold",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The genus name always starts with a capital letter, while the species name starts with a small letter.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Organisms whose cells have no true membrane-bound nucleus, such as bacteria, belong to the kingdom _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "monera",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "plantae",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "animalia",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Kingdom Monera contains prokaryotic organisms like bacteria and blue-green algae.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A key that uses pairs of contrasting statements to identify organisms is called a _____ key.",
+        "options": [
+          {
+            "id": "a",
+            "text": "numbered",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "branching",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dichotomous",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "taxonomic",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A dichotomous key splits a group into two at each step until the organism is identified.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Classification that groups organisms based on a few convenient features rather than evolutionary relationships is called _____ classification.",
+        "options": [
+          {
+            "id": "a",
+            "text": "natural",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "random",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alphabetical",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "artificial",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Artificial classification uses one or a few obvious characteristics, while natural classification uses many shared features.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The scientist who developed the modern system of naming organisms was Carolus _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "linnaeus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Darwin",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mendel",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Hooke",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Carolus Linnaeus introduced binomial nomenclature and is the father of modern taxonomy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Multicellular organisms that make their own food by photosynthesis belong to the kingdom _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "fungi",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "plantae",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "monera",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "protoctista",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Kingdom Plantae contains multicellular plants with cellulose cell walls that carry out photosynthesis.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Classification helps to make the study of the many different living things easier.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By placing organisms into groups, classification makes them easier to study and understand.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a scientific name, the species name should always begin with a capital letter.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The species name always begins with a small (lowercase) letter; only the genus name begins with a capital letter.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When written by hand, a scientific name should be underlined.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Scientific names are written in italics when typed and underlined when handwritten.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Kingdom is the smallest unit of classification.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Kingdom is the largest unit; species is the smallest unit of classification.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Bacteria belong to the kingdom Monera because their cells lack a true nucleus.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Monera contains prokaryotes such as bacteria, whose cells have no membrane-bound nucleus.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Members of the same species can interbreed to produce fertile offspring.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the key definition of a species: the ability to interbreed and produce fertile offspring.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A dichotomous key gives three or more choices at each step.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A dichotomous key gives exactly two contrasting choices at each step.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Natural classification groups organisms according to their evolutionary relationships and many shared features.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Natural classification reflects true relationships using many characteristics, unlike artificial classification.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Mushrooms and yeasts are classified in the kingdom Plantae.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Mushrooms and yeasts belong to Kingdom Fungi, not Plantae, because they do not carry out photosynthesis.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Scientific names allow scientists all over the world to refer to the same organism without confusion.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Scientific names are universal, so they avoid the confusion caused by different common names in different languages.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define classification.",
+        "options": [],
+        "correctAnswer": "Classification is the arrangement of living things into groups based on their similarities and differences.",
+        "explanation": "This is the basic meaning of classification used throughout the topic.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two reasons why we classify living things.",
+        "options": [],
+        "correctAnswer": "We classify living things to make their study easier and to show the relationships between different organisms.",
+        "explanation": "Other reasons include giving organisms universal names and helping to identify new organisms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List the taxonomic hierarchy from largest to smallest.",
+        "options": [],
+        "correctAnswer": "The hierarchy from largest to smallest is Kingdom, Phylum, Class, Order, Family, Genus and Species.",
+        "explanation": "Remembering this order is essential for understanding how organisms are grouped.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is binomial nomenclature?",
+        "options": [],
+        "correctAnswer": "Binomial nomenclature is the system of naming each organism using two parts, the genus name and the species name.",
+        "explanation": "It was introduced by Carolus Linnaeus and gives organisms universal scientific names.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State two rules for writing a scientific name.",
+        "options": [],
+        "correctAnswer": "The genus begins with a capital letter and the species with a small letter, and the whole name is italicised or underlined.",
+        "explanation": "Following these rules ensures scientific names are written correctly worldwide.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name the five kingdoms of living things.",
+        "options": [],
+        "correctAnswer": "The five kingdoms are Monera, Protoctista, Fungi, Plantae and Animalia.",
+        "explanation": "The five-kingdom system organises all living things into these major groups.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is a dichotomous key?",
+        "options": [],
+        "correctAnswer": "A dichotomous key is a tool used to identify organisms by following pairs of contrasting statements at each step.",
+        "explanation": "At each step the user chooses one of two options until the organism is identified.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Differentiate between artificial and natural classification.",
+        "options": [],
+        "correctAnswer": "Artificial classification groups organisms using one or a few convenient features, while natural classification uses many shared features and evolutionary relationships.",
+        "explanation": "Natural classification reflects true relationships, whereas artificial is based on convenience.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "What is a species?",
+        "options": [],
+        "correctAnswer": "A species is a group of organisms that can interbreed to produce fertile offspring.",
+        "explanation": "Species is the smallest and most specific unit of classification.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give one main characteristic of Kingdom Monera.",
+        "options": [],
+        "correctAnswer": "Organisms in Kingdom Monera are prokaryotic, meaning their cells lack a true membrane-bound nucleus.",
+        "explanation": "Bacteria are typical members of Kingdom Monera.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A student finds two animals that look very similar but discovers they cannot interbreed to produce fertile offspring. What can the student correctly conclude?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They belong to the same species",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "They belong to different species",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "They belong to different kingdoms",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "They are not living things",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since members of the same species must interbreed to produce fertile offspring, organisms that cannot do so must belong to different species, even if they look alike.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A scientist writes the name of a bacterium as 'escherichia Coli' in a typed report. Which corrections must be made for the name to follow the rules of binomial nomenclature?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Capitalise the genus, make the species lowercase, and italicise the whole name to give Escherichia coli",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Make both words lowercase and leave them in plain text",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Capitalise both words and underline the second word only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Swap the two words so the species comes first",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The genus must start with a capital letter, the species must be lowercase, and the whole name must be italicised (or underlined if handwritten), giving Escherichia coli.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A dichotomous key step reads: '1(a) Has wings ... go to 2; 1(b) Has no wings ... go to 3'. A learner observes an organism that has no wings. Which path is correct and why?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Go to 2, because all small organisms have wings",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Go to 3, because the organism matches the statement that it has no wings",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Stop, because the organism cannot be identified without wings",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Go back to the kingdom level and start again",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In a dichotomous key you follow the statement that matches the organism's feature; since it has no wings, the learner follows statement 1(b) and goes to step 3.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

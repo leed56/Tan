@@ -5,7 +5,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  Dimensions,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -18,17 +17,21 @@ import { StreakFireCard } from '../../components/ui/gamification/StreakFireCard'
 import { CoinBalanceChip } from '../../components/ui/gamification/CoinBalanceChip';
 import { PremiumLockCard } from '../../components/ui/PremiumLockCard';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
+import { useResponsiveScale, moderateScale } from '../../theme/responsive';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
-import { SUBJECTS, DEMO_LEADERBOARD, AVATARS } from '../../constants';
+import { useProgressStore } from '../../store/progressStore';
+import { useMissionStore } from '../../store/missionStore';
+import { useLeaderboardStore } from '../../store/leaderboardStore';
+import { useFamilyStore } from '../../store/familyStore';
+import { useCurriculumStore } from '../../store/curriculumStore';
+import { useSubscriptionStore } from '../../store/subscriptionStore';
+import { DAILY_MISSIONS } from '../../utils/seedBadges';
+import { SUBJECTS, AVATARS } from '../../constants';
 import { getGreeting, formatXp, getXpProgressPercent } from '../../utils';
 
-const { width } = Dimensions.get('window');
-const RING_SIZE = 120;
 const RING_STROKE = 12;
-const RING_R = (RING_SIZE - RING_STROKE) / 2;
-const RING_CIRCUMFERENCE = 2 * Math.PI * RING_R;
 
 type Props = StackScreenProps<HomeStackParamList, 'Home'>;
 
@@ -38,24 +41,69 @@ export function HomeScreen({ navigation }: Props) {
   const fetchProfile = useGamificationStore((s) => s.fetchProfile);
   const profile = useProfileStore((s) => s.profile);
   const uid = useAuthStore((s) => s.user?.uid);
+  const { records: progressRecords, fetchProgress, getSubjectProgress } = useProgressStore();
+  const { fetchMissions, completedCount, progressFor } = useMissionStore();
+  const { data: leaderboardData, fetchLeaderboard } = useLeaderboardStore();
+  const activeChild = useFamilyStore((s) => s.activeChild());
+  const selectedFormId = useCurriculumStore((s) => s.selectedFormId);
+  const { isPremium } = useSubscriptionStore();
+
+  // When "Playing as" a Family-Pack child, the hero must show THAT child's
+  // aggregate stats — otherwise the greeting swaps to the child's name while
+  // the XP ring, streak and coins still show the account owner's numbers.
+  // Children don't earn coins, so that chip reads 0 while a child is active.
+  const displayXp = activeChild ? activeChild.xp : xp;
+  const displayLevel = activeChild ? activeChild.level : level;
+  const displayStreak = activeChild ? activeChild.streakDays : streak;
+  const displayCoins = activeChild ? 0 : coins;
 
   // Load the persisted gamification profile so XP/coins/streak reflect Firestore.
   useEffect(() => {
-    if (uid) fetchProfile(uid);
-  }, [uid, fetchProfile]);
+    if (uid) {
+      fetchProfile(uid);
+      fetchProgress(uid);
+      fetchMissions(uid);
+    }
+    fetchLeaderboard('national');
+  }, [uid, fetchProfile, fetchProgress, fetchMissions, fetchLeaderboard]);
 
-  const progressPercent = getXpProgressPercent(xp);
-  const strokeDash = RING_CIRCUMFERENCE * (1 - progressPercent / 100);
+  const scale = useResponsiveScale();
+  const ringSize = moderateScale(120, scale);
+  const ringR = (ringSize - RING_STROKE) / 2;
+  const ringCircumference = 2 * Math.PI * ringR;
+
+  const progressPercent = getXpProgressPercent(displayXp);
+  const strokeDash = ringCircumference * (1 - progressPercent / 100);
 
   const greeting = getGreeting();
   const name = profile?.name ?? 'Student';
   const recommended = SUBJECTS.filter((s) => !s.isPremium).slice(0, 4);
-  const topPlayers = DEMO_LEADERBOARD.slice(0, 3);
+  const topPlayers = leaderboardData.national.slice(0, 3);
+  const missionsTotal = DAILY_MISSIONS.length;
+  const missionsDone = completedCount();
+
+  // Most recently opened, not-yet-completed subject — falls back to the first
+  // recommended subject for a brand-new user with no progress yet.
+  const inProgress = [...progressRecords]
+    .filter((r) => r.status !== 'completed')
+    .sort((a, b) => (b.lastOpenedAt ?? 0) - (a.lastOpenedAt ?? 0))[0];
+  const continueSubjectId = inProgress?.subjectId.replace(/^form_\d+_/, '') ?? recommended[0]?.id;
+  // Resume under the Form the progress record was actually made in, not
+  // necessarily whichever Form happens to be selected right now — otherwise
+  // subjectId/formId end up out of sync with what curriculumStore expects
+  // (it keys everything as `${formId}_${bareSubjectId}`), and Topics loads
+  // empty.
+  const continueFormId = inProgress?.subjectId.match(/^form_\d+/)?.[0] ?? selectedFormId;
+  const continueSubject = SUBJECTS.find((s) => s.id === continueSubjectId) ?? recommended[0];
+  const continuePercent = inProgress ? getSubjectProgress(inProgress.subjectId).progressPercent : 0;
 
   const handleRefresh = async () => {
     setRefreshing(true);
-    // TODO: Phase 2 — re-fetch user data from Firestore
-    await new Promise((r) => setTimeout(r, 1000));
+    await Promise.all([
+      uid ? fetchProfile(uid) : Promise.resolve(),
+      uid ? fetchProgress(uid) : Promise.resolve(),
+      uid ? fetchMissions(uid) : Promise.resolve(),
+    ]);
     setRefreshing(false);
   };
 
@@ -69,7 +117,21 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.topBarContent}>
           <View>
             <Text style={styles.greeting}>{greeting},</Text>
-            <Text style={styles.userName}>{name} 👋</Text>
+            <Text style={styles.userName}>{activeChild ? activeChild.name : name} 👋</Text>
+            {activeChild && (
+              <TouchableOpacity
+                style={styles.playingAsPill}
+                onPress={() =>
+                  (navigation.getParent() as any)?.navigate('ProfileTab', {
+                    screen: 'FamilyProfiles',
+                  })
+                }
+                activeOpacity={0.8}
+              >
+                <Ionicons name="people" size={11} color={COLORS.gold} />
+                <Text style={styles.playingAsText}>Playing as {activeChild.name}</Text>
+              </TouchableOpacity>
+            )}
           </View>
           <View style={styles.topBarActions}>
             <TouchableOpacity style={styles.iconBtn}>
@@ -77,7 +139,7 @@ export function HomeScreen({ navigation }: Props) {
               <View style={styles.notifDot} />
             </TouchableOpacity>
             <CoinBalanceChip
-              coins={coins}
+              coins={displayCoins}
               onPress={() => navigation.navigate('GamificationProfile')}
             />
           </View>
@@ -96,133 +158,139 @@ export function HomeScreen({ navigation }: Props) {
         >
           <View style={styles.heroLeft}>
             {/* Circular XP ring */}
-            <View style={styles.ringWrapper}>
-              <Svg width={RING_SIZE} height={RING_SIZE}>
+            <View style={[styles.ringWrapper, { width: ringSize, height: ringSize }]}>
+              <Svg width={ringSize} height={ringSize}>
                 <Circle
-                  cx={RING_SIZE / 2}
-                  cy={RING_SIZE / 2}
-                  r={RING_R}
+                  cx={ringSize / 2}
+                  cy={ringSize / 2}
+                  r={ringR}
                   stroke={COLORS.bgCardLight}
                   strokeWidth={RING_STROKE}
                   fill="none"
                 />
                 <Circle
-                  cx={RING_SIZE / 2}
-                  cy={RING_SIZE / 2}
-                  r={RING_R}
+                  cx={ringSize / 2}
+                  cy={ringSize / 2}
+                  r={ringR}
                   stroke={COLORS.primary}
                   strokeWidth={RING_STROKE}
                   fill="none"
-                  strokeDasharray={RING_CIRCUMFERENCE}
+                  strokeDasharray={ringCircumference}
                   strokeDashoffset={strokeDash}
                   strokeLinecap="round"
                   rotation="-90"
-                  origin={`${RING_SIZE / 2}, ${RING_SIZE / 2}`}
+                  origin={`${ringSize / 2}, ${ringSize / 2}`}
                 />
               </Svg>
               <View style={styles.ringCenter}>
                 <Text style={styles.ringLevel}>Lvl</Text>
-                <Text style={styles.ringLevelNum}>{level}</Text>
+                <Text style={styles.ringLevelNum}>{displayLevel}</Text>
               </View>
             </View>
           </View>
 
           <View style={styles.heroRight}>
             <Text style={styles.heroXpLabel}>Total XP</Text>
-            <Text style={styles.heroXp}>{formatXp(xp)}</Text>
-            <Text style={styles.heroXpSub}>{progressPercent}% to Level {level + 1}</Text>
+            <Text style={styles.heroXp}>{formatXp(displayXp)}</Text>
+            <Text style={styles.heroXpSub}>{progressPercent}% to Level {displayLevel + 1}</Text>
 
             <View style={styles.heroDivider} />
 
             <View style={styles.heroMission}>
               <Ionicons name="flag" size={14} color={COLORS.gold} />
-              <Text style={styles.heroMissionText}>Daily Mission: 3/5 packs</Text>
+              <Text style={styles.heroMissionText}>Daily Missions: {missionsDone}/{missionsTotal} complete</Text>
             </View>
           </View>
         </LinearGradient>
         </TouchableOpacity>
 
         {/* Streak card */}
-        <StreakFireCard streak={streak} />
+        <StreakFireCard streak={displayStreak} />
 
         {/* Continue Learning */}
-        <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Continue Learning</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: `form_${profile?.form ?? 1}_mathematics`, subjectName: 'Mathematics', color: COLORS.subjects.mathematics, formId: `form_${profile?.form ?? 1}` })}>
-              <Text style={styles.seeAll}>See all</Text>
+        {continueSubject && (
+          <View style={styles.section}>
+            <View style={styles.sectionHeader}>
+              <Text style={styles.sectionTitle}>Continue Learning</Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Topics', { subjectId: `${continueFormId}_${continueSubject.id}`, subjectName: continueSubject.name, color: continueSubject.color, formId: continueFormId })}>
+                <Text style={styles.seeAll}>See all</Text>
+              </TouchableOpacity>
+            </View>
+
+            <TouchableOpacity
+              style={styles.continueCard}
+              onPress={() =>
+                navigation.navigate('Topics', {
+                  subjectId: `${continueFormId}_${continueSubject.id}`,
+                  subjectName: continueSubject.name,
+                  color: continueSubject.color,
+                  formId: continueFormId,
+                })
+              }
+              activeOpacity={0.8}
+            >
+              <LinearGradient
+                colors={[continueSubject.color + '30', COLORS.bgCard]}
+                style={styles.continueCardGrad}
+              >
+                <View style={[styles.continueIcon, { backgroundColor: continueSubject.color + '20' }]}>
+                  <Ionicons name={continueSubject.iconName as keyof typeof Ionicons.glyphMap} size={24} color={continueSubject.color} />
+                </View>
+                <View style={styles.continueInfo}>
+                  <Text style={styles.continueSubject}>{continueSubject.name}</Text>
+                  <Text style={styles.continueTopic} numberOfLines={1}>
+                    {inProgress ? `${continuePercent}% complete` : 'Not started yet'}
+                  </Text>
+                  <View style={styles.continueProgress}>
+                    <View style={styles.continueTrack}>
+                      <View style={[styles.continueFill, { width: `${continuePercent}%`, backgroundColor: continueSubject.color }]} />
+                    </View>
+                    <Text style={styles.continuePercent}>{continuePercent}%</Text>
+                  </View>
+                </View>
+                <Ionicons name="play-circle" size={36} color={continueSubject.color} />
+              </LinearGradient>
             </TouchableOpacity>
           </View>
+        )}
 
-          <TouchableOpacity
-            style={styles.continueCard}
-            onPress={() =>
-              // Route to the real (form-scoped) Mathematics topics; resuming a
-              // specific pack needs last-activity tracking (not yet wired).
-              navigation.navigate('Topics', {
-                subjectId: `form_${profile?.form ?? 1}_mathematics`,
-                subjectName: 'Mathematics',
-                color: COLORS.subjects.mathematics,
-                formId: `form_${profile?.form ?? 1}`,
-              })
-            }
-            activeOpacity={0.8}
-          >
+        {/* Daily Missions */}
+        <TouchableOpacity activeOpacity={0.85} onPress={() => navigation.navigate('DailyMissions')}>
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Daily Missions</Text>
             <LinearGradient
-              colors={[COLORS.subjects.mathematics + '30', COLORS.bgCard]}
-              style={styles.continueCardGrad}
+              colors={['rgba(247,197,46,0.12)', 'rgba(247,197,46,0.04)']}
+              style={styles.missionCard}
             >
-              <View style={[styles.continueIcon, { backgroundColor: COLORS.subjects.mathematics + '20' }]}>
-                <Ionicons name="calculator" size={24} color={COLORS.subjects.mathematics} />
-              </View>
-              <View style={styles.continueInfo}>
-                <Text style={styles.continueSubject}>Mathematics</Text>
-                <Text style={styles.continueTopic}>Quadratic Equations</Text>
-                <View style={styles.continueProgress}>
-                  <View style={styles.continueTrack}>
-                    <View style={[styles.continueFill, { width: '60%', backgroundColor: COLORS.subjects.mathematics }]} />
-                  </View>
-                  <Text style={styles.continuePercent}>60%</Text>
+              <View style={styles.missionHeader}>
+                <Text style={styles.missionEmoji}>⚡</Text>
+                <View style={styles.missionInfo}>
+                  <Text style={styles.missionTitle}>Today's challenges</Text>
+                  <Text style={styles.missionReward}>
+                    {missionsDone === missionsTotal ? 'All complete — see you tomorrow!' : 'Tap to view and claim rewards'}
+                  </Text>
+                </View>
+                <View style={styles.missionProgress}>
+                  <Text style={styles.missionCount}>{missionsDone}/{missionsTotal}</Text>
                 </View>
               </View>
-              <Ionicons name="play-circle" size={36} color={COLORS.subjects.mathematics} />
+              <View style={styles.missionTrack}>
+                {DAILY_MISSIONS.map((def) => (
+                  <View
+                    key={def.id}
+                    style={[styles.missionStep, progressFor(def.id).isCompleted && styles.missionStepDone]}
+                  />
+                ))}
+              </View>
             </LinearGradient>
-          </TouchableOpacity>
-        </View>
-
-        {/* Daily Mission */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Daily Mission</Text>
-          <LinearGradient
-            colors={['rgba(247,197,46,0.12)', 'rgba(247,197,46,0.04)']}
-            style={styles.missionCard}
-          >
-            <View style={styles.missionHeader}>
-              <Text style={styles.missionEmoji}>⚡</Text>
-              <View style={styles.missionInfo}>
-                <Text style={styles.missionTitle}>Complete 5 learning packs</Text>
-                <Text style={styles.missionReward}>+150 XP reward</Text>
-              </View>
-              <View style={styles.missionProgress}>
-                <Text style={styles.missionCount}>3/5</Text>
-              </View>
-            </View>
-            <View style={styles.missionTrack}>
-              {[0, 1, 2, 3, 4].map((i) => (
-                <View
-                  key={i}
-                  style={[styles.missionStep, i < 3 && styles.missionStepDone]}
-                />
-              ))}
-            </View>
-          </LinearGradient>
-        </View>
+          </View>
+        </TouchableOpacity>
 
         {/* Recommended Subjects */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Recommended</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.getParent()?.navigate('SubjectsTab', { screen: 'Subjects' })}>
               <Text style={styles.seeAll}>View all</Text>
             </TouchableOpacity>
           </View>
@@ -233,9 +301,10 @@ export function HomeScreen({ navigation }: Props) {
                 subject={subject}
                 onPress={(s) =>
                   navigation.navigate('Topics', {
-                    subjectId: s.id,
+                    subjectId: `${selectedFormId}_${s.id}`,
                     subjectName: s.name,
                     color: s.color,
+                    formId: selectedFormId,
                   })
                 }
               />
@@ -244,39 +313,45 @@ export function HomeScreen({ navigation }: Props) {
         </View>
 
         {/* Leaderboard Preview */}
-        <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Top Students</Text>
-            <TouchableOpacity>
-              <Text style={styles.seeAll}>Full rankings</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.leaderPreview}>
-            {topPlayers.map((player, idx) => {
-              const avatar = AVATARS.find((a) => a.id === player.avatarId);
-              const medals = ['🥇', '🥈', '🥉'];
-              return (
-                <View key={player.uid} style={styles.leaderRow}>
-                  <Text style={styles.leaderMedal}>{medals[idx]}</Text>
-                  <View style={styles.leaderAvatar}>
-                    <Text style={{ fontSize: 20 }}>{avatar?.emoji ?? '👤'}</Text>
+        {topPlayers.length > 0 && (
+          <View style={styles.section}>
+            <View style={styles.sectionHeader}>
+              <Text style={styles.sectionTitle}>Top Students</Text>
+              <TouchableOpacity onPress={() => navigation.getParent()?.navigate('LeaderboardTab' as never)}>
+                <Text style={styles.seeAll}>Full rankings</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.leaderPreview}>
+              {topPlayers.map((player, idx) => {
+                const avatar = AVATARS.find((a) => a.id === player.avatarId);
+                const medals = ['🥇', '🥈', '🥉'];
+                return (
+                  <View key={player.id} style={styles.leaderRow}>
+                    <Text style={styles.leaderMedal}>{medals[idx]}</Text>
+                    <View style={styles.leaderAvatar}>
+                      <Text style={{ fontSize: 20 }}>{avatar?.emoji ?? '👤'}</Text>
+                    </View>
+                    <View style={styles.leaderInfo}>
+                      <Text style={styles.leaderName} numberOfLines={1}>{player.name}</Text>
+                      <Text style={styles.leaderForm}>Form {player.form}</Text>
+                    </View>
+                    <Text style={styles.leaderXp}>{formatXp(player.totalXp)} XP</Text>
                   </View>
-                  <View style={styles.leaderInfo}>
-                    <Text style={styles.leaderName}>{player.name}</Text>
-                    <Text style={styles.leaderForm}>Form {player.form}</Text>
-                  </View>
-                  <Text style={styles.leaderXp}>{formatXp(player.xp)} XP</Text>
-                </View>
-              );
-            })}
+                );
+              })}
+            </View>
           </View>
-        </View>
+        )}
 
-        {/* Premium Banner */}
-        <PremiumLockCard
-          title="Unlock Everything"
-          description="Get unlimited AI explanations, all 13 subjects, HOQ practice, and priority support."
-        />
+        {/* Premium Banner — hidden once the user already has an active plan,
+            otherwise they land on the "Go Premium" pitch after already paying. */}
+        {!isPremium() && (
+          <PremiumLockCard
+            title="Unlock Everything"
+            description="Every chapter across all 13 subjects, Summary & HOQ practice, Exam Mode, and Advanced Analytics."
+            onUpgrade={() => navigation.navigate('SubscriptionScreen')}
+          />
+        )}
       </View>
     </ScreenContainer>
   );
@@ -295,6 +370,20 @@ const styles = StyleSheet.create({
   },
   greeting: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
   userName: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.xl, fontWeight: TYPOGRAPHY.weights.extrabold, marginTop: 2 },
+  playingAsPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    alignSelf: 'flex-start',
+    backgroundColor: `${COLORS.gold}15`,
+    borderRadius: RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 3,
+    borderWidth: 1,
+    borderColor: `${COLORS.gold}40`,
+    marginTop: 6,
+  },
+  playingAsText: { color: COLORS.gold, fontSize: 11, fontWeight: TYPOGRAPHY.weights.semibold },
   topBarActions: { flexDirection: 'row', alignItems: 'center', gap: SPACING.md },
   iconBtn: { position: 'relative' },
   notifDot: {
@@ -313,7 +402,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(123,111,242,0.3)',
   },
   heroLeft: {},
-  ringWrapper: { position: 'relative', width: RING_SIZE, height: RING_SIZE, justifyContent: 'center', alignItems: 'center' },
+  ringWrapper: { position: 'relative', justifyContent: 'center', alignItems: 'center' },
   ringCenter: { position: 'absolute', alignItems: 'center' },
   ringLevel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.medium },
   ringLevelNum: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes['2xl'], fontWeight: TYPOGRAPHY.weights.extrabold, lineHeight: TYPOGRAPHY.sizes['2xl'] * 1.1 },

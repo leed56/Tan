@@ -1,730 +1,372 @@
 {
   "topicId": "form_2_chemistry_topic_6",
-  "topicName": "Acids, Bases and Indicators",
+  "topicName": "Acids, Bases and Salts",
   "order": 6,
-  "description": "An introduction to the properties of acids and bases, the pH scale, indicators, and the reactions and everyday uses of acids and bases.",
+  "description": "An introduction to acids, bases and salts, covering the pH scale, litmus and other indicators, neutralisation, and the reactions of acids with metals and carbonates.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which property is characteristic of most acids?",
+        "questionText": "An acid is a substance that, when dissolved in water, produces:",
         "options": [
-          {
-            "id": "a",
-            "text": "They taste bitter",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "They taste sour",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "They feel soapy",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "They have no taste",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Hydroxide ions (OH-)", "isCorrect": false},
+          {"id": "b", "text": "Hydrogen ions (H+)", "isCorrect": true},
+          {"id": "c", "text": "Metal ions", "isCorrect": false},
+          {"id": "d", "text": "No ions", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Acids generally have a sour taste, like the taste of lemon juice or vinegar.",
+        "explanation": "Acids release hydrogen ions (H+) in water. Exam Tip: Acid -> H+ ions. Base/alkali -> OH- ions.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What colour does blue litmus paper turn when dipped in an acid?",
+        "questionText": "A base that is soluble in water is called an:",
         "options": [
-          {
-            "id": "a",
-            "text": "Green",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Blue",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Red",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Colourless",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Acid", "isCorrect": false},
+          {"id": "b", "text": "Alkali", "isCorrect": true},
+          {"id": "c", "text": "Salt", "isCorrect": false},
+          {"id": "d", "text": "Indicator", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A soluble base is called an alkali. Exam Tip: All alkalis are bases, but only soluble bases are alkalis (e.g. NaOH, KOH).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Acids turn blue litmus paper:",
+        "options": [
+          {"id": "a", "text": "Green", "isCorrect": false},
+          {"id": "b", "text": "Red", "isCorrect": true},
+          {"id": "c", "text": "Blue", "isCorrect": false},
+          {"id": "d", "text": "Yellow", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Acids turn blue litmus red. Exam Tip: Acid -> blue litmus turns RED.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Bases (alkalis) turn red litmus paper:",
+        "options": [
+          {"id": "a", "text": "Red", "isCorrect": false},
+          {"id": "b", "text": "Blue", "isCorrect": true},
+          {"id": "c", "text": "Colourless", "isCorrect": false},
+          {"id": "d", "text": "Black", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Bases turn red litmus blue. Exam Tip: Base -> red litmus turns BLUE.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The pH value of a neutral solution such as pure water is:",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "7", "isCorrect": true},
+          {"id": "c", "text": "14", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The middle of the pH scale (0-14), 7, is neutral. Exam Tip: pH < 7 acidic; pH = 7 neutral; pH > 7 basic.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A solution with a pH of 2 is:",
+        "options": [
+          {"id": "a", "text": "Strongly acidic", "isCorrect": true},
+          {"id": "b", "text": "Neutral", "isCorrect": false},
+          {"id": "c", "text": "Strongly basic", "isCorrect": false},
+          {"id": "d", "text": "Weakly basic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "pH 2 is far below 7 - strongly acidic. Exam Tip: The lower the pH (near 0), the stronger the acid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When an acid reacts with a base, the products are:",
+        "options": [
+          {"id": "a", "text": "A salt and hydrogen", "isCorrect": false},
+          {"id": "b", "text": "A salt and water", "isCorrect": true},
+          {"id": "c", "text": "A salt and oxygen", "isCorrect": false},
+          {"id": "d", "text": "Only water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Acid + base -> salt + water. Exam Tip: Neutralisation: HCl + NaOH -> NaCl + H2O.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When an acid reacts with a metal, the gas produced is:",
+        "options": [
+          {"id": "a", "text": "Oxygen", "isCorrect": false},
+          {"id": "b", "text": "Hydrogen", "isCorrect": true},
+          {"id": "c", "text": "Carbon dioxide", "isCorrect": false},
+          {"id": "d", "text": "Nitrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Hydrogen gas is released. Exam Tip: Acid + metal -> salt + hydrogen. Test: a lighted splint gives a pop.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When an acid reacts with a carbonate, the gas produced is:",
+        "options": [
+          {"id": "a", "text": "Hydrogen", "isCorrect": false},
+          {"id": "b", "text": "Carbon dioxide", "isCorrect": true},
+          {"id": "c", "text": "Oxygen", "isCorrect": false},
+          {"id": "d", "text": "Ammonia", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Carbon dioxide is released (along with a salt and water). Exam Tip: Acid + carbonate -> salt + water + carbon dioxide. Test: CO2 turns limewater milky.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A substance used to show whether a solution is acidic or basic is called an:",
+        "options": [
+          {"id": "a", "text": "Element", "isCorrect": false},
+          {"id": "b", "text": "Indicator", "isCorrect": true},
+          {"id": "c", "text": "Electron", "isCorrect": false},
+          {"id": "d", "text": "Ion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "This substance is an indicator. Exam Tip: Indicators: litmus, phenolphthalein, methyl orange, universal indicator.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In an acidic solution, the indicator phenolphthalein is:",
+        "options": [
+          {"id": "a", "text": "Pink", "isCorrect": false},
+          {"id": "b", "text": "Colourless", "isCorrect": true},
+          {"id": "c", "text": "Blue", "isCorrect": false},
+          {"id": "d", "text": "Green", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Phenolphthalein is colourless in acid and pink in alkali. Exam Tip: Phenolphthalein: colourless in acid, PINK in base.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a common laboratory acid?",
+        "options": [
+          {"id": "a", "text": "Sodium hydroxide", "isCorrect": false},
+          {"id": "b", "text": "Hydrochloric acid", "isCorrect": true},
+          {"id": "c", "text": "Calcium hydroxide", "isCorrect": false},
+          {"id": "d", "text": "Ammonia solution", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Hydrochloric acid (HCl) is a common laboratory acid. Exam Tip: Laboratory acids: hydrochloric, sulphuric, nitric. The others listed are bases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The substance formed when a metal ion replaces the hydrogen of an acid is called a:",
+        "options": [
+          {"id": "a", "text": "Base", "isCorrect": false},
+          {"id": "b", "text": "Salt", "isCorrect": true},
+          {"id": "c", "text": "Gas", "isCorrect": false},
+          {"id": "d", "text": "Metal", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The product is a salt. Exam Tip: A salt forms when the H+ of an acid is replaced by a metal (or ammonium) ion.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A natural indicator can be prepared from:",
+        "options": [
+          {"id": "a", "text": "Table salt", "isCorrect": false},
+          {"id": "b", "text": "Coloured flowers or leaves (e.g. hibiscus)", "isCorrect": true},
+          {"id": "c", "text": "Pure water", "isCorrect": false},
+          {"id": "d", "text": "Iron filings", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Coloured flowers and leaves can be crushed to make natural indicators. Exam Tip: Natural indicators (hibiscus, red cabbage) change colour with acids and bases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following substances is basic (alkaline)?",
+        "options": [
+          {"id": "a", "text": "Lemon juice", "isCorrect": false},
+          {"id": "b", "text": "Vinegar", "isCorrect": false},
+          {"id": "c", "text": "Wood ash solution", "isCorrect": true},
+          {"id": "d", "text": "Sour milk", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Acids turn blue litmus paper red, while bases turn red litmus paper blue.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "On the pH scale, a neutral substance such as pure water has a pH of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "0",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "7",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "10",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "14",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A pH of 7 is neutral; values below 7 are acidic and values above 7 are basic.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following is a strong acid?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ethanoic acid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Carbonic acid",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Hydrochloric acid",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Citric acid",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Hydrochloric acid ionises almost completely in water, making it a strong acid, unlike the weak acids listed.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is produced when an acid reacts with a metal carbonate?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Salt, water and hydrogen gas",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Salt, water and carbon dioxide gas",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Salt and hydrogen gas only",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Water and oxygen gas only",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Acid plus metal carbonate gives a salt, water and carbon dioxide, which turns limewater milky.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The reaction between an acid and a base to form a salt and water is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Oxidation",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Neutralisation",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Combustion",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Electrolysis",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Neutralisation is the reaction of an acid with a base producing a salt and water only.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which indicator is colourless in acid but turns pink in alkaline solution?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Litmus",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Methyl orange",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Phenolphthalein",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Universal indicator",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Phenolphthalein is colourless in acids and neutral solutions but turns pink in alkalis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When a reactive metal such as zinc reacts with a dilute acid, the gas given off is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Oxygen",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Carbon dioxide",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Hydrogen",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Nitrogen",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Acid plus a reactive metal gives a salt and hydrogen gas, which produces a 'pop' sound with a lit splint.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following substances is a base commonly used in the home?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Vinegar",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Baking soda",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Lemon juice",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Soda water",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Baking soda (sodium hydrogen carbonate) is a mild base, while the others are acidic.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What colour does universal indicator show in a strongly acidic solution?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Purple",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Green",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Blue",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Red",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Universal indicator turns red in strong acids, green in neutral solutions and purple in strong alkalis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A base that is soluble in water is specifically known as a(n):",
-        "options": [
-          {
-            "id": "a",
-            "text": "Salt",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Alkali",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Oxide",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Acid",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "An alkali is a base that dissolves in water, such as sodium hydroxide or potassium hydroxide.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which colour does methyl orange show in an acidic solution?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Yellow",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Red",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Pink",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Colourless",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Methyl orange is red in acids and yellow in alkalis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which one of the following is the correct general word equation for the reaction of an acid with a metal hydroxide?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Acid + metal hydroxide → salt + hydrogen",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Acid + metal hydroxide → salt + water",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Acid + metal hydroxide → salt + carbon dioxide",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Acid + metal hydroxide → salt + oxygen",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A metal hydroxide is a base, so it neutralises an acid to form a salt and water.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A solution has a pH of 2. This solution is best described as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Weakly acidic",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Strongly acidic",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Neutral",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Strongly alkaline",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A pH far below 7, such as 2, indicates a strongly acidic solution.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which acid is naturally found in sour milk and yoghurt?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Citric acid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Lactic acid",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Sulphuric acid",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Nitric acid",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Lactic acid forms when milk turns sour and is also responsible for the taste of yoghurt.",
+        "explanation": "Wood ash solution is alkaline; lemon juice, vinegar and sour milk are acidic. Exam Tip: Acidic: citrus, vinegar, sour milk. Basic: wood ash, soap, baking soda.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A substance that changes colour to show whether a solution is acidic or basic is called an _____.",
-        "options": [],
-        "correctAnswer": "indicator",
-        "explanation": "Indicators such as litmus and phenolphthalein reveal the acidity or alkalinity of a solution.",
+        "questionText": "An acid produces ____ ions when dissolved in water.",
+        "options": [
+          {"id": "a", "text": "hydroxide", "isCorrect": false},
+          {"id": "b", "text": "hydrogen", "isCorrect": true},
+          {"id": "c", "text": "metal", "isCorrect": false},
+          {"id": "d", "text": "oxide", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Acids ionise in water to produce hydrogen (H+) ions, which is what makes them acidic. Exam Tip: Acid -> H+; base -> OH-.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Acids turn blue litmus paper _____ in colour.",
-        "options": [],
-        "correctAnswer": "red",
-        "explanation": "Acids change blue litmus to red, a basic test for acidity.",
+        "questionText": "A soluble base is called an ____.",
+        "options": [
+          {"id": "a", "text": "alkali", "isCorrect": true},
+          {"id": "b", "text": "acid", "isCorrect": false},
+          {"id": "c", "text": "salt", "isCorrect": false},
+          {"id": "d", "text": "indicator", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A base that dissolves in water is specifically called an alkali. Exam Tip: NaOH and KOH are common alkalis.",
         "difficulty": "easy"
       },
       {
-        "questionText": "On the pH scale, a value of 7 represents a _____ solution.",
-        "options": [],
-        "correctAnswer": "neutral",
-        "explanation": "Pure water has a pH of 7 and is neither acidic nor basic.",
+        "questionText": "Acids turn blue litmus paper ____.",
+        "options": [
+          {"id": "a", "text": "blue", "isCorrect": false},
+          {"id": "b", "text": "green", "isCorrect": false},
+          {"id": "c", "text": "red", "isCorrect": true},
+          {"id": "d", "text": "yellow", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This colour change of litmus paper from blue to red is a standard test for acidity. Exam Tip: Acid -> blue litmus red.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A base that dissolves in water is called an _____.",
-        "options": [],
-        "correctAnswer": "alkali",
-        "explanation": "Soluble bases like sodium hydroxide are known as alkalis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When an acid reacts with a base, the products are a salt and _____.",
-        "options": [],
-        "correctAnswer": "water",
-        "explanation": "Neutralisation always produces a salt and water.",
+        "questionText": "A neutral solution has a pH value of ____.",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "7", "isCorrect": true},
+          {"id": "c", "text": "14", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "7 lies exactly in the middle of the 0-14 pH scale, marking a neutral solution such as pure water. Exam Tip: pH 7 = neutral (pure water).",
         "difficulty": "easy"
       },
       {
-        "questionText": "The gas given off when a dilute acid reacts with a reactive metal is _____.",
-        "options": [],
-        "correctAnswer": "hydrogen",
-        "explanation": "Hydrogen gas is released and produces a 'pop' with a burning splint.",
-        "difficulty": "medium"
+        "questionText": "The reaction between an acid and a base produces a salt and ____.",
+        "options": [
+          {"id": "a", "text": "hydrogen", "isCorrect": false},
+          {"id": "b", "text": "oxygen", "isCorrect": false},
+          {"id": "c", "text": "water", "isCorrect": true},
+          {"id": "d", "text": "carbon dioxide", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This is the neutralisation reaction, where an acid and a base combine to form a salt and water. Exam Tip: Acid + base -> salt + water.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "An acid that ionises completely in water is described as a _____ acid.",
-        "options": [],
-        "correctAnswer": "strong",
-        "explanation": "Strong acids such as hydrochloric acid release all their hydrogen ions in water.",
-        "difficulty": "medium"
+        "questionText": "When an acid reacts with a carbonate, the gas produced is ____.",
+        "options": [
+          {"id": "a", "text": "hydrogen", "isCorrect": false},
+          {"id": "b", "text": "carbon dioxide", "isCorrect": true},
+          {"id": "c", "text": "oxygen", "isCorrect": false},
+          {"id": "d", "text": "ammonia", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An acid reacting with a carbonate always releases carbon dioxide gas, along with a salt and water. Exam Tip: CO2 turns limewater milky.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The gas produced when an acid reacts with a carbonate is carbon _____.",
-        "options": [],
-        "correctAnswer": "dioxide",
-        "explanation": "Carbon dioxide is released and turns limewater milky.",
-        "difficulty": "medium"
+        "questionText": "A substance that changes colour to show whether a solution is acidic or basic is called an ____.",
+        "options": [
+          {"id": "a", "text": "element", "isCorrect": false},
+          {"id": "b", "text": "indicator", "isCorrect": true},
+          {"id": "c", "text": "electron", "isCorrect": false},
+          {"id": "d", "text": "ion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Such a colour-changing substance is called an indicator, and is used to classify solutions. Exam Tip: Litmus, phenolphthalein and methyl orange are indicators.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Phenolphthalein indicator turns _____ when added to an alkaline solution.",
-        "options": [],
-        "correctAnswer": "pink",
-        "explanation": "Phenolphthalein is colourless in acid but pink in alkali.",
-        "difficulty": "medium"
+        "questionText": "Phenolphthalein is ____ in colour in an alkaline (basic) solution.",
+        "options": [
+          {"id": "a", "text": "pink", "isCorrect": true},
+          {"id": "b", "text": "colourless", "isCorrect": false},
+          {"id": "c", "text": "blue", "isCorrect": false},
+          {"id": "d", "text": "green", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Phenolphthalein turns pink in basic (alkaline) solutions, while remaining colourless in acids. Exam Tip: Phenolphthalein: colourless in acid, pink in base.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The acid present in the stomach that helps in digestion is hydrochloric _____.",
-        "options": [],
-        "correctAnswer": "acid",
-        "explanation": "The stomach produces hydrochloric acid to help digest food and kill germs.",
+        "questionText": "When an acid reacts with a metal, the gas produced is ____.",
+        "options": [
+          {"id": "a", "text": "oxygen", "isCorrect": false},
+          {"id": "b", "text": "hydrogen", "isCorrect": true},
+          {"id": "c", "text": "carbon dioxide", "isCorrect": false},
+          {"id": "d", "text": "nitrogen", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An acid reacting with a reactive metal releases hydrogen gas along with a salt. Exam Tip: Metal + acid -> salt + hydrogen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A substance formed when the hydrogen of an acid is replaced by a metal is called a ____.",
+        "options": [
+          {"id": "a", "text": "base", "isCorrect": false},
+          {"id": "b", "text": "salt", "isCorrect": true},
+          {"id": "c", "text": "gas", "isCorrect": false},
+          {"id": "d", "text": "metal", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "This substance is called a salt, formed whenever a metal or ammonium ion replaces the hydrogen of an acid. Exam Tip: Salts come from acids (e.g. NaCl from HCl).",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Bases generally feel soapy or slippery to the touch.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A soapy, slippery feel is a typical physical property of bases and alkalis.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A solution with a pH of 12 is acidic.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A pH of 12 is above 7, so the solution is alkaline (basic), not acidic.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Universal indicator can show how strongly acidic or alkaline a solution is.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Universal indicator gives a range of colours matching different pH values.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "All bases are soluble in water.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Only soluble bases are alkalis; many bases, such as copper(II) oxide, are insoluble in water.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Ethanoic acid (the acid in vinegar) is a weak acid.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Ethanoic acid only partly ionises in water, so it is classed as a weak acid.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "When an acid reacts with a metal carbonate, hydrogen gas is the gas released.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Acid plus a carbonate releases carbon dioxide, not hydrogen.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Neutralisation can be used to relieve indigestion by treating excess stomach acid.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Antacids contain bases that neutralise excess hydrochloric acid in the stomach.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Methyl orange turns yellow in an acidic solution.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Methyl orange is red in acids and yellow in alkalis.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A strong acid and a weak acid can have the same concentration but differ in how much they ionise.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Strength refers to the degree of ionisation, which is different from concentration.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Lemon juice is an example of an alkaline substance.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Lemon juice contains citric acid and is therefore acidic, not alkaline.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Acids produce hydrogen ions (H+) when dissolved in water.", "options": [], "correctAnswer": "true", "explanation": "Acids ionise in water to release hydrogen ions, which is the defining property of an acid. Exam Tip: Acid = H+ producer.", "difficulty": "easy"},
+      {"questionText": "All bases are soluble in water.", "options": [], "correctAnswer": "false", "explanation": "Only some bases dissolve in water; those that do are called alkalis, while many bases remain insoluble. Exam Tip: The soluble ones are alkalis; many bases are insoluble.", "difficulty": "easy"},
+      {"questionText": "Acids turn blue litmus red.", "options": [], "correctAnswer": "true", "explanation": "This is a standard litmus test result confirming a solution is acidic. Exam Tip: Acid -> red; base -> blue.", "difficulty": "easy"},
+      {"questionText": "A solution with pH 10 is acidic.", "options": [], "correctAnswer": "false", "explanation": "A pH above 7 indicates a basic (alkaline) solution, not an acidic one. Exam Tip: Above 7 is basic, not acidic.", "difficulty": "easy"},
+      {"questionText": "Neutralisation is the reaction between an acid and a base to form a salt and water.", "options": [], "correctAnswer": "true", "explanation": "This is the definition of neutralisation, where the acid and base cancel each other's properties. Exam Tip: Used to treat acidic soil and indigestion.", "difficulty": "easy"},
+      {"questionText": "When an acid reacts with a metal carbonate, oxygen gas is produced.", "options": [], "correctAnswer": "false", "explanation": "The gas produced when an acid reacts with a carbonate is carbon dioxide, not oxygen. Exam Tip: The gas is CARBON DIOXIDE, not oxygen.", "difficulty": "easy"},
+      {"questionText": "Phenolphthalein is pink in a basic solution and colourless in an acidic solution.", "options": [], "correctAnswer": "true", "explanation": "This is the correct colour change behaviour of the phenolphthalein indicator. Exam Tip: Learn indicator colours.", "difficulty": "easy"},
+      {"questionText": "Lemon juice and vinegar are examples of bases.", "options": [], "correctAnswer": "false", "explanation": "Lemon juice and vinegar contain acids (citric acid and acetic acid), so they are acidic, not basic. Exam Tip: Citrus and vinegar are ACIDIC.", "difficulty": "easy"},
+      {"questionText": "Natural indicators can be made from coloured flowers such as hibiscus.", "options": [], "correctAnswer": "true", "explanation": "Crushed coloured flowers and leaves like hibiscus can act as natural acid-base indicators. Exam Tip: Hibiscus and red cabbage give colour-changing natural indicators.", "difficulty": "easy"},
+      {"questionText": "A salt is formed when the hydrogen of an acid is replaced by a metal.", "options": [], "correctAnswer": "true", "explanation": "This is the definition of salt formation, such as when sodium replaces hydrogen in HCl to form NaCl. Exam Tip: HCl -> NaCl when Na replaces H.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Taste and feel of acids and bases",
-        "options": [],
-        "correctAnswer": "Acids taste sour; bases taste bitter and feel soapy.",
-        "explanation": "These physical properties help distinguish acids from bases, though tasting laboratory chemicals is unsafe.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Litmus colour changes",
-        "options": [],
-        "correctAnswer": "Acids turn blue litmus red; bases turn red litmus blue.",
-        "explanation": "Litmus is a simple indicator distinguishing acids from bases.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of the pH scale",
-        "options": [],
-        "correctAnswer": "pH runs from 0 to 14: below 7 acidic, 7 neutral, above 7 basic.",
-        "explanation": "The pH value measures how acidic or alkaline a solution is.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Strong versus weak acids",
-        "options": [],
-        "correctAnswer": "Strong acids ionise completely; weak acids ionise only partly.",
-        "explanation": "Strength depends on the degree of ionisation in water.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Neutralisation reaction",
-        "options": [],
-        "correctAnswer": "Acid + base → salt + water.",
-        "explanation": "This is the basic equation for neutralisation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Acid plus metal reaction",
-        "options": [],
-        "correctAnswer": "Acid + metal → salt + hydrogen gas.",
-        "explanation": "Hydrogen gas is identified by a 'pop' test with a lit splint.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Acid plus carbonate reaction",
-        "options": [],
-        "correctAnswer": "Acid + carbonate → salt + water + carbon dioxide.",
-        "explanation": "The carbon dioxide turns limewater milky.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Phenolphthalein indicator",
-        "options": [],
-        "correctAnswer": "Colourless in acid, pink in alkali.",
-        "explanation": "It is widely used to detect alkaline solutions.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Definition of an alkali",
-        "options": [],
-        "correctAnswer": "An alkali is a base that dissolves in water.",
-        "explanation": "Examples include sodium hydroxide and potassium hydroxide.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Everyday acids and bases",
-        "options": [],
-        "correctAnswer": "Vinegar and lemon juice are acids; baking soda and soap are bases.",
-        "explanation": "Acids and bases are common in foods and household products.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Acid", "options": [], "correctAnswer": "A substance that produces hydrogen ions (H+) when dissolved in water.", "explanation": "Acids taste sour, turn blue litmus red, and react with metals, carbonates and bases. Exam Tip: Common laboratory acids are hydrochloric, sulphuric and nitric acid.", "difficulty": "easy"},
+      {"questionText": "Alkali (soluble base)", "options": [], "correctAnswer": "A base that dissolves in water and produces hydroxide ions (OH-), such as sodium hydroxide or potassium hydroxide.", "explanation": "All alkalis are bases, but only the soluble bases are called alkalis. Exam Tip: NaOH and KOH are common alkalis used in the laboratory.", "difficulty": "easy"},
+      {"questionText": "Litmus test", "options": [], "correctAnswer": "A simple test using litmus paper, where acids turn blue litmus red and bases (alkalis) turn red litmus blue.", "explanation": "Litmus is one of the most common indicators used to classify a solution as acidic or basic. Exam Tip: Acid turns litmus red; base turns litmus blue.", "difficulty": "easy"},
+      {"questionText": "pH scale", "options": [], "correctAnswer": "A scale from 0 to 14 used to measure how acidic or basic a solution is, where values below 7 are acidic, 7 is neutral and above 7 is basic.", "explanation": "The further the pH value is from 7, the stronger the acid or base. Exam Tip: pH < 7 acidic; pH = 7 neutral; pH > 7 basic.", "difficulty": "easy"},
+      {"questionText": "Neutralisation", "options": [], "correctAnswer": "The reaction between an acid and a base that produces a salt and water, cancelling their acidic and basic properties.", "explanation": "Neutralisation is used practically to treat acidic soil with lime and to relieve indigestion with antacids. Exam Tip: Acid + base -> salt + water.", "difficulty": "easy"},
+      {"questionText": "Acid + metal -> hydrogen", "options": [], "correctAnswer": "When an acid reacts with a reactive metal, it produces a salt and hydrogen gas.", "explanation": "Hydrogen gas can be tested using a lighted splint, which gives a pop sound. Exam Tip: Acid + metal -> salt + hydrogen.", "difficulty": "easy"},
+      {"questionText": "Acid + carbonate -> carbon dioxide", "options": [], "correctAnswer": "When an acid reacts with a carbonate, it produces a salt, water and carbon dioxide gas.", "explanation": "Carbon dioxide gas can be tested by bubbling it through limewater, which turns milky. Exam Tip: Acid + carbonate -> salt + water + carbon dioxide.", "difficulty": "easy"},
+      {"questionText": "Indicator", "options": [], "correctAnswer": "A substance that changes colour to show whether a solution is acidic, neutral or basic.", "explanation": "Common indicators include litmus, phenolphthalein, methyl orange and universal indicator. Exam Tip: Natural indicators can also be made from hibiscus or red cabbage.", "difficulty": "easy"},
+      {"questionText": "Phenolphthalein colours", "options": [], "correctAnswer": "Phenolphthalein is colourless in an acidic solution and turns pink in a basic (alkaline) solution.", "explanation": "This colour change makes phenolphthalein useful for identifying the endpoint in acid-base reactions. Exam Tip: Colourless in acid, pink in base.", "difficulty": "easy"},
+      {"questionText": "Salt formation", "options": [], "correctAnswer": "A salt is formed when the hydrogen ion of an acid is replaced by a metal ion or an ammonium ion.", "explanation": "For example, hydrochloric acid reacts with sodium hydroxide to form the salt sodium chloride (NaCl) and water. Exam Tip: Salt names often combine the metal with the acid's root, e.g. sulphuric acid gives sulphate salts.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "Equal volumes of a strong acid and a weak acid of the same concentration are each added to identical pieces of magnesium ribbon. Which observation is correct?",
+        "questionText": "A farmer's soil is too acidic. An officer advises adding lime (calcium hydroxide, a base). Explain the chemistry behind this advice.",
         "options": [
-          {
-            "id": "a",
-            "text": "The weak acid reacts faster because it is safer",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The strong acid reacts faster because it has more hydrogen ions in solution",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Both react at exactly the same rate because concentrations are equal",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Neither acid reacts with magnesium",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The base makes the soil more acidic", "isCorrect": false},
+          {"id": "b", "text": "The base neutralises the excess acid in the soil (acid + base -> salt + water), raising the pH towards neutral so crops grow better", "isCorrect": true},
+          {"id": "c", "text": "Lime adds more hydrogen ions", "isCorrect": false},
+          {"id": "d", "text": "Lime has no effect on soil", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Although the concentrations are equal, the strong acid ionises more fully, giving a higher concentration of hydrogen ions and a faster reaction.",
+        "explanation": "Calcium hydroxide (base) neutralises the excess soil acid, raising pH towards 7. Exam Tip: A BASE cancels an ACID. This is why acidic soil is treated with lime.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A student adds an unknown solution to universal indicator and it turns green, then adds a few drops of dilute hydrochloric acid. What colour change is expected?",
+        "questionText": "A student tests four substances with universal indicator: Lemon juice pH 2, Pure water pH 7, Soap solution pH 9, Baking soda solution pH 8. Classify each and identify the most acidic and most basic.",
         "options": [
-          {
-            "id": "a",
-            "text": "Green changes towards red",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Green changes towards purple",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Green stays exactly the same",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Green changes to colourless",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Lemon juice acidic (most acidic); water neutral; soap and baking soda basic (soap most basic)", "isCorrect": true},
+          {"id": "b", "text": "Lemon juice basic; water acidic", "isCorrect": false},
+          {"id": "c", "text": "All are acidic", "isCorrect": false},
+          {"id": "d", "text": "Baking soda is the most acidic", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "The solution was neutral (green); adding acid lowers the pH, shifting the universal indicator colour towards red.",
+        "explanation": "Below 7 = acidic (lemon juice, pH 2, most acidic); 7 = neutral (water); above 7 = basic (soap pH 9 most basic, baking soda pH 8). Exam Tip: The further from 7, the stronger the acid or base.",
         "difficulty": "hard"
       },
       {
-        "questionText": "During a titration, exactly enough acid is added to a sodium hydroxide solution containing phenolphthalein so that the pink colour just disappears. What does this end point indicate?",
+        "questionText": "A student adds dilute hydrochloric acid to marble chips (calcium carbonate) and observes bubbling. The gas is bubbled through limewater, which turns milky. Identify the gas and classify the reaction.",
         "options": [
-          {
-            "id": "a",
-            "text": "The solution is now strongly acidic",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "The acid and base have exactly neutralised each other",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "All the salt has been removed",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "The base is in large excess",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The gas is hydrogen; combination reaction", "isCorrect": false},
+          {"id": "b", "text": "The gas is carbon dioxide; acid + carbonate -> salt + water + carbon dioxide; the CO2 turns limewater milky", "isCorrect": true},
+          {"id": "c", "text": "The gas is oxygen; decomposition", "isCorrect": false},
+          {"id": "d", "text": "No reaction occurs", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Phenolphthalein loses its pink colour as the alkali is just used up, marking the point where the acid has neutralised the base.",
+        "explanation": "Acid + carbonate -> salt + water + carbon dioxide. CO2 is confirmed by turning limewater milky. Exam Tip: Acid + CARBONATE always releases CARBON DIOXIDE (not hydrogen - that's acid + metal).",
         "difficulty": "hard"
       }
     ]

@@ -20,7 +20,7 @@ interface CurriculumStore {
 
   // Data maps keyed for fast lookup
   subjectsByForm: Record<string, CurriculumSubject[]>;
-  topicsBySubject: Record<string, CurriculumTopic[]>;      // key: subjectId
+  topicsBySubject: Record<string, CurriculumTopic[]>;      // key: `${formId}::${subjectId}`
   packsByTopic: Record<string, CurriculumLearningPack[]>;   // key: topicId
 
   // Loading & error
@@ -33,9 +33,9 @@ interface CurriculumStore {
   // Actions
   setSelectedForm: (formId: string) => void;
   fetchForms: () => Promise<void>;
-  fetchSubjects: (formId: string) => Promise<void>;
-  fetchTopics: (formId: string, subjectId: string) => Promise<void>;
-  fetchLearningPacks: (formId: string, subjectId: string, topicId: string) => Promise<void>;
+  fetchSubjects: (formId: string, force?: boolean) => Promise<void>;
+  fetchTopics: (formId: string, subjectId: string, force?: boolean) => Promise<void>;
+  fetchLearningPacks: (formId: string, subjectId: string, topicId: string, force?: boolean) => Promise<void>;
   clearError: () => void;
 }
 
@@ -69,9 +69,11 @@ export const useCurriculumStore = create<CurriculumStore>((set, get) => ({
     }
   },
 
-  fetchSubjects: async (formId) => {
-    // Return cached if available
-    if (get().subjectsByForm[formId]) return;
+  fetchSubjects: async (formId, force = false) => {
+    // Return cached if available — unless forced, an empty array from an
+    // earlier transient/unauthenticated fetch would otherwise be cached
+    // forever with no way to retry short of a full app reload.
+    if (!force && get().subjectsByForm[formId]) return;
     set({ loadingSubjects: true, error: null });
     try {
       const subjects = await getSubjectsByForm(formId);
@@ -84,13 +86,18 @@ export const useCurriculumStore = create<CurriculumStore>((set, get) => ({
     }
   },
 
-  fetchTopics: async (formId, subjectId) => {
-    if (get().topicsBySubject[subjectId]) return;
+  fetchTopics: async (formId, subjectId, force = false) => {
+    // Keyed by form+subject, not subject alone — the same subject has
+    // different topics on each Form, so caching by subjectId only would
+    // reuse (or, worse, an empty result from) whichever Form was fetched
+    // first for every other Form of that subject.
+    const cacheKey = `${formId}::${subjectId}`;
+    if (!force && get().topicsBySubject[cacheKey]) return;
     set({ loadingTopics: true, error: null });
     try {
       const topics = await getTopicsBySubject(formId, subjectId);
       set((s) => ({
-        topicsBySubject: { ...s.topicsBySubject, [subjectId]: topics },
+        topicsBySubject: { ...s.topicsBySubject, [cacheKey]: topics },
         loadingTopics: false,
       }));
     } catch (e) {
@@ -98,8 +105,12 @@ export const useCurriculumStore = create<CurriculumStore>((set, get) => ({
     }
   },
 
-  fetchLearningPacks: async (formId, subjectId, topicId) => {
-    if (get().packsByTopic[topicId]) return;
+  fetchLearningPacks: async (formId, subjectId, topicId, force = false) => {
+    // Same class of bug as topicsBySubject: an empty array from an earlier
+    // failed/transient fetch (e.g. before a real auth token was available)
+    // is truthy, so without `force` a stale empty result would be cached
+    // forever with no way to retry short of a full app reload.
+    if (!force && get().packsByTopic[topicId]) return;
     set({ loadingPacks: true, error: null });
     try {
       const packs = await getLearningPacksByTopic(formId, subjectId, topicId);

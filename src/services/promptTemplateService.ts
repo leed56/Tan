@@ -5,7 +5,7 @@ export interface ExplanationGenerationParams {
   questionText: string;
   correctAnswer: string;
   options: Array<{ id: string; text: string }>;
-  quizType: 'mcq' | 'fib' | 'tf';
+  quizType: 'mcq' | 'fib' | 'tf' | 'hoq';
   subjectId: string;
   subjectName: string;
   formId: string;

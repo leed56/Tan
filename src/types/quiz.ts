@@ -1,4 +1,4 @@
-export type QuizType = 'mcq' | 'fib' | 'tf';
+export type QuizType = 'mcq' | 'fib' | 'tf' | 'hoq';
 
 export interface QuestionOption {
   id: string;
@@ -14,8 +14,8 @@ export interface Question {
   learningPackId: string;
   type: QuizType;
   questionText: string;
-  options: QuestionOption[];  // MCQ only; empty array for FIB/TF
-  correctAnswer: string;      // MCQ: correct option id | FIB: expected text | TF: 'true'|'false'
+  options: QuestionOption[];  // MCQ/FIB: 4 options; empty array for TF
+  correctAnswer: string;      // MCQ/FIB: correct option id | TF: 'true'|'false'
   explanation: string;
   difficulty: 'easy' | 'medium' | 'hard';
   xpReward: number;
@@ -54,23 +54,6 @@ export interface QuizAnswer {
   timeTakenSeconds: number;
   createdAt: number;
 }
-
-export interface DailyUsage {
-  id: string;
-  userId: string;
-  date: string; // YYYY-MM-DD
-  mcqUsed: number;
-  fibUsed: number;
-  tfUsed: number;
-  summaryUsed: number;
-  hoqUsed: number;
-}
-
-export const FREE_DAILY_LIMITS: Record<QuizType, number> = {
-  mcq: 5,
-  fib: 3,
-  tf: 2,
-};
 
 export interface QuizSessionResult {
   correctCount: number;

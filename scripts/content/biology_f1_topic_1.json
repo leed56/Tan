@@ -2,441 +2,371 @@
   "topicId": "form_1_biology_topic_1",
   "topicName": "Introduction to Biology",
   "order": 1,
-  "description": "An introduction to biology covering its meaning, branches, importance, the characteristics of living things, biology as a science, the scientific method, and basic laboratory apparatus.",
+  "description": "An introduction to biology and its branches, the characteristics that distinguish living from non-living things, and the importance and applications of biology in everyday life.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Biology is best defined as the scientific study of which of the following?",
+        "questionText": "What is the meaning of the word \"Biology\"?",
         "options": [
-          {"id": "a", "text": "Rocks and minerals", "isCorrect": false},
-          {"id": "b", "text": "Living things and life processes", "isCorrect": true},
-          {"id": "c", "text": "Stars and planets", "isCorrect": false},
-          {"id": "d", "text": "Chemical reactions only", "isCorrect": false}
+          {"id": "a", "text": "The study of plants", "isCorrect": false},
+          {"id": "b", "text": "The study of living things", "isCorrect": true},
+          {"id": "c", "text": "The study of animals", "isCorrect": false},
+          {"id": "d", "text": "The study of chemicals", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The word biology comes from 'bios' (life) and 'logos' (study), so it is the study of living things and their life processes.",
+        "explanation": "\"Biology\" comes from Greek bios (life) and logos (study). Combined they mean the study of life. Biology is the study of living things (organisms). Exam Tip: A and C are branches of biology (botany and zoology), not biology itself. When a definition option is narrower than the whole subject, it is a distractor.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which branch of biology deals with the study of animals?",
+        "questionText": "The branch of biology that deals with the study of plants is called:",
+        "options": [
+          {"id": "a", "text": "Zoology", "isCorrect": false},
+          {"id": "b", "text": "Botany", "isCorrect": true},
+          {"id": "c", "text": "Ecology", "isCorrect": false},
+          {"id": "d", "text": "Genetics", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The key word is \"plants\". Botany is the study of plant life. Exam Tip: Pair the roots: Botany-plants, Zoology-animals, Microbiology-microorganisms.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of biology that deals with the study of animals is:",
         "options": [
           {"id": "a", "text": "Botany", "isCorrect": false},
           {"id": "b", "text": "Ecology", "isCorrect": false},
           {"id": "c", "text": "Zoology", "isCorrect": true},
-          {"id": "d", "text": "Genetics", "isCorrect": false}
+          {"id": "d", "text": "Cytology", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Zoology is the branch of biology that studies animals, while botany studies plants.",
+        "explanation": "The key word is \"animals\". Zoo- refers to animals, so the study of animals is Zoology. Exam Tip: The \"zoo\" prefix is the memory hook - a zoo holds animals.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of biology that studies plants is called:",
-        "options": [
-          {"id": "a", "text": "Botany", "isCorrect": true},
-          {"id": "b", "text": "Microbiology", "isCorrect": false},
-          {"id": "c", "text": "Physiology", "isCorrect": false},
-          {"id": "d", "text": "Entomology", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "Botany is the study of plants, including their structure, growth and uses.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following is NOT a characteristic of all living things?",
+        "questionText": "Which of the following is NOT a characteristic of living things?",
         "options": [
           {"id": "a", "text": "Respiration", "isCorrect": false},
-          {"id": "b", "text": "Growth", "isCorrect": false},
-          {"id": "c", "text": "Reproduction", "isCorrect": false},
-          {"id": "d", "text": "Rusting", "isCorrect": true}
-        ],
-        "correctAnswer": "d",
-        "explanation": "Rusting is a chemical change in metals, not a life process. Living things respire, grow and reproduce.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The removal of metabolic waste products from the body of an organism is known as:",
-        "options": [
-          {"id": "a", "text": "Nutrition", "isCorrect": false},
-          {"id": "b", "text": "Excretion", "isCorrect": true},
-          {"id": "c", "text": "Irritability", "isCorrect": false},
-          {"id": "d", "text": "Movement", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Excretion is the process of getting rid of waste products of metabolism, such as carbon dioxide and urea.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The ability of living things to respond to changes in their surroundings is called:",
-        "options": [
-          {"id": "a", "text": "Sensitivity (irritability)", "isCorrect": true},
           {"id": "b", "text": "Reproduction", "isCorrect": false},
-          {"id": "c", "text": "Excretion", "isCorrect": false},
+          {"id": "c", "text": "Rusting", "isCorrect": true},
           {"id": "d", "text": "Growth", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Sensitivity, also called irritability, is the ability to detect and respond to stimuli in the environment.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which branch of biology would a scientist studying malaria-causing parasites such as Plasmodium mostly use?",
-        "options": [
-          {"id": "a", "text": "Botany", "isCorrect": false},
-          {"id": "b", "text": "Microbiology", "isCorrect": true},
-          {"id": "c", "text": "Genetics", "isCorrect": false},
-          {"id": "d", "text": "Ecology", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Microbiology is the study of microscopic organisms such as bacteria, viruses and protozoa like Plasmodium.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which of the following is the correct first step of the scientific method?",
-        "options": [
-          {"id": "a", "text": "Drawing a conclusion", "isCorrect": false},
-          {"id": "b", "text": "Carrying out an experiment", "isCorrect": false},
-          {"id": "c", "text": "Observation and identifying a problem", "isCorrect": true},
-          {"id": "d", "text": "Publishing results", "isCorrect": false}
-        ],
         "correctAnswer": "c",
-        "explanation": "The scientific method begins with observation and identifying a problem, followed by forming a hypothesis and experimenting.",
+        "explanation": "The true characteristics of life are nutrition, respiration, movement, growth, reproduction, excretion and sensitivity. Rusting is a chemical reaction of iron, not a life process. Exam Tip: The mnemonic MR NIGER D (Movement, Respiration, Nutrition, Irritability, Growth, Excretion, Reproduction, Death) lists all life processes - anything outside it is a distractor.",
         "difficulty": "medium"
       },
       {
-        "questionText": "An intelligent guess or proposed explanation that can be tested by experiment is called a:",
-        "options": [
-          {"id": "a", "text": "Conclusion", "isCorrect": false},
-          {"id": "b", "text": "Hypothesis", "isCorrect": true},
-          {"id": "c", "text": "Theory", "isCorrect": false},
-          {"id": "d", "text": "Law", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "A hypothesis is a testable, tentative explanation that a scientist forms before carrying out an experiment.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which laboratory apparatus is used to view very small objects such as cells that cannot be seen with the naked eye?",
-        "options": [
-          {"id": "a", "text": "Beaker", "isCorrect": false},
-          {"id": "b", "text": "Microscope", "isCorrect": true},
-          {"id": "c", "text": "Test tube", "isCorrect": false},
-          {"id": "d", "text": "Thermometer", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "A microscope magnifies tiny objects such as cells and microorganisms so they can be studied.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a biology laboratory, which apparatus is most suitable for measuring an accurate volume of a liquid?",
-        "options": [
-          {"id": "a", "text": "Measuring cylinder", "isCorrect": true},
-          {"id": "b", "text": "Petri dish", "isCorrect": false},
-          {"id": "c", "text": "Bunsen burner", "isCorrect": false},
-          {"id": "d", "text": "Hand lens", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "A measuring cylinder has graduations that allow accurate measurement of liquid volume.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The importance of biology in agriculture is mainly seen in:",
-        "options": [
-          {"id": "a", "text": "Building roads and bridges", "isCorrect": false},
-          {"id": "b", "text": "Improving crop and animal production", "isCorrect": true},
-          {"id": "c", "text": "Designing computers", "isCorrect": false},
-          {"id": "d", "text": "Predicting weather", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Biology helps farmers improve crop varieties, control pests and diseases, and increase animal production.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which branch of biology studies the relationship between living organisms and their environment?",
+        "questionText": "The study of the relationship between living organisms and their environment is called:",
         "options": [
           {"id": "a", "text": "Genetics", "isCorrect": false},
-          {"id": "b", "text": "Anatomy", "isCorrect": false},
-          {"id": "c", "text": "Ecology", "isCorrect": true},
-          {"id": "d", "text": "Taxonomy", "isCorrect": false}
+          {"id": "b", "text": "Ecology", "isCorrect": true},
+          {"id": "c", "text": "Anatomy", "isCorrect": false},
+          {"id": "d", "text": "Physiology", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The key phrase is \"organisms and their environment\". Eco- refers to environment, so this is Ecology. Exam Tip: \"Eco\" always signals environment. Don't confuse with Genetics (inheritance) or Physiology (functioning).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process by which living things release energy from food is called:",
+        "options": [
+          {"id": "a", "text": "Nutrition", "isCorrect": false},
+          {"id": "b", "text": "Excretion", "isCorrect": false},
+          {"id": "c", "text": "Respiration", "isCorrect": true},
+          {"id": "d", "text": "Digestion", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Ecology studies how organisms interact with one another and with their physical environment.",
+        "explanation": "The key phrase is \"release energy from food\". Respiration breaks down glucose inside cells to release energy. Exam Tip: Nutrition = obtaining food; Respiration = releasing energy from it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The removal of metabolic waste products from the body of an organism is called:",
+        "options": [
+          {"id": "a", "text": "Secretion", "isCorrect": false},
+          {"id": "b", "text": "Excretion", "isCorrect": true},
+          {"id": "c", "text": "Egestion", "isCorrect": false},
+          {"id": "d", "text": "Respiration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The key phrase is \"metabolic waste products\". Excretion removes wastes made by body reactions, such as carbon dioxide and urea. Exam Tip: Excretion (metabolic waste, e.g. urea) differs from egestion (undigested food, i.e. faeces).",
         "difficulty": "medium"
       },
       {
-        "questionText": "A student notices that a sunflower plant turns to face the sun during the day. Which characteristic of living things does this best demonstrate?",
+        "questionText": "The ability of living organisms to respond to changes in their environment is called:",
         "options": [
-          {"id": "a", "text": "Excretion", "isCorrect": false},
+          {"id": "a", "text": "Movement", "isCorrect": false},
           {"id": "b", "text": "Sensitivity", "isCorrect": true},
-          {"id": "c", "text": "Nutrition", "isCorrect": false},
+          {"id": "c", "text": "Growth", "isCorrect": false},
           {"id": "d", "text": "Reproduction", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Turning towards light is a response to a stimulus, which shows sensitivity (irritability).",
-        "difficulty": "hard"
+        "explanation": "The key phrase is \"respond to changes\". Sensitivity (irritability) is detecting and responding to stimuli. Exam Tip: Sensitivity = irritability - both accepted. Example: a plant shoot bending towards light.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Why is the study of biology important for human health in a country like Tanzania?",
+        "questionText": "The branch of biology which deals with the study of cells is called:",
         "options": [
-          {"id": "a", "text": "It helps in understanding and controlling diseases such as malaria and cholera", "isCorrect": true},
-          {"id": "b", "text": "It is used to manufacture mobile phones", "isCorrect": false},
-          {"id": "c", "text": "It is only useful for passing examinations", "isCorrect": false},
-          {"id": "d", "text": "It replaces the need for clean water", "isCorrect": false}
+          {"id": "a", "text": "Histology", "isCorrect": false},
+          {"id": "b", "text": "Cytology", "isCorrect": true},
+          {"id": "c", "text": "Physiology", "isCorrect": false},
+          {"id": "d", "text": "Morphology", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The key word is \"cells\". Cyto- means cell, so the study of cells is Cytology. Exam Tip: Cyto = cell. Histology is the study of tissues - one level up from cells.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which instrument is used to observe very small organisms that cannot be seen with the naked eye?",
+        "options": [
+          {"id": "a", "text": "Telescope", "isCorrect": false},
+          {"id": "b", "text": "Microscope", "isCorrect": true},
+          {"id": "c", "text": "Periscope", "isCorrect": false},
+          {"id": "d", "text": "Hand lens", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A microscope magnifies tiny specimens greatly, hundreds to thousands of times. Exam Tip: A hand lens magnifies only about x10; a microscope is needed for cells and microorganisms. A telescope is for distant, large objects.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Movement of the whole body of an organism from one place to another is called:",
+        "options": [
+          {"id": "a", "text": "Locomotion", "isCorrect": true},
+          {"id": "b", "text": "Circulation", "isCorrect": false},
+          {"id": "c", "text": "Translocation", "isCorrect": false},
+          {"id": "d", "text": "Diffusion", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Knowledge of biology helps in preventing, diagnosing and treating diseases that affect the community.",
+        "explanation": "The key phrase is \"whole body from one place to another\". Locomotion is whole-body movement such as walking, swimming or flying. Exam Tip: Movement can be of a part; locomotion is the whole organism relocating. Plants show movement but not locomotion.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following shows that a motor car is NOT a living thing, even though it moves and uses fuel?",
+        "options": [
+          {"id": "a", "text": "It cannot reproduce", "isCorrect": true},
+          {"id": "b", "text": "It has an engine", "isCorrect": false},
+          {"id": "c", "text": "It uses energy", "isCorrect": false},
+          {"id": "d", "text": "It produces gases", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A car moves, uses fuel and releases exhaust gases, but cannot reproduce, grow, respond to stimuli or feed itself. The inability to reproduce shows it is non-living. Exam Tip: The giveaways of non-living things are no reproduction, no growth, no sensitivity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The study of the internal structure of organisms is called:",
+        "options": [
+          {"id": "a", "text": "Morphology", "isCorrect": false},
+          {"id": "b", "text": "Anatomy", "isCorrect": true},
+          {"id": "c", "text": "Taxonomy", "isCorrect": false},
+          {"id": "d", "text": "Ecology", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The key word is \"internal structure\". Anatomy examines internal structures such as organs and tissues. Exam Tip: Anatomy = internal structure; Morphology = external structure (shape and form).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which one of the following is a reason for studying biology?",
+        "options": [
+          {"id": "a", "text": "To learn how to drive vehicles", "isCorrect": false},
+          {"id": "b", "text": "To understand ourselves and other living things", "isCorrect": true},
+          {"id": "c", "text": "To build houses", "isCorrect": false},
+          {"id": "d", "text": "To make computers", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Biology helps us understand our bodies, health, other organisms and the environment. Exam Tip: Distractors belong to engineering or ICT. Biology links to health, agriculture, medicine, nutrition and environment.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Living things increase permanently in size and mass through the process of:",
+        "options": [
+          {"id": "a", "text": "Excretion", "isCorrect": false},
+          {"id": "b", "text": "Reproduction", "isCorrect": false},
+          {"id": "c", "text": "Growth", "isCorrect": true},
+          {"id": "d", "text": "Respiration", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The key phrase is \"increase permanently in size and mass\". Growth is the permanent, irreversible increase in size and mass. Exam Tip: The word \"permanent\" rules out temporary swelling. Growth results from cell division and enlargement.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The word biology is derived from the Greek words 'bios' meaning life and 'logos' meaning _____.",
-        "options": [],
-        "correctAnswer": "study",
-        "explanation": "Biology literally means the study of life.",
+        "questionText": "The word biology is derived from two Greek words, bios meaning ____ and logos meaning study.",
+        "options": [
+          {"id": "a", "text": "life", "isCorrect": true},
+          {"id": "b", "text": "body", "isCorrect": false},
+          {"id": "c", "text": "cell", "isCorrect": false},
+          {"id": "d", "text": "growth", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Bios means life and logos means study, so biology is the study of life. Exam Tip: This word-origin question appears almost every year - memorise both roots.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of biology that deals with the study of plants is called _____.",
-        "options": [],
-        "correctAnswer": "botany",
-        "explanation": "Botany focuses on plants, including their structure, function and uses.",
+        "questionText": "The branch of biology that deals with the study of microorganisms is called ____.",
+        "options": [
+          {"id": "a", "text": "Microbiology", "isCorrect": true},
+          {"id": "b", "text": "Cytology", "isCorrect": false},
+          {"id": "c", "text": "Entomology", "isCorrect": false},
+          {"id": "d", "text": "Ecology", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Micro- means very small, so microbiology is the study of microorganisms. Exam Tip: Microorganisms include bacteria, viruses, some fungi and protoctists.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of biology that deals with the study of animals is called _____.",
-        "options": [],
-        "correctAnswer": "zoology",
-        "explanation": "Zoology is concerned with the study of animals.",
+        "questionText": "The characteristic of living things by which they produce new individuals of their own kind is called ____.",
+        "options": [
+          {"id": "a", "text": "reproduction", "isCorrect": true},
+          {"id": "b", "text": "growth", "isCorrect": false},
+          {"id": "c", "text": "nutrition", "isCorrect": false},
+          {"id": "d", "text": "excretion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Producing new individuals of the same kind is reproduction. Exam Tip: Reproduction replaces organisms lost by death; without it a species becomes extinct.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The process by which living things produce offspring of their own kind is called _____.",
-        "options": [],
-        "correctAnswer": "reproduction",
-        "explanation": "Reproduction ensures the continuity of a species from one generation to the next.",
+        "questionText": "The scientist who studies the classification of living organisms is called a ____.",
+        "options": [
+          {"id": "a", "text": "taxonomist", "isCorrect": true},
+          {"id": "b", "text": "ecologist", "isCorrect": false},
+          {"id": "c", "text": "botanist", "isCorrect": false},
+          {"id": "d", "text": "zoologist", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Classification of organisms is taxonomy, and the scientist who does it is a taxonomist. Exam Tip: Match the \"-ist\": taxonomy to taxonomist, ecology to ecologist, botany to botanist.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The process by which organisms obtain and use food for energy and growth is called _____.",
-        "options": [],
-        "correctAnswer": "nutrition",
-        "explanation": "Nutrition provides the materials and energy needed for life processes.",
+        "questionText": "The study of the functioning or working of the body of organisms is called ____.",
+        "options": [
+          {"id": "a", "text": "Physiology", "isCorrect": true},
+          {"id": "b", "text": "Anatomy", "isCorrect": false},
+          {"id": "c", "text": "Morphology", "isCorrect": false},
+          {"id": "d", "text": "Histology", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Physiology deals with how the body and its parts work. Exam Tip: Anatomy asks \"what is the structure?\"; Physiology asks \"how does it work?\".",
         "difficulty": "easy"
       },
       {
-        "questionText": "The release of energy from food within living cells is known as _____.",
-        "options": [],
-        "correctAnswer": "respiration",
-        "explanation": "Respiration breaks down food substances to release energy used by the body.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A testable, tentative explanation suggested before an experiment is called a _____.",
-        "options": [],
-        "correctAnswer": "hypothesis",
-        "explanation": "A hypothesis is tested through experiments to see whether it is supported or rejected.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The laboratory instrument used to magnify and view very small objects such as cells is the _____.",
-        "options": [],
-        "correctAnswer": "microscope",
-        "explanation": "The microscope makes tiny structures visible by magnifying them many times.",
+        "questionText": "Organisms made up of only one cell are called ____ organisms.",
+        "options": [
+          {"id": "a", "text": "unicellular", "isCorrect": true},
+          {"id": "b", "text": "multicellular", "isCorrect": false},
+          {"id": "c", "text": "acellular", "isCorrect": false},
+          {"id": "d", "text": "bicellular", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Uni- means one, so an organism of a single cell is unicellular. Exam Tip: Examples: amoeba, euglena, paramecium, yeast, bacteria. Opposite is multicellular.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The branch of biology that studies microscopic organisms such as bacteria and viruses is called _____.",
-        "options": [],
-        "correctAnswer": "microbiology",
-        "explanation": "Microbiology deals with organisms too small to be seen with the naked eye.",
-        "difficulty": "medium"
+        "questionText": "The characteristic of living things that involves taking in and using food is called ____.",
+        "options": [
+          {"id": "a", "text": "nutrition", "isCorrect": true},
+          {"id": "b", "text": "respiration", "isCorrect": false},
+          {"id": "c", "text": "digestion", "isCorrect": false},
+          {"id": "d", "text": "excretion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Taking in and using food is nutrition. Exam Tip: Plants make their own food (autotrophic); animals feed on ready-made food (heterotrophic).",
+        "difficulty": "easy"
       },
       {
-        "questionText": "An increase in the size and number of cells leading to a permanent increase in the size of an organism is called _____.",
-        "options": [],
-        "correctAnswer": "growth",
-        "explanation": "Growth is a characteristic of living things resulting in a permanent increase in size.",
+        "questionText": "The study of insects is a branch of biology called ____.",
+        "options": [
+          {"id": "a", "text": "Entomology", "isCorrect": true},
+          {"id": "b", "text": "Ichthyology", "isCorrect": false},
+          {"id": "c", "text": "Zoology", "isCorrect": false},
+          {"id": "d", "text": "Ornithology", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Entomology is the specific branch dealing with insects. Exam Tip: Entomology (insects), Ichthyology (fish), Virology (viruses), Bacteriology (bacteria).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Biology is applied in the field of ____ to improve crop and animal production.",
+        "options": [
+          {"id": "a", "text": "agriculture", "isCorrect": true},
+          {"id": "b", "text": "engineering", "isCorrect": false},
+          {"id": "c", "text": "architecture", "isCorrect": false},
+          {"id": "d", "text": "accounting", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Improving crops and animals is farming, which is agriculture. Exam Tip: Know at least four applied fields - agriculture, medicine, nutrition, veterinary/pharmacy.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gradual change of an organism over a long period of time to suit its environment is studied under the concept of ____.",
+        "options": [
+          {"id": "a", "text": "evolution", "isCorrect": true},
+          {"id": "b", "text": "adaptation", "isCorrect": false},
+          {"id": "c", "text": "reproduction", "isCorrect": false},
+          {"id": "d", "text": "variation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Gradual change over a long time across generations is evolution. Exam Tip: Evolution is long-term change across generations; adaptation is the feature that results.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Biology is the scientific study of non-living things.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Biology is the study of living things and their life processes, not non-living things.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Botany is the branch of biology that deals with the study of plants.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Botany is correctly defined as the study of plants.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "All living things are able to grow, reproduce and respond to their environment.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Growth, reproduction and sensitivity are among the basic characteristics shared by all living things.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Excretion means taking in food into the body of an organism.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Excretion is the removal of metabolic waste, not the intake of food (that is nutrition).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A hypothesis is the final, proven conclusion of a scientific investigation.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A hypothesis is a testable guess made before experimenting; it is not yet proven.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Knowledge of biology helps in controlling diseases such as malaria and cholera.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Biology helps people understand how diseases spread and how to prevent and treat them.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A thermometer is used to measure the volume of liquids in the laboratory.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A thermometer measures temperature; a measuring cylinder is used to measure liquid volume.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Ecology is the study of the relationship between organisms and their environment.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Ecology examines how living things interact with each other and their surroundings.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The scientific method usually begins with drawing a conclusion before making any observations.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The scientific method begins with observation and identifying a problem; a conclusion comes near the end.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Genetics is the branch of biology concerned with inheritance and variation in living things.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Genetics studies how characteristics are passed from parents to offspring and how variation arises.",
-        "difficulty": "medium"
-      }
+      {"questionText": "All living things are made up of cells.", "options": [], "correctAnswer": "true", "explanation": "Every living organism is built from one or more cells. Exam Tip: This is the cell theory in one sentence.", "difficulty": "easy"},
+      {"questionText": "Plants are able to move their whole body from one place to another.", "options": [], "correctAnswer": "false", "explanation": "Plants can move parts such as leaves and roots but cannot relocate their whole body, so they lack locomotion. Exam Tip: Plants show movement of parts but not locomotion.", "difficulty": "easy"},
+      {"questionText": "Respiration and breathing mean exactly the same thing.", "options": [], "correctAnswer": "false", "explanation": "Breathing supplies oxygen to the body, while respiration uses that oxygen to release energy from food inside cells. Exam Tip: Breathing supplies oxygen; respiration uses it to release energy.", "difficulty": "easy"},
+      {"questionText": "Zoology is the branch of biology that deals with the study of animals.", "options": [], "correctAnswer": "true", "explanation": "Zoo- refers to animals, so zoology is correctly the study of animals. Exam Tip: Zoo- refers to animals.", "difficulty": "easy"},
+      {"questionText": "A motor car is considered a living thing because it moves and uses fuel.", "options": [], "correctAnswer": "false", "explanation": "A car imitates only a few processes but cannot reproduce, grow or respond, and life requires all characteristics together. Exam Tip: Life requires ALL characteristics together; a car imitates only two or three.", "difficulty": "easy"},
+      {"questionText": "The study of biology is important in the field of medicine.", "options": [], "correctAnswer": "true", "explanation": "Biology underpins medicine by explaining the body, diseases and treatments. Exam Tip: Medicine, agriculture, nutrition and conservation are standard \"importance of biology\" answers.", "difficulty": "easy"},
+      {"questionText": "Excretion is the removal of undigested food materials from the body.", "options": [], "correctAnswer": "false", "explanation": "Excretion removes metabolic waste such as urea, whereas the removal of undigested food is egestion. Exam Tip: Excretion removes metabolic waste; removal of undigested food is egestion.", "difficulty": "easy"},
+      {"questionText": "Unicellular organisms are made up of many cells.", "options": [], "correctAnswer": "false", "explanation": "Uni- means one, so unicellular organisms have only a single cell, not many. Exam Tip: Uni = 1, multi = many. The statement contradicts its own prefix.", "difficulty": "easy"},
+      {"questionText": "Sensitivity enables organisms to detect and respond to changes in their surroundings.", "options": [], "correctAnswer": "true", "explanation": "Sensitivity is exactly the ability to detect stimuli and respond to changes in the environment. Exam Tip: Sensitivity helps organisms find food, avoid danger and adapt.", "difficulty": "easy"},
+      {"questionText": "Growth in living organisms is a temporary increase in size that can be reversed.", "options": [], "correctAnswer": "false", "explanation": "Growth is a permanent, irreversible increase in size and mass, not a temporary reversible change. Exam Tip: Growth is a permanent increase; temporary swelling from water is not growth.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Meaning of biology",
-        "options": [],
-        "correctAnswer": "Biology is the scientific study of living things and their life processes.",
-        "explanation": "The term comes from 'bios' (life) and 'logos' (study).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Botany",
-        "options": [],
-        "correctAnswer": "The branch of biology that studies plants.",
-        "explanation": "It covers plant structure, growth, function and uses.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Zoology",
-        "options": [],
-        "correctAnswer": "The branch of biology that studies animals.",
-        "explanation": "It deals with animal structure, behaviour and life processes.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Characteristics of living things",
-        "options": [],
-        "correctAnswer": "Nutrition, respiration, excretion, growth, movement, reproduction, sensitivity (irritability).",
-        "explanation": "These life processes are shared by all living organisms.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Excretion",
-        "options": [],
-        "correctAnswer": "The removal of metabolic waste products from the body of an organism.",
-        "explanation": "Examples of waste include carbon dioxide and urea.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Sensitivity (irritability)",
-        "options": [],
-        "correctAnswer": "The ability of living things to detect and respond to changes (stimuli) in their environment.",
-        "explanation": "For example, plants growing towards light.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Importance of biology",
-        "options": [],
-        "correctAnswer": "It helps in agriculture, medicine and health, conservation of the environment, and food production.",
-        "explanation": "Biology is applied in everyday life to improve human welfare.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Steps of the scientific method",
-        "options": [],
-        "correctAnswer": "Observation, identifying a problem, forming a hypothesis, experimenting, recording results, drawing a conclusion.",
-        "explanation": "This is the orderly way scientists investigate problems.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Hypothesis",
-        "options": [],
-        "correctAnswer": "A testable, tentative explanation made before carrying out an experiment.",
-        "explanation": "It is later supported or rejected based on results.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Common laboratory apparatus",
-        "options": [],
-        "correctAnswer": "Microscope, hand lens, measuring cylinder, beaker, test tube, Bunsen burner and thermometer.",
-        "explanation": "Each tool has a specific use in biological investigations.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Biology", "options": [], "correctAnswer": "The scientific study of living things (organisms), from the Greek bios meaning life and logos meaning study.", "explanation": "Biology covers all life, from tiny microorganisms to plants and animals. Exam Tip: Remember the two Greek roots bios and logos.", "difficulty": "easy"},
+      {"questionText": "Botany", "options": [], "correctAnswer": "The branch of biology that deals with the study of plants.", "explanation": "Botany covers plant structure, function, growth and classification. Exam Tip: Pair Botany with plants and Zoology with animals.", "difficulty": "easy"},
+      {"questionText": "Zoology", "options": [], "correctAnswer": "The branch of biology that deals with the study of animals.", "explanation": "The zoo- prefix links directly to animals. Exam Tip: A zoo holds animals is the memory hook.", "difficulty": "easy"},
+      {"questionText": "Ecology", "options": [], "correctAnswer": "The study of the relationship between living organisms and their environment.", "explanation": "Eco- always signals the environment and the interactions within it. Exam Tip: Do not confuse Ecology with Genetics or Physiology.", "difficulty": "easy"},
+      {"questionText": "Characteristics of living things (MR NIGER D)", "options": [], "correctAnswer": "Movement, Respiration, Nutrition, Irritability, Growth, Excretion, Reproduction and Death - the life processes shown by all living things.", "explanation": "A true living thing must show all of these characteristics together. Exam Tip: Anything outside MR NIGER D is a distractor in the exam.", "difficulty": "easy"},
+      {"questionText": "Respiration", "options": [], "correctAnswer": "The process by which living things release energy from food by breaking down glucose inside cells.", "explanation": "Respiration provides the energy needed for all other life processes. Exam Tip: Do not confuse respiration with breathing or with nutrition.", "difficulty": "easy"},
+      {"questionText": "Excretion versus Egestion", "options": [], "correctAnswer": "Excretion is the removal of metabolic waste such as carbon dioxide and urea, while egestion is the removal of undigested food (faeces).", "explanation": "The two are commonly confused but describe different wastes. Exam Tip: Metabolic waste means excretion; undigested food means egestion.", "difficulty": "easy"},
+      {"questionText": "Cell", "options": [], "correctAnswer": "The basic structural and functional unit of all living things.", "explanation": "All organisms are made of one or more cells, as stated by the cell theory. Exam Tip: Cytology is the branch of biology that studies cells.", "difficulty": "easy"},
+      {"questionText": "Unicellular organism", "options": [], "correctAnswer": "An organism made up of only one cell, such as amoeba, paramecium, yeast or bacteria.", "explanation": "Uni- means one, the opposite of a multicellular organism which has many cells. Exam Tip: Learn examples like amoeba and euglena.", "difficulty": "easy"},
+      {"questionText": "Importance of biology", "options": [], "correctAnswer": "Biology helps us understand ourselves and other living things and is applied in fields such as medicine, agriculture and nutrition.", "explanation": "Its applications improve health, food production and care of the environment. Exam Tip: Know at least four applied fields for the exam.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A farmer in Morogoro wants to find out whether a new type of fertilizer increases maize yield. Using the scientific method, which of the following is the BEST way to test this?",
+        "questionText": "A student observed an object that moves, takes in materials and releases gases, but over several weeks it neither grew larger nor produced any offspring. Using biological characteristics, the object is best described as:",
         "options": [
-          {"id": "a", "text": "Apply the fertilizer to all plots and assume it works", "isCorrect": false},
-          {"id": "b", "text": "Grow maize in two similar plots, applying fertilizer to one (experimental) and none to the other (control), then compare yields", "isCorrect": true},
-          {"id": "c", "text": "Ask neighbours whether they like the fertilizer", "isCorrect": false},
-          {"id": "d", "text": "Read the fertilizer label and write a conclusion", "isCorrect": false}
+          {"id": "a", "text": "A living thing because it moves and releases gases", "isCorrect": false},
+          {"id": "b", "text": "A non-living thing because it lacks growth and reproduction", "isCorrect": true},
+          {"id": "c", "text": "A plant because it releases gases", "isCorrect": false},
+          {"id": "d", "text": "A microorganism because it takes in materials", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A fair experiment needs a control to compare against the experimental group so the effect of the fertilizer can be measured.",
+        "explanation": "The object shows movement, gaseous exchange and intake, but lacks growth and reproduction. A true living thing must show all characteristics of life, so missing growth and reproduction means it is non-living. Exam Tip: A is the trap - it judges life from two processes only. Absence of growth and reproduction is decisive.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A virus is sometimes described as being on the borderline between living and non-living things because outside a host cell it cannot carry out life processes on its own. Which characteristic of living things does a virus fail to perform independently outside a host?",
+        "questionText": "A researcher works on developing better crop varieties, treating plant diseases and improving soil fertility. Which combination of biology branches and applied fields is she MOST directly using?",
         "options": [
-          {"id": "a", "text": "Reproduction", "isCorrect": true},
-          {"id": "b", "text": "Being made of atoms", "isCorrect": false},
-          {"id": "c", "text": "Having a fixed shape", "isCorrect": false},
-          {"id": "d", "text": "Reflecting light", "isCorrect": false}
+          {"id": "a", "text": "Zoology and medicine", "isCorrect": false},
+          {"id": "b", "text": "Botany and agriculture", "isCorrect": true},
+          {"id": "c", "text": "Entomology and ecology", "isCorrect": false},
+          {"id": "d", "text": "Cytology and genetics", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "Viruses cannot reproduce on their own; they need to invade a living host cell to multiply, which is why their status as living things is debated.",
+        "correctAnswer": "b",
+        "explanation": "\"Crop varieties\" and \"plant diseases\" concern plants, which is Botany, while \"soil fertility\" and \"crop production\" concern farming, which is Agriculture. Botany and agriculture fit both halves. Exam Tip: Application questions reward reading BOTH clues (plants + farming). A single-clue match is usually a distractor.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A student observes that mealworms in a tray move away from a bright light and gather in the dark corner. Which conclusion is best supported by this observation?",
+        "questionText": "A form one student argues that a candle flame is alive because it moves (flickers), feeds (on wax), respires (uses air), grows (gets taller) and excretes (produces smoke). Which characteristic of living things does the flame TRULY lack, proving it is non-living?",
         "options": [
-          {"id": "a", "text": "Mealworms are non-living because they avoid light", "isCorrect": false},
-          {"id": "b", "text": "Mealworms show sensitivity by responding to light as a stimulus", "isCorrect": true},
-          {"id": "c", "text": "Mealworms are growing faster in the dark", "isCorrect": false},
-          {"id": "d", "text": "Mealworms are excreting waste in the dark corner", "isCorrect": false}
+          {"id": "a", "text": "Movement", "isCorrect": false},
+          {"id": "b", "text": "Respiration", "isCorrect": false},
+          {"id": "c", "text": "Reproduction and sensitivity", "isCorrect": true},
+          {"id": "d", "text": "Excretion", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Moving away from light is a response to a stimulus, which demonstrates the characteristic of sensitivity in living things.",
+        "correctAnswer": "c",
+        "explanation": "The flame's flicker, wax-consuming, air use, rising and smoke are pseudo-processes. A flame cannot produce new flames by a life process nor detect and respond to stimuli in a controlled way, so it genuinely lacks reproduction and sensitivity. Exam Tip: A flame splitting is not biological reproduction, and its response is purely physical. Always ask: does it REPRODUCE and truly RESPOND?",
         "difficulty": "hard"
       }
     ]

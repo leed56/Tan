@@ -56,10 +56,10 @@ export function AchievementsScreen({ navigation }: Props) {
               </View>
               <View style={styles.info}>
                 <View style={styles.titleRow}>
-                  <Text style={[styles.title, !done && styles.titleLocked]}>{a.title}</Text>
+                  <Text style={[styles.title, !done && styles.titleLocked]} numberOfLines={1}>{a.title}</Text>
                   {done && <Ionicons name="checkmark-circle" size={16} color={COLORS.success} />}
                 </View>
-                <Text style={styles.desc}>{a.desc}</Text>
+                <Text style={styles.desc} numberOfLines={1}>{a.desc}</Text>
                 <MissionProgressBar progress={percent} color={done ? COLORS.success : COLORS.primary} height={4} />
                 <Text style={styles.progressText}>
                   {a.current.toLocaleString()} / {a.target.toLocaleString()}

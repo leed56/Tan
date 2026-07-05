@@ -85,13 +85,34 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
         });
         return;
       }
-      // Premium user — placeholder (real content screens TBD)
-      navigation.navigate('PackCompletion', {
-        xpEarned: pack.completionXP,
-        packTitle: pack.title,
-        streakDays: 6,
-      });
-      return;
+      // Premium user, HOQ — same 4-option quiz engine as MCQ, via QuizIntro.
+      if (pack.type === 'hoq') {
+        navigation.navigate('QuizIntro', {
+          packId: pack.id,
+          packTitle: pack.title,
+          topicId: pack.topicId,
+          subjectColor,
+          formId,
+          subjectId,
+          quizType: 'hoq',
+        });
+        return;
+      }
+      // Premium user, Summary — no question docs; review content lives on the
+      // pack itself as summaryPoints.
+      if (pack.type === 'summary') {
+        navigation.navigate('SummaryPack', {
+          packId: pack.id,
+          packTitle: pack.title,
+          topicId: pack.topicId,
+          subjectColor,
+          formId,
+          subjectId,
+          completionXP: pack.completionXP,
+          summaryPoints: pack.summaryPoints ?? [],
+        });
+        return;
+      }
     }
     // Free pack — MCQ / FIB / TF → quiz engine
     if (pack.type === 'mcq' || pack.type === 'fib' || pack.type === 'tf') {
@@ -106,14 +127,13 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
       });
       return;
     }
-    // Fallback placeholder
+    // Fallback placeholder (unrecognized pack type)
     setLaunching(true);
     setTimeout(() => {
       setLaunching(false);
       navigation.navigate('PackCompletion', {
         xpEarned: pack.completionXP,
         packTitle: pack.title,
-        streakDays: 6,
       });
     }, 600);
   }, [navigation, subjectColor, formId, subjectId, isPremium]);
@@ -123,7 +143,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
       <ScreenContainer>
         <ErrorState
           message={error}
-          onRetry={() => { clearError(); fetchLearningPacks(formId, subjectId, topicId); }}
+          onRetry={() => { clearError(); fetchLearningPacks(formId, subjectId, topicId, true); }}
         />
       </ScreenContainer>
     );
@@ -165,6 +185,7 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
           <EmptyCurriculumState
             variant="packs"
             onAction={() => navigation.goBack()}
+            onRetry={() => fetchLearningPacks(formId, subjectId, topicId, true)}
           />
         </ScrollView>
       ) : (
@@ -196,10 +217,13 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
           {premiumPacks.length > 0 && (
             <>
               <Text style={styles.sectionLabel}>Premium Content</Text>
-              <PremiumLockCard
-                title="Premium Packs Locked"
-                description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
-              />
+              {!isPremium() && (
+                <PremiumLockCard
+                  title="Premium Packs Locked"
+                  description="Upgrade to access AI summaries and Higher Order Questions — NECTA's most tested format."
+                  onUpgrade={() => navigation.navigate('SubscriptionScreen')}
+                />
+              )}
               {premiumPacks.map((pack) => {
                 const { progressPercent, isCompleted } = getPackProgress(pack.id);
                 return (
@@ -209,11 +233,13 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
                       subjectColor={subjectColor}
                       progressPercent={progressPercent}
                       isCompleted={isCompleted}
-                      onPress={() => {}}
+                      onPress={handlePackPress}
                     />
-                    <View style={styles.lockedOverlay}>
-                      <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
-                    </View>
+                    {!isPremium() && (
+                      <View style={styles.lockedOverlay} pointerEvents="none">
+                        <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
+                      </View>
+                    )}
                   </View>
                 );
               })}

@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_biology_topic_1",
-  "topicName": "Transport of Materials in Living Things",
+  "topicName": "Transport of Materials in Flowering Plants",
   "order": 1,
-  "description": "A study of why living things need transport and how materials are moved in plants through root hairs, xylem and phloem and transpiration, and in animals through blood, the heart and blood vessels.",
+  "description": "An introduction to how flowering plants move water, mineral salts and manufactured food through xylem and phloem, covering absorption by root hairs, osmosis and active transport, transpiration and its controlling factors, and the vascular bundles that carry materials around the plant.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Why do large multicellular organisms need a transport system while very small organisms may not?",
-        "options": [
-          {"id": "a", "text": "Large organisms have no cells to feed", "isCorrect": false},
-          {"id": "b", "text": "Their surface area to volume ratio is too small for diffusion alone to supply all cells", "isCorrect": true},
-          {"id": "c", "text": "Small organisms never need food or oxygen", "isCorrect": false},
-          {"id": "d", "text": "Large organisms do not respire", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "In large organisms the surface area to volume ratio is small, so simple diffusion is too slow to reach inner cells, making a transport system necessary.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which part of the root is mainly responsible for absorbing water and mineral salts from the soil?",
-        "options": [
-          {"id": "a", "text": "Root cap", "isCorrect": false},
-          {"id": "b", "text": "Root hairs", "isCorrect": true},
-          {"id": "c", "text": "Pith", "isCorrect": false},
-          {"id": "d", "text": "Cambium", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Root hairs are thin extensions of epidermal cells that greatly increase surface area for absorbing water and mineral salts.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which tissue in a plant transports water and dissolved mineral salts from the roots to the leaves?",
+        "questionText": "The tissue that transports water and mineral salts from the roots to the leaves is the:",
         "options": [
           {"id": "a", "text": "Phloem", "isCorrect": false},
           {"id": "b", "text": "Xylem", "isCorrect": true},
-          {"id": "c", "text": "Cambium", "isCorrect": false},
-          {"id": "d", "text": "Cortex", "isCorrect": false}
+          {"id": "c", "text": "Epidermis", "isCorrect": false},
+          {"id": "d", "text": "Cambium", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Xylem vessels carry water and mineral salts upward from the roots to the leaves and other parts.",
+        "explanation": "Xylem carries water and mineral salts upward. Exam Tip: Xylem = water + minerals, UP only. Phloem = food, up AND down.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The transport of manufactured food, such as sugars, from the leaves to other parts of the plant is called:",
+        "questionText": "The tissue that transports manufactured food (sugars) from the leaves to other parts is the:",
+        "options": [
+          {"id": "a", "text": "Xylem", "isCorrect": false},
+          {"id": "b", "text": "Phloem", "isCorrect": true},
+          {"id": "c", "text": "Cortex", "isCorrect": false},
+          {"id": "d", "text": "Pith", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Phloem transports dissolved food (sucrose) to all parts. Exam Tip: Phloem transports food both up and down.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The transport of manufactured food in the phloem is called:",
         "options": [
           {"id": "a", "text": "Transpiration", "isCorrect": false},
-          {"id": "b", "text": "Transmission", "isCorrect": false},
-          {"id": "c", "text": "Translocation", "isCorrect": true},
+          {"id": "b", "text": "Translocation", "isCorrect": true},
+          {"id": "c", "text": "Respiration", "isCorrect": false},
           {"id": "d", "text": "Absorption", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Translocation is the movement of manufactured food (mainly sugars) through the phloem from the leaves to the rest of the plant.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Transpiration in plants takes place mainly through small pores on the leaf called:",
-        "options": [
-          {"id": "a", "text": "Lenticels", "isCorrect": false},
-          {"id": "b", "text": "Stomata", "isCorrect": true},
-          {"id": "c", "text": "Veins", "isCorrect": false},
-          {"id": "d", "text": "Cuticles", "isCorrect": false}
-        ],
         "correctAnswer": "b",
-        "explanation": "Stomata are tiny pores, mostly on the lower surface of the leaf, through which water vapour escapes during transpiration.",
+        "explanation": "Movement of food in the phloem is translocation. Exam Tip: Translocation = food (phloem); transpiration = water loss.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of the following conditions would increase the rate of transpiration in a plant?",
+        "questionText": "Water enters the roots of a plant mainly through the:",
+        "options": [
+          {"id": "a", "text": "Stomata", "isCorrect": false},
+          {"id": "b", "text": "Root hairs", "isCorrect": true},
+          {"id": "c", "text": "Xylem vessels", "isCorrect": false},
+          {"id": "d", "text": "Cuticle", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Root hairs provide a large surface area for absorbing water and minerals. Exam Tip: Root hairs are long and thin - large surface area.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Water moves into the root hair cells from the soil by the process of:",
+        "options": [
+          {"id": "a", "text": "Osmosis", "isCorrect": true},
+          {"id": "b", "text": "Respiration", "isCorrect": false},
+          {"id": "c", "text": "Transpiration", "isCorrect": false},
+          {"id": "d", "text": "Combustion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Water moves from dilute soil to concentrated cell sap by osmosis. Exam Tip: Water -> osmosis; mineral salts -> often active transport.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The loss of water vapour from the leaves of a plant is called:",
+        "options": [
+          {"id": "a", "text": "Translocation", "isCorrect": false},
+          {"id": "b", "text": "Transpiration", "isCorrect": true},
+          {"id": "c", "text": "Guttation", "isCorrect": false},
+          {"id": "d", "text": "Respiration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Loss of water vapour from leaves is transpiration. Exam Tip: Transpiration is water loss as vapour, mainly through stomata.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Most transpiration takes place through the:",
+        "options": [
+          {"id": "a", "text": "Cuticle", "isCorrect": false},
+          {"id": "b", "text": "Stomata", "isCorrect": true},
+          {"id": "c", "text": "Root hairs", "isCorrect": false},
+          {"id": "d", "text": "Xylem", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Water vapour leaves through the stomata, mostly on the lower surface. Exam Tip: Stomata allow gas exchange AND transpiration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which condition INCREASES the rate of transpiration?",
         "options": [
           {"id": "a", "text": "High humidity", "isCorrect": false},
           {"id": "b", "text": "Low temperature", "isCorrect": false},
-          {"id": "c", "text": "Increased wind (air movement)", "isCorrect": true},
+          {"id": "c", "text": "Windy conditions", "isCorrect": true},
           {"id": "d", "text": "Darkness", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Wind carries away water vapour from around the leaf, keeping the diffusion gradient steep and increasing the rate of transpiration.",
+        "explanation": "Wind blows away moist air, so more water evaporates. Exam Tip: Increase: high temperature, low humidity, wind, bright light.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which component of human blood is responsible for transporting oxygen?",
+        "questionText": "Which condition DECREASES the rate of transpiration?",
         "options": [
-          {"id": "a", "text": "White blood cells", "isCorrect": false},
-          {"id": "b", "text": "Platelets", "isCorrect": false},
-          {"id": "c", "text": "Red blood cells", "isCorrect": true},
-          {"id": "d", "text": "Plasma proteins", "isCorrect": false}
+          {"id": "a", "text": "High temperature", "isCorrect": false},
+          {"id": "b", "text": "High humidity", "isCorrect": true},
+          {"id": "c", "text": "Strong wind", "isCorrect": false},
+          {"id": "d", "text": "Bright light", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Red blood cells contain haemoglobin, which combines with oxygen to form oxyhaemoglobin and transports oxygen around the body.",
+        "correctAnswer": "b",
+        "explanation": "Humid air means little water can evaporate. Exam Tip: High humidity reduces transpiration.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The upward pull that draws water up the xylem as water is lost from the leaves is the:",
+        "options": [
+          {"id": "a", "text": "Root pressure", "isCorrect": false},
+          {"id": "b", "text": "Transpiration pull", "isCorrect": true},
+          {"id": "c", "text": "Osmotic pressure only", "isCorrect": false},
+          {"id": "d", "text": "Active transport", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Water lost from leaves creates suction - the transpiration pull. Exam Tip: Transpiration pull is the main force lifting water up tall plants.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Mineral salts are often absorbed into root hair cells by a process that needs energy, called:",
+        "options": [
+          {"id": "a", "text": "Osmosis", "isCorrect": false},
+          {"id": "b", "text": "Active transport", "isCorrect": true},
+          {"id": "c", "text": "Transpiration", "isCorrect": false},
+          {"id": "d", "text": "Diffusion only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moving minerals against a gradient needs energy - active transport. Exam Tip: Water -> osmosis (no energy); minerals -> active transport (energy).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a young stem, the xylem and phloem are grouped together in structures called:",
+        "options": [
+          {"id": "a", "text": "Stomata", "isCorrect": false},
+          {"id": "b", "text": "Vascular bundles", "isCorrect": true},
+          {"id": "c", "text": "Root hairs", "isCorrect": false},
+          {"id": "d", "text": "Guard cells", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Xylem and phloem together form vascular bundles. Exam Tip: Vascular bundles are the plant's transport pipes.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The liquid part of blood in which cells and dissolved substances are carried is called:",
+        "questionText": "The importance of transpiration to a plant includes:",
         "options": [
-          {"id": "a", "text": "Plasma", "isCorrect": true},
-          {"id": "b", "text": "Serum cells", "isCorrect": false},
-          {"id": "c", "text": "Lymph nodes", "isCorrect": false},
-          {"id": "d", "text": "Haemoglobin", "isCorrect": false}
+          {"id": "a", "text": "Cooling the plant and helping water and minerals move up", "isCorrect": true},
+          {"id": "b", "text": "Making food for the plant", "isCorrect": false},
+          {"id": "c", "text": "Storing energy", "isCorrect": false},
+          {"id": "d", "text": "Producing seeds", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Plasma is the pale yellow liquid part of blood that transports blood cells, dissolved foods, wastes, hormones and other substances.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which type of blood vessel carries blood away from the heart?",
-        "options": [
-          {"id": "a", "text": "Veins", "isCorrect": false},
-          {"id": "b", "text": "Arteries", "isCorrect": true},
-          {"id": "c", "text": "Capillaries", "isCorrect": false},
-          {"id": "d", "text": "Venules", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Arteries carry blood away from the heart and have thick muscular walls to withstand high pressure.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Why do veins have valves while arteries generally do not?",
-        "options": [
-          {"id": "a", "text": "To increase the speed of blood flow", "isCorrect": false},
-          {"id": "b", "text": "To prevent the backflow of blood since it flows under low pressure", "isCorrect": true},
-          {"id": "c", "text": "To produce red blood cells", "isCorrect": false},
-          {"id": "d", "text": "To pump blood like the heart", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Blood in veins flows under low pressure, so valves are needed to stop it from flowing backwards.",
+        "explanation": "Transpiration cools the leaves and drives upward movement of water and minerals. Exam Tip: Transpiration cools, transports water/minerals and keeps cells turgid - it does NOT make food.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which chamber of the human heart pumps oxygenated blood to the whole body?",
+        "questionText": "The loss of water in liquid form (droplets) from the edges of leaves, usually in the early morning, is called:",
         "options": [
-          {"id": "a", "text": "Right atrium", "isCorrect": false},
-          {"id": "b", "text": "Left atrium", "isCorrect": false},
-          {"id": "c", "text": "Right ventricle", "isCorrect": false},
-          {"id": "d", "text": "Left ventricle", "isCorrect": true}
+          {"id": "a", "text": "Transpiration", "isCorrect": false},
+          {"id": "b", "text": "Guttation", "isCorrect": true},
+          {"id": "c", "text": "Translocation", "isCorrect": false},
+          {"id": "d", "text": "Condensation", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "The left ventricle has the thickest muscular wall because it pumps oxygenated blood at high pressure to the whole body.",
+        "correctAnswer": "b",
+        "explanation": "Droplet loss at leaf edges is guttation. Exam Tip: Transpiration loses water as VAPOUR; guttation loses it as liquid DROPLETS.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The smallest blood vessels, where exchange of materials between blood and body cells occurs, are the:",
+        "questionText": "If a ring of bark (containing phloem) is removed from around a tree trunk, the region ABOVE the ring will:",
         "options": [
-          {"id": "a", "text": "Aorta", "isCorrect": false},
-          {"id": "b", "text": "Capillaries", "isCorrect": true},
-          {"id": "c", "text": "Pulmonary arteries", "isCorrect": false},
-          {"id": "d", "text": "Vena cava", "isCorrect": false}
+          {"id": "a", "text": "Die immediately", "isCorrect": false},
+          {"id": "b", "text": "Swell because sugars cannot move down past the ring", "isCorrect": true},
+          {"id": "c", "text": "Lose all its water", "isCorrect": false},
+          {"id": "d", "text": "Grow faster roots", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Capillaries have very thin walls, one cell thick, allowing exchange of oxygen, food and wastes between blood and surrounding cells.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which blood vessel carries oxygenated blood from the lungs back to the heart?",
-        "options": [
-          {"id": "a", "text": "Pulmonary artery", "isCorrect": false},
-          {"id": "b", "text": "Pulmonary vein", "isCorrect": true},
-          {"id": "c", "text": "Aorta", "isCorrect": false},
-          {"id": "d", "text": "Vena cava", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "The pulmonary vein is unusual because it carries oxygenated blood, bringing it from the lungs to the left atrium of the heart.",
+        "explanation": "Removing the ring blocks the downward flow of sugars, so they build up above the cut. Exam Tip: The ringing experiment proves phloem carries food DOWNWARD.",
         "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the main function of white blood cells in the body?",
-        "options": [
-          {"id": "a", "text": "Carrying oxygen", "isCorrect": false},
-          {"id": "b", "text": "Clotting of blood", "isCorrect": false},
-          {"id": "c", "text": "Defending the body against disease-causing germs", "isCorrect": true},
-          {"id": "d", "text": "Transporting digested food", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "White blood cells protect the body by engulfing germs and by producing antibodies against infections.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which feature of red blood cells helps them carry the maximum amount of oxygen?",
-        "options": [
-          {"id": "a", "text": "They have a large nucleus", "isCorrect": false},
-          {"id": "b", "text": "They are biconcave in shape and lack a nucleus", "isCorrect": true},
-          {"id": "c", "text": "They are able to change shape and crawl", "isCorrect": false},
-          {"id": "d", "text": "They contain many mitochondria", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "The biconcave shape increases surface area for oxygen exchange, and the absence of a nucleus leaves more room for haemoglobin.",
-        "difficulty": "hard"
       }
     ],
     "fib": [
       {
-        "questionText": "The thin extensions of root epidermal cells that increase the surface area for absorbing water are called root _____.",
-        "options": [],
-        "correctAnswer": "hairs",
-        "explanation": "Root hairs increase the absorbing surface area of the root.",
+        "questionText": "The tissue that transports water and mineral salts up the plant is the ____.",
+        "options": [
+          {"id": "a", "text": "xylem", "isCorrect": true},
+          {"id": "b", "text": "phloem", "isCorrect": false},
+          {"id": "c", "text": "cambium", "isCorrect": false},
+          {"id": "d", "text": "cortex", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Xylem is the water-conducting tissue that carries water and mineral salts upward. Exam Tip: Xylem = water is the memory hook.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The plant tissue that transports water and mineral salts from the roots to the leaves is the _____.",
-        "options": [],
-        "correctAnswer": "xylem",
-        "explanation": "Xylem carries water and dissolved minerals upward.",
+        "questionText": "The tissue that transports manufactured food in a plant is the ____.",
+        "options": [
+          {"id": "a", "text": "phloem", "isCorrect": true},
+          {"id": "b", "text": "xylem", "isCorrect": false},
+          {"id": "c", "text": "epidermis", "isCorrect": false},
+          {"id": "d", "text": "pith", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Phloem carries dissolved food made in the leaves to the rest of the plant. Exam Tip: Phloem carries food both up and down.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The plant tissue that transports manufactured food such as sugars from the leaves to other parts is the _____.",
-        "options": [],
-        "correctAnswer": "phloem",
-        "explanation": "Phloem carries dissolved food in the process of translocation.",
+        "questionText": "Water is absorbed into the plant mainly through the ____ of the roots.",
+        "options": [
+          {"id": "a", "text": "root hairs", "isCorrect": true},
+          {"id": "b", "text": "stomata", "isCorrect": false},
+          {"id": "c", "text": "cuticle", "isCorrect": false},
+          {"id": "d", "text": "xylem vessels", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Root hairs are long and thin, giving a large surface area for absorbing water. Exam Tip: Root hairs give a large surface area.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The loss of water vapour from the leaves and other aerial parts of a plant is called _____.",
-        "options": [],
-        "correctAnswer": "transpiration",
-        "explanation": "Transpiration is the loss of water vapour mainly through the stomata.",
+        "questionText": "The movement of water into root hair cells from the soil occurs by ____.",
+        "options": [
+          {"id": "a", "text": "osmosis", "isCorrect": true},
+          {"id": "b", "text": "active transport", "isCorrect": false},
+          {"id": "c", "text": "transpiration", "isCorrect": false},
+          {"id": "d", "text": "respiration", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Water passes from the dilute soil solution into the concentrated cell sap by osmosis. Exam Tip: Osmosis moves water from dilute (soil) to concentrated (cell sap).",
         "difficulty": "easy"
       },
       {
-        "questionText": "The tiny pores on the surface of a leaf through which water vapour and gases pass are called _____.",
-        "options": [],
-        "correctAnswer": "stomata",
-        "explanation": "Stomata, controlled by guard cells, allow gas exchange and water loss.",
+        "questionText": "The loss of water vapour from the leaves of a plant is called ____.",
+        "options": [
+          {"id": "a", "text": "transpiration", "isCorrect": true},
+          {"id": "b", "text": "translocation", "isCorrect": false},
+          {"id": "c", "text": "guttation", "isCorrect": false},
+          {"id": "d", "text": "condensation", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Transpiration is the escape of water as vapour, mainly through the stomata. Exam Tip: Transpiration occurs mainly through the stomata.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The red pigment in red blood cells that combines with oxygen is called _____.",
-        "options": [],
-        "correctAnswer": "haemoglobin",
-        "explanation": "Haemoglobin binds oxygen to form oxyhaemoglobin for transport.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The pale yellow liquid part of blood that carries cells and dissolved substances is called _____.",
-        "options": [],
-        "correctAnswer": "plasma",
-        "explanation": "Plasma transports blood cells, food, wastes and hormones.",
+        "questionText": "The transport of food in the phloem is called ____.",
+        "options": [
+          {"id": "a", "text": "translocation", "isCorrect": true},
+          {"id": "b", "text": "transpiration", "isCorrect": false},
+          {"id": "c", "text": "osmosis", "isCorrect": false},
+          {"id": "d", "text": "absorption", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Translocation is the movement of manufactured food through the phloem. Exam Tip: Translocation (phloem) vs transpiration (water loss).",
         "difficulty": "easy"
       },
       {
-        "questionText": "Blood cell fragments that help in the clotting of blood are called _____.",
-        "options": [],
-        "correctAnswer": "platelets",
-        "explanation": "Platelets help blood to clot and seal wounds.",
-        "difficulty": "medium"
+        "questionText": "Mineral salts are absorbed into the root against a concentration gradient by ____ transport.",
+        "options": [
+          {"id": "a", "text": "active", "isCorrect": true},
+          {"id": "b", "text": "passive", "isCorrect": false},
+          {"id": "c", "text": "osmotic", "isCorrect": false},
+          {"id": "d", "text": "diffusion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moving minerals against the gradient requires energy, which is active transport. Exam Tip: Active transport uses energy from respiration.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The blood vessels with the thinnest walls, one cell thick, where exchange of materials takes place are the _____.",
-        "options": [],
-        "correctAnswer": "capillaries",
-        "explanation": "Capillaries allow exchange of substances between blood and cells.",
-        "difficulty": "medium"
+        "questionText": "The suction force created in the xylem as water evaporates from the leaves is called the ____ pull.",
+        "options": [
+          {"id": "a", "text": "transpiration", "isCorrect": true},
+          {"id": "b", "text": "root", "isCorrect": false},
+          {"id": "c", "text": "osmotic", "isCorrect": false},
+          {"id": "d", "text": "capillary", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Water loss from leaves creates a suction that draws water up the xylem, the transpiration pull. Exam Tip: Transpiration pull lifts water up tall trees.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The lower heart chamber that pumps oxygenated blood to the whole body is the left _____.",
-        "options": [],
-        "correctAnswer": "ventricle",
-        "explanation": "The left ventricle has the thickest wall to pump blood around the body.",
-        "difficulty": "medium"
+        "questionText": "Xylem and phloem tissues grouped together form structures called ____ bundles.",
+        "options": [
+          {"id": "a", "text": "vascular", "isCorrect": true},
+          {"id": "b", "text": "fibrous", "isCorrect": false},
+          {"id": "c", "text": "cortical", "isCorrect": false},
+          {"id": "d", "text": "epidermal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Xylem and phloem together make up the vascular bundles that transport materials. Exam Tip: Vascular bundles are the plant's pipes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two environmental factors that increase the rate of transpiration are wind and high ____.",
+        "options": [
+          {"id": "a", "text": "temperature", "isCorrect": true},
+          {"id": "b", "text": "humidity", "isCorrect": false},
+          {"id": "c", "text": "pressure", "isCorrect": false},
+          {"id": "d", "text": "gravity", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "High temperature speeds up evaporation, so together with wind it raises the transpiration rate. Exam Tip: Increase: wind, high temperature, low humidity, bright light.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Very small unicellular organisms can supply their cells with materials by diffusion alone without a special transport system.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Their large surface area to volume ratio allows diffusion to meet all needs.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Xylem transports manufactured food from the leaves to other parts of the plant.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Xylem transports water and minerals; phloem transports manufactured food.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "High humidity in the surrounding air reduces the rate of transpiration.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "When the air is already moist, the diffusion gradient is reduced and less water vapour escapes.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Arteries carry blood towards the heart.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Arteries carry blood away from the heart; veins carry blood towards the heart.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Mature red blood cells in humans have no nucleus.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The absence of a nucleus gives more space for haemoglobin to carry oxygen.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "White blood cells are mainly responsible for transporting oxygen around the body.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Oxygen is carried by red blood cells; white blood cells defend the body against disease.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The pulmonary vein carries oxygenated blood from the lungs to the heart.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Unlike most veins, the pulmonary vein carries oxygenated blood to the left atrium.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Veins have valves to prevent the backflow of blood.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Because blood in veins is under low pressure, valves stop it from flowing backwards.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The left ventricle has a thicker muscular wall than the right ventricle.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The left ventricle must pump blood at high pressure to the whole body, so its wall is thicker.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Water moves into root hair cells from the soil by the process of osmosis.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Water moves from the dilute soil solution into the more concentrated cell sap by osmosis.",
-        "difficulty": "medium"
-      }
+      {"questionText": "Xylem transports water and mineral salts from the roots to the leaves.", "options": [], "correctAnswer": "true", "explanation": "Xylem is the water-conducting tissue that carries water and dissolved minerals upward from the roots. Exam Tip: Xylem = water + minerals, upward only.", "difficulty": "easy"},
+      {"questionText": "Phloem transports water from the roots to the leaves.", "options": [], "correctAnswer": "false", "explanation": "Phloem carries manufactured food, not water; water is carried by the xylem, so the roles are swapped. Exam Tip: Phloem = food; xylem = water. Swapped.", "difficulty": "easy"},
+      {"questionText": "Transpiration is the loss of water vapour from the leaves of a plant.", "options": [], "correctAnswer": "true", "explanation": "Transpiration is exactly the loss of water as vapour, mostly through the stomata. Exam Tip: Transpiration = water loss as vapour.", "difficulty": "easy"},
+      {"questionText": "High humidity increases the rate of transpiration.", "options": [], "correctAnswer": "false", "explanation": "Humid air is already full of moisture, so less water can evaporate and transpiration slows down. Exam Tip: High humidity DECREASES transpiration.", "difficulty": "easy"},
+      {"questionText": "Root hairs increase the surface area for the absorption of water.", "options": [], "correctAnswer": "true", "explanation": "Their long thin shape gives a large surface area, speeding up the uptake of water. Exam Tip: Large surface area -> faster absorption.", "difficulty": "easy"},
+      {"questionText": "Water enters root hair cells by the process of osmosis.", "options": [], "correctAnswer": "true", "explanation": "Water moves from the dilute soil into the concentrated cell sap by osmosis. Exam Tip: Osmosis moves WATER; active transport moves MINERALS.", "difficulty": "easy"},
+      {"questionText": "Translocation is the movement of manufactured food in the phloem.", "options": [], "correctAnswer": "true", "explanation": "Translocation is the transport of dissolved food through the phloem to all parts of the plant. Exam Tip: Translocation happens in the phloem, up and down.", "difficulty": "easy"},
+      {"questionText": "Wind decreases the rate of transpiration.", "options": [], "correctAnswer": "false", "explanation": "Wind blows away moist air from the leaf surface, so more water evaporates and transpiration increases. Exam Tip: Wind INCREASES transpiration.", "difficulty": "easy"},
+      {"questionText": "The transpiration pull helps to draw water up the xylem.", "options": [], "correctAnswer": "true", "explanation": "Water lost from the leaves creates a suction that pulls the water column up the xylem. Exam Tip: The main force lifting water in tall plants.", "difficulty": "easy"},
+      {"questionText": "Guttation is the loss of water as vapour through the stomata.", "options": [], "correctAnswer": "false", "explanation": "Guttation is the loss of water as liquid droplets at leaf edges, while vapour loss through stomata is transpiration. Exam Tip: Guttation = liquid droplets; transpiration = vapour.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Why large organisms need a transport system",
-        "options": [],
-        "correctAnswer": "Their small surface area to volume ratio makes diffusion too slow to supply all cells.",
-        "explanation": "A specialised transport system delivers materials quickly to deep-lying cells.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of root hairs",
-        "options": [],
-        "correctAnswer": "They increase the surface area for absorbing water and mineral salts from the soil.",
-        "explanation": "Many thin root hairs greatly boost absorption.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of xylem",
-        "options": [],
-        "correctAnswer": "Transports water and mineral salts from the roots up to the leaves.",
-        "explanation": "Xylem moves materials in one direction, upward.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of phloem",
-        "options": [],
-        "correctAnswer": "Transports manufactured food (sugars) from the leaves to other parts of the plant.",
-        "explanation": "This movement of food is called translocation.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of transpiration",
-        "options": [],
-        "correctAnswer": "The loss of water vapour from the leaves, mainly through the stomata.",
-        "explanation": "It creates a pull that draws water up the plant.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Factors that increase transpiration",
-        "options": [],
-        "correctAnswer": "High temperature, low humidity, wind, and bright light.",
-        "explanation": "These conditions speed up evaporation and diffusion of water vapour.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Components of blood",
-        "options": [],
-        "correctAnswer": "Plasma, red blood cells, white blood cells and platelets.",
-        "explanation": "Each component has its own transport or protective role.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of red blood cells",
-        "options": [],
-        "correctAnswer": "They carry oxygen using haemoglobin from the lungs to body cells.",
-        "explanation": "Their biconcave shape increases oxygen-carrying surface area.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Difference between arteries and veins",
-        "options": [],
-        "correctAnswer": "Arteries carry blood away from the heart; veins carry blood towards the heart and have valves.",
-        "explanation": "Arteries have thicker walls for high pressure.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of the heart",
-        "options": [],
-        "correctAnswer": "It pumps blood continuously around the body through the blood vessels.",
-        "explanation": "It is a muscular organ with four chambers.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Xylem", "options": [], "correctAnswer": "The plant tissue that transports water and mineral salts from the roots up to the leaves.", "explanation": "Xylem carries materials in one direction only, upward. Exam Tip: Xylem = water + minerals, UP only.", "difficulty": "easy"},
+      {"questionText": "Phloem", "options": [], "correctAnswer": "The plant tissue that transports manufactured food (sugars) from the leaves to other parts of the plant.", "explanation": "Phloem can move food both upward and downward. Exam Tip: Phloem = food, up AND down.", "difficulty": "easy"},
+      {"questionText": "Translocation", "options": [], "correctAnswer": "The transport of manufactured food through the phloem to all parts of the plant.", "explanation": "Do not confuse it with transpiration, which is water loss. Exam Tip: Translocation = food in the phloem.", "difficulty": "easy"},
+      {"questionText": "Root hairs", "options": [], "correctAnswer": "Long, thin outgrowths of root cells that provide a large surface area for absorbing water and mineral salts.", "explanation": "Their shape maximises contact with the soil solution. Exam Tip: Large surface area means faster absorption.", "difficulty": "easy"},
+      {"questionText": "Osmosis", "options": [], "correctAnswer": "The movement of water from a dilute solution to a more concentrated solution through a partially permeable membrane.", "explanation": "This is how water enters root hair cells from the soil. Exam Tip: Osmosis moves WATER, no energy needed.", "difficulty": "easy"},
+      {"questionText": "Active transport", "options": [], "correctAnswer": "The movement of substances against a concentration gradient using energy from respiration.", "explanation": "Mineral salts are absorbed into roots this way. Exam Tip: Active transport uses energy; osmosis does not.", "difficulty": "easy"},
+      {"questionText": "Transpiration", "options": [], "correctAnswer": "The loss of water vapour from the leaves of a plant, mainly through the stomata.", "explanation": "It cools the plant and helps draw water upward. Exam Tip: Transpiration = water loss as VAPOUR.", "difficulty": "easy"},
+      {"questionText": "Transpiration pull", "options": [], "correctAnswer": "The suction force created in the xylem as water evaporates from the leaves, drawing water up the plant.", "explanation": "It is the main force lifting water up tall plants. Exam Tip: Water UPTAKE measures the transpiration rate.", "difficulty": "easy"},
+      {"questionText": "Vascular bundles", "options": [], "correctAnswer": "Structures in stems and roots formed by xylem and phloem grouped together to transport materials.", "explanation": "They act as the plant's transport pipes. Exam Tip: Vascular bundles contain both xylem and phloem.", "difficulty": "easy"},
+      {"questionText": "Factors affecting transpiration and guttation", "options": [], "correctAnswer": "Transpiration increases with high temperature, low humidity, wind and bright light; guttation is the loss of water as liquid droplets at leaf edges, usually in the early morning.", "explanation": "Humid, cool, still and dark conditions reduce transpiration. Exam Tip: Transpiration loses VAPOUR; guttation loses liquid DROPLETS.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A gardener notices that a transplanted seedling wilts badly in the afternoon even though the soil is moist. What is the most likely reason?",
+        "questionText": "A leafy shoot in a tube of water gives these uptakes: still air in shade = 1.0 cm3/hour; moving air (fan) in shade = 2.5 cm3/hour; moving air, bright light and warmth = 4.0 cm3/hour. Which explanation is correct?",
         "options": [
-          {"id": "a", "text": "The seedling has stopped photosynthesising completely", "isCorrect": false},
-          {"id": "b", "text": "Many root hairs were damaged during transplanting, so water is lost faster than it is absorbed", "isCorrect": true},
-          {"id": "c", "text": "The phloem is blocked by sugars", "isCorrect": false},
-          {"id": "d", "text": "The leaves have too many stomata closed", "isCorrect": false}
+          {"id": "a", "text": "Water uptake is random", "isCorrect": false},
+          {"id": "b", "text": "Wind, light and warmth increase transpiration, so more water is drawn up", "isCorrect": true},
+          {"id": "c", "text": "Water uptake decreases with wind", "isCorrect": false},
+          {"id": "d", "text": "Only the colour of the leaves matters", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Transplanting often tears delicate root hairs, reducing water absorption while transpiration continues, so the plant loses more water than it takes up and wilts.",
+        "explanation": "Water uptake replaces water lost by transpiration. Wind, light and warmth speed transpiration, so uptake rises from 1.0 to 2.5 to 4.0. Exam Tip: Water UPTAKE measures the transpiration RATE.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A doctor finds that a patient's blood clots very slowly after a small cut. A shortage of which blood component is the most likely cause?",
+        "questionText": "A ring of bark (with phloem) is removed from a tree trunk while the xylem is left intact. The bark above the ring swells, the leaves stay green for a while, but the roots begin to die. Which explanation is correct?",
         "options": [
-          {"id": "a", "text": "Red blood cells", "isCorrect": false},
-          {"id": "b", "text": "Plasma water", "isCorrect": false},
-          {"id": "c", "text": "Platelets", "isCorrect": true},
-          {"id": "d", "text": "Haemoglobin", "isCorrect": false}
+          {"id": "a", "text": "Xylem carries food, so the tree dies at once", "isCorrect": false},
+          {"id": "b", "text": "Phloem (removed) carries sugars downward, so sugars pile up above the ring and cannot reach the roots, which starve; xylem (intact) still carries water up, so leaves stay green for a time", "isCorrect": true},
+          {"id": "c", "text": "The tree grows faster", "isCorrect": false},
+          {"id": "d", "text": "Water can no longer move up", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Platelets are essential for blood clotting, so a low platelet count leads to slow clotting and prolonged bleeding.",
+        "correctAnswer": "b",
+        "explanation": "Phloem carries sugars down; blocking it makes sugars accumulate above the ring, causing swelling. The roots below starve, while the intact xylem still carries water up, keeping leaves green. Exam Tip: Swelling ABOVE the ring = phloem carries food DOWN; leaves green = xylem untouched.",
         "difficulty": "hard"
       },
       {
-        "questionText": "If a person's left ventricle becomes weak and cannot contract strongly, which effect would you most expect?",
+        "questionText": "Two leafy shoots are set up: Shoot A has petroleum jelly on the LOWER surface of every leaf, Shoot B on the UPPER surface. Shoot A loses much less water than Shoot B. Which explanation is correct?",
         "options": [
-          {"id": "a", "text": "Reduced supply of oxygenated blood to the body, causing tiredness", "isCorrect": true},
-          {"id": "b", "text": "Increased oxygen reaching the body tissues", "isCorrect": false},
-          {"id": "c", "text": "Faster transport of food in the phloem", "isCorrect": false},
-          {"id": "d", "text": "More water vapour leaving through the stomata", "isCorrect": false}
+          {"id": "a", "text": "Upper and lower surfaces are identical", "isCorrect": false},
+          {"id": "b", "text": "Most stomata are on the LOWER surface, so blocking the lower surface (Shoot A) stops most transpiration, while blocking the upper surface (Shoot B) has little effect", "isCorrect": true},
+          {"id": "c", "text": "Petroleum jelly increases transpiration", "isCorrect": false},
+          {"id": "d", "text": "Leaves have no stomata", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "The left ventricle pumps oxygenated blood to the whole body, so if it is weak, the body tissues receive less oxygen and the person feels tired and weak.",
+        "correctAnswer": "b",
+        "explanation": "Most stomata are on the lower surface. Blocking there (A) stops most transpiration, while blocking the upper surface (B) barely helps. Exam Tip: Block where the stomata ARE (lower) to stop transpiration. Jelly seals pores; it does not speed anything up.",
         "difficulty": "hard"
       }
     ]

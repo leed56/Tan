@@ -58,7 +58,7 @@ export function WrongAnswerReviewScreen({ navigation, route }: Props) {
         options: question.options.map((o) => ({ id: o.id, text: o.text })),
         quizType: question.type,
         subjectId,
-        subjectName: SUBJECT_NAMES[subjectId] ?? subjectId,
+        subjectName: SUBJECT_NAMES[subjectId.replace(/^form_\d+_/, '')] ?? subjectId,
         formId,
         fallbackExplanation: question.explanation,
         userId,

@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_commerce_topic_3",
+  "topicName": "Final Accounts",
+  "order": 3,
+  "description": "An introduction to final accounts covering the trading account, profit and loss account, and balance sheet, including how to calculate cost of goods sold, gross profit, net profit, working capital, and the gross profit margin.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the main purpose of preparing final accounts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To show the profit or loss and financial position of a business",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "To record only daily cash transactions",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "To advertise the products of the business",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To register the business with the government",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Final accounts are prepared at the end of a trading period to determine the profit or loss made and to show the financial position of the business.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which account is prepared to calculate the gross profit of a business?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Profit and loss account",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Trading account",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Balance sheet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Cash account",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The trading account compares sales with the cost of goods sold to determine the gross profit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The formula for cost of goods sold (COGS) is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Opening stock + Purchases + Closing stock",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sales - Gross profit",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Opening stock + Purchases - Closing stock",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Purchases - Opening stock + Closing stock",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Cost of goods sold = Opening stock + Purchases - Closing stock. Note that Sales - Gross profit also equals COGS, but the standard formula uses stock and purchases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gross profit is calculated as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sales - Cost of goods sold",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Sales - Expenses",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Net profit + Expenses",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Capital - Liabilities",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Gross profit = Sales - Cost of goods sold. It is the profit before deducting running expenses.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A business has opening stock of 20,000/=, purchases of 80,000/= and closing stock of 30,000/=. What is the cost of goods sold?",
+        "options": [
+          {
+            "id": "a",
+            "text": "130,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "70,000/=",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "90,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "50,000/=",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "COGS = Opening stock + Purchases - Closing stock = 20,000 + 80,000 - 30,000 = 70,000/=.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If sales are 150,000/= and cost of goods sold is 90,000/=, the gross profit is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "240,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "60,000/=",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "90,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "150,000/=",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gross profit = Sales - COGS = 150,000 - 90,000 = 60,000/=.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which account is prepared to calculate the net profit of a business?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trading account",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Profit and loss account",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Balance sheet",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sales account",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The profit and loss account takes the gross profit, adds other incomes and subtracts expenses to find the net profit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Net profit is best described as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gross profit plus other incomes minus expenses",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Sales minus purchases",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Total assets minus total liabilities",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Opening stock plus closing stock",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Net profit = Gross profit + other incomes - expenses. It is the final profit after all running costs are deducted.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A business has a gross profit of 50,000/=, other incomes of 5,000/= and total expenses of 20,000/=. What is the net profit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "35,000/=",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "75,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "30,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "25,000/=",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Net profit = Gross profit + other incomes - expenses = 50,000 + 5,000 - 20,000 = 35,000/=.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The accounting equation shown by a balance sheet is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Assets = Capital + Liabilities",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Assets = Capital - Liabilities",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Capital = Assets + Liabilities",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Liabilities = Assets + Capital",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The balance sheet is based on the accounting equation: Assets = Capital + Liabilities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a current asset?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Motor vehicle",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Buildings",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Stock of goods",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Machinery",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Stock of goods is a current asset because it is expected to be converted into cash within one year. Motor vehicles, buildings and machinery are fixed assets.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Working capital is calculated as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fixed assets - Current liabilities",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Current assets - Current liabilities",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Current assets + Current liabilities",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Capital - Drawings",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Working capital = Current assets - Current liabilities. It measures the short-term financial health of a business.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A business has current assets of 60,000/= and current liabilities of 25,000/=. What is the working capital?",
+        "options": [
+          {
+            "id": "a",
+            "text": "85,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "35,000/=",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "25,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "60,000/=",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Working capital = Current assets - Current liabilities = 60,000 - 25,000 = 35,000/=.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The term 'turnover' in final accounts refers to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Total sales of a business in a period",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Total expenses of a business",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Net profit of a business",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The capital invested by the owner",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Turnover is another name for the total sales (revenue) of a business during a trading period.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following is a long-term liability?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trade creditors",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Bank overdraft",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A 5-year bank loan",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Accrued wages",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A 5-year bank loan is repayable after more than one year, making it a long-term liability. Creditors, overdrafts and accrued wages are current liabilities.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The account prepared to find gross profit is called the _____ account.",
+        "options": [
+          {
+            "id": "a",
+            "text": "trading",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "profit and loss",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "appropriation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The trading account compares sales with cost of goods sold to find gross profit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cost of goods sold = Opening stock + Purchases - _____ stock.",
+        "options": [
+          {
+            "id": "a",
+            "text": "opening",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "closing",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "average",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "damaged",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "COGS = Opening stock + Purchases - Closing stock.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gross profit = Sales - Cost of _____ sold.",
+        "options": [
+          {
+            "id": "a",
+            "text": "sales",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "materials",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "goods",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "stock",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Gross profit is found by subtracting the cost of goods sold from sales.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If sales are 100,000/= and cost of goods sold is 70,000/=, the gross profit is _____/=.",
+        "options": [
+          {
+            "id": "a",
+            "text": "70,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "170,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "100,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "30,000",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Gross profit = 100,000 - 70,000 = 30,000/=.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The statement that shows the financial position of a business at a particular date is the _____ sheet.",
+        "options": [
+          {
+            "id": "a",
+            "text": "balance",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "trading",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "income",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cash flow",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The balance sheet shows assets, capital and liabilities at a particular date.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Working capital = Current assets - Current _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "assets",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "liabilities",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "expenses",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Working capital = Current assets - Current liabilities.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "With current assets of 50,000/= and current liabilities of 18,000/=, the working capital is _____/=.",
+        "options": [
+          {
+            "id": "a",
+            "text": "18,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "68,000",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "32,000",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "50,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Working capital = 50,000 - 18,000 = 32,000/=.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Another name for total sales in a trading period is _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "profit",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "margin",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "capital",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "turnover",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Turnover means total sales (revenue) of a business.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Net profit = Gross profit + other incomes - _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "expenses",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "sales",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "purchases",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "drawings",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Net profit = Gross profit + other incomes - expenses.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A business has opening stock 10,000/=, purchases 60,000/= and closing stock 15,000/=. The cost of goods sold is _____/=.",
+        "options": [
+          {
+            "id": "a",
+            "text": "70,000",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "55,000",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "85,000",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "45,000",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "COGS = 10,000 + 60,000 - 15,000 = 55,000/=.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Final accounts are prepared at the end of a trading period to show profit or loss and the financial position of a business.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the main purpose of preparing final accounts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The trading account is used to calculate net profit.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The trading account calculates gross profit, not net profit. Net profit is found in the profit and loss account.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cost of goods sold is found by adding opening stock and purchases, then subtracting closing stock.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "COGS = Opening stock + Purchases - Closing stock.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Gross profit is always equal to net profit.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Net profit is usually lower than gross profit because expenses are deducted from gross profit.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The balance sheet is based on the equation Assets = Capital + Liabilities.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the accounting equation on which the balance sheet is built.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bank loan repayable after five years is a current liability.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A loan repayable after more than one year is a long-term liability, not a current liability.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Working capital is the difference between current assets and current liabilities.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Working capital = Current assets - Current liabilities.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Turnover is another word for total sales of a business.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Turnover means the total sales or revenue of a business in a period.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Buildings and machinery are examples of current assets.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Buildings and machinery are fixed assets because they are kept for long-term use, not converted into cash within a year.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Gross profit margin shows gross profit as a percentage of sales.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Gross profit margin = (Gross profit / Sales) x 100, expressing gross profit as a percentage of sales.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State the purpose of preparing final accounts.",
+        "options": [],
+        "correctAnswer": "Final accounts are prepared at the end of a trading period to determine the profit or loss made by the business and to show its financial position.",
+        "explanation": "Final accounts help owners and other users know how the business performed and its financial standing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the three main parts of final accounts.",
+        "options": [],
+        "correctAnswer": "The trading account, the profit and loss account, and the balance sheet.",
+        "explanation": "The trading account finds gross profit, the profit and loss account finds net profit, and the balance sheet shows financial position.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Write the formula for cost of goods sold.",
+        "options": [],
+        "correctAnswer": "Cost of goods sold = Opening stock + Purchases - Closing stock.",
+        "explanation": "This formula gives the value of goods actually sold during the period.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain how gross profit is calculated.",
+        "options": [],
+        "correctAnswer": "Gross profit is calculated by subtracting the cost of goods sold from sales (Gross profit = Sales - Cost of goods sold).",
+        "explanation": "Gross profit is the profit before deducting running expenses of the business.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain how net profit is calculated.",
+        "options": [],
+        "correctAnswer": "Net profit is calculated by adding other incomes to gross profit and subtracting all expenses (Net profit = Gross profit + other incomes - expenses).",
+        "explanation": "Net profit is the final profit after all running costs have been deducted.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the difference between fixed assets and current assets.",
+        "options": [],
+        "correctAnswer": "Fixed assets are bought for long-term use such as buildings and machinery, while current assets are short-term and easily converted into cash, such as stock, debtors and cash.",
+        "explanation": "Fixed assets are held for a long time; current assets change form within one year.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the difference between current liabilities and long-term liabilities.",
+        "options": [],
+        "correctAnswer": "Current liabilities are debts repayable within one year such as creditors and bank overdraft, while long-term liabilities are debts repayable after more than one year such as a long-term bank loan.",
+        "explanation": "The difference is the time period within which the debts must be repaid.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the meaning of working capital and how it is calculated.",
+        "options": [],
+        "correctAnswer": "Working capital is the money available to run the day-to-day activities of a business, calculated as Current assets - Current liabilities.",
+        "explanation": "Adequate working capital allows a business to meet its short-term obligations.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define the terms turnover, margin and mark-up.",
+        "options": [],
+        "correctAnswer": "Turnover is the total sales of a business; margin is gross profit expressed as a percentage of sales; mark-up is gross profit expressed as a percentage of cost.",
+        "explanation": "Margin is based on sales while mark-up is based on cost price.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "State the formula for the gross profit margin.",
+        "options": [],
+        "correctAnswer": "Gross profit margin = (Gross profit / Sales) x 100.",
+        "explanation": "It expresses gross profit as a percentage of sales to measure profitability.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A trader had opening stock of 40,000/=, purchases of 160,000/= and closing stock of 50,000/=. During the year sales were 220,000/=. What is the gross profit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "70,000/=",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "150,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "60,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100,000/=",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "COGS = 40,000 + 160,000 - 50,000 = 150,000/=. Gross profit = Sales - COGS = 220,000 - 150,000 = 70,000/=.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A business made sales of 400,000/= and earned a gross profit of 100,000/=. What is the gross profit margin?",
+        "options": [
+          {
+            "id": "a",
+            "text": "20%",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "25%",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40%",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "30%",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gross profit margin = (Gross profit / Sales) x 100 = (100,000 / 400,000) x 100 = 25%.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A business has fixed assets of 120,000/=, current assets of 80,000/=, current liabilities of 30,000/= and a long-term loan of 50,000/=. Using Assets = Capital + Liabilities, what is the owner's capital?",
+        "options": [
+          {
+            "id": "a",
+            "text": "200,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "120,000/=",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "150,000/=",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "80,000/=",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Total assets = 120,000 + 80,000 = 200,000/=. Total liabilities = 30,000 + 50,000 = 80,000/=. Capital = Assets - Liabilities = 200,000 - 80,000 = 120,000/=.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

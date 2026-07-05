@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A water molecule contains two atoms of hydrogen and one atom of _____.",
-        "options": [],
-        "correctAnswer": "oxygen",
+        "options": [
+          {
+            "id": "a",
+            "text": "oxygen",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "nitrogen",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "carbon",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "helium",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Water has the formula H2O, made of two hydrogen atoms and one oxygen atom.",
         "difficulty": "easy"
       },
       {
         "questionText": "The process of adding chlorine to water to kill germs is called _____.",
-        "options": [],
-        "correctAnswer": "chlorination",
+        "options": [
+          {
+            "id": "a",
+            "text": "filtration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "chlorination",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "sedimentation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "distillation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Chlorination is the addition of chlorine to disinfect water by killing harmful microorganisms.",
         "difficulty": "easy"
       },
       {
         "questionText": "Water that easily forms lather with soap is called _____ water.",
-        "options": [],
-        "correctAnswer": "soft",
+        "options": [
+          {
+            "id": "a",
+            "text": "hard",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pure",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "soft",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "fresh",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Soft water lathers easily because it contains little or no dissolved calcium and magnesium salts.",
         "difficulty": "easy"
       },
       {
         "questionText": "The hardness of water that can be removed by boiling is called _____ hardness.",
-        "options": [],
-        "correctAnswer": "temporary",
+        "options": [
+          {
+            "id": "a",
+            "text": "permanent",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "natural",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mineral",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "temporary",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Temporary hardness is removed by boiling, which decomposes the dissolved hydrogen carbonates.",
         "difficulty": "medium"
       },
       {
         "questionText": "The method of purifying water by boiling it and then condensing the vapour is called _____.",
-        "options": [],
-        "correctAnswer": "distillation",
+        "options": [
+          {
+            "id": "a",
+            "text": "distillation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "filtration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "sedimentation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chlorination",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Distillation removes dissolved solids and produces very pure water by evaporating and recondensing it.",
         "difficulty": "medium"
       },
       {
         "questionText": "Passing dirty water through sand and gravel to remove suspended solid particles is called _____.",
-        "options": [],
-        "correctAnswer": "filtration",
+        "options": [
+          {
+            "id": "a",
+            "text": "distillation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "filtration",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "chlorination",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "evaporation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Filtration uses sand and gravel beds to trap and remove suspended solid particles from water.",
         "difficulty": "easy"
       },
       {
         "questionText": "White anhydrous copper(II) sulphate turns _____ in the presence of water.",
-        "options": [],
-        "correctAnswer": "blue",
+        "options": [
+          {
+            "id": "a",
+            "text": "green",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pink",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "blue",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "white",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Anhydrous copper(II) sulphate changes from white to blue when it absorbs water.",
         "difficulty": "medium"
       },
       {
         "questionText": "Because water can dissolve so many different substances, it is often called the universal _____.",
-        "options": [],
-        "correctAnswer": "solvent",
+        "options": [
+          {
+            "id": "a",
+            "text": "solute",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "solution",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mixture",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "solvent",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Water dissolves a wide range of substances, earning it the name universal solvent.",
         "difficulty": "easy"
       },
       {
         "questionText": "Leaving muddy water to stand so that heavy particles settle at the bottom is known as _____.",
-        "options": [],
-        "correctAnswer": "sedimentation",
+        "options": [
+          {
+            "id": "a",
+            "text": "sedimentation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "filtration",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "distillation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "chlorination",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Sedimentation allows heavy suspended particles to sink and settle, clearing the water.",
         "difficulty": "medium"
       },
       {
         "questionText": "Anhydrous cobalt chloride paper turns from blue to _____ when it touches water.",
-        "options": [],
-        "correctAnswer": "pink",
+        "options": [
+          {
+            "id": "a",
+            "text": "green",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pink",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "yellow",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "white",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Blue anhydrous cobalt chloride paper turns pink in the presence of water, confirming water is present.",
         "difficulty": "hard"
       }

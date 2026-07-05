@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The three organs of the Government of Tanzania are the Executive, the Judiciary and the _____.",
-        "options": [],
-        "correctAnswer": "Legislature",
+        "options": [
+          {
+            "id": "a",
+            "text": "Legislature",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Cabinet",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Civil Service",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Police Force",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Legislature (Bunge) is the law-making organ, alongside the Executive and the Judiciary.",
         "difficulty": "easy"
       },
       {
         "questionText": "The Kiswahili name for the Parliament of Tanzania is _____.",
-        "options": [],
-        "correctAnswer": "Bunge",
+        "options": [
+          {
+            "id": "a",
+            "text": "Baraza",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Bunge",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mahakama",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Halmashauri",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The Bunge is the legislative body responsible for making laws in Tanzania.",
         "difficulty": "easy"
       },
       {
         "questionText": "The Head of State and head of the Executive in Tanzania is the _____.",
-        "options": [],
-        "correctAnswer": "President",
+        "options": [
+          {
+            "id": "a",
+            "text": "Speaker",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Chief Justice",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "President",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Prime Minister",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "The President leads the Executive and serves as Head of State and Commander-in-Chief.",
         "difficulty": "easy"
       },
       {
         "questionText": "The organ of government that interprets laws and settles disputes is the _____.",
-        "options": [],
-        "correctAnswer": "Judiciary",
+        "options": [
+          {
+            "id": "a",
+            "text": "Executive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Legislature",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Secretariat",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Judiciary",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Judiciary administers justice through the courts of law.",
         "difficulty": "easy"
       },
       {
         "questionText": "The United Republic of Tanzania is a union of Tanzania Mainland and _____.",
-        "options": [],
-        "correctAnswer": "Zanzibar",
+        "options": [
+          {
+            "id": "a",
+            "text": "Zanzibar",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Pemba",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Kilimanjaro",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Dodoma",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Tanganyika and Zanzibar united in 1964 to form the United Republic of Tanzania.",
         "difficulty": "easy"
       },
       {
         "questionText": "The principle that divides power among the three organs so that no one organ becomes too powerful is called separation of _____.",
-        "options": [],
-        "correctAnswer": "powers",
+        "options": [
+          {
+            "id": "a",
+            "text": "duties",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "powers",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "regions",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "courts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Separation of powers ensures each organ has its own duties, providing checks and balances.",
         "difficulty": "medium"
       },
       {
         "questionText": "The two main levels of government in Tanzania are central government and _____ government.",
-        "options": [],
-        "correctAnswer": "local",
+        "options": [
+          {
+            "id": "a",
+            "text": "regional",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "village",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "local",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "district",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Local government operates at lower levels such as districts, wards and villages to bring services closer to the people.",
         "difficulty": "medium"
       },
       {
         "questionText": "The officer who presides over the sittings of the National Assembly is the _____.",
-        "options": [],
-        "correctAnswer": "Speaker",
+        "options": [
+          {
+            "id": "a",
+            "text": "President",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Registrar",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Attorney General",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Speaker",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "The Speaker chairs parliamentary sessions and keeps order during debates.",
         "difficulty": "medium"
       },
       {
         "questionText": "The group of ministers who help the President to run the government is called the _____.",
-        "options": [],
-        "correctAnswer": "Cabinet",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cabinet",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Assembly",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Tribunal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Commission",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Cabinet is part of the Executive and advises the President while running the ministries.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The highest court in the United Republic of Tanzania is the _____ of Appeal.",
-        "options": [],
-        "correctAnswer": "Court",
+        "questionText": "The highest court in the United Republic of Tanzania is the Court of _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Appeal",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Justice",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Records",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Magistrates",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The Court of Appeal is the highest court in Tanzania and hears appeals from lower courts.",
         "difficulty": "hard"
       }

@@ -1,0 +1,374 @@
+{
+  "topicId": "form_4_mathematics_topic_5",
+  "topicName": "Trigonometry",
+  "order": 5,
+  "description": "Trigonometric ratios of special and general angles including obtuse angles, the sine and cosine rules, the area of a triangle, the fundamental identity, and applications such as angles of elevation.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Find the value of sin 30°.",
+        "options": [
+          {"id": "a", "text": "√3/2", "isCorrect": false},
+          {"id": "b", "text": "1/2", "isCorrect": true},
+          {"id": "c", "text": "1", "isCorrect": false},
+          {"id": "d", "text": "√2/2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Recall the special-angle table. sin 30° comes from the half-equilateral triangle with opposite 1 and hypotenuse 2, so sin 30° = 1/2. Exam Tip: √3/2 is cos 30° — the pair swap for the same angle. Memorise the 30-45-60 table as one block.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the value of tan 45°.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "√3", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": true},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A 45° right triangle is isosceles, so opposite = adjacent. Since tan = opposite/adjacent = equal/equal, tan 45° = 1. Exam Tip: tan 45° = 1 is the pivot value: tan < 1 below 45°, tan > 1 above.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the value of sin 150°.",
+        "options": [
+          {"id": "a", "text": "−1/2", "isCorrect": false},
+          {"id": "b", "text": "√3/2", "isCorrect": false},
+          {"id": "c", "text": "1/2", "isCorrect": true},
+          {"id": "d", "text": "−√3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "150° is in the second quadrant where sine is positive. The reference angle is 180° − 150° = 30°, so sin 150° = sin 30° = 1/2. Exam Tip: −1/2 applies a needless minus — sine stays positive throughout 0°–180°. Rule: sin(180° − θ) = sin θ.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the value of cos 120°.",
+        "options": [
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "−1/2", "isCorrect": true},
+          {"id": "c", "text": "√3/2", "isCorrect": false},
+          {"id": "d", "text": "−√3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "120° is in the second quadrant where cosine is negative. The reference angle is 180° − 120° = 60° and cos 60° = 1/2, so cos 120° = −1/2. Exam Tip: 1/2 forgets the sign change — cos(180° − θ) = −cos θ. Sine keeps its sign in Q2 while cosine flips; this asymmetry is the heart of obtuse-angle trigonometry.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a right-angled triangle, tan θ = 3/4. Find sin θ.",
+        "options": [
+          {"id": "a", "text": "3/4", "isCorrect": false},
+          {"id": "b", "text": "4/5", "isCorrect": false},
+          {"id": "c", "text": "3/5", "isCorrect": true},
+          {"id": "d", "text": "4/3", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Since tan θ = opposite/adjacent = 3/4, take opposite = 3 and adjacent = 4. The hypotenuse is √(9 + 16) = 5, so sin θ = opposite/hypotenuse = 3/5. Exam Tip: 4/5 is cos θ. Draw the 3-4-5 triangle and read each ratio off it — converting between ratios always routes through the triangle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In triangle ABC, a = 8 cm, A = 30° and B = 90°. Use the sine rule to find b.",
+        "options": [
+          {"id": "a", "text": "4 cm", "isCorrect": false},
+          {"id": "b", "text": "16 cm", "isCorrect": true},
+          {"id": "c", "text": "8 cm", "isCorrect": false},
+          {"id": "d", "text": "12 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "By the sine rule a/sin A = b/sin B, so 8/sin 30° = b/sin 90°, that is 8/0.5 = b/1, giving b = 16 cm. Exam Tip: 4 cm divides instead of cross-multiplying. Each fraction pairs a side with its opposite angle — never mix a with B.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In triangle ABC, b = 5 cm, c = 7 cm and A = 60°. Use the cosine rule to find a.",
+        "options": [
+          {"id": "a", "text": "√39 cm", "isCorrect": true},
+          {"id": "b", "text": "√74 cm", "isCorrect": false},
+          {"id": "c", "text": "√109 cm", "isCorrect": false},
+          {"id": "d", "text": "6 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "By the cosine rule a² = b² + c² − 2bc cos A = 25 + 49 − 2(5)(7)(0.5) = 74 − 35 = 39, so a = √39 ≈ 6.24 cm. Exam Tip: √74 forgets the whole −2bc cos A term (plain Pythagoras); √109 adds 35 instead of subtracting. The sign of the correction follows the cosine's sign — a positive angle under 90° means subtract.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two sides of a triangle are 6 cm and 10 cm, with an included angle of 30°. Find its area.",
+        "options": [
+          {"id": "a", "text": "30 cm²", "isCorrect": false},
+          {"id": "b", "text": "60 cm²", "isCorrect": false},
+          {"id": "c", "text": "15 cm²", "isCorrect": true},
+          {"id": "d", "text": "25.98 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Area = ½ab sin C = ½ × 6 × 10 × sin 30° = ½ × 60 × 0.5 = 15 cm². Exam Tip: 30 cm² drops the sin 30°; 25.98 cm² uses cos 30°. You need the sine of the included angle — both conditions matter.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Solve sin θ = 0.5 for 0° ≤ θ ≤ 180°.",
+        "options": [
+          {"id": "a", "text": "θ = 30° only", "isCorrect": false},
+          {"id": "b", "text": "θ = 30° or 150°", "isCorrect": true},
+          {"id": "c", "text": "θ = 60° or 120°", "isCorrect": false},
+          {"id": "d", "text": "θ = 150° only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The first solution is θ = sin⁻¹(0.5) = 30°. Sine is also positive in the second quadrant, giving θ = 180° − 30° = 150°, so θ = 30° or 150°. Exam Tip: taking only the calculator's answer misses one solution — in 0°–180° every positive sine value has two solutions. This double answer is the engine of the ambiguous case in the sine rule.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the maximum value of sin x?",
+        "options": [
+          {"id": "a", "text": "90", "isCorrect": false},
+          {"id": "b", "text": "∞", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": true},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "sin x is a ratio of opposite/hypotenuse, and the opposite can never exceed the hypotenuse, so the maximum sin x = 1, reached at x = 90°. Exam Tip: 90 confuses the input (90°) with the output (1). Any equation sin θ = 1.5 has no solution — sin θ ≤ 1 always, a favourite NECTA truth-test.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the period of the graph of y = sin x?",
+        "options": [
+          {"id": "a", "text": "90°", "isCorrect": false},
+          {"id": "b", "text": "180°", "isCorrect": false},
+          {"id": "c", "text": "360°", "isCorrect": true},
+          {"id": "d", "text": "720°", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The period is the interval after which the graph repeats. Since sin(x + 360°) = sin x for every x, the period = 360°. Exam Tip: 180° is the interval between consecutive zeros, not a full repeat (the signs differ). One complete wave equals one full turn.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the value of cos 90°.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "0", "isCorrect": true},
+          {"id": "c", "text": "−1", "isCorrect": false},
+          {"id": "d", "text": "1/2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "At 90° the adjacent side shrinks to nothing, so cos = adjacent/hypotenuse = 0/hyp = 0, giving cos 90° = 0. Exam Tip: remember the boundary values sin 0° = 0, sin 90° = 1, cos 0° = 1, cos 90° = 0 — sine and cosine trade places at the ends.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "From a point 30 m from the base of a vertical tower, the angle of elevation of the top is 45°. Find the height of the tower.",
+        "options": [
+          {"id": "a", "text": "15 m", "isCorrect": false},
+          {"id": "b", "text": "60 m", "isCorrect": false},
+          {"id": "c", "text": "30 m", "isCorrect": true},
+          {"id": "d", "text": "42.4 m", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Using tan 45° = height/distance gives 1 = h/30, so h = 30 m. Exam Tip: at 45° the height equals the horizontal distance — the isosceles shortcut. 42.4 m multiplies by √2 (using the hypotenuse relation wrongly). Elevation problems are tan problems: opposite (height) over adjacent (ground distance).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For any angle θ, sin²θ + cos²θ = ?",
+        "options": [
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "tan²θ", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "In a right triangle (opp/hyp)² + (adj/hyp)² = (opp² + adj²)/hyp², and by Pythagoras opp² + adj² = hyp², so the ratio is hyp²/hyp² = 1. Exam Tip: this fundamental identity is Pythagoras wearing trigonometric clothes. Use it to find cos θ from sin θ without drawing anything.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For angles between 0° and 180°, sine is positive in:",
+        "options": [
+          {"id": "a", "text": "The first quadrant only", "isCorrect": false},
+          {"id": "b", "text": "The second quadrant only", "isCorrect": false},
+          {"id": "c", "text": "Both the first and second quadrants", "isCorrect": true},
+          {"id": "d", "text": "Neither quadrant", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "In the first quadrant (0°–90°) all ratios are positive, and in the second quadrant (90°–180°) sine is positive while cosine and tangent are negative, so sine is positive in both. Exam Tip: the mnemonic for 0°–360° is All Students Take Chemistry (All, Sine, Tan, Cos positive by quadrant). For the O-level range 0°–180°, only the first two letters matter.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "tan θ expressed in terms of sin θ and cos θ is tan θ = ____.",
+        "options": [
+          {"id": "a", "text": "sin θ / cos θ", "isCorrect": true},
+          {"id": "b", "text": "cos θ / sin θ", "isCorrect": false},
+          {"id": "c", "text": "sin θ × cos θ", "isCorrect": false},
+          {"id": "d", "text": "sin θ + cos θ", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since tan = opp/adj, dividing top and bottom by the hypotenuse gives (opp/hyp)/(adj/hyp) = sin θ / cos θ. Exam Tip: this is why tan is undefined wherever cos θ = 0, such as θ = 90°.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "sin 90° = ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "1/2", "isCorrect": false},
+          {"id": "d", "text": "√3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "At 90° the opposite side equals the hypotenuse, so the ratio reaches its ceiling and sin 90° = 1. Exam Tip: this is the peak of the sine curve — the graph's highest point is (90°, 1).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "cos 180° = ____.",
+        "options": [
+          {"id": "a", "text": "−1", "isCorrect": true},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": false},
+          {"id": "d", "text": "−1/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using cos(180° − θ) = −cos θ with θ = 0° and cos 0° = 1 gives cos 180° = −1. Exam Tip: this is the floor of the cosine curve — cosine spans the full range −1 to 1 across 0°–180°.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The sine rule states: a/sin A = ____ = c/sin C.",
+        "options": [
+          {"id": "a", "text": "b/sin B", "isCorrect": true},
+          {"id": "b", "text": "sin B/b", "isCorrect": false},
+          {"id": "c", "text": "b/sin A", "isCorrect": false},
+          {"id": "d", "text": "B/sin b", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Each side pairs with its opposite angle, and the middle pair is side b with angle B, so a/sin A = b/sin B = c/sin C. Exam Tip: quote the full chain, then use only the two fractions containing your three known quantities.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The cosine rule for side c is: c² = ____.",
+        "options": [
+          {"id": "a", "text": "a² + b² − 2ab cos C", "isCorrect": true},
+          {"id": "b", "text": "a² + b²", "isCorrect": false},
+          {"id": "c", "text": "a² + b² + 2ab cos C", "isCorrect": false},
+          {"id": "d", "text": "a² − b² − 2ab cos C", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The rule adjusts Pythagoras by the included angle, and the adjustment is −2ab cos C, so c² = a² + b² − 2ab cos C. Exam Tip: the side on the left is opposite the angle in the cosine — c pairs with C; mixing the pairing wrecks the answer.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "sin(180° − θ) = ____.",
+        "options": [
+          {"id": "a", "text": "sin θ", "isCorrect": true},
+          {"id": "b", "text": "−sin θ", "isCorrect": false},
+          {"id": "c", "text": "cos θ", "isCorrect": false},
+          {"id": "d", "text": "−cos θ", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "By the supplementary-angle identity for sine, sin(180° − θ) = sin θ; check: sin 150° = sin 30° = 1/2. Exam Tip: the sister rule is cos(180° − θ) = −cos θ. Sine keeps, cosine flips — the pair to memorise together.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "tan 60° = ____.",
+        "options": [
+          {"id": "a", "text": "√3", "isCorrect": true},
+          {"id": "b", "text": "1/√3", "isCorrect": false},
+          {"id": "c", "text": "√3/2", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In the 30-60-90 triangle the side opposite 60° is √3 and the adjacent is 1, so tan 60° = √3/1 = √3. Exam Tip: tan 30° = 1/√3 is the reciprocal partner; the two multiply to 1.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The minimum value of cos x is ____.",
+        "options": [
+          {"id": "a", "text": "−1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": false},
+          {"id": "d", "text": "−1/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "cos x oscillates between fixed bounds and reaches its lowest point at x = 180°, where the minimum = −1. Exam Tip: both sin and cos live in [−1, 1] — the universal range of the two basic ratios.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area of a triangle with sides a and b and included angle C is ____.",
+        "options": [
+          {"id": "a", "text": "½ab sin C", "isCorrect": true},
+          {"id": "b", "text": "½ab cos C", "isCorrect": false},
+          {"id": "c", "text": "ab sin C", "isCorrect": false},
+          {"id": "d", "text": "½ab", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The height on side a is b sin C, and Area = ½ × base × height, so Area = ½ab sin C. Exam Tip: three symmetric versions exist (½bc sin A, ½ac sin B) — pick the one matching your known pair of sides.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The amplitude of the graph y = sin x is ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "360°", "isCorrect": false},
+          {"id": "d", "text": "1/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Amplitude is the maximum displacement from the centre line, and the wave swings from −1 to 1 about y = 0, so the amplitude = 1. Exam Tip: for y = k sin x the amplitude scales to |k| — the coefficient stretches the wave vertically.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "The sine of an obtuse angle is positive.", "options": [], "correctAnswer": "true", "explanation": "Obtuse angles (90°–180°) lie in the second quadrant where sine is positive, for example sin 120° = √3/2 > 0. Exam Tip: this is what lets the sine rule work in obtuse triangles without sign headaches.", "difficulty": "easy"},
+      {"questionText": "The cosine of an obtuse angle is positive.", "options": [], "correctAnswer": "false", "explanation": "In the second quadrant cosine is negative, for example cos 120° = −1/2, so the statement is false. Exam Tip: a negative cosine inside the cosine rule makes −2ab cos C positive — obtuse triangles get a longer opposite side, as geometry demands.", "difficulty": "easy"},
+      {"questionText": "The sine rule requires knowing at least one side together with its opposite angle.", "options": [], "correctAnswer": "true", "explanation": "Every sine-rule equation pairs a side with its opposite angle, and without one complete pair no fraction can be evaluated. Exam Tip: given two sides plus the included angle (no complete pair), that is the cosine rule's territory — the pairing test routes you to the right rule.", "difficulty": "easy"},
+      {"questionText": "The cosine rule is used when two sides and the included angle are known.", "options": [], "correctAnswer": "true", "explanation": "The formula c² = a² + b² − 2ab cos C consumes exactly that data and outputs the third side directly. Exam Tip: its second use is when all three sides are known, then rearrange to find any angle: cos C = (a² + b² − c²)/2ab.", "difficulty": "easy"},
+      {"questionText": "The equation sin θ = 1.5 has a solution.", "options": [], "correctAnswer": "false", "explanation": "The range of sine is −1 ≤ sin θ ≤ 1, and 1.5 lies outside it, so no solution exists. Exam Tip: in sine-rule work, a computed sin B > 1 means the described triangle cannot exist — state that, don't force an answer.", "difficulty": "easy"},
+      {"questionText": "The graph of y = cos x starts at the point (0°, 1).", "options": [], "correctAnswer": "true", "explanation": "Evaluating at x = 0° gives cos 0° = 1, so the curve begins at its maximum. Exam Tip: sin starts at 0 rising while cos starts at 1 falling — the two graphs are the same wave shifted by 90°.", "difficulty": "easy"},
+      {"questionText": "tan 90° is defined and equals 1.", "options": [], "correctAnswer": "false", "explanation": "Since tan θ = sin θ/cos θ and cos 90° = 0, we would divide by zero, which is undefined, so tan 90° does not exist. Exam Tip: the tan graph has a vertical asymptote at 90° — it shoots to infinity, never touching a value.", "difficulty": "easy"},
+      {"questionText": "sin 45° = cos 45°.", "options": [], "correctAnswer": "true", "explanation": "The 45° right triangle is isosceles with opposite = adjacent, so both ratios equal 1/√2 = √2/2. Exam Tip: the general rule sin θ = cos(90° − θ) means complementary angles swap sine and cosine; 45° is its own complement.", "difficulty": "easy"},
+      {"questionText": "In any triangle, the largest angle is opposite the longest side.", "options": [], "correctAnswer": "true", "explanation": "The sine rule ties side length to the sine of the opposite angle, so a bigger side means a bigger opposite angle within a triangle. Exam Tip: use this to check a cosine-rule answer — if your angle ordering contradicts the side ordering, an arithmetic slip occurred.", "difficulty": "easy"},
+      {"questionText": "The graph of y = sin x crosses the x-axis at 0°, 180° and 360°.", "options": [], "correctAnswer": "true", "explanation": "Since sin 0° = 0, sin 180° = 0 and sin 360° = 0, these are the wave's zero crossings in one period. Exam Tip: between crossings the curve peaks at 90° (top, +1) and 270° (bottom, −1) — five anchor points sketch the whole wave.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Special angle values (30°, 45°, 60°)", "options": [], "correctAnswer": "sin 30° = 1/2, cos 30° = √3/2, tan 30° = 1/√3; sin 45° = cos 45° = √2/2, tan 45° = 1; sin 60° = √3/2, cos 60° = 1/2, tan 60° = √3.", "explanation": "Memorise the 30-45-60 table as one block; sine and cosine swap between 30° and 60°. Exam Tip: tan 45° = 1 is the pivot value dividing tan < 1 from tan > 1.", "difficulty": "easy"},
+      {"questionText": "Boundary values (0° and 90°)", "options": [], "correctAnswer": "sin 0° = 0, cos 0° = 1, sin 90° = 1, cos 90° = 0.", "explanation": "At the ends of 0°–90° sine and cosine trade places. Exam Tip: sin peaks at 90° while cos peaks at 0°.", "difficulty": "easy"},
+      {"questionText": "Sine rule", "options": [], "correctAnswer": "a/sin A = b/sin B = c/sin C, where each side pairs with its opposite angle.", "explanation": "Use two of the three fractions that contain your known quantities. Exam Tip: it needs at least one complete side-and-opposite-angle pair.", "difficulty": "easy"},
+      {"questionText": "Cosine rule", "options": [], "correctAnswer": "c² = a² + b² − 2ab cos C, and rearranged cos C = (a² + b² − c²)/2ab.", "explanation": "Use it for two sides and the included angle, or for all three sides to find an angle. Exam Tip: the side on the left is opposite the angle in the cosine.", "difficulty": "easy"},
+      {"questionText": "Area of a triangle", "options": [], "correctAnswer": "Area = ½ab sin C, using two sides and the included angle.", "explanation": "The height on side a is b sin C, so Area = ½ × base × height = ½ab sin C. Exam Tip: three symmetric versions exist — pick the one matching your known sides.", "difficulty": "easy"},
+      {"questionText": "Fundamental identity", "options": [], "correctAnswer": "sin²θ + cos²θ = 1 for any angle θ.", "explanation": "It is Pythagoras in trigonometric form and lets you find cos θ from sin θ. Exam Tip: rearrange to cos θ = √(1 − sin²θ) when needed.", "difficulty": "easy"},
+      {"questionText": "Obtuse-angle sign rules", "options": [], "correctAnswer": "sin(180° − θ) = sin θ and cos(180° − θ) = −cos θ.", "explanation": "In the second quadrant sine stays positive while cosine becomes negative. Exam Tip: sine keeps, cosine flips — memorise the pair together.", "difficulty": "easy"},
+      {"questionText": "tan in terms of sin and cos", "options": [], "correctAnswer": "tan θ = sin θ / cos θ.", "explanation": "Dividing opposite/adjacent by the hypotenuse gives the ratio of sine to cosine. Exam Tip: tan is undefined where cos θ = 0, such as θ = 90°.", "difficulty": "easy"},
+      {"questionText": "Range, amplitude and period of sine and cosine", "options": [], "correctAnswer": "Both sin x and cos x lie in [−1, 1]; the amplitude of y = sin x is 1 and its period is 360°.", "explanation": "The wave swings from −1 to 1 about y = 0, and for y = k sin x the amplitude becomes |k|. Exam Tip: an equation like sin θ = 1.5 has no solution because 1.5 is outside the range.", "difficulty": "easy"},
+      {"questionText": "Angle of elevation", "options": [], "correctAnswer": "The angle measured upward from the horizontal to a line of sight; for a vertical object on level ground, tan(angle) = height/horizontal distance.", "explanation": "Model the situation as a right triangle with height opposite the angle and ground distance adjacent. Exam Tip: elevation from level ground is a tan problem with the height on top.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "The sides of a triangle are 7 cm, 8 cm and 9 cm. Find the size of the largest angle, correct to one decimal place.",
+        "options": [
+          {"id": "a", "text": "73.4°", "isCorrect": true},
+          {"id": "b", "text": "106.6°", "isCorrect": false},
+          {"id": "c", "text": "60°", "isCorrect": false},
+          {"id": "d", "text": "80.4°", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The largest angle is opposite the longest side (9 cm), so use cos C = (a² + b² − c²)/(2ab) with a = 7, b = 8, c = 9. The numerator is 49 + 64 − 81 = 32 and the denominator is 2 × 7 × 8 = 112, so cos C = 32/112 = 2/7 ≈ 0.2857 and C = cos⁻¹(0.2857) ≈ 73.4°. Exam Tip: 106.6° takes the supplementary angle needlessly — cosine's sign already resolves the quadrant, so a positive cosine means an acute angle with no second case. The subtraction 49 + 64 − 81 must put the longest side's square as the subtracted term.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In triangle ABC, A = 48°, B = 35° and a = 15 cm. Use the sine rule to find b, correct to one decimal place.",
+        "options": [
+          {"id": "a", "text": "11.6 cm", "isCorrect": true},
+          {"id": "b", "text": "19.4 cm", "isCorrect": false},
+          {"id": "c", "text": "8.6 cm", "isCorrect": false},
+          {"id": "d", "text": "15 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "By the sine rule b/sin B = a/sin A, so b = a sin B / sin A. With sin 35° = 0.5736 and sin 48° = 0.7431, b = 15 × 0.5736 / 0.7431 = 8.604/0.7431 ≈ 11.6 cm. Exam Tip: 19.4 inverts the fraction (sin A over sin B) — the smaller angle B must give a side shorter than a = 15, a one-second sanity check. Larger angle means larger side, always.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Fatuma stands 40 m from the base of a mobile-phone mast in Mbeya on level ground. The angle of elevation of the top of the mast from her position is 35°. Find the height of the mast, correct to one decimal place. (tan 35° = 0.7002)",
+        "options": [
+          {"id": "a", "text": "28.0 m", "isCorrect": true},
+          {"id": "b", "text": "57.1 m", "isCorrect": false},
+          {"id": "c", "text": "22.9 m", "isCorrect": false},
+          {"id": "d", "text": "32.8 m", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Model it as a right triangle with height h opposite the 35° angle and ground distance 40 m adjacent, so tan 35° = h/40 and h = 40 × 0.7002 = 28.008 ≈ 28.0 m. Exam Tip: 57.1 divides instead of multiplying (40/tan 35°), which computes the distance from a known height — the inverse problem; 22.9 uses sin 35°. Elevation from level ground is tan with the height on top, and a quick sketch with the right angle at the mast's base locks the setup.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

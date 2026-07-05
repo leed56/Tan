@@ -1,0 +1,374 @@
+{
+  "topicId": "form_4_mathematics_topic_2",
+  "topicName": "Areas and Perimeters",
+  "order": 2,
+  "description": "Calculating areas and perimeters of triangles, quadrilaterals and circles using standard formulas, including the sine rule for area and Heron's formula, sectors of circles, and the relationship between the areas of similar figures.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Find the area of a triangle with base 12 cm and height 7 cm.",
+        "options": [
+          {"id": "a", "text": "84 cm²", "isCorrect": false},
+          {"id": "b", "text": "42 cm²", "isCorrect": true},
+          {"id": "c", "text": "19 cm²", "isCorrect": false},
+          {"id": "d", "text": "38 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The area of a triangle is 1/2 x base x height = 1/2 x 12 x 7 = 42 cm². Exam Tip: the height must be the perpendicular distance to the base.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two sides of a triangle are 8 cm and 10 cm with an included angle of 30°. Find the area.",
+        "options": [
+          {"id": "a", "text": "40 cm²", "isCorrect": false},
+          {"id": "b", "text": "80 cm²", "isCorrect": false},
+          {"id": "c", "text": "20 cm²", "isCorrect": true},
+          {"id": "d", "text": "69.3 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Area = 1/2 ab sinC = 1/2 x 8 x 10 x sin30° = 40 x 0.5 = 20 cm². Exam Tip: the angle must be the one between the two given sides.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A triangle has sides 5 cm, 6 cm and 7 cm. Find its area.",
+        "options": [
+          {"id": "a", "text": "6√6 cm²", "isCorrect": true},
+          {"id": "b", "text": "210 cm²", "isCorrect": false},
+          {"id": "c", "text": "15 cm²", "isCorrect": false},
+          {"id": "d", "text": "18 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using Heron's formula, s = (5+6+7)/2 = 9, so area = √(9 x 4 x 3 x 2) = √216 = 6√6 cm². Exam Tip: use Heron's formula when all three sides are known.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the area of a trapezium with parallel sides 8 cm and 12 cm and height 5 cm.",
+        "options": [
+          {"id": "a", "text": "100 cm²", "isCorrect": false},
+          {"id": "b", "text": "50 cm²", "isCorrect": true},
+          {"id": "c", "text": "480 cm²", "isCorrect": false},
+          {"id": "d", "text": "25 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Area = 1/2(a+b)h = 1/2(8+12)(5) = 1/2 x 20 x 5 = 50 cm². Exam Tip: add the parallel sides first, then multiply by half the height.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the area of a parallelogram with base 9 cm and height 6 cm.",
+        "options": [
+          {"id": "a", "text": "27 cm²", "isCorrect": false},
+          {"id": "b", "text": "30 cm²", "isCorrect": false},
+          {"id": "c", "text": "54 cm²", "isCorrect": true},
+          {"id": "d", "text": "108 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Area of a parallelogram = base x height = 9 x 6 = 54 cm². Exam Tip: use the perpendicular height, not a slanted side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A rhombus has diagonals 10 cm and 24 cm. Find its area.",
+        "options": [
+          {"id": "a", "text": "240 cm²", "isCorrect": false},
+          {"id": "b", "text": "120 cm²", "isCorrect": true},
+          {"id": "c", "text": "34 cm²", "isCorrect": false},
+          {"id": "d", "text": "60 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Area of a rhombus = 1/2 x d1 x d2 = 1/2 x 10 x 24 = 120 cm². Exam Tip: multiply the two diagonals and halve the result.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the circumference of a circle of radius 7 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "22 cm", "isCorrect": false},
+          {"id": "b", "text": "154 cm", "isCorrect": false},
+          {"id": "c", "text": "44 cm", "isCorrect": true},
+          {"id": "d", "text": "88 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Circumference = 2 pi r = 2 x 22/7 x 7 = 44 cm. Exam Tip: circumference uses 2 pi r, not pi r².",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the area of a circle of radius 14 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "88 cm²", "isCorrect": false},
+          {"id": "b", "text": "616 cm²", "isCorrect": true},
+          {"id": "c", "text": "196 cm²", "isCorrect": false},
+          {"id": "d", "text": "44 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Area = pi r² = 22/7 x 14² = 22/7 x 196 = 616 cm². Exam Tip: square the radius before multiplying by pi.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the area of a sector with angle 90° and radius 14 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "616 cm²", "isCorrect": false},
+          {"id": "b", "text": "308 cm²", "isCorrect": false},
+          {"id": "c", "text": "154 cm²", "isCorrect": true},
+          {"id": "d", "text": "77 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A 90° sector is 90/360 = 1/4 of the circle, and the full area is pi r² = 616 cm², so the sector is 1/4 x 616 = 154 cm². Exam Tip: a sector is the fraction angle/360 of the whole circle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the perimeter of a sector with angle 60° and radius 21 cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "22 cm", "isCorrect": false},
+          {"id": "b", "text": "64 cm", "isCorrect": true},
+          {"id": "c", "text": "42 cm", "isCorrect": false},
+          {"id": "d", "text": "43 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The arc length is 60/360 x 2 pi r = 1/6 x 2 x 22/7 x 21 = 22 cm, and the two radii add 2 x 21 = 42 cm, so the perimeter is 22 + 42 = 64 cm. Exam Tip: a sector perimeter is the arc plus two radii.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the area of a regular hexagon with side 6 cm (√3 = 1.732).",
+        "options": [
+          {"id": "a", "text": "216 cm²", "isCorrect": false},
+          {"id": "b", "text": "54 cm²", "isCorrect": false},
+          {"id": "c", "text": "93.5 cm²", "isCorrect": true},
+          {"id": "d", "text": "36 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A regular hexagon is 6 equilateral triangles, so area = 6 x (√3/4)(6²) = 54√3 = 54 x 1.732 ≈ 93.5 cm². Exam Tip: split a regular hexagon into six equilateral triangles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Two similar polygons have a side ratio of 2:3. What is the ratio of their areas?",
+        "options": [
+          {"id": "a", "text": "2:3", "isCorrect": false},
+          {"id": "b", "text": "4:9", "isCorrect": true},
+          {"id": "c", "text": "8:27", "isCorrect": false},
+          {"id": "d", "text": "4:6", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "For similar figures the area ratio is the square of the side ratio, so (2:3)² = 4:9. Exam Tip: square the side ratio to get the area ratio.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The areas of two similar triangles are in the ratio 25:49. What is the ratio of their corresponding sides?",
+        "options": [
+          {"id": "a", "text": "25:49", "isCorrect": false},
+          {"id": "b", "text": "5:7", "isCorrect": true},
+          {"id": "c", "text": "625:2401", "isCorrect": false},
+          {"id": "d", "text": "12.5:24.5", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The side ratio is the square root of the area ratio, so √25 : √49 = 5:7. Exam Tip: take the square root of the area ratio to get the side ratio.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The perimeter of a square is 36 cm. Find its area.",
+        "options": [
+          {"id": "a", "text": "36 cm²", "isCorrect": false},
+          {"id": "b", "text": "1296 cm²", "isCorrect": false},
+          {"id": "c", "text": "81 cm²", "isCorrect": true},
+          {"id": "d", "text": "72 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The side is 36/4 = 9 cm, so the area is 9² = 81 cm². Exam Tip: divide the perimeter by 4 to find the side of a square first.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the perimeter of a semicircle of radius 7 cm, including the diameter (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "22 cm", "isCorrect": false},
+          {"id": "b", "text": "44 cm", "isCorrect": false},
+          {"id": "c", "text": "36 cm", "isCorrect": true},
+          {"id": "d", "text": "29 cm", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The curved part is half the circumference = pi r = 22/7 x 7 = 22 cm, and the diameter is 2 x 7 = 14 cm, so the perimeter is 22 + 14 = 36 cm. Exam Tip: a semicircle perimeter is half the circumference plus the diameter.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The area of a triangle with base b and perpendicular height h is ____.",
+        "options": [
+          {"id": "a", "text": "(1/2)bh", "isCorrect": true},
+          {"id": "b", "text": "bh", "isCorrect": false},
+          {"id": "c", "text": "2bh", "isCorrect": false},
+          {"id": "d", "text": "b + h", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The area of a triangle is half the base times the perpendicular height, (1/2)bh. Exam Tip: the height must be perpendicular to the chosen base.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In Heron's formula, the semi-perimeter s = ____.",
+        "options": [
+          {"id": "a", "text": "(a+b+c)/2", "isCorrect": true},
+          {"id": "b", "text": "a+b+c", "isCorrect": false},
+          {"id": "c", "text": "(a+b+c)/3", "isCorrect": false},
+          {"id": "d", "text": "abc/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The semi-perimeter is half the sum of the three sides, s = (a+b+c)/2. Exam Tip: find s first before using √(s(s−a)(s−b)(s−c)).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area of a rhombus with diagonals d1 and d2 is ____.",
+        "options": [
+          {"id": "a", "text": "(1/2)d1 d2", "isCorrect": true},
+          {"id": "b", "text": "d1 d2", "isCorrect": false},
+          {"id": "c", "text": "2 d1 d2", "isCorrect": false},
+          {"id": "d", "text": "d1 + d2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The area of a rhombus is half the product of its diagonals, (1/2)d1 d2. Exam Tip: this works for any quadrilateral with perpendicular diagonals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The circumference of a circle of radius r is C = ____.",
+        "options": [
+          {"id": "a", "text": "2 pi r", "isCorrect": true},
+          {"id": "b", "text": "pi r²", "isCorrect": false},
+          {"id": "c", "text": "pi r", "isCorrect": false},
+          {"id": "d", "text": "2 pi r²", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The distance around a circle is C = 2 pi r, equivalently pi d. Exam Tip: do not confuse circumference (2 pi r) with area (pi r²).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area of a sector of angle theta in a circle of radius r is ____.",
+        "options": [
+          {"id": "a", "text": "(theta/360) x pi r²", "isCorrect": true},
+          {"id": "b", "text": "(theta/360) x 2 pi r", "isCorrect": false},
+          {"id": "c", "text": "pi r²", "isCorrect": false},
+          {"id": "d", "text": "(theta/180) x pi r²", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A sector is the fraction theta/360 of the whole circle's area, so it equals (theta/360) x pi r². Exam Tip: use pi r² for area and 2 pi r for arc length.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For similar figures, the ratio of areas equals the ____ of the ratio of corresponding sides.",
+        "options": [
+          {"id": "a", "text": "square", "isCorrect": true},
+          {"id": "b", "text": "square root", "isCorrect": false},
+          {"id": "c", "text": "cube", "isCorrect": false},
+          {"id": "d", "text": "double", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "If the side ratio is k, the area ratio is k², the square of the side ratio. Exam Tip: areas scale by the square, volumes scale by the cube.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area of a square of side 9 cm is ____ cm².",
+        "options": [
+          {"id": "a", "text": "81", "isCorrect": true},
+          {"id": "b", "text": "36", "isCorrect": false},
+          {"id": "c", "text": "18", "isCorrect": false},
+          {"id": "d", "text": "729", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The area of a square is side², so 9² = 81 cm². Exam Tip: square the side length, do not multiply by 4.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area of a trapezium with parallel sides a and b and height h is ____.",
+        "options": [
+          {"id": "a", "text": "(1/2)(a+b)h", "isCorrect": true},
+          {"id": "b", "text": "(a+b)h", "isCorrect": false},
+          {"id": "c", "text": "(1/2)ab h", "isCorrect": false},
+          {"id": "d", "text": "(1/2)(a−b)h", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The area of a trapezium is half the sum of the parallel sides times the height, (1/2)(a+b)h. Exam Tip: add the parallel sides before multiplying.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The circumference of a circle of radius 3.5 cm is ____ cm (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "22", "isCorrect": true},
+          {"id": "b", "text": "11", "isCorrect": false},
+          {"id": "c", "text": "44", "isCorrect": false},
+          {"id": "d", "text": "38.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "C = 2 pi r = 2 x 22/7 x 3.5 = 22 cm. Exam Tip: a radius of 3.5 pairs neatly with pi = 22/7.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area of a triangle with sides 3, 4 and 5 cm is ____ cm².",
+        "options": [
+          {"id": "a", "text": "6", "isCorrect": true},
+          {"id": "b", "text": "12", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "7.5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A 3-4-5 triangle is right-angled, so area = 1/2 x 3 x 4 = 6 cm². Exam Tip: recognise 3-4-5 as a right triangle to use the legs as base and height.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "Doubling the side of a square multiplies its area by 4.", "options": [], "correctAnswer": "true", "explanation": "Area scales by the square of the side ratio, so doubling the side gives an area ratio of 2² = 4.", "difficulty": "easy"},
+      {"questionText": "All similar triangles have equal areas.", "options": [], "correctAnswer": "false", "explanation": "Similar triangles have the same shape but can differ in size, so their areas are generally not equal.", "difficulty": "easy"},
+      {"questionText": "Perimeter is measured in square centimetres.", "options": [], "correctAnswer": "false", "explanation": "Perimeter is a length and is measured in centimetres; square centimetres measure area.", "difficulty": "easy"},
+      {"questionText": "The formula Area = 1/2 ab sinC requires C to be the angle between sides a and b.", "options": [], "correctAnswer": "true", "explanation": "This formula only works when C is the angle included between the two sides a and b.", "difficulty": "easy"},
+      {"questionText": "The area of a circle is given by pi d, where d is the diameter.", "options": [], "correctAnswer": "false", "explanation": "pi d gives the circumference; the area of a circle is pi r².", "difficulty": "easy"},
+      {"questionText": "A sector of angle theta is the fraction theta/360 of the whole circle.", "options": [], "correctAnswer": "true", "explanation": "A sector's angle out of the full 360° gives the fraction of the circle it represents, theta/360.", "difficulty": "easy"},
+      {"questionText": "The diagonals of a rhombus intersect at right angles.", "options": [], "correctAnswer": "true", "explanation": "The diagonals of a rhombus are perpendicular bisectors of each other, meeting at 90°.", "difficulty": "easy"},
+      {"questionText": "Heron's formula can find the area of any triangle when all three sides are known.", "options": [], "correctAnswer": "true", "explanation": "Heron's formula √(s(s−a)(s−b)(s−c)) gives the area of any triangle from its three side lengths.", "difficulty": "easy"},
+      {"questionText": "The area of a parallelogram equals the product of two adjacent sides.", "options": [], "correctAnswer": "false", "explanation": "The area of a parallelogram is base x perpendicular height, not the product of two adjacent sides.", "difficulty": "easy"},
+      {"questionText": "The perimeter of a semicircle equals half the circumference of the full circle.", "options": [], "correctAnswer": "false", "explanation": "The perimeter of a semicircle is half the circumference plus the diameter, so it is more than half the full circumference.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Area of a triangle (base and height)", "options": [], "correctAnswer": "Area = 1/2 x base x height, using the perpendicular height to the chosen base.", "explanation": "For a triangle with base 12 cm and height 7 cm, the area is 1/2 x 12 x 7 = 42 cm². Exam Tip: always use the perpendicular height, not a slanted side.", "difficulty": "easy"},
+      {"questionText": "Area of a triangle (two sides and included angle)", "options": [], "correctAnswer": "Area = 1/2 ab sinC, where C is the angle between sides a and b.", "explanation": "With a = 8, b = 10 and C = 30°, area = 1/2 x 8 x 10 x sin30° = 20 cm². Exam Tip: C must be the angle enclosed by the two given sides.", "difficulty": "easy"},
+      {"questionText": "Heron's formula", "options": [], "correctAnswer": "Area = √(s(s−a)(s−b)(s−c)), where s = (a+b+c)/2 is the semi-perimeter.", "explanation": "For sides 5, 6, 7, s = 9 and area = √(9 x 4 x 3 x 2) = 6√6 cm². Exam Tip: use Heron's formula when only the three sides are known.", "difficulty": "easy"},
+      {"questionText": "Area of a trapezium", "options": [], "correctAnswer": "Area = 1/2(a+b)h, where a and b are the parallel sides and h is the height.", "explanation": "With parallel sides 8 and 12 and height 5, area = 1/2(8+12)(5) = 50 cm². Exam Tip: add the parallel sides first, then multiply by half the height.", "difficulty": "easy"},
+      {"questionText": "Area of a parallelogram", "options": [], "correctAnswer": "Area = base x perpendicular height.", "explanation": "A parallelogram with base 9 cm and height 6 cm has area 9 x 6 = 54 cm². Exam Tip: use the perpendicular height, not the slanted side.", "difficulty": "easy"},
+      {"questionText": "Area of a rhombus", "options": [], "correctAnswer": "Area = 1/2 x d1 x d2, half the product of the two diagonals.", "explanation": "With diagonals 10 cm and 24 cm, area = 1/2 x 10 x 24 = 120 cm². Exam Tip: this diagonal formula works because a rhombus has perpendicular diagonals.", "difficulty": "easy"},
+      {"questionText": "Circumference of a circle", "options": [], "correctAnswer": "Circumference = 2 pi r, the distance around the circle.", "explanation": "For radius 7 cm with pi = 22/7, circumference = 2 x 22/7 x 7 = 44 cm. Exam Tip: use 2 pi r for the boundary and pi r² for the area.", "difficulty": "easy"},
+      {"questionText": "Area of a circle", "options": [], "correctAnswer": "Area = pi r², where r is the radius.", "explanation": "For radius 14 cm with pi = 22/7, area = 22/7 x 196 = 616 cm². Exam Tip: square the radius before multiplying by pi.", "difficulty": "easy"},
+      {"questionText": "Area of a sector", "options": [], "correctAnswer": "Area = (theta/360) x pi r², the fraction theta/360 of the whole circle.", "explanation": "A 90° sector of radius 14 cm is 1/4 x 616 = 154 cm². Exam Tip: the same fraction theta/360 gives the arc length as theta/360 x 2 pi r.", "difficulty": "easy"},
+      {"questionText": "Ratio of areas of similar figures", "options": [], "correctAnswer": "Area ratio = (side ratio)², the square of the ratio of corresponding sides.", "explanation": "If similar figures have side ratio 2:3, their area ratio is 4:9. Exam Tip: square the side ratio to get areas, and take the square root of an area ratio to get sides.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "A triangle has sides 13 cm, 14 cm and 15 cm. Find its area.",
+        "options": [
+          {"id": "a", "text": "84 cm²", "isCorrect": true},
+          {"id": "b", "text": "42 cm²", "isCorrect": false},
+          {"id": "c", "text": "168 cm²", "isCorrect": false},
+          {"id": "d", "text": "91 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using Heron's formula, s = (13+14+15)/2 = 21. Then area = √(s(s−a)(s−b)(s−c)) = √(21 x 8 x 7 x 6) = √7056 = 84 cm². Exam Tip: compute s first, then each bracket, and multiply carefully before taking the square root.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A sector has radius 21 cm and angle 120°. Find its area (pi = 22/7).",
+        "options": [
+          {"id": "a", "text": "1386 cm²", "isCorrect": false},
+          {"id": "b", "text": "462 cm²", "isCorrect": true},
+          {"id": "c", "text": "231 cm²", "isCorrect": false},
+          {"id": "d", "text": "154 cm²", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The full circle area is pi r² = 22/7 x 21² = 22/7 x 441 = 1386 cm². The sector is 120/360 = 1/3 of the circle, so its area is 1386 x 1/3 = 462 cm². Exam Tip: find the full area first, then take the fraction angle/360.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two similar plots have corresponding sides in the ratio 3:5. If the smaller plot has an area of 45 m², find the area of the larger plot.",
+        "options": [
+          {"id": "a", "text": "75 m²", "isCorrect": false},
+          {"id": "b", "text": "125 m²", "isCorrect": true},
+          {"id": "c", "text": "225 m²", "isCorrect": false},
+          {"id": "d", "text": "27 m²", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The area ratio is the square of the side ratio, (3:5)² = 9:25. So the larger area = 45 x 25/9 = 125 m². Exam Tip: option A wrongly uses the un-squared ratio 3:5; always square the side ratio for areas.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

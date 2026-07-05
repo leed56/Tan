@@ -10,7 +10,7 @@
  * TODO: Phase 3 — add caching layer (AsyncStorage) for offline-first
  */
 
-import { firestore } from './firebaseConfig';
+import { firestore, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import {
   collection,
   getDocs,
@@ -37,17 +37,12 @@ import { COLLECTIONS } from './firebaseConfig';
 
 // ─── Check if Firebase is configured ─────────────────────────────────────────
 
-function isFirebaseConfigured(): boolean {
-  // TODO: Phase 3 — replace with proper connectivity check
-  const projectId = process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '';
-  return projectId.length > 0;
-}
-
 // ─── Forms ────────────────────────────────────────────────────────────────────
 
 export async function getForms(): Promise<CurriculumForm[]> {
   if (!isFirebaseConfigured()) return SEED_FORMS;
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(collection(firestore, COLLECTIONS.forms), orderBy('order')),
     );
@@ -67,6 +62,7 @@ export async function getSubjectsByForm(formId: string): Promise<CurriculumSubje
       .sort((a, b) => a.order - b.order);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.subjects),
@@ -76,12 +72,19 @@ export async function getSubjectsByForm(formId: string): Promise<CurriculumSubje
       ),
     );
     if (snap.empty) {
+      console.warn(
+        `[curriculumService] getSubjectsByForm: Firestore query for formId="${formId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
       return getSeedSubjects()
         .filter((s) => s.formId === formId)
         .sort((a, b) => a.order - b.order);
     }
     return snap.docs.map((d) => d.data() as CurriculumSubject);
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[curriculumService] getSubjectsByForm: Firestore query for formId="${formId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedSubjects()
       .filter((s) => s.formId === formId)
       .sort((a, b) => a.order - b.order);
@@ -100,6 +103,7 @@ export async function getTopicsBySubject(
       .sort((a, b) => a.order - b.order);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.topics),
@@ -110,12 +114,19 @@ export async function getTopicsBySubject(
       ),
     );
     if (snap.empty) {
+      console.warn(
+        `[curriculumService] getTopicsBySubject: Firestore query for formId="${formId}" subjectId="${subjectId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
       return getSeedTopics()
         .filter((t) => t.formId === formId && t.subjectId === subjectId)
         .sort((a, b) => a.order - b.order);
     }
     return snap.docs.map((d) => d.data() as CurriculumTopic);
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[curriculumService] getTopicsBySubject: Firestore query for formId="${formId}" subjectId="${subjectId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedTopics()
       .filter((t) => t.formId === formId && t.subjectId === subjectId)
       .sort((a, b) => a.order - b.order);
@@ -137,6 +148,7 @@ export async function getLearningPacksByTopic(
       .sort((a, b) => a.order - b.order);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.learningPacks),
@@ -148,6 +160,9 @@ export async function getLearningPacksByTopic(
       ),
     );
     if (snap.empty) {
+      console.warn(
+        `[curriculumService] getLearningPacksByTopic: Firestore query for formId="${formId}" subjectId="${subjectId}" topicId="${topicId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
       return getSeedLearningPacks()
         .filter(
           (p) =>
@@ -161,7 +176,11 @@ export async function getLearningPacksByTopic(
       const data = d.data() as CurriculumLearningPack & { xpReward?: number };
       return { ...data, completionXP: data.completionXP ?? data.xpReward ?? 0 };
     });
-  } catch {
+  } catch (e) {
+    console.warn(
+      `[curriculumService] getLearningPacksByTopic: Firestore query for formId="${formId}" subjectId="${subjectId}" topicId="${topicId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedLearningPacks()
       .filter(
         (p) => p.formId === formId && p.subjectId === subjectId && p.topicId === topicId,
@@ -179,41 +198,12 @@ export function getTopicCountForSubject(formId: string, subjectId: string): numb
 }
 
 export function getPackCountForTopic(topicId: string): number {
-  return getSeedLearningPacks().filter((p) => p.topicId === topicId && p.isActive).length;
-}
-
-// ─── Seed Firestore (run once from admin / onboarding) ────────────────────────
-// TODO: Phase 3 — move this to a Cloud Function or admin script
-
-export async function seedFirestore(): Promise<void> {
-  if (!isFirebaseConfigured()) {
-    console.warn('[curriculumService] Firebase not configured — skipping Firestore seed.');
-    return;
-  }
-  const batch = writeBatch(firestore);
-
-  for (const form of SEED_FORMS) {
-    batch.set(doc(firestore, COLLECTIONS.forms, form.id), form);
-  }
-  for (const subject of getSeedSubjects()) {
-    batch.set(doc(firestore, COLLECTIONS.subjects, subject.id), subject);
-  }
-  await batch.commit();
-
-  // Topics and packs are too large for one batch — write in chunks
-  const topics = getSeedTopics();
-  for (let i = 0; i < topics.length; i += 400) {
-    const chunk = topics.slice(i, i + 400);
-    const b = writeBatch(firestore);
-    chunk.forEach((t) => b.set(doc(firestore, COLLECTIONS.topics, t.id), t));
-    await b.commit();
-  }
-
-  const packs = getSeedLearningPacks();
-  for (let i = 0; i < packs.length; i += 400) {
-    const chunk = packs.slice(i, i + 400);
-    const b = writeBatch(firestore);
-    chunk.forEach((p) => b.set(doc(firestore, COLLECTIONS.learningPacks, p.id), p));
-    await b.commit();
-  }
+  const seedCount = getSeedLearningPacks().filter(
+    (p) => p.topicId === topicId && p.isActive,
+  ).length;
+  // Real DB topics beyond the small local sample have no seed packs, so this
+  // returned 0 — TopicCard showed "0 packs" and aggregateTopicProgress's
+  // totalPacks>0 guard pinned those topics at 0% forever. Every topic in the
+  // content pipeline ships exactly 5 packs (MCQ/TF/FIB/Summary/HOQ).
+  return seedCount > 0 ? seedCount : 5;
 }

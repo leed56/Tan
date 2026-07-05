@@ -1,0 +1,374 @@
+{
+  "topicId": "form_3_physics_topic_2",
+  "topicName": "Friction",
+  "order": 2,
+  "description": "This topic explores friction as the force that opposes relative motion between surfaces in contact, covering the different types of friction (static, kinetic and rolling), the laws governing how friction depends on the normal reaction force and contact area, and the everyday advantages and disadvantages of friction, including methods such as lubrication used to control it.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Friction is best defined as a force that:",
+        "options": [
+          {"id": "a", "text": "Speeds up the relative motion between two surfaces", "isCorrect": false},
+          {"id": "b", "text": "Opposes the relative motion (or attempted motion) between two surfaces in contact", "isCorrect": true},
+          {"id": "c", "text": "Has nothing to do with surfaces", "isCorrect": false},
+          {"id": "d", "text": "Only occurs in liquids", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Friction is the force that opposes relative motion, or attempted motion, between two surfaces in contact. Exam Tip: Friction always acts in the direction OPPOSITE to motion (or the direction something is trying to move).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of friction that acts on an object at rest, preventing it from starting to move, is called:",
+        "options": [
+          {"id": "a", "text": "Kinetic (sliding) friction", "isCorrect": false},
+          {"id": "b", "text": "Static friction", "isCorrect": true},
+          {"id": "c", "text": "Rolling friction", "isCorrect": false},
+          {"id": "d", "text": "Fluid friction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "This is static friction, since it acts before motion begins to keep a resting object from starting to move. Exam Tip: Static friction acts BEFORE motion begins — it must be overcome to get an object moving.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of friction that acts between two surfaces already sliding over each other is called:",
+        "options": [
+          {"id": "a", "text": "Static friction", "isCorrect": false},
+          {"id": "b", "text": "Kinetic (sliding/dynamic) friction", "isCorrect": true},
+          {"id": "c", "text": "Rolling friction", "isCorrect": false},
+          {"id": "d", "text": "No friction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "This is kinetic (sliding) friction, which acts once two surfaces are already sliding over one another. Exam Tip: Kinetic friction acts DURING motion, once sliding has started.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of friction that acts when an object rolls over a surface (e.g. a ball or wheel) is called:",
+        "options": [
+          {"id": "a", "text": "Static friction", "isCorrect": false},
+          {"id": "b", "text": "Sliding friction", "isCorrect": false},
+          {"id": "c", "text": "Rolling friction", "isCorrect": true},
+          {"id": "d", "text": "Fluid friction", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This is rolling friction, which acts when an object such as a ball or wheel rolls over a surface. Exam Tip: Rolling friction is generally MUCH SMALLER than sliding friction — this is why wheels make movement easier.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of friction is generally the SMALLEST for the same surfaces and load?",
+        "options": [
+          {"id": "a", "text": "Static friction", "isCorrect": false},
+          {"id": "b", "text": "Kinetic (sliding) friction", "isCorrect": false},
+          {"id": "c", "text": "Rolling friction", "isCorrect": true},
+          {"id": "d", "text": "All are exactly equal", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Rolling friction is usually much smaller than both static and kinetic friction for the same surfaces and load. Exam Tip: This is why ball bearings and wheels are used to reduce friction in machines — rolling friction is smallest.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "According to the laws of friction, the friction force between two surfaces is directly proportional to the:",
+        "options": [
+          {"id": "a", "text": "Speed of motion", "isCorrect": false},
+          {"id": "b", "text": "Area of contact", "isCorrect": false},
+          {"id": "c", "text": "Normal (perpendicular) reaction force between the surfaces", "isCorrect": true},
+          {"id": "d", "text": "Colour of the surfaces", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Friction force depends directly on the normal reaction force pressing the two surfaces together. Exam Tip: Friction is proportional to normal reaction. This is why a heavier object generally experiences more friction (greater normal force).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "According to the laws of friction, the friction force is generally INDEPENDENT of the:",
+        "options": [
+          {"id": "a", "text": "Normal reaction force", "isCorrect": false},
+          {"id": "b", "text": "Nature of the two surfaces", "isCorrect": false},
+          {"id": "c", "text": "Apparent area of contact between the surfaces", "isCorrect": true},
+          {"id": "d", "text": "None of the above", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The apparent (visible) area of contact between two surfaces has little to no effect on the friction force. Exam Tip: A brick lying flat or on its edge experiences roughly the SAME friction — a surprising but well-established law of friction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The maximum value of static friction just before an object starts to move is called the:",
+        "options": [
+          {"id": "a", "text": "Kinetic friction", "isCorrect": false},
+          {"id": "b", "text": "Limiting friction", "isCorrect": true},
+          {"id": "c", "text": "Rolling friction", "isCorrect": false},
+          {"id": "d", "text": "Zero friction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "This maximum value of static friction, reached just before motion begins, is called limiting friction. Exam Tip: Limiting friction is the peak of static friction — once exceeded, the object starts sliding and kinetic friction takes over.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Friction is useful in everyday life because it allows us to:",
+        "options": [
+          {"id": "a", "text": "Walk without slipping and allows brakes to stop vehicles", "isCorrect": true},
+          {"id": "b", "text": "Fly aeroplanes only", "isCorrect": false},
+          {"id": "c", "text": "Make objects weightless", "isCorrect": false},
+          {"id": "d", "text": "Remove all resistance to motion", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Friction between shoes and the ground lets us walk without slipping, and friction in brakes allows vehicles to stop. Exam Tip: Without friction, walking, writing, and braking would all be impossible — friction is essential, not just a nuisance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Friction can be a disadvantage because it:",
+        "options": [
+          {"id": "a", "text": "Always helps machines run better", "isCorrect": false},
+          {"id": "b", "text": "Causes wear and tear on moving parts and wastes energy as heat", "isCorrect": true},
+          {"id": "c", "text": "Prevents all motion completely", "isCorrect": false},
+          {"id": "d", "text": "Has no negative effects", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Friction wears down moving surfaces over time and converts useful mechanical energy into heat, reducing efficiency. Exam Tip: This is why machines need lubrication — to reduce these harmful effects of friction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Lubricants such as oil or grease are used in machines mainly to:",
+        "options": [
+          {"id": "a", "text": "Increase friction between moving parts", "isCorrect": false},
+          {"id": "b", "text": "Reduce friction between moving parts", "isCorrect": true},
+          {"id": "c", "text": "Add colour to machines", "isCorrect": false},
+          {"id": "d", "text": "Make machines heavier", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Lubricants form a thin layer between surfaces that reduces direct contact and lowers friction between moving parts. Exam Tip: Lubrication reduces wear and heat loss, improving a machine's efficiency.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following would INCREASE friction between two surfaces?",
+        "options": [
+          {"id": "a", "text": "Polishing both surfaces to make them smoother", "isCorrect": false},
+          {"id": "b", "text": "Making the surfaces rougher", "isCorrect": true},
+          {"id": "c", "text": "Adding oil between the surfaces", "isCorrect": false},
+          {"id": "d", "text": "Using ball bearings", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rougher surfaces have more irregularities that interlock together, which increases friction. Exam Tip: Smooth/polished surfaces, lubricants and ball bearings all REDUCE friction; roughness INCREASES it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Car tyres are designed with a tread pattern (grooves) mainly to:",
+        "options": [
+          {"id": "a", "text": "Reduce friction with the road completely", "isCorrect": false},
+          {"id": "b", "text": "Increase grip (friction) with the road, especially in wet conditions", "isCorrect": true},
+          {"id": "c", "text": "Make the car lighter", "isCorrect": false},
+          {"id": "d", "text": "Reduce the car's speed permanently", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Tread grooves channel away water and increase the effective grip (friction) between the tyre and the road surface. Exam Tip: Bald (worn) tyres lose grip, especially in rain — a real safety application of friction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Skates, skis and ball bearings are all designed to:",
+        "options": [
+          {"id": "a", "text": "Increase friction as much as possible", "isCorrect": false},
+          {"id": "b", "text": "Reduce friction to allow smoother, easier movement", "isCorrect": true},
+          {"id": "c", "text": "Have no effect on friction", "isCorrect": false},
+          {"id": "d", "text": "Only work in water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Each of these is designed to minimise friction so that movement becomes smoother and requires less force. Exam Tip: Reducing friction is desirable when smooth, efficient motion is the goal — the opposite of what's needed for braking or walking.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which everyday situation demonstrates friction being a disadvantage?",
+        "options": [
+          {"id": "a", "text": "Walking on a rough pavement", "isCorrect": false},
+          {"id": "b", "text": "A car engine's moving parts wearing out over time due to friction", "isCorrect": true},
+          {"id": "c", "text": "A bicycle brake stopping the wheel", "isCorrect": false},
+          {"id": "d", "text": "Writing with a pen on paper", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Engine parts rubbing together wear out due to friction, which is a clear disadvantage that lubrication helps to reduce. Exam Tip: Walking, braking and writing are all situations where friction HELPS; engine wear is where it HARMS — the classic advantage/disadvantage contrast.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "Friction is a force that opposes the relative __________ between two surfaces in contact.",
+        "options": [
+          {"id": "a", "text": "motion", "isCorrect": true},
+          {"id": "b", "text": "temperature", "isCorrect": false},
+          {"id": "c", "text": "mass", "isCorrect": false},
+          {"id": "d", "text": "colour", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Friction acts opposite to the direction of relative motion, or attempted motion, between two surfaces in contact. Exam Tip: Friction acts opposite to the direction of motion or attempted motion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of friction acting on a stationary object, preventing it from starting to move, is called __________ friction.",
+        "options": [
+          {"id": "a", "text": "static", "isCorrect": true},
+          {"id": "b", "text": "kinetic", "isCorrect": false},
+          {"id": "c", "text": "rolling", "isCorrect": false},
+          {"id": "d", "text": "fluid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This is static friction, which must be overcome before a stationary object can begin to move. Exam Tip: Must be overcome before an object starts sliding.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of friction acting between two surfaces already sliding is called __________ friction.",
+        "options": [
+          {"id": "a", "text": "kinetic (sliding)", "isCorrect": true},
+          {"id": "b", "text": "static", "isCorrect": false},
+          {"id": "c", "text": "rolling", "isCorrect": false},
+          {"id": "d", "text": "zero", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This is kinetic (sliding) friction, which acts once motion has already begun. Exam Tip: Acts once motion has already begun.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The type of friction acting when an object rolls over a surface is called __________ friction.",
+        "options": [
+          {"id": "a", "text": "rolling", "isCorrect": true},
+          {"id": "b", "text": "static", "isCorrect": false},
+          {"id": "c", "text": "kinetic", "isCorrect": false},
+          {"id": "d", "text": "fluid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This is rolling friction, which is generally the smallest of the three types of friction. Exam Tip: Generally the smallest of the three friction types.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Friction force is directly proportional to the __________ reaction force between two surfaces.",
+        "options": [
+          {"id": "a", "text": "normal", "isCorrect": true},
+          {"id": "b", "text": "frictional", "isCorrect": false},
+          {"id": "c", "text": "gravitational", "isCorrect": false},
+          {"id": "d", "text": "magnetic", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Friction force is directly proportional to the normal reaction force pressing the two surfaces together. Exam Tip: More weight pressing down leads to more normal reaction and more friction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Friction is generally independent of the apparent __________ of contact between two surfaces.",
+        "options": [
+          {"id": "a", "text": "area", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "colour", "isCorrect": false},
+          {"id": "d", "text": "temperature", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Friction is generally independent of the apparent area of contact between two surfaces, a key law of friction. Exam Tip: A key, sometimes counter-intuitive, law of friction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The maximum value of static friction, just before an object starts to move, is called __________ friction.",
+        "options": [
+          {"id": "a", "text": "limiting", "isCorrect": true},
+          {"id": "b", "text": "rolling", "isCorrect": false},
+          {"id": "c", "text": "zero", "isCorrect": false},
+          {"id": "d", "text": "fluid", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This maximum value of static friction is called limiting friction, beyond which the object begins to slide. Exam Tip: Beyond this value, the object begins to slide.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Substances such as oil and grease, used to reduce friction between moving parts, are called __________.",
+        "options": [
+          {"id": "a", "text": "lubricants", "isCorrect": true},
+          {"id": "b", "text": "catalysts", "isCorrect": false},
+          {"id": "c", "text": "insulators", "isCorrect": false},
+          {"id": "d", "text": "conductors", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Substances such as oil and grease that reduce friction between moving parts are called lubricants. Exam Tip: Lubrication reduces wear and energy loss in machines.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Rougher surfaces generally produce __________ friction than smoother surfaces.",
+        "options": [
+          {"id": "a", "text": "more", "isCorrect": true},
+          {"id": "b", "text": "less", "isCorrect": false},
+          {"id": "c", "text": "zero", "isCorrect": false},
+          {"id": "d", "text": "equal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rougher surfaces have more interlocking irregularities, so they generally produce more friction than smoother surfaces. Exam Tip: Roughness increases friction; smoothness/lubrication decreases it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One disadvantage of friction is that it causes __________ and wastes energy as heat.",
+        "options": [
+          {"id": "a", "text": "wear and tear", "isCorrect": true},
+          {"id": "b", "text": "increased speed", "isCorrect": false},
+          {"id": "c", "text": "weightlessness", "isCorrect": false},
+          {"id": "d", "text": "magnetism", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Friction causes wear and tear on moving parts and wastes useful energy as heat. Exam Tip: This is why lubrication and maintenance matter for machinery.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "Friction is a force that opposes relative motion between two surfaces in contact.", "options": [], "correctAnswer": "true", "explanation": "This is true, since friction always acts opposite to (attempted) motion. Exam Tip: Always acts opposite to (attempted) motion direction.", "difficulty": "easy"},
+      {"questionText": "Rolling friction is generally greater than sliding friction for the same surfaces.", "options": [], "correctAnswer": "false", "explanation": "This is false, because rolling friction is generally smaller than sliding friction for the same surfaces and load. Exam Tip: Rolling is less than sliding is less than static (roughly) for the same load and surfaces.", "difficulty": "easy"},
+      {"questionText": "Friction is directly proportional to the normal reaction force between two surfaces.", "options": [], "correctAnswer": "true", "explanation": "This is true, since a heavier load (more normal force) generally means more friction to overcome. Exam Tip: A heavier load (more normal force) generally means more friction to overcome.", "difficulty": "easy"},
+      {"questionText": "Friction strongly depends on the apparent area of contact between two surfaces.", "options": [], "correctAnswer": "false", "explanation": "This is false, since the apparent area of contact has little effect on friction force. Exam Tip: A surprising law — area of contact has little effect on friction force.", "difficulty": "easy"},
+      {"questionText": "Lubricants such as oil reduce friction between moving parts.", "options": [], "correctAnswer": "true", "explanation": "This is true, as lubricants are widely used in engines and machines to reduce friction, wear and energy loss. Exam Tip: Widely used in engines and machines to reduce wear and energy loss.", "difficulty": "easy"},
+      {"questionText": "Friction is always a disadvantage with no useful purpose.", "options": [], "correctAnswer": "false", "explanation": "This is false, since without friction walking and braking would be impossible, so friction is often essential. Exam Tip: Without friction, walking and braking would be impossible — friction is often essential.", "difficulty": "easy"},
+      {"questionText": "Car tyre treads help increase grip, especially on wet roads.", "options": [], "correctAnswer": "true", "explanation": "This is true, as tread patterns channel away water to maintain grip, while worn tyres lose this benefit. Exam Tip: Worn (bald) tyres reduce this grip, increasing accident risk in wet weather.", "difficulty": "easy"},
+      {"questionText": "Static friction acts on surfaces that are already sliding over each other.", "options": [], "correctAnswer": "false", "explanation": "This is false, since static friction acts before motion begins, while kinetic friction acts during sliding. Exam Tip: Static = before motion; kinetic = during motion. The statement mislabels static friction.", "difficulty": "easy"},
+      {"questionText": "Limiting friction is the maximum static friction just before an object begins to move.", "options": [], "correctAnswer": "true", "explanation": "This is true, and once this value is exceeded the object starts sliding. Exam Tip: Once this value is exceeded, the object starts sliding.", "difficulty": "easy"},
+      {"questionText": "Friction in machine parts can cause wear and waste energy as heat.", "options": [], "correctAnswer": "true", "explanation": "This is true, which is a key reason engineers try to minimise unwanted friction in moving parts. Exam Tip: A key reason engineers try to minimise unwanted friction in moving parts.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Friction", "options": [], "correctAnswer": "A force that opposes the relative motion (or attempted motion) between two surfaces in contact.", "explanation": "Friction always acts in the direction opposite to motion or attempted motion.", "difficulty": "easy"},
+      {"questionText": "Static friction", "options": [], "correctAnswer": "The friction that acts on an object at rest, preventing it from starting to move.", "explanation": "It must be overcome before an object can begin to slide.", "difficulty": "easy"},
+      {"questionText": "Kinetic (sliding) friction", "options": [], "correctAnswer": "The friction that acts between two surfaces that are already sliding over each other.", "explanation": "It acts during motion, once sliding has started.", "difficulty": "easy"},
+      {"questionText": "Rolling friction", "options": [], "correctAnswer": "The friction that acts when an object rolls over a surface, such as a ball or wheel.", "explanation": "It is generally much smaller than sliding or static friction, which is why wheels ease movement.", "difficulty": "easy"},
+      {"questionText": "Limiting friction", "options": [], "correctAnswer": "The maximum value of static friction, reached just before an object starts to move.", "explanation": "Once this value is exceeded, the object begins to slide and kinetic friction takes over.", "difficulty": "easy"},
+      {"questionText": "Normal reaction force", "options": [], "correctAnswer": "The perpendicular force with which a surface pushes back on an object resting on it.", "explanation": "Friction force is directly proportional to this normal reaction force.", "difficulty": "easy"},
+      {"questionText": "Lubricant", "options": [], "correctAnswer": "A substance, such as oil or grease, used between moving parts to reduce friction.", "explanation": "Lubrication reduces wear and energy loss in machines.", "difficulty": "easy"},
+      {"questionText": "Law of friction and contact area", "options": [], "correctAnswer": "The friction force between two surfaces is generally independent of the apparent area of contact.", "explanation": "This is a surprising but well-established law of friction.", "difficulty": "easy"},
+      {"questionText": "Advantage of friction", "options": [], "correctAnswer": "A benefit friction provides, such as allowing people to walk without slipping and allowing brakes to stop vehicles.", "explanation": "Without friction, walking, writing and braking would all be impossible.", "difficulty": "easy"},
+      {"questionText": "Disadvantage of friction", "options": [], "correctAnswer": "A drawback of friction, such as causing wear and tear on moving parts and wasting energy as heat.", "explanation": "This is why machines are lubricated, to reduce these harmful effects of friction.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "A wooden block rests on a table. A student gradually increases a pulling force on the block: at first the block does not move, but eventually it suddenly starts sliding when the force reaches 8 N. Explain what is happening using the concept of limiting friction, and identify the type of friction acting before and after the block starts moving.",
+        "options": [
+          {"id": "a", "text": "Before moving: kinetic friction; after: static friction", "isCorrect": false},
+          {"id": "b", "text": "Before moving: static friction (increasing up to a maximum called limiting friction, here 8 N); after: kinetic (sliding) friction takes over, once the applied force exceeds this limiting value", "isCorrect": true},
+          {"id": "c", "text": "No friction acts at any point", "isCorrect": false},
+          {"id": "d", "text": "Both stages involve rolling friction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Before the block moves, static friction increases to match the applied force up to a maximum called limiting friction (8 N here), and once this is exceeded kinetic (sliding) friction takes over as the block slides. Exam Tip: Static friction is not a single fixed value — it adjusts to match the applied force UP TO a maximum (limiting friction). Motion only begins once this maximum is exceeded, at which point the friction type switches to kinetic.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An engineer is designing a new machine with many moving metal parts that will rub against each other continuously. Recommend TWO design features to reduce friction-related problems, and explain the reasoning for each.",
+        "options": [
+          {"id": "a", "text": "Make all surfaces as rough as possible and avoid any lubrication", "isCorrect": false},
+          {"id": "b", "text": "Use lubricants (oil/grease) between moving parts to reduce direct contact and friction, and use ball bearings or rollers where possible, since rolling friction is much smaller than sliding friction", "isCorrect": true},
+          {"id": "c", "text": "Increase the weight on all moving parts to increase friction", "isCorrect": false},
+          {"id": "d", "text": "Remove all lubrication to save cost", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Lubricants reduce direct contact and friction between moving metal parts, while ball bearings or rollers convert larger sliding friction into much smaller rolling friction, so both features reduce wear and energy loss. Exam Tip: These are the two standard engineering solutions to unwanted friction: (1) lubrication and (2) rolling elements. Both directly address wear and energy loss.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A cyclist notices that riding on a smooth, dry paved road is much easier than riding on a rough, sandy path, and that riding is even harder immediately after rain on certain surfaces. Explain these observations using the factors that affect friction.",
+        "options": [
+          {"id": "a", "text": "Friction depends only on the bicycle's colour", "isCorrect": false},
+          {"id": "b", "text": "Rougher/sandy surfaces increase friction (harder pedalling), while smooth pavement reduces it (easier pedalling); wet conditions can change the effective friction of certain surfaces, sometimes reducing grip dangerously (as with worn tyres) or increasing rolling resistance (as with soft, wet sand)", "isCorrect": true},
+          {"id": "c", "text": "Friction is identical on all surfaces regardless of texture or wetness", "isCorrect": false},
+          {"id": "d", "text": "Friction only matters for cars, not bicycles", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rougher, sandy surfaces increase friction and require more pedalling effort, smooth dry pavement reduces friction and eases pedalling, and wet conditions can change a surface's effective friction, sometimes reducing grip and sometimes increasing resistance. Exam Tip: This question links the abstract laws of friction to a genuinely everyday physical experience.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

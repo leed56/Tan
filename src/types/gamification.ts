@@ -107,6 +107,7 @@ export interface RewardBox {
   xpBonus: number;
   rarity: 'common' | 'rare' | 'epic';
   isAvailable: boolean;
+  unlockHint?: string;
 }
 
 // XP amounts per action

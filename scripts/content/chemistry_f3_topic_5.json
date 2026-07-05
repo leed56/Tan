@@ -1,0 +1,494 @@
+{
+  "topicId": "form_3_chemistry_topic_5",
+  "topicName": "Ionic Theory and Electrolysis",
+  "order": 5,
+  "description": "This topic introduces ionic theory, explaining how electrolytes and non-electrolytes differ based on the presence of free ions, and explores electrolysis, the decomposition of compounds using electric current at the anode and cathode. It covers ion movement, oxidation and reduction at each electrode, Faraday's first law of electrolysis, and key applications such as copper purification and electroplating.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "According to ionic theory, an electrolyte is a substance that:",
+        "options": [
+          {"id": "a", "text": "Never dissolves in water", "isCorrect": false},
+          {"id": "b", "text": "Conducts electricity when molten or dissolved, due to the presence of free ions", "isCorrect": true},
+          {"id": "c", "text": "Never conducts electricity", "isCorrect": false},
+          {"id": "d", "text": "Is always a gas", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "An electrolyte conducts electricity when molten or in solution because it contains free-moving ions. Exam Tip: Electrolytes: acids, bases, and ionic salts (e.g. NaCl, CuSO4) all release free ions in solution or when molten.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A substance that does NOT conduct electricity, even when molten or dissolved, is called a:",
+        "options": [
+          {"id": "a", "text": "Electrolyte", "isCorrect": false},
+          {"id": "b", "text": "Non-electrolyte", "isCorrect": true},
+          {"id": "c", "text": "Conductor", "isCorrect": false},
+          {"id": "d", "text": "Cation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A substance with no free ions cannot conduct electricity even when molten or dissolved, so it is called a non-electrolyte. Exam Tip: Non-electrolytes: sugar solution, ethanol, distilled water (pure) - they have no free ions to carry current.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process of decomposing an electrolyte using electricity is called:",
+        "options": [
+          {"id": "a", "text": "Filtration", "isCorrect": false},
+          {"id": "b", "text": "Electrolysis", "isCorrect": true},
+          {"id": "c", "text": "Distillation", "isCorrect": false},
+          {"id": "d", "text": "Titration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Electrolysis is the process of decomposing an electrolyte into its elements using an electric current. Exam Tip: Electrolysis breaks a compound into its elements using an electric current.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In electrolysis, the electrode connected to the positive terminal of the power source is called the:",
+        "options": [
+          {"id": "a", "text": "Cathode", "isCorrect": false},
+          {"id": "b", "text": "Anode", "isCorrect": true},
+          {"id": "c", "text": "Electrolyte", "isCorrect": false},
+          {"id": "d", "text": "Cation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The electrode connected to the positive terminal of the power source is the anode. Exam Tip: Anode = positive (both start with vowels: A, positive); cathode = negative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In electrolysis, the electrode connected to the negative terminal of the power source is called the:",
+        "options": [
+          {"id": "a", "text": "Anode", "isCorrect": false},
+          {"id": "b", "text": "Cathode", "isCorrect": true},
+          {"id": "c", "text": "Electrolyte", "isCorrect": false},
+          {"id": "d", "text": "Anion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The electrode connected to the negative terminal of the power source is the cathode. Exam Tip: Cathode = negative; positive ions (cations) move towards it and are discharged there.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Positively charged ions that move towards the cathode during electrolysis are called:",
+        "options": [
+          {"id": "a", "text": "Anions", "isCorrect": false},
+          {"id": "b", "text": "Cations", "isCorrect": true},
+          {"id": "c", "text": "Electrons", "isCorrect": false},
+          {"id": "d", "text": "Neutrons", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Positively charged ions that move towards the cathode during electrolysis are called cations. Exam Tip: CATions move to the CAThode (both start with 'cat') - a helpful memory link.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Negatively charged ions that move towards the anode during electrolysis are called:",
+        "options": [
+          {"id": "a", "text": "Cations", "isCorrect": false},
+          {"id": "b", "text": "Anions", "isCorrect": true},
+          {"id": "c", "text": "Protons", "isCorrect": false},
+          {"id": "d", "text": "Molecules", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Negatively charged ions that move towards the anode during electrolysis are called anions. Exam Tip: ANions move to the ANode - both start with 'an'.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During the electrolysis of molten lead(II) bromide, lead metal is deposited at the:",
+        "options": [
+          {"id": "a", "text": "Anode", "isCorrect": false},
+          {"id": "b", "text": "Cathode", "isCorrect": true},
+          {"id": "c", "text": "Electrolyte surface", "isCorrect": false},
+          {"id": "d", "text": "Neither electrode", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Pb2+ ions are positive cations, so they move to and are discharged at the cathode, forming lead metal there. Exam Tip: Metals are always deposited at the CATHODE during electrolysis (since metal ions are cations).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During the electrolysis of molten lead(II) bromide, bromine gas is released at the:",
+        "options": [
+          {"id": "a", "text": "Cathode", "isCorrect": false},
+          {"id": "b", "text": "Anode", "isCorrect": true},
+          {"id": "c", "text": "Both electrodes equally", "isCorrect": false},
+          {"id": "d", "text": "Neither electrode", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Br- ions are negative anions, so they move to and are discharged at the anode, releasing bromine gas there. Exam Tip: Non-metal ions (like bromide, chloride) usually release gas at the ANODE.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During electrolysis, the loss of electrons at the anode is called:",
+        "options": [
+          {"id": "a", "text": "Reduction", "isCorrect": false},
+          {"id": "b", "text": "Oxidation", "isCorrect": true},
+          {"id": "c", "text": "Neutralisation", "isCorrect": false},
+          {"id": "d", "text": "Filtration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The loss of electrons by anions at the anode is called oxidation. Exam Tip: OXIDATION IS LOSS of electrons (OIL); it happens at the anode.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "During electrolysis, the gain of electrons at the cathode is called:",
+        "options": [
+          {"id": "a", "text": "Oxidation", "isCorrect": false},
+          {"id": "b", "text": "Reduction", "isCorrect": true},
+          {"id": "c", "text": "Combustion", "isCorrect": false},
+          {"id": "d", "text": "Sublimation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The gain of electrons by cations at the cathode is called reduction. Exam Tip: REDUCTION IS GAIN of electrons (RIG); it happens at the cathode.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is used in electrolysis to purify impure copper metal?",
+        "options": [
+          {"id": "a", "text": "Filtration", "isCorrect": false},
+          {"id": "b", "text": "Electrolysis with an impure copper anode and a pure copper cathode", "isCorrect": true},
+          {"id": "c", "text": "Boiling the copper", "isCorrect": false},
+          {"id": "d", "text": "Adding acid to dissolve the copper completely", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Impure copper is made the anode and dissolves into solution, while pure copper deposits at the cathode. Exam Tip: In copper purification (electro-refining), impurities fall away as 'anode sludge' while pure copper builds up on the cathode.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Electroplating is an application of electrolysis used to:",
+        "options": [
+          {"id": "a", "text": "Melt metals completely", "isCorrect": false},
+          {"id": "b", "text": "Coat one metal with a thin layer of another metal for protection or appearance", "isCorrect": true},
+          {"id": "c", "text": "Remove all metal from an object", "isCorrect": false},
+          {"id": "d", "text": "Increase the mass of the object by adding water", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Electroplating uses electrolysis to deposit a thin protective or decorative metal layer onto an object. Exam Tip: Electroplating: object to be plated = cathode; the plating metal = anode; electrolyte = a solution of the plating metal's salt.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the electrolysis of copper(II) sulphate solution using copper electrodes (for electroplating/purification), the CATHODE gains mass because:",
+        "options": [
+          {"id": "a", "text": "Copper is deposited there from the solution", "isCorrect": true},
+          {"id": "b", "text": "Water evaporates there", "isCorrect": false},
+          {"id": "c", "text": "Sulphate ions collect there", "isCorrect": false},
+          {"id": "d", "text": "The cathode always loses mass", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Cu2+ ions move to the cathode, gain electrons, and are deposited as copper metal, increasing the cathode's mass. Exam Tip: In copper electroplating/purification, the cathode GAINS mass (copper deposited); the impure anode LOSES mass (copper dissolves in).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The first law of electrolysis states that the mass of a substance deposited or liberated at an electrode is directly proportional to the:",
+        "options": [
+          {"id": "a", "text": "Colour of the electrolyte", "isCorrect": false},
+          {"id": "b", "text": "Quantity of electric charge (current x time) passed", "isCorrect": true},
+          {"id": "c", "text": "Size of the container", "isCorrect": false},
+          {"id": "d", "text": "Temperature of the room only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Faraday's first law states that the mass deposited or liberated at an electrode is directly proportional to the quantity of charge passed, i.e. current x time. Exam Tip: More current for longer time leads to more charge, which leads to more substance deposited. This is the basis of electroplating calculations.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A substance that conducts electricity when molten or dissolved due to free ions is called a(n) ____.",
+        "options": [
+          {"id": "a", "text": "electrolyte", "isCorrect": true},
+          {"id": "b", "text": "non-electrolyte", "isCorrect": false},
+          {"id": "c", "text": "conductor", "isCorrect": false},
+          {"id": "d", "text": "insulator", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This is the definition of an electrolyte, a substance that contains free ions and conducts electricity when molten or dissolved. Exam Tip: Acids, bases and ionic salts are electrolytes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The process of decomposing a compound using electricity is called ____.",
+        "options": [
+          {"id": "a", "text": "electrolysis", "isCorrect": true},
+          {"id": "b", "text": "electroplating", "isCorrect": false},
+          {"id": "c", "text": "titration", "isCorrect": false},
+          {"id": "d", "text": "filtration", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This process, which splits a compound into its elements using an electric current, is called electrolysis. Exam Tip: Electrolysis splits a compound into its elements.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The electrode connected to the positive terminal in electrolysis is called the ____.",
+        "options": [
+          {"id": "a", "text": "cathode", "isCorrect": false},
+          {"id": "b", "text": "anode", "isCorrect": true},
+          {"id": "c", "text": "electrolyte", "isCorrect": false},
+          {"id": "d", "text": "cation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The electrode joined to the positive terminal of the power source is the anode. Exam Tip: Anions move here; oxidation occurs here.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The electrode connected to the negative terminal in electrolysis is called the ____.",
+        "options": [
+          {"id": "a", "text": "anode", "isCorrect": false},
+          {"id": "b", "text": "cathode", "isCorrect": true},
+          {"id": "c", "text": "electrolyte", "isCorrect": false},
+          {"id": "d", "text": "anion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The electrode joined to the negative terminal of the power source is the cathode. Exam Tip: Cations move here; reduction occurs here.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Positively charged ions that move towards the cathode are called ____.",
+        "options": [
+          {"id": "a", "text": "anions", "isCorrect": false},
+          {"id": "b", "text": "cations", "isCorrect": true},
+          {"id": "c", "text": "electrons", "isCorrect": false},
+          {"id": "d", "text": "protons", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Positive ions that migrate to the cathode during electrolysis are called cations. Exam Tip: CATions move to the CAThode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Negatively charged ions that move towards the anode are called ____.",
+        "options": [
+          {"id": "a", "text": "cations", "isCorrect": false},
+          {"id": "b", "text": "anions", "isCorrect": true},
+          {"id": "c", "text": "neutrons", "isCorrect": false},
+          {"id": "d", "text": "molecules", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Negative ions that migrate to the anode during electrolysis are called anions. Exam Tip: ANions move to the ANode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The loss of electrons at the anode during electrolysis is called ____.",
+        "options": [
+          {"id": "a", "text": "reduction", "isCorrect": false},
+          {"id": "b", "text": "oxidation", "isCorrect": true},
+          {"id": "c", "text": "neutralisation", "isCorrect": false},
+          {"id": "d", "text": "combustion", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Losing electrons at the anode is an oxidation process. Exam Tip: OIL - Oxidation Is Loss (of electrons).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The gain of electrons at the cathode during electrolysis is called ____.",
+        "options": [
+          {"id": "a", "text": "oxidation", "isCorrect": false},
+          {"id": "b", "text": "reduction", "isCorrect": true},
+          {"id": "c", "text": "sublimation", "isCorrect": false},
+          {"id": "d", "text": "filtration", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Gaining electrons at the cathode is a reduction process. Exam Tip: RIG - Reduction Is Gain (of electrons).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The use of electrolysis to coat an object with a thin protective layer of metal is called ____.",
+        "options": [
+          {"id": "a", "text": "distillation", "isCorrect": false},
+          {"id": "b", "text": "electroplating", "isCorrect": true},
+          {"id": "c", "text": "filtration", "isCorrect": false},
+          {"id": "d", "text": "neutralisation", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Coating an object with a thin protective or decorative layer of metal using electrolysis is called electroplating. Exam Tip: The object being plated is always the cathode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to Faraday's first law, the mass deposited at an electrode is proportional to the quantity of ____ passed.",
+        "options": [
+          {"id": "a", "text": "heat", "isCorrect": false},
+          {"id": "b", "text": "electric charge (current x time)", "isCorrect": true},
+          {"id": "c", "text": "electrolyte volume", "isCorrect": false},
+          {"id": "d", "text": "light", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The determining factor for the mass deposited is the quantity of electric charge passed, equal to current multiplied by time. Exam Tip: Charge (Q) = current (I) x time (t).",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "An electrolyte conducts electricity when molten or dissolved due to the presence of free ions.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is correct: free-moving ions carry the electric current through the electrolyte. Exam Tip: Free-moving ions carry the electric current through the electrolyte.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Sugar solution is a good electrolyte.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Sugar is covalent and does not form ions in solution, so sugar solution is a non-electrolyte, not a good electrolyte. Exam Tip: Sugar solution has no free ions, so it cannot conduct electricity, a classic non-electrolyte example.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The anode is the electrode connected to the positive terminal of the power source.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the correct definition of the anode. Exam Tip: Anode = positive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cations move towards the anode during electrolysis.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Cations are positive ions and move towards the negative cathode, not the anode. Exam Tip: CATions move to the CAThode; the statement sends them to the wrong electrode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Reduction (gain of electrons) occurs at the cathode during electrolysis.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Cations gain electrons at the cathode, and this process is reduction. Exam Tip: RIG - Reduction Is Gain, happens at the cathode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Oxidation (loss of electrons) occurs at the cathode during electrolysis.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Oxidation happens at the anode, not the cathode; reduction is the cathode process. Exam Tip: OIL happens at the anode, RIG happens at the cathode; the statement mixes them up.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Electroplating uses electrolysis to coat an object with a thin layer of another metal.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This is the correct definition of electroplating. Exam Tip: The object to be plated is set up as the cathode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In copper purification by electrolysis, pure copper is deposited at the anode.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Pure copper is deposited at the cathode, while the impure copper anode dissolves away. Exam Tip: Impure copper (anode) dissolves; pure copper builds up at the cathode; the statement swaps their roles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to Faraday's first law, more electric charge passed means more substance is deposited at an electrode.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Mass deposited is directly proportional to the quantity of charge passed. Exam Tip: More current for longer time leads to more charge, which leads to more mass deposited.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Molten lead(II) bromide can conduct electricity and be electrolysed because it contains free-moving ions.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Melting an ionic compound frees its ions, allowing conduction and electrolysis. Exam Tip: Solid ionic compounds have FIXED ions (no conduction); molten ones have FREE ions (conduction and electrolysis possible).",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Electrolyte",
+        "options": [],
+        "correctAnswer": "A substance that conducts electricity when molten or dissolved in water because it contains free-moving ions, such as acids, bases, and ionic salts.",
+        "explanation": "Common examples of electrolytes include NaCl and CuSO4 solutions and molten ionic compounds.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Non-electrolyte",
+        "options": [],
+        "correctAnswer": "A substance that does not conduct electricity even when molten or dissolved, because it has no free ions, such as sugar solution or ethanol.",
+        "explanation": "Non-electrolytes are usually covalent substances without charged particles to carry current.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Electrolysis",
+        "options": [],
+        "correctAnswer": "The decomposition of an electrolyte into its elements by passing an electric current through it.",
+        "explanation": "Electrolysis is used to extract reactive metals, purify metals, and electroplate objects.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Anode",
+        "options": [],
+        "correctAnswer": "The electrode connected to the positive terminal of the power source, where anions are discharged and oxidation occurs.",
+        "explanation": "Anode starts with a vowel, like the word 'positive', which helps recall its charge.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cathode",
+        "options": [],
+        "correctAnswer": "The electrode connected to the negative terminal of the power source, where cations are discharged and reduction occurs.",
+        "explanation": "Metals are always deposited at the cathode because metal ions are cations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Cation",
+        "options": [],
+        "correctAnswer": "A positively charged ion that moves towards the cathode during electrolysis.",
+        "explanation": "Examples of cations include Pb2+, Cu2+, and Na+.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Anion",
+        "options": [],
+        "correctAnswer": "A negatively charged ion that moves towards the anode during electrolysis.",
+        "explanation": "Examples of anions include Br-, Cl-, and OH-.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Electroplating",
+        "options": [],
+        "correctAnswer": "The use of electrolysis to coat an object with a thin protective or decorative layer of another metal.",
+        "explanation": "In electroplating, the object to be plated is the cathode and the plating metal is the anode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Electro-refining (purification of copper)",
+        "options": [],
+        "correctAnswer": "The use of electrolysis with an impure metal anode and a pure metal cathode to purify a metal, such as copper.",
+        "explanation": "Impurities collect as anode sludge while pure metal is deposited at the cathode.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Faraday's first law of electrolysis",
+        "options": [],
+        "correctAnswer": "The mass of a substance deposited or liberated at an electrode is directly proportional to the quantity of electric charge (current x time) passed through the electrolyte.",
+        "explanation": "This law is the basis for calculations used in electroplating and metal refining.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "During the electrolysis of molten lead(II) bromide (PbBr2), using inert electrodes, a student observes a grey metal forming at one electrode and a brown gas at the other. Identify what forms at each electrode and explain using ion movement.",
+        "options": [
+          {"id": "a", "text": "Lead forms at the anode; bromine forms at the cathode", "isCorrect": false},
+          {"id": "b", "text": "Lead (grey metal) forms at the cathode because Pb2+ ions (cations) move there and gain electrons (reduction); bromine (brown gas) forms at the anode because Br- ions (anions) move there and lose electrons (oxidation)", "isCorrect": true},
+          {"id": "c", "text": "Both substances form at the same electrode", "isCorrect": false},
+          {"id": "d", "text": "No reaction occurs in molten PbBr2", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Molten PbBr2 contains free Pb2+ (cation) and Br- (anion) ions. The positive Pb2+ ions move to the negative cathode, gain electrons (reduction), and are deposited as grey lead metal, while the negative Br- ions move to the positive anode, lose electrons (oxidation), and are released as brown bromine gas. Exam Tip: Always trace ion movement by charge: positive ions (cations) go to the negative cathode (CAT to CAThode); negative ions (anions) go to the positive anode (AN to ANode). Metals are always deposited at the cathode; non-metal gases usually form at the anode.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A factory wants to purify impure copper obtained from ore. Describe the electrolysis set-up needed (electrodes and electrolyte) and explain what happens at each electrode.",
+        "options": [
+          {"id": "a", "text": "Use a graphite anode and cathode with water as the electrolyte", "isCorrect": false},
+          {"id": "b", "text": "Use an impure copper anode, a thin pure copper cathode, and copper(II) sulphate solution as the electrolyte; at the anode, impure copper dissolves into solution, while at the cathode, copper ions are deposited as pure metal", "isCorrect": true},
+          {"id": "c", "text": "Use a pure copper anode only; no cathode is needed", "isCorrect": false},
+          {"id": "d", "text": "Use salt water with iron electrodes", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "To purify copper, the impure copper is made the anode and a thin sheet of pure copper is the cathode, with copper(II) sulphate solution as the electrolyte providing Cu2+ ions. At the anode, copper (and impurities left behind as sludge) dissolves into solution as Cu2+ ions; at the cathode, Cu2+ ions gain electrons and deposit as pure copper metal. Exam Tip: The key design choice is impure metal = anode (dissolves away), pure metal = cathode (grows). This 'opposite' set-up compared with simple electrolysis of a salt is a favourite Form 3 exam point; impurities collect as sludge below the anode rather than being deposited.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "During an electroplating experiment, a current of 2 A is passed through a copper(II) sulphate solution for 1000 seconds using a copper anode and a spoon (to be plated) as the cathode. Using Faraday's first law (mass deposited proportional to charge = current x time), explain what would happen to the mass deposited if the current were doubled to 4 A for the SAME time.",
+        "options": [
+          {"id": "a", "text": "The mass deposited would stay the same", "isCorrect": false},
+          {"id": "b", "text": "The mass deposited would double, since charge (and hence mass deposited) is directly proportional to current at constant time", "isCorrect": true},
+          {"id": "c", "text": "The mass deposited would decrease", "isCorrect": false},
+          {"id": "d", "text": "Doubling the current stops the reaction", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Faraday's first law states mass deposited is directly proportional to charge, where charge = current x time. Keeping time constant at 1000 s and doubling the current from 2 A to 4 A doubles the charge passed, and since mass deposited is proportional to charge, the mass of copper deposited on the spoon also doubles. Exam Tip: Faraday's first law gives a direct proportionality: mass is proportional to charge, which is proportional to (current x time). Doubling either current or time (with the other constant) doubles the mass deposited, a simple but powerful relationship used in electroplating and metal-refining calculations.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

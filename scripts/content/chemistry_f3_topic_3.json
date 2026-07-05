@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_chemistry_topic_3",
+  "topicName": "Chemical Stoichiometry",
+  "order": 3,
+  "description": "Chemical stoichiometry uses balanced equations and the mole concept to calculate reacting masses, gas volumes, limiting reactants, percentage yield and percentage purity.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What does a balanced chemical equation show about the number of atoms?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Atoms are equal on both sides of the equation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Atoms increase on the product side",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Atoms decrease on the product side",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Atoms are only counted on the reactant side",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "By the law of conservation of mass, atoms are neither created nor destroyed, so the number of atoms of each element is equal on both sides.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the correct balanced equation for the reaction of hydrogen and oxygen to form water?",
+        "options": [
+          {
+            "id": "a",
+            "text": "H2 + O2 -> H2O",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2H2 + O2 -> 2H2O",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "H2 + 2O2 -> H2O",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2H2 + 2O2 -> 2H2O",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "2H2 + O2 -> 2H2O balances 4 hydrogen atoms and 2 oxygen atoms on each side.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In the equation N2 + 3H2 -> 2NH3, what is the mole ratio of N2 to NH3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 : 1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "1 : 2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "1 : 3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "3 : 2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The coefficients show 1 mole of N2 produces 2 moles of NH3, giving a ratio of 1 : 2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number that appears in front of a formula in a balanced equation is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Subscript",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Coefficient",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Index",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Valency",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A coefficient is the large number placed before a formula to balance the equation; it multiplies the whole formula.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What volume does 1 mole of any gas occupy at s.t.p.?",
+        "options": [
+          {
+            "id": "a",
+            "text": "11.2 dm3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "22.4 dm3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "24.0 dm3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "44.8 dm3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The molar gas volume at standard temperature and pressure (s.t.p.) is 22.4 dm3 per mole.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many moles of oxygen are needed to react completely with 2 moles of carbon in C + O2 -> CO2?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 mole",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 moles",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "3 moles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4 moles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The ratio of C to O2 is 1 : 1, so 2 moles of carbon need 2 moles of oxygen.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Calculate the mass of CO2 produced when 12 g of carbon burns completely. (C = 12, O = 16)",
+        "options": [
+          {
+            "id": "a",
+            "text": "22 g",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "28 g",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "44 g",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "56 g",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "12 g of carbon is 1 mole. C + O2 -> CO2 gives 1 mole of CO2 = 12 + (2 x 16) = 44 g.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a reaction, the reactant that is completely used up first is called the:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Excess reactant",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Limiting reactant",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Catalyst",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Product",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The limiting reactant is fully consumed and determines the maximum amount of product formed.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Percentage yield is calculated as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "(theoretical yield / actual yield) x 100",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "(actual yield / theoretical yield) x 100",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "(actual yield x theoretical yield) / 100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "(theoretical yield - actual yield) x 100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Percentage yield = (actual yield / theoretical yield) x 100.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What mass of water is formed when 4 g of hydrogen reacts with excess oxygen? (H = 1, O = 16)",
+        "options": [
+          {
+            "id": "a",
+            "text": "18 g",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "36 g",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "9 g",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "72 g",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "4 g of H2 = 2 moles. From 2H2 + O2 -> 2H2O, 2 moles of H2 give 2 moles of water = 2 x 18 = 36 g.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How many moles are present in 80 g of NaOH? (Na = 23, O = 16, H = 1)",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 mole",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 moles",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "3 moles",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4 moles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol. Moles = 80 / 40 = 2 moles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Percentage purity of a sample is best described as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mass of impurities divided by total mass x 100",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mass of pure substance divided by mass of sample x 100",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mass of sample divided by mass of pure substance x 100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Total mass minus pure mass x 100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Percentage purity = (mass of pure substance / mass of impure sample) x 100.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In 2KClO3 -> 2KCl + 3O2, how many moles of oxygen gas are produced from 2 moles of KClO3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 mole",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 moles",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3 moles",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6 moles",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The equation shows 2 moles of KClO3 produce 3 moles of O2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What volume of CO2 gas (at s.t.p.) is produced from 2 moles of carbon burning in oxygen? (Molar volume = 22.4 dm3)",
+        "options": [
+          {
+            "id": "a",
+            "text": "22.4 dm3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "44.8 dm3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "11.2 dm3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "24.0 dm3",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "C + O2 -> CO2; 2 moles of C give 2 moles of CO2 = 2 x 22.4 = 44.8 dm3.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement about stoichiometric coefficients is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They give the ratio of moles of reactants and products",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "They give the ratio of masses directly",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "They change during the reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "They represent the number of atoms in one molecule",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Coefficients in a balanced equation give the mole ratio (and gas volume ratio) of substances reacting and forming.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "A chemical equation that has equal numbers of atoms of each element on both sides is said to be _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "balanced",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "reduced",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "oxidised",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "neutral",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A balanced equation obeys the law of conservation of mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The branch of chemistry that deals with the quantitative relationships between reactants and products is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "thermochemistry",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "stoichiometry",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "kinetics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "electrochemistry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Stoichiometry calculates the amounts of substances involved in chemical reactions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One mole of any gas occupies _____ dm3 at standard temperature and pressure.",
+        "options": [
+          {
+            "id": "a",
+            "text": "24.0",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "11.2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "22.4",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "18.0",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The molar gas volume at s.t.p. is 22.4 dm3.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The reactant that is completely consumed and limits the amount of product formed is the _____ reactant.",
+        "options": [
+          {
+            "id": "a",
+            "text": "excess",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "spectator",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "residual",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "limiting",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "The limiting reactant determines the maximum yield of product.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The reactant that remains after a reaction is complete is called the _____ reactant.",
+        "options": [
+          {
+            "id": "a",
+            "text": "excess",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "limiting",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "spectator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "residual",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The excess reactant is left over because the limiting reactant runs out first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number of moles in 36 g of water (H2O, molar mass 18 g/mol) is _____ moles.",
+        "options": [
+          {
+            "id": "a",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Moles = mass / molar mass = 36 / 18 = 2 moles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The maximum amount of product that can be made from given reactants is called the _____ yield.",
+        "options": [
+          {
+            "id": "a",
+            "text": "actual",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "percentage",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "theoretical",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "experimental",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Theoretical yield is calculated from the balanced equation assuming complete reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If a reaction gives 8 g of product but the theoretical yield is 10 g, the percentage yield is _____ %.",
+        "options": [
+          {
+            "id": "a",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "60",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "100",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "80",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Percentage yield = (8 / 10) x 100 = 80%.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In the equation 2H2 + O2 -> 2H2O, the coefficient of water is _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Two molecules of water are formed, so the coefficient is 2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a 50 g sample of limestone contains 40 g of pure CaCO3, the percentage purity is _____ %.",
+        "options": [
+          {
+            "id": "a",
+            "text": "20",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "80",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "60",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Percentage purity = (40 / 50) x 100 = 80%.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A balanced chemical equation obeys the law of conservation of mass.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Mass is conserved, so atoms are equal on both sides of a balanced equation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "You can balance an equation by changing the subscripts in a chemical formula.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Subscripts must not be changed because that alters the substance; only coefficients may be adjusted.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The coefficients in a balanced equation give the mole ratio of the substances.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Coefficients represent the relative numbers of moles of reactants and products.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The limiting reactant produces the smaller amount of product, so it controls the yield.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Whichever reactant gives the least product is the limiting reactant and determines the maximum yield.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Percentage yield can be greater than 100% in a normal reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Actual yield cannot exceed the theoretical yield, so percentage yield is at most 100% (above 100% indicates impurities or error).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For gases measured at the same temperature and pressure, the coefficients also give the ratio of volumes.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By Avogadro's law, equal volumes of gases contain equal numbers of moles, so the mole ratio equals the volume ratio for gases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Theoretical yield is the actual mass of product collected in the laboratory.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Theoretical yield is the calculated maximum; the mass actually collected is the actual yield.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An impure sample contains the desired substance mixed with other materials.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Impurities are unwanted substances mixed with the pure compound, lowering the percentage purity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The molar mass of CO2 is 44 g/mol (C = 12, O = 16).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "CO2 = 12 + (2 x 16) = 44 g/mol.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In stoichiometry calculations, masses can be converted to moles by dividing by the molar mass.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Number of moles = mass / molar mass, a key step in reacting-mass calculations.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State the law of conservation of mass.",
+        "options": [],
+        "correctAnswer": "Matter is neither created nor destroyed in a chemical reaction, so the total mass of reactants equals the total mass of products.",
+        "explanation": "This law is the basis for balancing chemical equations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the difference between a coefficient and a subscript in a chemical equation?",
+        "options": [],
+        "correctAnswer": "A coefficient is a number placed before a formula that multiplies the whole formula, while a subscript shows the number of atoms of an element within a formula.",
+        "explanation": "Only coefficients are changed when balancing equations.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain what a mole ratio is and where it comes from.",
+        "options": [],
+        "correctAnswer": "A mole ratio is the ratio of moles of any two substances in a reaction, obtained from the coefficients of the balanced chemical equation.",
+        "explanation": "Mole ratios are used to convert between amounts of reactants and products.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Outline the steps to calculate the mass of a product from the mass of a reactant.",
+        "options": [],
+        "correctAnswer": "Write the balanced equation, convert the given mass to moles, use the mole ratio to find moles of product, then multiply by the molar mass of the product to get its mass.",
+        "explanation": "This is the standard reacting-mass calculation method.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Define limiting reactant and excess reactant.",
+        "options": [],
+        "correctAnswer": "The limiting reactant is the one completely used up first and controls the amount of product, while the excess reactant is the one that remains after the reaction.",
+        "explanation": "Identifying the limiting reactant is essential for finding the actual yield.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How do you identify the limiting reactant when given the masses of two reactants?",
+        "options": [],
+        "correctAnswer": "Convert both masses to moles, divide each by its coefficient in the balanced equation, and the reactant with the smaller value is the limiting reactant.",
+        "explanation": "The reactant that gives the least product is limiting.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write the formula for percentage yield.",
+        "options": [],
+        "correctAnswer": "Percentage yield = (actual yield / theoretical yield) x 100.",
+        "explanation": "It compares the amount of product obtained with the maximum possible amount.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Write the formula for percentage purity of a sample.",
+        "options": [],
+        "correctAnswer": "Percentage purity = (mass of pure substance / mass of impure sample) x 100.",
+        "explanation": "It shows what fraction of the sample is the desired pure substance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why might the actual yield of a reaction be less than the theoretical yield?",
+        "options": [],
+        "correctAnswer": "Because of incomplete reactions, side reactions, or losses of product during handling such as filtering and transferring.",
+        "explanation": "Practical losses reduce the amount of product collected.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How is the volume of a gas at s.t.p. related to the number of moles?",
+        "options": [],
+        "correctAnswer": "Volume of gas at s.t.p. = number of moles x 22.4 dm3, because one mole of any gas occupies 22.4 dm3 at s.t.p.",
+        "explanation": "This relationship links mole calculations to gas volume calculations.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "When 5.6 g of iron reacts with sulphur to form iron(II) sulphide (Fe + S -> FeS), what mass of FeS is produced? (Fe = 56, S = 32)",
+        "options": [
+          {
+            "id": "a",
+            "text": "8.8 g",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "5.6 g",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3.2 g",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "11.2 g",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles of Fe = 5.6 / 56 = 0.1 mol. Ratio Fe : FeS is 1 : 1, so 0.1 mol FeS forms. Mass = 0.1 x (56 + 32) = 0.1 x 88 = 8.8 g.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "In the reaction H2 + Cl2 -> 2HCl, 4 g of H2 is mixed with 71 g of Cl2. Which is the limiting reactant and how many moles of HCl form? (H = 1, Cl = 35.5)",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cl2 is limiting; 2 moles of HCl form",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "H2 is limiting; 4 moles of HCl form",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Cl2 is limiting; 1 mole of HCl forms",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "H2 is limiting; 2 moles of HCl form",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moles H2 = 4/2 = 2 mol; moles Cl2 = 71/71 = 1 mol. Ratio is 1 : 1, so Cl2 (1 mol) is limiting. 1 mol Cl2 gives 2 mol HCl.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Heating 25 g of impure calcium carbonate gives 8.8 g of CO2 (CaCO3 -> CaO + CO2; CaCO3 = 100, CO2 = 44). What is the percentage purity of the CaCO3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "100%",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "44%",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "80%",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "88%",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Moles CO2 = 8.8/44 = 0.2 mol. Ratio CaCO3 : CO2 is 1 : 1, so 0.2 mol CaCO3 reacted = 0.2 x 100 = 20 g pure CaCO3. Purity = (20/25) x 100 = 80%.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

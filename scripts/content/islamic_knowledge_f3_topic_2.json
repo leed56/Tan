@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_islamic_knowledge_topic_2",
+  "topicName": "Ulum al-Hadith (Sciences of Hadith)",
+  "order": 2,
+  "description": "An introduction to the sciences of Hadith, covering the meaning of Hadith and Sunnah, the structure of a Hadith (sanad and matn), the classification of Hadith by number of narrators and reliability, the major collections and compilers, and the role of Hadith in explaining the Qur'an.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "In Islamic studies, the term 'Hadith' refers to what?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The sayings, actions, and approvals reported from Prophet Muhammad (peace be upon him)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The words revealed by Allah in the Qur'an",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The Friday sermon given by an imam",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The poetry of the Arabs before Islam",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A Hadith is a report of what the Prophet Muhammad (peace be upon him) said, did, or approved of, as transmitted by his companions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the 'Sunnah'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Only the spoken words of the Prophet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The way, practice, and example of the Prophet Muhammad (peace be upon him)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A book written by Imam al-Bukhari",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The first chapter of the Qur'an",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The Sunnah is the model way of life of the Prophet, including his words, deeds, and silent approvals, which Muslims follow as guidance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which statement correctly distinguishes the Qur'an from the Hadith?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Qur'an is the exact word of Allah, while Hadith is mainly the words and actions of the Prophet",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Both the Qur'an and Hadith are recited in formal prayer (salah)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The Hadith was revealed first and the Qur'an came later",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The Qur'an explains the Hadith and depends on it",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Qur'an is the literal speech of Allah revealed in Arabic, while the Hadith records the Prophet's own words and deeds; only the Qur'an is recited in salah.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A Hadith is made up of two main parts. What are they called?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The surah and the ayah",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The sanad (chain of narrators) and the matn (text)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The fatwa and the ijma",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The wahy and the tafsir",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Every Hadith has a sanad (isnad), the chain of people who narrated it, and a matn, the actual content or text of the report.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does the 'matn' of a Hadith refer to?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The chain of narrators",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The actual text or content of the report",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The name of the compiler",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The number of times it was narrated",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The matn is the body of the Hadith, the actual wording that conveys the Prophet's saying or describes his action.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A Hadith narrated by so many people at every stage that it is impossible they all agreed on a lie is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ahad",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mutawatir",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Mawdu'",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Da'if",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A mutawatir Hadith is reported by a large number of narrators in every link of the chain, giving certainty that it is authentic.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A Hadith reported by only one or a small number of narrators, not reaching the level of mutawatir, is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ahad",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mutawatir",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sahih only",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sunnah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "An ahad Hadith is one transmitted by a limited number of narrators; it can still be authentic but does not reach the certainty of mutawatir.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which classification describes a Hadith of the highest level of authenticity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Da'if (weak)",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Mawdu' (fabricated)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sahih (authentic)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Hasan (good)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A sahih Hadith has an unbroken chain of trustworthy, accurate narrators and is free from hidden defects, making it the most reliable.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A Hadith that is reliable but slightly below the level of sahih, often because a narrator's memory was a little weaker, is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hasan (good)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mawdu' (fabricated)",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Mutawatir",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Sahih (authentic)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A hasan Hadith meets most conditions of authenticity but is slightly weaker than sahih; it is still acceptable as evidence.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is a 'mawdu' Hadith?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A good but slightly weak report",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A fabricated report falsely attributed to the Prophet",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A report with a very large number of narrators",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A verse of the Qur'an",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A mawdu' Hadith is a lie invented and wrongly attributed to the Prophet; it is rejected and may not be used as proof.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is the isnad (chain of narrators) so important in the science of Hadith?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It makes the Hadith longer and more poetic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It allows scholars to check the reliability of each narrator and judge the Hadith's authenticity",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It replaces the need to know the text of the Hadith",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It is only used in the Qur'an, not in Hadith",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The isnad lets scholars trace the report back to the Prophet and examine the honesty, memory, and connection of every narrator.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Who compiled the collection known as 'Sahih al-Bukhari'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Imam Muslim",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Imam al-Bukhari",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Imam at-Tirmidhi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Imam Abu Dawud",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Imam Muhammad al-Bukhari compiled Sahih al-Bukhari, regarded by Sunni Muslims as the most authentic book after the Qur'an.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The six famous canonical Hadith books in Sunni Islam are collectively known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Kutub as-Sittah (the Six Books)",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "The Five Pillars",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The Tafsir collections",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The Books of Fiqh",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Kutub as-Sittah are the six major Sunni Hadith collections: the two Sahihs (Bukhari and Muslim) and the four Sunan works.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which companion is famous for narrating a very large number of Hadith?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Abu Hurayrah",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Imam al-Bukhari",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Imam Muslim",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Imam Malik",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Abu Hurayrah is among the companions who narrated the greatest number of Hadith, having spent much time with the Prophet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is one of the main functions of the Hadith in relation to the Qur'an?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To replace the Qur'an entirely",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To explain, detail, and clarify the teachings of the Qur'an",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To cancel all the laws of the Qur'an",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To translate the Qur'an into Swahili",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The Hadith explains and gives practical detail to the Qur'an, such as showing how to perform prayer, which the Qur'an commands in general terms.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The chain of narrators of a Hadith is called the sanad or _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "isnad",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "matn",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "rawi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mukharrij",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Sanad and isnad both refer to the chain of people who passed on the Hadith from one to another back to the Prophet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The actual text or content of a Hadith is called the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "isnad",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "matn",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "rawi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "sanad",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The matn is the wording of the report that conveys what the Prophet said or did.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A Hadith narrated by so many people that they could not all have lied is classified as _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "ahad",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mursal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mutawatir",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "gharib",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Mutawatir reports reach the level of certainty because of the very large number of narrators at every stage.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A Hadith narrated by only one or a few narrators is classified as _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "mutawatir",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "mursal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "musnad",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ahad",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "An ahad Hadith is transmitted through a limited number of narrators and does not reach the level of mutawatir.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A Hadith of the highest authenticity, with a sound chain of trustworthy narrators, is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "sahih",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "da'if",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hasan",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mawdu'",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A sahih Hadith has an unbroken chain of reliable, accurate narrators and no hidden defects.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A weak Hadith that fails to meet the conditions of authenticity is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "sahih",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "da'if",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hasan",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mutawatir",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A da'if (weak) Hadith has a defect such as a broken chain or an unreliable narrator.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A fabricated Hadith falsely attributed to the Prophet is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "da'if",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "munqati'",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mawdu'",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "shadhdh",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A mawdu' Hadith is invented and is rejected as a lie against the Prophet.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The collection regarded as the most authentic book after the Qur'an was compiled by Imam _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Muslim",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Abu Dawud",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "at-Tirmidhi",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "al-Bukhari",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Sahih al-Bukhari, compiled by Imam al-Bukhari, is considered the most authentic Hadith collection in Sunni Islam.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The six major Sunni Hadith collections are together known as the Kutub as-_____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sittah",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Khamsah",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Tis'ah",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Arba'ah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Kutub as-Sittah means 'the Six Books', the most respected Sunni Hadith collections.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The wife of the Prophet famous for narrating many Hadith about his family life and teachings was _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Khadija",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Aisha",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Hafsa",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Umm Salama",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Aisha (may Allah be pleased with her) narrated many Hadith, especially about the Prophet's personal conduct and home life.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The Qur'an and the Hadith are exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The Qur'an is the literal word of Allah, while the Hadith is the record of the Prophet's words and actions; they are different sources.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Every Hadith has two parts: the sanad (chain of narrators) and the matn (text).",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Scholars examine both the sanad and the matn when studying and grading a Hadith.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A mutawatir Hadith is one narrated by only a single person.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A mutawatir Hadith is narrated by a very large number of people at every stage; a report by one person is ahad.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A sahih Hadith is more reliable than a da'if Hadith.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Sahih means authentic with a sound chain, while da'if means weak; therefore sahih is stronger evidence.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A mawdu' Hadith may be used as strong proof in Islamic law.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A mawdu' Hadith is fabricated and is rejected; it cannot be used as evidence.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Studying the isnad helps scholars decide whether a Hadith is authentic.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "By examining each narrator in the isnad, scholars judge the trustworthiness and accuracy of the report.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Sahih al-Bukhari and Sahih Muslim are two of the most respected Hadith collections in Sunni Islam.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Together known as the two Sahihs, these collections are the most highly regarded after the Qur'an.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Abu Hurayrah was one of the companions who narrated many Hadith.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Abu Hurayrah is famous for narrating a very large number of Hadith from the Prophet.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "One role of the Hadith is to explain and give detail to the general commands of the Qur'an.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "For example, the Qur'an commands prayer, and the Hadith shows in detail how the Prophet performed it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Scholars accepted any Hadith without checking the honesty and memory of its narrators.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Hadith scholars carefully studied the character, honesty, and memory of every narrator before accepting a report.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define the term 'Hadith'.",
+        "options": [],
+        "correctAnswer": "A Hadith is a report of the sayings, actions, or approvals of the Prophet Muhammad (peace be upon him).",
+        "explanation": "Hadith records the words and deeds of the Prophet as preserved and passed on by his companions.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between the Sunnah and the Hadith.",
+        "options": [],
+        "correctAnswer": "The Sunnah is the way and example of the Prophet, while the Hadith is the recorded report that tells us about that example.",
+        "explanation": "Sunnah is the practice itself; Hadith is the written or transmitted account that informs us of the Sunnah.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the two main parts of a Hadith and what each means.",
+        "options": [],
+        "correctAnswer": "The sanad (isnad) is the chain of narrators, and the matn is the actual text or content of the Hadith.",
+        "explanation": "Both parts are examined by scholars when grading a Hadith.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between a mutawatir Hadith and an ahad Hadith.",
+        "options": [],
+        "correctAnswer": "A mutawatir Hadith is narrated by a very large number of people at every stage, giving certainty, while an ahad Hadith is narrated by one or a few narrators.",
+        "explanation": "The number of narrators in the chain is the basis for this classification.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the four common levels of Hadith based on reliability.",
+        "options": [],
+        "correctAnswer": "Sahih (authentic), hasan (good), da'if (weak), and mawdu' (fabricated).",
+        "explanation": "These grades show how strong a Hadith is as evidence, from the strongest (sahih) to the rejected (mawdu').",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why is the isnad considered important in the sciences of Hadith?",
+        "options": [],
+        "correctAnswer": "The isnad allows scholars to trace a Hadith back to the Prophet and to check the honesty, memory, and connection of each narrator to judge its authenticity.",
+        "explanation": "Without a sound isnad, the reliability of a report cannot be confirmed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name two of the most famous authentic Hadith collections in Sunni Islam.",
+        "options": [],
+        "correctAnswer": "Sahih al-Bukhari and Sahih Muslim.",
+        "explanation": "These two collections, known as the two Sahihs, are the most respected after the Qur'an.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What are the Kutub as-Sittah?",
+        "options": [],
+        "correctAnswer": "The Kutub as-Sittah are the six major Sunni Hadith collections: the two Sahihs (Bukhari and Muslim) and the four Sunan books.",
+        "explanation": "These six books are the most relied-upon Hadith sources in Sunni Islam.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe two ways Hadith scholars verified the reliability of a Hadith.",
+        "options": [],
+        "correctAnswer": "They studied the character, honesty, and memory of each narrator, and they checked that the chain of narrators was unbroken and connected back to the Prophet.",
+        "explanation": "They also compared the matn with the Qur'an and other reliable reports to detect errors or contradictions.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Explain one important function of the Hadith in Islamic law and life.",
+        "options": [],
+        "correctAnswer": "The Hadith explains and gives detail to the general teachings of the Qur'an, such as showing how to perform prayer, fasting, and zakat in practice.",
+        "explanation": "The Hadith is a primary source of Islamic law alongside the Qur'an and guides Muslims in applying its commands.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A student finds a saying attributed to the Prophet whose chain of narrators includes a person known by scholars to be a liar. According to the sciences of Hadith, how should this report be treated?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accepted as sahih because it is about the Prophet",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Rejected, because a narrator who is a liar makes the report unreliable, possibly fabricated (mawdu')",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Treated as part of the Qur'an",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Automatically counted as mutawatir",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Because the authenticity of a Hadith depends on every narrator being trustworthy, a known liar in the chain causes the report to be rejected as weak or fabricated.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The Qur'an commands Muslims to 'establish prayer' but does not give every detail of how to pray. How does the science of Hadith help solve this for a believer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It tells believers to ignore the command until it is clearer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It cancels the command of prayer found in the Qur'an",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The Hadith records how the Prophet actually prayed, giving the practical details that explain the Qur'anic command",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "It replaces prayer with another act of worship",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "One main function of the Hadith is to explain and detail the Qur'an; the Prophet's recorded practice shows believers exactly how to perform the prayer the Qur'an commands.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two reports describe the same event. One is reported by many narrators at every link of the chain; the other is reported by a single narrator. Which is more certain to be authentically transmitted, and why?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The single-narrator (ahad) report, because fewer people means fewer mistakes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The widely reported (mutawatir) one, because so many independent narrators could not all have agreed on a lie",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Neither, because the number of narrators does not matter",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Both are equal because they describe the same event",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A mutawatir report has so many narrators at every stage that error or collusion is impossible, giving greater certainty than an ahad report by a single narrator.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

@@ -1,32 +1,10 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import {
-  LayoutDashboard, BookOpen, HelpCircle, Users, CreditCard,
-  BarChart3, FileText, Bell, Settings, LogOut, Zap,
-} from 'lucide-react';
+import { LogOut, Zap } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { signOut } from '../../services/authService';
 import { useAuthStore } from '../../store/authStore';
-import type { AdminRole } from '../../types';
-
-interface NavItem {
-  label: string;
-  href: string;
-  icon: React.ReactNode;
-  roles: AdminRole[];
-}
-
-const NAV_ITEMS: NavItem[] = [
-  { label: 'Dashboard', href: '/dashboard', icon: <LayoutDashboard size={18} />, roles: ['super_admin', 'content_editor', 'viewer'] },
-  { label: 'Curriculum', href: '/curriculum', icon: <BookOpen size={18} />, roles: ['super_admin', 'content_editor'] },
-  { label: 'Questions', href: '/questions', icon: <HelpCircle size={18} />, roles: ['super_admin', 'content_editor'] },
-  { label: 'Students', href: '/students', icon: <Users size={18} />, roles: ['super_admin', 'viewer'] },
-  { label: 'Subscriptions', href: '/subscriptions', icon: <CreditCard size={18} />, roles: ['super_admin'] },
-  { label: 'Analytics', href: '/analytics', icon: <BarChart3 size={18} />, roles: ['super_admin', 'viewer'] },
-  { label: 'Content', href: '/content', icon: <FileText size={18} />, roles: ['super_admin', 'content_editor'] },
-  { label: 'Notifications', href: '/notifications', icon: <Bell size={18} />, roles: ['super_admin'] },
-  { label: 'Settings', href: '/settings', icon: <Settings size={18} />, roles: ['super_admin'] },
-];
+import { NAV_ITEMS } from './navItems';
 
 export function SidebarNav() {
   const user = useAuthStore((s) => s.user);
@@ -49,7 +27,7 @@ export function SidebarNav() {
           <Zap size={16} className="text-primary-foreground" />
         </div>
         <div>
-          <p className="text-sm font-bold text-foreground">Soma AI</p>
+          <p className="text-sm font-bold text-foreground">Soma</p>
           <p className="text-[10px] text-muted-foreground">Admin Panel</p>
         </div>
       </div>

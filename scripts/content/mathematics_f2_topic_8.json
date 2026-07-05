@@ -1,442 +1,372 @@
 {
   "topicId": "form_2_mathematics_topic_8",
-  "topicName": "Pythagoras' Theorem",
+  "topicName": "Trigonometry",
   "order": 8,
-  "description": "This topic covers the statement of Pythagoras' theorem, finding the hypotenuse and shorter sides of right-angled triangles, identifying Pythagorean triples, and applying the theorem to real-life and 2D/3D problems.",
+  "description": "An introduction to the sine, cosine and tangent ratios in right-angled triangles, the values of special angles, basic trigonometric identities, and using these ratios to solve problems involving angles of elevation and depression.",
   "packs": {
     "mcq": [
       {
-        "questionText": "In a right-angled triangle, the longest side, which is always opposite the right angle, is called the:",
+        "questionText": "sin θ is defined as:",
         "options": [
-          {"id": "a", "text": "Adjacent side", "isCorrect": false},
-          {"id": "b", "text": "Hypotenuse", "isCorrect": true},
-          {"id": "c", "text": "Base", "isCorrect": false},
-          {"id": "d", "text": "Perpendicular", "isCorrect": false}
+          {"id": "a", "text": "adjacent/hypotenuse", "isCorrect": false},
+          {"id": "b", "text": "opposite/hypotenuse", "isCorrect": true},
+          {"id": "c", "text": "opposite/adjacent", "isCorrect": false},
+          {"id": "d", "text": "hypotenuse/opposite", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The hypotenuse is the side opposite the right angle and is always the longest side of a right-angled triangle.",
+        "explanation": "The sine of an angle is the ratio of the side opposite the angle to the hypotenuse. This is remembered by SOH: Sine = Opposite / Hypotenuse. Exam Tip: use SOH-CAH-TOA to recall the three ratios.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Pythagoras' theorem states that for a right-angled triangle with hypotenuse c and other two sides a and b:",
+        "questionText": "tan θ =",
         "options": [
-          {"id": "a", "text": "a + b = c", "isCorrect": false},
-          {"id": "b", "text": "a² + b² = c²", "isCorrect": true},
-          {"id": "c", "text": "a² - b² = c²", "isCorrect": false},
-          {"id": "d", "text": "a² + c² = b²", "isCorrect": false}
+          {"id": "a", "text": "opposite/hypotenuse", "isCorrect": false},
+          {"id": "b", "text": "adjacent/opposite", "isCorrect": false},
+          {"id": "c", "text": "opposite/adjacent", "isCorrect": true},
+          {"id": "d", "text": "adjacent/hypotenuse", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Pythagoras' theorem states the square of the hypotenuse equals the sum of the squares of the other two sides: a² + b² = c².",
+        "correctAnswer": "c",
+        "explanation": "The tangent of an angle is the ratio of the opposite side to the adjacent side. This is remembered by TOA: Tangent = Opposite / Adjacent. Exam Tip: tan never involves the hypotenuse.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A right-angled triangle has two shorter sides of length 6 cm and 8 cm. What is the length of the hypotenuse?",
+        "questionText": "The side opposite the right angle is the:",
         "options": [
-          {"id": "a", "text": "10 cm", "isCorrect": true},
-          {"id": "b", "text": "14 cm", "isCorrect": false},
-          {"id": "c", "text": "12 cm", "isCorrect": false},
-          {"id": "d", "text": "48 cm", "isCorrect": false}
+          {"id": "a", "text": "Opposite", "isCorrect": false},
+          {"id": "b", "text": "Adjacent", "isCorrect": false},
+          {"id": "c", "text": "Hypotenuse", "isCorrect": true},
+          {"id": "d", "text": "Base", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "In a right-angled triangle the side directly opposite the 90° angle is the hypotenuse, and it is always the longest side. Exam Tip: locate the right angle first, then the side facing it is the hypotenuse.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In triangle ABC right-angled at B, AB = 3, BC = 4 and AC = 5. What is sin A?",
+        "options": [
+          {"id": "a", "text": "3/5", "isCorrect": false},
+          {"id": "b", "text": "4/5", "isCorrect": true},
+          {"id": "c", "text": "3/4", "isCorrect": false},
+          {"id": "d", "text": "4/3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The side opposite angle A is BC = 4 and the hypotenuse is AC = 5, so sin A = opposite/hypotenuse = 4/5. Exam Tip: identify the side opposite the named angle before applying SOH.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In triangle ABC right-angled at B with AB = 3, BC = 4 and AC = 5, what is cos A?",
+        "options": [
+          {"id": "a", "text": "3/5", "isCorrect": true},
+          {"id": "b", "text": "4/5", "isCorrect": false},
+          {"id": "c", "text": "3/4", "isCorrect": false},
+          {"id": "d", "text": "5/3", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "c² = 6² + 8² = 36 + 64 = 100, so c = √100 = 10 cm.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The hypotenuse of a right-angled triangle is 13 cm and one of the shorter sides is 5 cm. Find the length of the other side.",
-        "options": [
-          {"id": "a", "text": "8 cm", "isCorrect": false},
-          {"id": "b", "text": "18 cm", "isCorrect": false},
-          {"id": "c", "text": "12 cm", "isCorrect": true},
-          {"id": "d", "text": "14 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "b² = 13² - 5² = 169 - 25 = 144, so b = √144 = 12 cm.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which of the following sets of numbers forms a Pythagorean triple?",
-        "options": [
-          {"id": "a", "text": "2, 3, 4", "isCorrect": false},
-          {"id": "b", "text": "5, 12, 13", "isCorrect": true},
-          {"id": "c", "text": "4, 5, 6", "isCorrect": false},
-          {"id": "d", "text": "6, 7, 8", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "5² + 12² = 25 + 144 = 169 = 13², so 5, 12, 13 is a Pythagorean triple.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A ladder 5 m long leans against a wall with its foot 3 m from the base of the wall. How high up the wall does the ladder reach?",
-        "options": [
-          {"id": "a", "text": "2 m", "isCorrect": false},
-          {"id": "b", "text": "4 m", "isCorrect": true},
-          {"id": "c", "text": "8 m", "isCorrect": false},
-          {"id": "d", "text": "6 m", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Height² = 5² - 3² = 25 - 9 = 16, so height = √16 = 4 m.",
+        "explanation": "The side adjacent to angle A is AB = 3 and the hypotenuse is AC = 5, so cos A = adjacent/hypotenuse = 3/5. Exam Tip: the adjacent side touches the angle but is not the hypotenuse.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Find the length of the diagonal of a rectangle that is 9 cm long and 12 cm wide.",
+        "questionText": "sin 30° =",
         "options": [
-          {"id": "a", "text": "21 cm", "isCorrect": false},
-          {"id": "b", "text": "15 cm", "isCorrect": true},
-          {"id": "c", "text": "20 cm", "isCorrect": false},
-          {"id": "d", "text": "225 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "Diagonal² = 9² + 12² = 81 + 144 = 225, so diagonal = √225 = 15 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The two shorter sides of a right-angled triangle are 7 cm and 24 cm. The length of the hypotenuse is:",
-        "options": [
-          {"id": "a", "text": "25 cm", "isCorrect": true},
-          {"id": "b", "text": "31 cm", "isCorrect": false},
-          {"id": "c", "text": "23 cm", "isCorrect": false},
-          {"id": "d", "text": "17 cm", "isCorrect": false}
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "√3/2", "isCorrect": false},
+          {"id": "c", "text": "1/√2", "isCorrect": false},
+          {"id": "d", "text": "√3", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "c² = 7² + 24² = 49 + 576 = 625, so c = √625 = 25 cm.",
-        "difficulty": "medium"
+        "explanation": "30° is a special angle, and its sine value is 1/2. This comes from the 30-60-90 triangle where the side opposite 30° is half the hypotenuse. Exam Tip: memorise sin 30° = 1/2, sin 45° = 1/√2 and sin 60° = √3/2.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If the three sides of a triangle are 9 cm, 40 cm and 41 cm, the triangle is:",
+        "questionText": "tan 45° =",
         "options": [
-          {"id": "a", "text": "An acute-angled triangle", "isCorrect": false},
-          {"id": "b", "text": "An obtuse-angled triangle", "isCorrect": false},
-          {"id": "c", "text": "A right-angled triangle", "isCorrect": true},
-          {"id": "d", "text": "An equilateral triangle", "isCorrect": false}
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "1/2", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": true},
+          {"id": "d", "text": "√3", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Since 9² + 40² = 81 + 1600 = 1681 = 41², the converse of Pythagoras' theorem shows it is right-angled.",
-        "difficulty": "medium"
+        "explanation": "At 45° the opposite and adjacent sides are equal, so their ratio tan 45° = 1. Exam Tip: tan 45° = 1 because the isosceles right triangle has equal legs.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A square has a diagonal of length 10√2 cm. What is the length of each side of the square?",
+        "questionText": "cos 60° =",
         "options": [
-          {"id": "a", "text": "20 cm", "isCorrect": false},
-          {"id": "b", "text": "5 cm", "isCorrect": false},
-          {"id": "c", "text": "10 cm", "isCorrect": true},
-          {"id": "d", "text": "14 cm", "isCorrect": false}
+          {"id": "a", "text": "1/2", "isCorrect": true},
+          {"id": "b", "text": "√3/2", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": false},
+          {"id": "d", "text": "1/√2", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "For a square of side s, the diagonal is s√2. So s√2 = 10√2 gives s = 10 cm.",
-        "difficulty": "medium"
+        "correctAnswer": "a",
+        "explanation": "60° is a special angle, and its cosine value is 1/2. Note that cos 60° equals sin 30°, since 60° and 30° are complementary. Exam Tip: cos 60° = 1/2 and cos 30° = √3/2.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A right-angled triangle has shorter sides 1 cm and 2 cm. What is the length of the hypotenuse?",
+        "questionText": "sin²θ + cos²θ =",
         "options": [
-          {"id": "a", "text": "3 cm", "isCorrect": false},
-          {"id": "b", "text": "√3 cm", "isCorrect": false},
-          {"id": "c", "text": "√5 cm", "isCorrect": true},
-          {"id": "d", "text": "5 cm", "isCorrect": false}
-        ],
-        "correctAnswer": "c",
-        "explanation": "c² = 1² + 2² = 1 + 4 = 5, so c = √5 cm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A person walks 12 km due east, then turns and walks 5 km due north. How far is the person from the starting point in a straight line?",
-        "options": [
-          {"id": "a", "text": "17 km", "isCorrect": false},
-          {"id": "b", "text": "13 km", "isCorrect": true},
-          {"id": "c", "text": "7 km", "isCorrect": false},
-          {"id": "d", "text": "169 km", "isCorrect": false}
+          {"id": "a", "text": "0", "isCorrect": false},
+          {"id": "b", "text": "1", "isCorrect": true},
+          {"id": "c", "text": "tan θ", "isCorrect": false},
+          {"id": "d", "text": "2", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The straight-line distance² = 12² + 5² = 144 + 25 = 169, so the distance = √169 = 13 km.",
+        "explanation": "The Pythagorean identity states that sin²θ + cos²θ = 1 for any angle θ. It follows directly from Pythagoras' theorem applied to a right triangle. Exam Tip: this identity is true for every angle and is worth memorising.",
         "difficulty": "medium"
       },
       {
-        "questionText": "An isosceles triangle has two equal sides of 13 cm and a base of 10 cm. What is its perpendicular height from the base to the apex?",
+        "questionText": "tan θ written in terms of sin and cos is:",
         "options": [
-          {"id": "a", "text": "11 cm", "isCorrect": false},
-          {"id": "b", "text": "12 cm", "isCorrect": true},
-          {"id": "c", "text": "8 cm", "isCorrect": false},
-          {"id": "d", "text": "9 cm", "isCorrect": false}
+          {"id": "a", "text": "sin θ × cos θ", "isCorrect": false},
+          {"id": "b", "text": "sin θ + cos θ", "isCorrect": false},
+          {"id": "c", "text": "sin θ / cos θ", "isCorrect": true},
+          {"id": "d", "text": "cos θ / sin θ", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "The height splits the base into 5 cm halves; height² = 13² - 5² = 169 - 25 = 144, so height = 12 cm.",
-        "difficulty": "hard"
+        "correctAnswer": "c",
+        "explanation": "Since sin θ = opposite/hypotenuse and cos θ = adjacent/hypotenuse, dividing them cancels the hypotenuse to give opposite/adjacent = tan θ. So tan θ = sin θ / cos θ. Exam Tip: tan θ = sin θ / cos θ, not the other way round.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "The shorter sides of a right-angled triangle are (x) cm and (x + 7) cm, and the hypotenuse is 17 cm. What is the value of x?",
+        "questionText": "A right-angled triangle has a hypotenuse of 10 cm and one angle of 30°. How long is the side opposite the 30° angle?",
         "options": [
-          {"id": "a", "text": "5", "isCorrect": false},
-          {"id": "b", "text": "8", "isCorrect": true},
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "8.66", "isCorrect": false},
           {"id": "c", "text": "10", "isCorrect": false},
-          {"id": "d", "text": "12", "isCorrect": false}
+          {"id": "d", "text": "20", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "x² + (x+7)² = 17² gives 2x² + 14x + 49 = 289, so 2x² + 14x - 240 = 0, x² + 7x - 120 = 0, (x+15)(x-8) = 0; taking the positive value, x = 8.",
-        "difficulty": "hard"
+        "correctAnswer": "a",
+        "explanation": "Using sin 30° = opposite/hypotenuse, the opposite = 10 × sin 30° = 10 × 1/2 = 5 cm. Exam Tip: choose the ratio that links the known hypotenuse to the unknown opposite side.",
+        "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is NOT a Pythagorean triple?",
+        "questionText": "A 6 m ladder leans against a wall at 60° to the ground. How high up the wall does it reach?",
         "options": [
-          {"id": "a", "text": "8, 15, 17", "isCorrect": false},
-          {"id": "b", "text": "9, 12, 15", "isCorrect": false},
-          {"id": "c", "text": "10, 24, 26", "isCorrect": false},
-          {"id": "d", "text": "6, 8, 12", "isCorrect": true}
+          {"id": "a", "text": "3", "isCorrect": false},
+          {"id": "b", "text": "3√3", "isCorrect": true},
+          {"id": "c", "text": "6√3", "isCorrect": false},
+          {"id": "d", "text": "2√3", "isCorrect": false}
         ],
-        "correctAnswer": "d",
-        "explanation": "For 6, 8, 12: 6² + 8² = 36 + 64 = 100 ≠ 144 = 12², so it is not a Pythagorean triple, while the others satisfy a² + b² = c².",
-        "difficulty": "hard"
+        "correctAnswer": "b",
+        "explanation": "The height is opposite the 60° angle and the ladder is the hypotenuse, so height = 6 × sin 60° = 6 × √3/2 = 3√3 m. Exam Tip: the ladder length is the hypotenuse, and the wall height is opposite the ground angle.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If tan θ = 3/4 and θ is acute, what is sin θ?",
+        "options": [
+          {"id": "a", "text": "3/4", "isCorrect": false},
+          {"id": "b", "text": "3/5", "isCorrect": true},
+          {"id": "c", "text": "4/5", "isCorrect": false},
+          {"id": "d", "text": "5/3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "With opposite = 3 and adjacent = 4, Pythagoras gives the hypotenuse = √(3² + 4²) = 5, so sin θ = opposite/hypotenuse = 3/5. Exam Tip: from tan you can find the third side with Pythagoras, then read off sin or cos.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The angle of elevation to the top of a tower from a point 50 m away is 45°. What is the height of the tower?",
+        "options": [
+          {"id": "a", "text": "25", "isCorrect": false},
+          {"id": "b", "text": "50", "isCorrect": true},
+          {"id": "c", "text": "50√3", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Using tan 45° = height/distance, the height = 50 × tan 45° = 50 × 1 = 50 m. Exam Tip: tan links the horizontal distance to the vertical height in elevation problems.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "From the top of an 80 m cliff, the angle of depression to a boat is 30°. What is the horizontal distance to the boat?",
+        "options": [
+          {"id": "a", "text": "80√3", "isCorrect": true},
+          {"id": "b", "text": "40", "isCorrect": false},
+          {"id": "c", "text": "80/√3", "isCorrect": false},
+          {"id": "d", "text": "160", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using tan 30° = height/distance, we have tan 30° = 80/d, so d = 80/tan 30° = 80 × √3 = 80√3 m. Exam Tip: the angle of depression equals the angle of elevation from the boat, so use it with the cliff height.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "In a right-angled triangle, the side opposite the right angle is called the _____.",
-        "options": [],
-        "correctAnswer": "hypotenuse",
-        "explanation": "The hypotenuse is opposite the right angle and is the longest side.",
+        "questionText": "cos θ = ______ / hypotenuse.",
+        "options": [
+          {"id": "a", "text": "adjacent", "isCorrect": true},
+          {"id": "b", "text": "opposite", "isCorrect": false},
+          {"id": "c", "text": "hypotenuse", "isCorrect": false},
+          {"id": "d", "text": "base angle", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "By CAH, cosine is the adjacent side divided by the hypotenuse, so the missing word is adjacent. Exam Tip: CAH means Cosine = Adjacent / Hypotenuse.",
         "difficulty": "easy"
       },
       {
-        "questionText": "If the two shorter sides of a right-angled triangle are 3 cm and 4 cm, the hypotenuse is _____ cm.",
-        "options": [],
-        "correctAnswer": "5",
-        "explanation": "c² = 3² + 4² = 9 + 16 = 25, so c = √25 = 5 cm.",
+        "questionText": "sin 90° = ______.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "1/2", "isCorrect": false},
+          {"id": "d", "text": "√3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The sine of 90° reaches its maximum value of 1. Exam Tip: sin increases from 0 at 0° to its maximum of 1 at 90°.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Pythagoras' theorem can only be applied to a _____-angled triangle.",
-        "options": [],
-        "correctAnswer": "right",
-        "explanation": "The theorem holds only for triangles containing a 90° (right) angle.",
+        "questionText": "tan 60° = ______.",
+        "options": [
+          {"id": "a", "text": "√3", "isCorrect": true},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "1/√3", "isCorrect": false},
+          {"id": "d", "text": "√3/2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "For the special angle 60°, tan 60° = √3. Exam Tip: tan 30° = 1/√3, tan 45° = 1 and tan 60° = √3 form a rising pattern.",
         "difficulty": "easy"
       },
       {
-        "questionText": "For the right-angled triangle with hypotenuse 10 cm and one side 6 cm, the other side is _____ cm.",
-        "options": [],
-        "correctAnswer": "8",
-        "explanation": "b² = 10² - 6² = 100 - 36 = 64, so b = √64 = 8 cm.",
+        "questionText": "cos 45° = ______.",
+        "options": [
+          {"id": "a", "text": "1/√2", "isCorrect": true},
+          {"id": "b", "text": "1/2", "isCorrect": false},
+          {"id": "c", "text": "√3/2", "isCorrect": false},
+          {"id": "d", "text": "1", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "At 45° both cosine and sine equal 1/√2 because the two legs of the triangle are equal. Exam Tip: sin 45° = cos 45° = 1/√2.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The set of whole numbers 8, 15 and _____ forms a Pythagorean triple.",
-        "options": [],
-        "correctAnswer": "17",
-        "explanation": "8² + 15² = 64 + 225 = 289 = 17², so the missing number is 17.",
-        "difficulty": "medium"
+        "questionText": "If sin θ = 5/13 and θ is acute, then cos θ = ______.",
+        "options": [
+          {"id": "a", "text": "12/13", "isCorrect": true},
+          {"id": "b", "text": "5/12", "isCorrect": false},
+          {"id": "c", "text": "13/12", "isCorrect": false},
+          {"id": "d", "text": "8/13", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "With opposite = 5 and hypotenuse = 13, the adjacent side = √(13² − 5²) = √144 = 12, so cos θ = 12/13. Exam Tip: use Pythagoras to find the missing side, then form the cosine ratio.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A rectangle measures 8 cm by 6 cm. The length of its diagonal is _____ cm.",
-        "options": [],
-        "correctAnswer": "10",
-        "explanation": "Diagonal² = 8² + 6² = 64 + 36 = 100, so the diagonal = √100 = 10 cm.",
-        "difficulty": "medium"
+        "questionText": "In a right-angled triangle the opposite side is 7 and the adjacent side is 7, so θ = ______°.",
+        "options": [
+          {"id": "a", "text": "45", "isCorrect": true},
+          {"id": "b", "text": "30", "isCorrect": false},
+          {"id": "c", "text": "60", "isCorrect": false},
+          {"id": "d", "text": "90", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since tan θ = opposite/adjacent = 7/7 = 1, and tan 45° = 1, the angle is 45°. Exam Tip: equal opposite and adjacent sides always give a 45° angle.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "If the two shorter sides of a right-angled triangle are each 5 cm, the hypotenuse is 5√_____ cm.",
-        "options": [],
-        "correctAnswer": "2",
-        "explanation": "c² = 5² + 5² = 25 + 25 = 50, so c = √50 = 5√2 cm.",
-        "difficulty": "medium"
+        "questionText": "The angle of ______ is measured upwards from the horizontal to an object above.",
+        "options": [
+          {"id": "a", "text": "elevation", "isCorrect": true},
+          {"id": "b", "text": "depression", "isCorrect": false},
+          {"id": "c", "text": "rotation", "isCorrect": false},
+          {"id": "d", "text": "inclination", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The angle of elevation is measured upwards from the horizontal line of sight to an object that is higher than the observer. Exam Tip: elevation looks up, depression looks down.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A flagpole casts a horizontal shadow of 12 m, and the distance from the top of the pole to the tip of the shadow is 13 m. The height of the pole is _____ m.",
-        "options": [],
-        "correctAnswer": "5",
-        "explanation": "Height² = 13² - 12² = 169 - 144 = 25, so height = √25 = 5 m.",
-        "difficulty": "medium"
+        "questionText": "sin 30° + cos 60° = ______.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "1/2", "isCorrect": false},
+          {"id": "c", "text": "√3", "isCorrect": false},
+          {"id": "d", "text": "0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "sin 30° = 1/2 and cos 60° = 1/2, so their sum is 1/2 + 1/2 = 1. Exam Tip: substitute the known special-angle values before adding.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A cube has edges of length 2 cm. The length of its space (longest) diagonal is 2√_____ cm.",
-        "options": [],
-        "correctAnswer": "3",
-        "explanation": "The space diagonal of a cube of edge a is a√3, so for a = 2 it is 2√3 cm.",
-        "difficulty": "hard"
+        "questionText": "A pole 9 m tall casts a shadow when the sun's angle of elevation is 60°. The shadow length is ______ m.",
+        "options": [
+          {"id": "a", "text": "3√3", "isCorrect": true},
+          {"id": "b", "text": "9√3", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": false},
+          {"id": "d", "text": "18", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Using tan 60° = height/shadow, shadow = 9/tan 60° = 9/√3 = 3√3 m after rationalising. Exam Tip: the pole is opposite the sun's angle and the shadow is adjacent, so use tan.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The statement 'if a² + b² = c² then the triangle is right-angled' is known as the _____ of Pythagoras' theorem.",
-        "options": [],
-        "correctAnswer": "converse",
-        "explanation": "The converse of Pythagoras' theorem is used to test whether a triangle is right-angled.",
-        "difficulty": "hard"
+        "questionText": "If cos θ = sin θ and θ is acute, then θ = ______°.",
+        "options": [
+          {"id": "a", "text": "45", "isCorrect": true},
+          {"id": "b", "text": "30", "isCorrect": false},
+          {"id": "c", "text": "60", "isCorrect": false},
+          {"id": "d", "text": "90", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "cos θ = sin θ only when the two ratios are equal, which happens at 45° where both equal 1/√2. Exam Tip: sin and cos are equal exactly at 45°.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Pythagoras' theorem applies to every type of triangle, not only right-angled triangles.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The theorem applies only to right-angled triangles.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The hypotenuse is always the longest side of a right-angled triangle.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Being opposite the largest (90°) angle, the hypotenuse is always the longest side.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The numbers 3, 4 and 5 form a Pythagorean triple.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "3² + 4² = 9 + 16 = 25 = 5², so they form a Pythagorean triple.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "In a right-angled triangle with legs 6 cm and 8 cm, the hypotenuse is 14 cm.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "c = √(6² + 8²) = √100 = 10 cm, not 14 cm (14 is the sum of the legs, not the hypotenuse).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "If you multiply every number in a Pythagorean triple by 2, the result is still a Pythagorean triple.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Multiplying a triple by any positive whole number gives another triple, e.g. 3,4,5 becomes 6,8,10.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A triangle with sides 5 cm, 6 cm and 8 cm is a right-angled triangle.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "5² + 6² = 25 + 36 = 61 ≠ 64 = 8², so by the converse it is not right-angled.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The diagonal of a square of side s is given by s√2.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Diagonal² = s² + s² = 2s², so the diagonal = s√2.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "To find a shorter side of a right-angled triangle, you subtract the square of one side from the square of the hypotenuse and take the square root.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "From a² + b² = c² we get b = √(c² - a²), where c is the hypotenuse.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The numbers 7, 24 and 25 satisfy a² + b² = c².",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "7² + 24² = 49 + 576 = 625 = 25², so they satisfy the relation.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "The space diagonal of a rectangular box with dimensions l, w and h is found from d² = l² + w² + h².",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Applying Pythagoras' theorem twice in 3D gives d² = l² + w² + h².",
-        "difficulty": "hard"
-      }
+      {"questionText": "sin θ for an acute angle can be greater than 1.", "options": [], "correctAnswer": "false", "explanation": "For an acute angle sine is the opposite side over the hypotenuse, and the opposite side is always shorter than the hypotenuse, so sin θ is at most 1.", "difficulty": "easy"},
+      {"questionText": "tan 90° is undefined.", "options": [], "correctAnswer": "true", "explanation": "At 90° the adjacent side becomes zero, and dividing by zero is undefined, so tan 90° has no value.", "difficulty": "easy"},
+      {"questionText": "cos 0° = 1.", "options": [], "correctAnswer": "true", "explanation": "At 0° the adjacent side equals the hypotenuse, so cos 0° = 1.", "difficulty": "easy"},
+      {"questionText": "sin 60° = cos 30°.", "options": [], "correctAnswer": "true", "explanation": "60° and 30° are complementary angles, and sin θ = cos(90 − θ), so sin 60° = cos 30° = √3/2.", "difficulty": "easy"},
+      {"questionText": "The angle of depression from A to B equals the angle of elevation from B to A.", "options": [], "correctAnswer": "true", "explanation": "The two horizontal lines are parallel, so the angle of depression and the angle of elevation are alternate angles and therefore equal.", "difficulty": "easy"},
+      {"questionText": "If tan θ = 1 then θ = 60°.", "options": [], "correctAnswer": "false", "explanation": "tan θ = 1 occurs at 45°, not 60°, since tan 45° = 1 while tan 60° = √3.", "difficulty": "easy"},
+      {"questionText": "sin²45° + cos²45° = 1.", "options": [], "correctAnswer": "true", "explanation": "By the Pythagorean identity sin²θ + cos²θ = 1 for every angle, so it also holds at 45°.", "difficulty": "easy"},
+      {"questionText": "In a right-angled triangle the hypotenuse is always the longest side.", "options": [], "correctAnswer": "true", "explanation": "The hypotenuse lies opposite the largest angle, the 90° angle, so it is always the longest side.", "difficulty": "easy"},
+      {"questionText": "As an acute angle increases from 0° to 90°, cos θ increases.", "options": [], "correctAnswer": "false", "explanation": "Cosine decreases from 1 at 0° down to 0 at 90° as the angle increases, so it decreases rather than increases.", "difficulty": "easy"},
+      {"questionText": "The angle of elevation is measured from the vertical.", "options": [], "correctAnswer": "false", "explanation": "The angle of elevation is measured upwards from the horizontal line of sight, not from the vertical.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Statement of Pythagoras' theorem",
-        "options": [],
-        "correctAnswer": "In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides (a² + b² = c²).",
-        "explanation": "This is the core relationship between the three sides of a right-angled triangle.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the hypotenuse?",
-        "options": [],
-        "correctAnswer": "The longest side of a right-angled triangle, located opposite the right angle.",
-        "explanation": "It is denoted c in the formula a² + b² = c².",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for finding the hypotenuse",
-        "options": [],
-        "correctAnswer": "c = √(a² + b²), where a and b are the two shorter sides.",
-        "explanation": "Add the squares of the legs and take the square root.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for finding a shorter side",
-        "options": [],
-        "correctAnswer": "a = √(c² - b²), where c is the hypotenuse and b is the known shorter side.",
-        "explanation": "Subtract the square of the known leg from the square of the hypotenuse, then take the square root.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of a Pythagorean triple",
-        "options": [],
-        "correctAnswer": "A set of three whole numbers a, b and c that satisfy a² + b² = c².",
-        "explanation": "Examples include 3,4,5 and 5,12,13.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Common examples of Pythagorean triples",
-        "options": [],
-        "correctAnswer": "3,4,5; 5,12,13; 8,15,17; and 7,24,25.",
-        "explanation": "Memorising these helps solve problems quickly.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The converse of Pythagoras' theorem",
-        "options": [],
-        "correctAnswer": "If a² + b² = c² holds for a triangle's sides, then the triangle is right-angled.",
-        "explanation": "It is used to test whether a given triangle has a right angle.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Generating multiples of a triple",
-        "options": [],
-        "correctAnswer": "Multiplying each number in a Pythagorean triple by the same whole number gives another Pythagorean triple.",
-        "explanation": "For example, 3,4,5 multiplied by 3 gives 9,12,15.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Diagonal of a square",
-        "options": [],
-        "correctAnswer": "The diagonal of a square of side s is s√2.",
-        "explanation": "Found by applying Pythagoras to the two equal sides: d = √(s² + s²).",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Using Pythagoras' theorem in 3D",
-        "options": [],
-        "correctAnswer": "The space diagonal of a rectangular box with sides l, w and h is d = √(l² + w² + h²).",
-        "explanation": "It results from applying the theorem twice within the box.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Sine ratio", "options": [], "correctAnswer": "The ratio of the side opposite the angle to the hypotenuse: sin θ = opposite/hypotenuse (SOH).", "explanation": "For an angle in a right triangle, divide the opposite side by the hypotenuse to find its sine. Exam Tip: remember SOH for Sine = Opposite / Hypotenuse.", "difficulty": "easy"},
+      {"questionText": "Cosine ratio", "options": [], "correctAnswer": "The ratio of the side adjacent to the angle to the hypotenuse: cos θ = adjacent/hypotenuse (CAH).", "explanation": "For an angle in a right triangle, divide the adjacent side by the hypotenuse to find its cosine. Exam Tip: remember CAH for Cosine = Adjacent / Hypotenuse.", "difficulty": "easy"},
+      {"questionText": "Tangent ratio", "options": [], "correctAnswer": "The ratio of the side opposite the angle to the side adjacent to it: tan θ = opposite/adjacent (TOA).", "explanation": "For an angle in a right triangle, divide the opposite side by the adjacent side to find its tangent. Exam Tip: remember TOA for Tangent = Opposite / Adjacent, with no hypotenuse involved.", "difficulty": "easy"},
+      {"questionText": "Hypotenuse", "options": [], "correctAnswer": "The side opposite the right angle in a right-angled triangle, and always the longest side.", "explanation": "Because it faces the largest angle of 90°, the hypotenuse is longer than both other sides. Exam Tip: find the right angle first, then the side facing it is the hypotenuse.", "difficulty": "easy"},
+      {"questionText": "Special angles (30°, 45°, 60°)", "options": [], "correctAnswer": "Angles with exact trig values, e.g. sin 30° = 1/2, sin 45° = 1/√2 and sin 60° = √3/2.", "explanation": "These values come from the 30-60-90 and 45-45-90 triangles and appear often in exams. Exam Tip: memorise the sine, cosine and tangent of 30°, 45° and 60°.", "difficulty": "easy"},
+      {"questionText": "Pythagorean identity", "options": [], "correctAnswer": "The identity sin²θ + cos²θ = 1, true for every angle θ.", "explanation": "It follows from Pythagoras' theorem applied to a right triangle with hypotenuse 1. Exam Tip: use it to find one ratio when the other is known.", "difficulty": "easy"},
+      {"questionText": "tan θ as a quotient", "options": [], "correctAnswer": "tan θ = sin θ / cos θ, since dividing the sine and cosine ratios cancels the hypotenuse.", "explanation": "Because sin θ = opp/hyp and cos θ = adj/hyp, their quotient is opp/adj = tan θ. Exam Tip: this lets you find tan θ from sin θ and cos θ.", "difficulty": "easy"},
+      {"questionText": "Complementary angles", "options": [], "correctAnswer": "Two angles that add up to 90°, where sin θ = cos(90 − θ).", "explanation": "For example sin 60° = cos 30° because 60° and 30° are complementary. Exam Tip: the sine of an angle equals the cosine of its complement.", "difficulty": "easy"},
+      {"questionText": "Angle of elevation", "options": [], "correctAnswer": "The angle measured upwards from the horizontal line of sight to an object above the observer.", "explanation": "It is used with tan to find heights of objects like towers and poles. Exam Tip: elevation always looks upward from the horizontal.", "difficulty": "easy"},
+      {"questionText": "Angle of depression", "options": [], "correctAnswer": "The angle measured downwards from the horizontal line of sight to an object below the observer.", "explanation": "It equals the angle of elevation from the object back to the observer because of parallel horizontals. Exam Tip: depression looks downward and equals the matching elevation angle.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A rectangular room is 12 m long, 9 m wide and 8 m high. A spider sits at one bottom corner and a fly at the opposite top corner. What is the straight-line (through the air) distance between them?",
+        "questionText": "Evaluate (sin 60° × cos 30°) + (sin 30° × cos 60°).",
         "options": [
-          {"id": "a", "text": "17 m", "isCorrect": true},
-          {"id": "b", "text": "15 m", "isCorrect": false},
-          {"id": "c", "text": "29 m", "isCorrect": false},
-          {"id": "d", "text": "20 m", "isCorrect": false}
-        ],
-        "correctAnswer": "a",
-        "explanation": "The space diagonal d = √(12² + 9² + 8²) = √(144 + 81 + 64) = √289 = 17 m.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "Two vertical poles of heights 9 m and 4 m stand on level ground 12 m apart. A straight wire connects their tops. What is the length of the wire?",
-        "options": [
-          {"id": "a", "text": "12 m", "isCorrect": false},
-          {"id": "b", "text": "13 m", "isCorrect": true},
-          {"id": "c", "text": "15 m", "isCorrect": false},
-          {"id": "d", "text": "17 m", "isCorrect": false}
-        ],
-        "correctAnswer": "b",
-        "explanation": "The vertical difference is 9 - 4 = 5 m and the horizontal distance is 12 m, so the wire = √(12² + 5²) = √(144 + 25) = √169 = 13 m.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "In an equilateral triangle of side 8 cm, what is the perpendicular height from one vertex to the opposite side?",
-        "options": [
-          {"id": "a", "text": "4 cm", "isCorrect": false},
-          {"id": "b", "text": "8√3 cm", "isCorrect": false},
-          {"id": "c", "text": "4√3 cm", "isCorrect": true},
-          {"id": "d", "text": "6 cm", "isCorrect": false}
+          {"id": "a", "text": "1/2", "isCorrect": false},
+          {"id": "b", "text": "√3/2", "isCorrect": false},
+          {"id": "c", "text": "1", "isCorrect": true},
+          {"id": "d", "text": "3/4", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The height splits the base into 4 cm halves; height² = 8² - 4² = 64 - 16 = 48, so height = √48 = 4√3 cm.",
+        "explanation": "Substitute the special values: (√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 1. Exam Tip: this expression equals sin(60 + 30) = sin 90 = 1.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "From a point 40 m from a building, the angle of elevation to the top of the building is 60° and to the top of a flagpole standing on it is 65° (tan 65° ≈ 2.14). What is the height of the flagpole alone?",
+        "options": [
+          {"id": "a", "text": "69.3", "isCorrect": false},
+          {"id": "b", "text": "85.6", "isCorrect": false},
+          {"id": "c", "text": "16.3", "isCorrect": true},
+          {"id": "d", "text": "25.0", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The height to the flagpole top is 40 × tan 65° = 85.6 m and the building height is 40 × tan 60° = 69.3 m, so the flagpole alone is 85.6 − 69.3 = 16.3 m. Exam Tip: two-elevation problems subtract the two heights.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "From a 60 m lighthouse, the angles of depression of two boats on the same side and in line are 45° and 30° (√3 ≈ 1.73). What is the distance between the boats?",
+        "options": [
+          {"id": "a", "text": "43.8", "isCorrect": true},
+          {"id": "b", "text": "60", "isCorrect": false},
+          {"id": "c", "text": "103.8", "isCorrect": false},
+          {"id": "d", "text": "34.6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The nearer boat is at d1 = 60/tan 45° = 60 m and the farther boat is at d2 = 60/tan 30° = 103.8 m, so the distance between them is 103.8 − 60 = 43.8 m. Exam Tip: a steeper depression angle means the nearer boat.",
         "difficulty": "hard"
       }
     ]

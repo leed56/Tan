@@ -6,8 +6,22 @@ const fontFamily = Platform.select({
   default: 'System',
 });
 
+// Inter, loaded at startup in App.tsx (@expo-google-fonts/inter). Custom
+// fonts in React Native register one family name PER WEIGHT — pairing a
+// generic family name with `fontWeight` would synthesize a fake bold — so
+// styles opt in with `fontFamily: TYPOGRAPHY.families.<weight>` and omit
+// fontWeight.
+const families = {
+  regular: 'Inter_400Regular',
+  medium: 'Inter_500Medium',
+  semibold: 'Inter_600SemiBold',
+  bold: 'Inter_700Bold',
+  extrabold: 'Inter_800ExtraBold',
+} as const;
+
 export const TYPOGRAPHY = {
   fontFamily,
+  families,
 
   sizes: {
     xs: 11,

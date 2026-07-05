@@ -15,12 +15,15 @@
  */
 import { createRequire } from 'module';
 import { readdirSync, readFileSync } from 'fs';
-const require = createRequire('/home/user/Tan/functions/');
+import { fileURLToPath } from 'url';
+// firebase-admin lives in functions/node_modules (run `npm install` there
+// first); resolve it relative to this script so the seeder runs from any OS.
+const require = createRequire(fileURLToPath(new URL('../functions/noop.js', import.meta.url)));
 const admin = require('firebase-admin');
 
 const PROJECT = process.env.SEED_PROJECT_ID || 'tanza-9b182';
 const FILTER = process.argv[2] || '';
-const DIR = '/home/user/Tan/scripts/content';
+const DIR = fileURLToPath(new URL('./content', import.meta.url));
 
 admin.initializeApp({
   credential: admin.credential.cert(process.env.GOOGLE_APPLICATION_CREDENTIALS),
@@ -56,7 +59,7 @@ function validateAndHeal(file, t) {
     if (!Array.isArray(arr)) { errs.push(`${file}: pack '${key}' missing`); continue; }
     if (arr.length !== want) errs.push(`${file}: pack '${key}' has ${arr.length}, expected ${want}`);
   }
-  for (const key of ['mcq', 'hoq']) {
+  for (const key of ['mcq', 'fib', 'hoq']) {
     (t.packs[key] || []).forEach((q, i) => {
       if (!Array.isArray(q.options) || q.options.length !== 4) {
         errs.push(`${file}: ${key}[${i}] must have 4 options`);

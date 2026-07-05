@@ -4,19 +4,19 @@ const APP_ENV = process.env.APP_ENV ?? 'development';
 
 const envConfig = {
   development: {
-    name: 'Soma AI (Dev)',
+    name: 'Soma (Dev)',
     bundleId: 'com.somaaiedu.app.dev',
     icon: './assets/icon.png',
     appCheckDebugToken: process.env.EXPO_PUBLIC_APP_CHECK_DEBUG_TOKEN ?? '',
   },
   staging: {
-    name: 'Soma AI (Staging)',
+    name: 'Soma (Staging)',
     bundleId: 'com.somaaiedu.app.staging',
     icon: './assets/icon.png',
     appCheckDebugToken: '',
   },
   production: {
-    name: 'Soma AI',
+    name: 'Soma',
     bundleId: 'com.somaaiedu.app',
     icon: './assets/icon.png',
     appCheckDebugToken: '',

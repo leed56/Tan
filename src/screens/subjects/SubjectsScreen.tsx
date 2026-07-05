@@ -56,8 +56,7 @@ export function SubjectsScreen({ navigation }: Props) {
   }, [selectedFormId, fetchSubjects]);
 
   const handleRefresh = useCallback(() => {
-    // Force re-fetch by clearing cache entry
-    fetchSubjects(selectedFormId);
+    fetchSubjects(selectedFormId, true);
   }, [selectedFormId, fetchSubjects]);
 
   // Convert to Phase 1 Subject type with live progress
@@ -108,7 +107,7 @@ export function SubjectsScreen({ navigation }: Props) {
   if (error) {
     return (
       <ScreenContainer>
-        <ErrorState message={error} onRetry={() => { clearError(); fetchSubjects(selectedFormId); }} />
+        <ErrorState message={error} onRetry={() => { clearError(); fetchSubjects(selectedFormId, true); }} />
       </ScreenContainer>
     );
   }

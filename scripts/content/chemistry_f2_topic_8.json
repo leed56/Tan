@@ -1,730 +1,372 @@
 {
   "topicId": "form_2_chemistry_topic_8",
-  "topicName": "Periodic Classification of Elements",
+  "topicName": "Periodic Table Trends and Element Positions",
   "order": 8,
-  "description": "An introduction to how chemical elements are arranged in the periodic table by atomic number into periods and groups, and the general properties and trends of metals, non-metals, metalloids and selected groups.",
+  "description": "Covers how elements are arranged into groups and periods, how electron configuration determines an element's position, and the trends in metallic character and reactivity across periods and down groups.",
   "packs": {
     "mcq": [
       {
-        "questionText": "In the modern periodic table, elements are arranged in order of increasing what?",
+        "questionText": "In the periodic table, the vertical columns are called groups and the horizontal rows are called:",
         "options": [
-          {
-            "id": "a",
-            "text": "Atomic mass",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Atomic number",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Number of neutrons",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Density",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Shells", "isCorrect": false},
+          {"id": "b", "text": "Periods", "isCorrect": true},
+          {"id": "c", "text": "Blocks", "isCorrect": false},
+          {"id": "d", "text": "Bonds", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The modern periodic table arranges elements in order of increasing atomic number (number of protons).",
+        "explanation": "Vertical = groups; horizontal = periods. Exam Tip: Groups go down; periods go across.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What name is given to the horizontal rows of the periodic table?",
+        "questionText": "Elements in the same group of the periodic table have the same number of:",
         "options": [
-          {
-            "id": "a",
-            "text": "Groups",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Families",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Periods",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Blocks",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The horizontal rows in the periodic table are called periods, while the vertical columns are called groups.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "What name is given to the vertical columns of the periodic table?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Periods",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Groups",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Rows",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Series",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Neutrons", "isCorrect": false},
+          {"id": "b", "text": "Outer-shell (valence) electrons", "isCorrect": true},
+          {"id": "c", "text": "Protons", "isCorrect": false},
+          {"id": "d", "text": "Shells", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Vertical columns are called groups; elements in the same group have similar chemical properties.",
+        "explanation": "Same group members have the same number of outer-shell electrons. Exam Tip: Same group -> same valence electrons -> similar chemical properties.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Elements found in the same group of the periodic table have the same number of what?",
+        "questionText": "The period number of an element tells us the number of:",
         "options": [
-          {
-            "id": "a",
-            "text": "Outermost (valence) electrons",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Neutrons",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Energy levels (shells)",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Protons",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Protons", "isCorrect": false},
+          {"id": "b", "text": "Electron shells (energy levels) occupied", "isCorrect": true},
+          {"id": "c", "text": "Neutrons", "isCorrect": false},
+          {"id": "d", "text": "Valence electrons", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The period number equals the number of occupied electron shells. Exam Tip: Period number = number of shells. Group number = number of outer electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An element with the electronic configuration 2, 8, 1 belongs to Group:",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "8", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Members of the same group have the same number of valence electrons, which is why they show similar chemical behaviour.",
+        "explanation": "The group number equals the outer-shell electrons: the outer shell has 1 electron. Exam Tip: Outer electrons = group number. This element (2,8,1) is sodium, Group 1.",
         "difficulty": "medium"
       },
       {
-        "questionText": "The number of occupied energy levels (shells) of an element is shown by its what?",
+        "questionText": "An element with the electronic configuration 2, 8, 1 is in Period:",
         "options": [
-          {
-            "id": "a",
-            "text": "Group number",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Atomic mass",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Period number",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Valency",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "2", "isCorrect": false},
+          {"id": "c", "text": "3", "isCorrect": true},
+          {"id": "d", "text": "8", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The period number tells you how many electron shells (energy levels) an atom of that element has.",
+        "explanation": "The period number equals the number of shells used: 2,8,1 uses three shells. Exam Tip: Count the shells (numbers in the configuration): three numbers = Period 3.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which of the following is a property typical of metals?",
+        "questionText": "Group 1 elements (such as sodium and potassium) are known as the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Poor conductors of electricity",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Brittle and dull",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Good conductors of heat and electricity",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Exist mostly as gases at room temperature",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Halogens", "isCorrect": false},
+          {"id": "b", "text": "Alkali metals", "isCorrect": true},
+          {"id": "c", "text": "Noble gases", "isCorrect": false},
+          {"id": "d", "text": "Non-metals", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Metals are generally shiny, malleable and good conductors of heat and electricity.",
+        "correctAnswer": "b",
+        "explanation": "They are the alkali metals. Exam Tip: Group 1 = alkali metals. Group 7 = halogens. Group 8/0 = noble gases.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Elements that have properties of both metals and non-metals are called?",
+        "questionText": "Group 8 (0) elements, such as helium and argon, are called the noble gases because they are:",
         "options": [
-          {
-            "id": "a",
-            "text": "Halogens",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Metalloids",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Noble gases",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Alkali metals",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Very reactive", "isCorrect": false},
+          {"id": "b", "text": "Unreactive (inert) due to full outer shells", "isCorrect": true},
+          {"id": "c", "text": "Metals", "isCorrect": false},
+          {"id": "d", "text": "Acids", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Metalloids, such as silicon and boron, show some properties of metals and some of non-metals.",
+        "explanation": "They have full outer shells, so they are stable and unreactive. Exam Tip: Noble gases have full outer shells -> very stable -> unreactive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Across a period, from left to right, the metallic character of elements generally:",
+        "options": [
+          {"id": "a", "text": "Increases", "isCorrect": false},
+          {"id": "b", "text": "Decreases", "isCorrect": true},
+          {"id": "c", "text": "Stays the same", "isCorrect": false},
+          {"id": "d", "text": "Disappears", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Metals are on the left, non-metals on the right - metallic character decreases across. Exam Tip: Across a period (left to right): metallic character decreases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Down a group, the metallic character of elements generally:",
+        "options": [
+          {"id": "a", "text": "Decreases", "isCorrect": false},
+          {"id": "b", "text": "Increases", "isCorrect": true},
+          {"id": "c", "text": "Stays the same", "isCorrect": false},
+          {"id": "d", "text": "Becomes zero", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Elements become more metallic (more reactive metals) going down. Exam Tip: Down a group, metallic character INCREASES.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Elements in Group 7, such as chlorine and fluorine, are called the:",
+        "options": [
+          {"id": "a", "text": "Alkali metals", "isCorrect": false},
+          {"id": "b", "text": "Halogens", "isCorrect": true},
+          {"id": "c", "text": "Noble gases", "isCorrect": false},
+          {"id": "d", "text": "Alkaline earth metals", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "They are the halogens. Exam Tip: Group 7 = halogens (reactive non-metals, 7 outer electrons).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An element with 7 electrons in its outer shell is most likely to:",
+        "options": [
+          {"id": "a", "text": "Lose 7 electrons", "isCorrect": false},
+          {"id": "b", "text": "Gain 1 electron to complete its outer shell", "isCorrect": true},
+          {"id": "c", "text": "Be a metal", "isCorrect": false},
+          {"id": "d", "text": "Be unreactive", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "7 outer electrons need just 1 more; gaining 1 is easier than losing 7. Exam Tip: Near-full outer shells (6, 7 electrons) GAIN electrons -> non-metals.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which group of the periodic table contains the alkali metals?",
+        "questionText": "Which element is the most reactive metal in Group 1 among lithium, sodium and potassium?",
         "options": [
-          {
-            "id": "a",
-            "text": "Group VII",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Group 0",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Group II",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Group I",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Group I elements (lithium, sodium, potassium, etc.) are called the alkali metals.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The elements of Group VII are commonly known as the?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Halogens",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Noble gases",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Alkaline earth metals",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Transition metals",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Group VII elements such as fluorine, chlorine and bromine are called the halogens.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which group contains very unreactive gases such as helium, neon and argon?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Group I",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Group 0 (VIII)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Group VII",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Group III",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Group 0 (also called Group VIII) contains the noble gases, which are very unreactive because their outer shells are full.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An element with electron arrangement 2,8,1 belongs to which group and period?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Group I, Period 3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Group III, Period 1",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Group VIII, Period 2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Group II, Period 3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "It has 1 valence electron (Group I) and 3 occupied shells (Period 3); this element is sodium.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "As you move down Group I from lithium to potassium, the reactivity of the metals generally?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Decreases",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Stays the same",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Increases",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "First increases then decreases",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Lithium", "isCorrect": false},
+          {"id": "b", "text": "Sodium", "isCorrect": false},
+          {"id": "c", "text": "Potassium", "isCorrect": true},
+          {"id": "d", "text": "All equal", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Reactivity of alkali metals increases down the group because the outer electron is more easily lost.",
+        "explanation": "Reactivity of Group 1 metals increases down the group, so potassium, being lowest of the three, is the most reactive. Exam Tip: Down Group 1, reactivity INCREASES (Li < Na < K).",
         "difficulty": "medium"
       },
       {
-        "questionText": "At room temperature, the halogen chlorine exists as a?",
+        "questionText": "Elements are classified as metals or non-metals depending mainly on their:",
         "options": [
-          {
-            "id": "a",
-            "text": "Solid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Liquid",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Greenish-yellow gas",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Shiny metal",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Colour only", "isCorrect": false},
+          {"id": "b", "text": "Number of outer-shell electrons and their properties", "isCorrect": true},
+          {"id": "c", "text": "Mass number only", "isCorrect": false},
+          {"id": "d", "text": "Number of neutrons", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Few outer electrons -> metal (lose electrons); many -> non-metal (gain electrons). Exam Tip: Few outer electrons (1-3) -> metals. Many (5-7) -> non-metals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An element X has the configuration 2, 8, 8. Which family does it belong to?",
+        "options": [
+          {"id": "a", "text": "Alkali metals", "isCorrect": false},
+          {"id": "b", "text": "Halogens", "isCorrect": false},
+          {"id": "c", "text": "Noble gases", "isCorrect": true},
+          {"id": "d", "text": "Alkaline earth metals", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Chlorine is a greenish-yellow poisonous gas at room temperature.",
+        "explanation": "Full outer shell of 8 means a stable, unreactive element. Exam Tip: Full outer shell (8) -> noble gas (here argon, 2,8,8).",
         "difficulty": "medium"
       },
       {
-        "questionText": "An element in Group II of the periodic table has a valency of?",
+        "questionText": "Two elements in the same group of the periodic table are expected to have:",
         "options": [
-          {
-            "id": "a",
-            "text": "1",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "2",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Completely different chemical properties", "isCorrect": false},
+          {"id": "b", "text": "Similar chemical properties", "isCorrect": true},
+          {"id": "c", "text": "The same mass number", "isCorrect": false},
+          {"id": "d", "text": "The same number of neutrons", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Group II elements have 2 valence electrons, so their combining power (valency) is 2.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which scientist is credited with arranging the elements by atomic mass and leaving gaps for undiscovered elements?",
-        "options": [
-          {
-            "id": "a",
-            "text": "John Dalton",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Dmitri Mendeleev",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Ernest Rutherford",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Niels Bohr",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Dmitri Mendeleev arranged elements by atomic mass and left gaps for elements not yet discovered.",
-        "difficulty": "medium"
+        "explanation": "Same group means the same number of valence electrons -> similar chemical behaviour. Exam Tip: Group members react similarly because reactions depend on outer (valence) electrons.",
+        "difficulty": "easy"
       }
     ],
     "fib": [
       {
-        "questionText": "In the periodic table, the vertical columns are called _____.",
-        "options": [],
-        "correctAnswer": "groups",
-        "explanation": "Vertical columns are groups; elements in the same group have similar properties.",
+        "questionText": "The horizontal rows of the periodic table are called ____.",
+        "options": [
+          {"id": "a", "text": "periods", "isCorrect": true},
+          {"id": "b", "text": "groups", "isCorrect": false},
+          {"id": "c", "text": "blocks", "isCorrect": false},
+          {"id": "d", "text": "shells", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Periods are the horizontal rows of the periodic table, while groups are the vertical columns. Exam Tip: Periods = rows; groups = columns.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The horizontal rows of the periodic table are called _____.",
-        "options": [],
-        "correctAnswer": "periods",
-        "explanation": "Horizontal rows are called periods and show the number of electron shells.",
+        "questionText": "Elements in the same ____ have the same number of outer-shell electrons.",
+        "options": [
+          {"id": "a", "text": "group", "isCorrect": true},
+          {"id": "b", "text": "period", "isCorrect": false},
+          {"id": "c", "text": "block", "isCorrect": false},
+          {"id": "d", "text": "series", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Elements in the same group share the same number of valence electrons, giving them similar properties. Exam Tip: Same group -> similar properties.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Modern elements are arranged in order of increasing atomic _____.",
-        "options": [],
-        "correctAnswer": "number",
-        "explanation": "Atomic number (the number of protons) is the basis of arrangement in the modern periodic table.",
+        "questionText": "The period number of an element equals the number of ____ it has.",
+        "options": [
+          {"id": "a", "text": "electron shells (energy levels)", "isCorrect": true},
+          {"id": "b", "text": "protons", "isCorrect": false},
+          {"id": "c", "text": "neutrons", "isCorrect": false},
+          {"id": "d", "text": "valence electrons", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The period number tells you how many electron shells (energy levels) an atom uses. Exam Tip: Count the shells to get the period.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Elements of Group I are collectively known as the alkali _____.",
-        "options": [],
-        "correctAnswer": "metals",
-        "explanation": "Group I elements are soft, reactive metals known as alkali metals.",
+        "questionText": "Group 1 elements are called the ____ metals.",
+        "options": [
+          {"id": "a", "text": "alkali", "isCorrect": true},
+          {"id": "b", "text": "alkaline earth", "isCorrect": false},
+          {"id": "c", "text": "transition", "isCorrect": false},
+          {"id": "d", "text": "noble", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Group 1 elements such as lithium, sodium and potassium are known as alkali metals. Exam Tip: Alkali metals (Li, Na, K) are very reactive.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Elements of Group VII are collectively called the _____.",
-        "options": [],
-        "correctAnswer": "halogens",
-        "explanation": "The halogens are reactive non-metals found in Group VII.",
+        "questionText": "Group 8 (0) elements are called the ____ gases because they are unreactive.",
+        "options": [
+          {"id": "a", "text": "noble", "isCorrect": true},
+          {"id": "b", "text": "rare", "isCorrect": false},
+          {"id": "c", "text": "alkali", "isCorrect": false},
+          {"id": "d", "text": "halogen", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Group 8 (0) elements are called noble gases because their full outer shells make them stable and unreactive. Exam Tip: Noble gases have full outer shells -> inert.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Elements showing properties of both metals and non-metals are called _____.",
-        "options": [],
-        "correctAnswer": "metalloids",
-        "explanation": "Metalloids such as silicon lie along the dividing line between metals and non-metals.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The very unreactive gases in Group 0 are called the _____ gases.",
-        "options": [],
-        "correctAnswer": "noble",
-        "explanation": "Noble gases are unreactive because they have full outer electron shells.",
+        "questionText": "Across a period from left to right, the non-metallic character of elements generally ____.",
+        "options": [
+          {"id": "a", "text": "increases", "isCorrect": true},
+          {"id": "b", "text": "decreases", "isCorrect": false},
+          {"id": "c", "text": "stays the same", "isCorrect": false},
+          {"id": "d", "text": "disappears", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Moving left to right across a period, elements gain more outer electrons and become more non-metallic. Exam Tip: Across: non-metallic up, metallic down.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The number of valence electrons of an element is equal to its _____ number (for groups I to VII).",
-        "options": [],
-        "correctAnswer": "group",
-        "explanation": "For main-group elements the group number equals the number of outer electrons.",
-        "difficulty": "medium"
+        "questionText": "Down a group, the reactivity of the alkali metals (Group 1) ____.",
+        "options": [
+          {"id": "a", "text": "increases", "isCorrect": true},
+          {"id": "b", "text": "decreases", "isCorrect": false},
+          {"id": "c", "text": "stays the same", "isCorrect": false},
+          {"id": "d", "text": "becomes zero", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Down Group 1, the outer electron is further from the nucleus and more easily lost, so reactivity increases. Exam Tip: Li < Na < K in reactivity.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Going down Group I, the reactivity of the metals _____.",
-        "options": [],
-        "correctAnswer": "increases",
-        "explanation": "Reactivity increases down Group I as the outer electron is lost more easily.",
-        "difficulty": "medium"
+        "questionText": "An element with 1 electron in its outer shell is likely to be a ____ (metal/non-metal).",
+        "options": [
+          {"id": "a", "text": "metal", "isCorrect": true},
+          {"id": "b", "text": "non-metal", "isCorrect": false},
+          {"id": "c", "text": "metalloid", "isCorrect": false},
+          {"id": "d", "text": "noble gas", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "One outer electron is easily lost, so the element behaves as a reactive metal. Exam Tip: 1 outer electron -> very reactive metal (Group 1).",
+        "difficulty": "easy"
       },
       {
-        "questionText": "An atom with electron arrangement 2,8,7 has a valency of _____.",
-        "options": [],
-        "correctAnswer": "1",
-        "explanation": "With 7 outer electrons it needs to gain 1 electron, giving a valency of 1 (this element is chlorine).",
-        "difficulty": "hard"
+        "questionText": "Group 7 elements are known as the ____.",
+        "options": [
+          {"id": "a", "text": "halogens", "isCorrect": true},
+          {"id": "b", "text": "alkali metals", "isCorrect": false},
+          {"id": "c", "text": "noble gases", "isCorrect": false},
+          {"id": "d", "text": "alkaline earth metals", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Group 7 elements such as fluorine and chlorine are known as the halogens. Exam Tip: Halogens (F, Cl, Br) are reactive non-metals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An element with a full outer shell of electrons is ____ (reactive/unreactive).",
+        "options": [
+          {"id": "a", "text": "unreactive", "isCorrect": true},
+          {"id": "b", "text": "reactive", "isCorrect": false},
+          {"id": "c", "text": "radioactive", "isCorrect": false},
+          {"id": "d", "text": "unstable", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A full outer shell gives an atom a stable electron arrangement, so it does not readily react. Exam Tip: Full outer shell = noble gas = unreactive.",
+        "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Elements in the modern periodic table are arranged in order of increasing atomic mass.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "They are arranged by increasing atomic number, not atomic mass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Elements in the same group have the same number of valence electrons.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Having the same number of outer electrons gives group members similar chemical properties.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The period number of an element tells you the number of occupied electron shells.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The period number equals the number of energy levels (shells) in the atom.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Metals are generally poor conductors of electricity.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Metals are good conductors of heat and electricity.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Noble gases are very reactive because they have one electron in their outer shell.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Noble gases are unreactive because their outer shells are full (stable).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Halogens are reactive non-metals found in Group VII.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Group VII halogens, such as chlorine and bromine, are reactive non-metals.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Alkali metals are stored under oil because they react with water and air.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Alkali metals are very reactive, so they are kept under oil to keep out water and air.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Silicon is an example of a metalloid.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Silicon shows properties of both metals and non-metals, so it is a metalloid.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Non-metals are generally found on the left-hand side of the periodic table.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Non-metals are mostly on the right-hand side; metals are on the left.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The reactivity of halogens increases as you go down Group VII.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Halogen reactivity decreases down the group because gaining an electron becomes harder.",
-        "difficulty": "hard"
-      }
+      {"questionText": "Elements in the same group have the same number of outer-shell electrons.", "options": [], "correctAnswer": "true", "explanation": "This is why group members react similarly, since chemical behaviour depends on outer-shell (valence) electrons. Exam Tip: This is why group members react similarly.", "difficulty": "easy"},
+      {"questionText": "The period number of an element equals the number of protons it has.", "options": [], "correctAnswer": "false", "explanation": "The period number equals the number of electron shells, not the number of protons; the number of protons is the atomic number. Exam Tip: Period = shells; atomic number = protons.", "difficulty": "easy"},
+      {"questionText": "Group 1 elements are called the alkali metals.", "options": [], "correctAnswer": "true", "explanation": "Group 1 elements such as lithium, sodium and potassium are indeed known as alkali metals. Exam Tip: Alkali metals are very reactive and stored under oil.", "difficulty": "easy"},
+      {"questionText": "Metallic character increases across a period from left to right.", "options": [], "correctAnswer": "false", "explanation": "Metallic character actually decreases from left to right across a period as elements become more non-metallic. Exam Tip: Metallic character DECREASES from left to right.", "difficulty": "easy"},
+      {"questionText": "Noble gases are unreactive because they have full outer electron shells.", "options": [], "correctAnswer": "true", "explanation": "A full outer shell gives noble gases a stable electron arrangement, making them chemically unreactive. Exam Tip: Full outer shell = stability.", "difficulty": "easy"},
+      {"questionText": "Reactivity of Group 1 metals decreases down the group.", "options": [], "correctAnswer": "false", "explanation": "Reactivity of Group 1 metals actually increases down the group as the outer electron becomes easier to lose. Exam Tip: Group 1 reactivity INCREASES down the group.", "difficulty": "easy"},
+      {"questionText": "An element with 7 outer electrons is likely to gain 1 electron to become stable.", "options": [], "correctAnswer": "true", "explanation": "An atom with 7 outer electrons needs just 1 more to complete its outer shell, so it readily gains an electron. Exam Tip: Near-full shells gain electrons -> non-metals (halogens).", "difficulty": "easy"},
+      {"questionText": "Group 7 elements are called noble gases.", "options": [], "correctAnswer": "false", "explanation": "Group 7 elements are called halogens; noble gases belong to Group 8 (0). Exam Tip: Group 7 = halogens; noble gases are Group 8 (0).", "difficulty": "easy"},
+      {"questionText": "The number of outer-shell electrons equals the group number for main-group elements.", "options": [], "correctAnswer": "true", "explanation": "For main-group elements, the number of electrons in the outer shell directly gives the group number. Exam Tip: 2,8,1 -> 1 outer electron -> Group 1.", "difficulty": "easy"},
+      {"questionText": "Elements in the same group have similar chemical properties.", "options": [], "correctAnswer": "true", "explanation": "Chemical behaviour depends mainly on the outer electrons, which are the same for elements within a group. Exam Tip: Chemical behaviour depends on the outer electrons, which are the same within a group.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Basis of arrangement of the modern periodic table",
-        "options": [],
-        "correctAnswer": "Elements are arranged by increasing atomic number.",
-        "explanation": "Atomic number equals the number of protons in the atom.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Periods of the periodic table",
-        "options": [],
-        "correctAnswer": "Periods are the horizontal rows.",
-        "explanation": "The period number shows the number of electron shells.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Groups of the periodic table",
-        "options": [],
-        "correctAnswer": "Groups are the vertical columns of elements with similar properties.",
-        "explanation": "Group members share the same number of valence electrons.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of metals",
-        "options": [],
-        "correctAnswer": "Metals are shiny, malleable and good conductors of heat and electricity.",
-        "explanation": "They are found mainly on the left side of the table.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Properties of non-metals",
-        "options": [],
-        "correctAnswer": "Non-metals are usually dull, brittle and poor conductors.",
-        "explanation": "They are found mainly on the right side of the table.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Metalloids",
-        "options": [],
-        "correctAnswer": "Metalloids have properties of both metals and non-metals.",
-        "explanation": "Examples include silicon and boron.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Group I (alkali metals)",
-        "options": [],
-        "correctAnswer": "Soft, very reactive metals with one valence electron.",
-        "explanation": "Examples are lithium, sodium and potassium.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Group VII (halogens)",
-        "options": [],
-        "correctAnswer": "Reactive non-metals with seven valence electrons.",
-        "explanation": "Examples are fluorine, chlorine and bromine.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Group 0 (noble gases)",
-        "options": [],
-        "correctAnswer": "Unreactive gases with full outer electron shells.",
-        "explanation": "Examples are helium, neon and argon.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Valency and the periodic table",
-        "options": [],
-        "correctAnswer": "Valency can be worked out from the number of valence electrons (group number).",
-        "explanation": "For example, Group I has valency 1 and Group II has valency 2.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Groups and periods", "options": [], "correctAnswer": "Groups are the vertical columns of the periodic table; periods are the horizontal rows.", "explanation": "Elements in a group share chemical properties, while elements in a period show trends across the table. Exam Tip: Groups go down (columns), periods go across (rows).", "difficulty": "easy"},
+      {"questionText": "Group number", "options": [], "correctAnswer": "For main-group elements, the group number equals the number of electrons in the outer (valence) shell.", "explanation": "For example, an element with configuration 2,8,1 has 1 outer electron and belongs to Group 1. Exam Tip: Outer electrons = group number.", "difficulty": "easy"},
+      {"questionText": "Period number", "options": [], "correctAnswer": "The period number equals the number of electron shells (energy levels) occupied by an atom.", "explanation": "For example, the configuration 2,8,1 uses three shells, so the element is in Period 3. Exam Tip: Count the numbers in the electron configuration to find the period.", "difficulty": "easy"},
+      {"questionText": "Alkali metals", "options": [], "correctAnswer": "The Group 1 elements, such as lithium, sodium and potassium, which are very reactive metals with 1 outer electron.", "explanation": "Alkali metals become more reactive down the group and are stored under oil because they react vigorously with water and air. Exam Tip: Group 1 = alkali metals; reactivity increases down the group.", "difficulty": "easy"},
+      {"questionText": "Noble gases", "options": [], "correctAnswer": "The Group 8 (0) elements, such as helium, neon and argon, which have full outer shells and are chemically unreactive.", "explanation": "Their stable, full outer shells mean noble gases rarely form compounds. Exam Tip: Full outer shell -> noble gas -> unreactive.", "difficulty": "easy"},
+      {"questionText": "Halogens", "options": [], "correctAnswer": "The Group 7 elements, such as fluorine, chlorine and bromine, which are reactive non-metals with 7 outer electrons.", "explanation": "Halogens readily gain 1 electron to complete their outer shell and become stable. Exam Tip: Group 7 = halogens = 7 outer electrons, gain 1 to react.", "difficulty": "easy"},
+      {"questionText": "Metallic character trend across a period", "options": [], "correctAnswer": "Metallic character decreases from left to right across a period as elements become more non-metallic.", "explanation": "Metals sit on the left of a period and non-metals on the right, so properties shift from metallic to non-metallic. Exam Tip: Across a period (left to right): metallic character decreases.", "difficulty": "easy"},
+      {"questionText": "Metallic character trend down a group", "options": [], "correctAnswer": "Metallic character increases down a group as atoms become larger and outer electrons are held less strongly.", "explanation": "This is why elements lower in a group, such as potassium compared to lithium, behave more like typical reactive metals. Exam Tip: Down a group: metallic character increases.", "difficulty": "easy"},
+      {"questionText": "Reactivity trend in Group 1", "options": [], "correctAnswer": "Reactivity of the alkali metals increases down Group 1, from lithium to sodium to potassium.", "explanation": "Going down the group, the outer electron is further from the nucleus and more easily lost, making reactions with water more vigorous. Exam Tip: Li < Na < K in reactivity.", "difficulty": "easy"},
+      {"questionText": "Metal vs non-metal by outer electrons", "options": [], "correctAnswer": "Elements with few outer-shell electrons (1-3) tend to be metals that lose electrons, while elements with many outer-shell electrons (5-7) tend to be non-metals that gain electrons.", "explanation": "An element with a full outer shell (8 electrons) is a stable, unreactive noble gas. Exam Tip: Few outer electrons -> metal; many outer electrons -> non-metal; full outer shell -> noble gas.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "An element X has the electron arrangement 2,8,2. To which group and period does X belong, and what is its likely valency?",
+        "questionText": "An element Q has the electronic configuration 2, 8, 2. Determine its group and period, and predict whether it is a metal or non-metal.",
         "options": [
-          {
-            "id": "a",
-            "text": "Group II, Period 3, valency 2",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Group VIII, Period 2, valency 0",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Group II, Period 2, valency 2",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Group III, Period 3, valency 3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Group 2, Period 3, metal", "isCorrect": true},
+          {"id": "b", "text": "Group 8, Period 2, non-metal", "isCorrect": false},
+          {"id": "c", "text": "Group 2, Period 2, non-metal", "isCorrect": false},
+          {"id": "d", "text": "Group 3, Period 2, metal", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "It has 2 outer electrons (Group II) and 3 shells (Period 3), giving a valency of 2; this element is magnesium.",
+        "explanation": "Last shell has 2 -> Group 2. Three shells (2,8,2) -> Period 3. Only 2 outer electrons -> lost easily -> metal. Exam Tip: LAST number = group; COUNT of numbers = period. Few outer electrons (1-3) -> metal. This is magnesium.",
         "difficulty": "hard"
       },
       {
-        "questionText": "Two elements P and Q have atomic numbers 11 and 17 respectively. Which statement is correct about them?",
+        "questionText": "Three elements: X (2,8,1), Y (2,8,7), Z (2,8,8). Predict how each behaves in reactions and identify which is unreactive.",
         "options": [
-          {
-            "id": "a",
-            "text": "Both are noble gases in the same group",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "P is a reactive metal and Q is a reactive non-metal, both in Period 3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "P and Q are both in Group I",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Q is a metal and P is a non-metal",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "X loses 1 electron (metal); Y gains 1 electron (non-metal); Z is unreactive (full shell)", "isCorrect": true},
+          {"id": "b", "text": "All three are unreactive", "isCorrect": false},
+          {"id": "c", "text": "X gains electrons; Y loses electrons; Z is a metal", "isCorrect": false},
+          {"id": "d", "text": "All three lose electrons", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "P (2,8,1) is sodium, a Group I reactive metal; Q (2,8,7) is chlorine, a Group VII reactive non-metal; both lie in Period 3.",
+        "correctAnswer": "a",
+        "explanation": "X (1 outer electron) loses it - reactive metal. Y (7 outer electrons) gains 1 - reactive non-metal. Z (full shell of 8) - stable, unreactive. Exam Tip: 1 electron -> lose (metal); 7 electrons -> gain (non-metal); 8 electrons (full) -> unreactive (noble gas).",
         "difficulty": "hard"
       },
       {
-        "questionText": "Why does the reactivity of alkali metals increase down Group I while that of the halogens decreases down Group VII?",
+        "questionText": "Going DOWN Group 1 (Li -> Na -> K), the metals react more vigorously with water. Explain this trend using the outer electron.",
         "options": [
-          {
-            "id": "a",
-            "text": "Both groups gain electrons more easily down the group",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Alkali metals lose their outer electron more easily down the group, while halogens find it harder to gain an electron down the group",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Atomic size stays constant in both groups",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Both groups lose electrons more easily down the group",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "The outer electron gets closer to the nucleus, so reactivity falls", "isCorrect": false},
+          {"id": "b", "text": "Going down the group, the outer electron is further from the nucleus and more easily lost, so reactivity increases", "isCorrect": true},
+          {"id": "c", "text": "The metals gain electrons more easily going down", "isCorrect": false},
+          {"id": "d", "text": "All Group 1 metals react the same", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Going down a group, atoms get larger; the outer electron is held less tightly, so metals lose it more easily, but halogens attract an extra electron less strongly.",
+        "explanation": "Group 1 metals react by losing their single outer electron. Down the group, atoms are larger, the outer electron is further from the nucleus and less strongly held, so it is lost more easily. Exam Tip: For metals, easier loss of the outer electron = greater reactivity. This is why potassium reacts far more violently with water than lithium.",
         "difficulty": "hard"
       }
     ]

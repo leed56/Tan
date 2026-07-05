@@ -2,729 +2,371 @@
   "topicId": "form_1_chemistry_topic_2",
   "topicName": "Laboratory Techniques and Safety",
   "order": 2,
-  "description": "This topic covers laboratory rules, safety symbols and warning signs, common apparatus and their uses, safe handling of chemicals, first aid, and proper waste disposal in the chemistry laboratory.",
+  "description": "An introduction to the chemistry laboratory, its rules and apparatus, hazard warning symbols, safe handling and heating techniques, fire prevention and control, filtration, and first aid.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which apparatus is most suitable for accurately measuring a fixed volume of a liquid such as 25 cm3?",
+        "questionText": "A chemistry laboratory is best described as a place where:",
         "options": [
-          {
-            "id": "a",
-            "text": "Beaker",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Pipette",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Conical flask",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Test tube",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Food is cooked for sale", "isCorrect": false},
+          {"id": "b", "text": "Scientific experiments are carried out", "isCorrect": true},
+          {"id": "c", "text": "Cars are repaired", "isCorrect": false},
+          {"id": "d", "text": "Clothes are washed", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A pipette is designed to deliver one fixed, accurate volume of liquid, while a beaker only gives a rough estimate.",
+        "explanation": "A laboratory is a special room designed for carrying out scientific experiments safely. Exam Tip: The lab is built with safety features (fume cupboard, water, gas) specifically for experiments.",
         "difficulty": "easy"
-      },
-      {
-        "questionText": "What is the main reason for wearing safety goggles in the chemistry laboratory?",
-        "options": [
-          {
-            "id": "a",
-            "text": "To see chemicals more clearly",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "To protect the eyes from splashes and fumes",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "To keep the hands clean",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "To make the experiment faster",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Goggles shield the eyes from chemical splashes, flying particles and irritating fumes that could cause serious injury.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A hazard symbol showing a skull and crossbones means that a substance is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Flammable",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Toxic (poisonous)",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Corrosive",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Harmless",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The skull and crossbones is the standard warning symbol for toxic or poisonous substances that can cause death or serious harm if swallowed or inhaled.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which piece of apparatus is used to heat substances over a flame in the laboratory?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Bunsen burner",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Measuring cylinder",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Funnel",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Spatula",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "A Bunsen burner produces a controllable flame and is the common heating source in a school chemistry laboratory.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When diluting a concentrated acid, the correct procedure is to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Add water to the acid quickly",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Add the acid slowly to water while stirring",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Mix equal amounts at the same time",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Heat the acid before adding water",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Acid is always added slowly to water so the large amount of heat released is absorbed safely; adding water to acid can cause violent spattering.",
-        "difficulty": "medium"
       },
       {
         "questionText": "Which of the following is a correct laboratory rule?",
         "options": [
-          {
-            "id": "a",
-            "text": "Taste chemicals to identify them",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Eat food while doing experiments",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Never work in the laboratory without a teacher's permission",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Run when moving between benches",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Eating and drinking in the laboratory", "isCorrect": false},
+          {"id": "b", "text": "Tasting chemicals to identify them", "isCorrect": false},
+          {"id": "c", "text": "Never eat, drink or taste anything in the laboratory", "isCorrect": true},
+          {"id": "d", "text": "Running around during experiments", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "Students must only carry out experiments under the supervision and with the permission of a teacher to ensure safety.",
+        "explanation": "Chemicals may be poisonous, so no eating, drinking or tasting is allowed. Exam Tip: A, B and D are all dangerous behaviours.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A flat-bottomed glass container with a wide mouth, often used for stirring and holding liquids, is called a:",
+        "questionText": "The correct way to smell a gas or chemical in the laboratory is to:",
         "options": [
-          {
-            "id": "a",
-            "text": "Pipette",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Beaker",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Burette",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Crucible",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Put your nose close and inhale deeply", "isCorrect": false},
+          {"id": "b", "text": "Waft (fan) the vapour towards your nose with your hand", "isCorrect": true},
+          {"id": "c", "text": "Taste it first", "isCorrect": false},
+          {"id": "d", "text": "Heat it and inhale the fumes", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A beaker is a wide, flat-bottomed vessel used for mixing, stirring and approximate measuring of liquids.",
+        "explanation": "The safe method is to gently fan (waft) a little vapour towards the nose. Exam Tip: Never inhale directly. Wafting brings only a small, safe amount of vapour.",
         "difficulty": "easy"
       },
       {
-        "questionText": "What should you do first if a chemical splashes into your eye?",
+        "questionText": "Which apparatus is used to measure a specific volume of liquid accurately?",
         "options": [
-          {
-            "id": "a",
-            "text": "Rub the eye with your hand",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Wash the eye with plenty of clean water immediately",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Close the eye and continue working",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Apply more chemical to neutralise it",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Beaker", "isCorrect": false},
+          {"id": "b", "text": "Measuring cylinder", "isCorrect": true},
+          {"id": "c", "text": "Test tube", "isCorrect": false},
+          {"id": "d", "text": "Watch glass", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "The eye must be rinsed at once with large amounts of clean water to dilute and wash away the chemical before seeking further help.",
-        "difficulty": "medium"
+        "explanation": "A measuring cylinder has a scale for accurate volume. Exam Tip: A beaker only estimates volume; use a measuring cylinder for accuracy.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Which apparatus is used to separate an insoluble solid from a liquid by filtration?",
+        "questionText": "The apparatus used for heating substances over a flame in the laboratory is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Funnel with filter paper",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Pipette",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Thermometer",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Tripod stand",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Bunsen burner", "isCorrect": true},
+          {"id": "b", "text": "Thermometer", "isCorrect": false},
+          {"id": "c", "text": "Funnel", "isCorrect": false},
+          {"id": "d", "text": "Pipette", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A funnel fitted with filter paper traps the insoluble solid (residue) and lets the liquid (filtrate) pass through.",
-        "difficulty": "medium"
+        "explanation": "The Bunsen burner produces an adjustable flame using gas. Exam Tip: Its blue (roaring) flame is hottest; the yellow flame is cooler and dirty.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The hazard symbol showing liquid dripping onto a hand and a metal surface, eating into them, represents a substance that is:",
+        "questionText": "Which piece of apparatus is used to hold a hot test tube during heating?",
         "options": [
-          {
-            "id": "a",
-            "text": "Flammable",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Oxidising",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Corrosive",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Radioactive",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The corrosive symbol warns that a substance can destroy living tissue and materials such as metal on contact.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Why should waste chemicals never be poured directly into a sink without instructions?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Because they make the sink shiny",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Because they may damage pipes and pollute the environment",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Because the sink is too small",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Because water is expensive",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Bare hand", "isCorrect": false},
+          {"id": "b", "text": "Test-tube holder", "isCorrect": true},
+          {"id": "c", "text": "Funnel", "isCorrect": false},
+          {"id": "d", "text": "Beaker", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Many chemicals can corrode drainage pipes and cause water pollution, so waste must be disposed of in the correct labelled containers.",
-        "difficulty": "medium"
+        "explanation": "A test-tube holder grips a hot tube safely at a distance. Exam Tip: Never hold hot apparatus with bare hands. Point the mouth away from people.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "When heating a liquid in a test tube, the mouth of the test tube should be pointed:",
+        "questionText": "A warning sign showing a skull and crossbones on a chemical bottle means the chemical is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Towards yourself",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Towards your neighbour",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Away from yourself and other people",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Straight upwards into your face",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Safe to drink", "isCorrect": false},
+          {"id": "b", "text": "Poisonous (toxic)", "isCorrect": true},
+          {"id": "c", "text": "A type of food", "isCorrect": false},
+          {"id": "d", "text": "Harmless", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Hot liquid can spurt out suddenly, so the mouth must point away from everyone to avoid burns.",
+        "correctAnswer": "b",
+        "explanation": "The skull and crossbones means toxic/poisonous. Exam Tip: skull = toxic, flame = flammable, corrosive symbol = corrosive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A hazard warning symbol showing a flame indicates that the substance is:",
+        "options": [
+          {"id": "a", "text": "Corrosive", "isCorrect": false},
+          {"id": "b", "text": "Flammable (easily catches fire)", "isCorrect": true},
+          {"id": "c", "text": "Poisonous", "isCorrect": false},
+          {"id": "d", "text": "Radioactive", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A flame warns that the substance can easily catch fire. Exam Tip: Flammable substances (ethanol, petrol) must be kept away from open flames.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The first thing you should do if a chemical splashes into your eye is to:",
+        "options": [
+          {"id": "a", "text": "Rub the eye hard", "isCorrect": false},
+          {"id": "b", "text": "Wash the eye with plenty of clean water immediately", "isCorrect": true},
+          {"id": "c", "text": "Close the eye and continue working", "isCorrect": false},
+          {"id": "d", "text": "Apply more chemical", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Immediate first aid is to rinse with plenty of clean running water. Exam Tip: For chemical splashes, the first action is always to wash with plenty of water. Rubbing spreads damage.",
         "difficulty": "medium"
       },
       {
-        "questionText": "Which apparatus is most appropriate for measuring the temperature of a reacting mixture?",
+        "questionText": "Which class of fire is caused by burning flammable liquids such as petrol and kerosene?",
         "options": [
-          {
-            "id": "a",
-            "text": "Thermometer",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Burette",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Measuring cylinder",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Watch glass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Class A", "isCorrect": false},
+          {"id": "b", "text": "Class B", "isCorrect": true},
+          {"id": "c", "text": "Class C", "isCorrect": false},
+          {"id": "d", "text": "Class D", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Flammable liquids (petrol, kerosene, oil) form Class B fires. Exam Tip: Class A = solids; Class B = flammable liquids; Class C = gases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which is the correct order of the three things needed for a fire to burn (the fire triangle)?",
+        "options": [
+          {"id": "a", "text": "Fuel, oxygen and heat", "isCorrect": true},
+          {"id": "b", "text": "Water, soil and air", "isCorrect": false},
+          {"id": "c", "text": "Fuel, water and light", "isCorrect": false},
+          {"id": "d", "text": "Heat, water and sound", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "A thermometer is specifically designed to measure temperature, usually marked in degrees Celsius.",
+        "explanation": "A fire needs fuel, oxygen and heat together. Exam Tip: Remove any ONE side of the fire triangle and the fire goes out.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Before leaving the laboratory after an experiment, a student should:",
+        "questionText": "A fire extinguisher puts out a fire mainly by:",
         "options": [
-          {
-            "id": "a",
-            "text": "Leave the gas tap open for the next class",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Wash hands and tidy the working area",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Take some chemicals home to study",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Pour unused chemicals back into stock bottles",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Adding more fuel", "isCorrect": false},
+          {"id": "b", "text": "Cutting off oxygen and/or cooling the fire", "isCorrect": true},
+          {"id": "c", "text": "Increasing the heat", "isCorrect": false},
+          {"id": "d", "text": "Adding oxygen", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Washing hands removes traces of chemicals and tidying keeps the laboratory safe; gas taps must be turned off, not left open.",
+        "explanation": "Extinguishers smother the fire (cut off oxygen) and/or cool it. Exam Tip: A blanket smothers (removes oxygen); water cools (removes heat).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why should water NOT be used to put out an electrical fire?",
+        "options": [
+          {"id": "a", "text": "Water is too cheap", "isCorrect": false},
+          {"id": "b", "text": "Water conducts electricity and can cause electric shock", "isCorrect": true},
+          {"id": "c", "text": "Water makes the fire bigger by adding fuel", "isCorrect": false},
+          {"id": "d", "text": "Water is not available", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Water conducts electricity, so using it risks electric shock. Exam Tip: Use a carbon dioxide or dry-powder extinguisher for electrical fires, never water.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The apparatus used to filter and separate a solid from a liquid is a funnel together with:",
+        "options": [
+          {"id": "a", "text": "A thermometer", "isCorrect": false},
+          {"id": "b", "text": "Filter paper", "isCorrect": true},
+          {"id": "c", "text": "A magnet", "isCorrect": false},
+          {"id": "d", "text": "A Bunsen burner", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Filter paper in a funnel traps the solid while the liquid passes through. Exam Tip: Funnel + filter paper = filtration. Solid caught = residue; liquid through = filtrate.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which reagent bottle should be used to store a chemical that is sensitive to light?",
+        "questionText": "When heating a liquid in a test tube, you should:",
         "options": [
-          {
-            "id": "a",
-            "text": "A clear colourless bottle",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "An open beaker",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "A dark (amber) coloured bottle",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "A plastic cup",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Point the mouth towards your friend", "isCorrect": false},
+          {"id": "b", "text": "Point the mouth away from people and heat gently, shaking the tube", "isCorrect": true},
+          {"id": "c", "text": "Fill the tube completely", "isCorrect": false},
+          {"id": "d", "text": "Hold it with your bare hand", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "Dark or amber bottles block light and prevent light-sensitive chemicals from decomposing.",
-        "difficulty": "hard"
+        "correctAnswer": "b",
+        "explanation": "Point the mouth away from everyone, heat gently and shake to spread the heat. Exam Tip: Never fill a heated tube more than one-third; always use a holder.",
+        "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "A _____ is the laboratory apparatus used to deliver one fixed and accurate volume of liquid.",
-        "options": [],
-        "correctAnswer": "pipette",
-        "explanation": "A pipette is calibrated to deliver one accurate volume such as 25 cm3.",
+        "questionText": "A special room designed and equipped for carrying out scientific experiments is called a __________.",
+        "options": [
+          {"id": "a", "text": "laboratory", "isCorrect": true},
+          {"id": "b", "text": "kitchen", "isCorrect": false},
+          {"id": "c", "text": "workshop", "isCorrect": false},
+          {"id": "d", "text": "classroom", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A laboratory is the special room equipped for scientific experiments. Exam Tip: Write laboratory in full for marks.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The hazard symbol of a flame shows that a substance is _____.",
-        "options": [],
-        "correctAnswer": "flammable",
-        "explanation": "The flame symbol warns that a substance can easily catch fire.",
+        "questionText": "The apparatus commonly used as a source of heat in the chemistry laboratory is the __________.",
+        "options": [
+          {"id": "a", "text": "Bunsen burner", "isCorrect": true},
+          {"id": "b", "text": "thermometer", "isCorrect": false},
+          {"id": "c", "text": "measuring cylinder", "isCorrect": false},
+          {"id": "d", "text": "test-tube holder", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The Bunsen burner produces an adjustable gas flame used for heating. Exam Tip: Its hottest flame is the blue (non-luminous) flame.",
         "difficulty": "easy"
       },
       {
-        "questionText": "When diluting a concentrated acid, you must always add the acid slowly to _____.",
-        "options": [],
-        "correctAnswer": "water",
-        "explanation": "Adding acid to water lets the heat produced be absorbed safely and prevents dangerous spattering.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A _____ burner is the common source of heat in a school chemistry laboratory.",
-        "options": [],
-        "correctAnswer": "Bunsen",
-        "explanation": "The Bunsen burner gives a controllable flame for heating substances.",
+        "questionText": "The hazard warning symbol of a __________ shows that a chemical is poisonous (toxic).",
+        "options": [
+          {"id": "a", "text": "skull and crossbones", "isCorrect": true},
+          {"id": "b", "text": "flame", "isCorrect": false},
+          {"id": "c", "text": "hand being burned", "isCorrect": false},
+          {"id": "d", "text": "exclamation mark", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The skull and crossbones is the recognised symbol for toxic chemicals. Exam Tip: Skull and crossbones = toxic/poisonous.",
         "difficulty": "easy"
       },
       {
-        "questionText": "In filtration, the clear liquid that passes through the filter paper is called the _____.",
-        "options": [],
-        "correctAnswer": "filtrate",
-        "explanation": "The filtrate is the liquid that drains through, while the solid left behind is the residue.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Eating, drinking and _____ are strictly forbidden in the laboratory because chemicals may enter the body.",
-        "options": [],
-        "correctAnswer": "tasting chemicals",
-        "explanation": "These actions can lead to poisoning if traces of chemicals are swallowed.",
+        "questionText": "The three things needed for a fire to start and continue burning are fuel, heat and __________.",
+        "options": [
+          {"id": "a", "text": "oxygen", "isCorrect": true},
+          {"id": "b", "text": "water", "isCorrect": false},
+          {"id": "c", "text": "smoke", "isCorrect": false},
+          {"id": "d", "text": "light", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Oxygen is the third side of the fire triangle alongside fuel and heat. Exam Tip: Fuel + heat + oxygen = the fire triangle.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Protective eye wear known as safety _____ should be worn to guard the eyes against splashes.",
-        "options": [],
-        "correctAnswer": "goggles",
-        "explanation": "Goggles protect the eyes from chemical splashes and flying particles.",
+        "questionText": "The safe way to smell a chemical in the laboratory is by __________ the vapour towards the nose.",
+        "options": [
+          {"id": "a", "text": "wafting (fanning)", "isCorrect": true},
+          {"id": "b", "text": "inhaling", "isCorrect": false},
+          {"id": "c", "text": "heating", "isCorrect": false},
+          {"id": "d", "text": "pouring", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Wafting brings only a small, safe amount of vapour towards the nose. Exam Tip: Never inhale directly over the container.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The skull and crossbones hazard symbol indicates that a substance is _____.",
-        "options": [],
-        "correctAnswer": "toxic",
-        "explanation": "Toxic substances are poisonous and can cause serious harm or death.",
-        "difficulty": "medium"
+        "questionText": "In the laboratory, the equipment kept ready to give immediate treatment for minor injuries is the __________.",
+        "options": [
+          {"id": "a", "text": "first aid kit", "isCorrect": true},
+          {"id": "b", "text": "fire blanket", "isCorrect": false},
+          {"id": "c", "text": "fume cupboard", "isCorrect": false},
+          {"id": "d", "text": "fire extinguisher", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A first aid kit provides immediate treatment for minor injuries. Exam Tip: A first aid kit holds bandages, cotton wool, antiseptic, plasters.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "Waste chemicals should be placed in the correct labelled _____ instead of being poured down the sink.",
-        "options": [],
-        "correctAnswer": "waste containers",
-        "explanation": "Proper disposal in designated containers prevents pipe damage and pollution.",
-        "difficulty": "medium"
+        "questionText": "Fires caused by burning solids such as wood and paper are classified as Class __________ fires.",
+        "options": [
+          {"id": "a", "text": "A", "isCorrect": true},
+          {"id": "b", "text": "B", "isCorrect": false},
+          {"id": "c", "text": "C", "isCorrect": false},
+          {"id": "d", "text": "D", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Burning solids like wood and paper are Class A fires. Exam Tip: Class A = solids; Class B = flammable liquids; Class C = gases.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "A small instrument marked in degrees Celsius used to measure temperature is called a _____.",
-        "options": [],
-        "correctAnswer": "thermometer",
-        "explanation": "A thermometer measures how hot or cold a substance is.",
+        "questionText": "The laboratory apparatus used to hold a hot test tube while heating is a __________.",
+        "options": [
+          {"id": "a", "text": "test-tube holder", "isCorrect": true},
+          {"id": "b", "text": "funnel", "isCorrect": false},
+          {"id": "c", "text": "tripod stand", "isCorrect": false},
+          {"id": "d", "text": "watch glass", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A test-tube holder grips a hot tube safely at a distance. Exam Tip: Never grip a hot tube with bare fingers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The liquid that passes through the filter paper during filtration is called the __________.",
+        "options": [
+          {"id": "a", "text": "filtrate", "isCorrect": true},
+          {"id": "b", "text": "residue", "isCorrect": false},
+          {"id": "c", "text": "solute", "isCorrect": false},
+          {"id": "d", "text": "solvent", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The liquid that passes through the filter paper is the filtrate. Exam Tip: Filtrate = liquid through; residue = solid on the paper.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For an electrical fire, the correct type of extinguisher to use is a carbon dioxide or __________ extinguisher, not water.",
+        "options": [
+          {"id": "a", "text": "dry powder", "isCorrect": true},
+          {"id": "b", "text": "water", "isCorrect": false},
+          {"id": "c", "text": "sand bucket", "isCorrect": false},
+          {"id": "d", "text": "foam", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Carbon dioxide and dry-powder extinguishers are safe on electrical fires. Exam Tip: CO2 and dry-powder extinguishers are safe on electrical fires; water causes shock.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "It is safe to taste chemicals in the laboratory to find out what they are.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Chemicals must never be tasted because many are poisonous or corrosive.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A measuring cylinder gives a more accurate volume reading than a plain beaker.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A measuring cylinder has finer graduations, so it measures volume more accurately than a beaker.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "When heating a substance in a test tube, you may point the mouth towards your friend.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "The mouth must always point away from people to avoid injury if the contents spurt out.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A corrosive substance can destroy skin and other materials on contact.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Corrosive chemicals eat into living tissue and materials such as metals.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "It is acceptable to pour leftover chemicals back into the original stock bottle to avoid waste.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Returning chemicals can contaminate the whole stock, so leftovers should be disposed of properly.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Light-sensitive chemicals should be stored in dark or amber coloured bottles.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Dark bottles block light and stop the chemicals from decomposing.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "If acid spills on your skin, you should leave it and finish the experiment first.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Acid must be washed off immediately with plenty of water and reported to the teacher.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "All chemical containers in the laboratory should be clearly labelled.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Clear labels prevent confusion and accidental misuse of chemicals.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Long hair and loose clothing are dangerous near an open flame and should be secured.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Loose hair and clothing can easily catch fire, so they must be tied back or kept away from flames.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "You can carry out experiments in the laboratory at any time without a teacher present.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Experiments must only be done with a teacher's permission and supervision for safety.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Eating and drinking are allowed in the chemistry laboratory.", "options": [], "correctAnswer": "false", "explanation": "Chemicals may be poisonous, so eating, drinking and tasting are never allowed. Exam Tip: No eating, drinking or tasting in the lab.", "difficulty": "easy"},
+      {"questionText": "A skull and crossbones symbol warns that a chemical is poisonous.", "options": [], "correctAnswer": "true", "explanation": "The skull and crossbones is the recognised symbol for a toxic chemical. Exam Tip: Recognise hazard symbols on sight.", "difficulty": "easy"},
+      {"questionText": "You should taste chemicals to find out what they are.", "options": [], "correctAnswer": "false", "explanation": "Tasting chemicals is dangerous because many are poisonous. Exam Tip: Never taste laboratory chemicals.", "difficulty": "easy"},
+      {"questionText": "A fire needs fuel, heat and oxygen in order to burn.", "options": [], "correctAnswer": "true", "explanation": "These three together form the fire triangle needed for burning. Exam Tip: Firefighting removes any one side.", "difficulty": "easy"},
+      {"questionText": "Water is the best choice for putting out an electrical fire.", "options": [], "correctAnswer": "false", "explanation": "Water conducts electricity and can cause an electric shock. Exam Tip: Use CO2 or dry powder on electrical fires, never water.", "difficulty": "easy"},
+      {"questionText": "When heating a substance in a test tube, the mouth of the tube should point away from people.", "options": [], "correctAnswer": "true", "explanation": "Pointing the mouth away protects people if the contents spurt out. Exam Tip: Point away, heat gently, never fill more than one-third.", "difficulty": "easy"},
+      {"questionText": "A first aid kit is used to give immediate help for minor injuries.", "options": [], "correctAnswer": "true", "explanation": "A first aid kit provides immediate treatment for minor injuries. Exam Tip: Wash chemical splashes with water; cool minor burns with cold water.", "difficulty": "easy"},
+      {"questionText": "The safe way to smell a gas is to inhale it deeply and directly.", "options": [], "correctAnswer": "false", "explanation": "Direct deep inhaling is dangerous; the safe way is to waft the vapour towards the nose. Exam Tip: Direct deep inhaling is dangerous; wafting is safe.", "difficulty": "easy"},
+      {"questionText": "Flammable substances should be kept away from open flames.", "options": [], "correctAnswer": "true", "explanation": "Flammable substances catch fire easily, so they must be kept away from flames. Exam Tip: Store flammable chemicals away from heat and flames.", "difficulty": "easy"},
+      {"questionText": "During filtration, the solid left on the filter paper is called the filtrate.", "options": [], "correctAnswer": "false", "explanation": "The solid left on the paper is the residue; the filtrate is the liquid that passes through. Exam Tip: Residue = solid on the paper; filtrate = liquid through. The statement swaps them.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Purpose of laboratory safety rules",
-        "options": [],
-        "correctAnswer": "They protect students and equipment by preventing accidents in the laboratory.",
-        "explanation": "Following rules keeps everyone safe and the work area orderly.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Function of a pipette",
-        "options": [],
-        "correctAnswer": "It delivers a single fixed and accurate volume of liquid.",
-        "explanation": "Pipettes are used when an exact volume is needed, such as in titrations.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of the flame hazard symbol",
-        "options": [],
-        "correctAnswer": "It warns that a substance is flammable and can easily catch fire.",
-        "explanation": "Flammable substances must be kept away from heat and open flames.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Correct way to dilute a concentrated acid",
-        "options": [],
-        "correctAnswer": "Add the acid slowly to water while stirring, never water to acid.",
-        "explanation": "This safely controls the heat released during dilution.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "First aid for a chemical splash in the eye",
-        "options": [],
-        "correctAnswer": "Wash the eye immediately with plenty of clean water and tell the teacher.",
-        "explanation": "Quick rinsing dilutes and removes the chemical to reduce damage.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Use of a Bunsen burner",
-        "options": [],
-        "correctAnswer": "It provides a controllable flame for heating substances.",
-        "explanation": "The air hole controls the type and temperature of the flame.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Proper disposal of waste chemicals",
-        "options": [],
-        "correctAnswer": "Place them in correct labelled waste containers, not down the sink.",
-        "explanation": "This prevents damage to pipes and protects the environment.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Reason for wearing safety goggles",
-        "options": [],
-        "correctAnswer": "To protect the eyes from chemical splashes, particles and fumes.",
-        "explanation": "Eye injuries in the lab can be serious and permanent.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Meaning of the skull and crossbones symbol",
-        "options": [],
-        "correctAnswer": "It warns that a substance is toxic or poisonous.",
-        "explanation": "Such substances can cause serious harm if swallowed, inhaled or absorbed.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Importance of labelling chemical containers",
-        "options": [],
-        "correctAnswer": "Clear labels prevent confusion and accidental misuse of chemicals.",
-        "explanation": "Knowing the contents helps users handle chemicals safely.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Laboratory", "options": [], "correctAnswer": "A special room designed and equipped for carrying out scientific experiments safely.", "explanation": "It is fitted with safety features such as a fume cupboard, water and gas supply. Exam Tip: The lab is built specifically for safe experimenting.", "difficulty": "easy"},
+      {"questionText": "Laboratory rules", "options": [], "correctAnswer": "Safety instructions such as never eating, drinking or tasting chemicals and not running during experiments.", "explanation": "The rules exist to protect students from poisonous chemicals and accidents. Exam Tip: Most lab rules trace back to avoiding poisoning, burns or fire.", "difficulty": "easy"},
+      {"questionText": "Skull and crossbones symbol", "options": [], "correctAnswer": "A hazard warning symbol meaning the chemical is poisonous (toxic).", "explanation": "It warns you not to taste or inhale the chemical. Exam Tip: Skull = toxic; do not taste or inhale.", "difficulty": "easy"},
+      {"questionText": "Flame hazard symbol", "options": [], "correctAnswer": "A hazard warning symbol meaning the substance is flammable and easily catches fire.", "explanation": "Flammable substances such as ethanol and petrol must be kept from open flames. Exam Tip: Flame symbol = keep away from flames.", "difficulty": "easy"},
+      {"questionText": "Corrosive symbol", "options": [], "correctAnswer": "A hazard warning symbol, showing liquid burning a hand, meaning the substance can eat away skin and materials.", "explanation": "You must avoid skin contact with corrosive chemicals such as strong acids. Exam Tip: Corrosive symbol = avoid skin contact.", "difficulty": "easy"},
+      {"questionText": "Bunsen burner", "options": [], "correctAnswer": "The laboratory apparatus that produces an adjustable flame using gas, used as a source of heat.", "explanation": "Its blue roaring flame is the hottest, while the yellow flame is cooler and dirty. Exam Tip: Use the blue flame for strong, clean heating.", "difficulty": "easy"},
+      {"questionText": "Fire triangle", "options": [], "correctAnswer": "The three things a fire needs to burn: fuel, oxygen and heat.", "explanation": "Removing any one of the three sides puts the fire out. Exam Tip: Remove one side and the fire goes out.", "difficulty": "easy"},
+      {"questionText": "Fire classes", "options": [], "correctAnswer": "Groups of fires by the burning material: Class A solids, Class B flammable liquids and Class C gases.", "explanation": "Knowing the class helps you choose the correct extinguisher. Exam Tip: A = solids, B = liquids, C = gases.", "difficulty": "easy"},
+      {"questionText": "Fire extinguisher choice", "options": [], "correctAnswer": "Selecting the right extinguisher for the fire, for example carbon dioxide or dry powder for electrical fires and never water.", "explanation": "The extinguisher works by cutting off oxygen and/or cooling the fire. Exam Tip: Never use water on electrical or liquid fires.", "difficulty": "easy"},
+      {"questionText": "First aid", "options": [], "correctAnswer": "Immediate treatment given for minor injuries, such as washing a chemical splash with plenty of clean water.", "explanation": "A first aid kit holds bandages, cotton wool, antiseptic and plasters. Exam Tip: For splashes, wash with plenty of water first.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A student spills concentrated sulphuric acid on the bench and reaches for a bottle labelled 'water' to clean it, but is told to use a different reagent first. Which substance is normally used to neutralise an acid spill before rinsing?",
+        "questionText": "During an experiment, a small fire starts on the bench when some kerosene catches alight. A student wants to put it out. Which action is correct, and why?",
         "options": [
-          {
-            "id": "a",
-            "text": "More concentrated acid",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "A weak base such as sodium hydrogen carbonate",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Cooking oil",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Petrol",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Pour water on it, because water cools everything", "isCorrect": false},
+          {"id": "b", "text": "Cover it with a fire blanket or use a suitable extinguisher, because this cuts off the oxygen supply", "isCorrect": true},
+          {"id": "c", "text": "Blow on it hard, because air puts out fire", "isCorrect": false},
+          {"id": "d", "text": "Add more kerosene to control it", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "A mild base like sodium hydrogen carbonate neutralises the acid safely, after which the area is rinsed with water.",
+        "explanation": "Burning kerosene is a Class B fire. Water can spread a liquid fire, so the safe method is to remove oxygen by smothering with a blanket or extinguisher. Exam Tip: For burning liquids never use water. Blowing adds oxygen; adding fuel is wrong.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A learner needs to measure exactly 50.0 cm3 of a solution and then deliver small, varying volumes of acid drop by drop during a titration. Which two apparatus best suit these two tasks in order?",
+        "questionText": "A student sees three bottles with these hazard symbols: Bottle 1 a flame; Bottle 2 a skull and crossbones; Bottle 3 a symbol showing liquid burning a hand. How should the student treat each bottle?",
         "options": [
-          {
-            "id": "a",
-            "text": "Beaker, then test tube",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Measuring cylinder, then funnel",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Pipette, then burette",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Crucible, then watch glass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "1 keep from flames, 2 do not taste/inhale, 3 avoid skin contact", "isCorrect": true},
+          {"id": "b", "text": "1 drink freely, 2 taste it, 3 rub on skin", "isCorrect": false},
+          {"id": "c", "text": "1 heat strongly, 2 smell deeply, 3 pour on hands", "isCorrect": false},
+          {"id": "d", "text": "All three are safe to handle without care", "isCorrect": false}
         ],
-        "correctAnswer": "c",
-        "explanation": "A pipette delivers one accurate fixed volume, while a burette delivers controlled variable volumes drop by drop.",
+        "correctAnswer": "a",
+        "explanation": "Bottle 1 (flame) is flammable, so keep it from flames; Bottle 2 (skull) is toxic, so do not taste or inhale; Bottle 3 (liquid on hand) is corrosive, so avoid skin contact. Exam Tip: Each hazard symbol prescribes a specific precaution.",
         "difficulty": "hard"
       },
       {
-        "questionText": "During an experiment a small fire starts in a beaker of flammable liquid on the bench. Why is smothering the flame with a damp cloth or fire blanket better than throwing water on it?",
+        "questionText": "A student accidentally spills a strong acid on the bench and a little splashes onto her hand. Arrange the CORRECT sequence of actions: (i) Report to the teacher (ii) Wash the hand with plenty of running water (iii) Wipe up the spilled acid safely as directed.",
         "options": [
-          {
-            "id": "a",
-            "text": "Water is too expensive to use",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Water can spread the burning liquid and make the fire worse",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "A cloth makes the fire look smaller",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Water reacts with the beaker glass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "(ii) then (i) then (iii)", "isCorrect": true},
+          {"id": "b", "text": "(i) then (iii) then (ii)", "isCorrect": false},
+          {"id": "c", "text": "(iii) then (ii) then (i)", "isCorrect": false},
+          {"id": "d", "text": "(ii) then (iii) then (i) only if there is time", "isCorrect": false}
         ],
-        "correctAnswer": "b",
-        "explanation": "Many flammable liquids float on and spread with water, so smothering to cut off oxygen is safer than pouring water.",
+        "correctAnswer": "a",
+        "explanation": "The most urgent danger is acid on the skin, so wash the hand with plenty of running water first (ii), then report to the teacher (i), who directs safe cleaning of the spill (iii). Exam Tip: Safety priority is PEOPLE first, then report, then clean up. Never delay washing the skin.",
         "difficulty": "hard"
       }
     ]

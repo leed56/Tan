@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "The direct exchange of goods for other goods without using money is called the _____ system.",
-        "options": [],
-        "correctAnswer": "barter",
+        "options": [
+          {
+            "id": "a",
+            "text": "barter",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "credit",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "cash",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "trade",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Under the barter system people traded goods directly, for example exchanging maize for fish.",
         "difficulty": "easy"
       },
       {
         "questionText": "When money is used to buy goods and services, it is performing its function as a medium of _____.",
-        "options": [],
-        "correctAnswer": "exchange",
+        "options": [
+          {
+            "id": "a",
+            "text": "account",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "exchange",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "value",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "barter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "As a medium of exchange, money is accepted in return for goods and services.",
         "difficulty": "easy"
       },
       {
         "questionText": "Things that are necessary for survival, such as food, water, and shelter, are called _____.",
-        "options": [],
-        "correctAnswer": "needs",
+        "options": [
+          {
+            "id": "a",
+            "text": "wants",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "luxuries",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "needs",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "services",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Needs are basic requirements that a person must have to live, unlike wants which are optional.",
         "difficulty": "easy"
       },
       {
         "questionText": "A written financial plan of expected income and expenditure is known as a _____.",
-        "options": [],
-        "correctAnswer": "budget",
+        "options": [
+          {
+            "id": "a",
+            "text": "receipt",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ledger",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "balance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "budget",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A budget helps people plan how to use their income wisely.",
         "difficulty": "easy"
       },
       {
         "questionText": "The act of keeping part of one's income aside for future use is called _____.",
-        "options": [],
-        "correctAnswer": "saving",
+        "options": [
+          {
+            "id": "a",
+            "text": "saving",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "spending",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "lending",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "borrowing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Saving allows a person to meet future needs and emergencies.",
         "difficulty": "easy"
       },
       {
         "questionText": "The central bank that issues currency in Tanzania is the Bank of _____.",
-        "options": [],
-        "correctAnswer": "Tanzania",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenya",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tanzania",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Uganda",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Africa",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "The Bank of Tanzania is the only institution allowed to print and issue the national currency.",
         "difficulty": "medium"
       },
       {
         "questionText": "The money a family spends on goods and services is known as _____.",
-        "options": [],
-        "correctAnswer": "expenditure",
+        "options": [
+          {
+            "id": "a",
+            "text": "income",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "savings",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "expenditure",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "revenue",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Expenditure refers to the outflow of money used to pay for needs and wants.",
         "difficulty": "medium"
       },
       {
         "questionText": "A budget in which income is equal to expenditure is called a _____ budget.",
-        "options": [],
-        "correctAnswer": "balanced",
+        "options": [
+          {
+            "id": "a",
+            "text": "surplus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "deficit",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fixed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "balanced",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "In a balanced budget, total income exactly matches total expenditure.",
         "difficulty": "hard"
       },
       {
         "questionText": "Money saved in a bank usually earns an extra payment called _____.",
-        "options": [],
-        "correctAnswer": "interest",
+        "options": [
+          {
+            "id": "a",
+            "text": "interest",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "profit",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "bonus",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "deposit",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Banks pay interest to savers as a reward for keeping money in a savings account.",
         "difficulty": "medium"
       },
       {
         "questionText": "The metal form of money of small value, such as fifty or one hundred shillings, is called a _____.",
-        "options": [],
-        "correctAnswer": "coin",
+        "options": [
+          {
+            "id": "a",
+            "text": "note",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "coin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "token",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "cheque",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Coins are the metal form of currency, usually used for smaller amounts of money.",
         "difficulty": "easy"
       }

@@ -7,6 +7,7 @@ interface ProfileStore {
   profile: UserProfile | null;
   loading: boolean;
   error: string | null;
+  hasHydrated: boolean;
 
   setProfile: (profile: UserProfile | null) => void;
   updateName: (name: string) => void;
@@ -16,6 +17,7 @@ interface ProfileStore {
   updateSelectedSubjects: (subjectIds: string[]) => void;
   setLoading: (loading: boolean) => void;
   setError: (error: string | null) => void;
+  setHasHydrated: (v: boolean) => void;
   clearProfile: () => void;
 }
 
@@ -25,6 +27,7 @@ export const useProfileStore = create<ProfileStore>()(
   profile: null,
   loading: false,
   error: null,
+  hasHydrated: false,
 
   setProfile: (profile) => set({ profile, loading: false, error: null }),
 
@@ -67,12 +70,17 @@ export const useProfileStore = create<ProfileStore>()(
 
   setError: (error) => set({ error, loading: false }),
 
+  setHasHydrated: (v) => set({ hasHydrated: v }),
+
   clearProfile: () => set({ profile: null, loading: false, error: null }),
     }),
     {
       name: 'soma-profile',
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (s) => ({ profile: s.profile }),
+      onRehydrateStorage: () => (state) => {
+        state?.setHasHydrated(true);
+      },
     },
   ),
 );

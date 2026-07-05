@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_chemistry_topic_1",
+  "topicName": "Rates of Chemical Reactions",
+  "order": 1,
+  "description": "This topic explains the meaning of the rate of a chemical reaction, how it is measured, the collision theory and activation energy, the factors that affect reaction rate, and how to interpret rate graphs and calculate average rate.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is meant by the rate of a chemical reaction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The total mass of products formed in a reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The change in amount of reactant or product per unit time",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The temperature at which a reaction takes place",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The energy released when a reaction is complete",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rate of reaction measures how fast reactants are used up or products are formed, expressed as change in quantity divided by time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following methods can be used to measure the rate of a reaction that produces a gas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Measuring the volume of gas collected over time",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Measuring the colour of the flask",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Counting the number of bubbles by smell",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Weighing the empty gas syringe only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "When a gas is produced, its volume can be collected in a gas syringe or over water and measured at regular time intervals to find the rate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to the collision theory, for a reaction to occur the reacting particles must collide with",
+        "options": [
+          {
+            "id": "a",
+            "text": "low energy and any orientation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "enough energy and the correct orientation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "no energy but correct orientation",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "high energy but wrong orientation only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An effective collision requires particles to have at least the activation energy and to be aligned in the correct orientation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The minimum amount of energy that colliding particles must have in order to react is called",
+        "options": [
+          {
+            "id": "a",
+            "text": "kinetic energy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "potential energy",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "activation energy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "bond energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Activation energy is the minimum energy that reacting particles must possess for a successful collision to lead to a reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How does increasing the concentration of a reactant in solution affect the rate of reaction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It decreases the rate",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It increases the rate",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It has no effect on the rate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It stops the reaction completely",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Higher concentration means more particles per unit volume, so collisions are more frequent and the rate increases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which change would increase the rate of reaction between marble chips and dilute hydrochloric acid?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Using larger marble chips",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Cooling the acid to a lower temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Grinding the marble into a fine powder",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Diluting the acid with more water",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A fine powder has a much larger surface area, so more acid particles can collide with the solid at once, increasing the rate.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Increasing the temperature increases the rate of reaction mainly because",
+        "options": [
+          {
+            "id": "a",
+            "text": "particles move faster and more collisions have enough energy",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "the activation energy of the reaction increases",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "the particles become larger in size",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "the number of particles decreases",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "At higher temperature particles gain kinetic energy, collide more often and a greater fraction of collisions exceed the activation energy.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the effect of a catalyst on the activation energy of a reaction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It increases the activation energy",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It removes the activation energy completely",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "It lowers the activation energy",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "It has no effect on the activation energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A catalyst provides an alternative pathway with a lower activation energy, so more collisions are successful and the rate increases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which statement about a catalyst is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A catalyst is permanently used up in the reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A catalyst remains chemically unchanged at the end of the reaction",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A catalyst always slows down a reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A catalyst changes the amount of product formed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A catalyst speeds up a reaction but is not consumed; it can be recovered chemically unchanged after the reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "For a reaction between two gases, increasing the pressure increases the rate because it",
+        "options": [
+          {
+            "id": "a",
+            "text": "pushes the gas particles further apart",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "brings the gas particles closer, increasing collision frequency",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "lowers the temperature of the gases",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reduces the activation energy of the reaction",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Higher pressure squeezes gas particles into a smaller volume, so they are closer together and collide more frequently.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a reaction, 48 cm3 of gas were collected in 4 minutes. What is the average rate of reaction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12 cm3 per minute",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "52 cm3 per minute",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "192 cm3 per minute",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "44 cm3 per minute",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Average rate = change in volume divided by time = 48 cm3 / 4 min = 12 cm3 per minute.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a graph of volume of gas produced against time, what does a steeper line at the start indicate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A slower reaction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A faster reaction",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "That no reaction is taking place",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "That the reaction has finished",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A steeper gradient means a greater change in volume per unit time, which corresponds to a faster rate of reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a graph of mass loss against time, the curve becomes flat (horizontal) at the end. This shows that",
+        "options": [
+          {
+            "id": "a",
+            "text": "the reaction is speeding up",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "the temperature is rising",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "the reaction has stopped and is complete",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "more reactant is being added",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A flat line means no further change is taking place, so the reaction has finished, usually because a reactant has been used up.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Some chemical reactions, such as the reaction between hydrogen and chlorine, are speeded up by",
+        "options": [
+          {
+            "id": "a",
+            "text": "darkness",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "light",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "reduced concentration",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "lower temperature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Light supplies energy to certain reactions (photochemical reactions), increasing the rate; hydrogen and chlorine react explosively in bright light.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which factor does NOT change the rate of a reaction between a solid and a solution?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Surface area of the solid",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Concentration of the solution",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Temperature of the mixture",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Colour of the container holding the mixture",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "The colour of the container has no effect on collision frequency or energy, so it does not affect the rate, unlike surface area, concentration and temperature.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The rate of a chemical reaction is the change in amount of reactant or product per unit _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "time",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "temperature",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rate is always measured with respect to time, for example cm3 of gas per second.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The minimum energy needed for a successful collision is called the _____ energy.",
+        "options": [
+          {
+            "id": "a",
+            "text": "kinetic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "activation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "thermal",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nuclear",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Particles must possess at least the activation energy for a collision to result in a reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "According to collision theory, particles must collide with enough energy and the correct _____ to react.",
+        "options": [
+          {
+            "id": "a",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "charge",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "orientation",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "colour",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Even with enough energy, particles must be properly aligned (correct orientation) for an effective collision.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A substance that speeds up a reaction without being used up is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "reactant",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "product",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "precipitate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "catalyst",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "A catalyst lowers the activation energy and remains chemically unchanged at the end of the reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Grinding a solid reactant into a powder increases its _____ area, which increases the rate of reaction.",
+        "options": [
+          {
+            "id": "a",
+            "text": "surface",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "density",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A powder has a larger surface area, allowing more collisions with other reactant particles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Increasing the _____ of gases by squeezing them into a smaller volume increases the rate of reaction.",
+        "options": [
+          {
+            "id": "a",
+            "text": "temperature",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pressure",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "volume",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "mass",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Higher pressure brings gas particles closer together, increasing collision frequency.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a graph of volume against time, a _____ gradient (line) at the start shows a faster reaction.",
+        "options": [
+          {
+            "id": "a",
+            "text": "flatter",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "horizontal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "steeper",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "curved",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The steeper the line, the greater the change per unit time, indicating a faster rate.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A reaction collected 30 cm3 of gas in 6 seconds, giving an average rate of _____ cm3 per second.",
+        "options": [
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "180",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Average rate = 30 cm3 / 6 s = 5 cm3 per second.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Raising the temperature increases the rate because particles move faster and a greater fraction of collisions have energy above the _____ energy.",
+        "options": [
+          {
+            "id": "a",
+            "text": "activation",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "bond",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "kinetic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ionisation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "At higher temperature more particles have sufficient energy to overcome the activation energy barrier.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a rate graph becomes flat (horizontal), it shows that the reaction has _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "started",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "stopped",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "accelerated",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "reversed",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A horizontal line means no further change, so the reaction has finished, often because a reactant is used up.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "The rate of reaction tells us how fast reactants are converted into products.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Rate measures how quickly reactants are used up or products are formed over time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A catalyst is permanently used up during a chemical reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A catalyst is not used up; it remains chemically unchanged and can be recovered after the reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Increasing the temperature usually increases the rate of a chemical reaction.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Higher temperature increases the energy and frequency of collisions, so the rate increases.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A catalyst works by increasing the activation energy of a reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A catalyst lowers the activation energy by providing an alternative pathway, not increases it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Large lumps of a solid react faster than the same mass of fine powder.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Fine powder has a larger surface area, so it reacts faster than large lumps of the same mass.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The volume of gas produced over time can be used to follow the rate of a reaction that releases a gas.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Collecting and measuring gas volume at intervals is a common way to measure reaction rate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For a collision to be effective, particles must collide with the correct orientation only, even with very little energy.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Both enough energy (at least the activation energy) and correct orientation are required for an effective collision.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a rate graph, a steeper curve represents a slower reaction.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A steeper curve means a greater change per unit time, which represents a faster reaction.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Increasing the pressure has a significant effect on the rate of reactions involving only solids and liquids.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Pressure mainly affects reactions involving gases, since solids and liquids are not noticeably compressed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A horizontal section on a graph of gas volume against time shows that the reaction is complete.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "When the line is horizontal, no more gas is produced, so the reaction has stopped and is complete.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define the rate of a chemical reaction.",
+        "options": [],
+        "correctAnswer": "The rate of a chemical reaction is the change in the amount of a reactant or product per unit time.",
+        "explanation": "Rate describes how fast reactants are consumed or products are formed, measured against time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State three quantities that can be measured to follow the rate of a reaction.",
+        "options": [],
+        "correctAnswer": "Change in mass, volume of gas produced, and change in concentration over time.",
+        "explanation": "These measurable quantities change as the reaction proceeds and can be recorded at time intervals to find the rate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the collision theory of reaction rate.",
+        "options": [],
+        "correctAnswer": "For a reaction to occur, particles must collide with enough energy (at least the activation energy) and with the correct orientation.",
+        "explanation": "Only collisions that meet both energy and orientation requirements are effective and lead to a reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain what is meant by activation energy.",
+        "options": [],
+        "correctAnswer": "Activation energy is the minimum amount of energy that colliding particles must have for a reaction to take place.",
+        "explanation": "Collisions with less than the activation energy do not result in a reaction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List the main factors that affect the rate of a chemical reaction.",
+        "options": [],
+        "correctAnswer": "Concentration, pressure (for gases), temperature, surface area or particle size, catalysts, and light.",
+        "explanation": "Each factor changes either the frequency or the energy of collisions between reacting particles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how increasing temperature increases the rate of reaction.",
+        "options": [],
+        "correctAnswer": "Higher temperature gives particles more kinetic energy, so they move faster, collide more often, and more collisions have energy above the activation energy.",
+        "explanation": "Both the frequency and the proportion of effective collisions increase with temperature.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how a catalyst increases the rate of reaction.",
+        "options": [],
+        "correctAnswer": "A catalyst provides an alternative reaction pathway with a lower activation energy, so more collisions are successful, while the catalyst itself is not used up.",
+        "explanation": "Lowering the activation energy allows a greater fraction of collisions to be effective.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain why a powdered solid reacts faster than a single large lump of the same mass.",
+        "options": [],
+        "correctAnswer": "A powder has a much larger total surface area, so more particles are exposed and more collisions with the other reactant occur per unit time.",
+        "explanation": "Greater surface area increases collision frequency, increasing the rate.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe how the shape of a graph of gas volume against time shows the rate changing during a reaction.",
+        "options": [],
+        "correctAnswer": "The curve is steepest at the start when the reaction is fastest, becomes less steep as reactants are used up, and finally levels off horizontally when the reaction stops.",
+        "explanation": "The gradient of the curve represents the rate, which falls as reactant concentration decreases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Calculate the average rate of a reaction in which 60 cm3 of gas is produced in 30 seconds, and state the formula used.",
+        "options": [],
+        "correctAnswer": "Average rate = change in volume / time = 60 cm3 / 30 s = 2 cm3 per second.",
+        "explanation": "Average rate is found by dividing the total change in quantity by the total time taken.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "In an experiment, magnesium reacts with excess dilute hydrochloric acid and 50 cm3 of hydrogen gas is collected in the first 10 seconds, but only a further 10 cm3 is collected in the next 10 seconds. Which statement best explains this pattern?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The reaction is speeding up because the acid is getting hotter",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The rate is highest at the start and slows as the acid concentration falls and magnesium is used up",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A catalyst has been added during the second 10 seconds",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The pressure of the gas increased the activation energy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "At the start there are most reactant particles, so collisions are most frequent and the rate is highest; as reactants are used up the concentration falls and the rate decreases.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Two identical experiments use the same mass of calcium carbonate and the same volume and concentration of acid. Experiment X uses large marble chips and Experiment Y uses fine powder. How will the rate graphs and the final volume of gas compare?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Y is steeper at the start but both reach the same final volume of gas",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "X is steeper at the start and reaches a higher final volume of gas",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Both have identical curves and identical final volumes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Y is steeper and reaches a much higher final volume of gas than X",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The powder has a larger surface area so reacts faster (steeper curve), but since the same amount of reactants is used, the final volume of gas is the same for both.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A reaction produces 24 cm3 of gas in the first 2 minutes and a total of 36 cm3 of gas by the end of 6 minutes. What is the average rate over the first 2 minutes and over the final 4 minutes respectively?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12 cm3/min for the first 2 minutes and 3 cm3/min for the final 4 minutes",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "6 cm3/min for the first 2 minutes and 9 cm3/min for the final 4 minutes",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12 cm3/min for the first 2 minutes and 9 cm3/min for the final 4 minutes",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "24 cm3/min for the first 2 minutes and 3 cm3/min for the final 4 minutes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "First 2 minutes: 24 cm3 / 2 min = 12 cm3/min. Final 4 minutes: (36 - 24) cm3 / 4 min = 12/4 = 3 cm3/min, showing the rate slows down.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

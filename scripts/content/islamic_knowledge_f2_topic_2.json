@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "Zakah is the _____ pillar of Islam.",
-        "options": [],
-        "correctAnswer": "third",
+        "options": [
+          {
+            "id": "a",
+            "text": "third",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "first",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "second",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "fifth",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Zakah comes after the Shahadah and Salah as the third pillar.",
         "difficulty": "easy"
       },
       {
         "questionText": "The minimum amount of wealth on which Zakah becomes due is called _____.",
-        "options": [],
-        "correctAnswer": "nisab",
+        "options": [
+          {
+            "id": "a",
+            "text": "hawl",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "nisab",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "khums",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ushr",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Nisab is the threshold of wealth above which Zakah is obligatory.",
         "difficulty": "easy"
       },
       {
         "questionText": "Unlike Zakah, which is obligatory, _____ is a voluntary act of charity.",
-        "options": [],
-        "correctAnswer": "Sadaqah",
+        "options": [
+          {
+            "id": "a",
+            "text": "Khums",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Fidyah",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sadaqah",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Kaffarah",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Sadaqah can be given freely at any time, while Zakah is compulsory.",
         "difficulty": "easy"
       },
       {
         "questionText": "The Qur'an names _____ categories of people who may receive Zakah.",
-        "options": [],
-        "correctAnswer": "eight",
+        "options": [
+          {
+            "id": "a",
+            "text": "six",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "seven",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ten",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "eight",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "There are eight eligible categories of Zakah recipients.",
         "difficulty": "easy"
       },
       {
         "questionText": "The charity paid at the end of Ramadan before the Eid prayer is called Zakat al-_____.",
-        "options": [],
-        "correctAnswer": "Fitr",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fitr",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Mal",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Rikaz",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Ushr",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Zakat al-Fitr is given before the Eid al-Fitr prayer to purify the fasting person.",
         "difficulty": "easy"
       },
       {
         "questionText": "The poor and the needy are referred to in Arabic as Al-Fuqara and Al-_____.",
-        "options": [],
-        "correctAnswer": "Masakin",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gharimun",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Masakin",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Riqab",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Amilin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Al-Fuqara (the poor) and Al-Masakin (the needy) are two of the eight categories.",
         "difficulty": "medium"
       },
       {
         "questionText": "The completion of one full lunar year on wealth before paying Zakah is known as _____.",
-        "options": [],
-        "correctAnswer": "hawl",
+        "options": [
+          {
+            "id": "a",
+            "text": "nisab",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "khums",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "hawl",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "ushr",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Hawl is the passing of one lunar year, a condition for Zakah on savings and similar wealth.",
         "difficulty": "medium"
       },
       {
         "questionText": "A person burdened with lawful debts they cannot repay is called Al-_____ and may receive Zakah.",
-        "options": [],
-        "correctAnswer": "Gharimun",
+        "options": [
+          {
+            "id": "a",
+            "text": "Masakin",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Riqab",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Amilin",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Gharimun",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Al-Gharimun are those in debt, one of the eight eligible categories.",
         "difficulty": "hard"
       },
       {
         "questionText": "Because it purifies wealth and the soul, the word Zakah literally means purification and _____.",
-        "options": [],
-        "correctAnswer": "growth",
+        "options": [
+          {
+            "id": "a",
+            "text": "growth",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "forgiveness",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "blessing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "patience",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Zakah means both purification and increase or growth.",
         "difficulty": "medium"
       },
       {
         "questionText": "A stranded traveller who needs help to continue his journey is called Ibn as-_____.",
-        "options": [],
-        "correctAnswer": "Sabil",
+        "options": [
+          {
+            "id": "a",
+            "text": "Salam",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Sabil",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Masjid",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Amin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Ibn as-Sabil, the wayfarer, is one of the eight categories of Zakah recipients.",
         "difficulty": "hard"
       }

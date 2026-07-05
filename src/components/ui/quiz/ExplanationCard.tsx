@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../../theme';
+import { MathRenderer } from './MathRenderer';
 
 interface ExplanationCardProps {
   explanation: string;
@@ -21,36 +22,38 @@ export function ExplanationCard({ explanation, correctLabel }: ExplanationCardPr
           <Text style={styles.correctText}>{correctLabel}</Text>
         </View>
       )}
-      <Text style={styles.body}>{explanation}</Text>
+      <MathRenderer text={explanation} style={styles.body} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: 'rgba(247,197,46,0.08)',
-    borderRadius: RADIUS.lg,
+    backgroundColor: 'rgba(247,197,46,0.07)',
+    borderRadius: RADIUS.xl,
     borderWidth: 1,
-    borderColor: 'rgba(247,197,46,0.25)',
-    padding: SPACING.base,
-    gap: SPACING.sm,
+    borderColor: 'rgba(247,197,46,0.22)',
+    padding: SPACING.lg,
+    gap: SPACING.md,
   },
   header: { flexDirection: 'row', alignItems: 'center', gap: SPACING.sm },
   headerText: {
     color: COLORS.gold,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.bold,
+    fontSize: TYPOGRAPHY.sizes.xs,
+    fontFamily: TYPOGRAPHY.families.extrabold,
+    textTransform: 'uppercase',
+    letterSpacing: 1,
   },
-  correctRow: { flexDirection: 'row', alignItems: 'flex-start', gap: SPACING.sm },
+  correctRow: { flexDirection: 'row', alignItems: 'center', gap: SPACING.sm },
   correctText: {
     flex: 1,
     color: COLORS.success,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.semibold,
+    fontSize: TYPOGRAPHY.sizes.base,
+    fontFamily: TYPOGRAPHY.families.bold,
   },
   body: {
-    color: COLORS.textSecondary,
-    fontSize: TYPOGRAPHY.sizes.sm,
-    lineHeight: TYPOGRAPHY.sizes.sm * 1.6,
+    color: COLORS.textPrimary,
+    fontSize: TYPOGRAPHY.sizes.base,
+    lineHeight: TYPOGRAPHY.sizes.base * 1.65,
   },
 });

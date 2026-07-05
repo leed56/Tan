@@ -189,71 +189,121 @@
     "fib": [
       {
         "questionText": "The first document a buyer sends to a seller asking about goods and prices is called a letter of _____.",
-        "options": [],
-        "correctAnswer": "enquiry",
+        "options": [
+          {"id": "a", "text": "enquiry", "isCorrect": true},
+          {"id": "b", "text": "quotation", "isCorrect": false},
+          {"id": "c", "text": "order", "isCorrect": false},
+          {"id": "d", "text": "invoice", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "The letter of enquiry begins the transaction by requesting information about goods, prices and terms.",
         "difficulty": "easy"
       },
       {
         "questionText": "A seller's reply to an enquiry, stating prices and terms of sale, is known as a _____.",
-        "options": [],
-        "correctAnswer": "quotation",
+        "options": [
+          {"id": "a", "text": "enquiry", "isCorrect": false},
+          {"id": "b", "text": "quotation", "isCorrect": true},
+          {"id": "c", "text": "invoice", "isCorrect": false},
+          {"id": "d", "text": "order", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "The quotation gives the buyer the prices, discounts and conditions of sale.",
         "difficulty": "easy"
       },
       {
         "questionText": "The document used by a buyer to formally request goods from a seller is the _____.",
-        "options": [],
-        "correctAnswer": "order",
+        "options": [
+          {"id": "a", "text": "enquiry", "isCorrect": false},
+          {"id": "b", "text": "invoice", "isCorrect": false},
+          {"id": "c", "text": "order", "isCorrect": true},
+          {"id": "d", "text": "quotation", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "An order is sent by the buyer after accepting a quotation.",
         "difficulty": "easy"
       },
       {
         "questionText": "A document that demands payment and lists goods sold on credit is called an _____.",
-        "options": [],
-        "correctAnswer": "invoice",
+        "options": [
+          {"id": "a", "text": "order", "isCorrect": false},
+          {"id": "b", "text": "receipt", "isCorrect": false},
+          {"id": "c", "text": "quotation", "isCorrect": false},
+          {"id": "d", "text": "invoice", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "The invoice shows the goods supplied, prices, discounts and the total amount due.",
         "difficulty": "easy"
       },
       {
         "questionText": "The document that travels with the goods so the buyer can check what has been delivered is the _____ note.",
-        "options": [],
-        "correctAnswer": "delivery",
+        "options": [
+          {"id": "a", "text": "delivery", "isCorrect": true},
+          {"id": "b", "text": "credit", "isCorrect": false},
+          {"id": "c", "text": "debit", "isCorrect": false},
+          {"id": "d", "text": "advice", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "A delivery note lists the goods being delivered for checking on arrival.",
         "difficulty": "easy"
       },
       {
         "questionText": "When a buyer returns goods, the seller sends a _____ note to reduce the amount owed.",
-        "options": [],
-        "correctAnswer": "credit",
+        "options": [
+          {"id": "a", "text": "debit", "isCorrect": false},
+          {"id": "b", "text": "credit", "isCorrect": true},
+          {"id": "c", "text": "delivery", "isCorrect": false},
+          {"id": "d", "text": "advice", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "A credit note lowers the buyer's debt for returns, overcharges or allowances.",
         "difficulty": "medium"
       },
       {
         "questionText": "If a buyer has been undercharged on the original invoice, the seller sends a _____ note.",
-        "options": [],
-        "correctAnswer": "debit",
+        "options": [
+          {"id": "a", "text": "credit", "isCorrect": false},
+          {"id": "b", "text": "delivery", "isCorrect": false},
+          {"id": "c", "text": "debit", "isCorrect": true},
+          {"id": "d", "text": "advice", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
         "explanation": "A debit note increases the amount owed to correct an undercharge.",
         "difficulty": "medium"
       },
       {
         "questionText": "A document that lists all transactions over a period and shows the balance owed by a customer is the _____ of account.",
-        "options": [],
-        "correctAnswer": "statement",
+        "options": [
+          {"id": "a", "text": "invoice", "isCorrect": false},
+          {"id": "b", "text": "receipt", "isCorrect": false},
+          {"id": "c", "text": "voucher", "isCorrect": false},
+          {"id": "d", "text": "statement", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
         "explanation": "The statement of account summarises invoices, credit notes and payments and shows the balance due.",
         "difficulty": "medium"
       },
       {
         "questionText": "A discount given for prompt or early payment is called a _____ discount.",
-        "options": [],
-        "correctAnswer": "cash",
+        "options": [
+          {"id": "a", "text": "cash", "isCorrect": true},
+          {"id": "b", "text": "trade", "isCorrect": false},
+          {"id": "c", "text": "bulk", "isCorrect": false},
+          {"id": "d", "text": "seasonal", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
         "explanation": "Cash discount rewards the buyer for paying the amount owed quickly.",
         "difficulty": "medium"
       },
       {
         "questionText": "A discount allowed to fellow traders or for buying in large quantities is called a _____ discount.",
-        "options": [],
-        "correctAnswer": "trade",
+        "options": [
+          {"id": "a", "text": "cash", "isCorrect": false},
+          {"id": "b", "text": "trade", "isCorrect": true},
+          {"id": "c", "text": "bulk", "isCorrect": false},
+          {"id": "d", "text": "seasonal", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
         "explanation": "Trade discount is deducted before the invoice total and is given to traders or bulk buyers.",
         "difficulty": "medium"
       }

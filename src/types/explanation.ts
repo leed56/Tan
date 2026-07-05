@@ -5,7 +5,7 @@ export interface AIExplanation {
   id: string;
   userId?: string;           // owner who generated it — required by the create rule
   questionId: string;
-  quizType: 'mcq' | 'fib' | 'tf';
+  quizType: 'mcq' | 'fib' | 'tf' | 'hoq';
   subjectId: string;
   formId: string;
   explanationText: string;   // simpleExplanation from Gemini

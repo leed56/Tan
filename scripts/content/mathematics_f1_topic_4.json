@@ -1,0 +1,374 @@
+{
+  "topicId": "form_1_mathematics_topic_4",
+  "topicName": "Ratios and Proportions",
+  "order": 4,
+  "description": "An introduction to ratios and how to simplify them, dividing quantities in a given ratio, direct and inverse proportion, the unitary method, map scales, and increasing or decreasing quantities in a ratio in real-life contexts.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Simplify the ratio 12 : 18.",
+        "options": [
+          {"id": "a", "text": "6 : 9", "isCorrect": false},
+          {"id": "b", "text": "4 : 6", "isCorrect": false},
+          {"id": "c", "text": "2 : 3", "isCorrect": true},
+          {"id": "d", "text": "3 : 2", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The greatest common factor of 12 and 18 is 6. Dividing both parts by 6 gives 12 : 18 = 2 : 3. Exam Tip: divide both by the GCF (6).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Express 45 minutes to 2 hours as a ratio in its simplest form.",
+        "options": [
+          {"id": "a", "text": "45 : 2", "isCorrect": false},
+          {"id": "b", "text": "3 : 8", "isCorrect": true},
+          {"id": "c", "text": "8 : 3", "isCorrect": false},
+          {"id": "d", "text": "45 : 120", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Convert to the same unit: 2 hours = 120 minutes, so the ratio is 45 : 120. Dividing both by 15 gives 3 : 8. Exam Tip: convert to the same unit first (2h = 120min).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write 0.4 : 0.6 in its simplest form.",
+        "options": [
+          {"id": "a", "text": "4 : 6", "isCorrect": false},
+          {"id": "b", "text": "2 : 3", "isCorrect": true},
+          {"id": "c", "text": "3 : 2", "isCorrect": false},
+          {"id": "d", "text": "0.2 : 0.3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply both parts by 10 to clear the decimals, giving 4 : 6, then divide by the GCF 2 to get 2 : 3. Exam Tip: clear decimals (x10) then simplify.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Tsh 60,000 is divided between Juma and Asha in the ratio 2 : 3. How much does Asha get?",
+        "options": [
+          {"id": "a", "text": "Tsh 24,000", "isCorrect": false},
+          {"id": "b", "text": "Tsh 30,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 36,000", "isCorrect": true},
+          {"id": "d", "text": "Tsh 40,000", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The parts add to 2 + 3 = 5, so one part = 60,000 / 5 = 12,000. Asha has 3 parts = 3 x 12,000 = 36,000. Exam Tip: one part = total / sum of parts.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "96 mangoes are shared in the ratio 3 : 4 : 5. What is the smallest share?",
+        "options": [
+          {"id": "a", "text": "24", "isCorrect": true},
+          {"id": "b", "text": "32", "isCorrect": false},
+          {"id": "c", "text": "40", "isCorrect": false},
+          {"id": "d", "text": "48", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The parts add to 3 + 4 + 5 = 12, so one part = 96 / 12 = 8. The smallest share is 3 parts = 3 x 8 = 24. Exam Tip: read which share is asked.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If a : b = 2 : 5 and b = 20, find a.",
+        "options": [
+          {"id": "a", "text": "4", "isCorrect": false},
+          {"id": "b", "text": "8", "isCorrect": true},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "50", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Since b = 5 parts = 20, one part = 20 / 5 = 4. Then a = 2 parts = 2 x 4 = 8. Exam Tip: find one part first (20 / 5 = 4).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A map has a scale of 1 : 50,000. What real distance in kilometres does 6 cm on the map represent?",
+        "options": [
+          {"id": "a", "text": "3 km", "isCorrect": true},
+          {"id": "b", "text": "30 km", "isCorrect": false},
+          {"id": "c", "text": "300 km", "isCorrect": false},
+          {"id": "d", "text": "0.3 km", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "6 cm represents 6 x 50,000 = 300,000 cm. Since 1 km = 100,000 cm, this is 300,000 / 100,000 = 3 km. Exam Tip: 1 km = 100,000 cm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "If 5 pens cost Tsh 3,000, what is the cost of 8 pens?",
+        "options": [
+          {"id": "a", "text": "Tsh 4,200", "isCorrect": false},
+          {"id": "b", "text": "Tsh 4,800", "isCorrect": true},
+          {"id": "c", "text": "Tsh 5,400", "isCorrect": false},
+          {"id": "d", "text": "Tsh 6,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "One pen costs 3,000 / 5 = 600, so 8 pens cost 8 x 600 = 4,800. Exam Tip: unitary method - find the cost of one first.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A car travels 180 km on 12 litres of fuel. How far can it travel on 20 litres at the same rate?",
+        "options": [
+          {"id": "a", "text": "240 km", "isCorrect": false},
+          {"id": "b", "text": "280 km", "isCorrect": false},
+          {"id": "c", "text": "300 km", "isCorrect": true},
+          {"id": "d", "text": "360 km", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This is direct proportion: the car does 180 / 12 = 15 km per litre. On 20 litres it goes 15 x 20 = 300 km. Exam Tip: direct proportion - 15 km/L then x 20.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "6 workers build a wall in 10 days. How long will 4 workers take to build the same wall at the same rate?",
+        "options": [
+          {"id": "a", "text": "12 days", "isCorrect": false},
+          {"id": "b", "text": "15 days", "isCorrect": true},
+          {"id": "c", "text": "20 days", "isCorrect": false},
+          {"id": "d", "text": "24 days", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "This is inverse proportion: the job needs 6 x 10 = 60 worker-days. With 4 workers it takes 60 / 4 = 15 days. Exam Tip: inverse - total 60 worker-days / 4.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Food lasts 30 students for 12 days. If 6 more students join, how long will the same food last?",
+        "options": [
+          {"id": "a", "text": "8 days", "isCorrect": false},
+          {"id": "b", "text": "9 days", "isCorrect": false},
+          {"id": "c", "text": "10 days", "isCorrect": true},
+          {"id": "d", "text": "15 days", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "This is inverse proportion: the food is 30 x 12 = 360 student-days. With 36 students it lasts 360 / 36 = 10 days. Exam Tip: inverse; 36 students; 360 / 36.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In a class the ratio of boys to girls is 4 : 5. If there are 20 boys, how many students are there altogether?",
+        "options": [
+          {"id": "a", "text": "25", "isCorrect": false},
+          {"id": "b", "text": "36", "isCorrect": false},
+          {"id": "c", "text": "45", "isCorrect": true},
+          {"id": "d", "text": "40", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Boys are 4 parts = 20, so one part = 20 / 4 = 5. The total is 4 + 5 = 9 parts = 9 x 5 = 45. Exam Tip: \"altogether\" needs the sum of all parts.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Increase Tsh 8,000 in the ratio 5 : 4.",
+        "options": [
+          {"id": "a", "text": "Tsh 6,400", "isCorrect": false},
+          {"id": "b", "text": "Tsh 10,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 12,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 9,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "To increase in the ratio 5 : 4, multiply by 5/4: 8,000 x 5/4 = 10,000. Exam Tip: increase means the bigger number goes on top (x 5/4).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "x and y are in direct proportion. When x = 6, y = 15. Find y when x = 10.",
+        "options": [
+          {"id": "a", "text": "21", "isCorrect": false},
+          {"id": "b", "text": "25", "isCorrect": true},
+          {"id": "c", "text": "30", "isCorrect": false},
+          {"id": "d", "text": "9", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "In direct proportion y = kx, so k = y / x = 15 / 6 = 2.5. When x = 10, y = 2.5 x 10 = 25. Exam Tip: k = y/x = 2.5 then x 10.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Maize and beans are mixed in the ratio 7 : 2 to make 45 kg. If the beans are sold at Tsh 2,500 per kg, how much money is made from the beans?",
+        "options": [
+          {"id": "a", "text": "Tsh 12,500", "isCorrect": false},
+          {"id": "b", "text": "Tsh 25,000", "isCorrect": true},
+          {"id": "c", "text": "Tsh 35,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 87,500", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The parts add to 7 + 2 = 9, so one part = 45 / 9 = 5 kg. Beans are 2 parts = 10 kg, giving 10 x 2,500 = 25,000. Exam Tip: beans = 2 parts = 10 kg, then x 2,500.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The ratio 24 : 36 written in its simplest form is ____.",
+        "options": [
+          {"id": "a", "text": "2 : 3", "isCorrect": true},
+          {"id": "b", "text": "4 : 6", "isCorrect": false},
+          {"id": "c", "text": "3 : 2", "isCorrect": false},
+          {"id": "d", "text": "6 : 9", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The greatest common factor of 24 and 36 is 12. Dividing both parts by 12 gives 24 : 36 = 2 : 3. Exam Tip: always divide by the GCF to reach simplest form.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The ratio of 500 g to 2 kg in its simplest form is ____.",
+        "options": [
+          {"id": "a", "text": "1 : 4", "isCorrect": true},
+          {"id": "b", "text": "1 : 2", "isCorrect": false},
+          {"id": "c", "text": "500 : 2", "isCorrect": false},
+          {"id": "d", "text": "5 : 2", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Change to the same unit: 2 kg = 2000 g, so the ratio is 500 : 2000. Dividing both by 500 gives 1 : 4. Exam Tip: convert to the same unit before simplifying.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When Tsh 90,000 is divided in the ratio 4 : 5, the smaller share is Tsh ____.",
+        "options": [
+          {"id": "a", "text": "40,000", "isCorrect": true},
+          {"id": "b", "text": "50,000", "isCorrect": false},
+          {"id": "c", "text": "45,000", "isCorrect": false},
+          {"id": "d", "text": "36,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The parts add to 4 + 5 = 9, so one part = 90,000 / 9 = 10,000. The smaller share is 4 parts = 40,000. Exam Tip: the smaller share matches the smaller number of parts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a : b = 3 : 7 and a = 12, then b = ____.",
+        "options": [
+          {"id": "a", "text": "28", "isCorrect": true},
+          {"id": "b", "text": "16", "isCorrect": false},
+          {"id": "c", "text": "21", "isCorrect": false},
+          {"id": "d", "text": "84", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Since a = 3 parts = 12, one part = 12 / 3 = 4. Then b = 7 parts = 7 x 4 = 28. Exam Tip: find the value of one part first, then multiply.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 3 exercise books cost Tsh 1,800, then 7 books cost Tsh ____.",
+        "options": [
+          {"id": "a", "text": "4,200", "isCorrect": true},
+          {"id": "b", "text": "3,600", "isCorrect": false},
+          {"id": "c", "text": "5,400", "isCorrect": false},
+          {"id": "d", "text": "12,600", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "One book costs 1,800 / 3 = 600, so 7 books cost 7 x 600 = 4,200. Exam Tip: use the unitary method - find the cost of one first.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If 8 taps fill a tank in 6 hours, then 4 taps fill it in ____ hours.",
+        "options": [
+          {"id": "a", "text": "12", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": false},
+          {"id": "d", "text": "24", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This is inverse proportion: the task is 8 x 6 = 48 tap-hours. With 4 taps it takes 48 / 4 = 12 hours. Exam Tip: fewer taps means more time - use inverse proportion.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On a map with scale 1 : 100,000, a length of 5 cm represents ____ km.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "50", "isCorrect": false},
+          {"id": "c", "text": "0.5", "isCorrect": false},
+          {"id": "d", "text": "500", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "5 cm represents 5 x 100,000 = 500,000 cm. Since 1 km = 100,000 cm, this equals 500,000 / 100,000 = 5 km. Exam Tip: convert the ground distance from cm to km.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The ratio of 1/2 to 1/3 written in whole numbers is ____.",
+        "options": [
+          {"id": "a", "text": "3 : 2", "isCorrect": true},
+          {"id": "b", "text": "2 : 3", "isCorrect": false},
+          {"id": "c", "text": "1 : 1", "isCorrect": false},
+          {"id": "d", "text": "6 : 5", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply both parts by the LCM of the denominators, which is 6: 1/2 x 6 = 3 and 1/3 x 6 = 2, giving 3 : 2. Exam Tip: multiply fractions by the LCM of denominators to clear them.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "When 60 is decreased in the ratio 2 : 3, the new value is ____.",
+        "options": [
+          {"id": "a", "text": "40", "isCorrect": true},
+          {"id": "b", "text": "90", "isCorrect": false},
+          {"id": "c", "text": "20", "isCorrect": false},
+          {"id": "d", "text": "30", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "To decrease in the ratio 2 : 3, multiply by 2/3: 60 x 2/3 = 40. Exam Tip: decrease means the smaller number goes on top (x 2/3).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A recipe for 4 people needs 300 g of rice; for 10 people it needs ____ g.",
+        "options": [
+          {"id": "a", "text": "750", "isCorrect": true},
+          {"id": "b", "text": "600", "isCorrect": false},
+          {"id": "c", "text": "700", "isCorrect": false},
+          {"id": "d", "text": "1200", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "This is direct proportion: one person needs 300 / 4 = 75 g, so 10 people need 10 x 75 = 750 g. Exam Tip: find the amount for one person first, then scale up.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "A ratio compares two or more quantities of the same kind.", "options": [], "correctAnswer": "true", "explanation": "A ratio shows how quantities of the same kind compare in size, such as boys to girls. Exam Tip: the quantities must be in the same unit before comparing.", "difficulty": "easy"},
+      {"questionText": "The ratio 5 : 10 is in its simplest form.", "options": [], "correctAnswer": "false", "explanation": "Both parts share a common factor of 5, so 5 : 10 simplifies to 1 : 2. Exam Tip: a ratio is only simplest when the parts share no common factor other than 1.", "difficulty": "easy"},
+      {"questionText": "A ratio has no units.", "options": [], "correctAnswer": "true", "explanation": "Because the quantities are converted to the same unit, they cancel and a ratio is just a pair of numbers. Exam Tip: always convert to the same unit so the units cancel.", "difficulty": "easy"},
+      {"questionText": "If the number of workers increases, the time to finish the same job at the same rate also increases.", "options": [], "correctAnswer": "false", "explanation": "More workers finish a job faster, so the time decreases; this is inverse proportion. Exam Tip: when one quantity goes up and the other goes down, it is inverse proportion.", "difficulty": "easy"},
+      {"questionText": "If 2 kg of sugar costs Tsh 5,000, then 6 kg costs Tsh 15,000.", "options": [], "correctAnswer": "true", "explanation": "One kg costs 5,000 / 2 = 2,500, so 6 kg costs 6 x 2,500 = 15,000. Exam Tip: cost and quantity are in direct proportion.", "difficulty": "easy"},
+      {"questionText": "Dividing 100 in the ratio 1 : 4 gives shares of 20 and 80.", "options": [], "correctAnswer": "true", "explanation": "The parts add to 1 + 4 = 5, so one part = 100 / 5 = 20, giving shares of 20 and 80. Exam Tip: check your shares add back to the total.", "difficulty": "easy"},
+      {"questionText": "In direct proportion, when one quantity doubles, the other also doubles.", "options": [], "correctAnswer": "true", "explanation": "In direct proportion the two quantities change by the same factor, so doubling one doubles the other. Exam Tip: direct proportion keeps the ratio between the quantities constant.", "difficulty": "easy"},
+      {"questionText": "The ratio 2 : 3 is the same as 3 : 2.", "options": [], "correctAnswer": "false", "explanation": "Order matters in a ratio, so 2 : 3 and 3 : 2 describe different shares. Exam Tip: always keep the parts in the order given in the question.", "difficulty": "easy"},
+      {"questionText": "A scale of 1 : 50,000 means 1 cm on the map represents 50,000 cm on the ground.", "options": [], "correctAnswer": "true", "explanation": "A map scale 1 : 50,000 means every 1 cm on the map stands for 50,000 cm of real distance. Exam Tip: convert the ground distance to km by dividing by 100,000.", "difficulty": "easy"},
+      {"questionText": "If 10 workers finish a job in 8 days, then 5 workers finish it in 4 days.", "options": [], "correctAnswer": "false", "explanation": "This is inverse proportion: the job is 10 x 8 = 80 worker-days, so 5 workers take 80 / 5 = 16 days. Exam Tip: fewer workers means more time, not less.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Ratio", "options": [], "correctAnswer": "A comparison of two or more quantities of the same kind, written using a colon such as 2 : 3.", "explanation": "A ratio shows how much of one quantity there is compared with another. Exam Tip: make sure the quantities share the same unit before writing the ratio.", "difficulty": "easy"},
+      {"questionText": "Simplifying a ratio", "options": [], "correctAnswer": "Dividing all parts of the ratio by their greatest common factor to reach the smallest whole numbers.", "explanation": "A simplified ratio keeps the same comparison but uses the smallest whole numbers. Exam Tip: the parts of a simplest-form ratio share no common factor except 1.", "difficulty": "easy"},
+      {"questionText": "Dividing a quantity in a ratio", "options": [], "correctAnswer": "Add the parts to find the total, find one part by dividing the quantity by that total, then multiply by each share.", "explanation": "This method splits an amount fairly according to the given ratio. Exam Tip: check that all the shares add back up to the original total.", "difficulty": "easy"},
+      {"questionText": "Direct proportion", "options": [], "correctAnswer": "A relationship where two quantities increase or decrease together at the same rate, so their ratio stays constant.", "explanation": "If one quantity doubles, the other doubles too, for example cost and quantity bought. Exam Tip: find the value of one unit first, then multiply.", "difficulty": "easy"},
+      {"questionText": "Inverse proportion", "options": [], "correctAnswer": "A relationship where one quantity increases as the other decreases, so their product stays constant.", "explanation": "For example, more workers means less time to finish the same job. Exam Tip: multiply the two quantities to get the fixed total, then divide.", "difficulty": "easy"},
+      {"questionText": "Unitary method", "options": [], "correctAnswer": "Finding the value of one unit first, then multiplying to find the value of the required number of units.", "explanation": "It is a simple way to solve proportion problems by working out the cost or size of one item. Exam Tip: the phrase \"cost of one\" signals the unitary method.", "difficulty": "easy"},
+      {"questionText": "Map scale", "options": [], "correctAnswer": "A ratio that compares a distance on a map to the actual distance on the ground, such as 1 : 50,000.", "explanation": "The scale lets you convert map lengths into real distances and back. Exam Tip: remember 1 km = 100,000 cm when converting to kilometres.", "difficulty": "easy"},
+      {"questionText": "Increasing in a ratio", "options": [], "correctAnswer": "Making a quantity larger by multiplying it by a fraction in which the larger number is on top.", "explanation": "For example, increasing 8,000 in the ratio 5 : 4 gives 8,000 x 5/4 = 10,000. Exam Tip: for an increase the bigger number goes on top of the fraction.", "difficulty": "easy"},
+      {"questionText": "Decreasing in a ratio", "options": [], "correctAnswer": "Making a quantity smaller by multiplying it by a fraction in which the smaller number is on top.", "explanation": "For example, decreasing 60 in the ratio 2 : 3 gives 60 x 2/3 = 40. Exam Tip: for a decrease the smaller number goes on top of the fraction.", "difficulty": "easy"},
+      {"questionText": "Ratios have no units", "options": [], "correctAnswer": "Because the quantities compared are put in the same unit, the units cancel and a ratio is written as plain numbers.", "explanation": "A ratio only shows the comparison between quantities, not their units. Exam Tip: always convert both quantities to the same unit first so the units cancel.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "Fatuma, Neema and Baraka contribute to a business in the ratio 5 : 3 : 2 and share a profit of Tsh 450,000 in the same ratio. How much MORE does Fatuma get than Baraka?",
+        "options": [
+          {"id": "a", "text": "Tsh 135,000", "isCorrect": true},
+          {"id": "b", "text": "Tsh 90,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 225,000", "isCorrect": false},
+          {"id": "d", "text": "Tsh 45,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The parts add to 5 + 3 + 2 = 10, so one part = 450,000 / 10 = 45,000. Fatuma gets 5 parts = 225,000 and Baraka gets 2 parts = 90,000, a difference of 225,000 - 90,000 = 135,000. Exam Tip: for \"how much more\", find each share first then subtract.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Flour is enough to feed 120 students for 15 days. After 3 days, 30 students leave. For how many more days will the remaining flour last?",
+        "options": [
+          {"id": "a", "text": "16 days", "isCorrect": true},
+          {"id": "b", "text": "12 days", "isCorrect": false},
+          {"id": "c", "text": "18 days", "isCorrect": false},
+          {"id": "d", "text": "20 days", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The total supply is 120 x 15 = 1,800 student-days. In 3 days 120 x 3 = 360 student-days are used, leaving 1,440. With 120 - 30 = 90 students, this lasts 1,440 / 90 = 16 more days. Exam Tip: work in student-days and subtract what is already used.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A map has a scale of 1 : 250,000. Two villages are 8 cm apart on the map. What is the actual distance between them in kilometres?",
+        "options": [
+          {"id": "a", "text": "20 km", "isCorrect": true},
+          {"id": "b", "text": "2 km", "isCorrect": false},
+          {"id": "c", "text": "200 km", "isCorrect": false},
+          {"id": "d", "text": "25 km", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "8 cm on the map represents 8 x 250,000 = 2,000,000 cm on the ground. Since 1 km = 100,000 cm, this is 2,000,000 / 100,000 = 20 km. Exam Tip: multiply by the scale, then divide by 100,000 to get km.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

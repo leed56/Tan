@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_computer_studies_topic_2",
+  "topicName": "Database Design and SQL",
+  "order": 2,
+  "description": "An in-depth study of relational database design, keys, relationships, integrity, normalisation and writing basic SQL statements to create and manipulate data.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "In a relational database, what is the correct term for a single horizontal entry that holds all the data about one item, such as one student?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A field",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "A record (row)",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "An attribute",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A query",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A record, also called a row or tuple, is one complete set of related data about a single item. A field (column) holds only one attribute of that item.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following best describes the difference between data and information?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Data is always stored on paper while information is stored on computers",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Data is raw, unprocessed facts while information is processed data that has meaning",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Data is numbers while information is words",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Data and information mean exactly the same thing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Data refers to raw facts and figures with no context, while information is the result of processing and organising that data so it becomes meaningful and useful.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the role of a DBMS such as Microsoft Access, MySQL or Oracle?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It is the collection of related data itself",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It is software used to create, store, manage and retrieve data in a database",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It is a single table inside a database",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It is a printed report produced from a database",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A database is the organised collection of data, while a DBMS (Database Management System) is the software that lets users create and manage that database.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A column in a database table is uniquely identified by which property of an entity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Its primary key",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Its record",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Its attribute (field)",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Its relationship",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Each column represents an attribute (field) of the entity, for example StudentName or DateOfBirth. Each record then supplies a value for every attribute.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which key is a field in one table that refers to the primary key of another table to link the two tables together?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Composite key",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Foreign key",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Primary key",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Candidate key",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A foreign key is a field that holds values matching the primary key of another table, creating a relationship and enforcing referential integrity between the tables.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A primary key made up of two or more fields combined to uniquely identify a record is called a:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Foreign key",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Secondary key",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Composite key",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Sort key",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A composite (compound) key uses a combination of two or more columns to uniquely identify each record when no single column is unique on its own.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In which relationship can ONE record in Table A be linked to MANY records in Table B, but each record in Table B links back to only one record in Table A?",
+        "options": [
+          {
+            "id": "a",
+            "text": "One-to-one",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "One-to-many",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Many-to-many",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Many-to-one-to-many",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A one-to-many relationship, for example one class having many students, is the most common relationship type in relational databases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Consider this table named Students:\n\nID | Name   | Class | Marks\n1  | Asha   | F4A   | 78\n2  | Juma   | F4B   | 55\n3  | Neema  | F4A   | 91\n\nWhich SQL statement returns ONLY the names of students whose Marks are greater than 60?",
+        "options": [
+          {
+            "id": "a",
+            "text": "SELECT Name FROM Students WHERE Marks > 60;",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "SELECT Marks FROM Students WHERE Name > 60;",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "GET Name FROM Students IF Marks > 60;",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "SELECT ALL FROM Students WHERE Marks = 60;",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "SELECT Name picks the column to display, FROM Students names the table, and WHERE Marks > 60 filters the rows, returning Asha and Neema.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which SQL clause is used to arrange the results of a query in a particular sequence, such as alphabetical or numerical order?",
+        "options": [
+          {
+            "id": "a",
+            "text": "WHERE",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "GROUP BY",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "ORDER BY",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "SORT",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "ORDER BY sorts the result set; adding ASC sorts ascending (the default) and DESC sorts descending.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which SQL statement correctly adds a new record into a table called Teachers with columns ID and Name?",
+        "options": [
+          {
+            "id": "a",
+            "text": "ADD INTO Teachers (ID, Name) = (5, 'Mussa');",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "INSERT INTO Teachers (ID, Name) VALUES (5, 'Mussa');",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "UPDATE Teachers SET ID = 5, Name = 'Mussa';",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "INSERT Teachers VALUES ID = 5 AND Name = 'Mussa';",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The INSERT INTO statement uses the form INSERT INTO table (columns) VALUES (values); text values are placed inside single quotes.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What does the following SQL statement do?\n\nDELETE FROM Students WHERE Class = 'F4B';",
+        "options": [
+          {
+            "id": "a",
+            "text": "It deletes the whole Students table from the database",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It deletes only the records where the Class is F4B",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It deletes the Class column from the table",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It changes every Class value to F4B",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "DELETE FROM removes rows; the WHERE clause restricts deletion to only those records matching Class = 'F4B'. Without WHERE, all rows would be removed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which SQL statement correctly creates a simple table named Books with a text column Title and a number column Year?",
+        "options": [
+          {
+            "id": "a",
+            "text": "CREATE TABLE Books (Title TEXT, Year INTEGER);",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "MAKE TABLE Books (Title, Year);",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "CREATE Books TABLE WITH Title, Year;",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "NEW TABLE Books (Title TEXT, Year INTEGER);",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "CREATE TABLE is followed by the table name and a list of columns with their data types inside parentheses, such as TEXT and INTEGER.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Organising data to reduce repetition and avoid storing the same information many times is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sorting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Normalisation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Encryption",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Validation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Normalisation is the process of splitting data into related tables to remove redundancy and reduce update problems, keeping the database efficient and consistent.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is an advantage of using a database instead of separate flat files?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It always uses less electricity than paper records",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "It reduces data redundancy and allows data to be shared and updated consistently",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "It removes the need for any data security",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "It makes searching for records slower and harder",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Databases reduce duplication, keep data consistent, allow controlled sharing and provide faster, more reliable searching than separate flat files.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A school wants students and the many clubs they join to be linked, where one student can join many clubs and one club can have many students. How is this many-to-many relationship usually implemented in a relational database?",
+        "options": [
+          {
+            "id": "a",
+            "text": "By placing all data in one single large table",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "By creating a third (junction) table that links the two tables using their primary keys",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "By using a one-to-one relationship instead",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "By deleting the foreign keys from both tables",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A many-to-many relationship is resolved by introducing a junction (link) table that holds foreign keys referring to the primary keys of both original tables.",
+        "difficulty": "hard"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "Raw, unprocessed facts and figures that have not yet been given meaning are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "data",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "information",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "records",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "metadata",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Data is the raw input; once processed and organised it becomes information.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The software used to create and manage a database is known by the abbreviation _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "SQL",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "DBMS",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "ERD",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "OLAP",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "DBMS stands for Database Management System, for example Microsoft Access, MySQL or Oracle.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A field that uniquely identifies each record in a table is called the _____ key.",
+        "options": [
+          {
+            "id": "a",
+            "text": "foreign",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "candidate",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "primary",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "secondary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A primary key uniquely identifies every record and cannot contain duplicate or null values.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A field in one table that links to the primary key of another table is called a _____ key.",
+        "options": [
+          {
+            "id": "a",
+            "text": "primary",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "composite",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "alternate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "foreign",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "A foreign key creates relationships between tables and enforces referential integrity.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "In SQL, the clause used to filter records based on a given condition is the _____ clause.",
+        "options": [
+          {
+            "id": "a",
+            "text": "WHERE",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "ORDER BY",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "GROUP BY",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "HAVING",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The WHERE clause selects only the rows that satisfy the stated condition.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "To change the value of existing records in a table, the SQL command _____ is used together with SET.",
+        "options": [
+          {
+            "id": "a",
+            "text": "INSERT",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "UPDATE",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "DELETE",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "SELECT",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "UPDATE table SET column = value WHERE condition modifies existing records.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Complete the SQL: SELECT * FROM Students _____ Class = 'F4A'; to show only Form 4A students.",
+        "options": [
+          {
+            "id": "a",
+            "text": "FROM",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ORDER BY",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "WHERE",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "HAVING",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "WHERE Class = 'F4A' filters the rows so that only Form 4A records are returned.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The process of organising data into tables to remove duplication and redundancy is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "validation",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "indexing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "encryption",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "normalisation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Normalisation reduces redundancy and avoids update, insertion and deletion problems.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A database object that presents data in a printable, well-formatted layout for output is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "report",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "form",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "query",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "table",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A report formats data, often from queries or tables, for printing or presentation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Keeping a duplicate copy of a database in a safe place so it can be restored after loss is called taking a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "recovery",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "restore",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A backup is a copy of data kept so the database can be recovered if the original is damaged or lost.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "A database and a DBMS are exactly the same thing.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A database is the organised collection of data, while a DBMS is the software used to create and manage that database.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In a relational database table, a column represents a field (attribute) and a row represents a record.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Columns are the fields or attributes, and each row is one complete record about an item.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A primary key is allowed to contain duplicate values in different records.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A primary key must be unique for every record and cannot contain duplicate or null values.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A foreign key is used to create a relationship between two tables.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A foreign key in one table matches the primary key of another table, linking the two together.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The SQL statement DELETE FROM Students; without a WHERE clause removes all records from the Students table.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Without a WHERE clause DELETE FROM removes every row in the table, so it must be used carefully.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The ORDER BY clause in SQL is used to filter records, not to sort them.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "ORDER BY sorts the result set; it is the WHERE clause that filters records.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Normalisation is intended to increase the amount of duplicate data stored in a database.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Normalisation reduces, not increases, duplication and redundancy by organising data into related tables.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A many-to-many relationship is usually implemented using a junction (link) table.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A junction table with foreign keys to both tables resolves a many-to-many relationship into two one-to-many relationships.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Data integrity means ensuring that the data stored in a database is accurate, valid and consistent.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Data integrity rules keep stored data correct, complete and consistent across the database.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Using passwords and access rights to control who can view or change data is a method of database security.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Passwords, user accounts and access rights restrict access and help protect data from unauthorised use.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Define the term database in one sentence.",
+        "options": [],
+        "correctAnswer": "A database is an organised collection of related data stored together so that it can be easily accessed, managed and updated.",
+        "explanation": "The key idea is organised, related data stored for easy access and management.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State the difference between a primary key and a foreign key.",
+        "options": [],
+        "correctAnswer": "A primary key uniquely identifies each record in its own table, while a foreign key is a field that refers to the primary key of another table to link the tables.",
+        "explanation": "Primary key = unique identifier in its table; foreign key = link to another table's primary key.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "List the three main types of relationships between tables in a relational database.",
+        "options": [],
+        "correctAnswer": "One-to-one, one-to-many, and many-to-many.",
+        "explanation": "These three relationship types describe how records in one table relate to records in another.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name four common database objects found in a DBMS such as Microsoft Access.",
+        "options": [],
+        "correctAnswer": "Tables, queries, forms and reports.",
+        "explanation": "Tables store data, queries retrieve and filter data, forms aid data entry, and reports present data for output.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the purpose of the WHERE clause in an SQL statement.",
+        "options": [],
+        "correctAnswer": "The WHERE clause selects only the records that meet a stated condition, filtering the rows acted upon or returned.",
+        "explanation": "WHERE limits SELECT, UPDATE and DELETE to records matching the condition.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write an SQL statement that selects all columns from a table called Employees where the Department is 'Sales'.",
+        "options": [],
+        "correctAnswer": "SELECT * FROM Employees WHERE Department = 'Sales';",
+        "explanation": "SELECT * returns all columns, FROM names the table, and WHERE filters to the Sales department.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State two advantages of using a database over separate flat files.",
+        "options": [],
+        "correctAnswer": "It reduces data redundancy (duplication) and keeps data consistent, and it allows data to be shared and searched quickly and securely.",
+        "explanation": "Reduced redundancy, consistency, controlled sharing and faster searching are key database advantages.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is normalisation and why is it important?",
+        "options": [],
+        "correctAnswer": "Normalisation is the process of organising data into related tables to remove redundancy; it is important because it saves storage, prevents inconsistent data and avoids update problems.",
+        "explanation": "Normalisation reduces duplication and keeps the database efficient and consistent.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Write an SQL statement that changes the Marks to 80 for the student with ID 3 in a table called Students.",
+        "options": [],
+        "correctAnswer": "UPDATE Students SET Marks = 80 WHERE ID = 3;",
+        "explanation": "UPDATE with SET changes the column value, and WHERE ID = 3 limits the change to that one record.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give two methods used to keep data in a database secure.",
+        "options": [],
+        "correctAnswer": "Using passwords and user access rights to control access, and taking regular backups to protect against data loss.",
+        "explanation": "Access control (passwords, rights) and backups are core data security and protection measures.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A library stores each Member and the many Books each member borrows over time, where one member borrows many books but each borrowing record relates to one member. A designer puts the member's full name and phone number inside every borrowing record instead of in a separate Members table. Which problem is MOST directly caused by this design?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The database cannot use SQL at all",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Data redundancy, because the same member details are repeated and may become inconsistent",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The primary key automatically becomes a foreign key",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Reports can no longer be printed from the database",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Repeating member details in every borrowing record causes redundancy and update anomalies; normalisation fixes this by storing member details once in a Members table linked by a foreign key.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Given this table named Stock:\n\nItemID | Item    | Quantity\n1      | Pens    | 5\n2      | Books   | 40\n3      | Rulers  | 12\n4      | Bags    | 3\n\nA shopkeeper runs:\nSELECT Item FROM Stock WHERE Quantity < 10 ORDER BY Quantity DESC;\nWhich result is produced?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bags, Pens",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Pens, Bags",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Pens, Rulers, Bags",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Books, Rulers, Pens, Bags",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "WHERE Quantity < 10 keeps Pens (5) and Bags (3). ORDER BY Quantity DESC sorts highest first, so Pens (5) comes before Bags (3), giving Pens, Bags.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A clerk wants to remove every product in a Products table whose Price is 0, but accidentally writes: DELETE FROM Products; and runs it. What is the consequence, and what was the correct statement?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Only products with Price 0 are deleted; the statement was already correct",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Nothing happens because DELETE always needs WHERE to run",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "All records in Products are deleted; the correct statement was DELETE FROM Products WHERE Price = 0;",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The Price column is removed but the records remain; correct statement was DROP Price;",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "DELETE FROM Products; has no WHERE clause, so it removes every record. The intended statement needed a WHERE clause: DELETE FROM Products WHERE Price = 0;",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

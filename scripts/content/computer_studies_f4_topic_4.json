@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_computer_studies_topic_4",
+  "topicName": "Computer Maintenance and Troubleshooting",
+  "order": 4,
+  "description": "This topic covers the importance and types of computer maintenance, hardware and software care, common problems with their causes and solutions, basic troubleshooting approaches, maintenance tools, safety precautions, and the role of a technician.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "What is the main purpose of computer maintenance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To make the computer look more expensive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To keep the computer working reliably and extend its lifespan",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To increase the size of the hard disk automatically",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To change the operating system frequently",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Computer maintenance keeps a system running reliably, reduces breakdowns and extends the useful life of the equipment.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which type of maintenance is carried out regularly to prevent problems before they occur?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Corrective maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Predictive maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Preventive maintenance",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Emergency maintenance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Preventive maintenance involves routine activities such as cleaning and updating done in advance to stop faults from developing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Repairing or replacing a faulty component after it has failed is an example of which type of maintenance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Corrective maintenance",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Preventive maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Predictive maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Scheduled maintenance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Corrective maintenance is performed to fix or replace parts after a fault or breakdown has already happened.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Using monitoring data to estimate when a part is likely to fail so it can be serviced in time describes which maintenance type?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Corrective maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Predictive maintenance",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Preventive maintenance",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Random maintenance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Predictive maintenance uses the condition and performance data of components to predict failures and act before they occur.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which device protects a computer from damage caused by sudden increases in electrical voltage?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A surge protector",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A network switch",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A web camera",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A flash disk",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A surge protector guards equipment against voltage spikes (surges) that can damage internal components.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the main function of a UPS in computer maintenance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To speed up internet connection",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To supply temporary backup power during a power cut so the computer can be shut down safely",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To clean dust from inside the computer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To increase the screen resolution",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An Uninterruptible Power Supply (UPS) provides backup power during outages, giving time for a safe shutdown and protecting against data loss.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is a software maintenance activity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blowing dust out of the keyboard",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Tightening loose cables at the back of the computer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Updating the antivirus and scanning for malware",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Replacing a broken power button",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Updating antivirus and scanning for malware is software maintenance; the others are hardware tasks.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Defragmenting a hard disk is performed in order to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Reorganise scattered file fragments so data is accessed faster",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Permanently delete the operating system",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Increase the physical size of the hard disk",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Disable the antivirus software",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Defragmentation rearranges fragmented files into contiguous blocks, improving read/write speed on a mechanical hard disk.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A computer does not power on at all and shows no lights or sounds. Which should be checked FIRST?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The antivirus settings",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The power cable and wall socket connection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The web browser history",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The printer driver",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "When there is no power at all, the first step is to check that the power cable is firmly connected and the socket is supplying power.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A computer powers on (fans run, lights show) but the monitor stays blank. What is a likely cause?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The antivirus is out of date",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Too many files are saved on the desktop",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The monitor cable is loose or the monitor is switched off",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The internet is disconnected",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "If the system powers on but shows no display, a loose or disconnected monitor cable or a powered-off monitor is a common cause.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following is the most likely cause of a computer overheating?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blocked air vents and dust clogging the cooling fan",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Using a strong password",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Having many bookmarks in the browser",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A large monitor screen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Dust build-up and blocked vents prevent proper airflow, causing heat to accumulate and the computer to overheat.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A computer has become very slow. Which is a likely software-related cause?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A loose monitor cable",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Too many programs running at once or a virus infection",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "A faulty power button",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A cracked computer casing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Slow performance is often caused by too many running programs, low free disk space, or malware consuming system resources.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the correct order of a basic troubleshooting approach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fix, identify, verify, test, isolate",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Identify the problem, isolate the cause, test, fix, then verify",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Verify, fix, identify, test, isolate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Test, fix, identify, isolate, verify",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A logical approach is to identify the problem, isolate its cause, test possible solutions, apply the fix, and verify the system works.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which tool is most appropriate for opening a computer casing to access internal components?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A screwdriver",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "A flash disk",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "A mouse",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "A printer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A screwdriver is used to remove screws and open the computer casing during hardware maintenance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Why should a technician wear an anti-static wrist strap when working inside a computer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To make the work faster",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "To prevent static electricity from the body damaging sensitive components",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "To increase the speed of the processor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "To keep the hands warm",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "An anti-static wrist strap safely discharges static electricity, protecting delicate electronic parts from electrostatic damage.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "Maintenance done regularly to stop faults before they happen is called _____ maintenance.",
+        "options": [
+          {
+            "id": "a",
+            "text": "preventive",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "corrective",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "adaptive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "emergency",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Preventive maintenance is performed in advance to keep faults from developing.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Maintenance carried out to repair a computer after it has already developed a fault is called _____ maintenance.",
+        "options": [
+          {
+            "id": "a",
+            "text": "preventive",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "corrective",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "predictive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "routine",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Corrective maintenance fixes or replaces parts after a breakdown has occurred.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A device that supplies temporary backup power during a power cut so the computer can be shut down safely is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "AVR",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "PSU",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "UPS",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "SMPS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "A UPS (Uninterruptible Power Supply) provides backup power and protects against sudden power loss.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The process of reorganising scattered file fragments on a hard disk to speed up access is called disk _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "formatting",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "partitioning",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "compression",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "defragmentation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Defragmentation rearranges fragmented files into continuous blocks for faster access.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Software used to detect and remove viruses and other malware from a computer is called _____ software.",
+        "options": [
+          {
+            "id": "a",
+            "text": "antivirus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "firewall",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "diagnostic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "utility",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Antivirus software scans for, detects and removes malicious programs.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Making a copy of important data so it can be restored if lost is known as creating a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "restore",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "archive",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "clone",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A backup is a copy of data kept for recovery in case the original is lost or damaged.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Build-up of _____ inside a computer can block airflow and cause overheating.",
+        "options": [
+          {
+            "id": "a",
+            "text": "moisture",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "static",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "dust",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "heat",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Dust clogs vents and fans, reducing cooling and leading to overheating.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The first step in the troubleshooting process is to _____ the problem.",
+        "options": [
+          {
+            "id": "a",
+            "text": "replace",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "document",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "escalate",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "identify",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "Identifying the problem clearly is the first step before isolating its cause and fixing it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A device that protects a computer from sudden voltage spikes is called a surge _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "protector",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "adapter",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "regulator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "stabiliser",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "A surge protector shields equipment from damaging voltage surges.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The person trained to install, maintain and repair computers is called a _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "programmer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "technician",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "operator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "analyst",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A computer technician installs, services, troubleshoots and repairs computer hardware and software.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Preventive maintenance is done before a fault occurs to reduce the chance of breakdowns.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Preventive maintenance is carried out in advance to prevent faults and breakdowns.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Corrective maintenance is performed only before any problem appears on the computer.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Corrective maintenance is performed after a fault has occurred, to repair it.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Shutting down a computer properly through the operating system helps protect data and hardware.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A proper shutdown closes files and powers down safely, preventing data corruption and hardware stress.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Regularly cleaning dust from a computer has no effect on its temperature.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Removing dust improves airflow and cooling, helping to keep the computer at a safe temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Keeping the operating system and drivers updated is part of software maintenance.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Updating software and drivers fixes bugs and security holes and is a key software maintenance task.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A UPS can supply power to a computer for a short time during a power failure.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A UPS provides temporary backup power, allowing a safe shutdown during outages.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A loud, noisy fan can be a sign that the fan is dusty, worn out or failing.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Excessive fan noise often indicates dust build-up, worn bearings or a fan beginning to fail.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Touching internal computer components without discharging static electricity is completely safe.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Static electricity can damage sensitive components, so it must be discharged using an anti-static wrist strap.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Verifying that a computer works correctly is the final step after applying a fix.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "After fixing a problem, the technician verifies that the system functions correctly to confirm the repair.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Removing unused programs from a computer can help free up storage space and improve performance.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Uninstalling unused programs frees disk space and reduces background load, improving performance.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "State one importance of computer maintenance.",
+        "options": [],
+        "correctAnswer": "It keeps the computer working reliably and extends its lifespan.",
+        "explanation": "Regular maintenance reduces breakdowns, improves performance and prolongs the life of the equipment.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Name the three main types of computer maintenance.",
+        "options": [],
+        "correctAnswer": "Preventive, corrective and predictive maintenance.",
+        "explanation": "Preventive prevents faults, corrective repairs them after they occur, and predictive forecasts failures using monitoring data.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give one example of a hardware maintenance activity.",
+        "options": [],
+        "correctAnswer": "Cleaning the computer and removing dust from its components.",
+        "explanation": "Hardware maintenance includes cleaning, dust removal, checking connections and ensuring proper ventilation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Give one example of a software maintenance activity.",
+        "options": [],
+        "correctAnswer": "Updating software and scanning for viruses with antivirus software.",
+        "explanation": "Software maintenance includes updates, antivirus scanning, disk cleanup, defragmentation and backups.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State one possible cause of a computer failing to power on.",
+        "options": [],
+        "correctAnswer": "A loose or disconnected power cable or a faulty power supply.",
+        "explanation": "No power often results from an unplugged cable, a dead socket or a failed power supply unit.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Give one solution for a computer that is overheating.",
+        "options": [],
+        "correctAnswer": "Clean the dust and ensure the air vents and cooling fan are not blocked.",
+        "explanation": "Improving airflow by cleaning dust and clearing vents lowers the operating temperature.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "List the basic steps of the troubleshooting approach.",
+        "options": [],
+        "correctAnswer": "Identify the problem, isolate the cause, test, fix, then verify.",
+        "explanation": "A logical sequence helps locate and correct faults systematically and confirm the solution works.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State one cause of poor (slow) computer performance.",
+        "options": [],
+        "correctAnswer": "Too many programs running at once, low disk space, or a virus infection.",
+        "explanation": "These consume system resources, slowing the computer; removing them restores speed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Name one tool used in computer maintenance.",
+        "options": [],
+        "correctAnswer": "A screwdriver (others include a brush, blower and anti-static wrist strap).",
+        "explanation": "Common maintenance tools include screwdrivers, cleaning brushes, blowers and anti-static wrist straps.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "State one safety precaution to observe during computer maintenance.",
+        "options": [],
+        "correctAnswer": "Switch off and unplug the computer from power before opening it.",
+        "explanation": "Disconnecting power prevents electric shock and damage; using an anti-static strap protects components.",
+        "difficulty": "easy"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A school computer suddenly switches off by itself after running for about thirty minutes, and the casing feels very hot. What is the MOST likely cause and the best solution?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The antivirus is outdated; install a new web browser",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The computer is overheating due to dust-blocked vents and a clogged fan; clean it and improve ventilation",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The monitor cable is loose; replace the monitor",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The hard disk is full; buy a larger screen",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Shutting off after heating up and a hot casing point to overheating, usually from dust blocking airflow; cleaning and improving ventilation solves it.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A user reports that documents open very slowly, unfamiliar pop-up windows keep appearing, and files seem to disappear. Applying the troubleshooting approach, what is the best course of action?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Suspect a virus/malware infection; update and run a full antivirus scan, then remove threats and restore from backup",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Replace the power supply unit immediately",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Buy a new monitor with higher resolution",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Tighten the cables at the back of the computer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Pop-ups, slowness and missing files are classic signs of malware; the correct response is to scan with updated antivirus, remove the threat and restore lost data from backup.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Why is preventive maintenance generally considered better for an organisation than relying only on corrective maintenance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because preventive maintenance reduces unexpected breakdowns, downtime and repair costs by catching problems early",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Because preventive maintenance makes computers physically larger",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Because corrective maintenance is illegal in schools",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Because preventive maintenance removes the need for any technician forever",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Preventive maintenance anticipates and stops faults before they cause failures, reducing costly downtime and emergency repairs, unlike corrective maintenance which only acts after a breakdown.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

@@ -2,729 +2,371 @@
   "topicId": "form_1_physics_topic_2",
   "topicName": "Measurement",
   "order": 2,
-  "description": "An introduction to physical quantities, SI units, measuring instruments, prefixes and density for Form 1 students.",
+  "description": "An introduction to physical quantities, fundamental and derived quantities, SI units and prefixes, and the instruments and methods used to measure length, mass, time, temperature and volume.",
   "packs": {
     "mcq": [
       {
-        "questionText": "Which of the following is a fundamental (basic) physical quantity?",
+        "questionText": "A physical quantity is:",
         "options": [
-          {
-            "id": "a",
-            "text": "Volume",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Length",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Density",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Speed",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "A quantity that cannot be measured", "isCorrect": false},
+          {"id": "b", "text": "A quantity that can be measured", "isCorrect": true},
+          {"id": "c", "text": "Only a number without meaning", "isCorrect": false},
+          {"id": "d", "text": "A type of colour", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Length is a fundamental quantity, while volume, density and speed are derived from fundamental quantities.",
+        "explanation": "A physical quantity is any quantity that can be measured, such as length, mass and time. Exam Tip: A physical quantity has a NUMBER and a UNIT (e.g. 5 metres).",
         "difficulty": "easy"
       },
       {
-        "questionText": "What is the SI unit of mass?",
+        "questionText": "Which of the following is a fundamental (basic) physical quantity?",
         "options": [
-          {
-            "id": "a",
-            "text": "Gram",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Newton",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Kilogram",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Litre",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Area", "isCorrect": false},
+          {"id": "b", "text": "Volume", "isCorrect": false},
+          {"id": "c", "text": "Length", "isCorrect": true},
+          {"id": "d", "text": "Speed", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The SI unit of mass is the kilogram (kg); the gram is a smaller, non-SI base unit.",
+        "explanation": "Length is fundamental, while area, volume and speed are derived from other quantities. Exam Tip: Fundamental quantities are length, mass and time; built-up quantities such as area and speed are derived.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which instrument is most suitable for measuring the thickness of a single sheet of paper accurately?",
+        "questionText": "The SI unit of length is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Metre rule",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Tape measure",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Micrometer screw gauge",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Beam balance",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Kilogram", "isCorrect": false},
+          {"id": "b", "text": "Metre", "isCorrect": true},
+          {"id": "c", "text": "Second", "isCorrect": false},
+          {"id": "d", "text": "Litre", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The SI unit of length is the metre. Exam Tip: length is measured in metre (m), mass in kilogram (kg) and time in second (s).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of mass is the:",
+        "options": [
+          {"id": "a", "text": "Metre", "isCorrect": false},
+          {"id": "b", "text": "Second", "isCorrect": false},
+          {"id": "c", "text": "Kilogram", "isCorrect": true},
+          {"id": "d", "text": "Newton", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "A micrometer screw gauge measures very small thicknesses to 0.01 mm, far more accurately than a ruler.",
-        "difficulty": "medium"
+        "explanation": "The SI unit of mass is the kilogram. Exam Tip: the newton measures force, not mass.",
+        "difficulty": "easy"
       },
       {
         "questionText": "The SI unit of time is the:",
         "options": [
-          {
-            "id": "a",
-            "text": "Minute",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Hour",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Second",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Day",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Hour", "isCorrect": false},
+          {"id": "b", "text": "Minute", "isCorrect": false},
+          {"id": "c", "text": "Second", "isCorrect": true},
+          {"id": "d", "text": "Day", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The second (s) is the SI base unit of time.",
+        "explanation": "The SI unit of time is the second. Exam Tip: hours and minutes are used daily, but the second is the SI base unit.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which of these is a derived quantity?",
+        "questionText": "Which of the following is a derived quantity?",
         "options": [
-          {
-            "id": "a",
-            "text": "Time",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Mass",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Temperature",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Volume",
-            "isCorrect": true
-          }
-        ],
-        "correctAnswer": "d",
-        "explanation": "Volume is derived from length (length x length x length), so it is a derived quantity.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The prefix 'kilo' represents a multiplying factor of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "100",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "1000",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "0.001",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "1000000",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "The prefix kilo (k) means 1000, so 1 kilometre = 1000 metres.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Which instrument is best used to measure the internal diameter of a small tube?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Metre rule",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Vernier caliper",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Stopwatch",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Spring balance",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A vernier caliper has inside jaws designed to measure internal diameters to 0.1 mm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The volume of a liquid is most accurately measured using a:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Beaker",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Measuring cylinder",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Test tube",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Ruler",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "A measuring cylinder has fine graduations that allow the volume of a liquid to be read accurately.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "An object has a mass of 200 g and a volume of 50 cm3. What is its density?",
-        "options": [
-          {
-            "id": "a",
-            "text": "4 g/cm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.25 g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "250 g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "10000 g/cm3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Density = mass / volume = 200 / 50 = 4 g/cm3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Which unit is the SI unit of volume?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Litre",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cubic centimetre",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Cubic metre",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Millilitre",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Mass", "isCorrect": false},
+          {"id": "b", "text": "Time", "isCorrect": false},
+          {"id": "c", "text": "Area", "isCorrect": true},
+          {"id": "d", "text": "Length", "isCorrect": false}
         ],
         "correctAnswer": "c",
-        "explanation": "The SI unit of volume is the cubic metre (m3) because volume is derived from the metre.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The volume of an irregular solid (such as a stone) is best found by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Measuring its length with a ruler",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Weighing it on a balance",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Water displacement using a measuring cylinder",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "Timing how fast it falls",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "The displacement method measures the rise in water level when the solid is submerged, giving its volume.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "What is the SI unit of density?",
-        "options": [
-          {
-            "id": "a",
-            "text": "g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "kg/m3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "kg/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "g/m3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "b",
-        "explanation": "Since density = mass/volume, its SI unit is kilogram per cubic metre (kg/m3).",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The prefix 'milli' means:",
-        "options": [
-          {
-            "id": "a",
-            "text": "One thousand",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "One hundredth",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "One thousandth",
-            "isCorrect": true
-          },
-          {
-            "id": "d",
-            "text": "One million",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "c",
-        "explanation": "Milli (m) means one thousandth (0.001), so 1 millimetre = 0.001 metre.",
+        "explanation": "Area = length x length, so it is a derived quantity. Exam Tip: derived quantities include area, volume, speed, density, force and pressure.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Which instrument is used to measure the time taken for a short event such as a runner's lap?",
+        "questionText": "The instrument used to measure the length of a football field is a:",
         "options": [
-          {
-            "id": "a",
-            "text": "Stopwatch",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "Vernier caliper",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "Thermometer",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Beam balance",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Vernier caliper", "isCorrect": false},
+          {"id": "b", "text": "Micrometer screw gauge", "isCorrect": false},
+          {"id": "c", "text": "Tape measure", "isCorrect": true},
+          {"id": "d", "text": "Beam balance", "isCorrect": false}
         ],
-        "correctAnswer": "a",
-        "explanation": "A stopwatch is designed to measure short intervals of time precisely.",
+        "correctAnswer": "c",
+        "explanation": "A long flexible tape measure is suited to measuring large lengths. Exam Tip: use a tape for large lengths, a ruler for cm/mm, a vernier caliper for about 0.01 cm and a micrometer for about 0.01 mm.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The instrument used to measure the mass of an object is the:",
+        "options": [
+          {"id": "a", "text": "Ruler", "isCorrect": false},
+          {"id": "b", "text": "Beam balance", "isCorrect": true},
+          {"id": "c", "text": "Stopwatch", "isCorrect": false},
+          {"id": "d", "text": "Thermometer", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A beam or electronic balance measures mass. Exam Tip: balance measures mass, ruler measures length, stopwatch measures time and thermometer measures temperature.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Why does a piece of cork float on water?",
+        "questionText": "Which instrument is most suitable for measuring the diameter of a thin wire accurately?",
         "options": [
-          {
-            "id": "a",
-            "text": "Cork is heavier than water",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "Cork has a lower density than water",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "Cork has a larger volume than water",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "Cork has no mass",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Metre rule", "isCorrect": false},
+          {"id": "b", "text": "Tape measure", "isCorrect": false},
+          {"id": "c", "text": "Micrometer screw gauge", "isCorrect": true},
+          {"id": "d", "text": "Trundle wheel", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "A micrometer screw gauge measures very small lengths, down to 0.01 mm. Exam Tip: the micrometer gives the smallest measurements, while the vernier caliper suits slightly larger small objects.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The SI unit of temperature is the:",
+        "options": [
+          {"id": "a", "text": "Degree Celsius", "isCorrect": false},
+          {"id": "b", "text": "Kelvin", "isCorrect": true},
+          {"id": "c", "text": "Fahrenheit", "isCorrect": false},
+          {"id": "d", "text": "Joule", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "An object floats when its density is less than that of the liquid; cork is less dense than water.",
+        "explanation": "The SI unit of temperature is the kelvin (K). Exam Tip: the SI unit is the kelvin (K), though degrees Celsius are common in the lab.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure time intervals in an experiment is a:",
+        "options": [
+          {"id": "a", "text": "Thermometer", "isCorrect": false},
+          {"id": "b", "text": "Stopwatch", "isCorrect": true},
+          {"id": "c", "text": "Balance", "isCorrect": false},
+          {"id": "d", "text": "Protractor", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A stopwatch measures time intervals. Exam Tip: a stopwatch measures time in seconds, while a protractor measures angles.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The volume of a liquid can be measured accurately using a:",
+        "options": [
+          {"id": "a", "text": "Beaker", "isCorrect": false},
+          {"id": "b", "text": "Measuring cylinder", "isCorrect": true},
+          {"id": "c", "text": "Ruler", "isCorrect": false},
+          {"id": "d", "text": "Balance", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "A measuring cylinder has a graduated scale for reading volume. Exam Tip: read at the BOTTOM of the meniscus, at eye level, to avoid parallax error.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The prefix \"kilo\" means:",
+        "options": [
+          {"id": "a", "text": "One thousandth (1/1000)", "isCorrect": false},
+          {"id": "b", "text": "One thousand (1000)", "isCorrect": true},
+          {"id": "c", "text": "One hundred (100)", "isCorrect": false},
+          {"id": "d", "text": "One million", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The prefix kilo means one thousand, that is a factor of 1000. Exam Tip: kilo = 1000, milli = 1/1000 and centi = 1/100.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many centimetres are there in 1 metre?",
+        "options": [
+          {"id": "a", "text": "10", "isCorrect": false},
+          {"id": "b", "text": "100", "isCorrect": true},
+          {"id": "c", "text": "1000", "isCorrect": false},
+          {"id": "d", "text": "10000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Centi means one hundredth, so 1 m = 100 cm. Exam Tip: remember 1 m = 100 cm = 1000 mm.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The volume of an irregular solid, such as a small stone, can be found using a measuring cylinder by the method of:",
+        "options": [
+          {"id": "a", "text": "Weighing", "isCorrect": false},
+          {"id": "b", "text": "Displacement of water", "isCorrect": true},
+          {"id": "c", "text": "Timing", "isCorrect": false},
+          {"id": "d", "text": "Measuring its length only", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Lowering the solid into water and reading the rise in level gives its volume. Exam Tip: volume of an irregular solid = final water level - initial water level.",
         "difficulty": "medium"
       }
     ],
     "fib": [
       {
-        "questionText": "The branch of physics concerned with finding the size of physical quantities is called _____.",
-        "options": [],
-        "correctAnswer": "measurement",
-        "explanation": "Measurement involves comparing an unknown quantity with a known standard.",
+        "questionText": "A quantity that can be measured is called a ____ quantity.",
+        "options": [
+          {"id": "a", "text": "physical", "isCorrect": true},
+          {"id": "b", "text": "colour", "isCorrect": false},
+          {"id": "c", "text": "imaginary", "isCorrect": false},
+          {"id": "d", "text": "chemical", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Any quantity that can be measured, such as length or mass, is a physical quantity. Exam Tip: a physical quantity always has a number and a unit.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The SI unit of length is the _____.",
-        "options": [],
-        "correctAnswer": "metre",
-        "explanation": "The metre (m) is the SI base unit of length.",
+        "questionText": "Quantities such as length, mass and time, from which other quantities are obtained, are called ____ quantities.",
+        "options": [
+          {"id": "a", "text": "fundamental", "isCorrect": true},
+          {"id": "b", "text": "derived", "isCorrect": false},
+          {"id": "c", "text": "vector", "isCorrect": false},
+          {"id": "d", "text": "scalar", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Length, mass and time are the basic building blocks, so they are fundamental quantities. Exam Tip: fundamental quantities include length, mass, time, temperature and current.",
         "difficulty": "easy"
       },
       {
-        "questionText": "Density is calculated by dividing mass by _____.",
-        "options": [],
-        "correctAnswer": "volume",
-        "explanation": "Density = mass / volume.",
+        "questionText": "The SI unit of length is the ____.",
+        "options": [
+          {"id": "a", "text": "metre", "isCorrect": true},
+          {"id": "b", "text": "kilogram", "isCorrect": false},
+          {"id": "c", "text": "litre", "isCorrect": false},
+          {"id": "d", "text": "second", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The metre (m) is the SI base unit of length. Exam Tip: the metre (m) is the SI base unit of length.",
         "difficulty": "easy"
       },
       {
-        "questionText": "A quantity that is obtained by combining fundamental quantities is called a _____ quantity.",
-        "options": [],
-        "correctAnswer": "derived",
-        "explanation": "Examples of derived quantities include area, volume and density.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The instrument used to measure lengths to an accuracy of 0.01 mm is the _____ screw gauge.",
-        "options": [],
-        "correctAnswer": "micrometer",
-        "explanation": "The micrometer screw gauge can measure very small thicknesses and diameters.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "A mass of 2000 g is equal to _____ kg.",
-        "options": [],
-        "correctAnswer": "2",
-        "explanation": "Since 1 kg = 1000 g, 2000 g divided by 1000 equals 2 kg.",
+        "questionText": "Quantities obtained by combining fundamental quantities, such as area and speed, are called ____ quantities.",
+        "options": [
+          {"id": "a", "text": "derived", "isCorrect": true},
+          {"id": "b", "text": "fundamental", "isCorrect": false},
+          {"id": "c", "text": "basic", "isCorrect": false},
+          {"id": "d", "text": "standard", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Area and speed are built from fundamental quantities, so they are derived. Exam Tip: area, volume, speed, density, force and pressure are all derived.",
         "difficulty": "easy"
       },
       {
-        "questionText": "The prefix that represents one millionth is _____.",
-        "options": [],
-        "correctAnswer": "micro",
-        "explanation": "Micro is symbolised by the Greek letter mu and means 0.000001.",
-        "difficulty": "medium"
+        "questionText": "The instrument used to measure very small lengths, such as the thickness of a coin, to 0.01 mm is the ____.",
+        "options": [
+          {"id": "a", "text": "micrometer screw gauge", "isCorrect": true},
+          {"id": "b", "text": "metre rule", "isCorrect": false},
+          {"id": "c", "text": "tape measure", "isCorrect": false},
+          {"id": "d", "text": "beam balance", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The micrometer screw gauge reads to 0.01 mm, making it ideal for very small lengths. Exam Tip: the micrometer (0.01 mm) is more precise than the vernier caliper (0.01 cm).",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The method of finding the volume of an irregular solid by submerging it in water is called the _____ method.",
-        "options": [],
-        "correctAnswer": "displacement",
-        "explanation": "The volume of water pushed aside equals the volume of the submerged solid.",
-        "difficulty": "medium"
+        "questionText": "The SI unit of mass is the ____.",
+        "options": [
+          {"id": "a", "text": "kilogram", "isCorrect": true},
+          {"id": "b", "text": "newton", "isCorrect": false},
+          {"id": "c", "text": "gram", "isCorrect": false},
+          {"id": "d", "text": "metre", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The kilogram (kg) is the SI base unit of mass. Exam Tip: do not confuse mass (kg) with weight (newton).",
+        "difficulty": "easy"
       },
       {
-        "questionText": "An object with a mass of 60 g and a volume of 20 cm3 has a density of _____ g/cm3.",
-        "options": [],
-        "correctAnswer": "3",
-        "explanation": "Density = 60 / 20 = 3 g/cm3.",
-        "difficulty": "medium"
+        "questionText": "The prefix \"milli\" means one ____ of a unit.",
+        "options": [
+          {"id": "a", "text": "thousandth", "isCorrect": true},
+          {"id": "b", "text": "hundredth", "isCorrect": false},
+          {"id": "c", "text": "thousand", "isCorrect": false},
+          {"id": "d", "text": "tenth", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Milli means one thousandth, so 1 mm = 1/1000 m. Exam Tip: milli means divide by 1000, so 1 mm = 1/1000 m.",
+        "difficulty": "easy"
       },
       {
-        "questionText": "The instrument used to measure the mass of objects in the laboratory is the beam _____.",
-        "options": [],
-        "correctAnswer": "balance",
-        "explanation": "A beam balance compares the mass of an object with known standard masses.",
+        "questionText": "The volume of a regular solid such as a cube is found by multiplying length x width x ____.",
+        "options": [
+          {"id": "a", "text": "height", "isCorrect": true},
+          {"id": "b", "text": "mass", "isCorrect": false},
+          {"id": "c", "text": "time", "isCorrect": false},
+          {"id": "d", "text": "area", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The volume of a cuboid is length x width x height. Exam Tip: regular solids use formulas, while irregular solids use water displacement.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The instrument used to measure the temperature of a substance is the ____.",
+        "options": [
+          {"id": "a", "text": "thermometer", "isCorrect": true},
+          {"id": "b", "text": "stopwatch", "isCorrect": false},
+          {"id": "c", "text": "balance", "isCorrect": false},
+          {"id": "d", "text": "barometer", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A thermometer measures temperature. Exam Tip: the thermometer measures temperature, whose SI unit is the kelvin.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The volume of an irregularly shaped stone is measured by the method of ____ of water.",
+        "options": [
+          {"id": "a", "text": "displacement", "isCorrect": true},
+          {"id": "b", "text": "evaporation", "isCorrect": false},
+          {"id": "c", "text": "weighing", "isCorrect": false},
+          {"id": "d", "text": "boiling", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The rise in water level when the stone is submerged equals the stone's volume, the displacement method. Exam Tip: volume = rise in water level = final reading - initial reading.",
         "difficulty": "easy"
       }
     ],
     "tf": [
-      {
-        "questionText": "Mass and weight are exactly the same physical quantity.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Mass is the amount of matter in an object, while weight is the pull of gravity on that mass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The kilogram is the SI unit of mass.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "The kilogram (kg) is the SI base unit of mass.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Volume is a fundamental quantity.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "Volume is a derived quantity because it comes from length cubed.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A vernier caliper is more accurate than a metre rule.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "A vernier caliper reads to 0.1 mm while a metre rule typically reads to 1 mm.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "1 litre is equal to 1000 cubic centimetres.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "1 litre = 1000 cm3 = 1000 ml.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "An object will sink in a liquid if its density is less than that of the liquid.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "An object sinks when its density is greater than the liquid's density, and floats when it is less.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "The prefix 'centi' means one hundredth.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Centi (c) means 0.01, so 1 centimetre = 0.01 metre.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "A stopwatch is used to measure temperature.",
-        "options": [],
-        "correctAnswer": "false",
-        "explanation": "A stopwatch measures time; temperature is measured with a thermometer.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "The density of pure water is approximately 1000 kg/m3.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Pure water has a density of about 1000 kg/m3 or 1 g/cm3.",
-        "difficulty": "medium"
-      },
-      {
-        "questionText": "Taking several readings and finding their average improves the accuracy of a measurement.",
-        "options": [],
-        "correctAnswer": "true",
-        "explanation": "Averaging repeated readings reduces the effect of random errors.",
-        "difficulty": "medium"
-      }
+      {"questionText": "A physical quantity can be measured and has a number and a unit.", "options": [], "correctAnswer": "true", "explanation": "A physical quantity always consists of a numerical value together with a unit. Exam Tip: a value without a unit is incomplete in physics.", "difficulty": "easy"},
+      {"questionText": "Length, mass and time are derived quantities.", "options": [], "correctAnswer": "false", "explanation": "Length, mass and time are fundamental quantities, not derived. Exam Tip: they are fundamental, while area, speed and density are derived.", "difficulty": "easy"},
+      {"questionText": "The SI unit of mass is the kilogram.", "options": [], "correctAnswer": "true", "explanation": "The kilogram is the SI base unit of mass. Exam Tip: the kilogram (kg) is the base unit for mass.", "difficulty": "easy"},
+      {"questionText": "Speed is a fundamental quantity.", "options": [], "correctAnswer": "false", "explanation": "Speed = distance / time, so it is built from other quantities and is derived. Exam Tip: speed = distance / time, so it is derived.", "difficulty": "easy"},
+      {"questionText": "A micrometer screw gauge is more precise than a metre rule.", "options": [], "correctAnswer": "true", "explanation": "The micrometer reads to 0.01 mm, far finer than the 1 mm of a metre rule. Exam Tip: micrometer (0.01 mm) is finer than vernier caliper (0.01 cm), which is finer than a ruler (1 mm).", "difficulty": "easy"},
+      {"questionText": "1 metre is equal to 100 centimetres.", "options": [], "correctAnswer": "true", "explanation": "Since centi means one hundredth, 1 m contains 100 cm. Exam Tip: 1 m = 100 cm = 1000 mm.", "difficulty": "easy"},
+      {"questionText": "The volume of an irregular solid can be found using the water displacement method.", "options": [], "correctAnswer": "true", "explanation": "Submerging the solid raises the water level by an amount equal to its volume. Exam Tip: volume = final water level - initial water level.", "difficulty": "easy"},
+      {"questionText": "The prefix \"kilo\" means one thousandth of a unit.", "options": [], "correctAnswer": "false", "explanation": "Kilo means one thousand, not one thousandth; milli means one thousandth. Exam Tip: kilo = 1000 and milli = 1/1000, so they are easily swapped.", "difficulty": "easy"},
+      {"questionText": "A stopwatch is used to measure time.", "options": [], "correctAnswer": "true", "explanation": "A stopwatch measures time intervals in seconds. Exam Tip: the stopwatch measures time in seconds.", "difficulty": "easy"},
+      {"questionText": "When reading a measuring cylinder, the eye should be above the liquid, looking down at an angle.", "options": [], "correctAnswer": "false", "explanation": "Reading at an angle causes parallax error; the eye must be level with the liquid. Exam Tip: read at eye level, straight on, at the bottom of the meniscus.", "difficulty": "easy"}
     ],
     "summary": [
-      {
-        "questionText": "Fundamental quantities",
-        "options": [],
-        "correctAnswer": "Length, mass and time are basic quantities that cannot be derived from others.",
-        "explanation": "All other quantities are built from these fundamental quantities.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Derived quantities",
-        "options": [],
-        "correctAnswer": "Quantities such as area, volume and density obtained by combining fundamental quantities.",
-        "explanation": "For example, area = length x width.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "SI base units",
-        "options": [],
-        "correctAnswer": "Metre for length, kilogram for mass and second for time.",
-        "explanation": "These are the internationally agreed standard units.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Formula for density",
-        "options": [],
-        "correctAnswer": "Density = mass / volume.",
-        "explanation": "Its SI unit is kg/m3.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Measuring small thicknesses",
-        "options": [],
-        "correctAnswer": "Use a micrometer screw gauge (reads to 0.01 mm).",
-        "explanation": "Ideal for wire diameters and thin sheets.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Measuring volume of irregular solids",
-        "options": [],
-        "correctAnswer": "Use the displacement method with a measuring cylinder of water.",
-        "explanation": "The rise in water level equals the volume of the solid.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Common SI prefixes",
-        "options": [],
-        "correctAnswer": "kilo = 1000, centi = 0.01, milli = 0.001, micro = 0.000001.",
-        "explanation": "Prefixes scale units up or down.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Floating and sinking",
-        "options": [],
-        "correctAnswer": "An object floats if it is less dense than the liquid and sinks if it is denser.",
-        "explanation": "This compares the object's density with the liquid's density.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Improving accuracy",
-        "options": [],
-        "correctAnswer": "Repeat readings and take the average to reduce random error.",
-        "explanation": "Also avoid parallax error by reading at eye level.",
-        "difficulty": "easy"
-      },
-      {
-        "questionText": "Measuring instruments and their quantities",
-        "options": [],
-        "correctAnswer": "Ruler/caliper measure length, balance measures mass, stopwatch measures time.",
-        "explanation": "Each quantity has appropriate instruments.",
-        "difficulty": "easy"
-      }
+      {"questionText": "Physical quantity", "options": [], "correctAnswer": "A quantity that can be measured and is expressed as a number together with a unit, such as 5 metres.", "explanation": "Examples include length, mass and time. Exam Tip: every physical quantity needs both a number and a unit.", "difficulty": "easy"},
+      {"questionText": "Fundamental quantities", "options": [], "correctAnswer": "Basic quantities from which all others are obtained, namely length, mass and time (also temperature and current).", "explanation": "They are the building blocks of measurement. Exam Tip: remember length, mass and time as the core fundamental quantities.", "difficulty": "easy"},
+      {"questionText": "Derived quantities", "options": [], "correctAnswer": "Quantities obtained by combining fundamental quantities, such as area, volume, speed, density and force.", "explanation": "For example area = length x length. Exam Tip: if a quantity is built from other quantities, it is derived.", "difficulty": "easy"},
+      {"questionText": "SI units of the base quantities", "options": [], "correctAnswer": "The metre for length, the kilogram for mass, the second for time and the kelvin for temperature.", "explanation": "These are the standard international units. Exam Tip: length metre (m), mass kilogram (kg), time second (s), temperature kelvin (K).", "difficulty": "easy"},
+      {"questionText": "Prefixes kilo, centi and milli", "options": [], "correctAnswer": "Kilo means one thousand (1000), centi means one hundredth (1/100) and milli means one thousandth (1/1000).", "explanation": "Prefixes scale a unit up or down. Exam Tip: 1 km = 1000 m, 1 m = 100 cm and 1 m = 1000 mm.", "difficulty": "easy"},
+      {"questionText": "Measuring instruments", "options": [], "correctAnswer": "Tools matched to a quantity: ruler or tape for length, balance for mass, stopwatch for time and thermometer for temperature.", "explanation": "Choosing the right instrument gives an accurate reading. Exam Tip: match each instrument to the quantity it measures.", "difficulty": "easy"},
+      {"questionText": "Micrometer vs vernier caliper", "options": [], "correctAnswer": "The micrometer screw gauge reads to about 0.01 mm, while the vernier caliper reads to about 0.01 cm, so the micrometer is more precise.", "explanation": "Both measure small lengths but to different precision. Exam Tip: use the micrometer for the smallest objects and the vernier caliper for slightly larger ones.", "difficulty": "easy"},
+      {"questionText": "Volume by displacement", "options": [], "correctAnswer": "A method for finding the volume of an irregular solid by measuring the rise in water level when it is submerged.", "explanation": "Volume = final water level - initial water level. Exam Tip: use displacement for irregular solids and formulas for regular ones.", "difficulty": "easy"},
+      {"questionText": "Parallax error", "options": [], "correctAnswer": "An error in reading a scale caused by viewing it from an angle instead of straight on at eye level.", "explanation": "It commonly happens when reading a measuring cylinder. Exam Tip: read at eye level at the bottom of the meniscus to avoid it.", "difficulty": "easy"},
+      {"questionText": "Meniscus", "options": [], "correctAnswer": "The curved surface of a liquid in a container, read at its lowest point when measuring volume.", "explanation": "Water forms a downward curve in a measuring cylinder. Exam Tip: take the reading at the bottom of the meniscus, at eye level.", "difficulty": "easy"}
     ],
     "hoq": [
       {
-        "questionText": "A metal block measures 5 cm by 4 cm by 2 cm and has a mass of 320 g. What is its density?",
+        "questionText": "A student pours water into a measuring cylinder up to the 40 cm3 mark, then lowers a small stone in and the level rises to 65 cm3. What is the volume of the stone, and which method?",
         "options": [
-          {
-            "id": "a",
-            "text": "8 g/cm3",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "0.125 g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "40 g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "320 g/cm3",
-            "isCorrect": false
-          }
-        ],
-        "correctAnswer": "a",
-        "explanation": "Volume = 5 x 4 x 2 = 40 cm3, so density = 320 / 40 = 8 g/cm3.",
-        "difficulty": "hard"
-      },
-      {
-        "questionText": "A stone is lowered into a measuring cylinder. The water level rises from 30 cm3 to 75 cm3. If the stone's mass is 135 g, what is its density?",
-        "options": [
-          {
-            "id": "a",
-            "text": "1.8 g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "b",
-            "text": "3 g/cm3",
-            "isCorrect": true
-          },
-          {
-            "id": "c",
-            "text": "4.5 g/cm3",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "0.33 g/cm3",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "105 cm3, weighing", "isCorrect": false},
+          {"id": "b", "text": "25 cm3, water displacement", "isCorrect": true},
+          {"id": "c", "text": "25 cm3, timing", "isCorrect": false},
+          {"id": "d", "text": "40 cm3, displacement", "isCorrect": false}
         ],
         "correctAnswer": "b",
-        "explanation": "Volume of stone = 75 - 30 = 45 cm3, so density = 135 / 45 = 3 g/cm3.",
+        "explanation": "The volume equals the rise in water level, final minus initial, which is 65 - 40 = 25 cm3, found by water displacement. Exam Tip: volume = rise in level (final - initial); option A wrongly ADDS the readings.",
         "difficulty": "hard"
       },
       {
-        "questionText": "A liquid has a density of 0.8 g/cm3. What is the mass of 250 cm3 of this liquid?",
+        "questionText": "Classify the following as fundamental or derived: (i) mass, (ii) area, (iii) time, (iv) density.",
         "options": [
-          {
-            "id": "a",
-            "text": "200 g",
-            "isCorrect": true
-          },
-          {
-            "id": "b",
-            "text": "312.5 g",
-            "isCorrect": false
-          },
-          {
-            "id": "c",
-            "text": "0.0032 g",
-            "isCorrect": false
-          },
-          {
-            "id": "d",
-            "text": "320 g",
-            "isCorrect": false
-          }
+          {"id": "a", "text": "Fundamental: (i) and (iii); Derived: (ii) and (iv)", "isCorrect": true},
+          {"id": "b", "text": "Fundamental: (ii) and (iv); Derived: (i) and (iii)", "isCorrect": false},
+          {"id": "c", "text": "All are fundamental", "isCorrect": false},
+          {"id": "d", "text": "All are derived", "isCorrect": false}
         ],
         "correctAnswer": "a",
-        "explanation": "Mass = density x volume = 0.8 x 250 = 200 g.",
+        "explanation": "Mass and time are basic, so they are fundamental, while area = length x length and density = mass/volume are built from other quantities, so they are derived. Exam Tip: ask \"is it built from other quantities?\" If yes, it is derived.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A rectangular metal sheet is 8 cm long, 5 cm wide, thickness 2 mm. To find its VOLUME in cubic centimetres, what must she do, and what is the volume?",
+        "options": [
+          {"id": "a", "text": "Multiply 8 x 5 x 2 = 80 cm3 directly", "isCorrect": false},
+          {"id": "b", "text": "Convert 2 mm to 0.2 cm, then 8 x 5 x 0.2 = 8 cm3", "isCorrect": true},
+          {"id": "c", "text": "Add all: 8 + 5 + 2 = 15 cm3", "isCorrect": false},
+          {"id": "d", "text": "8 x 5 = 40 cm3, ignoring thickness", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "First convert the thickness 2 mm to 0.2 cm, then multiply volume = 8 x 5 x 0.2 = 8 cm3. Exam Tip: convert every measurement to the SAME unit before multiplying, remembering 10 mm = 1 cm.",
         "difficulty": "hard"
       }
     ]

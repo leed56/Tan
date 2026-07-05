@@ -429,78 +429,288 @@
     "fib": [
       {
         "questionText": "A condition that interferes with the normal functioning of a crop plant and reduces its yield is called a crop _____.",
-        "options": [],
-        "correctAnswer": "disease",
+        "options": [
+          {
+            "id": "a",
+            "text": "disease",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "pest",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "weed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "harvest",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A crop disease disturbs the normal structure or function of a plant, usually lowering production.",
         "difficulty": "easy"
       },
       {
         "questionText": "Living organisms that cause diseases, such as fungi, bacteria and viruses, are known as _____.",
-        "options": [],
-        "correctAnswer": "pathogens",
+        "options": [
+          {
+            "id": "a",
+            "text": "vectors",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "pathogens",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hosts",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "parasites",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Pathogens are disease-causing organisms that attack and harm crop plants.",
         "difficulty": "medium"
       },
       {
         "questionText": "The group of pathogens responsible for rusts, mildews and smuts in crops is the _____.",
-        "options": [],
-        "correctAnswer": "fungi",
+        "options": [
+          {
+            "id": "a",
+            "text": "bacteria",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "viruses",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "fungi",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "nematodes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Fungi cause the largest number of crop diseases, including rusts and mildews.",
         "difficulty": "easy"
       },
       {
         "questionText": "Cassava mosaic disease is caused by a _____.",
-        "options": [],
-        "correctAnswer": "virus",
+        "options": [
+          {
+            "id": "a",
+            "text": "fungus",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bacterium",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "nematode",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "virus",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Cassava mosaic is a viral disease spread by whiteflies and infected cuttings.",
         "difficulty": "medium"
       },
       {
         "questionText": "The drooping and loss of firmness in leaves and stems of a sick plant is a symptom called _____.",
-        "options": [],
-        "correctAnswer": "wilting",
+        "options": [
+          {
+            "id": "a",
+            "text": "wilting",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "chlorosis",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "lodging",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rotting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Wilting often occurs when the movement of water in the plant is blocked by a disease.",
         "difficulty": "easy"
       },
       {
         "questionText": "Insects such as whiteflies and aphids that carry pathogens from one plant to another are called disease _____.",
-        "options": [],
-        "correctAnswer": "vectors",
+        "options": [
+          {
+            "id": "a",
+            "text": "pests",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "vectors",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "hosts",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "predators",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A vector is an organism that transmits a pathogen from an infected plant to a healthy one.",
         "difficulty": "hard"
       },
       {
         "questionText": "Seed that has been inspected and approved as healthy and true to type is known as _____ seed.",
-        "options": [],
-        "correctAnswer": "certified",
+        "options": [
+          {
+            "id": "a",
+            "text": "treated",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "improved",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "certified",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "hybrid",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Certified seed reduces the chance of introducing diseases into a field.",
         "difficulty": "medium"
       },
       {
         "questionText": "Growing different crops on the same piece of land in successive seasons to break pest and disease cycles is called crop _____.",
-        "options": [],
-        "correctAnswer": "rotation",
+        "options": [
+          {
+            "id": "a",
+            "text": "spacing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "thinning",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "weeding",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "rotation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Crop rotation starves host-specific pathogens by changing the crop grown each season.",
         "difficulty": "medium"
       },
       {
         "questionText": "Spraying a crop with a chemical called a _____ is used to control fungal diseases.",
-        "options": [],
-        "correctAnswer": "fungicide",
+        "options": [
+          {
+            "id": "a",
+            "text": "fungicide",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "insecticide",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "herbicide",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nematicide",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Fungicides are chemicals that kill or stop the growth of disease-causing fungi.",
         "difficulty": "medium"
       },
       {
         "questionText": "Keeping the farm clean by removing and destroying diseased plant remains is part of field _____.",
-        "options": [],
-        "correctAnswer": "hygiene",
+        "options": [
+          {
+            "id": "a",
+            "text": "spacing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "hygiene",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "drainage",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "irrigation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Field hygiene (sanitation) reduces the survival and spread of pathogens in a field.",
         "difficulty": "easy"
       }
     ],
     "tf": [
       {
-        "questionText": "A crop disease always reduces the quality or quantity of yield from the affected plant.",
+        "questionText": "A crop disease usually reduces the quality or quantity of yield from the affected plant.",
         "options": [],
         "correctAnswer": "true",
         "explanation": "Diseases disturb normal plant functions, generally lowering yield and quality.",

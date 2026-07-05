@@ -497,9 +497,9 @@ const PACK_TEMPLATES: PackTemplate[] = [
     xpMultiplier: 0.9,
   },
   {
-    titleSuffix: 'AI Summary',
+    titleSuffix: 'Summary',
     type: 'summary',
-    description: 'A concise AI-generated overview of all key concepts, exam tips and mnemonics.',
+    description: '10 key points covering the core concepts, exam tips and mnemonics.',
     questionCount: 0,
     estimatedMinutes: 5,
     isPremium: true,

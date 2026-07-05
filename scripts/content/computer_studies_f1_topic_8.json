@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A device that supplies temporary battery power during a blackout is called a _____.",
-        "options": [],
-        "correctAnswer": "UPS",
+        "options": [
+          {
+            "id": "a",
+            "text": "UPS",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "CPU",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "GPU",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "LCD",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "UPS stands for Uninterruptible Power Supply and protects against sudden power loss.",
         "difficulty": "easy"
       },
       {
         "questionText": "Software that detects and removes viruses from a computer is called _____ software.",
-        "options": [],
-        "correctAnswer": "antivirus",
+        "options": [
+          {
+            "id": "a",
+            "text": "utility",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "antivirus",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "application",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "system",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Antivirus software protects a computer from malicious programs.",
         "difficulty": "easy"
       },
       {
         "questionText": "Making an extra copy of your files in case the original is lost is called a _____.",
-        "options": [],
-        "correctAnswer": "backup",
+        "options": [
+          {
+            "id": "a",
+            "text": "restore",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "format",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "shortcut",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "A backup allows lost or damaged data to be restored.",
         "difficulty": "easy"
       },
       {
         "questionText": "The study of designing the workplace and equipment for comfort and safety is called _____.",
-        "options": [],
-        "correctAnswer": "ergonomics",
+        "options": [
+          {
+            "id": "a",
+            "text": "economics",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "electronics",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "mechanics",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ergonomics",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Ergonomics helps reduce health problems such as back pain and strain.",
         "difficulty": "hard"
       },
       {
         "questionText": "A secret word or code used to prevent unauthorized access to a computer is called a _____.",
-        "options": [],
-        "correctAnswer": "password",
+        "options": [
+          {
+            "id": "a",
+            "text": "password",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "username",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "filename",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "hostname",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Passwords protect the security and privacy of stored data.",
         "difficulty": "easy"
       },
       {
         "questionText": "A device that keeps the electrical voltage steady to protect the computer is called a _____.",
-        "options": [],
-        "correctAnswer": "stabilizer",
+        "options": [
+          {
+            "id": "a",
+            "text": "transformer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "stabilizer",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "generator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "adapter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A stabilizer protects the computer from voltage fluctuations.",
         "difficulty": "medium"
       },
       {
         "questionText": "Looking at a computer screen for too long without rest can cause eye _____.",
-        "options": [],
-        "correctAnswer": "strain",
+        "options": [
+          {
+            "id": "a",
+            "text": "power",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "level",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "strain",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "contact",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Eye strain is reduced by taking regular breaks from the screen.",
         "difficulty": "easy"
       },
       {
         "questionText": "Particles in the air that can clog computer fans and cause overheating are called _____.",
-        "options": [],
-        "correctAnswer": "dust",
+        "options": [
+          {
+            "id": "a",
+            "text": "fumes",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "sparks",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "liquids",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dust",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Dust blocks ventilation and prevents proper cooling of the computer.",
         "difficulty": "medium"
       },
       {
         "questionText": "Discarded computers and electronic devices are commonly known as electronic waste or _____.",
-        "options": [],
-        "correctAnswer": "e-waste",
+        "options": [
+          {
+            "id": "a",
+            "text": "e-waste",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "e-mail",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "e-commerce",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "e-learning",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "E-waste should be recycled properly to protect the environment.",
         "difficulty": "medium"
       },
       {
         "questionText": "Computers should be protected from high _____ such as direct sunlight, because too much heat can damage components.",
-        "options": [],
-        "correctAnswer": "heat",
+        "options": [
+          {
+            "id": "a",
+            "text": "cold",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "heat",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "noise",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "light",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Excess heat can cause components to overheat and fail.",
         "difficulty": "medium"
       }

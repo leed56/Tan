@@ -4,7 +4,7 @@
  * TODO: Phase 4 — add real-time listeners for live question bank updates
  */
 
-import { firestore } from './firebaseConfig';
+import { firestore, isFirebaseConfigured, waitForAuthReady } from './firebaseConfig';
 import {
   collection,
   getDocs,
@@ -19,10 +19,6 @@ import { COLLECTIONS } from './firebaseConfig';
 import type { Question, QuizAttempt, QuizAnswer } from '../types/quiz';
 import { getSeedQuestionsByPack } from '../utils/seedQuestions';
 
-function isFirebaseConfigured(): boolean {
-  return (process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID ?? '').length > 0;
-}
-
 // ─── Questions ────────────────────────────────────────────────────────────────
 
 export async function getQuestionsByLearningPack(
@@ -35,6 +31,7 @@ export async function getQuestionsByLearningPack(
     return getSeedQuestionsByPack(learningPackId);
   }
   try {
+    await waitForAuthReady();
     const snap = await getDocs(
       query(
         collection(firestore, COLLECTIONS.questions),
@@ -43,9 +40,25 @@ export async function getQuestionsByLearningPack(
         orderBy('order'),
       ),
     );
-    if (snap.empty) return getSeedQuestionsByPack(learningPackId);
-    return snap.docs.map((d) => d.data() as Question);
-  } catch {
+    if (snap.empty) {
+      console.warn(
+        `[quizService] getQuestionsByLearningPack: Firestore query for learningPackId="${learningPackId}" succeeded but matched 0 real docs — falling back to local seed data.`,
+      );
+      return getSeedQuestionsByPack(learningPackId);
+    }
+    return snap.docs.map((d) => {
+      // DB docs store type UPPERCASE ('MCQ' — enforced by rules); the app's
+      // QuizType union and every comparison downstream (prompt building, TF
+      // answer rendering, attempt records) are lowercase. Normalize here so
+      // no consumer has to care.
+      const data = d.data() as Question;
+      return { ...data, type: String(data.type).toLowerCase() as Question['type'] };
+    });
+  } catch (e) {
+    console.warn(
+      `[quizService] getQuestionsByLearningPack: Firestore query for learningPackId="${learningPackId}" threw — falling back to local seed data. Error:`,
+      e,
+    );
     return getSeedQuestionsByPack(learningPackId);
   }
 }

@@ -1,13 +1,10 @@
 import React, { useState, useCallback } from 'react';
-import { useFocusEffect } from '@react-navigation/native';
 import {
   View,
   Text,
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  KeyboardAvoidingView,
-  Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { StackScreenProps } from '@react-navigation/stack';
@@ -17,24 +14,30 @@ import { LoadingState } from '../../components/ui/LoadingState';
 import { ErrorState } from '../../components/ui/ErrorState';
 import { QuizProgressBar } from '../../components/ui/quiz/QuizProgressBar';
 import { QuestionRenderer } from '../../components/ui/quiz/QuestionRenderer';
+import { MCQOption } from '../../components/ui/quiz/MCQOption';
 import { FIBInput } from '../../components/ui/quiz/FIBInput';
 import { FeedbackModal } from '../../components/ui/quiz/FeedbackModal';
+import { stripMathMarkup } from '../../components/ui/quiz/MathRenderer';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
 import { useQuizStore } from '../../store/quizStore';
+import { confirmAction } from '../../utils/confirm';
 import { useGamificationStore } from '../../store/gamificationStore';
 
 type Props = StackScreenProps<HomeStackParamList, 'FIBQuiz'>;
 
-function normalise(s: string): string {
-  // Lowercase, collapse whitespace, and keep letters/digits/decimal points so
-  // numeric answers ("3.14") and multi-word answers ("carbon dioxide") survive.
-  return s
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .replace(/[^a-z0-9 .]/g, '')
-    .trim();
-}
+const OPTION_LABELS = ['A', 'B', 'C', 'D'];
+
+// Free-text FIB answers are matched leniently: case/whitespace-insensitive,
+// and numerically when both sides parse as numbers ("180" == "180.0").
+const normalizeAnswer = (s: string) => s.trim().toLowerCase().replace(/\s+/g, ' ');
+const answersMatch = (given: string, expected: string) => {
+  const a = normalizeAnswer(given);
+  const b = normalizeAnswer(expected);
+  if (a === b) return true;
+  const na = Number(a.replace(/,/g, ''));
+  const nb = Number(b.replace(/,/g, ''));
+  return Number.isFinite(na) && Number.isFinite(nb) && na === nb;
+};
 
 export function FIBScreen({ navigation, route }: Props) {
   const { packId, packTitle, topicId, subjectColor, formId, subjectId } = route.params;
@@ -42,35 +45,38 @@ export function FIBScreen({ navigation, route }: Props) {
   const { currentSession, currentQuestion, isLastQuestion, submitAnswer, advance, sessionResults, loadingQuestions } = useQuizStore();
   const { addXp, addCoins } = useGamificationStore();
 
-  const [inputValue, setInputValue] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [typedAnswer, setTypedAnswer] = useState('');
   const [showFeedback, setShowFeedback] = useState(false);
 
   const question = currentQuestion();
   const session = currentSession;
+  // Nearly all FIB content is free-text (correctAnswer holds the expected
+  // answer, options is empty); option-based fill-ins remain supported.
+  const isFreeText = (question?.options?.length ?? 0) === 0;
 
   // Reset state on new question
   const prevQuestionId = React.useRef<string | undefined>(undefined);
   if (question?.id !== prevQuestionId.current) {
     prevQuestionId.current = question?.id;
-    if (submitted) {
-      setInputValue('');
-      setSubmitted(false);
-      setIsCorrect(null);
+    if (selectedOption !== null) {
+      setSelectedOption(null);
+      setTypedAnswer('');
       setShowFeedback(false);
     }
   }
 
-  const handleSubmit = useCallback(() => {
-    if (!question || submitted || inputValue.trim().length === 0) return;
+  const handleAnswer = useCallback((answer: string) => {
+    if (selectedOption !== null || !question) return;
 
-    const correct = normalise(inputValue) === normalise(question.correctAnswer);
+    const freeText = (question.options?.length ?? 0) === 0;
+    const correct = freeText
+      ? answersMatch(answer, question.correctAnswer)
+      : question.correctAnswer === answer;
     const timeTaken = 0; // no timer for FIB
 
-    setIsCorrect(correct);
-    setSubmitted(true);
-    submitAnswer(question.id, inputValue.trim(), correct, timeTaken);
+    setSelectedOption(answer);
+    submitAnswer(question.id, answer, correct, timeTaken);
 
     if (correct) {
       addXp(question.xpReward);
@@ -78,7 +84,7 @@ export function FIBScreen({ navigation, route }: Props) {
     }
 
     setShowFeedback(true);
-  }, [question, submitted, inputValue, submitAnswer, addXp, addCoins]);
+  }, [selectedOption, question, submitAnswer, addXp, addCoins]);
 
   const handleContinue = useCallback(() => {
     setShowFeedback(false);
@@ -99,37 +105,20 @@ export function FIBScreen({ navigation, route }: Props) {
         quizType: 'fib',
       });
     } else {
-      setInputValue('');
-      setSubmitted(false);
-      setIsCorrect(null);
+      setSelectedOption(null);
       advance();
     }
   }, [isLastQuestion, sessionResults, navigation, advance, packTitle, packId, topicId, subjectColor, formId, subjectId]);
 
-  const handleViewExplanation = useCallback(() => {
-    if (!question) return;
-    setShowFeedback(false);
-    navigation.navigate('ExplanationScreen', {
-      questionId: question.id,
-      questionText: question.questionText,
-      quizType: 'fib',
-      subjectId,
-      formId,
-      correctAnswer: question.correctAnswer,
-      options: [],
-      packTitle,
-      subjectColor,
-      fallbackExplanation: question.explanation,
+  // Quitting mid-quiz abandons a session that already consumed a daily
+  // attempt — confirm first, and reset the store so nothing stale leaks
+  // into the next quiz.
+  const handleQuit = () => {
+    confirmAction('Quit quiz?', 'Your progress in this quiz will be lost.', 'Quit', () => {
+      useQuizStore.getState().resetSession();
+      navigation.goBack();
     });
-  }, [question, navigation, subjectId, formId, packTitle, subjectColor]);
-
-  useFocusEffect(
-    useCallback(() => {
-      if (submitted && !showFeedback) {
-        setShowFeedback(true);
-      }
-    }, [submitted]),
-  );
+  };
 
   if (loadingQuestions) {
     return <ScreenContainer><LoadingState /></ScreenContainer>;
@@ -140,6 +129,7 @@ export function FIBScreen({ navigation, route }: Props) {
         <ErrorState
           message="No questions are available for this pack yet. Please try another pack."
           onRetry={() => navigation.goBack()}
+          retryLabel="Go Back"
           fullScreen
         />
       </ScreenContainer>
@@ -148,63 +138,80 @@ export function FIBScreen({ navigation, route }: Props) {
 
   const current = session.currentIndex + 1;
   const total = session.questions.length;
+  const isCorrect =
+    selectedOption !== null &&
+    (isFreeText
+      ? answersMatch(selectedOption, question.correctAnswer)
+      : question.correctAnswer === selectedOption);
+  const correctOption = question.options.find((o) => o.id === question.correctAnswer);
+  const correctAnswerText = correctOption ? correctOption.text : question.correctAnswer;
 
   return (
     <ScreenContainer padded={false}>
-      <KeyboardAvoidingView
-        style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-        keyboardVerticalOffset={0}
+      {/* Header */}
+      <View style={styles.header}>
+        <TouchableOpacity onPress={handleQuit} style={styles.closeBtn} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
+          <Ionicons name="close" size={22} color={COLORS.textMuted} />
+        </TouchableOpacity>
+        <Text style={styles.packTitle} numberOfLines={1}>{packTitle}</Text>
+        <View style={{ width: 36 }} />
+      </View>
+
+      {/* Progress */}
+      <View style={styles.progressWrap}>
+        <QuizProgressBar current={current} total={total} color={subjectColor} />
+      </View>
+
+      <ScrollView
+        contentContainerStyle={styles.body}
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
       >
-        {/* Header */}
-        <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.closeBtn}>
-            <Ionicons name="close" size={22} color={COLORS.textMuted} />
-          </TouchableOpacity>
-          <Text style={styles.packTitle} numberOfLines={1}>{packTitle}</Text>
-          <View style={{ width: 36 }} />
-        </View>
+        {/* Question */}
+        <QuestionRenderer question={question} questionNumber={current} />
 
-        {/* Progress */}
-        <View style={styles.progressWrap}>
-          <QuizProgressBar current={current} total={total} color={subjectColor} />
-        </View>
-
-        <ScrollView
-          contentContainerStyle={styles.body}
-          showsVerticalScrollIndicator={false}
-          keyboardShouldPersistTaps="handled"
-        >
-          {/* Question */}
-          <QuestionRenderer question={question} questionNumber={current} />
-
-          {/* Input */}
-          <FIBInput
-            value={inputValue}
-            onChange={setInputValue}
-            onSubmit={handleSubmit}
-            disabled={submitted}
-            isCorrect={isCorrect}
-          />
-
-          {/* Correct answer reveal after wrong */}
-          {submitted && isCorrect === false && (
-            <View style={styles.answerReveal}>
-              <Text style={styles.answerLabel}>Correct answer:</Text>
-              <Text style={styles.answerValue}>{question.correctAnswer}</Text>
-            </View>
-          )}
-        </ScrollView>
-      </KeyboardAvoidingView>
+        {isFreeText ? (
+          /* Free-text answer — the standard FIB shape in the question bank */
+          <View style={styles.options}>
+            <FIBInput
+              value={typedAnswer}
+              onChange={setTypedAnswer}
+              onSubmit={() => handleAnswer(typedAnswer)}
+              disabled={selectedOption !== null}
+              isCorrect={selectedOption === null ? null : isCorrect}
+            />
+          </View>
+        ) : (
+          /* Options — choose the term that fills the blank */
+          <View style={styles.options}>
+            {question.options.map((opt, i) => {
+              let state: 'idle' | 'selected' | 'correct' | 'wrong' = 'idle';
+              if (selectedOption !== null) {
+                if (opt.id === question.correctAnswer) state = 'correct';
+                else if (opt.id === selectedOption) state = 'wrong';
+              }
+              return (
+                <MCQOption
+                  key={opt.id}
+                  option={opt}
+                  label={OPTION_LABELS[i]}
+                  state={state}
+                  disabled={selectedOption !== null}
+                  onPress={handleAnswer}
+                />
+              );
+            })}
+          </View>
+        )}
+      </ScrollView>
 
       <FeedbackModal
         visible={showFeedback}
-        isCorrect={isCorrect ?? false}
+        isCorrect={isCorrect}
         xpEarned={question.xpReward}
         explanation={question.explanation}
-        correctAnswerLabel={isCorrect === false ? question.correctAnswer : undefined}
+        correctAnswerLabel={!isCorrect && correctAnswerText ? stripMathMarkup(correctAnswerText) : undefined}
         onContinue={handleContinue}
-        onViewExplanation={handleViewExplanation}
       />
     </ScreenContainer>
   );
@@ -233,7 +240,8 @@ const styles = StyleSheet.create({
     flex: 1,
     color: COLORS.textSecondary,
     fontSize: TYPOGRAPHY.sizes.sm,
-    fontWeight: TYPOGRAPHY.weights.medium,
+    fontFamily: TYPOGRAPHY.families.semibold,
+    letterSpacing: 0.1,
     textAlign: 'center',
     marginHorizontal: SPACING.sm,
   },
@@ -246,18 +254,5 @@ const styles = StyleSheet.create({
     paddingBottom: SPACING['3xl'],
     gap: SPACING.xl,
   },
-  answerReveal: {
-    backgroundColor: 'rgba(78,205,196,0.08)',
-    borderRadius: SPACING.sm,
-    padding: SPACING.md,
-    borderWidth: 1,
-    borderColor: `${COLORS.success}40`,
-    gap: 4,
-  },
-  answerLabel: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.xs },
-  answerValue: {
-    color: COLORS.success,
-    fontSize: TYPOGRAPHY.sizes.lg,
-    fontWeight: TYPOGRAPHY.weights.bold,
-  },
+  options: { gap: SPACING.sm },
 });

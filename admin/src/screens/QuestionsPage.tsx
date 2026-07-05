@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
   collection, getDocs, addDoc, updateDoc, deleteDoc,
-  doc, serverTimestamp, query, orderBy, limit,
+  doc, serverTimestamp, query, orderBy, limit, writeBatch,
 } from 'firebase/firestore';
 import { Plus, Pencil, Trash2, Upload, Eye } from 'lucide-react';
 import { useForm, Controller } from 'react-hook-form';
@@ -20,8 +20,155 @@ import { Label } from '../components/ui/label';
 import { Textarea } from '../components/ui/textarea';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '../components/ui/select';
 import { Badge } from '../components/ui/badge';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '../components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from '../components/ui/dialog';
+import { useToast } from '../components/ui/use-toast';
 import type { Question } from '../types';
+
+// ── CSV import ──────────────────────────────────────────────────────────────
+// Hand-rolled parser (no CSV dependency in package.json): handles quoted
+// fields containing commas/newlines and "" escaped quotes, RFC4180-ish.
+function parseCsv(text: string): string[][] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = '';
+  let inQuotes = false;
+  const src = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const endField = () => { row.push(field); field = ''; };
+  const endRow = () => { endField(); rows.push(row); row = []; };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (src[i + 1] === '"') { field += '"'; i++; } else { inQuotes = false; }
+      } else {
+        field += c;
+      }
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ',') {
+      endField();
+    } else if (c === '\n') {
+      endRow();
+    } else {
+      field += c;
+    }
+  }
+  if (field.length > 0 || row.length > 0) endRow();
+  return rows.filter((r) => r.length > 1 || (r.length === 1 && r[0].trim() !== ''));
+}
+
+const VALID_TYPES = ['mcq', 'fib', 'tf', 'hoq'] as const;
+const VALID_DIFFICULTIES = ['easy', 'medium', 'hard'] as const;
+const REQUIRED_CSV_HEADERS = [
+  'formId', 'subjectId', 'topicId', 'learningPackId', 'type', 'questionText',
+  'correctAnswer', 'explanation', 'difficulty',
+];
+const CSV_HEADER_EXAMPLE =
+  'formId,subjectId,topicId,learningPackId,type,questionText,optionA,optionB,optionC,optionD,correctAnswer,explanation,difficulty,xpReward,isPremium';
+
+interface ImportRow {
+  formId: string;
+  subjectId: string;
+  topicId: string;
+  learningPackId: string;
+  type: typeof VALID_TYPES[number];
+  questionText: string;
+  options: Array<{ id: string; text: string }>;
+  correctAnswer: string;
+  explanation: string;
+  difficulty: typeof VALID_DIFFICULTIES[number];
+  xpReward: number;
+  isPremium: boolean;
+}
+
+function parseBool(v: string): boolean {
+  const s = v.trim().toLowerCase();
+  return s === 'true' || s === '1';
+}
+
+function parseCsvFile(text: string): { rows: ImportRow[]; errors: string[] } {
+  const table = parseCsv(text);
+  if (table.length === 0) return { rows: [], errors: ['CSV file is empty.'] };
+
+  const header = table[0].map((h) => h.trim());
+  const missing = REQUIRED_CSV_HEADERS.filter((h) => !header.includes(h));
+  if (missing.length) {
+    return { rows: [], errors: [`Missing required column(s): ${missing.join(', ')}`] };
+  }
+
+  const colIndex = (name: string) => header.indexOf(name);
+  const get = (cols: string[], name: string) => {
+    const i = colIndex(name);
+    return i === -1 ? '' : (cols[i] ?? '').trim();
+  };
+
+  const rows: ImportRow[] = [];
+  const errors: string[] = [];
+
+  for (let r = 1; r < table.length; r++) {
+    const cols = table[r];
+    if (cols.length === 1 && cols[0].trim() === '') continue; // blank line
+    const rowNum = r + 1; // 1-indexed, header is row 1
+
+    const formId = get(cols, 'formId');
+    const subjectId = get(cols, 'subjectId');
+    const topicId = get(cols, 'topicId');
+    const learningPackId = get(cols, 'learningPackId');
+    const rawType = get(cols, 'type');
+    const type = rawType.toLowerCase();
+    const questionText = get(cols, 'questionText');
+    const correctAnswer = get(cols, 'correctAnswer');
+    const explanation = get(cols, 'explanation');
+    const rawDifficulty = get(cols, 'difficulty');
+    const difficulty = rawDifficulty.toLowerCase();
+    const optionA = get(cols, 'optionA');
+    const optionB = get(cols, 'optionB');
+    const optionC = get(cols, 'optionC');
+    const optionD = get(cols, 'optionD');
+    const xpRewardRaw = get(cols, 'xpReward');
+    const isPremiumRaw = get(cols, 'isPremium');
+
+    const rowErrors: string[] = [];
+    if (!formId) rowErrors.push('formId is required');
+    if (!subjectId) rowErrors.push('subjectId is required');
+    if (!topicId) rowErrors.push('topicId is required');
+    if (!learningPackId) rowErrors.push('learningPackId is required');
+    if (!questionText) rowErrors.push('questionText is required');
+    if (!correctAnswer) rowErrors.push('correctAnswer is required');
+    if (!explanation) rowErrors.push('explanation is required');
+    if (!(VALID_TYPES as readonly string[]).includes(type)) {
+      rowErrors.push(`type must be one of mcq/fib/tf/hoq (got "${rawType}")`);
+    }
+    if (!(VALID_DIFFICULTIES as readonly string[]).includes(difficulty)) {
+      rowErrors.push(`difficulty must be one of easy/medium/hard (got "${rawDifficulty}")`);
+    }
+
+    if (rowErrors.length) {
+      errors.push(`Row ${rowNum}: ${rowErrors.join('; ')}`);
+      continue;
+    }
+
+    const options = [
+      { id: 'a', text: optionA },
+      { id: 'b', text: optionB },
+      { id: 'c', text: optionC },
+      { id: 'd', text: optionD },
+    ].filter((o) => o.text !== '');
+
+    const xpReward = xpRewardRaw !== '' && !Number.isNaN(Number(xpRewardRaw)) ? Number(xpRewardRaw) : 10;
+    const isPremium = parseBool(isPremiumRaw);
+
+    rows.push({
+      formId, subjectId, topicId, learningPackId,
+      type: type as ImportRow['type'],
+      questionText, options, correctAnswer, explanation,
+      difficulty: difficulty as ImportRow['difficulty'],
+      xpReward, isPremium,
+    });
+  }
+
+  return { rows, errors };
+}
 
 const TYPE_LABELS: Record<string, string> = { mcq: 'MCQ', fib: 'FIB', tf: 'T/F', hoq: 'HOQ' };
 type BadgeVariant = 'info' | 'success' | 'warning' | 'secondary';
@@ -45,19 +192,29 @@ type QuestionValues = z.infer<typeof questionSchema>;
 
 export function QuestionsPage() {
   const qc = useQueryClient();
+  const { toast } = useToast();
   const [editItem, setEditItem] = useState<Question | null>(null);
   const [deleteItem, setDeleteItem] = useState<Question | null>(null);
   const [open, setOpen] = useState(false);
   const [previewItem, setPreviewItem] = useState<Question | null>(null);
   const [filterType, setFilterType] = useState('all');
   const [search, setSearch] = useState('');
+  const [importOpen, setImportOpen] = useState(false);
+  const [importFileName, setImportFileName] = useState('');
+  const [importRows, setImportRows] = useState<ImportRow[]>([]);
+  const [importErrors, setImportErrors] = useState<string[]>([]);
 
   const { data: questions = [], isLoading } = useQuery({
     queryKey: ['questions'],
     queryFn: async () => {
       const q = query(collection(db, 'questions'), orderBy('createdAt', 'desc'), limit(200));
       const snap = await getDocs(q);
-      return snap.docs.map((d) => ({ id: d.id, ...d.data() } as Question));
+      // Seeded docs store type UPPERCASE (rules-enforced); normalize so the
+      // lowercase filter tabs and badges match them.
+      return snap.docs.map((d) => {
+        const data = d.data();
+        return { id: d.id, ...data, type: String(data.type).toLowerCase() } as Question;
+      });
     },
   });
 
@@ -70,12 +227,29 @@ export function QuestionsPage() {
 
   const mutation = useMutation({
     mutationFn: async (data: QuestionValues) => {
-      const payload = { ...data, options: [], updatedAt: serverTimestamp() };
+      // Contract with the app + rules: rules only accept UPPERCASE type; the
+      // quiz query filters on learningPackId + isActive and sorts by order,
+      // so docs missing those fields are invisible in every quiz. On edit,
+      // options must be preserved — writing [] stripped seeded MCQs of all
+      // four answers.
+      const payload = {
+        ...data,
+        type: data.type.toUpperCase(),
+        learningPackId: data.packId,
+        updatedAt: serverTimestamp(),
+      };
       if (editItem) {
         await updateDoc(doc(db, 'questions', editItem.id), payload);
         await logAudit('update', 'questions', editItem.id, { type: data.type });
       } else {
-        const ref = await addDoc(collection(db, 'questions'), { ...payload, createdAt: serverTimestamp() });
+        const ref = await addDoc(collection(db, 'questions'), {
+          ...payload,
+          options: [],
+          isActive: true,
+          order: 999,
+          isPremium: false,
+          createdAt: serverTimestamp(),
+        });
         await logAudit('create', 'questions', ref.id, { type: data.type });
       }
     },
@@ -88,6 +262,79 @@ export function QuestionsPage() {
       await logAudit('delete', 'questions', id, {});
     },
     onSuccess: () => { qc.invalidateQueries({ queryKey: ['questions'] }); setDeleteItem(null); },
+  });
+
+  const resetImportState = () => {
+    setImportRows([]);
+    setImportErrors([]);
+    setImportFileName('');
+  };
+
+  const handleImportFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = ''; // allow re-selecting the same file after fixing errors
+    if (!file) return;
+    setImportFileName(file.name);
+    const reader = new FileReader();
+    reader.onload = () => {
+      const text = String(reader.result ?? '');
+      const { rows, errors } = parseCsvFile(text);
+      setImportErrors(errors);
+      setImportRows(errors.length ? [] : rows);
+    };
+    reader.onerror = () => {
+      setImportErrors(['Could not read the file.']);
+      setImportRows([]);
+    };
+    reader.readAsText(file);
+  };
+
+  const importMutation = useMutation({
+    mutationFn: async (rows: ImportRow[]) => {
+      const batchId = Date.now();
+      let written = 0;
+      for (let i = 0; i < rows.length; i += 400) {
+        const chunk = rows.slice(i, i + 400);
+        const batch = writeBatch(db);
+        chunk.forEach((row, j) => {
+          const index = written + j;
+          const id = `${row.topicId}_${row.type}_admin_${batchId}_${index}`;
+          batch.set(doc(db, 'questions', id), {
+            id,
+            formId: row.formId,
+            subjectId: row.subjectId,
+            topicId: row.topicId,
+            learningPackId: row.learningPackId,
+            type: row.type.toUpperCase(),
+            questionText: row.questionText,
+            options: row.options,
+            correctAnswer: row.correctAnswer,
+            explanation: row.explanation,
+            difficulty: row.difficulty,
+            xpReward: row.xpReward,
+            order: index + 1,
+            isActive: true,
+            isPremium: row.isPremium,
+            imagePrompt: '',
+            createdAt: serverTimestamp(),
+            updatedAt: serverTimestamp(),
+          });
+        });
+        await batch.commit();
+        written += chunk.length;
+      }
+      return written;
+    },
+    onSuccess: async (count) => {
+      qc.invalidateQueries({ queryKey: ['questions'] });
+      await logAudit('bulk_import', 'questions', 'csv-import', { count });
+      toast({ variant: 'success', title: `Imported ${count} questions` });
+      setImportOpen(false);
+      resetImportState();
+    },
+    onError: () => {
+      toast({ variant: 'destructive', title: 'Import failed', description: 'No questions were imported.' });
+    },
   });
 
   const filtered = questions.filter((q) => {
@@ -129,7 +376,9 @@ export function QuestionsPage() {
         subtitle={`${questions.length} questions across all subjects`}
         actions={
           <>
-            <Button variant="outline" size="sm"><Upload size={14} className="mr-2" /> Import CSV</Button>
+            <Button variant="outline" size="sm" onClick={() => { resetImportState(); setImportOpen(true); }}>
+              <Upload size={14} className="mr-2" /> Import CSV
+            </Button>
             <Button size="sm" onClick={() => { reset(defaultValues); setEditItem(null); setOpen(true); }}>
               <Plus size={16} className="mr-2" /> Add Question
             </Button>
@@ -295,6 +544,58 @@ export function QuestionsPage() {
               </div>
             </div>
           )}
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={importOpen} onOpenChange={(v) => { setImportOpen(v); if (!v) resetImportState(); }}>
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle>Import Questions from CSV</DialogTitle>
+            <DialogDescription>
+              Header row required: <code className="text-[11px]">{CSV_HEADER_EXAMPLE}</code>
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-3">
+            <p className="text-xs text-muted-foreground">
+              For <code>type=tf</code>, leave optionA-D blank and set correctAnswer to <code>true</code>/<code>false</code>.
+              xpReward defaults to 10 if blank; isPremium accepts true/false/1/0.
+            </p>
+
+            <Input type="file" accept=".csv" onChange={handleImportFileChange} />
+
+            {importFileName && !importErrors.length && !importRows.length && (
+              <p className="text-xs text-muted-foreground">Parsing {importFileName}...</p>
+            )}
+
+            {importErrors.length > 0 && (
+              <div className="space-y-1">
+                <p className="text-xs font-medium text-destructive">
+                  {importErrors.length} error(s) found — fix the CSV and re-upload:
+                </p>
+                <div className="max-h-48 overflow-y-auto rounded-md border border-border p-2 space-y-1">
+                  {importErrors.map((err, i) => (
+                    <p key={i} className="text-xs text-destructive">{err}</p>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {!importErrors.length && importRows.length > 0 && (
+              <p className="text-sm text-emerald-400">{importRows.length} question(s) parsed and ready to import.</p>
+            )}
+          </div>
+
+          <DialogFooter>
+            <Button type="button" variant="outline" onClick={() => setImportOpen(false)}>Cancel</Button>
+            <Button
+              type="button"
+              disabled={!importRows.length || importErrors.length > 0 || importMutation.isPending}
+              onClick={() => importMutation.mutate(importRows)}
+            >
+              {importMutation.isPending ? 'Importing...' : `Import ${importRows.length || ''} Question(s)`}
+            </Button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
 

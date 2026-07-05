@@ -429,71 +429,281 @@
     "fib": [
       {
         "questionText": "A device or material that attracts iron and certain other metals is called a _____.",
-        "options": [],
-        "correctAnswer": "magnet",
+        "options": [
+          {
+            "id": "a",
+            "text": "magnet",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "conductor",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "insulator",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "battery",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "A magnet is an object that produces a magnetic field and attracts magnetic materials.",
         "difficulty": "easy"
       },
       {
         "questionText": "Materials that are not attracted by a magnet are called _____ materials.",
-        "options": [],
-        "correctAnswer": "non-magnetic",
+        "options": [
+          {
+            "id": "a",
+            "text": "magnetic",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "non-magnetic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "metallic",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "ferrous",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "Non-magnetic materials such as wood, plastic and copper are not attracted by magnets.",
         "difficulty": "easy"
       },
       {
         "questionText": "Like poles of magnets _____ each other.",
-        "options": [],
-        "correctAnswer": "repel",
+        "options": [
+          {
+            "id": "a",
+            "text": "attract",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "touch",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "repel",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "hold",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Like poles repel while unlike poles attract.",
         "difficulty": "easy"
       },
       {
         "questionText": "Unlike poles of magnets _____ each other.",
-        "options": [],
-        "correctAnswer": "attract",
+        "options": [
+          {
+            "id": "a",
+            "text": "repel",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "push",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "release",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "attract",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "A north pole and a south pole attract each other.",
         "difficulty": "easy"
       },
       {
         "questionText": "The pole of a freely suspended magnet that points towards the Earth's geographic north is called the _____ pole.",
-        "options": [],
-        "correctAnswer": "north",
+        "options": [
+          {
+            "id": "a",
+            "text": "north",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "south",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "east",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "seeking",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "The north-seeking pole points towards the geographic north of the Earth.",
         "difficulty": "medium"
       },
       {
         "questionText": "Making a nearby piece of iron a temporary magnet just by bringing a magnet close to it is called magnetic _____.",
-        "options": [],
-        "correctAnswer": "induction",
+        "options": [
+          {
+            "id": "a",
+            "text": "attraction",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "induction",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "conduction",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "retention",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "In magnetic induction, a magnetic material becomes a magnet without touching the magnet.",
         "difficulty": "medium"
       },
       {
         "questionText": "Strongly _____ a magnet is one way to destroy its magnetism.",
-        "options": [],
-        "correctAnswer": "heating",
+        "options": [
+          {
+            "id": "a",
+            "text": "freezing",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "polishing",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "heating",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "painting",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
         "explanation": "Heating a magnet to a high temperature disturbs its arrangement and destroys magnetism.",
         "difficulty": "medium"
       },
       {
         "questionText": "Soft pieces of iron placed across the poles of stored magnets to preserve magnetism are called _____.",
-        "options": [],
-        "correctAnswer": "keepers",
+        "options": [
+          {
+            "id": "a",
+            "text": "poles",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "dividers",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "domains",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "keepers",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
         "explanation": "Keepers complete the magnetic circuit and help magnets keep their strength during storage.",
         "difficulty": "medium"
       },
       {
         "questionText": "Iron filings sprinkled around a magnet line up to show the pattern of the magnetic _____.",
-        "options": [],
-        "correctAnswer": "field",
+        "options": [
+          {
+            "id": "a",
+            "text": "field",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "poles",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "force",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "flux",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
         "explanation": "Iron filings reveal the shape of the magnetic field lines around a magnet.",
         "difficulty": "easy"
       },
       {
         "questionText": "A coil of wire wound into many turns used in the electrical method of magnetising is called a _____.",
-        "options": [],
-        "correctAnswer": "solenoid",
+        "options": [
+          {
+            "id": "a",
+            "text": "coil",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "solenoid",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "transformer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "dynamo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
         "explanation": "A solenoid carrying a direct current behaves like a magnet and can magnetise steel placed inside it.",
         "difficulty": "hard"
       }
@@ -648,7 +858,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Bring an end of one bar to the middle of the other; the magnet attracts strongly but its own middle attracts weakly, so test which bar's middle gives no strong pull",
+            "text": "Touch one bar's end to the middle of the other, then swap and repeat; the bar whose middle gives almost no attraction is the magnet",
             "isCorrect": true
           },
           {
@@ -668,7 +878,7 @@
           }
         ],
         "correctAnswer": "a",
-        "explanation": "A magnet has strong poles but a weak centre; touching an end of one bar to the centre of the other shows no strong attraction only when the centre of the magnet is used, identifying the magnet.",
+        "explanation": "A magnet's poles (ends) are strong but its middle is a weak, near-neutral region. When the end of the unmagnetised bar touches the magnet's middle there is little attraction, so the bar whose middle shows almost no pull is the magnet.",
         "difficulty": "hard"
       },
       {

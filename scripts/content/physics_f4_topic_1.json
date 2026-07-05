@@ -1,0 +1,942 @@
+{
+  "topicId": "form_4_physics_topic_1",
+  "topicName": "Motion in a Straight Line",
+  "order": 1,
+  "description": "This topic covers distance, displacement, speed, velocity, acceleration, the equations of uniformly accelerated motion, motion under gravity, and the interpretation of distance-time and velocity-time graphs.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which of the following quantities is a vector quantity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Distance",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Speed",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Displacement",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Time",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Displacement has both magnitude and direction, so it is a vector. Distance, speed and time are scalars (magnitude only).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car travels 120 m in 8 s at constant speed. What is its speed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "15 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "20 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "960 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Speed = distance / time = 120 / 8 = 15 m/s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The SI unit of acceleration is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "m/s^2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "s/m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Acceleration is the rate of change of velocity, so its unit is metres per second per second, written m/s^2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body starts from rest and reaches a velocity of 20 m/s in 4 s. What is its acceleration?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4 m/s^2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "80 m/s^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5 m/s^2",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "16 m/s^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "a = (v - u) / t = (20 - 0) / 4 = 5 m/s^2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car moving at 30 m/s slows down to 10 m/s in 5 s. What is its retardation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "4 m/s^2",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "8 m/s^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "2 m/s^2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20 m/s^2",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Retardation = (u - v) / t = (30 - 10) / 5 = 20 / 5 = 4 m/s^2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Using v = u + at, a body with u = 5 m/s and a = 3 m/s^2 after 4 s has a velocity of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "12 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "17 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "23 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "v = u + at = 5 + (3 x 4) = 5 + 12 = 17 m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A stone is dropped from rest. Taking g = 10 m/s^2, what is its velocity after 3 s of free fall?",
+        "options": [
+          {
+            "id": "a",
+            "text": "30 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "13 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "3.3 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "45 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "v = u + gt = 0 + (10 x 3) = 30 m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a distance-time graph, the gradient (slope) of the line represents:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acceleration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Distance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Speed",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Time",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The gradient of a distance-time graph is change in distance divided by change in time, which is speed (or velocity).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On a velocity-time graph, the area under the graph represents:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acceleration",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Distance travelled",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Speed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Force",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The area under a velocity-time graph equals velocity multiplied by time, which gives the distance (or displacement) travelled.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A body moves with uniform velocity. Which statement is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Its acceleration is constant and not zero",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Its acceleration is zero",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Its speed keeps increasing",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Its displacement is zero",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Uniform velocity means the velocity does not change, so there is no change in velocity and the acceleration is zero.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A car accelerates uniformly from rest at 2 m/s^2 for 6 s. Using s = ut + (1/2)at^2, how far does it travel?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "24 m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "36 m",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "72 m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "s = ut + (1/2)at^2 = 0 + (1/2)(2)(6^2) = (1/2)(2)(36) = 36 m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A body moving at 8 m/s accelerates uniformly at 2 m/s^2 over a distance of 9 m. Using v^2 = u^2 + 2as, its final velocity is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "10 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "100 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "18 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "v^2 = u^2 + 2as = 8^2 + 2(2)(9) = 64 + 36 = 100, so v = 10 m/s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which equation of motion does NOT contain time (t)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "v = u + at",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "s = ut + (1/2)at^2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "v^2 = u^2 + 2as",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "s = ((u + v)/2)t",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The equation v^2 = u^2 + 2as relates velocities, acceleration and distance without involving time.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A ball is thrown straight up at 20 m/s. Taking g = 10 m/s^2, how long does it take to reach its highest point?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 s",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 s",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "4 s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "10 s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "At the highest point v = 0. Using v = u - gt, 0 = 20 - 10t, so t = 20/10 = 2 s.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A train travels 60 km in 1.5 hours. What is its average speed in km/h?",
+        "options": [
+          {
+            "id": "a",
+            "text": "90 km/h",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "30 km/h",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "40 km/h",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "45 km/h",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Average speed = total distance / total time = 60 / 1.5 = 40 km/h.",
+        "difficulty": "easy"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The shortest distance from the starting point to the finishing point measured in a straight line, together with its direction, is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "displacement",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "distance",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "speed",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "velocity",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Displacement is the straight-line distance in a stated direction, making it a vector quantity.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The rate of change of velocity with time is called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "velocity",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "acceleration",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "momentum",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "displacement",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Acceleration is defined as the change in velocity divided by the time taken.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car moving at 25 m/s comes to rest in 5 s. Its retardation is _____ m/s^2.",
+        "options": [
+          {
+            "id": "a",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "6",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Retardation = (u - v) / t = (25 - 0) / 5 = 5 m/s^2.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A body starts from rest and accelerates at 4 m/s^2. After 5 s its velocity is _____ m/s.",
+        "options": [
+          {
+            "id": "a",
+            "text": "16",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "24",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "9",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "20",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "v = u + at = 0 + (4 x 5) = 20 m/s.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "On a velocity-time graph, the gradient of the line gives the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "acceleration",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "velocity",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "displacement",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "distance",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The slope of a velocity-time graph is change in velocity over change in time, which is acceleration.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "An object dropped from rest falls freely for 2 s. Taking g = 10 m/s^2, the distance it falls is _____ m.",
+        "options": [
+          {
+            "id": "a",
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "20",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "40",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "s = ut + (1/2)gt^2 = 0 + (1/2)(10)(2^2) = (1/2)(10)(4) = 20 m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A bus travels at a constant velocity of 18 m/s for 10 s. The distance it covers is _____ m.",
+        "options": [
+          {
+            "id": "a",
+            "text": "18",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "90",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "180",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1800",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "For uniform velocity, distance = velocity x time = 18 x 10 = 180 m.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A car accelerates from 4 m/s to 16 m/s in 6 s. Using s = ((u + v)/2)t, the distance covered is _____ m.",
+        "options": [
+          {
+            "id": "a",
+            "text": "72",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "120",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "60",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "s = ((u + v)/2)t = ((4 + 16)/2)(6) = (10)(6) = 60 m.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Motion in which the velocity changes by unequal amounts in equal intervals of time is called _____ motion.",
+        "options": [
+          {
+            "id": "a",
+            "text": "non-uniform",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "uniform",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "circular",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "random",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Non-uniform motion is motion in which velocity does not change at a constant rate.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A stone thrown upward at 30 m/s reaches its highest point. Taking g = 10 m/s^2, the time taken to reach the top is _____ s.",
+        "options": [
+          {
+            "id": "a",
+            "text": "6",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "30",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1.5",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "At the top v = 0. Using 0 = u - gt, t = u/g = 30/10 = 3 s.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Distance is a scalar quantity while displacement is a vector quantity.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Distance has only magnitude (scalar), while displacement has both magnitude and direction (vector).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Speed and velocity always have exactly the same numerical value for any moving body.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Speed uses total distance while velocity uses displacement; when motion is not in a straight line they can differ.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A body moving with uniform velocity has zero acceleration.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Uniform velocity means no change in velocity, so there is no acceleration.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Deceleration (retardation) means the velocity of a body is decreasing.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Deceleration or retardation is negative acceleration, which occurs when velocity decreases with time.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The area under a velocity-time graph gives the acceleration of the body.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The area under a velocity-time graph gives the distance travelled; the gradient gives the acceleration.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "On a distance-time graph, a horizontal straight line means the body is at rest.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "A horizontal line shows that distance is not changing with time, so the body is stationary.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For a freely falling body near the Earth's surface, the acceleration is taken as 10 m/s^2 directed downward.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Free fall is caused by gravity, giving an acceleration of about 10 m/s^2 directed towards the Earth.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The equation v^2 = u^2 + 2as can be used to find final velocity when time is not known.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "This equation links u, v, a and s without involving time, so it is useful when time is not given.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "When a ball is thrown vertically upward, its velocity at the highest point is equal to the speed at which it was thrown.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "At the highest point the ball momentarily stops, so its velocity is zero, not the launch speed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Average velocity is defined as total displacement divided by total time taken.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Average velocity = total displacement / total time, which is the standard definition.",
+        "difficulty": "easy"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "Explain the difference between distance and displacement.",
+        "options": [],
+        "correctAnswer": "Distance is the total length of the path travelled by a body and is a scalar quantity with magnitude only. Displacement is the shortest straight-line distance from the starting point to the final point in a stated direction, and is a vector quantity with both magnitude and direction.",
+        "explanation": "The key contrast is that distance ignores direction while displacement includes it, and displacement is never greater than distance.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Distinguish between speed and velocity.",
+        "options": [],
+        "correctAnswer": "Speed is the rate of change of distance with time and is a scalar quantity. Velocity is the rate of change of displacement with time and is a vector quantity that includes direction. Both are measured in metres per second.",
+        "explanation": "Speed deals with distance (scalar); velocity deals with displacement (vector) and so has direction.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define acceleration and state its SI unit.",
+        "options": [],
+        "correctAnswer": "Acceleration is the rate of change of velocity with time. It is calculated as the change in velocity divided by the time taken. Its SI unit is metres per second squared (m/s^2).",
+        "explanation": "Acceleration = (final velocity - initial velocity) / time; a negative value indicates retardation.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Explain the difference between uniform and non-uniform motion.",
+        "options": [],
+        "correctAnswer": "Uniform motion is motion in which a body covers equal distances in equal intervals of time, so its velocity is constant and acceleration is zero. Non-uniform motion is motion in which a body covers unequal distances in equal intervals of time, so its velocity changes and the body has acceleration.",
+        "explanation": "The distinguishing factor is whether velocity stays constant (uniform) or changes (non-uniform).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the four equations of uniformly accelerated motion.",
+        "options": [],
+        "correctAnswer": "The four equations are: v = u + at; s = ut + (1/2)at^2; v^2 = u^2 + 2as; and s = ((u + v)/2)t, where u is initial velocity, v is final velocity, a is acceleration, t is time and s is distance.",
+        "explanation": "These equations apply only when the acceleration is constant (uniform).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Describe what the gradient and the area represent on a velocity-time graph.",
+        "options": [],
+        "correctAnswer": "On a velocity-time graph, the gradient (slope) of the line represents the acceleration of the body, while the area enclosed between the line and the time axis represents the distance (or displacement) travelled.",
+        "explanation": "Slope gives acceleration (change in velocity over time); area gives distance (velocity multiplied by time).",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain what is meant by free fall and state the value of g used in calculations.",
+        "options": [],
+        "correctAnswer": "Free fall is the motion of a body falling only under the influence of gravity, with no other force such as air resistance acting on it. During free fall the body accelerates uniformly. In calculations the acceleration due to gravity g is taken as 10 m/s^2 directed downward.",
+        "explanation": "A freely falling body has constant downward acceleration g, regardless of its mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How can you tell from a distance-time graph whether a body is at rest, moving at constant speed, or accelerating?",
+        "options": [],
+        "correctAnswer": "On a distance-time graph, a horizontal line means the body is at rest. A straight sloping line means the body is moving at constant speed. A curved line whose slope keeps increasing means the body is accelerating.",
+        "explanation": "The steepness and shape of the line reveal the motion: flat means stationary, straight slope means constant speed, curve means changing speed.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain the difference between average speed and instantaneous speed.",
+        "options": [],
+        "correctAnswer": "Average speed is the total distance travelled divided by the total time taken for the whole journey. Instantaneous speed is the speed of a body at a particular moment or point in time, as would be shown by a speedometer.",
+        "explanation": "Average speed describes the whole journey; instantaneous speed describes one instant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Outline the steps used to solve a numerical problem involving the equations of motion.",
+        "options": [],
+        "correctAnswer": "First, write down the quantities given (u, v, a, t, s) and identify the quantity to be found. Next, choose the equation of motion that contains the known quantities and the unknown. Then substitute the values, taking care with units and signs. Finally, calculate and state the answer with its correct unit.",
+        "explanation": "A systematic approach of listing knowns, selecting the right equation, substituting and computing avoids errors.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "A car accelerates uniformly from rest and reaches a velocity of 30 m/s in 10 s. It then travels at this constant velocity for 20 s, and finally decelerates uniformly to rest in 5 s. What is the total distance travelled?",
+        "options": [
+          {
+            "id": "a",
+            "text": "750 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "825 m",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "900 m",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "600 m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Phase 1 (acceleration): s = ((0+30)/2)(10) = 150 m. Phase 2 (constant): s = 30 x 20 = 600 m. Phase 3 (deceleration): s = ((30+0)/2)(5) = 75 m. Total = 150 + 600 + 75 = 825 m.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A ball is thrown vertically upward with an initial velocity of 40 m/s. Taking g = 10 m/s^2, what is the maximum height it reaches?",
+        "options": [
+          {
+            "id": "a",
+            "text": "40 m",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "60 m",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "80 m",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "160 m",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "At maximum height v = 0. Using v^2 = u^2 - 2gs, 0 = 40^2 - 2(10)s, so 20s = 1600, giving s = 80 m.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A stone is dropped from rest from the top of a cliff and takes 4 s to reach the ground. Taking g = 10 m/s^2, what is the height of the cliff and the velocity with which the stone hits the ground?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Height 80 m, velocity 40 m/s",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Height 40 m, velocity 40 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Height 80 m, velocity 20 m/s",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Height 160 m, velocity 40 m/s",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Height: s = ut + (1/2)gt^2 = 0 + (1/2)(10)(4^2) = (1/2)(10)(16) = 80 m. Velocity: v = u + gt = 0 + (10)(4) = 40 m/s.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

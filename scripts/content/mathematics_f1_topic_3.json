@@ -1,0 +1,374 @@
+{
+  "topicId": "form_1_mathematics_topic_3",
+  "topicName": "Approximations",
+  "order": 3,
+  "description": "How to approximate numbers through rounding off to a given place value, working with significant figures and decimal places, and using estimation to obtain quick, sensible answers in real-life situations.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Round 6,847 to the nearest hundred.",
+        "options": [
+          {"id": "a", "text": "6,800", "isCorrect": true},
+          {"id": "b", "text": "6,850", "isCorrect": false},
+          {"id": "c", "text": "6,900", "isCorrect": false},
+          {"id": "d", "text": "7,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The hundreds digit is 8 and the deciding digit to its right is 4, which is less than 5, so the hundreds digit stays the same and the number rounds down to 6,800. Exam Tip: The deciding digit is the one right of the rounding place; 5 or more rounds up.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Round 25,462 to the nearest thousand.",
+        "options": [
+          {"id": "a", "text": "25,000", "isCorrect": true},
+          {"id": "b", "text": "25,400", "isCorrect": false},
+          {"id": "c", "text": "25,500", "isCorrect": false},
+          {"id": "d", "text": "26,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The thousands digit is 5 and the digit right after it is 4, which is less than 5, so we round down to 25,000. Exam Tip: Only the first digit after the rounding place decides; ignore the rest.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Round 3.276 to one decimal place.",
+        "options": [
+          {"id": "a", "text": "3.2", "isCorrect": false},
+          {"id": "b", "text": "3.3", "isCorrect": true},
+          {"id": "c", "text": "3.27", "isCorrect": false},
+          {"id": "d", "text": "3.28", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Keeping one decimal place, the deciding digit is the second decimal 7, which is 5 or more, so the first decimal 2 rounds up to 3, giving 3.3. Exam Tip: One decimal place means exactly one digit after the point.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Round 0.08549 to two decimal places.",
+        "options": [
+          {"id": "a", "text": "0.08", "isCorrect": false},
+          {"id": "b", "text": "0.09", "isCorrect": true},
+          {"id": "c", "text": "0.085", "isCorrect": false},
+          {"id": "d", "text": "0.086", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "For two decimal places the deciding digit is the third decimal 5, which rounds the 8 up to 9, giving 0.09. Exam Tip: A 5 in the deciding position rounds up.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How many significant figures are in 0.00340?",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "4", "isCorrect": false},
+          {"id": "d", "text": "5", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The leading zeros before the 3 do not count, but 3, 4 and the trailing 0 do, giving 3 significant figures. Exam Tip: Leading zeros never count; a trailing zero after a decimal digit does count.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write 47,268 to 2 significant figures.",
+        "options": [
+          {"id": "a", "text": "47", "isCorrect": false},
+          {"id": "b", "text": "47,000", "isCorrect": true},
+          {"id": "c", "text": "47,200", "isCorrect": false},
+          {"id": "d", "text": "48,000", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The first two significant figures are 4 and 7; the next digit is 2, so 47 stays, and placeholder zeros keep the size, giving 47,000. Exam Tip: Keep placeholder zeros so the number stays its correct size.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Write 0.06073 to 3 significant figures.",
+        "options": [
+          {"id": "a", "text": "0.060", "isCorrect": false},
+          {"id": "b", "text": "0.061", "isCorrect": false},
+          {"id": "c", "text": "0.0607", "isCorrect": true},
+          {"id": "d", "text": "0.0608", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The significant figures start at 6, so the first three are 6, 0 and 7; the next digit is 3, so we round down to 0.0607. Exam Tip: Zeros between non-zero digits are significant.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Round 9.996 to two decimal places.",
+        "options": [
+          {"id": "a", "text": "9.99", "isCorrect": false},
+          {"id": "b", "text": "9.90", "isCorrect": false},
+          {"id": "c", "text": "10.00", "isCorrect": true},
+          {"id": "d", "text": "10.0", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The deciding digit is 6, which rounds the 9 up; this carries along the 9s and increases 9.99 to 10.00. Exam Tip: Watch the carrying chain when 9s round up, and keep the required number of decimals.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Estimate 49 x 21 by rounding each number to 1 significant figure.",
+        "options": [
+          {"id": "a", "text": "1,000", "isCorrect": true},
+          {"id": "b", "text": "1,029", "isCorrect": false},
+          {"id": "c", "text": "980", "isCorrect": false},
+          {"id": "d", "text": "100", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rounding to 1 significant figure gives 49 as 50 and 21 as 20, and 50 x 20 = 1,000. Exam Tip: Estimation wants the rounded calculation, not the exact answer.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Estimate 397 / 19 by rounding each number to 1 significant figure.",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "20", "isCorrect": true},
+          {"id": "c", "text": "200", "isCorrect": false},
+          {"id": "d", "text": "21", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Rounding to 1 significant figure gives 397 as 400 and 19 as 20, and 400 / 20 = 20. Exam Tip: Check the estimate's size against the original numbers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A crowd of 24,738 people is rounded to the nearest ten thousand. What is the result?",
+        "options": [
+          {"id": "a", "text": "20,000", "isCorrect": true},
+          {"id": "b", "text": "24,000", "isCorrect": false},
+          {"id": "c", "text": "25,000", "isCorrect": false},
+          {"id": "d", "text": "30,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The ten-thousands digit is 2 and the deciding digit right of it is 4, which is less than 5, so it rounds down to 20,000. Exam Tip: Read the rounding place carefully before choosing the deciding digit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Round 5.649 to the nearest whole number.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "5.6", "isCorrect": false},
+          {"id": "c", "text": "5.65", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "The deciding digit is the first decimal 6, which is 5 or more, so 5 rounds up to 6. Exam Tip: Use only the single digit right of the rounding place; do not round in stages.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following numbers has exactly 4 significant figures?",
+        "options": [
+          {"id": "a", "text": "0.0025", "isCorrect": false},
+          {"id": "b", "text": "2,500", "isCorrect": false},
+          {"id": "c", "text": "25.00", "isCorrect": true},
+          {"id": "d", "text": "0.025", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "In 25.00 the two trailing zeros after the decimal point are significant, so with 2 and 5 there are 4 significant figures. Exam Tip: Trailing zeros count only after a decimal point.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A rope is 12.3 m long. Four such ropes are joined together. Estimate the total length to the nearest metre.",
+        "options": [
+          {"id": "a", "text": "48", "isCorrect": false},
+          {"id": "b", "text": "49", "isCorrect": true},
+          {"id": "c", "text": "50", "isCorrect": false},
+          {"id": "d", "text": "52", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Multiply first: 12.3 x 4 = 49.2 m, then round to the nearest metre to get 49 m. Exam Tip: Do the full calculation first, then round the final answer.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A shop makes daily sales of Tsh 19,850 over 5 days. Rounding the daily sales to the nearest thousand first, estimate the total sales.",
+        "options": [
+          {"id": "a", "text": "95,000", "isCorrect": false},
+          {"id": "b", "text": "99,250", "isCorrect": false},
+          {"id": "c", "text": "100,000", "isCorrect": true},
+          {"id": "d", "text": "105,000", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Rounding 19,850 to the nearest thousand gives 20,000, and 20,000 x 5 = 100,000. Exam Tip: Follow the stated rounding step; the exact total is a trap answer.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "8,463 rounded to the nearest ten is ____.",
+        "options": [
+          {"id": "a", "text": "8,460", "isCorrect": true},
+          {"id": "b", "text": "8,470", "isCorrect": false},
+          {"id": "c", "text": "8,400", "isCorrect": false},
+          {"id": "d", "text": "8,500", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The tens digit is 6 and the deciding units digit is 3, which is less than 5, so it rounds down to 8,460. Exam Tip: The units digit decides when rounding to the nearest ten.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "7.45 rounded to one decimal place is ____.",
+        "options": [
+          {"id": "a", "text": "7.4", "isCorrect": false},
+          {"id": "b", "text": "7.5", "isCorrect": true},
+          {"id": "c", "text": "7.0", "isCorrect": false},
+          {"id": "d", "text": "8.0", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The deciding digit is the second decimal 5, which rounds the 4 up to 5, giving 7.5. Exam Tip: A deciding digit of 5 always rounds up.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "0.005062 has ____ significant figures.",
+        "options": [
+          {"id": "a", "text": "4", "isCorrect": true},
+          {"id": "b", "text": "3", "isCorrect": false},
+          {"id": "c", "text": "5", "isCorrect": false},
+          {"id": "d", "text": "6", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The leading zeros do not count; the significant figures are 5, 0, 6 and 2, giving 4. Exam Tip: Start counting significant figures at the first non-zero digit.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "63,819 written to 3 significant figures is ____.",
+        "options": [
+          {"id": "a", "text": "63,800", "isCorrect": true},
+          {"id": "b", "text": "63,900", "isCorrect": false},
+          {"id": "c", "text": "638", "isCorrect": false},
+          {"id": "d", "text": "64,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The first three significant figures are 6, 3 and 8; the next digit is 1, so it rounds down, and placeholder zeros give 63,800. Exam Tip: Keep placeholder zeros so the number stays its correct size.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Estimate 61 x 38 by rounding each number to 1 significant figure: ____.",
+        "options": [
+          {"id": "a", "text": "2,400", "isCorrect": true},
+          {"id": "b", "text": "2,318", "isCorrect": false},
+          {"id": "c", "text": "1,800", "isCorrect": false},
+          {"id": "d", "text": "3,000", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rounding to 1 significant figure gives 61 as 60 and 38 as 40, and 60 x 40 = 2,400. Exam Tip: Estimation uses the rounded values, not the exact product.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "0.996 rounded to two decimal places is ____.",
+        "options": [
+          {"id": "a", "text": "1.00", "isCorrect": true},
+          {"id": "b", "text": "0.99", "isCorrect": false},
+          {"id": "c", "text": "0.90", "isCorrect": false},
+          {"id": "d", "text": "1.0", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The deciding digit is 6, which rounds the 9 up and carries through, turning 0.99 into 1.00. Exam Tip: Watch the carrying chain when 9s round up and keep the required decimals.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A value that is close to the exact value but not exact is called an ____.",
+        "options": [
+          {"id": "a", "text": "approximation", "isCorrect": true},
+          {"id": "b", "text": "integer", "isCorrect": false},
+          {"id": "c", "text": "estimate factor", "isCorrect": false},
+          {"id": "d", "text": "remainder", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An approximation is a value close to the exact value, usually obtained by rounding. Exam Tip: The approximately equal to symbol shows a value is approximate rather than exact.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number 40.0 has ____ significant figures.",
+        "options": [
+          {"id": "a", "text": "3", "isCorrect": true},
+          {"id": "b", "text": "1", "isCorrect": false},
+          {"id": "c", "text": "2", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "In 40.0 the 4 is significant and both zeros count because they follow a decimal point, giving 3 significant figures. Exam Tip: Trailing zeros after a decimal point are always significant.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Estimate 82 / 4 by rounding 82 to 1 significant figure: ____.",
+        "options": [
+          {"id": "a", "text": "20", "isCorrect": true},
+          {"id": "b", "text": "21", "isCorrect": false},
+          {"id": "c", "text": "2", "isCorrect": false},
+          {"id": "d", "text": "25", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Rounding 82 to 1 significant figure gives 80, and 80 / 4 = 20. Exam Tip: Round first, then divide, to get a quick estimate.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A bag of rice weighs 49.6 kg. To the nearest kilogram it is ____ kg.",
+        "options": [
+          {"id": "a", "text": "50", "isCorrect": true},
+          {"id": "b", "text": "49", "isCorrect": false},
+          {"id": "c", "text": "45", "isCorrect": false},
+          {"id": "d", "text": "40", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The deciding digit is the first decimal 6, which is 5 or more, so 49 rounds up to 50 kg. Exam Tip: For the nearest whole unit, look only at the first decimal digit.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "Approximations are used when an exact value is not necessary, for example when stating a city's population.", "options": [], "correctAnswer": "true", "explanation": "Approximations give a convenient close value when exactness is not needed, such as a rounded population figure. Exam Tip: Real-life reporting often uses rounded, approximate numbers.", "difficulty": "easy"},
+      {"questionText": "3,972 rounded to the nearest hundred is 3,900.", "options": [], "correctAnswer": "false", "explanation": "The tens digit is 7, which is 5 or more, so the hundreds digit rounds up and 3,972 becomes 4,000, not 3,900. Exam Tip: Check the deciding digit before assuming a number rounds down.", "difficulty": "easy"},
+      {"questionText": "Leading zeros in a decimal are significant figures.", "options": [], "correctAnswer": "false", "explanation": "Leading zeros only fix the position of the decimal point and are never counted as significant figures. Exam Tip: Begin counting significant figures at the first non-zero digit.", "difficulty": "easy"},
+      {"questionText": "0.850 has three significant figures.", "options": [], "correctAnswer": "true", "explanation": "The 8 and 5 are significant and the trailing 0 after a decimal digit also counts, giving three significant figures. Exam Tip: Trailing zeros after a decimal point are significant.", "difficulty": "easy"},
+      {"questionText": "Estimation gives the exact value of a calculation.", "options": [], "correctAnswer": "false", "explanation": "Estimation uses rounded numbers to give a quick approximate answer, not the exact value. Exam Tip: Estimation is for a sensible check, not for precise results.", "difficulty": "easy"},
+      {"questionText": "6.35 rounded to one decimal place is 6.4.", "options": [], "correctAnswer": "true", "explanation": "The deciding digit is the second decimal 5, which rounds the 3 up to 4, giving 6.4. Exam Tip: A deciding digit of 5 rounds the previous digit up.", "difficulty": "easy"},
+      {"questionText": "Rounding 99,532 to the nearest thousand gives 100,000.", "options": [], "correctAnswer": "true", "explanation": "The hundreds digit is 5, which rounds the 9 up and carries through, turning 99,532 into 100,000. Exam Tip: Watch for carrying when a chain of 9s rounds up.", "difficulty": "easy"},
+      {"questionText": "The number of significant figures in 507 is 2.", "options": [], "correctAnswer": "false", "explanation": "The zero lies between two non-zero digits, so it is significant and 507 has 3 significant figures. Exam Tip: Zeros between non-zero digits always count.", "difficulty": "easy"},
+      {"questionText": "To estimate 312 x 48, rounding each to 1 significant figure gives 300 x 50 = 15,000.", "options": [], "correctAnswer": "true", "explanation": "Rounding 312 to 300 and 48 to 50 gives 300 x 50 = 15,000, a good estimate. Exam Tip: Round each number to 1 significant figure before multiplying.", "difficulty": "easy"},
+      {"questionText": "Rounding should be done at every step of a long calculation for accuracy.", "options": [], "correctAnswer": "false", "explanation": "Rounding at each step builds up errors; you should round only the final answer to stay accurate. Exam Tip: Keep full values through the working and round only at the end.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Approximation", "options": [], "correctAnswer": "A value that is close to the exact value but not exact, usually found by rounding.", "explanation": "Approximations are used when an exact figure is not needed.", "difficulty": "easy"},
+      {"questionText": "Rounding off", "options": [], "correctAnswer": "Replacing a number by a nearby value at a given place, rounding up if the deciding digit is 5 or more and down if it is less.", "explanation": "Rounding off gives a simpler number stated to a chosen place value.", "difficulty": "easy"},
+      {"questionText": "Significant figures", "options": [], "correctAnswer": "The digits in a number that carry meaning, counted from the first non-zero digit.", "explanation": "Significant figures show how precisely a number is stated.", "difficulty": "easy"},
+      {"questionText": "Decimal places", "options": [], "correctAnswer": "The number of digits written after the decimal point.", "explanation": "Rounding to a number of decimal places fixes how many digits appear after the point.", "difficulty": "easy"},
+      {"questionText": "Estimation", "options": [], "correctAnswer": "Finding a quick approximate answer by rounding numbers before calculating.", "explanation": "Estimation is useful for checking whether an answer is sensible.", "difficulty": "easy"},
+      {"questionText": "Leading zeros", "options": [], "correctAnswer": "Zeros written before the first non-zero digit, which are not significant.", "explanation": "Leading zeros only position the decimal point and never count as significant figures.", "difficulty": "easy"},
+      {"questionText": "Trailing zeros", "options": [], "correctAnswer": "Zeros written after the last non-zero digit; after a decimal point they are significant.", "explanation": "Trailing zeros after a decimal digit show precision and are counted.", "difficulty": "easy"},
+      {"questionText": "Nearest ten, hundred or thousand", "options": [], "correctAnswer": "The place value to which a number is rounded, decided by the digit immediately to its right.", "explanation": "Choosing the rounding place tells you which deciding digit to check.", "difficulty": "easy"},
+      {"questionText": "The approximately equal to symbol", "options": [], "correctAnswer": "The wavy sign that shows a value is close to but not exactly equal to another.", "explanation": "It is used to state that a number is an approximation rather than exact.", "difficulty": "easy"},
+      {"questionText": "Why you round only at the end", "options": [], "correctAnswer": "Because rounding at every step builds up errors, so full values are kept until the final answer.", "explanation": "Rounding only the final result keeps the calculation as accurate as possible.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "The distance between two towns is 187 km. A bus makes 21 round trips between them in a month. By rounding each figure to 1 significant figure, estimate the total distance the bus travels.",
+        "options": [
+          {"id": "a", "text": "8,000 km", "isCorrect": true},
+          {"id": "b", "text": "4,000 km", "isCorrect": false},
+          {"id": "c", "text": "3,927 km", "isCorrect": false},
+          {"id": "d", "text": "80,000 km", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A round trip covers the distance twice: 187 x 2 = 374 km, which rounds to 400. The 21 trips round to 20, so 400 x 20 = 8,000 km. Exam Tip: Handle the round-trip doubling before rounding, and estimate only at the end.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A student buys 38 exercise books at Tsh 1,180 each. What is the exact total cost?",
+        "options": [
+          {"id": "a", "text": "Tsh 44,840", "isCorrect": true},
+          {"id": "b", "text": "Tsh 40,000", "isCorrect": false},
+          {"id": "c", "text": "Tsh 4,840", "isCorrect": false},
+          {"id": "d", "text": "Tsh 45,840", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "An estimate rounds to 40 x 1,000 = 40,000, but the exact total is 38 x 1,180 = 44,840, so the difference between them is 4,840. Exam Tip: Use the estimate only as a check; the exact total needs the full multiplication.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A small object has a mass of 0.030470 kg. How many significant figures does this measurement have?",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": true},
+          {"id": "b", "text": "4", "isCorrect": false},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "3", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The leading zeros do not count, so the significant figures are 3, 0, 4, 7 and 0, giving 5. To 3 significant figures it is 0.0305 kg and to 2 decimal places it is 0.03 kg. Exam Tip: Start counting at the first non-zero digit and include zeros that fall between or trail significant digits.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

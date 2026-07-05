@@ -1,0 +1,374 @@
+{
+  "topicId": "form_4_mathematics_topic_6",
+  "topicName": "Vectors",
+  "order": 6,
+  "description": "An introduction to vectors in the plane, covering magnitude and direction, addition, subtraction and scalar multiplication of components, position vectors, midpoints, unit vectors, parallel vectors and collinearity, and applications to displacement and bearings.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Find the magnitude of the vector a = (3, 4).",
+        "options": [
+          {"id": "a", "text": "7", "isCorrect": false},
+          {"id": "b", "text": "5", "isCorrect": true},
+          {"id": "c", "text": "12", "isCorrect": false},
+          {"id": "d", "text": "25", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The magnitude is |a| = √(x² + y²) = √(3² + 4²) = √(9 + 16) = √25 = 5. Exam Tip: option a adds the components; d forgets the root. The magnitude is Pythagoras on the components, the 3-4-5 triple yet again.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Given a = (2, 3) and b = (4, -1), find a + b.",
+        "options": [
+          {"id": "a", "text": "(6, 2)", "isCorrect": true},
+          {"id": "b", "text": "(6, 4)", "isCorrect": false},
+          {"id": "c", "text": "(2, 4)", "isCorrect": false},
+          {"id": "d", "text": "(8, -3)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Add corresponding components: x gives 2 + 4 = 6 and y gives 3 + (-1) = 2, so a + b = (6, 2). Exam Tip: option b ignores the minus on -1; d multiplies. Vector addition is component-wise, with signs, and that simple.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Given a = (2, -5), find 3a.",
+        "options": [
+          {"id": "a", "text": "(5, -2)", "isCorrect": false},
+          {"id": "b", "text": "(6, -15)", "isCorrect": true},
+          {"id": "c", "text": "(6, 15)", "isCorrect": false},
+          {"id": "d", "text": "(2/3, -5/3)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Scalar multiplication scales each component: 3 × 2 = 6 and 3 × (-5) = -15, so 3a = (6, -15). Exam Tip: option c loses the minus, but the scalar multiplies the signed value. A positive scalar preserves direction, so the sign of every component must survive.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Given a = (5, 7) and b = (2, 3), find a - b.",
+        "options": [
+          {"id": "a", "text": "(3, 4)", "isCorrect": true},
+          {"id": "b", "text": "(7, 10)", "isCorrect": false},
+          {"id": "c", "text": "(-3, -4)", "isCorrect": false},
+          {"id": "d", "text": "(3, 10)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Subtract component-wise: x gives 5 - 2 = 3 and y gives 7 - 3 = 4, so a - b = (3, 4). Exam Tip: option c computes b - a, so order matters in subtraction. The result points from b's tip towards a's tip.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the position vector of the midpoint of A(2, 4) and B(6, 8).",
+        "options": [
+          {"id": "a", "text": "(8, 12)", "isCorrect": false},
+          {"id": "b", "text": "(4, 6)", "isCorrect": true},
+          {"id": "c", "text": "(2, 2)", "isCorrect": false},
+          {"id": "d", "text": "(3, 4)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The midpoint is ½(a + b) where a and b are the position vectors. Here a + b = (8, 12), so the midpoint = ½(8, 12) = (4, 6). Exam Tip: option a forgets the ½; c computes ½(b - a), the half-difference. The midpoint is half the sum.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the unit vector in the direction of a = (3, 4).",
+        "options": [
+          {"id": "a", "text": "(3, 4)", "isCorrect": false},
+          {"id": "b", "text": "(1, 1)", "isCorrect": false},
+          {"id": "c", "text": "(3/5, 4/5)", "isCorrect": true},
+          {"id": "d", "text": "(5, 5)", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "First |a| = √(9 + 16) = 5, then the unit vector is a/|a| = (3/5, 4/5). Checking, √(9/25 + 16/25) = √1 = 1. Exam Tip: option b normalises each component to 1 separately, which is meaningless. Divide the whole vector by its single magnitude and confirm with |unit| = 1.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the vector AB, where A is (1, 2) and B is (4, 6).",
+        "options": [
+          {"id": "a", "text": "(5, 8)", "isCorrect": false},
+          {"id": "b", "text": "(3, 4)", "isCorrect": true},
+          {"id": "c", "text": "(-3, -4)", "isCorrect": false},
+          {"id": "d", "text": "(4, 12)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "AB = b - a (terminal minus initial), so x gives 4 - 1 = 3 and y gives 6 - 2 = 4, giving AB = (3, 4). Exam Tip: option a adds the points; c computes BA. End minus start is the order rule that governs every displacement vector.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which of the following vectors is parallel to (2, 3)?",
+        "options": [
+          {"id": "a", "text": "(3, 2)", "isCorrect": false},
+          {"id": "b", "text": "(4, 6)", "isCorrect": true},
+          {"id": "c", "text": "(-2, 3)", "isCorrect": false},
+          {"id": "d", "text": "(2, -3)", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Parallel vectors are scalar multiples of each other, and (4, 6) = 2 × (2, 3) since the same scalar 2 works for both components. Exam Tip: option a swaps components, which is not a scalar multiple because 3/2 is not 2/3. Test parallelism by the equal-ratio check x1/x2 = y1/y2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Find the magnitude of the vector (-6, 8).",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "14", "isCorrect": false},
+          {"id": "c", "text": "10", "isCorrect": true},
+          {"id": "d", "text": "-10", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "Compute |v| = √((-6)² + 8²) = √(36 + 64) = √100 = 10. Exam Tip: option d is impossible because magnitude is a length and is never negative. Squaring already erased the minus sign of -6.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The vector a = (x, 2) has magnitude √13. Find the possible values of x.",
+        "options": [
+          {"id": "a", "text": "3 only", "isCorrect": false},
+          {"id": "b", "text": "plus or minus 3", "isCorrect": true},
+          {"id": "c", "text": "9", "isCorrect": false},
+          {"id": "d", "text": "plus or minus √11", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "From x² + 2² = 13 we get x² = 9, so x = plus or minus 3 since both signs are valid. Exam Tip: option a drops the negative root, the forgotten-sign trap in vector clothing. Both (3, 2) and (-3, 2) have length √13, and nothing in the question excludes either.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Juma walks 3 km due east and then 4 km due north. Find the magnitude of his resultant displacement.",
+        "options": [
+          {"id": "a", "text": "7 km", "isCorrect": false},
+          {"id": "b", "text": "5 km", "isCorrect": true},
+          {"id": "c", "text": "1 km", "isCorrect": false},
+          {"id": "d", "text": "12 km", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "The two legs are perpendicular, so the displacement is (3, 4) and |d| = √(9 + 16) = √25 = 5 km. Exam Tip: option a of 7 km is the distance walked; displacement is the straight-line vector from start to finish, and that difference between the two concepts is the whole point.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Simplify (2i + 3j) + (4i - j).",
+        "options": [
+          {"id": "a", "text": "6i + 2j", "isCorrect": true},
+          {"id": "b", "text": "6i + 4j", "isCorrect": false},
+          {"id": "c", "text": "8i - 3j", "isCorrect": false},
+          {"id": "d", "text": "2i + 2j", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Collect the i-components 2 + 4 = 6 and the j-components 3 + (-1) = 2, giving 6i + 2j. Exam Tip: i-j notation is column-vector arithmetic in disguise, so combine i's with i's and j's with j's, never across.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Given that (6, 9) = k(2, 3), find the scalar k.",
+        "options": [
+          {"id": "a", "text": "2", "isCorrect": false},
+          {"id": "b", "text": "3", "isCorrect": true},
+          {"id": "c", "text": "6", "isCorrect": false},
+          {"id": "d", "text": "1/3", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Comparing x-components gives 6 = 2k so k = 3, and verifying with y gives 9 = 3k so k = 3, which is consistent. Exam Tip: both components must give the same k or the vectors are not parallel at all. The double-check is part of the method, not decoration.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "What is the magnitude of the zero vector?",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": false},
+          {"id": "b", "text": "Undefined", "isCorrect": false},
+          {"id": "c", "text": "0", "isCorrect": true},
+          {"id": "d", "text": "-1", "isCorrect": false}
+        ],
+        "correctAnswer": "c",
+        "explanation": "The zero vector is (0, 0), so its magnitude is √(0 + 0) = 0. Exam Tip: it is the only vector with no direction, and it is the identity for vector addition since a + 0 = a.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Find the angle the vector (1, 1) makes with the positive x-axis.",
+        "options": [
+          {"id": "a", "text": "30°", "isCorrect": false},
+          {"id": "b", "text": "60°", "isCorrect": false},
+          {"id": "c", "text": "90°", "isCorrect": false},
+          {"id": "d", "text": "45°", "isCorrect": true}
+        ],
+        "correctAnswer": "d",
+        "explanation": "The direction satisfies tan θ = y-component / x-component = 1/1 = 1, so θ = 45°. Exam Tip: direction from components is always tan θ = y/x, with a quadrant check when components go negative.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The magnitude of the vector (x, y) is |v| = ____.",
+        "options": [
+          {"id": "a", "text": "√(x² + y²)", "isCorrect": true},
+          {"id": "b", "text": "x² + y²", "isCorrect": false},
+          {"id": "c", "text": "x + y", "isCorrect": false},
+          {"id": "d", "text": "√(x² - y²)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The components are the legs of a right triangle and the vector is the hypotenuse, so |v| = √(x² + y²). Exam Tip: magnitude is always the last step, so do all component arithmetic first, then take the root once.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "(4, -2) + (-1, 5) = ____.",
+        "options": [
+          {"id": "a", "text": "(3, 3)", "isCorrect": true},
+          {"id": "b", "text": "(5, 3)", "isCorrect": false},
+          {"id": "c", "text": "(3, 7)", "isCorrect": false},
+          {"id": "d", "text": "(5, 7)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Adding component-wise gives x = 4 + (-1) = 3 and y = -2 + 5 = 3, so the result is (3, 3). Exam Tip: track each sign individually, since two of the four numbers here are negative.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "2 × (3, -4) = ____.",
+        "options": [
+          {"id": "a", "text": "(6, -8)", "isCorrect": true},
+          {"id": "b", "text": "(6, 8)", "isCorrect": false},
+          {"id": "c", "text": "(6, -4)", "isCorrect": false},
+          {"id": "d", "text": "(5, -2)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Multiply each component by 2: 2 × 3 = 6 and 2 × (-4) = -8, giving (6, -8). Exam Tip: the scaled vector is parallel to the original, keeping the same direction but with double the length.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "A unit vector is a vector whose magnitude is ____.",
+        "options": [
+          {"id": "a", "text": "1", "isCorrect": true},
+          {"id": "b", "text": "0", "isCorrect": false},
+          {"id": "c", "text": "equal to its length", "isCorrect": false},
+          {"id": "d", "text": "undefined", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Unit refers to length one, so direction is preserved while the size is normalised to a magnitude of 1. Exam Tip: unit vectors carry pure direction, so multiply by any length to rebuild a vector of that size.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "If a and b are the position vectors of points A and B, then the vector AB = ____.",
+        "options": [
+          {"id": "a", "text": "b - a", "isCorrect": true},
+          {"id": "b", "text": "a - b", "isCorrect": false},
+          {"id": "c", "text": "a + b", "isCorrect": false},
+          {"id": "d", "text": "b + a", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "To go from A to B you reverse a then follow b, giving AB = -a + b = b - a. Exam Tip: this is tip minus tail in position-vector form, the single most-used identity of the chapter.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The magnitude of the vector (5, 12) is ____.",
+        "options": [
+          {"id": "a", "text": "13", "isCorrect": true},
+          {"id": "b", "text": "17", "isCorrect": false},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "169", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Compute √(25 + 144) = √169 = 13. Exam Tip: 5-12-13 is the second Pythagorean triple to know cold, after 3-4-5.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Two vectors are equal if they have the same magnitude and the same ____.",
+        "options": [
+          {"id": "a", "text": "direction", "isCorrect": true},
+          {"id": "b", "text": "length", "isCorrect": false},
+          {"id": "c", "text": "position", "isCorrect": false},
+          {"id": "d", "text": "starting point", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "A vector is defined by two attributes, and length alone is not enough since (3, 0) and (0, 3) share magnitude but differ, so they must also have the same direction. Exam Tip: equal vectors need equal corresponding components, and the component test bundles both conditions at once.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The negative of the vector (2, -7) is ____.",
+        "options": [
+          {"id": "a", "text": "(-2, 7)", "isCorrect": true},
+          {"id": "b", "text": "(-2, -7)", "isCorrect": false},
+          {"id": "c", "text": "(2, 7)", "isCorrect": false},
+          {"id": "d", "text": "(7, -2)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Negate each component to get -2 and +7, giving (-2, 7). Exam Tip: -a has the same magnitude as a but the exactly opposite direction, a 180° reversal.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "In component form, the unit vector i = ____.",
+        "options": [
+          {"id": "a", "text": "(1, 0)", "isCorrect": true},
+          {"id": "b", "text": "(0, 1)", "isCorrect": false},
+          {"id": "c", "text": "(1, 1)", "isCorrect": false},
+          {"id": "d", "text": "(0, 0)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The vector i points along the positive x-axis with length 1, so it is one step in x and none in y, giving i = (1, 0). Exam Tip: j = (0, 1), and together they build every plane vector since (x, y) = xi + yj.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "(8, 6) - (3, 2) = ____.",
+        "options": [
+          {"id": "a", "text": "(5, 4)", "isCorrect": true},
+          {"id": "b", "text": "(11, 8)", "isCorrect": false},
+          {"id": "c", "text": "(5, 8)", "isCorrect": false},
+          {"id": "d", "text": "(4, 5)", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "Subtract component-wise: x = 8 - 3 = 5 and y = 6 - 2 = 4, giving (5, 4). Exam Tip: use the same component-wise discipline as addition, since subtraction is just adding the negative.",
+        "difficulty": "easy"
+      }
+    ],
+    "tf": [
+      {"questionText": "A vector quantity has both magnitude and direction.", "options": [], "correctAnswer": "true", "explanation": "This is the definition of a vector, and displacement, velocity and force all qualify. Exam Tip: the definition question opens many NECTA vector sections, so answer with both words, magnitude and direction.", "difficulty": "easy"},
+      {"questionText": "A scalar quantity has direction.", "options": [], "correctAnswer": "false", "explanation": "Scalars are magnitude-only quantities such as mass, time, temperature and distance, and none of them points anywhere. Exam Tip: remember the paired concepts, distance (scalar) versus displacement (vector) and speed (scalar) versus velocity (vector).", "difficulty": "easy"},
+      {"questionText": "Vector addition is commutative: a + b = b + a.", "options": [], "correctAnswer": "true", "explanation": "Component-wise, addition of numbers commutes, for example (2, 1) + (3, 4) = (5, 5) = (3, 4) + (2, 1). Exam Tip: geometrically this is the parallelogram law, where both routes around the parallelogram end at the same diagonal.", "difficulty": "easy"},
+      {"questionText": "For any two vectors, |a + b| = |a| + |b|.", "options": [], "correctAnswer": "false", "explanation": "Testing perpendicular vectors a = (3, 0) and b = (0, 4) gives |a + b| = |(3, 4)| = 5 but |a| + |b| = 7, so 5 is not 7 and it fails in general. Exam Tip: magnitudes do not add unless the vectors are parallel and like-directed, which is the triangle inequality in disguise.", "difficulty": "easy"},
+      {"questionText": "Multiplying a vector by a negative scalar reverses its direction.", "options": [], "correctAnswer": "true", "explanation": "For example -1 × (2, 3) = (-2, -3), which points exactly opposite. Exam Tip: a negative scalar both reverses and scales, so -2a is twice as long and points the opposite way.", "difficulty": "easy"},
+      {"questionText": "The vectors (2, 3) and (3, 2) are equal.", "options": [], "correctAnswer": "false", "explanation": "Comparing corresponding components, 2 is not 3, and although they share magnitude √13 they point in different directions. Exam Tip: the order inside the bracket is the vector, so components are coordinates, not a set.", "difficulty": "easy"},
+      {"questionText": "Displacement is a vector quantity.", "options": [], "correctAnswer": "true", "explanation": "Displacement records how far and which way, so both attributes are present. Exam Tip: walking a full circle gives distance equal to the circumference but displacement equal to the zero vector, the cleanest contrast between the two.", "difficulty": "easy"},
+      {"questionText": "The unit vector in the direction of a non-zero vector a is a/|a|.", "options": [], "correctAnswer": "true", "explanation": "Dividing by the magnitude scales the length to 1 while the direction is untouched by a positive scalar. Exam Tip: this is defined only for non-zero a, since the zero vector has no direction to preserve.", "difficulty": "easy"},
+      {"questionText": "Two vectors are parallel if one is a scalar multiple of the other.", "options": [], "correctAnswer": "true", "explanation": "If b = ka then b lies along a's line, with positive k giving the same direction and negative k the opposite, still parallel. Exam Tip: this test also proves collinearity of points, since A, B, C are collinear when AB = kAC.", "difficulty": "easy"},
+      {"questionText": "A position vector always starts from the origin.", "options": [], "correctAnswer": "true", "explanation": "The position vector of P is OP, whose tail is pinned at the origin O by definition. Exam Tip: free vectors can start anywhere but position vectors cannot, and that anchoring is what makes AB = b - a work.", "difficulty": "easy"}
+    ],
+    "summary": [
+      {"questionText": "Magnitude of a vector", "options": [], "correctAnswer": "For a vector (x, y), the magnitude is |v| = √(x² + y²).", "explanation": "For (6, 8) the magnitude is √(36 + 64) = √100 = 10. Exam Tip: the components are the two legs of a right triangle and the magnitude is the hypotenuse.", "difficulty": "easy"},
+      {"questionText": "Vector addition", "options": [], "correctAnswer": "Add corresponding components: (a, b) + (c, d) = (a + c, b + d).", "explanation": "For example (2, 3) + (4, -1) = (6, 2), keeping every sign. Exam Tip: combine x with x and y with y, never across, and watch the negative signs.", "difficulty": "easy"},
+      {"questionText": "Scalar multiplication", "options": [], "correctAnswer": "Multiply each component by the scalar: k(x, y) = (kx, ky).", "explanation": "For example 3(2, -5) = (6, -15), and the result is parallel to the original. Exam Tip: a positive scalar preserves direction while a negative scalar reverses it; the length scales by |k|.", "difficulty": "easy"},
+      {"questionText": "Position vector", "options": [], "correctAnswer": "The vector OP from the origin O to a point P, giving that point its coordinates.", "explanation": "The point P(4, 6) has position vector (4, 6). Exam Tip: position vectors always start at the origin, which is what lets you write AB = b - a.", "difficulty": "easy"},
+      {"questionText": "Vector AB from two points", "options": [], "correctAnswer": "AB = b - a, that is end point minus start point.", "explanation": "For A(1, 2) and B(4, 6), AB = (4 - 1, 6 - 2) = (3, 4). Exam Tip: it is always end minus start; reversing the order gives BA, the opposite vector.", "difficulty": "easy"},
+      {"questionText": "Midpoint of A and B", "options": [], "correctAnswer": "The midpoint has position vector ½(a + b), half the sum of the two position vectors.", "explanation": "For A(2, 4) and B(6, 8) the midpoint is ½(8, 12) = (4, 6). Exam Tip: it is half the sum of the positions, not half the difference.", "difficulty": "easy"},
+      {"questionText": "Unit vector", "options": [], "correctAnswer": "A vector of magnitude 1 in the direction of a, found by a/|a|.", "explanation": "For a = (3, 4), |a| = 5 so the unit vector is (3/5, 4/5), which checks as √(9/25 + 16/25) = 1. Exam Tip: divide the whole vector by its single magnitude and confirm the length equals 1.", "difficulty": "easy"},
+      {"questionText": "Parallel vectors", "options": [], "correctAnswer": "Two vectors are parallel when one is a scalar multiple of the other, so x1/x2 = y1/y2.", "explanation": "(4, 6) is parallel to (2, 3) because (4, 6) = 2(2, 3). Exam Tip: use the equal-ratio check; swapping components like (3, 2) is not a scalar multiple.", "difficulty": "easy"},
+      {"questionText": "Scalar versus vector quantity", "options": [], "correctAnswer": "A scalar has magnitude only; a vector has both magnitude and direction.", "explanation": "Mass, time and distance are scalars, while displacement, velocity and force are vectors. Exam Tip: pair them up, distance versus displacement and speed versus velocity, to spot which is which.", "difficulty": "easy"},
+      {"questionText": "Component form with i and j", "options": [], "correctAnswer": "Any plane vector is (x, y) = xi + yj, where i = (1, 0) and j = (0, 1).", "explanation": "For example 2i + 3j is the vector (2, 3). Exam Tip: i-j notation is just column-vector arithmetic, so collect i-terms with i-terms and j-terms with j-terms.", "difficulty": "easy"}
+    ],
+    "hoq": [
+      {
+        "questionText": "Given a = (2, 3) and b = (-1, 4), find |2a - b|.",
+        "options": [
+          {"id": "a", "text": "√53", "isCorrect": false},
+          {"id": "b", "text": "√29", "isCorrect": true},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "√13", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "First 2a = (4, 6), then 2a - b = (4 - (-1), 6 - 4) = (5, 2), and finally |2a - b| = √(5² + 2²) = √(25 + 4) = √29, which is about 5.39. The double negative 4 - (-1) = 5 is the planted trap. Exam Tip: compute the component vector completely first, take the magnitude once at the end, and never try to combine |2a| and |b| separately because magnitudes do not subtract.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "The points A(1, 2), B(3, 6) and C(k, 12) are collinear. Find the value of k.",
+        "options": [
+          {"id": "a", "text": "5", "isCorrect": false},
+          {"id": "b", "text": "6", "isCorrect": true},
+          {"id": "c", "text": "7", "isCorrect": false},
+          {"id": "d", "text": "4", "isCorrect": false}
+        ],
+        "correctAnswer": "b",
+        "explanation": "Here AB = (3 - 1, 6 - 2) = (2, 4) and AC = (k - 1, 12 - 2) = (k - 1, 10). Collinearity requires AC = m·AB, and from the y-components 10 = 4m gives m = 2.5, so the x-components give k - 1 = 2.5 × 2 = 5 and therefore k = 6. Verify: AC = (5, 10) = 2.5(2, 4). Exam Tip: option a stops at k - 1 = 5 and forgets the final +1; find the scalar from the complete component, then transfer it to the unknown one.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Asha walks 6 km due east from her home in Singida, then 8 km due north to the market. Find the magnitude of her displacement and the bearing of the market from her home, given tan⁻¹(6/8) ≈ 36.87°.",
+        "options": [
+          {"id": "a", "text": "10 km, bearing 037°", "isCorrect": true},
+          {"id": "b", "text": "14 km, bearing 037°", "isCorrect": false},
+          {"id": "c", "text": "10 km, bearing 053°", "isCorrect": false},
+          {"id": "d", "text": "10 km, bearing 143°", "isCorrect": false}
+        ],
+        "correctAnswer": "a",
+        "explanation": "The displacement vector is (6, 8), so its magnitude is √(36 + 64) = √100 = 10 km. The bearing is measured clockwise from north, where tan θ = east/north = 6/8, giving θ = tan⁻¹(0.75) ≈ 36.87°, so the market lies on a bearing of 037°. Exam Tip: option c of 053° uses the angle from east, but bearings start from north so the ratio is east over north; option b of 14 km wrongly adds the distances instead of using Pythagoras, and bearings are always written with three digits such as 037°.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

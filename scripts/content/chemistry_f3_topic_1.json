@@ -1,0 +1,942 @@
+{
+  "topicId": "form_3_chemistry_topic_1",
+  "topicName": "Atomic Structure",
+  "order": 1,
+  "description": "This topic explains the structure of the atom, atomic and mass numbers, isotopes, relative atomic mass, electron arrangement in shells, valence electrons, and the historical development of atomic models.",
+  "packs": {
+    "mcq": [
+      {
+        "questionText": "Which subatomic particle carries a negative charge?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Proton",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Neutron",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Electron",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Nucleus",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Electrons carry a negative charge of -1. Protons are positive and neutrons have no charge.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Where are the protons and neutrons of an atom found?",
+        "options": [
+          {
+            "id": "a",
+            "text": "In the electron shells",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "In the nucleus",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Spread evenly through the atom",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Outside the atom",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Protons and neutrons are packed together in the small central nucleus, while electrons move around it in shells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What does the atomic number (Z) of an element tell us?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The number of neutrons in the atom",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The total number of protons and neutrons",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "The number of protons in the atom",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "The number of electron shells",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "The atomic number is the number of protons in the nucleus. In a neutral atom it also equals the number of electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The mass number (A) of an atom is equal to the number of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Protons only",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Protons plus neutrons",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Electrons plus protons",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Neutrons only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The mass number is the sum of protons and neutrons (the nucleons) in the nucleus. Electrons are too light to count.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An atom has atomic number 11 and mass number 23. How many neutrons does it have?",
+        "options": [
+          {
+            "id": "a",
+            "text": "11",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "23",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "34",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Neutrons = mass number - atomic number = 23 - 11 = 12.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Isotopes of the same element have the same number of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Neutrons but different protons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Protons but different neutrons",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Protons and neutrons",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Electrons but different protons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Isotopes have the same number of protons (same atomic number) but different numbers of neutrons, giving different mass numbers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Which of the following are isotopes of the same element?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chlorine-35 and chlorine-37",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "Carbon-12 and oxygen-16",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Sodium-23 and magnesium-24",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Helium-4 and hydrogen-1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Chlorine-35 and chlorine-37 are both chlorine (17 protons) but differ in neutrons, so they are isotopes.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the maximum number of electrons that the first shell of an atom can hold?",
+        "options": [
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "18",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The first (innermost) shell holds a maximum of 2 electrons. The next two shells hold up to 8 each (2,8,8 rule).",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is the electron arrangement of an atom of magnesium (atomic number 12)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2, 10",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2, 8, 2",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "8, 2, 2",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "2, 2, 8",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Magnesium has 12 electrons: 2 in the first shell, 8 in the second, and 2 in the third, written as 2, 8, 2.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "How many valence (outer-shell) electrons does an atom with arrangement 2, 8, 7 have?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "8",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "7",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "17",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Valence electrons are those in the outermost shell. Here the outer shell has 7 electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Which scientist proposed the model in which electrons move around the nucleus in fixed energy shells?",
+        "options": [
+          {
+            "id": "a",
+            "text": "John Dalton",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "J. J. Thomson",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Niels Bohr",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Ernest Rutherford",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Niels Bohr suggested that electrons travel in fixed shells (energy levels) around the nucleus.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Rutherford's gold-foil (scattering) experiment showed that the atom:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Is a solid ball that cannot be divided",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Has a small, dense, positively charged nucleus",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Has electrons spread evenly like plums in a pudding",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Is made only of neutrons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Most particles passed straight through, but a few bounced back, showing the atom has a tiny dense positive nucleus with mostly empty space around it.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The relative mass of a proton compared to an electron is approximately:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Equal",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The proton is about 1840 times heavier",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "The electron is heavier",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "The proton is twice as heavy",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A proton has a relative mass of 1, while an electron's mass is about 1/1840 of a proton, so the proton is roughly 1840 times heavier.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why do atoms have no overall electrical charge?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They contain only neutrons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "The number of protons equals the number of electrons",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Protons and neutrons cancel out",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Electrons have no charge",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "In a neutral atom the positive protons are equal in number to the negative electrons, so the charges balance to zero.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Elements in the same group of the periodic table have similar chemical properties because they have the same number of:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Neutrons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Electron shells",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Valence electrons",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "Protons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Chemical behaviour depends mainly on the outer (valence) electrons. Elements in the same group have the same number of valence electrons, so they react similarly.",
+        "difficulty": "medium"
+      }
+    ],
+    "fib": [
+      {
+        "questionText": "The central part of an atom that contains protons and neutrons is called the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "nucleus",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "proton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "electron",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "shell",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The nucleus is the dense central region holding protons and neutrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The number of protons in an atom is known as the _____ number.",
+        "options": [
+          {
+            "id": "a",
+            "text": "mass",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "atomic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "neutron",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nucleon",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The atomic number (Z) equals the number of protons in the nucleus.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Atoms of the same element with different numbers of neutrons are called _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "isomers",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "ions",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "isotopes",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "allotropes",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Isotopes have the same atomic number but different mass numbers due to different neutron numbers.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "For a neutral atom, the number of electrons is equal to the number of _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "neutrons",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "nucleons",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "shells",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "protons",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "In a neutral atom the positive and negative charges balance, so electrons equal protons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The maximum number of electrons in the second shell is _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "8",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "18",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "32",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Following the 2, 8, 8 rule, the second shell can hold a maximum of 8 electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An atom with mass number 35 and atomic number 17 has _____ neutrons.",
+        "options": [
+          {
+            "id": "a",
+            "text": "17",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "18",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "35",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "52",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Neutrons = mass number - atomic number = 35 - 17 = 18.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The electrons found in the outermost shell of an atom are called _____ electrons.",
+        "options": [
+          {
+            "id": "a",
+            "text": "core",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "bonding",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "valence",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "inner",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "c",
+        "explanation": "Valence electrons are in the outer shell and determine how an atom reacts.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The scientist who first proposed that all matter is made of tiny indivisible particles called atoms was _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rutherford",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Bohr",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "Thomson",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Dalton",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswer": "d",
+        "explanation": "John Dalton proposed the atomic theory describing atoms as tiny indivisible particles.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "J. J. Thomson discovered the negatively charged particle called the _____.",
+        "options": [
+          {
+            "id": "a",
+            "text": "electron",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "proton",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "neutron",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "nucleon",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Thomson discovered the electron and proposed the 'plum pudding' model of the atom.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The average mass of an element's atoms compared with one-twelfth of a carbon-12 atom is called the relative _____ mass.",
+        "options": [
+          {
+            "id": "a",
+            "text": "molecular",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "atomic",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "formula",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "molar",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Relative atomic mass (RAM) is the average mass of an element's atoms relative to 1/12 of a carbon-12 atom.",
+        "difficulty": "medium"
+      }
+    ],
+    "tf": [
+      {
+        "questionText": "Protons and neutrons are found in the nucleus of an atom.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Protons and neutrons make up the nucleus, while electrons orbit in shells.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "An electron has a greater mass than a proton.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "An electron is about 1840 times lighter than a proton, so it has much less mass.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Isotopes of an element have the same chemical properties.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Isotopes have the same number of electrons and valence electrons, so they react chemically in the same way.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "The mass number of an atom is always larger than or equal to its atomic number.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Mass number = protons + neutrons, while atomic number = protons. Since neutrons are zero or more, mass number is at least equal to atomic number.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "A neutron carries a positive electric charge.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "A neutron is electrically neutral; it carries no charge.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "The first electron shell can hold a maximum of eight electrons.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "The first shell holds a maximum of 2 electrons, not 8.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Carbon-12 and carbon-14 have the same number of protons.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Both are carbon with 6 protons; they differ only in their number of neutrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Rutherford proposed the plum pudding model of the atom.",
+        "options": [],
+        "correctAnswer": "false",
+        "explanation": "Thomson proposed the plum pudding model. Rutherford proposed the nuclear model after the gold-foil experiment.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Elements in the same period of the periodic table have the same number of electron shells.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "Across a period the number of shells stays the same while the number of valence electrons increases.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Relative atomic mass can be a decimal number because it is an average of the masses of all isotopes.",
+        "options": [],
+        "correctAnswer": "true",
+        "explanation": "RAM is a weighted average of isotope masses, so it is often a non-whole number, for example chlorine is 35.5.",
+        "difficulty": "medium"
+      }
+    ],
+    "summary": [
+      {
+        "questionText": "List the three subatomic particles and their charges.",
+        "options": [],
+        "correctAnswer": "Proton (positive, +1), neutron (no charge, 0), and electron (negative, -1).",
+        "explanation": "Knowing the charges helps explain why a neutral atom has equal protons and electrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "How do you calculate the number of neutrons in an atom?",
+        "options": [],
+        "correctAnswer": "Number of neutrons = mass number - atomic number.",
+        "explanation": "The mass number counts protons and neutrons, so subtracting the protons (atomic number) gives the neutrons.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "Define an isotope and give one example.",
+        "options": [],
+        "correctAnswer": "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons, for example chlorine-35 and chlorine-37.",
+        "explanation": "Same protons means same element, but different neutrons gives different mass numbers.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "State the rule used to fill electron shells for the first 20 elements.",
+        "options": [],
+        "correctAnswer": "Fill the shells in order 2, 8, 8: the first shell holds up to 2 electrons, the second up to 8, and the third up to 8.",
+        "explanation": "This 2, 8, 8 rule gives the electron arrangement for the first 20 elements.",
+        "difficulty": "easy"
+      },
+      {
+        "questionText": "What is a valence electron and why is it important?",
+        "options": [],
+        "correctAnswer": "A valence electron is an electron in the outermost shell of an atom; it is important because it determines the chemical behaviour and bonding of the atom.",
+        "explanation": "Reactions involve the gain, loss or sharing of valence electrons.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Explain how to calculate the relative atomic mass of an element from its isotopic abundances.",
+        "options": [],
+        "correctAnswer": "Multiply each isotope's mass by its percentage abundance, add the results, then divide by 100 to get the weighted average.",
+        "explanation": "RAM is a weighted average, giving more influence to the more abundant isotope.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "Give the electron arrangement of a sodium atom (atomic number 11).",
+        "options": [],
+        "correctAnswer": "2, 8, 1.",
+        "explanation": "Eleven electrons fill as 2 in the first shell, 8 in the second, and 1 in the third.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Briefly describe Dalton's atomic theory.",
+        "options": [],
+        "correctAnswer": "Dalton said that matter is made of tiny indivisible particles called atoms, that atoms of the same element are identical, and that atoms combine in fixed ratios to form compounds.",
+        "explanation": "Dalton's theory was the first modern scientific description of atoms.",
+        "difficulty": "medium"
+      },
+      {
+        "questionText": "Why does the relative atomic mass of chlorine equal 35.5?",
+        "options": [],
+        "correctAnswer": "Chlorine is a mixture of two isotopes, chlorine-35 (about 75%) and chlorine-37 (about 25%), so its weighted average mass is about 35.5.",
+        "explanation": "The more abundant chlorine-35 pulls the average closer to 35 than to 37.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "How is the periodic table group of an element linked to its valence electrons?",
+        "options": [],
+        "correctAnswer": "The group number (for main-group elements) equals the number of valence electrons in the atom.",
+        "explanation": "For example group I elements have 1 valence electron and group VII have 7, which explains their similar reactions.",
+        "difficulty": "medium"
+      }
+    ],
+    "hoq": [
+      {
+        "questionText": "An element X has two isotopes: X-63 with 70% abundance and X-65 with 30% abundance. What is its relative atomic mass?",
+        "options": [
+          {
+            "id": "a",
+            "text": "63.6",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "64.0",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "64.4",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "65.0",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "RAM = (63 x 70 + 65 x 30) / 100 = (4410 + 1950) / 100 = 6360 / 100 = 63.6.",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "A neutral atom has 19 protons. Using the 2, 8, 8 filling rule, how many valence electrons does it have, and which group of the periodic table is it in?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Arrangement 2, 8, 9; 9 valence electrons; group IX",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "Arrangement 2, 8, 8, 1; 1 valence electron; group I",
+            "isCorrect": true
+          },
+          {
+            "id": "c",
+            "text": "Arrangement 2, 8, 7, 2; 2 valence electrons; group II",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "Arrangement 2, 17; 17 valence electrons; group VII",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Nineteen electrons fill as 2, 8, 8, then 1 left over goes to the next shell: 2, 8, 8, 1. With 1 valence electron it belongs to group I (it is potassium).",
+        "difficulty": "hard"
+      },
+      {
+        "questionText": "An ion is formed when an atom of mass number 24 and atomic number 12 loses 2 electrons. How many protons, neutrons, and electrons does the ion have?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12 protons, 12 neutrons, 10 electrons",
+            "isCorrect": true
+          },
+          {
+            "id": "b",
+            "text": "12 protons, 24 neutrons, 12 electrons",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "10 protons, 12 neutrons, 12 electrons",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "12 protons, 10 neutrons, 14 electrons",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Protons = atomic number = 12 (unchanged). Neutrons = 24 - 12 = 12. Losing 2 electrons from the neutral 12 leaves 10 electrons.",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
