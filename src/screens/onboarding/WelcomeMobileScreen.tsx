@@ -149,7 +149,10 @@ export function WelcomeMobileScreen({ navigation }: Props) {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, minHeight: '100vh' as any, backgroundColor: COLORS.bgDark },
+  // 100dvh (not 100vh) — vh recalculates every time a mobile browser's
+  // address bar shows/hides on scroll, which reads as the whole screen
+  // visibly jumping/"shaking"; dvh accounts for the toolbar and stays put.
+  root: { flex: 1, minHeight: '100dvh' as any, backgroundColor: COLORS.bgDark },
   safe: { flex: 1 },
   content: { flexGrow: 1, alignItems: 'center', paddingBottom: SPACING['3xl'] },
   shell: { width: '100%', maxWidth: 430, paddingTop: SPACING.lg, paddingBottom: SPACING['2xl'] },
