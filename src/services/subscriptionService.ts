@@ -31,6 +31,14 @@ export function isDemoActive(): boolean {
   return _demoActive;
 }
 
+// Module-level, not store state — subscriptionStore.clear() can't reach this
+// on its own, so logout must call it explicitly or a demo-premium flag
+// survives into the next account signed in on the same device/session.
+export function resetDemoPremium(): void {
+  _demoActive = false;
+  _demoPlanId = 'standard';
+}
+
 function buildDemoSubscription(planId: PlanId): UserSubscription {
   return {
     userId: 'demo_user',
