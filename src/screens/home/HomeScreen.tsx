@@ -17,7 +17,7 @@ import { SubjectCard } from '../../components/ui/SubjectCard';
 import { StreakFireCard } from '../../components/ui/gamification/StreakFireCard';
 import { CoinBalanceChip } from '../../components/ui/gamification/CoinBalanceChip';
 import { PremiumLockCard } from '../../components/ui/PremiumLockCard';
-import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
+import { COLORS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { useProfileStore } from '../../store/profileStore';
 import { useAuthStore } from '../../store/authStore';
@@ -59,6 +59,14 @@ export function HomeScreen({ navigation }: Props) {
     setRefreshing(false);
   };
 
+  const goToSubjectsTab = () => {
+    (navigation.getParent() as any)?.navigate('SubjectsTab');
+  };
+
+  const goToLeaderboardTab = () => {
+    (navigation.getParent() as any)?.navigate('LeaderboardTab');
+  };
+
   return (
     <ScreenContainer scrollable padded={false} onRefresh={handleRefresh} refreshing={refreshing}>
       {/* Header */}
@@ -72,7 +80,11 @@ export function HomeScreen({ navigation }: Props) {
             <Text style={styles.userName}>{name} 👋</Text>
           </View>
           <View style={styles.topBarActions}>
-            <TouchableOpacity style={styles.iconBtn}>
+            <TouchableOpacity
+              style={styles.iconBtn}
+              accessibilityRole="button"
+              accessibilityLabel="Notifications"
+            >
               <Ionicons name="notifications-outline" size={22} color={COLORS.textSecondary} />
               <View style={styles.notifDot} />
             </TouchableOpacity>
@@ -89,57 +101,59 @@ export function HomeScreen({ navigation }: Props) {
         <TouchableOpacity
           activeOpacity={0.85}
           onPress={() => navigation.navigate('GamificationProfile')}
+          accessibilityRole="button"
+          accessibilityLabel="Open gamification profile"
         >
-        <LinearGradient
-          colors={['#2A1F6B', '#1C2347']}
-          style={styles.heroCard}
-        >
-          <View style={styles.heroLeft}>
-            {/* Circular XP ring */}
-            <View style={styles.ringWrapper}>
-              <Svg width={RING_SIZE} height={RING_SIZE}>
-                <Circle
-                  cx={RING_SIZE / 2}
-                  cy={RING_SIZE / 2}
-                  r={RING_R}
-                  stroke={COLORS.bgCardLight}
-                  strokeWidth={RING_STROKE}
-                  fill="none"
-                />
-                <Circle
-                  cx={RING_SIZE / 2}
-                  cy={RING_SIZE / 2}
-                  r={RING_R}
-                  stroke={COLORS.primary}
-                  strokeWidth={RING_STROKE}
-                  fill="none"
-                  strokeDasharray={RING_CIRCUMFERENCE}
-                  strokeDashoffset={strokeDash}
-                  strokeLinecap="round"
-                  rotation="-90"
-                  origin={`${RING_SIZE / 2}, ${RING_SIZE / 2}`}
-                />
-              </Svg>
-              <View style={styles.ringCenter}>
-                <Text style={styles.ringLevel}>Lvl</Text>
-                <Text style={styles.ringLevelNum}>{level}</Text>
+          <LinearGradient
+            colors={['#2A1F6B', '#1C2347']}
+            style={styles.heroCard}
+          >
+            <View style={styles.heroLeft}>
+              {/* Circular XP ring */}
+              <View style={styles.ringWrapper}>
+                <Svg width={RING_SIZE} height={RING_SIZE}>
+                  <Circle
+                    cx={RING_SIZE / 2}
+                    cy={RING_SIZE / 2}
+                    r={RING_R}
+                    stroke={COLORS.bgCardLight}
+                    strokeWidth={RING_STROKE}
+                    fill="none"
+                  />
+                  <Circle
+                    cx={RING_SIZE / 2}
+                    cy={RING_SIZE / 2}
+                    r={RING_R}
+                    stroke={COLORS.primary}
+                    strokeWidth={RING_STROKE}
+                    fill="none"
+                    strokeDasharray={RING_CIRCUMFERENCE}
+                    strokeDashoffset={strokeDash}
+                    strokeLinecap="round"
+                    rotation="-90"
+                    origin={`${RING_SIZE / 2}, ${RING_SIZE / 2}`}
+                  />
+                </Svg>
+                <View style={styles.ringCenter}>
+                  <Text style={styles.ringLevel}>Lvl</Text>
+                  <Text style={styles.ringLevelNum}>{level}</Text>
+                </View>
               </View>
             </View>
-          </View>
 
-          <View style={styles.heroRight}>
-            <Text style={styles.heroXpLabel}>Total XP</Text>
-            <Text style={styles.heroXp}>{formatXp(xp)}</Text>
-            <Text style={styles.heroXpSub}>{progressPercent}% to Level {level + 1}</Text>
+            <View style={styles.heroRight}>
+              <Text style={styles.heroXpLabel}>Total XP</Text>
+              <Text style={styles.heroXp}>{formatXp(xp)}</Text>
+              <Text style={styles.heroXpSub}>{progressPercent}% to Level {level + 1}</Text>
 
-            <View style={styles.heroDivider} />
+              <View style={styles.heroDivider} />
 
-            <View style={styles.heroMission}>
-              <Ionicons name="flag" size={14} color={COLORS.gold} />
-              <Text style={styles.heroMissionText}>Daily Mission: 3/5 packs</Text>
+              <View style={styles.heroMission}>
+                <Ionicons name="flag" size={14} color={COLORS.gold} />
+                <Text style={styles.heroMissionText}>Daily Mission: 3/5 packs</Text>
+              </View>
             </View>
-          </View>
-        </LinearGradient>
+          </LinearGradient>
         </TouchableOpacity>
 
         {/* Streak card */}
@@ -167,6 +181,8 @@ export function HomeScreen({ navigation }: Props) {
               })
             }
             activeOpacity={0.8}
+            accessibilityRole="button"
+            accessibilityLabel="Continue Mathematics learning"
           >
             <LinearGradient
               colors={[COLORS.subjects.mathematics + '30', COLORS.bgCard]}
@@ -222,7 +238,11 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Recommended</Text>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={goToSubjectsTab}
+              accessibilityRole="button"
+              accessibilityLabel="View all subjects"
+            >
               <Text style={styles.seeAll}>View all</Text>
             </TouchableOpacity>
           </View>
@@ -247,7 +267,11 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Top Students</Text>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={goToLeaderboardTab}
+              accessibilityRole="button"
+              accessibilityLabel="Open full rankings"
+            >
               <Text style={styles.seeAll}>Full rankings</Text>
             </TouchableOpacity>
           </View>
@@ -296,9 +320,15 @@ const styles = StyleSheet.create({
   greeting: { color: COLORS.textMuted, fontSize: TYPOGRAPHY.sizes.sm },
   userName: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.xl, fontWeight: TYPOGRAPHY.weights.extrabold, marginTop: 2 },
   topBarActions: { flexDirection: 'row', alignItems: 'center', gap: SPACING.md },
-  iconBtn: { position: 'relative' },
+  iconBtn: {
+    position: 'relative',
+    minWidth: 44,
+    minHeight: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   notifDot: {
-    position: 'absolute', top: 0, right: 0,
+    position: 'absolute', top: 10, right: 10,
     width: 8, height: 8, borderRadius: 4,
     backgroundColor: COLORS.error, borderWidth: 1.5, borderColor: COLORS.bgMid,
   },
