@@ -136,7 +136,12 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
         colors={[`${subjectColor}25`, COLORS.bgDark]}
         style={styles.header}
       >
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={styles.back}
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
+        >
           <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
         </TouchableOpacity>
 
@@ -209,11 +214,19 @@ export function LearningPackDetailScreen({ navigation, route }: Props) {
                       subjectColor={subjectColor}
                       progressPercent={progressPercent}
                       isCompleted={isCompleted}
-                      onPress={() => {}}
+                      onPress={handlePackPress}
                     />
-                    <View style={styles.lockedOverlay}>
-                      <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
-                    </View>
+                    {!isPremium() && (
+                      <TouchableOpacity
+                        style={styles.lockedOverlay}
+                        onPress={() => handlePackPress(pack)}
+                        activeOpacity={0.85}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Unlock ${pack.title}`}
+                      >
+                        <Ionicons name="lock-closed" size={20} color={COLORS.gold} />
+                      </TouchableOpacity>
+                    )}
                   </View>
                 );
               })}
