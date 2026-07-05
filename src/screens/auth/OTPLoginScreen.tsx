@@ -39,9 +39,14 @@ export function OTPLoginScreen({ navigation }: Props) {
   };
 
   return (
-    <ScreenContainer keyboardAvoiding gradient={GRADIENTS.background}>
+    <ScreenContainer scrollable keyboardAvoiding gradient={GRADIENTS.background}>
       {/* Back */}
-      <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}>
+      <TouchableOpacity
+        onPress={() => navigation.goBack()}
+        style={styles.back}
+        accessibilityRole="button"
+        accessibilityLabel="Go back"
+      >
         <Ionicons name="arrow-back" size={24} color={COLORS.textPrimary} />
       </TouchableOpacity>
 
@@ -59,7 +64,11 @@ export function OTPLoginScreen({ navigation }: Props) {
 
         {/* Phone Input */}
         <View style={styles.inputWrapper}>
-          <TouchableOpacity style={styles.countryCode}>
+          <TouchableOpacity
+            style={styles.countryCode}
+            accessibilityRole="button"
+            accessibilityLabel="Country code Tanzania plus two five five"
+          >
             {/* TODO: Phase 2 — country selector picker */}
             <Text style={styles.countryFlag}>🇹🇿</Text>
             <Text style={styles.countryCodeText}>{COUNTRY_CODE}</Text>
@@ -77,6 +86,7 @@ export function OTPLoginScreen({ navigation }: Props) {
             keyboardType="phone-pad"
             maxLength={12}
             autoFocus
+            accessibilityLabel="Phone number"
           />
 
           {isValid && (
@@ -108,7 +118,12 @@ export function OTPLoginScreen({ navigation }: Props) {
           <Text style={styles.demoDesc}>
             Skip OTP verification for testing. Uses demo number {DEMO_PHONE}.
           </Text>
-          <TouchableOpacity onPress={handleDemo} style={styles.demoBtn}>
+          <TouchableOpacity
+            onPress={handleDemo}
+            style={styles.demoBtn}
+            accessibilityRole="button"
+            accessibilityLabel="Use demo login"
+          >
             <Text style={styles.demoBtnText}>Use Demo Login →</Text>
           </TouchableOpacity>
         </View>
