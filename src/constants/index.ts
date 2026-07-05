@@ -3,9 +3,6 @@ export * from './subjects';
 export const APP_NAME = 'Soma';
 export const APP_TAGLINE = 'Learn Smarter. Pass NECTA.';
 
-export const DEMO_PHONE = '+255 712 345 678';
-export const DEMO_OTP = '123456';
-
 export const XP_PER_LEVEL = 500;
 export const XP_PER_CORRECT_ANSWER = 10;
 export const XP_PER_PACK_COMPLETION = 50;

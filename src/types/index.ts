@@ -141,8 +141,6 @@ export type RootStackParamList = {
 export type AuthStackParamList = {
   Splash: undefined;
   Welcome: undefined;
-  OTPLogin: undefined;
-  OTPVerify: { phoneNumber: string };
   CreateProfile: undefined;
   SubjectSelection: undefined;
 };

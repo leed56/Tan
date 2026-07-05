@@ -20,7 +20,6 @@ import { AppButton } from '../../components/ui/AppButton';
 import { COLORS, GRADIENTS, TYPOGRAPHY, SPACING, RADIUS } from '../../theme';
 import { SUBJECT_COUNT, FORM_COUNT } from '../../constants';
 import { useAuth } from '../../hooks/useAuth';
-import { useProfileStore } from '../../store/profileStore';
 
 const { width } = Dimensions.get('window');
 const AUTO_ADVANCE_MS = 4200;
@@ -59,8 +58,7 @@ export function WelcomeScreen({ navigation }: Props) {
   const [signingIn, setSigningIn] = useState(false);
   const scrollRef = useRef<ScrollView>(null);
   const autoAdvanceTimer = useRef<ReturnType<typeof setInterval> | null>(null);
-  const { enterTestMode, signInWithGoogle, error } = useAuth();
-  const setProfile = useProfileStore((s) => s.setProfile);
+  const { signInWithGoogle, error } = useAuth();
 
   // Staggered entrance — each section fades + slides up slightly after the
   // last, so the screen feels composed rather than popping in all at once.
@@ -111,25 +109,6 @@ export function WelcomeScreen({ navigation }: Props) {
     } finally {
       setSigningIn(false);
     }
-  };
-
-  // __DEV__-only: skip phone OTP and onboarding entirely — sets a complete
-  // auth session + profile in one tap so RootNavigator's isOnboarded check
-  // flips true immediately and lands straight in the main app, where the
-  // floating flask button opens the Dev Test Menu (every screen, one tap).
-  const handleEnterTestMode = async () => {
-    await enterTestMode();
-    const now = Date.now();
-    setProfile({
-      uid: 'demo_user_001',
-      name: 'Test Student',
-      form: 4,
-      school: 'Dev Test School',
-      avatarId: 'avatar_1',
-      selectedSubjectIds: ['mathematics', 'biology', 'english'],
-      createdAt: now,
-      updatedAt: now,
-    });
   };
 
   const handleScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -230,11 +209,6 @@ export function WelcomeScreen({ navigation }: Props) {
             Sign in with your Google account to start learning — it's free.
           </Text>
           {error ? <Text style={styles.ctaError}>{error}</Text> : null}
-          {__DEV__ && (
-            <TouchableOpacity onPress={handleEnterTestMode} style={styles.devTestBtn}>
-              <Text style={styles.devTestBtnText}>🧪 Enter Test Mode (no login, dev only)</Text>
-            </TouchableOpacity>
-          )}
         </Animated.View>
       </View>
       </SafeAreaView>
@@ -382,15 +356,5 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.sizes.xs,
     textAlign: 'center',
     marginTop: 2,
-  },
-  devTestBtn: {
-    alignItems: 'center',
-    paddingVertical: SPACING.sm,
-    marginTop: SPACING.xs,
-  },
-  devTestBtnText: {
-    color: COLORS.gold,
-    fontSize: TYPOGRAPHY.sizes.xs,
-    fontWeight: TYPOGRAPHY.weights.semibold,
   },
 });
