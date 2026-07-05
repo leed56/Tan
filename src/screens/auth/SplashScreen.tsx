@@ -1,122 +1,235 @@
 import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Animated, Dimensions, Easing } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Animated,
+  Dimensions,
+  Easing,
+} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../theme';
 
-const { width } = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 type Props = StackScreenProps<AuthStackParamList, 'Splash'>;
 
 export function SplashScreen({ navigation }: Props) {
-  const logoScale = useRef(new Animated.Value(0.3)).current;
+  const logoScale = useRef(new Animated.Value(0.75)).current;
   const logoOpacity = useRef(new Animated.Value(0)).current;
-  const taglineOpacity = useRef(new Animated.Value(0)).current;
-  const taglineY = useRef(new Animated.Value(10)).current;
-  const glowOpacity = useRef(new Animated.Value(0)).current;
-  const glowPulse = useRef(new Animated.Value(1)).current;
+  const contentY = useRef(new Animated.Value(18)).current;
+  const contentOpacity = useRef(new Animated.Value(0)).current;
+  const glowScale = useRef(new Animated.Value(0.95)).current;
   const ringRotate = useRef(new Animated.Value(0)).current;
+  const shimmerX = useRef(new Animated.Value(-90)).current;
+  const progress = useRef(new Animated.Value(0)).current;
   const exitOpacity = useRef(new Animated.Value(1)).current;
 
   useEffect(() => {
-    // Ring spins continuously behind the logo for the whole splash duration —
-    // a cheap way to read as "loading" without a literal spinner.
     Animated.loop(
-      Animated.timing(ringRotate, { toValue: 1, duration: 6000, easing: Easing.linear, useNativeDriver: true }),
+      Animated.timing(ringRotate, {
+        toValue: 1,
+        duration: 9000,
+        easing: Easing.linear,
+        useNativeDriver: true,
+      }),
+    ).start();
+
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(glowScale, {
+          toValue: 1.12,
+          duration: 1800,
+          easing: Easing.inOut(Easing.ease),
+          useNativeDriver: true,
+        }),
+        Animated.timing(glowScale, {
+          toValue: 0.96,
+          duration: 1800,
+          easing: Easing.inOut(Easing.ease),
+          useNativeDriver: true,
+        }),
+      ]),
+    ).start();
+
+    Animated.loop(
+      Animated.timing(shimmerX, {
+        toValue: 120,
+        duration: 2200,
+        easing: Easing.inOut(Easing.ease),
+        useNativeDriver: true,
+      }),
     ).start();
 
     Animated.sequence([
       Animated.parallel([
-        Animated.spring(logoScale, { toValue: 1, tension: 60, friction: 8, useNativeDriver: true }),
-        Animated.timing(logoOpacity, { toValue: 1, duration: 600, useNativeDriver: true }),
+        Animated.spring(logoScale, {
+          toValue: 1,
+          tension: 72,
+          friction: 9,
+          useNativeDriver: true,
+        }),
+        Animated.timing(logoOpacity, {
+          toValue: 1,
+          duration: 650,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: true,
+        }),
       ]),
-      Animated.timing(glowOpacity, { toValue: 1, duration: 400, useNativeDriver: true }),
       Animated.parallel([
-        Animated.timing(taglineOpacity, { toValue: 1, duration: 500, useNativeDriver: true }),
-        Animated.spring(taglineY, { toValue: 0, tension: 80, friction: 10, useNativeDriver: true }),
+        Animated.timing(contentOpacity, {
+          toValue: 1,
+          duration: 520,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: true,
+        }),
+        Animated.spring(contentY, {
+          toValue: 0,
+          tension: 70,
+          friction: 10,
+          useNativeDriver: true,
+        }),
+        Animated.timing(progress, {
+          toValue: 1,
+          duration: 1400,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: false,
+        }),
       ]),
-      Animated.delay(800),
-      Animated.timing(exitOpacity, { toValue: 0, duration: 400, useNativeDriver: true }),
+      Animated.delay(700),
+      Animated.timing(exitOpacity, {
+        toValue: 0,
+        duration: 420,
+        easing: Easing.inOut(Easing.ease),
+        useNativeDriver: true,
+      }),
     ]).start(() => {
       navigation.replace('Welcome');
     });
+  }, [
+    navigation,
+    logoScale,
+    logoOpacity,
+    contentY,
+    contentOpacity,
+    glowScale,
+    ringRotate,
+    shimmerX,
+    progress,
+    exitOpacity,
+  ]);
 
-    // Slow breathing pulse on the glow — starts once the glow has faded in.
-    const pulseTimer = setTimeout(() => {
-      Animated.loop(
-        Animated.sequence([
-          Animated.timing(glowPulse, { toValue: 1.15, duration: 1400, easing: Easing.inOut(Easing.ease), useNativeDriver: true }),
-          Animated.timing(glowPulse, { toValue: 1, duration: 1400, easing: Easing.inOut(Easing.ease), useNativeDriver: true }),
-        ]),
-      ).start();
-    }, 900);
+  const ringSpin = ringRotate.interpolate({
+    inputRange: [0, 1],
+    outputRange: ['0deg', '360deg'],
+  });
 
-    return () => clearTimeout(pulseTimer);
-  }, [navigation, logoScale, logoOpacity, taglineOpacity, taglineY, glowOpacity, glowPulse, ringRotate, exitOpacity]);
-
-  const ringSpin = ringRotate.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
+  const progressWidth = progress.interpolate({
+    inputRange: [0, 1],
+    outputRange: [0, 116],
+  });
 
   return (
     <Animated.View style={[styles.root, { opacity: exitOpacity }]}>
       <StatusBar style="light" />
+
       <LinearGradient
-        colors={['#0A0E27', '#1A0E3F', '#0D1B5E']}
-        style={styles.gradient}
+        colors={['#030712', '#080B22', '#151141', '#071B36']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={styles.background}
       >
-        {/* Decorative circles */}
-        <View style={[styles.circle, styles.circle1]} />
-        <View style={[styles.circle, styles.circle2]} />
-        <View style={[styles.circle, styles.circle3]} />
+        <View style={styles.auroraOne} />
+        <View style={styles.auroraTwo} />
+        <View style={styles.auroraThree} />
+
+        <View style={styles.gridCircleLarge} />
+        <View style={styles.gridCircleSmall} />
 
         <View style={styles.center}>
-          {/* Glow behind logo */}
-          <Animated.View
-            style={[styles.glow, { opacity: glowOpacity, transform: [{ scale: glowPulse }] }]}
-          />
-
-          {/* Spinning accent ring */}
-          <Animated.View
-            style={[styles.ring, { opacity: logoOpacity, transform: [{ rotate: ringSpin }] }]}
-          />
-
-          {/* Logo */}
           <Animated.View
             style={[
-              styles.logoContainer,
-              { transform: [{ scale: logoScale }], opacity: logoOpacity },
+              styles.glow,
+              {
+                opacity: logoOpacity,
+                transform: [{ scale: glowScale }],
+              },
+            ]}
+          />
+
+          <Animated.View
+            style={[
+              styles.orbitRing,
+              {
+                opacity: logoOpacity,
+                transform: [{ rotate: ringSpin }],
+              },
+            ]}
+          >
+            <View style={styles.orbitDot} />
+          </Animated.View>
+
+          <Animated.View
+            style={[
+              styles.logoShell,
+              {
+                opacity: logoOpacity,
+                transform: [{ scale: logoScale }],
+              },
             ]}
           >
             <LinearGradient
-              colors={['#9B8CF9', '#7B6FF2', '#5A50CC']}
-              style={styles.logoBg}
+              colors={['rgba(255,255,255,0.34)', 'rgba(255,255,255,0.08)']}
+              style={styles.logoGlass}
             >
-              <Text style={styles.logoEmoji}>🧠</Text>
+              <LinearGradient
+                colors={['#A78BFA', '#6366F1', '#06B6D4']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={styles.logoMark}
+              >
+                <Text style={styles.logoLetter}>S</Text>
+
+                <Animated.View
+                  style={[
+                    styles.shimmer,
+                    {
+                      transform: [{ translateX: shimmerX }, { rotate: '18deg' }],
+                    },
+                  ]}
+                />
+              </LinearGradient>
             </LinearGradient>
           </Animated.View>
 
-          {/* App name */}
-          <Animated.View style={{ opacity: logoOpacity }}>
+          <Animated.View
+            style={[
+              styles.copy,
+              {
+                opacity: contentOpacity,
+                transform: [{ translateY: contentY }],
+              },
+            ]}
+          >
             <Text style={styles.appName}>Soma</Text>
-          </Animated.View>
+            <Text style={styles.tagline}>Learn smarter. Achieve more.</Text>
 
-          {/* Tagline */}
-          <Animated.View style={{ opacity: taglineOpacity, transform: [{ translateY: taglineY }] }}>
-            <Text style={styles.tagline}>Learn Smarter. Pass NECTA.</Text>
-          </Animated.View>
+            <View style={styles.pill}>
+              <View style={styles.pillDot} />
+              <Text style={styles.pillText}>Tanzania O-Level · Form 1–4</Text>
+            </View>
 
-          {/* Powered by line */}
-          <Animated.View style={[styles.poweredRow, { opacity: taglineOpacity, transform: [{ translateY: taglineY }] }]}>
-            <View style={styles.poweredDot} />
-            <Text style={styles.powered}>Tanzania O-Level · Form 1–4</Text>
-            <View style={styles.poweredDot} />
+            <View style={styles.progressTrack}>
+              <Animated.View style={[styles.progressFill, { width: progressWidth }]} />
+            </View>
           </Animated.View>
         </View>
 
-        {/* Bottom brand */}
-        <Animated.View style={[styles.bottom, { opacity: taglineOpacity }]}>
-          <Text style={styles.bottomText}>Made for Tanzania</Text>
+        <Animated.View style={[styles.bottom, { opacity: contentOpacity }]}>
+          <Text style={styles.bottomText}>BUILT FOR TANZANIA’S FUTURE</Text>
         </Animated.View>
       </LinearGradient>
     </Animated.View>
@@ -124,90 +237,218 @@ export function SplashScreen({ navigation }: Props) {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1 },
-  gradient: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  circle: {
-    position: 'absolute',
-    borderRadius: 999,
-    borderWidth: 1,
-    borderColor: 'rgba(123, 111, 242, 0.15)',
+  root: {
+    flex: 1,
+    backgroundColor: '#030712',
   },
-  circle1: { width: width * 1.4, height: width * 1.4, top: -width * 0.5, left: -width * 0.2 },
-  circle2: { width: width * 0.8, height: width * 0.8, bottom: -width * 0.2, right: -width * 0.2 },
-  circle3: { width: width * 0.5, height: width * 0.5, top: '20%', right: -width * 0.1, borderColor: 'rgba(247, 197, 46, 0.1)' },
-  center: { alignItems: 'center', gap: SPACING.md },
+
+  background: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+  },
+
+  auroraOne: {
+    position: 'absolute',
+    width: width * 1.1,
+    height: width * 1.1,
+    borderRadius: width,
+    backgroundColor: 'rgba(99,102,241,0.28)',
+    top: -width * 0.45,
+    left: -width * 0.34,
+  },
+
+  auroraTwo: {
+    position: 'absolute',
+    width: width * 0.95,
+    height: width * 0.95,
+    borderRadius: width,
+    backgroundColor: 'rgba(6,182,212,0.16)',
+    bottom: -width * 0.36,
+    right: -width * 0.36,
+  },
+
+  auroraThree: {
+    position: 'absolute',
+    width: width * 0.75,
+    height: width * 0.75,
+    borderRadius: width,
+    backgroundColor: 'rgba(236,72,153,0.13)',
+    top: height * 0.28,
+    right: -width * 0.4,
+  },
+
+  gridCircleLarge: {
+    position: 'absolute',
+    width: width * 1.35,
+    height: width * 1.35,
+    borderRadius: width,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.07)',
+  },
+
+  gridCircleSmall: {
+    position: 'absolute',
+    width: width * 0.72,
+    height: width * 0.72,
+    borderRadius: width,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.09)',
+  },
+
+  center: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: SPACING.xl,
+  },
+
   glow: {
     position: 'absolute',
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    backgroundColor: 'rgba(123, 111, 242, 0.25)',
-    top: -40,
+    top: -54,
+    width: 240,
+    height: 240,
+    borderRadius: 120,
+    backgroundColor: 'rgba(124,58,237,0.34)',
   },
-  ring: {
+
+  orbitRing: {
     position: 'absolute',
-    width: 140,
-    height: 140,
-    borderRadius: 70,
-    borderWidth: 1.5,
-    borderColor: 'rgba(247, 197, 46, 0.35)',
-    borderStyle: 'dashed',
-    top: -20,
+    top: -22,
+    width: 154,
+    height: 154,
+    borderRadius: 77,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.16)',
   },
-  logoContainer: {
-    shadowColor: COLORS.primary,
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.6,
-    shadowRadius: 20,
-    elevation: 20,
+
+  orbitDot: {
+    position: 'absolute',
+    top: 12,
+    left: 24,
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: '#FDE68A',
   },
-  logoBg: {
-    width: 100,
-    height: 100,
-    borderRadius: 28,
-    justifyContent: 'center',
+
+  logoShell: {
+    width: 116,
+    height: 116,
+    borderRadius: 34,
+    padding: 1,
+    shadowColor: '#8B5CF6',
+    shadowOffset: { width: 0, height: 18 },
+    shadowOpacity: 0.45,
+    shadowRadius: 34,
+    elevation: 22,
+  },
+
+  logoGlass: {
+    flex: 1,
+    borderRadius: 34,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.22)',
+  },
+
+  logoMark: {
+    flex: 1,
+    borderRadius: 26,
     alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
   },
-  logoEmoji: { fontSize: 52 },
+
+  logoLetter: {
+    color: '#FFFFFF',
+    fontSize: 56,
+    fontWeight: '900',
+    letterSpacing: -3,
+  },
+
+  shimmer: {
+    position: 'absolute',
+    width: 34,
+    height: 130,
+    backgroundColor: 'rgba(255,255,255,0.22)',
+  },
+
+  copy: {
+    alignItems: 'center',
+    marginTop: SPACING.xl,
+  },
+
   appName: {
     color: COLORS.textPrimary,
-    fontSize: TYPOGRAPHY.sizes['5xl'],
+    fontSize: width < 380 ? 48 : 56,
     fontWeight: TYPOGRAPHY.weights.extrabold,
-    letterSpacing: -1,
-    marginTop: SPACING.sm,
-  },
-  tagline: {
-    color: COLORS.textSecondary,
-    fontSize: TYPOGRAPHY.sizes.md,
-    fontWeight: TYPOGRAPHY.weights.medium,
-    letterSpacing: 0.5,
+    letterSpacing: -2,
     textAlign: 'center',
   },
-  poweredRow: {
+
+  tagline: {
+    marginTop: SPACING.xs,
+    color: 'rgba(255,255,255,0.74)',
+    fontSize: TYPOGRAPHY.sizes.md,
+    fontWeight: TYPOGRAPHY.weights.medium,
+    lineHeight: 23,
+    textAlign: 'center',
+  },
+
+  pill: {
+    marginTop: SPACING.lg,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: SPACING.sm,
-    marginTop: SPACING.sm,
+    gap: 8,
+    paddingHorizontal: 14,
+    paddingVertical: 9,
+    borderRadius: 999,
+    backgroundColor: 'rgba(255,255,255,0.08)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.13)',
   },
-  poweredDot: {
-    width: 4,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: COLORS.gold,
+
+  pillDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: '#FDE68A',
   },
-  powered: {
-    color: COLORS.gold,
-    fontSize: TYPOGRAPHY.sizes.sm,
+
+  pillText: {
+    color: 'rgba(255,255,255,0.82)',
+    fontSize: TYPOGRAPHY.sizes.xs,
     fontWeight: TYPOGRAPHY.weights.semibold,
-    letterSpacing: 0.3,
+    letterSpacing: 0.4,
   },
+
+  progressTrack: {
+    marginTop: SPACING.xl,
+    width: 116,
+    height: 4,
+    borderRadius: 999,
+    backgroundColor: 'rgba(255,255,255,0.14)',
+    overflow: 'hidden',
+  },
+
+  progressFill: {
+    height: 4,
+    borderRadius: 999,
+    backgroundColor: '#FFFFFF',
+  },
+
   bottom: {
     position: 'absolute',
     bottom: SPACING['3xl'],
+    paddingHorizontal: SPACING.lg,
   },
+
   bottomText: {
-    color: COLORS.textMuted,
+    color: 'rgba(255,255,255,0.44)',
     fontSize: TYPOGRAPHY.sizes.xs,
-    letterSpacing: 0.5,
+    fontWeight: TYPOGRAPHY.weights.semibold,
+    letterSpacing: 1.5,
+    textAlign: 'center',
   },
 });
