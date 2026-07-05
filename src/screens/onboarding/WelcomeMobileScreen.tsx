@@ -7,21 +7,15 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import type { StackScreenProps } from '@react-navigation/stack';
 import type { AuthStackParamList } from '../../types';
 import { COLORS, GRADIENTS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
-import { FORM_COUNT, SUBJECT_COUNT } from '../../constants';
+import { SUBJECT_COUNT } from '../../constants';
 
 type Props = StackScreenProps<AuthStackParamList, 'Welcome'>;
 type IconName = keyof typeof Ionicons.glyphMap;
 
-const STATS = [
-  { value: SUBJECT_COUNT, label: 'Subjects', icon: 'book-outline' as IconName },
-  { value: FORM_COUNT, label: 'Forms', icon: 'layers-outline' as IconName },
-  { value: 'Free', label: 'Start', icon: 'gift-outline' as IconName },
-];
-
 const FEATURES = [
-  { icon: 'sparkles' as IconName, title: 'AI Tutor', text: 'Simple explanations after every answer.' },
-  { icon: 'flame' as IconName, title: 'Daily Wins', text: 'XP, streaks, and badges for motivation.' },
-  { icon: 'school' as IconName, title: 'Exam Ready', text: 'Form 1–4 NECTA practice in one place.' },
+  { icon: 'sparkles' as IconName, title: 'AI explains mistakes', text: 'Learn why, not just what.' },
+  { icon: 'school' as IconName, title: 'Full Form 1–4 path', text: `${SUBJECT_COUNT} subjects, NECTA aligned.` },
+  { icon: 'flame' as IconName, title: 'Rewards that motivate', text: 'XP, streaks, and badges.' },
 ];
 
 export function WelcomeMobileScreen({ navigation }: Props) {
@@ -32,40 +26,101 @@ export function WelcomeMobileScreen({ navigation }: Props) {
   return (
     <LinearGradient colors={['#070B22', '#10183A', '#0A0E27']} style={styles.root}>
       <StatusBar style="light" />
-      <View style={styles.glowOne} />
-      <View style={styles.glowTwo} />
+      <View style={styles.glowTop} />
+      <View style={styles.glowMid} />
+      <View style={styles.glowBottom} />
+
       <SafeAreaView style={styles.safe}>
         <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={[styles.content, { paddingHorizontal: side }]}>
           <View style={styles.shell}>
             <View style={styles.header}>
-              <LinearGradient colors={GRADIENTS.primary} style={styles.logo}><Text style={styles.logoEmoji}>🧠</Text></LinearGradient>
-              <View style={styles.brandBox}><Text style={styles.brand}>Soma AI</Text><Text style={styles.brandSub}>Premium O-Level learning</Text></View>
+              <LinearGradient colors={GRADIENTS.primary} style={styles.logo}>
+                <Text style={styles.logoEmoji}>🧠</Text>
+              </LinearGradient>
+              <View style={styles.brandBox}>
+                <Text style={styles.brand}>Soma AI</Text>
+                <Text style={styles.brandSub}>O-Level learning, made addictive</Text>
+              </View>
+              <View style={styles.ratingPill}>
+                <Ionicons name="star" size={13} color={COLORS.gold} />
+                <Text style={styles.ratingText}>4.9</Text>
+              </View>
             </View>
 
-            <View style={styles.badge}><Ionicons name="sparkles" size={14} color={COLORS.gold} /><Text style={styles.badgeText}>Built for Tanzania O-Level</Text></View>
+            <View style={styles.badge}>
+              <Ionicons name="sparkles" size={15} color={COLORS.gold} />
+              <Text style={styles.badgeText}>Tanzania O-Level AI Tutor</Text>
+            </View>
 
-            <Text style={[styles.title, isSmall && styles.titleSmall]}>Study smarter. Feel ready.</Text>
-            <Text style={styles.subtitle}>Guided NECTA practice, friendly AI explanations, daily rewards, and a calmer path to exam confidence.</Text>
+            <Text style={[styles.title, isSmall && styles.titleSmall]}>Master exams one smart habit at a time.</Text>
+            <Text style={styles.subtitle}>Personalized practice, instant explanations, and progress that feels rewarding every day.</Text>
 
-            <LinearGradient colors={['rgba(123,111,242,0.42)', 'rgba(74,144,217,0.14)']} style={styles.heroCard}>
-              <View style={styles.heroTop}><View style={styles.avatar}><Text style={styles.avatarText}>S</Text></View><View style={styles.xp}><Ionicons name="flash" size={13} color={COLORS.bgDark} /><Text style={styles.xpText}>XP</Text></View></View>
-              <Text style={styles.brain}>🧠</Text>
-              <View style={styles.focusRow}><Text style={styles.focusText}>Today’s focus</Text><Text style={styles.focusPercent}>82%</Text></View>
-              <View style={styles.track}><LinearGradient colors={GRADIENTS.gold} style={styles.fill} /></View>
-            </LinearGradient>
+            <View style={styles.heroShadow}>
+              <LinearGradient colors={['rgba(55,61,130,0.98)', 'rgba(30,37,83,0.98)']} style={styles.heroCard}>
+                <View style={styles.heroHeader}>
+                  <View>
+                    <Text style={styles.heroTitle}>Today’s AI Study Plan</Text>
+                    <Text style={styles.heroSub}>Form 3 • Mathematics</Text>
+                  </View>
+                  <View style={styles.scorePill}><Text style={styles.scoreText}>82%</Text></View>
+                </View>
 
-            <View style={styles.chips}><View style={styles.chip}><Ionicons name="flash-outline" size={16} color={COLORS.gold} /><Text style={styles.chipText}>Fast practice</Text></View><View style={styles.chip}><Ionicons name="chatbubble-ellipses-outline" size={16} color={COLORS.successLight} /><Text style={styles.chipText}>Clear answers</Text></View></View>
+                <View style={styles.heroCenter}>
+                  <View style={[styles.floatChip, styles.floatLeftTop]}>
+                    <Ionicons name="flash" size={14} color={COLORS.gold} />
+                    <Text style={styles.floatText}>+XP</Text>
+                  </View>
+                  <View style={[styles.floatChip, styles.floatRightTop]}>
+                    <Ionicons name="checkmark-circle" size={15} color={COLORS.successLight} />
+                    <Text style={styles.floatText}>Correct</Text>
+                  </View>
+                  <LinearGradient colors={GRADIENTS.primary} style={styles.brainCore}>
+                    <Text style={styles.brain}>🧠</Text>
+                  </LinearGradient>
+                  <View style={[styles.floatChip, styles.floatLeftBottom]}>
+                    <Text style={styles.floatEmoji}>🔥</Text>
+                    <Text style={styles.floatText}>7 day streak</Text>
+                  </View>
+                  <View style={[styles.floatChip, styles.floatRightBottom]}>
+                    <Ionicons name="sparkles" size={14} color={COLORS.gold} />
+                    <Text style={styles.floatText}>Explain</Text>
+                  </View>
+                </View>
 
-            <View style={styles.stats}>{STATS.map((stat) => <View key={stat.label} style={styles.stat}><Ionicons name={stat.icon} size={20} color={COLORS.gold} /><Text style={styles.statValue}>{stat.value}</Text><Text style={styles.statLabel}>{stat.label}</Text></View>)}</View>
+                <View style={styles.trackWrap}>
+                  <View style={styles.track}>
+                    <LinearGradient colors={GRADIENTS.gold} style={styles.fill} />
+                  </View>
+                </View>
+              </LinearGradient>
+            </View>
 
-            <View style={styles.featureList}>{FEATURES.map((item) => <View key={item.title} style={styles.feature}><View style={styles.featureIcon}><Ionicons name={item.icon} size={22} color={COLORS.primaryLight} /></View><View style={styles.featureText}><Text style={styles.featureTitle}>{item.title}</Text><Text style={styles.featureDesc}>{item.text}</Text></View></View>)}</View>
+            <View style={styles.featureSection}>
+              <Text style={styles.featureHeading}>Everything students need</Text>
+              {FEATURES.map((item) => (
+                <View key={item.title} style={styles.featureCard}>
+                  <View style={styles.featureIcon}>
+                    <Ionicons name={item.icon} size={21} color={COLORS.primaryLight} />
+                  </View>
+                  <View style={styles.featureCopy}>
+                    <Text style={styles.featureTitle}>{item.title}</Text>
+                    <Text style={styles.featureDesc}>{item.text}</Text>
+                  </View>
+                </View>
+              ))}
+            </View>
 
             <Pressable onPress={() => navigation.navigate('OTPLogin')} accessibilityRole="button" accessibilityLabel="Start Learning Free" style={styles.primaryButton}>
-              <LinearGradient colors={['#9B8CF9', '#7B6FF2', '#4A90D9']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.primaryGradient}><Text style={styles.primaryText}>Start Learning Free</Text><View style={styles.arrow}><Ionicons name="arrow-forward" size={20} color={COLORS.primaryDark} /></View></LinearGradient>
+              <LinearGradient colors={['#9B8CF9', '#7B6FF2', '#4A90D9']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.primaryGradient}>
+                <Text style={styles.primaryText}>Start Learning Free</Text>
+                <View style={styles.arrow}><Ionicons name="arrow-forward" size={20} color={COLORS.primaryDark} /></View>
+              </LinearGradient>
             </Pressable>
 
-            <Pressable onPress={() => navigation.navigate('OTPLogin')} accessibilityRole="button" accessibilityLabel="Already have an account? Sign In" style={styles.secondaryButton}><Text style={styles.secondaryMuted}>Already have an account?</Text><Text style={styles.secondaryText}> Sign In →</Text></Pressable>
-            <Text style={styles.hint}>No payment needed to start. Upgrade later only when premium packs are useful.</Text>
+            <Pressable onPress={() => navigation.navigate('OTPLogin')} accessibilityRole="button" accessibilityLabel="Already have an account? Sign In" style={styles.secondaryButton}>
+              <Text style={styles.secondaryMuted}>Already have an account?</Text>
+              <Text style={styles.secondaryText}> Sign In →</Text>
+            </Pressable>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -78,50 +133,54 @@ const styles = StyleSheet.create({
   safe: { flex: 1 },
   content: { flexGrow: 1, alignItems: 'center', paddingBottom: SPACING['3xl'] },
   shell: { width: '100%', maxWidth: 430, paddingTop: SPACING.lg, paddingBottom: SPACING['2xl'] },
-  glowOne: { position: 'absolute', top: -110, right: -90, width: 250, height: 250, borderRadius: 125, backgroundColor: 'rgba(123,111,242,0.2)' },
-  glowTwo: { position: 'absolute', bottom: -100, left: -90, width: 230, height: 230, borderRadius: 115, backgroundColor: 'rgba(247,197,46,0.1)' },
+  glowTop: { position: 'absolute', top: -130, right: -120, width: 310, height: 310, borderRadius: 155, backgroundColor: 'rgba(123,111,242,0.22)' },
+  glowMid: { position: 'absolute', top: 315, right: -110, width: 290, height: 290, borderRadius: 145, backgroundColor: 'rgba(78,205,196,0.10)' },
+  glowBottom: { position: 'absolute', bottom: -125, left: -130, width: 300, height: 300, borderRadius: 150, backgroundColor: 'rgba(247,197,46,0.11)' },
   header: { flexDirection: 'row', alignItems: 'center', gap: SPACING.md, marginBottom: SPACING.xl },
-  logo: { width: 56, height: 56, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center' },
+  logo: { width: 58, height: 58, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center', shadowColor: COLORS.primary, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.35, shadowRadius: 20, elevation: 10 },
   logoEmoji: { fontSize: 26 },
-  brandBox: { flex: 1 },
-  brand: { color: COLORS.textPrimary, fontSize: 28, lineHeight: 32, fontWeight: TYPOGRAPHY.weights.extrabold },
+  brandBox: { flex: 1, minWidth: 0 },
+  brand: { color: COLORS.textPrimary, fontSize: 29, lineHeight: 33, fontWeight: TYPOGRAPHY.weights.extrabold, letterSpacing: -0.5 },
   brandSub: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.xs, marginTop: 2 },
-  badge: { alignSelf: 'flex-start', minHeight: 34, flexDirection: 'row', alignItems: 'center', gap: SPACING.sm, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, borderWidth: 1, borderColor: 'rgba(247,197,46,0.26)', backgroundColor: 'rgba(247,197,46,0.1)', marginBottom: SPACING.lg },
-  badgeText: { color: COLORS.gold, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.extrabold, textTransform: 'uppercase' },
-  title: { color: COLORS.textPrimary, fontSize: 42, lineHeight: 46, fontWeight: TYPOGRAPHY.weights.extrabold, letterSpacing: -0.8 },
-  titleSmall: { fontSize: 36, lineHeight: 40 },
-  subtitle: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.md, lineHeight: TYPOGRAPHY.sizes.md * 1.5, marginTop: SPACING.md, marginBottom: SPACING.xl },
-  heroCard: { alignSelf: 'center', width: '82%', minHeight: 230, borderRadius: 32, padding: SPACING.lg, borderWidth: 1, borderColor: 'rgba(255,255,255,0.18)', marginBottom: SPACING.md },
-  heroTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  avatar: { width: 46, height: 46, borderRadius: RADIUS.lg, backgroundColor: COLORS.primary, alignItems: 'center', justifyContent: 'center' },
-  avatarText: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.lg, fontWeight: TYPOGRAPHY.weights.extrabold },
-  xp: { minHeight: 34, flexDirection: 'row', alignItems: 'center', gap: 4, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, backgroundColor: COLORS.gold },
-  xpText: { color: COLORS.bgDark, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.extrabold },
-  brain: { textAlign: 'center', fontSize: 56, marginVertical: SPACING.xl },
-  focusRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: SPACING.sm },
-  focusText: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
-  focusPercent: { color: COLORS.gold, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.extrabold },
+  ratingPill: { minHeight: 38, flexDirection: 'row', alignItems: 'center', gap: 5, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, borderWidth: 1, borderColor: 'rgba(255,255,255,0.14)', backgroundColor: 'rgba(255,255,255,0.08)' },
+  ratingText: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.extrabold },
+  badge: { alignSelf: 'flex-start', minHeight: 42, flexDirection: 'row', alignItems: 'center', gap: SPACING.sm, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, borderWidth: 1, borderColor: 'rgba(247,197,46,0.28)', backgroundColor: 'rgba(247,197,46,0.11)', marginBottom: SPACING.xl },
+  badgeText: { color: COLORS.gold, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.extrabold, letterSpacing: 0.45, textTransform: 'uppercase' },
+  title: { color: COLORS.textPrimary, fontSize: 39, lineHeight: 44, fontWeight: TYPOGRAPHY.weights.extrabold, letterSpacing: -0.9 },
+  titleSmall: { fontSize: 34, lineHeight: 39 },
+  subtitle: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.md, lineHeight: TYPOGRAPHY.sizes.md * 1.55, marginTop: SPACING.md, marginBottom: SPACING.xl },
+  heroShadow: { borderRadius: 34, shadowColor: COLORS.primary, shadowOffset: { width: 0, height: 24 }, shadowOpacity: 0.3, shadowRadius: 30, elevation: 14, marginBottom: SPACING['2xl'] },
+  heroCard: { minHeight: 258, borderRadius: 34, padding: SPACING.lg, borderWidth: 1, borderColor: 'rgba(255,255,255,0.16)', overflow: 'hidden' },
+  heroHeader: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: SPACING.md },
+  heroTitle: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.md, fontWeight: TYPOGRAPHY.weights.extrabold },
+  heroSub: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.xs, marginTop: 3 },
+  scorePill: { minHeight: 34, minWidth: 68, alignItems: 'center', justifyContent: 'center', borderRadius: RADIUS.full, backgroundColor: COLORS.gold },
+  scoreText: { color: COLORS.bgDark, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.extrabold },
+  heroCenter: { minHeight: 166, alignItems: 'center', justifyContent: 'center' },
+  brainCore: { width: 110, height: 110, borderRadius: 34, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: 'rgba(255,255,255,0.18)' },
+  brain: { fontSize: 50 },
+  floatChip: { position: 'absolute', minHeight: 40, flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, backgroundColor: 'rgba(10,14,39,0.72)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.14)' },
+  floatText: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.extrabold },
+  floatEmoji: { fontSize: 14 },
+  floatLeftTop: { top: 42, left: 4 },
+  floatRightTop: { top: 44, right: 0 },
+  floatLeftBottom: { bottom: 0, left: 10 },
+  floatRightBottom: { bottom: 2, right: 6 },
+  trackWrap: { paddingHorizontal: SPACING.xs },
   track: { height: 10, borderRadius: RADIUS.full, backgroundColor: 'rgba(255,255,255,0.12)', overflow: 'hidden' },
   fill: { width: '82%', height: '100%' },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: SPACING.sm, marginBottom: SPACING.lg },
-  chip: { minHeight: 38, flexDirection: 'row', alignItems: 'center', gap: 7, paddingHorizontal: SPACING.md, borderRadius: RADIUS.full, backgroundColor: COLORS.glassBg, borderWidth: 1, borderColor: COLORS.glassBorder },
-  chipText: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.sm, fontWeight: TYPOGRAPHY.weights.semibold },
-  stats: { flexDirection: 'row', gap: SPACING.sm, padding: SPACING.sm, borderRadius: 26, borderWidth: 1, borderColor: 'rgba(255,255,255,0.14)', backgroundColor: 'rgba(255,255,255,0.07)', marginBottom: SPACING.lg },
-  stat: { flex: 1, minHeight: 94, alignItems: 'center', justifyContent: 'center', padding: SPACING.sm, borderRadius: RADIUS.xl, backgroundColor: 'rgba(10,14,39,0.34)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.1)' },
-  statValue: { color: COLORS.textPrimary, fontSize: 26, lineHeight: 30, fontWeight: TYPOGRAPHY.weights.extrabold, marginTop: SPACING.xs },
-  statLabel: { color: COLORS.gold, fontSize: TYPOGRAPHY.sizes.xs, fontWeight: TYPOGRAPHY.weights.bold },
-  featureList: { gap: SPACING.sm, marginBottom: SPACING.lg },
-  feature: { flexDirection: 'row', alignItems: 'center', gap: SPACING.md, padding: SPACING.md, borderRadius: RADIUS.xl, borderWidth: 1, borderColor: COLORS.glassBorder, backgroundColor: COLORS.glassBg },
-  featureIcon: { width: 44, height: 44, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(123,111,242,0.12)' },
-  featureText: { flex: 1 },
+  featureSection: { gap: SPACING.sm, marginBottom: SPACING.lg },
+  featureHeading: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.lg, fontWeight: TYPOGRAPHY.weights.extrabold, marginBottom: SPACING.xs },
+  featureCard: { minHeight: 58, flexDirection: 'row', alignItems: 'center', gap: SPACING.md, padding: SPACING.md, borderRadius: RADIUS.xl, borderWidth: 1, borderColor: COLORS.glassBorder, backgroundColor: 'rgba(255,255,255,0.07)' },
+  featureIcon: { width: 42, height: 42, borderRadius: RADIUS.lg, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(123,111,242,0.14)' },
+  featureCopy: { flex: 1, minWidth: 0 },
   featureTitle: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.extrabold },
   featureDesc: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.sm, lineHeight: TYPOGRAPHY.sizes.sm * 1.45, marginTop: 2 },
-  primaryButton: { minHeight: 60, borderRadius: RADIUS.xl, overflow: 'hidden', elevation: 10, marginBottom: SPACING.md },
-  primaryGradient: { minHeight: 60, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: SPACING.md, paddingHorizontal: SPACING.xl },
-  primaryText: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.md, fontWeight: TYPOGRAPHY.weights.extrabold },
-  arrow: { width: 32, height: 32, borderRadius: RADIUS.full, backgroundColor: 'rgba(255,255,255,0.92)', alignItems: 'center', justifyContent: 'center' },
+  primaryButton: { minHeight: 62, borderRadius: RADIUS.xl, overflow: 'hidden', shadowColor: COLORS.primary, shadowOffset: { width: 0, height: 16 }, shadowOpacity: 0.36, shadowRadius: 22, elevation: 12, marginBottom: SPACING.md },
+  primaryGradient: { minHeight: 62, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: SPACING.md, paddingHorizontal: SPACING.xl },
+  primaryText: { color: COLORS.textPrimary, fontSize: TYPOGRAPHY.sizes.md, fontWeight: TYPOGRAPHY.weights.extrabold, letterSpacing: 0.2 },
+  arrow: { width: 34, height: 34, borderRadius: RADIUS.full, backgroundColor: 'rgba(255,255,255,0.92)', alignItems: 'center', justifyContent: 'center' },
   secondaryButton: { minHeight: 54, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', borderRadius: RADIUS.xl, borderWidth: 1, borderColor: 'rgba(155,140,249,0.34)', backgroundColor: 'rgba(123,111,242,0.1)', paddingHorizontal: SPACING.lg },
   secondaryMuted: { color: COLORS.textSecondary, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.medium },
   secondaryText: { color: COLORS.primaryLight, fontSize: TYPOGRAPHY.sizes.base, fontWeight: TYPOGRAPHY.weights.extrabold },
-  hint: { color: COLORS.textMuted, textAlign: 'center', fontSize: TYPOGRAPHY.sizes.xs, lineHeight: TYPOGRAPHY.sizes.xs * 1.55, paddingHorizontal: SPACING.md, marginTop: SPACING.md },
 });
